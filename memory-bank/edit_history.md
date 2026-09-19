@@ -62,6 +62,15 @@
 - Updated `manuscript.md` — Published baseline → follow-up numerical work
 - ORX agent committed: d249e1c "Manuscript restructure: published baseline -> follow-up numerical work"
 
+#### 18:45 IST - T5: Created Experiments program + git reconcile main-orx→main
+- Created `memory-bank/implementation-details/experiments.md` — roadmap for 7 experiments (T5a–T5g) probing the volume–positivity (achirality) boundary
+- Updated `memory-bank/tasks.md` — added T5 + subtasks T5a–T5g to registry
+- Updated `memory-bank/progress.md` — T5 (PROPOSED) section
+- Updated `memory-bank/activeContext.md` — T5 focus + git reconcile note
+- Updated `memory-bank/session_cache.md` — main-orx→main merge (a24dac8) recorded
+- Git: merged `main-orx` (Rust + manuscript) into `main` as `a24dac8`; rust/ tracked; compiles clean
+- Edit chunk: `memory-bank/edits/2026-09-19/184500-t5-experiments-program.md`
+
 #### 16:47 IST - Dashboard Creation
 - Created `dashboard/index.html` — Adapted from info-dash
 - Created `dashboard/data.json` — 8 LQG-Grassmannian runs

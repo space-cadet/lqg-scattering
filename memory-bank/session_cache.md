@@ -1,14 +1,15 @@
 # Session Cache
 
-*Last Updated: 2026-09-19 17:15 IST*
+*Last Updated: 2026-09-19 18:41 IST*
 
 ## Overview
-- Active Tasks: 1 (T4)
+- Active Tasks: 2 (T4 IN PROGRESS, T5 PROPOSED)
 - Paused Tasks: 0
-- Last Task Focus: T4
+- Last Task Focus: T4 / T5
 
 ## Task Registry
 - T4: Follow-up manuscript — 🔄 IN PROGRESS
+- T5: Experiments — ⬜ PROPOSED (subtasks T5a–T5g)
 - T3c: Rust volume operator — ✅ COMPLETED 16:26 IST
 - T3d: Verify n=4 — ✅ COMPLETED 16:26 IST
 - T3e: Benchmarks n=5-8 — ✅ COMPLETED 16:26 IST
@@ -42,7 +43,7 @@ All Rust implementation phases complete. ORX agent delivered full pipeline with 
 8. 🔄 Follow-up manuscript (T4)
 
 #### Working State
-ORX agent session complete. All commits pushed. Dashboard deployed to repo. Next: deploy to quantumofgravity.com.
+Git branches reconciled: `main-orx` (Rust port + manuscript) merged into `main` as commit `a24dac8`. Rust compiles clean. Memory-bank updated with new T5 (Experiments, T5a–T5g) + `experiments.md` roadmap. Awaiting `git push origin main` to publish merge + memory-bank together.
 
 ## Session Notes
 
@@ -51,4 +52,6 @@ ORX agent session complete. All commits pushed. Dashboard deployed to repo. Next
 - Memory-bank initialized with mb-core v6.12
 - Dashboard created and committed
 - Cron monitor removed
-- Session ending; deploy to quantumofgravity.com in next session
+- **Git reconcile:** merged `main-orx` → `main` (`a24dac8`). Rust + Phases 2–5 + manuscript now on `main`; memory-bank preserved.
+- **New task T5 (Experiments)** created: 7 subtasks T5a–T5g probing the volume–positivity (achirality) boundary. Roadmap: `implementation-details/experiments.md`.
+- Next: push `main`; deploy dashboard to quantumofgravity.com; run first T5 experiment.

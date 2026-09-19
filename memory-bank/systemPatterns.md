@@ -28,8 +28,22 @@
 
 ### Version Control
 - All work committed to git before ORX session ends
-- ORX worktree is the canonical development location
 - GitHub: https://github.com/space-cadet/lqg-scattering
+
+#### Repository topology (dual-checkout, one remote)
+There is **one** canonical remote — `github.com/space-cadet/lqg-scattering.git` — checked out in two local places with distinct roles. Do not treat either as a second source of truth; the remote is the single source of truth.
+
+| Checkout | Path | Branch | Role |
+|----------|------|--------|------|
+| **Canonical repo** | `~/.openclaw/workspace/code/lqg-scattering` | `main` | Holds the **memory-bank** + dashboard + published manuscript. This is where durable records and the task registry live. |
+| **ORX worktree** | `~/.local/share/openresearch/worktrees/…/chat_66108501…` | `main-orx` | ORX agent's isolated experiment/development branch. Scratch space; **not** the canonical record. |
+
+**Sync discipline ("copy" workflow):**
+- ORX works on its own branch `main-orx` and pushes to the same remote. Its worktree is private to its chat session.
+- Periodically (after each experiment batch), the results are **merged `main-orx` → `main`** in the canonical repo, and `main` is pushed.
+- The memory-bank lives **only** in the canonical repo (`code/lqg-scattering`), on `main`.
+- **Do not** edit the ORX worktree directly from the canonical side, and do not let the two diverge without a merge — sync `main-orx` into `main` regularly so the memory-bank stays truthful.
+- First sync done 2026-09-19 (merge `a24dac8`).
 
 ## Anti-Patterns to Avoid
 - Dense matrices for large Fock spaces (memory explosion)

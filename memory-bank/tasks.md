@@ -1,10 +1,11 @@
 # Task Registry
-*Last Updated: 2026-09-19 17:15 IST*
+*Last Updated: 2026-09-19 18:41 IST*
 
 ## Active Tasks
 | ID | Title | Status | Priority | Started | Dependencies | Owner |
 |----|-------|--------|----------|---------|--------------|-------|
 | T4 | Follow-up manuscript | 🔄 IN PROGRESS | MEDIUM | 2026-09-19 | T3c, T3d, T3e | Deepak |
+| T5 | Experiments | ⬜ PROPOSED | HIGH | — | T3c, T3d, T3e | Deepak |
 
 ## Task Details
 
@@ -217,6 +218,27 @@ All benchmarks well under target. Max runtime 3.35s at n=6. Results in performan
 **Notes**:
 manuscript.md restructured by ORX agent with published baseline and numerical results. Dashboard created. Next: polish and circulate for review.
 
+---
+
+### T5: Experiments
+**Description**: Numerical program probing the volume–positivity (achirality) boundary. Seven independent experiments — how volume turns on off the positive Grassmannian cell, whether chirality is per-vertex or per-triple, and whether the quantum volume matches the reconstructed classical polyhedron volume.
+**Status**: ⬜ PROPOSED
+**Dependencies**: T3c, T3d, T3e (Rust volume operator, verified n=4, benchmarks n=5–8)
+
+**Roadmap**: `memory-bank/implementation-details/experiments.md`
+
+**Subtasks** (priority order):
+- T5a: Triple-volume correlations (n≥5) — one vertex handedness vs per-triple chirality. HIGHEST priority; invisible at n=4.
+- T5b: Perturbation response V(ε) — is chirality a smooth knob or a phase transition?
+- T5c: Classical volume match — does √(⟨q⟩) equal the reconstructed polyhedron's classical volume?
+- T5d: Cocycle barrier / distance-to-cell scaling — is Gr₊ a smooth zero or a caustic?
+- T5e: Large-K semiclassics — does V ~ K^{3/2} hold at K=20–50?
+- T5f: Amplituhedron kinematics — which scattering regions does Gr₊ cover? (lowest priority)
+- T5g: Performance frontier — n=10–12 Rust profiling (engineering, enables T5a–e)
+
+**Notes**:
+Central new result motivating all experiments: the volume operator vanishes exactly on Gr₊(2,N) for N=4–8 and is nonzero immediately off it (achirality of the positive cell). All numerical claims must pass the red-team protocol before being promoted to manuscript results.
+
 ## Completed Tasks
 | ID | Title | Completed | Related Tasks |
 |----|-------|-----------|---------------|
@@ -230,6 +252,13 @@ manuscript.md restructured by ORX agent with published baseline and numerical re
 | T3c | Volume operator (Rust) | 2026-09-19 | T3 |
 | T3d | Verify Rust vs Python at n=4 | 2026-09-19 | T3, T3c |
 | T3e | Benchmarks n=5,6,7,8 | 2026-09-19 | T3, T3c, T3d |
+| T5a | Triple-volume correlations (n≥5) | — | T5 |
+| T5b | Perturbation response V(ε) | — | T5 |
+| T5c | Classical volume match | — | T5 |
+| T5d | Cocycle barrier / distance-to-cell | — | T5 |
+| T5e | Large-K semiclassics | — | T5 |
+| T5f | Amplituhedron kinematics | — | T5 |
+| T5g | Performance frontier | — | T5 |
 
 ## Task Relationships
 ```mermaid
@@ -254,4 +283,5 @@ graph TD
     T3d --> T3e
     T3e --> T4
     T2 -.-> T4
+    T3e --> T5
 ```

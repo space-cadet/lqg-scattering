@@ -1,6 +1,6 @@
 # Implementation Progress
 
-*Last Updated: 2026-09-19 17:15 IST*
+*Last Updated: 2026-09-19 18:41 IST*
 
 ## Active Tasks
 
@@ -21,6 +21,14 @@
 - ⬜ Polish numerical results section
 - ⬜ Add scaling law analysis
 - ⬜ Circulate for review
+
+### T5: Experiments
+**Status:** ⬜ PROPOSED
+**Priority:** HIGH
+
+**Roadmap:** `memory-bank/implementation-details/experiments.md`
+
+Seven experiments probing the volume–positivity (achirality) boundary, prioritized #6→#5→#3 (triple correlations, perturbation response, classical volume match) as highest physics-per-effort. Subtasks T5a–T5g in `tasks.md`. Not yet started — awaiting Deepak's go on which to run first.
 
 ## Completed Tasks
 
