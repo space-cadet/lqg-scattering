@@ -97,9 +97,9 @@ fn run_k(seed: u64, k: usize, ref_occ: &[(u8, u8)], eps_zero: bool) -> Point {
     };
     let z = plane_to_z(&plane, N);
     let t0 = Instant::now();
-    // cap 4K+8: the audit showed 2K+4 truncates at large K. Fail loudly on
+    // cap 8K+50: the audit + assert showed 2K+4 truncates (even K=7 needs 35+ iters). Fail loudly on
     // a saturated cap -- an unconverged state is not a measurement.
-    let (v, iters, converged) = perelomov_otf_diag(&space, &z, ref_occ, 1e-13, 4 * k + 8);
+    let (v, iters, converged) = perelomov_otf_diag(&space, &z, ref_occ, 1e-13, 8 * k + 50);
     assert!(converged, "Taylor cap saturated at K={k} ({iters} iters)");
     // closure: sum_e <n_e> must equal K (u(N) conservation)
     let mut closure = 0.0f64;
@@ -227,12 +227,13 @@ fn main() {
                 lqg_grassmannian::experiment::triple_q_all_pairs(&fock, &plane, &r, 1e-13);
             // triple (0,1,2) is lexicographically first
             let qs0 = qs[0];
-            let rel = ((qs0 - p.q) / p.q).abs();
-            println!("  xcheck stored-engine q_012={qs0:+.6e} rel-diff={rel:.2e}");
-            // tolerance is loose on purpose: the two engines sum the long
-            // Taylor series in different orders, so roundoff-level drift
-            // (~1e-9 at dim 1e5) is expected; physics needs only 1e-3.
-            assert!(rel < 1e-6, "engine mismatch at K={k}");
+            let abs_diff = (qs0 - p.q).abs();
+            let rel = abs_diff / p.q.abs().max(1e-300);
+            println!("  xcheck stored-engine q_012={qs0:+.6e} rel-diff={rel:.2e} abs-diff={abs_diff:.2e}");
+            // relative OR absolute: near a genuine zero both engines agree
+            // at ~1e-17 and relative diff is meaningless (converged K=8
+            // uniform gives q~7e-17 in both engines).
+            assert!(rel < 1e-6 || abs_diff < 1e-12, "engine mismatch at K={k}");
         }
         pts.push(p);
             write_json(&out, seed, &family, &pts, &ctrls);

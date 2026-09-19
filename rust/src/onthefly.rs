@@ -251,7 +251,7 @@ pub fn apply_jdot(sp: &OtfSpace, i: usize, j: usize, v: &[Complex64]) -> Vec<Com
 
 /// Perelomov state exp(A)|ref> via Taylor series, on-the-fly matvecs.
 ///
-/// Cap is 4K+8 with early break at tol: the audit child node showed 2K+4
+/// Cap is 8K+50 with early break at tol: the audit child node showed 2K+4
 /// truncates at large K (74-79 iterations needed at K=22-24). Use
 /// `perelomov_otf_diag` when convergence must be reported.
 pub fn perelomov_otf(
@@ -260,7 +260,7 @@ pub fn perelomov_otf(
     ref_occ: &[(u8, u8)],
     tol: f64,
 ) -> Vec<Complex64> {
-    perelomov_otf_diag(sp, z, ref_occ, tol, 4 * sp.k + 8).0
+    perelomov_otf_diag(sp, z, ref_occ, tol, 8 * sp.k + 50).0
 }
 
 /// Same, with explicit cap; returns (state, iters_used, converged).

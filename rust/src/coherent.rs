@@ -31,8 +31,8 @@ pub fn perelomov(
 ) -> Vec<Complex64> {
     let n = space.n;
     let a = generator_matrix(space, z, n);
-    // cap 4K+8: 2K+4 was shown to truncate at large K (T5e audit child).
-    let k = 4 * space.k + 8;
+    // cap 8K+50: 2K+4 was shown to truncate even at small K (T5e audit + assert).
+    let k = 8 * space.k + 50;
     let mut result = ref_vec.to_vec();
     let mut term = ref_vec.to_vec();
     for it in 1..k {
