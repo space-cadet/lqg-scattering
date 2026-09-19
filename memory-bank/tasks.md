@@ -237,6 +237,7 @@ manuscript.md restructured by ORX agent with published baseline and numerical re
 - T5f: Amplituhedron kinematics — which scattering regions does Gr₊ cover? (lowest priority)
 - T5g: Performance frontier — n=10–12 Rust profiling (engineering, enables T5a–e)
 - T6: Minkowski polyhedron reconstruction — kinematic (T5a′, feasible now) + full quantum (needs T5c covariance machinery). Spec: `implementation-details/T6-minkowski-polyhedron.md`.
+- T7: Thermofield-double construction — double the Schwinger system via TFD purification to get thermal volume on real momenta (no complexification). 🔄 PROPOSED 2026-09-20. Three concrete advantages: (1) H = sum omega_i (n_a,i+n_b,i) is occupation-diagonal, so e^{-βH/2} rescales Fock amplitudes exactly — no Taylor, no truncation, exact at any K; (2) thermal analogue of T5b's V~√ε — compare universality classes; (3) two-sided chirality correlator <q_L q_R> and its relation to L-R entanglement. Subtasks: T7a (construction, n=4,5, K=N+3), T7b (thermal scaling V~T^α), T7c (two-sided correlator vs entanglement), T7d (complexified momenta in TFD — explicitly NOT subsumed, open question, separate protocol). Spec: `implementation-details/thermofield-double-volume.md`. Aspirational context (not the focus): candidate concrete LQG wormhole state.
 
 **Notes**:
 Central new result motivating all experiments: the volume operator vanishes exactly on Gr₊(2,N) for N=4–8 and is nonzero immediately off it (achirality of the positive cell). All numerical claims must pass the red-team protocol before being promoted to manuscript results.
@@ -262,6 +263,7 @@ Central new result motivating all experiments: the volume operator vanishes exac
 | T5f | Amplituhedron kinematics | — | T5 |
 | T5g | Performance frontier | — | T5 |
 | T6 | Minkowski polyhedron reconstruction | 2026-09-19 | T5 |
+| T7 | Thermofield-double construction (TFD volume on real momenta) | 2026-09-20 | T5 |
 
 ## Task Relationships
 ```mermaid
