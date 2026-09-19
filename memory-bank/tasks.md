@@ -1,11 +1,12 @@
 # Task Registry
-*Last Updated: 2026-09-19 18:41 IST*
+*Last Updated: 2026-09-20 02:30 IST*
 
 ## Active Tasks
 | ID | Title | Status | Priority | Started | Dependencies | Owner |
 |----|-------|--------|----------|---------|--------------|-------|
 | T4 | Follow-up manuscript | 🔄 IN PROGRESS | MEDIUM | 2026-09-19 | T3c, T3d, T3e | Deepak |
 | T5 | Experiments | ⬜ PROPOSED | HIGH | — | T3c, T3d, T3e | Deepak |
+| T7a | Single-copy thermal state | ✅ COMPLETED | HIGH | 2026-09-20 | T3c | ORX |
 
 ## Task Details
 
@@ -290,3 +291,31 @@ graph TD
     T2 -.-> T4
     T3e --> T5
 ```
+
+---
+
+### T7a: Single-Copy Thermal State
+**Description**: Construct the thermal density matrix rho_beta on the n=4,5 intertwiner spaces. Verify Tr(rho_beta q) = 0 exactly (null mean volume). Compute Tr(rho_beta A_i) area expectations and Tr(rho_beta q^2) volume fluctuation spectrum across beta = 0..10.
+**Status**: ✅ COMPLETED
+**Completed**: 2026-09-20
+**Last Active**: 2026-09-20 02:30 IST
+
+**Completion Criteria**:
+- ✅ rho_beta constructed via Gibbs state e^{-beta H}/Z
+- ✅ Tr(rho_beta q) = 0 verified to machine precision (real and imag parts)
+- ✅ Area expectations Tr(rho_beta A_i) computed for all boundary faces
+- ✅ Volume fluctuation Tr(rho_beta q^2) computed across beta spectrum
+
+**Related Files**:
+- `t7a_thermal.py`
+- `t7a_results.json`
+
+**Key Results** (n=4, dim=6435; n=5, dim=43758):
+- Tr(rho_beta q) = 0 exactly at all beta — confirms null mean volume in thermal state
+- Areas decrease monotonically with beta: n=4 beta=0 ~0.369 → beta=10 ~2.2e-5
+- Volume fluctuation q^2 decreases with beta: n=4 beta=0 ~0.357 → beta=10 ~7e-14
+- Perelomov-weighted states show beta-independent areas and q^2
+- Gibbs state thermalizes to vacuum at large beta (Z→1, E→0)
+
+**Notes**:
+This confirms the zero-volume result extends to thermal states. The thermal state does not spontaneously acquire volume expectation — consistent with the EPJC published result.
