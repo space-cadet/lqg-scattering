@@ -124,10 +124,14 @@ fn write_json(path: &str, seed: u64, family: &str, pts: &[Point], controls: &[Po
         TRIPLE.0, TRIPLE.1, TRIPLE.2
     ));
     for (n, p) in pts.iter().enumerate() {
+        let refstr = p.ref_occ.iter()
+            .map(|(a, b)| format!("[{a},{b}]"))
+            .collect::<Vec<_>>()
+            .join(",");
         s.push_str(&format!(
-            "    {{\"K\": {}, \"dim\": {}, \"ref\": {:?}, \"q\": {:.6e}, \
+            "    {{\"K\": {}, \"dim\": {}, \"ref\": [{refstr}], \"q\": {:.6e}, \
              \"V\": {:.6e}, \"closure\": {:.9}, \"secs\": {:.1}}}",
-            p.k, p.dim, p.ref_occ, p.q, p.v, p.closure, p.secs
+            p.k, p.dim, p.q, p.v, p.closure, p.secs
         ));
         if n + 1 < pts.len() {
             s.push(',');
