@@ -23,7 +23,7 @@
 - ⬜ Circulate for review
 
 ### T5: Experiments
-**Status:** ✅ DONE (T5a 2026-09-19; T5b–T5g ⬜ PROPOSED)
+**Status:** 🔄 IN PROGRESS (T5a M-sweep running; T5b fired on muse-spark; T5c–T5g ⬜ PROPOSED)
 **Priority:** HIGH
 
 **Roadmap:** `memory-bank/implementation-details/experiments.md`

@@ -228,7 +228,7 @@ manuscript.md restructured by ORX agent with published baseline and numerical re
 **Roadmap**: `memory-bank/implementation-details/experiments.md`
 
 **Subtasks** (priority order):
-- T5a: Triple-volume correlations (n≥5) — one vertex handedness vs per-triple chirality. HIGHEST priority; invisible at n=4. ✅ DONE 2026-09-19 (per-triple chirality verdict, n=6,7; sign-agreement 0.50–0.70; no global handedness)
+- T5a: Triple-volume correlations (n≥5) — one vertex handedness vs per-triple chirality. HIGHEST priority; invisible at n=4. 🔄 IN PROGRESS (2026-09-19): base result committed `0731eaf` on main-orx — no global handedness at M=0 (sign-agreement 0.50–0.70, n=6,7). **Magnetization sweep (M = (N_a−N_b)/2) pending** — orx is preparing it via the Experiments panel. Prematurely marked DONE earlier; corrected.
 - T5b: Perturbation response V(ε) — is chirality a smooth knob or a phase transition?
 - T5c: Classical volume match — does √(⟨q⟩) equal the reconstructed polyhedron's classical volume?
 - T5d: Cocycle barrier / distance-to-cell scaling — is Gr₊ a smooth zero or a caustic?

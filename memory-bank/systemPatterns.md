@@ -50,3 +50,16 @@ There is **one** canonical remote — `github.com/space-cadet/lqg-scattering.git
 - Modifying the published paper
 - Reporting numerical results without red-team validation
 - Python for n≥5 computations (too slow)
+- Firing an orx experiment without the full brief (see "ORX experiment brief" below)
+
+## ORX Experiment Brief
+
+When firing an experiment to an orx agent, **always** include these three things in the initial message. A partial brief wastes a turn and produces blind results.
+
+1. **Spec path.** The absolute path to the relevant memory-bank section (`implementation-details/experiments.md` or a task file). orx worktrees do **not** contain `memory-bank/` — the agent will report the spec "missing" and work from a one-line summary unless you give it the real path. Example: `/Users/sage/.openclaw/workspace/code/lqg-scattering/memory-bank/implementation-details/experiments.md`.
+
+2. **Falsifiable hypothesis.** State the hypothesis under test explicitly, framed as a probe — not established fact. Tell the agent what result would *refute* it. (Pattern from the T5a M-sweep guidance: "treat as a probe, not established fact.")
+
+3. **Sanity-check the reference/measurement.** Tell the agent which reference occupation / measurement choice could trivially produce the result, and to verify that choice before trusting the number. (Pattern: the uniform `(1,1)` reference is `M=0`, which trivially kills handedness — always flag such degenerate cases.)
+
+The T5a steering message (2026-09-19) is the worked example: it gave the spec path, the magnetization hypothesis as a probe, and the instruction to sweep `M` rather than trust the `M=0` baseline.
