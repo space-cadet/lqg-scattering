@@ -228,7 +228,7 @@ manuscript.md restructured by ORX agent with published baseline and numerical re
 **Roadmap**: `memory-bank/implementation-details/experiments.md`
 
 **Subtasks** (priority order):
-- T5a: Triple-volume correlations (n≥5) — one vertex handedness vs per-triple chirality. HIGHEST priority; invisible at n=4.
+- T5a: Triple-volume correlations (n≥5) — one vertex handedness vs per-triple chirality. HIGHEST priority; invisible at n=4. ✅ DONE 2026-09-19 (per-triple chirality verdict, n=6,7; sign-agreement 0.50–0.70; no global handedness)
 - T5b: Perturbation response V(ε) — is chirality a smooth knob or a phase transition?
 - T5c: Classical volume match — does √(⟨q⟩) equal the reconstructed polyhedron's classical volume?
 - T5d: Cocycle barrier / distance-to-cell scaling — is Gr₊ a smooth zero or a caustic?
@@ -252,7 +252,7 @@ Central new result motivating all experiments: the volume operator vanishes exac
 | T3c | Volume operator (Rust) | 2026-09-19 | T3 |
 | T3d | Verify Rust vs Python at n=4 | 2026-09-19 | T3, T3c |
 | T3e | Benchmarks n=5,6,7,8 | 2026-09-19 | T3, T3c, T3d |
-| T5a | Triple-volume correlations (n≥5) | — | T5 |
+| T5a | Triple-volume correlations (n≥5) | 2026-09-19 | T5 |
 | T5b | Perturbation response V(ε) | — | T5 |
 | T5c | Classical volume match | — | T5 |
 | T5d | Cocycle barrier / distance-to-cell | — | T5 |

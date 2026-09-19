@@ -23,12 +23,14 @@
 - ⬜ Circulate for review
 
 ### T5: Experiments
-**Status:** ⬜ PROPOSED
+**Status:** ✅ DONE (T5a 2026-09-19; T5b–T5g ⬜ PROPOSED)
 **Priority:** HIGH
 
 **Roadmap:** `memory-bank/implementation-details/experiments.md`
 
-Seven experiments probing the volume–positivity (achirality) boundary, prioritized #6→#5→#3 (triple correlations, perturbation response, classical volume match) as highest physics-per-effort. Subtasks T5a–T5g in `tasks.md`. Not yet started — awaiting Deepak's go on which to run first.
+Seven experiments probing the volume–positivity (achirality) boundary, prioritized #6→#5→#3 (triple correlations, perturbation response, classical volume match) as highest physics-per-effort. Subtasks T5a–T5g in `tasks.md`.
+
+**T5a DONE 2026-09-19 (orx session `chat_66108501`)**: triple-volume correlations at n=6,7 with one Perelomov state per (n, seed) on a complex plane. Sign-agreement 0.50–0.70 across seeds, cross-seed Pearson |q| ≈ 0 → **no global handedness; chirality is per-triple**. New `onthefly.rs` engine (combinatorial rank indexing, rayon atomic-scatter matvec) handles dim-40M Fock spaces at n=7 in ~3 min; n=8 resource-bound at spec reference (~10 GB/vector). Validated against stored engine at n=4. See `implementation-details/experiments.md` for full spec + results; commit `0731eaf` on `main-orx`, merged into `main` as `2583b6a`.
 
 ## Completed Tasks
 
