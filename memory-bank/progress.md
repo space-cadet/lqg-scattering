@@ -1,54 +1,25 @@
 # Implementation Progress
 
-*Last Updated: 2026-09-19 16:30 IST*
+*Last Updated: 2026-09-19 17:15 IST*
 
 ## Active Tasks
 
-### T3c: Volume Operator (Rust)
+### T4: Follow-up Manuscript
 **Status:** 🔄 IN PROGRESS
-**Priority:** HIGH
+**Priority:** MEDIUM
 
 #### Completed Steps
-- ✅ BHT triple-grasp formula identified as the volume operator construction
-- ✅ Sparse matrix module structure designed (sprs::CsMat)
-- ✅ Volume operator file created (`rust/src/volume.rs`)
-- ✅ Integration with fock.rs and ops.rs
+- ✅ EPJC paper identified as frozen published baseline
+- ✅ manuscript.md restructured: published baseline → follow-up numerical work
+- ✅ Numerical results section drafted (n=4..8 volume data)
 
 #### Current Work
-- 🔄 ORX agent debugging volume operator implementation
-- 🔄 Binary rebuilt at 16:08 IST — running benchmark scan
-- 🔄 n=4 verification in progress
+- 🔄 ORX agent completed Rust implementation; manuscript has full numerical results
+- 🔄 Dashboard created for data visualization
 
 #### Up Next
-- ⬜ Confirm n=4 volume eigenvalues match Python exactly
-- ⬜ Commit Phase C when verified
-
-### T3d: Verify Rust vs Python at n=4
-**Status:** ⏳ PENDING
-**Priority:** HIGH
-
-#### Up Next
-- ⬜ Run Rust n=4 scan: `cargo run --release -- scan`
-- ⬜ Compare eigenvalues with Python `positivity.py` output
-- ⬜ Confirm match to f64 machine precision (rtol=1e-12)
-
-### T3e: Benchmarks n=5,6,7,8
-**Status:** ⏳ PENDING
-**Priority:** MEDIUM
-
-#### Up Next
-- ⬜ Run full benchmark suite after n=4 verification
-- ⬜ Record timing and memory usage
-- ⬜ Confirm zero-volume on positive cell for all n
-- ⬜ Update `memory-bank/implementation-details/performance-benchmarks.md`
-
-### T4: Follow-up Manuscript
-**Status:** ⏳ PENDING
-**Priority:** MEDIUM
-
-#### Up Next
-- ⬜ Collect numerical results from T3d and T3e
-- ⬜ Draft numerical results section
+- ⬜ Polish numerical results section
+- ⬜ Add scaling law analysis
 - ⬜ Circulate for review
 
 ## Completed Tasks
@@ -76,3 +47,15 @@
 ### T3b: Coherent States + Grassmannian (Rust)
 **Completed:** 2026-09-19
 **Summary:** Rust implementation of U(N) Perelomov coherent states and Grassmannian Plücker embedding. Committed as `42ce24e`.
+
+### T3c: Volume Operator (Rust)
+**Completed:** 2026-09-19 16:26 IST
+**Summary:** BHT volume operator implemented in Rust with sparse matrices. n=4 verification passed. Committed as `ee72845`.
+
+### T3d: Verify Rust vs Python at n=4
+**Completed:** 2026-09-19 16:26 IST
+**Summary:** Machine precision match confirmed (rtol=1e-12). Volume eigenvalues identical. Committed as `c0908cf`.
+
+### T3e: Benchmarks n=5,6,7,8
+**Completed:** 2026-09-19 16:26 IST
+**Summary:** All benchmarks completed. Max runtime 3.35s (n=6). Zero-volume confirmed for all n on positive cell. Results in `performance-benchmarks.md` and dashboard.

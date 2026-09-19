@@ -1,10 +1,10 @@
 # Task Registry
-*Last Updated: 2026-09-19 16:30 IST*
+*Last Updated: 2026-09-19 17:15 IST*
 
 ## Active Tasks
 | ID | Title | Status | Priority | Started | Dependencies | Owner |
 |----|-------|--------|----------|---------|--------------|-------|
-| T3c | Volume operator (Rust) | 🔄 IN PROGRESS | HIGH | 2026-09-19 | T3a, T3b | ORX agent |
+| T4 | Follow-up manuscript | 🔄 IN PROGRESS | MEDIUM | 2026-09-19 | T3c, T3d, T3e | Deepak |
 
 ## Task Details
 
@@ -97,23 +97,23 @@ Paper is PUBLISHED. Do not modify. This is the baseline for all follow-up work.
 
 ### T3: Rust Port for n≥5
 **Description**: Port the LQG-Grassmannian pipeline to Rust for n≥5 vertices. Python is too slow due to Fock space dimension explosion. Use sparse matrices (sprs) and parallelism (rayon).
-**Status**: 🔄 IN PROGRESS
-**Started**: 2026-09-19
-**Last Active**: 2026-09-19 16:08 IST
+**Status**: ✅ COMPLETED
+**Completed**: 2026-09-19 16:26 IST
+**Last Active**: 2026-09-19 16:26 IST
 
 **Completion Criteria**:
 - ✅ Fock space construction (T3a)
 - ✅ Coherent states + Grassmannian (T3b)
-- 🔄 Volume operator (T3c)
-- ⏳ n=4 verification vs Python (T3d)
-- ⏳ Benchmarks n=5,6,7,8 (T3e)
+- ✅ Volume operator (T3c)
+- ✅ n=4 verification vs Python (T3d)
+- ✅ Benchmarks n=5,6,7,8 (T3e)
 
 **Subtasks**:
 - T3a: Fock space + u(N) operators (Rust) — ✅ COMPLETED (commit ee3ff0e)
 - T3b: Coherent states + Grassmannian (Rust) — ✅ COMPLETED (commit 42ce24e)
-- T3c: Volume operator (Rust) — 🔄 IN PROGRESS
-- T3d: Verify Rust vs Python at n=4 — ⏳ PENDING
-- T3e: Benchmarks n=5,6,7,8 — ⏳ PENDING
+- T3c: Volume operator (Rust) — ✅ COMPLETED (commit ee72845)
+- T3d: Verify Rust vs Python at n=4 — ✅ COMPLETED (commit c0908cf)
+- T3e: Benchmarks n=5,6,7,8 — ✅ COMPLETED (commit c0908cf)
 
 **Related Files**:
 - `rust/src/fock.rs`
@@ -125,21 +125,21 @@ Paper is PUBLISHED. Do not modify. This is the baseline for all follow-up work.
 - `rust/src/lib.rs`
 
 **Notes**:
-Being implemented by ORX agent (session chat_66108501). Agent has been instructed to update manuscript.md with new numerical results as they arrive.
+Implemented by ORX agent (session chat_66108501, ~4h50m runtime). All commits pushed. Volume = 0 on positive Grassmannian confirmed for n=4..8.
 
 ---
 
 ### T3c: Volume Operator (Rust)
 **Description**: Implement Bianchi-Haggard-Thiemann volume operator in Rust using sparse matrices. Must match Python at n=4 to f64 machine precision.
-**Status**: 🔄 IN PROGRESS
-**Started**: 2026-09-19
-**Last Active**: 2026-09-19 16:08 IST
+**Status**: ✅ COMPLETED
+**Completed**: 2026-09-19 16:26 IST
+**Last Active**: 2026-09-19 16:26 IST
 
 **Completion Criteria**:
-- Volume matrix constructed via triple-grasp formula
-- Sparse matrix representation (sprs::CsMat)
-- n=4 eigenvalues match Python exactly
-- Unit tests pass
+- ✅ Volume matrix constructed via triple-grasp formula
+- ✅ Sparse matrix representation (sprs::CsMat)
+- ✅ n=4 eigenvalues match Python exactly
+- ✅ Unit tests pass
 
 **Related Files**:
 - `rust/src/volume.rs`
@@ -147,64 +147,75 @@ Being implemented by ORX agent (session chat_66108501). Agent has been instructe
 - `rust/src/fock.rs`
 
 **Notes**:
-Currently being debugged by ORX agent. Binary rebuilt at 16:08 IST.
+Completed by ORX agent. Committed as ee72845.
 
 ---
 
 ### T3d: Verify Rust vs Python at n=4
 **Description**: Cross-validate Rust implementation against Python reference at n=4. Must match to f64 machine precision (rtol=1e-12).
-**Status**: ⏳ PENDING
+**Status**: ✅ COMPLETED
+**Completed**: 2026-09-19 16:26 IST
 **Dependencies**: T3c
 
 **Completion Criteria**:
-- Volume eigenvalues at n=4: Rust == Python
-- Coherent state overlaps: Rust == Python
-- Grassmannian embedding: Rust == Python
+- ✅ Volume eigenvalues at n=4: Rust == Python
+- ✅ Coherent state overlaps: Rust == Python
+- ✅ Grassmannian embedding: Rust == Python
 
 **Related Files**:
-- `rust/src/main.rs` (scan mode)
+- `rust/src/main.rs` (verify4 mode)
 - `coherent_states.py`
 - `positivity.py`
+
+**Notes**:
+Machine precision match confirmed. Committed as c0908cf.
 
 ---
 
 ### T3e: Benchmarks n=5,6,7,8
 **Description**: Run volume operator benchmarks for n=5 through n=8. Target: < 1 minute per n value.
-**Status**: ⏳ PENDING
+**Status**: ✅ COMPLETED
+**Completed**: 2026-09-19 16:26 IST
 **Dependencies**: T3c, T3d
 
 **Completion Criteria**:
-- n=5 volume computed
-- n=6 volume computed
-- n=7 volume computed
-- n=8 volume computed
-- Timing and memory usage recorded
-- Zero-volume result confirmed for all n on positive cell
+- ✅ n=5 volume computed (264ms)
+- ✅ n=6 volume computed (2.96s)
+- ✅ n=7 volume computed (299ms)
+- ✅ n=8 volume computed (724ms)
+- ✅ Timing and memory usage recorded
+- ✅ Zero-volume result confirmed for all n on positive cell
 
 **Related Files**:
 - `rust/src/main.rs` (scan mode)
 - `memory-bank/implementation-details/performance-benchmarks.md`
 
+**Notes**:
+All benchmarks well under target. Max runtime 3.35s at n=6. Results in performance-benchmarks.md and dashboard.
+
 ---
 
 ### T4: Follow-up Manuscript
 **Description**: Draft follow-up manuscript presenting numerical results for n=4..8. Extends the published EPJC paper with the Rust implementation and higher-valence results.
-**Status**: ⏳ PENDING
+**Status**: 🔄 IN PROGRESS
+**Started**: 2026-09-19
+**Last Active**: 2026-09-19 17:15 IST
 **Dependencies**: T3c, T3d, T3e
 
 **Completion Criteria**:
-- Numerical results section written
-- Zero-volume result confirmed for n≥5
-- Comparison with analytical n=4 result
-- Benchmark table included
-- Draft circulated for review
+- 🔄 Numerical results section drafted
+- ⬜ Zero-volume result confirmed for n≥5
+- ⬜ Comparison with analytical n=4 result
+- ⬜ Benchmark table included
+- ⬜ Draft circulated for review
 
 **Related Files**:
 - `manuscript.md` (working draft)
 - `memory-bank/implementation-details/performance-benchmarks.md`
+- `dashboard/data.json`
 
 **Notes**:
-manuscript.md should be updated by ORX agent as numerical results arrive. The published paper (paper/lqg-amplituhedron.tex) is frozen.
+manuscript.md restructured by ORX agent with published baseline and numerical results. Dashboard created. Next: polish and circulate for review.
 
 ## Completed Tasks
 | ID | Title | Completed | Related Tasks |
@@ -213,6 +224,12 @@ manuscript.md should be updated by ORX agent as numerical results arrive. The pu
 | T1a | Volume operator at n=4 | 2026-09-19 | T1 |
 | T1b | Zero-volume on positive cell | 2026-09-19 | T1, T1a |
 | T2 | Manuscript (EPJC paper) | 2026-09-19 | T1, T1a, T1b |
+| T3 | Rust Port for n≥5 | 2026-09-19 | T3a, T3b, T3c, T3d, T3e |
+| T3a | Fock space + u(N) operators (Rust) | 2026-09-19 | T3 |
+| T3b | Coherent states + Grassmannian (Rust) | 2026-09-19 | T3 |
+| T3c | Volume operator (Rust) | 2026-09-19 | T3 |
+| T3d | Verify Rust vs Python at n=4 | 2026-09-19 | T3, T3c |
+| T3e | Benchmarks n=5,6,7,8 | 2026-09-19 | T3, T3c, T3d |
 
 ## Task Relationships
 ```mermaid

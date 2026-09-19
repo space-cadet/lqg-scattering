@@ -1,53 +1,54 @@
 # Session Cache
 
-*Last Updated: 2026-09-19 16:30 IST*
+*Last Updated: 2026-09-19 17:15 IST*
 
 ## Overview
-- Active Tasks: 1 (T3c)
+- Active Tasks: 1 (T4)
 - Paused Tasks: 0
-- Last Task Focus: T3c
+- Last Task Focus: T4
 
 ## Task Registry
-- T3c: Rust volume operator — 🔄 IN PROGRESS
-- T3d: Verify n=4 — ⏳ PENDING
-- T3e: Benchmarks n=5-8 — ⏳ PENDING
-- T4: Follow-up manuscript — ⏳ PENDING
+- T4: Follow-up manuscript — 🔄 IN PROGRESS
+- T3c: Rust volume operator — ✅ COMPLETED 16:26 IST
+- T3d: Verify n=4 — ✅ COMPLETED 16:26 IST
+- T3e: Benchmarks n=5-8 — ✅ COMPLETED 16:26 IST
 
 ## Active Tasks
 
-### T3c: Volume Operator (Rust)
+### T4: Follow-up Manuscript
 **Status:** 🔄 IN PROGRESS
-**Priority:** HIGH
+**Priority:** MEDIUM
 **Started:** 2026-09-19
-**Last Active:** 2026-09-19 16:08 IST
-**Dependencies:** T3a, T3b
+**Last Active:** 2026-09-19 17:15 IST
+**Dependencies:** T3c, T3d, T3e
 
 #### Context
-ORX agent (session chat_66108501) is implementing the Bianchi-Haggard-Thiemann volume operator in Rust. Binary rebuilt at 16:08 IST. Agent has been running ~4.8 hours total, currently in active debug loop.
+All Rust implementation phases complete. ORX agent delivered full pipeline with benchmarks. manuscript.md restructured with published baseline and numerical results. Dashboard created for visualization.
 
 #### Critical Files
-- `rust/src/volume.rs`: Volume operator construction
-- `rust/src/ops.rs`: Sparse u(N) operators (J_+, J_-, J_z)
-- `rust/src/fock.rs`: Fock space basis
-- `rust/src/main.rs`: Benchmark scan entry point
+- `manuscript.md`: Follow-up numerical work draft
+- `paper/lqg-amplituhedron.tex`: Published EPJC paper (frozen)
+- `dashboard/data.json`: Benchmark data
+- `rust/src/volume.rs`: Volume operator implementation
 
 #### Implementation Progress
-1. ✅ Fock space basis (T3a) — committed ee3ff0e
-2. ✅ Sparse u(N) operators (T3a) — committed ee3ff0e
-3. ✅ Coherent states (T3b) — committed 42ce24e
-4. ✅ Grassmannian embedding (T3b) — committed 42ce24e
-5. 🔄 Volume operator (T3c) — in progress, binary rebuilt 16:08 IST
-6. ⬜ n=4 verification (T3d)
-7. ⬜ n≥5 benchmarks (T3e)
+1. ✅ Python pipeline (T1, T1a, T1b)
+2. ✅ EPJC paper (T2)
+3. ✅ Rust Fock space (T3a)
+4. ✅ Rust coherent states (T3b)
+5. ✅ Rust volume operator (T3c)
+6. ✅ n=4 verification (T3d)
+7. ✅ n≥5 benchmarks (T3e)
+8. 🔄 Follow-up manuscript (T4)
 
 #### Working State
-ORX agent actively debugging volume operator. Context window at 185K/1M (18.5%). No compaction in ORX/OpenCode — session will run until API error if context fills. Agent has been instructed to commit at stable checkpoints and update manuscript.md as results arrive.
+ORX agent session complete. All commits pushed. Dashboard deployed to repo. Next: deploy to quantumofgravity.com.
 
 ## Session Notes
 
 ### 2026-09-19 Session
-- EPJC paper uploaded to repo (`paper/lqg-amplituhedron.tex`, `.pdf`, `.bib`)
-- Rust implementation kickoff via ORX agent
+- ORX agent completed full Rust implementation (4h50m runtime)
 - Memory-bank initialized with mb-core v6.12
-- ORX agent instructed: paper is published baseline, current work is follow-up numerical
-- Implementation-details docs created: volume-operator.md, fock-space-construction.md, grassmannian-embedding.md, rust-port-architecture.md, verification-protocol.md, performance-benchmarks.md
+- Dashboard created and committed
+- Cron monitor removed
+- Session ending; deploy to quantumofgravity.com in next session
