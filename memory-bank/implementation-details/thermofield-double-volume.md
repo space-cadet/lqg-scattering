@@ -72,33 +72,42 @@ real-observable operator equal the thermal mixed-state value.
 
 ## Subtasks
 
-- **T7a — TFD construction.** Build |TFD(beta)> on the doubled Schwinger
-  system for n = 4, 5 at fixed K (start K = N+3 to match T5b). Verify:
-  (i) at beta -> infinity the state reduces to the pure Perelomov state
-  on L tensor the vacuum structure on R; (ii) one-sided thermal
-  expectation of the area operator reproduces a Boltzmann-weighted
-  average over the capped-K ensemble; (iii) the reduced density matrix
-  of L is thermal, tr_rho_L^2 < 1 at finite beta.
-- **T7b — Thermal volume law.** Measure V(beta) on the L copy over a
-  beta sweep (e.g. beta = 0.1 .. 10, i.e. T = 10 .. 0.1). Fit
-  V ~ T^alpha. Hypothesis (probe, not established): alpha ~ 0.5, the
-  same universality class as T5b's V ~ sqrt(eps). Deviations are
-  interesting either way: alpha < 0.5 suggests thermal smearing kills
-  volume faster than off-cell deformation; alpha > 0.5 would be
-  surprising. Report honestly including noise-dominated regimes.
-- **T7c — Two-sided chirality correlator.** Measure
-  <tg-math>\langle q_L q_R\rangle(\beta)</tg-math> and compare against the
-  one-sided <tg-math>\langle q_L\rangle</tg-math> and the L–R entanglement
-  entropy S(beta). Questions: does the two-sided correlator vanish at
-  high T (maximal mixing) and grow as T -> 0? Is its magnitude bounded
-  by the thermal entropy budget?
-- **T7d — Complexified momenta in the TFD (open, careful).** NOT
+Ordered: the single-copy step comes first and is load-bearing, not just
+pedagogy -- it yields a small theorem that motivates the doubling.
+
+- **T7a -- Single-copy thermal state.** Build rho_beta = e^{-beta H}/Z on
+  ONE Schwinger system at the real moment-curve plane (n = 4, 5, K = N+3
+  to match T5b). Compute and report:
+  (i) thermal areas Tr(rho_beta A_i) -- nonzero, giving the thermal area
+  spectrum;
+  (ii) mean volume Tr(rho_beta q) -- expected to be EXACTLY ZERO, since
+  rho_beta is diagonal in the Fock basis and <n|q|n> = 0 for every real
+  Fock state (same argument as T5b's "real amplitudes -> V = 0").
+  Verify this numerically; state it as a result, not an aside: no ensemble
+  diagonal in the occupation basis carries volume;
+  (iii) volume fluctuations Tr(rho_beta q^2) -- nonzero; this is where the
+  thermal state's volume information actually lives.
+- **T7b -- TFD construction.** Purify rho_beta into |TFD(beta)> on the
+  doubled system. Verify: (i) reduced density matrix of L equals rho_beta
+  (trace over R); (ii) at beta -> infinity the state reduces to the pure
+  Perelomov state on L; (iii) entanglement entropy S(beta) across L|R --
+  should match the thermal entropy of rho_beta, S = beta(<H> - F).
+- **T7c -- Two-sided chirality correlator.** Measure <q_L q_R>(beta) on the
+  TFD. This is now motivated by T7a: the mean volume vanished on one copy,
+  so the volume signal, if present, must live in correlations. Compare
+  <q_L q_R> against Tr(rho_beta q^2) (they should be related through the
+  purification) and against S(beta).
+- **T7d -- Thermal scaling laws.** Sweep beta (e.g. beta = 0.1 .. 10) and
+  fit the correlator: <q_L q_R> ~ T^alpha. Compare with T5b's V ~ eps^0.5
+  universality. Deviations are interesting either way; report honestly
+  including noise-dominated regimes.
+- **T7e -- Complexified momenta in the TFD (open, careful).** NOT
   subsumed by the above. Open question: what happens when the plane
   defining the doubled state is itself complexified (C + i*dC), so that
   the "thermal ensemble" lives on off-cell kinematics? Does
   complexification commute with purification, does the thermal ensemble
   wash out the off-cell volume, or does it reshape the V(eps) law into
-  V(eps, T)? Runs separately from T7b; treat as a distinct experiment
+  V(eps, T)? Runs separately from T7d; treat as a distinct experiment
   with its own protocol, not a parameter tweak.
 
 ## Parameters and conventions
