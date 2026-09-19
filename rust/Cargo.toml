@@ -1,0 +1,15 @@
+[package]
+name = "lqg_grassmannian"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sprs = "0.11"
+num-complex = "0.4"
+rayon = "1.10"
+num-traits = "0.2.19"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
