@@ -19,7 +19,7 @@
 //! completed points behind (checkpoint rule).
 
 use lqg_grassmannian::grassmannian::{plane_to_z, positive_plane_curve};
-use lqg_grassmannian::onthefly::{apply_jdot, perelomov_otf, OtfSpace};
+use lqg_grassmannian::onthefly::{apply_jdot, perelomov_otf_diag, OtfSpace};
 use lqg_grassmannian::volume::GAMMA;
 use num_complex::Complex64;
 use std::time::Instant;
@@ -84,6 +84,7 @@ struct Point {
     q: f64,
     v: f64,
     closure: f64,
+    iters: usize,
     secs: f64,
 }
 
@@ -96,7 +97,10 @@ fn run_k(seed: u64, k: usize, ref_occ: &[(u8, u8)], eps_zero: bool) -> Point {
     };
     let z = plane_to_z(&plane, N);
     let t0 = Instant::now();
-    let v = perelomov_otf(&space, &z, ref_occ, 1e-13);
+    // cap 4K+8: the audit showed 2K+4 truncates at large K. Fail loudly on
+    // a saturated cap -- an unconverged state is not a measurement.
+    let (v, iters, converged) = perelomov_otf_diag(&space, &z, ref_occ, 1e-13, 4 * k + 8);
+    assert!(converged, "Taylor cap saturated at K={k} ({iters} iters)");
     // closure: sum_e <n_e> must equal K (u(N) conservation)
     let mut closure = 0.0f64;
     for (amp, idx) in v.iter().zip(0..space.dim) {
@@ -111,7 +115,7 @@ fn run_k(seed: u64, k: usize, ref_occ: &[(u8, u8)], eps_zero: bool) -> Point {
     let q = -2.0 * zdot.im;
     let dt = t0.elapsed().as_secs_f64();
     let vol = GAMMA.powf(1.5) * q.abs().sqrt();
-    Point { k, dim: space.dim, ref_occ: ref_occ.to_vec(), q, v: vol, closure, secs: dt }
+    Point { k, dim: space.dim, ref_occ: ref_occ.to_vec(), q, v: vol, closure, iters, secs: dt }
 }
 
 fn write_json(path: &str, seed: u64, family: &str, pts: &[Point], controls: &[Point]) {
@@ -130,8 +134,8 @@ fn write_json(path: &str, seed: u64, family: &str, pts: &[Point], controls: &[Po
             .join(",");
         s.push_str(&format!(
             "    {{\"K\": {}, \"dim\": {}, \"ref\": [{refstr}], \"q\": {:.6e}, \
-             \"V\": {:.6e}, \"closure\": {:.9}, \"secs\": {:.1}}}",
-            p.k, p.dim, p.q, p.v, p.closure, p.secs
+             \"V\": {:.6e}, \"closure\": {:.9}, \"taylor_iters\": {}, \"secs\": {:.1}}}",
+            p.k, p.dim, p.q, p.v, p.closure, p.iters, p.secs
         ));
         if n + 1 < pts.len() {
             s.push(',');
@@ -208,8 +212,8 @@ fn main() {
         };
         let p = run_k(seed, k, &r, false);
         println!(
-            "K={:>3} dim={:>10} ref={:?} q={:+.6e} V={:.6e} closure={:.6} ({:.1}s)",
-            p.k, p.dim, p.ref_occ, p.q, p.v, p.closure, p.secs
+            "K={:>3} dim={:>10} ref={:?} q={:+.6e} V={:.6e} closure={:.6} taylor={} ({:.1}s)",
+            p.k, p.dim, p.ref_occ, p.q, p.v, p.closure, p.iters, p.secs
         );
         assert!(
             (p.closure - k as f64).abs() < 1e-6,
