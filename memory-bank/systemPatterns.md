@@ -64,6 +64,14 @@ When firing an experiment to an orx agent, **always** include these three things
 
 The T5a steering message (2026-09-19) is the worked example: it gave the spec path, the magnetization hypothesis as a probe, and the instruction to sweep `M` rather than trust the `M=0` baseline.
 
+### ORX Session Naming Convention
+
+Format: `<TaskId> · <YYYY-MM-DD HH:MM> · <Brief>` (middle-dot separators; TaskId first for natural task grouping; ISO-ish timestamp, sortable; Brief = 3–6 words, verb-first).
+
+Do **not** include the model name — it crowds the title and is already in the session metadata.
+
+TaskId is the workspace task (`T5a`, `T5b`, `T6`) or `Setup`/`Misc` for non-task sessions. Retrospective renames applied to all 6 existing orx sessions on 2026-09-19.
+
 ### Free / small models in orx (Muse Spark, jev, mimo)
 
 Confirmed working (2026-09-19): `opencode/muse-spark-1.3-contributor-free` responds headless; `jev` and `mimo` not yet fully tested. Free models **can** carry an orx experiment but hit the pure-Python wall fast at n≥4 — pure operator application is too slow even at n=4–5. They need a **scipy/sparse matrix backend**, which k3 reaches for automatically but a free model may need to be told to use.
