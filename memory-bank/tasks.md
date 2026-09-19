@@ -229,12 +229,14 @@ manuscript.md restructured by ORX agent with published baseline and numerical re
 
 **Subtasks** (priority order):
 - T5a: Triple-volume correlations (n≥5) — one vertex handedness vs per-triple chirality. HIGHEST priority; invisible at n=4. ✅ DONE 2026-09-19 (two runs). **Base** (0731eaf, main-orx, k3): no handedness at M=0, sign-agreement 0.50–0.70 (n=6,7). **M-sweep** (c7dde0c, orx/t5a-mag, Muse Spark 1.3): magnetization hypothesis (handedness only at |M|>0) **REFUTED** — sign-agreement 0.50–0.60 at every M in −4..+4; endpoints freeze (q≈1e-17); a↔b mirror exact. Per-triple chirality is robust, NOT rescued by polarization. Caveat: single plane, n=5, modest sign-test power; net χ_V = Σ q_ijk distribution untested. Follow-up: T5a′ (neighbor/Minkowski-local χ_V).
+- T5a′: Kinematic-polyhedron local chirality — restrict chirality to Minkowski-adjacent edge-triples. 🔄 PROPOSED 2026-09-19. Construction: all-incoming convention, A_i=E_i=|p⃗_i|, n_i=ε_i p⃗_i/E_i ⇒ ΣA_i n_i=0 (valid Minkowski input). Pre-registered subsetting (adjacency frozen BEFORE looking at q). Channel-robustness: repeat s/t/u for n=4, incoming-pair for n=5. Feasible now (scipy halfspace-intersection). Full quantum version → T6/T5c. Spec: `implementation-details/T6-minkowski-polyhedron.md`.
 - T5b: Perturbation response V(ε) — is chirality a smooth knob or a phase transition? ✅ DONE 2026-09-19 (86f60d3, orx/t5b-eps, Muse Spark 1.2): clean **α ≈ 0.5** (n=4: 0.497, n=5: 0.499) over 13-point geometric ε-sweep 1e-6..1. V ~ √ε — smooth, non-analytic-but-soft onset, **no threshold/barrier**. Positive cell is a smooth zero of chirality, not a barrier.
 - T5c: Classical volume match — does √(⟨q⟩) equal the reconstructed polyhedron's classical volume?
 - T5d: Cocycle barrier / distance-to-cell scaling — is Gr₊ a smooth zero or a caustic?
 - T5e: Large-K semiclassics — does V ~ K^{3/2} hold at K=20–50?
 - T5f: Amplituhedron kinematics — which scattering regions does Gr₊ cover? (lowest priority)
 - T5g: Performance frontier — n=10–12 Rust profiling (engineering, enables T5a–e)
+- T6: Minkowski polyhedron reconstruction — kinematic (T5a′, feasible now) + full quantum (needs T5c covariance machinery). Spec: `implementation-details/T6-minkowski-polyhedron.md`.
 
 **Notes**:
 Central new result motivating all experiments: the volume operator vanishes exactly on Gr₊(2,N) for N=4–8 and is nonzero immediately off it (achirality of the positive cell). All numerical claims must pass the red-team protocol before being promoted to manuscript results.
@@ -259,6 +261,7 @@ Central new result motivating all experiments: the volume operator vanishes exac
 | T5e | Large-K semiclassics | — | T5 |
 | T5f | Amplituhedron kinematics | — | T5 |
 | T5g | Performance frontier | — | T5 |
+| T6 | Minkowski polyhedron reconstruction | 2026-09-19 | T5 |
 
 ## Task Relationships
 ```mermaid
