@@ -5,9 +5,8 @@
 use lqg_grassmannian::coherent::{area_stats, perelomov, reference_vector};
 use lqg_grassmannian::fock::FockSpace;
 use lqg_grassmannian::grassmannian::plane_to_z;
+use lqg_grassmannian::volume::{volume_operator, GAMMA};
 use num_complex::Complex64;
-
-const GAMMA: f64 = 0.2375;
 
 /// The n = 4 canonical positive plane used throughout the Python pipeline:
 /// positive_region_N4(a=1, b=2, c=0.5, d=1.5).
@@ -43,10 +42,15 @@ fn main() {
     assert_eq!(k_actual, k, "reference occupation must sum to K={k}");
 
     let plane = positive_plane_n4();
-    // complex perturbation identical to positivity.py: dC below
+    // complex perturbation identical to positivity.py's
+    // dC = [[0, 0, 0.3j, 0.2j], [0, 0, -0.5, 0.3j]]
     let d_c: [[f64; 4]; 2] = [
         [0.0, 0.0, 0.3, 0.2],
-        [0.0, 0.0, -0.5, 0.3],
+        [0.0, 0.0, 0.0, 0.3],
+    ];
+    let d_real: [[f64; 4]; 2] = [
+        [0.0, 0.0, 0.0, 0.0],
+        [0.0, 0.0, -0.5, 0.0],
     ];
     let planes: Vec<(&str, Vec<Complex64>)> = vec![
         ("positive", plane.clone()),
@@ -55,7 +59,8 @@ fn main() {
             plane
                 .iter()
                 .zip(d_c.iter().flat_map(|r| r.iter()))
-                .map(|(&p, &d)| p + Complex64::new(0.0, d))
+                .zip(d_real.iter().flat_map(|r| r.iter()))
+                .map(|((&p, &di), &dr)| p + Complex64::new(dr, di))
                 .collect(),
         ),
     ];
@@ -73,9 +78,13 @@ fn main() {
             })
             .collect();
         let closure: f64 = (0..n).map(|e| area_stats(&space, &v, e).0).sum();
+        let (vol, q) = volume_operator(&space, &v, (0, 1, 2));
         println!(
-            "n={n} [{name}] areas <n_e> = [{}]  closure={closure:.9}  ({:.2?})",
+            "n={n} [{name}] areas <n_e> = [{}]  closure={closure:.9}  \
+             V/(gamma*hbar)^1.5={:.6e}  <q>={:+.6e}  ({:.2?})",
             areas.join(", "),
+            vol / GAMMA.powf(1.5),
+            q.re,
             dt
         );
     }

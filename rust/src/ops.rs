@@ -10,7 +10,7 @@ use num_complex::Complex64;
 use rayon::prelude::*;
 use sprs::CsMat;
 
-type CMat = CsMat<Complex64>;
+pub type CMat = CsMat<Complex64>;
 
 fn sqrtf(x: u8) -> f64 {
     (x as f64).sqrt()
@@ -127,7 +127,7 @@ pub fn su2_ops(space: &FockSpace, e: usize) -> (CMat, CMat, CMat) {
 }
 
 /// scalar * matrix (sprs has no f64 * CsMat)
-fn scaled(a: &CMat, s: f64) -> CMat {
+pub fn scaled(a: &CMat, s: f64) -> CMat {
     let mut b = TripletBuilder::new(a.rows());
     for (&v, (r, c)) in a.iter() {
         b.add(r, c, v * s);
