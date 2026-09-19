@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Dashboard</title>
+  <style>
+    :root {
+      --bg: #f8f9fa; --card: #ffffff; --text: #212529; --muted: #6c757d;
+      --border: #dee2e6; --primary: #0d6efd; --success: #198754; --warning: #ffc107;
+      --danger: #dc3545; --info: #0dcaf0; --hover: #f8f9fa; --selected: #e7f1ff;
+      --shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a1d21; --card: #22262b; --text: #e9ecef; --muted: #adb5bd;
+        --border: #343a40; --hover: #2a2f35; --selected: #1a3a5c;
+        --shadow: 0 1px 3px rgba(0,0,0,0.3);
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.5; color: var(--text); background: var(--bg); padding: 20px; }
+    .container { max-width: 1400px; margin: 0 auto; background: var(--card); border-radius: 8px; box-shadow: var(--shadow); padding: 24px; }
+    h1 { font-size: 1.5rem; margin-bottom: 4px; }
+    .subtitle { color: var(--muted); font-size: 0.9rem; margin-bottom: 20px; }
+    .summary { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
+    .summary-card { flex: 1 1 100px; min-width: 90px; max-width: 140px; border: 2px solid; border-radius: 6px; padding: 10px; text-align: center; background: var(--card); }
+    .summary-card .value { font-size: 1.5rem; font-weight: 600; line-height: 1.2; }
+    .summary-card .label { font-size: 0.7rem; color: var(--muted); margin-top: 2px; }
+    h2 { font-size: 1.1rem; margin: 24px 0 12px; padding-bottom: 6px; border-bottom: 2px solid var(--border); }
+    .tabs { display: flex; gap: 4px; margin-bottom: 12px; border-bottom: 1px solid var(--border); }
+    .tab { padding: 8px 16px; border: none; background: none; cursor: pointer; font-size: 0.9rem; border-bottom: 2px solid transparent; color: var(--muted); }
+    .tab.active { border-bottom-color: var(--primary); color: var(--primary); font-weight: 500; }
+    .tab:hover { background: var(--hover); }
+    .filters { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; padding: 12px; background: var(--bg); border-radius: 6px; }
+    .filter-group { display: flex; align-items: center; gap: 6px; }
+    .filter-group label { font-size: 0.8rem; font-weight: 500; color: var(--muted); }
+    select, input[type="text"] { padding: 4px 8px; border: 1px solid var(--border); border-radius: 4px; font-size: 0.85rem; background: var(--card); color: var(--text); }
+    .btn { padding: 4px 12px; border: 1px solid var(--border); border-radius: 4px; background: var(--card); cursor: pointer; font-size: 0.8rem; color: var(--text); }
+    .btn:hover { background: var(--hover); }
+    .btn-primary { border-color: var(--primary); color: var(--primary); }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-bottom: 12px; }
+    th { text-align: left; padding: 8px; border-bottom: 2px solid var(--border); background: var(--bg); font-weight: 600; cursor: pointer; user-select: none; }
+    th:hover { background: var(--hover); }
+    th .sort-arrow { margin-left: 4px; opacity: 0.5; }
+    th.sort-asc .sort-arrow::after { content: '▲'; opacity: 1; }
+    th.sort-desc .sort-arrow::after { content: '▼'; opacity: 1; }
+    td { padding: 6px 8px; border-bottom: 1px solid var(--border); }
+    tr:hover { background: var(--hover); cursor: pointer; }
+    tr.selected { background: var(--selected) !important; }
+    .mono { font-family: 'SF Mono', Monaco, monospace; font-size: 0.8rem; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 500; }
+    .badge-success { background: #d1e7dd; color: #0f5132; }
+    .badge-warning { background: #fff3cd; color: #856404; }
+    .badge-danger { background: #f8d7da; color: #721c24; }
+    @media (prefers-color-scheme: dark) {
+      .badge-success { background: #0f3d25; color: #75b798; }
+      .badge-warning { background: #4d3a0a; color: #ffc107; }
+      .badge-danger { background: #4a1515; color: #f5c2c7; }
+    }
+    .detail-panel { background: var(--bg); border-radius: 6px; padding: 16px; margin-top: 12px; display: none; }
+    .detail-panel.visible { display: block; }
+    .detail-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px; }
+    .detail-grid { display: flex; gap: 12px; flex-wrap: wrap; }
+    .detail-card { flex: 1 1 280px; min-width: 260px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 12px; }
+    .detail-card h4 { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .param-row { display: flex; justify-content: space-between; padding: 3px 0; border-bottom: 1px solid var(--border); font-size: 0.8rem; }
+    .param-key { color: var(--muted); }
+    .param-value { font-family: monospace; word-break: break-all; max-width: 200px; text-align: right; }
+    .figure-grid { display: flex; flex-wrap: wrap; gap: 16px; }
+    .figure-card { flex: 1 1 260px; max-width: 320px; min-width: 220px; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: var(--card); }
+    .figure-img { background: var(--bg); padding: 12px; text-align: center; min-height: 160px; display: flex; align-items: center; justify-content: center; }
+    .figure-img img { max-width: 100%; max-height: 150px; object-fit: contain; cursor: pointer; }
+    .figure-info { padding: 12px; }
+    .figure-title { font-weight: 600; font-size: 0.85rem; margin-bottom: 4px; }
+    .figure-desc { font-size: 0.75rem; color: var(--muted); margin-bottom: 8px; }
+    .tag { font-size: 0.7rem; background: var(--bg); color: var(--muted); padding: 2px 8px; border-radius: 3px; display: inline-block; margin: 2px; }
+    .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); align-items: center; justify-content: center; }
+    .modal.visible { display: flex; }
+    .modal-content { max-width: 90%; max-height: 90%; }
+    .modal-content img { max-width: 100%; max-height: 90vh; border-radius: 4px; }
+    .modal-close { position: absolute; top: 20px; right: 30px; color: white; font-size: 2rem; cursor: pointer; }
+    .hint { font-size: 0.75rem; color: var(--muted); margin-top: 6px; }
+    .loading { text-align: center; padding: 40px; color: var(--muted); }
+    .error { background: #f8d7da; color: #721c24; padding: 12px; border-radius: 6px; margin-bottom: 12px; }
+    @media (prefers-color-scheme: dark) { .error { background: #4a1515; color: #f5c2c7; } }
+    @media (max-width: 768px) {
+      .container { padding: 12px; }
+      .summary-card { flex: 1 1 80px; min-width: 80px; }
+      .filters { flex-direction: column; }
+      .detail-grid { flex-direction: column; }
+    }
+    .hidden { display: none !important; }
+    .chart-container { background: var(--bg); border-radius: 6px; padding: 16px; }
+    .chart-container svg { max-width: 100%; }
+    .detail-panel { background: var(--bg); border-radius: 6px; padding: 16px; margin-top: 12px; border: 2px solid var(--primary); }
+    .detail-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px; }
+    .detail-grid { display: flex; gap: 12px; flex-wrap: wrap; }
+    .detail-card { flex: 1 1 280px; min-width: 260px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 12px; }
+    .detail-card h4 { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
+    .param-row { display: flex; justify-content: space-between; padding: 3px 0; border-bottom: 1px solid var(--border); font-size: 0.8rem; }
+    .param-key { color: var(--muted); }
+    .param-value { font-family: monospace; word-break: break-all; max-width: 200px; text-align: right; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="projectName">Loading...</h1>
+    <p class="subtitle" id="projectSubtitle">Loading...</p>
+
+    <div class="summary" id="summaryCards">
+      <div class="summary-card" style="border-color: var(--primary);">
+        <div class="value" id="totalRuns">—</div><div class="label">Total Runs</div>
+      </div>
+      <div class="summary-card" style="border-color: var(--info);">
+        <div class="value" id="totalTasks">—</div><div class="label">Tasks</div>
+      </div>
+      <div class="summary-card" style="border-color: var(--success);">
+        <div class="value" id="completeRuns">—</div><div class="label">Complete</div>
+      </div>
+      <div class="summary-card" style="border-color: var(--danger);">
+        <div class="value" id="totalFigures">—</div><div class="label">Figures</div>
+      </div>
+    </div>
+
+    <div class="tabs" id="tabBar"></div>
+
+    <div id="runsTab" class="tab-content">
+      <h2>Runs Table</h2>
+      <div class="filters">
+        <div class="filter-group"><label>Status:</label><select id="filterStatus" onchange="filterRuns()"><option>All</option><option>complete</option><option>in-progress</option><option>failed</option></select></div>
+        <div class="filter-group"><label>Search:</label><input type="text" id="filterSearch" placeholder="Run ID, description..." oninput="filterRuns()"></div>
+        <div class="filter-group"><button class="btn" onclick="resetFilters()">Reset</button></div>
+      </div>
+      <div class="table-wrap"><table id="runsTable"><thead><tr id="runsTableHead"></tr></thead><tbody id="runsTableBody"><tr><td colspan="10" class="loading">Loading data...</td></tr></tbody></table></div>
+    </div>
+
+    <div id="figuresTab" class="tab-content hidden">
+      <h2>Figure Archive</h2>
+      <div id="figuresContainer"></div>
+    </div>
+
+    <div id="performanceTab" class="tab-content hidden">
+      <h2>Performance</h2>
+      <div class="filters">
+        <div class="filter-group"><label>X-Axis:</label><select id="perfXAxis"><option value="n">Valence (n)</option><option value="dim">Fock Dimension</option><option value="date">Date</option><option value="time">Runtime</option></select></div>
+        <div class="filter-group"><label>Y-Axis:</label><select id="perfYAxis"><option value="volumePositive">Volume (Positive)</option><option value="volumeComplex">Volume (Complex)</option><option value="dim">Fock Dimension</option></select></div>
+        <div class="filter-group"><label>Chart Type:</label><select id="perfChartType"><option value="scatter">Scatter</option><option value="line">Line</option></select></div>
+        <div class="filter-group"><button class="btn btn-primary" onclick="renderPerformance()">Update Chart</button></div>
+      </div>
+      <div class="chart-container" id="perfChartContainer">
+        <div id="perfChart"></div>
+        <p class="hint" id="perfHint">Select axes and chart type, then click Update Chart.</p>
+      </div>
+    </div>
+
+    <div id="theoryTab" class="tab-content hidden">
+      <h2>Theory Investigations</h2>
+      <div id="theoryContent"></div>
+    </div>
+  </div>
+
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="modal-close">&times;</span>
+    <div class="modal-content"><img id="modalImg" src="" alt=""></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/dist/plot.umd.min.js"></script>
+<script>
+let DATA = {};
+let currentTab = 'runs';
+let sortCol = null, sortAsc = true;
+let filteredRuns = [];
+let selectedRun = null;
+
+async function loadData() {
+  try {
+    const res = await fetch('data.json');
+    if (!res.ok) throw new Error('Failed to load data.json');
+    DATA = await res.json();
+    document.getElementById('projectName').textContent = DATA.project?.name || 'Research Dashboard';
+    document.getElementById('projectSubtitle').textContent = DATA.project?.subtitle || '';
+    renderTabs();
+    renderSummary();
+    renderRuns();
+    renderFigures();
+    renderPerformance();
+    renderTheory();
+  } catch (e) {
+    document.querySelector('.container').innerHTML = `<div class="error">Error: ${e.message}</div>`;
+  }
+}
+
+function renderTabs() {
+  const tabs = DATA.tabs || [{id:'runs',label:'Runs'},{id:'figures',label:'Figures'},{id:'performance',label:'Performance'}];
+  // Auto-add theory tab if tasks/docs exist
+  if ((DATA.tasks?.active?.length || 0) > 0 || (DATA.docs?.length || 0) > 0) {
+    if (!tabs.find(t => t.id === 'theory')) tabs.push({id:'theory',label:'Theory'});
+  }
+  document.getElementById('tabBar').innerHTML = tabs.map(t =>
+    `<button class="tab ${t.id===currentTab?'active':''}" onclick="switchTab('${t.id}')">${t.label}</button>`
+  ).join('');
+}
+
+function switchTab(tab) {
+  currentTab = tab;
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+  document.getElementById(tab + 'Tab').classList.remove('hidden');
+  document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
+  event.target.classList.add('active');
+}
+
+function renderSummary() {
+  const runs = DATA.runs || [];
+  const tasks = DATA.tasks || {};
+  const figures = DATA.figures || [];
+  document.getElementById('totalRuns').textContent = runs.length;
+  document.getElementById('totalTasks').textContent = (tasks.active?.length||0) + (tasks.completed?.length||0) + (tasks.pending?.length||0);
+  document.getElementById('completeRuns').textContent = runs.filter(r => r.status==='complete').length;
+  document.getElementById('totalFigures').textContent = figures.length;
+}
+
+function renderRuns() {
+  const runs = DATA.runs || [];
+  if (runs.length === 0) {
+    document.getElementById('runsTableBody').innerHTML = '<tr><td colspan="10" class="loading">No runs found. Add entries to data.json.</td></tr>';
+    return;
+  }
+  // Determine columns dynamically from first run
+  const keys = Object.keys(runs[0]).filter(k => k !== 'params' && k !== 'figures');
+  document.getElementById('runsTableHead').innerHTML = keys.map(k =>
+    `<th onclick="sortRuns('${k}')">${k} <span class="sort-arrow">▲▼</span></th>`
+  ).join('');
+  filterRuns();
+}
+
+function filterRuns() {
+  const status = document.getElementById('filterStatus')?.value || 'All';
+  const search = (document.getElementById('filterSearch')?.value || '').toLowerCase();
+  filteredRuns = (DATA.runs || []).filter(r => {
+    if (status !== 'All' && r.status !== status) return false;
+    if (search) {
+      const text = JSON.stringify(r).toLowerCase();
+      if (!text.includes(search)) return false;
+    }
+    return true;
+  });
+  if (sortCol) {
+    filteredRuns.sort((a,b) => {
+      const va = a[sortCol], vb = b[sortCol];
+      if (va < vb) return sortAsc ? -1 : 1;
+      if (va > vb) return sortAsc ? 1 : -1;
+      return 0;
+    });
+  }
+  const keys = Object.keys(DATA.runs?.[0] || {}).filter(k => k !== 'params' && k !== 'figures');
+  document.getElementById('runsTableBody').innerHTML = filteredRuns.map((r, idx) =>
+    `<tr onclick="selectRun(${idx})" class="${selectedRun === r.runId ? 'selected' : ''}">${keys.map(k => `<td class="${typeof r[k]==='number'?'mono':''}">${r[k]}</td>`).join('')}</tr>`
+  ).join('') || '<tr><td colspan="' + keys.length + '" class="loading">No matching runs</td></tr>';
+  
+  // Render detail panel if a run is selected
+  if (selectedRun) {
+    const run = DATA.runs?.find(r => r.runId === selectedRun);
+    if (run) renderRunDetail(run);
+  }
+}
+
+function sortRuns(col) {
+  if (sortCol === col) sortAsc = !sortAsc;
+  else { sortCol = col; sortAsc = true; }
+  filterRuns();
+}
+
+function resetFilters() {
+  document.getElementById('filterStatus').value = 'All';
+  document.getElementById('filterSearch').value = '';
+  filterRuns();
+}
+
+function renderFigures() {
+  const figures = DATA.figures || [];
+  const container = document.getElementById('figuresContainer');
+  if (figures.length === 0) {
+    container.innerHTML = '<p class="loading">No figures found. Add entries to data.json.</p>';
+    return;
+  }
+  container.innerHTML = '<div class="figure-grid">' + figures.map(f => `
+    <div class="figure-card">
+      <div class="figure-img"><img src="${f.path}" alt="${f.title}" onclick="openModal('${f.path}')"></div>
+      <div class="figure-info">
+        <div class="figure-title">${f.title}</div>
+        <div class="figure-desc">${f.description || ''}</div>
+        <div>${(f.tags||[]).map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+      </div>
+    </div>
+  `).join('') + '</div>';
+}
+
+function renderPerformance() {
+  const container = document.getElementById('perfChart');
+  const hint = document.getElementById('perfHint');
+  const runs = DATA.runs || [];
+  
+  if (runs.length === 0) {
+    container.innerHTML = '<p class="loading">No run data available for charting.</p>';
+    return;
+  }
+  
+  const xAxis = document.getElementById('perfXAxis')?.value || 'n';
+  const yAxis = document.getElementById('perfYAxis')?.value || 'volumePositive';
+  const chartType = document.getElementById('perfChartType')?.value || 'scatter';
+  
+  // Extract numeric values
+  const data = runs.filter(r => r[yAxis] != null).map(r => {
+    let yVal = r[yAxis];
+    let xVal = r[xAxis];
+    // Parse runtime strings like "264ms", "2.96s", or "3.4s"
+    if (xAxis === 'time' && typeof xVal === 'string') {
+      if (xVal.includes('ms')) {
+        xVal = parseFloat(xVal) / 1000;
+      } else if (xVal.includes('s')) {
+        xVal = parseFloat(xVal);
+      } else if (xVal.includes('m')) {
+        xVal = parseFloat(xVal) * 60;
+      }
+    }
+    if (typeof yVal === 'string') {
+      const match = yVal.match(/[-+]?[0-9]*\.?[0-9]+/);
+      yVal = match ? parseFloat(match[0]) : null;
+    }
+    return { x: xVal, y: yVal, runId: r.runId };
+  }).filter(d => d.y !== null && d.x !== null);
+  
+  if (data.length === 0) {
+    container.innerHTML = '<p class="loading">No numeric data available for selected axes.</p>';
+    return;
+  }
+  
+  // Sort by x for line charts
+  if (chartType === 'line') {
+    data.sort((a, b) => (a.x > b.x ? 1 : a.x < b.x ? -1 : 0));
+  }
+  
+  hint.style.display = 'none';
+  
+  const marks = [];
+  if (chartType === 'scatter') {
+    marks.push(Plot.dot(data, { x: 'x', y: 'y', fill: 'var(--primary)', r: 5 }));
+  } else if (chartType === 'line') {
+    marks.push(Plot.line(data, { x: 'x', y: 'y', stroke: 'var(--primary)', strokeWidth: 2 }));
+    marks.push(Plot.dot(data, { x: 'x', y: 'y', fill: 'var(--primary)', r: 3 }));
+  }
+  marks.push(Plot.ruleY([0], { stroke: 'var(--border)' }));
+  
+  // Simple scatter/line plot with Observable Plot
+  const plot = Plot.plot({
+    width: Math.min(800, document.getElementById('perfChartContainer').clientWidth - 40),
+    height: 300,
+    margin: 50,
+    x: { label: xAxis },
+    y: { label: yAxis },
+    marks: marks
+  });
+  
+  container.innerHTML = '';
+  container.appendChild(plot);
+}
+
+function selectRun(idx) {
+  const run = filteredRuns[idx];
+  if (!run) return;
+  selectedRun = run.runId;
+  filterRuns(); // Re-render to show selection highlight
+}
+
+function renderRunDetail(run) {
+  let html = '<div class="detail-panel visible">';
+  html += '<div class="detail-header">';
+  html += `<h3>Run Details: ${run.runId}</h3>`;
+  html += '<button class="btn" onclick="closeDetail()">Close</button>';
+  html += '</div>';
+  html += '<div class="detail-grid">';
+  
+  // Parameters card
+  html += '<div class="detail-card">';
+  html += '<h4>Parameters</h4>';
+  Object.entries(run).filter(([k]) => k !== 'params' && k !== 'figures').forEach(([k, v]) => {
+    html += `<div class="param-row"><span class="param-key">${k}</span><span class="param-value">${v}</span></div>`;
+  });
+  html += '</div>';
+  
+  // Extra params if present
+  if (run.params) {
+    html += '<div class="detail-card">';
+    html += '<h4>Extended Parameters</h4>';
+    Object.entries(run.params).forEach(([k, v]) => {
+      html += `<div class="param-row"><span class="param-key">${k}</span><span class="param-value">${v}</span></div>`;
+    });
+    html += '</div>';
+  }
+  
+  // Related figures
+  if (run.figures && run.figures.length > 0) {
+    html += '<div class="detail-card">';
+    html += '<h4>Related Figures</h4>';
+    html += '<div class="figure-grid">';
+    run.figures.forEach(fig => {
+      html += `<div class="figure-card"><div class="figure-img"><img src="${fig.path}" alt="${fig.title}" onclick="openModal('${fig.path}')" style="max-height:100px;"></div><div class="figure-info"><div class="figure-title">${fig.title}</div></div></div>`;
+    });
+    html += '</div></div>';
+  }
+  
+  html += '</div></div>';
+  
+  // Insert or update detail panel
+  let panel = document.getElementById('runDetailPanel');
+  if (!panel) {
+    panel = document.createElement('div');
+    panel.id = 'runDetailPanel';
+    document.getElementById('runsTab').appendChild(panel);
+  }
+  panel.innerHTML = html;
+}
+
+function closeDetail() {
+  selectedRun = null;
+  const panel = document.getElementById('runDetailPanel');
+  if (panel) panel.innerHTML = '';
+  filterRuns();
+}
+
+function renderTheory() {
+  const tasks = DATA.tasks || {};
+  const docs = DATA.docs || [];
+  let html = '';
+  if ((tasks.active?.length || 0) > 0) {
+    html += '<h3>Active</h3><div class="figure-grid">' + tasks.active.map(t => renderTaskCard(t)).join('') + '</div>';
+  }
+  if ((tasks.completed?.length || 0) > 0) {
+    html += '<h3>Completed</h3><div class="figure-grid">' + tasks.completed.map(t => renderTaskCard(t)).join('') + '</div>';
+  }
+  if ((tasks.pending?.length || 0) > 0) {
+    html += '<h3>Pending</h3><div class="figure-grid">' + tasks.pending.map(t => renderTaskCard(t)).join('') + '</div>';
+  }
+  if (docs.length > 0) {
+    html += '<h3>Documentation</h3><ul>' + docs.map(d => `<li><a href="${d.file}">${d.title}</a> — ${d.description}</li>`).join('') + '</ul>';
+  }
+  document.getElementById('theoryContent').innerHTML = html || '<p class="loading">No theory data found. Add entries to data.json.</p>';
+}
+
+function renderTaskCard(t) {
+  return `
+    <div class="figure-card" style="padding:12px;">
+      <div class="figure-title">${t.id ? '['+t.id+'] ' : ''}${t.title}</div>
+      <div class="figure-desc">${t.description}</div>
+      <div>${(t.tags||[]).map(tag=>`<span class="tag">${tag}</span>`).join('')}</div>
+    </div>
+  `;
+}
+
+function openModal(src) { document.getElementById('modalImg').src = src; document.getElementById('imageModal').classList.add('visible'); }
+function closeModal() { document.getElementById('imageModal').classList.remove('visible'); }
+
+loadData();
+</script>
+</body>
+</html>

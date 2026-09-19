@@ -1,0 +1,157 @@
+{
+  "project": {
+    "name": "LQG-Grassmannian Correspondence",
+    "subtitle": "Quantum volume of U(N) coherent states on the positive Grassmannian"
+  },
+  "tabs": [
+    { "id": "runs", "label": "Runs & Results" },
+    { "id": "figures", "label": "Figure Archive" },
+    { "id": "performance", "label": "Performance" },
+    { "id": "theory", "label": "Theory" }
+  ],
+  "runs": [
+    {
+      "runId": "t3a-fock-rust",
+      "task": "T3a",
+      "status": "complete",
+      "description": "Rust Fock space basis + sparse u(N) operators",
+      "dim": 10,
+      "n": 4,
+      "commit": "ee3ff0e",
+      "date": "2026-09-19",
+      "params": {
+        "language": "Rust",
+        "crates": ["sprs", "rayon", "nalgebra"]
+      },
+      "figures": []
+    },
+    {
+      "runId": "t3b-coherent-rust",
+      "task": "T3b",
+      "status": "complete",
+      "description": "U(N) Perelomov coherent states + Grassmannian embedding",
+      "dim": 10,
+      "n": 4,
+      "commit": "42ce24e",
+      "date": "2026-09-19",
+      "params": {
+        "language": "Rust"
+      },
+      "figures": []
+    },
+    {
+      "runId": "t3c-volume-rust",
+      "task": "T3c",
+      "status": "complete",
+      "description": "BHT volume operator, sparse matrix construction",
+      "dim": 10,
+      "n": 4,
+      "commit": "ee72845",
+      "date": "2026-09-19",
+      "params": {
+        "formula": "Bianchi-Haggard-Thiemann",
+        "precision": "f64"
+      },
+      "figures": []
+    },
+    {
+      "runId": "t3d-verify4",
+      "task": "T3d",
+      "status": "complete",
+      "description": "n=4 verification: Rust vs Python machine precision match",
+      "n": 4,
+      "dim": 10,
+      "volumePositive": 1.41e-9,
+      "volumeComplex": 2.91e-2,
+      "qExpectationPositive": 0.0,
+      "qExpectationComplex": -8.50e-4,
+      "closure": 6.0,
+      "time": "12ms",
+      "date": "2026-09-19",
+      "commit": "c0908cf",
+      "params": {
+        "tolerance": "1e-12",
+        "match": true
+      },
+      "figures": []
+    },
+    {
+      "runId": "t3e-scan-n5",
+      "task": "T3e",
+      "status": "complete",
+      "description": "Benchmark scan n=5..8",
+      "n": 5,
+      "K": 8,
+      "dim": 43758,
+      "volumePositive": 1.56e-9,
+      "volumeComplex": 3.39e-2,
+      "time": "264ms",
+      "date": "2026-09-19",
+      "commit": "c0908cf",
+      "params": {},
+      "figures": []
+    },
+    {
+      "runId": "t3e-scan-n6",
+      "task": "T3e",
+      "status": "complete",
+      "description": "Benchmark scan n=6",
+      "n": 6,
+      "K": 9,
+      "dim": 293930,
+      "volumePositive": 9.91e-10,
+      "volumeComplex": 1.43e-3,
+      "time": "2.96s",
+      "date": "2026-09-19",
+      "commit": "c0908cf",
+      "params": {},
+      "figures": []
+    },
+    {
+      "runId": "t3e-scan-n7",
+      "task": "T3e",
+      "status": "complete",
+      "description": "Benchmark scan n=7",
+      "n": 7,
+      "K": 6,
+      "dim": 38760,
+      "volumePositive": 3.75e-10,
+      "volumeComplex": 1.19e-2,
+      "time": "299ms",
+      "date": "2026-09-19",
+      "commit": "c0908cf",
+      "params": {},
+      "figures": []
+    },
+    {
+      "runId": "t3e-scan-n8",
+      "task": "T3e",
+      "status": "complete",
+      "description": "Benchmark scan n=8",
+      "n": 8,
+      "K": 6,
+      "dim": 74613,
+      "volumePositive": 6.22e-10,
+      "volumeComplex": 1.06e-2,
+      "time": "724ms",
+      "date": "2026-09-19",
+      "commit": "c0908cf",
+      "params": {},
+      "figures": []
+    }
+  ],
+  "summary": {
+    "totalRuns": 8,
+    "completeRuns": 8,
+    "zeroVolumeConfirmed": true,
+    "nRangeVerified": "4-8",
+    "maxRuntime": "3.35s",
+    "publishedPaper": "EPJC (2026)",
+    "followUpManuscript": "In progress"
+  },
+  "theory": {
+    "description": "The volume operator vanishes identically on the positive Grassmannian cell Gr+(k,n). The amplituhedron region corresponds to classical, zero-volume geometry. Quantum volume lives in the complex extension.",
+    "citation": "D. Vaid, 'LQG and the Amplituhedron', EPJC (2026)",
+    "arxiv": "2208.10632"
+  }
+}
