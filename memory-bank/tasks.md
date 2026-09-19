@@ -228,8 +228,8 @@ manuscript.md restructured by ORX agent with published baseline and numerical re
 **Roadmap**: `memory-bank/implementation-details/experiments.md`
 
 **Subtasks** (priority order):
-- T5a: Triple-volume correlations (n≥5) — one vertex handedness vs per-triple chirality. HIGHEST priority; invisible at n=4. 🔄 IN PROGRESS (2026-09-19): base result committed `0731eaf` on main-orx — no global handedness at M=0 (sign-agreement 0.50–0.70, n=6,7). **Magnetization sweep (M = (N_a−N_b)/2) pending** — orx is preparing it via the Experiments panel. Prematurely marked DONE earlier; corrected.
-- T5b: Perturbation response V(ε) — is chirality a smooth knob or a phase transition?
+- T5a: Triple-volume correlations (n≥5) — one vertex handedness vs per-triple chirality. HIGHEST priority; invisible at n=4. ✅ DONE 2026-09-19 (two runs). **Base** (0731eaf, main-orx, k3): no handedness at M=0, sign-agreement 0.50–0.70 (n=6,7). **M-sweep** (c7dde0c, orx/t5a-mag, Muse Spark 1.3): magnetization hypothesis (handedness only at |M|>0) **REFUTED** — sign-agreement 0.50–0.60 at every M in −4..+4; endpoints freeze (q≈1e-17); a↔b mirror exact. Per-triple chirality is robust, NOT rescued by polarization. Caveat: single plane, n=5, modest sign-test power; net χ_V = Σ q_ijk distribution untested. Follow-up: T5a′ (neighbor/Minkowski-local χ_V).
+- T5b: Perturbation response V(ε) — is chirality a smooth knob or a phase transition? ✅ DONE 2026-09-19 (86f60d3, orx/t5b-eps, Muse Spark 1.2): clean **α ≈ 0.5** (n=4: 0.497, n=5: 0.499) over 13-point geometric ε-sweep 1e-6..1. V ~ √ε — smooth, non-analytic-but-soft onset, **no threshold/barrier**. Positive cell is a smooth zero of chirality, not a barrier.
 - T5c: Classical volume match — does √(⟨q⟩) equal the reconstructed polyhedron's classical volume?
 - T5d: Cocycle barrier / distance-to-cell scaling — is Gr₊ a smooth zero or a caustic?
 - T5e: Large-K semiclassics — does V ~ K^{3/2} hold at K=20–50?

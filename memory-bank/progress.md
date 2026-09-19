@@ -23,7 +23,7 @@
 - ⬜ Circulate for review
 
 ### T5: Experiments
-**Status:** 🔄 IN PROGRESS (T5a M-sweep running; T5b fired on muse-spark; T5c–T5g ⬜ PROPOSED)
+**Status:** 🔄 IN PROGRESS (T5a ✅ DONE incl. M-sweep; T5b ✅ DONE; T5a′ neighbor/Minkowski-χ_V proposed; T5c–T5g ⬜ PROPOSED)
 **Priority:** HIGH
 
 **Roadmap:** `memory-bank/implementation-details/experiments.md`
