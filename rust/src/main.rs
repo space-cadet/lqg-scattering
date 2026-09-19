@@ -4,7 +4,7 @@
 
 use lqg_grassmannian::coherent::{area_stats, perelomov, reference_vector};
 use lqg_grassmannian::fock::FockSpace;
-use lqg_grassmannian::grassmannian::plane_to_z;
+use lqg_grassmannian::grassmannian::{plane_to_z, positive_plane_curve};
 use lqg_grassmannian::volume::{volume_operator, GAMMA};
 use num_complex::Complex64;
 
@@ -21,25 +21,26 @@ fn positive_plane_n4() -> Vec<Complex64> {
 }
 
 fn main() {
-    let n = std::env::args()
-        .nth(1)
-        .and_then(|s| s.parse::<usize>().ok())
-        .unwrap_or(4);
+    let args: Vec<String> = std::env::args().collect();
+    let mode = args.get(1).map(|s| s.as_str()).unwrap_or("verify4");
+    match mode {
+        "verify4" => verify4(),
+        "scan" => scan(),
+        _ => {
+            eprintln!("usage: lqg [verify4|scan]");
+            std::process::exit(2);
+        }
+    }
+}
+
+/// n = 4 verification against the Python pipeline (positivity.py):
+/// canonical positive plane and its complex perturbation dC, reference
+/// occupations [(1,1),(1,1),(1,0),(1,0)] (K = 6).
+fn verify4() {
+    let n = 4;
     let k = 6;
     let space = FockSpace::new(n, k);
-    let ref_occ: Vec<(u8, u8)> = if n == 4 {
-        vec![(1, 1), (1, 1), (1, 0), (1, 0)]
-    } else {
-        // a-boson on every edge, b-bosons on the volume triple (0,1,2)
-        let mut r = vec![(1u8, 0u8); n];
-        for e in r.iter_mut().take(3) {
-            e.1 = 1;
-        }
-        r
-    };
-    // k must equal total occupation
-    let k_actual: usize = ref_occ.iter().map(|&(a, b)| (a + b) as usize).sum();
-    assert_eq!(k_actual, k, "reference occupation must sum to K={k}");
+    let ref_occ: Vec<(u8, u8)> = vec![(1, 1), (1, 1), (1, 0), (1, 0)];
 
     let plane = positive_plane_n4();
     // complex perturbation identical to positivity.py's
@@ -87,5 +88,55 @@ fn main() {
             q.re,
             dt
         );
+    }
+}
+
+/// Higher-n benchmark: random positive plane (moment curve) vs. the same
+/// plane with an imaginary perturbation, for n = 5..8. References: full
+/// vertex (a on every edge, b on the triple) for n <= 6; triple-local
+/// (K = 6) for n >= 7 to keep the Fock space moderate.
+fn scan() {
+    println!("{:>3} {:>10} {:>14} {:>14} {:>10}", "n", "K", "dim", "V/g^1.5", "time");
+    for n in 5..=8usize {
+        let ref_occ: Vec<(u8, u8)> = if n <= 6 {
+            let mut r = vec![(1u8, 0u8); n];
+            for e in r.iter_mut().take(3) {
+                e.1 = 1;
+            }
+            r
+        } else {
+            let mut r = vec![(0u8, 0u8); n];
+            for e in r.iter_mut().take(3) {
+                *e = (1, 1);
+            }
+            r
+        };
+        let k: usize = ref_occ.iter().map(|&(a, b)| (a + b) as usize).sum();
+        let space = FockSpace::new(n, k);
+        let plane = positive_plane_curve(n, 100 + n as u64);
+        // imaginary perturbation violating the minor-phase cocycle
+        let mut cplane = plane.clone();
+        for i in 0..n {
+            cplane[n + i] += Complex64::new(0.0, 0.35 * (i as f64 + 0.5));
+        }
+        let rv = reference_vector(&space, &ref_occ);
+        for (name, pl) in [("positive", &plane), ("complex", &cplane)] {
+            let z = plane_to_z(pl, n);
+            let t0 = std::time::Instant::now();
+            let v = perelomov(&space, &z, &rv, 1e-13);
+            let (vol, q) = volume_operator(&space, &v, (0, 1, 2));
+            let dt = t0.elapsed();
+            println!(
+                "{n:>3} {k:>10} {:>14} {:>14.6e} {:>10.2?}",
+                space.dim,
+                vol / GAMMA.powf(1.5),
+                dt
+            );
+            if name == "positive" {
+                assert!(q.norm() < 1e-10, "V must vanish on Gr+(2,{n})");
+            } else {
+                assert!(vol > 1e-6, "V must be nonzero off Gr+(2,{n})");
+            }
+        }
     }
 }
