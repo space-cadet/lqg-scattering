@@ -274,29 +274,36 @@ def _dot_ops(Ji, Jj):
     return op
 
 
-def volume_operator(state, space, gamma=GAMMA, hbar=1.0):
-    """LQG volume of a 4-valent vertex in a U(4) coherent state.
+def volume_operator(state, space, gamma=GAMMA, hbar=1.0, triple=(0, 1, 2)):
+    """LQG volume of an n-valent vertex in a U(N) coherent state.
 
-    Uses the De Pietri / Rovelli-Smolin construction on the four edges:
-    with q = i[J_1.J_2, J_2.J_3] (Schwinger angular momenta),
+    Uses the De Pietri / Rovelli-Smolin commutator on a triple of edges
+    (i, j, k):  q = i[J_i.J_j, J_j.k],  V = (gamma*hbar)^{3/2} sqrt(|<q>|).
 
-        V = (gamma * hbar)^{3/2} sqrt(|<q>|).
+    For a 4-valent vertex there is a single independent triple up to
+    symmetry (the default (0, 1, 2)); for n > 4 several inequivalent
+    triples exist (the full n-valent volume combines them — Bianchi,
+    Dona & Speziale-style — but any single triple already probes
+    chirality, which is what the positivity question requires).
+
+    Note the two exact zero mechanisms (see module discussion):
+    * all-a/b references freeze the spins and give <q> = 0;
+    * real planes give real amplitudes and <q> = 0 for ANY triple.
 
     Returns
     -------
     V : float
     q_expectation : complex
-        <q> in the state (purely real up to numerical noise for
-        normalized states).
     """
-    if space.N != 4:
-        raise ValueError("4-valent vertex requires a 4-edge state")
+    if space.N < 3:
+        raise ValueError("volume needs at least a 3-valent vertex")
     # The U(N) exponential conserves N_a and N_b separately, so a reference
     # containing only a-bosons (N_b = 0) freezes every spin along +z and
     # the chiral commutator has zero expectation. A reference with both
     # oscillator types (a genuine spin-network vertex occupation) is needed.
-    J = [su2_ops(i) for i in range(4)]
-    J12, J23 = _dot_ops(J[0], J[1]), _dot_ops(J[1], J[2])
+    i, j, k = triple
+    J = [su2_ops(e) for e in range(space.N)]
+    J12, J23 = _dot_ops(J[i], J[j]), _dot_ops(J[j], J[k])
 
     # q = i [J12, J23]; expectation on the state.
     vec = space.vec(state)
@@ -370,6 +377,205 @@ def volume_vs_s(a=None, b=None, c=None, d=None, ref_occupations=None,
         out[label] = {"s": s_arr, "V": v_arr, "exponent": exponent}
     out["params"] = params
     return out
+
+
+def positive_plane_curve(N, seed=None, t_min=0.2, t_max=3.0):
+    """Random positive plane in Gr+(2, N) from a convex polygon.
+
+    Columns lambda_i = (t_i, t_i^2) with 0 < t_1 < ... < t_N give minors
+
+        M_ij = t_i t_j (t_j - t_i) > 0   for i < j,
+
+    so the plane is strictly positive (points on a parabola are vertices
+    of a strictly convex polygon; this is the standard moment-curve
+    construction of the top cell). Returns the real positive plane.
+    """
+    rng = np.random.default_rng(seed)
+    t = np.sort(rng.uniform(t_min, t_max, size=N))
+    return np.stack([t, t * t])
+
+
+def spin_vectors(state, space):
+    """Expectation values <J_i^a>, a = x, y, z, for every edge.
+
+    Returns ndarray of shape (N, 3). Because the U(N) exponential
+    conserves N_a and N_b separately, <J_i^+> = <J_i^-> = 0 identically:
+    every vector lies exactly on the z axis (collinear, hence coplanar).
+    """
+    from coherent_states import expectation as _exp
+
+    def jx(e):
+        J = su2_ops(e)
+        return lambda occ: ([(o, 0.5 * f) for o, f in J["plus"](occ)]
+                            + [(o, 0.5 * f) for o, f in J["minus"](occ)])
+
+    def jy(e):
+        J = su2_ops(e)
+        return lambda occ: ([(o, 0.5 / 1j * f) for o, f in J["plus"](occ)]
+                            + [(o, -0.5 / 1j * f) for o, f in J["minus"](occ)])
+
+    out = []
+    for e in range(space.N):
+        out.append([
+            _exp(state, jx(e), space).real,
+            _exp(state, jy(e), space).real,
+            _exp(state, su2_ops(e)["z"], space).real,
+        ])
+    return np.array(out)
+
+
+def coplanarity(normals):
+    """Max over triples of |det[n_i, n_j, n_k]| for unit normals.
+
+    0 = all normals coplanar (or collinear); 1 = maximally non-coplanar.
+    """
+    n = np.asarray(normals, dtype=float)
+    norms = np.linalg.norm(n, axis=1)
+    n = n / np.where(norms[:, None] == 0, 1.0, norms[:, None])
+    worst = 0.0
+    for i in range(len(n)):
+        for j in range(i + 1, len(n)):
+            for k in range(j + 1, len(n)):
+                worst = max(worst, abs(float(np.linalg.det(
+                    np.stack([n[i], n[j], n[k]])))))
+    return worst
+
+
+def vertex_reference(N, triple=(0, 1, 2)):
+    """Reference occupation for an n-valent volume probe: one a-boson on
+    every edge, plus one b-boson on the volume triple (K = N + 3).
+
+    The b-bosons must sit on the triple's edges (the all-a mechanism
+    freezes the chiral commutator otherwise). Keeping K = N + 3 leaves
+    the Fock space small enough for n = 5, 6.
+    """
+    ref = np.zeros((N, 2), dtype=int)
+    ref[:, 0] = 1
+    ref[list(triple), 1] = 1
+    return ref
+
+
+def volume_vs_perturbation(N, epsilons=None, ref_occupations=None,
+                           triple=(0, 1, 2), seed=0, verbose=True):
+    """Volume response to a complex perturbation of a positive plane.
+
+    Starts from a random real positive plane C0 in Gr+(2, N) and adds a
+    fixed random imaginary perturbation scaled by epsilon:
+
+        C(eps) = C0 + i * eps * dC,    dC real, generic.
+
+    For eps = 0 the plane is real and the volume vanishes exactly (real
+    Fock amplitudes). For eps > 0 the minors' phase cocycle is violated,
+    amplitudes become complex, and <q> grows linearly in eps — so
+    V ~ eps^{1/2}. The fit verifies this and quantifies how sharply the
+    positive cell is singled out as the achiral locus.
+
+    Returns
+    -------
+    dict with 'epsilon', 'V', 'q', 'coplanarity', 'exponent'
+    (log-log slope of V vs eps), and 'V_on_positive'.
+    """
+    if epsilons is None:
+        epsilons = np.geomspace(1e-4, 1.0, 5)
+    if ref_occupations is None:
+        ref_occupations = vertex_reference(N, triple)
+    k = int(np.sum(ref_occupations))
+    C0 = positive_plane_curve(N, seed=seed)
+    rng = np.random.default_rng(seed + 1)
+    dC = rng.normal(size=(2, N))
+    # make sure the perturbation genuinely violates the phase cocycle
+    assert not is_positive_plane(C0 + 1j * 0.5 * dC / np.abs(dC).max())
+
+    eps_list, v_list, q_list, cop_list = [], [], [], []
+    V0 = None
+    for eps in epsilons:
+        C = C0 + 1j * eps * dC
+        Z = plane_to_Z(C)
+        state, space = perelomov_state(Z, k_max=k,
+                                       ref_occupations=ref_occupations)
+        V, q = volume_operator(state, space, triple=triple)
+        cop = coplanarity(spin_vectors(state, space))
+        if eps == epsilons[0]:
+            V0 = V
+        eps_list.append(float(eps))
+        v_list.append(V)
+        q_list.append(q.real)
+        cop_list.append(cop)
+        if verbose:
+            print(f"  N={N} eps={eps:8.4f}  V/(gamma*hbar)^1.5="
+                  f"{V / GAMMA ** 1.5:10.6f}  <q>={q.real:+.6f}  "
+                  f"max|det normals|={cop:.3e}")
+    eps_arr, v_arr = np.array(eps_list), np.array(v_list)
+    exponent = float(np.polyfit(np.log(eps_arr), np.log(v_arr), 1)[0])
+    if verbose:
+        print(f"  N={N}: V ~ eps^{exponent:.3f} (linear <q> predicts 0.5); "
+              f"V(eps=0 limit) = {V0 / GAMMA ** 1.5:.2e}")
+    return {
+        "epsilon": eps_arr,
+        "V": v_arr,
+        "q": np.array(q_list),
+        "coplanarity": np.array(cop_list),
+        "exponent": exponent,
+    }
+
+
+def example_higher_n(N, seed=0, verbose=True):
+    """Higher-n positivity/volume summary for one random Gr+(2, N) plane.
+
+    Checks, for a random positive plane: (a) positivity accepted; (b) all
+    face normals (spin expectation vectors) are collinear on the z axis,
+    hence coplanar; (c) the volume on the real plane vanishes exactly for
+    every triple of edges; (d) small complex perturbations make it grow.
+    """
+    C0 = positive_plane_curve(N, seed=seed)
+    ok, _ = is_positive_plane(C0, return_info=True)
+    triples = [(0, 1, 2)] + ([(0, 1, N - 1)] if N > 4 else [])
+    ref = vertex_reference(N, triple=(0, 1, 2))
+    k = int(ref.sum())
+    state, space = perelomov_state(plane_to_Z(C0), k_max=k,
+                                   ref_occupations=ref)
+    normals = spin_vectors(state, space)
+    cop = coplanarity(normals)
+    volumes = {}
+    for triple in triples:
+        V, q = volume_operator(state, space, triple=triple)
+        volumes[triple] = V
+    if verbose:
+        print(f"N={N}: positive={ok}, max|det normals|={cop:.3e}, "
+              f"<J_i> z-components={np.round(normals[:, 2], 3)}")
+        for triple, V in volumes.items():
+            print(f"     triple {triple}: V/(gamma*hbar)^1.5 = "
+                  f"{V / GAMMA ** 1.5:.3e}")
+    return {
+        "positive": ok,
+        "coplanarity": cop,
+        "normals": normals,
+        "volumes": volumes,
+        "state": state,
+        "space": space,
+        "plane": C0,
+    }
+
+
+def _test_higher_n():
+    print("\n=== Higher-n positivity and volume (n = 5, 6) ===")
+    results = {}
+    for N in (5, 6):
+        res = example_higher_n(N, seed=42 + N)
+        results[N] = res
+        assert res["positive"], "moment-curve plane must be positive"
+        assert res["coplanarity"] < 1e-12, "normals must stay z-aligned"
+        assert all(V < 1e-8 for V in res["volumes"].values()), \
+            "volume must vanish on real positive planes for any triple"
+        scan = volume_vs_perturbation(N, seed=42 + N)
+        results[N]["scan"] = scan
+        assert 0.25 < scan["exponent"] < 0.9, scan["exponent"]
+        assert np.all(np.diff(scan["V"]) > -1e-12), "V must grow with eps"
+        assert np.all(scan["coplanarity"] < 1e-12), \
+            "normals remain collinear even off Gr+"
+    print("\nHigher-n tests passed: V = 0 on Gr+(2, n) for n = 5, 6 "
+          "(any triple), V ~ eps^{1/2} off it, normals always collinear.")
+    return results
 
 
 def _test():
@@ -456,3 +662,4 @@ def _test():
 
 if __name__ == "__main__":
     _test()
+    _test_higher_n()
