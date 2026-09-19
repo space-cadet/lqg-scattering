@@ -112,18 +112,47 @@ Two results stand out:
    complete vertex reference, dim 293,930) — two orders of magnitude inside
    the 1-minute target, and ~100× faster than Python at n = 4.
 
+### 2.4 Experiment T5a: triple-volume correlations (n = 6, 7)
+
+New in the follow-up program (spec:
+`memory-bank/implementation-details/experiments.md`). From ONE Perelomov
+state on a complex plane, with uniform reference (1,1) on every edge (no
+triple privileged, K = 2n), compute q_ijk = i⟨[A_ij, A_jk]⟩ on every
+C(n,3) triple, and test whether the vertex carries a single handedness
+(correlated signs) or per-triple chirality (independent). n = 6 uses the
+stored engine (dim 2,704,156); n = 7 uses a new on-the-fly engine
+(combinatorial rank indexing + atomic-scatter matvec, dim 40,116,600, no
+stored operators).
+
+**Results.**
+
+| n | seeds | sign-agreement | Pearson \|q\| across seeds | Pearson signed q |
+|---|---|---|---|---|
+| 6 | 1000/2000/3000 | 0.55 / 0.70 / 0.50 | −0.23, +0.27, +0.04 | +0.21, −0.42, −0.08 |
+| 7 | 1000/2000 | 0.51 / 0.56 | +0.10 | +0.44 |
+
+**Verdict: per-triple chirality.** Sign-agreement sits at the binomial
+level everywhere; |q| magnitudes are uncorrelated across independent
+states (fluctuation-driven, not geometry-determined); signed-q
+correlations are small. A U(N) coherent-state vertex does not carry a
+global handedness — chirality is an independent property of each edge
+triple. (Caveats: 20–35 triples per state limits sign-test power; n = 8
+unresolved — the uniform reference needs ~10 GB/vector, beyond this node.)
+
 ## 3. Discussion
 
 The published correspondence is now backed by complete numerical
 verification at n = 4, and extended to n = 5–8 by the Rust port. The new
 volume–positivity connection — the positive Grassmannian cell as the
 achiral locus of the dual quantum geometry — was invisible in the analytic
-treatment and is the main quantitative addition of this follow-up. Open
-directions: characterize ⟨q⟩ as a measure on Gr(2, N) \ Gr+ (is it
-log-barrier-like in the minor-phase cocycle?); large-K asymptotics of the
-volume at fixed shape; amplitude dynamics (Grassmannian measure,
-momentum-twistor map), which remains the missing link to actual
-scattering amplitudes.
+treatment and is the main quantitative addition of this follow-up; T5a
+adds that the off-cell chirality is per-triple, not a vertex-global
+handedness. Open directions: characterize ⟨q⟩ as a measure on
+Gr(2, N) \ Gr+ (is it log-barrier-like in the minor-phase cocycle?);
+a sharper handedness test with sign-controlled perturbations over ≥ 10
+seeds; n = 8 on larger memory; large-K asymptotics of the volume at fixed
+shape; amplitude dynamics (Grassmannian measure, momentum-twistor map),
+which remains the missing link to actual scattering amplitudes.
 
 ## 4. Conclusions
 
