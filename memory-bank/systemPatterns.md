@@ -63,3 +63,11 @@ When firing an experiment to an orx agent, **always** include these three things
 3. **Sanity-check the reference/measurement.** Tell the agent which reference occupation / measurement choice could trivially produce the result, and to verify that choice before trusting the number. (Pattern: the uniform `(1,1)` reference is `M=0`, which trivially kills handedness — always flag such degenerate cases.)
 
 The T5a steering message (2026-09-19) is the worked example: it gave the spec path, the magnetization hypothesis as a probe, and the instruction to sweep `M` rather than trust the `M=0` baseline.
+
+### Free / small models in orx (Muse Spark, jev, mimo)
+
+Confirmed working (2026-09-19): `opencode/muse-spark-1.3-contributor-free` responds headless; `jev` and `mimo` not yet fully tested. Free models **can** carry an orx experiment but hit the pure-Python wall fast at n≥4 — pure operator application is too slow even at n=4–5. They need a **scipy/sparse matrix backend**, which k3 reaches for automatically but a free model may need to be told to use.
+
+**"Is the orx session stuck?" heuristic** — "no file writes" ≠ "stuck". The agent may be mid-model-generation (e.g. working out a backend rewrite) with no file activity. Check: (1) the assistant message stream — is a new assistant message appearing / is the reasoning advancing? and (2) is `opencode serve` alive? Only call it hung if the message stream has stalled for many minutes AND the engine process is gone.
+
+**Credit note:** at large context usage (200k+ tokens) Kimi credit consumption accelerates. For long experiments, checkpoint to a fresh session (or a free model) before the context bloats.
