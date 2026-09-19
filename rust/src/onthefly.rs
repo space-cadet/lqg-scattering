@@ -250,12 +250,28 @@ pub fn apply_jdot(sp: &OtfSpace, i: usize, j: usize, v: &[Complex64]) -> Vec<Com
 
 
 /// Perelomov state exp(A)|ref> via Taylor series, on-the-fly matvecs.
+///
+/// Cap is 8K+50 with early break at tol: the audit child node showed 2K+4
+/// truncates at large K (74-79 iterations needed at K=22-24). Use
+/// `perelomov_otf_diag` when convergence must be reported.
 pub fn perelomov_otf(
     sp: &OtfSpace,
     z: &[Complex64],
     ref_occ: &[(u8, u8)],
     tol: f64,
 ) -> Vec<Complex64> {
+    perelomov_otf_diag(sp, z, ref_occ, tol, 8 * sp.k + 50).0
+}
+
+/// Same, with explicit cap; returns (state, iters_used, converged).
+/// A saturated cap (converged=false) means the state is UNRELIABLE.
+pub fn perelomov_otf_diag(
+    sp: &OtfSpace,
+    z: &[Complex64],
+    ref_occ: &[(u8, u8)],
+    tol: f64,
+    cap: usize,
+) -> (Vec<Complex64>, usize, bool) {
     let mut flat = vec![0u8; 2 * sp.n];
     for (i, &(a, b)) in ref_occ.iter().enumerate() {
         flat[2 * i] = a;
@@ -265,7 +281,9 @@ pub fn perelomov_otf(
     let mut result = vec![Complex64::zero(); sp.dim];
     result[r0] = Complex64::one();
     let mut term = result.clone();
-    for it in 1..(2 * sp.k + 4) {
+    let mut used = 0usize;
+    let mut converged = false;
+    for it in 1..cap {
         term = apply_gen(sp, z, &term);
         let f = 1.0 / it as f64;
         for x in term.iter_mut() {
@@ -276,7 +294,9 @@ pub fn perelomov_otf(
         for (r, t) in result.iter_mut().zip(term.iter()) {
             *r += t;
         }
+        used = it;
         if inc < tol * res.max(1.0) {
+            converged = true;
             break;
         }
     }
@@ -284,7 +304,7 @@ pub fn perelomov_otf(
     for x in result.iter_mut() {
         *x /= norm;
     }
-    result
+    (result, used, converged)
 }
 
 #[cfg(test)]
