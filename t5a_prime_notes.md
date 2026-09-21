@@ -18,7 +18,7 @@ Plane column-momenta generically do NOT close under any sign assignment
 (closure is 3 continuous equations; sign flips are discrete), so the
 protocol generates conserved kinematics FIRST (2->2 / 2->3 CM, exact
 closure), builds the spinor plane from them, the kinematic polyhedron via
-all-incoming Minkowski ($A_i=E_i$, $n_i=\epsilo$n_{i}$ $p_{i}$/E_i$), and measures the
+all-incoming Minkowski ($A_i=E_i$, $n_i=\epsilon n_i p_i/E_i$), and measures the
 Perelomov state on C0 + FIXED $dC$ (same row-1 pattern as the T5a sweep).
 Adjacency frozen from geometry before looking at $q$ signs; all channels
 reported. $M$ fixed to the 0-spread sector to isolate adjacency.

@@ -2,19 +2,19 @@
 
 ## Prerequisites
 
-Read `manuscript.md`, `grassmannian.py`, `coherent_states.py`, and `correspondence.py` from the previous session. These establish the single-vertex U(N) coherent state formalism. Your task is to extend this to **two entangled polyhedra**.
+Read `manuscript.md`, `grassmannian.py`, `coherent_states.py`, and `correspondence.py` from the previous session. These establish the single-vertex $U(N)$ coherent state formalism. Your task is to extend this to **two entangled polyhedra**.
 
 ---
 
 ## Physical Setup
 
 Consider two polyhedra A and B, each represented as a single vertex in LQG:
-- Polyhedron A: N_A-valent vertex with faces labeled i = 1, ..., N_A
-- Polyhedron B: N_B-valent vertex with faces labeled j = 1, ..., N_B
+- Polyhedron A: $N_A$-valent vertex with faces labeled $i = 1, \ldots, N_A$
+- Polyhedron B: $N_B$-valent vertex with faces labeled $j = 1, \ldots, N_B$
 - Some faces are **shared** (identified) between A and B — these represent the "interface" between the two polyhedra
 - The shared faces carry entanglement between the two vertices
 
-In the LQG Hilbert space, each vertex has a space of intertwiners. The joint state lives in H_A ⊗ H_B. Entanglement between faces means the joint intertwiner state is not a simple product — it encodes quantum correlations between the geometric data (areas, angles) of the shared faces.
+In the LQG Hilbert space, each vertex has a space of intertwiners. The joint state lives in $\mathcal{H}_A \otimes \mathcal{H}_B$. Entanglement between faces means the joint intertwiner state is not a simple product — it encodes quantum correlations between the geometric data (areas, angles) of the shared faces.
 
 ---
 
@@ -24,9 +24,9 @@ In the LQG Hilbert space, each vertex has a space of intertwiners. The joint sta
 
 1. `two_vertex_space(N_A, N_B, shared_faces)`:
    - Construct the Hilbert space for two vertices with specified shared faces
-   - Each vertex i has u(N_i) generators acting on its edges
-   - The shared faces are identified: edge k of vertex A = edge k of vertex B for k ∈ shared_faces
-   - The joint Hilbert space is a subspace of H_A ⊗ H_B satisfying the identification constraints
+   - Each vertex $i$ has $\mathfrak{u}(N_i)$ generators acting on its edges
+   - The shared faces are identified: edge $k$ of vertex A = edge $k$ of vertex B for $k \in$ shared_faces
+   - The joint Hilbert space is a subspace of $\mathcal{H}_A \otimes \mathcal{H}_B$ satisfying the identification constraints
 
 2. `intertwiner_basis_two_vertex(N_A, N_B, shared_faces, max_spin)`:
    - Enumerate the basis of gauge-invariant states for the two-vertex system
@@ -37,14 +37,12 @@ In the LQG Hilbert space, each vertex has a space of intertwiners. The joint sta
 
 3. `entangled_perelomov_state(Z_A, Z_B, entanglement_graph, max_occupation)`:
    - Construct a Perelomov coherent state for the **joint** system
-   - Z_A labels the geometry of polyhedron A (element of Gr(2, N_A))
-   - Z_B labels the geometry of polyhedron B (element of Gr(2, N_B))
+   - $Z_A$ labels the geometry of polyhedron A (element of $\mathrm{Gr}(2, N_A)$)
+   - $Z_B$ labels the geometry of polyhedron B (element of $\mathrm{Gr}(2, N_B)$)
    - `entanglement_graph` specifies which faces are shared/entangled
    - The state should be a superposition over the shared-face spin labels:
-     ```
-     |Ψ(Z_A, Z_B)⟩ = $\Sigma$_{j_shared} c(j_shared) |ψ_A(Z_A; j_shared)⟩ ⊗ |ψ_B(Z_B; j_shared)⟩
-     ```
-   - The coefficients c(j_shared) encode the entanglement structure
+     $$|\Psi(Z_A, Z_B)\rangle = \sum_{j_{\mathrm{shared}}} c(j_{\mathrm{shared}}) \, |\psi_A(Z_A; j_{\mathrm{shared}})\rangle \otimes |\psi_B(Z_B; j_{\mathrm{shared}})\rangle$$
+   - The coefficients $c(j_{\mathrm{shared}})$ encode the entanglement structure
 
 4. `geometric_entanglement(Z_A, Z_B, shared_faces)`:
    - From the coherent state data, compute the **geometric entanglement** between the two polyhedra
@@ -58,11 +56,11 @@ In the LQG Hilbert space, each vertex has a space of intertwiners. The joint sta
    - Subsystem = "A" or "B"
 
 6. `entanglement_entropy(rho)`:
-   - Compute the von Neumann entropy S = -Tr($\rho$ log $\rho$)
+   - Compute the von Neumann entropy $S = -\mathrm{Tr}(\rho \log \rho)$
    - Use eigenvalue decomposition for small systems
 
 7. `mutual_information(state)`:
-   - Compute I(A:B) = S(A) + S(B) - S(A∪B)
+   - Compute $I(A:B) = S(A) + S(B) - S(A \cup B)$
    - This measures total correlation between the two polyhedra
 
 8. `entanglement_vs_geometry(Z_A, Z_B, shared_faces)`:
@@ -77,7 +75,7 @@ In the LQG Hilbert space, each vertex has a space of intertwiners. The joint sta
 9. `holographic_dictionary(Z_A, Z_B)`:
    - If the two polyhedra represent adjacent regions of a spatial slice, the shared faces are the boundary between them
    - In holography, entanglement entropy of a region is proportional to the area of its boundary (RT formula)
-   - Check: does S(A) ∝ (total area of shared faces)? If not, what's the correction?
+   - Check: does $S(A) \propto$ (total area of shared faces)? If not, what's the correction?
 
 10. `tensor_network_structure(state)`:
     - Represent the entangled two-vertex state as a tensor network
@@ -113,10 +111,10 @@ After each phase, write up:
 
 ## Performance Considerations
 
-- For large N or high spins, the Hilbert space dimension grows exponentially. Use Rust for:
+- For large $N$ or high spins, the Hilbert space dimension grows exponentially. Use Rust for:
   - Large matrix operations (reduced density matrix, eigenvalue decomposition)
   - Iterative computations over many parameter values
-  - Any O(d³) operations where d = Hilbert space dimension
+  - Any $O(d^3)$ operations where $d$ = Hilbert space dimension
 
 - Suggested Rust crates: `ndarray` for arrays, `nalgebra` for linear algebra, `rayon` for parallelism
 
@@ -130,7 +128,7 @@ After each phase, write up:
 ## Important Notes
 
 - **Physical correctness first.** Every formula should be derived or checked against literature.
-- **Test each phase before proceeding.** Small N (3, 4) examples where you can verify by hand.
+- **Test each phase before proceeding.** Small $N$ (3, 4) examples where you can verify by hand.
 - **The manuscript is the primary deliverable.** Code supports the narrative.
 - **Commit after each phase.** Track progress in git.
 - **Flag any surprising results.** If entanglement entropy does something unexpected, highlight it.
