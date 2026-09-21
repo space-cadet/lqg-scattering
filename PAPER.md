@@ -9,7 +9,7 @@
 
 ## Core Correspondence
 
-The kinematic space for scattering of N massless particles in flat spacetime is the Grassmannian Gr(2,N) — the space of N 2-planes in C^N. The U(N) coherent states of Loop Quantum Gravity, which describe semiclassical geometries at a single N-valent vertex, are labeled by elements of the *same* space: Gr(2,N).
+The kinematic space for scattering of N massless particles in flat spacetime is the Grassmannian Gr(2,N) — the space of N 2-planes in $C^N$. The U(N) coherent states of Loop Quantum Gravity, which describe semiclassical geometries at a single N-valent vertex, are labeled by elements of the *same* space: Gr(2,N).
 
 This suggests a deep connection between:
 - Scattering amplitudes in QFT (spinor helicity formalism, amplituhedron)
@@ -27,19 +27,19 @@ This suggests a deep connection between:
 
 ### II. Scattering Amplitudes and the Grassmannian
 - **II.1 Spinor Helicity Formalism:**
-  - Null momentum p^μ ↔ 2×2 Hermitian matrix p_{αα̇}
-  - det(p) = p² = 0 for massless particles → rank-1 matrix
-  - p_{αα̇} = λ_α λ̃_{α̇} (two 2-component spinors)
-  - Reality: λ̃_{α̇} = ±(λ_α)*
+  - Null momentum p^$\mu$ ↔ 2$\times$2 Hermitian matrix p_{$\alpha$$\alpha$̇}
+  - det(p) = p² = 0 for massless particles $\to$ rank-1 matrix
+  - p_{$\alpha$$\alpha$̇} = $\lambda$_$\alpha$ $\lambda$̃_{$\alpha$̇} (two 2-component spinors)
+  - Reality: $\lambda$̃_{$\alpha$̇} = ±($\lambda$_$\alpha$)*
 - **II.2 Grassmannian:**
-  - Collect spinor components into two N-vectors: a⃗, b⃗ ∈ C^N
+  - Collect spinor components into two N-vectors: a⃗, b⃗ ∈ $C^N$
   - Lorentz transformations act as SL(2,C) on the pair (a⃗, b⃗)
-  - The invariant object is the 2-plane in C^N spanned by {a⃗, b⃗} → Gr(2,N)
-  - Momentum conservation: Σᵢ pᵢ^μ = 0 ↔ orthogonality condition on the plane
+  - The invariant object is the 2-plane in $C^N$ spanned by {a⃗, b⃗} $\to$ Gr(2,N)
+  - Momentum conservation: $\Sigma$ᵢ pᵢ^$\mu$ = 0 ↔ orthogonality condition on the plane
 
 ### III. U(N) Coherent States in LQG
 - **III.1 LQG Phase Space:**
-  - Classical: (h_ab(x), π^cd(x)) — intrinsic metric + extrinsic curvature
+  - Classical: (h_ab(x), $\pi$^cd(x)) — intrinsic metric + extrinsic curvature
   - Quantum: spin network states — graphs with SU(2) irreps on edges, intertwiners at vertices
 - **III.2 Area and Volume Operators:**
   - Area eigenvalues: discrete spectrum ∝ √[j(j+1)]
@@ -47,23 +47,23 @@ This suggests a deep connection between:
 - **III.3 Schwinger Boson Representation:**
   - Each edge labeled by spin j ↔ pair of harmonic oscillators (Schwinger bosons)
   - a†, b† create spin-up/down components
-  - j = (n_a + n_b)/2, m = (n_a - n_b)/2
+  - j = ($n_{a}$ + $n_{b}$)/2, m = ($n_{a}$ - $n_{b}$)/2
 - **III.4 u(N) Lie Algebra:**
-  - For an N-valent vertex: N edges → N Schwinger boson pairs
-  - u(N) generators: E_ij = a†_i a_j + b†_i b_j
-  - Commutation: [E_ij, E_kl] = δ_jk E_il - δ_li E_kj
+  - For an N-valent vertex: N edges $\to$ N Schwinger boson pairs
+  - u(N) generators: $E_{ij}$ = a†_i a_j + b†_i b_j
+  - Commutation: [$E_{ij}$, $E_{kl}$] = $\delta$_jk $E_{il}$ - $\delta$_li $E_{kj}$
 - **III.5 Spinorial LQG:**
   - Reformulate spin networks in terms of spinors
   - Each edge labeled by a spinor |z⟩ rather than a spin j
-  - Area of edge i: A_i = γ ℏ ⟨z_i|z_i⟩ (γ = Barbero-Immirzi parameter)
+  - Area of edge i: $A_{i}$ = $\gamma$ $\hbar$ $\langle z_i|z_i \rangle$ ($\gamma$ = Barbero-Immirzi parameter)
 - **III.6 U(N) Coherent States and the Grassmannian:**
-  - Perelomov coherent states for U(N): |Z⟩ = exp(Σᵢⱼ Z_ij E_ij) |0⟩
-  - Z is an N×N complex matrix
-  - Physical states: gauge-invariant under SU(2) at vertex → Z encodes a 2-plane in C^N
+  - Perelomov coherent states for U(N): |Z⟩ = $\exp($\Sigma$ᵢⱼ $Z_{ij}$ $E_{ij}$)$ |0⟩
+  - Z is an N$\times$N complex matrix
+  - Physical states: gauge-invariant under SU(2) at vertex $\to$ Z encodes a 2-plane in $C^N$
   - The 2-plane is precisely an element of Gr(2,N)!
 - **III.7 Reality Condition on Momenta:**
   - The reality of the classical geometry imposes conditions on Z
-  - Relates to the reality condition λ̃ = ±λ* in the scattering picture
+  - Relates to the reality condition $\lambda$̃ = ±$\lambda$* in the scattering picture
 
 ### IV. Discussion: Quantum Gravity on the Positive Grassmannian
 - **IV.1 Particle Momenta, Area and the Classical Limit:**
@@ -85,28 +85,28 @@ This suggests a deep connection between:
 
 **Parke-Taylor formula (MHV amplitude):**
 ```
-A_n(1+, ..., i-, ..., j-, ..., n+) = ⟨i|j⟩⁴ / (⟨1|2⟩⟨2|3⟩...⟨n-1|n⟩⟨n|1⟩)
+$A_{n}$(1+, ..., i-, ..., j-, ..., n+) = $\langle i|j \rangle$⁴ / ($\langle 1|2 \rangle$$\langle 2|3 \rangle$...$\langle n-1|n \rangle$$\langle n|1 \rangle$)
 ```
 
 **Spinor helicity:**
 ```
-p_{αα̇} = λ_α λ̃_{α̇},  det(p) = p² = 0
-⟨i|j⟩ = ε^{ab} λ_{ia} λ_{jb}
+p_{$\alpha$$\alpha$̇} = $\lambda$_$\alpha$ $\lambda$̃_{$\alpha$̇},  det(p) = p² = 0
+$\langle i|j \rangle$ = $\epsilon$^{ab} $\lambda$_{ia} $\lambda$_{jb}
 ```
 
 **Grassmannian:**
 ```
-Gr(2,N) = {2-planes in C^N} = GL(2,C) \ Mat(2×N, C) / GL(N,C)
+Gr(2,N) = {2-planes in $C^N$} = GL(2,C) \ Mat(2$\times$N, C) / GL(N,C)
 ```
 
 **U(N) coherent state:**
 ```
-|Z⟩ = exp(Σ Z_ij E_ij) |0⟩,  Z ∈ Mat(N×N, C)
+|Z⟩ = $\exp($\Sigma$ $Z_{ij}$ $E_{ij}$)$ |0⟩,  Z ∈ Mat(N$\times$N, C)
 ```
 
 **Area expectation:**
 ```
-⟨A_i⟩ = γ ℏ ⟨z_i|z_i⟩ = γ ℏ (|a_i|² + |b_i|²)
+$\langle $A_{i}$ \rangle$ = $\gamma$ $\hbar$ $\langle z_i|z_i \rangle$ = $\gamma$ $\hbar$ (|a_i|² + |b_i|²)
 ```
 
 ## Open Questions / Research Directions
@@ -119,8 +119,8 @@ Gr(2,N) = {2-planes in C^N} = GL(2,C) \ Mat(2×N, C) / GL(N,C)
 
 ## Potential Computational Explorations
 
-1. **Explicit Gr(2,N) parameterization:** Given N null momenta, compute the corresponding 2-plane in C^N. Verify that momentum conservation ↔ orthogonality.
+1. **Explicit Gr(2,N) parameterization:** Given N null momenta, compute the corresponding 2-plane in $C^N$. Verify that momentum conservation ↔ orthogonality.
 2. **U(N) coherent state construction:** For small N (3,4,5), explicitly construct the Perelomov coherent state and compute area/volume expectation values.
 3. **Classical limit:** Show that for large quantum numbers, the coherent state expectation values approach the classical geometry.
-4. **Scattering amplitude ↔ geometric observable:** Define a map from kinematic invariants s_ij = (p_i + p_j)² to area differences, and check if any amplitude structure emerges.
-5. **Positivity conditions:** Explore when a 2-plane in C^N corresponds to "positive" kinematic data (all s_ij > 0).
+4. **Scattering amplitude ↔ geometric observable:** Define a map from kinematic invariants $s_{ij}$ = ($p_{i}$ + $p_{j}$)² to area differences, and check if any amplitude structure emerges.
+5. **Positivity conditions:** Explore when a 2-plane in $C^N$ corresponds to "positive" kinematic data (all $s_{ij}$ > 0).

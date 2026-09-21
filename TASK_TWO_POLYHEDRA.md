@@ -42,7 +42,7 @@ In the LQG Hilbert space, each vertex has a space of intertwiners. The joint sta
    - `entanglement_graph` specifies which faces are shared/entangled
    - The state should be a superposition over the shared-face spin labels:
      ```
-     |Ψ(Z_A, Z_B)⟩ = Σ_{j_shared} c(j_shared) |ψ_A(Z_A; j_shared)⟩ ⊗ |ψ_B(Z_B; j_shared)⟩
+     |Ψ(Z_A, Z_B)⟩ = $\Sigma$_{j_shared} c(j_shared) |ψ_A(Z_A; j_shared)⟩ ⊗ |ψ_B(Z_B; j_shared)⟩
      ```
    - The coefficients c(j_shared) encode the entanglement structure
 
@@ -58,7 +58,7 @@ In the LQG Hilbert space, each vertex has a space of intertwiners. The joint sta
    - Subsystem = "A" or "B"
 
 6. `entanglement_entropy(rho)`:
-   - Compute the von Neumann entropy S = -Tr(ρ log ρ)
+   - Compute the von Neumann entropy S = -Tr($\rho$ log $\rho$)
    - Use eigenvalue decomposition for small systems
 
 7. `mutual_information(state)`:
