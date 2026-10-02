@@ -1,6 +1,6 @@
 # Session Cache
 
-*Last Updated: 2026-09-19 18:41 IST*
+*Last Updated: 2026-10-02 10:07 IST*
 
 ## Overview
 - Active Tasks: 2 (T4 IN PROGRESS, T5 PROPOSED)
@@ -55,3 +55,10 @@ Git branches reconciled: `main-orx` (Rust port + manuscript) merged into `main` 
 - **Git reconcile:** merged `main-orx` → `main` (`a24dac8`). Rust + Phases 2–5 + manuscript now on `main`; memory-bank preserved.
 - **New task T5 (Experiments)** created: 7 subtasks T5a–T5g probing the volume–positivity (achirality) boundary. Roadmap: `implementation-details/experiments.md`.
 - Next: push `main`; deploy dashboard to quantumofgravity.com; run first T5 experiment.
+
+### 2026-10-02 Session — U(N) coherent-state discussion
+- Recorded the user-facing conversation through the latest message in `sessions/2026-10-02-morning-transcript.md`; assistant messages are attributed as GPT 6 Luna (High).
+- Documented the physical discussion and deferred Section D overlap derivation in `sessions/2026-10-02-morning.md`.
+- Cloud setup was verified after restart: Rust 1.99/Cargo, NumPy/SciPy, release binaries, n=4 CLI and T5e smoke check, and arXiv HTTP 200. Full Rust tests retain one numerical regression failure; no research source was modified.
+- The requested `mem-scan` command returned “command not found”; no matching skill or executable is available in this environment.
+- Follow up by working through Freidel–Livine Appendix/Section D, Eqs. 47–51.
