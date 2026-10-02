@@ -4,7 +4,29 @@
 
 ## File Modification Log
 
+### 2026-10-03
+
+#### 00:27:43 IST - T1a: Record FL shape-scan evidence and follow-ups
+- Updated `memory-bank/tasks/T1a.md` - Recorded the $J=2$ finite-grid minima, allowed-label result, checks, dashboard deployment, and open work.
+- Updated `memory-bank/tasks.md` - Restored T1a to the active-task table and synchronized its status and notes.
+- Updated `memory-bank/implementation-details/volume-operator.md` - Added the 440-point shape scan, numerical ranges, independent checks, classical-volume comparison, deployment, and claim limits.
+- Updated `memory-bank/activeContext.md` - Set the current focus to T1a and listed boundary, assignment, and theory follow-ups.
+- Updated `memory-bank/session_cache.md` - Refreshed T1a status and linked this session and experiment log.
+- Updated `memory-bank/progress.md` - Added active T1a status while preserving the dated initial implementation record.
+- Updated `memory-bank/changelog.md` - Recorded the shape scan, dashboard deployment, label enumeration, and planned follow-ups.
+- Created `memory-bank/sessions/2026-10-03-night.md` - Captured the session evidence, interpretation limits, and continuation plan.
+- Created `memory-bank/edits/2026-10-03/002743-t1a-fl-volume-shape-scan.md` - Added the canonical edit chunk for this closeout.
+
 ### 2026-10-02
+
+#### 14:19:29 IST - T1a/T3c: Reproduce and cross-check FL tetrahedron volumes
+- Created `fl_volume_validation.py` - Constructed the Eq. (38) state and independently evaluated positive RS/AL volumes from local spin-j tensor-product matrices.
+- Created `rust/examples/fl_volume.rs` - Added a Rust reproducer for the same fixed-area tetrahedron state.
+- Updated `memory-bank/tasks/T1a.md` - Recorded Python agreement and retained the unknown source of the earlier unsaved discrepancy.
+- Updated `memory-bank/tasks/T3c.md` - Recorded Rust example and blocked execution due to the missing rustup-init target.
+- Updated `memory-bank/implementation-details/volume-operator.md` - Replaced the unresolved discrepancy with current reproducible comparison evidence.
+- Updated `memory-bank/tasks.md`, `memory-bank/activeContext.md`, `memory-bank/session_cache.md`, and `memory-bank/progress.md` - Reconciled numerical status and next action.
+- Updated `memory-bank/sessions/2026-10-02-morning.md` - Recorded state construction, values, comparison, and Rust limitation.
 
 #### 13:49:49 IST - T1a: Record preliminary FL tetrahedron volume result
 - Updated `memory-bank/tasks.md` - Recorded the preliminary EPJC Eq. (38) FL state evaluation, corrected the FL/FS naming, and kept T1a in progress.
@@ -220,3 +242,18 @@
 - Updated `memory-bank/tasks.md` — All T3 subtasks complete
 - Updated `memory-bank/implementation-details/performance-benchmarks.md` — Actual results
 - Updated `memory-bank/edit_history.md` — Session chronology
+
+#### 14:49:00 IST - T1a/T3c: Sweep positive FL volume against area and publish dashboard copy
+- Updated `fl_volume_validation.py` and created `fl_volume_area_results.json` - Recorded the regular-tetrahedron $J=1\ldots5$ positive RS/AL sweep with an independent direct-tensor comparison.
+- Updated `dashboard/data.json` and `dashboard/figures/fl-volume-area.svg` - Added area-sweep records and a static vector plot.
+- Updated `dashboard/index.html` - Added the volume-area figure and a graceful fallback when Observable Plot fails to load; clarified proxy versus positive-volume charts.
+- Copied dashboard and added project landing/listing entries in `/private/tmp/website-lqg-scattering/projects/scattering-in-lqg/` and `projects/index.html`; pushed isolated branch `codex/lqg-scattering-dashboard` at `824b2b8`.
+- Local browser verification passed for dashboard data and chart. GitHub Actions workflow dispatch and live route verification remain pending because the Actions API was unreachable and the browser session was signed out.
+- Updated the T1a/T3c task records and volume-operator, progress, active-context, session-cache, and session documentation.
+
+#### 15:11:00 IST - T1a/T3c: Deploy Scattering in LQG dashboard and verify live routes
+- Dispatched website workflow `36990851937` from host access for commit `824b2b8`; the run completed successfully.
+- Verified live Projects, Scattering landing page, dashboard, dashboard JSON, and SVG plot all return HTTP 200.
+- Opened the live Projects page and expanded “Quantum physics and research”; confirmed the Scattering in LQG entry and its links. The section is collapsed by default.
+- Opened the deployed dashboard in the live browser; all eight run records loaded and the area plot rendered.
+- Updated T1a/T3c task status, project volume notes, active context, session cache, and session record.

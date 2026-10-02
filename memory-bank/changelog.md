@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-03
+- Recorded the $J=2$ FL equal-face-area scan of 440 ordered samples. Both sampled RS and AL minima occur at the regular tetrahedron; the Memory Bank states clearly that this is a finite-grid observation, not a global-minimum proof.
+- Added the shape-scan method, numerical ranges, two independent tensor-product checks, selected classical-volume comparisons, and open boundary/fluctuation questions to `fl_volume_shape_scan_log.md` and the volume-operator notes.
+- Updated the website dashboard so representative tetrahedron thumbnails appear beside both RS and AL panels. Final website commit `f0b6fdd` was deployed by workflow `37033479554`; the live HTML and cache-busted SVG returned HTTP 200.
+- Recorded the $J=2$ strict positive face-spin assignment result (one assignment, two recoupling channels) and planned boundary scaling and shape sampling across unequal allowed assignments.
+
 ## 2026-10-01
 - Added exact small-sector Rovelli–Smolin and Ashtekar–Lewandowski positive vertex-volume expectations in Python and Rust, with singlet and collinear controls independently checked. Physical normalization and large-sector evaluation remain open.
 - Used the host Rust toolchain to pass 20 release tests and rerun converged `verify4` and n=5..8 `scan`; corrected manuscript, dashboard and benchmark values. Independent SciPy checks agree at n=4,5,7,8; n=6 remains open.

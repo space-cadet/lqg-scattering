@@ -1,0 +1,57 @@
+[
+  {
+    "areaLabelJ": 1,
+    "flAreaOverLp2": 1,
+    "rsPositiveVolumeProjectUnits": 0.0,
+    "alPositiveVolumeProjectUnits": 0.0,
+    "directTensorRS": 0.0,
+    "directTensorAL": 0.0,
+    "maxTripleMatrixDifference": 0.0,
+    "rsDifference": 0.0,
+    "alDifference": 0.0
+  },
+  {
+    "areaLabelJ": 2,
+    "flAreaOverLp2": 2,
+    "rsPositiveVolumeProjectUnits": 0.05077553260216399,
+    "alPositiveVolumeProjectUnits": 0.025387766749131433,
+    "directTensorRS": 0.050775532602163984,
+    "directTensorAL": 0.02538776674913143,
+    "maxTripleMatrixDifference": 0.0,
+    "rsDifference": 6.938893903907228e-18,
+    "alDifference": 3.469446951953614e-18
+  },
+  {
+    "areaLabelJ": 3,
+    "flAreaOverLp2": 3,
+    "rsPositiveVolumeProjectUnits": 0.16221338029976162,
+    "alPositiveVolumeProjectUnits": 0.08110669042153412,
+    "directTensorRS": 0.16221338029301588,
+    "directTensorAL": 0.081106690335746,
+    "maxTripleMatrixDifference": 5.551115123125783e-16,
+    "rsDifference": 6.745742853198067e-12,
+    "alDifference": 8.578812660253732e-11
+  },
+  {
+    "areaLabelJ": 4,
+    "flAreaOverLp2": 4,
+    "rsPositiveVolumeProjectUnits": 0.31893807274995334,
+    "alPositiveVolumeProjectUnits": 0.15946903668231519,
+    "directTensorRS": 0.31893807253143225,
+    "directTensorAL": 0.15946903639172008,
+    "maxTripleMatrixDifference": 1.2212453270876722e-15,
+    "rsDifference": 2.1852109011177845e-10,
+    "alDifference": 2.9059510353590667e-10
+  },
+  {
+    "areaLabelJ": 5,
+    "flAreaOverLp2": 5,
+    "rsPositiveVolumeProjectUnits": 0.49885965482510625,
+    "alPositiveVolumeProjectUnits": 0.2494298275539056,
+    "directTensorRS": 0.4988596548179195,
+    "directTensorAL": 0.24942982755142543,
+    "maxTripleMatrixDifference": 2.7755575615628914e-15,
+    "rsDifference": 7.1867511941547946e-12,
+    "alDifference": 2.4801827258613685e-12
+  }
+]

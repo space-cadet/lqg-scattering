@@ -1,9 +1,10 @@
 # Task Registry
-*Last Updated: 2026-10-02 13:49:49 IST*
+*Last Updated: 2026-10-03 00:27:43 IST*
 
 ## Active Tasks
 | ID | Title | Status | Priority | Started | Dependencies | Owner |
 |----|-------|--------|----------|---------|--------------|-------|
+| T1a | Positive RS/AL volume and FL shape checks | 🔄 IN PROGRESS | HIGH | 2026-09-19 | T1 | Deepak |
 | T4 | Follow-up manuscript claim audit and review | 🔄 IN PROGRESS | HIGH | 2026-09-19 | T3c, T3d, T3e, T5, T7 | Deepak |
 | T3d/T3e | Converged baseline verification and scan; n=6 independent check open | 🔄 IN PROGRESS | HIGH | 2026-10-01 | T3c | Deepak |
 | T5 | Volume–positivity research program | 🔄 IN PROGRESS | HIGH | 2026-09-19 | T3c, T3d, T3e | Deepak |
@@ -43,25 +44,33 @@ operator result; the numerical baseline has now been rerun to convergence.
 ### T1a: Volume Operator at n=4
 **Description**: Implement positive RS and AL volume expectations in Python and validate at n=4.
 **Status**: 🔄 IN PROGRESS
-**Last Active**: 2026-10-02 13:49:49 IST
+**Last Active**: 2026-10-03 00:27:43 IST
 
 **Completion Criteria**:
 - ✅ Positive RS and AL expectations implemented by exact active-sector spectral decomposition
 - ✅ Paired spin-1/2 singlet and collinear controls checked against an independent tensor-product calculation
 - ✅ Preliminary Python evaluation of the EPJC Eq. (38) FL fixed-area coherent state on a regular tetrahedron gives positive RS and AL volumes.
-- 🔄 Reconcile the direct tensor-product discrepancy (about $1.8\times10^{-10}$), extend validation, and select physical regularization prefactors
+- ✅ Rebuild independent local-spin tensor-product blocks; RS/AL agree with project routines below $7\times10^{-18}$. The older inline discrepancy does not reproduce; its source is unknown.
+- ✅ At $J=2$, both sampled RS/AL minima in the 440-point ordered equal-face-area grid occur at the regular tetrahedron. This is a grid observation, not a global-minimum proof.
+- ✅ At $J=2$, strict-positive face-spin enumeration yields one assignment $(1/2,1/2,1/2,1/2)$ with two recoupling channels. This is discrete-label enumeration, not a count of shapes.
+- 🔄 Extend validation and select physical regularization prefactors
 - 🔄 Replace dense diagonalization before evaluating active blocks above dimension 512
 
 **Related Files**:
 - `positivity.py`
 - `coherent_states.py`
+- `fl_volume_shape_scan.py`
+- `fl_volume_labels.py`
+- `fl_volume_shape_scan_log.md`
 - **Individual Task File**: [T1a details](tasks/T1a.md)
 
 **Notes**:
 The historical volume values were square roots of signed-grasp means, not
 positive volume expectations. The new exact small-block RS/AL routines give
 nonzero volume on a paired spin-1/2 singlet even though $\langle q_{012}\rangle=0$.
-The EPJC Eq. (38) fixed-area state evaluated in Python is the Freidel–Livine (FL) state. FL names this fixed-area construction; Freidel–Speziale (FS) supplies the spinorial phase-space framework and is not a separate target state family here. For a regular tetrahedron, both project routines give positive volume; direct tensor-product values differ by about $1.8\times10^{-10}$. This preliminary case and discrepancy are recorded in `implementation-details/volume-operator.md`. Physical prefactors and broader validation remain open.
+The EPJC Eq. (38) fixed-area state evaluated in Python is the Freidel–Livine (FL) state. FL names this fixed-area construction; Freidel–Speziale (FS) supplies the spinorial phase-space framework and is not a separate target state family here. The regular-tetrahedron sweep over $J=1\ldots5$ gives positive RS and AL volume expectations; direct-tensor triple matrices agree within $2.8\times10^{-15}$, while expectations differ by at most $2.91\times10^{-10}$. An area-dependence plot is live in the dashboard published from website commit `824b2b8` (workflow `36990851937`).
+
+At $J=2$, the equal-face-area scan evaluates 440 ordered shapes and finds the regular tetrahedron as the sampled RS and AL minimum. Its exact degenerate boundaries are excluded, so this does not establish a global minimum or explain the quantum behavior near classical zero-volume directions. The allowed-label script finds one strict positive assignment with two recoupling channels; shape sampling for unequal assignments remains open. The shape dashboard now includes representative tetrahedra in both RS and AL panels; final live copy is website commit `f0b6fdd`, workflow `37033479554`. The older unsaved discrepancy remains unexplained. Physical prefactors, boundary-limit/fluctuation analysis, and broader validation remain open. See `implementation-details/volume-operator.md` and `fl_volume_shape_scan_log.md`.
 
 ---
 
@@ -146,13 +155,13 @@ positive-cell result concerns the signed mean, not the positive volume.
 ### T3c: Volume Operator (Rust)
 **Description**: Implement positive RS and AL vertex-volume expectations in Rust and validate at n=4.
 **Status**: 🔄 IN PROGRESS
-**Last Active**: 2026-10-02 13:49:49 IST
+**Last Active**: 2026-10-02 14:19:29 IST
 
 **Completion Criteria**:
 - ✅ Triple-grasp matrices constructed from sparse Schwinger generators
 - ✅ Positive RS and AL expectations implemented using active-sector spectral decomposition
 - ✅ Simple-state Rust results match Python and an independent tensor-product calculation
-- 🔄 Validate the EPJC Eq. (38) FL fixed-area coherent-state case in the Rust implementation, reconcile with Python/direct-tensor values, and select physical regularization prefactors
+- 🔄 Execute rust/examples/fl_volume.rs and compare with the independently validated Python values; select physical regularization prefactors
 - 🔄 Replace dense diagonalization before evaluating active blocks above dimension 512
 
 **Related Files**:

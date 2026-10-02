@@ -1,7 +1,7 @@
 {
   "project": {
-    "name": "LQG-Grassmannian Correspondence",
-    "subtitle": "Corrected signed triple-grasp proxy results; physical volume remains open"
+    "name": "Scattering in LQG",
+    "subtitle": "Signed-triple-grasp runs and fixed-area positive-volume checks; physical normalization remains open"
   },
   "tabs": [
     {
@@ -82,7 +82,7 @@
       "qExpectationPositive": 0.0,
       "qExpectationComplex": -0.000827687167721,
       "closure": 6.0,
-      "time": "12\u201314ms",
+      "time": "12–14ms",
       "date": "2026-10-01",
       "params": {
         "tolerance": "1e-12",
@@ -107,7 +107,7 @@
       "dim": 43758,
       "volumePositive": 3.286510670171e-09,
       "volumeComplex": 0.03391578040395,
-      "time": "303\u2013325ms",
+      "time": "303–325ms",
       "date": "2026-10-01",
       "params": {
         "convergenceAsserted": true,
@@ -128,7 +128,7 @@
       "dim": 293930,
       "volumePositive": 8.811059296803e-10,
       "volumeComplex": 0.001315280547001,
-      "time": "3.27\u20133.91s",
+      "time": "3.27–3.91s",
       "date": "2026-10-01",
       "params": {
         "convergenceAsserted": true,
@@ -149,7 +149,7 @@
       "dim": 38760,
       "volumePositive": 3.66109395653e-10,
       "volumeComplex": 0.01186077720871,
-      "time": "330\u2013383ms",
+      "time": "330–383ms",
       "date": "2026-10-01",
       "params": {
         "convergenceAsserted": true,
@@ -170,7 +170,7 @@
       "dim": 74613,
       "volumePositive": 1.304152779983e-09,
       "volumeComplex": 0.01056697265461,
-      "time": "792\u2013858ms",
+      "time": "792–858ms",
       "date": "2026-10-01",
       "params": {
         "convergenceAsserted": true,
@@ -199,5 +199,229 @@
     "description": "Real-plane states have zero signed triple-grasp mean, including planes outside the positive cell. The positive-volume-operator expectation has not been established by these runs.",
     "citation": "D. Vaid and D. Suresh, EPJC (2022); follow-up calculations under review",
     "arxiv": "2208.10632"
+  },
+  "volumeArea": {
+    "title": "Positive volume vs. FL area label",
+    "areaDefinition": "For this fixed-geometry sweep, A_FL/l_p^2 = J.",
+    "state": "Regular tetrahedron fixed-area state; gamma = 0.2375.",
+    "normalization": "Project-normalized positive-volume values; the physical prefactor is not fixed.",
+    "validation": "Eq. (38) direct-tensor cross-check. Triple-grasp matrices agree within 2.8e-15; positive-volume expectation differences are at most 2.91e-10 for J=1..5.",
+    "records": [
+      {
+        "areaLabelJ": 1,
+        "flAreaOverLp2": 1,
+        "rsPositiveVolumeProjectUnits": 0.0,
+        "alPositiveVolumeProjectUnits": 0.0,
+        "directTensorRS": 0.0,
+        "directTensorAL": 0.0,
+        "maxTripleMatrixDifference": 0.0,
+        "rsDifference": 0.0,
+        "alDifference": 0.0
+      },
+      {
+        "areaLabelJ": 2,
+        "flAreaOverLp2": 2,
+        "rsPositiveVolumeProjectUnits": 0.05077553260216399,
+        "alPositiveVolumeProjectUnits": 0.025387766749131433,
+        "directTensorRS": 0.050775532602163984,
+        "directTensorAL": 0.02538776674913143,
+        "maxTripleMatrixDifference": 0.0,
+        "rsDifference": 6.938893903907228e-18,
+        "alDifference": 3.469446951953614e-18
+      },
+      {
+        "areaLabelJ": 3,
+        "flAreaOverLp2": 3,
+        "rsPositiveVolumeProjectUnits": 0.16221338029976162,
+        "alPositiveVolumeProjectUnits": 0.08110669042153412,
+        "directTensorRS": 0.16221338029301588,
+        "directTensorAL": 0.081106690335746,
+        "maxTripleMatrixDifference": 5.551115123125783e-16,
+        "rsDifference": 6.745742853198067e-12,
+        "alDifference": 8.578812660253732e-11
+      },
+      {
+        "areaLabelJ": 4,
+        "flAreaOverLp2": 4,
+        "rsPositiveVolumeProjectUnits": 0.31893807274995334,
+        "alPositiveVolumeProjectUnits": 0.15946903668231519,
+        "directTensorRS": 0.31893807253143225,
+        "directTensorAL": 0.15946903639172008,
+        "maxTripleMatrixDifference": 1.2212453270876722e-15,
+        "rsDifference": 2.1852109011177845e-10,
+        "alDifference": 2.9059510353590667e-10
+      },
+      {
+        "areaLabelJ": 5,
+        "flAreaOverLp2": 5,
+        "rsPositiveVolumeProjectUnits": 0.49885965482510625,
+        "alPositiveVolumeProjectUnits": 0.2494298275539056,
+        "directTensorRS": 0.4988596548179195,
+        "directTensorAL": 0.24942982755142543,
+        "maxTripleMatrixDifference": 2.7755575615628914e-15,
+        "rsDifference": 7.1867511941547946e-12,
+        "alDifference": 2.4801827258613685e-12
+      }
+    ]
+  },
+  "figures": [
+    {
+      "title": "Positive volume vs. FL area label",
+      "path": "figures/fl-volume-area.svg",
+      "description": "Regular tetrahedron fixed-area states. RS and AL positive-volume expectations in project-normalized units; A_FL/l_p^2 = J. Physical prefactor remains open.",
+      "tags": [
+        "volume",
+        "area",
+        "Freidel-Livine",
+        "RS",
+        "AL"
+      ]
+    },
+    {
+      "title": "Fixed J=2 volume over equal-area tetrahedron shapes",
+      "path": "figures/fl-volume-shape-j2.svg",
+      "description": "RS and AL positive-volume expectations over 440 sampled ordered equal-area FL tetrahedron configurations, without quotienting leg permutations. Includes a spinor-ray cross ratio for comparison with Thurston’s four-point moduli coordinate; no identification of cone-metric and LQG flux geometries is assumed.",
+      "tags": [
+        "volume",
+        "shape",
+        "Freidel-Livine",
+        "Thurston",
+        "cross-ratio",
+        "RS",
+        "AL"
+      ]
+    }
+  ],
+  "volumeShape": {
+    "title": "Positive volume vs. tetrahedron shape",
+    "areaLabelJ": 2,
+    "sampleCount": 440,
+    "sampling": {
+      "xValues": [
+        0.03,
+        0.08222222222222222,
+        0.13444444444444442,
+        0.18666666666666665,
+        0.23888888888888887,
+        0.2911111111111111,
+        0.34333333333333327,
+        0.39555555555555555,
+        0.4477777777777777,
+        0.5,
+        0.5522222222222222,
+        0.5773502691896258,
+        0.6044444444444445,
+        0.6566666666666666,
+        0.7088888888888889,
+        0.7611111111111111,
+        0.8133333333333334,
+        0.8655555555555555,
+        0.9177777777777777,
+        0.97
+      ],
+      "phiDegrees": [
+        14.999999999999998,
+        29.999999999999996,
+        45.0,
+        59.99999999999999,
+        75.0,
+        90.0,
+        105.0,
+        119.99999999999999,
+        135.0,
+        150.0,
+        165.0,
+        195.0,
+        210.0,
+        224.99999999999997,
+        239.99999999999997,
+        255.00000000000003,
+        270.0,
+        285.0,
+        300.0,
+        315.0,
+        330.0,
+        344.99999999999994
+      ]
+    },
+    "shapeScope": "Equal face-area ratios only; this is a controlled subfamily at fixed total J, not all Gr(2,4) labels or all area partitions. Face labels are ordered and samples are not quotiented by leg permutations.",
+    "coordinates": {
+      "xDiagonal": "x = |n_0+n_1|/2 in (0,1), with each |n_i|=1",
+      "phiRadians": "Bending angle between the (0,1) and (2,3) face-normal planes",
+      "crossRatio": "lambda = <0,2><1,3> / (<0,3><1,2>) for the four normalized spinor rays",
+      "crossRatioInShapeCoordinates": "lambda = ((t^2 - exp(i*phi))/(t^2 + exp(i*phi)))^2, t^2=(1-x)/(1+x)",
+      "thurstonRelation": "For four marked points, lambda is a complex coordinate on M_0,4. It labels the spinor-ray configuration here; the cone-metric Kähler metric and its curvature data are not assumed to equal the LQG flux geometry."
+    },
+    "sampledRSRange": [
+      0.05077553260216396,
+      0.07482161446122469
+    ],
+    "sampledALRange": [
+      0.025387766749131426,
+      0.037410807581783
+    ],
+    "sampledRSMinimum": {
+      "xDiagonal": 0.5773502691896258,
+      "phiRadians": 1.5707963267948966,
+      "phiDegrees": 90.0,
+      "crossRatioReal": 0.5,
+      "crossRatioImag": 0.8660254037844386,
+      "crossRatioFormulaError": 3.510833468576701e-16,
+      "closureResidual": 0.0,
+      "classicalTripleOrientation": -0.7698003589195008,
+      "areaLabelJ": 2,
+      "flAreaOverLp2": 2,
+      "rsPositiveVolumeProjectUnits": 0.05077553260216396,
+      "alPositiveVolumeProjectUnits": 0.025387766749131426,
+      "directTensorRS": 0.05077553260216395,
+      "directTensorAL": 0.02538776674913142,
+      "maxTripleMatrixDifference": 0.0,
+      "rsDifference": 1.3877787807814457e-17,
+      "alDifference": 6.938893903907228e-18
+    },
+    "sampledRSMaximum": {
+      "xDiagonal": 0.03,
+      "phiRadians": 0.2617993877991494,
+      "phiDegrees": 14.999999999999998,
+      "crossRatioReal": -0.016369216526078197,
+      "crossRatioImag": 0.008028577988525135,
+      "crossRatioFormulaError": 2.8609792490763984e-17,
+      "closureResidual": 0.0,
+      "classicalTripleOrientation": -0.015515166477715704,
+      "areaLabelJ": 2,
+      "flAreaOverLp2": 2,
+      "rsPositiveVolumeProjectUnits": 0.07482161446122469,
+      "alPositiveVolumeProjectUnits": 0.037410807581783
+    },
+    "validation": {
+      "closureMax": 0.0,
+      "crossRatioFormulaMaxError": 8.673279421411239e-14,
+      "maxDirectTensorRSDifference": 1.3877787807814457e-17,
+      "maxDirectTensorALDifference": 6.938893903907228e-18,
+      "representativeInvariance": {
+        "rsPositiveVolumeProjectUnits": {
+          "columnPhaseDifference": 6.938893903907228e-18,
+          "globalSU2Difference": 0.0
+        },
+        "alPositiveVolumeProjectUnits": {
+          "columnPhaseDifference": 0.0,
+          "globalSU2Difference": 3.469446951953614e-18
+        }
+      }
+    },
+    "recordsFile": "fl-volume-shape-j2.json"
+  },
+  "volumeLabelEnumeration": {
+    "title": "Discrete quantum spin and recoupling labels at fixed total J",
+    "maxJ": 5,
+    "recordsFile": "fl-volume-allowed-labels.json",
+    "interpretation": "Finite labelled SU(2) spin sectors and intertwiner channels; not a finite enumeration of classical coherent shapes.",
+    "totals": [
+      {"areaLabelJ": 1, "closureSectors": 6, "closureIntertwinerDimension": 6, "fourNonzeroFaceSectors": 0, "fourNonzeroFaceIntertwinerDimension": 0, "strictPolygonSectors": 0, "strictPolygonIntertwinerDimension": 0},
+      {"areaLabelJ": 2, "closureSectors": 19, "closureIntertwinerDimension": 20, "fourNonzeroFaceSectors": 1, "fourNonzeroFaceIntertwinerDimension": 2, "strictPolygonSectors": 1, "strictPolygonIntertwinerDimension": 2},
+      {"areaLabelJ": 3, "closureSectors": 44, "closureIntertwinerDimension": 50, "fourNonzeroFaceSectors": 10, "fourNonzeroFaceIntertwinerDimension": 16, "strictPolygonSectors": 6, "strictPolygonIntertwinerDimension": 12},
+      {"areaLabelJ": 4, "closureSectors": 85, "closureIntertwinerDimension": 105, "fourNonzeroFaceSectors": 31, "fourNonzeroFaceIntertwinerDimension": 51, "strictPolygonSectors": 19, "strictPolygonIntertwinerDimension": 39},
+      {"areaLabelJ": 5, "closureSectors": 146, "closureIntertwinerDimension": 196, "fourNonzeroFaceSectors": 68, "fourNonzeroFaceIntertwinerDimension": 118, "strictPolygonSectors": 44, "strictPolygonIntertwinerDimension": 94}
+    ]
   }
 }

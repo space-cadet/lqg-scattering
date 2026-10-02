@@ -1,0 +1,7227 @@
+{
+  "schemaVersion": 1,
+  "model": "Four labelled SU(2) legs with total spin J=sum_i j_i",
+  "spinConvention": "twiceSpins[i]=2*j_i is a nonnegative integer; total twice-spin is 2J",
+  "closureCriterion": "max_i(j_i) <= sum_{r != i}(j_r); strict inequality excludes the collinear closure boundary but does not remove planar configurations",
+  "basisConvention": "A recoupling basis couples (j0,j1) and (j2,j3) through the same intermediate spin k; k advances in integer steps.",
+  "interpretation": "Finite quantum spin and intertwiner labels only. Classical shapes at fixed face areas form a continuum, so they require a stated mesh or an analytic parametrization. This is not Thurston's lattice classification of special sphere triangulations.",
+  "thurstonReference": "https://arxiv.org/abs/math/9801088",
+  "totals": [
+    {
+      "areaLabelJ": 1,
+      "orderedLegs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "closureSectors": 6,
+      "closureIntertwinerDimension": 6,
+      "fourNonzeroFaceSectors": 0,
+      "fourNonzeroFaceIntertwinerDimension": 0,
+      "strictPolygonSectors": 0,
+      "strictPolygonIntertwinerDimension": 0
+    },
+    {
+      "areaLabelJ": 2,
+      "orderedLegs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "closureSectors": 19,
+      "closureIntertwinerDimension": 20,
+      "fourNonzeroFaceSectors": 1,
+      "fourNonzeroFaceIntertwinerDimension": 2,
+      "strictPolygonSectors": 1,
+      "strictPolygonIntertwinerDimension": 2
+    },
+    {
+      "areaLabelJ": 3,
+      "orderedLegs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "closureSectors": 44,
+      "closureIntertwinerDimension": 50,
+      "fourNonzeroFaceSectors": 10,
+      "fourNonzeroFaceIntertwinerDimension": 16,
+      "strictPolygonSectors": 6,
+      "strictPolygonIntertwinerDimension": 12
+    },
+    {
+      "areaLabelJ": 4,
+      "orderedLegs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "closureSectors": 85,
+      "closureIntertwinerDimension": 105,
+      "fourNonzeroFaceSectors": 31,
+      "fourNonzeroFaceIntertwinerDimension": 51,
+      "strictPolygonSectors": 19,
+      "strictPolygonIntertwinerDimension": 39
+    },
+    {
+      "areaLabelJ": 5,
+      "orderedLegs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "closureSectors": 146,
+      "closureIntertwinerDimension": 196,
+      "fourNonzeroFaceSectors": 68,
+      "fourNonzeroFaceIntertwinerDimension": 118,
+      "strictPolygonSectors": 44,
+      "strictPolygonIntertwinerDimension": 94
+    }
+  ],
+  "areaSectors": [
+    {
+      "areaLabelJ": 1,
+      "orderedLegs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "closureSectors": 6,
+      "closureIntertwinerDimension": 6,
+      "fourNonzeroFaceSectors": 0,
+      "fourNonzeroFaceIntertwinerDimension": 0,
+      "strictPolygonSectors": 0,
+      "strictPolygonIntertwinerDimension": 0,
+      "sectors": [
+        {
+          "twiceSpins": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "spins": [
+            0.0,
+            0.0,
+            0.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            0
+          ],
+          "intermediateK": [
+            0.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "spins": [
+            0.0,
+            0.5,
+            0.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "spins": [
+            0.0,
+            0.5,
+            0.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "spins": [
+            0.5,
+            0.0,
+            0.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "spins": [
+            0.5,
+            0.0,
+            0.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "spins": [
+            0.5,
+            0.5,
+            0.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            0
+          ],
+          "intermediateK": [
+            0.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        }
+      ]
+    },
+    {
+      "areaLabelJ": 2,
+      "orderedLegs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "closureSectors": 19,
+      "closureIntertwinerDimension": 20,
+      "fourNonzeroFaceSectors": 1,
+      "fourNonzeroFaceIntertwinerDimension": 2,
+      "strictPolygonSectors": 1,
+      "strictPolygonIntertwinerDimension": 2,
+      "sectors": [
+        {
+          "twiceSpins": [
+            0,
+            0,
+            2,
+            2
+          ],
+          "spins": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            0
+          ],
+          "intermediateK": [
+            0.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            1,
+            1,
+            2
+          ],
+          "spins": [
+            0.0,
+            0.5,
+            0.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "spins": [
+            0.0,
+            0.5,
+            1.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            2,
+            0,
+            2
+          ],
+          "spins": [
+            0.0,
+            1.0,
+            0.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            2,
+            1,
+            1
+          ],
+          "spins": [
+            0.0,
+            1.0,
+            0.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            2,
+            2,
+            0
+          ],
+          "spins": [
+            0.0,
+            1.0,
+            1.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            0,
+            1,
+            2
+          ],
+          "spins": [
+            0.5,
+            0.0,
+            0.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            0,
+            2,
+            1
+          ],
+          "spins": [
+            0.5,
+            0.0,
+            1.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            1,
+            0,
+            2
+          ],
+          "spins": [
+            0.5,
+            0.5,
+            0.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "spins": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            0,
+            2
+          ],
+          "intermediateK": [
+            0.0,
+            1.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            1,
+            1,
+            2,
+            0
+          ],
+          "spins": [
+            0.5,
+            0.5,
+            1.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            2,
+            0,
+            1
+          ],
+          "spins": [
+            0.5,
+            1.0,
+            0.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "spins": [
+            0.5,
+            1.0,
+            0.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            0,
+            0,
+            2
+          ],
+          "spins": [
+            1.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            0,
+            1,
+            1
+          ],
+          "spins": [
+            1.0,
+            0.0,
+            0.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            0,
+            2,
+            0
+          ],
+          "spins": [
+            1.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            1,
+            0,
+            1
+          ],
+          "spins": [
+            1.0,
+            0.5,
+            0.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            1,
+            1,
+            0
+          ],
+          "spins": [
+            1.0,
+            0.5,
+            0.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            2,
+            0,
+            0
+          ],
+          "spins": [
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            0
+          ],
+          "intermediateK": [
+            0.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        }
+      ]
+    },
+    {
+      "areaLabelJ": 3,
+      "orderedLegs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "closureSectors": 44,
+      "closureIntertwinerDimension": 50,
+      "fourNonzeroFaceSectors": 10,
+      "fourNonzeroFaceIntertwinerDimension": 16,
+      "strictPolygonSectors": 6,
+      "strictPolygonIntertwinerDimension": 12,
+      "sectors": [
+        {
+          "twiceSpins": [
+            0,
+            0,
+            3,
+            3
+          ],
+          "spins": [
+            0.0,
+            0.0,
+            1.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            0
+          ],
+          "intermediateK": [
+            0.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "spins": [
+            0.0,
+            0.5,
+            1.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            1,
+            3,
+            2
+          ],
+          "spins": [
+            0.0,
+            0.5,
+            1.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "spins": [
+            0.0,
+            1.0,
+            0.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            2,
+            2,
+            2
+          ],
+          "spins": [
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "spins": [
+            0.0,
+            1.0,
+            1.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            3,
+            0,
+            3
+          ],
+          "spins": [
+            0.0,
+            1.5,
+            0.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "spins": [
+            0.0,
+            1.5,
+            0.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            3,
+            2,
+            1
+          ],
+          "spins": [
+            0.0,
+            1.5,
+            1.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            3,
+            3,
+            0
+          ],
+          "spins": [
+            0.0,
+            1.5,
+            1.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            0,
+            2,
+            3
+          ],
+          "spins": [
+            0.5,
+            0.0,
+            1.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            0,
+            3,
+            2
+          ],
+          "spins": [
+            0.5,
+            0.0,
+            1.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "spins": [
+            0.5,
+            0.5,
+            0.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "spins": [
+            0.5,
+            0.5,
+            1.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            0,
+            2
+          ],
+          "intermediateK": [
+            0.0,
+            1.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            1,
+            1,
+            3,
+            1
+          ],
+          "spins": [
+            0.5,
+            0.5,
+            1.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            2,
+            0,
+            3
+          ],
+          "spins": [
+            0.5,
+            1.0,
+            0.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            2,
+            1,
+            2
+          ],
+          "spins": [
+            0.5,
+            1.0,
+            0.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            1,
+            3
+          ],
+          "intermediateK": [
+            0.5,
+            1.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            1,
+            2,
+            2,
+            1
+          ],
+          "spins": [
+            0.5,
+            1.0,
+            1.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            1,
+            3
+          ],
+          "intermediateK": [
+            0.5,
+            1.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "spins": [
+            0.5,
+            1.0,
+            1.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            3,
+            0,
+            2
+          ],
+          "spins": [
+            0.5,
+            1.5,
+            0.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            3,
+            1,
+            1
+          ],
+          "spins": [
+            0.5,
+            1.5,
+            0.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            3,
+            2,
+            0
+          ],
+          "spins": [
+            0.5,
+            1.5,
+            1.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            0,
+            1,
+            3
+          ],
+          "spins": [
+            1.0,
+            0.0,
+            0.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            0,
+            2,
+            2
+          ],
+          "spins": [
+            1.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            0,
+            3,
+            1
+          ],
+          "spins": [
+            1.0,
+            0.0,
+            1.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            1,
+            0,
+            3
+          ],
+          "spins": [
+            1.0,
+            0.5,
+            0.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            1,
+            1,
+            2
+          ],
+          "spins": [
+            1.0,
+            0.5,
+            0.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            1,
+            3
+          ],
+          "intermediateK": [
+            0.5,
+            1.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            1,
+            2,
+            1
+          ],
+          "spins": [
+            1.0,
+            0.5,
+            1.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            1,
+            3
+          ],
+          "intermediateK": [
+            0.5,
+            1.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            1,
+            3,
+            0
+          ],
+          "spins": [
+            1.0,
+            0.5,
+            1.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            2,
+            0,
+            2
+          ],
+          "spins": [
+            1.0,
+            1.0,
+            0.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "spins": [
+            1.0,
+            1.0,
+            0.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            0,
+            2
+          ],
+          "intermediateK": [
+            0.0,
+            1.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            2,
+            2,
+            0
+          ],
+          "spins": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            3,
+            0,
+            1
+          ],
+          "spins": [
+            1.0,
+            1.5,
+            0.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            3,
+            1,
+            0
+          ],
+          "spins": [
+            1.0,
+            1.5,
+            0.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            0,
+            0,
+            3
+          ],
+          "spins": [
+            1.5,
+            0.0,
+            0.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            0,
+            1,
+            2
+          ],
+          "spins": [
+            1.5,
+            0.0,
+            0.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            0,
+            2,
+            1
+          ],
+          "spins": [
+            1.5,
+            0.0,
+            1.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "spins": [
+            1.5,
+            0.0,
+            1.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            1,
+            0,
+            2
+          ],
+          "spins": [
+            1.5,
+            0.5,
+            0.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            1,
+            1,
+            1
+          ],
+          "spins": [
+            1.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            1,
+            2,
+            0
+          ],
+          "spins": [
+            1.5,
+            0.5,
+            1.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            2,
+            0,
+            1
+          ],
+          "spins": [
+            1.5,
+            1.0,
+            0.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "spins": [
+            1.5,
+            1.0,
+            0.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            3,
+            0,
+            0
+          ],
+          "spins": [
+            1.5,
+            1.5,
+            0.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            0
+          ],
+          "intermediateK": [
+            0.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        }
+      ]
+    },
+    {
+      "areaLabelJ": 4,
+      "orderedLegs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "closureSectors": 85,
+      "closureIntertwinerDimension": 105,
+      "fourNonzeroFaceSectors": 31,
+      "fourNonzeroFaceIntertwinerDimension": 51,
+      "strictPolygonSectors": 19,
+      "strictPolygonIntertwinerDimension": 39,
+      "sectors": [
+        {
+          "twiceSpins": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "spins": [
+            0.0,
+            0.0,
+            2.0,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            0
+          ],
+          "intermediateK": [
+            0.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "spins": [
+            0.0,
+            0.5,
+            1.5,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            1,
+            4,
+            3
+          ],
+          "spins": [
+            0.0,
+            0.5,
+            2.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            2,
+            2,
+            4
+          ],
+          "spins": [
+            0.0,
+            1.0,
+            1.0,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            2,
+            3,
+            3
+          ],
+          "spins": [
+            0.0,
+            1.0,
+            1.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            0,
+            2,
+            4,
+            2
+          ],
+          "spins": [
+            0.0,
+            1.0,
+            2.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            3,
+            1,
+            4
+          ],
+          "spins": [
+            0.0,
+            1.5,
+            0.5,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            3,
+            2,
+            3
+          ],
+          "spins": [
+            0.0,
+            1.5,
+            1.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            0,
+            3,
+            3,
+            2
+          ],
+          "spins": [
+            0.0,
+            1.5,
+            1.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            0,
+            3,
+            4,
+            1
+          ],
+          "spins": [
+            0.0,
+            1.5,
+            2.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            4,
+            0,
+            4
+          ],
+          "spins": [
+            0.0,
+            2.0,
+            0.0,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            4,
+            1,
+            3
+          ],
+          "spins": [
+            0.0,
+            2.0,
+            0.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            4,
+            2,
+            2
+          ],
+          "spins": [
+            0.0,
+            2.0,
+            1.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            4,
+            3,
+            1
+          ],
+          "spins": [
+            0.0,
+            2.0,
+            1.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            4,
+            4,
+            0
+          ],
+          "spins": [
+            0.0,
+            2.0,
+            2.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            0,
+            3,
+            4
+          ],
+          "spins": [
+            0.5,
+            0.0,
+            1.5,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            0,
+            4,
+            3
+          ],
+          "spins": [
+            0.5,
+            0.0,
+            2.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            1,
+            2,
+            4
+          ],
+          "spins": [
+            0.5,
+            0.5,
+            1.0,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "spins": [
+            0.5,
+            0.5,
+            1.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            0,
+            2
+          ],
+          "intermediateK": [
+            0.0,
+            1.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            1,
+            1,
+            4,
+            2
+          ],
+          "spins": [
+            0.5,
+            0.5,
+            2.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            2,
+            1,
+            4
+          ],
+          "spins": [
+            0.5,
+            1.0,
+            0.5,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            2,
+            2,
+            3
+          ],
+          "spins": [
+            0.5,
+            1.0,
+            1.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            1,
+            3
+          ],
+          "intermediateK": [
+            0.5,
+            1.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            1,
+            2,
+            3,
+            2
+          ],
+          "spins": [
+            0.5,
+            1.0,
+            1.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            1,
+            3
+          ],
+          "intermediateK": [
+            0.5,
+            1.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            1,
+            2,
+            4,
+            1
+          ],
+          "spins": [
+            0.5,
+            1.0,
+            2.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            3,
+            0,
+            4
+          ],
+          "spins": [
+            0.5,
+            1.5,
+            0.0,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            3,
+            1,
+            3
+          ],
+          "spins": [
+            0.5,
+            1.5,
+            0.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            1,
+            3,
+            2,
+            2
+          ],
+          "spins": [
+            0.5,
+            1.5,
+            1.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            1,
+            3,
+            3,
+            1
+          ],
+          "spins": [
+            0.5,
+            1.5,
+            1.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            1,
+            3,
+            4,
+            0
+          ],
+          "spins": [
+            0.5,
+            1.5,
+            2.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            4,
+            0,
+            3
+          ],
+          "spins": [
+            0.5,
+            2.0,
+            0.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            4,
+            1,
+            2
+          ],
+          "spins": [
+            0.5,
+            2.0,
+            0.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            4,
+            2,
+            1
+          ],
+          "spins": [
+            0.5,
+            2.0,
+            1.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            4,
+            3,
+            0
+          ],
+          "spins": [
+            0.5,
+            2.0,
+            1.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            0,
+            2,
+            4
+          ],
+          "spins": [
+            1.0,
+            0.0,
+            1.0,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            0,
+            3,
+            3
+          ],
+          "spins": [
+            1.0,
+            0.0,
+            1.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            0,
+            4,
+            2
+          ],
+          "spins": [
+            1.0,
+            0.0,
+            2.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            1,
+            1,
+            4
+          ],
+          "spins": [
+            1.0,
+            0.5,
+            0.5,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            1,
+            2,
+            3
+          ],
+          "spins": [
+            1.0,
+            0.5,
+            1.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            1,
+            3
+          ],
+          "intermediateK": [
+            0.5,
+            1.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            1,
+            3,
+            2
+          ],
+          "spins": [
+            1.0,
+            0.5,
+            1.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            1,
+            3
+          ],
+          "intermediateK": [
+            0.5,
+            1.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            1,
+            4,
+            1
+          ],
+          "spins": [
+            1.0,
+            0.5,
+            2.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            2,
+            0,
+            4
+          ],
+          "spins": [
+            1.0,
+            1.0,
+            0.0,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            2,
+            1,
+            3
+          ],
+          "spins": [
+            1.0,
+            1.0,
+            0.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "spins": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            0,
+            2,
+            4
+          ],
+          "intermediateK": [
+            0.0,
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 3,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            2,
+            3,
+            1
+          ],
+          "spins": [
+            1.0,
+            1.0,
+            1.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            2,
+            4,
+            0
+          ],
+          "spins": [
+            1.0,
+            1.0,
+            2.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            3,
+            0,
+            3
+          ],
+          "spins": [
+            1.0,
+            1.5,
+            0.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            3,
+            1,
+            2
+          ],
+          "spins": [
+            1.0,
+            1.5,
+            0.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            1,
+            3
+          ],
+          "intermediateK": [
+            0.5,
+            1.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            3,
+            2,
+            1
+          ],
+          "spins": [
+            1.0,
+            1.5,
+            1.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            1,
+            3
+          ],
+          "intermediateK": [
+            0.5,
+            1.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            3,
+            3,
+            0
+          ],
+          "spins": [
+            1.0,
+            1.5,
+            1.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            4,
+            0,
+            2
+          ],
+          "spins": [
+            1.0,
+            2.0,
+            0.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            4,
+            1,
+            1
+          ],
+          "spins": [
+            1.0,
+            2.0,
+            0.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            4,
+            2,
+            0
+          ],
+          "spins": [
+            1.0,
+            2.0,
+            1.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            0,
+            1,
+            4
+          ],
+          "spins": [
+            1.5,
+            0.0,
+            0.5,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            0,
+            2,
+            3
+          ],
+          "spins": [
+            1.5,
+            0.0,
+            1.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            0,
+            3,
+            2
+          ],
+          "spins": [
+            1.5,
+            0.0,
+            1.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            0,
+            4,
+            1
+          ],
+          "spins": [
+            1.5,
+            0.0,
+            2.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            1,
+            0,
+            4
+          ],
+          "spins": [
+            1.5,
+            0.5,
+            0.0,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            1,
+            1,
+            3
+          ],
+          "spins": [
+            1.5,
+            0.5,
+            0.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            1,
+            2,
+            2
+          ],
+          "spins": [
+            1.5,
+            0.5,
+            1.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            1,
+            3,
+            1
+          ],
+          "spins": [
+            1.5,
+            0.5,
+            1.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            1,
+            4,
+            0
+          ],
+          "spins": [
+            1.5,
+            0.5,
+            2.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            2,
+            0,
+            3
+          ],
+          "spins": [
+            1.5,
+            1.0,
+            0.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            2,
+            1,
+            2
+          ],
+          "spins": [
+            1.5,
+            1.0,
+            0.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            1,
+            3
+          ],
+          "intermediateK": [
+            0.5,
+            1.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            2,
+            2,
+            1
+          ],
+          "spins": [
+            1.5,
+            1.0,
+            1.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            1,
+            3
+          ],
+          "intermediateK": [
+            0.5,
+            1.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            2,
+            3,
+            0
+          ],
+          "spins": [
+            1.5,
+            1.0,
+            1.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            3,
+            0,
+            2
+          ],
+          "spins": [
+            1.5,
+            1.5,
+            0.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            3,
+            1,
+            1
+          ],
+          "spins": [
+            1.5,
+            1.5,
+            0.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            0,
+            2
+          ],
+          "intermediateK": [
+            0.0,
+            1.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            3,
+            2,
+            0
+          ],
+          "spins": [
+            1.5,
+            1.5,
+            1.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            4,
+            0,
+            1
+          ],
+          "spins": [
+            1.5,
+            2.0,
+            0.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            4,
+            1,
+            0
+          ],
+          "spins": [
+            1.5,
+            2.0,
+            0.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            4,
+            0,
+            0,
+            4
+          ],
+          "spins": [
+            2.0,
+            0.0,
+            0.0,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            4,
+            0,
+            1,
+            3
+          ],
+          "spins": [
+            2.0,
+            0.0,
+            0.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            4,
+            0,
+            2,
+            2
+          ],
+          "spins": [
+            2.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            4,
+            0,
+            3,
+            1
+          ],
+          "spins": [
+            2.0,
+            0.0,
+            1.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "spins": [
+            2.0,
+            0.0,
+            2.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            4,
+            1,
+            0,
+            3
+          ],
+          "spins": [
+            2.0,
+            0.5,
+            0.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            4,
+            1,
+            1,
+            2
+          ],
+          "spins": [
+            2.0,
+            0.5,
+            0.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            4,
+            1,
+            2,
+            1
+          ],
+          "spins": [
+            2.0,
+            0.5,
+            1.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            4,
+            1,
+            3,
+            0
+          ],
+          "spins": [
+            2.0,
+            0.5,
+            1.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            4,
+            2,
+            0,
+            2
+          ],
+          "spins": [
+            2.0,
+            1.0,
+            0.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            4,
+            2,
+            1,
+            1
+          ],
+          "spins": [
+            2.0,
+            1.0,
+            0.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            4,
+            2,
+            2,
+            0
+          ],
+          "spins": [
+            2.0,
+            1.0,
+            1.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            4,
+            3,
+            0,
+            1
+          ],
+          "spins": [
+            2.0,
+            1.5,
+            0.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            4,
+            3,
+            1,
+            0
+          ],
+          "spins": [
+            2.0,
+            1.5,
+            0.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            4,
+            4,
+            0,
+            0
+          ],
+          "spins": [
+            2.0,
+            2.0,
+            0.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            0
+          ],
+          "intermediateK": [
+            0.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        }
+      ]
+    },
+    {
+      "areaLabelJ": 5,
+      "orderedLegs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "closureSectors": 146,
+      "closureIntertwinerDimension": 196,
+      "fourNonzeroFaceSectors": 68,
+      "fourNonzeroFaceIntertwinerDimension": 118,
+      "strictPolygonSectors": 44,
+      "strictPolygonIntertwinerDimension": 94,
+      "sectors": [
+        {
+          "twiceSpins": [
+            0,
+            0,
+            5,
+            5
+          ],
+          "spins": [
+            0.0,
+            0.0,
+            2.5,
+            2.5
+          ],
+          "intermediateTwiceK": [
+            0
+          ],
+          "intermediateK": [
+            0.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "spins": [
+            0.0,
+            0.5,
+            2.0,
+            2.5
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            1,
+            5,
+            4
+          ],
+          "spins": [
+            0.0,
+            0.5,
+            2.5,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            2,
+            3,
+            5
+          ],
+          "spins": [
+            0.0,
+            1.0,
+            1.5,
+            2.5
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            2,
+            4,
+            4
+          ],
+          "spins": [
+            0.0,
+            1.0,
+            2.0,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            0,
+            2,
+            5,
+            3
+          ],
+          "spins": [
+            0.0,
+            1.0,
+            2.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            3,
+            2,
+            5
+          ],
+          "spins": [
+            0.0,
+            1.5,
+            1.0,
+            2.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            3,
+            3,
+            4
+          ],
+          "spins": [
+            0.0,
+            1.5,
+            1.5,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            0,
+            3,
+            4,
+            3
+          ],
+          "spins": [
+            0.0,
+            1.5,
+            2.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            0,
+            3,
+            5,
+            2
+          ],
+          "spins": [
+            0.0,
+            1.5,
+            2.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            4,
+            1,
+            5
+          ],
+          "spins": [
+            0.0,
+            2.0,
+            0.5,
+            2.5
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            4,
+            2,
+            4
+          ],
+          "spins": [
+            0.0,
+            2.0,
+            1.0,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            0,
+            4,
+            3,
+            3
+          ],
+          "spins": [
+            0.0,
+            2.0,
+            1.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            0,
+            4,
+            4,
+            2
+          ],
+          "spins": [
+            0.0,
+            2.0,
+            2.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            0,
+            4,
+            5,
+            1
+          ],
+          "spins": [
+            0.0,
+            2.0,
+            2.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            5,
+            0,
+            5
+          ],
+          "spins": [
+            0.0,
+            2.5,
+            0.0,
+            2.5
+          ],
+          "intermediateTwiceK": [
+            5
+          ],
+          "intermediateK": [
+            2.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            5,
+            1,
+            4
+          ],
+          "spins": [
+            0.0,
+            2.5,
+            0.5,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            5
+          ],
+          "intermediateK": [
+            2.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            5,
+            2,
+            3
+          ],
+          "spins": [
+            0.0,
+            2.5,
+            1.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            5
+          ],
+          "intermediateK": [
+            2.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            5,
+            3,
+            2
+          ],
+          "spins": [
+            0.0,
+            2.5,
+            1.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            5
+          ],
+          "intermediateK": [
+            2.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            5,
+            4,
+            1
+          ],
+          "spins": [
+            0.0,
+            2.5,
+            2.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            5
+          ],
+          "intermediateK": [
+            2.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            0,
+            5,
+            5,
+            0
+          ],
+          "spins": [
+            0.0,
+            2.5,
+            2.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            5
+          ],
+          "intermediateK": [
+            2.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            0,
+            4,
+            5
+          ],
+          "spins": [
+            0.5,
+            0.0,
+            2.0,
+            2.5
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            0,
+            5,
+            4
+          ],
+          "spins": [
+            0.5,
+            0.0,
+            2.5,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            1,
+            3,
+            5
+          ],
+          "spins": [
+            0.5,
+            0.5,
+            1.5,
+            2.5
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            1,
+            4,
+            4
+          ],
+          "spins": [
+            0.5,
+            0.5,
+            2.0,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            0,
+            2
+          ],
+          "intermediateK": [
+            0.0,
+            1.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            1,
+            1,
+            5,
+            3
+          ],
+          "spins": [
+            0.5,
+            0.5,
+            2.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            2,
+            2,
+            5
+          ],
+          "spins": [
+            0.5,
+            1.0,
+            1.0,
+            2.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "spins": [
+            0.5,
+            1.0,
+            1.5,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            1,
+            3
+          ],
+          "intermediateK": [
+            0.5,
+            1.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            1,
+            2,
+            4,
+            3
+          ],
+          "spins": [
+            0.5,
+            1.0,
+            2.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            1,
+            3
+          ],
+          "intermediateK": [
+            0.5,
+            1.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            1,
+            2,
+            5,
+            2
+          ],
+          "spins": [
+            0.5,
+            1.0,
+            2.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            3,
+            1,
+            5
+          ],
+          "spins": [
+            0.5,
+            1.5,
+            0.5,
+            2.5
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            3,
+            2,
+            4
+          ],
+          "spins": [
+            0.5,
+            1.5,
+            1.0,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            1,
+            3,
+            3,
+            3
+          ],
+          "spins": [
+            0.5,
+            1.5,
+            1.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            1,
+            3,
+            4,
+            2
+          ],
+          "spins": [
+            0.5,
+            1.5,
+            2.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            1,
+            3,
+            5,
+            1
+          ],
+          "spins": [
+            0.5,
+            1.5,
+            2.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            4,
+            0,
+            5
+          ],
+          "spins": [
+            0.5,
+            2.0,
+            0.0,
+            2.5
+          ],
+          "intermediateTwiceK": [
+            5
+          ],
+          "intermediateK": [
+            2.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            4,
+            1,
+            4
+          ],
+          "spins": [
+            0.5,
+            2.0,
+            0.5,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            3,
+            5
+          ],
+          "intermediateK": [
+            1.5,
+            2.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            1,
+            4,
+            2,
+            3
+          ],
+          "spins": [
+            0.5,
+            2.0,
+            1.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            3,
+            5
+          ],
+          "intermediateK": [
+            1.5,
+            2.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            1,
+            4,
+            3,
+            2
+          ],
+          "spins": [
+            0.5,
+            2.0,
+            1.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            3,
+            5
+          ],
+          "intermediateK": [
+            1.5,
+            2.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            1,
+            4,
+            4,
+            1
+          ],
+          "spins": [
+            0.5,
+            2.0,
+            2.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            3,
+            5
+          ],
+          "intermediateK": [
+            1.5,
+            2.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            1,
+            4,
+            5,
+            0
+          ],
+          "spins": [
+            0.5,
+            2.0,
+            2.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            5
+          ],
+          "intermediateK": [
+            2.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            5,
+            0,
+            4
+          ],
+          "spins": [
+            0.5,
+            2.5,
+            0.0,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            5,
+            1,
+            3
+          ],
+          "spins": [
+            0.5,
+            2.5,
+            0.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            5,
+            2,
+            2
+          ],
+          "spins": [
+            0.5,
+            2.5,
+            1.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            5,
+            3,
+            1
+          ],
+          "spins": [
+            0.5,
+            2.5,
+            1.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            1,
+            5,
+            4,
+            0
+          ],
+          "spins": [
+            0.5,
+            2.5,
+            2.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            0,
+            3,
+            5
+          ],
+          "spins": [
+            1.0,
+            0.0,
+            1.5,
+            2.5
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            0,
+            4,
+            4
+          ],
+          "spins": [
+            1.0,
+            0.0,
+            2.0,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            0,
+            5,
+            3
+          ],
+          "spins": [
+            1.0,
+            0.0,
+            2.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            1,
+            2,
+            5
+          ],
+          "spins": [
+            1.0,
+            0.5,
+            1.0,
+            2.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            1,
+            3,
+            4
+          ],
+          "spins": [
+            1.0,
+            0.5,
+            1.5,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            1,
+            3
+          ],
+          "intermediateK": [
+            0.5,
+            1.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            1,
+            4,
+            3
+          ],
+          "spins": [
+            1.0,
+            0.5,
+            2.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            1,
+            3
+          ],
+          "intermediateK": [
+            0.5,
+            1.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            1,
+            5,
+            2
+          ],
+          "spins": [
+            1.0,
+            0.5,
+            2.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            2,
+            1,
+            5
+          ],
+          "spins": [
+            1.0,
+            1.0,
+            0.5,
+            2.5
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            2,
+            2,
+            4
+          ],
+          "spins": [
+            1.0,
+            1.0,
+            1.0,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            2,
+            3,
+            3
+          ],
+          "spins": [
+            1.0,
+            1.0,
+            1.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            0,
+            2,
+            4
+          ],
+          "intermediateK": [
+            0.0,
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 3,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            2,
+            4,
+            2
+          ],
+          "spins": [
+            1.0,
+            1.0,
+            2.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            2,
+            5,
+            1
+          ],
+          "spins": [
+            1.0,
+            1.0,
+            2.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            3,
+            0,
+            5
+          ],
+          "spins": [
+            1.0,
+            1.5,
+            0.0,
+            2.5
+          ],
+          "intermediateTwiceK": [
+            5
+          ],
+          "intermediateK": [
+            2.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            3,
+            1,
+            4
+          ],
+          "spins": [
+            1.0,
+            1.5,
+            0.5,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            3,
+            5
+          ],
+          "intermediateK": [
+            1.5,
+            2.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            3,
+            2,
+            3
+          ],
+          "spins": [
+            1.0,
+            1.5,
+            1.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            1,
+            3,
+            5
+          ],
+          "intermediateK": [
+            0.5,
+            1.5,
+            2.5
+          ],
+          "intertwinerDimension": 3,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            3,
+            3,
+            2
+          ],
+          "spins": [
+            1.0,
+            1.5,
+            1.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            1,
+            3,
+            5
+          ],
+          "intermediateK": [
+            0.5,
+            1.5,
+            2.5
+          ],
+          "intertwinerDimension": 3,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            3,
+            4,
+            1
+          ],
+          "spins": [
+            1.0,
+            1.5,
+            2.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            3,
+            5
+          ],
+          "intermediateK": [
+            1.5,
+            2.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            3,
+            5,
+            0
+          ],
+          "spins": [
+            1.0,
+            1.5,
+            2.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            5
+          ],
+          "intermediateK": [
+            2.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            4,
+            0,
+            4
+          ],
+          "spins": [
+            1.0,
+            2.0,
+            0.0,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            4,
+            1,
+            3
+          ],
+          "spins": [
+            1.0,
+            2.0,
+            0.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            4,
+            2,
+            2
+          ],
+          "spins": [
+            1.0,
+            2.0,
+            1.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            4,
+            3,
+            1
+          ],
+          "spins": [
+            1.0,
+            2.0,
+            1.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            4,
+            4,
+            0
+          ],
+          "spins": [
+            1.0,
+            2.0,
+            2.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            2,
+            5,
+            0,
+            3
+          ],
+          "spins": [
+            1.0,
+            2.5,
+            0.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            5,
+            1,
+            2
+          ],
+          "spins": [
+            1.0,
+            2.5,
+            0.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            5,
+            2,
+            1
+          ],
+          "spins": [
+            1.0,
+            2.5,
+            1.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            2,
+            5,
+            3,
+            0
+          ],
+          "spins": [
+            1.0,
+            2.5,
+            1.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            0,
+            2,
+            5
+          ],
+          "spins": [
+            1.5,
+            0.0,
+            1.0,
+            2.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            0,
+            3,
+            4
+          ],
+          "spins": [
+            1.5,
+            0.0,
+            1.5,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            0,
+            4,
+            3
+          ],
+          "spins": [
+            1.5,
+            0.0,
+            2.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            0,
+            5,
+            2
+          ],
+          "spins": [
+            1.5,
+            0.0,
+            2.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            1,
+            1,
+            5
+          ],
+          "spins": [
+            1.5,
+            0.5,
+            0.5,
+            2.5
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            1,
+            2,
+            4
+          ],
+          "spins": [
+            1.5,
+            0.5,
+            1.0,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            1,
+            3,
+            3
+          ],
+          "spins": [
+            1.5,
+            0.5,
+            1.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            1,
+            4,
+            2
+          ],
+          "spins": [
+            1.5,
+            0.5,
+            2.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            1,
+            5,
+            1
+          ],
+          "spins": [
+            1.5,
+            0.5,
+            2.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            2,
+            0,
+            5
+          ],
+          "spins": [
+            1.5,
+            1.0,
+            0.0,
+            2.5
+          ],
+          "intermediateTwiceK": [
+            5
+          ],
+          "intermediateK": [
+            2.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            2,
+            1,
+            4
+          ],
+          "spins": [
+            1.5,
+            1.0,
+            0.5,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            3,
+            5
+          ],
+          "intermediateK": [
+            1.5,
+            2.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            2,
+            2,
+            3
+          ],
+          "spins": [
+            1.5,
+            1.0,
+            1.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            1,
+            3,
+            5
+          ],
+          "intermediateK": [
+            0.5,
+            1.5,
+            2.5
+          ],
+          "intertwinerDimension": 3,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            2,
+            3,
+            2
+          ],
+          "spins": [
+            1.5,
+            1.0,
+            1.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            1,
+            3,
+            5
+          ],
+          "intermediateK": [
+            0.5,
+            1.5,
+            2.5
+          ],
+          "intertwinerDimension": 3,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            2,
+            4,
+            1
+          ],
+          "spins": [
+            1.5,
+            1.0,
+            2.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            3,
+            5
+          ],
+          "intermediateK": [
+            1.5,
+            2.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            2,
+            5,
+            0
+          ],
+          "spins": [
+            1.5,
+            1.0,
+            2.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            5
+          ],
+          "intermediateK": [
+            2.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            3,
+            0,
+            4
+          ],
+          "spins": [
+            1.5,
+            1.5,
+            0.0,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            3,
+            1,
+            3
+          ],
+          "spins": [
+            1.5,
+            1.5,
+            0.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            3,
+            2,
+            2
+          ],
+          "spins": [
+            1.5,
+            1.5,
+            1.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            0,
+            2,
+            4
+          ],
+          "intermediateK": [
+            0.0,
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 3,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            3,
+            3,
+            1
+          ],
+          "spins": [
+            1.5,
+            1.5,
+            1.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            3,
+            4,
+            0
+          ],
+          "spins": [
+            1.5,
+            1.5,
+            2.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            4,
+            0,
+            3
+          ],
+          "spins": [
+            1.5,
+            2.0,
+            0.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            4,
+            1,
+            2
+          ],
+          "spins": [
+            1.5,
+            2.0,
+            0.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            1,
+            3
+          ],
+          "intermediateK": [
+            0.5,
+            1.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            4,
+            2,
+            1
+          ],
+          "spins": [
+            1.5,
+            2.0,
+            1.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            1,
+            3
+          ],
+          "intermediateK": [
+            0.5,
+            1.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            4,
+            3,
+            0
+          ],
+          "spins": [
+            1.5,
+            2.0,
+            1.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            3,
+            5,
+            0,
+            2
+          ],
+          "spins": [
+            1.5,
+            2.5,
+            0.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            5,
+            1,
+            1
+          ],
+          "spins": [
+            1.5,
+            2.5,
+            0.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            3,
+            5,
+            2,
+            0
+          ],
+          "spins": [
+            1.5,
+            2.5,
+            1.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            4,
+            0,
+            1,
+            5
+          ],
+          "spins": [
+            2.0,
+            0.0,
+            0.5,
+            2.5
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            4,
+            0,
+            2,
+            4
+          ],
+          "spins": [
+            2.0,
+            0.0,
+            1.0,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            4,
+            0,
+            3,
+            3
+          ],
+          "spins": [
+            2.0,
+            0.0,
+            1.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            4,
+            0,
+            4,
+            2
+          ],
+          "spins": [
+            2.0,
+            0.0,
+            2.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            4,
+            0,
+            5,
+            1
+          ],
+          "spins": [
+            2.0,
+            0.0,
+            2.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            4,
+            1,
+            0,
+            5
+          ],
+          "spins": [
+            2.0,
+            0.5,
+            0.0,
+            2.5
+          ],
+          "intermediateTwiceK": [
+            5
+          ],
+          "intermediateK": [
+            2.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            4,
+            1,
+            1,
+            4
+          ],
+          "spins": [
+            2.0,
+            0.5,
+            0.5,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            3,
+            5
+          ],
+          "intermediateK": [
+            1.5,
+            2.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "spins": [
+            2.0,
+            0.5,
+            1.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            3,
+            5
+          ],
+          "intermediateK": [
+            1.5,
+            2.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            4,
+            1,
+            3,
+            2
+          ],
+          "spins": [
+            2.0,
+            0.5,
+            1.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            3,
+            5
+          ],
+          "intermediateK": [
+            1.5,
+            2.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            4,
+            1,
+            4,
+            1
+          ],
+          "spins": [
+            2.0,
+            0.5,
+            2.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            3,
+            5
+          ],
+          "intermediateK": [
+            1.5,
+            2.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            4,
+            1,
+            5,
+            0
+          ],
+          "spins": [
+            2.0,
+            0.5,
+            2.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            5
+          ],
+          "intermediateK": [
+            2.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            4,
+            2,
+            0,
+            4
+          ],
+          "spins": [
+            2.0,
+            1.0,
+            0.0,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            4,
+            2,
+            1,
+            3
+          ],
+          "spins": [
+            2.0,
+            1.0,
+            0.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            4,
+            2,
+            2,
+            2
+          ],
+          "spins": [
+            2.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            4,
+            2,
+            3,
+            1
+          ],
+          "spins": [
+            2.0,
+            1.0,
+            1.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            2,
+            4
+          ],
+          "intermediateK": [
+            1.0,
+            2.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            4,
+            2,
+            4,
+            0
+          ],
+          "spins": [
+            2.0,
+            1.0,
+            2.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            4,
+            3,
+            0,
+            3
+          ],
+          "spins": [
+            2.0,
+            1.5,
+            0.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            4,
+            3,
+            1,
+            2
+          ],
+          "spins": [
+            2.0,
+            1.5,
+            0.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            1,
+            3
+          ],
+          "intermediateK": [
+            0.5,
+            1.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            4,
+            3,
+            2,
+            1
+          ],
+          "spins": [
+            2.0,
+            1.5,
+            1.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            1,
+            3
+          ],
+          "intermediateK": [
+            0.5,
+            1.5
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            4,
+            3,
+            3,
+            0
+          ],
+          "spins": [
+            2.0,
+            1.5,
+            1.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            4,
+            4,
+            0,
+            2
+          ],
+          "spins": [
+            2.0,
+            2.0,
+            0.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            4,
+            4,
+            1,
+            1
+          ],
+          "spins": [
+            2.0,
+            2.0,
+            0.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            0,
+            2
+          ],
+          "intermediateK": [
+            0.0,
+            1.0
+          ],
+          "intertwinerDimension": 2,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            4,
+            4,
+            2,
+            0
+          ],
+          "spins": [
+            2.0,
+            2.0,
+            1.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": true
+        },
+        {
+          "twiceSpins": [
+            4,
+            5,
+            0,
+            1
+          ],
+          "spins": [
+            2.0,
+            2.5,
+            0.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            4,
+            5,
+            1,
+            0
+          ],
+          "spins": [
+            2.0,
+            2.5,
+            0.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            5,
+            0,
+            0,
+            5
+          ],
+          "spins": [
+            2.5,
+            0.0,
+            0.0,
+            2.5
+          ],
+          "intermediateTwiceK": [
+            5
+          ],
+          "intermediateK": [
+            2.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            5,
+            0,
+            1,
+            4
+          ],
+          "spins": [
+            2.5,
+            0.0,
+            0.5,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            5
+          ],
+          "intermediateK": [
+            2.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            5,
+            0,
+            2,
+            3
+          ],
+          "spins": [
+            2.5,
+            0.0,
+            1.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            5
+          ],
+          "intermediateK": [
+            2.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            5,
+            0,
+            3,
+            2
+          ],
+          "spins": [
+            2.5,
+            0.0,
+            1.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            5
+          ],
+          "intermediateK": [
+            2.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            5,
+            0,
+            4,
+            1
+          ],
+          "spins": [
+            2.5,
+            0.0,
+            2.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            5
+          ],
+          "intermediateK": [
+            2.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            5,
+            0,
+            5,
+            0
+          ],
+          "spins": [
+            2.5,
+            0.0,
+            2.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            5
+          ],
+          "intermediateK": [
+            2.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            5,
+            1,
+            0,
+            4
+          ],
+          "spins": [
+            2.5,
+            0.5,
+            0.0,
+            2.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            5,
+            1,
+            1,
+            3
+          ],
+          "spins": [
+            2.5,
+            0.5,
+            0.5,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            5,
+            1,
+            2,
+            2
+          ],
+          "spins": [
+            2.5,
+            0.5,
+            1.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            5,
+            1,
+            3,
+            1
+          ],
+          "spins": [
+            2.5,
+            0.5,
+            1.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            5,
+            1,
+            4,
+            0
+          ],
+          "spins": [
+            2.5,
+            0.5,
+            2.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            4
+          ],
+          "intermediateK": [
+            2.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            5,
+            2,
+            0,
+            3
+          ],
+          "spins": [
+            2.5,
+            1.0,
+            0.0,
+            1.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            5,
+            2,
+            1,
+            2
+          ],
+          "spins": [
+            2.5,
+            1.0,
+            0.5,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            5,
+            2,
+            2,
+            1
+          ],
+          "spins": [
+            2.5,
+            1.0,
+            1.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            5,
+            2,
+            3,
+            0
+          ],
+          "spins": [
+            2.5,
+            1.0,
+            1.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            3
+          ],
+          "intermediateK": [
+            1.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            5,
+            3,
+            0,
+            2
+          ],
+          "spins": [
+            2.5,
+            1.5,
+            0.0,
+            1.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            5,
+            3,
+            1,
+            1
+          ],
+          "spins": [
+            2.5,
+            1.5,
+            0.5,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": true,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            5,
+            3,
+            2,
+            0
+          ],
+          "spins": [
+            2.5,
+            1.5,
+            1.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            2
+          ],
+          "intermediateK": [
+            1.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            5,
+            4,
+            0,
+            1
+          ],
+          "spins": [
+            2.5,
+            2.0,
+            0.0,
+            0.5
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            5,
+            4,
+            1,
+            0
+          ],
+          "spins": [
+            2.5,
+            2.0,
+            0.5,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            1
+          ],
+          "intermediateK": [
+            0.5
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        },
+        {
+          "twiceSpins": [
+            5,
+            5,
+            0,
+            0
+          ],
+          "spins": [
+            2.5,
+            2.5,
+            0.0,
+            0.0
+          ],
+          "intermediateTwiceK": [
+            0
+          ],
+          "intermediateK": [
+            0.0
+          ],
+          "intertwinerDimension": 1,
+          "allFacesNonzero": false,
+          "strictPolygonInequality": false
+        }
+      ]
+    }
+  ]
+}

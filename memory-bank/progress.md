@@ -1,8 +1,16 @@
 # Implementation Progress
 
-*Last Updated: 2026-10-02 13:37:45 IST*
+*Last Updated: 2026-10-03 00:27:43 IST*
 
 ## Active Tasks
+
+### T1a: Positive FL Volume Across Tetrahedron Shapes
+**Status:** 🔄 IN PROGRESS
+**Priority:** HIGH
+
+The regular FL tetrahedron area sweep covers $J=1\ldots5$. At $J=2$, a 440-point ordered equal-face-area scan finds the regular tetrahedron as the sampled minimum for both RS and AL expectations. Two direct tensor-product checks agree to floating-point precision, and the displayed shape guide now appears on both dashboard panels. This grid does not establish a global minimum; exact degenerate limits and unequal-area shape families remain open. The project-normalized $J=2$ expectations do not simply follow reconstructed classical volume at the selected comparison points.
+
+**Next:** study boundary limits and volume spread across $J$; extend positive spin-assignment enumeration and shape sampling to unequal areas; investigate the role of the qhe-bhe Thurston/Minkowski results. Keep this question separate from the claim that the quantum expectation has a proved global minimum.
 
 ### T4: Follow-up Manuscript
 **Status:** 🔄 IN PROGRESS
@@ -52,8 +60,8 @@ red-team audit. Subtasks T5a–T5g are in `tasks.md`.
 **Summary:** Reference implementation of Fock space, U(N) coherent states, Grassmannian embedding, and positivity tests in Python. All n=4 computations completed and verified.
 
 ### T1a: Volume Operator at n=4
-**Completed:** 2026-09-19
-**Summary:** Historical results were signed triple-grasp means and their proxy, not positive volume expectations. Exact small-sector RS and AL expectations are implemented. A preliminary EPJC Eq. (38) FL regular-tetrahedron evaluation is positive under both prescriptions; a roughly $1.8\times10^{-10}$ direct-method discrepancy, physical prefactors, and broader checks remain open.
+**Initial implementation completed:** 2026-09-19
+**Summary:** Historical results were signed triple-grasp means and their proxy, not positive volume expectations. Exact small-sector RS and AL expectations are implemented. The EPJC Eq. (38) FL regular-tetrahedron fixed-area sweep for $J=1\ldots5$ is positive under both prescriptions; direct-tensor triple matrices agree within $2.8\times10^{-15}$, while positive-volume expectations differ by at most $2.91\times10^{-10}$. The later $J=2$ shape scan and its limits are recorded in the active T1a section and `implementation-details/volume-operator.md`.
 
 ### T1b: Signed-mean result on real planes
 **Completed:** 2026-09-19

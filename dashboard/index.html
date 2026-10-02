@@ -108,7 +108,7 @@
   <div class="container">
     <h1 id="projectName">Loading...</h1>
     <p class="subtitle" id="projectSubtitle">Loading...</p>
-    <p class="hint">T3d/T3e numbers are corrected converged Rust runs. Independent SciPy checks cover n=4,5,7,8; n=6 remains open. “Volume” in these charts is the signed-mean proxy, not a positive volume-operator expectation.</p>
+    <p class="hint">T3d/T3e are corrected converged Rust runs. Independent SciPy checks cover n=4,5,7,8; n=6 remains open. The run-table Performance chart shows the signed-mean proxy. The fixed-area FL plot is a separate positive-volume calculation.</p>
 
     <div class="summary" id="summaryCards">
       <div class="summary-card" style="border-color: var(--primary);">
@@ -154,6 +154,22 @@
         <div id="perfChart"></div>
         <p class="hint" id="perfHint">Select axes and chart type, then click Update Chart.</p>
       </div>
+      <h2>Positive Volume vs. FL Area</h2>
+      <div class="chart-container">
+        <img src="figures/fl-volume-area.svg" alt="Positive RS and AL volume expectations versus the Freidel-Livine area label J, for a regular tetrahedron with J from one to five." style="display:block;width:100%;height:auto;">
+        <p class="hint">Fixed-area regular tetrahedron states, with A<sub>FL</sub>/ℓ<sub>p</sub><sup>2</sup> = J. Values use project normalization (γ = 0.2375); the physical volume prefactor remains open. The direct-tensor cross-check agrees at matrix level within 2.8×10<sup>−15</sup>; expectation values differ by at most 2.91×10<sup>−10</sup> for J = 1…5.</p>
+      </div>
+
+      <h2>Positive Volume vs. Four-face Shape at Fixed J=2</h2>
+      <div class="chart-container">
+        <img src="figures/fl-volume-shape-j2.svg?v=e9c96fa" alt="RS and AL positive-volume expectations over 440 sampled closed equal-area tetrahedron configurations at fixed FL area label J equals 2, with representative tetrahedra beside and below each graph." style="display:block;width:100%;height:auto;">
+        <p class="hint">Each graph has tetrahedron previews reconstructed from the same equal-area face normals. The bottom row varies x at fixed φ = 90°; the side column varies φ at fixed x = 1/√3. Each preview uses the nearest valid scan sample and the same display size, so compare shape proportions rather than absolute size.</p>
+        <p class="hint">The scan varies x = |n<sub>0</sub> + n<sub>1</sub>|/2 and the bending angle φ while keeping four unit face areas and closure. The highlighted regular tetrahedron is at x = 1/√3, φ = 90°. Face labels remain ordered; points are not deduplicated under leg permutations. The four normalized spinor rays also carry the cross ratio λ = ⟨z₀,z₂⟩⟨z₁,z₃⟩ / (⟨z₀,z₃⟩⟨z₁,z₂⟩), a coordinate on the four-marked-sphere moduli space used by Thurston. This is a coordinate link only; the cone-metric curvature data is not identified with the LQG face areas. Two direct tensor-product checks agree with the project routines within 1.4×10<sup>−17</sup>. Values remain project-normalized, and this equal-face-area family does not cover every coherent-state label at fixed J. <a href="fl-volume-shape-j2.json">Download the 440 sample records.</a></p>
+      </div>
+
+      <h2>Discrete Spin and Intertwiner Labels at Fixed J</h2>
+      <div class="table-wrap"><table id="volumeLabelsTable"></table></div>
+      <p class="hint">This finite list counts labelled SU(2) spin sectors and recoupling-basis states, not classical shapes. The strict polygon condition excludes collinear closure boundaries, but does not remove planar configurations. Each strict four-face area assignment admits a continuum of shapes; the heatmap above samples one equal-area family. Thurston’s lattice theorem classifies a separate special family of sphere triangulations, so no identification with LQG area labels is assumed. <a id="volumeLabelsDownload" href="fl-volume-allowed-labels.json">Download the sector and channel records.</a></p>
     </div>
 
     <div id="theoryTab" class="tab-content hidden">
@@ -188,6 +204,7 @@ async function loadData() {
     renderFigures();
     renderPerformance();
     renderTheory();
+    renderVolumeLabels();
   } catch (e) {
     document.querySelector('.container').innerHTML = `<div class="error">Error: ${e.message}</div>`;
   }
@@ -220,6 +237,18 @@ function renderSummary() {
   document.getElementById('totalTasks').textContent = (tasks.active?.length||0) + (tasks.completed?.length||0) + (tasks.pending?.length||0);
   document.getElementById('completeRuns').textContent = runs.filter(r => r.status==='complete').length;
   document.getElementById('totalFigures').textContent = figures.length;
+}
+
+function renderVolumeLabels() {
+  const enumeration = DATA.volumeLabelEnumeration;
+  const table = document.getElementById('volumeLabelsTable');
+  if (!enumeration || !table) return;
+  document.getElementById('volumeLabelsDownload').href = enumeration.recordsFile;
+  table.innerHTML = `
+    <thead><tr><th>J</th><th>Closed spin sectors</th><th>Four positive faces</th><th>Strict-polygon sectors</th><th>Strict-polygon intertwiner states</th></tr></thead>
+    <tbody>${enumeration.totals.map(row => `
+      <tr><td>${row.areaLabelJ}</td><td>${row.closureSectors}</td><td>${row.fourNonzeroFaceSectors}</td><td>${row.strictPolygonSectors}</td><td>${row.strictPolygonIntertwinerDimension}</td></tr>
+    `).join('')}</tbody>`;
 }
 
 function renderRuns() {
@@ -302,6 +331,13 @@ function renderPerformance() {
   const container = document.getElementById('perfChart');
   const hint = document.getElementById('perfHint');
   const runs = DATA.runs || [];
+
+  if (!window.Plot || typeof window.Plot.dot !== 'function' || typeof window.Plot.plot !== 'function') {
+    container.innerHTML = '<p class="loading">The interactive chart library did not load. Run records and the static volume–area figure are still available.</p>';
+    hint.style.display = 'block';
+    hint.textContent = 'Interactive charts require the Observable Plot CDN. The numerical volume–area figure below is available without it.';
+    return;
+  }
   
   if (runs.length === 0) {
     container.innerHTML = '<p class="loading">No run data available for charting.</p>';
