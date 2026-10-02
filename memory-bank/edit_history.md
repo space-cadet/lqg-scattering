@@ -6,6 +6,11 @@
 
 ### 2026-10-02
 
+#### 12:30:47 IST - T1a/T3c: Correct session title task identifiers
+- Updated `memory-bank/sessions/2026-10-02-morning.md` - Removed the unregistered INFRA label from the session title.
+- Updated `memory-bank/session_cache.md` - Changed the session reference to its registered task IDs.
+- Created `memory-bank/edits/2026-10-02/123047-t1a-t3c-session-title.md` - Recorded this title correction.
+
 #### 12:26:57 IST - INFRA: Clarify final checkout record
 - Updated `memory-bank/activeContext.md` - Recorded synchronization and clean-tree verification without a stale commit pointer.
 - Updated `memory-bank/session_cache.md` - Recorded synchronization and clean-tree verification without a stale commit pointer.

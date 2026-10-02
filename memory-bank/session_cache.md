@@ -48,7 +48,7 @@ Python and Rust now implement exact RS and AL positive expectations by dense spe
 - Corrected Rust/Python n=4 comparison and converged scans through n=8; independent SciPy checks cover n=4,5,7,8.
 
 ## Session History
-- 2026-10-02: Cloud setup, U(N) coherent-state and singlet-pair discussion, repository sync, and rules-based Memory Bank scan recorded under `INFRA, T1a, T3c`; see `sessions/2026-10-02-morning.md` and `sessions/2026-10-02-morning-transcript.md`. Follow-up: work through Freidel–Livine Section D, Eqs. 47–51. Cloud Rust suite has one numerical regression failure from before pulling `9602c98`; no research source was modified in the cloud session.
+- 2026-10-02: Cloud setup, U(N) coherent-state and singlet-pair discussion, repository sync, and rules-based Memory Bank scan recorded under `T1a, T3c`; see `sessions/2026-10-02-morning.md` and `sessions/2026-10-02-morning-transcript.md`. Follow-up: work through Freidel–Livine Section D, Eqs. 47–51. Cloud Rust suite has one numerical regression failure from before pulling `9602c98`; no research source was modified in the cloud session.
 - 2026-10-01: Project status and manuscript claims reconciled; red-team review gaps and research sequence assessed. See `sessions/2026-10-01-evening.md`.
 - 2026-09-20: T7a/T7b thermal and Gibbs-TFD numerical work recorded; see `sessions/2026-09-20-T7a-thermal-state.md` and T7 notes.
 - 2026-09-19: Rust phases and T5 experiment program integrated on `main`; see `memory-bank/tasks.md` and `memory-bank/progress.md`.
