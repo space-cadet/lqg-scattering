@@ -1,6 +1,6 @@
 # Active Context
 
-*Last Updated: 2026-10-02 12:22:16 IST*
+*Last Updated: 2026-10-02 12:25:08 IST*
 
 ## Current Focus
 **Primary Task:** T4 — bring the follow-up manuscript and its claims into agreement with the experiment records.
@@ -16,7 +16,7 @@
 - Published EPJC paper is the frozen baseline.
 - Python and Rust implementations exist. The old n=4 comparison shared a truncated Taylor state. Corrected Rust scans now cover n=4..8; SciPy independently checks n=4,5,7,8.
 - `manuscript.md` contains results through T7e but needs corrected conclusions, caveats, independent review, and circulation.
-- The cloud checkout is on local branch `work` at `9602c98`, matching `origin/main`. The current working tree contains session-record updates based on that revision.
+- The cloud checkout is on local branch `work` at `1f84fd2`, matching `origin/main`; the session-record updates are committed and the working tree is clean.
 - The 2026-10-02 U(N) singlet-pair discussion was conceptual and made no research-code changes. T1a/T3c FS-state construction and positive-volume evaluation remain open.
 
 ## Current Decisions

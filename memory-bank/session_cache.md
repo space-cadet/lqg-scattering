@@ -1,11 +1,11 @@
 # Session Cache
 
-*Last Updated: 2026-10-02 12:22:16 IST*
+*Last Updated: 2026-10-02 12:25:08 IST*
 
 ## Overview
 - Active Tasks: T1a/T3c RS/AL volume validation; T4 manuscript; T5 volume program; T7 thermal/TFD program
 - Paused Tasks: 0
-- Current cloud checkout: local branch `work` at `9602c98`, matching `origin/main`; session-record updates are now in the working tree.
+- Current cloud checkout: local branch `work` at `1f84fd2`, matching `origin/main`; session-record updates are committed and the working tree is clean.
 
 ## Task Registry
 - T4: Follow-up manuscript — 🔄 IN PROGRESS; correct claims, document review status, then circulate.
@@ -57,3 +57,4 @@ Python and Rust now implement exact RS and AL positive expectations by dense spe
 - The cloud session's `mem-scan` command was not registered in its skill/tool catalog. The later read-only memory-bank scan followed `integrated-rules-v6.12.md`; no project-specific five-gate red-team procedure was found.
 - Cloud checks recorded Rust 1.99/Cargo, NumPy/SciPy, release binaries, n=4 CLI and T5e smoke checks, and arXiv HTTP 200. Its Rust suite had one numerical regression failure (`experiment::tests::n4_sign_matches_python`; 18 other tests passed). Treat that as cloud-host evidence until rerun locally.
 - 2026-10-02 follow-up: pushed the session record as `d0f1e97`, then pulled `9602c98`. A read-only memory-bank audit used the integrated rules. This update reconciled checkout metadata and added October 2 edit chunks; task-registry schema drift and the rules filename/title mismatch remain. T1a/T3c remain open; the FL/F† discussion made no implementation change. Continue with Appendix D Eqs. 47–51 when requested.
+- 2026-10-02 documentation follow-up: committed and pushed individual task records, session transcript/write-up, technical notes, and edit chunks as `1f84fd2`; the checkout is clean and matches `origin/main`.
