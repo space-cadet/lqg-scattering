@@ -1,6 +1,6 @@
 # Tech Context
 
-*Last Updated: 2026-09-19 16:30 IST*
+*Last Updated: 2026-10-02 12:22:16 IST*
 
 ## Technology Stack
 
@@ -43,6 +43,15 @@ rust/
 | `positivity.py` | Positive Grassmannian cell tests |
 | `manifold.py` | Geometric utilities |
 | `rotation.py` | Rotation operators |
+
+## Quantum state construction
+
+The repository constructs its LQG Fock and coherent states in Python and
+Rust: Python reference routines live in `coherent_states.py` and
+`positivity.py`; Rust routines live in `rust/src/fock.rs`,
+`rust/src/coherent.rs`, and `rust/src/volume.rs`. A repository-wide search
+found no `ts-quantum` use or TypeScript state-construction dependency. The
+JavaScript memory-bank database and dashboard are not state-construction code.
 
 ## Build and Run
 

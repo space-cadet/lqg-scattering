@@ -1,6 +1,6 @@
 # Volume Operator: Implemented Prescriptions and Limits
 
-*Last Updated: 2026-10-01 22:06:11 IST*
+*Last Updated: 2026-10-02 12:22:16 IST*
 
 ## Current code
 
@@ -54,6 +54,9 @@ positive volume.
   coherent state used in the EPJC paper. No construction or positive-volume
   evaluation of that state is recorded yet; the paired-singlet check is a
   separate simple-state validation.
+- The Freidel–Livine U(N) Perelomov family discussed in the 2026-10-02 session
+  is distinct from that project target. Its F† singlet-pair construction and
+  overlap results do not count as an FS-state volume evaluation.
 - Replace or extend dense block diagonalization before applying it to large
   sectors; current exact code refuses blocks above 512.
 - Rerun the reported states. Keep the existing signed-mean series under its

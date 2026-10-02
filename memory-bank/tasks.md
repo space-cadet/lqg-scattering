@@ -1,5 +1,5 @@
 # Task Registry
-*Last Updated: 2026-10-01 22:06:11 IST*
+*Last Updated: 2026-10-02 12:22:16 IST*
 
 ## Active Tasks
 | ID | Title | Status | Priority | Started | Dependencies | Owner |
@@ -54,6 +54,7 @@ operator result; the numerical baseline has now been rerun to convergence.
 **Related Files**:
 - `positivity.py`
 - `coherent_states.py`
+- **Individual Task File**: [T1a details](tasks/T1a.md)
 
 **Notes**:
 The historical volume values were square roots of signed-grasp means, not
@@ -63,6 +64,10 @@ The outstanding coherent-state validation targets the Freidel–Speziale
 coherent state used in the EPJC paper; it has not yet been constructed or
 evaluated by the positive-volume routines. The physical prefactor and
 production-size evaluation remain open.
+The 2026-10-02 discussion clarified the separate Freidel–Livine U(N)
+Perelomov family and its F† singlet-pair reference. No FS-state construction or
+positive-volume evaluation was performed in that discussion; the criteria above
+remain open.
 
 ---
 
@@ -160,12 +165,15 @@ positive-cell result concerns the signed mean, not the positive volume.
 - `rust/src/volume.rs`
 - `rust/src/ops.rs`
 - `rust/src/fock.rs`
+- **Individual Task File**: [T3c details](tasks/T3c.md)
 
 **Notes**:
 The 2026-10-01 audit corrected the old scope: the historical function computed
 $\sqrt{|\langle q_{ijk}\rangle|}$, not either volume prescription. The new
 operators are exact in project normalization for active blocks up to dimension
 512; physical constants and large-block methods remain open.
+The 2026-10-02 U(N) singlet-pair discussion was conceptual; it did not change
+or validate the Rust state-construction or volume code.
 
 ---
 

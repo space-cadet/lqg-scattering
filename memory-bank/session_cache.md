@@ -1,11 +1,11 @@
 # Session Cache
 
-*Last Updated: 2026-10-02 10:07 IST*
+*Last Updated: 2026-10-02 12:22:16 IST*
 
 ## Overview
 - Active Tasks: T1a/T3c RS/AL volume validation; T4 manuscript; T5 volume program; T7 thermal/TFD program
 - Paused Tasks: 0
-- Current checkout: `main` at `d0f1e97`; local research and Memory Bank changes from the 2026-10-01 session remain uncommitted.
+- Current cloud checkout: local branch `work` at `9602c98`, matching `origin/main`; session-record updates are now in the working tree.
 
 ## Task Registry
 - T4: Follow-up manuscript — 🔄 IN PROGRESS; correct claims, document review status, then circulate.
@@ -48,11 +48,12 @@ Python and Rust now implement exact RS and AL positive expectations by dense spe
 - Corrected Rust/Python n=4 comparison and converged scans through n=8; independent SciPy checks cover n=4,5,7,8.
 
 ## Session History
-- 2026-10-02: U(N) coherent-state discussion and cloud setup recorded; see `sessions/2026-10-02-morning.md` and `sessions/2026-10-02-morning-transcript.md`. Follow-up: work through Freidel–Livine Section D, Eqs. 47–51. Cloud Rust suite has one numerical regression failure; no research source was modified in that session.
+- 2026-10-02: Cloud setup, U(N) coherent-state and singlet-pair discussion, repository sync, and rules-based Memory Bank scan recorded under `INFRA, T1a, T3c`; see `sessions/2026-10-02-morning.md` and `sessions/2026-10-02-morning-transcript.md`. Follow-up: work through Freidel–Livine Section D, Eqs. 47–51. Cloud Rust suite has one numerical regression failure from before pulling `9602c98`; no research source was modified in the cloud session.
 - 2026-10-01: Project status and manuscript claims reconciled; red-team review gaps and research sequence assessed. See `sessions/2026-10-01-evening.md`.
 - 2026-09-20: T7a/T7b thermal and Gibbs-TFD numerical work recorded; see `sessions/2026-09-20-T7a-thermal-state.md` and T7 notes.
 - 2026-09-19: Rust phases and T5 experiment program integrated on `main`; see `memory-bank/tasks.md` and `memory-bank/progress.md`.
 
 ## Cloud Session Notes
-- The cloud session documented that its `mem-scan` command was unavailable; this checkout has the global `mem-scan` skill available, but no project-specific five-gate red-team skill was found.
+- The cloud session's `mem-scan` command was not registered in its skill/tool catalog. The later read-only memory-bank scan followed `integrated-rules-v6.12.md`; no project-specific five-gate red-team procedure was found.
 - Cloud checks recorded Rust 1.99/Cargo, NumPy/SciPy, release binaries, n=4 CLI and T5e smoke checks, and arXiv HTTP 200. Its Rust suite had one numerical regression failure (`experiment::tests::n4_sign_matches_python`; 18 other tests passed). Treat that as cloud-host evidence until rerun locally.
+- 2026-10-02 follow-up: pushed the session record as `d0f1e97`, then pulled `9602c98`. A read-only memory-bank audit used the integrated rules. This update reconciled checkout metadata and added October 2 edit chunks; task-registry schema drift and the rules filename/title mismatch remain. T1a/T3c remain open; the FL/F† discussion made no implementation change. Continue with Appendix D Eqs. 47–51 when requested.
