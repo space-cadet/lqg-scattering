@@ -6,6 +6,11 @@
 
 ### 2026-10-02
 
+#### 12:26:57 IST - INFRA: Clarify final checkout record
+- Updated `memory-bank/activeContext.md` - Recorded synchronization and clean-tree verification without a stale commit pointer.
+- Updated `memory-bank/session_cache.md` - Recorded synchronization and clean-tree verification without a stale commit pointer.
+- Created `memory-bank/edits/2026-10-02/122657-infra-checkout-note.md` - Recorded this checkout-state wording update.
+
 #### 12:25:08 IST - INFRA: Record final documentation sync
 - Updated `memory-bank/activeContext.md` - Recorded final commit `1f84fd2` and clean checkout state.
 - Updated `memory-bank/session_cache.md` - Recorded final commit `1f84fd2` and clean checkout state.
