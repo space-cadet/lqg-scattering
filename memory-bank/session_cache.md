@@ -1,11 +1,11 @@
 # Session Cache
 
-*Last Updated: 2026-10-02 12:26:57 IST*
+*Last Updated: 2026-10-02 13:49:49 IST*
 
 ## Overview
 - Active Tasks: T1a/T3c RS/AL volume validation; T4 manuscript; T5 volume program; T7 thermal/TFD program
 - Paused Tasks: 0
-- Cloud checkout: local branch `work` synchronized with `origin/main`; session-record updates are committed and final verification found a clean working tree.
+- Cloud checkout was synchronized with `origin/main`; this local follow-up records the Python FL volume calculation in Memory Bank only.
 
 ## Task Registry
 - T4: Follow-up manuscript — 🔄 IN PROGRESS; correct claims, document review status, then circulate.
@@ -23,7 +23,7 @@
 ### Positive volume operators
 **Status:** 🔄 IN PROGRESS
 
-Python and Rust now implement exact RS and AL positive expectations by dense spectral decomposition of populated fixed-spin blocks (maximum dimension 512). A paired spin-1/2 singlet gives $V_{RS}=0.304653190236$ and $V_{AL}=0.152326595118$ in repository normalization despite $\langle q_{012}\rangle=0$; independent tensor-product matrices agree. The outstanding project-state rerun targets the Freidel–Speziale coherent state used in the EPJC paper; its construction and volume evaluation remain open, along with physical prefactors and larger-block algorithms.
+Python and Rust now implement exact RS and AL positive expectations by dense spectral decomposition of populated fixed-spin blocks (maximum dimension 512). A paired spin-1/2 singlet gives $V_{RS}=0.304653190236$ and $V_{AL}=0.152326595118$ in repository normalization despite $\langle q_{012}\rangle=0$; independent tensor-product matrices agree. A preliminary Python check of the EPJC Eq. (38) FL fixed-area state on a regular tetrahedron gives positive RS/AL volumes. Direct tensor-product values differ from project-routine values by about $1.8\times10^{-10}$. The discrepancy, Rust validation, physical prefactors, and larger-block algorithms remain open.
 
 ### T5: Volume–Positivity Program
 **Status:** 🔄 IN PROGRESS
@@ -48,7 +48,7 @@ Python and Rust now implement exact RS and AL positive expectations by dense spe
 - Corrected Rust/Python n=4 comparison and converged scans through n=8; independent SciPy checks cover n=4,5,7,8.
 
 ## Session History
-- 2026-10-02: Cloud setup, U(N) coherent-state and singlet-pair discussion, repository sync, and rules-based Memory Bank scan recorded under `T1a, T3c`; see `sessions/2026-10-02-morning.md` and `sessions/2026-10-02-morning-transcript.md`. Follow-up: work through Freidel–Livine Section D, Eqs. 47–51. Cloud Rust suite has one numerical regression failure from before pulling `9602c98`; no research source was modified in the cloud session.
+- 2026-10-02: Cloud setup, U(N) discussion, repository sync, and Memory Bank scan recorded under T1a/T3c. This follow-up adds the preliminary FL Eq. (38) regular-tetrahedron RS/AL calculation and unresolved direct-method discrepancy to `sessions/2026-10-02-morning.md`. Next: reconcile methods, evaluate the FL case in Rust, and continue Freidel–Livine Section D, Eqs. 47–51. No research source code was changed.
 - 2026-10-01: Project status and manuscript claims reconciled; red-team review gaps and research sequence assessed. See `sessions/2026-10-01-evening.md`.
 - 2026-09-20: T7a/T7b thermal and Gibbs-TFD numerical work recorded; see `sessions/2026-09-20-T7a-thermal-state.md` and T7 notes.
 - 2026-09-19: Rust phases and T5 experiment program integrated on `main`; see `memory-bank/tasks.md` and `memory-bank/progress.md`.

@@ -1,6 +1,6 @@
 # Implementation Progress
 
-*Last Updated: 2026-10-01 21:42 IST*
+*Last Updated: 2026-10-02 13:37:45 IST*
 
 ## Active Tasks
 
@@ -53,7 +53,7 @@ red-team audit. Subtasks T5a–T5g are in `tasks.md`.
 
 ### T1a: Volume Operator at n=4
 **Completed:** 2026-09-19
-**Summary:** Historical results were signed triple-grasp means and their proxy, not positive volume expectations. Exact small-sector RS and AL expectations are now implemented and cross-checked; project coherent-state runs remain open.
+**Summary:** Historical results were signed triple-grasp means and their proxy, not positive volume expectations. Exact small-sector RS and AL expectations are implemented. A preliminary EPJC Eq. (38) FL regular-tetrahedron evaluation is positive under both prescriptions; a roughly $1.8\times10^{-10}$ direct-method discrepancy, physical prefactors, and broader checks remain open.
 
 ### T1b: Signed-mean result on real planes
 **Completed:** 2026-09-19

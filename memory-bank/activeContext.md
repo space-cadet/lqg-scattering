@@ -1,6 +1,6 @@
 # Active Context
 
-*Last Updated: 2026-10-02 12:26:57 IST*
+*Last Updated: 2026-10-02 13:49:49 IST*
 
 ## Current Focus
 **Primary Task:** T4 — bring the follow-up manuscript and its claims into agreement with the experiment records.
@@ -8,7 +8,7 @@
 
 ## Active Tasks
 - T4: Manuscript claim audit and review preparation — IN PROGRESS; independent audit recorded.
-- T3c/T1a: Positive RS/AL operators now implemented; simple spin-network state checked; coherent-state and large-block checks remain.
+- T1a: Preliminary Python evaluation of the EPJC Eq. (38) FL fixed-area state on a regular tetrahedron is positive under RS and AL; the direct tensor-product cross-check differs by about $1.8\times10^{-10}$. T3c Rust validation, discrepancy resolution, physical prefactors, and large-block methods remain open.
 - T5: Volume–positivity research program — IN PROGRESS; T5c/T5d/T5f/T5g open; T5a magnetization sweep converged and independently checked for four sectors of one plane.
 - T7: Thermal/TFD program — reported T7a–T7e runs complete for their tested setups; broader coherent-sector thermal question remains open.
 
@@ -16,8 +16,7 @@
 - Published EPJC paper is the frozen baseline.
 - Python and Rust implementations exist. The old n=4 comparison shared a truncated Taylor state. Corrected Rust scans now cover n=4..8; SciPy independently checks n=4,5,7,8.
 - `manuscript.md` contains results through T7e but needs corrected conclusions, caveats, independent review, and circulation.
-- The cloud checkout's `work` branch was synchronized with `origin/main`; session and task-record updates are committed, and final verification found a clean working tree.
-- The 2026-10-02 U(N) singlet-pair discussion was conceptual and made no research-code changes. T1a/T3c FS-state construction and positive-volume evaluation remain open.
+- The cloud checkout was synchronized with `origin/main`; this local follow-up records the preliminary Python FL volume calculation in Memory Bank only. No research source code was changed.
 
 ## Current Decisions
 - The corrected T5a magnetization sweep converged in 39–41 terms and four sectors matched SciPy exponentiation. Retain its one-plane scope.
@@ -28,7 +27,7 @@
 - Do not mark numerical claims red-team reviewed without a documented protocol and per-claim evidence.
 
 ## Next Actions
-1. Construct the Freidel–Speziale coherent state used in the EPJC paper and validate RS/AL expectations on it; specify physical prefactors and AL embeddings, and replace dense diagonalization before large blocks.
+1. Resolve the direct-tensor discrepancy in the preliminary Python EPJC Eq. (38) FL tetrahedron case; validate the FL case in Rust, then select physical prefactors and AL embeddings and replace dense diagonalization before large blocks.
 2. Extend the corrected T5a and T5b results across plane controls
    and run T5d with real off-cell controls.
 3. Complete T5c/T6 polyhedron reconstruction and controlled comparisons.

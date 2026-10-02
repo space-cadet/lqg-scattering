@@ -1,6 +1,6 @@
 # Volume Operator: Implemented Prescriptions and Limits
 
-*Last Updated: 2026-10-02 12:22:16 IST*
+*Last Updated: 2026-10-02 13:49:49 IST*
 
 ## Current code
 
@@ -50,17 +50,38 @@ positive volume.
   AL state; the Grassmannian plane alone does not provide them.
 - Confirm the coherent state lies in the Hilbert space where that operator
   and any proposed single-triple reduction apply.
-- The outstanding project-coherent-state check means the Freidel–Speziale
-  coherent state used in the EPJC paper. No construction or positive-volume
-  evaluation of that state is recorded yet; the paired-singlet check is a
-  separate simple-state validation.
-- The Freidel–Livine U(N) Perelomov family discussed in the 2026-10-02 session
-  is distinct from that project target. Its F† singlet-pair construction and
-  overlap results do not count as an FS-state volume evaluation.
+- The EPJC Eq. (38) fixed-area state is the Freidel–Livine (FL) state, not a
+  separate FS state family. Freidel–Speziale (FS) supplies the spinorial
+  phase-space framework. A preliminary Python regular-tetrahedron evaluation
+  is recorded below; its direct tensor-product cross-check differs by about
+  $1.8\times10^{-10}$ and remains unresolved.
 - Replace or extend dense block diagonalization before applying it to large
   sectors; current exact code refuses blocks above 512.
 - Rerun the reported states. Keep the existing signed-mean series under its
   correct name; it is not a volume series.
+
+## Preliminary FL regular-tetrahedron check (2026-10-02)
+
+An inline calculation evaluated the EPJC Eq. (38) fixed-area FL coherent
+state for a closed regular tetrahedron ($N=4$, $J=2$, $K=4$), using unit
+spinors aligned with its face normals. The closure residual was
+$7.91\times10^{-17}$. With the project prefactor
+$(\gamma\hbar)^{3/2}$, $\gamma=0.2375$, $\hbar=1$, and AL signs
+$(+,-,+,-)$ for the listed triples, the results were:
+
+- $\langle q_{012}\rangle=0.07216878364870322$ (imaginary roundoff
+  $1.73\times10^{-18}$).
+- Project routines: $V_{\rm RS}=0.05077553260216399$ and
+  $V_{\rm AL}=0.025387766749131433$.
+- Independent direct tensor-product evaluation: $V_{\rm RS}=0.05077553242330542$
+  and $V_{\rm AL}=0.025387766570272866$.
+
+Both methods give positive volume in this tested case. Their absolute volume
+difference is about $1.8\times10^{-10}$ for each prescription and remains
+unresolved. These are project-normalized values, not finalized physical units.
+The calculation was inline; no reproducible source or result artifact has yet
+been added. This evidence does not establish a family-wide or classical-limit
+claim.
 
 ## Code locations
 

@@ -1,5 +1,5 @@
 # Task Registry
-*Last Updated: 2026-10-02 12:22:16 IST*
+*Last Updated: 2026-10-02 13:49:49 IST*
 
 ## Active Tasks
 | ID | Title | Status | Priority | Started | Dependencies | Owner |
@@ -43,12 +43,13 @@ operator result; the numerical baseline has now been rerun to convergence.
 ### T1a: Volume Operator at n=4
 **Description**: Implement positive RS and AL volume expectations in Python and validate at n=4.
 **Status**: 🔄 IN PROGRESS
-**Last Active**: 2026-10-01 22:06:11 IST
+**Last Active**: 2026-10-02 13:49:49 IST
 
 **Completion Criteria**:
 - ✅ Positive RS and AL expectations implemented by exact active-sector spectral decomposition
 - ✅ Paired spin-1/2 singlet and collinear controls checked against an independent tensor-product calculation
-- 🔄 Validate on the Freidel–Speziale coherent states used in the EPJC paper and select physical regularization prefactors
+- ✅ Preliminary Python evaluation of the EPJC Eq. (38) FL fixed-area coherent state on a regular tetrahedron gives positive RS and AL volumes.
+- 🔄 Reconcile the direct tensor-product discrepancy (about $1.8\times10^{-10}$), extend validation, and select physical regularization prefactors
 - 🔄 Replace dense diagonalization before evaluating active blocks above dimension 512
 
 **Related Files**:
@@ -60,14 +61,7 @@ operator result; the numerical baseline has now been rerun to convergence.
 The historical volume values were square roots of signed-grasp means, not
 positive volume expectations. The new exact small-block RS/AL routines give
 nonzero volume on a paired spin-1/2 singlet even though $\langle q_{012}\rangle=0$.
-The outstanding coherent-state validation targets the Freidel–Speziale
-coherent state used in the EPJC paper; it has not yet been constructed or
-evaluated by the positive-volume routines. The physical prefactor and
-production-size evaluation remain open.
-The 2026-10-02 discussion clarified the separate Freidel–Livine U(N)
-Perelomov family and its F† singlet-pair reference. No FS-state construction or
-positive-volume evaluation was performed in that discussion; the criteria above
-remain open.
+The EPJC Eq. (38) fixed-area state evaluated in Python is the Freidel–Livine (FL) state. FL names this fixed-area construction; Freidel–Speziale (FS) supplies the spinorial phase-space framework and is not a separate target state family here. For a regular tetrahedron, both project routines give positive volume; direct tensor-product values differ by about $1.8\times10^{-10}$. This preliminary case and discrepancy are recorded in `implementation-details/volume-operator.md`. Physical prefactors and broader validation remain open.
 
 ---
 
@@ -152,13 +146,13 @@ positive-cell result concerns the signed mean, not the positive volume.
 ### T3c: Volume Operator (Rust)
 **Description**: Implement positive RS and AL vertex-volume expectations in Rust and validate at n=4.
 **Status**: 🔄 IN PROGRESS
-**Last Active**: 2026-10-01 22:06:11 IST
+**Last Active**: 2026-10-02 13:49:49 IST
 
 **Completion Criteria**:
 - ✅ Triple-grasp matrices constructed from sparse Schwinger generators
 - ✅ Positive RS and AL expectations implemented using active-sector spectral decomposition
 - ✅ Simple-state Rust results match Python and an independent tensor-product calculation
-- 🔄 Validate on the Freidel–Speziale coherent states used in the EPJC paper and select physical regularization prefactors
+- 🔄 Validate the EPJC Eq. (38) FL fixed-area coherent-state case in the Rust implementation, reconcile with Python/direct-tensor values, and select physical regularization prefactors
 - 🔄 Replace dense diagonalization before evaluating active blocks above dimension 512
 
 **Related Files**:
