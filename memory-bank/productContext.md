@@ -1,6 +1,6 @@
 # Product Context
 
-*Last Updated: 2026-09-19 16:30 IST*
+*Last Updated: 2026-10-01 20:31 IST*
 
 ## Physics Motivation
 
@@ -8,17 +8,27 @@ Loop Quantum Gravity (LQG) and perturbative scattering amplitudes have evolved l
 
 ## The Core Question
 
-Does the amplituhedron region of the Grassmannian — the "positive" cell where scattering amplitudes live — correspond to a region of zero or nonzero quantum volume in LQG?
+How do Grassmannian plane labels affect the signed triple-grasp mean, the
+expectation of a specified positive quantum volume operator, and a
+reconstructed classical volume? These are distinct observables.
 
-## Published Result (EPJC)
+## Published Baseline (EPJC)
 
-The volume operator vanishes identically on the positive Grassmannian cell. The amplituhedron region corresponds to classical, zero-volume geometry. Quantum volume lives in the complex extension of the positive cell.
+The 2022 paper establishes the kinematic Grassmannian/coherent-state
+correspondence. It does not report the follow-up numerical volume results.
+The red-team audit found that the later code's zero result is a cancellation
+of the signed mean on real planes, including planes outside the positive
+cell. It does not establish zero positive quantum volume.
 
-**Citation**: D. Vaid, "LQG and the Amplituhedron", EPJC (2026). `paper/lqg-amplituhedron.pdf`
+**Citation**: D. Vaid and D. Suresh, EPJC (2022), DOI
+10.1140/epjc/s10052-022-10701-6. `paper/lqg-amplituhedron.pdf`
 
 ## Follow-up Numerical Program
 
-The original paper established the zero-volume result analytically for n=4. The current program computes numerical volume spectra for n≥5 vertices, which was computationally infeasible at publication time. The goal is to confirm the zero-volume result extends to higher valence and to map the volume landscape across the full Grassmannian.
+The follow-up program has corrected converged $n=4$–$8$ scans of a signed-mean proxy.
+The $n=4$ comparison shared a truncated Taylor state, so complex-plane
+magnitudes have been rerun with Rust convergence assertions; the $n=6$ point still needs an independent state check. The next goal is to define and
+calculate positive volume separately, then test its geometric meaning.
 
 ## Users and Stakeholders
 
@@ -27,6 +37,7 @@ The original paper established the zero-volume result analytically for n=4. The 
 
 ## Success Criteria
 
-1. Rust implementation matches Python at n=4 (f64 machine precision)
-2. Volume computed for n=5,6,7,8 with reasonable runtime (< 1 min per n)
-3. Follow-up manuscript drafted with numerical results
+1. Rust and Python match an independent converged exponential at $n=4$.
+2. $n=5$–$8$ observables are rerun with convergence checks and provenance.
+3. A specified positive quantum volume is compared with reconstructed
+   classical geometry; the follow-up manuscript states only validated claims.

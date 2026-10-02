@@ -1,4 +1,8 @@
-# T7a notes: single-copy thermal state — areas, null mean volume, $q^2$ fluctuations
+# T7a notes: single-copy thermal state — areas, null signed mean, $q^2$ fluctuations
+
+The zero result below is for $\mathrm{Tr}(\rho q)$ and its signed-mean
+proxy. It does not imply zero expectation of a positive volume operator;
+the nonzero $q^2$ values show why that distinction matters.
 
 ## Construction
 
@@ -21,13 +25,13 @@ Three families per beta in {0, 0.1, 0.5, 1, 2, 5, 10}:
    Perelomov-weighted ($\beta$-flat, = Perelomov areas): n=4
    [0.439, 0.383, 0.469, 0.371], sum = $\gamma K$ ✓; n=5
    [0.438, 0.436, 0.427, 0.255, 0.344], sum = $\gamma K$ ✓.
-2. **Mean volume is EXACTLY zero** — bit-exact $+0.00\mathrm{e}{+00}$ at every $\beta$ in all
+2. **Mean signed triple grasp is zero** — bit-exact $+0.00\mathrm{e}{+00}$ at every $\beta$ in all
    three families, both n. Mechanism: $A_{ij}$ are real-symmetric, so
    $q = i[A_{01},A_{12}]$ is imaginary-antisymmetric with identically zero diagonal
    ($\max|\mathrm{diag}(q)| = 0.00\mathrm{e}{+00}$); the pure state adds reality
    ($\max|\mathrm{imag}(\psi)| = 0$). **Theorem: no ensemble diagonal in the occupation
-   basis carries volume.** Control $V(\epsilon=0) = 2.6\mathrm{e}{-10}$ (rounding noise).
-3. **Fluctuations are nonzero — this is where the thermal volume info lives.**
+   basis carries signed mean.** Control proxy $V(\epsilon=0) = 2.6\mathrm{e}{-10}$ (rounding noise).
+3. **Fluctuations are nonzero despite the signed-mean cancellation.**
    Gibbs $\mathrm{Tr}(\rho q^2)$: 0.357/0.349 ($\beta=0$) → $7\mathrm{e}{-14}$ ($\beta=10$).
    Perelomov-weighted: 0.785 (n=4), 0.679 (n=5), $\beta$-flat.
    Pure-rescaled $\langle q^2 \rangle$: 0.707 (n=4), 0.719 (n=5), $\beta$-flat.

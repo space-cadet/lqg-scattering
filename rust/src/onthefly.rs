@@ -260,7 +260,9 @@ pub fn perelomov_otf(
     ref_occ: &[(u8, u8)],
     tol: f64,
 ) -> Vec<Complex64> {
-    perelomov_otf_diag(sp, z, ref_occ, tol, 8 * sp.k + 50).0
+    let (state, _, converged) = perelomov_otf_diag(sp, z, ref_occ, tol, 8 * sp.k + 50);
+    assert!(converged, "on-the-fly Perelomov Taylor exponential did not converge");
+    state
 }
 
 /// Same, with explicit cap; returns (state, iters_used, converged).

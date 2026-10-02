@@ -26,18 +26,21 @@ log-coordinates). Through the dictionary of correspondence.py,
 the positive cell maps to the region of kinematic space with all s_ij > 0
 (the amplituhedron's positive kinematics), with s_12 = 1 fixing the scale.
 
-The LQG volume operator of a 4-valent vertex is built from the Schwinger
-angular momenta J_i of the four edges. With q = i[J_1.J_2, J_2.J_3] the
-(De Pietri / Rovelli-Smolin) commutator, the volume is
+The signed triple-grasp operator of a 4-valent vertex is built from the
+Schwinger angular momenta J_i. With q = i[J_1.J_2, J_2.J_3], this module
+reports the square-root-of-mean proxy
 
-    V = (gamma * hbar)^{3/2} sqrt(|<q>|),
+    V_proxy = (gamma * hbar)^{3/2} sqrt(|<q>|),
 
-proportional to the square root of the absolute value of q's expectation
-in the intertwiner/coherent state (overall numerical factors absorbed into
-the proportionality, as is standard).
+which differs from the expectation of a positive volume operator such as
+<sqrt(|q|)>. Real planes have <q> = 0 by amplitude reality, including real
+planes outside the positive cell. This does not imply q annihilates the
+state or that positive quantum volume is zero.
 
 Only numpy is used.
 """
+
+import itertools
 
 import numpy as np
 
@@ -275,16 +278,16 @@ def _dot_ops(Ji, Jj):
 
 
 def volume_operator(state, space, gamma=GAMMA, hbar=1.0, triple=(0, 1, 2)):
-    """LQG volume of an n-valent vertex in a U(N) coherent state.
+    """Signed-mean triple-grasp proxy of an n-valent coherent state.
 
     Uses the De Pietri / Rovelli-Smolin commutator on a triple of edges
-    (i, j, k):  q = i[J_i.J_j, J_j.k],  V = (gamma*hbar)^{3/2} sqrt(|<q>|).
+    (i, j, k): q = i[J_i.J_j, J_j.J_k],
+    V_proxy = (gamma*hbar)^{3/2} sqrt(|<q>|).
 
     For a 4-valent vertex there is a single independent triple up to
     symmetry (the default (0, 1, 2)); for n > 4 several inequivalent
-    triples exist (the full n-valent volume combines them — Bianchi,
-    Dona & Speziale-style — but any single triple already probes
-    chirality, which is what the positivity question requires).
+    triples exist. This function does not combine them into a positive
+    full-vertex volume operator.
 
     Note the two exact zero mechanisms (see module discussion):
     * all-a/b references freeze the spins and give <q> = 0;
@@ -292,7 +295,7 @@ def volume_operator(state, space, gamma=GAMMA, hbar=1.0, triple=(0, 1, 2)):
 
     Returns
     -------
-    V : float
+    V_proxy : float
     q_expectation : complex
     """
     if space.N < 3:
@@ -315,24 +318,144 @@ def volume_operator(state, space, gamma=GAMMA, hbar=1.0, triple=(0, 1, 2)):
     return V, q_exp
 
 
+def _q_action(triple):
+    """Return the action of q_ijk = i[J_i.J_j, J_j.J_k] on one occupation."""
+    i, j, k = triple
+    Ji, Jj, Jk = su2_ops(i), su2_ops(j), su2_ops(k)
+    A, B = _dot_ops(Ji, Jj), _dot_ops(Jj, Jk)
+
+    def compose(left, right, occ):
+        out = {}
+        for mid, f1 in right(occ):
+            for final, f2 in left(mid):
+                out[final] = out.get(final, 0.0) + f1 * f2
+        return out
+
+    def q(occ):
+        ab, ba = compose(A, B, occ), compose(B, A, occ)
+        return [(o, 1j * (ab.get(o, 0.0) - ba.get(o, 0.0)))
+                for o in (ab.keys() | ba.keys())]
+    return q
+
+
+def _active_vertex_blocks(space, state):
+    """Group basis states by edge spins and total magnetic sector."""
+    vec = space.vec(state)
+    keys = []
+    for occ in space.occupations:
+        edge_spins = tuple(int(occ[2 * e] + occ[2 * e + 1])
+                           for e in range(space.N))
+        total_a = int(sum(occ[::2]))
+        keys.append((edge_spins, total_a))
+    active = {keys[i] for i in np.flatnonzero(np.abs(vec) > 1e-14)}
+    blocks = []
+    for key in sorted(active):
+        indices = [i for i, k in enumerate(keys) if k == key]
+        if len(indices) > 512:
+            raise ValueError(
+                f"active fixed-spin block has dimension {len(indices)}; "
+                "exact dense volume evaluation is capped at 512"
+            )
+        basis = [tuple(int(x) for x in space.occupations[i]) for i in indices]
+        blocks.append((basis, vec[indices]))
+    return blocks
+
+
+def _triple_matrix_block(space, basis, triple):
+    action = _q_action(triple)
+    index = {occ: i for i, occ in enumerate(basis)}
+    matrix = np.zeros((len(basis), len(basis)), dtype=complex)
+    for col, occ in enumerate(basis):
+        for out, value in action(occ):
+            row = index.get(tuple(out))
+            if row is None:
+                if abs(value) > 1e-12:
+                    raise ValueError("triple grasp left its fixed-spin sector")
+                continue
+            matrix[row, col] += value
+    # Catch convention or assembly errors before applying spectral functions.
+    if not np.allclose(matrix, matrix.conj().T, atol=2e-11, rtol=0.0):
+        raise ValueError("triple-grasp matrix is not Hermitian")
+    return matrix
+
+
+def _positive_sqrt_expectation(matrix, vector):
+    eigenvalues, eigenvectors = np.linalg.eigh(matrix)
+    weights = np.abs(eigenvectors.conj().T @ vector) ** 2
+    return float(np.dot(weights, np.sqrt(np.abs(eigenvalues))))
+
+
+def rovelli_smolin_volume(state, space, gamma=GAMMA, hbar=1.0, scale=None):
+    """Exact dense-sector expectation of the Rovelli–Smolin vertex volume.
+
+    In the repository normalization, V_RS = scale * sum_{i<j<k}
+    sqrt(|q_ijk|), where q_ijk = i[J_i.J_j, J_j.J_k]. `scale` defaults to
+    (gamma*hbar)**1.5; pass an explicit convention-dependent prefactor when
+    comparing with a different normalization. Dense diagonalization is used
+    separately in the invariant edge-spin/magnetic blocks populated by state.
+    """
+    prefactor = (gamma * hbar) ** 1.5 if scale is None else float(scale)
+    state_norm2 = float(np.vdot(space.vec(state), space.vec(state)).real)
+    if state_norm2 <= 0:
+        raise ValueError("volume expectation requires a nonzero state")
+    blocks = _active_vertex_blocks(space, state)
+    total = 0.0
+    for basis, vector in blocks:
+        for triple in itertools.combinations(range(space.N), 3):
+            qmat = _triple_matrix_block(space, basis, triple)
+            total += _positive_sqrt_expectation(qmat, vector)
+    return prefactor * total / state_norm2
+
+
+def ashtekar_lewandowski_volume(state, space, orientation_signs,
+                                gamma=GAMMA, hbar=1.0, scale=None):
+    """Exact dense-sector expectation of the Ashtekar–Lewandowski volume.
+
+    `orientation_signs` maps each lexicographically ordered edge triple to
+    its tangent determinant sign (-1, 0, +1). The vertex operator is the
+    positive square root of the absolute value of their signed q-sum.
+    """
+    prefactor = (gamma * hbar) ** 1.5 if scale is None else float(scale)
+    state_vec = space.vec(state)
+    state_norm2 = float(np.vdot(state_vec, state_vec).real)
+    if state_norm2 <= 0:
+        raise ValueError("volume expectation requires a nonzero state")
+    triples = list(itertools.combinations(range(space.N), 3))
+    if set(orientation_signs) != set(triples):
+        raise ValueError("orientation_signs must define every edge triple")
+    if any(sign not in (-1, 0, 1) for sign in orientation_signs.values()):
+        raise ValueError("orientation signs must be -1, 0, or +1")
+    total = 0.0
+    for basis, vector in _active_vertex_blocks(space, state):
+        qsum = np.zeros((len(basis), len(basis)), dtype=complex)
+        for triple in triples:
+            sign = orientation_signs[triple]
+            if sign:
+                qsum += sign * _triple_matrix_block(space, basis, triple)
+        if not np.allclose(qsum, qsum.conj().T, atol=3e-11, rtol=0.0):
+            raise ValueError("Ashtekar–Lewandowski vertex operator is not Hermitian")
+        total += _positive_sqrt_expectation(qsum, vector)
+    return prefactor * total / state_norm2
+
+
 def volume_vs_s(a=None, b=None, c=None, d=None, ref_occupations=None,
                 scales=None, verbose=True):
-    """Relate the quantum volume of the 4-valent vertex to the scattering
+    """Relate the signed-mean proxy of the 4-valent vertex to the scattering
     invariant s on Gr+(2, 4).
 
     Two regimes are scanned and compared:
 
     * ON Gr+: with the canonical positive plane, the Perelomov state has
       real amplitudes (Z real antisymmetric for real planes) and the
-      chiral volume vanishes identically, V = 0, at every scale.
+      signed mean vanishes identically, so the proxy is zero at every scale.
 
     * OFF Gr+: adding a fixed complex perturbation dC (violating the
       minor-phase cocycle, so the plane is genuinely complex) makes V
-      nonzero. Scaling the plane, C -> sqrt(t) C, rescales s_ij -> t^2
+      nonzero for this perturbation. Scaling the plane, C -> sqrt(t) C, rescales s_ij -> t^2
       s_ij, but V is UNCHANGED: the momentum-map label Z is built from
       orthonormalized rows and is invariant under the global rescaling
       (GL(2) gauge). Hence there is no functional V(s) at fixed quantum
-      occupation — the volume probes the complex shape of the plane,
+      occupation — the signed mean probes the complex shape of the plane,
       not its energy scale.
 
     Returns
@@ -457,18 +580,16 @@ def vertex_reference(N, triple=(0, 1, 2)):
 
 def volume_vs_perturbation(N, epsilons=None, ref_occupations=None,
                            triple=(0, 1, 2), seed=0, verbose=True):
-    """Volume response to a complex perturbation of a positive plane.
+    """Signed-mean proxy response to a complex perturbation of a positive plane.
 
     Starts from a random real positive plane C0 in Gr+(2, N) and adds a
     fixed random imaginary perturbation scaled by epsilon:
 
         C(eps) = C0 + i * eps * dC,    dC real, generic.
 
-    For eps = 0 the plane is real and the volume vanishes exactly (real
-    Fock amplitudes). For eps > 0 the minors' phase cocycle is violated,
-    amplitudes become complex, and <q> grows linearly in eps — so
-    V ~ eps^{1/2}. The fit verifies this and quantifies how sharply the
-    positive cell is singled out as the achiral locus.
+    For eps = 0 the plane is real and <q> vanishes by amplitude reality.
+    The fit measures the response for this chosen perturbation and reference;
+    it does not identify the positive cell as the full zero locus.
 
     Returns
     -------
@@ -520,12 +641,12 @@ def volume_vs_perturbation(N, epsilons=None, ref_occupations=None,
 
 
 def example_higher_n(N, seed=0, verbose=True):
-    """Higher-n positivity/volume summary for one random Gr+(2, N) plane.
+    """Higher-n positivity/proxy summary for one random Gr+(2, N) plane.
 
     Checks, for a random positive plane: (a) positivity accepted; (b) all
     face normals (spin expectation vectors) are collinear on the z axis,
-    hence coplanar; (c) the volume on the real plane vanishes exactly for
-    every triple of edges; (d) small complex perturbations make it grow.
+    hence coplanar; (c) the signed mean on the real plane vanishes for
+    every triple; (d) the chosen complex perturbation gives nonzero mean.
     """
     C0 = positive_plane_curve(N, seed=seed)
     ok, _ = is_positive_plane(C0, return_info=True)
@@ -566,7 +687,7 @@ def _test_higher_n():
         assert res["positive"], "moment-curve plane must be positive"
         assert res["coplanarity"] < 1e-12, "normals must stay z-aligned"
         assert all(V < 1e-8 for V in res["volumes"].values()), \
-            "volume must vanish on real positive planes for any triple"
+            "signed-mean proxy must vanish on these real planes"
         scan = volume_vs_perturbation(N, seed=42 + N)
         results[N]["scan"] = scan
         assert 0.25 < scan["exponent"] < 0.9, scan["exponent"]
@@ -617,25 +738,32 @@ def _test():
     _, minors = plane_to_plucker(plane)
     assert np.max(np.abs(kin["s"] - np.abs(minors) ** 2)) < 1e-12
 
-    # 4. Volume of a 4-valent vertex state: zero for real (positive)
-    #    planes by amplitude reality, zero for all-a references by spin
-    #    freezing, nonzero only for genuinely complex planes with mixed
-    #    reference occupations.
+    # 4. Signed-mean proxy: zero for real planes (including one outside the
+    #    positive cell) by amplitude reality, and zero for the all-a control.
     ref_vertex = np.array([[1, 1], [1, 1], [1, 0], [1, 0]])
     state, space = perelomov_state(
         plane_to_Z(plane), k_max=6, ref_occupations=ref_vertex
     )
     V, q = volume_operator(state, space)
-    print(f"volume operator (positive plane, vertex reference): "
+    print(f"signed-mean proxy (positive plane, vertex reference): "
           f"V/(gamma*hbar)^1.5 = {V / GAMMA ** 1.5:.3e} (zero)")
     assert V < 1e-8
+
+    real_off_cell = np.array([[1.0, 0.0, -2.0, -1.0],
+                              [0.0, 1.0, 1.0, 1.0]])
+    assert not is_positive_plane(real_off_cell)
+    state_r, space_r = perelomov_state(
+        plane_to_Z(real_off_cell), k_max=6, ref_occupations=ref_vertex
+    )
+    V_r, q_r = volume_operator(state_r, space_r)
+    assert abs(q_r) < 1e-12 and V_r < 1e-8
 
     dC = np.array([[0, 0, 0.3j, 0.2j], [0, 0, -0.5, 0.3j]])
     state_c, space_c = perelomov_state(
         plane_to_Z(plane + dC), k_max=6, ref_occupations=ref_vertex
     )
     V_c, q_c = volume_operator(state_c, space_c)
-    print(f"volume operator (complex plane, vertex reference): "
+    print(f"signed-mean proxy (complex plane, vertex reference): "
           f"V/(gamma*hbar)^1.5 = {V_c / GAMMA ** 1.5:.6f} (nonzero)")
     assert V_c > 1e-6
 
@@ -644,7 +772,7 @@ def _test():
         ref_occupations=np.array([[3, 0], [0, 0], [0, 0], [0, 0]]),
     )
     V_a, _ = volume_operator(state_a, space_a)
-    print(f"volume operator (complex plane, all-a reference): V = {V_a:.6f} "
+    print(f"signed-mean proxy (complex plane, all-a reference): V = {V_a:.6f} "
           f"(zero by the N_b = 0 spin-freezing mechanism)")
     assert V_a == 0.0
 
@@ -655,7 +783,7 @@ def _test():
     assert abs(out["complex"]["exponent"]) < 0.05, \
         "V must be scale-invariant (exponent 0), got " \
         f"{out['complex']['exponent']}"
-    assert np.all(out["complex"]["V"] > 1e-6), "V must be nonzero off Gr+"
+    assert np.all(out["complex"]["V"] > 1e-6), "proxy expected nonzero for this perturbation"
 
     print("\nAll positivity.py tests passed.")
 

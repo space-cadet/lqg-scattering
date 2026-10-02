@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-01",
+  "observable": "positive vertex-volume expectations in repository-normalized units",
+  "normalization": {
+    "gamma": 0.2375,
+    "hbar": 1.0,
+    "prefactor": "(gamma*hbar)^(3/2)",
+    "standard_8pi_and_regularization_constants_included": false
+  },
+  "state": {
+    "name": "paired spin-1/2 singlet",
+    "edges": 4,
+    "edge_spins": [0.5, 0.5, 0.5, 0.5],
+    "construction": "singlet(0,1) tensor singlet(2,3)",
+    "norm": 1.0,
+    "signed_q012_mean": 0.0
+  },
+  "AL_embedding": {
+    "outgoing_tangents": [[1, 1, 1], [1, -1, -1], [-1, 1, -1], [-1, -1, 1]],
+    "lexicographic_triples": [[0, 1, 2], [0, 1, 3], [0, 2, 3], [1, 2, 3]],
+    "orientation_signs": [1, -1, 1, -1]
+  },
+  "results": {
+    "paired_spin_half_singlet": {
+      "old_sqrt_abs_mean_proxy": 0.0,
+      "rovelli_smolin": 0.3046531902363905,
+      "ashtekar_lewandowski": 0.15232659511819527,
+      "independent_tensor_product_RS": 0.30465319023639054,
+      "independent_tensor_product_AL": 0.1523265951181952
+    },
+    "collinear_up_product": {
+      "rovelli_smolin": 0.0,
+      "ashtekar_lewandowski": 0.0
+    }
+  },
+  "method": "Dense Hermitian spectral decomposition, split into populated fixed-edge-spin and total-magnetic sectors; active block limit 512.",
+  "scope": "Simple-state implementation check. Large-sector performance, standard physical prefactors, and AL embeddings for the Grassmannian scans remain open."
+}

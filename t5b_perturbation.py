@@ -1,9 +1,9 @@
-"""T5b — Perturbation response V(epsilon).
+"""T5b — Perturbation response of the signed-mean proxy.
 
-Physics question: turn on a small chirality-breaking perturbation eps of a
-positive (real) Gr(2,N) plane and measure V(eps). Fit V ~ eps^alpha.
-  - alpha < 1  -> chirality turns on arbitrarily softly (no barrier).
-  - alpha >= 1 or a threshold -> chirality is "quantized" / barrier-like.
+Question: perturb a positive real Gr(2,N) plane and measure the response
+of sqrt(|<q>|) for this fixed family. This is not a positive volume-operator
+expectation. Fit the proxy's eps exponent for this family.
+  - alpha describes only this perturbation and reference state.
 
 Protocol (per experiments.md section T5b + user spec):
   C(eps) = C0 + eps * delta_C,
@@ -20,8 +20,8 @@ Protocol (per experiments.md section T5b + user spec):
   Fit log-log slope alpha of V vs eps.
 
 Controls:
-  - eps = 0 (real plane) -> V == 0 exactly (real Fock amplitudes).
-  - all-a reference at eps = 1 -> V == 0 (spin-freezing mechanism).
+  - eps = 0 (real plane) -> <q> = 0 analytically (real amplitudes).
+  - all-a reference at eps = 1 -> <q> = 0 (spin-freezing control).
 
 Formulas follow coherent_states.py / positivity.py of the lqg-scattering
 reference implementation exactly (momentum-map Z, Taylor-exponential
@@ -147,12 +147,14 @@ class OpSpace:
     def taylor_exp(A, ref_vec, K, tol=1e-12):
         result = ref_vec.copy()
         term = ref_vec.copy()
-        for n in range(1, 2 * K + 4):
+        for n in range(1, 8 * K + 50):
             term = (A @ term) / n
             inc = float(np.linalg.norm(term))
             result = result + term
             if inc < tol * max(1.0, float(np.linalg.norm(result))):
                 break
+        else:
+            raise RuntimeError("Perelomov Taylor exponential did not converge")
         return result / np.linalg.norm(result)
 
 
@@ -252,7 +254,11 @@ def main():
     epsilons = np.geomspace(1e-6, 1.0, 13)  # 1e-6 .. 1.0, 13 points
     triple = TRIPLE
     out = {"epsilons": epsilons.tolist(), "triple": list(triple),
-           "gamma": GAMMA, "hbar": HBAR, "n": {}}
+           "gamma": GAMMA, "hbar": HBAR,
+           "state_engine": "Taylor exponential with convergence assertion",
+           "state_tol": 1e-12, "state_max_terms_rule": "8*K+49",
+           "observable": "(gamma*hbar)^1.5*sqrt(abs(<q>))",
+           "n": {}}
 
     for N, seed in ((4, 11), (5, 12)):
         res = sweep_n(N, epsilons, seed=seed, triple=triple)
@@ -306,9 +312,9 @@ def main():
         d = out["n"][Ns]
         print(f"n={Ns}: alpha={d['alpha']:.4f}, R^2={d['r2']:.6f}, "
               f"V(1e-6)={d['V'][0]:.3e}, V(1)={d['V'][-1]:.3e}", flush=True)
-    print("alpha ~ 0.5 with clean single power law => chirality turns on "
-          "smoothly (no threshold/barrier); alpha >= 1 or slope drift at "
-          "small eps would indicate quantization/barrier.", flush=True)
+    print("For this perturbation and reference, the signed-mean proxy has "
+          "a near-half exponent; broader claims require other controls.",
+          flush=True)
 
 
 if __name__ == "__main__":

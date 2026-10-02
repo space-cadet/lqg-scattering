@@ -75,14 +75,14 @@ fn verify4() {
         let areas: Vec<String> = (0..n)
             .map(|e| {
                 let (m, u) = area_stats(&space, &v, e);
-                format!("{m:.6} +- {u:.6}")
+                format!("{m:.12} +- {u:.12}")
             })
             .collect();
         let closure: f64 = (0..n).map(|e| area_stats(&space, &v, e).0).sum();
         let (vol, q) = volume_operator(&space, &v, (0, 1, 2));
         println!(
             "n={n} [{name}] areas <n_e> = [{}]  closure={closure:.9}  \
-             V/(gamma*hbar)^1.5={:.6e}  <q>={:+.6e}  ({:.2?})",
+             V/(gamma*hbar)^1.5={:.12e}  <q>={:+.12e}  ({:.2?})",
             areas.join(", "),
             vol / GAMMA.powf(1.5),
             q.re,
@@ -127,15 +127,15 @@ fn scan() {
             let (vol, q) = volume_operator(&space, &v, (0, 1, 2));
             let dt = t0.elapsed();
             println!(
-                "{n:>3} {k:>10} {:>14} {:>14.6e} {:>10.2?}",
+                "{n:>3} {k:>10} {:>14} {:>14.12e} {:>10.2?}",
                 space.dim,
                 vol / GAMMA.powf(1.5),
                 dt
             );
             if name == "positive" {
-                assert!(q.norm() < 1e-10, "V must vanish on Gr+(2,{n})");
+                assert!(q.norm() < 1e-10, "signed mean must vanish on this real plane (n={n})");
             } else {
-                assert!(vol > 1e-6, "V must be nonzero off Gr+(2,{n})");
+                assert!(vol > 1e-6, "proxy expected nonzero for this complex perturbation (n={n})");
             }
         }
     }

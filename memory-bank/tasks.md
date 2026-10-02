@@ -1,12 +1,13 @@
 # Task Registry
-*Last Updated: 2026-09-20 02:30 IST*
+*Last Updated: 2026-10-01 22:06:11 IST*
 
 ## Active Tasks
 | ID | Title | Status | Priority | Started | Dependencies | Owner |
 |----|-------|--------|----------|---------|--------------|-------|
-| T4 | Follow-up manuscript | 🔄 IN PROGRESS | MEDIUM | 2026-09-19 | T3c, T3d, T3e | Deepak |
-| T5 | Experiments | ⬜ PROPOSED | HIGH | — | T3c, T3d, T3e | Deepak |
-| T7a | Single-copy thermal state | ✅ COMPLETED | HIGH | 2026-09-20 | T3c | ORX |
+| T4 | Follow-up manuscript claim audit and review | 🔄 IN PROGRESS | HIGH | 2026-09-19 | T3c, T3d, T3e, T5, T7 | Deepak |
+| T3d/T3e | Converged baseline verification and scan; n=6 independent check open | 🔄 IN PROGRESS | HIGH | 2026-10-01 | T3c | Deepak |
+| T5 | Volume–positivity research program | 🔄 IN PROGRESS | HIGH | 2026-09-19 | T3c, T3d, T3e | Deepak |
+| T7 | Thermal and TFD research program | 🔄 IN PROGRESS | HIGH | 2026-09-20 | T3c | Deepak |
 
 ## Task Details
 
@@ -30,54 +31,64 @@
 
 **Subtasks**:
 - T1a: Volume operator at n=4 — ✅ COMPLETED
-- T1b: Zero-volume result on positive cell — ✅ COMPLETED
+- T1b: Signed-mean cancellation on real planes — 🔄 REINTERPRETATION
 
 **Notes**:
-Python implementation confirmed the zero-volume result on the positive Grassmannian cell. This is the published EPJC result. Python is too slow for n≥5 (Fock dimension explosion), motivating the Rust port.
+The Python implementation established the real-plane cancellation of the
+signed triple-grasp mean. The red-team audit shows this is not a zero-volume
+operator result; the numerical baseline has now been rerun to convergence.
 
 ---
 
 ### T1a: Volume Operator at n=4
-**Description**: Implement Bianchi-Haggard-Thiemann volume operator for 4-valent intertwiners in Python. Compute volume matrix elements and eigenvalues.
-**Status**: ✅ COMPLETED
-**Completed**: 2026-09-19
-**Last Active**: 2026-09-19 12:00 IST
+**Description**: Implement positive RS and AL volume expectations in Python and validate at n=4.
+**Status**: 🔄 IN PROGRESS
+**Last Active**: 2026-10-01 22:06:11 IST
 
 **Completion Criteria**:
-- ✅ BHT triple-grasp operator constructed
-- ✅ Volume eigenvalues computed for n=4
-- ✅ Zero eigenvalue confirmed on positive cell
+- ✅ Positive RS and AL expectations implemented by exact active-sector spectral decomposition
+- ✅ Paired spin-1/2 singlet and collinear controls checked against an independent tensor-product calculation
+- 🔄 Validate on the Freidel–Speziale coherent states used in the EPJC paper and select physical regularization prefactors
+- 🔄 Replace dense diagonalization before evaluating active blocks above dimension 512
 
 **Related Files**:
 - `positivity.py`
 - `coherent_states.py`
 
 **Notes**:
-Volume vanishes identically on the positive Grassmannian cell. The amplituhedron region corresponds to classical, zero-volume geometry.
+The historical volume values were square roots of signed-grasp means, not
+positive volume expectations. The new exact small-block RS/AL routines give
+nonzero volume on a paired spin-1/2 singlet even though $\langle q_{012}\rangle=0$.
+The outstanding coherent-state validation targets the Freidel–Speziale
+coherent state used in the EPJC paper; it has not yet been constructed or
+evaluated by the positive-volume routines. The physical prefactor and
+production-size evaluation remain open.
 
 ---
 
-### T1b: Zero-Volume Result on Positive Cell
-**Description**: Prove and verify that the volume operator has zero expectation value for all states in the positive Grassmannian cell.
-**Status**: ✅ COMPLETED
+### T1b: Signed-mean result on real planes
+**Description**: Establish the signed triple-grasp cancellation on real planes and test what it implies for a positive volume operator.
+**Status**: 🔄 REINTERPRETATION
 **Completed**: 2026-09-19
 **Last Active**: 2026-09-19 12:00 IST
 
 **Completion Criteria**:
 - ✅ Analytical argument constructed
 - ✅ Numerical verification at n=4
-- ✅ Result confirmed: volume = 0 on positive cell
+- ✅ Result confirmed: $\langle q\rangle=0$ for real-plane states
+- ⬜ Evaluate a specified positive volume operator on those states
 
 **Related Files**:
 - `positivity.py`
 
 **Notes**:
-This is the central published result. Quantum volume lives in the complex extension of the positive cell.
+The signed-mean cancellation also holds on real planes outside the positive
+cell. The original claim about quantum volume is not established by it.
 
 ---
 
 ### T2: Manuscript (EPJC Paper)
-**Description**: Write and publish the LaTeX paper presenting the LQG-Grassmannian interface and the zero-volume result.
+**Description**: Write and publish the LaTeX paper presenting the LQG-Grassmannian interface.
 **Status**: ✅ COMPLETED
 **Completed**: 2026-09-19
 **Last Active**: 2026-09-19 14:47 IST
@@ -107,15 +118,15 @@ Paper is PUBLISHED. Do not modify. This is the baseline for all follow-up work.
 - ✅ Fock space construction (T3a)
 - ✅ Coherent states + Grassmannian (T3b)
 - ✅ Volume operator (T3c)
-- ✅ n=4 verification vs Python (T3d)
-- ✅ Benchmarks n=5,6,7,8 (T3e)
+- ✅ n=4 converged state and signed-mean verification (T3d)
+- ✅ Converged n=5,6,7,8 Rust scan (T3e); independent n=6 check remains open
 
 **Subtasks**:
 - T3a: Fock space + u(N) operators (Rust) — ✅ COMPLETED (commit ee3ff0e)
 - T3b: Coherent states + Grassmannian (Rust) — ✅ COMPLETED (commit 42ce24e)
 - T3c: Volume operator (Rust) — ✅ COMPLETED (commit ee72845)
-- T3d: Verify Rust vs Python at n=4 — ✅ COMPLETED (commit c0908cf)
-- T3e: Benchmarks n=5,6,7,8 — ✅ COMPLETED (commit c0908cf)
+- T3d: Verify Rust vs Python at n=4 — ✅ CONVERGED RUN RECORDED (2026-10-01)
+- T3e: Benchmarks n=5,6,7,8 — ✅ CONVERGED RUN RECORDED; independent n=6 check open
 
 **Related Files**:
 - `rust/src/fock.rs`
@@ -127,21 +138,23 @@ Paper is PUBLISHED. Do not modify. This is the baseline for all follow-up work.
 - `rust/src/lib.rs`
 
 **Notes**:
-Implemented by ORX agent (session chat_66108501, ~4h50m runtime). All commits pushed. Volume = 0 on positive Grassmannian confirmed for n=4..8.
+Implemented by ORX agent (session chat_66108501, ~4h50m runtime). Historical
+scan used an unconverged Taylor state shared with the Python comparator; the
+positive-cell result concerns the signed mean, not the positive volume.
 
 ---
 
 ### T3c: Volume Operator (Rust)
-**Description**: Implement Bianchi-Haggard-Thiemann volume operator in Rust using sparse matrices. Must match Python at n=4 to f64 machine precision.
-**Status**: ✅ COMPLETED
-**Completed**: 2026-09-19 16:26 IST
-**Last Active**: 2026-09-19 16:26 IST
+**Description**: Implement positive RS and AL vertex-volume expectations in Rust and validate at n=4.
+**Status**: 🔄 IN PROGRESS
+**Last Active**: 2026-10-01 22:06:11 IST
 
 **Completion Criteria**:
-- ✅ Volume matrix constructed via triple-grasp formula
-- ✅ Sparse matrix representation (sprs::CsMat)
-- ✅ n=4 eigenvalues match Python exactly
-- ✅ Unit tests pass
+- ✅ Triple-grasp matrices constructed from sparse Schwinger generators
+- ✅ Positive RS and AL expectations implemented using active-sector spectral decomposition
+- ✅ Simple-state Rust results match Python and an independent tensor-product calculation
+- 🔄 Validate on the Freidel–Speziale coherent states used in the EPJC paper and select physical regularization prefactors
+- 🔄 Replace dense diagonalization before evaluating active blocks above dimension 512
 
 **Related Files**:
 - `rust/src/volume.rs`
@@ -149,19 +162,23 @@ Implemented by ORX agent (session chat_66108501, ~4h50m runtime). All commits pu
 - `rust/src/fock.rs`
 
 **Notes**:
-Completed by ORX agent. Committed as ee72845.
+The 2026-10-01 audit corrected the old scope: the historical function computed
+$\sqrt{|\langle q_{ijk}\rangle|}$, not either volume prescription. The new
+operators are exact in project normalization for active blocks up to dimension
+512; physical constants and large-block methods remain open.
 
 ---
 
 ### T3d: Verify Rust vs Python at n=4
 **Description**: Cross-validate Rust implementation against Python reference at n=4. Must match to f64 machine precision (rtol=1e-12).
-**Status**: ✅ COMPLETED
-**Completed**: 2026-09-19 16:26 IST
+**Status**: ✅ CONVERGED RUN RECORDED
+**Historical run**: 2026-09-19 16:26 IST
 **Dependencies**: T3c
 
 **Completion Criteria**:
 - ✅ Volume eigenvalues at n=4: Rust == Python
-- ✅ Coherent state overlaps: Rust == Python
+- ✅ Corrected Python state and signed mean match an independent $n=4$ exponential
+- ✅ Rust state and signed mean match the corrected Python and independent SciPy reference
 - ✅ Grassmannian embedding: Rust == Python
 
 **Related Files**:
@@ -170,30 +187,35 @@ Completed by ORX agent. Committed as ee72845.
 - `positivity.py`
 
 **Notes**:
-Machine precision match confirmed. Committed as c0908cf.
+The historical machine-precision match compared states with the same 15-term
+Taylor truncation. Independent `expm_multiply` at the canonical complex plane
+gives $\langle q\rangle=-0.000827687168$ versus historical
+$-0.000849657246$. The corrected core Python path reproduces the independent
+value; the converged Rust run reproduces the independent value.
 
 ---
 
 ### T3e: Benchmarks n=5,6,7,8
 **Description**: Run volume operator benchmarks for n=5 through n=8. Target: < 1 minute per n value.
-**Status**: ✅ COMPLETED
-**Completed**: 2026-09-19 16:26 IST
+**Status**: ✅ CONVERGED RUN RECORDED
+**Historical run**: 2026-09-19 16:26 IST
 **Dependencies**: T3c, T3d
 
 **Completion Criteria**:
-- ✅ n=5 volume computed (264ms)
-- ✅ n=6 volume computed (2.96s)
-- ✅ n=7 volume computed (299ms)
-- ✅ n=8 volume computed (724ms)
+- ✅ Historical n=5 scan recorded (264ms)
+- ✅ Historical n=6 scan recorded (2.96s)
+- ✅ Historical n=7 scan recorded (299ms)
+- ✅ Historical n=8 scan recorded (724ms)
 - ✅ Timing and memory usage recorded
-- ✅ Zero-volume result confirmed for all n on positive cell
+- ✅ Recomputed complex-plane signed means with converged Rust states; these remain signed-mean proxies
+- 🔄 Independently check the n=6 point and define a positive volume expectation
 
 **Related Files**:
 - `rust/src/main.rs` (scan mode)
 - `memory-bank/implementation-details/performance-benchmarks.md`
 
 **Notes**:
-All benchmarks well under target. Max runtime 3.35s at n=6. Results in performance-benchmarks.md and dashboard.
+The converged complex-plane scan was completed on 2026-10-01. SciPy independently checks n=5,7,8; n=6 remains open. Real-plane signed-mean cancellation is analytic.
 
 ---
 
@@ -201,15 +223,15 @@ All benchmarks well under target. Max runtime 3.35s at n=6. Results in performan
 **Description**: Draft follow-up manuscript presenting numerical results for n=4..8. Extends the published EPJC paper with the Rust implementation and higher-valence results.
 **Status**: 🔄 IN PROGRESS
 **Started**: 2026-09-19
-**Last Active**: 2026-09-19 17:15 IST
-**Dependencies**: T3c, T3d, T3e
+**Last Active**: 2026-10-01 21:42 IST
+**Dependencies**: T3c, T3d, T3e, T5, T7
 
 **Completion Criteria**:
-- 🔄 Numerical results section drafted
-- ⬜ Zero-volume result confirmed for n≥5
-- ⬜ Comparison with analytical n=4 result
-- ⬜ Benchmark table included
-- ⬜ Draft circulated for review
+- ✅ Numerical results through T7e are drafted in `manuscript.md`
+- ✅ Baseline Rust/Python comparison and n=4..8 results are recorded
+- 🔄 Resolve manuscript/record inconsistencies and qualify provisional findings
+- 🔄 Independent red-team audit recorded; central interpretation and baseline revalidation remain open
+- ⬜ Circulate corrected draft for review
 
 **Related Files**:
 - `manuscript.md` (working draft)
@@ -217,61 +239,62 @@ All benchmarks well under target. Max runtime 3.35s at n=6. Results in performan
 - `dashboard/data.json`
 
 **Notes**:
-manuscript.md restructured by ORX agent with published baseline and numerical results. Dashboard created. Next: polish and circulate for review.
+The manuscript is a developed draft, not yet circulated. The red-team audit
+found that $\sqrt{|\langle q\rangle|}$ is a proxy, real nonpositive planes
+also have zero signed mean, and old baseline magnitudes used shared Taylor
+truncation. See `memory-bank/implementation-details/red-team-audit.md`.
 
 ---
 
 ### T5: Experiments
 **Description**: Numerical program probing the volume–positivity (achirality) boundary. Seven independent experiments — how volume turns on off the positive Grassmannian cell, whether chirality is per-vertex or per-triple, and whether the quantum volume matches the reconstructed classical polyhedron volume.
-**Status**: ⬜ PROPOSED
+**Status**: 🔄 IN PROGRESS
 **Dependencies**: T3c, T3d, T3e (Rust volume operator, verified n=4, benchmarks n=5–8)
 
 **Roadmap**: `memory-bank/implementation-details/experiments.md`
 
 **Subtasks** (priority order):
-- T5a: Triple-volume correlations (n≥5) — one vertex handedness vs per-triple chirality. HIGHEST priority; invisible at n=4. ✅ DONE 2026-09-19 (two runs). **Base** (0731eaf, main-orx, k3): no handedness at M=0, sign-agreement 0.50–0.70 (n=6,7). **M-sweep** (c7dde0c, orx/t5a-mag, Muse Spark 1.3): magnetization hypothesis (handedness only at |M|>0) **REFUTED** — sign-agreement 0.50–0.60 at every M in −4..+4; endpoints freeze (q≈1e-17); a↔b mirror exact. Per-triple chirality is robust, NOT rescued by polarization. Caveat: single plane, n=5, modest sign-test power; net χ_V = Σ q_ijk distribution untested. Follow-up: T5a′ (neighbor/Minkowski-local χ_V).
-- T5a′: Kinematic-polyhedron local chirality — restrict chirality to Minkowski-adjacent edge-triples. ✅ DONE 2026-09-19 (c443d9a, orx/t5ap, Muse Spark 1.3). **Verdict: restricting to kinematic-polyhedron-adjacent triples does NOT reveal hidden handedness.** Local sign-agreement (0.52–0.71, n=5) tracks all-triples (0.53–0.68) across all 10 incoming-pair channels; channel-averaged all≈0.589, local≈0.594 — dead even. n=4: exact 0.500 in all 3 channels (degenerate, no 3D polyhedron, as expected). **Reversed construction** (generate conserved kinematics first, then map to spinors/plane) guarantees closure; adjacency frozen before q. Two impl corrections: scattering-spinor planes generically OFF-cell (cocycle gauge-invariant, no realification); n=4 needs no genuine subsetting. **Engine validation vs expm:** BOTH Python+Rust references truncate Taylor at 15 terms; expm needs ~25 terms at K=6. Consequence: the parent T5a M-sweep (cap 2K+8=24 terms at K=8, needs ~40) ran on TRUNCATED states → that node is PROVISIONAL per repair rule (bug not result). Spec: `implementation-details/T6-minkowski-polyhedron.md`.
-- T5b: Perturbation response V(ε) — is chirality a smooth knob or a phase transition? ✅ DONE 2026-09-19 (86f60d3, orx/t5b-eps, Muse Spark 1.2): clean **α ≈ 0.5** (n=4: 0.497, n=5: 0.499) over 13-point geometric ε-sweep 1e-6..1. V ~ √ε — smooth, non-analytic-but-soft onset, **no threshold/barrier**. Positive cell is a smooth zero of chirality, not a barrier.
-- T5c: Classical volume match — does √(⟨q⟩) equal the reconstructed polyhedron's classical volume?
-- T5d: Cocycle barrier / distance-to-cell scaling — is Gr₊ a smooth zero or a caustic?
-- T5e: Large-K semiclassics — does V ~ K^{3/2} hold at K=20–50? ✅ DONE 2026-09-19 (27a761a, orx/t5e, Muse Spark 1.3). **The K^1.5 law does NOT hold.** Two families: (1) **vertex-scaled** (b-bosons on the measured triple, K=4+3s): <q> EXACTLY linear in s (q/s=-1.059e-3 to 9 digits), so V~(K-4)^0.5, alpha→0.5 (finite-range fit alpha=0.696, R2=0.998, local slopes decline 0.77→0.62 toward 0.5). Each triple boson contributes independently; NO collective K^3 enhancement. (2) **uniform M=0** (fixed shape, K=8..24): q=0 to solver precision (|q|<=9e-13) — uniform scaling develops NO volume at all. Classical V~r^3 needs <q>~K^3; observed <q>~K^1 (vertex) or ~0 (uniform). Coherent-state volume does NOT enter a classical-growth regime up to K=24. **CAVEAT:** first run used Taylor cap 2K+4 (WRONG large-K values, off x6500/x35); recorded run uses cap 8K+50 + convergence assert. T5a Rust-driver magnitudes (uniform refs K=12..14) predate the fix and are likely truncation-shifted; sign agreements probably robust. Engine: Rust on-the-fly, validated vs stored engine at K=8,12.
-- T5f: Amplituhedron kinematics — which scattering regions does Gr₊ cover? (lowest priority)
-- T5g: Performance frontier — n=10–12 Rust profiling (engineering, enables T5a–e)
+- T5a: Triple-volume correlations (n≥5). **Base n=6,7 runs recorded complete**: sign-agreement 0.50–0.70 and small cross-seed correlations, consistent with per-triple chirality; modest sign-test power and n=8 resource limit remain. **Magnetization sweep rerun for one fixed plane**: all 10 states converged in 39–41 Taylor terms; four representative sectors matched independent SciPy exponentiation to at most 3.6e-16 in triple means. Sign-agreement stayed 0.50–0.60 for nonpolarized sectors. The one-plane, ten-triple sample does not establish a general handedness law. See `t5a_mag_notes.md` and `t5a_prime_notes.md`.
+- T5a′: Kinematic-polyhedron local chirality — **recorded complete with caveats**. The reported n=5 local sign-agreement tracks all-triples across 10 incoming-pair channels; only 8 planes per channel, so sign-test power is limited. n=4 is planar/degenerate for this polyhedron test. Dense-expm validation found the shared 15-term Taylor reference was not converged (about 25 terms needed at K=6); retain the recorded explicit checks and caveats, and do not treat cross-engine agreement under a shared truncation as independent validation. Spec/results: `implementation-details/T6-minkowski-polyhedron.md`, `t5a_prime_notes.md`.
+- T5b: Perturbation response of the signed-mean proxy — corrected 13-point
+  rerun has convergence assertions and fits α=0.496907 (n=4), 0.499104
+  (n=5). Four n=4 and three n=5 points agree with independent SciPy
+  exponentiation; generalization across planes remains open.
+- T5c: Classical volume match — OPEN. Reconstruct the state-based polyhedron using closure and covariance/twist data; compare its volume with the quantum observable.
+- T5d: Cocycle barrier / distance-to-cell scaling — OPEN. Define a gauge-invariant defect and test its relation to ⟨q⟩.
+- T5e: Large-K semiclassics — target K=20–50; recorded study reaches K=24. ✅ DONE for the recorded families/range (27a761a, orx/t5e, Muse Spark 1.3). **The K^1.5 law is not supported by these runs.** Two families: (1) **vertex-scaled** (b-bosons on the measured triple, K=4+3s): ⟨q⟩ is linear in s (q/s=-1.059e-3 to 9 digits), so V~(K-4)^0.5 over the measured range. (2) **uniform M=0** (fixed shape, K=8..24): q=0 to solver precision (|q|<=9e-13). Classical V~r^3 would require ⟨q⟩~K^3; these tested families show ⟨q⟩~K^1 or approximately zero. This does not rule out other state families or higher K. **Caveat:** first run used Taylor cap 2K+4 and produced truncation-shifted results; recorded run uses cap 8K+50 plus a convergence assertion. T5a Rust-driver magnitudes at K=12..14 predate the fix and may be shifted. The on-the-fly engine was compared with the stored engine at K=8,12.
+- T5f: Amplituhedron kinematics — OPEN; map positive-cell data to scattering regions.
+- T5g: Performance frontier — OPEN; n=10–12 Rust profiling if required by the physics runs.
 - T6: Minkowski polyhedron reconstruction — kinematic (T5a′, feasible now) + full quantum (needs T5c covariance machinery). Spec: `implementation-details/T6-minkowski-polyhedron.md`.
-- T7: Thermofield-double construction — double the Schwinger system via TFD purification to get thermal volume on real momenta (no complexification). 🔄 IN PROGRESS 2026-09-20. Key advantage: H = sum omega_i (n_a,i+n_b,i) is occupation-diagonal, so e^{-βH/2} rescales Fock amplitudes exactly — no Taylor, no truncation, exact at any K. T7a ✅ DONE (91f53d5, Muse Spark 1.3): single-copy thermal state — areas nonzero, **Tr(ρq)=0 EXACTLY** at all β (no occupation-diagonal ensemble carries volume), q² fluctuation nonzero and β-dependent. Load-bearing: Perelomov-weighted and pure-rescaled families are β-flat (fixed E=K sector); genuine temperature needs full Gibbs ensemble or doubled TFD. T7b ✅ DONE (same session, ef2e9b2, synced in 44b37d2): Gibbs-TFD purifies correctly (ρ_L=ρ_β, S=thermal entropy, both PASS); **small theorem: ⟨q_L q_R⟩(β) = -Tr(ρ_β q²) at EVERY β** (not just β=0) — L–R anticorrelation carries exactly the single-copy fluctuation; FAILS for Perelomov-weighted TFD (needs uniform weights). β→∞ limit flows to Fock vacuum, NOT pure Perelomov — spec correction (Gibbs forgets the plane). T7d scaling: **no power law** — |⟨q_L q_R⟩| is Boltzmann-exponential ~e^{-3β} (q needs edges 0,1,2 occupied, E=3 leading sector), qualitatively distinct from T5b's V~√ε. T7c ✅ (the ⟨q_L q_R⟩ identity above). T7e (complexified momenta in TFD) still open. Spec: `implementation-details/thermofield-double-volume.md`. Aspirational context (not the focus): candidate concrete LQG wormhole state.
+- T7: Thermal and TFD program — **IN PROGRESS; T7a–T7e results recorded for the tested constructions.** T7a reports zero mean signed triple grasp and nonzero $q^2$ fluctuations; the Gibbs cutoff is quantitatively reliable for $\beta\gtrsim1$ and qualitative at $\beta\leq0.5$. T7b–T7c report Gibbs purification and $\langle q_Lq_R\rangle=-\mathrm{Tr}(\rho_\beta q^2)$ with the same $q$ matrix on both copies; the sign depends on that right-operator convention. The $\beta\to\infty$ state is the Fock vacuum. T7d reports an $e^{-3\beta}$ onset in the tested Gibbs ensemble. T7e reports approximately $\epsilon^2$ correlator change and $\beta$-flatness for the tested fixed-$K$ construction; a general $V(\epsilon,T)$ law remains open. See `implementation-details/thermofield-double-volume.md` and `t7a_notes.md`–`t7e_notes.md`.
 
 **Notes**:
-Central new result motivating all experiments: the volume operator vanishes exactly on Gr₊(2,N) for N=4–8 and is nonzero immediately off it (achirality of the positive cell). All numerical claims must pass the red-team protocol before being promoted to manuscript results.
+Current supported result: real-plane states have zero signed triple-grasp mean,
+including real planes outside Gr₊(2,N). This does not imply zero positive
+volume; the tested positive $n=4$ state has nonzero $\langle q^2\rangle$.
+Claim promotion requires explicit observable definitions and independent
+convergence evidence.
 
 ## Completed Tasks
 | ID | Title | Completed | Related Tasks |
 |----|-------|-----------|---------------|
 | T1 | Python Pipeline | 2026-09-19 | T1a, T1b |
 | T1a | Volume operator at n=4 | 2026-09-19 | T1 |
-| T1b | Zero-volume on positive cell | 2026-09-19 | T1, T1a |
+| T1b | Historical signed-mean result; interpretation open | 2026-09-19 | T1, T1a |
 | T2 | Manuscript (EPJC paper) | 2026-09-19 | T1, T1a, T1b |
 | T3 | Rust Port for n≥5 | 2026-09-19 | T3a, T3b, T3c, T3d, T3e |
 | T3a | Fock space + u(N) operators (Rust) | 2026-09-19 | T3 |
 | T3b | Coherent states + Grassmannian (Rust) | 2026-09-19 | T3 |
 | T3c | Volume operator (Rust) | 2026-09-19 | T3 |
-| T3d | Verify Rust vs Python at n=4 | 2026-09-19 | T3, T3c |
-| T3e | Benchmarks n=5,6,7,8 | 2026-09-19 | T3, T3c, T3d |
-| T5a | Triple-volume correlations (n≥5) | 2026-09-19 | T5 |
-| T5b | Perturbation response V(ε) | — | T5 |
-| T5c | Classical volume match | — | T5 |
-| T5d | Cocycle barrier / distance-to-cell | — | T5 |
-| T5e | Large-K semiclassics | — | T5 |
-| T5f | Amplituhedron kinematics | — | T5 |
-| T5g | Performance frontier | — | T5 |
-| T6 | Minkowski polyhedron reconstruction | 2026-09-19 | T5 |
-| T7 | Thermofield-double construction (TFD volume on real momenta) | 2026-09-20 | T5 |
+| T5b | Corrected perturbation sweep, tested family | 2026-10-01 | T5; broader controls open |
+| T5e | Large-K semiclassics (tested through K=24) | 2026-09-19 | T5 |
 
 ## Task Relationships
 ```mermaid
 graph TD
     T1[T1: Python Pipeline]
     T1a[T1a: Volume n=4]
-    T1b[T1b: Zero-volume result]
+    T1b[T1b: Signed-mean result]
     T2[T2: EPJC Paper]
     T3[T3: Rust Port]
     T3a[T3a: Fock space]
@@ -295,7 +318,7 @@ graph TD
 ---
 
 ### T7a: Single-Copy Thermal State
-**Description**: Construct the thermal density matrix rho_beta on the n=4,5 intertwiner spaces. Verify Tr(rho_beta q) = 0 exactly (null mean volume). Compute Tr(rho_beta A_i) area expectations and Tr(rho_beta q^2) volume fluctuation spectrum across beta = 0..10.
+**Description**: Construct the thermal density matrix rho_beta on the n=4,5 intertwiner spaces. Verify Tr(rho_beta q) = 0 (null signed triple-grasp mean). Compute Tr(rho_beta A_i) area expectations and Tr(rho_beta q^2) fluctuations across beta = 0..10.
 **Status**: ✅ COMPLETED
 **Completed**: 2026-09-20
 **Last Active**: 2026-09-20 02:30 IST
@@ -311,11 +334,13 @@ graph TD
 - `t7a_results.json`
 
 **Key Results** (n=4, dim=6435; n=5, dim=43758):
-- Tr(rho_beta q) = 0 exactly at all beta — confirms null mean volume in thermal state
+- Tr(rho_beta q) = 0 exactly at all beta — confirms null signed mean in the tested thermal state
 - Areas decrease monotonically with beta: n=4 beta=0 ~0.369 → beta=10 ~2.2e-5
 - Volume fluctuation q^2 decreases with beta: n=4 beta=0 ~0.357 → beta=10 ~7e-14
 - Perelomov-weighted states show beta-independent areas and q^2
 - Gibbs state thermalizes to vacuum at large beta (Z→1, E→0)
 
 **Notes**:
-This confirms the zero-volume result extends to thermal states. The thermal state does not spontaneously acquire volume expectation — consistent with the EPJC published result.
+This extends the signed-mean cancellation to occupation-diagonal thermal
+states; nonzero $\mathrm{Tr}(\rho q^2)$ rules out interpreting it as zero
+positive volume. The published EPJC paper did not contain this numerical result.

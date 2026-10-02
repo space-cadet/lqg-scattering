@@ -1,23 +1,39 @@
 # Experiments: Volume–Positivity Program
 
-**Status:** 🔄 PROPOSED — not yet started
-**Last Updated:** 2026-09-19
+**Status:** 🔄 IN PROGRESS — T5a/base, T5a′, T5b, and T5e have recorded results; several follow-ups remain open.
+**Last Updated:** 2026-10-01
 **Parent task:** T5 (Experiments)
-**Depends on:** T3c/T3d/T3e (Rust volume operator, verified n=4, benchmarks n=5–8), all now on `main`.
+**Depends on:** T3c (Rust triple-grasp implementation); T3d/T3e converged reruns are recorded; the n=6 point awaits an independent state check.
+
+**Current state:** T5a's n=6,7 base analysis is recorded. Its n=5
+magnetization sweep was rerun with a convergence assertion; four sectors
+matched independent SciPy exponentiation. The one-plane sign pattern is
+scoped evidence, not a general handedness law. T5a′ reports no stronger chirality on tested
+kinematic-polyhedron-local triples, with limited n=5 samples and a shared
+reference-engine convergence caveat. T5b and T5e have recorded results for
+their tested ranges. T5c (state-based classical-volume comparison), T5d
+(cocycle/distance scaling), T5f (scattering-region mapping), and T5g
+(higher-n profiling) remain open. See `tasks.md` and the experiment notes for
+the limits of each result.
 
 ## Motivation
 
-The Rust port established one new quantitative result, invisible in the published EPJC paper:
-
-> **The LQG volume operator vanishes exactly on the positive Grassmannian <tg-math>\mathrm{Gr}_+(2,N)</tg-math> for every <tg-math>N</tg-math> tested (4–8), and is nonzero immediately off it.**
+The red-team audit narrows the central claim: real-plane states have zero
+expectation of the **signed triple grasp**. This includes positive planes and
+real planes outside the positive cell. The computed square-root-of-mean
+quantity is a proxy, not the expectation of a positive volume operator.
 
 Concretely, for the De Pietri / Rovelli–Smolin commutator on a triple of edges <tg-math>(i,j,k)</tg-math>,
 
 <tg-math-block>
-q_{ijk} = i\,[A_{ij}, A_{jk}], \qquad A_{ij}\equiv J_i\cdot J_j, \qquad V=(\gamma\hbar)^{3/2}\sqrt{|\langle q\rangle|}
+q_{ijk} = i\,[A_{ij}, A_{jk}], \qquad A_{ij}\equiv J_i\cdot J_j, \qquad V_{\mathrm{proxy}}=(\gamma\hbar)^{3/2}\sqrt{|\langle q\rangle|}
 </tg-math-block>
 
-real planes give real Fock amplitudes and <tg-math>\langle q\rangle=0</tg-math> **for any triple**; a small imaginary perturbation of the plane (breaking the minor-phase cocycle) turns <tg-math>\langle q\rangle</tg-math> on discontinuously (<tg-math>2.9\times10^{-2}</tg-math> vs <tg-math>10^{-9}</tg-math> at <tg-math>n=4</tg-math>). So the positive Grassmannian — the amplituhedron's home — is the **achiral locus** of the dual quantum geometry.
+Real planes give real Fock amplitudes and <tg-math>\langle q\rangle=0</tg-math>
+for any triple. Some imaginary perturbations give a smoothly increasing
+signed mean. The corrected <tg-math>n=4</tg-math> complex-plane magnitude
+was shifted by Taylor truncation; the positive-cell state has nonzero
+<tg-math>\langle q^2\rangle</tg-math>. See `red-team-audit.md`.
 
 Every experiment below probes this boundary. They are independent and can run in any order; the priority reflects physics-per-unit-effort, not dependency.
 
@@ -28,10 +44,10 @@ Every experiment below probes this boundary. They are independent and can run in
 | ID | Short name | One-line question | Primary code |
 |----|-----------|-------------------|--------------|
 | T5a | Triple-volume correlations (<tg-math>n\ge5</tg-math>) | One vertex handedness, or independent per-triple chirality? | Rust `volume.rs` (extend `scan`) |
-| T5b | Perturbation response <tg-math>V(\varepsilon)</tg-math> | Is chirality a smooth knob or a phase transition? | Python `volume_vs_perturbation` → Rust |
+| T5b | Signed-mean proxy response <tg-math>V_{\rm proxy}(\varepsilon)</tg-math> | What exponent appears for a specified complex perturbation? | `t5b_perturbation.py` |
 | T5c | Classical volume match | Does <tg-math>\sqrt{\langle q\rangle}</tg-math> equal the reconstructed polyhedron's classical volume? | `spin_vectors` + closure/twist map |
-| T5d | Cocycle barrier / distance scaling | Is <tg-math>\mathrm{Gr}_+</tg-math> a smooth zero or a caustic? | Rust `grassmannian.rs` (cocycle) |
-| T5e | Large-K semiclassics | Does <tg-math>V\sim K^{3/2}</tg-math> hold at <tg-math>K=20\text{–}50</tg-math>? | Rust (extend K range) |
+| T5d | Phase response / gauge-real locus | Which phase changes produce nonzero <tg-math>\langle q\rangle</tg-math>? | Rust `grassmannian.rs` (phase scan) |
+| T5e | Large-K semiclassics | Does <tg-math>V\sim K^{3/2}</tg-math> hold at <tg-math>K=20\text{–}50</tg-math>? | Rust (recorded range currently reaches K=24) |
 | T5f | Amplituhedron kinematics | Which scattering regions does <tg-math>\mathrm{Gr}_+</tg-math> cover? | `correspondence.py` + twistor map |
 | T5g | Performance frontier | Where does sparse matvec stop being the bottleneck? | Rust profiling |
 
@@ -54,14 +70,20 @@ Every experiment below probes this boundary. They are independent and can run in
 
 ## T5b — Perturbation response <tg-math>V(\varepsilon)</tg-math>
 
-**Physics question.** Turn on a small chirality-breaking perturbation <tg-math>\varepsilon</tg-math> (a fixed imaginary plane perturbation breaking the minor-phase cocycle) and measure <tg-math>V(\varepsilon)</tg-math> from <tg-math>\varepsilon\sim10^{-6}</tg-math> up to <tg-math>1</tg-math>. Fit <tg-math>V\sim\varepsilon^{\alpha}</tg-math>.
+**Physics question.** Turn on a specified imaginary plane perturbation
+<tg-math>\varepsilon</tg-math> and measure the signed-mean proxy from
+<tg-math>\varepsilon\sim10^{-6}</tg-math> up to <tg-math>1</tg-math>. Fit its
+exponent for that family.
 
 - **<tg-math>\alpha<1</tg-math>** → chirality turns on *arbitrarily softly*: an arbitrarily small-handed geometry carries appreciable volume.
 - **<tg-math>\alpha\ge1</tg-math>** or a threshold → chirality is more "quantized."
 
 This directly answers: *can chirality be switched on smoothly, or is there a barrier?*
 
-**Implementation.** `positivity.py` already has `volume_vs_perturbation(N, epsilons)`; the Python experiment was interrupted at <tg-math>n\ge5</tg-math> because Python was too slow. Now trivial in Rust. Use a geometrically spaced <tg-math>\varepsilon</tg-math> sweep and fit the log-log exponent. (This partially overlaps T5d — same machinery, different fit target: T5b varies perturbation *size*, T5d varies *distance-to-cell* and cocycle phase.)
+**Implementation.** The corrected `t5b_perturbation.py` completed the
+13-point $n=4,5$ sweep with a convergence assertion. Independent SciPy
+exponentiation checked four $n=4$ and three $n=5$ points. Extend this with
+multiple plane/reference controls before claiming a general onset law.
 
 ---
 
@@ -77,18 +99,26 @@ This directly answers: *can chirality be switched on smoothly, or is there a bar
 3. Compute its classical volume <tg-math>V_{\text{cl}}</tg-math>.
 4. Compare <tg-math>(\gamma\hbar)^{3/2}\sqrt{|\langle q\rangle|}</tg-math> against <tg-math>V_{\text{cl}}</tg-math> as <tg-math>K</tg-math> grows.
 
-**Deliverable.** If they match at large <tg-math>K</tg-math>, the volume operator is *proven* to measure the classical dual volume (currently an assumption). If not, the quantum operator measures something genuinely non-classical — also a publishable result.
+**Deliverable.** First distinguish the signed-mean proxy from a positive
+volume-operator expectation. Then compare each specified observable against
+the reconstructed classical volume for converged state families; a numerical
+match in a finite range does not prove a general classical limit.
 
 ---
 
 ## T5d — Cocycle barrier / distance-to-cell scaling
 
-**Physics question.** *How* does volume turn on as you leave the positive cell — smoothly or as a caustic?
+**Physics question.** Which phase perturbations turn on the signed mean
+as a plane leaves the gauge-real locus?
 
 - **Cocycle scan.** Parameterize the phase-cocycle violation <tg-math>\varphi=\arg(M_{12}M_{34}/M_{13}M_{24})</tg-math> and measure <tg-math>\langle q\rangle(\varphi)</tg-math> at fixed shape/<tg-math>K</tg-math>, <tg-math>n=4..8</tg-math>. Test <tg-math>\langle q\rangle\sim|\varphi|</tg-math> (linear emergence) vs a barrier-like singularity as <tg-math>\varphi\to0</tg-math>.
-- **Distance-to-cell scaling.** Define a gauge-invariant positivity defect <tg-math>d=\sum|\operatorname{Im}\tilde M_{ij}|+\sum|\text{negative real minors}|</tg-math> and fit <tg-math>\langle q\rangle\sim d^{\alpha}</tg-math> across <tg-math>n</tg-math>. If <tg-math>\alpha</tg-math> is universal in <tg-math>n</tg-math>, achirality is a genuine cell-boundary phenomenon in a meaningful metric.
+- **Gauge-real control.** Include real planes with mixed-sign minors and
+  complex planes whose signed mean cancels. A defect based on negative real
+  minors cannot be treated as distance to the zero locus.
 
-**This is the manuscript's own open question** ("is ⟨q⟩ log-barrier-like in the minor-phase cocycle?"). It characterizes <tg-math>\langle q\rangle</tg-math> as a *measure* on <tg-math>\mathrm{Gr}(2,N)\setminus\mathrm{Gr}_+</tg-math>.
+The signed mean must be characterized on specified plane and reference
+families; it is not a positive measure on the complement of
+<tg-math>\mathrm{Gr}_+</tg-math>.
 
 **Implementation.** Rust. The `positive_plane_curve` generator + minor-phase perturbation machinery already exists. New code: a cocycle-phase sweep and a `d`-defect computation + log-log fit.
 
@@ -120,20 +150,35 @@ This directly answers: *can chirality be switched on smoothly, or is there a bar
 
 ## Recommended order
 
-1. **T5a** (triple correlations) — highest novelty, <tg-math>n\ge5</tg-math>-only, cheap.
-2. **T5b** (perturbation response) — one clean curve answers "is chirality a phase"; trivially cheap now.
-3. **T5c** (classical volume match) — closes the manuscript's flagged gap; makes the volume *interpretable*.
-4. **T5d** (cocycle barrier) — characterizes <tg-math>\langle q\rangle</tg-math> as a measure; the manuscript's own open question.
-5. **T5e** (large-K) — side sanity check.
-6. **T5f, T5g** — defer (most new machinery / pure engineering).
+1. **Define the observable and finish independent baseline checks.** Separate $\langle q\rangle$, $\sqrt{|\langle q\rangle|}$, $\langle q^2\rangle$, and a specified positive volume operator. T3d/T3e converged reruns and independent $n=4,5,7,8$ exponentials are recorded; independently check $n=6$.
+2. **Extend T5a/T5a′ and T5b.** The corrected magnetization sweep is converged
+   for one plane and cross-checked in four sectors. Add independent plane
+   samples, strengthen the local-triple comparison, and add multiple
+   plane/reference controls before generalizing either result.
+3. **Run T5d with controls.** Include positive real, mixed-sign real, and complex planes. Define a gauge-invariant phase variable before fitting any onset.
+4. **Complete T5c and the full quantum T6 reconstruction.** Compare explicitly named quantum observables with a reconstructed classical polyhedron and test state-family dependence.
+5. **Scope the next T7 experiment.** The existing T7e result is beta-flat for fixed-$K$ support. Proceed only with a physically justified multi-$K$ coherent reference or non-uniform-frequency Hamiltonian, and predefine cutoff and temperature convergence checks.
+6. **Extend T5e if it changes the claim.** Current converged records reach $K=24$; larger-$K$ work should test the two observed families separately.
+7. **Do T5f after the geometric observables are stable.** Map the positive-cell data to scattering invariants and amplituhedron regions.
+8. **Use T5g as enabling work.** Profile $n=10$–$12$ only where it unlocks one of the preceding physics questions.
+9. **Update and review the manuscript continuously.** Promote claims only with recorded validation evidence, limits, and provenance; circulate after the claim ledger and red-team review are complete.
+
+T5b's original point values used a short Taylor cap. A corrected 13-point
+rerun with a convergence assertion now supports the near-half proxy exponent
+for the tested $n=4,5$ family; four $n=4$ and three $n=5$ points have an
+independent SciPy cross-check. Generality across planes remains open.
 
 ---
 
 ## Notes
 
-- **All numerical claims from these experiments must pass the red-team protocol** before being promoted to "results" in the manuscript (see `skills/red-team/SKILL.md` and the standing decision in the workspace MEMORY.md).
+- **Numerical claims require independent evidence before promotion.** The
+  referenced `skills/red-team/SKILL.md` and workspace `MEMORY.md` were not
+  present in the searched checkout/skill locations; the available scoped
+  protocol and findings are in `red-team-audit.md` and
+  `verification-protocol.md`.
 - **Code must be checkpointable/resumable** if any scan exceeds ~10 min (standing workspace rule).
-- **Reference-state caveat** (applies to every experiment): the zero-volume / nonzero-volume statements assume a genuine spin-network reference occupation (both <tg-math>a</tg-math> and <tg-math>b</tg-math> bosons). An all-<tg-math>a</tg-math> reference (<tg-math>N_b=0</tg-math>) freezes every spin along <tg-math>+z</tg-math> and gives <tg-math>\langle q\rangle=0</tg-math> regardless of the plane. Use `vertex_reference` (or the Rust equivalent), which places the <tg-math>b</tg-math>-bosons on the volume triple.
+- **Reference-state caveat** (applies to every experiment): an all-<tg-math>a</tg-math> reference (<tg-math>N_b=0</tg-math>) gives <tg-math>\langle q\rangle=0</tg-math> regardless of the plane. Use `vertex_reference` (or the Rust equivalent), which places <tg-math>b</tg-math>-bosons on the measured triple, for the recorded signed-mean comparisons.
 
 ---
 

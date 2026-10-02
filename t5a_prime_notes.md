@@ -43,9 +43,10 @@ Two corrections found during implementation (both in this branch's code):
   plane is gauge-real (3 minor phases, 3 column-phase unknowns — always
   solvable), so $q = 0$ identically. The Python pipeline's non-zero value
   there is truncation noise. n=3 can never show chirality.
-- Consequence: the frozen parent $M$-sweep (cap $2K+8 = 24$ terms at $K=8$,
-  needs $\sim 40$) ran on TRUNCATED states. Per the repair rule (bug, not
-  result) that node is provisional: repaired + rerun separately.
+- Consequence at the time: the parent $M$-sweep (cap $2K+8 = 24$ terms at
+  $K=8$, needs $\sim 40$) ran on truncated states. It was repaired and
+  rerun on 2026-10-01 with 39–41 terms and four independent SciPy state
+  checks; see `t5a_mag_notes.md`.
 
 ## Table (run 3a0c6323, 91.5s local)
 
@@ -65,4 +66,5 @@ n=5 (8 planes/channel, 6 local of 10 triples, 1 distinct local set each):
 8 planes/channel at n=5 (per-plane 6-triple sign test is weak);
 per-triple $q$ values not persisted (means only) — pooled sign test is a
 follow-up. Cosmetic RuntimeWarnings (nanmean over empty n=4 local) in log.
-n=6+ needs the Rust engine. Parent $M$-sweep rerun pending (repair branch).
+n=6+ needs the Rust engine. The parent $M$-sweep rerun is recorded in
+`t5a_mag_results.json`.

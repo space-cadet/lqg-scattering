@@ -119,14 +119,14 @@ pub fn sign_agreement(qs: &[f64], nonzero_tol: f64) -> (f64, usize, usize, usize
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::grassmannian::positive_plane_curve;
     use crate::volume::GAMMA;
 
     #[test]
     fn n4_sign_matches_python() {
         // Python positivity.py reference: plane = positive_region_N4(1,2,
         // 0.5,1.5) + dC, ref [(1,1),(1,1),(1,0),(1,0)], triple (0,1,2):
-        // <q> = -8.496572e-04. Exercise q = -2 Im <A01 psi|A12 psi>.
+        // Converged Python/expm reference: <q> = -8.276871677e-04.
+        // Exercise q = -2 Im <A01 psi|A12 psi>.
         let n = 4;
         let space = FockSpace::new(n, 6);
         let base: [[f64; 4]; 2] = [
@@ -149,8 +149,8 @@ mod tests {
         let (_, qs) = triple_q_all_pairs(&space, &plane, &[(1, 1), (1, 1), (1, 0), (1, 0)], 1e-13);
         assert_eq!(qs.len(), 4);
         assert!(
-            (qs[0] - (-8.496572e-04)).abs() < 1e-9,
-            "q_012 = {:.9}, expected -8.496572e-04",
+            (qs[0] - (-8.276871677209302e-04)).abs() < 1e-10,
+            "q_012 = {:.12}, expected -8.276871677e-04",
             qs[0]
         );
         let _ = GAMMA;

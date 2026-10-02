@@ -3,62 +3,56 @@
 *Last Updated: 2026-10-02 10:07 IST*
 
 ## Overview
-- Active Tasks: 2 (T4 IN PROGRESS, T5 PROPOSED)
+- Active Tasks: T1a/T3c RS/AL volume validation; T4 manuscript; T5 volume program; T7 thermal/TFD program
 - Paused Tasks: 0
-- Last Task Focus: T4 / T5
+- Current checkout: `main` at `d0f1e97`; local research and Memory Bank changes from the 2026-10-01 session remain uncommitted.
 
 ## Task Registry
-- T4: Follow-up manuscript — 🔄 IN PROGRESS
-- T5: Experiments — ⬜ PROPOSED (subtasks T5a–T5g)
-- T3c: Rust volume operator — ✅ COMPLETED 16:26 IST
-- T3d: Verify n=4 — ✅ COMPLETED 16:26 IST
-- T3e: Benchmarks n=5-8 — ✅ COMPLETED 16:26 IST
+- T4: Follow-up manuscript — 🔄 IN PROGRESS; correct claims, document review status, then circulate.
+- T5: Volume–positivity experiments — 🔄 IN PROGRESS; T5a magnetization sweep converged for one plane; T5c/T5d/T5f/T5g open.
+- T7: Thermal/TFD experiments — 🔄 IN PROGRESS; T7a–T7e recorded complete for tested setups; general temperature-dependent coherent-sector response remains open.
+- T1–T3e: Python/Rust implementation and corrected converged scan recorded; n=6 independent state check remains open.
 
-## Active Tasks
+## Current Work
 
 ### T4: Follow-up Manuscript
 **Status:** 🔄 IN PROGRESS
-**Priority:** MEDIUM
-**Started:** 2026-09-19
-**Last Active:** 2026-09-19 17:15 IST
-**Dependencies:** T3c, T3d, T3e
 
-#### Context
-All Rust implementation phases complete. ORX agent delivered full pipeline with benchmarks. manuscript.md restructured with published baseline and numerical results. Dashboard created for visualization.
+`manuscript.md` contains results through T7e and now distinguishes the signed-mean proxy from positive quantum volume. An independent audit found shared Taylor truncation and a real off-cell zero counterexample. Claim-level sign-off and circulation remain open. The published EPJC paper remains frozen.
 
-#### Critical Files
-- `manuscript.md`: Follow-up numerical work draft
-- `paper/lqg-amplituhedron.tex`: Published EPJC paper (frozen)
-- `dashboard/data.json`: Benchmark data
-- `rust/src/volume.rs`: Volume operator implementation
+### Positive volume operators
+**Status:** 🔄 IN PROGRESS
 
-#### Implementation Progress
-1. ✅ Python pipeline (T1, T1a, T1b)
-2. ✅ EPJC paper (T2)
-3. ✅ Rust Fock space (T3a)
-4. ✅ Rust coherent states (T3b)
-5. ✅ Rust volume operator (T3c)
-6. ✅ n=4 verification (T3d)
-7. ✅ n≥5 benchmarks (T3e)
-8. 🔄 Follow-up manuscript (T4)
+Python and Rust now implement exact RS and AL positive expectations by dense spectral decomposition of populated fixed-spin blocks (maximum dimension 512). A paired spin-1/2 singlet gives $V_{RS}=0.304653190236$ and $V_{AL}=0.152326595118$ in repository normalization despite $\langle q_{012}\rangle=0$; independent tensor-product matrices agree. The outstanding project-state rerun targets the Freidel–Speziale coherent state used in the EPJC paper; its construction and volume evaluation remain open, along with physical prefactors and larger-block algorithms.
 
-#### Working State
-Git branches reconciled: `main-orx` (Rust port + manuscript) merged into `main` as commit `a24dac8`. Rust compiles clean. Memory-bank updated with new T5 (Experiments, T5a–T5g) + `experiments.md` roadmap. Awaiting `git push origin main` to publish merge + memory-bank together.
+### T5: Volume–Positivity Program
+**Status:** 🔄 IN PROGRESS
 
-## Session Notes
+- T5a base triple correlations at n=6,7 are recorded; n=8 remains unresolved.
+- T5a magnetization sweep was rerun with convergence assertions (39–41 terms); four sectors matched independent SciPy exponentiation to at most 3.6e-16 in triple means. The result remains one-plane evidence.
+- T5a′ local kinematic-polyhedron test is recorded, with limited n=5 sample count and its own engine/convergence caveats.
+- T5b has a corrected converged 13-point rerun at n=4,5; four n=4 and three n=5 points agree with independent SciPy exponentiation. The near-half proxy exponent is supported for this family. T5e has converged results for its tested range.
+- T5c quantum/classical volume comparison, T5d distance/cocycle scaling, T5f scattering-region mapping, and T5g higher-n profiling remain open.
 
-### 2026-09-19 Session
-- ORX agent completed full Rust implementation (4h50m runtime)
-- Memory-bank initialized with mb-core v6.12
-- Dashboard created and committed
-- Cron monitor removed
-- **Git reconcile:** merged `main-orx` → `main` (`a24dac8`). Rust + Phases 2–5 + manuscript now on `main`; memory-bank preserved.
-- **New task T5 (Experiments)** created: 7 subtasks T5a–T5g probing the volume–positivity (achirality) boundary. Roadmap: `implementation-details/experiments.md`.
-- Next: push `main`; deploy dashboard to quantumofgravity.com; run first T5 experiment.
+### T7: Thermal and TFD Program
+**Status:** 🔄 IN PROGRESS
 
-### 2026-10-02 Session — U(N) coherent-state discussion
-- Recorded the user-facing conversation through the latest message in `sessions/2026-10-02-morning-transcript.md`; assistant messages are attributed as GPT 6 Luna (High).
-- Documented the physical discussion and deferred Section D overlap derivation in `sessions/2026-10-02-morning.md`.
-- Cloud setup was verified after restart: Rust 1.99/Cargo, NumPy/SciPy, release binaries, n=4 CLI and T5e smoke check, and arXiv HTTP 200. Full Rust tests retain one numerical regression failure; no research source was modified.
-- The requested `mem-scan` command returned “command not found”; no matching skill or executable is available in this environment.
-- Follow up by working through Freidel–Livine Appendix/Section D, Eqs. 47–51.
+- T7a–T7e have recorded results for the tested constructions.
+- Gibbs TFD approaches the Fock vacuum at low temperature; it does not approach a Perelomov state.
+- T7e finds an approximately quadratic epsilon response and beta-flatness for the tested fixed-K construction; a general combined temperature/complexification law remains open.
+- Small-beta Gibbs results are cutoff-limited; consult `t7a_notes.md` for the stated validity range.
+
+## Completed Foundation
+- Python pipeline and published EPJC paper.
+- Rust Fock/coherent/volume pipeline.
+- Corrected Rust/Python n=4 comparison and converged scans through n=8; independent SciPy checks cover n=4,5,7,8.
+
+## Session History
+- 2026-10-02: U(N) coherent-state discussion and cloud setup recorded; see `sessions/2026-10-02-morning.md` and `sessions/2026-10-02-morning-transcript.md`. Follow-up: work through Freidel–Livine Section D, Eqs. 47–51. Cloud Rust suite has one numerical regression failure; no research source was modified in that session.
+- 2026-10-01: Project status and manuscript claims reconciled; red-team review gaps and research sequence assessed. See `sessions/2026-10-01-evening.md`.
+- 2026-09-20: T7a/T7b thermal and Gibbs-TFD numerical work recorded; see `sessions/2026-09-20-T7a-thermal-state.md` and T7 notes.
+- 2026-09-19: Rust phases and T5 experiment program integrated on `main`; see `memory-bank/tasks.md` and `memory-bank/progress.md`.
+
+## Cloud Session Notes
+- The cloud session documented that its `mem-scan` command was unavailable; this checkout has the global `mem-scan` skill available, but no project-specific five-gate red-team skill was found.
+- Cloud checks recorded Rust 1.99/Cargo, NumPy/SciPy, release binaries, n=4 CLI and T5e smoke checks, and arXiv HTTP 200. Its Rust suite had one numerical regression failure (`experiment::tests::n4_sign_matches_python`; 18 other tests passed). Treat that as cloud-host evidence until rerun locally.

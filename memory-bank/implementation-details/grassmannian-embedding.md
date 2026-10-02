@@ -22,18 +22,24 @@ For a U(N) coherent state $|\Psi\rangle$ with occupation numbers $\{k_i\}$, the 
 2. Computing the Plücker coordinates
 3. Checking positivity of all maximal minors
 
-## Zero-Volume Result
+## Signed-mean result and open volume question
 
-**Published Result (EPJC):** The volume operator vanishes identically on the positive Grassmannian cell $Gr^+(k,n)$.
+The published EPJC paper establishes a kinematic correspondence; it does
+not contain the follow-up zero-volume computation. In the later code,
+$\langle q_{ijk}\rangle=0$ for real-plane states because the state amplitudes
+are real and $q_{ijk}$ is imaginary antisymmetric in the occupation basis.
 
-**Interpretation:** The amplituhedron region corresponds to classical, zero-volume geometry. Quantum volume requires the complex extension of the positive cell.
+This cancellation also holds for real planes with mixed-sign minors outside
+the positive cell. A positive-plane example has nonzero $\langle q^2\rangle$,
+so the expectation of a positive quantum volume operator remains open. See
+`red-team-audit.md`.
 
 ## Implementation
 
 ### Python (`positivity.py`)
 - Direct computation of Plücker coordinates
 - Positivity checks for n=4
-- Analytical verification of zero-volume result
+- Analytical real-state cancellation of the signed triple-grasp mean
 
 ### Rust (`rust/src/grassmannian.rs`)
 - Sparse Plücker coordinate computation
@@ -46,4 +52,4 @@ For a U(N) coherent state $|\Psi\rangle$ with occupation numbers $\{k_i\}$, the 
 |------|---------|
 | `rust/src/grassmannian.rs` | Plücker embedding, positivity tests |
 | `positivity.py` | Python reference implementation |
-| `paper/lqg-amplituhedron.pdf` | Published proof of zero-volume result |
+| `paper/lqg-amplituhedron.pdf` | Published kinematic correspondence |

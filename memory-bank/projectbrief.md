@@ -1,21 +1,31 @@
 # Project Brief
 
-*Last Updated: 2026-09-19 16:30 IST*
+*Last Updated: 2026-10-01 20:31 IST*
 
 ## Project Overview
-LQG-Scattering is a numerical physics project that interfaces Loop Quantum Gravity (LQG) spin networks with scattering amplitudes via Grassmannian geometry. The project computes the quantum volume of U(N) coherent states embedded in the positive Grassmannian, connecting LQG geometry to the amplituhedron program.
+LQG-Scattering is a numerical physics project that interfaces Loop Quantum Gravity (LQG) spin networks with scattering amplitudes via Grassmannian geometry. The follow-up code computes signed triple-grasp means and a square-root-of-mean proxy on U(N) coherent states. Its relation to a positive quantum volume operator and classical volume is open.
 
 The EPJC paper (lqg-amplituhedron) is published. Current work is follow-up numerical computation that was not feasible at publication time.
 
-## Goals
-- Primary: Compute quantum volume for n≥5 vertices via Rust implementation (Python too slow for n≥5)
-- Secondary: Verify Rust implementation against Python at n=4 (machine precision)
-- Tertiary: Draft follow-up manuscript with numerical results for n=4..8
+## Research Goals and Current Phase
+
+### Completed foundation
+- Build the Python reference for the n=4 correspondence and volume calculation.
+- Build the Rust implementation and record scans through n=8; revalidate their coherent-state convergence and complex-plane magnitudes.
+- Preserve the published EPJC paper as the frozen baseline.
+
+### Current research program
+- Establish where the signed triple-grasp mean vanishes and calculate a specified positive volume-operator expectation separately.
+- Determine whether chirality is a vertex-wide property or depends on each edge triple.
+- Test whether the computed quantum volume has a classical polyhedron interpretation and a controlled large-area limit.
+- Extend the real-momentum work to thermal and doubled (TFD) states, with explicit limits on what the tested constructions establish.
+- Reconnect the geometric results to scattering kinematics and amplituhedron regions.
+- Maintain a follow-up manuscript whose claims track validated results and open caveats.
 
 ## Core Features
 - Fock space construction for Schwinger bosons (Python + Rust)
 - U(N) Perelomov coherent states
-- Volume operator via Bianchi-Haggard-Thiemann formula
+- Triple-grasp commutator and signed-mean proxy; positive-volume calculation open
 - Grassmannian embedding (Plücker coordinates)
 - Positive Grassmannian cell identification
 - n=4..8 benchmark suite
@@ -35,7 +45,7 @@ lqg-scattering/
 │       ├── fock.rs                # Fock space basis (Schwinger bosons)
 │       ├── ops.rs                 # Sparse u(N) operators
 │       ├── coherent.rs            # U(N) Perelomov coherent states
-│       ├── volume.rs              # Volume operator (BHT)
+│       ├── volume.rs              # Triple-grasp commutator and signed-mean proxy
 │       └── grassmannian.rs        # Grassmannian embedding
 ├── coherent_states.py             # Python reference (n=4)
 ├── positivity.py                  # Python positivity checks
@@ -47,19 +57,19 @@ lqg-scattering/
 ## Key Components
 - **Fock space**: Schwinger boson formalism, U(N) decomposition, basis enumeration
 - **Coherent states**: Perelomov U(N) coherent states for intertwiners
-- **Volume operator**: BHT triple-grasp formula, sparse matrix construction
+- **Triple grasp**: sparse commutator and signed-mean proxy; positive-volume interpretation open
 - **Grassmannian**: Plücker embedding, positive cell identification
 
-## Current Status
-- Overall Progress: ~60% (Python complete, Rust Phase C in progress)
-- Active Tasks: 1 (T3c)
-- Current Focus: Rust volume operator implementation and n=4 verification
+## Current Status (2026-10-01)
+- Published paper and the Python/Rust implementation phases are recorded complete.
+- Corrected Rust/Python n=4 comparison and converged n=4..8 scans are recorded. Independent SciPy checks cover n=4,5,7,8; n=6 remains unchecked independently. An independent positive-plane $n=4$ state has $\langle q\rangle\approx0$ but $\langle q^2\rangle=0.375981$.
+- The follow-up manuscript is a developed draft, not yet recorded as reviewed or circulated.
+- T5 has a mix of completed experiments and open investigations; the T5a magnetization sweep has been rerun with converged states for one plane.
+- T7a..T7e have reported results for their tested constructions; follow-up work is needed for a temperature-dependent coherent-sector law.
+- Current focus: reconcile manuscript claims and task records, repair or qualify provisional results, then conduct an independent claim review before circulation.
 
 ## Task Tracking
-Tasks are tracked in `tasks.md` with the following priority structure:
-- **High Priority**: T3c (Rust volume operator), T3d (n=4 verification)
-- **Medium Priority**: T3e (n≥5 benchmarks), T4 (follow-up manuscript)
-- **Low Priority**: Polish and documentation
+See `tasks.md` for current T4, T5, and T7 states. The T3 implementation and corrected T3d/T3e numerical runs are recorded; independent n=6 verification remains open. See `implementation-details/red-team-audit.md`.
 
 ## Memory Bank Organization
 - `/memory-bank/`: Core documentation files

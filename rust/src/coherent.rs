@@ -3,7 +3,7 @@
 use crate::fock::FockSpace;
 use crate::ops::{generator_matrix, matvec};
 use num_complex::Complex64;
-use num_traits::{One, Zero};
+use num_traits::One;
 
 /// Build the normalized reference vector from per-edge occupations
 /// [(n_a, n_b); N] (a single basis state).
@@ -20,8 +20,8 @@ pub fn reference_vector(space: &FockSpace, ref_occ: &[(u8, u8)]) -> Vec<Complex6
 }
 
 /// Perelomov coherent state |Z> = exp(A) |ref> / norm, where
-/// A = sum_ij Z_ij E_ij. The Taylor series terminates on the total-K Fock
-/// space (A conserves K); we stop early when the increment is below tol.
+/// A = sum_ij Z_ij E_ij. A conserves K but its Taylor series does not
+/// terminate; require the increment to fall below tol.
 /// Mirrors `coherent_states.perelomov_state` in the Python pipeline.
 pub fn perelomov(
     space: &FockSpace,
@@ -35,6 +35,7 @@ pub fn perelomov(
     let k = 8 * space.k + 50;
     let mut result = ref_vec.to_vec();
     let mut term = ref_vec.to_vec();
+    let mut converged = false;
     for it in 1..k {
         term = matvec(&a, &term);
         let f = 1.0 / it as f64;
@@ -47,9 +48,11 @@ pub fn perelomov(
             *r += t;
         }
         if inc < tol * res.max(1.0) {
+            converged = true;
             break;
         }
     }
+    assert!(converged, "Perelomov Taylor exponential did not converge");
     let norm: f64 = result.iter().map(|x| x.norm_sqr()).sum::<f64>().sqrt();
     for x in result.iter_mut() {
         *x /= norm;
@@ -88,6 +91,7 @@ pub fn area_stats(
 mod tests {
     use super::*;
     use crate::grassmannian::{plane_to_z, positive_plane_curve};
+    use num_traits::Zero;
 
     fn ref_vertex4() -> Vec<(u8, u8)> {
         vec![(1, 1), (1, 1), (1, 0), (1, 0)]

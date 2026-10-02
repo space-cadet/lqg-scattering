@@ -14,7 +14,9 @@ Verifications:
   (iii) entanglement entropy S(beta) = -sum p log p matches T7a thermal S.
 
 Measurement (T7c/T7d): <q_L q_R>(beta) = sum_{nm} sqrt(p_n p_m) (q_nm)^2,
-vectorized over the sparse nnz of q (q imaginary => correlator <= 0).
+vectorized over the sparse nnz of q. This uses the same q matrix on the
+right copy; representing the right observable by q* reverses the sign.
+With the implemented convention, q imaginary gives correlator <= 0.
 Analytic check: at beta=0, <q_L q_R> = -Tr(rho_0 q^2) exactly.
 Sweep beta = 0, 0.1, 0.5, 1, 2, 5, 10; fit |corr| ~ T^alpha vs T5b 0.5.
 

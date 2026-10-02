@@ -23,8 +23,9 @@ comes from populations + coherences, not from conjugation bookkeeping.
 ## $\epsilon$-scaling: correlator does NOT inherit the sqrt law (hypothesis confirmed)
 
 - T5b replication with converged Taylor: $V$-fit $\alpha = 0.495/0.499$ vs T5b
-  $0.497/0.499$; point ratios $1.008/0.999$ — the old truncated Taylor was fine
-  at small $K$, and the sqrt law is robust.
+  $0.497/0.499$; point ratios $1.008/0.999$. The corrected T5b sweep and
+  independent SciPy spot checks now support the near-half proxy exponent
+  for this tested plane/reference family, without establishing universality.
 - $|q| \sim \epsilon^{1.0}$ (0.990/0.997): the mean chirality turns on linearly, and
   $V = \sqrt{|q|}$ gives the 0.5 — consistent picture.
 - **TFD correlator change $|\mathrm{corr}(\epsilon) - \mathrm{corr}(0)| \sim \epsilon^{2.0}$** (1.991/1.994,

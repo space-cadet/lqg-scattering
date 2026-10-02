@@ -27,12 +27,15 @@ is vectorized over the sparse nnz of $q$ (4476 for n=4, 27208 for n=5).
 
 ## Small theorem (stronger than the planned $\beta=0$ check)
 
-$\langle q_L q_R \rangle(\beta) = -\mathrm{Tr}(\rho_\beta q^2)$ at **every** $\beta$ (corr+q2 $\sim 1\mathrm{e}{-17}$
+$\langle q_L q_R \rangle(\beta) = -\mathrm{Tr}(\rho_\beta q^2)$ at **every** $\beta$ for the
+implemented convention using the same matrix $q$ on L and R (corr+q2 $\sim 1\mathrm{e}{-17}$
 across the whole sweep), not just $\beta=0$. Proof: $q$ preserves total boson
 number (each $A_{ij}$ does), so $q_{nm} \neq 0 \Rightarrow E_n = E_m \Rightarrow \sqrt{p_n p_m} = p_n$,
 and $q$ imaginary gives $(q_{nm})^2 = -|q_{nm}|^2$. The two-sided signal carries
 exactly the single-copy fluctuation content, with opposite sign
-(L–R anticorrelation). The identity needs uniform weights within $E$-sectors,
+(L–R anticorrelation in this convention). If the right observable is
+represented by the conjugated matrix $q^*$, the sign reverses. The identity
+needs uniform weights within $E$-sectors,
 so it FAILS for the Perelomov-weighted TFD (PW corr = $-0.394/-0.237$,
 $\beta$-flat, vs PW $q^2 = 0.785/0.679$) — coherences $|c_n| \neq |c_m|$ break it.
 

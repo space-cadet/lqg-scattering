@@ -215,8 +215,8 @@ def _exponential_state(E, Z, ref_vec, space, tol=1e-12):
     """exp(sum_ij Z_ij E_ij) |ref> by Taylor series.
 
     The E_ij conserve the total boson number, so on the finite Fock space
-    with K bosons the series terminates; we stop when the norm increment
-    falls below tol.
+    A conserves K, but its exponential series does not terminate. Require
+    the norm increment to fall below tol before returning a state.
     """
     # total boson number of the reference (all nonzero components share it)
     nz = np.nonzero(ref_vec)[0]
@@ -231,12 +231,14 @@ def _exponential_state(E, Z, ref_vec, space, tol=1e-12):
 
     result = ref_vec.copy()
     term = ref_vec.copy()
-    for n in range(1, 2 * K + 4):
+    for n in range(1, 8 * K + 50):
         term = A(term) / n
         inc = float(np.linalg.norm(term))
         result = result + term
         if inc < tol * max(1.0, float(np.linalg.norm(result))):
             break
+    else:
+        raise RuntimeError("Perelomov Taylor exponential did not converge")
     return result / np.linalg.norm(result)
 
 

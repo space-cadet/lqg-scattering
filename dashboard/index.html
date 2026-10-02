@@ -108,6 +108,7 @@
   <div class="container">
     <h1 id="projectName">Loading...</h1>
     <p class="subtitle" id="projectSubtitle">Loading...</p>
+    <p class="hint">T3d/T3e numbers are corrected converged Rust runs. Independent SciPy checks cover n=4,5,7,8; n=6 remains open. “Volume” in these charts is the signed-mean proxy, not a positive volume-operator expectation.</p>
 
     <div class="summary" id="summaryCards">
       <div class="summary-card" style="border-color: var(--primary);">
@@ -145,7 +146,7 @@
       <h2>Performance</h2>
       <div class="filters">
         <div class="filter-group"><label>X-Axis:</label><select id="perfXAxis"><option value="n">Valence (n)</option><option value="dim">Fock Dimension</option><option value="date">Date</option><option value="time">Runtime</option></select></div>
-        <div class="filter-group"><label>Y-Axis:</label><select id="perfYAxis"><option value="volumePositive">Volume (Positive)</option><option value="volumeComplex">Volume (Complex)</option><option value="dim">Fock Dimension</option></select></div>
+        <div class="filter-group"><label>Y-Axis:</label><select id="perfYAxis"><option value="volumePositive">Proxy (Positive)</option><option value="volumeComplex">Proxy (Complex)</option><option value="dim">Fock Dimension</option></select></div>
         <div class="filter-group"><label>Chart Type:</label><select id="perfChartType"><option value="scatter">Scatter</option><option value="line">Line</option></select></div>
         <div class="filter-group"><button class="btn btn-primary" onclick="renderPerformance()">Update Chart</button></div>
       </div>

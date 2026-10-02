@@ -2,7 +2,9 @@
 
 ## Overview
 
-The n=4 case is the ground truth for verifying the Rust implementation. Python has been analytically verified; Rust must reproduce identical results.
+The $n=4$ case is the cross-implementation reference, but matching Rust and
+Python is insufficient when both use the same truncated coherent state. The
+2026-10-01 red-team audit found such a shared truncation. The corrected n=4 state and signed mean now match an independent SciPy exponential. A positive volume-operator calculation and an independent n=6 scan check remain open.
 
 ## Procedure
 
@@ -11,23 +13,30 @@ The n=4 case is the ground truth for verifying the Rust implementation. Python h
 cd lqg-scattering
 python3 positivity.py
 ```
-Record: volume eigenvalues for n=4, coherent state overlaps, Grassmannian Plücker coordinates.
+Record: triple-grasp matrix properties, coherent state overlaps, Grassmannian
+Plücker coordinates, and the signed-mean proxy. Separately compute a specified
+positive volume-operator expectation if claiming quantum volume.
 
 ### Step 2: Run Rust Implementation
 ```bash
 cd rust
-cargo run --release -- scan
+cargo run --release --bin lqg_grassmannian -- verify4
 ```
-Record: identical quantities from Rust.
+Record: the canonical $n=4$ positive and complex-plane values. Then use
+`cargo run --release --bin lqg_grassmannian -- scan` for the higher-$n$ benchmark after the
+canonical comparison passes.
 
 ### Step 3: Compare
 
 | Quantity | Tolerance | Criterion |
 |----------|-----------|-----------|
-| Volume eigenvalues | rtol = 1e-12 | Exact match (f64) |
-| Coherent state norms | rtol = 1e-12 | Exact match (f64) |
+| Signed $\langle q\rangle$ on the complex plane | rtol $=10^{-11}$ | Match corrected Python and independent exponential |
+| Area means and uncertainties | rtol $=10^{-11}$ | Match at the same state |
+| Normalized coherent-state vectors | norm difference $<10^{-11}$ | Compare after mapping the occupation bases |
 | Plücker coordinates | rtol = 1e-12 | Exact match (f64) |
-| Positive cell volume | exact zero | Must be exactly 0.0 |
+| Positive real-plane $\langle q\rangle$ | absolute $<10^{-12}$ | Check real-state symmetry |
+| Complex-plane state | relative norm $<10^{-11}$ | Match `scipy.sparse.linalg.expm_multiply` |
+| Positive-plane $\langle q^2\rangle$ | absolute $<10^{-10}$ | Keep distinct from $\langle q\rangle$ |
 
 ### Step 4: Investigate Discrepancies
 
@@ -41,13 +50,17 @@ Any mismatch indicates a bug in:
 ## Cross-Implementation Checklist
 
 - [ ] Same Fock space dimension
-- [ ] Same basis state ordering
+- [ ] Occupation bases mapped consistently
 - [ ] Same operator matrix elements
-- [ ] Same volume eigenvalues
+- [ ] Same signed-mean and area observables on a converged state
 - [ ] Same coherent state parameters
 - [ ] Same Plücker coordinates
-- [ ] Zero volume on positive cell confirmed
+- [ ] Zero signed mean on real planes confirmed, including a mixed-sign-minor control
+- [ ] State convergence and independent exponential confirmed
+- [ ] Positive volume-operator definition and expectation checked separately
 
 ## Sign-off
 
-Verification is complete when all checklist items pass. Record results in `performance-benchmarks.md` and proceed to T3e (n≥5 benchmarks).
+Verification is complete only when all checklist items pass on the final
+state-construction code. Record seeds, references, tolerances, and results in
+`performance-benchmarks.md` before promoting T3e magnitudes.

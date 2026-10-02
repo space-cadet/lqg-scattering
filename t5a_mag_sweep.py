@@ -138,14 +138,16 @@ def perelomov(A, ref_idx, dim, tol=TOL):
     v0[ref_idx] = 1.0
     result = v0.copy()
     term = v0.copy()
-    for it in range(1, 2 * K + 8):
+    for it in range(1, 8 * K + 50):
         term = (A @ term) / it
         inc = float(np.linalg.norm(term))
         res = float(np.linalg.norm(result))
         result = result + term
         if inc < tol * max(1.0, res):
             break
-    return result / np.linalg.norm(result)
+    else:
+        raise RuntimeError("Perelomov Taylor exponential did not converge")
+    return result / np.linalg.norm(result), it
 
 
 def single_edge_ops(occ, index, n):
@@ -249,7 +251,7 @@ def main():
         flat = [x for pair in ref for x in pair]
         ref_idx = idx_of(index, flat)
         t1 = time.time()
-        v = perelomov(A, ref_idx, dim)
+        v, taylor_terms = perelomov(A, ref_idx, dim)
         w = {}
         for (i, j), mat in pairs.items():
             w[(i, j)] = mat @ v
@@ -260,10 +262,12 @@ def main():
         agree, pos, neg, total = sign_agreement(qs)
         aq = np.abs(qs)
         results.append({"label": label, "M": mag, "ref": ref,
+                        "taylor_terms": taylor_terms,
                         "q": qs, "agree": agree, "pos": pos, "neg": neg,
                         "max_abs": float(aq.max()),
                         "mean_abs": float(aq.mean())})
-        print(f"{label:18s} M={mag:+.0f} ref={ref} time={time.time()-t1:.1f}s")
+        print(f"{label:18s} M={mag:+.0f} ref={ref} "
+              f"taylor_terms={taylor_terms} time={time.time()-t1:.1f}s")
         print(f"  sign-agreement={agree:.4f} ({pos} pos + {neg} neg of {total}) "
               f"max|q|={aq.max():.3e} mean|q|={aq.mean():.3e}")
         for (t, q) in zip(triples, qs):
@@ -280,6 +284,8 @@ def main():
 
     with open("t5a_mag_results.json", "w") as f:
         json.dump({"n": N, "k": K, "plane_seed": PLANE_SEED,
+                   "state_engine": "Taylor exponential with convergence assertion",
+                   "state_tol": TOL, "state_max_terms_rule": "8*K+49",
                    "triples": triples,
                    "results": [{k: v for k, v in r.items()} for r in results]},
                   f, indent=1)

@@ -1,13 +1,25 @@
 {
   "project": {
     "name": "LQG-Grassmannian Correspondence",
-    "subtitle": "Quantum volume of U(N) coherent states on the positive Grassmannian"
+    "subtitle": "Corrected signed triple-grasp proxy results; physical volume remains open"
   },
   "tabs": [
-    { "id": "runs", "label": "Runs & Results" },
-    { "id": "figures", "label": "Figure Archive" },
-    { "id": "performance", "label": "Performance" },
-    { "id": "theory", "label": "Theory" }
+    {
+      "id": "runs",
+      "label": "Runs & Results"
+    },
+    {
+      "id": "figures",
+      "label": "Figure Archive"
+    },
+    {
+      "id": "performance",
+      "label": "Performance"
+    },
+    {
+      "id": "theory",
+      "label": "Theory"
+    }
   ],
   "runs": [
     {
@@ -21,7 +33,11 @@
       "date": "2026-09-19",
       "params": {
         "language": "Rust",
-        "crates": ["sprs", "rayon", "nalgebra"]
+        "crates": [
+          "sprs",
+          "rayon",
+          "nalgebra"
+        ]
       },
       "figures": []
     },
@@ -43,7 +59,7 @@
       "runId": "t3c-volume-rust",
       "task": "T3c",
       "status": "complete",
-      "description": "BHT volume operator, sparse matrix construction",
+      "description": "Sparse triple-grasp commutator and signed-mean proxy",
       "dim": 10,
       "n": 4,
       "commit": "ee72845",
@@ -58,100 +74,130 @@
       "runId": "t3d-verify4",
       "task": "T3d",
       "status": "complete",
-      "description": "n=4 verification: Rust vs Python machine precision match",
+      "description": "Converged Rust signed-mean proxy; independent SciPy check passed",
       "n": 4,
-      "dim": 10,
-      "volumePositive": 1.41e-9,
-      "volumeComplex": 2.91e-2,
+      "dim": 3003,
+      "volumePositive": 2.214952557166e-09,
+      "volumeComplex": 0.02876955278973,
       "qExpectationPositive": 0.0,
-      "qExpectationComplex": -8.50e-4,
+      "qExpectationComplex": -0.000827687167721,
       "closure": 6.0,
-      "time": "12ms",
-      "date": "2026-09-19",
-      "commit": "c0908cf",
+      "time": "12\u201314ms",
+      "date": "2026-10-01",
       "params": {
         "tolerance": "1e-12",
-        "match": true
+        "match": true,
+        "matchScope": "Converged state and signed mean",
+        "numericValidation": "Rust/Python/SciPy agreement",
+        "convergenceAsserted": true,
+        "independentScipy": true,
+        "observable": "sqrt(abs(mean signed triple grasp))"
       },
-      "figures": []
+      "figures": [],
+      "historicalCommit": "c0908cf",
+      "sourceRevision": "uncommitted working tree based on cfaf6866c92c8c4d1bda35473bd67bb4bdeb885a"
     },
     {
       "runId": "t3e-scan-n5",
       "task": "T3e",
       "status": "complete",
-      "description": "Benchmark scan n=5..8",
+      "description": "Converged Rust signed-mean proxy; independent SciPy check passed",
       "n": 5,
       "K": 8,
       "dim": 43758,
-      "volumePositive": 1.56e-9,
-      "volumeComplex": 3.39e-2,
-      "time": "264ms",
-      "date": "2026-09-19",
-      "commit": "c0908cf",
-      "params": {},
-      "figures": []
+      "volumePositive": 3.286510670171e-09,
+      "volumeComplex": 0.03391578040395,
+      "time": "303\u2013325ms",
+      "date": "2026-10-01",
+      "params": {
+        "convergenceAsserted": true,
+        "independentScipy": true,
+        "observable": "sqrt(abs(mean signed triple grasp))"
+      },
+      "figures": [],
+      "historicalCommit": "c0908cf",
+      "sourceRevision": "uncommitted working tree based on cfaf6866c92c8c4d1bda35473bd67bb4bdeb885a"
     },
     {
       "runId": "t3e-scan-n6",
       "task": "T3e",
       "status": "complete",
-      "description": "Benchmark scan n=6",
+      "description": "Converged Rust signed-mean proxy; independent SciPy check pending",
       "n": 6,
       "K": 9,
       "dim": 293930,
-      "volumePositive": 9.91e-10,
-      "volumeComplex": 1.43e-3,
-      "time": "2.96s",
-      "date": "2026-09-19",
-      "commit": "c0908cf",
-      "params": {},
-      "figures": []
+      "volumePositive": 8.811059296803e-10,
+      "volumeComplex": 0.001315280547001,
+      "time": "3.27\u20133.91s",
+      "date": "2026-10-01",
+      "params": {
+        "convergenceAsserted": true,
+        "independentScipy": false,
+        "observable": "sqrt(abs(mean signed triple grasp))"
+      },
+      "figures": [],
+      "historicalCommit": "c0908cf",
+      "sourceRevision": "uncommitted working tree based on cfaf6866c92c8c4d1bda35473bd67bb4bdeb885a"
     },
     {
       "runId": "t3e-scan-n7",
       "task": "T3e",
       "status": "complete",
-      "description": "Benchmark scan n=7",
+      "description": "Converged Rust signed-mean proxy; independent SciPy check passed",
       "n": 7,
       "K": 6,
       "dim": 38760,
-      "volumePositive": 3.75e-10,
-      "volumeComplex": 1.19e-2,
-      "time": "299ms",
-      "date": "2026-09-19",
-      "commit": "c0908cf",
-      "params": {},
-      "figures": []
+      "volumePositive": 3.66109395653e-10,
+      "volumeComplex": 0.01186077720871,
+      "time": "330\u2013383ms",
+      "date": "2026-10-01",
+      "params": {
+        "convergenceAsserted": true,
+        "independentScipy": true,
+        "observable": "sqrt(abs(mean signed triple grasp))"
+      },
+      "figures": [],
+      "historicalCommit": "c0908cf",
+      "sourceRevision": "uncommitted working tree based on cfaf6866c92c8c4d1bda35473bd67bb4bdeb885a"
     },
     {
       "runId": "t3e-scan-n8",
       "task": "T3e",
       "status": "complete",
-      "description": "Benchmark scan n=8",
+      "description": "Converged Rust signed-mean proxy; independent SciPy check passed",
       "n": 8,
       "K": 6,
       "dim": 74613,
-      "volumePositive": 6.22e-10,
-      "volumeComplex": 1.06e-2,
-      "time": "724ms",
-      "date": "2026-09-19",
-      "commit": "c0908cf",
-      "params": {},
-      "figures": []
+      "volumePositive": 1.304152779983e-09,
+      "volumeComplex": 0.01056697265461,
+      "time": "792\u2013858ms",
+      "date": "2026-10-01",
+      "params": {
+        "convergenceAsserted": true,
+        "independentScipy": true,
+        "observable": "sqrt(abs(mean signed triple grasp))"
+      },
+      "figures": [],
+      "historicalCommit": "c0908cf",
+      "sourceRevision": "uncommitted working tree based on cfaf6866c92c8c4d1bda35473bd67bb4bdeb885a"
     }
   ],
   "summary": {
     "totalRuns": 8,
     "completeRuns": 8,
-    "zeroVolumeConfirmed": true,
-    "nRangeVerified": "4-8",
-    "maxRuntime": "3.35s",
-    "publishedPaper": "EPJC (2026)",
-    "followUpManuscript": "In progress"
+    "zeroSignedMeanOnRealPlanes": true,
+    "nRangeRecorded": "4-8",
+    "convergedBaselineVerified": true,
+    "correctedPythonN4ComplexQ": -0.0008276871677209302,
+    "correctedPythonN4ProxyOverGamma1p5": 0.02876955278972772,
+    "maxRuntime": "3.91s",
+    "publishedPaper": "EPJC (2022)",
+    "followUpManuscript": "In progress",
+    "independentN6Pending": true
   },
   "theory": {
-    "description": "The volume operator vanishes identically on the positive Grassmannian cell Gr+(k,n). The amplituhedron region corresponds to classical, zero-volume geometry. Quantum volume lives in the complex extension.",
-    "citation": "D. Vaid, 'LQG and the Amplituhedron', EPJC (2026)",
+    "description": "Real-plane states have zero signed triple-grasp mean, including planes outside the positive cell. The positive-volume-operator expectation has not been established by these runs.",
+    "citation": "D. Vaid and D. Suresh, EPJC (2022); follow-up calculations under review",
     "arxiv": "2208.10632"
   }
 }

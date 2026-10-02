@@ -3,16 +3,17 @@
 Builds rho_beta = exp(-beta H)/Z on ONE Schwinger-boson system at the real
 moment-curve plane (no complexification) and characterizes:
   (i)   thermal areas Tr(rho_beta A_i) vs beta (nonzero thermal area spectrum),
-  (ii)  mean volume Tr(rho_beta q) vs beta (exactly zero -- theorem),
-  (iii) volume fluctuations Tr(rho_beta q^2) vs beta (nonzero -- where the
-        thermal volume information lives).
+  (ii)  signed triple-grasp mean Tr(rho_beta q) vs beta (zero),
+  (iii) fluctuations Tr(rho_beta q^2) vs beta (nonzero). Zero signed mean
+        does not imply zero positive quantum volume.
 
 Conventions (match T5b exactly):
   n = 4, 5 edges; K = N+3 total bosons (capped basis sum <= K);
   plane = real moment-curve positive plane, seeds 11 (n=4) / 12 (n=5);
   H = sum_i (n_{a,i} + n_{b,i}) (omega_i = 1), occupation-diagonal;
   gamma = 0.2375, hbar = 1;
-  q = i [A_01, A_12], triple (0,1,2), V = (gamma*hbar)^1.5 sqrt(|q|);
+  q = i [A_01, A_12], triple (0,1,2), reported proxy is
+  (gamma*hbar)^1.5 sqrt(|<q>|);
   reference = vertex_reference (one a-boson per edge + one b-boson on each
   edge of the measured triple).
 

@@ -1,6 +1,6 @@
 # Implementation Progress
 
-*Last Updated: 2026-09-19 18:41 IST*
+*Last Updated: 2026-10-01 21:42 IST*
 
 ## Active Tasks
 
@@ -14,25 +14,38 @@
 - ✅ Numerical results section drafted (n=4..8 volume data)
 
 #### Current Work
-- 🔄 ORX agent completed Rust implementation; manuscript has full numerical results
-- 🔄 Dashboard created for data visualization
+- 🔄 The manuscript contains results through T7e and separates signed-mean proxies from positive volume. RS/AL operators are now implemented for small active sectors; coherent-state volume results and claim review remain open.
+- ✅ Independent red-team audit recorded in `implementation-details/red-team-audit.md`.
 
 #### Up Next
-- ⬜ Polish numerical results section
-- ⬜ Add scaling law analysis
-- ⬜ Circulate for review
+- ✅ Reconciled the conclusion with T5e and qualified the T5a magnetization sweep.
+- ✅ Corrected converged signed-mean scans completed. RS/AL positive volume routines implemented and checked on simple states; coherent-state volume reruns and large-block methods remain open.
+- ⬜ Record independent red-team review per claim.
+- ⬜ Circulate the corrected draft for review.
 
 ### T5: Experiments
-**Status:** 🔄 IN PROGRESS (T5a ✅ DONE incl. M-sweep; T5b ✅ DONE; T5a′ neighbor/Minkowski-χ_V proposed; T5c–T5g ⬜ PROPOSED)
+**Status:** 🔄 IN PROGRESS (T5a base analysis recorded; magnetization sweep converged for one plane; T5a′ kinematic local-triple analysis recorded; T5b converged rerun complete for its tested family; T5e converged scoped study recorded; T5c, T5d, T5f, T5g open)
 **Priority:** HIGH
 
 **Roadmap:** `memory-bank/implementation-details/experiments.md`
 
-Seven experiments probing the volume–positivity (achirality) boundary, prioritized #6→#5→#3 (triple correlations, perturbation response, classical volume match) as highest physics-per-effort. Subtasks T5a–T5g in `tasks.md`.
+Seven experiments probing signed triple-grasp response and its possible
+relation to volume. The positive cell is not the full zero locus; see the
+red-team audit. Subtasks T5a–T5g are in `tasks.md`.
 
-**T5a DONE 2026-09-19 (orx session `chat_66108501`)**: triple-volume correlations at n=6,7 with one Perelomov state per (n, seed) on a complex plane. Sign-agreement 0.50–0.70 across seeds, cross-seed Pearson |q| ≈ 0 → **no global handedness; chirality is per-triple**. New `onthefly.rs` engine (combinatorial rank indexing, rayon atomic-scatter matvec) handles dim-40M Fock spaces at n=7 in ~3 min; n=8 resource-bound at spec reference (~10 GB/vector). Validated against stored engine at n=4. See `implementation-details/experiments.md` for full spec + results; commit `0731eaf` on `main-orx`, merged into `main` as `2583b6a`.
+**T5a evidence and caveat:** the n=6,7 base triple-correlation runs record sign-agreement 0.50–0.70 and small cross-seed correlations, consistent with per-triple chirality; n=8 remains resource-limited. The n=5 magnetization sweep was rerun with convergence assertions (39–41 terms) and four sectors matched independent SciPy exponentiation to at most 3.6e-16 in triple means. Its fixed-plane sign pattern remains one-plane evidence. T5a′ reports no increase in sign coherence for kinematic-polyhedron-local triples, with 8 planes per n=5 channel and weak per-plane sign-test power. See `t5a_mag_notes.md`, `t5a_prime_notes.md`, and `implementation-details/experiments.md`.
 
-## Completed Tasks
+### T7: Thermal and TFD Program
+**Status:** 🔄 IN PROGRESS (T7a–T7e results recorded for tested constructions; broader temperature-dependent coherent-sector question open)
+
+- T7a reports zero mean signed triple grasp and nonzero $q^2$ fluctuations;
+  the high-temperature end is cutoff-limited for the capped basis.
+- T7b–T7c report a valid Gibbs purification and the tested identity `⟨q_L q_R⟩ = −Tr(ρ q²)`; the low-temperature Gibbs-TFD tends to the Fock vacuum, not a Perelomov state.
+- T7d reports an exponential `e^{-3β}` onset in the tested Gibbs-TFD, not a power law.
+- T7e reports a quadratic change with complexification in a fixed-`K` construction, with temperature flatness there. This does not establish a general combined `V(ε,T)` law.
+- Notes and source data: `t7a_notes.md` through `t7e_notes.md` and corresponding result JSON files; manuscript status and scope need a final review.
+
+## Historical Implementation and Runs
 
 ### T1: Python Pipeline
 **Completed:** 2026-09-19
@@ -40,11 +53,13 @@ Seven experiments probing the volume–positivity (achirality) boundary, priorit
 
 ### T1a: Volume Operator at n=4
 **Completed:** 2026-09-19
-**Summary:** BHT volume operator constructed and diagonalized for 4-valent intertwiners. Eigenvalues computed.
+**Summary:** Historical results were signed triple-grasp means and their proxy, not positive volume expectations. Exact small-sector RS and AL expectations are now implemented and cross-checked; project coherent-state runs remain open.
 
-### T1b: Zero-Volume Result on Positive Cell
+### T1b: Signed-mean result on real planes
 **Completed:** 2026-09-19
-**Summary:** Volume operator vanishes identically on the positive Grassmannian cell. Central published result.
+**Summary:** Real-plane states have zero signed triple-grasp mean, including
+planes outside the positive cell. The positive volume-operator expectation
+remains uncalculated; the historical zero-volume interpretation is withdrawn.
 
 ### T2: Manuscript (EPJC Paper)
 **Completed:** 2026-09-19
@@ -60,12 +75,15 @@ Seven experiments probing the volume–positivity (achirality) boundary, priorit
 
 ### T3c: Volume Operator (Rust)
 **Completed:** 2026-09-19 16:26 IST
-**Summary:** BHT volume operator implemented in Rust with sparse matrices. n=4 verification passed. Committed as `ee72845`.
+**Summary:** Sparse triple-grasp matrix and signed-mean proxy are retained. RS and AL positive vertex expectations are now implemented in project normalization for active sectors up to dimension 512.
+The historical n=4 verification shared an unconverged Taylor state; the corrected Rust/Python and SciPy checks now agree. Committed as `ee72845`.
 
 ### T3d: Verify Rust vs Python at n=4
-**Completed:** 2026-09-19 16:26 IST
-**Summary:** Machine precision match confirmed (rtol=1e-12). Volume eigenvalues identical. Committed as `c0908cf`.
+**Historical run:** 2026-09-19 16:26 IST
+**Summary:** Historical Rust/Python match shared a 15-term Taylor truncation.
+Corrected Rust/Python and independent SciPy checks agree on $\langle q\rangle=-0.000827687168$ for the canonical complex plane.
 
 ### T3e: Benchmarks n=5,6,7,8
-**Completed:** 2026-09-19 16:26 IST
-**Summary:** All benchmarks completed. Max runtime 3.35s (n=6). Zero-volume confirmed for all n on positive cell. Results in `performance-benchmarks.md` and dashboard.
+**Historical run:** 2026-09-19 16:26 IST
+**Summary:** Corrected converged Rust scans were completed for $n=5$–$8$. Independent SciPy checks $n=5,7,8$; $n=6$ remains open. The real-plane signed-mean cancellation
+does not establish zero positive quantum volume.

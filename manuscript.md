@@ -9,13 +9,20 @@ no coherent states were constructed, no volume operators evaluated, and no
 positivity tests performed. This document tracks the **new numerical
 program** carried out after publication:
 
+This is a research draft, not an independently reviewed manuscript. The
+T5a magnetization and T5b perturbation sweeps were rerun with converged
+states and independent spot checks; their conclusions remain limited to
+the tested plane and reference families. The Rust baseline and $n=5$–$8$ scan have now been rerun with convergence checks; independent SciPy checks cover $n=4,5,7,8$.
+
 - **Python pipeline** (`grassmannian.py`, `coherent_states.py`,
   `correspondence.py`, `positivity.py`, `classical_limit.py`): the full
   correspondence verified at $n = 4$.
 - **Rust port** (`rust/`): the same pipeline re-engineered for $n \geq 5$,
   where the Fock-space dimension makes Python infeasible.
-- **New results**: the volume-positivity (achirality) theorem verified
-  through $n = 8$, scaling laws, and performance benchmarks.
+- **Follow-up results under review**: signed triple-grasp expectations,
+  selected perturbation responses, thermal correlators, and historical
+  performance measurements. The original $n=4$–$8$ baseline scan needs
+  recomputation with converged coherent states.
 
 ## 1. Published Baseline (Reference)
 
@@ -39,7 +46,9 @@ The paper contains **no numerical results**. Every number below is new.
 
 ### 2.1 Python Verification of the Correspondence ($n = 4$)
 
-All checks machine-precision (details in git history, Phases 1–5):
+The following historical algebraic and geometric checks were recorded at
+$n=4$. State-dependent numbers need a converged-state review after the
+Taylor-truncation finding:
 
 - **$\mathrm{Gr}(2, N)$ from momenta**: reconstructed momenta null to $10^{-16}$,
   momentum conservation exact, Plücker relation $M_{12} M_{34} - M_{13} M_{24} +
@@ -47,7 +56,8 @@ All checks machine-precision (details in git history, Phases 1–5):
 - **$\mathfrak{u}(N)$ algebra**: $[E_{ij}, E_{kl}] = \delta_{jk} E_{il} - \delta_{li} E_{kj}$ verified to
   $1.8 \times 10^{-15}$ on random Fock states (total-$K$ truncation is essential:
   per-edge truncation does not close under $\mathfrak{u}(N)$).
-- **Perelomov states**: $\exp(\Sigma Z_{ij} E_{ij})$ via terminating Taylor series;
+- **Perelomov states**: $\exp(\Sigma Z_{ij} E_{ij})$ is the target construction;
+  older Taylor implementations did not always converge;
   areas positive with exact closure $\Sigma \langle A_i \rangle = \gamma \hbar K$; momentum-map label
   exactly anti-Hermitian.
 - **Invariant dictionary**: $s_{ij} = |M_{ij}|^2$ verified on 20 random real
@@ -56,23 +66,30 @@ All checks machine-precision (details in git history, Phases 1–5):
 - **Classical limit**: relative area uncertainty falls as $K^{-0.41}$
   (coherent-state prediction $-1/2$).
 
-### 2.2 The Volume–Positivity Connection ($n = 4$, new)
+### 2.2 Real-plane cancellation of the signed triple grasp ($n = 4$, new)
 
-The central new finding of the follow-up work. Implementing the
-De Pietri/Rovelli–Smolin volume $q = i[J_i \cdot J_j, J_j \cdot J_k]$,
-$V = (\gamma \hbar)^{3/2} \sqrt{|\langle q \rangle|}$:
+The implementation computes $q_{ijk}=i[J_i\cdot J_j,J_j\cdot J_k]$ and reports
+the **signed-mean proxy** $V_{\rm proxy}=(\gamma\hbar)^{3/2}\sqrt{|\langle q_{ijk}\rangle|}$.
+This differs from the expectation of a positive operator such as
+$(\gamma\hbar)^{3/2}\langle\sqrt{|q_{ijk}|}\rangle$.
 
-- **Positivity = achirality**: for real planes the momentum map gives a
-  real antisymmetric $Z$, the Fock amplitudes are exactly real, and $\langle q \rangle = 0$
-  identically. Every positive plane is gauge-real, so **$V$ vanishes on all
-  of $\mathrm{Gr}_+(2, 4)$** (measured: $V/\gamma^{3/2} \approx 2 \times 10^{-9}$ vs $0.029$ off-cell).
+- **Reality implies zero signed mean**: for any real plane, the momentum map
+  gives real antisymmetric $Z$, the Fock amplitudes are real, and
+  $\langle q_{ijk}\rangle=0$ by antisymmetry. Positive planes are examples,
+  but the real plane with ordered minors $(1,1,1,2,1,-1)$ is outside
+  $\mathrm{Gr}_+$ even after column sign changes and has zero signed mean.
+  The positive cell is therefore not the full zero locus.
+  At the tested positive $n=4$, $K=6$ state, an independent matrix exponential
+  gives $\langle q\rangle\approx0$ but $\langle q^2\rangle=0.375981$:
+  the operator does not annihilate the state. No zero eigenvalue or zero
+  expectation of a positive volume operator follows from $\langle q\rangle=0$.
 - **No functional $V(s)$**: the momentum map is projective (orthonormalized
-  rows), so $V$ is exactly scale-invariant (log-log exponent $0.000$) while
-  $s_{ij} \to t^2 s_{ij}$ under scaling. Volume probes the complex structure of
+  rows), so this proxy is scale-invariant under rescaling the plane while
+  $s_{ij} \to t^2 s_{ij}$ under scaling. The signed mean probes the complex structure of
   the plane, not its energy scale.
 - **Spin freezing**: $U(N)$ orbits of single-species references stay in the
-  $N_b = 0$ sector with all $\langle J_i \rangle$ collinear on the $z$ axis; the volume is
-  carried by the $b$-sector of the Schwinger pair.
+  $N_b = 0$ sector with all $\langle J_i \rangle$ collinear on the $z$ axis;
+  the tested signed-mean response requires a different reference.
 
 ### 2.3 Rust Port and $n \geq 5$ Results (this session)
 
@@ -81,36 +98,35 @@ for $n \geq 5$ ($7^{12} \approx 1.4 \times 10^{10}$ for $n = 6$, $K = 6$). The R
 (`rust/`, sprs sparse matrices + rayon parallel matvec) replaces this with
 combinatorial stars-and-bars generation in $O(\mathrm{dim} \cdot 2N)$.
 
-**Verification at $n = 4$** (exact match with Python, `lqg verify4`):
+**Corrected $n=4$ comparison** (`lqg verify4`). Historically, Rust and Python agreed
+because both used the same 15-term Taylor truncation; that agreement did not
+validate the coherent state. An independent `scipy.sparse.linalg.expm_multiply`
+calculation for the same complex plane gives $\langle q\rangle=-0.000827687168$
+and $V_{\rm proxy}/\gamma^{3/2}=0.028769553$, versus the historical
+$-0.0008496572$ and $0.029148881$. The corrected Python and Rust paths reproduce the independent result. Current values are:
 
 | observable | Python | Rust |
 |---|---|---|
-| $\langle n_e \rangle$ | 1.534636, 1.862035, 1.027227, 1.576102 | identical |
-| $\Delta n_e$ | 1.177545, 1.326392, 0.597280, 1.374821 | identical |
-| $V/\gamma^{3/2}$ (complex plane) | $2.914888 \times 10^{-2}$ | $2.914888 \times 10^{-2}$ |
-| $\langle q \rangle$ | $-8.496572 \times 10^{-4}$ | $-8.496572 \times 10^{-4}$ |
-| $V/\gamma^{3/2}$ (positive plane) | $2.3 \times 10^{-9}$ | $1.4 \times 10^{-9}$ |
+| $\langle n_e \rangle$ | 1.533865, 1.860998, 1.025999, 1.579137 | identical to displayed precision |
+| $\Delta n_e$ | 1.178372, 1.327455, 0.598558, 1.375919 | identical to displayed precision |
+| $V_{\rm proxy}/\gamma^{3/2}$ (complex plane) | $2.8769553 \times 10^{-2}$ | $2.8769553 \times 10^{-2}$ |
+| $\langle q \rangle$ | $-8.2768717 \times 10^{-4}$ | $-8.2768717 \times 10^{-4}$ |
+| $V_{\rm proxy}/\gamma^{3/2}$ (positive plane) | rounding floor | $2.21 \times 10^{-9}$ |
 
-**Higher-$n$ benchmark** (`lqg scan`; moment-curve positive plane vs.
+**Converged higher-$n$ benchmark** (`lqg scan`; moment-curve positive plane vs.
 imaginary perturbation breaking the minor-phase cocycle):
 
 | $n$ | $K$ | Fock dim | $V/\gamma^{3/2}$ on $\mathrm{Gr}_+$ | $V/\gamma^{3/2}$ off $\mathrm{Gr}_+$ | time |
 |---|---|---|---|---|---|
-| 4 | 6 | 3,003 | $1.4 \times 10^{-9}$ | $2.9 \times 10^{-2}$ | 12 ms |
-| 5 | 8 | 43,758 | $1.6 \times 10^{-9}$ | $3.4 \times 10^{-2}$ | 0.3 s |
-| 6 | 9 | 293,930 | $9.9 \times 10^{-10}$ | $1.4 \times 10^{-3}$ | 3.4 s |
-| 7 | 6 | 38,760 | $3.7 \times 10^{-10}$ | $1.2 \times 10^{-2}$ | 0.3 s |
-| 8 | 6 | 74,613 | $6.2 \times 10^{-10}$ | $1.1 \times 10^{-2}$ | 0.8 s |
+| 4 | 6 | 3,003 | $2.21 \times 10^{-9}$ | $2.876955 \times 10^{-2}$ | 12–14 ms |
+| 5 | 8 | 43,758 | $3.29 \times 10^{-9}$ | $3.391578 \times 10^{-2}$ | 0.3 s |
+| 6 | 9 | 293,930 | $8.81 \times 10^{-10}$ | $1.315281 \times 10^{-3}$ | 3.3–3.9 s |
+| 7 | 6 | 38,760 | $3.66 \times 10^{-10}$ | $1.186078 \times 10^{-2}$ | 0.3–0.4 s |
+| 8 | 6 | 74,613 | $1.30 \times 10^{-9}$ | $1.056697 \times 10^{-2}$ | 0.8–0.9 s |
 
-Two results stand out:
-
-1. **Achirality generalizes**: $V = 0$ on $\mathrm{Gr}_+(2, n)$ through $n = 8$ (any edge
-   triple), nonzero immediately off the positive cell. The zero-volume
-   result is a general feature of the positive Grassmannian, not an $n = 4$
-   kinematic accident.
-2. **Performance**: worst case 3.4 s per full computation ($n = 6$ with the
-   complete vertex reference, dim 293,930) — two orders of magnitude inside
-   the 1-minute target, and $\sim 100\times$ faster than Python at $n = 4$.
+The exact real-state cancellation of $\langle q\rangle$ applies at any $n$
+and for any triple in this representation. It does not identify the positive
+cell as the unique zero locus. The listed times are current single-run measurements. Independent SciPy exponentiation checks the complex-plane values for $n=4,5,7,8$; the $n=6$ value has Rust convergence evidence only. These values are signed-mean proxies.
 
 ### 2.4 Experiment T5a: triple-volume correlations ($n = 6, 7$)
 
@@ -139,52 +155,59 @@ global handedness — chirality is an independent property of each edge
 triple. (Caveats: 20–35 triples per state limits sign-test power; $n = 8$
 unresolved — the uniform reference needs $\sim 10$ GB/vector, beyond this node.)
 
-A subsequent magnetization sweep (T5a′, fixed $n = 5$ plane, $K = 8$,
-$M = -3..+3$) confirmed the result extends across the whole reference
-manifold: sign-agreement stays at $0.50$–$0.60$ for every $M$, and the $M = 0$
-per-triple-chirality finding is not an artifact of the balanced reference.
-The all-a ($M = +4$) limit is trivially achiral ($q \approx 0$, all $J$ collinear).
+The fixed-plane $n=5$, $K=8$ magnetization sweep was rerun with a
+convergence assertion (39–41 Taylor terms), and four representative states
+matched an independent SciPy exponential to at most $3.6\times10^{-16}$
+in the triple-grasp means. Its sign pattern remained 0.50–0.60 agreement
+across the tested nonpolarized sectors. This supports the observation for
+one plane, not a general handedness statement across planes. Separately, the
+kinematic-polyhedron-local T5a′ analysis reports no increased sign coherence
+for local triples across the tested channels; it used only 8 planes per
+$n=5$ channel, and its dense-expm comparison exposed non-convergence in the
+shared 15-term reference implementation. Treat that result as limited evidence,
+not as a high-power handedness test. The all-a endpoint gives $q$ near zero,
+consistent with the spin-freezing control.
 
 ### 2.5 Experiment T5b: perturbation-response $V(\epsilon)$ sweep ($n = 4, 5$)
 
 Deform the moment-curve plane by an imaginary perturbation scaled by $\epsilon$,
 $C(\epsilon) = C_0 + \epsilon \cdot dC$ with $dC[1,i] = i \cdot 0.35 \cdot (i+0.5)$, and measure how the
 volume responds. Tests whether the $\sqrt{\epsilon}$ onset is a robust feature of
-the complex structure or an artifact of the specific plane. Converged
-Taylor series ($8K+50$ cap, convergence assert, 38/40 iterations).
+the complex structure or an artifact of the specific plane. The original
+T5b sweep used a short Taylor cap. The table below comes from a corrected
+13-point rerun with a convergence assertion; four $n=4$ and three $n=5$
+states were checked against SciPy's independent `expm_multiply` route.
 
 | $n$ | $K$ | $\alpha$ ($V \sim \epsilon^\alpha$) | $R^2$ |
 |---|---|---|---|
-| 4 | 7 | 0.497 | 0.9999 |
-| 5 | 8 | 0.499 | 0.99999 |
+| 4 | 7 | 0.496907 | 0.999888 |
+| 5 | 8 | 0.499104 | 0.999991 |
 
-**Verdict: the $\sqrt{\epsilon}$ law is robust.** The volume turns on as $\epsilon^{1/2}$ to
-better than one part in $10^4$ across the full $\epsilon$ range $10^{-6}$ to $1$. The
-real part of $q$ is zero at $\epsilon = 0$ ($V = 2.6 \times 10^{-10}$ = rounding noise) and
-grows linearly in $\epsilon$; the volume $V = \sqrt{|q|}$ inherits the square root from
-the $q \sim \epsilon^1$ linear onset. This is a genuine complex-structure effect, not
-a plane-specific accident.
+**Scoped finding:** for the tested imaginary perturbation, the corrected T5b
+sweep fits the proxy with exponents near $0.5$ at $n=4,5$. The square root follows from a roughly linear
+signed mean and the definition of the proxy. A universality claim across
+planes and references needs independent tests.
 
 ### 2.6 Experiment T5e: large-$K$ semiclassics ($n = 4$)
 
-Test whether the coherent-state volume enters a classical-growth regime
-$V \sim K^{3/2}$ (i.e. $\langle q \rangle \sim K^3$ for $V = \gamma^{3/2} \sqrt{|\langle q \rangle|}$) at large $K$. Two
+Test whether the signed-mean proxy enters a $K^{3/2}$ growth regime
+(i.e. $\langle q \rangle \sim K^3$ for $V_{\rm proxy} = \gamma^{3/2} \sqrt{|\langle q \rangle|}$) at large $K$. Two
 families at fixed shape ($n = 4$ moment-curve plane, seed 11, $\epsilon = 1$):
 
 1. **Vertex-scaled family** ($b$-bosons loaded onto the measured triple,
    $K = 4+3s$): $\langle q \rangle$ is **exactly linear in $s$** — $q/s = -1.059 \times 10^{-3}$ at
-   all five points ($K = 10..22$, equal to 9 digits). Hence $V \sim (K-4)^{1/2}$,
+   all five points ($K = 10..22$, equal to 9 digits). Hence $V_{\rm proxy} \sim (K-4)^{1/2}$,
    i.e. $\alpha \to 0.5$ asymptotically. Each triple boson contributes
    independently; there is no collective $K^3$ enhancement of triple
    correlations.
 
 2. **Uniform $M=0$ family** (fixed shape, $K = 8..24$): $q = 0$ to solver
    precision ($|q| \leq 9 \times 10^{-13}$). Uniform scaling of the coherent state
-   develops no volume at all up to $K = 24$.
+   has zero signed mean to solver precision up to $K = 24$.
 
-**Verdict: the $K^{3/2}$ classical law does NOT hold.** No family shows
-$\alpha \sim 1.5$. The coherent-state volume does not enter a classical-growth
-regime up to $K = 24$. (Caveats: $K = 8..24$ is only 0.5 dex of lever arm;
+**Scoped finding:** neither tested family shows $K^{3/2}$ proxy growth.
+This does not test the expectation of a positive volume operator or exclude
+a classical regime in other state families. (Caveats: $K = 8..24$ is only 0.5 dex of lever arm;
 $K = 28+$ needs $\sim 30$M-dim vectors, beyond this node. An earlier run with
 cap $2K+4$ produced truncation-shifted values; the reported run uses cap
 $8K+50$ with a convergence assert.)
@@ -202,12 +225,12 @@ Perelomov-weighted diagonal; (C) thermally-rescaled pure state
    / 0.346 ($n=5$) per edge at $\beta = 0$ → $\sim 2 \times 10^{-5}$ at $\beta = 10$.
    Perelomov-weighted ($\beta$-flat): $n = 4$ $[0.439, 0.383, 0.469, 0.371]$,
    sum $= \gamma \hbar K$ ✓; $n = 5$ $[0.438, 0.436, 0.427, 0.255, 0.344]$, sum $= \gamma \hbar K$ ✓.
-2. **Mean volume is exactly zero** at every $\beta$ in all three families,
+2. **Mean signed triple grasp is zero** at every $\beta$ in all three families,
    both $n$. Mechanism: $A_{ij}$ are real-symmetric, so $q = i[A_{01},A_{12}]$ is
    imaginary-antisymmetric with identically zero diagonal; the pure state
-   adds reality. **Theorem: no ensemble diagonal in the occupation basis
-   carries volume.**
-3. **Fluctuations are nonzero — the thermal volume information lives in
+   adds reality. **Theorem: an occupation-diagonal ensemble has zero
+   signed triple-grasp mean.**
+3. **Fluctuations are nonzero; signed-mean cancellation does not remove
    $\langle q^2 \rangle$.** Gibbs $\mathrm{Tr}(\rho q^2)$: 0.357/0.349 ($\beta = 0$) → $7 \times 10^{-14}$ ($\beta = 10$).
    Perelomov-weighted: 0.785 ($n = 4$), 0.679 ($n = 5$), $\beta$-flat.
    Pure-rescaled: 0.707 ($n = 4$), 0.719 ($n = 5$), $\beta$-flat.
@@ -293,24 +316,27 @@ the coherent sector (e.g. non-uniform $\omega_i$ or multi-$K$ reference).
 
 ## 3. Discussion
 
-The published correspondence is now backed by complete numerical
-verification at $n = 4$, and extended to $n = 5$–$8$ by the Rust port. The new
-volume–positivity connection — the positive Grassmannian cell as the
-achiral locus of the dual quantum geometry — was invisible in the analytic
-treatment and is the main quantitative addition of this follow-up. T5a
-adds that the off-cell chirality is per-triple, not a vertex-global
-handedness, and T5a′ confirms this extends across the reference
-magnetization manifold. T5b establishes that the $\sqrt{\epsilon}$ complexification
-onset is robust; T5e shows the volume does not enter a classical-growth
-regime up to $K = 24$. The TFD series (T7a–T7e) opens a new direction:
-thermal states carry zero mean volume (a theorem for occupation-diagonal
+The published correspondence is separate from these follow-up calculations.
+The real-plane argument establishes a zero **signed triple-grasp mean**, not
+zero quantum volume. The corrected Rust/Python comparison and $n=4$–$8$ scan establish converged signed-mean proxy values for these fixed inputs; $n=6$ still lacks an independent engine check. See the red-team audit.
+T5a's $n=6,7$ runs are consistent with per-triple
+chirality rather than one vertex-wide handedness, with limited sign-test
+power; the corrected magnetization sweep supports that pattern for one
+fixed plane. T5a′ reports no increased
+sign coherence for local triples in its tested kinematic samples, also with
+limited statistics and an engine-convergence caveat. T5b reports a
+$\sqrt{\epsilon}$ complexification onset for the tested $n=4,5$ states. T5e
+does **not** support the expected $K^{3/2}$ volume growth through $K=24$: the
+vertex-loaded family grows as a shifted square root over the measured range,
+while the uniform family is zero to solver precision. These results do not
+establish a general classical limit. The TFD series (T7a–T7e) opens a new direction:
+thermal states carry zero mean signed triple grasp (a theorem for occupation-diagonal
 ensembles) but nonzero fluctuations, the TFD two-sided correlator
-reproduces exactly the single-copy fluctuation content with opposite sign,
-and complexification in the TFD produces a quadratic $\epsilon^2$ onset — steeper
-than the single-copy $\sqrt{\epsilon}$ — with no combined $V(\epsilon,T)$ law because the two
-deformations act orthogonally. Open directions: characterize $\langle q \rangle$ as a
-measure on $\mathrm{Gr}(2, N) \setminus \mathrm{Gr}_+$ (is it log-barrier-like in the minor-phase
-cocycle?); a sharper handedness test with sign-controlled perturbations
+reproduces the negative single-copy fluctuation in the tested Gibbs setup,
+and the tested fixed-$K$ complexified TFD produces a quadratic $\epsilon^2$
+correlator change. In that construction, temperature is flat; this does not
+establish a general combined $V(\epsilon,T)$ law. Open directions: characterize $\langle q \rangle$
+near the gauge-real locus using phase-sensitive perturbations; a sharper handedness test with sign-controlled perturbations
 over $\geq 10$ seeds; $n = 8$ on larger memory; large-$K$ asymptotics beyond
 $K = 24$; $\beta$-dependence inside the coherent sector (non-uniform $\omega_i$ or
 multi-$K$ reference) to find a genuine $V(\epsilon,T)$ law; amplitude dynamics
@@ -319,18 +345,19 @@ link to actual scattering amplitudes.
 
 ## 4. Conclusions
 
-Numerically: the correspondence, the $s = |M|^2$ dictionary, positivity,
-and the classical limit all check out to machine precision; the volume
-operator vanishes exactly on the positive Grassmannian for every $n$ tested
-($4 \leq n \leq 8$) and is scale-invariant off it. The $\sqrt{\epsilon}$ complexification
-onset is robust (T5b), but the volume does not enter a classical-growth
-regime up to $K = 24$ (T5e). Thermal states carry zero mean volume — a
-theorem for occupation-diagonal ensembles — with the thermal information
-residing entirely in the fluctuations $\langle q^2 \rangle$ (T7a). The TFD two-sided
-correlator reproduces the single-copy fluctuation content with opposite
-sign at every $\beta$ (T7b), and complexification in the TFD produces a
-quadratic $\epsilon^2$ onset with no combined $V(\epsilon,T)$ law because complexification
-and thermalization act orthogonally (T7e). Methodologically: the Python
+Numerically: independent $n=4$ recomputation supports zero signed mean on
+real planes and a nonzero signed mean for the tested complex plane, but also
+shows nonzero $\langle q^2\rangle$ on a positive plane. Corrected converged $n=4$–$8$ complex-plane proxy values are now recorded, with independent $n=4,5,7,8$ checks. The positive-volume-operator
+expectation and a classical volume interpretation remain open.
+T5b reports a $\sqrt{\epsilon}$ proxy onset in its tested $n=4,5$ cases.
+T5e finds no $K^{3/2}$ proxy growth through $K=24$ in its tested families;
+a general classical limit remains unestablished. Thermal states in the tested
+occupation-diagonal ensemble have zero signed mean and nonzero $q^2$
+fluctuations (T7a). The Gibbs-TFD correlator matches the
+negative single-copy fluctuation in the tested setup and temperature range
+(T7b). T7e finds a quadratic $\epsilon$ response and temperature flatness in
+its fixed-$K$ construction; a combined temperature/complexification law is
+still open. Methodologically: the Python
 pipeline suffices for $n = 4$; the Rust port (combinatorial Fock basis,
 sprs, rayon) pushes the same physics to $n \geq 5$ at sub-minute runtimes;
 the Schmidt-form TFD computation avoids ever forming the $D \times D$ doubled
