@@ -8,6 +8,7 @@ import numpy as np
 from coherent_states import FockSpace, _edge_ops
 from positivity import (
     _active_vertex_blocks,
+    _positive_sqrt_expectation,
     _triple_matrix_block,
     ashtekar_lewandowski_volume,
     rovelli_smolin_volume,
@@ -161,14 +162,10 @@ def direct_tensor_volumes(space, state):
             )
             q_matrices.append(q_direct)
 
-            eigenvalues, eigenvectors = np.linalg.eigh(q_direct)
-            weights = np.abs(eigenvectors.conj().T @ local_state) ** 2
-            rs_total += float(np.dot(weights, np.sqrt(np.abs(eigenvalues))))
+            rs_total += _positive_sqrt_expectation(q_direct, local_state)
 
         q_al = sum(sign * q for sign, q in zip(ORIENTATIONS, q_matrices))
-        eigenvalues, eigenvectors = np.linalg.eigh(q_al)
-        weights = np.abs(eigenvectors.conj().T @ local_state) ** 2
-        al_total += float(np.dot(weights, np.sqrt(np.abs(eigenvalues))))
+        al_total += _positive_sqrt_expectation(q_al, local_state)
 
     scale = GAMMA**1.5
     return scale * rs_total, scale * al_total, max_matrix_difference

@@ -12,11 +12,14 @@ metric with the LQG flux geometry or its volume operator.
 import argparse
 import json
 import math
+import re
+from functools import lru_cache
 from pathlib import Path
 
 import numpy as np
 
 import fl_volume_validation as volume
+from dashboard.tetrahedron_thumbnails import coordinate_key
 
 
 def closed_equal_area_normals(x, phi):
@@ -189,48 +192,26 @@ def tetrahedron_vertices(x, phi):
 
 
 def tetrahedron_glyph(x, phi, center_x, center_y, size, title):
-    """Draw a small shaded orthographic view of a reconstructed tetrahedron."""
-    vertices = tetrahedron_vertices(x, phi)
-    camera = np.array(
-        [
-            [math.sqrt(3.0) / 2.0, -0.5, 0.0],
-            [0.25, math.sqrt(3.0) / 4.0, -math.sqrt(3.0) / 2.0],
-            [math.sqrt(3.0) / 4.0, 0.75, 0.5],
-        ]
-    )
-    viewed = vertices @ camera.T
-    projected = viewed[:, :2]
-    span = max(float(np.ptp(projected[:, 0])), float(np.ptp(projected[:, 1])))
-    if span <= 1e-12:
-        raise ValueError("tetrahedron projection is degenerate")
-    scale = (size - 4.0) / span
-    px = center_x + (projected[:, 0] - np.mean(projected[:, 0])) * scale
-    py = center_y - (projected[:, 1] - np.mean(projected[:, 1])) * scale
-
-    faces = ((1, 2, 3), (0, 3, 2), (0, 1, 3), (0, 2, 1))
-    light = np.array([0.4, -0.5, 0.75])
-    light /= np.linalg.norm(light)
-    rendered = []
-    for face in faces:
-        p0, p1, p2 = vertices[list(face)]
-        normal = np.cross(p1 - p0, p2 - p0)
-        normal /= np.linalg.norm(normal)
-        shade = 0.35 + 0.45 * max(0.0, float(np.dot(normal, light)))
-        channel = round(184 + 55 * shade)
-        fill = f"#{channel-15:02x}{channel-5:02x}{channel:02x}"
-        points = " ".join(f"{px[i]:.2f},{py[i]:.2f}" for i in face)
-        depth = float(np.mean(viewed[list(face), 2]))
-        rendered.append((depth, points, fill))
-
-    shapes = [
-        f'<polygon points="{points}" fill="{fill}" stroke="#334155" stroke-width="0.8" stroke-linejoin="round"/>'
-        for _, points, fill in sorted(rendered)
-    ]
+    """Reuse a saved orthographic thumbnail for this input shape."""
+    asset_path = Path(__file__).resolve().parent / "dashboard" / "figures" / "t5c-input" / f"{coordinate_key(x, phi)}.svg"
+    polygons = thumbnail_polygons(str(asset_path))
+    safe_title = title.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    x0, y0 = center_x - size / 2, center_y - size / 2
     return (
-        f'<g aria-label="{title}"><title>{title}</title>'
-        + "".join(shapes)
-        + "</g>"
+        f'<svg x="{x0:.2f}" y="{y0:.2f}" width="{size:.2f}" height="{size:.2f}" '
+        f'viewBox="0 0 120 120" role="img" aria-label="{safe_title}">'
+        f'<title>{safe_title}</title>{polygons}</svg>'
     )
+
+
+@lru_cache(maxsize=None)
+def thumbnail_polygons(asset_path):
+    """Read vector faces from the one-time generated reusable thumbnail."""
+    svg = Path(asset_path).read_text()
+    polygons = re.findall(r'<polygon\b[^>]*/>', svg)
+    if len(polygons) != 4:
+        raise ValueError(f"expected four saved tetrahedron faces in {asset_path}")
+    return "".join(polygons)
 
 
 def make_svg(data):
@@ -249,7 +230,7 @@ def make_svg(data):
         + abs(r["phiRadians"] - math.pi / 2.0),
     )
     parts = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
+        f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
         '<title id="title">FL volume across equal-area tetrahedron shapes at fixed J</title>',
         '<desc id="desc">Heatmap samples over ordered closed equal-area four-face configurations. Miniature reconstructed tetrahedra below and beside both panels show the x and bending-angle coordinate slices.</desc>',
         '<rect width="100%" height="100%" fill="#ffffff"/>',

@@ -53,3 +53,14 @@ so the expectation of a positive quantum volume operator remains open. See
 | `rust/src/grassmannian.rs` | Plücker embedding, positivity tests |
 | `positivity.py` | Python reference implementation |
 | `paper/lqg-amplituhedron.pdf` | Published kinematic correspondence |
+
+## Related documentation
+
+- [Shared volume numerical preliminaries](./volume-numerical-preliminaries.md)
+- [T5 volume-positivity studies](./volume-positivity-studies.md)
+- [T5c FL spinors and covariance geometry](./T5c-flux-covariance-volume-comparison.md)
+- [Fock-space and coherent-state construction](./fock-space-construction.md)
+- [Volume operator](./volume-operator.md)
+- [Red-team audit](./red-team-audit.md)
+- [Verification protocol](./verification-protocol.md)
+- [T6 Minkowski reconstruction](./T6-minkowski-polyhedron.md)

@@ -1,6 +1,6 @@
 # Implementation Progress
 
-*Last Updated: 2026-10-03 00:27:43 IST*
+*Last Updated: 2026-10-03 13:47:56 IST*
 
 ## Active Tasks
 
@@ -8,7 +8,7 @@
 **Status:** 🔄 IN PROGRESS
 **Priority:** HIGH
 
-The regular FL tetrahedron area sweep covers $J=1\ldots5$. At $J=2$, a 440-point ordered equal-face-area scan finds the regular tetrahedron as the sampled minimum for both RS and AL expectations. Two direct tensor-product checks agree to floating-point precision, and the displayed shape guide now appears on both dashboard panels. This grid does not establish a global minimum; exact degenerate limits and unequal-area shape families remain open. The project-normalized $J=2$ expectations do not simply follow reconstructed classical volume at the selected comparison points.
+The regular FL tetrahedron area sweep covers $J=1\ldots5$; direct tensor-product expectations now agree within $1.67\times10^{-16}$ after a shared numerical zero-mode cutoff. At $J=2$, a refreshed 440-point ordered equal-face-area scan finds the regular tetrahedron as the sampled minimum for both RS and AL expectations. Two direct tensor-product shape checks agree to floating-point precision, and the displayed shape guide remains on both dashboard panels. This grid does not establish a global minimum; exact degenerate limits and unequal-area shape families remain open. The project-normalized $J=2$ expectations do not simply follow reconstructed classical volume at the selected comparison points.
 
 **Next:** study boundary limits and volume spread across $J$; extend positive spin-assignment enumeration and shape sampling to unequal areas; investigate the role of the qhe-bhe Thurston/Minkowski results. Keep this question separate from the claim that the quantum expectation has a proved global minimum.
 
@@ -31,17 +31,20 @@ The regular FL tetrahedron area sweep covers $J=1\ldots5$. At $J=2$, a 440-point
 - ⬜ Record independent red-team review per claim.
 - ⬜ Circulate the corrected draft for review.
 
-### T5: Experiments
+### T5: Volume–Positivity Numerical Studies
 **Status:** 🔄 IN PROGRESS (T5a base analysis recorded; magnetization sweep converged for one plane; T5a′ kinematic local-triple analysis recorded; T5b converged rerun complete for its tested family; T5e converged scoped study recorded; T5c, T5d, T5f, T5g open)
 **Priority:** HIGH
 
-**Roadmap:** `memory-bank/implementation-details/experiments.md`
+**Roadmap:** `memory-bank/implementation-details/volume-positivity-studies.md`
 
-Seven experiments probing signed triple-grasp response and its possible
+Seven numerical studies probing signed triple-grasp response and its possible
 relation to volume. The positive cell is not the full zero locus; see the
-red-team audit. Subtasks T5a–T5g are in `tasks.md`.
+red-team audit. Subtasks T5a–T5g are in `tasks.md`. T5c's
+state-specific definitions and exploratory covariance pilot are in
+`implementation-details/T5c-flux-covariance-volume-comparison.md`;
+common notation is in `implementation-details/volume-numerical-preliminaries.md`.
 
-**T5a evidence and caveat:** the n=6,7 base triple-correlation runs record sign-agreement 0.50–0.70 and small cross-seed correlations, consistent with per-triple chirality; n=8 remains resource-limited. The n=5 magnetization sweep was rerun with convergence assertions (39–41 terms) and four sectors matched independent SciPy exponentiation to at most 3.6e-16 in triple means. Its fixed-plane sign pattern remains one-plane evidence. T5a′ reports no increase in sign coherence for kinematic-polyhedron-local triples, with 8 planes per n=5 channel and weak per-plane sign-test power. See `t5a_mag_notes.md`, `t5a_prime_notes.md`, and `implementation-details/experiments.md`.
+**T5a evidence and caveat:** the n=6,7 base triple-correlation runs record sign-agreement 0.50–0.70 and small cross-seed correlations, consistent with per-triple chirality; n=8 remains resource-limited. The n=5 magnetization sweep was rerun with convergence assertions (39–41 terms) and four sectors matched independent SciPy exponentiation to at most 3.6e-16 in triple means. Its fixed-plane sign pattern remains one-plane evidence. T5a′ reports no increase in sign coherence for kinematic-polyhedron-local triples, with 8 planes per n=5 channel and weak per-plane sign-test power. See `t5a_mag_notes.md`, `t5a_prime_notes.md`, and `implementation-details/volume-positivity-studies.md`.
 
 ### T7: Thermal and TFD Program
 **Status:** 🔄 IN PROGRESS (T7a–T7e results recorded for tested constructions; broader temperature-dependent coherent-sector question open)
@@ -61,13 +64,15 @@ red-team audit. Subtasks T5a–T5g are in `tasks.md`.
 
 ### T1a: Volume Operator at n=4
 **Initial implementation completed:** 2026-09-19
-**Summary:** Historical results were signed triple-grasp means and their proxy, not positive volume expectations. Exact small-sector RS and AL expectations are implemented. The EPJC Eq. (38) FL regular-tetrahedron fixed-area sweep for $J=1\ldots5$ is positive under both prescriptions; direct-tensor triple matrices agree within $2.8\times10^{-15}$, while positive-volume expectations differ by at most $2.91\times10^{-10}$. The later $J=2$ shape scan and its limits are recorded in the active T1a section and `implementation-details/volume-operator.md`.
+**Summary:** Historical results were signed triple-grasp means and their proxy, not positive volume expectations. Exact small-sector RS and AL expectations are implemented. The EPJC Eq. (38) FL regular-tetrahedron fixed-area sweep for $J=1\ldots5$ is positive under both prescriptions; with the shared numerical zero-mode cutoff, direct-tensor expectations agree within $1.67\times10^{-16}$ and triple-grasp matrices within $2.8\times10^{-15}$. The later $J=2$ shape scan and its limits are recorded in the active T1a section and `implementation-details/volume-operator.md`.
 
 ### T1b: Signed-mean result on real planes
-**Completed:** 2026-09-19
+**Completed:** 2026-10-03 (positive-volume follow-up; signed-mean result recorded 2026-09-19)
 **Summary:** Real-plane states have zero signed triple-grasp mean, including
-planes outside the positive cell. The positive volume-operator expectation
-remains uncalculated; the historical zero-volume interpretation is withdrawn.
+planes outside the positive cell. At $N=4$, $K=6$, tested strictly positive
+and off-cell Perelomov states have nonzero positive RS and AL expectations.
+The AL values use regular-tetrahedron tangent signs; see `real_plane_volume.py`
+and `t1b_real_plane_volume_results.json`.
 
 ### T2: Manuscript (EPJC Paper)
 **Completed:** 2026-09-19
@@ -83,8 +88,7 @@ remains uncalculated; the historical zero-volume interpretation is withdrawn.
 
 ### T3c: Volume Operator (Rust)
 **Completed:** 2026-09-19 16:26 IST
-**Summary:** Sparse triple-grasp matrix and signed-mean proxy are retained. RS and AL positive vertex expectations are now implemented in project normalization for active sectors up to dimension 512.
-The historical n=4 verification shared an unconverged Taylor state; the corrected Rust/Python and SciPy checks now agree. Committed as `ee72845`.
+**Summary:** Sparse triple-grasp matrix and signed-mean proxy are retained. RS and AL positive vertex expectations use project normalization and dense active-sector evaluation up to dimension 512. The Rust FL Eq. (38) example now matches the Python $J=2$ values after both engines apply the shared numerical zero-mode cutoff. Physical prefactors and a larger-block method remain open. The historical n=4 signed-mean verification shared an unconverged Taylor state; the corrected Rust/Python and SciPy checks now agree. Committed as `ee72845`.
 
 ### T3d: Verify Rust vs Python at n=4
 **Historical run:** 2026-09-19 16:26 IST

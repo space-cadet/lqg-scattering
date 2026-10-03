@@ -1,10 +1,14 @@
 # Changelog
 
 ## 2026-10-03
+- Renamed the T5 roadmap to volume-positivity numerical studies, created shared mathematical preliminaries and a detailed T5c implementation specification, and linked the related implementation notes, task records, manuscript, and shape-scan log. The covariance pilot is explicitly marked exploratory; T5c remains open.
+- Evaluated positive RS/AL volumes for strictly positive and off-cell real-plane states under T1b; added a reproducible driver and result JSON.
+- Applied a shared scale-aware zero-mode cutoff to Python and Rust spectral volume expectations, reran the $J=1\ldots5$ FL sweep and 440-point $J=2$ shape scan, and matched the Rust FL example to Python.
 - Recorded the $J=2$ FL equal-face-area scan of 440 ordered samples. Both sampled RS and AL minima occur at the regular tetrahedron; the Memory Bank states clearly that this is a finite-grid observation, not a global-minimum proof.
 - Added the shape-scan method, numerical ranges, two independent tensor-product checks, selected classical-volume comparisons, and open boundary/fluctuation questions to `fl_volume_shape_scan_log.md` and the volume-operator notes.
 - Updated the website dashboard so representative tetrahedron thumbnails appear beside both RS and AL panels. Final website commit `f0b6fdd` was deployed by workflow `37033479554`; the live HTML and cache-busted SVG returned HTTP 200.
 - Recorded the $J=2$ strict positive face-spin assignment result (one assignment, two recoupling channels) and planned boundary scaling and shape sampling across unequal allowed assignments.
+- Added reusable T5c input and covariance tetrahedron previews, reused saved input thumbnails in the T1a shape figure, and deployed the visual update at website commit `9c6670c` (workflow `37125090987`). T5c remains open; the preview does not validate the state-to-geometry map.
 
 ## 2026-10-01
 - Added exact small-sector Rovelli–Smolin and Ashtekar–Lewandowski positive vertex-volume expectations in Python and Rust, with singlet and collinear controls independently checked. Physical normalization and large-sector evaluation remain open.

@@ -53,3 +53,14 @@ The n=4 case is the ground truth. Rust must reproduce Python results to f64 mach
 - GPU acceleration via `wgpu` or `cust` for n>8
 - Distributed computing for very large Fock spaces
 - Integration with symbolic algebra for analytical cross-checks
+
+## Related documentation
+
+- [Shared volume numerical preliminaries](./volume-numerical-preliminaries.md)
+- [Fock-space construction](./fock-space-construction.md)
+- [Grassmannian embedding](./grassmannian-embedding.md)
+- [Volume operator](./volume-operator.md)
+- [T5 volume-positivity studies](./volume-positivity-studies.md)
+- [T5c covariance calculation](./T5c-flux-covariance-volume-comparison.md)
+- [Verification protocol](./verification-protocol.md)
+- [Performance benchmarks](./performance-benchmarks.md)

@@ -2,10 +2,29 @@
 
 Recorded: 2026-10-02 22:01 IST (Asia/Kolkata)
 
-Source checkout: `lqg-scattering`, branch `main`, HEAD `9b7f588`. The scan
-source, results, and dashboard edits were in the working tree and not committed
-to this repository at the time of this log. The website copy is on branch
-`codex/lqg-scattering-dashboard`, commit `f0b6fdd`.
+The 2026-10-03 numerical-stability rerun at the end of this log supersedes the
+initial expectation values below; the earlier values are retained as the
+first-run record.
+
+Source checkout at the initial scan: `lqg-scattering`, branch `main`, HEAD
+`9b7f588`. The scan source, results, and dashboard edits were in the working
+tree and not committed to this repository at the time of this log. The initial
+website copy is on branch `codex/lqg-scattering-dashboard`, commit `f0b6fdd`;
+the later reusable-thumbnail deployment is recorded below.
+
+## Specification links
+
+This file is a run log for protocol, provenance, checks, and numerical
+evidence; use the implementation notes for definitions and theory. Shared
+symbols and operator conventions are in
+[volume numerical preliminaries](memory-bank/implementation-details/volume-numerical-preliminaries.md).
+The state-based covariance reconstruction question has its own
+[T5c implementation specification](memory-bank/implementation-details/T5c-flux-covariance-volume-comparison.md).
+The implemented quantum operators and their limits are described in the
+[volume-operator note](memory-bank/implementation-details/volume-operator.md).
+Task progress is in the [T1a record](memory-bank/tasks/T1a.md), and the parent
+T5 program is in
+[volume-positivity-studies.md](memory-bank/implementation-details/volume-positivity-studies.md).
 
 ## Objective and scope
 
@@ -29,24 +48,19 @@ a new calculation from this shape scan.
 2. Used the four spinor rays' cross ratio as a coordinate link to Thurston's
    four-marked-sphere moduli space. No identification was made between its
    cone-metric curvature data and LQG flux geometry, volume, or spin labels.
+   The shape-coordinate definition is in the
+   [T5c implementation specification](memory-bank/implementation-details/T5c-flux-covariance-volume-comparison.md).
    Reference: [Thurston, *Shapes of polyhedra and triangulations of the sphere*](https://arxiv.org/abs/math/9801088).
 3. Chose a closed, equal-area normal family parameterized by diagonal length
-   $x$ and bending angle $\varphi$ so the plotted coordinates have direct
-   geometric meanings and can be reconstructed as tetrahedra.
+   $x$ and bending angle $\varphi$ from the shape family defined in the
+   [T5c implementation specification](memory-bank/implementation-details/T5c-flux-covariance-volume-comparison.md).
 
 ## Numerical protocol
 
-For $u=\sqrt{1-x^2}$, the four unit face normals are
-
-$$
-\begin{aligned}
-n_0&=(u,0,x), & n_1&=(-u,0,x),\\
-n_2&=(u\cos\varphi,u\sin\varphi,-x), &
-n_3&=(-u\cos\varphi,-u\sin\varphi,-x).
-\end{aligned}
-$$
-
-Their sum is zero by construction. The scan uses 19 equally spaced $x$ values
+The normal and spinor definitions, cross-ratio convention, and volume
+operator definitions are in the linked implementation notes above and in
+[shared volume preliminaries](memory-bank/implementation-details/volume-numerical-preliminaries.md).
+This run uses 19 equally spaced $x$ values
 from 0.03 through 0.97 plus $1/\sqrt{3}$, for 20 values total. It uses the
 15-degree bending-angle grid from 15 to 345 degrees, omitting the degenerate
 180-degree line, for 22 values. The product gives 440 ordered samples. Face
@@ -55,12 +69,8 @@ labels are not quotiented by permutations.
 Each sample builds the Freidel–Livine Eq. (38) fixed-area state at $J=2$ and
 evaluates positive Rovelli–Smolin (RS) and Ashtekar–Lewandowski (AL) volume
 expectations in project-normalized units. The physical regularization
-prefactor remains unselected. For the spinor rays, the recorded cross ratio is
-
-$$
-\lambda=\left(\frac{t^2-e^{i\varphi}}{t^2+e^{i\varphi}}\right)^2,
-\qquad t^2=\frac{1-x}{1+x}.
-$$
+prefactor remains unselected. The scan checks the spinor cross ratio against
+its shape-coordinate expression; the maximum difference is recorded below.
 
 The script is `fl_volume_shape_scan.py`; the exact sampled records are in
 `dashboard/fl-volume-shape-j2.json`. The initial full scan used the bundled
@@ -99,21 +109,14 @@ edits did not recalculate the 440 volume records.
 
 ## Shape reconstruction and thumbnails
 
-The plot originally encoded shapes only by dot position. To give those
-coordinates a visual meaning, the thumbnail helper reconstructs a tetrahedron
-from the closed unit face normals, treating each normal as an outward area
-vector for unit face area. It orders three face vectors to give a negative
-determinant, then uses
-
-$$
-D=\sqrt{-8\det(F_1,F_2,F_3)},\qquad
-e_1=\frac{4(F_2\times F_3)}{D},\quad
-e_2=\frac{4(F_3\times F_1)}{D},\quad
-e_3=\frac{4(F_1\times F_2)}{D}.
-$$
-
-The four vertices are translated to their centroid and drawn with one fixed
-orthographic camera. A manual check at the regular-tetrahedron point recovered
+The plot originally encoded shapes only by dot position. The thumbnail helper
+treats each closed unit normal as an outward area vector and uses the
+face-vector dual construction in the
+[shared preliminaries](memory-bank/implementation-details/volume-numerical-preliminaries.md).
+Here these are the input normals scaled to unit face area. This visualization
+reconstruction is separate from T5c's candidate factorization of the quantum
+correlation matrix. The four vertices are translated to their centroid and
+drawn with one fixed orthographic camera. A manual check at the regular point recovered
 four unit face areas and the expected face-normal directions. The shape scan
 generator contains the reconstruction in `tetrahedron_vertices` and the SVG
 drawing in `tetrahedron_glyph`.
@@ -126,7 +129,8 @@ bounding box, so the drawings compare shape proportions, not absolute size.
 These are static guides, not one tetrahedron for every heatmap dot.
 
 An exploratory comparison reconstructed classical volume from the same
-unit-face-area normals using $V_{\rm cl}=|\det(e_1,e_2,e_3)|/6$. At the
+unit-face-area normals using the face-vector dual construction linked above.
+At the
 regular point $(x,\varphi)=(1/\sqrt{3},90^\circ)$ this gives
 $V_{\rm cl}=0.41360216$, while the scanned RS/AL expectations are
 0.05077553/0.02538777. At $(0.03,15^\circ)$, the reconstructed classical
@@ -161,6 +165,16 @@ live SVG reported `viewBox="0 0 1160 520"` and contained all 22 miniature
 tetrahedra. The local SVG was rendered with `rsvg-convert` for visual review;
 the 440 numerical records were not rerun for these layout changes.
 
+On 2026-10-03, `dashboard/tetrahedron_thumbnails.py` generated 24 reusable
+input-shape SVGs and 84 covariance-reconstructed candidates. The T1a shape
+figure reuses the input assets; the dashboard also exposes an input/candidate
+preview for each selectable T5c shape/area point. Website commit
+`9c6670c190e813470975f18037c1ed4a6ecea8bc` was deployed by workflow
+`37125090987`; the live browser showed the T5c selectors and updated preview.
+This presentation update did not recalculate the 440 T1a volume records.
+T5c calculation details and limits are in the
+[T5c implementation specification](memory-bank/implementation-details/T5c-flux-covariance-volume-comparison.md).
+
 ## Interpretation, caveats, and next steps
 
 - The heatmap is a fixed-$J$ shape scan, not volume versus area. Its results
@@ -186,3 +200,30 @@ The scan source and its JSON were untracked in the local `lqg-scattering`
 checkout at HEAD `9b7f588` when this log was made. The website copy is deployed
 and traceable to its separate branch and workflow above. A clean-checkout
 reproduction from a committed LQG source revision has not yet been recorded.
+
+## Numerical stability rerun (2026-10-03)
+
+The positive spectral expectation is sensitive to numerical eigenvalues near
+zero because it applies $\sqrt{|\lambda|}$. Exact kernel eigenvalues can return
+at the dense eigensolver's roundoff scale and then contribute a small positive
+artifact. Python and Rust now apply the shared scale-aware zero-mode cutoff
+defined in the
+[volume numerical preliminaries](memory-bank/implementation-details/volume-numerical-preliminaries.md).
+
+The $J=2$ equal-face-area scan was rerun for all 440 samples; its JSON and SVG
+were regenerated. The updated sampled ranges are:
+
+- RS: $0.05077553170606508$ to $0.07482161375888345$.
+- AL: $0.025387765853032544$ to $0.03741080687944174$.
+- Both sampled minima remain at the regular tetrahedron,
+  $(x,\varphi)=(1/\sqrt{3},90^\circ)$; the sampled maxima remain at
+  $(0.03,15^\circ)$.
+- The two direct local-spin tensor checks still agree within
+  $1.39\times10^{-17}$ (RS) and $6.94\times10^{-18}$ (AL).
+
+The regular-tetrahedron $J=1\ldots5$ sweep was also rerun. Its maximum direct
+expectation differences are $1.67\times10^{-16}$ for RS and
+$5.55\times10^{-17}$ for AL. These remain project-normalized calculations;
+physical regularization prefactors and AL embeddings outside the stated
+regular-tetrahedron convention are still open. The website copy was not
+redeployed for this numerical stability update.

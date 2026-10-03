@@ -133,3 +133,13 @@ necessary checks and leaves unresolved claims open.
 The legacy Rust/Python scans audited above still report signed-mean proxies. New routines now implement both vertex structures in repository-normalized units: RS sums $\sqrt{|q_{IJK}|}$ contributions; AL takes $\sqrt{|\sum \epsilon(e_I,e_J,e_K)q_{IJK}|}$ using caller-supplied embedding signs. Exact dense diagonalization is split by conserved edge-spin and total-magnetic sectors and refuses active blocks above 512.
 
 For the normalized paired spin-1/2 singlet on four edges, regular-tetrahedron signs $(+,-,+,-)$ give $\langle q_{012}\rangle=0$, $V_{RS}=0.304653190236$, and $V_{AL}=0.152326595118$ with the project prefactor $(\gamma\hbar)^{3/2}$. A collinear four-edge product gives zero for both. Python, Rust, and an independent tensor-product Pauli-matrix calculation agree. These are normalized implementation checks, not physical-volume claims: standard regularization prefactors, AL embeddings for the project coherent states, and large active blocks remain unresolved.
+
+## Related documentation
+
+- [Shared volume numerical preliminaries](./volume-numerical-preliminaries.md)
+- [T5 volume-positivity studies](./volume-positivity-studies.md)
+- [T5c classical-volume comparison specification](./T5c-flux-covariance-volume-comparison.md)
+- [Implemented volume operators](./volume-operator.md)
+- [T6 Minkowski reconstruction](./T6-minkowski-polyhedron.md)
+- [Verification protocol](./verification-protocol.md)
+- [Performance benchmarks](./performance-benchmarks.md)

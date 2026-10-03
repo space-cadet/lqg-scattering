@@ -60,10 +60,23 @@ class FockSpace:
     def __init__(self, N, K_max):
         self.N = N
         self.K_max = K_max
+        # Generate only occupations satisfying the total-number bound. The
+        # Cartesian-product/filter version visits (K_max + 1) ** (2 * N)
+        # tuples even though the retained basis has only
+        # binom(2 * N + K_max, 2 * N) entries. This recursive order is the
+        # same lexicographic order as the filtered Cartesian product.
+        def bounded_occupations(n_modes, remaining, prefix=()):
+            if n_modes == 1:
+                for value in range(remaining + 1):
+                    yield prefix + (value,)
+                return
+            for value in range(remaining + 1):
+                yield from bounded_occupations(
+                    n_modes - 1, remaining - value, prefix + (value,)
+                )
+
         self.occupations = np.array(
-            [occ for occ in itertools.product(range(K_max + 1), repeat=2 * N)
-             if sum(occ) <= K_max],
-            dtype=int,
+            list(bounded_occupations(2 * N, K_max)), dtype=int
         )
         self.dim = len(self.occupations)
         self.index = {tuple(int(x) for x in occ): i for i, occ in enumerate(self.occupations)}

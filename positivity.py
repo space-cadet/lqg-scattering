@@ -381,6 +381,13 @@ def _triple_matrix_block(space, basis, triple):
 
 def _positive_sqrt_expectation(matrix, vector):
     eigenvalues, eigenvectors = np.linalg.eigh(matrix)
+    # The operator often has an exact kernel. Dense eigensolvers can return
+    # its zero eigenvalues at O(eps * ||q||); sqrt(|lambda|) would turn that
+    # roundoff into a spurious positive contribution. Use the same
+    # scale-aware cutoff as the Rust implementation.
+    spectral_scale = max(1.0, float(np.max(np.abs(eigenvalues))))
+    zero_tol = 64.0 * np.finfo(float).eps * spectral_scale
+    eigenvalues = np.where(np.abs(eigenvalues) <= zero_tol, 0.0, eigenvalues)
     weights = np.abs(eigenvectors.conj().T @ vector) ** 2
     return float(np.dot(weights, np.sqrt(np.abs(eigenvalues))))
 

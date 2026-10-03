@@ -64,3 +64,15 @@ Any mismatch indicates a bug in:
 Verification is complete only when all checklist items pass on the final
 state-construction code. Record seeds, references, tolerances, and results in
 `performance-benchmarks.md` before promoting T3e magnitudes.
+
+## Related documentation
+
+- [Shared volume numerical preliminaries](./volume-numerical-preliminaries.md)
+- [Volume operator](./volume-operator.md)
+- [T5 volume-positivity studies](./volume-positivity-studies.md)
+- [T5c calculation specification](./T5c-flux-covariance-volume-comparison.md)
+- [Fock-space construction](./fock-space-construction.md)
+- [Grassmannian embedding](./grassmannian-embedding.md)
+- [Rust port architecture](./rust-port-architecture.md)
+- [Performance benchmarks](./performance-benchmarks.md)
+- [Red-team audit](./red-team-audit.md)

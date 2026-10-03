@@ -133,3 +133,13 @@ pedagogy -- it yields a small theorem that motivates the doubling.
 3. Reference-state dependence: thermal averages depend on the reference
    (the coherent label Z). All comparisons to T5b must hold the
    reference convention fixed.
+
+## Related documentation
+
+- [Shared volume numerical preliminaries](./volume-numerical-preliminaries.md)
+- [T5 volume-positivity studies](./volume-positivity-studies.md)
+- [Volume operator](./volume-operator.md)
+- [Fock-space construction](./fock-space-construction.md)
+- [Verification protocol](./verification-protocol.md)
+- [Red-team audit](./red-team-audit.md)
+- [Performance benchmarks](./performance-benchmarks.md)

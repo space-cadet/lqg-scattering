@@ -1,7 +1,7 @@
 {
   "project": {
     "name": "Scattering in LQG",
-    "subtitle": "Signed-triple-grasp runs and fixed-area positive-volume checks; physical normalization remains open"
+    "subtitle": "Signed-mean runs and fixed-area, real-plane, and covariance volume studies; physical normalization remains open"
   },
   "tabs": [
     {
@@ -15,6 +15,10 @@
     {
       "id": "performance",
       "label": "Performance"
+    },
+    {
+      "id": "volumeStudies",
+      "label": "Volume Studies"
     },
     {
       "id": "theory",
@@ -196,7 +200,7 @@
     "independentN6Pending": true
   },
   "theory": {
-    "description": "Real-plane states have zero signed triple-grasp mean, including planes outside the positive cell. The positive-volume-operator expectation has not been established by these runs.",
+    "description": "Two N=4, K=6 real-plane states have signed triple-grasp mean consistent with zero and nonzero positive RS/AL volume expectations, independently cross-checked. The T5c covariance-to-geometry scan recovers the regular tetrahedron but not the tested bent shapes exactly over J=1..6; its general classical-limit interpretation remains open.",
     "citation": "D. Vaid and D. Suresh, EPJC (2022); follow-up calculations under review",
     "arxiv": "2208.10632"
   },
@@ -205,7 +209,7 @@
     "areaDefinition": "For this fixed-geometry sweep, A_FL/l_p^2 = J.",
     "state": "Regular tetrahedron fixed-area state; gamma = 0.2375.",
     "normalization": "Project-normalized positive-volume values; the physical prefactor is not fixed.",
-    "validation": "Eq. (38) direct-tensor cross-check. Triple-grasp matrices agree within 2.8e-15; positive-volume expectation differences are at most 2.91e-10 for J=1..5.",
+    "validation": "Eq. (38) independent local-spin tensor-product cross-check using the shared scale-aware zero-eigenvalue cutoff; maximum expectation differences are RS=1.67e-16, AL=5.55e-17 for J=1..5.",
     "records": [
       {
         "areaLabelJ": 1,
@@ -221,10 +225,10 @@
       {
         "areaLabelJ": 2,
         "flAreaOverLp2": 2,
-        "rsPositiveVolumeProjectUnits": 0.05077553260216399,
-        "alPositiveVolumeProjectUnits": 0.025387766749131433,
-        "directTensorRS": 0.050775532602163984,
-        "directTensorAL": 0.02538776674913143,
+        "rsPositiveVolumeProjectUnits": 0.05077553170606511,
+        "alPositiveVolumeProjectUnits": 0.025387765853032547,
+        "directTensorRS": 0.0507755317060651,
+        "directTensorAL": 0.025387765853032544,
         "maxTripleMatrixDifference": 0.0,
         "rsDifference": 6.938893903907228e-18,
         "alDifference": 3.469446951953614e-18
@@ -232,35 +236,35 @@
       {
         "areaLabelJ": 3,
         "flAreaOverLp2": 3,
-        "rsPositiveVolumeProjectUnits": 0.16221338029976162,
-        "alPositiveVolumeProjectUnits": 0.08110669042153412,
-        "directTensorRS": 0.16221338029301588,
-        "directTensorAL": 0.081106690335746,
+        "rsPositiveVolumeProjectUnits": 0.16221337924014134,
+        "alPositiveVolumeProjectUnits": 0.0811066896200707,
+        "directTensorRS": 0.1622133792401414,
+        "directTensorAL": 0.08110668962007068,
         "maxTripleMatrixDifference": 5.551115123125783e-16,
-        "rsDifference": 6.745742853198067e-12,
-        "alDifference": 8.578812660253732e-11
+        "rsDifference": 5.551115123125783e-17,
+        "alDifference": 1.3877787807814457e-17
       },
       {
         "areaLabelJ": 4,
         "flAreaOverLp2": 4,
-        "rsPositiveVolumeProjectUnits": 0.31893807274995334,
-        "alPositiveVolumeProjectUnits": 0.15946903668231519,
-        "directTensorRS": 0.31893807253143225,
-        "directTensorAL": 0.15946903639172008,
+        "rsPositiveVolumeProjectUnits": 0.3189380712919665,
+        "alPositiveVolumeProjectUnits": 0.15946903564598316,
+        "directTensorRS": 0.31893807129196666,
+        "directTensorAL": 0.1594690356459832,
         "maxTripleMatrixDifference": 1.2212453270876722e-15,
-        "rsDifference": 2.1852109011177845e-10,
-        "alDifference": 2.9059510353590667e-10
+        "rsDifference": 1.6653345369377348e-16,
+        "alDifference": 2.7755575615628914e-17
       },
       {
         "areaLabelJ": 5,
         "flAreaOverLp2": 5,
-        "rsPositiveVolumeProjectUnits": 0.49885965482510625,
-        "alPositiveVolumeProjectUnits": 0.2494298275539056,
-        "directTensorRS": 0.4988596548179195,
-        "directTensorAL": 0.24942982755142543,
+        "rsPositiveVolumeProjectUnits": 0.49885965362368506,
+        "alPositiveVolumeProjectUnits": 0.24942982681184314,
+        "directTensorRS": 0.4988596536236852,
+        "directTensorAL": 0.2494298268118432,
         "maxTripleMatrixDifference": 2.7755575615628914e-15,
-        "rsDifference": 7.1867511941547946e-12,
-        "alDifference": 2.4801827258613685e-12
+        "rsDifference": 1.1102230246251565e-16,
+        "alDifference": 5.551115123125783e-17
       }
     ]
   },
@@ -353,12 +357,12 @@
       "thurstonRelation": "For four marked points, lambda is a complex coordinate on M_0,4. It labels the spinor-ray configuration here; the cone-metric Kähler metric and its curvature data are not assumed to equal the LQG flux geometry."
     },
     "sampledRSRange": [
-      0.05077553260216396,
-      0.07482161446122469
+      0.05077553170606508,
+      0.07482161375888345
     ],
     "sampledALRange": [
-      0.025387766749131426,
-      0.037410807581783
+      0.025387765853032544,
+      0.03741080687944174
     ],
     "sampledRSMinimum": {
       "xDiagonal": 0.5773502691896258,
@@ -371,10 +375,10 @@
       "classicalTripleOrientation": -0.7698003589195008,
       "areaLabelJ": 2,
       "flAreaOverLp2": 2,
-      "rsPositiveVolumeProjectUnits": 0.05077553260216396,
-      "alPositiveVolumeProjectUnits": 0.025387766749131426,
-      "directTensorRS": 0.05077553260216395,
-      "directTensorAL": 0.02538776674913142,
+      "rsPositiveVolumeProjectUnits": 0.05077553170606508,
+      "alPositiveVolumeProjectUnits": 0.025387765853032544,
+      "directTensorRS": 0.050775531706065066,
+      "directTensorAL": 0.025387765853032537,
       "maxTripleMatrixDifference": 0.0,
       "rsDifference": 1.3877787807814457e-17,
       "alDifference": 6.938893903907228e-18
@@ -390,8 +394,8 @@
       "classicalTripleOrientation": -0.015515166477715704,
       "areaLabelJ": 2,
       "flAreaOverLp2": 2,
-      "rsPositiveVolumeProjectUnits": 0.07482161446122469,
-      "alPositiveVolumeProjectUnits": 0.037410807581783
+      "rsPositiveVolumeProjectUnits": 0.07482161375888345,
+      "alPositiveVolumeProjectUnits": 0.03741080687944174
     },
     "validation": {
       "closureMax": 0.0,
@@ -417,11 +421,100 @@
     "recordsFile": "fl-volume-allowed-labels.json",
     "interpretation": "Finite labelled SU(2) spin sectors and intertwiner channels; not a finite enumeration of classical coherent shapes.",
     "totals": [
-      {"areaLabelJ": 1, "closureSectors": 6, "closureIntertwinerDimension": 6, "fourNonzeroFaceSectors": 0, "fourNonzeroFaceIntertwinerDimension": 0, "strictPolygonSectors": 0, "strictPolygonIntertwinerDimension": 0},
-      {"areaLabelJ": 2, "closureSectors": 19, "closureIntertwinerDimension": 20, "fourNonzeroFaceSectors": 1, "fourNonzeroFaceIntertwinerDimension": 2, "strictPolygonSectors": 1, "strictPolygonIntertwinerDimension": 2},
-      {"areaLabelJ": 3, "closureSectors": 44, "closureIntertwinerDimension": 50, "fourNonzeroFaceSectors": 10, "fourNonzeroFaceIntertwinerDimension": 16, "strictPolygonSectors": 6, "strictPolygonIntertwinerDimension": 12},
-      {"areaLabelJ": 4, "closureSectors": 85, "closureIntertwinerDimension": 105, "fourNonzeroFaceSectors": 31, "fourNonzeroFaceIntertwinerDimension": 51, "strictPolygonSectors": 19, "strictPolygonIntertwinerDimension": 39},
-      {"areaLabelJ": 5, "closureSectors": 146, "closureIntertwinerDimension": 196, "fourNonzeroFaceSectors": 68, "fourNonzeroFaceIntertwinerDimension": 118, "strictPolygonSectors": 44, "strictPolygonIntertwinerDimension": 94}
+      {"areaLabelJ": 1,"closureSectors": 6,"closureIntertwinerDimension": 6,"fourNonzeroFaceSectors": 0,"fourNonzeroFaceIntertwinerDimension": 0,"strictPolygonSectors": 0,"strictPolygonIntertwinerDimension": 0},
+      {"areaLabelJ": 2,"closureSectors": 19,"closureIntertwinerDimension": 20,"fourNonzeroFaceSectors": 1,"fourNonzeroFaceIntertwinerDimension": 2,"strictPolygonSectors": 1,"strictPolygonIntertwinerDimension": 2},
+      {"areaLabelJ": 3,"closureSectors": 44,"closureIntertwinerDimension": 50,"fourNonzeroFaceSectors": 10,"fourNonzeroFaceIntertwinerDimension": 16,"strictPolygonSectors": 6,"strictPolygonIntertwinerDimension": 12},
+      {"areaLabelJ": 4,"closureSectors": 85,"closureIntertwinerDimension": 105,"fourNonzeroFaceSectors": 31,"fourNonzeroFaceIntertwinerDimension": 51,"strictPolygonSectors": 19,"strictPolygonIntertwinerDimension": 39},
+      {"areaLabelJ": 5,"closureSectors": 146,"closureIntertwinerDimension": 196,"fourNonzeroFaceSectors": 68,"fourNonzeroFaceIntertwinerDimension": 118,"strictPolygonSectors": 44,"strictPolygonIntertwinerDimension": 94}
     ]
+  },
+  "numericalStudies": {
+    "t1b": {
+      "title": "Real-plane signed mean and positive-volume comparison",
+      "resultsFile": "t1b-real-plane-volume.json",
+      "stateCount": 2,
+      "totalBosonsK": 6,
+      "units": "project-normalized volume; gamma=0.2375, hbar=1",
+      "validation": "Independent local-spin tensor-product check of the triple-grasp matrices and positive RS/AL expectations."
+    },
+    "t5c": {
+      "title": "Flux-covariance reconstruction and volume comparison",
+      "resultsFile": "t5c-shape-recovery.json",
+      "shapeCount": 14,
+      "recordCount": 84,
+      "JValues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "interiorShapes": [
+        "regular",
+        "bent_60",
+        "bent_120",
+        "x065_bent_60",
+        "low_x020"
+      ],
+      "boundaryGroups": [
+        {
+          "label": "x → 0 at φ=90°",
+          "shapes": [
+            "x_030_phi90",
+            "x_015_phi90",
+            "x_0075_phi90"
+          ]
+        },
+        {
+          "label": "x → 1 at φ=90°",
+          "shapes": [
+            "x_070_phi90",
+            "x_085_phi90",
+            "x_0925_phi90"
+          ]
+        },
+        {
+          "label": "φ → 0 at x=1/√3",
+          "shapes": [
+            "phi_0p5",
+            "phi_0p25",
+            "phi_0p125"
+          ]
+        }
+      ],
+      "definition": "G_ij = <J_i · J_j>; compare the normalized covariance Gram matrix with the Gram matrix of the known input face normals, then reconstruct candidate closed face-area vectors from the rank-three factorization.",
+      "volumeScope": "Covariance geometry for all 14 labels at J=1..6; signed mean, proxy, and positive RS/AL observables for five interior shapes at J=1..3.",
+      "limitations": "Finite exploratory scan; boundary endpoints are not evaluated. The covariance factorization is a candidate geometry map, not a general reconstruction theorem or a large-J limit.",
+      "normalization": "Project-normalized volumes; gamma=0.2375, hbar=1. AL comparison uses lexicographic signs (+1,-1,+1,-1)."
+    }
+  },
+  "tasks": {
+    "active": [
+      {
+        "id": "T5c",
+        "title": "Flux-covariance shape recovery and volume comparison",
+        "description": "The exploratory scan covers 14 equal-face-area shape labels at J=1..6 and compares covariance, signed-mean, and positive RS/AL volumes for five interior shapes at J=1..3. General shape recovery and a large-J limit remain open.",
+        "tags": [
+          "volume",
+          "shape",
+          "Freidel-Livine"
+        ]
+      }
+    ],
+    "completed": [
+      {
+        "id": "T1b",
+        "title": "Real-plane signed-mean and positive-volume check",
+        "description": "Two N=4, K=6 real-plane states, one inside and one outside the positive cell, have a signed triple-grasp mean consistent with zero and nonzero positive RS/AL expectations. The local-spin tensor-product check agrees with the sparse calculation for these cases.",
+        "tags": [
+          "volume",
+          "real plane",
+          "RS",
+          "AL"
+        ]
+      }
+    ],
+    "pending": []
   }
 }

@@ -131,7 +131,7 @@ cell as the unique zero locus. The listed times are current single-run measureme
 ### 2.4 Experiment T5a: triple-volume correlations ($n = 6, 7$)
 
 New in the follow-up program (spec:
-`memory-bank/implementation-details/experiments.md`). From ONE Perelomov
+`memory-bank/implementation-details/volume-positivity-studies.md`). From ONE Perelomov
 state on a complex plane, with uniform reference $(1,1)$ on every edge (no
 triple privileged, $K = 2n$), compute $q_{ijk} = i\langle [A_{ij}, A_{jk}] \rangle$ on every
 $C(n,3)$ triple, and test whether the vertex carries a single handedness

@@ -130,11 +130,22 @@ fn dense_positive_sqrt_expectation(
         return Ok(0.0);
     }
     let mut value = 0.0;
+    let spectral_scale = eig
+        .eigenvalues
+        .iter()
+        .fold(1.0_f64, |scale, &lambda| scale.max(lambda.abs()));
+    // Exact kernel eigenvalues acquire O(eps * ||q||) residuals in the
+    // dense eigensolver. Since sqrt(|lambda|) magnifies those residuals,
+    // discard only values within a scale-aware backward-error tolerance.
+    let zero_tol = 64.0 * f64::EPSILON * spectral_scale;
     for col in 0..(2 * m) {
         let amp: f64 = (0..(2 * m))
             .map(|row| eig.eigenvectors[(row, col)] * x[row])
             .sum();
-        value += amp * amp * eig.eigenvalues[col].abs().sqrt();
+        let lambda = eig.eigenvalues[col];
+        if lambda.abs() > zero_tol {
+            value += amp * amp * lambda.abs().sqrt();
+        }
     }
     Ok(value)
 }

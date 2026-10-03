@@ -1,6 +1,6 @@
 # Volume Operator: Implemented Prescriptions and Limits
 
-*Last Updated: 2026-10-03 00:27:43 IST*
+*Last Updated: 2026-10-03 11:48:38 IST*
 
 ## Current code
 
@@ -27,8 +27,11 @@ $$\hat V_{v,\mathrm{RS}}=c_{\mathrm{RS}}\sum_{I<J<K}\sqrt{|\hat q_{IJK}|},\qquad
 The reported observable is $\langle\psi|\hat V_v|\psi\rangle$. The caller
 supplies all AL tangent signs in lexicographic triple order. Each implementation
 decomposes the populated sectors and evaluates the positive square root by
-dense Hermitian spectral decomposition. It returns an error for an active
-fixed-spin block larger than 512, rather than silently approximating it.
+dense Hermitian spectral decomposition. Eigenvalues satisfying
+$|\lambda|\le64\epsilon_{\rm mach}\max(1,\rho(|Q|))$ are treated as zero to
+remove roundoff contributions from exact kernel modes; Python and Rust use the
+same cutoff. It returns an error for an active fixed-spin block larger than
+512, rather than silently approximating it.
 The default project prefactor is $(\gamma\hbar)^{3/2}$; use the explicit
 `scale`/`prefactor` argument for a different regularization normalization.
 The standard LQG regularization constants and $8\pi\ell_P^2$ factors have not
@@ -58,10 +61,11 @@ positive volume.
   reproduce; its unsaved calculation’s cause remains unknown.
 - Replace or extend dense block diagonalization before applying it to large
   sectors; current exact code refuses blocks above 512.
-- Rerun the reported states. Keep the existing signed-mean series under its
-  correct name; it is not a volume series.
+- Use the shared numerical zero-mode cutoff when reproducing the reported
+  values. Keep the signed-mean series under its correct name; it is not a
+  volume series.
 
-## FL regular-tetrahedron check (2026-10-02)
+## FL regular-tetrahedron check (updated 2026-10-03)
 
 The reproducible calculation in fl_volume_validation.py evaluates the EPJC
 Eq. (38) fixed-area FL coherent state for a closed regular tetrahedron
@@ -72,21 +76,26 @@ $(+,-,+,-)$ for the listed triples, the results were:
 
 - $\langle q_{012}\rangle=0.07216878364870322$ (imaginary roundoff
   $1.73\times10^{-18}$).
-- Project routines: $V_{\rm RS}=0.05077553260216399$ and
-  $V_{\rm AL}=0.025387766749131433$.
-- Independent local-spin tensor-product evaluation: $V_{\rm RS}=0.050775532602163984$
-  and $V_{\rm AL}=0.02538776674913143$. Triple-grasp matrices agree exactly at
-  the reported precision; volume differences are $6.94\times10^{-18}$ (RS)
-  and $3.47\times10^{-18}$ (AL).
-- Reproducer: fl_volume_validation.py. The earlier unsaved direct calculation
-  gave values lower by about $1.8\times10^{-10}$; its origin is unknown and the
-  discrepancy does not reproduce with the saved independent construction.
+- With the numerical zero-mode cutoff above, project routines give
+  $V_{\rm RS}=0.05077553170606511$ and
+  $V_{\rm AL}=0.02538776585303255$.
+- Independent local-spin tensor-product evaluation agrees within
+  $7\times10^{-18}$. Triple-grasp matrices agree exactly at the reported
+  precision.
+- The Rust reproducer reports $V_{\rm RS}=0.05077553170606511$ and
+  $V_{\rm AL}=0.02538776585303254$, matching Python at the displayed precision.
+  Its $\langle q_{012}\rangle=0.07216878364870326$ agrees with Python.
+- Before the cutoff, the raw eigensolver results differed across Python and
+  Rust by about $6\times10^{-10}$ because square roots magnify roundoff in exact
+  zero modes. Applying the same scale-aware cutoff removes that engine-dependent
+  drift. The older unsaved inline value remains unrecoverable.
 
 Both methods give positive volume in this tested case. These are
 project-normalized values, not finalized physical units. The Rust reproducer
-rust/examples/fl_volume.rs is added but not compiled or run: the configured
-Cargo symlink points to a missing rustup-init. This evidence does not
-establish a family-wide or classical-limit claim.
+`rust/examples/fl_volume.rs` was built and run with the installed Rust 1.92
+toolchain by directly invoking its binaries. The configured Cargo shim still
+points to a missing rustup-init. This evidence does not establish a
+family-wide or classical-limit claim.
 
 ## Fixed-area sweep and dashboard (2026-10-02)
 
@@ -100,16 +109,16 @@ $\gamma=0.2375$):
 | $J$ | $V_{RS}$ | $V_{AL}$ |
 |---:|---:|---:|
 | 1 | 0 | 0 |
-| 2 | 0.0507755326022 | 0.0253877667491 |
-| 3 | 0.162213380300 | 0.081106690422 |
-| 4 | 0.318938072750 | 0.159469036682 |
-| 5 | 0.498859654825 | 0.249429827554 |
+| 2 | 0.0507755317061 | 0.0253877658530 |
+| 3 | 0.162213379240 | 0.0811066896201 |
+| 4 | 0.318938071292 | 0.159469035646 |
+| 5 | 0.498859653624 | 0.249429826812 |
 
 The independent direct-tensor check agrees with the triple-grasp matrices to
-within $2.8\times10^{-15}$. Its positive-volume expectations differ from the
-project eigensolver results by at most $2.91\times10^{-10}$ over this sweep;
-the chart therefore shows the project routine values. The physical volume
-prefactor remains unselected. Website copy was pushed to the isolated
+within $2.8\times10^{-15}$. With the shared numerical zero-mode cutoff, direct
+positive-volume expectations differ from the project routines by at most
+$1.67\times10^{-16}$ (RS) and $5.55\times10^{-17}$ (AL) over this sweep. The
+physical volume prefactor remains unselected. Website copy was pushed to the isolated
 `space-cadet/website` branch `codex/lqg-scattering-dashboard` at `824b2b8`.
 Local browser loading and fallback behavior were checked. Live deployment was
 deployed successfully with GitHub Actions run `36990851937`. Live Projects,
@@ -118,7 +127,7 @@ page, the “Quantum physics and research” group is collapsed by default; expa
 it to reveal the card. The live browser loaded the dashboard data and static
 area plot.
 
-## FL equal-face-area shape scan at $J=2$ (2026-10-02)
+## FL equal-face-area shape scan at $J=2$ (updated 2026-10-03)
 
 `fl_volume_shape_scan.py` samples a closed equal-face-area normal family with
 coordinates $x$ (diagonal length) and bending angle $\varphi$. The grid has 20
@@ -128,13 +137,15 @@ history are in `fl_volume_shape_scan_log.md` and
 `dashboard/fl-volume-shape-j2.json`.
 
 In project-normalized units, sampled RS values range from
-$0.05077553260216396$ to $0.07482161446122469$, and AL values range from
-$0.025387766749131426$ to $0.037410807581783$. Both minima occur at the regular
+$0.05077553170606508$ to $0.07482161375888345$, and AL values range from
+$0.025387765853032544$ to $0.03741080687944174$. Both minima occur at the regular
 tetrahedron, $x=1/\sqrt{3}$, $\varphi=90^\circ$. The maximum closure residual is
 zero; shape-coordinate and spinor cross ratios agree within
 $8.68\times10^{-14}$. Direct local-spin tensor checks at two points agree with
 RS within $1.39\times10^{-17}$ and AL within $6.94\times10^{-18}$. Rephasing and
-common rotations leave the values unchanged within $6.94\times10^{-18}$.
+common rotations leave the values unchanged within $6.94\times10^{-18}$. The
+cutoff removes eigensolver roundoff in exact kernel modes and is applied in the
+saved data and figure.
 
 This is evidence about the sampled equal-area family only. It is not a proof
 that the regular tetrahedron minimizes either expectation across all shapes,
@@ -152,15 +163,42 @@ comparison shows that the project-normalized $J=2$ expectations do not simply
 track the reconstructed classical volume; it is not an independent classical
 volume validation or a boundary-limit study.
 
+## Real-plane positive-volume check (2026-10-03)
+
+`real_plane_volume.py` builds normalized $N=4$, $K=6$ Perelomov states from the
+same non-collinear reference occupations for two explicit real planes: one in
+the strictly positive cell and one outside it (the latter has $M_{34}=-1$).
+Both states have real amplitudes and $\langle q_{012}\rangle=0$ to
+floating-point precision. Their project-unit expectations are:
+
+| Real plane | $V_{\rm RS}$ | $V_{\rm AL}$ |
+|---|---:|---:|
+| Strictly positive cell | 0.1205292375514575 | 0.0751162653864954 |
+| Outside positive cell | 0.1205292375514575 | 0.0751162653864954 |
+
+The AL calculation uses regular-tetrahedron orientation signs $(+,-,+,-)$.
+Independent local-spin tensor-product matrices agree within
+$5.6\times10^{-17}$; the largest triple-matrix difference is
+$5.6\times10^{-16}$. Results are saved in
+`t1b_real_plane_volume_results.json`. These values establish nonzero positive
+volume for these two examples only; they do not establish a statement for
+every real-plane state or graph embedding.
+
 The dashboard shape figure is `dashboard/figures/fl-volume-shape-j2.svg`; it
 shows 11 representative tetrahedra in each RS and AL panel, 22 total. The
-final website copy is commit `f0b6fdd`, deployed by workflow `37033479554`; its
-HTML and cache-busted SVG returned HTTP 200. Planned work is to study the excluded
-degenerate limits and volume spread across increasing $J$, then extend allowed
-positive spin-assignment enumeration and shape sampling to unequal face areas.
-The qhe-bhe Thurston/Minkowski material may help construct or constrain the
-classical shape domain, but it does not by itself prove a minimum for these
-quantum operators.
+latest visual update is website commit
+`9c6670c190e813470975f18037c1ed4a6ecea8bc`, deployed by workflow `37125090987`;
+it reuses pre-rendered input-shape thumbnails and adds T5c per-point previews.
+Whenever a dashboard view traces tetrahedron shape parameters, include shape
+thumbnails; for selectable points, show that point's saved thumbnail and reuse
+the generated SVGs across views. The paired input/covariance presentation is
+specified in the [T5c implementation note](./T5c-flux-covariance-volume-comparison.md).
+The refreshed numerical data remain separate from this visual update. Planned
+work is to study the excluded degenerate limits and volume spread across
+increasing $J$, then extend allowed positive spin-assignment enumeration and
+shape sampling to unequal face areas. The qhe-bhe Thurston/Minkowski material
+may help construct or constrain the classical shape domain, but it does not by
+itself prove a minimum for these quantum operators.
 
 ## Code locations
 
@@ -170,6 +208,7 @@ quantum operators.
 | `rust/src/volume.rs` | Rust signed-mean proxy and positive RS/AL expectations |
 | `fl_volume_validation.py` | Eq. (38) FL tetrahedron state and independent local-spin tensor-product check |
 | `rust/examples/fl_volume.rs` | Rust reproducer for the same fixed-area tetrahedron state |
+| `real_plane_volume.py` | T1b positive RS/AL evaluations on two real-plane states |
 | `memory-bank/implementation-details/red-team-audit.md` | Numerical audit and current evidence |
 
 The positive routines are `rovelli_smolin_volume` and
@@ -178,3 +217,17 @@ cross-check is recorded in `volume_prescription_results.json` and can be
 reproduced with `volume_prescription_demo.py`.
 
 References: Rovelli and Smolin, [Discreteness of Area and Volume in Quantum Gravity](https://arxiv.org/abs/gr-qc/9411005), and Lewandowski, [Volume and Quantizations](https://arxiv.org/abs/gr-qc/9602035), distinguish the RS sum of positive triple contributions from the AL orientation-weighted sum. Ashtekar and Lewandowski, [Quantum Theory of Geometry II: Volume Operators](https://arxiv.org/abs/gr-qc/9711031), construct the AL operator. Regularization prefactors depend on the selected convention.
+
+## Related documentation
+
+- [Shared volume numerical preliminaries](./volume-numerical-preliminaries.md)
+- [T5 volume-positivity studies](./volume-positivity-studies.md)
+- [T5c covariance reconstruction and comparisons](./T5c-flux-covariance-volume-comparison.md)
+- [T6 Minkowski reconstruction](./T6-minkowski-polyhedron.md)
+- [Fock-space construction](./fock-space-construction.md)
+- [Grassmannian embedding](./grassmannian-embedding.md)
+- [Rust port architecture](./rust-port-architecture.md)
+- [Verification protocol](./verification-protocol.md)
+- [Red-team audit](./red-team-audit.md)
+- [T1a Python validation task](../tasks/T1a.md) and [T3c Rust validation task](../tasks/T3c.md)
+- [FL shape-scan evidence log](../../fl_volume_shape_scan_log.md)

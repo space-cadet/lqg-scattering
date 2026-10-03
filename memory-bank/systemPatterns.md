@@ -56,7 +56,7 @@ There is **one** canonical remote — `github.com/space-cadet/lqg-scattering.git
 
 When firing an experiment to an orx agent, **always** include these three things in the initial message. A partial brief wastes a turn and produces blind results.
 
-1. **Spec path.** The absolute path to the relevant memory-bank section (`implementation-details/experiments.md` or a task file). orx worktrees do **not** contain `memory-bank/` — the agent will report the spec "missing" and work from a one-line summary unless you give it the real path. Example: `/Users/sage/.openclaw/workspace/code/lqg-scattering/memory-bank/implementation-details/experiments.md`.
+1. **Spec path.** The absolute path to the relevant memory-bank section (`implementation-details/volume-positivity-studies.md`, a task-specific implementation note, or a task file). orx worktrees do **not** contain `memory-bank/` — the agent will report the spec "missing" and work from a one-line summary unless you give it the real path. Example: `/Users/sage/.openclaw/workspace/code/lqg-scattering/memory-bank/implementation-details/volume-positivity-studies.md`.
 
 2. **Falsifiable hypothesis.** State the hypothesis under test explicitly, framed as a probe — not established fact. Tell the agent what result would *refute* it. (Pattern from the T5a M-sweep guidance: "treat as a probe, not established fact.")
 

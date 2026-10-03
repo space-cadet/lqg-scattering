@@ -1,17 +1,18 @@
 # Session Cache
 
-*Last Updated: 2026-10-03 00:27:43 IST*
+*Last Updated: 2026-10-03 18:53:30 IST*
 
 ## Overview
 - Active Tasks: T1a FL positive-volume shape numerics; T3c Rust reproduction; T4 manuscript; T5 volume program; T7 thermal/TFD program
 - Paused Tasks: 0
-- Checkout is `main` at `9b7f588`; uncommitted local files include the FL $J=2$ shape scan and dashboard edits. The website copy with shape thumbnails on both panels is deployed at `f0b6fdd` (workflow `37033479554`).
+- Checkout is `main` at `e0d1ed7`; local modifications include the shared zero-mode cutoff, refreshed FL area/shape data, T1b results, and T5c shape-recovery artifacts. The latest dashboard visual update is deployed at website commit `9c6670c` (workflow `37125090987`); refreshed numerical data remain distinct from that presentation update.
 
 ## Task Registry
-- T1a: FL positive RS/AL area and shape numerics — 🔄 IN PROGRESS; $J=2$ equal-area grid minima are regular among 440 ordered samples; boundaries and unequal-area shape domains remain open.
-- T3c: Rust positive-volume implementation — 🔄 IN PROGRESS; FL example source awaits working Cargo toolchain.
+- T1a: FL positive RS/AL area and shape numerics — 🔄 IN PROGRESS; the 440-point $J=2$ scan and $J=1\ldots5$ area sweep were refreshed with a shared numerical zero-mode cutoff; boundary and unequal-area behavior remain open.
+- T1b: Real-plane positive-volume follow-up — ✅ COMPLETE for two tested $N=4$, $K=6$ states; both RS and AL expectations are nonzero and independently checked.
+- T3c: Rust positive-volume implementation — 🔄 IN PROGRESS; FL example matches Python using the direct Rust 1.92 toolchain; physical prefactors and blocks above 512 remain open.
 - T4: Follow-up manuscript — 🔄 IN PROGRESS; correct claims, document review status, then circulate.
-- T5: Volume–positivity experiments — 🔄 IN PROGRESS; T5a magnetization sweep converged for one plane; T5c/T5d/T5f/T5g open.
+- T5: Volume–positivity numerical studies — 🔄 IN PROGRESS; T5a magnetization sweep converged for one plane; T5c/T5d/T5f/T5g open. T5c now has a selected-shape covariance scan for 14 shapes at $J=1\ldots6$ and reusable deployed shape previews; its state-to-geometry interpretation and comparison criteria remain open.
 - T7: Thermal/TFD experiments — 🔄 IN PROGRESS; T7a–T7e recorded complete for tested setups; general temperature-dependent coherent-sector response remains open.
 - T1–T3e: Python/Rust implementation and corrected converged scan recorded; n=6 independent state check remains open.
 
@@ -25,7 +26,7 @@
 ### Positive volume operators
 **Status:** 🔄 IN PROGRESS
 
-Python and Rust now implement exact RS and AL positive expectations by dense spectral decomposition of populated fixed-spin blocks (maximum dimension 512). A paired spin-1/2 singlet gives $V_{RS}=0.304653190236$ and $V_{AL}=0.152326595118$ in repository normalization despite $\langle q_{012}\rangle=0$; independent tensor-product matrices agree. The EPJC Eq. (38) FL regular-tetrahedron calculation gives positive RS/AL volumes, and a saved independent local-spin tensor-product calculation now matches the project routines below $7\times10^{-18}$. The source of the older unsaved $1.8\times10^{-10}$ discrepancy remains unknown. At $J=2$, both sampled RS/AL minima in a 440-point ordered equal-face-area grid occur at the regular tetrahedron; this is not a global-minimum proof, and exact degenerate limits were excluded. The positive-label enumerator finds one strict assignment with two recoupling channels, not a continuous shape count. See `fl_volume_shape_scan_log.md` for comparison data and scope limits. The final shape dashboard has 11 thumbnails per operator panel (22 total) and is live at website commit `f0b6fdd` (workflow `37033479554`). Next: study degenerate limits and volume spread across $J$, then extend shape sampling to unequal allowed assignments. Rust example execution, physical prefactors, and larger-block algorithms remain open.
+Python and Rust implement RS and AL positive expectations by dense spectral decomposition of populated fixed-spin blocks (maximum dimension 512), with eigenvalues within $64\epsilon_{\rm mach}\max(1,\rho(|Q|))$ set to zero to remove numerical exact-kernel artifacts. A paired spin-1/2 singlet gives $V_{RS}=0.304653190236$ and $V_{AL}=0.152326595118$ in repository normalization despite $\langle q_{012}\rangle=0$; independent tensor-product matrices agree. The EPJC Eq. (38) FL regular-tetrahedron example now matches across Python, Rust, and the saved local-spin calculation after this cutoff. T1b also shows nonzero positive RS/AL expectations on tested real planes inside and outside the positive cell. At $J=2$, both sampled minima in 440 equal-face-area samples remain at the regular tetrahedron; this is not a global-minimum proof, and exact degenerate limits were excluded. The latest shape-preview presentation is deployed at website commit `9c6670c`; refreshed numerical data are tracked separately. Next: study degenerate limits and volume spread across $J$, extend shape sampling to unequal assignments, select physical prefactors, and handle larger blocks.
 
 ### T5: Volume–Positivity Program
 **Status:** 🔄 IN PROGRESS
@@ -50,7 +51,10 @@ Python and Rust now implement exact RS and AL positive expectations by dense spe
 - Corrected Rust/Python n=4 comparison and converged scans through n=8; independent SciPy checks cover n=4,5,7,8.
 
 ## Session History
+- 2026-10-03: Renamed the T5 overview to volume-positivity numerical studies, added shared volume preliminaries and a detailed T5c specification, and linked related implementation notes and the shape-scan run log. T5c remains open; the pilot does not recover the bent input shape.
+- 2026-10-03: Completed the T1b real-plane positive-volume check, stabilized Python/Rust spectral zero modes, refreshed the FL area and shape numerics, and ran the Rust FL example successfully with the installed toolchain. See `sessions/2026-10-03-morning.md`.
 - 2026-10-03: Recorded the $J=2$ equal-face FL shape scan, its finite-grid limitation, the fixed-$J$ label result, exploratory classical-volume comparison, and boundary/assignment follow-ups. The final shape dashboard with representative thumbnails on both RS and AL panels is live. See `sessions/2026-10-03-night.md` and `fl_volume_shape_scan_log.md`.
+- 2026-10-03: Added reusable T5c input/covariance previews and refreshed the T1a shape SVG; website commit `9c6670c` deployed successfully. T5c remains open. See `sessions/2026-10-03-night.md` and the T5c specification.
 - 2026-10-02: Cloud setup and U(N) discussion recorded under T1a/T3c. The latest follow-up adds a reproducible FL Eq. (38) Python direct-tensor check and a Rust example; the independent Python methods agree, while the Rust run awaits toolchain recovery. See `sessions/2026-10-02-morning.md`.
 - 2026-10-02: Extended the Python FL tetrahedron calculation through $J=1\ldots5$, added an RS/AL volume-versus-area dashboard plot, and published its website copy to `codex/lqg-scattering-dashboard` at `824b2b8`. Local browser verification passed with the CDN fallback; GitHub Actions dispatch and live-site verification remain pending API/browser access. See `sessions/2026-10-02-morning.md`.
 - 2026-10-02: Used host access to dispatch and complete website workflow `36990851937` for `824b2b8`; live Projects, project, dashboard, JSON, and SVG requests returned HTTP 200. The Projects page hides the Scattering in LQG card inside its initially collapsed “Quantum physics and research” section; expanding it reveals the card. Live browser loaded the dashboard and plot. See `sessions/2026-10-02-morning.md`.

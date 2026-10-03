@@ -61,6 +61,20 @@ memory-bank/
 └── archive/               # Completed/archived items
 ```
 
+### Implementation details and shared mathematics
+
+Numerical specifications and shared definitions live in
+implementation-details/. Start with
+[volume numerical preliminaries](implementation-details/volume-numerical-preliminaries.md)
+for common symbols and volume conventions, then follow its links to the
+task-specific calculation, implementation, verification, and evidence notes.
+The T5 program overview is
+[volume-positivity-studies.md](implementation-details/volume-positivity-studies.md);
+the detailed T5c specification is
+[T5c-flux-covariance-volume-comparison.md](implementation-details/T5c-flux-covariance-volume-comparison.md).
+Run logs preserve calculation evidence and provenance rather than serving as
+the theory reference.
+
 ### 4. Working with the Memory Bank
 
 When using with an AI assistant:

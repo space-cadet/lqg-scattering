@@ -62,3 +62,14 @@ For n=5,6 (small), either is fast. **Recommendation:** start with a scipy halfsp
 - New: `minkowski.py` (reconstruction + adjacency)
 - New: `t6_kinematic_chirality.py` (the local-triple analysis)
 - Reuses: `grassmannian.py` (spinors/momenta), `coherent_states.py` (Perelomov), existing T5a sweep data
+
+## Related documentation
+
+- [Shared volume numerical preliminaries](./volume-numerical-preliminaries.md)
+- [T5 volume-positivity studies](./volume-positivity-studies.md)
+- [T5c state-correlation reconstruction](./T5c-flux-covariance-volume-comparison.md)
+- [Volume operator and observable conventions](./volume-operator.md)
+- [Grassmannian embedding](./grassmannian-embedding.md)
+- [Fock-space construction](./fock-space-construction.md)
+- [Verification protocol](./verification-protocol.md)
+- [Open ideas](./open-ideas-park.md)

@@ -1,8 +1,8 @@
-# Experiments: Volume–Positivity Program
+# Numerical Studies of the Volume–Positivity Program
 
 **Status:** 🔄 IN PROGRESS — T5a/base, T5a′, T5b, and T5e have recorded results; several follow-ups remain open.
-**Last Updated:** 2026-10-01
-**Parent task:** T5 (Experiments)
+**Last Updated:** 2026-10-03
+**Parent task:** T5 (Volume–Positivity Numerical Studies)
 **Depends on:** T3c (Rust triple-grasp implementation); T3d/T3e converged reruns are recorded; the n=6 point awaits an independent state check.
 
 **Current state:** T5a's n=6,7 base analysis is recorded. Its n=5
@@ -13,7 +13,7 @@ kinematic-polyhedron-local triples, with limited n=5 samples and a shared
 reference-engine convergence caveat. T5b and T5e have recorded results for
 their tested ranges. T5c (state-based classical-volume comparison), T5d
 (cocycle/distance scaling), T5f (scattering-region mapping), and T5g
-(higher-n profiling) remain open. See `tasks.md` and the experiment notes for
+(higher-n profiling) remain open. See `tasks.md` and the study notes for
 the limits of each result.
 
 ## Motivation
@@ -35,17 +35,18 @@ signed mean. The corrected <tg-math>n=4</tg-math> complex-plane magnitude
 was shifted by Taylor truncation; the positive-cell state has nonzero
 <tg-math>\langle q^2\rangle</tg-math>. See `red-team-audit.md`.
 
-Every experiment below probes this boundary. They are independent and can run in any order; the priority reflects physics-per-unit-effort, not dependency.
+Each study below probes this boundary. They are independent and can run in
+any order; the priority reflects physics-per-unit-effort, not dependency.
 
 ---
 
-## Experiment index
+## Study index
 
 | ID | Short name | One-line question | Primary code |
 |----|-----------|-------------------|--------------|
 | T5a | Triple-volume correlations (<tg-math>n\ge5</tg-math>) | One vertex handedness, or independent per-triple chirality? | Rust `volume.rs` (extend `scan`) |
 | T5b | Signed-mean proxy response <tg-math>V_{\rm proxy}(\varepsilon)</tg-math> | What exponent appears for a specified complex perturbation? | `t5b_perturbation.py` |
-| T5c | Classical volume match | Does <tg-math>\sqrt{\langle q\rangle}</tg-math> equal the reconstructed polyhedron's classical volume? | `spin_vectors` + closure/twist map |
+| T5c | Flux-covariance geometry and volume comparison | How does a candidate tetrahedron reconstructed from <tg-math>G_{ij}=\langle\vec J_i\cdot\vec J_j\rangle</tg-math> compare with named quantum volume observables? | [pilot](../../t5c_covariance_probe.py); [shape scan](../../t5c_shape_recovery_scan.py); specification below |
 | T5d | Phase response / gauge-real locus | Which phase changes produce nonzero <tg-math>\langle q\rangle</tg-math>? | Rust `grassmannian.rs` (phase scan) |
 | T5e | Large-K semiclassics | Does <tg-math>V\sim K^{3/2}</tg-math> hold at <tg-math>K=20\text{–}50</tg-math>? | Rust (recorded range currently reaches K=24) |
 | T5f | Amplituhedron kinematics | Which scattering regions does <tg-math>\mathrm{Gr}_+</tg-math> cover? | `correspondence.py` + twistor map |
@@ -87,22 +88,38 @@ multiple plane/reference controls before claiming a general onset law.
 
 ---
 
-## T5c — Classical volume match
+## T5c — Flux-covariance geometry and volume comparison
 
-**Physics question.** The manuscript flags a missing link: does <tg-math>\sqrt{\langle q\rangle}</tg-math>, computed quantum-mechanically from *correlations*, equal the *classical* volume of the polyhedron reconstructed from the same state?
+**Question.** For the $N=4$ Freidel–Livine fixed-area state, can the
+correlation matrix $G_{ij}=\langle\vec J_i\cdot\vec J_j\rangle$ define
+closed face-area vectors and a candidate tetrahedron, and how does that
+tetrahedron's volume compare with named quantum volume observables?
 
-**Key distinction (do not conflate).** <tg-math>\langle q\rangle</tg-math> is the expectation of the operator <tg-math>\epsilon^{abc}J_i^aJ_j^bJ_k^c</tg-math>, **not** the classical triple product <tg-math>\frac{1}{6}|n_i\cdot(n_j\times n_k)|</tg-math> of one-point functions <tg-math>\langle J_i\rangle</tg-math>. A coherent superposition can have nonzero <tg-math>\langle q\rangle</tg-math> even when all <tg-math>\langle J_i\rangle</tg-math> are collinear (e.g. frozen along <tg-math>z</tg-math>), because the operator probes <tg-math>J^xJ^y</tg-math> correlations. This experiment tests whether that quantum value nonetheless *matches* the classical volume of the reconstructed dual polyhedron.
+The state is gauge-invariant, so its one-point fluxes vanish. The pilot
+therefore factors the two-point correlation matrix; it does not obtain face
+normals from one-point means or assume that a covariance factorization is
+already the correct twisted-geometry map. The original full-observable
+pilot covers $J=1,2,3$ for a regular and one bent equal-area shape. A
+follow-up covers covariance geometry at $J=1,\ldots,6$ for 14 shapes,
+including finite approaches to $x=0$, $x=1$, and $\varphi=0$. All four volume
+observables were recomputed for five interior shapes at $J=1,2,3$. The
+regular shape is recovered to floating-point precision. For all 14 samples,
+the normalized Gram matrix follows an affine $1/(J+5)$ correction through
+$J=6$ to numerical precision; this does not establish the map for all shapes
+or a large-$J$ limit. Results are in the
+[shape-scan data](../../t5c_shape_recovery_results.json) and its
+[driver](../../t5c_shape_recovery_scan.py); definitions and scope are in the
+[calculation specification](./T5c-flux-covariance-volume-comparison.md).
 
-**Implementation.**
-1. From a coherent state, read off <tg-math>\langle J_i\rangle</tg-math> and the covariance matrices (`spin_vectors` gives the normals; note <tg-math>\langle J_i^x\rangle=\langle J_i^y\rangle=0</tg-math> identically by <tg-math>N_a/N_b</tg-math> conservation, so the one-point data alone is degenerate — the reconstruction must use the covariance / closure data).
-2. Reconstruct the dual polyhedron via the LQG closure condition + twist-angle map (edge vectors from face normals).
-3. Compute its classical volume <tg-math>V_{\text{cl}}</tg-math>.
-4. Compare <tg-math>(\gamma\hbar)^{3/2}\sqrt{|\langle q\rangle|}</tg-math> against <tg-math>V_{\text{cl}}</tg-math> as <tg-math>K</tg-math> grows.
-
-**Deliverable.** First distinguish the signed-mean proxy from a positive
-volume-operator expectation. Then compare each specified observable against
-the reconstructed classical volume for converged state families; a numerical
-match in a finite range does not prove a general classical limit.
+**Deliverable.** Validate positivity, rank, closure, and reconstruction
+residuals; test recovery of known input shapes; and compare
+$V_{\mathrm{cl}}$, $V_{\mathrm{proxy}}$, $\langle V_{\mathrm{RS}}\rangle$,
+and $\langle V_{\mathrm{AL}}\rangle$ for converged state families. AL
+orientation signs and the project-versus-physical prefactor remain explicit
+conventions to resolve. Definitions, $x,\varphi$ labels, spinors, pilot
+data, and remaining work are in the
+[T5c implementation specification](./T5c-flux-covariance-volume-comparison.md);
+shared notation is in the [volume numerical preliminaries](./volume-numerical-preliminaries.md).
 
 ---
 
@@ -157,7 +174,7 @@ families; it is not a positive measure on the complement of
    plane/reference controls before generalizing either result.
 3. **Run T5d with controls.** Include positive real, mixed-sign real, and complex planes. Define a gauge-invariant phase variable before fitting any onset.
 4. **Complete T5c and the full quantum T6 reconstruction.** Compare explicitly named quantum observables with a reconstructed classical polyhedron and test state-family dependence.
-5. **Scope the next T7 experiment.** The existing T7e result is beta-flat for fixed-$K$ support. Proceed only with a physically justified multi-$K$ coherent reference or non-uniform-frequency Hamiltonian, and predefine cutoff and temperature convergence checks.
+5. **Scope the next T7 study.** The existing T7e result is beta-flat for fixed-$K$ support. Proceed only with a physically justified multi-$K$ coherent reference or non-uniform-frequency Hamiltonian, and predefine cutoff and temperature convergence checks.
 6. **Extend T5e if it changes the claim.** Current converged records reach $K=24$; larger-$K$ work should test the two observed families separately.
 7. **Do T5f after the geometric observables are stable.** Map the positive-cell data to scattering invariants and amplituhedron regions.
 8. **Use T5g as enabling work.** Profile $n=10$–$12$ only where it unlocks one of the preceding physics questions.
@@ -178,11 +195,11 @@ independent SciPy cross-check. Generality across planes remains open.
   protocol and findings are in `red-team-audit.md` and
   `verification-protocol.md`.
 - **Code must be checkpointable/resumable** if any scan exceeds ~10 min (standing workspace rule).
-- **Reference-state caveat** (applies to every experiment): an all-<tg-math>a</tg-math> reference (<tg-math>N_b=0</tg-math>) gives <tg-math>\langle q\rangle=0</tg-math> regardless of the plane. Use `vertex_reference` (or the Rust equivalent), which places <tg-math>b</tg-math>-bosons on the measured triple, for the recorded signed-mean comparisons.
+- **Reference-state caveat** (applies to every signed-mean study): an all-<tg-math>a</tg-math> reference (<tg-math>N_b=0</tg-math>) gives <tg-math>\langle q\rangle=0</tg-math> regardless of the plane. Use `vertex_reference` (or the Rust equivalent), which places <tg-math>b</tg-math>-bosons on the measured triple, for the recorded signed-mean comparisons.
 
 ---
 
-# Experiment Specifications — Follow-up Numerical Program
+# Study Specifications — Follow-up Numerical Program
 
 ## T5a: triple-volume correlations at n >= 5
 
@@ -276,3 +293,19 @@ unresolved (resource bound, ~10 GB/vector at the spec's uniform (1,1)
 reference). To sharpen the sign test, a future run should flip the
 perturbation sign per seed (deterministic sign control) or average
 signed-q coherence over >= 10 seeds.
+
+## Related documentation
+
+- [Shared volume numerical preliminaries](./volume-numerical-preliminaries.md)
+- [T5c detailed calculation specification](./T5c-flux-covariance-volume-comparison.md)
+- [Implemented volume operators and numerical checks](./volume-operator.md)
+- [T6 Minkowski polyhedron reconstruction](./T6-minkowski-polyhedron.md)
+- [Grassmannian plane embedding](./grassmannian-embedding.md)
+- [Fock-space state construction](./fock-space-construction.md)
+- [Verification protocol](./verification-protocol.md)
+- [Red-team audit and claim limits](./red-team-audit.md)
+- [Performance benchmarks](./performance-benchmarks.md)
+- [Thermofield-double program](./thermofield-double-volume.md)
+- [Open ideas](./open-ideas-park.md)
+- [Shape-scan evidence log](../../fl_volume_shape_scan_log.md)
+- [T5 registry and status](../tasks.md#t5-volume-positivity-numerical-studies)

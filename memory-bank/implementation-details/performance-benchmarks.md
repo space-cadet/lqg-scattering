@@ -61,3 +61,13 @@ expectation was not calculated in these benchmarks.
 ## Notes
 
 Initial benchmarks were recorded on 2026-09-19. The corrected values above were rerun on 2026-10-01. Times are single-run observations; memory targets were not remeasured.
+
+## Related documentation
+
+- [Shared volume numerical preliminaries](./volume-numerical-preliminaries.md)
+- [T5 volume-positivity studies](./volume-positivity-studies.md)
+- [Volume operator and active-block limit](./volume-operator.md)
+- [Rust port architecture](./rust-port-architecture.md)
+- [Verification protocol](./verification-protocol.md)
+- [Red-team audit](./red-team-audit.md)
+- [Thermofield-double numerical scope](./thermofield-double-volume.md)

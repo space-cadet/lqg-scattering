@@ -1,6 +1,6 @@
 # Fock Space Construction
 
-*Last Updated: 2026-10-02 12:22:16 IST*
+*Last Updated: 2026-10-03 IST*
 
 ## Overview
 
@@ -74,19 +74,37 @@ where $\{k_i\}$ are occupation numbers satisfying $\sum_i k_i = 2J$.
 
 ## Basis Enumeration
 
-The basis states are labeled by occupation numbers $(k_1, k_2, ..., k_n)$ with:
-- Constraint: $\sum_i k_i = 2J$
-- Dimension: $\binom{2J + n - 1}{n - 1}$
+At fixed total boson number $K$, let
+$k_i=n_{a_i}+n_{b_i}$ be the occupation on edge $i$. The edge-total labels
+satisfy $\sum_i k_i=K$ and have count
+$\binom{K+N-1}{N-1}$. These labels specify the face spins
+$j_i=k_i/2$; they do not count the full Schwinger oscillator basis.
+
+The Python `FockSpace(N, K_max)` container labels each oscillator occupation
+$(n_{a_1},n_{b_1},\ldots,n_{a_N},n_{b_N})$ with total number at most
+$K_{\max}$. Its ambient dimension is
+$\binom{2N+K_{\max}}{2N}$. The exact-$K$ sector inside it has dimension
+$\binom{2N+K-1}{2N-1}$. An FL fixed-area state with label $J$ has exact
+$K=K_{\mathrm{Fock}}=2J$ even though the container includes lower-number
+sectors.
+
+The Python constructor now recursively enumerates only occupation tuples
+whose total is at most $K_{\max}$, in the same lexicographic order as the
+previous Cartesian-product-and-filter construction. This avoids visiting
+invalid tuples while leaving the basis ordering and state vectors unchanged.
 
 ## Dimension Growth
 
-| n | dim(Fock) for J=1 | Notes |
-|---|-------------------|-------|
-| 4 | ~10 | Python manageable |
-| 5 | ~35 | Python manageable |
-| 6 | ~84 | Python slow |
-| 7 | ~165 | Python impractical |
-| 8 | ~286 | Requires Rust |
+For $N=4$, the dimensions relevant to the T5c shape scan are:
+
+| $J$ | $K=2J$ | Exact-$K$ oscillator sector | Ambient Python container |
+|---:|---:|---:|---:|
+| 1 | 2 | 36 | 45 |
+| 2 | 4 | 330 | 495 |
+| 3 | 6 | 1,716 | 3,003 |
+| 4 | 8 | 6,435 | 12,870 |
+| 5 | 10 | 19,448 | 43,758 |
+| 6 | 12 | 50,388 | 125,970 |
 
 ## Implementation
 
@@ -107,3 +125,14 @@ The basis states are labeled by occupation numbers $(k_1, k_2, ..., k_n)$ with:
 | J_+ \|k⟩ | $\sqrt{(k+1)(2j-k)} \|k+1⟩$ | Sparse shift matrix |
 | J_- \|k⟩ | $\sqrt{k(2j-k+1)} \|k-1⟩$ | Sparse shift matrix |
 | J_z \|k⟩ | $(j-k) \|k⟩$ | Diagonal matrix |
+
+## Related documentation
+
+- [Shared volume numerical preliminaries](./volume-numerical-preliminaries.md)
+- [T5 volume-positivity studies](./volume-positivity-studies.md)
+- [T5c FL state and covariance calculation](./T5c-flux-covariance-volume-comparison.md)
+- [Volume operator](./volume-operator.md)
+- [Grassmannian embedding](./grassmannian-embedding.md)
+- [Rust port architecture](./rust-port-architecture.md)
+- [Verification protocol](./verification-protocol.md)
+- [Thermofield-double construction](./thermofield-double-volume.md)
