@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120" role="img" aria-labelledby="title desc">
+  <title id="title">Repeated pair creation in a four-edge Freidel–Livine coherent intertwiner</title>
+  <desc id="desc">Four Schwinger-boson edges, the six pair choices in one F dagger insertion, representative pair choices after two insertions, and the J equals two FL coherent-intertwiner state.</desc>
+  <defs>
+    <linearGradient id="blue" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#a9dcff"/><stop offset="0.48" stop-color="#3988d9"/><stop offset="1" stop-color="#1454a2"/></linearGradient>
+    <linearGradient id="red" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#ffc1b8"/><stop offset="0.48" stop-color="#e15b54"/><stop offset="1" stop-color="#a82730"/></linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#496b91"/></marker>
+    <style>
+      .title { font: 700 34px Georgia, 'Times New Roman', serif; fill:#18212c; }
+      .sub { font: 20px Georgia, 'Times New Roman', serif; fill:#465463; }
+      .head { font: 700 22px Georgia, 'Times New Roman', serif; fill:#18212c; }
+      .body { font: 18px Georgia, 'Times New Roman', serif; fill:#283442; }
+      .small { font: 16px Georgia, 'Times New Roman', serif; fill:#465463; }
+      .math { font: 23px 'Times New Roman', Georgia, serif; fill:#151d27; }
+      .mathsmall { font: 19px 'Times New Roman', Georgia, serif; fill:#151d27; }
+      .edge { stroke:#1f2933; stroke-width:4; }
+      .mode { stroke:#788492; stroke-width:3; }
+      .empty { fill:#f7f9fb; stroke:#aeb8c2; stroke-width:3; }
+      .card { fill:#ffffff; stroke:#d4dce4; stroke-width:2; rx:18; }
+      .pair { fill:none; stroke:#54789e; stroke-width:3; }
+      .ghost { fill:none; stroke:#b8c6d4; stroke-width:2; stroke-dasharray:7 7; }
+      .node { fill:#fff; stroke:#667687; stroke-width:2; }
+      .bondA { fill:none; stroke:#3988d9; stroke-width:5; stroke-linecap:round; }
+      .bondB { fill:none; stroke:#e15b54; stroke-width:5; stroke-linecap:round; }
+    </style>
+  </defs>
+  <rect width="1600" height="1120" fill="#fbfcfd"/>
+  <text class="title" x="58" y="62">Repeated pair creation on four edges</text>
+  <text class="sub" x="58" y="99">Each insertion chooses an edge pair; the FL ket is the coherent sum over those choices.</text>
+
+  <!-- Panel 1: vacuum -->
+  <rect class="card" x="45" y="132" width="350" height="540"/>
+  <text class="head" x="68" y="172">1. Four-edge vacuum</text>
+  <text class="small" x="68" y="199">Independent empty a,b modes</text>
+  <g>
+    <text class="small" x="89" y="252">1</text><text class="small" x="163" y="252">2</text><text class="small" x="237" y="252">3</text><text class="small" x="311" y="252">4</text>
+    <line class="edge" x1="94" y1="265" x2="94" y2="503"/><line class="edge" x1="168" y1="265" x2="168" y2="503"/><line class="edge" x1="242" y1="265" x2="242" y2="503"/><line class="edge" x1="316" y1="265" x2="316" y2="503"/>
+    <text class="small" x="58" y="338">a</text><text class="small" x="58" y="431">b</text>
+    <line class="mode" x1="74" y1="332" x2="114" y2="332"/><line class="mode" x1="148" y1="332" x2="188" y2="332"/><line class="mode" x1="222" y1="332" x2="262" y2="332"/><line class="mode" x1="296" y1="332" x2="336" y2="332"/>
+    <line class="mode" x1="74" y1="425" x2="114" y2="425"/><line class="mode" x1="148" y1="425" x2="188" y2="425"/><line class="mode" x1="222" y1="425" x2="262" y2="425"/><line class="mode" x1="296" y1="425" x2="336" y2="425"/>
+    <circle class="empty" cx="94" cy="332" r="15"/><circle class="empty" cx="168" cy="332" r="15"/><circle class="empty" cx="242" cy="332" r="15"/><circle class="empty" cx="316" cy="332" r="15"/>
+    <circle class="empty" cx="94" cy="425" r="15"/><circle class="empty" cx="168" cy="425" r="15"/><circle class="empty" cx="242" cy="425" r="15"/><circle class="empty" cx="316" cy="425" r="15"/>
+  </g>
+  <text class="math" x="220" y="557" text-anchor="middle">|0⟩</text>
+  <text class="body" x="220" y="591" text-anchor="middle">No quanta; no pair chosen.</text>
+  <text class="small" x="220" y="624" text-anchor="middle">All four edges are available to F†.</text>
+
+  <!-- arrow -->
+  <path d="M 402 402 L 421 402" stroke="#8292a2" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Panel 2: one insertion -->
+  <rect class="card" x="430" y="132" width="350" height="540"/>
+  <text class="head" x="453" y="172">2. One insertion</text>
+  <text class="small" x="453" y="199">Example branch: choose pair (1,2)</text>
+  <g>
+    <text class="small" x="481" y="249">EDGE 1</text><text class="small" x="635" y="249">EDGE 2</text>
+    <line class="edge" x1="512" y1="267" x2="512" y2="513"/><line class="edge" x1="669" y1="267" x2="669" y2="513"/>
+    <text class="small" x="458" y="337">a</text><text class="small" x="458" y="463">b</text>
+    <line class="mode" x1="486" y1="331" x2="538" y2="331"/><line class="mode" x1="643" y1="331" x2="695" y2="331"/>
+    <line class="mode" x1="486" y1="457" x2="538" y2="457"/><line class="mode" x1="643" y1="457" x2="695" y2="457"/>
+    <path d="M 512 331 C 546 284, 628 411, 669 457" class="pair" marker-end="url(#arrow)"/>
+    <circle cx="512" cy="331" r="16" fill="url(#blue)"/><circle cx="669" cy="457" r="16" fill="url(#red)"/>
+    <text class="body" x="591" y="278" text-anchor="middle">+ a†₁ b†₂</text>
+    <text class="math" x="591" y="393" text-anchor="middle">−</text>
+    <path d="M 669 331 C 635 377, 551 409, 512 457" class="pair" marker-end="url(#arrow)"/>
+    <circle cx="669" cy="331" r="16" fill="url(#blue)"/><circle cx="512" cy="457" r="16" fill="url(#red)"/>
+    <text class="body" x="591" y="526" text-anchor="middle">a†₂ b†₁</text>
+  </g>
+  <text class="mathsmall" x="605" y="579" text-anchor="middle">F†₁₂ = a†₁b†₂ − a†₂b†₁</text>
+  <text class="small" x="605" y="615" text-anchor="middle">On four edges there are six pair choices.</text>
+  <text class="small" x="605" y="640" text-anchor="middle">This branch carries its spinor weight.</text>
+
+  <path d="M 787 402 L 806 402" stroke="#8292a2" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Panel 3: second insertion -->
+  <rect class="card" x="815" y="132" width="410" height="540"/>
+  <text class="head" x="838" y="172">3. Two insertions (J = 2)</text>
+  <text class="small" x="838" y="199">Three representative pair-choice patterns</text>
+  <g>
+    <rect x="838" y="218" width="364" height="112" rx="12" fill="#f7f9fb" stroke="#e0e6ec"/>
+    <text class="body" x="855" y="246">Same pair twice: (12,12)</text>
+    <line class="edge" x1="895" y1="262" x2="895" y2="312"/><line class="edge" x1="985" y1="262" x2="985" y2="312"/><line class="edge" x1="1075" y1="262" x2="1075" y2="312"/><line class="edge" x1="1165" y1="262" x2="1165" y2="312"/>
+    <path d="M 895 273 Q 940 225 985 273" class="bondA"/><path d="M 895 294 Q 940 246 985 294" class="bondB"/>
+
+    <rect x="838" y="342" width="364" height="112" rx="12" fill="#f7f9fb" stroke="#e0e6ec"/>
+    <text class="body" x="855" y="370">Disjoint pairs: (12,34)</text>
+    <line class="edge" x1="895" y1="386" x2="895" y2="436"/><line class="edge" x1="985" y1="386" x2="985" y2="436"/><line class="edge" x1="1075" y1="386" x2="1075" y2="436"/><line class="edge" x1="1165" y1="386" x2="1165" y2="436"/>
+    <path d="M 895 407 Q 940 362 985 407" class="bondA"/><path d="M 1075 421 Q 1120 376 1165 421" class="bondB"/>
+
+    <rect x="838" y="466" width="364" height="112" rx="12" fill="#f7f9fb" stroke="#e0e6ec"/>
+    <text class="body" x="855" y="494">Shared edge: (12,13)</text>
+    <line class="edge" x1="895" y1="510" x2="895" y2="560"/><line class="edge" x1="985" y1="510" x2="985" y2="560"/><line class="edge" x1="1075" y1="510" x2="1075" y2="560"/><line class="edge" x1="1165" y1="510" x2="1165" y2="560"/>
+    <path d="M 895 536 Q 940 493 985 536" class="bondA"/><path d="M 895 551 Q 985 482 1075 551" class="bondB"/>
+  </g>
+  <text class="small" x="1020" y="613" text-anchor="middle">The bonds mark chosen edge pairs;</text>
+  <text class="small" x="1020" y="638" text-anchor="middle">each bond expands into its ± singlet channels.</text>
+
+  <path d="M 1232 402 L 1251 402" stroke="#8292a2" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Panel 4: resulting state -->
+  <rect class="card" x="1260" y="132" width="295" height="540"/>
+  <text class="head" x="1282" y="172">4. Coherent sum</text>
+  <text class="small" x="1282" y="199">All pair patterns add with</text>
+  <text class="small" x="1282" y="222">their z-weights and signs.</text>
+  <g opacity="0.88">
+    <line class="edge" x1="1304" y1="275" x2="1304" y2="438"/><line class="edge" x1="1371" y1="275" x2="1371" y2="438"/><line class="edge" x1="1438" y1="275" x2="1438" y2="438"/><line class="edge" x1="1505" y1="275" x2="1505" y2="438"/>
+    <text class="small" x="1304" y="263" text-anchor="middle">1</text><text class="small" x="1371" y="263" text-anchor="middle">2</text><text class="small" x="1438" y="263" text-anchor="middle">3</text><text class="small" x="1505" y="263" text-anchor="middle">4</text>
+    <path d="M 1304 304 Q 1338 276 1371 304" class="ghost"/><path d="M 1304 332 Q 1371 285 1438 332" class="ghost"/><path d="M 1304 360 Q 1405 283 1505 360" class="ghost"/>
+    <path d="M 1371 388 Q 1405 354 1438 388" class="ghost"/><path d="M 1371 412 Q 1438 360 1505 412" class="ghost"/><path d="M 1438 430 Q 1471 399 1505 430" class="ghost"/>
+  </g>
+  <text class="mathsmall" x="1407" y="492" text-anchor="middle">(F†_z)² |0⟩</text>
+  <text class="small" x="1407" y="526" text-anchor="middle">6 possible pairs per insertion;</text>
+  <text class="small" x="1407" y="551" text-anchor="middle">21 pair-choice monomials at J=2</text>
+  <text class="small" x="1407" y="576" text-anchor="middle">before collecting equal occupations.</text>
+  <rect x="1290" y="598" width="235" height="45" rx="9" fill="#eef4fa" stroke="#d2e0ed"/>
+  <text class="body" x="1407" y="627" text-anchor="middle">4 created bosons → J=2</text>
+
+  <!-- Exact algebra strip -->
+  <rect x="45" y="700" width="1510" height="365" rx="18" fill="#f1f5f8" stroke="#d4dce4" stroke-width="2"/>
+  <text class="head" x="72" y="741">Exact operators and one worked component</text>
+  <line x1="560" y1="760" x2="560" y2="1038" stroke="#d0d9e1" stroke-width="2"/>
+  <line x1="1065" y1="760" x2="1065" y2="1038" stroke="#d0d9e1" stroke-width="2"/>
+
+  <text class="mathsmall" x="75" y="790">F†_(ij) = a†_i b†_j − a†_j b†_i</text>
+  <text class="small" x="75" y="828">Blue bead: one a† quantum</text>
+  <circle cx="92" cy="861" r="13" fill="url(#blue)"/>
+  <text class="small" x="116" y="867">Red bead: one b† quantum</text>
+  <circle cx="92" cy="900" r="13" fill="url(#red)"/>
+  <text class="small" x="75" y="950">The minus sign swaps which edge</text>
+  <text class="small" x="75" y="976">gets a and b: the SU(2) singlet.</text>
+  <text class="small" x="75" y="1020">Each insertion creates one pair.</text>
+
+  <text class="mathsmall" x="590" y="790">F†_z = (1/2) Σ_(i,j) z_(ji) F†_(ij)</text>
+  <text class="mathsmall" x="590" y="831">= Σ_(i&lt;j) ζ_(ij) F†_(ij),  ζ_(ij) = z_(ji)</text>
+  <text class="mathsmall" x="590" y="886">(F†_z)^2/2! = (1/2) Σ_p ζ_p^2 (F†_p)^2</text>
+  <text class="mathsmall" x="705" y="919">+ Σ_(p&lt;q) ζ_p ζ_q F†_p F†_q</text>
+  <text class="small" x="590" y="965">For four edges: p = {12,13,14,23,24,34}.</text>
+  <text class="small" x="590" y="994">6 repeated-pair + 15 distinct-pair terms = 21.</text>
+
+  <text class="mathsmall" x="1090" y="790">|J=2,z_i&gt;_FL = (1/(2√3))(F†_z)^2 |0&gt;</text>
+  <text class="body" x="1090" y="834">Repeated pair (1,2):</text>
+  <text class="mathsmall" x="1090" y="870">(F†_(12))^2|0&gt; = (a†_1)^2(b†_2)^2|0&gt;</text>
+  <text class="mathsmall" x="1193" y="900">− 2a†_1a†_2b†_1b†_2|0&gt;</text>
+  <text class="mathsmall" x="1193" y="930">+ (a†_2)^2(b†_1)^2|0&gt;</text>
+  <text class="small" x="1090" y="973">After normalization this pair-only branch is</text>
+  <text class="mathsmall" x="1090" y="1007">(|1,1&gt;_1|1,−1&gt;_2 − |1,0&gt;_1|1,0&gt;_2</text>
+  <text class="mathsmall" x="1090" y="1035">+ |1,−1&gt;_1|1,1&gt;_2)/√3.</text>
+</svg>

@@ -1,5 +1,5 @@
 # Task Registry
-*Last Updated: 2026-10-03 18:53:30 IST*
+*Last Updated: 2026-10-04 01:16:37 IST*
 
 ## Active Tasks
 | ID | Title | Status | Priority | Started | Dependencies | Owner |
@@ -288,7 +288,7 @@ truncation. See `memory-bank/implementation-details/red-team-audit.md`.
 - T5f: Amplituhedron kinematics — OPEN; map positive-cell data to scattering regions.
 - T5g: Performance frontier — OPEN; n=10–12 Rust profiling if required by the physics runs.
 - T6: Minkowski polyhedron reconstruction — kinematic (T5a′, feasible now) + full quantum (needs T5c covariance machinery). Spec: `implementation-details/T6-minkowski-polyhedron.md`; see also the [T5c specification](implementation-details/T5c-flux-covariance-volume-comparison.md).
-- T7: Thermal and TFD program — **IN PROGRESS; T7a–T7e results recorded for the tested constructions.** T7a reports zero mean signed triple grasp and nonzero $q^2$ fluctuations; the Gibbs cutoff is quantitatively reliable for $\beta\gtrsim1$ and qualitative at $\beta\leq0.5$. T7b–T7c report Gibbs purification and $\langle q_Lq_R\rangle=-\mathrm{Tr}(\rho_\beta q^2)$ with the same $q$ matrix on both copies; the sign depends on that right-operator convention. The $\beta\to\infty$ state is the Fock vacuum. T7d reports an $e^{-3\beta}$ onset in the tested Gibbs ensemble. T7e reports approximately $\epsilon^2$ correlator change and $\beta$-flatness for the tested fixed-$K$ construction; a general $V(\epsilon,T)$ law remains open. See `implementation-details/thermofield-double-volume.md` and `t7a_notes.md`–`t7e_notes.md`.
+- T7: Thermal and TFD program — **IN PROGRESS; T7a–T7e results recorded for the tested constructions.** T7a reports zero mean signed triple grasp and nonzero $q^2$ fluctuations; the Gibbs cutoff is quantitatively reliable for $\beta\gtrsim1$ and qualitative at $\beta\leq0.5$. T7b–T7c report Gibbs purification and $\langle q_Lq_R\rangle=-\mathrm{Tr}(\rho_\beta q^2)$ with the same $q$ matrix on both copies; the sign depends on that right-operator convention. The $\beta\to\infty$ state is the Fock vacuum. T7d reports an $e^{-3\beta}$ onset in the tested Gibbs ensemble. T7e reports approximately $\epsilon^2$ correlator change and $\beta$-flatness for the tested fixed-$K$ construction; a general $V(\epsilon,T)$ law remains open. The thermal-intertwiners draft is copied to `paper/thermal-intertwiners/`; the draft-specific thermal ket remains unimplemented. See `implementation-details/thermofield-double-volume.md` and `t7a_notes.md`–`t7e_notes.md`.
 
 **Notes**:
 Current supported result: real-plane states have zero signed triple-grasp mean,

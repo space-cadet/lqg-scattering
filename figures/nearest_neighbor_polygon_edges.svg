@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1280" viewBox="0 0 1800 1280" role="img" aria-labelledby="title desc">
+  <title id="title">Nearest-neighbor F-pair creation on polygon edges</title>
+  <desc id="desc">A six-edge polygon whose sides are the LQG edges. Dashed corner links indicate pair creation only between consecutive physical edges. Insets show the two singlet channels and repeated pair patterns.</desc>
+  <defs>
+    <linearGradient id="blue" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#a9dcff"/><stop offset="0.48" stop-color="#3988d9"/><stop offset="1" stop-color="#1454a2"/></linearGradient>
+    <linearGradient id="red" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#ffc1b8"/><stop offset="0.48" stop-color="#e15b54"/><stop offset="1" stop-color="#a82730"/></linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4d7196"/></marker>
+    <style>
+      .title { font: 700 36px Georgia, 'Times New Roman', serif; fill:#18212c; }
+      .subtitle { font: 21px Georgia, 'Times New Roman', serif; fill:#465463; }
+      .head { font: 700 24px Georgia, 'Times New Roman', serif; fill:#18212c; }
+      .body { font: 19px Georgia, 'Times New Roman', serif; fill:#283442; }
+      .small { font: 16px Georgia, 'Times New Roman', serif; fill:#465463; }
+      .math { font: 22px 'Times New Roman', Georgia, serif; fill:#151d27; }
+      .mathsmall { font: 19px 'Times New Roman', Georgia, serif; fill:#151d27; }
+      .card { fill:#fff; stroke:#d3dce5; stroke-width:2; }
+      .physical { stroke:#202a34; stroke-width:8; stroke-linecap:round; }
+      .edgeLabel { font: 700 17px Georgia, 'Times New Roman', serif; fill:#1c2c3b; }
+      .pair { fill:none; stroke:#91a8be; stroke-width:4; stroke-dasharray:9 8; }
+      .pairHot { fill:none; stroke:#4e83b7; stroke-width:7; stroke-linecap:round; }
+      .channelBlue { fill:none; stroke:#3988d9; stroke-width:4; stroke-linecap:round; }
+      .channelRed { fill:none; stroke:#e15b54; stroke-width:4; stroke-linecap:round; }
+    </style>
+  </defs>
+  <rect width="1800" height="1280" fill="#fbfcfd"/>
+  <text class="title" x="55" y="60">Nearest-neighbor pair creation on polygon edges</text>
+  <text class="subtitle" x="55" y="99">Six-edge illustration: black polygon sides are the LQG edges eᵢ; dashed corner links act between consecutive sides.</text>
+
+  <!-- Main n-gon: the physical edges are its sides. -->
+  <rect class="card" x="40" y="130" width="770" height="850" rx="18"/>
+  <text class="head" x="68" y="172">Six physical edges arranged as a hexagon</text>
+  <text class="small" x="68" y="200">Each side carries its own (aᵢ,bᵢ) Schwinger modes.</text>
+  <g transform="translate(0 30)">
+  <!-- Nearest-neighbor F links: they touch each side near its shared corner. -->
+  <path class="pair" d="M 581 329 C 655 299 710 352 635 423"/>
+  <path class="pair" d="M 635 548 C 710 570 690 638 581 641"/>
+  <path class="pair" d="M 581 673 C 560 760 380 760 359 673"/>
+  <path class="pair" d="M 259 641 C 150 660 130 575 205 548"/>
+  <path class="pair" d="M 205 423 C 130 400 160 320 259 329"/>
+  <path class="pair" d="M 366 266 C 380 196 460 196 474 266"/>
+  <!-- The polygon sides: actual LQG edges. -->
+  <path class="physical" d="M 420 235 L 635 360 L 635 610 L 420 735 L 205 610 L 205 360 Z" fill="none"/>
+  <!-- Side labels, centered on the actual edges. -->
+  <g>
+    <rect x="489" y="278" width="78" height="31" rx="9" fill="#fff" stroke="#aab7c4"/><text class="edgeLabel" x="528" y="300" text-anchor="middle">edge e₁</text>
+    <rect x="650" y="469" width="78" height="31" rx="9" fill="#fff" stroke="#aab7c4"/><text class="edgeLabel" x="689" y="491" text-anchor="middle">edge e₂</text>
+    <rect x="489" y="658" width="78" height="31" rx="9" fill="#fff" stroke="#aab7c4"/><text class="edgeLabel" x="528" y="680" text-anchor="middle">edge e₃</text>
+    <rect x="273" y="658" width="78" height="31" rx="9" fill="#fff" stroke="#aab7c4"/><text class="edgeLabel" x="312" y="680" text-anchor="middle">edge e₄</text>
+    <rect x="111" y="469" width="78" height="31" rx="9" fill="#fff" stroke="#aab7c4"/><text class="edgeLabel" x="150" y="491" text-anchor="middle">edge e₅</text>
+    <rect x="273" y="278" width="78" height="31" rx="9" fill="#fff" stroke="#aab7c4"/><text class="edgeLabel" x="312" y="300" text-anchor="middle">edge e₆</text>
+  </g>
+  <!-- Each polygon corner represents one allowed nearest-neighbor F pair. -->
+  <g fill="#fbfcfd" stroke="#6e8cab" stroke-width="3">
+    <circle cx="635" cy="360" r="11"/><circle cx="635" cy="610" r="11"/><circle cx="420" cy="735" r="11"/>
+    <circle cx="205" cy="610" r="11"/><circle cx="205" cy="360" r="11"/><circle cx="420" cy="235" r="11"/>
+  </g>
+  <path class="pairHot" d="M 581 329 C 655 299 710 352 635 423"/>
+  <g fill="#fff" stroke="#4e83b7" stroke-width="2">
+    <rect x="680" y="365" width="94" height="30" rx="9"/><rect x="674" y="650" width="94" height="30" rx="9"/>
+    <rect x="377" y="790" width="86" height="30" rx="9"/><rect x="78" y="650" width="94" height="30" rx="9"/>
+    <rect x="74" y="365" width="94" height="30" rx="9"/><rect x="377" y="218" width="86" height="30" rx="9"/>
+  </g>
+  <g class="small" text-anchor="middle">
+    <text x="727" y="386">F†₁₂</text><text x="721" y="671">F†₂₃</text><text x="420" y="841">F†₃₄</text>
+    <text x="125" y="671">F†₄₅</text><text x="121" y="386">F†₅₆</text><text x="420" y="244">F†₆₁</text>
+  </g>
+  </g>
+  <text class="small" x="68" y="910">Solid sides = physical edges. Dashed corner links = allowed pair operators.</text>
+  <text class="small" x="68" y="938">One insertion is a superposition over all six corners; the blue link</text>
+  <text class="small" x="68" y="964">highlights the example F†₁₂ acting on edges e₁ and e₂.</text>
+
+  <!-- Local singlet channels on two adjacent physical edges. -->
+  <rect class="card" x="830" y="130" width="930" height="405" rx="18"/>
+  <text class="head" x="858" y="172">One selected corner: the two antisymmetric channels</text>
+  <text class="small" x="858" y="200">The two black sides are physical edges e₁ and e₂ meeting at a corner.</text>
+  <!-- V-shaped physical edges and oscillator modes -->
+  <line class="physical" x1="1002" y1="470" x2="1165" y2="270"/>
+  <line class="physical" x1="1165" y1="270" x2="1328" y2="470"/>
+  <g stroke="#768594" stroke-width="3">
+    <line x1="1030" y1="430" x2="1080" y2="430"/><line x1="1080" y1="370" x2="1122" y2="370"/>
+    <line x1="1208" y1="370" x2="1250" y2="370"/><line x1="1250" y1="430" x2="1300" y2="430"/>
+  </g>
+  <circle cx="1055" cy="430" r="13" fill="url(#blue)"/><circle cx="1100" cy="370" r="13" fill="url(#red)"/>
+  <circle cx="1229" cy="370" r="13" fill="url(#blue)"/><circle cx="1275" cy="430" r="13" fill="url(#red)"/>
+  <rect x="923" y="414" width="67" height="27" rx="7" fill="#fff" stroke="#ccd6df"/><text class="small" x="956" y="433" text-anchor="middle">a₁†</text>
+  <rect x="1067" y="330" width="67" height="27" rx="7" fill="#fff" stroke="#ccd6df"/><text class="small" x="1100" y="349" text-anchor="middle">b₁†</text>
+  <rect x="1220" y="330" width="67" height="27" rx="7" fill="#fff" stroke="#ccd6df"/><text class="small" x="1253" y="349" text-anchor="middle">a₂†</text>
+  <rect x="1310" y="414" width="67" height="27" rx="7" fill="#fff" stroke="#ccd6df"/><text class="small" x="1343" y="433" text-anchor="middle">b₂†</text>
+  <path class="channelBlue" d="M 1055 430 C 1105 315 1180 315 1275 430" marker-end="url(#arrow)"/>
+  <path class="channelRed" d="M 1229 370 C 1185 295 1120 295 1100 370" marker-end="url(#arrow)"/>
+  <text class="body" x="1450" y="315">+ a†₁ b†₂</text>
+  <text class="body" x="1450" y="358">− a†₂ b†₁</text>
+  <text class="math" x="1450" y="411">F†₁₂ = a†₁b†₂ − a†₂b†₁</text>
+  <text class="small" x="1450" y="445">Blue = a†; red = b†.</text>
+  <text class="small" x="1450" y="472">Each selected pair creates</text>
+  <text class="small" x="1450" y="496">one SU(2)-singlet pair.</text>
+
+  <!-- Three J=2 link patterns. -->
+  <rect class="card" x="830" y="555" width="930" height="395" rx="18"/>
+  <text class="head" x="858" y="597">Two insertions: representative terms for the six-gon</text>
+  <text class="small" x="858" y="624">Colors distinguish the first and second pair-creation events.</text>
+  <!-- Thumbnail 1: repeated same pair. Base hexagon -->
+  <g transform="translate(1000 760)">
+    <path d="M 0 -78 L 68 -39 L 68 39 L 0 78 L -68 39 L -68 -39 Z" fill="none" stroke="#26323e" stroke-width="4"/>
+    <path d="M 51 -49 C 95 -70 111 -38 68 -20" class="channelBlue"/>
+    <path d="M 47 -54 C 108 -77 123 -33 73 -12" class="channelRed"/>
+  </g>
+  <text class="body" x="1000" y="866" text-anchor="middle">same corner twice</text>
+  <text class="mathsmall" x="1000" y="895" text-anchor="middle">(F†₁₂)²</text>
+
+  <!-- Thumbnail 2: adjacent pairings share e2. -->
+  <g transform="translate(1295 760)">
+    <path d="M 0 -78 L 68 -39 L 68 39 L 0 78 L -68 39 L -68 -39 Z" fill="none" stroke="#26323e" stroke-width="4"/>
+    <path d="M 51 -49 C 95 -70 111 -38 68 -20" class="channelBlue"/>
+    <path d="M 68 20 C 105 36 88 75 51 49" class="channelRed"/>
+  </g>
+  <text class="body" x="1295" y="866" text-anchor="middle">adjacent pairings share e₂</text>
+  <text class="mathsmall" x="1295" y="895" text-anchor="middle">F†₁₂ F†₂₃</text>
+
+  <!-- Thumbnail 3: disjoint pairings. -->
+  <g transform="translate(1590 760)">
+    <path d="M 0 -78 L 68 -39 L 68 39 L 0 78 L -68 39 L -68 -39 Z" fill="none" stroke="#26323e" stroke-width="4"/>
+    <path d="M 51 -49 C 95 -70 111 -38 68 -20" class="channelBlue"/>
+    <path d="M -51 49 C -110 69 -115 28 -68 20" class="channelRed"/>
+  </g>
+  <text class="body" x="1590" y="866" text-anchor="middle">disjoint pairings</text>
+  <text class="mathsmall" x="1590" y="895" text-anchor="middle">F†₁₂ F†₄₅</text>
+
+  <text class="small" x="858" y="929">At J=2 these are examples among 21 pair-choice monomials (6 repeated + 15 distinct).</text>
+
+  <!-- Exact ring-restricted state and repeated-pair component. -->
+  <rect x="40" y="1005" width="1720" height="270" rx="18" fill="#f1f5f8" stroke="#d3dce5" stroke-width="2"/>
+  <text class="head" x="68" y="1045">The ring-restricted state</text>
+  <text class="mathsmall" x="68" y="1085">F†_nn = sum_(i=1)^n w_i F†_(i,i+1), with i+1 cyclic mod n</text>
+  <text class="math" x="68" y="1123">|Psi_nn(J)&gt; = N_J (F†_nn)^J/J! |0&gt;</text>
+  <text class="small" x="68" y="1160">Only neighboring physical edges are paired; the ring restriction</text>
+  <text class="small" x="68" y="1186">does not impose FL spinor geometry or closure.</text>
+  <line x1="900" y1="1030" x2="900" y2="1255" stroke="#d0d9e1" stroke-width="2"/>
+  <text class="body" x="935" y="1045">Repeated-pair component: bosonic multiplicity is visible in the middle term.</text>
+  <text class="mathsmall" x="935" y="1087">(F†₁₂)²|0⟩ = (a†₁)²(b†₂)²|0⟩ − 2a†₁a†₂b†₁b†₂|0⟩</text>
+  <text class="mathsmall" x="1147" y="1120">+ (a†₂)²(b†₁)²|0⟩</text>
+  <text class="small" x="935" y="1172">Each F† adds two Schwinger quanta, so J=2 has four total quanta.</text>
+  <text class="small" x="935" y="1202">The full state is the weighted sum over all cyclic neighboring-pair choices.</text>
+</svg>

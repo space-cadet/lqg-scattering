@@ -1,6 +1,6 @@
 # Active Context
 
-*Last Updated: 2026-10-03 18:53:30 IST*
+*Last Updated: 2026-10-04 01:16:37 IST*
 
 ## Current Focus
 **Primary Task:** T1a — extend the positive FL volume numerics from the regular-tetrahedron area sweep to shape and boundary behavior.
@@ -18,7 +18,9 @@
 - T1b's positive-volume follow-up is complete for two $N=4$, $K=6$ real-plane states inside and outside the positive cell; both RS and AL expectations are nonzero and independently cross-checked.
 - Python and Rust implementations exist. The old n=4 comparison shared a truncated Taylor state. Corrected Rust scans now cover n=4..8; SciPy independently checks n=4,5,7,8.
 - `manuscript.md` contains results through T7e but needs corrected conclusions, caveats, independent review, and circulation.
-- The checkout is on `main` at `e0d1ed7`; the current working tree contains the shared spectral zero-mode cutoff, refreshed sweep/shape data, T1b results, and T5c shape-recovery artifacts. The latest visual dashboard update is separately deployed at `9c6670c`; the refreshed numerical data remain distinct from that presentation update.
+- At this session's scan baseline, the checkout was on `main` at `c64de52` with no tracked modifications; pre-existing untracked content was under `__pycache__/`, `dashboard/__pycache__/`, and `figures/`. The latest visual dashboard update is separately deployed at `9c6670c`.
+- The thermal-intertwiners paper source and assets are copied into `paper/thermal-intertwiners/`; this does not implement or validate its proposed thermal ket.
+- The constructive F-pair sewing discussion is recorded in [the dialogue note](implementation-details/constructive-geometric-sewing-dialogue.md) and [the session transcript](sessions/2026-10-04-geometric-construction-transcript.md). Triangle and tetrahedron sewing remain conceptual; metric shape and volume have not been validated, and no task ID was assigned.
 
 ## Current Decisions
 - The corrected T5a magnetization sweep converged in 39–41 terms and four sectors matched SciPy exponentiation. Retain its one-plane scope.

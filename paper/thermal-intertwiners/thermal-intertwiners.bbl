@@ -1,0 +1,48 @@
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
+
+\bibitem{Khanna2009Thermal}
+F.~C. Khanna, A.~P.~C. Malbouisson, J.~M.~C. Malbouisson, and A.~E. Santana,
+  {\em Thermal quantum field theory: algebraic aspects and applications}.
+\newblock World Scientific, Hackensack, NJ, 2009.
+
+\bibitem{Takahashi1996Thermo}
+Y.~Takahashi and H.~Umezawa, {\it Thermo field dynamics},  {\em International
+  Journal of Modern Physics B} {\bf 10} (June, 1996) 1755--1805.
+
+\bibitem{Guo2020Circuit}
+M.~Guo, Z.-Y. Fan, J.~Jiang, X.~Liu, and B.~Chen, {\it Circuit complexity for
+  generalised coherent states in thermal field dynamics},  {\em Physical Review
+  D} {\bf 101} (June, 2020) 126007. arXiv: 2004.00344.
+
+\bibitem{Freidel2009The-Fine}
+L.~Freidel and E.~R. Livine, {\it {The Fine Structure of SU(2) Intertwiners
+  from U(N) Representations}},  \href{http://arxiv.org/abs/0911.3553}{{\tt
+  arXiv:0911.3553}}.
+
+\bibitem{Vaid2014LQG-for-the-Bewildered}
+D.~Vaid and S.~Bilson-Thompson, {\em LQG for the Bewildered}.
+\newblock Springer Nature, Feb., 2014.
+
+\bibitem{Freidel2010Twisted}
+L.~Freidel and S.~Speziale, {\it Twisted geometries: A geometric
+  parametrisation of {SU}(2) phase space},  {\em Physical Review D} {\bf 82}
+  (Sept., 2010) [\href{http://arxiv.org/abs/1001.2748}{{\tt arXiv:1001.2748}}].
+
+\bibitem{Freidel2010From}
+L.~Freidel and S.~Speziale, {\it From twistors to twisted geometries},  {\em
+  Physical Review D} {\bf 82} (June, 2010)
+  [\href{http://arxiv.org/abs/1006.0199}{{\tt arXiv:1006.0199}}].
+
+\bibitem{Freidel2010UN-Coherent}
+L.~Freidel and E.~R. Livine, {\it {U(N) Coherent States for Loop Quantum
+  Gravity}},  \href{http://arxiv.org/abs/1005.2090}{{\tt arXiv:1005.2090}}.
+
+\bibitem{Perelomov1977Generalized}
+A.~M. Perelomov, {\it Generalized coherent states and some of their
+  applications},  {\em Soviet Physics Uspekhi} (September, 1977) 703+.
+
+\bibitem{Livine2011Loop}
+E.~R. Livine and J.~Tambornino, {\it Loop gravity in terms of spinors},
+  \href{http://arxiv.org/abs/1109.3572}{{\tt arXiv:1109.3572}}.
+
+\end{thebibliography}\endgroup
