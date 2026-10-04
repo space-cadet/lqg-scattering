@@ -1,5 +1,5 @@
 # Task Registry
-*Last Updated: 2026-10-04 01:16:37 IST*
+*Last Updated: 2026-10-04 19:51:53 IST*
 
 ## Active Tasks
 | ID | Title | Status | Priority | Started | Dependencies | Owner |
@@ -9,6 +9,7 @@
 | T3d/T3e | Converged baseline verification and scan; n=6 independent check open | 🔄 IN PROGRESS | HIGH | 2026-10-01 | T3c | Deepak |
 | T5 | Volume–positivity numerical studies | 🔄 IN PROGRESS | HIGH | 2026-09-19 | T3c, T3d, T3e | Deepak |
 | T7 | Thermal and TFD research program | 🔄 IN PROGRESS | HIGH | 2026-09-20 | T3c | Deepak |
+| T8 | Amplituhedron Program | 🔄 IN PROGRESS | MEDIUM | 2026-10-04 | T1, T2 | Deepak |
 
 ## Task Details
 
@@ -285,7 +286,6 @@ truncation. See `memory-bank/implementation-details/red-team-audit.md`.
 - T5c: Flux-covariance geometry and volume comparison — OPEN. The selected-shape follow-up evaluates covariance geometry for 14 shapes at $J=1,\ldots,6$ (84 cases); maximum closure and reconstructed face-Gram residuals are $2.0\times10^{-14}$ and $1.6\times10^{-14}$. The regular shape is recovered to floating-point precision, but the sampled correction does not establish a general or large-$J$ state-to-geometry map. Positive-volume comparisons cover five interior shapes at $J=1,2,3$; boundary cases are covariance-only, and the AL embedding remains unresolved. Reusable shape previews are deployed with the dashboard; T5c remains open. See [T5c implementation details](implementation-details/T5c-flux-covariance-volume-comparison.md) and [shared preliminaries](implementation-details/volume-numerical-preliminaries.md).
 - T5d: Cocycle barrier / distance-to-cell scaling — OPEN. Define a gauge-invariant defect and test its relation to ⟨q⟩.
 - T5e: Large-K semiclassics — target K=20–50; recorded study reaches K=24. ✅ DONE for the recorded families/range (27a761a, orx/t5e, Muse Spark 1.3). **The K^1.5 law is not supported by these runs.** Two families: (1) **vertex-scaled** (b-bosons on the measured triple, K=4+3s): ⟨q⟩ is linear in s (q/s=-1.059e-3 to 9 digits), so V~(K-4)^0.5 over the measured range. (2) **uniform M=0** (fixed shape, K=8..24): q=0 to solver precision (|q|<=9e-13). Classical V~r^3 would require ⟨q⟩~K^3; these tested families show ⟨q⟩~K^1 or approximately zero. This does not rule out other state families or higher K. **Caveat:** first run used Taylor cap 2K+4 and produced truncation-shifted results; recorded run uses cap 8K+50 plus a convergence assertion. T5a Rust-driver magnitudes at K=12..14 predate the fix and may be shifted. The on-the-fly engine was compared with the stored engine at K=8,12.
-- T5f: Amplituhedron kinematics — OPEN; map positive-cell data to scattering regions.
 - T5g: Performance frontier — OPEN; n=10–12 Rust profiling if required by the physics runs.
 - T6: Minkowski polyhedron reconstruction — kinematic (T5a′, feasible now) + full quantum (needs T5c covariance machinery). Spec: `implementation-details/T6-minkowski-polyhedron.md`; see also the [T5c specification](implementation-details/T5c-flux-covariance-volume-comparison.md).
 - T7: Thermal and TFD program — **IN PROGRESS; T7a–T7e results recorded for the tested constructions.** T7a reports zero mean signed triple grasp and nonzero $q^2$ fluctuations; the Gibbs cutoff is quantitatively reliable for $\beta\gtrsim1$ and qualitative at $\beta\leq0.5$. T7b–T7c report Gibbs purification and $\langle q_Lq_R\rangle=-\mathrm{Tr}(\rho_\beta q^2)$ with the same $q$ matrix on both copies; the sign depends on that right-operator convention. The $\beta\to\infty$ state is the Fock vacuum. T7d reports an $e^{-3\beta}$ onset in the tested Gibbs ensemble. T7e reports approximately $\epsilon^2$ correlator change and $\beta$-flatness for the tested fixed-$K$ construction; a general $V(\epsilon,T)$ law remains open. The thermal-intertwiners draft is copied to `paper/thermal-intertwiners/`; the draft-specific thermal ket remains unimplemented. See `implementation-details/thermofield-double-volume.md` and `t7a_notes.md`–`t7e_notes.md`.
@@ -296,6 +296,14 @@ including real planes outside Gr₊(2,N). This does not imply zero positive
 volume; the tested positive $n=4$ state has nonzero $\langle q^2\rangle$.
 Claim promotion requires explicit observable definitions and independent
 convergence evidence.
+
+### T8: Amplituhedron Program
+**Description**: Organize the project's LQG–Grassmannian/amplituhedron questions, with the published T2 paper as the frozen baseline.
+**Status**: 🔄 IN PROGRESS
+**Priority**: MEDIUM
+**Started**: 2026-10-04
+**Subtasks**: T8a cluster algebra/chart relevance; T8b positive-cell/scattering-region mapping, transferred from former T5f.
+**Details**: [`tasks/T8.md`](tasks/T8.md); see also `implementation-details/grassmannian-embedding.md`.
 
 ## Completed Tasks
 | ID | Title | Completed | Related Tasks |
@@ -325,6 +333,12 @@ graph TD
     T3d[T3d: Verify n=4]
     T3e[T3e: Benchmarks n=5-8]
     T4[T4: Follow-up manuscript]
+    T5[T5: Volume-positivity studies]
+    T6[T6: Minkowski reconstruction]
+    T7[T7: Thermal and TFD]
+    T8[T8: Amplituhedron Program]
+    T8a[T8a: Cluster algebra and charts]
+    T8b[T8b: Positive cells and scattering regions; former T5f]
 
     T1 --> T1a --> T1b --> T2
     T3 --> T3a
@@ -335,6 +349,8 @@ graph TD
     T3e --> T4
     T2 -.-> T4
     T3e --> T5
+    T8 --> T8a
+    T8 --> T8b
 ```
 
 ---

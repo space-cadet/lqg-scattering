@@ -1,6 +1,6 @@
 # Implementation Progress
 
-*Last Updated: 2026-10-03 13:47:56 IST*
+*Last Updated: 2026-10-04 19:51:53 IST*
 
 ## Active Tasks
 
@@ -11,6 +11,15 @@
 The regular FL tetrahedron area sweep covers $J=1\ldots5$; direct tensor-product expectations now agree within $1.67\times10^{-16}$ after a shared numerical zero-mode cutoff. At $J=2$, a refreshed 440-point ordered equal-face-area scan finds the regular tetrahedron as the sampled minimum for both RS and AL expectations. Two direct tensor-product shape checks agree to floating-point precision, and the displayed shape guide remains on both dashboard panels. This grid does not establish a global minimum; exact degenerate limits and unequal-area shape families remain open. The project-normalized $J=2$ expectations do not simply follow reconstructed classical volume at the selected comparison points.
 
 **Next:** study boundary limits and volume spread across $J$; extend positive spin-assignment enumeration and shape sampling to unequal areas; investigate the role of the qhe-bhe Thurston/Minkowski results. Keep this question separate from the claim that the quantum expectation has a proved global minimum.
+
+### T8: Amplituhedron Program
+**Status:** 🔄 IN PROGRESS
+**Priority:** MEDIUM
+
+T8a tracks whether cluster algebra structures help organize the project's
+Plücker-coordinate charts or positivity checks. T8b subsumes the former T5f
+positive-cell/scattering-region mapping. Both remain exploratory; no new
+physical interpretation or implementation is asserted. See `tasks/T8.md`.
 
 ### T4: Follow-up Manuscript
 **Status:** 🔄 IN PROGRESS
@@ -32,7 +41,7 @@ The regular FL tetrahedron area sweep covers $J=1\ldots5$; direct tensor-product
 - ⬜ Circulate the corrected draft for review.
 
 ### T5: Volume–Positivity Numerical Studies
-**Status:** 🔄 IN PROGRESS (T5a base analysis recorded; magnetization sweep converged for one plane; T5a′ kinematic local-triple analysis recorded; T5b converged rerun complete for its tested family; T5e converged scoped study recorded; T5c, T5d, T5f, T5g open)
+**Status:** 🔄 IN PROGRESS (T5a base analysis recorded; magnetization sweep converged for one plane; T5a′ kinematic local-triple analysis recorded; T5b converged rerun complete for its tested family; T5e converged scoped study recorded; T5c, T5d, T5g open; former T5f transferred to T8b)
 **Priority:** HIGH
 
 **Roadmap:** `memory-bank/implementation-details/volume-positivity-studies.md`

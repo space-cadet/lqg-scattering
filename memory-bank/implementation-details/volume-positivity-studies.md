@@ -12,8 +12,9 @@ scoped evidence, not a general handedness law. T5a′ reports no stronger chiral
 kinematic-polyhedron-local triples, with limited n=5 samples and a shared
 reference-engine convergence caveat. T5b and T5e have recorded results for
 their tested ranges. T5c (state-based classical-volume comparison), T5d
-(cocycle/distance scaling), T5f (scattering-region mapping), and T5g
-(higher-n profiling) remain open. See `tasks.md` and the study notes for
+(cocycle/distance scaling), and T5g (higher-n profiling) remain open. The
+former T5f scattering-region mapping was transferred to T8b; see
+[`tasks/T8.md`](../tasks/T8.md). See `tasks.md` and the study notes for
 the limits of each result.
 
 ## Motivation
@@ -49,7 +50,6 @@ any order; the priority reflects physics-per-unit-effort, not dependency.
 | T5c | Flux-covariance geometry and volume comparison | How does a candidate tetrahedron reconstructed from <tg-math>G_{ij}=\langle\vec J_i\cdot\vec J_j\rangle</tg-math> compare with named quantum volume observables? | [pilot](../../t5c_covariance_probe.py); [shape scan](../../t5c_shape_recovery_scan.py); specification below |
 | T5d | Phase response / gauge-real locus | Which phase changes produce nonzero <tg-math>\langle q\rangle</tg-math>? | Rust `grassmannian.rs` (phase scan) |
 | T5e | Large-K semiclassics | Does <tg-math>V\sim K^{3/2}</tg-math> hold at <tg-math>K=20\text{–}50</tg-math>? | Rust (recorded range currently reaches K=24) |
-| T5f | Amplituhedron kinematics | Which scattering regions does <tg-math>\mathrm{Gr}_+</tg-math> cover? | `correspondence.py` + twistor map |
 | T5g | Performance frontier | Where does sparse matvec stop being the bottleneck? | Rust profiling |
 
 ---
@@ -151,11 +151,15 @@ families; it is not a positive measure on the complement of
 
 ---
 
-## T5f — Amplituhedron kinematics
+## T8b — Amplituhedron kinematics (transferred from T5f)
+
+**Task ownership:** This study was formerly T5f. It now belongs to T8, whose
+cluster-algebra/chart study is tracked separately as T8a. See
+[`tasks/T8.md`](../tasks/T8.md).
 
 **Physics question.** Connect back to actual scattering. Generate planes in <tg-math>\mathrm{Gr}_+</tg-math>, extract the Mandelstam invariants <tg-math>s_{ij}=(p_i+p_j)^2</tg-math>, and check which physical scattering regions (s-, t-, u-channels for <tg-math>n=4</tg-math>) are covered. Map <tg-math>\mathrm{Gr}_{\ge0}</tg-math> cell boundaries to kinematic thresholds. Optionally: compute momentum-twistor images of positive planes and verify they land in the N<tg-math>^k</tg-math>MHV amplituhedron region for small <tg-math>k</tg-math>.
 
-**Why lowest priority.** It is the most "amplituhedron-flavoured" and needs the most *new* machinery (momentum-twistor code) for the least immediate physics payoff. Defer until T5a–T5d land.
+**Why later-stage.** It needs new momentum-twistor machinery and is best scoped after the geometric-observable conventions are stable. Its priority and ownership are now managed by T8.
 
 ---
 
@@ -176,7 +180,7 @@ families; it is not a positive measure on the complement of
 4. **Complete T5c and the full quantum T6 reconstruction.** Compare explicitly named quantum observables with a reconstructed classical polyhedron and test state-family dependence.
 5. **Scope the next T7 study.** The existing T7e result is beta-flat for fixed-$K$ support. Proceed only with a physically justified multi-$K$ coherent reference or non-uniform-frequency Hamiltonian, and predefine cutoff and temperature convergence checks.
 6. **Extend T5e if it changes the claim.** Current converged records reach $K=24$; larger-$K$ work should test the two observed families separately.
-7. **Do T5f after the geometric observables are stable.** Map the positive-cell data to scattering invariants and amplituhedron regions.
+7. **Do T8b after the geometric observables are stable.** Map the positive-cell data to scattering invariants and amplituhedron regions.
 8. **Use T5g as enabling work.** Profile $n=10$–$12$ only where it unlocks one of the preceding physics questions.
 9. **Update and review the manuscript continuously.** Promote claims only with recorded validation evidence, limits, and provenance; circulate after the claim ledger and red-team review are complete.
 

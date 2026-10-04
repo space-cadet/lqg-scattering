@@ -1,17 +1,18 @@
 # Active Context
 
-*Last Updated: 2026-10-04 01:16:37 IST*
+*Last Updated: 2026-10-04 19:51:53 IST*
 
 ## Current Focus
 **Primary Task:** T1a — extend the positive FL volume numerics from the regular-tetrahedron area sweep to shape and boundary behavior.
-**Secondary Tasks:** T3c Rust reproduction; T4 manuscript audit; T5 volume experiments; T7 thermal/TFD work.
+**Secondary Tasks:** T3c Rust reproduction; T4 manuscript audit; T5 volume experiments; T7 thermal/TFD work; T8 amplituhedron program.
 
 ## Active Tasks
 - T4: Manuscript claim audit and review preparation — IN PROGRESS; independent audit recorded.
 - T1a: The regular FL tetrahedron sweep covers $J=1\ldots5$. At $J=2$, both RS and AL have their minima at the regular tetrahedron among 440 ordered equal-face-area samples; this is not a global-minimum proof. The latest shape-figure presentation is live at website commit `9c6670c` (workflow `37125090987`) and reuses saved tetrahedron thumbnails. Physical prefactors, exact boundary behavior, unequal-area shapes, and a general proof remain open.
 - T3c: The Rust FL Eq. (38) example now builds and matches the Python $J=2$ result after the shared zero-mode cutoff. Physical prefactors and a method for blocks above 512 remain open; the Cargo shim itself is still broken.
-- T5: Volume–positivity numerical-studies program — IN PROGRESS; T5c/T5d/T5f/T5g open; T5a magnetization sweep converged and independently checked for four sectors of one plane. T5c's selected-shape covariance scan covers 14 shapes at $J=1\ldots6$; the dashboard's precomputed shape previews are deployed, while the state-to-geometry interpretation and remaining comparisons are open. See `implementation-details/T5c-flux-covariance-volume-comparison.md` and shared `implementation-details/volume-numerical-preliminaries.md`.
+- T5: Volume–positivity numerical-studies program — IN PROGRESS; T5c/T5d/T5g open; the former T5f amplituhedron mapping is now T8b. T5a magnetization sweep converged and independently checked for four sectors of one plane. T5c's selected-shape covariance scan covers 14 shapes at $J=1\ldots6$; the dashboard's precomputed shape previews are deployed, while the state-to-geometry interpretation and remaining comparisons are open. See `implementation-details/T5c-flux-covariance-volume-comparison.md` and shared `implementation-details/volume-numerical-preliminaries.md`.
 - T7: Thermal/TFD program — reported T7a–T7e runs complete for their tested setups; broader coherent-sector thermal question remains open.
+- T8: Amplituhedron Program — IN PROGRESS; T8a cluster algebra/chart relevance and T8b positive-cell/scattering-region mapping (transferred from T5f) are open. See `tasks/T8.md`.
 
 ## Project State
 - Published EPJC paper is the frozen baseline.

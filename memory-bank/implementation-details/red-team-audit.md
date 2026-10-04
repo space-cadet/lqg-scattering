@@ -118,7 +118,7 @@ All entries are signed-mean proxies, not positive quantum-volume expectations. T
    comparison.
 5. Revisit the TFD right-operator convention and energy/cutoff controls
    before generalizing T7. Then connect stable geometry to scattering
-   kinematics (T5f); use T5g profiling only as needed.
+   kinematics (T8b, formerly T5f); use T5g profiling only as needed.
 6. Update the claim ledger and manuscript after each rerun. Circulation
    requires an independent review of the corrected numerical artifacts and
    their precise claim limits.
