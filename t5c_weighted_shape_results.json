@@ -1,0 +1,1658 @@
+{
+  "model": "weighted FL fixed-area states for a closed tetrahedron family",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "areaFractions": [
+    0.32,
+    0.18,
+    0.3,
+    0.2
+  ],
+  "shapeParameters": {
+    "diagonal": "|F0+F1| at unit total area",
+    "bendAngle": "rotation of the F2,F3 pair around the common diagonal",
+    "sampling": "three interior diagonals by three interior bends"
+  },
+  "fixedGeometryMatchingFactors": {
+    "rs": 0.11785113019775793,
+    "al": 0.23570226039551587
+  },
+  "results": [
+    {
+      "pairDiagonalAtUnitTotalArea": 0.23,
+      "bendAngleRadians": 0.7853981633974483,
+      "faceAreaFractions": [
+        0.32,
+        0.18,
+        0.3,
+        0.2
+      ],
+      "faceNormalCrossRatioReal": -0.1483210364186541,
+      "faceNormalCrossRatioImag": 0.44781746185523347,
+      "vertexCircumsphereShape": {
+        "circumcenter": [
+          1.0635961967492142,
+          0.4559865202727853,
+          -0.39803251000705886
+        ],
+        "circumradius": 1.223760783581659,
+        "unitSphereVertices": [
+          [
+            -0.869121000622621,
+            -0.3726108291672988,
+            0.32525352613613884
+          ],
+          [
+            -0.37261082916729915,
+            -0.8691210006226208,
+            0.32525352613613884
+          ],
+          [
+            -0.9493698090525454,
+            -0.3093190179401422,
+            -0.054942795706801814
+          ],
+          [
+            -0.9493698090525454,
+            0.3093190179401421,
+            -0.054942795706801814
+          ]
+        ],
+        "tetrahedronVolumeAtUnitCircumradius": 0.01946352193210892,
+        "unitSphereRadiusResidual": 1.1102230246251565e-16,
+        "vertexCrossRatioReal": 0.6031947260471776,
+        "vertexCrossRatioImag": 0.4795840337442809,
+        "unitSphereChordDistances": {
+          "01": 0.702171418328307,
+          "02": 0.3936940027048135,
+          "03": 0.7848677791662118,
+          "12": 0.8891447710223599,
+          "13": 1.3659872039559433,
+          "23": 0.6186380358802843
+        }
+      },
+      "faceAreaClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 1.9665711835297718e-16,
+      "classicalVolumeAtUnitTotalArea": 0.03567065006955927,
+      "results": [
+        {
+          "J": 2,
+          "maxMeanFaceSpinError": 3.3306690738754696e-16,
+          "meanFaceSpins": [
+            0.6400000000000002,
+            0.36000000000000015,
+            0.6000000000000003,
+            0.4000000000000002
+          ],
+          "covarianceGeometry": {
+            "closureResidual": 2.220446049250313e-16,
+            "minimumEigenvalue": 7.727344021051675e-17,
+            "rmsFaceAreaFractions": [
+              0.2900610488375595,
+              0.20901123108506528,
+              0.27930300596719637,
+              0.22162471411017878
+            ],
+            "maxNormalizedCorrelationError": 0.6705142458822182,
+            "fluxGram": [
+              [
+                1.1647999999999996,
+                -0.37754999999999983,
+                -0.4623547626598845,
+                -0.3248952373401154
+              ],
+              [
+                -0.37754999999999983,
+                0.6047999999999998,
+                -0.24489523734011556,
+                0.01764523734011548
+              ],
+              [
+                -0.4623547626598845,
+                -0.24489523734011556,
+                1.0799999999999998,
+                -0.3727499999999999
+              ],
+              [
+                -0.3248952373401154,
+                0.01764523734011548,
+                -0.3727499999999999,
+                0.6799999999999997
+              ]
+            ]
+          },
+          "rs": {
+            "geometryMatchedMeanOverJ32": 0.0017799644244360117,
+            "geometryMatchedSDOverJ32": 0.00440753748309607,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004128634573186973,
+            "absoluteDifferenceOverJ32": 0.002348670148750961,
+            "ratioToClassical": 0.4311266577080526
+          },
+          "al": {
+            "geometryMatchedMeanOverJ32": 0.0017799644244360117,
+            "geometryMatchedSDOverJ32": 0.004407537483096071,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004128634573186973,
+            "absoluteDifferenceOverJ32": 0.002348670148750961,
+            "ratioToClassical": 0.4311266577080526
+          }
+        },
+        {
+          "J": 4,
+          "maxMeanFaceSpinError": 1.6653345369377348e-15,
+          "meanFaceSpins": [
+            1.2799999999999991,
+            0.7199999999999999,
+            1.199999999999999,
+            0.7999999999999984
+          ],
+          "covarianceGeometry": {
+            "closureResidual": 1.1102230246251565e-15,
+            "minimumEigenvalue": 3.1293844207677923e-16,
+            "rmsFaceAreaFractions": [
+              0.2967550817241599,
+              0.20267816247832976,
+              0.28380619438579835,
+              0.216760561411712
+            ],
+            "maxNormalizedCorrelationError": 0.5475868703171148,
+            "fluxGram": [
+              [
+                3.1488000000000005,
+                -1.0827,
+                -1.2036771455755848,
+                -0.862422854424416
+              ],
+              [
+                -1.0827,
+                1.4687999999999999,
+                -0.6224228544244161,
+                0.2363228544244158
+              ],
+              [
+                -1.2036771455755848,
+                -0.6224228544244161,
+                2.880000000000002,
+                -1.0539000000000003
+              ],
+              [
+                -0.862422854424416,
+                0.2363228544244158,
+                -1.0539000000000003,
+                1.6800000000000006
+              ]
+            ]
+          },
+          "rs": {
+            "geometryMatchedMeanOverJ32": 0.003782009922904048,
+            "geometryMatchedSDOverJ32": 0.0036122958005615747,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004128634573186973,
+            "absoluteDifferenceOverJ32": 0.00034662465028292453,
+            "ratioToClassical": 0.9160437563222366
+          },
+          "al": {
+            "geometryMatchedMeanOverJ32": 0.003782009922904046,
+            "geometryMatchedSDOverJ32": 0.0036122958005615742,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004128634573186973,
+            "absoluteDifferenceOverJ32": 0.0003466246502829267,
+            "ratioToClassical": 0.916043756322236
+          }
+        }
+      ]
+    },
+    {
+      "pairDiagonalAtUnitTotalArea": 0.23,
+      "bendAngleRadians": 1.5707963267948966,
+      "faceAreaFractions": [
+        0.32,
+        0.18,
+        0.3,
+        0.2
+      ],
+      "faceNormalCrossRatioReal": -0.19000207003370911,
+      "faceNormalCrossRatioImag": 1.3492427406898808,
+      "vertexCircumsphereShape": {
+        "circumcenter": [
+          0.3612868752051353,
+          0.300856907996441,
+          -0.37499695142799816
+        ],
+        "circumradius": 0.6013865635886475,
+        "unitSphereVertices": [
+          [
+            -0.6007564802399842,
+            -0.5002720815728586,
+            0.6235539237695683
+          ],
+          [
+            0.6007564802399842,
+            -0.5002720815728587,
+            0.6235539237695683
+          ],
+          [
+            -0.7949518642116993,
+            -0.5292878623040845,
+            -0.29648927873350933
+          ],
+          [
+            -0.7949518642116993,
+            0.5292878623040846,
+            -0.29648927873350933
+          ]
+        ],
+        "tetrahedronVolumeAtUnitCircumradius": 0.19503266758041649,
+        "unitSphereRadiusResidual": 0.0,
+        "vertexCrossRatioReal": 0.6650185574570866,
+        "vertexCrossRatioImag": 0.4306445809521412,
+        "unitSphereChordDistances": {
+          "01": 1.2015129604799684,
+          "02": 0.9407620619261192,
+          "03": 1.3943403528779963,
+          "12": 1.6719220055898603,
+          "13": 1.963281680065312,
+          "23": 1.0585757246081693
+        }
+      },
+      "faceAreaClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 2.721744638527783e-16,
+      "classicalVolumeAtUnitTotalArea": 0.042419790859492185,
+      "results": [
+        {
+          "J": 2,
+          "maxMeanFaceSpinError": 3.3306690738754696e-16,
+          "meanFaceSpins": [
+            0.6400000000000002,
+            0.3599999999999999,
+            0.6000000000000003,
+            0.40000000000000013
+          ],
+          "covarianceGeometry": {
+            "closureResidual": 2.5438405243138006e-16,
+            "minimumEigenvalue": -7.510699361394634e-17,
+            "rmsFaceAreaFractions": [
+              0.2900610488375595,
+              0.20901123108506528,
+              0.27930300596719637,
+              0.22162471411017878
+            ],
+            "maxNormalizedCorrelationError": 0.30299373644544575,
+            "fluxGram": [
+              [
+                1.1648,
+                -0.37754999999999994,
+                -0.586828213610586,
+                -0.2004217863894141
+              ],
+              [
+                -0.37754999999999994,
+                0.6048,
+                -0.12042178638941411,
+                -0.10682821361058599
+              ],
+              [
+                -0.586828213610586,
+                -0.12042178638941411,
+                1.08,
+                -0.37275
+              ],
+              [
+                -0.2004217863894141,
+                -0.10682821361058599,
+                -0.37275,
+                0.6799999999999999
+              ]
+            ]
+          },
+          "rs": {
+            "geometryMatchedMeanOverJ32": 0.0018567503486038837,
+            "geometryMatchedSDOverJ32": 0.004485738477876896,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004909801609680169,
+            "absoluteDifferenceOverJ32": 0.003053051261076286,
+            "ratioToClassical": 0.3781721739923489
+          },
+          "al": {
+            "geometryMatchedMeanOverJ32": 0.0018567503486038837,
+            "geometryMatchedSDOverJ32": 0.004485738477876897,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004909801609680169,
+            "absoluteDifferenceOverJ32": 0.003053051261076286,
+            "ratioToClassical": 0.3781721739923489
+          }
+        },
+        {
+          "J": 4,
+          "maxMeanFaceSpinError": 3.1086244689504383e-15,
+          "meanFaceSpins": [
+            1.280000000000001,
+            0.7199999999999996,
+            1.1999999999999968,
+            0.8000000000000004
+          ],
+          "covarianceGeometry": {
+            "closureResidual": 5.438959822042073e-16,
+            "minimumEigenvalue": -4.359269922594727e-16,
+            "rmsFaceAreaFractions": [
+              0.2967550817241599,
+              0.2026781624783298,
+              0.2838061943857983,
+              0.216760561411712
+            ],
+            "maxNormalizedCorrelationError": 0.2387484626356049,
+            "fluxGram": [
+              [
+                3.1488,
+                -1.0826999999999998,
+                -1.6517815689981097,
+                -0.41431843100189075
+              ],
+              [
+                -1.0826999999999998,
+                1.4687999999999999,
+                -0.1743184310018906,
+                -0.21178156899810957
+              ],
+              [
+                -1.6517815689981097,
+                -0.1743184310018906,
+                2.88,
+                -1.0539
+              ],
+              [
+                -0.41431843100189075,
+                -0.21178156899810957,
+                -1.0539,
+                1.6800000000000002
+              ]
+            ]
+          },
+          "rs": {
+            "geometryMatchedMeanOverJ32": 0.003955138210416119,
+            "geometryMatchedSDOverJ32": 0.003618992218707865,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004909801609680169,
+            "absoluteDifferenceOverJ32": 0.0009546633992640503,
+            "ratioToClassical": 0.8055596793601935
+          },
+          "al": {
+            "geometryMatchedMeanOverJ32": 0.003955138210416117,
+            "geometryMatchedSDOverJ32": 0.003618992218707863,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004909801609680169,
+            "absoluteDifferenceOverJ32": 0.0009546633992640521,
+            "ratioToClassical": 0.8055596793601931
+          }
+        }
+      ]
+    },
+    {
+      "pairDiagonalAtUnitTotalArea": 0.23,
+      "bendAngleRadians": 2.356194490192345,
+      "faceAreaFractions": [
+        0.32,
+        0.18,
+        0.3,
+        0.2
+      ],
+      "faceNormalCrossRatioReal": 1.2351463127144713,
+      "faceNormalCrossRatioImag": 3.376034457848392,
+      "vertexCircumsphereShape": {
+        "circumcenter": [
+          0.34803384557504097,
+          0.25957583090138775,
+          -0.3980325100070589
+        ],
+        "circumradius": 0.5890136235066357,
+        "unitSphereVertices": [
+          [
+            -0.5908757143901955,
+            -0.44069580149271953,
+            0.6757611269454361
+          ],
+          [
+            0.44069580149271953,
+            0.590875714390195,
+            0.6757611269454361
+          ],
+          [
+            -0.7576041919100238,
+            -0.6426548871952759,
+            -0.1141515850279231
+          ],
+          [
+            -0.7576041919100238,
+            0.6426548871952761,
+            -0.1141515850279231
+          ]
+        ],
+        "tetrahedronVolumeAtUnitCircumradius": 0.17455608968734737,
+        "unitSphereRadiusResidual": 2.220446049250313e-16,
+        "vertexCrossRatioReal": 0.34034551523342566,
+        "vertexCrossRatioImag": 0.3204004801381374,
+        "unitSphereChordDistances": {
+          "01": 1.4588624283193907,
+          "02": 0.8321946587493815,
+          "03": 1.351077049036783,
+          "12": 1.8924805710426555,
+          "13": 1.4361636569216267,
+          "23": 1.285309774390552
+        }
+      },
+      "faceAreaClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 1.669074213746144e-16,
+      "classicalVolumeAtUnitTotalArea": 0.03567065006955927,
+      "results": [
+        {
+          "J": 2,
+          "maxMeanFaceSpinError": 3.3306690738754696e-16,
+          "meanFaceSpins": [
+            0.64,
+            0.36000000000000004,
+            0.5999999999999996,
+            0.39999999999999986
+          ],
+          "covarianceGeometry": {
+            "closureResidual": 3.925231146709438e-16,
+            "minimumEigenvalue": -6.416062688428508e-17,
+            "rmsFaceAreaFractions": [
+              0.2900610488375595,
+              0.2090112310850653,
+              0.27930300596719637,
+              0.22162471411017878
+            ],
+            "maxNormalizedCorrelationError": 0.6099929571600358,
+            "fluxGram": [
+              [
+                1.1648,
+                -0.37755000000000005,
+                -0.7113016645612877,
+                -0.07594833543871254
+              ],
+              [
+                -0.37755000000000005,
+                0.6048000000000001,
+                0.004051664561287468,
+                -0.23130166456128753
+              ],
+              [
+                -0.7113016645612877,
+                0.004051664561287468,
+                1.08,
+                -0.37275
+              ],
+              [
+                -0.07594833543871254,
+                -0.23130166456128753,
+                -0.37275,
+                0.6799999999999999
+              ]
+            ]
+          },
+          "rs": {
+            "geometryMatchedMeanOverJ32": 0.0021852795715348473,
+            "geometryMatchedSDOverJ32": 0.004792101442687067,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004128634573186973,
+            "absoluteDifferenceOverJ32": 0.0019433550016521254,
+            "ratioToClassical": 0.5292983752369219
+          },
+          "al": {
+            "geometryMatchedMeanOverJ32": 0.0021852795715348473,
+            "geometryMatchedSDOverJ32": 0.0047921014426870676,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004128634573186973,
+            "absoluteDifferenceOverJ32": 0.0019433550016521254,
+            "ratioToClassical": 0.5292983752369219
+          }
+        },
+        {
+          "J": 4,
+          "maxMeanFaceSpinError": 6.661338147750939e-16,
+          "meanFaceSpins": [
+            1.2799999999999994,
+            0.7200000000000006,
+            1.2000000000000004,
+            0.7999999999999997
+          ],
+          "covarianceGeometry": {
+            "closureResidual": 1.5622222714862009e-15,
+            "minimumEigenvalue": 6.90705213063469e-16,
+            "rmsFaceAreaFractions": [
+              0.29675508172415993,
+              0.20267816247832982,
+              0.28380619438579835,
+              0.21676056141171196
+            ],
+            "maxNormalizedCorrelationError": 0.48188912598886835,
+            "fluxGram": [
+              [
+                3.1488000000000005,
+                -1.0827000000000004,
+                -2.099885992420636,
+                0.03378599242063493
+              ],
+              [
+                -1.0827000000000004,
+                1.4688000000000003,
+                0.27378599242063506,
+                -0.6598859924206355
+              ],
+              [
+                -2.099885992420636,
+                0.27378599242063506,
+                2.8800000000000012,
+                -1.0539
+              ],
+              [
+                0.03378599242063493,
+                -0.6598859924206355,
+                -1.0539,
+                1.6799999999999995
+              ]
+            ]
+          },
+          "rs": {
+            "geometryMatchedMeanOverJ32": 0.004162854219805128,
+            "geometryMatchedSDOverJ32": 0.003585085675892564,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004128634573186973,
+            "absoluteDifferenceOverJ32": 3.421964661815512e-05,
+            "ratioToClassical": 1.0082883689538404
+          },
+          "al": {
+            "geometryMatchedMeanOverJ32": 0.004162854219805126,
+            "geometryMatchedSDOverJ32": 0.0035850856758925637,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004128634573186973,
+            "absoluteDifferenceOverJ32": 3.421964661815338e-05,
+            "ratioToClassical": 1.00828836895384
+          }
+        }
+      ]
+    },
+    {
+      "pairDiagonalAtUnitTotalArea": 0.32,
+      "bendAngleRadians": 0.7853981633974483,
+      "faceAreaFractions": [
+        0.32,
+        0.18,
+        0.3,
+        0.2
+      ],
+      "faceNormalCrossRatioReal": 0.34408181974153657,
+      "faceNormalCrossRatioImag": 0.37257418429250017,
+      "vertexCircumsphereShape": {
+        "circumcenter": [
+          0.8080201878757876,
+          0.1165986612479632,
+          -0.23456843590235404
+        ],
+        "circumradius": 0.8494199332140241,
+        "unitSphereVertices": [
+          [
+            -0.9512611563263076,
+            -0.13726857198509423,
+            0.276151320130665
+          ],
+          [
+            -0.13726857198509443,
+            -0.9512611563263076,
+            0.276151320130665
+          ],
+          [
+            -0.8224849857567016,
+            -0.5448596327520263,
+            -0.16323733887234657
+          ],
+          [
+            -0.8224849857567016,
+            0.5448596327520262,
+            -0.16323733887234657
+          ]
+        ],
+        "tetrahedronVolumeAtUnitCircumradius": 0.06495800378809695,
+        "unitSphereRadiusResidual": 1.1102230246251565e-16,
+        "vertexCrossRatioReal": 0.06727778195289792,
+        "vertexCrossRatioImag": 1.3952391153370298,
+        "unitSphereChordDistances": {
+          "01": 1.1511593524464692,
+          "02": 0.613005847104373,
+          "03": 0.8215501101362741,
+          "12": 0.9098055428090028,
+          "13": 1.7032208731913965,
+          "23": 1.0897192655040526
+        }
+      },
+      "faceAreaClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 8.113899014014819e-17,
+      "classicalVolumeAtUnitTotalArea": 0.039810718441102684,
+      "results": [
+        {
+          "J": 2,
+          "maxMeanFaceSpinError": 3.885780586188048e-16,
+          "meanFaceSpins": [
+            0.6399999999999998,
+            0.35999999999999993,
+            0.5999999999999999,
+            0.39999999999999963
+          ],
+          "covarianceGeometry": {
+            "closureResidual": 1.9229626863835638e-16,
+            "minimumEigenvalue": 4.3778016017786393e-16,
+            "rmsFaceAreaFractions": [
+              0.29006104883755957,
+              0.20901123108506528,
+              0.27930300596719637,
+              0.2216247141101788
+            ],
+            "maxNormalizedCorrelationError": 0.5309181524019612,
+            "fluxGram": [
+              [
+                1.1648,
+                -0.25379999999999997,
+                -0.4972867990221034,
+                -0.4137132009778967
+              ],
+              [
+                -0.25379999999999997,
+                0.6047999999999998,
+                -0.33371320097789664,
+                -0.017286799022103276
+              ],
+              [
+                -0.4972867990221034,
+                -0.33371320097789664,
+                1.0799999999999998,
+                -0.2489999999999999
+              ],
+              [
+                -0.4137132009778967,
+                -0.017286799022103276,
+                -0.2489999999999999,
+                0.6799999999999998
+              ]
+            ]
+          },
+          "rs": {
+            "geometryMatchedMeanOverJ32": 0.0017750601227321957,
+            "geometryMatchedSDOverJ32": 0.004402450107176237,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004607819263703693,
+            "absoluteDifferenceOverJ32": 0.0028327591409714977,
+            "ratioToClassical": 0.385227809761234
+          },
+          "al": {
+            "geometryMatchedMeanOverJ32": 0.0017750601227321957,
+            "geometryMatchedSDOverJ32": 0.004402450107176237,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004607819263703693,
+            "absoluteDifferenceOverJ32": 0.0028327591409714977,
+            "ratioToClassical": 0.385227809761234
+          }
+        },
+        {
+          "J": 4,
+          "maxMeanFaceSpinError": 1.3322676295501878e-15,
+          "meanFaceSpins": [
+            1.2800000000000014,
+            0.7199999999999995,
+            1.2000000000000004,
+            0.8000000000000004
+          ],
+          "covarianceGeometry": {
+            "closureResidual": 8.005932084973442e-16,
+            "minimumEigenvalue": -1.1482712009141064e-15,
+            "rmsFaceAreaFractions": [
+              0.29675508172415993,
+              0.20267816247832982,
+              0.28380619438579835,
+              0.216760561411712
+            ],
+            "maxNormalizedCorrelationError": 0.43357536471657326,
+            "fluxGram": [
+              [
+                3.1488,
+                -0.6372,
+                -1.329432476479572,
+                -1.1821675235204285
+              ],
+              [
+                -0.6372,
+                1.4687999999999999,
+                -0.9421675235204281,
+                0.11056752352042817
+              ],
+              [
+                -1.329432476479572,
+                -0.9421675235204281,
+                2.88,
+                -0.6083999999999999
+              ],
+              [
+                -1.1821675235204285,
+                0.11056752352042817,
+                -0.6083999999999999,
+                1.6799999999999997
+              ]
+            ]
+          },
+          "rs": {
+            "geometryMatchedMeanOverJ32": 0.003831785285450155,
+            "geometryMatchedSDOverJ32": 0.0036188895066282716,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004607819263703693,
+            "absoluteDifferenceOverJ32": 0.0007760339782535383,
+            "ratioToClassical": 0.8315832427789769
+          },
+          "al": {
+            "geometryMatchedMeanOverJ32": 0.0038317852854501534,
+            "geometryMatchedSDOverJ32": 0.0036188895066282703,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004607819263703693,
+            "absoluteDifferenceOverJ32": 0.00077603397825354,
+            "ratioToClassical": 0.8315832427789766
+          }
+        }
+      ]
+    },
+    {
+      "pairDiagonalAtUnitTotalArea": 0.32,
+      "bendAngleRadians": 1.5707963267948966,
+      "faceAreaFractions": [
+        0.32,
+        0.18,
+        0.3,
+        0.2
+      ],
+      "faceNormalCrossRatioReal": 0.5864268625089574,
+      "faceNormalCrossRatioImag": 0.8871863115083428,
+      "vertexCircumsphereShape": {
+        "circumcenter": [
+          0.411121699465926,
+          0.19002888950276642,
+          -0.25043582714521645
+        ],
+        "circumradius": 0.5175423983939041,
+        "unitSphereVertices": [
+          [
+            -0.794372984207217,
+            -0.3671755011618091,
+            0.4838943203926811
+          ],
+          [
+            0.794372984207217,
+            -0.3671755011618092,
+            0.4838943203926811
+          ],
+          [
+            -0.5430284071729021,
+            -0.7519754263793853,
+            -0.37370189606797877
+          ],
+          [
+            -0.5430284071729021,
+            0.7519754263793853,
+            -0.37370189606797877
+          ]
+        ],
+        "tetrahedronVolumeAtUnitCircumradius": 0.3415228073381913,
+        "unitSphereRadiusResidual": 1.1102230246251565e-16,
+        "vertexCrossRatioReal": 0.30534413105545216,
+        "vertexCrossRatioImag": 0.7477187875971951,
+        "unitSphereChordDistances": {
+          "01": 1.588745968414434,
+          "02": 0.9729934991250712,
+          "03": 1.4321816105189011,
+          "12": 1.634681845069728,
+          "13": 1.9433508563225101,
+          "23": 1.5039508527587706
+        }
+      },
+      "faceAreaClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 2.258944251025817e-16,
+      "classicalVolumeAtUnitTotalArea": 0.04734318962352935,
+      "results": [
+        {
+          "J": 2,
+          "maxMeanFaceSpinError": 2.220446049250313e-16,
+          "meanFaceSpins": [
+            0.6400000000000002,
+            0.35999999999999993,
+            0.6,
+            0.39999999999999986
+          ],
+          "covarianceGeometry": {
+            "closureResidual": 2.0014830212433605e-16,
+            "minimumEigenvalue": -4.547150455254693e-16,
+            "rmsFaceAreaFractions": [
+              0.2900610488375595,
+              0.20901123108506528,
+              0.27930300596719637,
+              0.22162471411017878
+            ],
+            "maxNormalizedCorrelationError": 0.1254469286320039,
+            "fluxGram": [
+              [
+                1.1648,
+                -0.25379999999999997,
+                -0.6087246093750001,
+                -0.30227539062500003
+              ],
+              [
+                -0.25379999999999997,
+                0.6047999999999999,
+                -0.22227539062499996,
+                -0.12872460937499997
+              ],
+              [
+                -0.6087246093750001,
+                -0.22227539062499996,
+                1.08,
+                -0.2489999999999999
+              ],
+              [
+                -0.30227539062500003,
+                -0.12872460937499997,
+                -0.2489999999999999,
+                0.6799999999999999
+              ]
+            ]
+          },
+          "rs": {
+            "geometryMatchedMeanOverJ32": 0.0017832184233640884,
+            "geometryMatchedSDOverJ32": 0.004410906704201027,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.005479651453043031,
+            "absoluteDifferenceOverJ32": 0.003696433029678943,
+            "ratioToClassical": 0.3254255199705829
+          },
+          "al": {
+            "geometryMatchedMeanOverJ32": 0.0017832184233640884,
+            "geometryMatchedSDOverJ32": 0.004410906704201027,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.005479651453043031,
+            "absoluteDifferenceOverJ32": 0.003696433029678943,
+            "ratioToClassical": 0.3254255199705829
+          }
+        },
+        {
+          "J": 4,
+          "maxMeanFaceSpinError": 3.552713678800501e-15,
+          "meanFaceSpins": [
+            1.2800000000000036,
+            0.7200000000000003,
+            1.2000000000000004,
+            0.799999999999999
+          ],
+          "covarianceGeometry": {
+            "closureResidual": 6.661338147750939e-16,
+            "minimumEigenvalue": 1.6181498074415335e-16,
+            "rmsFaceAreaFractions": [
+              0.29675508172415993,
+              0.20267816247832982,
+              0.28380619438579835,
+              0.216760561411712
+            ],
+            "maxNormalizedCorrelationError": 0.09349098890505658,
+            "fluxGram": [
+              [
+                3.1487999999999996,
+                -0.6371999999999999,
+                -1.73060859375,
+                -0.7809914062500003
+              ],
+              [
+                -0.6371999999999999,
+                1.4687999999999994,
+                -0.5409914062499999,
+                -0.29060859374999987
+              ],
+              [
+                -1.73060859375,
+                -0.5409914062499999,
+                2.88,
+                -0.6083999999999996
+              ],
+              [
+                -0.7809914062500003,
+                -0.29060859374999987,
+                -0.6083999999999996,
+                1.6799999999999997
+              ]
+            ]
+          },
+          "rs": {
+            "geometryMatchedMeanOverJ32": 0.003978772540122213,
+            "geometryMatchedSDOverJ32": 0.0036337378615683962,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.005479651453043031,
+            "absoluteDifferenceOverJ32": 0.0015008789129208186,
+            "ratioToClassical": 0.7260995656781544
+          },
+          "al": {
+            "geometryMatchedMeanOverJ32": 0.003978772540122211,
+            "geometryMatchedSDOverJ32": 0.0036337378615683945,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.005479651453043031,
+            "absoluteDifferenceOverJ32": 0.0015008789129208203,
+            "ratioToClassical": 0.7260995656781541
+          }
+        }
+      ]
+    },
+    {
+      "pairDiagonalAtUnitTotalArea": 0.32,
+      "bendAngleRadians": 2.356194490192345,
+      "faceAreaFractions": [
+        0.32,
+        0.18,
+        0.3,
+        0.2
+      ],
+      "faceNormalCrossRatioReal": 1.564741773560187,
+      "faceNormalCrossRatioImag": 1.2777066302918103,
+      "vertexCircumsphereShape": {
+        "circumcenter": [
+          0.35605277297027604,
+          0.33536875365754826,
+          -0.23456843590235402
+        ],
+        "circumradius": 0.5424648644763244,
+        "unitSphereVertices": [
+          [
+            -0.6563609853589252,
+            -0.6182312913137719,
+            0.432412219229715
+          ],
+          [
+            0.6182312913137719,
+            0.656360985358925,
+            0.432412219229715
+          ],
+          [
+            -0.4547165040884397,
+            -0.8531697869686512,
+            -0.25560558584165294
+          ],
+          [
+            -0.4547165040884397,
+            0.8531697869686512,
+            -0.25560558584165294
+          ]
+        ],
+        "tetrahedronVolumeAtUnitCircumradius": 0.24939352445662255,
+        "unitSphereRadiusResidual": 1.1102230246251565e-16,
+        "vertexCrossRatioReal": 0.09293184338040326,
+        "vertexCrossRatioImag": 0.28619176829946713,
+        "unitSphereChordDistances": {
+          "01": 1.8025456841665282,
+          "02": 0.7544700747297031,
+          "03": 1.6367804159668893,
+          "12": 1.9756691586289383,
+          "13": 1.2896973195850046,
+          "23": 1.7063395739373024
+        }
+      },
+      "faceAreaClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 1.1990321038599336e-16,
+      "classicalVolumeAtUnitTotalArea": 0.039810718441102684,
+      "results": [
+        {
+          "J": 2,
+          "maxMeanFaceSpinError": 1.6653345369377348e-16,
+          "meanFaceSpins": [
+            0.64,
+            0.3599999999999999,
+            0.6000000000000001,
+            0.39999999999999986
+          ],
+          "covarianceGeometry": {
+            "closureResidual": 3.597533769998862e-16,
+            "minimumEigenvalue": 3.2427782430042337e-16,
+            "rmsFaceAreaFractions": [
+              0.29006104883755957,
+              0.20901123108506528,
+              0.27930300596719637,
+              0.22162471411017878
+            ],
+            "maxNormalizedCorrelationError": 0.35974180397454136,
+            "fluxGram": [
+              [
+                1.1648000000000003,
+                -0.2538000000000001,
+                -0.720162419727897,
+                -0.19083758027210343
+              ],
+              [
+                -0.2538000000000001,
+                0.6048000000000001,
+                -0.1108375802721033,
+                -0.2401624197278967
+              ],
+              [
+                -0.720162419727897,
+                -0.1108375802721033,
+                1.08,
+                -0.24900000000000005
+              ],
+              [
+                -0.19083758027210343,
+                -0.2401624197278967,
+                -0.24900000000000005,
+                0.68
+              ]
+            ]
+          },
+          "rs": {
+            "geometryMatchedMeanOverJ32": 0.001993152765776759,
+            "geometryMatchedSDOverJ32": 0.004618245328662039,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004607819263703693,
+            "absoluteDifferenceOverJ32": 0.0026146664979269344,
+            "ratioToClassical": 0.4325587987960044
+          },
+          "al": {
+            "geometryMatchedMeanOverJ32": 0.001993152765776759,
+            "geometryMatchedSDOverJ32": 0.004618245328662039,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004607819263703693,
+            "absoluteDifferenceOverJ32": 0.0026146664979269344,
+            "ratioToClassical": 0.4325587987960044
+          }
+        },
+        {
+          "J": 4,
+          "maxMeanFaceSpinError": 2.6645352591003757e-15,
+          "meanFaceSpins": [
+            1.2800000000000027,
+            0.7200000000000009,
+            1.2000000000000013,
+            0.8000000000000002
+          ],
+          "covarianceGeometry": {
+            "closureResidual": 1.797052957135242e-15,
+            "minimumEigenvalue": -5.61604889513678e-16,
+            "rmsFaceAreaFractions": [
+              0.2967550817241599,
+              0.20267816247832982,
+              0.2838061943857983,
+              0.216760561411712
+            ],
+            "maxNormalizedCorrelationError": 0.2938481617803134,
+            "fluxGram": [
+              [
+                3.1487999999999996,
+                -0.6372000000000002,
+                -2.131784711020429,
+                -0.37981528897957223
+              ],
+              [
+                -0.6372000000000002,
+                1.4688000000000003,
+                -0.13981528897957174,
+                -0.6917847110204283
+              ],
+              [
+                -2.131784711020429,
+                -0.13981528897957174,
+                2.8800000000000003,
+                -0.6083999999999998
+              ],
+              [
+                -0.37981528897957223,
+                -0.6917847110204283,
+                -0.6083999999999998,
+                1.6800000000000002
+              ]
+            ]
+          },
+          "rs": {
+            "geometryMatchedMeanOverJ32": 0.0040418259710181745,
+            "geometryMatchedSDOverJ32": 0.0036087879651989212,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004607819263703693,
+            "absoluteDifferenceOverJ32": 0.0005659932926855189,
+            "ratioToClassical": 0.8771667766694082
+          },
+          "al": {
+            "geometryMatchedMeanOverJ32": 0.004041825971018174,
+            "geometryMatchedSDOverJ32": 0.0036087879651989195,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004607819263703693,
+            "absoluteDifferenceOverJ32": 0.0005659932926855198,
+            "ratioToClassical": 0.877166776669408
+          }
+        }
+      ]
+    },
+    {
+      "pairDiagonalAtUnitTotalArea": 0.41000000000000003,
+      "bendAngleRadians": 0.7853981633974483,
+      "faceAreaFractions": [
+        0.32,
+        0.18,
+        0.3,
+        0.2
+      ],
+      "faceNormalCrossRatioReal": 0.700675709649586,
+      "faceNormalCrossRatioImag": 0.22956651039585912,
+      "vertexCircumsphereShape": {
+        "circumcenter": [
+          0.7054529670485081,
+          -0.06803004782075693,
+          -0.14430073066678012
+        ],
+        "circumradius": 0.723266670734249,
+        "unitSphereVertices": [
+          [
+            -0.9753704900190455,
+            0.09405942589846411,
+            0.1995124848215227
+          ],
+          [
+            0.09405942589846397,
+            -0.9753704900190455,
+            0.1995124848215227
+          ],
+          [
+            -0.6633208923048645,
+            -0.7328829576444408,
+            -0.15128768696167919
+          ],
+          [
+            -0.6633208923048645,
+            0.7328829576444408,
+            -0.15128768696167919
+          ]
+        ],
+        "tetrahedronVolumeAtUnitCircumradius": 0.09164852804189642,
+        "unitSphereRadiusResidual": 1.1102230246251565e-16,
+        "vertexCrossRatioReal": -1.2327263672937925,
+        "vertexCrossRatioImag": 2.316079799701566,
+        "unitSphereChordDistances": {
+          "01": 1.5124022910980608,
+          "02": 0.9509308164405689,
+          "03": 0.7927996068800168,
+          "12": 0.869186924822287,
+          "13": 1.901266827244163,
+          "23": 1.4657659152888816
+        }
+      },
+      "faceAreaClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 2.309078112374021e-16,
+      "classicalVolumeAtUnitTotalArea": 0.034675349886280675,
+      "results": [
+        {
+          "J": 2,
+          "maxMeanFaceSpinError": 3.3306690738754696e-16,
+          "meanFaceSpins": [
+            0.6400000000000002,
+            0.36000000000000004,
+            0.6000000000000001,
+            0.3999999999999997
+          ],
+          "covarianceGeometry": {
+            "closureResidual": 1.2412670766236366e-16,
+            "minimumEigenvalue": 4.938693528044169e-16,
+            "rmsFaceAreaFractions": [
+              0.29006104883755957,
+              0.20901123108506528,
+              0.2793030059671964,
+              0.22162471411017878
+            ],
+            "maxNormalizedCorrelationError": 0.41639478093447846,
+            "fluxGram": [
+              [
+                1.1648,
+                -0.08954999999999984,
+                -0.6081669126542866,
+                -0.46708308734571363
+              ],
+              [
+                -0.08954999999999984,
+                0.6047999999999998,
+                -0.3870830873457137,
+                -0.1281669126542863
+              ],
+              [
+                -0.6081669126542866,
+                -0.3870830873457137,
+                1.08,
+                -0.08474999999999984
+              ],
+              [
+                -0.46708308734571363,
+                -0.1281669126542863,
+                -0.08474999999999984,
+                0.6799999999999997
+              ]
+            ]
+          },
+          "rs": {
+            "geometryMatchedMeanOverJ32": 0.0020176371432436184,
+            "geometryMatchedSDOverJ32": 0.004641205666928473,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004013435362088487,
+            "absoluteDifferenceOverJ32": 0.0019957982188448685,
+            "ratioToClassical": 0.5027207270615398
+          },
+          "al": {
+            "geometryMatchedMeanOverJ32": 0.002017637143243617,
+            "geometryMatchedSDOverJ32": 0.004641205666928471,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004013435362088487,
+            "absoluteDifferenceOverJ32": 0.0019957982188448698,
+            "ratioToClassical": 0.5027207270615395
+          }
+        },
+        {
+          "J": 4,
+          "maxMeanFaceSpinError": 3.774758283725532e-15,
+          "meanFaceSpins": [
+            1.2799999999999963,
+            0.7199999999999978,
+            1.2000000000000002,
+            0.7999999999999994
+          ],
+          "covarianceGeometry": {
+            "closureResidual": 7.691850745534255e-16,
+            "minimumEigenvalue": 8.387880498779543e-16,
+            "rmsFaceAreaFractions": [
+              0.29675508172415993,
+              0.2026781624783298,
+              0.2838061943857983,
+              0.2167605614117119
+            ],
+            "maxNormalizedCorrelationError": 0.3252740123396574,
+            "fluxGram": [
+              [
+                3.148800000000001,
+                -0.04589999999999944,
+                -1.7286008855554322,
+                -1.374299114444569
+              ],
+              [
+                -0.04589999999999944,
+                1.4687999999999994,
+                -1.1342991144445689,
+                -0.28860088555543095
+              ],
+              [
+                -1.7286008855554322,
+                -1.1342991144445689,
+                2.88,
+                -0.017099999999999373
+              ],
+              [
+                -1.374299114444569,
+                -0.28860088555543095,
+                -0.017099999999999373,
+                1.6799999999999993
+              ]
+            ]
+          },
+          "rs": {
+            "geometryMatchedMeanOverJ32": 0.0040145072272184746,
+            "geometryMatchedSDOverJ32": 0.003598044627307113,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004013435362088487,
+            "absoluteDifferenceOverJ32": 1.0718651299876716e-06,
+            "ratioToClassical": 1.000267069239513
+          },
+          "al": {
+            "geometryMatchedMeanOverJ32": 0.004014507227218474,
+            "geometryMatchedSDOverJ32": 0.0035980446273071124,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004013435362088487,
+            "absoluteDifferenceOverJ32": 1.0718651299868043e-06,
+            "ratioToClassical": 1.0002670692395128
+          }
+        }
+      ]
+    },
+    {
+      "pairDiagonalAtUnitTotalArea": 0.41000000000000003,
+      "bendAngleRadians": 1.5707963267948966,
+      "faceAreaFractions": [
+        0.32,
+        0.18,
+        0.3,
+        0.2
+      ],
+      "faceNormalCrossRatioReal": 0.9153633182976973,
+      "faceNormalCrossRatioImag": 0.42129383695623035,
+      "vertexCircumsphereShape": {
+        "circumcenter": [
+          0.4599157523081428,
+          0.13257995502455422,
+          -0.16123375121909916
+        ],
+        "circumradius": 0.505070555692628,
+        "unitSphereVertices": [
+          [
+            -0.9105970386205503,
+            -0.26249788971115295,
+            0.3192301538900667
+          ],
+          [
+            0.9105970386205503,
+            -0.26249788971115307,
+            0.3192301538900667
+          ],
+          [
+            -0.37918972458916433,
+            -0.8825179052088962,
+            -0.27816775469434907
+          ],
+          [
+            -0.37918972458916433,
+            0.8825179052088961,
+            -0.27816775469434907
+          ]
+        ],
+        "tetrahedronVolumeAtUnitCircumradius": 0.32005321774097173,
+        "unitSphereRadiusResidual": 0.0,
+        "vertexCrossRatioReal": -0.23794723308076388,
+        "vertexCrossRatioImag": 0.8188487457225037,
+        "unitSphereChordDistances": {
+          "01": 1.8211940772411006,
+          "02": 1.011781999348134,
+          "03": 1.3965454397202683,
+          "12": 1.5507607730884374,
+          "13": 1.8252384299998778,
+          "23": 1.7650358104177921
+        }
+      },
+      "faceAreaClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 2.5510787314345723e-16,
+      "classicalVolumeAtUnitTotalArea": 0.041236172799973776,
+      "results": [
+        {
+          "J": 2,
+          "maxMeanFaceSpinError": 4.440892098500626e-16,
+          "meanFaceSpins": [
+            0.6400000000000001,
+            0.3599999999999997,
+            0.6000000000000001,
+            0.3999999999999996
+          ],
+          "covarianceGeometry": {
+            "closureResidual": 3.3766115072321297e-16,
+            "minimumEigenvalue": 3.375840900795899e-17,
+            "rmsFaceAreaFractions": [
+              0.29006104883755957,
+              0.20901123108506528,
+              0.27930300596719637,
+              0.2216247141101788
+            ],
+            "maxNormalizedCorrelationError": 0.4163947809344784,
+            "fluxGram": [
+              [
+                1.1648000000000003,
+                -0.08954999999999985,
+                -0.6741511748958954,
+                -0.40109882510410483
+              ],
+              [
+                -0.08954999999999985,
+                0.6047999999999999,
+                -0.3210988251041047,
+                -0.1941511748958953
+              ],
+              [
+                -0.6741511748958954,
+                -0.3210988251041047,
+                1.08,
+                -0.0847499999999998
+              ],
+              [
+                -0.40109882510410483,
+                -0.1941511748958953,
+                -0.0847499999999998,
+                0.68
+              ]
+            ]
+          },
+          "rs": {
+            "geometryMatchedMeanOverJ32": 0.002028930939334087,
+            "geometryMatchedSDOverJ32": 0.00465171485081647,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004772805888199151,
+            "absoluteDifferenceOverJ32": 0.002743874948865064,
+            "ratioToClassical": 0.42510233746372456
+          },
+          "al": {
+            "geometryMatchedMeanOverJ32": 0.002028930939334086,
+            "geometryMatchedSDOverJ32": 0.004651714850816467,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004772805888199151,
+            "absoluteDifferenceOverJ32": 0.002743874948865065,
+            "ratioToClassical": 0.42510233746372433
+          }
+        },
+        {
+          "J": 4,
+          "maxMeanFaceSpinError": 2.220446049250313e-15,
+          "meanFaceSpins": [
+            1.2800000000000022,
+            0.7199999999999999,
+            1.1999999999999995,
+            0.7999999999999987
+          ],
+          "covarianceGeometry": {
+            "closureResidual": 9.805224261780596e-16,
+            "minimumEigenvalue": -1.4695553934666804e-15,
+            "rmsFaceAreaFractions": [
+              0.29675508172415993,
+              0.20267816247832982,
+              0.28380619438579835,
+              0.216760561411712
+            ],
+            "maxNormalizedCorrelationError": 0.32527401233965736,
+            "fluxGram": [
+              [
+                3.1487999999999996,
+                -0.045899999999999386,
+                -1.9661442296252236,
+                -1.1367557703747775
+              ],
+              [
+                -0.045899999999999386,
+                1.4687999999999994,
+                -0.896755770374777,
+                -0.5261442296252231
+              ],
+              [
+                -1.9661442296252236,
+                -0.896755770374777,
+                2.8800000000000003,
+                -0.017099999999999334
+              ],
+              [
+                -1.1367557703747775,
+                -0.5261442296252231,
+                -0.017099999999999334,
+                1.6799999999999997
+              ]
+            ]
+          },
+          "rs": {
+            "geometryMatchedMeanOverJ32": 0.004094913447910919,
+            "geometryMatchedSDOverJ32": 0.003604180760457657,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004772805888199151,
+            "absoluteDifferenceOverJ32": 0.0006778924402882323,
+            "ratioToClassical": 0.8579677329923822
+          },
+          "al": {
+            "geometryMatchedMeanOverJ32": 0.004094913447910917,
+            "geometryMatchedSDOverJ32": 0.0036041807604576576,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004772805888199151,
+            "absoluteDifferenceOverJ32": 0.0006778924402882341,
+            "ratioToClassical": 0.8579677329923818
+          }
+        }
+      ]
+    },
+    {
+      "pairDiagonalAtUnitTotalArea": 0.41000000000000003,
+      "bendAngleRadians": 2.356194490192345,
+      "faceAreaFractions": [
+        0.32,
+        0.18,
+        0.3,
+        0.2
+      ],
+      "faceNormalCrossRatioReal": 1.2958695623008554,
+      "faceNormalCrossRatioImag": 0.4021907944757362,
+      "vertexCircumsphereShape": {
+        "circumcenter": [
+          0.39012291540462685,
+          0.38336009946463806,
+          -0.14430073066678004
+        ],
+        "circumradius": 0.565670890055613,
+        "unitSphereVertices": [
+          [
+            -0.6896641178871208,
+            -0.6777087281739894,
+            0.25509661749183055
+          ],
+          [
+            0.6777087281739896,
+            0.6896641178871209,
+            0.25509661749183055
+          ],
+          [
+            -0.2906775735724423,
+            -0.9370639821350032,
+            -0.19343640197059023
+          ],
+          [
+            -0.2906775735724423,
+            0.9370639821350034,
+            -0.19343640197059023
+          ]
+        ],
+        "tetrahedronVolumeAtUnitCircumradius": 0.19157082149368673,
+        "unitSphereRadiusResidual": 2.220446049250313e-16,
+        "vertexCrossRatioReal": -0.0617315853651457,
+        "vertexCrossRatioImag": 0.204634156866226,
+        "unitSphereChordDistances": {
+          "01": 1.9337572237203207,
+          "02": 0.6539398136292263,
+          "03": 1.7227486868521757,
+          "12": 1.945558585691985,
+          "13": 1.0955184123455335,
+          "23": 1.8741279642700066
+        }
+      },
+      "faceAreaClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 2.6796892498303825e-16,
+      "classicalVolumeAtUnitTotalArea": 0.034675349886280675,
+      "results": [
+        {
+          "J": 2,
+          "maxMeanFaceSpinError": 2.220446049250313e-16,
+          "meanFaceSpins": [
+            0.6399999999999998,
+            0.35999999999999976,
+            0.6,
+            0.3999999999999998
+          ],
+          "covarianceGeometry": {
+            "closureResidual": 9.614813431917819e-17,
+            "minimumEigenvalue": -4.2870852147998785e-16,
+            "rmsFaceAreaFractions": [
+              0.29006104883755957,
+              0.20901123108506522,
+              0.27930300596719637,
+              0.22162471411017876
+            ],
+            "maxNormalizedCorrelationError": 0.43955837053491376,
+            "fluxGram": [
+              [
+                1.1648000000000003,
+                -0.08954999999999982,
+                -0.7401354371375046,
+                -0.3351145628624958
+              ],
+              [
+                -0.08954999999999982,
+                0.6047999999999997,
+                -0.2551145628624957,
+                -0.26013543713750414
+              ],
+              [
+                -0.7401354371375046,
+                -0.2551145628624957,
+                1.08,
+                -0.08474999999999984
+              ],
+              [
+                -0.3351145628624958,
+                -0.26013543713750414,
+                -0.08474999999999984,
+                0.6799999999999997
+              ]
+            ]
+          },
+          "rs": {
+            "geometryMatchedMeanOverJ32": 0.0021109680149141324,
+            "geometryMatchedSDOverJ32": 0.004726541535092012,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004013435362088487,
+            "absoluteDifferenceOverJ32": 0.0019024673471743545,
+            "ratioToClassical": 0.5259753364548121
+          },
+          "al": {
+            "geometryMatchedMeanOverJ32": 0.002110968014914132,
+            "geometryMatchedSDOverJ32": 0.00472654153509201,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004013435362088487,
+            "absoluteDifferenceOverJ32": 0.001902467347174355,
+            "ratioToClassical": 0.525975336454812
+          }
+        },
+        {
+          "J": 4,
+          "maxMeanFaceSpinError": 1.9984014443252818e-15,
+          "meanFaceSpins": [
+            1.280000000000002,
+            0.7200000000000005,
+            1.2000000000000006,
+            0.8
+          ],
+          "covarianceGeometry": {
+            "closureResidual": 7.195067539997724e-16,
+            "minimumEigenvalue": 1.390032185313248e-15,
+            "rmsFaceAreaFractions": [
+              0.29675508172416,
+              0.20267816247832976,
+              0.28380619438579835,
+              0.216760561411712
+            ],
+            "maxNormalizedCorrelationError": 0.359036282010203,
+            "fluxGram": [
+              [
+                3.1488,
+                -0.0458999999999995,
+                -2.203687573695016,
+                -0.8992124263049851
+              ],
+              [
+                -0.0458999999999995,
+                1.4687999999999988,
+                -0.6592124263049844,
+                -0.7636875736950149
+              ],
+              [
+                -2.203687573695016,
+                -0.6592124263049844,
+                2.8799999999999994,
+                -0.017099999999999407
+              ],
+              [
+                -0.8992124263049851,
+                -0.7636875736950149,
+                -0.017099999999999407,
+                1.679999999999999
+              ]
+            ]
+          },
+          "rs": {
+            "geometryMatchedMeanOverJ32": 0.004091934834102861,
+            "geometryMatchedSDOverJ32": 0.00359433001377026,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004013435362088487,
+            "absoluteDifferenceOverJ32": 7.849947201437387e-05,
+            "ratioToClassical": 1.0195591718645556
+          },
+          "al": {
+            "geometryMatchedMeanOverJ32": 0.004091934834102859,
+            "geometryMatchedSDOverJ32": 0.0035943300137702616,
+            "classicalVolumeProjectUnitsAtUnitTotalArea": 0.004013435362088487,
+            "absoluteDifferenceOverJ32": 7.849947201437214e-05,
+            "ratioToClassical": 1.0195591718645551
+          }
+        }
+      ]
+    }
+  ],
+  "interpretationLimits": [
+    "This is a small unequal-area shape grid, not a convergence study.",
+    "Both the face-spinor cross-ratio and vertex circumsphere cross-ratio are recorded with metric data.",
+    "AL uses the existing (+,-,+,-) tangent-sign convention."
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "project": {
     "name": "Scattering in LQG",
-    "subtitle": "Signed-mean runs and fixed-area, real-plane, and covariance volume studies; physical normalization remains open"
+    "subtitle": "Positive-volume and shape studies, including weighted FL input geometries; physical regularization remains open"
   },
   "tabs": [
     {
@@ -438,8 +438,9 @@
       "validation": "Independent local-spin tensor-product check of the triple-grasp matrices and positive RS/AL expectations."
     },
     "t5c": {
-      "title": "Flux-covariance reconstruction and volume comparison",
+      "title": "Input-geometry volume and flux-correlation comparison",
       "resultsFile": "t5c-shape-recovery.json",
+      "inputVolumeResultsFile": "t5c-input-volume.json",
       "shapeCount": 14,
       "recordCount": 84,
       "JValues": [
@@ -483,18 +484,18 @@
           ]
         }
       ],
-      "definition": "G_ij = <J_i · J_j>; compare the normalized covariance Gram matrix with the Gram matrix of the known input face normals, then reconstruct candidate closed face-area vectors from the rank-three factorization.",
-      "volumeScope": "Covariance geometry for all 14 labels at J=1..6; signed mean, proxy, and positive RS/AL observables for five interior shapes at J=1..3.",
-      "limitations": "Finite exploratory scan; boundary endpoints are not evaluated. The covariance factorization is a candidate geometry map, not a general reconstruction theorem or a large-J limit.",
-      "normalization": "Project-normalized volumes; gamma=0.2375, hbar=1. AL comparison uses lexicographic signs (+1,-1,+1,-1)."
+      "definition": "The input closed tetrahedron is the classical target. Weighted spinors encode its face areas and normals; G_ij = <J_i · J_j> and its normalized correlations are a separate shape-recovery diagnostic.",
+      "volumeScope": "Legacy covariance geometry for 14 equal-area labels at J=1..6; new weighted input-volume scans for regular and unequal-skew shapes through J=7, a 9-point unequal-area grid at J=2,4, selected J=6 points, and a fixed-area flat path.",
+      "limitations": "Finite exploratory scans; neither large-J convergence nor either order of the degenerate and large-J limits is established. Individual flux-vector means vanish in the gauge-invariant FL state. Under the tested 4-valent signs, calibrated RS/AL curves coincide by closure and are not independent evidence.",
+      "normalization": "Project units include gamma^(3/2), gamma=0.2375, hbar=1. Fixed geometry factors are sqrt(2)/12 (RS) and sqrt(2)/6 (AL); AL uses lexicographic signs (+1,-1,+1,-1)."
     }
   },
   "tasks": {
     "active": [
       {
         "id": "T5c",
-        "title": "Flux-covariance shape recovery and volume comparison",
-        "description": "The exploratory scan covers 14 equal-face-area shape labels at J=1..6 and compares covariance, signed-mean, and positive RS/AL volumes for five interior shapes at J=1..3. General shape recovery and a large-J limit remain open.",
+        "title": "Weighted FL input-volume and shape comparison",
+        "description": "The pilot compares positive volume with the classical input tetrahedron for weighted FL states, including unequal face areas and a flat path. Broad shape convergence and both limit orders remain open.",
         "tags": [
           "volume",
           "shape",

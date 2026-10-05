@@ -4,6 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research Dashboard</title>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+    };
+  </script>
+  <script defer id="mathjax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
   <style>
     :root {
       --bg: #f8f9fa; --card: #ffffff; --text: #212529; --muted: #6c757d;
@@ -100,6 +111,10 @@
     .volume-study { margin: 18px 0 26px; }
     .volume-study h3 { font-size: 1rem; margin: 14px 0 8px; }
     .volume-study p { margin: 8px 0; }
+    .math-model { margin: 12px 0 16px; padding: 12px 16px; border: 1px solid var(--border); border-radius: 6px; background: var(--bg); }
+    .math-model p { margin: 6px 0; }
+    .math-equation { overflow-x: auto; padding: 4px 0; }
+    .math-equation mjx-container[display="true"] { margin: 0.7em 0 !important; }
     .study-metrics { display: flex; gap: 10px; flex-wrap: wrap; margin: 12px 0; }
     .study-metric { flex: 1 1 150px; border: 1px solid var(--border); border-radius: 6px; padding: 10px 12px; background: var(--card); }
     .study-metric strong { display: block; font-size: 1.05rem; }
@@ -107,6 +122,8 @@
     .study-table { min-width: 760px; }
     .study-chart { overflow-x: auto; }
     .study-chart svg { display: block; width: 100%; min-width: 660px; height: auto; }
+    .t5c-input-chart svg { min-width: 900px; }
+    .flat-plot-grid { display: grid; grid-template-columns: 1fr; gap: 12px; align-items: start; }
     .t5c-data-point { cursor: pointer; outline: none; }
     .t5c-data-point:hover, .t5c-data-point:focus, .t5c-data-point.is-active { stroke: var(--text); stroke-width: 3px; }
     .t5c-preview-panel { margin: 12px 0 18px; padding: 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
@@ -145,7 +162,7 @@
   <div class="container">
     <h1 id="projectName">Loading...</h1>
     <p class="subtitle" id="projectSubtitle">Loading...</p>
-    <p class="hint">The Volume Studies tab presents the T1b real-plane check and T5c covariance scan. T3d/T3e are corrected converged Rust runs; independent SciPy checks cover n=4,5,7,8, with n=6 pending. Performance shows the signed-mean proxy; the fixed-area plots show positive-volume expectations.</p>
+    <p class="hint">The Volume Studies tab presents the T1b real-plane check, the equal-area T5c correlation diagnostic, and new weighted-input positive-volume scans over unequal shapes and a flat path. T3d/T3e are corrected converged Rust runs; independent SciPy checks cover n=4,5,7,8, with n=6 pending. Performance shows the signed-mean proxy; the fixed-area plots show positive-volume expectations.</p>
 
     <div class="summary" id="summaryCards">
       <div class="summary-card" style="border-color: var(--primary);">
@@ -193,15 +210,15 @@
       </div>
       <h2>Positive Volume vs. FL Area</h2>
       <div class="chart-container">
-        <div class="fixed-shape-chart"><div class="fixed-shape-figure"><img src="figures/t5c-input/x0p57735027-phi90p00000000.svg" alt="Regular tetrahedron used for the full area sweep"><span>Regular tetrahedron<br>x=1/√3, φ=90°</span></div><img class="area-sweep" src="figures/fl-volume-area.svg" alt="Positive RS and AL volume expectations versus the Freidel-Livine area label J, for the regular tetrahedron shown beside the plot, with J from one to five."></div>
-        <p class="hint">Fixed-area regular tetrahedron states, with A<sub>FL</sub>/ℓ<sub>p</sub><sup>2</sup> = J. Values use project normalization (γ = 0.2375); the physical volume prefactor remains open. The independent local-spin tensor-product check agrees at matrix level within 2.8×10<sup>−15</sup>; RS and AL expectation differences are at most 1.67×10<sup>−16</sup> and 5.55×10<sup>−17</sup>, respectively, for J = 1…5.</p>
+        <div class="fixed-shape-chart"><div class="fixed-shape-figure"><img src="figures/t5c-input/x0p57735027-phi90p00000000.svg" alt="Regular tetrahedron used for the full area sweep"><span>Regular tetrahedron<br>\(x=1/\sqrt{3},\ \phi=90^\circ\)</span></div><img class="area-sweep" src="figures/fl-volume-area.svg" alt="Positive RS and AL volume expectations versus the Freidel-Livine area label J, for the regular tetrahedron shown beside the plot, with J from one to five."></div>
+        <p class="hint">Fixed-area regular tetrahedron states, with \(A_{\mathrm{FL}}/\ell_p^2=J\). Values use project normalization \((\gamma=0.2375)\); the physical volume prefactor remains open. The independent local-spin tensor-product check agrees at matrix level within \(2.8\times10^{-15}\); RS and AL expectation differences are at most \(1.67\times10^{-16}\) and \(5.55\times10^{-17}\), respectively, for \(J=1,\ldots,5\).</p>
       </div>
 
-      <h2>Positive Volume vs. Four-face Shape at Fixed J=2</h2>
+      <h2>Positive Volume vs. Four-face Shape at Fixed \(J=2\)</h2>
       <div class="chart-container">
         <img src="figures/fl-volume-shape-j2.svg?v=shared-thumbnails-2" alt="RS and AL positive-volume expectations over 440 sampled closed equal-area tetrahedron configurations at fixed FL area label J equals 2, with representative tetrahedra beside and below each graph." style="display:block;width:100%;height:auto;">
-        <p class="hint">Each graph has tetrahedron previews reconstructed from the same equal-area face normals. The bottom row varies x at fixed φ = 90°; the side column varies φ at fixed x = 1/√3. Each preview uses the nearest valid scan sample and the same display size, so compare shape proportions rather than absolute size.</p>
-        <p class="hint">The scan varies x = |n<sub>0</sub> + n<sub>1</sub>|/2 and the bending angle φ while keeping four unit face areas and closure. The highlighted regular tetrahedron is at x = 1/√3, φ = 90°. Face labels remain ordered; points are not deduplicated under leg permutations. The four normalized spinor rays also carry the cross ratio λ = ⟨z₀,z₂⟩⟨z₁,z₃⟩ / (⟨z₀,z₃⟩⟨z₁,z₂⟩), a coordinate on the four-marked-sphere moduli space used by Thurston. This is a coordinate link only; the cone-metric curvature data is not identified with the LQG face areas. Two direct tensor-product checks agree with the project routines within 1.4×10<sup>−17</sup>. Values remain project-normalized, and this equal-face-area family does not cover every coherent-state label at fixed J. <a href="fl-volume-shape-j2.json">Download the 440 sample records.</a></p>
+        <p class="hint">Each graph has tetrahedron previews reconstructed from the same equal-area face normals. The bottom row varies \(x\) at fixed \(\phi=90^\circ\); the side column varies \(\phi\) at fixed \(x=1/\sqrt{3}\). Each preview uses the nearest valid scan sample and the same display size, so compare shape proportions rather than absolute size.</p>
+        <p class="hint">The scan varies \(x=|\mathbf n_0+\mathbf n_1|/2\) and the bending angle \(\phi\) while keeping four unit face areas and closure. The highlighted regular tetrahedron is at \(x=1/\sqrt{3},\ \phi=90^\circ\). Face labels remain ordered; points are not deduplicated under leg permutations. The four normalized spinor rays also carry the cross ratio \(\lambda=\frac{\langle z_0,z_2\rangle\langle z_1,z_3\rangle}{\langle z_0,z_3\rangle\langle z_1,z_2\rangle}\), a coordinate on the four-marked-sphere moduli space used by Thurston. This is a coordinate link only; the cone-metric curvature data is not identified with the LQG face areas. Two direct tensor-product checks agree with the project routines within \(1.4\times10^{-17}\). Values remain project-normalized, and this equal-face-area family does not cover every coherent-state label at fixed \(J\). <a href="fl-volume-shape-j2.json">Download the 440 sample records.</a></p>
       </div>
 
       <h2>Discrete Spin and Intertwiner Labels at Fixed J</h2>
@@ -226,12 +243,28 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/dist/plot.umd.min.js"></script>
+<script src="t5c-input-volume.js?v=weighted-latex-3"></script>
 <script>
 let DATA = {};
 let currentTab = 'runs';
 let sortCol = null, sortAsc = true;
 let filteredRuns = [];
 let selectedRun = null;
+
+function typesetMath(element) {
+  if (!element) return;
+  const render = () => {
+    const mathJax = window.MathJax;
+    Promise.resolve(mathJax?.startup?.promise)
+      .then(() => mathJax?.typesetPromise?.([element]))
+      .catch(error => console.warn('MathJax could not typeset the dashboard equations.', error));
+  };
+  if (window.MathJax?.typesetPromise || window.MathJax?.startup?.promise) {
+    render();
+    return;
+  }
+  document.getElementById('mathjax-script')?.addEventListener('load', render, { once: true });
+}
 
 async function loadData() {
   try {
@@ -248,6 +281,7 @@ async function loadData() {
     renderTheory();
     renderVolumeLabels();
     renderVolumeStudies();
+    typesetMath(document.querySelector('.container'));
   } catch (e) {
     document.querySelector('.container').innerHTML = `<div class="error">Error: ${e.message}</div>`;
   }
@@ -270,6 +304,7 @@ function switchTab(tab) {
   document.getElementById(tab + 'Tab').classList.remove('hidden');
   document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
   event.target.classList.add('active');
+  typesetMath(document.querySelector('.container'));
 }
 
 function renderSummary() {
@@ -298,12 +333,13 @@ async function renderVolumeStudies() {
   const container = document.getElementById('volumeStudiesContent');
   const studies = DATA.numericalStudies || {};
   try {
-    const [t1bResponse, t5cResponse] = await Promise.all([
+    const [t1bResponse, t5cResponse, t5cInputVolumeResponse] = await Promise.all([
       fetch(studies.t1b?.resultsFile || 't1b-real-plane-volume.json'),
-      fetch(studies.t5c?.resultsFile || 't5c-shape-recovery.json')
+      fetch(studies.t5c?.resultsFile || 't5c-shape-recovery.json'),
+      fetch(studies.t5c?.inputVolumeResultsFile || 't5c-input-volume.json')
     ]);
-    if (!t1bResponse.ok || !t5cResponse.ok) throw new Error('One or more numerical result files could not be loaded.');
-    const [t1b, t5c] = await Promise.all([t1bResponse.json(), t5cResponse.json()]);
+    if (!t1bResponse.ok || !t5cResponse.ok || !t5cInputVolumeResponse.ok) throw new Error('One or more numerical result files could not be loaded.');
+    const [t1b, t5c, t5cInputVolume] = await Promise.all([t1bResponse.json(), t5cResponse.json(), t5cInputVolumeResponse.json()]);
     const fmt = (value, digits = 6) => value == null ? '—' : Number(value).toFixed(digits);
     const sci = value => value == null ? '—' : Number(value).toExponential(3);
     const esc = value => String(value).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
@@ -390,28 +426,39 @@ async function renderVolumeStudies() {
 
     const t5cFile = esc(studies.t5c?.resultsFile || 't5c-shape-recovery.json');
     const t1bFile = esc(studies.t1b?.resultsFile || 't1b-real-plane-volume.json');
-    container.innerHTML = `
+    container.innerHTML = String.raw`
       <section class="volume-study">
         <h3>T1b — Real-plane signed mean and positive volume</h3>
-        <p>Two N=4 real-plane states at total boson number K=6 have a signed triple-grasp mean consistent with zero, while both positive volume operators return nonzero expectations. The outside-cell control has the same values to numerical precision. RS and AL were independently checked with a local-spin tensor-product calculation. All volumes use project normalization (γ=0.2375, ℏ=1); the physical prefactor and AL embedding convention remain model choices.</p>
-        <div class="table-wrap"><table class="study-table"><thead><tr><th>State</th><th>Strictly positive cell</th><th>K</th><th>q₀₁₂</th><th>Signed-mean proxy</th><th>RS positive volume</th><th>AL positive volume</th><th>Max matrix difference</th></tr></thead><tbody>${t1bRows}</tbody></table></div>
+        <p>Two \(N=4\) real-plane states at total boson number \(K=6\) have a signed triple-grasp mean consistent with zero, while both positive volume operators return nonzero expectations. The outside-cell control has the same values to numerical precision. RS and AL were independently checked with a local-spin tensor-product calculation. All volumes use project normalization \((\gamma=0.2375,\ \hbar=1)\); the physical prefactor and AL embedding convention remain model choices.</p>
+        <div class="table-wrap"><table class="study-table"><thead><tr><th>State</th><th>Strictly positive cell</th><th>\(K\)</th><th>\(q_{012}\)</th><th>Signed-mean proxy</th><th>RS positive volume</th><th>AL positive volume</th><th>Max matrix difference</th></tr></thead><tbody>${t1bRows}</tbody></table></div>
         <p class="hint">Values are in project units. The tiny positive-cell proxy is the square root of a roundoff-scale imaginary component in q₀₁₂. <a href="${t1bFile}">Download both full state records.</a></p>
       </section>
       <section class="volume-study">
-        <h3>T5c — Flux-covariance reconstruction and volume comparison</h3>
-        <p>For the normalized N=4 Freidel–Livine fixed-area state, the calculation forms Gᵢⱼ=⟨Jᵢ·Jⱼ⟩ and factors its rank-three covariance to candidate closed face-area vectors. It tests whether the normalized covariance Gram matrix recovers the input normals parameterized by x and φ. The scan contains ${t5c.records.length} records: ${Object.keys(t5c.shapes).length} shapes over J=1…6; positive RS/AL and signed-mean observables are included for five interior shapes at J=1…3. Hover over, focus, or click a chart point to compare its input and covariance-reconstructed tetrahedra.</p>
+        <h3>T5c — Equal-area flux-correlation diagnostic</h3>
+        <div class="math-model">
+          <p>Here the flux covariance is \(G_{ij}(J)=\langle\mathbf{J}_i\cdot\mathbf{J}_j\rangle\). We compare its normalized entries with the input unit-normal Gram matrix:</p>
+          <div class="math-equation">\[\widehat G_{ij}(J)=\frac{G_{ij}(J)}{\sqrt{G_{ii}(J)G_{jj}(J)}},\qquad C_{ij}^{\mathrm{input}}=\mathbf n_i\cdot\mathbf n_j,\qquad E_J=\max_{i,j}\left|\widehat G_{ij}(J)-C_{ij}^{\mathrm{input}}\right|.\]</div>
+          <p>\(E_J\) is the plotted maximum entrywise shape error. A Gram matrix fixes pairwise angles but leaves a common rotation undetermined, so the reconstructed tetrahedron is a candidate aligned for display.</p>
+        </div>
+        <p>For the normalized \(N=4\) Freidel–Livine fixed-area state, this earlier scan forms \(G_{ij}(J)=\langle\mathbf J_i\cdot\mathbf J_j\rangle\) and compares its normalized pair correlations with the input normal Gram matrix. It tracks how well those correlations retain shape information across the sampled equal-area family; the chart’s reconstructed tetrahedra are Gram-factorization candidates, not unique recovered orientations. The scan contains ${t5c.records.length} records: ${Object.keys(t5c.shapes).length} shapes over \(J=1,\ldots,6\); positive RS/AL and signed-mean observables are included for five interior shapes at \(J=1,\ldots,3\). Hover over, focus, or click a chart point to compare its input and covariance candidate.</p>
         <div class="study-metrics"><div class="study-metric"><strong>${sci(Math.max(...t5c.records.map(r => r.closureMaxAbs)))}</strong><span>maximum closure residual</span></div><div class="study-metric"><strong>${sci(Math.max(...t5c.records.map(r => r.reconstructedFaceGramMaxAbsError)))}</strong><span>maximum reconstructed-Gram residual</span></div><div class="study-metric"><strong>${sci(Math.max(...t5c.records.map(r => r.normalizedGramAffineIn1overJMaxAbsResidual)))}</strong><span>maximum affine-in-1/J fit residual</span></div><div class="study-metric"><strong>14 / 84</strong><span>shape labels / covariance records</span></div></div>
         <div class="chart-container study-chart">${chart}</div>
         <div class="t5c-preview-panel"><div class="t5c-preview-heading"><strong id="t5cPreviewTitle">Tetrahedron preview</strong><span id="t5cPreviewParameters"></span></div><div class="t5c-preview-selectors"><label>Shape <select id="t5cPreviewShape">${chartShapes.map(shape => `<option value="${shape.id}">${shape.label}</option>`).join('')}</select></label><label>J <select id="t5cPreviewJ">${[1,2,3,4,5,6].map(j => `<option value="${j}">${j}</option>`).join('')}</select></label></div><div id="t5cPointPreview" aria-live="polite"></div><p class="t5c-preview-note">Each image is fitted to the same display size to compare shape, not absolute scale. The covariance geometry is aligned to the input for viewing; its Gram matrix does not determine an absolute orientation.</p></div>
-        <p class="hint">Vertical values are maxᵢⱼ |Gᵢⱼ/√(GᵢᵢGⱼⱼ) − nᵢ·nⱼ|. The regular tetrahedron is recovered to floating-point precision; the bent shapes have nonzero errors that decrease across J=1…6. This finite scan does not establish a general state-to-geometry map or a large-J classical limit.</p>
+        <p class="hint">Vertical values are \(E_J=\max_{i,j}\left|\frac{G_{ij}(J)}{\sqrt{G_{ii}(J)G_{jj}(J)}}-\mathbf n_i\cdot\mathbf n_j\right|\). The regular tetrahedron is recovered to floating-point precision; the bent shapes have nonzero errors that decrease across \(J=1,\ldots,6\). This finite scan does not establish a general state-to-geometry map or a large-\(J\) classical limit.</p>
         <h3>Interior shape-recovery errors</h3>
-        <div class="table-wrap"><table class="study-table"><thead><tr><th>Shape</th><th>Input</th><th>Covariance candidate</th><th>x</th><th>φ</th><th>J</th><th>Normalized Gram error</th></tr></thead><tbody>${interiorErrorRows}</tbody></table></div>
+        <div class="table-wrap"><table class="study-table"><thead><tr><th>Shape</th><th>Input</th><th>Covariance candidate</th><th>\(x\)</th><th>\(\phi\)</th><th>\(J\)</th><th>Normalized Gram error</th></tr></thead><tbody>${interiorErrorRows}</tbody></table></div>
         <h3>Finite boundary-approach errors</h3>
         <div class="table-wrap"><table class="study-table"><thead><tr><th>Approach</th><th>Input shapes sampled</th>${selectedJs.map(j => `<th>E<sub>${j}</sub> range</th>`).join('')}</tr></thead><tbody>${boundaryRows}</tbody></table></div>
         <h3>Candidate and quantum volume values</h3>
-        <div class="table-wrap"><table class="study-table"><thead><tr><th>Shape</th><th>Input</th><th>Covariance candidate</th><th>x</th><th>φ</th><th>J</th><th>Covariance V<sub>cl</sub></th><th>q₀₁₂</th><th>Signed proxy</th><th>RS+</th><th>AL+</th></tr></thead><tbody>${volumeRows}</tbody></table></div>
-        <p class="hint">All volume values are in project units. The covariance volume uses the rank-three Gram factorization; RS and AL are separate positive operators, and the signed proxy is not a positive-volume test. <a href="${t5cFile}">Download full scan, including covariance matrices and spectra.</a></p>
+        <div class="table-wrap"><table class="study-table"><thead><tr><th>Shape</th><th>Input</th><th>Covariance candidate</th><th>\(x\)</th><th>\(\phi\)</th><th>\(J\)</th><th>Covariance \(V_{\mathrm{cl}}\)</th><th>\(q_{012}\)</th><th>Signed proxy</th><th>RS+</th><th>AL+</th></tr></thead><tbody>${volumeRows}</tbody></table></div>
+        <p class="hint">All volume values are in project units. The covariance volume uses the rank-three Gram factorization. RS and AL are defined as separate positive operators, but with the tested four-valent signs their calibrated curves coincide by closure and do not provide independent evidence; the signed proxy is not a positive-volume test. <a href="${t5cFile}">Download full scan, including covariance matrices and spectra.</a></p>
       </section>`;
+
+    container.insertAdjacentHTML('beforeend', window.renderT5cInputVolumeSection(
+      t5cInputVolume,
+      studies.t5c?.inputVolumeResultsFile || 't5c-input-volume.json'
+    ));
+    typesetMath(container);
 
     const recordsByPoint = new Map(interiorRecords.map(record => [`${record.shape}|${record.J}`, record]));
     const preview = document.getElementById('t5cPointPreview');

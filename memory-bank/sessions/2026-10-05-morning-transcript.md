@@ -118,3 +118,90 @@ The documentation update would primarily affect the T5c specification, task regi
 I also found status inconsistencies worth correcting: the T1/T3 parent summaries mark T1a/T3c completed while their detailed records remain in progress; the T6 specification says “proposed” despite the implemented kinematic pilot.
 
 This was a read-only scan using the text registry, current context, linked specifications, repository rules, and task templates. No files changed. Baseline: `main` at `5a597ed`, no tracked modifications, and two untracked Python cache directories.
+
+## Physics discussion continuation
+
+Captured from the same-day predecessor session, thread `01a10a52-625e-7b30-85a4-b2ecfac164e6`. This continues the physics discussion after the task-ownership review above. It preserves user messages and visible assistant responses; tool output is omitted.
+
+### User
+
+How are you choosing face normals?
+
+### Assistant — commentary
+
+For the current pilot I choose four tetrahedron vertices first, then compute each face’s outward area vector from its triangle. The normal is that vector divided by its length, and its length gives the face area. This makes closure hold by construction.
+
+I’m using two inputs so far: a regular tetrahedron and an explicit skew tetrahedron with unequal face areas. I turn each normal into a unit spinor, then weight it by $\sqrt{2a_i}$, where $a_i$ is that face’s fraction of total area.
+
+### User
+
+A useful parameteization of tetrahedron shape might be the cross-ratio when it's vertices are constrained to live on the surface of a 2-sphere
+
+### Assistant — commentary
+
+That’s a useful coordinate to add. Every nondegenerate tetrahedron has a circumsphere, so I can normalize its four vertices to the unit sphere and record their Möbius cross-ratio. One caveat: the cross-ratio captures the four points up to conformal transformations, while Euclidean volume is not conformally invariant. I’ll keep enough metric data to compute volume and use the cross-ratio as a shape label, rather than treating it as a complete Euclidean shape descriptor.
+
+### User
+
+We're interested in tetrahedron shape, right? Volume is then just a scale factor, isn't it?
+
+### Assistant — commentary
+
+Yes: once the Euclidean similarity shape is fixed, volume is its dimensionless volume factor times the cube of the chosen length scale. I’ll set the circumsphere radius to one for the shape comparison, so the reported volume is a pure shape factor.
+
+The cross-ratio is a useful coordinate, but by itself it does not determine every Euclidean tetrahedron’s shape: Möbius transformations preserve it while changing chord lengths. I’m recording the cross-ratio together with the unit-sphere chord lengths, which retain the metric shape needed for volume.
+
+### Assistant — commentary
+
+I’ve added the sphere cross-ratio and normalized chord lengths to the input record, and I’m also checking the flux-correlation Gram matrix for closure and shape agreement. The fixed RS/AL conversion factors come directly from the classical tetrahedron formula and the declared four-edge orientation signs; they are shared across the shapes, not fit separately.
+
+### User
+
+Please share results with me first
+
+### Assistant — response
+
+Here are the first results, before I extend the scan further:
+
+- **Scale and normalization:** With total face area set to one, volume scales as $J^{3/2}$. For the code’s four-valent RS/AL definitions and AL signs $(+,-,+,-)$, the fixed geometric comparison factors are $\sqrt{2}/12$ for RS and $\sqrt{2}/6$ for AL. They are derived from the classical tetrahedron formula, not fitted to the data.
+- **Regular input:** The geometry-matched quantum/classical volume ratio rises from **0.354 at $J=2$** to **0.879 at $J=5$** and **0.953 at $J=7$**.
+- **Unequal input:** For area fractions $(0.3155,0.1458,0.3000,0.2388)$, it rises from **0.317 at $J=2$** to **0.807 at $J=5$** and **0.904 at $J=7$**.
+- **Shape dependence:** On a nine-shape unequal-area grid, ratios span **0.325–0.529 at $J=2$** and **0.726–1.020 at $J=4$**. Four selected shapes at $J=6$ span **0.881–1.034**.
+- **Flat limit:** Along $x=1/\sqrt{3},\ \varphi\to0$, the classical volume reaches zero, while the normalized positive quantum mean remains about **0.0040 at $J=7$**. At $\varphi=0.05$, the $J=7$ quantum/classical ratio is **2.98**. This finite range does not settle either order of limits.
+
+The weighted labels reproduce the requested closure and mean face spins to numerical precision. I also record the face-spinor cross-ratio and the vertex cross-ratio on the unit circumsphere; the latter is accompanied by all six normalized chord lengths so the Euclidean shape is retained. The new numerical files are local and uncommitted.
+
+### Assistant — commentary
+
+The results are in the session already; I’m finishing the matching Memory Bank record now so it reflects the runs and their limits accurately. The new scan files will stay local and uncommitted until you ask otherwise.
+
+### User
+
+Fantastic. It provides concrete underpinning to the whole program - unless there's a mistake hiding somewhere.
+
+### Assistant — commentary
+
+I’ll audit the parts most likely to hide a scientific mismatch: that the weighted spinors encode the same closed face vectors used for the classical volume, that the RS/AL conversion factors match the repository’s operator definitions, and that the reported shape and boundary comparisons use consistent scaling.
+
+### Assistant — commentary
+
+The audit found no arithmetic mismatch in the geometry conversion or weighted labels. It did expose two important interpretation limits: each gauge-invariant FL state has zero mean vector on an individual face, so its shape is carried by inter-face correlations; and with these four-valent signs, the calibrated RS and AL curves are linked by closure, so their agreement is not independent evidence. I’m recording both caveats with the scan results.
+
+### Assistant — commentary
+
+The numerical record is now being corrected to distinguish input normals from quantum mean fluxes and to label RS/AL agreement as a consequence of the four-valent closure relation. I’m finishing the task/session logs and then I’ll check the documentation diff and repository status.
+
+### Assistant — response
+
+I did not find a numerical error in the audited volume comparison. The geometry conversion, coordinate-to-face-vector volume checks, weighted closure, and area means are consistent. The finite results give regular and unequal-skew volume ratios of **0.953** and **0.904** at $J=7$; the unequal-area grid shows clear shape dependence at lower $J$.
+
+The audit did uncover two important limits on interpretation:
+
+- Individual quantum face-vector means vanish in these gauge-invariant FL states. The input normals label the classical geometry; quantum shape recovery is checked through $G_{ij}=\langle\vec J_i\cdot\vec J_j\rangle$ and its normalized angular correlations. For the unequal starter, the largest correlation-pattern error is **0.0584** at $J=7$.
+- With the selected four-valent signs, closure makes the geometry-matched RS and AL curves coincide. Their agreement is therefore **not two independent confirmations**.
+
+At the exact flat boundary, the normalized positive mean remains nonzero for the sampled $J=2,4,6,7$; the finite scan does not establish either order of limits. I also corrected the results table’s displayed ratio so it explicitly includes both $J^{3/2}$ and the shared project-unit $\gamma^{3/2}$ factor; the calculations already used that normalization.
+
+The scan artifacts are [here](</Users/deepak/code/lqg-scattering/t5c_input_geometry_scan.py>), with [input results](</Users/deepak/code/lqg-scattering/t5c_input_geometry_results.json>), [unequal-shape results](</Users/deepak/code/lqg-scattering/t5c_weighted_shape_results.json>), and [flat-boundary results](</Users/deepak/code/lqg-scattering/t5c_degenerate_limits_results.json>). I updated the [T5c record](</Users/deepak/code/lqg-scattering/memory-bank/implementation-details/T5c-flux-covariance-volume-comparison.md>) and session notes. `git diff --check` is clean, and all four result JSON files parse. I did not run a test suite.
+
+The earlier documentation commit `33e332f` remains pushed. These new scans and Memory Bank updates are local and uncommitted; the existing cache directories were left untouched.

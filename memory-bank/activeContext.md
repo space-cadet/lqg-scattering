@@ -1,6 +1,6 @@
 # Active Context
 
-*Last Updated: 2026-10-05 10:49:54 IST*
+*Last Updated: 2026-10-05 15:00:41 IST*
 
 ## Current Focus
 **Primary Task:** T5c — compare positive RS/AL expectations from FL tetrahedron states with the classical volume of the same input geometry, including weighted areas and degenerate limits.
@@ -8,9 +8,9 @@
 
 ## Active Tasks
 - T4: Manuscript claim audit and review preparation — IN PROGRESS; independent audit recorded.
-- T1a: The regular FL tetrahedron sweep covers $J=1\ldots5$. At $J=2$, both RS and AL have their minima at the regular tetrahedron among 440 ordered equal-face-area samples; this is not a global-minimum proof. The current spinor helper uses unit spinors. Weighted spinors can extend the existing FL family to unequal area ratios; those positive-volume calculations and exact boundary behavior remain open.
+- T1a: The regular FL tetrahedron sweep covers $J=1\ldots5$. At $J=2$, both RS and AL have their minima at the regular tetrahedron among 440 ordered equal-face-area samples; this is not a global-minimum proof. Initial weighted-area input-volume pilots cover one unequal geometry through $J=7$, a nine-shape grid at $J=2,4$, and selected $J=6$ points. Broader unequal-area coverage and degenerate limits remain open.
 - T3c: The Rust FL Eq. (38) example now builds and matches the Python $J=2$ result after the shared zero-mode cutoff. Physical prefactors and a method for blocks above 512 remain open; the Cargo shim itself is still broken.
-- T5: Volume–positivity numerical-studies program — IN PROGRESS; T5c/T5d/T5g open; the former T5f amplituhedron mapping is now T8b. T5c owns the direct classical/quantum tetrahedron-volume comparison. Existing volume spectra cover five interior equal-area shapes at $J=1,2,3$; covariance results cover 14 equal-area shapes through $J=6$. Weighted areas, fixed cross-shape normalization, positive-volume boundary limits, and volume variance remain open. See `implementation-details/T5c-flux-covariance-volume-comparison.md` and shared `implementation-details/volume-numerical-preliminaries.md`.
+- T5: Volume–positivity numerical-studies program — IN PROGRESS; T5c/T5d/T5g open; the former T5f amplituhedron mapping is now T8b. Initial T5c pilots compare the input classical tetrahedron with weighted FL positive volume: regular/unequal-skew through $J=7$, a nine-shape unequal-area grid at $J=2,4$, selected $J=6$ points, and a flat path through $J=7$. Area means and weighted closure pass; finite-$J$ unequal correlations do not exactly reproduce input angles. Calibrated RS/AL agreement follows from closure and is not independent evidence. Broader shape and iterated-limit conclusions remain open. See `implementation-details/T5c-flux-covariance-volume-comparison.md` and shared `implementation-details/volume-numerical-preliminaries.md`.
 - T7: Thermal/TFD program — reported T7a–T7e runs complete for their tested setups; broader coherent-sector thermal question remains open.
 - T8: Amplituhedron Program — IN PROGRESS; T8a cluster algebra/chart relevance and T8b positive-cell/scattering-region mapping (transferred from T5f) are open. See `tasks/T8.md`.
 
@@ -19,7 +19,7 @@
 - T1b's positive-volume follow-up is complete for two $N=4$, $K=6$ real-plane states inside and outside the positive cell; both RS and AL expectations are nonzero and independently cross-checked.
 - Python and Rust implementations exist. The old n=4 comparison shared a truncated Taylor state. Corrected Rust scans now cover n=4..8; SciPy independently checks n=4,5,7,8.
 - `manuscript.md` contains results through T7e but needs corrected conclusions, caveats, independent review, and circulation.
-- At the 2026-10-05 scan baseline, the checkout was on `main` at `5a597ed`; two pre-existing untracked Python cache directories remain under `__pycache__/` and `dashboard/__pycache__/`. The latest visual dashboard update is separately deployed at `9c6670c`.
+- Documentation commit `33e332f` is pushed to `origin/main`. The numerical T5c drivers/results, Memory Bank follow-up, and weighted input-volume dashboard extension are local changes after that commit; the new plot/data extension remains undeployed. Separately, the dashboard's math typesetting update was deployed from website commit `15f698f` (workflow `37286586717`) and verified live in the study and fixed-area sections. Chart SVG labels remain compact text; mobile view was not examined, per the user's direction. The earlier plot-artwork update is website commit `9c6670c`. Two pre-existing untracked Python cache directories remain under `__pycache__/` and `dashboard/__pycache__/`.
 - The thermal-intertwiners paper source and assets are copied into `paper/thermal-intertwiners/`; this does not implement or validate its proposed thermal ket.
 - The constructive F-pair sewing discussion is recorded in [the dialogue note](implementation-details/constructive-geometric-sewing-dialogue.md) and [the session transcript](sessions/2026-10-04-geometric-construction-transcript.md). Triangle and tetrahedron sewing remain conceptual; metric shape and volume have not been validated, and no task ID was assigned.
 
@@ -33,10 +33,10 @@
 - Do not mark numerical claims red-team reviewed without a documented protocol and per-claim evidence.
 
 ## Next Actions
-1. Construct weighted FL spinors from closed unequal-area tetrahedron data and verify the area fractions and closure before evaluating positive volumes.
-2. Compare RS/AL expectations divided by $J^{3/2}$ with the classical volume of the input tetrahedron, using one fixed normalization per operator and recording variance where feasible.
-3. Study controlled degenerate paths and both limit orders; keep absolute discrepancies near zero classical volume.
-4. Fix the graph embedding and AL signs, state project units separately from physical prefactors, and address active blocks above dimension 512 when required.
+1. Expand the weighted FL shape grid beyond the first area partition and track the face-normal and vertex-sphere cross-ratios alongside Euclidean metric data; treat normals as input labels and correlations as the quantum shape diagnostic.
+2. Extend selected shape and unequal-area volume comparisons to larger $J$; quantify convergence and the remaining shape dependence under the fixed geometric factors.
+3. Extend the flat-boundary path far enough in $J$ and smaller $\varphi$ to assess each iterated limit; keep absolute discrepancies near zero classical volume.
+4. Fix and document the graph embedding and AL signs, keep project units separate from physical prefactors, and address active blocks above dimension 512 when required.
 5. Extend the corrected T5a and T5b results across plane controls
   and run T5d with real off-cell controls.
 6. Complete T5c/T6 polyhedron reconstruction and controlled comparisons.

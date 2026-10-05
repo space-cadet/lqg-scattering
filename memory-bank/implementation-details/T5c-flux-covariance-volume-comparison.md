@@ -1,5 +1,5 @@
 # T5c: Flux-Covariance Reconstruction and Volume Comparison
-*Last Updated: 2026-10-05 10:49:54 IST*
+*Last Updated: 2026-10-05 12:24:39 IST*
 
 **Status:** OPEN — the saved calculation is an exploratory pilot, not a
 completed classical-limit analysis.
@@ -8,15 +8,13 @@ completed classical-limit analysis.
 
 ## Aim
 
-For one specified quantum state family, construct a candidate classical
-tetrahedron from that state's flux correlations, then compare its volume
-with explicitly named quantum observables calculated from the same state.
-
-This task does not assume that the reconstruction is already the correct
-state-to-geometry map. It must check whether the correlation geometry
-recovers the input shape when one is known, and whether that relationship
-persists as the state label grows. A finite numerical match alone would not
-establish a general classical limit.
+Start from a specified closed classical tetrahedron, encode its face areas
+and normals in one named quantum state family, and compare its classical
+volume with positive volume observables of that same state. Separately check
+whether flux correlations recover the input shape as the state label grows.
+Do not treat covariance reconstruction as the primary volume target or
+assume it is already the correct state-to-geometry map. A finite numerical
+match alone would not establish a general classical limit.
 
 ## Central numerical question
 
@@ -30,10 +28,46 @@ Use the input face data as the primary classical reference. For area
 fractions $a_i=A_i/\sum_k A_k$ and unit normals $n_i$ satisfying
 $\sum_i a_i n_i=0$, construct the FL labels
 $z_i=\sqrt{2a_i}\,\chi_i$, where $\chi_i$ is a unit spinor with Bloch
-vector $n_i$. The classical face vectors at total spin-area label $J$ are
-$J a_i n_i$, and their tetrahedron volume scales as $J^{3/2}$. The
-covariance-reconstructed tetrahedron remains a separate geometry diagnostic;
-it should not replace the input tetrahedron as the primary volume target.
+vector $n_i$. The associated classical input face vectors at total
+spin-area label $J$ are $J a_i n_i$, and their tetrahedron volume scales as
+$J^{3/2}$. They are the classical reference encoded by the spinor labels,
+not the quantum means $\langle\vec J_i\rangle$: each individual vector
+mean vanishes in the gauge-invariant FL intertwiner. Its area means are
+$\langle j_i\rangle=Ja_i$, while its shape information is in inter-face
+correlations. The covariance-reconstructed tetrahedron remains a separate
+geometry diagnostic; it should not replace the input tetrahedron as the
+primary volume target.
+
+## Fixed geometric normalization
+
+For closed tetrahedral face vectors $F_i$, let
+$q=\det(F_1,F_2,F_3)$ for three faces meeting at a vertex. The Euclidean
+tetrahedron volume is
+
+$$
+V_{\mathrm{cl}}=\sqrt{\frac{2}{9}|q|}.
+$$
+
+Closure gives the classical triple pattern
+$q_{012}=-q_{013}=q_{023}=-q_{123}$. The corresponding classical symbols
+of the raw RS sum and the AL root with lexicographic signs $(+,-,+,-)$ are
+$4\sqrt{|q|}$ and $2\sqrt{|q|}$. Therefore compare to the classical volume
+using the fixed factors
+
+$$
+\kappa_{\mathrm{RS}}=\frac{\sqrt{2}}{12},\qquad
+\kappa_{\mathrm{AL}}=\frac{\sqrt{2}}{6}.
+$$
+
+They multiply the repository's project-normalized expectations and are held
+fixed for every shape and $J$. In the tested gauge-invariant four-valent
+states, the four quantum triple operators obey the same signed closure
+pattern to numerical residual below $3.3\times10^{-16}$, so the two
+geometry-matched RS and AL curves coincide. Their agreement is expected
+from this relation and is not an independent confirmation. This is the
+geometric conversion for the stated four-valent convention; it does not
+select the remaining physical regularization or Planck-unit prefactors.
+Other AL tangent signs require a separate conversion.
 
 For each operator $X\in\{\mathrm{RS},\mathrm{AL}\}$ and each
 nondegenerate shape, report the classical volume at unit total area and
@@ -48,13 +82,14 @@ For a controlled degenerate limit, parameterize a nondegenerate path by
 $\delta\to0$ and evaluate both orders: first $J\to\infty$ at fixed
 $\delta$, then $\delta\to0$; and first $\delta\to0$ at fixed $J$, then
 $J\to\infty$. Record the finite-$J$ quantum volume and its variance near
-the boundary. The equal-area boundary labels already sampled for covariance
-are useful inputs, but currently have no positive-volume spectral results.
+the boundary.
 
 This is the T5c numerical extension, not a new task or a change of state
-family. Weighted FL spinors are the proposed input for unequal areas; their
-area-fraction mapping must be checked numerically before reporting those
-volume results.
+family. The weighted-spinor pilot below verifies the closure matrix and
+area means for selected closed inputs; its correlation matrix also closes.
+For the unequal starter, however, normalized pair correlations differ from
+the input normal dot products by up to $0.0584$ at $J=7$, so full finite-$J$
+shape recovery remains open.
 
 ## State family and labels
 
@@ -87,12 +122,13 @@ $\xi$, that parameter needs a definition in that family's specification;
 it is not interchangeable with $x$, $\varphi$, a face spin, or
 $K_{\mathrm{Fock}}$.
 
-The current helper builds each spinor from a unit face normal, so the saved
-T5c and T1a scans cover equal face-area ratios. For an unequal-area closed
-tetrahedron, the existing FL construction accepts weighted spinors
-$z_i=\sqrt{2a_i}\,\chi_i$; the shared preliminaries give the closure and
-area conventions. The weighted-state and volume mapping is proposed here,
-not yet a numerical result.
+The original T5c and T1a drivers build each spinor from a unit face normal,
+so those saved scans cover equal face-area ratios. The new pilot verifies
+that weighted inputs $z_i=\sqrt{2a_i}\,\chi_i$ encode selected unequal
+closed tetrahedra with the requested area means; it does not yet cover the
+full unequal-area shape space. Do not read the normals as individual
+quantum vector means: those means vanish by gauge invariance, and angular
+shape is tested through $\langle\vec J_i\cdot\vec J_j\rangle$.
 
 ## Shape labels $x$ and $\varphi$
 
@@ -151,6 +187,75 @@ This acts as a coordinate-consistency check between the shape labels and
 the spinor construction. It does not identify the Thurston four-marked-sphere
 data with LQG flux geometry.
 
+## Scale-free tetrahedron shape coordinates
+
+At fixed face-area fractions, the closed four-face tetrahedron shape has
+two degrees of freedom after common rotations are removed. One convenient
+pair is $d=|F_0+F_1|$ at unit total area and the bend angle between the
+$F_0,F_1$ and $F_2,F_3$ pairs. `t5c_input_geometry_scan.py` records the
+complex cross-ratio of the four vertices projected from the unit
+circumsphere. The unequal-area driver also scans $(d,\varphi)$ and records
+the cross-ratio of the face-normal spinor rays.
+
+For a fixed Euclidean similarity shape, volume is a scale factor:
+$V=R_{\mathrm{circ}}^3 V_{R=1}$, or
+$V=A_{\mathrm{tot}}^{3/2}V_{A=1}$. T5c fixes $A_{\mathrm{tot}}=1$ for the
+input fractions and scales the comparison by $J^{3/2}$. A vertex
+cross-ratio by itself does not retain all Euclidean chord lengths, so the
+input records also include the six chord lengths after setting the
+circumsphere radius to one.
+
+## Initial input-geometry results (2026-10-05)
+
+The driver starts from explicit tetrahedron vertices, computes each
+outward triangle area vector, and uses its unit direction as the face
+normal. It rescales the four areas to total area one, forms
+$z_i=\sqrt{2a_i}\,\chi_i$, and checks the weighted closure matrix and the
+FL means $\langle j_i\rangle=Ja_i$. The classical target comes from those
+same face vectors. Full cross-ratios, chord lengths, covariance matrices,
+variances, and per-$J$ results are saved in
+`t5c_input_geometry_results.json`.
+
+Here $V_{\mathrm{cl,proj}}=(\gamma\hbar)^{3/2}V_{\mathrm{cl}}$ is the
+unit-total-area classical target in the same project units as the quantum
+operator; both sides therefore carry the same $\gamma^{3/2}$ factor.
+
+| Input shape | Face-area fractions | Vertex cross-ratio on unit circumsphere | $\kappa_X\langle V_X\rangle_{\mathrm{proj}}/(J^{3/2}V_{\mathrm{cl,proj}})$ at $J=2,5,7$ |
+|---|---|---|---|
+| Regular | $(0.25,0.25,0.25,0.25)$ | $0.5000-0.8660i$ | $0.3536, 0.8788, 0.9529$ |
+| Unequal skew | $(0.3155,0.1458,0.3000,0.2388)$ | $0.3378+0.7796i$ | $0.3168, 0.8073, 0.9043$ |
+
+The RS and AL ratios coincide to numerical precision under the stated AL
+signs and geometric factors. At $J=7$, the normalized geometry-matched
+standard deviations are $0.00172$ for the regular case and $0.00226$ for
+the unequal case, in project units divided by $J^{3/2}$. The weighted
+closure-matrix residual is below $4.1\times10^{-16}$, and the largest error
+in $\langle j_i\rangle=Ja_i$ is below $6.2\times10^{-14}$ through $J=7$.
+For the unequal case, the covariance Gram matrix closes to $4.4\times10^{-15}$
+at $J=7$, but its normalized pairwise-correlation error is still $0.0584$;
+its RMS covariance area fractions also differ from the input fractions.
+
+The nine-point unequal-area grid in `t5c_weighted_shape_scan.py` fixes
+$(a_0,a_1,a_2,a_3)=(0.32,0.18,0.30,0.20)$ and samples three interior
+diagonals and three bend angles. The geometry-matched volume ratio ranges
+from $0.325$ to $0.529$ at $J=2$ and from $0.726$ to $1.020$ at $J=4$.
+Face closure is exact by construction; the largest weighted spinor closure
+error is $2.8\times10^{-16}$ and the largest mean-spin error at $J=4$ is
+$3.8\times10^{-15}$. The grid shows finite-$J$ shape dependence, not a
+shape-uniform limit. Four selected grid points at $J=6$ have ratios from
+$0.881$ to $1.034$.
+
+The boundary driver `t5c_degenerate_limits_scan.py` holds
+$x=1/\sqrt{3}$ and takes $\varphi\to0$, where the face normals become
+coplanar. At the exact boundary, the classical volume is zero while the
+geometry-matched $\langle V\rangle/J^{3/2}$ values at $J=2,4,6,7$ are
+$0.00247,0.00461,0.00418,0.00398$; the corresponding standard deviations
+are $0.00502,0.00350,0.00282,0.00261$. At $\varphi=0.05$, the classical
+project volume is $0.001338$, while the normalized quantum mean is nearly
+the boundary value; its ratio to the classical volume is $1.84$ at $J=2$
+and $2.98$ at $J=7$. These finite samples do not establish either
+iterated limit. Full records are in `t5c_degenerate_limits_results.json`.
+
 ## Correlation geometry
 
 For the normalized state, calculate the real symmetric $4\times4$ matrix
@@ -158,6 +263,18 @@ For the normalized state, calculate the real symmetric $4\times4$ matrix
 $$
 G_{ij}=\langle\vec J_i\cdot\vec J_j\rangle.
 $$
+
+The normalized covariance pattern is the pairwise angular-correlation
+matrix
+
+$$
+C_{ij}=\frac{G_{ij}}{\sqrt{G_{ii}G_{jj}}}.
+$$
+
+Compare it with the input normal Gram matrix $N_{ij}=n_i\cdot n_j$.
+This removes the RMS flux lengths and tests angular shape; it is not a
+volume observable and does not retain the overall scale. In the weighted
+unequal starter, $\max_{ij}|C_{ij}-N_{ij}|=0.0584$ at $J=7$.
 
 Use $G_{ii}=\langle j_i(j_i+1)\rangle$ for the diagonal, including all
 occupation components in the state. The FL state is gauge-invariant, so its
@@ -342,18 +459,44 @@ website commit `9c6670c190e813470975f18037c1ed4a6ecea8bc` (workflow
 `37125090987`). This records the presentation and deployment; it does not
 change T5c's numerical status.
 
+### Weighted input-volume dashboard extension (2026-10-05)
+
+The local dashboard now loads `dashboard/t5c-input-volume.json`, assembled
+from the four scan result files by
+`dashboard/build_t5c_input_volume_data.py`. The helper plots in
+`dashboard/t5c-input-volume.js` add four views:
+
+- Regular and unequal-skew mean/classical ratios and intrinsic spread ratios
+  over $J=1,\ldots,7$.
+- A tile grid for the nine unequal-area shapes at $J=2,4$, with four selected
+  points at $J=6$; empty tiles mark uncomputed cases.
+- Separate complex cross-ratio plots for the circumsphere vertices and the
+  face-normal spinors. The full result bundle retains six normalized vertex
+  chord lengths because a cross-ratio alone is not a Euclidean shape metric.
+- Positive-volume mean, classical target, and intrinsic spread along the
+  sampled flat path $\varphi=0,0.05,\pi/2$.
+
+The page also reports weighted-spinor closure and scalar area-mean residuals.
+For the tested four-valent signs, the calibrated RS and AL curves coincide by
+closure and are not independent evidence. The flat-path points are discrete
+samples, not a limit fit; neither order of the flat-shape and large-$J$ limits
+is established. This extension was rendered and visually checked from the
+local dashboard on 2026-10-05; it has not been deployed. It changes no T5c
+numerical-status claim.
+
 ## Work required for a T5c result
 
 - Use the same closed input area vectors to build weighted FL spinors and
   the classical reference tetrahedron. Verify closure, $\langle j_i\rangle$
   against the requested area fractions, and the classical volume before
-  comparing quantum observables. Retain covariance reconstruction as a
-  second geometry diagnostic.
+  comparing quantum observables. The regular and unequal-skew starters pass;
+  expand to a broader area and shape family. Retain covariance reconstruction
+  as a separate geometry diagnostic.
 - Compare regular and distorted equal-area shapes, then add genuinely
   unequal positive area fractions. Cover multiple nondegenerate shapes and
   record the normalized RS/AL expectations, absolute discrepancy, volume
   variance where feasible, and convergence as $J$ grows.
-- Use one declared normalization per operator across all shapes. Keep
+- Use the fixed geometric factors derived above across all shapes. Keep
   project units separate from physical regularization factors; choose and
   justify the latter before making physical-volume claims.
 - Fix AL signs from a stated graph embedding, or label AL values as
@@ -364,8 +507,9 @@ change T5c's numerical status.
 - Treat the known equal-area FL covariance identity as an analytic
   cross-check. Do not generalize it to weighted unequal-area labels without
   deriving or validating that case.
-- Extend positive-volume calculations beyond $J=1,2,3$ where feasible and
-  report active-block limits and independent numerical checks.
+- Extend the new weighted positive-volume calculations beyond $J=7$ where
+  feasible, report active-block limits, and add independent numerical checks
+  for the new shape families.
 
 ## Related documentation
 
@@ -381,4 +525,7 @@ change T5c's numerical status.
 - [Shape-scan run log](../../fl_volume_shape_scan_log.md)
 - [Selected-shape covariance results](../../t5c_shape_recovery_results.json)
 - [Selected-shape covariance driver](../../t5c_shape_recovery_scan.py)
+- [Input-geometry weighted scan](../../t5c_input_geometry_scan.py) and [results](../../t5c_input_geometry_results.json)
+- [Unequal-area shape scan](../../t5c_weighted_shape_scan.py) and [results](../../t5c_weighted_shape_results.json), with [selected $J=6$ points](../../t5c_weighted_shape_j6_results.json)
+- [Flat-boundary scan](../../t5c_degenerate_limits_scan.py) and [results](../../t5c_degenerate_limits_results.json)
 - [T1a task record](../tasks/T1a.md) and [T3c task record](../tasks/T3c.md)

@@ -1,6 +1,6 @@
 # Implementation Progress
 
-*Last Updated: 2026-10-05 10:49:54 IST*
+*Last Updated: 2026-10-05 11:48:41 IST*
 
 ## Active Tasks
 
@@ -8,7 +8,7 @@
 **Status:** 🔄 IN PROGRESS
 **Priority:** HIGH
 
-The regular FL tetrahedron area sweep covers $J=1\ldots5$; direct tensor-product expectations now agree within $1.67\times10^{-16}$ after a shared numerical zero-mode cutoff. At $J=2$, a refreshed 440-point ordered equal-face-area scan finds the regular tetrahedron as the sampled minimum for both RS and AL expectations. Two direct tensor-product shape checks agree to floating-point precision, and the displayed shape guide remains on both dashboard panels. This grid does not establish a global minimum; exact degenerate limits and unequal-area shape families remain open. The project-normalized $J=2$ expectations do not simply follow reconstructed classical volume at the selected comparison points.
+The regular FL tetrahedron area sweep covers $J=1\ldots5$; direct tensor-product expectations now agree within $1.67\times10^{-16}$ after a shared numerical zero-mode cutoff. At $J=2$, a refreshed 440-point ordered equal-face-area scan finds the regular tetrahedron as the sampled minimum for both RS and AL expectations. Two direct tensor-product shape checks agree to floating-point precision, and the displayed shape guide remains on both dashboard panels. This grid does not establish a global minimum. Initial T5c weighted inputs now verify unequal area means and closure; broader unequal-area sampling and the flat-boundary limit remain open. The project-normalized $J=2$ expectations do not simply follow reconstructed classical volume at the selected comparison points.
 
 **Next:** study equal-area shape and boundary behavior under T1a. T5c now owns the FL classical/quantum volume comparison, with weighted spinors for unequal area ratios and the input tetrahedron as the primary classical reference. Keep sampled minima distinct from a global-minimum claim.
 
@@ -16,16 +16,19 @@ The regular FL tetrahedron area sweep covers $J=1\ldots5$; direct tensor-product
 **Status:** 🔄 IN PROGRESS
 **Priority:** HIGH
 
-The existing positive-volume results cover a regular-area sweep and five
-interior equal-area shapes at $J=1,2,3$. The covariance geometry covers 14
-equal-area labels through $J=6$; its normalized Gram relation follows from
-the known FL correlation formula and is a consistency check. The numerical
-question is whether positive RS/AL expectations, divided by $J^{3/2}$,
-approach the classical volume of the same input tetrahedron under one fixed
-normalization per operator. Extend to weighted unequal-area FL labels, record
-volume variance where feasible, and compare both orders of the $J\to\infty$
-and degenerate-shape limits. AL embedding signs and physical prefactors
-remain to be fixed. See `implementation-details/T5c-flux-covariance-volume-comparison.md`.
+The original positive-volume results cover a regular-area sweep and five
+interior equal-area shapes at $J=1,2,3$. The new weighted input pilot covers
+regular and unequal-skew tetrahedra through $J=7$, a nine-shape unequal-area
+grid at $J=2,4$, four selected grid shapes at $J=6$, and a fixed-area flat
+path at $J=2,4,6,7$. With fixed geometric factors, the regular and
+unequal-skew mean ratios reach $0.953$ and $0.904$ at $J=7$. Weighted closure
+and scalar area means pass; unequal normalized pair correlations still
+differ from the input normals, reaching $0.0584$ error at $J=7$. At the
+exact flat boundary the normalized positive mean remains nonzero in the
+tested range, but neither iterated limit is established. The calibrated RS
+and AL curves coincide by four-valent closure under the selected signs, so
+they are not independent evidence. AL graph signs and physical prefactors
+remain open. See `implementation-details/T5c-flux-covariance-volume-comparison.md`.
 
 ### T8: Amplituhedron Program
 **Status:** 🔄 IN PROGRESS

@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-10-05
+- Added the first weighted input-geometry T5c pilot: regular/unequal-skew scans through $J=7$, a nine-shape unequal-area grid, selected $J=6$ points, and a fixed-area flat-boundary scan. Audited the geometric conversion and recorded that individual FL vector means vanish, while area means and closure pass; calibrated RS/AL agreement follows from four-valent closure and is not independent evidence. T5c remains open; neither degenerate limit order is established.
 - Refined T5c around the direct FL classical/positive-volume comparison: weighted area labels, the input tetrahedron reference, fixed cross-shape normalizations, volume fluctuations, and both degenerate limit orders. Documented that the equal-area covariance relation follows from the known FL correlation formula. Saved the session note and transcript; no numerical runs were added.
 
 ## 2026-10-03

@@ -1,0 +1,1163 @@
+{
+  "model": "Freidel-Livine fixed-area state with weighted coherent spinors",
+  "normalization": {
+    "volumeOperator": "gamma^(3/2) times the repository positive RS/AL operator",
+    "gamma": 0.2375,
+    "hbar": 1.0,
+    "classicalVolume": "gamma^(3/2) sqrt(2/9 |det(F1,F2,F3)|), with no fitted shape factor",
+    "fixedGeometryMatchingFactors": {
+      "rs": 0.11785113019775793,
+      "al": 0.23570226039551587
+    },
+    "factorDerivation": "For a closed 4-valent vertex and signs (+,-,+,-), the raw RS operator is 4 sqrt(|q|), the raw AL operator is 2 sqrt(|q|), and tetrahedron volume is sqrt(2/9) sqrt(|q|).",
+    "scaleRelations": "V = R_circumradius^3 * V_at_unit_circumradius = A_total^(3/2) * V_at_unit_total_area.",
+    "alOrientationSignsByLexicographicTriple": [
+      1,
+      -1,
+      1,
+      -1
+    ]
+  },
+  "areaLabelsJ": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "cases": [
+    {
+      "name": "regular",
+      "vertices": [
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          -1.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          1.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          -1.0,
+          1.0
+        ]
+      ],
+      "sphereShapeData": {
+        "circumcenter": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "circumradius": 1.7320508075688772,
+        "unitSphereVertices": [
+          [
+            0.5773502691896258,
+            0.5773502691896258,
+            0.5773502691896258
+          ],
+          [
+            0.5773502691896258,
+            -0.5773502691896258,
+            -0.5773502691896258
+          ],
+          [
+            -0.5773502691896258,
+            0.5773502691896258,
+            -0.5773502691896258
+          ],
+          [
+            -0.5773502691896258,
+            -0.5773502691896258,
+            0.5773502691896258
+          ]
+        ],
+        "tetrahedronVolumeAtUnitCircumradius": 0.5132002392796675,
+        "unitSphereRadiusResidual": 0.0,
+        "vertexCrossRatioReal": 0.4999999999999999,
+        "vertexCrossRatioImag": -0.8660254037844386,
+        "unitSphereChordDistances": {
+          "01": 1.6329931618554523,
+          "02": 1.6329931618554523,
+          "03": 1.6329931618554523,
+          "12": 1.6329931618554523,
+          "13": 1.6329931618554523,
+          "23": 1.6329931618554523
+        }
+      },
+      "faceAreaFractions": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "faceNormals": [
+        [
+          -0.5773502691896258,
+          -0.5773502691896258,
+          -0.5773502691896258
+        ],
+        [
+          -0.5773502691896258,
+          0.5773502691896258,
+          0.5773502691896258
+        ],
+        [
+          0.5773502691896258,
+          -0.5773502691896258,
+          0.5773502691896258
+        ],
+        [
+          0.5773502691896258,
+          0.5773502691896258,
+          -0.5773502691896258
+        ]
+      ],
+      "faceAreaClosureResidual": 0.0,
+      "spinorClosureMatrixMaxError": 3.331526259212514e-16,
+      "classicalVolumeAtUnitTotalArea": 0.05170026995011666,
+      "classicalVolumeProjectUnitsAtUnitTotalArea": 0.0059839537979518645,
+      "results": [
+        {
+          "J": 1,
+          "meanFaceSpins": [
+            0.25,
+            0.25,
+            0.24999999999999992,
+            0.25
+          ],
+          "maxMeanFaceSpinError": 8.326672684688674e-17,
+          "covarianceGeometry": {
+            "closureResidual": 6.798699777552591e-17,
+            "minimumEigenvalue": -5.551115123128116e-17,
+            "rmsFaceAreaFractions": [
+              0.25,
+              0.25,
+              0.25,
+              0.25000000000000006
+            ],
+            "maxNormalizedCorrelationError": 3.3306690738754696e-16,
+            "fluxGram": [
+              [
+                0.375,
+                -0.12500000000000003,
+                -0.12499999999999997,
+                -0.12500000000000003
+              ],
+              [
+                -0.12500000000000003,
+                0.375,
+                -0.12499999999999997,
+                -0.12500000000000003
+              ],
+              [
+                -0.12499999999999997,
+                -0.12499999999999997,
+                0.3749999999999999,
+                -0.12499999999999997
+              ],
+              [
+                -0.12500000000000003,
+                -0.12500000000000003,
+                -0.12499999999999997,
+                0.37500000000000006
+              ]
+            ]
+          },
+          "classicalVolumeProjectUnitsAtJ": 0.0059839537979518645,
+          "rsMeanProjectUnits": 0.0,
+          "rsVarianceProjectUnitsSquared": 0.0,
+          "rsMeanOverJ32": 0.0,
+          "rsSDOverJ32": 0.0,
+          "rsGeometryMatchedMeanOverJ32": 0.0,
+          "rsGeometryMatchedSDOverJ32": 0.0,
+          "rsGeometryMatchedAbsoluteDifferenceOverJ32": 0.0059839537979518645,
+          "rsRawToClassicalRatio": 0.0,
+          "rsToClassicalRatio": 0.0,
+          "alMeanProjectUnits": 0.0,
+          "alVarianceProjectUnitsSquared": 0.0,
+          "alMeanOverJ32": 0.0,
+          "alSDOverJ32": 0.0,
+          "alGeometryMatchedMeanOverJ32": 0.0,
+          "alGeometryMatchedSDOverJ32": 0.0,
+          "alGeometryMatchedAbsoluteDifferenceOverJ32": 0.0059839537979518645,
+          "alRawToClassicalRatio": 0.0,
+          "alToClassicalRatio": 0.0
+        },
+        {
+          "J": 2,
+          "meanFaceSpins": [
+            0.49999999999999967,
+            0.49999999999999967,
+            0.4999999999999994,
+            0.4999999999999996
+          ],
+          "maxMeanFaceSpinError": 6.106226635438361e-16,
+          "covarianceGeometry": {
+            "closureResidual": 2.7194799110210365e-16,
+            "minimumEigenvalue": 1.1037178115738204e-16,
+            "rmsFaceAreaFractions": [
+              0.25000000000000006,
+              0.25,
+              0.25,
+              0.25000000000000006
+            ],
+            "maxNormalizedCorrelationError": 2.220446049250313e-16,
+            "fluxGram": [
+              [
+                0.875,
+                -0.2916666666666667,
+                -0.29166666666666663,
+                -0.29166666666666663
+              ],
+              [
+                -0.2916666666666667,
+                0.8749999999999998,
+                -0.2916666666666665,
+                -0.2916666666666667
+              ],
+              [
+                -0.29166666666666663,
+                -0.2916666666666665,
+                0.8749999999999998,
+                -0.2916666666666666
+              ],
+              [
+                -0.29166666666666663,
+                -0.2916666666666667,
+                -0.2916666666666666,
+                0.875
+              ]
+            ]
+          },
+          "classicalVolumeProjectUnitsAtJ": 0.016925177235355037,
+          "rsMeanProjectUnits": 0.050775531706065094,
+          "rsVarianceProjectUnitsSquared": 0.012890773100168106,
+          "rsMeanOverJ32": 0.017951861393855587,
+          "rsSDOverJ32": 0.040141582399315215,
+          "rsGeometryMatchedMeanOverJ32": 0.0021156471544193788,
+          "rsGeometryMatchedSDOverJ32": 0.004730730853685726,
+          "rsGeometryMatchedAbsoluteDifferenceOverJ32": 0.0038683066435324857,
+          "rsRawToClassicalRatio": 2.9999999999999987,
+          "rsToClassicalRatio": 0.3535533905932736,
+          "alMeanProjectUnits": 0.025387765853032544,
+          "alVarianceProjectUnitsSquared": 0.003222693275042027,
+          "alMeanOverJ32": 0.008975930696927792,
+          "alSDOverJ32": 0.020070791199657607,
+          "alGeometryMatchedMeanOverJ32": 0.0021156471544193783,
+          "alGeometryMatchedSDOverJ32": 0.004730730853685726,
+          "alGeometryMatchedAbsoluteDifferenceOverJ32": 0.003868306643532486,
+          "alRawToClassicalRatio": 1.4999999999999991,
+          "alToClassicalRatio": 0.35355339059327356
+        },
+        {
+          "J": 3,
+          "meanFaceSpins": [
+            0.7500000000000017,
+            0.7500000000000014,
+            0.7500000000000016,
+            0.7500000000000017
+          ],
+          "maxMeanFaceSpinError": 1.6653345369377348e-15,
+          "covarianceGeometry": {
+            "closureResidual": 6.661338147750939e-16,
+            "minimumEigenvalue": -3.40005801291548e-16,
+            "rmsFaceAreaFractions": [
+              0.25000000000000006,
+              0.25,
+              0.25,
+              0.25000000000000006
+            ],
+            "maxNormalizedCorrelationError": 2.220446049250313e-16,
+            "fluxGram": [
+              [
+                1.5000000000000002,
+                -0.5,
+                -0.5,
+                -0.5000000000000002
+              ],
+              [
+                -0.5,
+                1.5,
+                -0.49999999999999994,
+                -0.5000000000000002
+              ],
+              [
+                -0.5,
+                -0.49999999999999994,
+                1.4999999999999998,
+                -0.5000000000000002
+              ],
+              [
+                -0.5000000000000002,
+                -0.5000000000000002,
+                -0.5000000000000002,
+                1.5000000000000002
+              ]
+            ]
+          },
+          "classicalVolumeProjectUnitsAtJ": 0.031093536024592132,
+          "rsMeanProjectUnits": 0.16221337924014134,
+          "rsVarianceProjectUnitsSquared": 0.03683845256630827,
+          "rsMeanOverJ32": 0.031217979390151484,
+          "rsSDOverJ32": 0.036937611347859126,
+          "rsGeometryMatchedMeanOverJ32": 0.0036790741536196665,
+          "rsGeometryMatchedSDOverJ32": 0.004353139244150726,
+          "rsGeometryMatchedAbsoluteDifferenceOverJ32": 0.002304879644332198,
+          "rsRawToClassicalRatio": 5.21694860024429,
+          "rsToClassicalRatio": 0.6148232887224009,
+          "alMeanProjectUnits": 0.08110668962007066,
+          "alVarianceProjectUnitsSquared": 0.009209613141577064,
+          "alMeanOverJ32": 0.01560898969507574,
+          "alSDOverJ32": 0.018468805673929563,
+          "alGeometryMatchedMeanOverJ32": 0.003679074153619666,
+          "alGeometryMatchedSDOverJ32": 0.004353139244150726,
+          "alGeometryMatchedAbsoluteDifferenceOverJ32": 0.0023048796443321984,
+          "alRawToClassicalRatio": 2.6084743001221447,
+          "alToClassicalRatio": 0.6148232887224008
+        },
+        {
+          "J": 4,
+          "meanFaceSpins": [
+            0.9999999999999901,
+            0.9999999999999909,
+            0.9999999999999901,
+            0.9999999999999895
+          ],
+          "maxMeanFaceSpinError": 1.0547118733938987e-14,
+          "covarianceGeometry": {
+            "closureResidual": 1.1749496091904413e-15,
+            "minimumEigenvalue": -9.99200722162643e-16,
+            "rmsFaceAreaFractions": [
+              0.24999999999999997,
+              0.25,
+              0.24999999999999997,
+              0.25000000000000006
+            ],
+            "maxNormalizedCorrelationError": 4.440892098500626e-16,
+            "fluxGram": [
+              [
+                2.250000000000001,
+                -0.7500000000000006,
+                -0.7500000000000004,
+                -0.7500000000000009
+              ],
+              [
+                -0.7500000000000006,
+                2.2500000000000013,
+                -0.7500000000000003,
+                -0.7500000000000008
+              ],
+              [
+                -0.7500000000000004,
+                -0.7500000000000003,
+                2.250000000000001,
+                -0.7500000000000004
+              ],
+              [
+                -0.7500000000000009,
+                -0.7500000000000008,
+                -0.7500000000000004,
+                2.2500000000000018
+              ]
+            ]
+          },
+          "classicalVolumeProjectUnitsAtJ": 0.047871630383614916,
+          "rsMeanProjectUnits": 0.31893807129196616,
+          "rsVarianceProjectUnitsSquared": 0.05747132049803642,
+          "rsMeanOverJ32": 0.03986725891149577,
+          "rsSDOverJ32": 0.02996647097643997,
+          "rsGeometryMatchedMeanOverJ32": 0.0046984015206064135,
+          "rsGeometryMatchedSDOverJ32": 0.003531582472611761,
+          "rsGeometryMatchedAbsoluteDifferenceOverJ32": 0.001285552277345451,
+          "rsRawToClassicalRatio": 6.662360749700506,
+          "rsToClassicalRatio": 0.7851667441373864,
+          "alMeanProjectUnits": 0.15946903564598308,
+          "alVarianceProjectUnitsSquared": 0.014367830124509075,
+          "alMeanOverJ32": 0.019933629455747885,
+          "alSDOverJ32": 0.014983235488219969,
+          "alGeometryMatchedMeanOverJ32": 0.0046984015206064135,
+          "alGeometryMatchedSDOverJ32": 0.0035315824726117576,
+          "alGeometryMatchedAbsoluteDifferenceOverJ32": 0.001285552277345451,
+          "alRawToClassicalRatio": 3.331180374850253,
+          "alToClassicalRatio": 0.7851667441373864
+        },
+        {
+          "J": 5,
+          "meanFaceSpins": [
+            1.2500000000000049,
+            1.2500000000000067,
+            1.2500000000000173,
+            1.2500000000000198
+          ],
+          "maxMeanFaceSpinError": 1.9761969838327786e-14,
+          "covarianceGeometry": {
+            "closureResidual": 6.8510746500567485e-15,
+            "minimumEigenvalue": -3.97199600729704e-15,
+            "rmsFaceAreaFractions": [
+              0.25000000000000006,
+              0.25,
+              0.24999999999999994,
+              0.25000000000000006
+            ],
+            "maxNormalizedCorrelationError": 4.440892098500626e-16,
+            "fluxGram": [
+              [
+                3.1250000000000058,
+                -1.0416666666666692,
+                -1.041666666666669,
+                -1.0416666666666696
+              ],
+              [
+                -1.0416666666666692,
+                3.1250000000000053,
+                -1.0416666666666694,
+                -1.04166666666667
+              ],
+              [
+                -1.041666666666669,
+                -1.0416666666666694,
+                3.1250000000000036,
+                -1.0416666666666698
+              ],
+              [
+                -1.0416666666666696,
+                -1.04166666666667,
+                -1.0416666666666698,
+                3.1250000000000058
+              ]
+            ]
+          },
+          "classicalVolumeProjectUnitsAtJ": 0.06690263733219205,
+          "rsMeanProjectUnits": 0.4988596536236865,
+          "rsVarianceProjectUnitsSquared": 0.06806527264957139,
+          "rsMeanOverJ32": 0.04461936386938249,
+          "rsSDOverJ32": 0.023334999061422116,
+          "rsGeometryMatchedMeanOverJ32": 0.005258442460711732,
+          "rsGeometryMatchedSDOverJ32": 0.002750056012552217,
+          "rsGeometryMatchedAbsoluteDifferenceOverJ32": 0.0007255113372401324,
+          "rsRawToClassicalRatio": 7.456502068023055,
+          "rsToClassicalRatio": 0.8787571960384363,
+          "alMeanProjectUnits": 0.2494298268118433,
+          "alVarianceProjectUnitsSquared": 0.017016318162392848,
+          "alMeanOverJ32": 0.02230968193469125,
+          "alSDOverJ32": 0.011667499530711058,
+          "alGeometryMatchedMeanOverJ32": 0.005258442460711733,
+          "alGeometryMatchedSDOverJ32": 0.002750056012552217,
+          "alGeometryMatchedAbsoluteDifferenceOverJ32": 0.0007255113372401315,
+          "alRawToClassicalRatio": 3.728251034011528,
+          "alToClassicalRatio": 0.8787571960384365
+        },
+        {
+          "J": 6,
+          "meanFaceSpins": [
+            1.5000000000000084,
+            1.5000000000000042,
+            1.5000000000000049,
+            1.500000000000006
+          ],
+          "maxMeanFaceSpinError": 8.43769498715119e-15,
+          "covarianceGeometry": {
+            "closureResidual": 6.951095629092365e-15,
+            "minimumEigenvalue": 2.7018425009380034e-15,
+            "rmsFaceAreaFractions": [
+              0.2500000000000001,
+              0.24999999999999994,
+              0.25,
+              0.25000000000000006
+            ],
+            "maxNormalizedCorrelationError": 4.440892098500626e-16,
+            "fluxGram": [
+              [
+                4.125000000000008,
+                -1.3750000000000007,
+                -1.3750000000000009,
+                -1.3750000000000009
+              ],
+              [
+                -1.3750000000000007,
+                4.125000000000003,
+                -1.3750000000000007,
+                -1.3750000000000004
+              ],
+              [
+                -1.3750000000000009,
+                -1.3750000000000007,
+                4.1250000000000036,
+                -1.3750000000000002
+              ],
+              [
+                -1.3750000000000009,
+                -1.3750000000000004,
+                -1.3750000000000002,
+                4.125000000000005
+              ]
+            ]
+          },
+          "classicalVolumeProjectUnitsAtJ": 0.0879458006962292,
+          "rsMeanProjectUnits": 0.6919120905853102,
+          "rsVarianceProjectUnitsSquared": 0.07186837652382008,
+          "rsMeanOverJ32": 0.047078654688788406,
+          "rsSDOverJ32": 0.01824072272110006,
+          "rsGeometryMatchedMeanOverJ32": 0.0055482726632636896,
+          "rsGeometryMatchedSDOverJ32": 0.0021496897883055643,
+          "rsGeometryMatchedAbsoluteDifferenceOverJ32": 0.00043568113468817494,
+          "rsRawToClassicalRatio": 7.867482985062832,
+          "rsToClassicalRatio": 0.927191761601285,
+          "alMeanProjectUnits": 0.34595604529265517,
+          "alVarianceProjectUnitsSquared": 0.01796709413095502,
+          "alMeanOverJ32": 0.023539327344394206,
+          "alSDOverJ32": 0.00912036136055003,
+          "alGeometryMatchedMeanOverJ32": 0.00554827266326369,
+          "alGeometryMatchedSDOverJ32": 0.0021496897883055643,
+          "alGeometryMatchedAbsoluteDifferenceOverJ32": 0.00043568113468817407,
+          "alRawToClassicalRatio": 3.9337414925314165,
+          "alToClassicalRatio": 0.9271917616012852
+        },
+        {
+          "J": 7,
+          "meanFaceSpins": [
+            1.7499999999999662,
+            1.7499999999999498,
+            1.749999999999938,
+            1.7499999999999394
+          ],
+          "maxMeanFaceSpinError": 6.195044477408373e-14,
+          "covarianceGeometry": {
+            "closureResidual": 1.4252427270272617e-14,
+            "minimumEigenvalue": 4.080069615496918e-15,
+            "rmsFaceAreaFractions": [
+              0.2499999999999998,
+              0.25000000000000006,
+              0.25000000000000006,
+              0.2500000000000001
+            ],
+            "maxNormalizedCorrelationError": 6.661338147750939e-16,
+            "fluxGram": [
+              [
+                5.249999999999995,
+                -1.7500000000000002,
+                -1.75,
+                -1.7500000000000009
+              ],
+              [
+                -1.7500000000000002,
+                5.250000000000006,
+                -1.7499999999999987,
+                -1.7499999999999996
+              ],
+              [
+                -1.75,
+                -1.7499999999999987,
+                5.250000000000005,
+                -1.7499999999999993
+              ],
+              [
+                -1.7500000000000009,
+                -1.7499999999999996,
+                -1.7499999999999993,
+                5.250000000000007
+              ]
+            ]
+          },
+          "classicalVolumeProjectUnitsAtJ": 0.11082437524396758,
+          "rsMeanProjectUnits": 0.8960520141559724,
+          "rsVarianceProjectUnitsSquared": 0.07294188565361691,
+          "rsMeanOverJ32": 0.04838226104561695,
+          "rsSDOverJ32": 0.014582817243485587,
+          "rsGeometryMatchedMeanOverJ32": 0.005701904145748915,
+          "rsGeometryMatchedSDOverJ32": 0.0017186014936121294,
+          "rsGeometryMatchedAbsoluteDifferenceOverJ32": 0.00028204965220294913,
+          "rsRawToClassicalRatio": 8.085333322957274,
+          "rsToClassicalRatio": 0.9528656701361086,
+          "alMeanProjectUnits": 0.44802600707798623,
+          "alVarianceProjectUnitsSquared": 0.018235471413404085,
+          "alMeanOverJ32": 0.02419113052280848,
+          "alSDOverJ32": 0.007291408621742765,
+          "alGeometryMatchedMeanOverJ32": 0.005701904145748916,
+          "alGeometryMatchedSDOverJ32": 0.0017186014936121227,
+          "alGeometryMatchedAbsoluteDifferenceOverJ32": 0.00028204965220294826,
+          "alRawToClassicalRatio": 4.042666661478638,
+          "alToClassicalRatio": 0.9528656701361087
+        }
+      ]
+    },
+    {
+      "name": "unequal_skew",
+      "vertices": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.8,
+          0.1,
+          0.0
+        ],
+        [
+          0.15,
+          0.9,
+          0.1
+        ],
+        [
+          0.2,
+          0.25,
+          1.1
+        ]
+      ],
+      "sphereShapeData": {
+        "circumcenter": [
+          0.8872859216255443,
+          0.2788534107402032,
+          0.3718904208998549
+        ],
+        "circumradius": 1.0016676178021366,
+        "unitSphereVertices": [
+          [
+            -0.8858087312160803,
+            -0.2783891640143709,
+            -0.3712712823000692
+          ],
+          [
+            0.9111945541148039,
+            -0.1785556481626551,
+            -0.3712712823000692
+          ],
+          [
+            -0.7360584574385066,
+            0.6201124786510712,
+            -0.27143776644835343
+          ],
+          [
+            -0.6861416995126487,
+            -0.028805374385081427,
+            0.7268973920688045
+          ]
+        ],
+        "tetrahedronVolumeAtUnitCircumradius": 0.2856518744056895,
+        "unitSphereRadiusResidual": 1.1102230246251565e-16,
+        "vertexCrossRatioReal": 0.3377838963606199,
+        "vertexCrossRatioImag": 0.7795816173285859,
+        "unitSphereChordDistances": {
+          "01": 1.7997743020660413,
+          "02": 0.9163498661844564,
+          "03": 1.1437366082101537,
+          "12": 1.8333793911100102,
+          "13": 1.9441920401581048,
+          "23": 1.191746261350275
+        }
+      },
+      "faceAreaFractions": [
+        0.31545910811582256,
+        0.14579311158537878,
+        0.29997921927855303,
+        0.2387685610202455
+      ],
+      "faceNormals": [
+        [
+          0.40537100042283974,
+          0.7755942262425431,
+          0.48386769703651106
+        ],
+        [
+          -0.978520545560513,
+          0.14703158456608745,
+          0.1444965572459825
+        ],
+        [
+          0.05421021816444419,
+          -0.9757839269599955,
+          0.21191267100646363
+        ],
+        [
+          -0.006191594393714299,
+          0.11144869908685737,
+          -0.9937509001911449
+        ]
+      ],
+      "faceAreaClosureResidual": 4.570757705052233e-17,
+      "spinorClosureMatrixMaxError": 4.0777167899145914e-16,
+      "classicalVolumeAtUnitTotalArea": 0.046155390990713654,
+      "classicalVolumeProjectUnitsAtUnitTotalArea": 0.005342171858702472,
+      "results": [
+        {
+          "J": 1,
+          "meanFaceSpins": [
+            0.3154591081158226,
+            0.14579311158537872,
+            0.2999792192785532,
+            0.23876856102024552
+          ],
+          "maxMeanFaceSpinError": 1.6653345369377348e-16,
+          "covarianceGeometry": {
+            "closureResidual": 3.925231146709438e-17,
+            "minimumEigenvalue": 9.649814063988953e-17,
+            "rmsFaceAreaFractions": [
+              0.28368985912857253,
+              0.19285938546153925,
+              0.27664183796858516,
+              0.24680891744130307
+            ],
+            "maxNormalizedCorrelationError": 0.13016852990721672,
+            "fluxGram": [
+              [
+                0.4731886621737339,
+                -0.08366199528636839,
+                -0.23169962481006215,
+                -0.15782704207730333
+              ],
+              [
+                -0.08366199528636839,
+                0.2186896673780681,
+                -0.07648553837320116,
+                -0.05854213371849856
+              ],
+              [
+                -0.23169962481006215,
+                -0.07648553837320116,
+                0.44996882891782974,
+                -0.1417836657345664
+              ],
+              [
+                -0.15782704207730333,
+                -0.05854213371849856,
+                -0.1417836657345664,
+                0.3581528415303683
+              ]
+            ]
+          },
+          "classicalVolumeProjectUnitsAtJ": 0.005342171858702472,
+          "rsMeanProjectUnits": 0.0,
+          "rsVarianceProjectUnitsSquared": 0.0,
+          "rsMeanOverJ32": 0.0,
+          "rsSDOverJ32": 0.0,
+          "rsGeometryMatchedMeanOverJ32": 0.0,
+          "rsGeometryMatchedSDOverJ32": 0.0,
+          "rsGeometryMatchedAbsoluteDifferenceOverJ32": 0.005342171858702472,
+          "rsRawToClassicalRatio": 0.0,
+          "rsToClassicalRatio": 0.0,
+          "alMeanProjectUnits": 0.0,
+          "alVarianceProjectUnitsSquared": 0.0,
+          "alMeanOverJ32": 0.0,
+          "alSDOverJ32": 0.0,
+          "alGeometryMatchedMeanOverJ32": 0.0,
+          "alGeometryMatchedSDOverJ32": 0.0,
+          "alGeometryMatchedAbsoluteDifferenceOverJ32": 0.005342171858702472,
+          "alRawToClassicalRatio": 0.0,
+          "alToClassicalRatio": 0.0
+        },
+        {
+          "J": 2,
+          "meanFaceSpins": [
+            0.630918216231645,
+            0.2915862231707576,
+            0.5999584385571067,
+            0.47753712204049126
+          ],
+          "maxMeanFaceSpinError": 6.661338147750939e-16,
+          "covarianceGeometry": {
+            "closureResidual": 7.850462293418876e-17,
+            "minimumEigenvalue": 3.774298118480435e-17,
+            "rmsFaceAreaFractions": [
+              0.2882101891125093,
+              0.18655233180097763,
+              0.2798490842398168,
+              0.24538839484669622
+            ],
+            "maxNormalizedCorrelationError": 0.10803982701173598,
+            "fluxGram": [
+              [
+                1.1454062221339285,
+                -0.18688978772091971,
+                -0.5830697287664209,
+                -0.37544670564658783
+              ],
+              [
+                -0.18688978772091971,
+                0.4798905975276298,
+                -0.16748198699819145,
+                -0.12551882280851867
+              ],
+              [
+                -0.5830697287664209,
+                -0.16748198699819145,
+                1.0799127218336002,
+                -0.3293610060689879
+              ],
+              [
+                -0.37544670564658783,
+                -0.12551882280851867,
+                -0.3293610060689879,
+                0.8303265345240944
+              ]
+            ]
+          },
+          "classicalVolumeProjectUnitsAtJ": 0.015109943790209843,
+          "rsMeanProjectUnits": 0.04061780515856721,
+          "rsVarianceProjectUnitsSquared": 0.0107245378260583,
+          "rsMeanOverJ32": 0.0143605627322684,
+          "rsSDOverJ32": 0.036613757363282005,
+          "rsGeometryMatchedMeanOverJ32": 0.0016924085482736338,
+          "rsGeometryMatchedSDOverJ32": 0.004314972686049266,
+          "rsGeometryMatchedAbsoluteDifferenceOverJ32": 0.003649763310428838,
+          "rsRawToClassicalRatio": 2.6881506458604183,
+          "rsToClassicalRatio": 0.31680159175648326,
+          "alMeanProjectUnits": 0.020308902579283604,
+          "alVarianceProjectUnitsSquared": 0.002681134456514574,
+          "alMeanOverJ32": 0.0071802813661342,
+          "alSDOverJ32": 0.018306878681641,
+          "alGeometryMatchedMeanOverJ32": 0.0016924085482736338,
+          "alGeometryMatchedSDOverJ32": 0.004314972686049265,
+          "alGeometryMatchedAbsoluteDifferenceOverJ32": 0.003649763310428838,
+          "alRawToClassicalRatio": 1.3440753229302091,
+          "alToClassicalRatio": 0.31680159175648326
+        },
+        {
+          "J": 3,
+          "meanFaceSpins": [
+            0.946377324347468,
+            0.43737933475613644,
+            0.8999376578356589,
+            0.7163056830607364
+          ],
+          "maxMeanFaceSpinError": 3.3306690738754696e-16,
+          "covarianceGeometry": {
+            "closureResidual": 5.768888059150692e-16,
+            "minimumEigenvalue": 1.1482266542417165e-15,
+            "rmsFaceAreaFractions": [
+              0.29158795453946496,
+              0.1817615478347619,
+              0.28227056190827293,
+              0.2443799357175003
+            ],
+            "maxNormalizedCorrelationError": 0.09234271947786943,
+            "fluxGram": [
+              [
+                2.0166526798805835,
+                -0.3096833773036538,
+                -1.054110311869076,
+                -0.6528589907078531
+              ],
+              [
+                -0.3096833773036538,
+                0.7836027904486846,
+                -0.2729893458749707,
+                -0.2009300672700602
+              ],
+              [
+                -1.054110311869076,
+                -0.2729893458749707,
+                1.8898316787473108,
+                -0.562732021003264
+              ],
+              [
+                -0.6528589907078531,
+                -0.2009300672700602,
+                -0.562732021003264,
+                1.4165210789811775
+              ]
+            ]
+          },
+          "classicalVolumeProjectUnitsAtJ": 0.02775873924611204,
+          "rsMeanProjectUnits": 0.12958178814374186,
+          "rsVarianceProjectUnitsSquared": 0.03365631956413387,
+          "rsMeanOverJ32": 0.024938026755620804,
+          "rsSDOverJ32": 0.03530623676104804,
+          "rsGeometryMatchedMeanOverJ32": 0.0029389746380518384,
+          "rsGeometryMatchedSDOverJ32": 0.00416087990531914,
+          "rsGeometryMatchedAbsoluteDifferenceOverJ32": 0.0024031972206506333,
+          "rsRawToClassicalRatio": 4.66814385894314,
+          "rsToClassicalRatio": 0.5501460297021722,
+          "alMeanProjectUnits": 0.06479089407187096,
+          "alVarianceProjectUnitsSquared": 0.008414079891033474,
+          "alMeanOverJ32": 0.012469013377810407,
+          "alSDOverJ32": 0.017653118380524028,
+          "alGeometryMatchedMeanOverJ32": 0.0029389746380518397,
+          "alGeometryMatchedSDOverJ32": 0.004160879905319142,
+          "alGeometryMatchedAbsoluteDifferenceOverJ32": 0.002403197220650632,
+          "alRawToClassicalRatio": 2.334071929471571,
+          "alToClassicalRatio": 0.5501460297021724
+        },
+        {
+          "J": 4,
+          "meanFaceSpins": [
+            1.261836432463288,
+            0.5831724463415136,
+            1.199916877114212,
+            0.955074244080981
+          ],
+          "maxMeanFaceSpinError": 2.220446049250313e-15,
+          "covarianceGeometry": {
+            "closureResidual": 1.2161883888976235e-15,
+            "minimumEigenvalue": -2.524390403173968e-17,
+            "rmsFaceAreaFractions": [
+              0.29421162975211146,
+              0.17799279093994558,
+              0.2841660198050977,
+              0.24362955950284526
+            ],
+            "maxNormalizedCorrelationError": 0.08062872227238627,
+            "fluxGram": [
+              [
+                3.0869280354136994,
+                -0.452042764034571,
+                -1.6448213741180289,
+                -0.9900638972611
+              ],
+              [
+                -0.452042764034571,
+                1.1298262461412336,
+                -0.3930076150035393,
+                -0.2847758671031233
+              ],
+              [
+                -1.6448213741180289,
+                -0.3930076150035393,
+                2.8797256996589624,
+                -0.8418967105373953
+              ],
+              [
+                -0.9900638972611,
+                -0.2847758671031233,
+                -0.8418967105373953,
+                2.116736474901619
+              ]
+            ]
+          },
+          "classicalVolumeProjectUnitsAtJ": 0.042737374869619774,
+          "rsMeanProjectUnits": 0.25718190592899826,
+          "rsVarianceProjectUnitsSquared": 0.06103166816617807,
+          "rsMeanOverJ32": 0.03214773824112478,
+          "rsSDOverJ32": 0.03088073533931037,
+          "rsGeometryMatchedMeanOverJ32": 0.003788647285018238,
+          "rsGeometryMatchedSDOverJ32": 0.003639329561075571,
+          "rsGeometryMatchedAbsoluteDifferenceOverJ32": 0.0015535245736842335,
+          "rsRawToClassicalRatio": 6.017728199581538,
+          "rsToClassicalRatio": 0.7091960695436033,
+          "alMeanProjectUnits": 0.12859095296449913,
+          "alVarianceProjectUnitsSquared": 0.015257917041544522,
+          "alMeanOverJ32": 0.01607386912056239,
+          "alSDOverJ32": 0.015440367669655187,
+          "alGeometryMatchedMeanOverJ32": 0.003788647285018238,
+          "alGeometryMatchedSDOverJ32": 0.0036393295610755716,
+          "alGeometryMatchedAbsoluteDifferenceOverJ32": 0.0015535245736842335,
+          "alRawToClassicalRatio": 3.008864099790769,
+          "alToClassicalRatio": 0.7091960695436033
+        },
+        {
+          "J": 5,
+          "meanFaceSpins": [
+            1.577295540579114,
+            0.7289655579268957,
+            1.4998960963927683,
+            1.1938428051012264
+          ],
+          "maxMeanFaceSpinError": 3.1086244689504383e-15,
+          "covarianceGeometry": {
+            "closureResidual": 6.280369834735101e-16,
+            "minimumEigenvalue": 7.974140213072005e-16,
+            "rmsFaceAreaFractions": [
+              0.2963103648416434,
+              0.1749473805737831,
+              0.285691364045772,
+              0.24305089053880147
+            ],
+            "maxNormalizedCorrelationError": 0.07155233988857623,
+            "fluxGram": [
+              [
+                4.356232288733275,
+                -0.6139679479136706,
+                -2.355202915513277,
+                -1.3870614253063271
+              ],
+              [
+                -0.6139679479136706,
+                1.5185609646052747,
+                -0.5275367943838966,
+                -0.3770562223077075
+              ],
+              [
+                -2.355202915513277,
+                -0.5275367943838966,
+                4.049594784568555,
+                -1.1668550746713817
+              ],
+              [
+                -1.3870614253063271,
+                -0.3770562223077075,
+                -1.1668550746713817,
+                2.930972722285416
+              ]
+            ]
+          },
+          "classicalVolumeProjectUnitsAtJ": 0.05972729711772565,
+          "rsMeanProjectUnits": 0.4091368491338904,
+          "rsVarianceProjectUnitsSquared": 0.08626901690173414,
+          "rsMeanOverJ32": 0.03659431227053819,
+          "rsSDOverJ32": 0.026270746757826906,
+          "rsGeometryMatchedMeanOverJ32": 0.004312681059892607,
+          "rsGeometryMatchedSDOverJ32": 0.0030960371965489857,
+          "rsGeometryMatchedAbsoluteDifferenceOverJ32": 0.0010294907988098647,
+          "rsRawToClassicalRatio": 6.8500814347493435,
+          "rsToClassicalRatio": 0.8072898390318892,
+          "alMeanProjectUnits": 0.20456842456694524,
+          "alVarianceProjectUnitsSquared": 0.021567254225433544,
+          "alMeanOverJ32": 0.0182971561352691,
+          "alSDOverJ32": 0.013135373378913458,
+          "alGeometryMatchedMeanOverJ32": 0.004312681059892608,
+          "alGeometryMatchedSDOverJ32": 0.003096037196548987,
+          "alGeometryMatchedAbsoluteDifferenceOverJ32": 0.0010294907988098638,
+          "alRawToClassicalRatio": 3.425040717374672,
+          "alToClassicalRatio": 0.8072898390318894
+        },
+        {
+          "J": 6,
+          "meanFaceSpins": [
+            1.8927546486949212,
+            0.8747586695122693,
+            1.7998753156713132,
+            1.432611366121471
+          ],
+          "maxMeanFaceSpinError": 1.4210854715202004e-14,
+          "covarianceGeometry": {
+            "closureResidual": 3.722145839155691e-15,
+            "minimumEigenvalue": -5.601989777825267e-16,
+            "rmsFaceAreaFractions": [
+              0.2980284627674223,
+              0.17243355611443528,
+              0.2869460792800843,
+              0.24259190183805815
+            ],
+            "maxNormalizedCorrelationError": 0.06431279920456967,
+            "fluxGram": [
+              [
+                5.82456543983931,
+                -0.7954589289409537,
+                -3.18525493605482,
+                -1.8438515748435371
+              ],
+              [
+                -0.7954589289409537,
+                1.9498069458408103,
+                -0.6765768840160434,
+                -0.4777711328838137
+              ],
+              [
+                -3.18525493605482,
+                -0.6765768840160434,
+                5.399438933476086,
+                -1.5376071134052225
+              ],
+              [
+                -1.8438515748435371,
+                -0.4777711328838137,
+                -1.5376071134052225,
+                3.85922982113257
+              ]
+            ]
+          },
+          "classicalVolumeProjectUnitsAtJ": 0.0785135710324599,
+          "rsMeanProjectUnits": 0.5775967760064377,
+          "rsVarianceProjectUnitsSquared": 0.10771445591072899,
+          "rsMeanOverJ32": 0.0393004827303445,
+          "rsSDOverJ32": 0.02233110021077657,
+          "rsGeometryMatchedMeanOverJ32": 0.004631606307088566,
+          "rsGeometryMatchedSDOverJ32": 0.002631745398399409,
+          "rsGeometryMatchedAbsoluteDifferenceOverJ32": 0.0007105655516139054,
+          "rsRawToClassicalRatio": 7.356648900451128,
+          "rsToClassicalRatio": 0.8669893873862586,
+          "alMeanProjectUnits": 0.28879838800321883,
+          "alVarianceProjectUnitsSquared": 0.026928613977682224,
+          "alMeanOverJ32": 0.01965024136517225,
+          "alSDOverJ32": 0.01116555010538828,
+          "alGeometryMatchedMeanOverJ32": 0.004631606307088566,
+          "alGeometryMatchedSDOverJ32": 0.002631745398399408,
+          "alGeometryMatchedAbsoluteDifferenceOverJ32": 0.0007105655516139054,
+          "alRawToClassicalRatio": 3.678324450225564,
+          "alToClassicalRatio": 0.8669893873862586
+        },
+        {
+          "J": 7,
+          "meanFaceSpins": [
+            2.208213756810743,
+            1.0205517810976419,
+            2.0998545349498685,
+            1.671379927141713
+          ],
+          "maxMeanFaceSpinError": 1.4654943925052066e-14,
+          "covarianceGeometry": {
+            "closureResidual": 4.305604634972164e-15,
+            "minimumEigenvalue": -2.7716509519747246e-15,
+            "rmsFaceAreaFractions": [
+              0.29946149711883463,
+              0.17032228395097262,
+              0.28799674500747874,
+              0.24221947392271403
+            ],
+            "maxNormalizedCorrelationError": 0.05840370689509922,
+            "fluxGram": [
+              [
+                7.491927488731806,
+                -0.9965157071164195,
+                -4.134977435742663,
+                -2.360434345872724
+              ],
+              [
+                -0.9965157071164195,
+                2.42356418984784,
+                -0.840127883899979,
+                -0.5869205988314411
+              ],
+              [
+                -4.134977435742663,
+                -0.840127883899979,
+                6.929258146381557,
+                -1.9541528267389163
+              ],
+              [
+                -2.360434345872724,
+                -0.5869205988314411,
+                -1.9541528267389163,
+                4.901507771443085
+              ]
+            ]
+          },
+          "classicalVolumeProjectUnitsAtJ": 0.09893840739366098,
+          "rsMeanProjectUnits": 0.7591574586108176,
+          "rsVarianceProjectUnitsSquared": 0.12590197905990613,
+          "rsMeanOverJ32": 0.04099064982498027,
+          "rsSDOverJ32": 0.01915884034695105,
+          "rsGeometryMatchedMeanOverJ32": 0.004830794409414453,
+          "rsGeometryMatchedSDOverJ32": 0.002257890988166586,
+          "rsGeometryMatchedAbsoluteDifferenceOverJ32": 0.0005113774492880186,
+          "rsRawToClassicalRatio": 7.67303091498375,
+          "rsToClassicalRatio": 0.9042753653731717,
+          "alMeanProjectUnits": 0.3795787293054088,
+          "alVarianceProjectUnitsSquared": 0.031475494764976505,
+          "alMeanOverJ32": 0.020495324912490134,
+          "alSDOverJ32": 0.009579420173475522,
+          "alGeometryMatchedMeanOverJ32": 0.004830794409414453,
+          "alGeometryMatchedSDOverJ32": 0.0022578909881665853,
+          "alGeometryMatchedAbsoluteDifferenceOverJ32": 0.0005113774492880186,
+          "alRawToClassicalRatio": 3.836515457491875,
+          "alToClassicalRatio": 0.9042753653731717
+        }
+      ]
+    }
+  ],
+  "interpretationLimits": [
+    "The two geometries validate weighted inputs and establish a pilot, not a shape-uniform classical limit.",
+    "AL values use the existing fixed sign convention and remain embedding-dependent.",
+    "Area labels J are integers in this exact Fock implementation."
+  ]
+}

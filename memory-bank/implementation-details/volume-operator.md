@@ -37,6 +37,23 @@ The default project prefactor is $(\gamma\hbar)^{3/2}$; use the explicit
 The standard LQG regularization constants and $8\pi\ell_P^2$ factors have not
 been selected or included, so these outputs are in project-normalized units.
 
+For a classical tetrahedron with closed face vectors, the geometric volume
+is $\sqrt{2/9}\sqrt{|q|}$. Closure gives the four classical triple symbols
+the pattern $(q,-q,q,-q)$; with AL tangent signs $(+,-,+,-)$, the symbols
+of the raw RS and AL expressions are $4\sqrt{|q|}$ and $2\sqrt{|q|}$.
+T5c therefore compares them with the same input tetrahedron using the fixed
+project-volume factors $\kappa_{\mathrm{RS}}=\sqrt{2}/12$ and
+$\kappa_{\mathrm{AL}}=\sqrt{2}/6$. These align this triple-grasp convention
+with the Euclidean area-vector volume; they do not supply the remaining
+physical regularization prefactor. The factors and derivation are recorded
+in the [T5c comparison](./T5c-flux-covariance-volume-comparison.md).
+
+For the tested gauge-invariant four-valent states and signs, the triple
+operators obey the closure pattern on the state to numerical precision.
+Consequently the RS and AL expectations become the same curve after their
+respective geometric factors are applied. Treat this as one comparison in
+two operator conventions, not as two independent confirmations.
+
 For a finite-dimensional Hermitian $Q_v=U\,\mathrm{diag}(\lambda_a)U^\dagger$,
 the required expectation is
 
@@ -48,11 +65,11 @@ positive volume.
 
 ## Remaining work before large-scan or physical-volume claims
 
-- Select and document the physical prefactors for the intended regularization.
-- For the FL classical-limit study, compare each positive operator with the
-  volume of the same weighted-spinor input tetrahedron. Keep one
-  normalization per operator fixed across shapes and $J$; do not tune it
-  separately to each shape.
+- Select and document the remaining physical prefactors for the intended
+  regularization.
+- Extend the FL comparison across weighted input shapes and $J$ using the
+  fixed geometric factors above; do not tune a factor separately to each
+  shape.
 - Record positive-volume variance and controlled degenerate paths where
   feasible. Near zero classical volume, use absolute discrepancies and state
   which order of the large-$J$ and degenerate limits is being evaluated.

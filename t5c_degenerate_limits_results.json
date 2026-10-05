@@ -1,0 +1,299 @@
+{
+  "model": "equal-area FL family; x=1/sqrt(3), phi approaches the flat boundary 0",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "areaFractions": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ],
+  "jValues": [
+    2,
+    4,
+    6,
+    7
+  ],
+  "phiValuesRadians": [
+    0.0,
+    0.05,
+    1.5707963267948966
+  ],
+  "fixedGeometryMatchingFactors": {
+    "rs": 0.11785113019775793,
+    "al": 0.23570226039551587
+  },
+  "limitProtocol": {
+    "largeJFirst": "At each fixed positive phi, inspect J growth; then take phi toward zero.",
+    "degenerateFirst": "At fixed J, use the exact phi=0 state; then inspect its J dependence.",
+    "boundaryRatios": "Omitted at zero classical volume; compare absolute normalized values."
+  },
+  "results": [
+    {
+      "J": 2,
+      "phiRadians": 0.0,
+      "classicalVolumeAtUnitTotalArea": 0.0,
+      "classicalVolumeProjectUnitsAtUnitTotalArea": 0.0,
+      "normalClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 3.1401849173675503e-16,
+      "faceNormalCrossRatioReal": 0.3333333333333333,
+      "faceNormalCrossRatioImag": 4.7136677276662527e-17,
+      "rs": {
+        "geometryMatchedMeanOverJ32": 0.0024682550134892747,
+        "geometryMatchedSDOverJ32": 0.005023888669387962,
+        "absoluteDifferenceOverJ32": 0.0024682550134892747,
+        "ratioToClassical": null
+      },
+      "al": {
+        "geometryMatchedMeanOverJ32": 0.0024682550134892756,
+        "geometryMatchedSDOverJ32": 0.005023888669387964,
+        "absoluteDifferenceOverJ32": 0.0024682550134892756,
+        "ratioToClassical": null
+      }
+    },
+    {
+      "J": 2,
+      "phiRadians": 0.05,
+      "classicalVolumeAtUnitTotalArea": 0.011558123412397175,
+      "classicalVolumeProjectUnitsAtUnitTotalArea": 0.001337773991461613,
+      "normalClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 3.1783351071424787e-16,
+      "faceNormalCrossRatioReal": 0.33333344912230845,
+      "faceNormalCrossRatioImag": 0.019253028728732198,
+      "rs": {
+        "geometryMatchedMeanOverJ32": 0.0024673742281964843,
+        "geometryMatchedSDOverJ32": 0.005023208537046956,
+        "absoluteDifferenceOverJ32": 0.0011296002367348714,
+        "ratioToClassical": 1.8443879488946433
+      },
+      "al": {
+        "geometryMatchedMeanOverJ32": 0.0024673742281964843,
+        "geometryMatchedSDOverJ32": 0.005023208537046956,
+        "absoluteDifferenceOverJ32": 0.0011296002367348714,
+        "ratioToClassical": 1.8443879488946433
+      }
+    },
+    {
+      "J": 2,
+      "phiRadians": 1.5707963267948966,
+      "classicalVolumeAtUnitTotalArea": 0.05170026995011663,
+      "classicalVolumeProjectUnitsAtUnitTotalArea": 0.005983953797951861,
+      "normalClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 3.177651709940706e-16,
+      "faceNormalCrossRatioReal": 0.5,
+      "faceNormalCrossRatioImag": 0.8660254037844386,
+      "rs": {
+        "geometryMatchedMeanOverJ32": 0.0021156471544193783,
+        "geometryMatchedSDOverJ32": 0.004730730853685726,
+        "absoluteDifferenceOverJ32": 0.0038683066435324827,
+        "ratioToClassical": 0.3535533905932738
+      },
+      "al": {
+        "geometryMatchedMeanOverJ32": 0.0021156471544193783,
+        "geometryMatchedSDOverJ32": 0.004730730853685726,
+        "absoluteDifferenceOverJ32": 0.0038683066435324827,
+        "ratioToClassical": 0.3535533905932738
+      }
+    },
+    {
+      "J": 4,
+      "phiRadians": 0.0,
+      "classicalVolumeAtUnitTotalArea": 0.0,
+      "classicalVolumeProjectUnitsAtUnitTotalArea": 0.0,
+      "normalClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 3.1401849173675503e-16,
+      "faceNormalCrossRatioReal": 0.3333333333333333,
+      "faceNormalCrossRatioImag": 4.7136677276662527e-17,
+      "rs": {
+        "geometryMatchedMeanOverJ32": 0.004610888360116189,
+        "geometryMatchedSDOverJ32": 0.003497394602537784,
+        "absoluteDifferenceOverJ32": 0.004610888360116189,
+        "ratioToClassical": null
+      },
+      "al": {
+        "geometryMatchedMeanOverJ32": 0.004610888360116189,
+        "geometryMatchedSDOverJ32": 0.003497394602537782,
+        "absoluteDifferenceOverJ32": 0.004610888360116189,
+        "ratioToClassical": null
+      }
+    },
+    {
+      "J": 4,
+      "phiRadians": 0.05,
+      "classicalVolumeAtUnitTotalArea": 0.011558123412397175,
+      "classicalVolumeProjectUnitsAtUnitTotalArea": 0.001337773991461613,
+      "normalClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 3.1783351071424787e-16,
+      "faceNormalCrossRatioReal": 0.33333344912230845,
+      "faceNormalCrossRatioImag": 0.019253028728732198,
+      "rs": {
+        "geometryMatchedMeanOverJ32": 0.00461111696765121,
+        "geometryMatchedSDOverJ32": 0.0034974785201696396,
+        "absoluteDifferenceOverJ32": 0.0032733429761895973,
+        "ratioToClassical": 3.446857987284712
+      },
+      "al": {
+        "geometryMatchedMeanOverJ32": 0.00461111696765121,
+        "geometryMatchedSDOverJ32": 0.00349747852016964,
+        "absoluteDifferenceOverJ32": 0.0032733429761895973,
+        "ratioToClassical": 3.446857987284712
+      }
+    },
+    {
+      "J": 4,
+      "phiRadians": 1.5707963267948966,
+      "classicalVolumeAtUnitTotalArea": 0.05170026995011663,
+      "classicalVolumeProjectUnitsAtUnitTotalArea": 0.005983953797951861,
+      "normalClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 3.177651709940706e-16,
+      "faceNormalCrossRatioReal": 0.5,
+      "faceNormalCrossRatioImag": 0.8660254037844386,
+      "rs": {
+        "geometryMatchedMeanOverJ32": 0.004698401520606416,
+        "geometryMatchedSDOverJ32": 0.0035315824726117593,
+        "absoluteDifferenceOverJ32": 0.001285552277345445,
+        "ratioToClassical": 0.7851667441373873
+      },
+      "al": {
+        "geometryMatchedMeanOverJ32": 0.004698401520606414,
+        "geometryMatchedSDOverJ32": 0.0035315824726117593,
+        "absoluteDifferenceOverJ32": 0.0012855522773454467,
+        "ratioToClassical": 0.7851667441373871
+      }
+    },
+    {
+      "J": 6,
+      "phiRadians": 0.0,
+      "classicalVolumeAtUnitTotalArea": 0.0,
+      "classicalVolumeProjectUnitsAtUnitTotalArea": 0.0,
+      "normalClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 3.1401849173675503e-16,
+      "faceNormalCrossRatioReal": 0.3333333333333333,
+      "faceNormalCrossRatioImag": 4.7136677276662527e-17,
+      "rs": {
+        "geometryMatchedMeanOverJ32": 0.0041774866626001035,
+        "geometryMatchedSDOverJ32": 0.00281530058342699,
+        "absoluteDifferenceOverJ32": 0.0041774866626001035,
+        "ratioToClassical": null
+      },
+      "al": {
+        "geometryMatchedMeanOverJ32": 0.0041774866626001035,
+        "geometryMatchedSDOverJ32": 0.0028153005834269927,
+        "absoluteDifferenceOverJ32": 0.0041774866626001035,
+        "ratioToClassical": null
+      }
+    },
+    {
+      "J": 6,
+      "phiRadians": 0.05,
+      "classicalVolumeAtUnitTotalArea": 0.011558123412397175,
+      "classicalVolumeProjectUnitsAtUnitTotalArea": 0.001337773991461613,
+      "normalClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 3.1783351071424787e-16,
+      "faceNormalCrossRatioReal": 0.33333344912230845,
+      "faceNormalCrossRatioImag": 0.019253028728732198,
+      "rs": {
+        "geometryMatchedMeanOverJ32": 0.004180868460943622,
+        "geometryMatchedSDOverJ32": 0.002814702549002828,
+        "absoluteDifferenceOverJ32": 0.002843094469482009,
+        "ratioToClassical": 3.1252427447596935
+      },
+      "al": {
+        "geometryMatchedMeanOverJ32": 0.004180868460943625,
+        "geometryMatchedSDOverJ32": 0.0028147025490028246,
+        "absoluteDifferenceOverJ32": 0.0028430944694820123,
+        "ratioToClassical": 3.1252427447596958
+      }
+    },
+    {
+      "J": 6,
+      "phiRadians": 1.5707963267948966,
+      "classicalVolumeAtUnitTotalArea": 0.05170026995011663,
+      "classicalVolumeProjectUnitsAtUnitTotalArea": 0.005983953797951861,
+      "normalClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 3.177651709940706e-16,
+      "faceNormalCrossRatioReal": 0.5,
+      "faceNormalCrossRatioImag": 0.8660254037844386,
+      "rs": {
+        "geometryMatchedMeanOverJ32": 0.005548272663263692,
+        "geometryMatchedSDOverJ32": 0.0021496897883055586,
+        "absoluteDifferenceOverJ32": 0.00043568113468816887,
+        "ratioToClassical": 0.927191761601286
+      },
+      "al": {
+        "geometryMatchedMeanOverJ32": 0.005548272663263693,
+        "geometryMatchedSDOverJ32": 0.0021496897883055586,
+        "absoluteDifferenceOverJ32": 0.000435681134688168,
+        "ratioToClassical": 0.9271917616012862
+      }
+    },
+    {
+      "J": 7,
+      "phiRadians": 0.0,
+      "classicalVolumeAtUnitTotalArea": 0.0,
+      "classicalVolumeProjectUnitsAtUnitTotalArea": 0.0,
+      "normalClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 3.1401849173675503e-16,
+      "faceNormalCrossRatioReal": 0.3333333333333333,
+      "faceNormalCrossRatioImag": 4.7136677276662527e-17,
+      "rs": {
+        "geometryMatchedMeanOverJ32": 0.003981126890238009,
+        "geometryMatchedSDOverJ32": 0.002609425056284024,
+        "absoluteDifferenceOverJ32": 0.003981126890238009,
+        "ratioToClassical": null
+      },
+      "al": {
+        "geometryMatchedMeanOverJ32": 0.003981126890238009,
+        "geometryMatchedSDOverJ32": 0.002609425056284023,
+        "absoluteDifferenceOverJ32": 0.003981126890238009,
+        "ratioToClassical": null
+      }
+    },
+    {
+      "J": 7,
+      "phiRadians": 0.05,
+      "classicalVolumeAtUnitTotalArea": 0.011558123412397175,
+      "classicalVolumeProjectUnitsAtUnitTotalArea": 0.001337773991461613,
+      "normalClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 3.1783351071424787e-16,
+      "faceNormalCrossRatioReal": 0.33333344912230845,
+      "faceNormalCrossRatioImag": 0.019253028728732198,
+      "rs": {
+        "geometryMatchedMeanOverJ32": 0.003985315617892751,
+        "geometryMatchedSDOverJ32": 0.0026090873004789277,
+        "absoluteDifferenceOverJ32": 0.0026475416264311385,
+        "ratioToClassical": 2.979064956658719
+      },
+      "al": {
+        "geometryMatchedMeanOverJ32": 0.0039853156178927505,
+        "geometryMatchedSDOverJ32": 0.0026090873004789277,
+        "absoluteDifferenceOverJ32": 0.0026475416264311376,
+        "ratioToClassical": 2.9790649566587186
+      }
+    },
+    {
+      "J": 7,
+      "phiRadians": 1.5707963267948966,
+      "classicalVolumeAtUnitTotalArea": 0.05170026995011663,
+      "classicalVolumeProjectUnitsAtUnitTotalArea": 0.005983953797951861,
+      "normalClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 3.177651709940706e-16,
+      "faceNormalCrossRatioReal": 0.5,
+      "faceNormalCrossRatioImag": 0.8660254037844386,
+      "rs": {
+        "geometryMatchedMeanOverJ32": 0.00570190414574892,
+        "geometryMatchedSDOverJ32": 0.001718601493612116,
+        "absoluteDifferenceOverJ32": 0.0002820496522029413,
+        "ratioToClassical": 0.9528656701361099
+      },
+      "al": {
+        "geometryMatchedMeanOverJ32": 0.00570190414574892,
+        "geometryMatchedSDOverJ32": 0.001718601493612116,
+        "absoluteDifferenceOverJ32": 0.0002820496522029413,
+        "ratioToClassical": 0.9528656701361099
+      }
+    }
+  ]
+}
