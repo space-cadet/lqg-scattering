@@ -1,4 +1,5 @@
 # Shared Preliminaries for Volume Numerics
+*Last Updated: 2026-10-05 10:49:54 IST*
 
 This page defines notation and conventions reused by the volume calculation
 notes. Task-specific inputs, algorithms, and results belong in the linked
@@ -29,8 +30,8 @@ task specifications and evidence records.
 
 The pilot uses the Freidel–Livine (FL) fixed-area intertwiner from Eq. (38)
 of [Freidel and Livine, arXiv:1005.2090](https://arxiv.org/abs/1005.2090),
-not a distinct Freidel–Speziale (FS) state. For
-normalized spinors $z_i\in\mathbb C^2$, define
+not a distinct Freidel–Speziale (FS) state. For spinors
+$z_i\in\mathbb C^2$, not necessarily normalized individually, define
 
 $$
 F_{ij}^\dagger=a_i^\dagger b_j^\dagger-a_j^\dagger b_i^\dagger,
@@ -53,10 +54,32 @@ dimensionless area label in this construction. Each pair creator adds two
 bosons, so $K_{\mathrm{Fock}}=2J$. Individual $j_i$ can vary across
 occupation components; $J$ is not the spin on every leg.
 
-This state is SU(2)-invariant. Thus $\langle J_i^a\rangle=0$ for each leg
-and component $a$, while two-point correlations such as
-$\langle\vec J_i\cdot\vec J_j\rangle$ can be nonzero. Do not infer a
-classical normal from the one-point flux of this gauge-invariant state.
+For closed coherent labels, require
+
+$$
+\sum_i |z_i\rangle\langle z_i|=A(z)\mathbbm 1,
+\qquad A(z)=\frac12\sum_i\langle z_i|z_i\rangle.
+$$
+
+Given closed classical face data with area fractions $a_i>0$,
+$\sum_i a_i=1$, unit spinors $\chi_i$ with Bloch vectors $n_i$, and
+$\sum_i a_i n_i=0$, choose $z_i=\sqrt{2a_i}\,\chi_i$. These labels obey
+the closure identity with $A(z)=1$. The FL expectation of the individual
+face spin is $\langle j_i\rangle=J a_i$ ([Freidel–Livine, Eq. (63)](https://arxiv.org/html/1005.2090#S3.SS5));
+individual $j_i$ still fluctuate.
+Thus unequal area ratios can be represented by weighting the spinors in the
+existing FL family. A common rescaling of all $z_i$ cancels when the Fock
+state is normalized.
+
+The current n=4 volume drivers pass individually unit-normalized spinors,
+so their sampled classical labels have equal face-area ratios. The Python
+state constructor accepts weighted spinors, but the unequal-area mapping and
+volume comparison have not yet been numerically checked. In this discussion
+$J a_i n_i$ are the classical face vectors associated with the labels; they
+are not one-point flux expectations. The FL state is SU(2)-invariant, so
+$\langle J_i^a\rangle=0$ for each leg and component $a$, while two-point
+correlations such as $\langle\vec J_i\cdot\vec J_j\rangle$ can be nonzero.
+Do not infer a classical normal from the one-point flux of this state.
 
 The FL fixed-area states form a Perelomov U($N$) coherent-state family. This
 pilot constructs Eq. (38) directly with the singlet-pair creator. The generic

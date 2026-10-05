@@ -1,6 +1,6 @@
 # Volume Operator: Implemented Prescriptions and Limits
 
-*Last Updated: 2026-10-03 11:48:38 IST*
+*Last Updated: 2026-10-05 10:49:54 IST*
 
 ## Current code
 
@@ -49,6 +49,13 @@ positive volume.
 ## Remaining work before large-scan or physical-volume claims
 
 - Select and document the physical prefactors for the intended regularization.
+- For the FL classical-limit study, compare each positive operator with the
+  volume of the same weighted-spinor input tetrahedron. Keep one
+  normalization per operator fixed across shapes and $J$; do not tune it
+  separately to each shape.
+- Record positive-volume variance and controlled degenerate paths where
+  feasible. Near zero classical volume, use absolute discrepancies and state
+  which order of the large-$J$ and degenerate limits is being evaluated.
 - Supply justified graph embeddings and tangent-orientation signs for each
   AL state; the Grassmannian plane alone does not provide them.
 - Confirm the coherent state lies in the Hilbert space where that operator

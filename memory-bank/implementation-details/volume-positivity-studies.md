@@ -1,7 +1,7 @@
 # Numerical Studies of the Volume–Positivity Program
 
 **Status:** 🔄 IN PROGRESS — T5a/base, T5a′, T5b, and T5e have recorded results; several follow-ups remain open.
-**Last Updated:** 2026-10-03
+**Last Updated:** 2026-10-05 10:49:54 IST
 **Parent task:** T5 (Volume–Positivity Numerical Studies)
 **Depends on:** T3c (Rust triple-grasp implementation); T3d/T3e converged reruns are recorded; the n=6 point awaits an independent state check.
 
@@ -90,10 +90,11 @@ multiple plane/reference controls before claiming a general onset law.
 
 ## T5c — Flux-covariance geometry and volume comparison
 
-**Question.** For the $N=4$ Freidel–Livine fixed-area state, can the
-correlation matrix $G_{ij}=\langle\vec J_i\cdot\vec J_j\rangle$ define
-closed face-area vectors and a candidate tetrahedron, and how does that
-tetrahedron's volume compare with named quantum volume observables?
+**Question.** For an $N=4$ Freidel–Livine state labeled by closed tetrahedron
+face data, do the positive RS and AL volume expectations approach the
+classical volume of those input data under one fixed normalization per
+operator, and how do shape, unequal face-area ratios, and degenerate limits
+affect the comparison?
 
 The state is gauge-invariant, so its one-point fluxes vanish. The pilot
 therefore factors the two-point correlation matrix; it does not obtain face
@@ -103,21 +104,24 @@ pilot covers $J=1,2,3$ for a regular and one bent equal-area shape. A
 follow-up covers covariance geometry at $J=1,\ldots,6$ for 14 shapes,
 including finite approaches to $x=0$, $x=1$, and $\varphi=0$. All four volume
 observables were recomputed for five interior shapes at $J=1,2,3$. The
-regular shape is recovered to floating-point precision. For all 14 samples,
-the normalized Gram matrix follows an affine $1/(J+5)$ correction through
-$J=6$ to numerical precision; this does not establish the map for all shapes
-or a large-$J$ limit. Results are in the
+regular shape is recovered to floating-point precision. The normalized Gram
+matrix relation across these equal-area samples is implied by the exact FL
+correlation formula in Eq. (72) of Freidel–Livine, and serves as a numerical
+check rather than a new law. Positive-volume spectra have not been computed
+for the boundary approaches. Results are in the
 [shape-scan data](../../t5c_shape_recovery_results.json) and its
 [driver](../../t5c_shape_recovery_scan.py); definitions and scope are in the
 [calculation specification](./T5c-flux-covariance-volume-comparison.md).
 
-**Deliverable.** Validate positivity, rank, closure, and reconstruction
-residuals; test recovery of known input shapes; and compare
-$V_{\mathrm{cl}}$, $V_{\mathrm{proxy}}$, $\langle V_{\mathrm{RS}}\rangle$,
-and $\langle V_{\mathrm{AL}}\rangle$ for converged state families. AL
-orientation signs and the project-versus-physical prefactor remain explicit
-conventions to resolve. Definitions, $x,\varphi$ labels, spinors, pilot
-data, and remaining work are in the
+**Deliverable.** Build weighted FL spinors from prescribed closed face
+areas and normals; verify their closure and face-area means; and compare
+positive RS/AL expectations with the classical volume of the same input
+tetrahedron as $J$ grows. Report a fixed normalization per operator,
+discrepancies, and volume variance where feasible. Include unequal-area
+shapes and controlled degenerate paths with both orders of limits. Retain
+the covariance reconstruction as a separate shape diagnostic. AL orientation
+signs and project-to-physical conversion remain explicit conventions.
+Definitions, $x,\varphi$ labels, spinors, pilot data, and remaining work are in the
 [T5c implementation specification](./T5c-flux-covariance-volume-comparison.md);
 shared notation is in the [volume numerical preliminaries](./volume-numerical-preliminaries.md).
 

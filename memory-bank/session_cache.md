@@ -1,18 +1,18 @@
 # Session Cache
 
-*Last Updated: 2026-10-04 19:51:53 IST*
+*Last Updated: 2026-10-05 10:49:54 IST*
 
 ## Overview
-- Active Tasks: T1a FL positive-volume shape numerics; T3c Rust reproduction; T4 manuscript; T5 volume program; T7 thermal/TFD program; T8 amplituhedron program
+- Active Tasks: T5c FL classical/quantum volume comparison; T1a positive-volume numerics; T3c Rust volume implementation; T4 manuscript; T5 program; T7 thermal/TFD; T8 amplituhedron
 - Paused Tasks: 0
-- At this session's scan baseline, checkout was `main` at `c64de52` with no tracked modifications; pre-existing untracked content was under `__pycache__/`, `dashboard/__pycache__/`, and `figures/`. The latest dashboard visual update is deployed at website commit `9c6670c` (workflow `37125090987`).
+- At the 2026-10-05 scan baseline, checkout was `main` at `5a597ed`; two pre-existing untracked Python cache directories remain under `__pycache__/` and `dashboard/__pycache__/`. The latest dashboard visual update is deployed at website commit `9c6670c` (workflow `37125090987`).
 
 ## Task Registry
 - T1a: FL positive RS/AL area and shape numerics — 🔄 IN PROGRESS; the 440-point $J=2$ scan and $J=1\ldots5$ area sweep were refreshed with a shared numerical zero-mode cutoff; boundary and unequal-area behavior remain open.
 - T1b: Real-plane positive-volume follow-up — ✅ COMPLETE for two tested $N=4$, $K=6$ states; both RS and AL expectations are nonzero and independently checked.
 - T3c: Rust positive-volume implementation — 🔄 IN PROGRESS; FL example matches Python using the direct Rust 1.92 toolchain; physical prefactors and blocks above 512 remain open.
 - T4: Follow-up manuscript — 🔄 IN PROGRESS; correct claims, document review status, then circulate.
-- T5: Volume–positivity numerical studies — 🔄 IN PROGRESS; T5a magnetization sweep converged for one plane; T5c/T5d/T5g open. Former T5f positive-cell/scattering-region mapping is now T8b. T5c now has a selected-shape covariance scan for 14 shapes at $J=1\ldots6$ and reusable deployed shape previews; its state-to-geometry interpretation and comparison criteria remain open.
+- T5: Volume–positivity numerical studies — 🔄 IN PROGRESS; T5a magnetization sweep converged for one plane; T5c/T5d/T5g open. Former T5f positive-cell/scattering-region mapping is now T8b. T5c owns the positive-volume comparison against the input FL tetrahedron; weighted area ratios, one normalization per operator, fluctuations, positive-volume boundary limits, and the order of limits remain open. Its equal-area normalized covariance relation follows the known FL formula and is a consistency check.
 - T7: Thermal/TFD experiments — 🔄 IN PROGRESS; T7a–T7e recorded complete for tested setups; general temperature-dependent coherent-sector response remains open. The thermal-intertwiners draft is copied to `paper/thermal-intertwiners/`; its proposed thermal ket is not implemented.
 - T8: Amplituhedron Program — 🔄 IN PROGRESS; T8a cluster algebra/chart relevance and T8b positive-cell/scattering-region mapping (former T5f) are open. See `tasks/T8.md`.
 - T1–T3e: Python/Rust implementation and corrected converged scan recorded; n=6 independent state check remains open.
@@ -59,6 +59,7 @@ Python and Rust implement RS and AL positive expectations by dense spectral deco
 
 ## Session History
 - 2026-10-04: Created T8 for the Amplituhedron Program; T8a tracks the cluster-algebra/chart question and former T5f is subsumed as T8b. T6 remains assigned to Minkowski polyhedron reconstruction.
+- 2026-10-05: Clarified T5c as the direct FL classical/positive-quantum volume comparison, recorded weighted unequal-area inputs and degenerate-limit criteria, and saved the visible conversation transcript through the task-ownership review. See `sessions/2026-10-05-morning.md` and `sessions/2026-10-05-morning-transcript.md`.
 - 2026-10-04: Recorded the cluster algebra dialogue and updated the attached discussion note with the fixed-marked-surface flip correspondence, its Pachner-move scope, and the exploratory connection to the project's $\operatorname{Gr}(2,N)$ Plücker charts. No cluster-algebra task or implementation was started. See `sessions/2026-10-04-cluster-algebras-transcript.md` and the attached `cluster-algebras-discussion.md`.
 - 2026-10-04: Copied the thermal-intertwiners paper sources/assets and recorded the physical dialogue plus the visible chat through the tetrahedron construction. The F-pair sewing exploration remains conceptual and has no assigned task ID. See `implementation-details/constructive-geometric-sewing-dialogue.md` and `sessions/2026-10-04-geometric-construction-transcript.md`.
 - 2026-10-03: Renamed the T5 overview to volume-positivity numerical studies, added shared volume preliminaries and a detailed T5c specification, and linked related implementation notes and the shape-scan run log. T5c remains open; the pilot does not recover the bent input shape.

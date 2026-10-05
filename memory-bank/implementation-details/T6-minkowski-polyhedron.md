@@ -1,6 +1,7 @@
 # T6 — Minkowski Polyhedron Reconstruction for Vertex Chirality
+*Last Updated: 2026-10-05 10:49:54 IST*
 
-**Status:** ⬜ PROPOSED (depends on T5a′ kinematic version; full quantum version depends on T5c)
+**Status:** Kinematic reconstruction is implemented in `minkowski.py` and used by the T5a′ pilot; the full quantum/state-volume correspondence remains open under T5c.
 **Priority:** HIGH (sharpens the T5a chirality verdict; tests the kinematic↔quantum correspondence)
 **Created:** 2026-09-19
 
@@ -11,6 +12,13 @@ T5a (base + M-sweep) found **no global handedness**: sign-agreement over all <tg
 The problem: "who are the neighbors?" needs a geometry, and the n edges are currently just labeled 0..n−1 by the moment curve (a gauge choice). **Minkowski's theorem** supplies the geometry.
 
 ## The Construction (kinematic version — feasible now)
+
+The current code reconstructs the classical kinematic polyhedron and its
+facet adjacency; it does not construct an FL state or evaluate positive
+RS/AL volume. Its `reconstruct(normals, areas)` routine accepts general
+positive area inputs, while the recorded kinematic driver obtains areas from
+scattering energies. T5c's weighted FL input comparison is a separate use of
+the same closed classical face data.
 
 Minkowski existence/uniqueness: facet normals <tg-math>u_i</tg-math> + areas <tg-math>A_i > 0</tg-math> satisfying closure <tg-math>\sum_i A_i u_i = 0</tg-math> determine a unique convex polytope.
 
@@ -59,7 +67,7 @@ For n=5,6 (small), either is fast. **Recommendation:** start with a scipy halfsp
 
 ## Files
 
-- New: `minkowski.py` (reconstruction + adjacency)
+- Existing: `minkowski.py` (kinematic reconstruction + adjacency)
 - New: `t6_kinematic_chirality.py` (the local-triple analysis)
 - Reuses: `grassmannian.py` (spinors/momenta), `coherent_states.py` (Perelomov), existing T5a sweep data
 

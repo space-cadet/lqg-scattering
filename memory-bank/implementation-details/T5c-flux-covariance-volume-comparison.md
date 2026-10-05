@@ -1,4 +1,5 @@
 # T5c: Flux-Covariance Reconstruction and Volume Comparison
+*Last Updated: 2026-10-05 10:49:54 IST*
 
 **Status:** OPEN — the saved calculation is an exploratory pilot, not a
 completed classical-limit analysis.
@@ -16,6 +17,44 @@ state-to-geometry map. It must check whether the correlation geometry
 recovers the input shape when one is known, and whether that relationship
 persists as the state label grows. A finite numerical match alone would not
 establish a general classical limit.
+
+## Central numerical question
+
+For a closed tetrahedron represented by an FL state, do the positive RS and
+AL volume expectations approach the tetrahedron's classical volume as $J$
+increases, using one fixed normalization per operator across all shapes?
+How does the discrepancy depend on shape, unequal face-area ratios, and
+approach to a degenerate tetrahedron?
+
+Use the input face data as the primary classical reference. For area
+fractions $a_i=A_i/\sum_k A_k$ and unit normals $n_i$ satisfying
+$\sum_i a_i n_i=0$, construct the FL labels
+$z_i=\sqrt{2a_i}\,\chi_i$, where $\chi_i$ is a unit spinor with Bloch
+vector $n_i$. The classical face vectors at total spin-area label $J$ are
+$J a_i n_i$, and their tetrahedron volume scales as $J^{3/2}$. The
+covariance-reconstructed tetrahedron remains a separate geometry diagnostic;
+it should not replace the input tetrahedron as the primary volume target.
+
+For each operator $X\in\{\mathrm{RS},\mathrm{AL}\}$ and each
+nondegenerate shape, report the classical volume at unit total area and
+$\langle\hat V_X\rangle/J^{3/2}$, along with a discrepancy or ratio that
+uses a normalization fixed once for that operator. State the project units
+and any physical conversion separately. Fix the AL orientation signs from
+the declared graph embedding and keep that embedding fixed across the shape
+family. Near zero classical volume, report absolute differences instead of
+ratios. Record $\mathrm{Var}(\hat V_X)$ where the calculation permits it.
+
+For a controlled degenerate limit, parameterize a nondegenerate path by
+$\delta\to0$ and evaluate both orders: first $J\to\infty$ at fixed
+$\delta$, then $\delta\to0$; and first $\delta\to0$ at fixed $J$, then
+$J\to\infty$. Record the finite-$J$ quantum volume and its variance near
+the boundary. The equal-area boundary labels already sampled for covariance
+are useful inputs, but currently have no positive-volume spectral results.
+
+This is the T5c numerical extension, not a new task or a change of state
+family. Weighted FL spinors are the proposed input for unequal areas; their
+area-fraction mapping must be checked numerically before reporting those
+volume results.
 
 ## State family and labels
 
@@ -47,6 +86,13 @@ $J$ and the four spinors $z_i$. If another state family is later labeled by
 $\xi$, that parameter needs a definition in that family's specification;
 it is not interchangeable with $x$, $\varphi$, a face spin, or
 $K_{\mathrm{Fock}}$.
+
+The current helper builds each spinor from a unit face normal, so the saved
+T5c and T1a scans cover equal face-area ratios. For an unequal-area closed
+tetrahedron, the existing FL construction accepts weighted spinors
+$z_i=\sqrt{2a_i}\,\chi_i$; the shared preliminaries give the closure and
+area conventions. The weighted-state and volume mapping is proposed here,
+not yet a numerical result.
 
 ## Shape labels $x$ and $\varphi$
 
@@ -238,16 +284,28 @@ boundary:
 | $x\to1$ at $\varphi=90^\circ$ | 0.235000–0.783438 | 0.176250–0.587578 | 0.128182–0.427330 |
 | $\varphi\to0$ at $x=1/\sqrt3$ | 0.438791–0.496099 | 0.329093–0.372074 | 0.239341–0.270599 |
 
-For every one of the 14 sampled shapes, the **whole normalized Gram matrix**
-follows
+For every one of the 14 sampled equal-area shapes, the **whole normalized
+Gram matrix** follows
 $H_J=H_{\mathrm{input}}+\frac{6}{J+5}(H_1-H_{\mathrm{input}})$
 through $J=6$, with maximum matrix residual $4.4\times10^{-15}$. Here
-$H_J=G_{ij}/\sqrt{G_{ii}G_{jj}}$ and $H_{\mathrm{input}}=n_i\cdot n_j$.
-This is a finite-sample identity to numerical precision, not yet a theorem
-or a general-limit result. The regular-shape errors remain at floating-point
-scale, while nonregular errors decrease with $J$. Across all 84 cases, the
-maximum closure residual is $2.0\times10^{-14}$ and the maximum reconstructed
-face-Gram residual is $1.6\times10^{-14}$.
+$H_{J,ij}=G_{ij}/\sqrt{G_{ii}G_{jj}}$ and
+$H_{\mathrm{input},ij}=c_{ij}=n_i\cdot n_j$. This relation is already
+implied by the exact equal-area FL correlation formula in
+[Freidel and Livine, Eq. (72)](https://arxiv.org/html/1005.2090#S3.SS5): for
+$i\ne j$,
+
+$$
+G_{ij}=\frac{J\big((2J+1)c_{ij}-3\big)}{32},\qquad
+G_{ii}=\frac{J(J+5)}{16},\qquad
+H_{J,ij}=\frac{(2J+1)c_{ij}-3}{2(J+5)}.
+$$
+
+Rearranging gives the affine relation above. Thus the recorded scan is a
+numerical check of the known equal-area formula, which predicts an
+$O(J^{-1})$ recovery of the input normal Gram matrix. It is not evidence for
+a new covariance law, a volume limit, or an unequal-area result. Across all
+84 cases, the maximum closure residual is $2.0\times10^{-14}$ and the
+maximum reconstructed face-Gram residual is $1.6\times10^{-14}$.
 
 The $J=1,2,3$ quantum volume values on the original regular and bent cases
 reproduce the saved pilot to floating-point precision. The three added
@@ -286,21 +344,28 @@ change T5c's numerical status.
 
 ## Work required for a T5c result
 
-- Define and justify the state-to-classical-geometry map, or explicitly
-  scope T5c to testing the covariance candidate above.
-- Retain the pilot and selected-shape checks for closure, rank, positivity,
-  and reconstructed face Gram matrix. Expand beyond the five selected
-  labels, include controlled approaches to degenerate boundaries, and show
-  which input shape the covariance map recovers.
-- Extend positive RS/AL comparisons beyond $J=1,2,3$ where feasible, with
-  resource limits recorded. The covariance-only scan already reaches $J=6$;
-  distinguish those geometry results from positive-volume spectra.
-- Justify the graph embedding and AL orientation signs, or report AL only
-  as a convention-dependent comparison.
-- Keep project normalization separate from physical regularization
-  prefactors.
-- Compare all four named quantities with uncertainties or convergence
-  evidence before making any classical-limit claim.
+- Use the same closed input area vectors to build weighted FL spinors and
+  the classical reference tetrahedron. Verify closure, $\langle j_i\rangle$
+  against the requested area fractions, and the classical volume before
+  comparing quantum observables. Retain covariance reconstruction as a
+  second geometry diagnostic.
+- Compare regular and distorted equal-area shapes, then add genuinely
+  unequal positive area fractions. Cover multiple nondegenerate shapes and
+  record the normalized RS/AL expectations, absolute discrepancy, volume
+  variance where feasible, and convergence as $J$ grows.
+- Use one declared normalization per operator across all shapes. Keep
+  project units separate from physical regularization factors; choose and
+  justify the latter before making physical-volume claims.
+- Fix AL signs from a stated graph embedding, or label AL values as
+  convention-dependent. The face normals alone do not determine these signs.
+- Evaluate positive-volume spectra along controlled degenerate paths and
+  compare the two limit orders. Do not infer positive-volume behavior from
+  the signed-mean proxy or from the covariance-only boundary scan.
+- Treat the known equal-area FL covariance identity as an analytic
+  cross-check. Do not generalize it to weighted unequal-area labels without
+  deriving or validating that case.
+- Extend positive-volume calculations beyond $J=1,2,3$ where feasible and
+  report active-block limits and independent numerical checks.
 
 ## Related documentation
 

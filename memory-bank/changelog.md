@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-10-05
+- Refined T5c around the direct FL classical/positive-volume comparison: weighted area labels, the input tetrahedron reference, fixed cross-shape normalizations, volume fluctuations, and both degenerate limit orders. Documented that the equal-area covariance relation follows from the known FL correlation formula. Saved the session note and transcript; no numerical runs were added.
+
 ## 2026-10-03
 - Renamed the T5 roadmap to volume-positivity numerical studies, created shared mathematical preliminaries and a detailed T5c implementation specification, and linked the related implementation notes, task records, manuscript, and shape-scan log. The covariance pilot is explicitly marked exploratory; T5c remains open.
 - Evaluated positive RS/AL volumes for strictly positive and off-cell real-plane states under T1b; added a reproducible driver and result JSON.

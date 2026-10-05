@@ -5,13 +5,13 @@ source_commit: 9602c9811278635eb4b3e3e601badd28e7964862
 
 # T1a: Positive-volume construction and validation in Python
 *Created: 2026-10-02 12:15:21 IST*
-*Last Updated: 2026-10-03 18:53:30 IST*
+*Last Updated: 2026-10-05 10:49:54 IST*
 
 **Description**: Implement and validate positive Rovelli–Smolin and Ashtekar–Lewandowski volume expectations in the Python reference implementation at n=4.
 **Status**: 🔄 IN PROGRESS
 **Priority**: HIGH
 **Started**: 2026-09-19
-**Last Active**: 2026-10-03 11:48:38 IST
+**Last Active**: 2026-10-05 10:49:54 IST
 **Dependencies**: T1
 
 ## Completion Criteria
@@ -48,6 +48,7 @@ source_commit: 9602c9811278635eb4b3e3e601badd28e7964862
 7. ✅ Added 11 representative shape thumbnails to each dashboard panel; the initial live version was deployed at website commit `f0b6fdd` (workflow `37033479554`).
 8. ✅ Reused pre-generated input-shape thumbnails in the saved 440-point figure and deployed the updated figure with the T5c per-point previews at website commit `9c6670c190e813470975f18037c1ed4a6ecea8bc` (workflow `37125090987`).
 9. 🔄 Extend the scan to boundary limits, larger $J$, and unequal positive face assignments; track volume spread/variance and keep sampled minima distinct from a proof. Select physical prefactors and address larger blocks.
+10. 🔄 For unequal classical face areas, extend the FL inputs with weighted spinors $z_i=\sqrt{2a_i}\,\chi_i$ satisfying closure. This is distinct from enumerating fixed face-spin assignments; no weighted-area positive-volume comparison has been run yet.
 
 ## Context
 The EPJC Eq. (38) fixed-area coherent state is the FL state. With a $64\epsilon_{\rm mach}\max(1,\rho(|Q|))$ cutoff for numerical zero eigenvalues, the regular-tetrahedron case ($N=4$, $J=2$, $K=4$) gives $V_{RS}=0.05077553170606511$ and $V_{AL}=0.02538776585303255$. An independent local spin-$j$ tensor-product construction agrees within $7\times10^{-18}$; the largest triple-matrix difference is zero at the reported precision. The Rust FL example now runs from the installed Rust 1.92 toolchain and matches the Python values at the displayed precision. The old unsaved inline result remains unrecoverable. Reproduce with `fl_volume_validation.py` and `rust/examples/fl_volume.rs`. The spinorial phase-space framework is due to Freidel–Speziale (FS); it is not a distinct target family for this EPJC equation.
