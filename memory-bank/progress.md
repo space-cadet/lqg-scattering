@@ -1,6 +1,6 @@
 # Implementation Progress
 
-*Last Updated: 2026-10-06 12:55:19 IST*
+*Last Updated: 2026-10-06 20:52:40 IST*
 
 ## Active Tasks
 
@@ -77,6 +77,8 @@ common notation is in `implementation-details/volume-numerical-preliminaries.md`
 **Status:** 🔄 IN PROGRESS; exactly five completed child-study records, with new state-family and geometry work ongoing at parent level.
 
 T9 owns the entire thermal/TFD program. The former T7 umbrella was transferred and archived; T7a–T7e retain their IDs and completed evidence as T9 child studies. The new manuscript squeeze is implemented for small FL sectors. Combined dual-copy closure passes, ordinary closure on each copy fails, and a separately labelled double-singlet projection restores ordinary closure; its Gibbs interpretation remains unresolved. The initial pilot compares regular and unequal-skew four-face FL labels at $J=1,2$ over $\beta=3,4,5,8$, with pair cutoff 4 and cutoff-2 comparisons. The data are comparative evidence, not a reconstruction of classical geometry. See `tasks/T9.md`, `archive/T7.md`, the mathematical-background note, and the saved T7-named numerical artifacts.
+
+T9 follow-up: the selected state is $U_\beta(|J,\mathbf z\rangle_L\otimes|\overline{J,\mathbf z}\rangle_R)$, with transformed geometric observables. Its $SU(1,1)$ disentangling and occupation expansion are derived in the mathematical-background note. The two-copy reduced state, entanglement spectrum, geometric correlations, and Gibbs status remain uncalculated; continue the mathematics before implementation. The earlier one-sided pilot remains separate evidence for the draft's original state.
 
 ## Historical Implementation and Runs
 

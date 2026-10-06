@@ -1,6 +1,6 @@
 # Session Cache
 
-*Last Updated: 2026-10-06 12:55:19 IST*
+*Last Updated: 2026-10-06 20:52:40 IST*
 
 ## Overview
 - Active work remains T5c, T1a/T3c, T4, T5, T8, and T9; T6 is active for the open FL-covariance-to-polyhedron bridge.
@@ -15,7 +15,7 @@
 - T5: Volume–positivity numerical studies — 🔄 IN PROGRESS; T5a magnetization sweep converged for one plane; T5c/T5d/T5g open. Former T5f positive-cell/scattering-region mapping is now T8b. T5c owns the positive-volume comparison against the input FL tetrahedron; first weighted pilots and variance records now exist, while broad area/shape coverage and limit orders remain open. Its equal-area normalized covariance relation follows the known FL formula and is a consistency check.
 - T5c pilot update: weighted regular and unequal-skew input geometries reach $J=7$; the unequal-area grid covers $J=2,4$ plus selected $J=6$ points; a flat path covers $J=2,4,6,7$. Weighted closure and mean areas pass, but finite-$J$ unequal correlations do not exactly recover the input normals. At the exact flat boundary, calibrated positive volume remains finite in the sampled range; limit orders remain open. RS/AL calibrated curves coincide under the tested four-valent closure/sign convention and are not independent checks.
 - T7: Former thermal/TFD umbrella — archived as transferred; scientific work remains open under T9.
-- T9: Thermal/TFD state construction and physical study — 🔄 IN PROGRESS; owns all ongoing construction and analysis, with five completed child-study records T7a–T7e. The exact small-sector draft squeeze and conditional singlet candidate are recorded in `implementation-details/T7-mathematical-background-and-calculations.md`.
+- T9: Thermal/TFD state construction and physical study — 🔄 IN PROGRESS; owns all ongoing construction and analysis, with five completed child-study records T7a–T7e. The earlier one-sided squeeze and conditional singlet pilot remain recorded. The selected target is the same-mode squeeze of conjugate FL intertwiners on both copies, with transformed geometric observables. Its $SU(1,1)$ factorization and occupation expansion are derived; reduced-state, entropy, correlation, and Gibbs analyses remain open. See `tasks/T9.md`, `implementation-details/T7-mathematical-background-and-calculations.md`, and `sessions/2026-10-06-t9-two-copy-construction-transcript.md`.
 - T8: Amplituhedron Program — 🔄 IN PROGRESS; T8a cluster algebra/chart relevance and T8b positive-cell/scattering-region mapping (former T5f) are open. See `tasks/T8.md`.
 - T1–T3e: Python/Rust implementation and corrected converged scan recorded; n=6 independent state check remains open.
 
@@ -57,6 +57,7 @@ T9 owns all thermal/TFD state construction and physical study. Its five complete
 - Corrected Rust/Python n=4 comparison and converged scans through n=8; independent SciPy checks cover n=4,5,7,8.
 
 ## Session History
+- 2026-10-06: Selected the two-copy squeezed FL intertwiner construction for T9 and derived its $SU(1,1)$ disentangling and occupation expansion before implementation. Full conversation and remaining calculations: `sessions/2026-10-06-t9-two-copy-construction-transcript.md`.
 - 2026-10-06: An interim T7/T9 split was superseded by the user-directed transfer of the full TFD program to T9. T7 is archived as transferred; T7a–T7e retain their IDs as T9’s five child studies. Corrected T7a scope to unrestricted capped Fock space.
 - 2026-10-06: Audited all 79 reachable Git commits and reconstructed individual active/completed task records, including T5f's historical transfer to T8b. Reconciled task status and file links against the current registry; see `sessions/2026-10-06-task-record-reconstruction.md`.
 - 2026-10-04: Created T8 for the Amplituhedron Program; T8a tracks the cluster-algebra/chart question and former T5f is subsumed as T8b. T6 remains assigned to Minkowski polyhedron reconstruction.

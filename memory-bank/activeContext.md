@@ -1,9 +1,9 @@
 # Active Context
 
-*Last Updated: 2026-10-06 12:55:19 IST*
+*Last Updated: 2026-10-06 20:52:40 IST*
 
 ## Current Focus
-**Primary Task:** T9 — construct thermal/TFD state families and study their physical geometry. The four-face pilot compares the draft squeeze and singlet-projected candidate; physical state/observable selection remains open.
+**Primary Task:** T9 — construct thermal/TFD state families and study their physical geometry. The selected construction squeezes conjugate FL intertwiners in both copies and uses transformed geometric observables; mathematical reduction and numerical analysis are next.
 **Supporting Tasks:** T1a Python volume numerics; T3c Rust volume implementation; T6 kinematic Minkowski geometry; T4 manuscript audit; T8 amplituhedron program.
 
 ## Active Tasks
@@ -21,7 +21,7 @@
 - Python and Rust implementations exist. The old n=4 comparison shared a truncated Taylor state. Corrected Rust scans now cover n=4..8; SciPy independently checks n=4,5,7,8.
 - `manuscript.md` contains results through T7e but needs corrected conclusions, caveats, independent review, and circulation.
 - At the start of the 2026-10-06 task-record audit, `main` and `origin/main` both pointed to `0a254849a5e12734ee32d9d8af74bd4309d17648`. Existing local numerical, dashboard, and Memory Bank work remains in the working tree; this audit preserved it while reconstructing task records from the full 79-commit history. Separately, the dashboard's math typesetting update was deployed from website commit `15f698f` (workflow `37286586717`) and verified live in the study and fixed-area sections. Chart SVG labels remain compact text; mobile view was not examined, per the user's direction. The earlier plot-artwork update is website commit `9c6670c`. Two pre-existing untracked Python cache directories remain under `__pycache__/` and `dashboard/__pycache__/`.
-- T7 was archived as the former umbrella; T9 now owns all thermal/TFD work. The draft thermal ket has an exact small-sector implementation. Combined dual closure passes, ordinary per-copy closure fails, and separately labelled singlet postselection restores closure. Physical ensemble/observable selection remains open. See `tasks/T9.md` and `implementation-details/T7-mathematical-background-and-calculations.md`.
+- T7 was archived as the former umbrella; T9 now owns all thermal/TFD work. The earlier one-sided draft squeeze has an exact small-sector implementation: combined dual closure passes, ordinary per-copy closure fails, and separately labelled singlet postselection restores closure. T9's selected target is now $U_\beta(|J,z\rangle_L\otimes|\overline{J,z}\rangle_R)$ with transformed geometric observables. The $SU(1,1)$ disentangling and occupation expansion are derived, but the reduced state, entropy, correlations, and Gibbs status have not been calculated. See `tasks/T9.md`, the mathematical-background note, and the new T9 transcript.
 - The constructive F-pair sewing discussion is recorded in [the dialogue note](implementation-details/constructive-geometric-sewing-dialogue.md) and [the session transcript](sessions/2026-10-04-geometric-construction-transcript.md). Triangle and tetrahedron sewing remain conceptual; metric shape and volume have not been validated, and no task ID was assigned.
 
 ## Current Decisions
@@ -32,6 +32,7 @@
 - Distinguish the signed-mean proxy from positive volume expectations. RS sums positive triple roots; AL takes the positive root after an embedding-signed triple sum. Both are now implemented in project normalization for active blocks up to dimension 512.
 - Set eigenvalues within $64\epsilon_{\rm mach}\max(1,\rho(|Q|))$ to zero in both Python and Rust positive-volume routines; this prevents solver-dependent positive contributions from exact kernel modes.
 - Do not mark numerical claims red-team reviewed without a documented protocol and per-claim evidence.
+- Under T9, study the user's selected two-copy squeezed FL state with transformed observables. This is the target construction; do not treat its reduced state as Gibbs without deriving that result. Keep full doubled-space transformed observables distinct from operators evaluated using only the left reduced state.
 
 ## Next Actions
 1. Expand the weighted FL shape grid beyond the first area partition and track the face-normal and vertex-sphere cross-ratios alongside Euclidean metric data; treat normals as input labels and correlations as the quantum shape diagnostic.
@@ -41,6 +42,6 @@
 5. Extend the corrected T5a and T5b results across plane controls
   and run T5d with real off-cell controls.
 6. Complete T5c/T6 polyhedron reconstruction and controlled comparisons.
-7. Under T9, select and specify the physical thermal map, support, area ensemble and right-copy convention.
-8. Under T9, extend geometric and two-sided observable comparisons for the selected state families, with cutoff evidence.
+7. Under T9, combine the selected state's amplitudes by final occupation sector and derive its left reduced density matrix, spectrum, and entropy.
+8. Under T9, calculate two-sided correlations and transformed geometric observables, then determine whether the reduced state has a Gibbs form; specify cutoffs before numerical implementation.
 8. Review corrected numerical artifacts before circulating the manuscript.

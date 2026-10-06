@@ -48,3 +48,7 @@ At regular $J=2$, $\beta=5$, retained projection probability is $0.922702874$, l
 5. T9 now owns state definitions, construction, and geometric/physical study; this note records the work transferred from the former T7 umbrella. Preserve completed T7a–T7e findings within their recorded oscillator/Gibbs scope; they do not establish the new physical thermal-polyhedron response.
 
 Artifacts: `t7_geometry_thermal.py`, `t7_geometry_thermal_results.json`. The manuscript has not been edited.
+
+## T9 follow-up — 2026-10-06
+
+The user selected the two-copy construction $U_\beta(|J,z\rangle_L\otimes|\overline{J,z}\rangle_R)$, with transformed geometric observables. This resolves the earlier choice between ordinary and consistently transformed observables for the current mathematical analysis; it does not select the construction as a Gibbs state or establish a canonical energy-basis TFD. The $SU(1,1)$ factorization and occupation expansion are derived in the [mathematical-background note](T7-mathematical-background-and-calculations.md#11-t9-follow-up-squeeze-two-conjugate-fl-intertwiners). Reduced-state and geometry calculations remain open. The earlier one-sided squeeze and projected candidate above remain the results of their original pilot.

@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-10-06
+- Selected the T9 two-copy squeezed FL construction $U_\beta(|J,\mathbf z\rangle_L\otimes|\overline{J,\mathbf z}\rangle_R)$ with transformed geometric observables; recorded the $SU(1,1)$ factorization and occupation expansion. Reduced-state and Gibbs analysis remain open; no implementation was added.
 - Consolidated the full thermal/TFD program under T9. Archived T7 as transferred with work open; retained completed T7a–T7e IDs as T9’s five child studies, updated their parent/dependency links, and kept new work at T9 parent level to respect the five-subtask cap.
 - Interim split assigned construction to T7 and study to T9; the user then consolidated the full program under T9 with the five existing T7a–T7e records as children. Corrected the T7a summary to identify its unrestricted capped Fock-space support.
 - Audited the full 79-commit repository history and reconstructed missing task and subtask records. The registry now links 29 current task IDs to individual files and retains T5f as a historical transfer to open task T8b; updated the task parser for T5a′, session handoff, and edit history. Validation confirmed unique IDs and intact record links.

@@ -337,3 +337,92 @@ Subsequent work would derive the selected ensemble, test additional geometric st
 - `t7_geometry_thermal.py`: sector/projector assembly, exact squeezed coefficients, candidate projection, moments, entropy and validations.
 - `t7_geometry_thermal_results.json`: numerical evidence for this note.
 - `paper/thermal-intertwiners/thermal-intertwiners.tex`: manuscript background, thermal coherent-state proposal and appendices. Its interpretation is subject to the explicit constraint distinctions derived here.
+
+## 11. T9 follow-up: squeeze two conjugate FL intertwiners
+
+*Recorded: 2026-10-06 20:52 IST. This section extends the earlier one-sided pilot; it does not replace or erase that calculation.*
+
+The T9 construction selected in discussion starts with an FL intertwiner in each copy,
+$$
+|\Psi_0\rangle=|J,\mathbf z\rangle_L\otimes|\overline{J,\mathbf z}\rangle_R,
+\qquad
+|\Psi_\beta\rangle=U_\beta|\Psi_0\rangle.
+$$
+The bar denotes the conjugate state in the right dual copy. Each initial factor is a separately closed intertwiner. The user selected the consistently transformed geometric observables; for any operator $O_L$ on the left, its transformed version is $\widetilde O_L=U_\beta(O_L\otimes I_R)U_\beta^\dagger$, and similarly on the right. Since the squeeze couples copies, such transformed operators generally act on the doubled space. Thus reduced-left-state observables and full doubled-space transformed observables must be distinguished.
+
+For $N$ faces, write the $2N$ Schwinger modes as $c_{\mu X}$ only as a temporary index convention, with $X=L,R$ and explicit identification
+$$
+c_{2i-1,X}=a_{iX},\qquad c_{2i,X}=b_{iX},\qquad i=1,\ldots,N.
+$$
+There are no additional oscillators denoted by $c$. The pair generators in the original notation are
+$$
+K_+=\sum_{i=1}^{N}\left(a_{iL}^\dagger a_{iR}^\dagger+b_{iL}^\dagger b_{iR}^\dagger\right),\qquad
+K_-=K_+^\dagger=\sum_{i=1}^{N}\left(a_{iL}a_{iR}+b_{iL}b_{iR}\right),
+$$
+$$
+K_0=\frac12\left[\sum_{i=1}^{N}\left(a_{iL}^\dagger a_{iL}+b_{iL}^\dagger b_{iL}+a_{iR}^\dagger a_{iR}+b_{iR}^\dagger b_{iR}\right)+2N\right].
+$$
+The constant $2N$ is the number of paired oscillator modes. Canonical oscillator commutators give
+$$
+[K_0,K_+]=K_+,\qquad [K_0,K_-]=-K_-,\qquad [K_+,K_-]=-2K_0.
+$$
+For example, $[c_Lc_R,c_L^\dagger c_R^\dagger]=n_L+n_R+1$ for one paired mode; summing this identity gives the last commutator and fixes the constant in $K_0$. These are the $\mathfrak{su}(1,1)$ relations.
+
+The same-mode Bogoliubov squeeze is
+$$
+U_\beta=\exp\!\left[\theta(K_+-K_-)\right],\qquad
+\tanh\theta=e^{-\beta\hbar\omega/2}.
+$$
+The thermal pair creators on both copies can be defined by conjugation,
+$$
+\widetilde F_{\mathbf z,L}^\dagger=U_\beta F_{\mathbf z,L}^\dagger U_\beta^\dagger,
+\qquad
+\widetilde F_{\overline{\mathbf z},R}^\dagger=U_\beta F_{\overline{\mathbf z},R}^\dagger U_\beta^\dagger.
+$$
+Applying equal powers to the thermal vacuum gives the same state:
+$$
+(\widetilde F_{\mathbf z,L}^\dagger)^J(\widetilde F_{\overline{\mathbf z},R}^\dagger)^J U_\beta|0,0\rangle
+=U_\beta(F_{\mathbf z,L}^\dagger)^J(F_{\overline{\mathbf z},R}^\dagger)^J|0,0\rangle,
+$$
+with the chosen FL normalization applied to each factor. This is the two-intertwiner extension under study; the manuscript's final formula dresses only the left intertwiner. The comparison with Kotecha's GFT construction was context only and does not prescribe the T9 state.
+
+### Disentangling derivation
+
+Seek an ordered factorization
+$$
+U(\theta)=e^{f(\theta)K_+}e^{g(\theta)K_0}e^{h(\theta)K_-},
+\qquad f(0)=g(0)=h(0)=0.
+$$
+Using the commutators above, the terminating nested-commutator expansions are
+$$
+e^{fK_+}K_0e^{-fK_+}=K_0-fK_+,
+\qquad
+e^{fK_+}K_-e^{-fK_+}=K_--2fK_0+f^2K_+,
+$$
+and $e^{gK_0}K_-e^{-gK_0}=e^{-g}K_-$. Differentiating the ansatz and matching coefficients in $U'U^{-1}=K_+-K_-$ gives
+$$
+h'e^{-g}=-1,\qquad g'-2fh'e^{-g}=0,\qquad f'-fg'+f^2h'e^{-g}=1.
+$$
+Equivalently, $h'=-e^g$, $g'=-2f$, and $f'=1-f^2$. With the stated initial data,
+$$
+f=\tanh\theta,\qquad g=-2\log(\cosh\theta),\qquad h=-\tanh\theta,
+$$
+so
+$$
+U_\beta=e^{tK_+}(\operatorname{sech}\theta)^{2K_0}e^{-tK_-},\qquad t=\tanh\theta.
+$$
+This factorization shows that annihilation terms matter when both initial copies are occupied. It also provides a finite lowering expansion on the initial finite-particle state, followed by an infinite raising tail.
+
+For the fixed-area FL factors, each copy initially has $2J$ bosons, so $K_-^s|\Psi_0\rangle=0$ for $s>2J$. On $|\Psi_0\rangle$, $K_0$ has eigenvalue $2J+N$; after $s$ pair annihilations its eigenvalue is $2J+N-s$. Expanding the raising and lowering exponentials therefore gives the exact norm-preserving state
+$$
+|\Psi_\beta\rangle=
+\sum_{s=0}^{2J}\sum_{r=0}^{\infty}
+\frac{(-1)^s t^{r+s}}{s!\,r!}
+(\operatorname{sech}\theta)^{4J+2N-2s}
+K_+^rK_-^s|\Psi_0\rangle.
+$$
+Terms with equal net pair number $r-s$ can interfere and must be combined before forming probabilities or the reduced density matrix.
+
+The number difference $N_L-N_R$ commutes with $K_+$ and $K_-$, so the two copies retain equal total boson number. The common total changes by $r-s$ from its initial value $2J$ and is not fixed. At $\theta\to0$ (zero temperature), $U_\beta\to I$ and the state reduces to the original product of conjugate FL intertwiners. The state is annihilated by the individually transformed closure generators because the unsqueezed factors are separately closed. This does not imply separate closure under the original, untransformed copy generators.
+
+This algebraic construction does not by itself establish that the reduced state $\rho_L=\operatorname{Tr}_R|\Psi_\beta\rangle\langle\Psi_\beta|$ is Gibbs or that the state has the canonical energy-eigenbasis TFD form. Those are open checks. Next mathematical work is to combine amplitudes by final occupation sector, construct $\rho_L$, and analyze its spectrum, entropy, two-sided correlations, and transformed geometric observables before implementation.
