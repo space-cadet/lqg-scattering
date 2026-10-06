@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-06
+- Consolidated the full thermal/TFD program under T9. Archived T7 as transferred with work open; retained completed T7a–T7e IDs as T9’s five child studies, updated their parent/dependency links, and kept new work at T9 parent level to respect the five-subtask cap.
+- Interim split assigned construction to T7 and study to T9; the user then consolidated the full program under T9 with the five existing T7a–T7e records as children. Corrected the T7a summary to identify its unrestricted capped Fock-space support.
+- Audited the full 79-commit repository history and reconstructed missing task and subtask records. The registry now links 29 current task IDs to individual files and retains T5f as a historical transfer to open task T8b; updated the task parser for T5a′, session handoff, and edit history. Validation confirmed unique IDs and intact record links.
+
 ## 2026-10-05
 - Added the first weighted input-geometry T5c pilot: regular/unequal-skew scans through $J=7$, a nine-shape unequal-area grid, selected $J=6$ points, and a fixed-area flat-boundary scan. Audited the geometric conversion and recorded that individual FL vector means vanish, while area means and closure pass; calibrated RS/AL agreement follows from four-valent closure and is not independent evidence. T5c remains open; neither degenerate limit order is established.
 - Refined T5c around the direct FL classical/positive-volume comparison: weighted area labels, the input tetrahedron reference, fixed cross-shape normalizations, volume fluctuations, and both degenerate limit orders. Documented that the equal-area covariance relation follows from the known FL correlation formula. Saved the session note and transcript; no numerical runs were added.

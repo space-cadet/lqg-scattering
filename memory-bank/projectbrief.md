@@ -65,11 +65,11 @@ lqg-scattering/
 - Corrected Rust/Python n=4 comparison and converged n=4..8 scans are recorded. Independent SciPy checks cover n=4,5,7,8; n=6 remains unchecked independently. An independent positive-plane $n=4$ state has $\langle q\rangle\approx0$ but $\langle q^2\rangle=0.375981$.
 - The follow-up manuscript is a developed draft, not yet recorded as reviewed or circulated.
 - T5 has a mix of completed experiments and open investigations; the T5a magnetization sweep has been rerun with converged states for one plane.
-- T7a..T7e have reported results for their tested constructions; follow-up work is needed for a temperature-dependent coherent-sector law.
+- Completed T7a–T7e results remain scoped to their tested constructions; T9 owns follow-up physical state and geometry work.
 - Current focus: reconcile manuscript claims and task records, repair or qualify provisional results, then conduct an independent claim review before circulation.
 
 ## Task Tracking
-See `tasks.md` for current T4, T5, and T7 states. The T3 implementation and corrected T3d/T3e numerical runs are recorded; independent n=6 verification remains open. See `implementation-details/red-team-audit.md`.
+See `tasks.md` for current T4, T5, and T9 states. The T3 implementation and corrected T3d/T3e numerical runs are recorded; independent n=6 verification remains open. See `implementation-details/red-team-audit.md`.
 
 ## Memory Bank Organization
 - `/memory-bank/`: Core documentation files

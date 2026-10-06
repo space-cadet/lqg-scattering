@@ -1,19 +1,27 @@
 # Task Registry
-*Last Updated: 2026-10-05 11:48:41 IST*
+*Last Updated: 2026-10-06 12:55:19 IST*
 
 ## Active Tasks
-| ID | Title | Status | Priority | Started | Dependencies | Owner |
-|----|-------|--------|----------|---------|--------------|-------|
-| T1a | Positive RS/AL volume and FL shape checks | 🔄 IN PROGRESS | HIGH | 2026-09-19 | T1 | Deepak |
-| T4 | Follow-up manuscript claim audit and review | 🔄 IN PROGRESS | HIGH | 2026-09-19 | T3c, T3d, T3e, T5, T7 | Deepak |
-| T3d/T3e | Converged baseline verification and scan; n=6 independent check open | 🔄 IN PROGRESS | HIGH | 2026-10-01 | T3c | Deepak |
-| T5 | Volume–positivity numerical studies | 🔄 IN PROGRESS | HIGH | 2026-09-19 | T3c, T3d, T3e | Deepak |
-| T7 | Thermal and TFD research program | 🔄 IN PROGRESS | HIGH | 2026-09-20 | T3c | Deepak |
-| T8 | Amplituhedron Program | 🔄 IN PROGRESS | MEDIUM | 2026-10-04 | T1, T2 | Deepak |
+| ID | Title | Status | Priority | Started | Dependencies | Details |
+|----|-------|--------|----------|---------|--------------|---------|
+| T1a | Positive RS/AL volume and FL shape checks | 🔄 IN PROGRESS | HIGH | 2026-09-19 | T1 | [Details](tasks/T1a.md) |
+| T3c | Positive-volume construction and validation in Rust | 🔄 IN PROGRESS | HIGH | 2026-09-19 | T3 | [Details](tasks/T3c.md) |
+| T3e | Independent n=6 benchmark check | 🔄 IN PROGRESS | HIGH | 2026-09-19 | T3c, T3d | [Details](tasks/T3e.md) |
+| T4 | Follow-up manuscript claim audit and review | 🔄 IN PROGRESS | HIGH | 2026-09-19 | T3c, T3d, T3e, T5, T9 | [Details](tasks/T4.md) |
+| T5 | Volume–positivity numerical studies | 🔄 IN PROGRESS | HIGH | 2026-09-19 | T3c, T3d, T3e | [Details](tasks/T5.md) |
+| T5c | FL classical/quantum tetrahedron-volume comparison | 🔄 IN PROGRESS | HIGH | 2026-09-19 | T5, T3c | [Details](tasks/T5c.md) |
+| T5d | Cocycle phase and distance-to-cell response | 🔄 IN PROGRESS | HIGH | 2026-09-19 | T5, T3c | [Details](tasks/T5d.md) |
+| T5g | Higher-valence performance frontier | 🔄 IN PROGRESS | MEDIUM | 2026-09-19 | T3c | [Details](tasks/T5g.md) |
+| T6 | Minkowski polyhedron reconstruction and quantum bridge | 🔄 IN PROGRESS | HIGH | 2026-09-19 | T5a′, T5c | [Details](tasks/T6.md) |
+| T8 | Amplituhedron Program | 🔄 IN PROGRESS | MEDIUM | 2026-10-04 | T1, T2 | [Details](tasks/T8.md) |
+| T9 | Thermal/TFD state construction and physical study | 🔄 IN PROGRESS | HIGH | 2026-10-06 | T3c | [Details](tasks/T9.md) |
+| T8a | Cluster algebra and coordinate charts | 🔄 IN PROGRESS | MEDIUM | 2026-10-04 | T8 | [Details](tasks/T8a.md) |
+| T8b | Positive cells and scattering regions | 🔄 IN PROGRESS | MEDIUM | 2026-10-04 | T8, T1, T2 | [Details](tasks/T8b.md) |
 
 ## Task Details
 
 ### T1: Python Pipeline
+**Details:** [Archived task record](archive/T1.md)
 **Description**: Reference implementation of the LQG-Grassmannian pipeline in Python: Fock space construction, U(N) coherent states, Grassmannian embedding, positivity tests.
 **Status**: ✅ COMPLETED
 **Completed**: 2026-09-19
@@ -32,8 +40,8 @@
 - `rotation.py`
 
 **Subtasks**:
-- T1a: Positive RS/AL implementation — ✅; FL equal-area validation, weighted-area extension, and boundary comparison — 🔄 IN PROGRESS
-- T1b: Signed-mean cancellation and positive-volume check on real planes — ✅ COMPLETED
+- T1a: Positive RS/AL implementation — ✅; FL equal-area validation, weighted-area extension, and boundary comparison — 🔄 IN PROGRESS ([record](tasks/T1a.md))
+- T1b: Signed-mean cancellation and positive-volume check on real planes — ✅ COMPLETED ([record](archive/T1b.md))
 
 **Notes**:
 The Python implementation established the real-plane cancellation of the
@@ -76,6 +84,7 @@ At $J=2$, the equal-face-area scan evaluates 440 ordered shapes and finds the re
 ---
 
 ### T1b: Signed-mean result on real planes
+**Details:** [Archived task record](archive/T1b.md)
 **Description**: Establish the signed triple-grasp cancellation on real planes and test what it implies for a positive volume operator.
 **Status**: ✅ COMPLETED
 **Completed**: 2026-10-03
@@ -105,6 +114,7 @@ result, not a claim about every real plane or embedding.
 ---
 
 ### T2: Manuscript (EPJC Paper)
+**Details:** [Archived task record](archive/T2.md)
 **Description**: Write and publish the LaTeX paper presenting the LQG-Grassmannian interface.
 **Status**: ✅ COMPLETED
 **Completed**: 2026-09-19
@@ -126,6 +136,7 @@ Paper is PUBLISHED. Do not modify. This is the baseline for all follow-up work.
 ---
 
 ### T3: Rust Port for n≥5
+**Details:** [Archived task record](archive/T3.md)
 **Description**: Port the LQG-Grassmannian pipeline to Rust for n≥5 vertices. Python is too slow due to Fock space dimension explosion. Use sparse matrices (sprs) and parallelism (rayon).
 **Status**: ✅ COMPLETED
 **Completed**: 2026-09-19 16:26 IST
@@ -139,11 +150,11 @@ Paper is PUBLISHED. Do not modify. This is the baseline for all follow-up work.
 - ✅ Converged n=5,6,7,8 Rust scan (T3e); independent n=6 check remains open
 
 **Subtasks**:
-- T3a: Fock space + u(N) operators (Rust) — ✅ COMPLETED (commit ee3ff0e)
-- T3b: Coherent states + Grassmannian (Rust) — ✅ COMPLETED (commit 42ce24e)
-- T3c: Volume operator (Rust) — ✅ COMPLETED (commit ee72845)
-- T3d: Verify Rust vs Python at n=4 — ✅ CONVERGED RUN RECORDED (2026-10-01)
-- T3e: Benchmarks n=5,6,7,8 — ✅ CONVERGED RUN RECORDED; independent n=6 check open
+- T3a: Fock space + u(N) operators (Rust) — ✅ COMPLETED (commit ee3ff0e; [record](archive/T3a.md))
+- T3b: Coherent states + Grassmannian (Rust) — ✅ COMPLETED (commit 42ce24e; [record](archive/T3b.md))
+- T3c: Volume operator (Rust) — 🔄 ACTIVE follow-up; [record](tasks/T3c.md)
+- T3d: Verify Rust vs Python at n=4 — ✅ CONVERGED RUN RECORDED (2026-10-01; [record](archive/T3d.md))
+- T3e: Benchmarks n=5,6,7,8 — ✅ CONVERGED RUN RECORDED; independent n=6 check open ([record](tasks/T3e.md))
 
 **Related Files**:
 - `rust/src/fock.rs`
@@ -193,6 +204,7 @@ or validate the Rust state-construction or volume code.
 ---
 
 ### T3d: Verify Rust vs Python at n=4
+**Details:** [Archived task record](archive/T3d.md)
 **Description**: Cross-validate Rust implementation against Python reference at n=4. Must match to f64 machine precision (rtol=1e-12).
 **Status**: ✅ CONVERGED RUN RECORDED
 **Historical run**: 2026-09-19 16:26 IST
@@ -219,6 +231,7 @@ value; the converged Rust run reproduces the independent value.
 ---
 
 ### T3e: Benchmarks n=5,6,7,8
+**Details:** [Task record](tasks/T3e.md)
 **Description**: Run volume operator benchmarks for n=5 through n=8. Target: < 1 minute per n value.
 **Status**: ✅ CONVERGED RUN RECORDED
 **Historical run**: 2026-09-19 16:26 IST
@@ -243,11 +256,12 @@ The converged complex-plane scan was completed on 2026-10-01. SciPy independentl
 ---
 
 ### T4: Follow-up Manuscript
+**Details:** [Task record](tasks/T4.md)
 **Description**: Draft follow-up manuscript presenting numerical results for n=4..8. Extends the published EPJC paper with the Rust implementation and higher-valence results.
 **Status**: 🔄 IN PROGRESS
 **Started**: 2026-09-19
 **Last Active**: 2026-10-01 21:42 IST
-**Dependencies**: T3c, T3d, T3e, T5, T7
+**Dependencies**: T3c, T3d, T3e, T5, T9
 
 **Completion Criteria**:
 - ✅ Numerical results through T7e are drafted in `manuscript.md`
@@ -270,6 +284,7 @@ truncation. See `memory-bank/implementation-details/red-team-audit.md`.
 ---
 
 ### T5: Volume–Positivity Numerical Studies
+**Details:** [Task record](tasks/T5.md)
 **Description**: Numerical program probing the volume–positivity (achirality) boundary. Seven independent studies ask how the signed grasp responds off the positive Grassmannian cell, whether chirality is per-vertex or per-triple, and how named quantum observables compare with a reconstructed classical polyhedron volume.
 **Status**: 🔄 IN PROGRESS
 **Dependencies**: T3c, T3d, T3e (Rust volume operator, verified n=4, benchmarks n=5–8)
@@ -277,18 +292,20 @@ truncation. See `memory-bank/implementation-details/red-team-audit.md`.
 **Roadmap**: `memory-bank/implementation-details/volume-positivity-studies.md`
 
 **Subtasks** (priority order):
-- T5a: Triple-volume correlations (n≥5). **Base n=6,7 runs recorded complete**: sign-agreement 0.50–0.70 and small cross-seed correlations, consistent with per-triple chirality; modest sign-test power and n=8 resource limit remain. **Magnetization sweep rerun for one fixed plane**: all 10 states converged in 39–41 Taylor terms; four representative sectors matched independent SciPy exponentiation to at most 3.6e-16 in triple means. Sign-agreement stayed 0.50–0.60 for nonpolarized sectors. The one-plane, ten-triple sample does not establish a general handedness law. See `t5a_mag_notes.md` and `t5a_prime_notes.md`.
-- T5a′: Kinematic-polyhedron local chirality — **recorded complete with caveats**. The reported n=5 local sign-agreement tracks all-triples across 10 incoming-pair channels; only 8 planes per channel, so sign-test power is limited. n=4 is planar/degenerate for this polyhedron test. Dense-expm validation found the shared 15-term Taylor reference was not converged (about 25 terms needed at K=6); retain the recorded explicit checks and caveats, and do not treat cross-engine agreement under a shared truncation as independent validation. Spec/results: `implementation-details/T6-minkowski-polyhedron.md`, `t5a_prime_notes.md`.
-- T5b: Perturbation response of the signed-mean proxy — corrected 13-point
+- T5a: Triple-volume correlations (n≥5; [record](archive/T5a.md)). **Base n=6,7 runs recorded complete**: sign-agreement 0.50–0.70 and small cross-seed correlations, consistent with per-triple chirality; modest sign-test power and n=8 resource limit remain. **Magnetization sweep rerun for one fixed plane**: all 10 states converged in 39–41 Taylor terms; four representative sectors matched independent SciPy exponentiation to at most 3.6e-16 in triple means. Sign-agreement stayed 0.50–0.60 for nonpolarized sectors. The one-plane, ten-triple sample does not establish a general handedness law. See `t5a_mag_notes.md` and `t5a_prime_notes.md`.
+- T5a′: Kinematic-polyhedron local chirality ([record](archive/T5a′.md)) — **recorded complete with caveats**. The reported n=5 local sign-agreement tracks all-triples across 10 incoming-pair channels; only 8 planes per channel, so sign-test power is limited. n=4 is planar/degenerate for this polyhedron test. Dense-expm validation found the shared 15-term Taylor reference was not converged (about 25 terms needed at K=6); retain the recorded explicit checks and caveats, and do not treat cross-engine agreement under a shared truncation as independent validation. Spec/results: `implementation-details/T6-minkowski-polyhedron.md`, `t5a_prime_notes.md`.
+- T5b: Perturbation response of the signed-mean proxy ([record](archive/T5b.md)) — corrected 13-point
   rerun has convergence assertions and fits α=0.496907 (n=4), 0.499104
   (n=5). Four n=4 and three n=5 points agree with independent SciPy
   exponentiation; generalization across planes remains open.
-- T5c: FL classical/quantum tetrahedron-volume comparison — OPEN. The weighted input pilot checks regular and unequal-skew FL states through $J=7$; a nine-shape unequal-area grid covers $J=2,4$, with four selected points at $J=6$; a fixed-$x$ flat path covers $J=2,4,6,7$. Fixed geometry-matched ratios reach $0.953$ (regular) and $0.904$ (unequal skew) at $J=7$. Weighted closure and scalar area means pass. Individual vector means vanish by gauge invariance; shape recovery is checked through correlations, whose unequal-area finite-$J$ error reaches $0.0584$ at $J=7$. The exact flat boundary has nonzero normalized positive volume in the tested range; neither iterated limit is established. Under signs $(+,-,+,-)$, calibrated RS/AL curves coincide by four-valent closure and are not independent evidence. Physical regularization factors and broader shape/large-$J$ scans remain open. See [T5c implementation details](implementation-details/T5c-flux-covariance-volume-comparison.md) and the four `t5c_*_results.json` records.
-- T5d: Cocycle barrier / distance-to-cell scaling — OPEN. Define a gauge-invariant defect and test its relation to ⟨q⟩.
-- T5e: Large-K semiclassics — target K=20–50; recorded study reaches K=24. ✅ DONE for the recorded families/range (27a761a, orx/t5e, Muse Spark 1.3). **The K^1.5 law is not supported by these runs.** Two families: (1) **vertex-scaled** (b-bosons on the measured triple, K=4+3s): ⟨q⟩ is linear in s (q/s=-1.059e-3 to 9 digits), so V~(K-4)^0.5 over the measured range. (2) **uniform M=0** (fixed shape, K=8..24): q=0 to solver precision (|q|<=9e-13). Classical V~r^3 would require ⟨q⟩~K^3; these tested families show ⟨q⟩~K^1 or approximately zero. This does not rule out other state families or higher K. **Caveat:** first run used Taylor cap 2K+4 and produced truncation-shifted results; recorded run uses cap 8K+50 plus a convergence assertion. T5a Rust-driver magnitudes at K=12..14 predate the fix and may be shifted. The on-the-fly engine was compared with the stored engine at K=8,12.
-- T5g: Performance frontier — OPEN; n=10–12 Rust profiling if required by the physics runs.
-- T6: Minkowski polyhedron reconstruction — kinematic implementation and T5a′ pilot exist; full quantum geometry correspondence remains open. Its reconstruction accepts general face areas but does not evaluate FL positive volume. Spec: `implementation-details/T6-minkowski-polyhedron.md`; see also the [T5c specification](implementation-details/T5c-flux-covariance-volume-comparison.md).
-- T7: Thermal and TFD program — **IN PROGRESS; T7a–T7e results recorded for the tested constructions.** T7a reports zero mean signed triple grasp and nonzero $q^2$ fluctuations; the Gibbs cutoff is quantitatively reliable for $\beta\gtrsim1$ and qualitative at $\beta\leq0.5$. T7b–T7c report Gibbs purification and $\langle q_Lq_R\rangle=-\mathrm{Tr}(\rho_\beta q^2)$ with the same $q$ matrix on both copies; the sign depends on that right-operator convention. The $\beta\to\infty$ state is the Fock vacuum. T7d reports an $e^{-3\beta}$ onset in the tested Gibbs ensemble. T7e reports approximately $\epsilon^2$ correlator change and $\beta$-flatness for the tested fixed-$K$ construction; a general $V(\epsilon,T)$ law remains open. The thermal-intertwiners draft is copied to `paper/thermal-intertwiners/`; the draft-specific thermal ket remains unimplemented. See `implementation-details/thermofield-double-volume.md` and `t7a_notes.md`–`t7e_notes.md`.
+- T5c: FL classical/quantum tetrahedron-volume comparison ([record](tasks/T5c.md)) — OPEN. The weighted input pilot checks regular and unequal-skew FL states through $J=7$; a nine-shape unequal-area grid covers $J=2,4$, with four selected points at $J=6$; a fixed-$x$ flat path covers $J=2,4,6,7$. Fixed geometry-matched ratios reach $0.953$ (regular) and $0.904$ (unequal skew) at $J=7$. Weighted closure and scalar area means pass. Individual vector means vanish by gauge invariance; shape recovery is checked through correlations, whose unequal-area finite-$J$ error reaches $0.0584$ at $J=7$. The exact flat boundary has nonzero normalized positive volume in the tested range; neither iterated limit is established. Under signs $(+,-,+,-)$, calibrated RS/AL curves coincide by four-valent closure and are not independent evidence. Physical regularization factors and broader shape/large-$J$ scans remain open. See [T5c implementation details](implementation-details/T5c-flux-covariance-volume-comparison.md) and the four `t5c_*_results.json` records.
+- T5d: Cocycle phase and distance-to-cell response ([record](tasks/T5d.md)) — OPEN. A one-seed Rust pilot tests a Plücker cross-ratio phase; broader families and a separate positivity defect remain open.
+- T5e: Large-K semiclassics ([record](archive/T5e.md)) — complete for recorded families through K=24; target K=20–50 was not fully reached. ✅ DONE for the recorded families/range (27a761a, orx/t5e, Muse Spark 1.3). **The K^1.5 law is not supported by these runs.** Two families: (1) **vertex-scaled** (b-bosons on the measured triple, K=4+3s): ⟨q⟩ is linear in s (q/s=-1.059e-3 to 9 digits), so V~(K-4)^0.5 over the measured range. (2) **uniform M=0** (fixed shape, K=8..24): q=0 to solver precision (|q|<=9e-13). Classical V~r^3 would require ⟨q⟩~K^3; these tested families show ⟨q⟩~K^1 or approximately zero. This does not rule out other state families or higher K. **Caveat:** first run used Taylor cap 2K+4 and produced truncation-shifted results; recorded run uses cap 8K+50 plus a convergence assertion. T5a Rust-driver magnitudes at K=12..14 predate the fix and may be shifted. The on-the-fly engine was compared with the stored engine at K=8,12.
+- T5f: Amplituhedron kinematics — ownership transferred to T8b; [historical record](archive/T5f.md).
+- T5g: Performance frontier ([record](tasks/T5g.md)) — OPEN; n=10–12 Rust profiling if required by the physics runs.
+- T6: Minkowski polyhedron reconstruction ([record](tasks/T6.md)) — kinematic implementation and T5a′ pilot exist; full quantum geometry correspondence remains open. Its reconstruction accepts general face areas but does not evaluate FL positive volume. Spec: `implementation-details/T6-minkowski-polyhedron.md`; see also the [T5c specification](implementation-details/T5c-flux-covariance-volume-comparison.md).
+- T7: Former thermal/TFD umbrella ([archived record](archive/T7.md)) — **TRANSFERRED TO T9; scientific work remains open.** Completed child records T7a–T7e retain their identifiers and findings under T9.
+- T9: Thermal/TFD state construction and physical study ([record](tasks/T9.md)) — **IN PROGRESS; five completed child studies T7a–T7e.** Owns the full construction and analysis program. The exact small-sector squeeze and conditional singlet candidate remain comparative models; physical prescription selection is open.
 
 **Notes**:
 Current supported result: real-plane states have zero signed triple-grasp mean,
@@ -303,21 +320,45 @@ convergence evidence.
 **Priority**: MEDIUM
 **Started**: 2026-10-04
 **Subtasks**: T8a cluster algebra/chart relevance; T8b positive-cell/scattering-region mapping, transferred from former T5f.
-**Details**: [`tasks/T8.md`](tasks/T8.md); see also `implementation-details/grassmannian-embedding.md`.
+**Details**: [`tasks/T8.md`](tasks/T8.md); [T8a record](tasks/T8a.md), [T8b record](tasks/T8b.md); see also `implementation-details/grassmannian-embedding.md`.
+
+### T9: Thermal/TFD State Construction and Physical Study
+**Details:** [Task record](tasks/T9.md)
+**Description**: Own TFD state construction and physical/geometric study; completed child-study records T7a–T7e retain their IDs.
+**Status**: 🔄 IN PROGRESS
+**Dependencies**: T3c
+**Subtasks**: Five completed child-study records (T7a–T7e); no additional subtask slots remain.
+
+---
 
 ## Completed Tasks
-| ID | Title | Completed | Related Tasks |
-|----|-------|-----------|---------------|
-| T1 | Python Pipeline | 2026-09-19 | T1a, T1b |
-| T1a | Volume operator at n=4 | 2026-09-19 | T1 |
-| T1b | Historical signed-mean result; interpretation open | 2026-09-19 | T1, T1a |
-| T2 | Manuscript (EPJC paper) | 2026-09-19 | T1, T1a, T1b |
-| T3 | Rust Port for n≥5 | 2026-09-19 | T3a, T3b, T3c, T3d, T3e |
-| T3a | Fock space + u(N) operators (Rust) | 2026-09-19 | T3 |
-| T3b | Coherent states + Grassmannian (Rust) | 2026-09-19 | T3 |
-| T3c | Volume operator (Rust) | 2026-09-19 | T3 |
-| T5b | Corrected perturbation sweep, tested family | 2026-10-01 | T5; broader controls open |
-| T5e | Large-K semiclassics (tested through K=24) | 2026-09-19 | T5 |
+| ID | Title | Status | Priority | Started | Dependencies | Details |
+|----|-------|--------|----------|---------|--------------|---------|
+| T1 | Python Pipeline | ✅ COMPLETED | HIGH | 2026-09-19 | — | [Details](archive/T1.md) |
+| T1b | Signed-mean cancellation and positive-volume check | ✅ COMPLETED | HIGH | 2026-09-19 | T1, T1a | [Details](archive/T1b.md) |
+| T2 | Published EPJC paper | ✅ COMPLETED | HIGH | 2026-09-19 | T1, T1a, T1b | [Details](archive/T2.md) |
+| T3 | Rust port for n≥5 | ✅ COMPLETED | HIGH | 2026-09-19 | — | [Details](archive/T3.md) |
+| T3a | Rust Fock space and U(N) operators | ✅ COMPLETED | HIGH | 2026-09-19 | T3 | [Details](archive/T3a.md) |
+| T3b | Rust coherent states and Grassmannian | ✅ COMPLETED | HIGH | 2026-09-19 | T3, T3a | [Details](archive/T3b.md) |
+| T3d | Rust versus Python verification at n=4 | ✅ COMPLETED | HIGH | 2026-09-19 | T3c | [Details](archive/T3d.md) |
+| T5a | Triple-volume correlations at n≥5 | ✅ COMPLETED | HIGH | 2026-09-19 | T5, T3c | [Details](archive/T5a.md) |
+| T5a′ | Kinematic-polyhedron local chirality | ✅ COMPLETED | HIGH | 2026-09-19 | T5a, T6 | [Details](archive/T5a′.md) |
+| T5b | Perturbation response of the signed-mean proxy | ✅ COMPLETED | HIGH | 2026-09-19 | T5, T3c | [Details](archive/T5b.md) |
+| T5e | Large-K semiclassics (recorded families through K=24) | ✅ COMPLETED | MEDIUM | 2026-09-19 | T5, T3c | [Details](archive/T5e.md) |
+| T7a | Single-copy thermal state | ✅ COMPLETED | HIGH | 2026-09-20 | T9, T3c | [Details](archive/T7a.md) |
+| T7b | Thermofield-double construction | ✅ COMPLETED | HIGH | 2026-09-20 | T9, T7a | [Details](archive/T7b.md) |
+| T7c | Two-sided chirality correlator | ✅ COMPLETED | HIGH | 2026-09-20 | T9, T7a, T7b | [Details](archive/T7c.md) |
+| T7d | Thermal scaling laws | ✅ COMPLETED | HIGH | 2026-09-20 | T9, T7a, T7c | [Details](archive/T7d.md) |
+| T7e | Complexified momenta in the TFD | ✅ COMPLETED | HIGH | 2026-09-20 | T9, T7b, T7c | [Details](archive/T7e.md) |
+
+## Transferred / Historical Task IDs
+
+- T5f — ownership transferred to T8b on 2026-10-04; the research work remains open. [Historical task record](archive/T5f.md).
+- T7 — former thermal/TFD umbrella transferred to T9 on 2026-10-06; scientific work remains open and is owned by T9. The completed T7a–T7e records retain their identifiers as T9's five child studies. [Archived parent record](archive/T7.md).
+
+## Individual Task Records
+
+Current and completed IDs have dedicated records in `tasks/` or `archive/`; T5f and T7 are retained as transferred ownership records. The Active Tasks and Completed Tasks tables link the current program and its completed studies; this section links the transferred umbrella IDs.
 
 ## Task Relationships
 ```mermaid
@@ -335,8 +376,14 @@ graph TD
     T4[T4: Follow-up manuscript]
     T5[T5: Volume-positivity studies]
     T6[T6: Minkowski reconstruction]
-    T7[T7: Thermal and TFD]
+    T7[T7: Former TFD umbrella; transferred]
+    T7a[T7a: Single-copy thermal state]
+    T7b[T7b: TFD construction]
+    T7c[T7c: Two-sided correlator]
+    T7d[T7d: Thermal scaling]
+    T7e[T7e: Complexified TFD]
     T8[T8: Amplituhedron Program]
+    T9[T9: Thermal/TFD construction and study]
     T8a[T8a: Cluster algebra and charts]
     T8b[T8b: Positive cells and scattering regions; former T5f]
 
@@ -351,12 +398,18 @@ graph TD
     T3e --> T5
     T8 --> T8a
     T8 --> T8b
+    T7 -. transferred, work open .-> T9
+    T9 --> T7a
+    T9 --> T7b
+    T9 --> T7c
+    T9 --> T7d
+    T9 --> T7e
 ```
 
 ---
 
 ### T7a: Single-Copy Thermal State
-**Description**: Construct the thermal density matrix rho_beta on the n=4,5 intertwiner spaces. Verify Tr(rho_beta q) = 0 (null signed triple-grasp mean). Compute Tr(rho_beta A_i) area expectations and Tr(rho_beta q^2) fluctuations across beta = 0..10.
+**Description**: Construct the Gibbs density matrix $\rho_\beta$ on the $n=4,5$ capped Schwinger-boson Fock spaces. These are unrestricted oscillator spaces, not $SU(2)$ singlet intertwiner spaces. Verify $\mathrm{Tr}(\rho_\beta q)=0$ and compute face-number expectations and $\mathrm{Tr}(\rho_\beta q^2)$ across the tested temperature range.
 **Status**: ✅ COMPLETED
 **Completed**: 2026-09-20
 **Last Active**: 2026-09-20 02:30 IST

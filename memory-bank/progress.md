@@ -1,6 +1,6 @@
 # Implementation Progress
 
-*Last Updated: 2026-10-05 11:48:41 IST*
+*Last Updated: 2026-10-06 12:55:19 IST*
 
 ## Active Tasks
 
@@ -73,15 +73,10 @@ common notation is in `implementation-details/volume-numerical-preliminaries.md`
 
 **T5a evidence and caveat:** the n=6,7 base triple-correlation runs record sign-agreement 0.50–0.70 and small cross-seed correlations, consistent with per-triple chirality; n=8 remains resource-limited. The n=5 magnetization sweep was rerun with convergence assertions (39–41 terms) and four sectors matched independent SciPy exponentiation to at most 3.6e-16 in triple means. Its fixed-plane sign pattern remains one-plane evidence. T5a′ reports no increase in sign coherence for kinematic-polyhedron-local triples, with 8 planes per n=5 channel and weak per-plane sign-test power. See `t5a_mag_notes.md`, `t5a_prime_notes.md`, and `implementation-details/volume-positivity-studies.md`.
 
-### T7: Thermal and TFD Program
-**Status:** 🔄 IN PROGRESS (T7a–T7e results recorded for tested constructions; broader temperature-dependent coherent-sector question open)
+### T9: Thermal/TFD State Construction and Physical Study
+**Status:** 🔄 IN PROGRESS; exactly five completed child-study records, with new state-family and geometry work ongoing at parent level.
 
-- T7a reports zero mean signed triple grasp and nonzero $q^2$ fluctuations;
-  the high-temperature end is cutoff-limited for the capped basis.
-- T7b–T7c report a valid Gibbs purification and the tested identity `⟨q_L q_R⟩ = −Tr(ρ q²)`; the low-temperature Gibbs-TFD tends to the Fock vacuum, not a Perelomov state.
-- T7d reports an exponential `e^{-3β}` onset in the tested Gibbs-TFD, not a power law.
-- T7e reports a quadratic change with complexification in a fixed-`K` construction, with temperature flatness there. This does not establish a general combined `V(ε,T)` law.
-- Notes and source data: `t7a_notes.md` through `t7e_notes.md` and corresponding result JSON files; manuscript status and scope need a final review.
+T9 owns the entire thermal/TFD program. The former T7 umbrella was transferred and archived; T7a–T7e retain their IDs and completed evidence as T9 child studies. The new manuscript squeeze is implemented for small FL sectors. Combined dual-copy closure passes, ordinary closure on each copy fails, and a separately labelled double-singlet projection restores ordinary closure; its Gibbs interpretation remains unresolved. The initial pilot compares regular and unequal-skew four-face FL labels at $J=1,2$ over $\beta=3,4,5,8$, with pair cutoff 4 and cutoff-2 comparisons. The data are comparative evidence, not a reconstruction of classical geometry. See `tasks/T9.md`, `archive/T7.md`, the mathematical-background note, and the saved T7-named numerical artifacts.
 
 ## Historical Implementation and Runs
 

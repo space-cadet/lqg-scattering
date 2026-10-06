@@ -1,6 +1,6 @@
 # Thermofield Double Construction for the Volume-Positivity Program
 
-**Status:** 🔄 IN PROGRESS — T7a–T7e results are recorded for their tested constructions; broader temperature-dependent coherent-sector response remains open.
+**Status:** 🔄 IN PROGRESS — this former T7 specification is now part of T9. T7a–T7e results are retained under their tested constructions; broader physical thermal-state construction and geometry remain open.
 **Priority:** HIGH (opens a new branch of the program — thermal states on real momenta)
 **Created:** 2026-09-20
 **Status updated:** 2026-10-01
@@ -73,6 +73,8 @@ combined state the canonical purification; one-sided expectations of any
 real-observable operator equal the thermal mixed-state value.
 
 ## Subtasks
+
+These five completed child studies are now owned by T9; their T7a–T7e identifiers are retained for provenance.
 
 Ordered: the single-copy step comes first and is load-bearing, not just
 pedagogy -- it yields a small theorem that motivates the doubling.

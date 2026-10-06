@@ -182,7 +182,7 @@ cluster-algebra/chart study is tracked separately as T8a. See
    plane/reference controls before generalizing either result.
 3. **Run T5d with controls.** Include positive real, mixed-sign real, and complex planes. Define a gauge-invariant phase variable before fitting any onset.
 4. **Complete T5c and the full quantum T6 reconstruction.** Compare explicitly named quantum observables with a reconstructed classical polyhedron and test state-family dependence.
-5. **Scope the next T7 study.** The existing T7e result is beta-flat for fixed-$K$ support. Proceed only with a physically justified multi-$K$ coherent reference or non-uniform-frequency Hamiltonian, and predefine cutoff and temperature convergence checks.
+5. **Scope follow-up thermal/TFD work under T9.** The existing T7e result is beta-flat for fixed-$K$ support. Proceed only with a physically justified multi-$K$ coherent reference or non-uniform-frequency Hamiltonian, and predefine cutoff and temperature convergence checks.
 6. **Extend T5e if it changes the claim.** Current converged records reach $K=24$; larger-$K$ work should test the two observed families separately.
 7. **Do T8b after the geometric observables are stable.** Map the positive-cell data to scattering invariants and amplituhedron regions.
 8. **Use T5g as enabling work.** Profile $n=10$–$12$ only where it unlocks one of the preceding physics questions.

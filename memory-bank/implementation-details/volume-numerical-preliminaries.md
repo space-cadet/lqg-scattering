@@ -229,7 +229,7 @@ implementation convention, not a physical regularization.
 - [Red-team audit](./red-team-audit.md): claim limits and numerical pitfalls.
 - [Performance benchmarks](./performance-benchmarks.md): tested ranges and
   costs.
-- [Thermofield-double volume](./thermofield-double-volume.md): T7 states and
+- [Thermofield-double volume](./thermofield-double-volume.md): the T9 thermal/TFD program and
   volume observables at finite temperature.
 - [Open ideas](./open-ideas-park.md): related speculative directions.
 

@@ -4,6 +4,53 @@
 
 ## File Modification Log
 
+### 2026-10-06
+
+#### 12:55:19 IST - T7/T9: Consolidate the full TFD program under T9
+- Moved `memory-bank/tasks/T7.md` to `memory-bank/archive/T7.md` - Marked the former umbrella transferred to T9 with scientific work still open.
+- Updated `memory-bank/tasks/T9.md` - Expanded T9 to own state construction and physical/geometric study; linked exactly five completed child records T7a–T7e.
+- Updated `memory-bank/archive/T7a.md` through `memory-bank/archive/T7e.md` - Preserved each completed result and original ID while reparenting under T9.
+- Updated `memory-bank/tasks.md` and `memory-bank/tasks/T4.md` - Removed T7 as active owner, linked the T9 task tree, and updated dependencies.
+- Updated `memory-bank/activeContext.md`, `memory-bank/session_cache.md`, `memory-bank/progress.md`, `memory-bank/changelog.md`, and `memory-bank/projectbrief.md` - Reflected the transferred ownership, registry count, and current open work.
+- Updated TFD implementation notes, `memory-bank/implementation-details/open-ideas-park.md`, `memory-bank/implementation-details/volume-positivity-studies.md`, and `memory-bank/sessions/2026-10-06-t7-physical-thermal-audit.md` - Linked current ownership to T9 while preserving T7 artifact provenance and child-study identifiers.
+
+#### 12:46:36 IST - T7/T9: Separate state construction from geometric study
+- Updated `memory-bank/tasks/T7.md` - Scoped T7 to define and validate thermal/TFD state families and hand their conventions to T9.
+- Created `memory-bank/tasks/T9.md` - Assigned geometric and physical study of T7 state families; no subtasks assigned, with future decomposition capped at five.
+- Updated `memory-bank/tasks.md` - Registered T9, linked it to T7 in the task relationship graph, and corrected the old T7a description from intertwiner spaces to unrestricted capped Fock spaces.
+- Updated `memory-bank/tasks/T8.md` - Removed the stale statement that T8 was the next available top-level ID.
+- Updated `memory-bank/activeContext.md`, `memory-bank/session_cache.md`, and `memory-bank/progress.md` - Recorded current T7/T9 ownership and open choices.
+- Updated `memory-bank/implementation-details/T7-physical-thermal-intertwiners.md` and `memory-bank/implementation-details/T7-mathematical-background-and-calculations.md` - Linked the study ownership to T9.
+- Updated `memory-bank/sessions/2026-10-06-t7-physical-thermal-audit.md` - Recorded the task split and preserved completed T7a–T7e scope.
+
+#### 12:28:49 IST - T7: Document mathematical background and calculations
+- Created `memory-bank/implementation-details/T7-mathematical-background-and-calculations.md` - Derived physical state space, FL seeds, exact squeeze amplitudes, closure defects, conditional projection, observable assembly and cutoff accounting; recorded worked values and validation scope.
+- Updated `memory-bank/implementation-details/T7-physical-thermal-intertwiners.md` - Linked the full mathematical companion.
+- Updated `memory-bank/tasks/T7.md` - Linked the mathematical companion.
+- Updated `memory-bank/sessions/2026-10-06-t7-physical-thermal-audit.md` - Recorded the requested documentation follow-up.
+
+#### 12:08:08 IST - T7: Audit physical thermal intertwiners
+- Created `t7_geometry_thermal.py` - Implemented exact draft squeeze, ordinary/combined closure checks, conditional double-singlet projection, positive volumes and geometry diagnostics.
+- Created `t7_geometry_thermal_results.json` - Recorded four seed cases, four temperatures, coefficient/dimension/volume checks and cutoff comparisons.
+- Created `memory-bank/implementation-details/T7-physical-thermal-intertwiners.md` - Recorded constraint failure, candidate scope and remaining physical choices.
+- Updated `memory-bank/tasks/T7.md` - Recorded pilot progress and physical acceptance requirements.
+- Updated `memory-bank/activeContext.md` - Set current focus to physical T7 audit.
+- Updated `memory-bank/session_cache.md` - Recorded current T7 implementation and limits.
+- Created `memory-bank/sessions/2026-10-06-t7-physical-thermal-audit.md` - Recorded session outcome and artifact links.
+
+#### 11:29:29 IST - T5a/T5b/T7a-T7d: Repair task-record math escapes
+- Corrected escaped LaTeX in reconstructed task records for binomial coefficients, perturbation exponents, Gibbs traces, correlators, and beta-dependent cutoff statements.
+- Updated `memory-bank/sessions/2026-10-06-task-record-reconstruction.md` - Recorded the correction and final text validation.
+- Created `memory-bank/edits/2026-10-06/112929-task-record-math-escape-fix.md` - Added the canonical edit chunk.
+
+#### 09:47:11 IST - T1/T3/T4/T5/T6/T7/T8: Reconstruct task records from repository history
+- Created 27 active and archived task records for missing task and subtask IDs; retained T5f as a historical transfer to T8b.
+- Updated `memory-bank/tasks.md` - Linked all current task IDs to dedicated records and retained transferred-task lineage.
+- Updated `memory-bank/database/parse-tasks.js` - Added Unicode-prime parsing for T5a′, exported parser helpers, and guarded database population behind direct execution.
+- Updated `memory-bank/activeContext.md`, `memory-bank/session_cache.md`, and `memory-bank/changelog.md` - Recorded current task ownership and the audit baseline.
+- Created `memory-bank/sessions/2026-10-06-task-record-reconstruction.md` - Documented the complete 79-commit review, status reconstruction, caveats, and validation.
+- Created `memory-bank/edits/2026-10-06/094711-task-record-reconstruction.md` - Added the canonical edit chunk.
+
 ### 2026-10-05
 
 #### 15:00:41 IST - T5c: Finalize session record

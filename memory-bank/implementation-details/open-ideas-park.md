@@ -22,13 +22,13 @@ states |R> and |I> on the same edges and combine
 separately real; the chirality expectation q = <psi|i[A,B]|psi> becomes
 a cross-term 2 Re(<R|i[A,B]|I>) between the two real halves.
 
-**Why it might matter:** Same goal as T7 (volume without complexifying
+**Why it might matter:** Same goal as the T9 thermal/TFD program (volume without complexifying
 kinematics) but a different mechanism — phase-space doubling rather than
-thermal doubling. If T7 runs into conceptual trouble (thermal states are
+thermal doubling. If T9 runs into conceptual trouble (thermal states are
 mixed, not pure coherent states), the Kähler route is the natural
 alternative: it keeps everything pure.
 
-**Status:** PARKED. Distinct from T7; do not conflate.
+**Status:** PARKED. Distinct from the TFD program now owned by T9; do not conflate.
 
 ## 2. Krein / indefinite-metric reformulation
 
@@ -40,7 +40,7 @@ imaginary parts of the state then arrange into real observables without
 doubling the Hilbert space.
 
 **Why it might matter:** It is the "fundamental" alternative to both
-doubling schemes. If T7 or the Kähler route succeeds but feels
+doubling schemes. If T9 or the Kähler route succeeds but feels
 artificial, the Krein route asks whether there is a single-Hilbert-space
 formulation with a modified adjoint that makes the volume real.
 
@@ -54,7 +54,7 @@ wall and the physical question demands a single-space answer.
 goal, not just a conceptual aside.
 
 **Idea:** The thermofield double is the canonical two-sided black-hole
-(wormhole) state in AdS/CFT. If the Schwinger-boson TFD (T7) develops a
+(wormhole) state in AdS/CFT. If the Schwinger-boson TFD (now T9; formerly T7) develops a
 two-sided volume encoded in <q_L q_R> and correlated with the thermal
 entropy budget, it is a candidate concrete LQG construction of a
 wormhole interior.
@@ -65,8 +65,8 @@ prematurely center on the wormhole claim — the TFD state's own
 properties (T7a–T7d) come first, and the wormhole interpretation is the
 payoff if they work out.
 
-**Status:** ASPIRATIONAL CONTEXT for T7. Not a separate task. Revisit
-when T7c has data.
+**Status:** ASPIRATIONAL CONTEXT for T9. Not a separate task. Revisit
+when the T9-owned T7c study has data.
 
 ## Related documentation
 

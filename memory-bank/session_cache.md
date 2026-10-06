@@ -1,11 +1,11 @@
 # Session Cache
 
-*Last Updated: 2026-10-05 15:00:41 IST*
+*Last Updated: 2026-10-06 12:55:19 IST*
 
 ## Overview
-- Active Tasks: T5c FL classical/quantum volume comparison; T1a positive-volume numerics; T3c Rust volume implementation; T4 manuscript; T5 program; T7 thermal/TFD; T8 amplituhedron
-- Paused Tasks: 0
-- Documentation commit `33e332f` is pushed to `origin/main`; the new T5c scripts, results, Memory Bank follow-up, and weighted input-volume plots/data remain local changes after it. The new plot/data extension is not deployed. Separately, dashboard math typesetting was deployed from website commit `15f698f` (workflow `37286586717`) and checked live; the earlier plot-artwork update is `9c6670c`. Two pre-existing untracked Python cache directories remain under `__pycache__/` and `dashboard/__pycache__/`.
+- Active work remains T5c, T1a/T3c, T4, T5, T8, and T9; T6 is active for the open FL-covariance-to-polyhedron bridge.
+- Task files are reconciled against all 79 commits reachable from the repository refs at audit start: 29 current registry IDs have records. Transferred umbrellas T5f and T7 have separate archive records. Completed tasks are in `archive/`; active tasks are in `tasks/`.
+- Audit baseline: branch `main`, HEAD and `origin/main` at `0a254849a5e12734ee32d9d8af74bd4309d17648`. Pre-existing local numerical, dashboard, cache, and UI artifacts remain in the working tree.
 
 ## Task Registry
 - T1a: FL positive RS/AL area and shape numerics — 🔄 IN PROGRESS; the 440-point $J=2$ scan and $J=1\ldots5$ area sweep were refreshed with a shared numerical zero-mode cutoff; boundary and unequal-area behavior remain open.
@@ -14,7 +14,8 @@
 - T4: Follow-up manuscript — 🔄 IN PROGRESS; correct claims, document review status, then circulate.
 - T5: Volume–positivity numerical studies — 🔄 IN PROGRESS; T5a magnetization sweep converged for one plane; T5c/T5d/T5g open. Former T5f positive-cell/scattering-region mapping is now T8b. T5c owns the positive-volume comparison against the input FL tetrahedron; first weighted pilots and variance records now exist, while broad area/shape coverage and limit orders remain open. Its equal-area normalized covariance relation follows the known FL formula and is a consistency check.
 - T5c pilot update: weighted regular and unequal-skew input geometries reach $J=7$; the unequal-area grid covers $J=2,4$ plus selected $J=6$ points; a flat path covers $J=2,4,6,7$. Weighted closure and mean areas pass, but finite-$J$ unequal correlations do not exactly recover the input normals. At the exact flat boundary, calibrated positive volume remains finite in the sampled range; limit orders remain open. RS/AL calibrated curves coincide under the tested four-valent closure/sign convention and are not independent checks.
-- T7: Thermal/TFD experiments — 🔄 IN PROGRESS; T7a–T7e recorded complete for tested setups; general temperature-dependent coherent-sector response remains open. The thermal-intertwiners draft is copied to `paper/thermal-intertwiners/`; its proposed thermal ket is not implemented.
+- T7: Former thermal/TFD umbrella — archived as transferred; scientific work remains open under T9.
+- T9: Thermal/TFD state construction and physical study — 🔄 IN PROGRESS; owns all ongoing construction and analysis, with five completed child-study records T7a–T7e. The exact small-sector draft squeeze and conditional singlet candidate are recorded in `implementation-details/T7-mathematical-background-and-calculations.md`.
 - T8: Amplituhedron Program — 🔄 IN PROGRESS; T8a cluster algebra/chart relevance and T8b positive-cell/scattering-region mapping (former T5f) are open. See `tasks/T8.md`.
 - T1–T3e: Python/Rust implementation and corrected converged scan recorded; n=6 independent state check remains open.
 
@@ -45,13 +46,10 @@ Python and Rust implement RS and AL positive expectations by dense spectral deco
 - T8a: Cluster algebra and coordinate-chart relevance; exploratory, with no new physical interpretation asserted.
 - T8b: Positive-cell/scattering-region mapping, transferred from T5f; open and to be scoped against the published T2 baseline.
 
-### T7: Thermal and TFD Program
+### T9: Thermal/TFD State Construction and Physical Study
 **Status:** 🔄 IN PROGRESS
 
-- T7a–T7e have recorded results for the tested constructions.
-- Gibbs TFD approaches the Fock vacuum at low temperature; it does not approach a Perelomov state.
-- T7e finds an approximately quadratic epsilon response and beta-flatness for the tested fixed-K construction; a general combined temperature/complexification law remains open.
-- Small-beta Gibbs results are cutoff-limited; consult `t7a_notes.md` for the stated validity range.
+T9 owns all thermal/TFD state construction and physical study. Its five completed child records T7a–T7e preserve their prior results and IDs. Gibbs TFD tends to the Fock vacuum at low temperature; fixed-$K$ T7e is beta-flat within its scope. The new J=1,2 pilot records positive RS/AL volumes, face diagnostics, entanglement, closure and cutoff comparisons for regular and unequal-skew inputs, without selecting a physical thermal model. See `tasks/T9.md`, `archive/T7.md`, and the mathematical-background note.
 
 ## Completed Foundation
 - Python pipeline and published EPJC paper.
@@ -59,6 +57,8 @@ Python and Rust implement RS and AL positive expectations by dense spectral deco
 - Corrected Rust/Python n=4 comparison and converged scans through n=8; independent SciPy checks cover n=4,5,7,8.
 
 ## Session History
+- 2026-10-06: An interim T7/T9 split was superseded by the user-directed transfer of the full TFD program to T9. T7 is archived as transferred; T7a–T7e retain their IDs as T9’s five child studies. Corrected T7a scope to unrestricted capped Fock space.
+- 2026-10-06: Audited all 79 reachable Git commits and reconstructed individual active/completed task records, including T5f's historical transfer to T8b. Reconciled task status and file links against the current registry; see `sessions/2026-10-06-task-record-reconstruction.md`.
 - 2026-10-04: Created T8 for the Amplituhedron Program; T8a tracks the cluster-algebra/chart question and former T5f is subsumed as T8b. T6 remains assigned to Minkowski polyhedron reconstruction.
 - 2026-10-05: Clarified T5c as the direct FL classical/positive-quantum volume comparison, recorded weighted unequal-area inputs and degenerate-limit criteria, and saved the initial physics transcript through the task-ownership review. See `sessions/2026-10-05-morning.md` and `sessions/2026-10-05-morning-transcript.md`.
 - 2026-10-05: Ran the first weighted input-geometry T5c scans and audited vector means, volume normalization, and the four-valent RS/AL relation. The FL single-face vector means vanish by gauge invariance; shape comparison uses flux correlations. The nine-shape area grid, J=7 starter scans, and exact flat-boundary values are exploratory and do not establish either iterated limit. See the updated T5c specification and morning session note.

@@ -2,7 +2,7 @@
 
 import * as sqlite from './lib/sqlite.js';
 import { readFileSync, readdirSync } from 'fs';
-import { join, dirname } from 'path';
+import { join, dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -74,14 +74,14 @@ function normalizeDate(dateCell) {
   return match ? match[0] : null;
 }
 
-function isLikelyTasksRow(cells) {
+export function isLikelyTasksRow(cells) {
   if (!cells || cells.length < 3) return false;
   const id = String(cells[0] || '').trim();
-  return /^(T\d+[a-z]?|META-\d+[a-z]?)$/i.test(id);
+  return /^(T\d+[a-z]?(?:['′])?|META-\d+[a-z]?)$/i.test(id);
 }
 
 // Parse tasks table line
-function parseTaskLine(line) {
+export function parseTaskLine(line) {
   if (!line.startsWith('|')) return null;
   if (line.includes('|----')) return null;
 
@@ -120,7 +120,7 @@ function parseTaskLine(line) {
 }
 
 // Parse entire tasks.md content
-function parseTasks(content) {
+export function parseTasks(content) {
   return content.split('\n')
     .map(parseTaskLine)
     .filter(Boolean);
@@ -351,4 +351,6 @@ async function main() {
   }
 }
 
-main();
+if (process.argv[1] && resolve(process.argv[1]) === __filename) {
+  main();
+}

@@ -1,0 +1,289 @@
+{
+  "title": "T5c fixed-x high-J limit probes",
+  "date": "2026-10-06",
+  "model": "Equal-area FL family at x=1/sqrt(3), with phi approaching the flat boundary 0.",
+  "normalization": {
+    "gamma": 0.2375,
+    "areaFractions": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "fixedGeometryMatchingFactors": {
+      "rs": 0.11785113019775793,
+      "al": 0.23570226039551587
+    },
+    "alOrientationSignsLexicographic": [
+      1,
+      -1,
+      1,
+      -1
+    ]
+  },
+  "protocol": {
+    "largeJFirst": "Compare fixed positive phi across J; then approach phi=0.",
+    "degenerateFirst": "At fixed J use phi=0, then compare the normalized absolute positive volume across J.",
+    "ratioAtFlatBoundary": "Omitted because the classical volume is zero.",
+    "denseActiveBlockCap": 512,
+    "allListedRunsCompletedWithoutTriggeringDenseBlockCap": true
+  },
+  "provenance": {
+    "python": {
+      "python": "3.14.2",
+      "numpy": "2.4.1"
+    },
+    "pythonDriver": "t5c_degenerate_limits_scan.py",
+    "pythonJ10FlatElapsedWallSeconds": 161.74,
+    "pythonJ10TimingNote": "The scan emitted its complete result; the time wrapper returned an error afterward while querying a restricted sysctl value.",
+    "rust": "1.92.0",
+    "rustDriver": "rust/examples/fl_volume_scan.rs",
+    "rustMode": "cargo run --release",
+    "crossCheckNote": "Rust J=2 flat and regular calibrated values agree with Python at about 2e-18. At J=10 flat, calibrated AL agrees with Python within 4e-17; the Rust calibrated RS value differs by about 4.4e-10, so that RS cross-check is unresolved."
+  },
+  "pythonResults": [
+    {
+      "J": 8,
+      "phiRadians": 0.0,
+      "classicalVolumeAtUnitTotalArea": 0.0,
+      "classicalVolumeProjectUnitsAtUnitTotalArea": 0.0,
+      "normalClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 3.1401849173675503e-16,
+      "faceNormalCrossRatioReal": 0.3333333333333333,
+      "faceNormalCrossRatioImag": 4.7136677276662527e-17,
+      "rs": {
+        "geometryMatchedMeanOverJ32": 0.003889270473042548,
+        "geometryMatchedSDOverJ32": 0.002380892830497959,
+        "absoluteDifferenceOverJ32": 0.003889270473042548,
+        "ratioToClassical": null
+      },
+      "al": {
+        "geometryMatchedMeanOverJ32": 0.0038892704730425485,
+        "geometryMatchedSDOverJ32": 0.0023808928304979568,
+        "absoluteDifferenceOverJ32": 0.0038892704730425485,
+        "ratioToClassical": null
+      }
+    },
+    {
+      "J": 8,
+      "phiRadians": 0.01,
+      "classicalVolumeAtUnitTotalArea": 0.0051699839114892725,
+      "classicalVolumeProjectUnitsAtUnitTotalArea": 0.0005983903931711765,
+      "normalClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 3.199518867891292e-16,
+      "faceNormalCrossRatioReal": 0.3333333335185216,
+      "faceNormalCrossRatioImag": 0.0038490659449481684,
+      "rs": {
+        "geometryMatchedMeanOverJ32": 0.003889459521401364,
+        "geometryMatchedSDOverJ32": 0.0023808922577986894,
+        "absoluteDifferenceOverJ32": 0.0032910691282301875,
+        "ratioToClassical": 6.499869593141579
+      },
+      "al": {
+        "geometryMatchedMeanOverJ32": 0.0038894595214013614,
+        "geometryMatchedSDOverJ32": 0.002380892257798694,
+        "absoluteDifferenceOverJ32": 0.003291069128230185,
+        "ratioToClassical": 6.499869593141574
+      }
+    },
+    {
+      "J": 8,
+      "phiRadians": 0.05,
+      "classicalVolumeAtUnitTotalArea": 0.011558123412397175,
+      "classicalVolumeProjectUnitsAtUnitTotalArea": 0.001337773991461613,
+      "normalClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 3.178335107142479e-16,
+      "faceNormalCrossRatioReal": 0.33333344912230845,
+      "faceNormalCrossRatioImag": 0.019253028728732198,
+      "rs": {
+        "geometryMatchedMeanOverJ32": 0.0038939929484475733,
+        "geometryMatchedSDOverJ32": 0.002380873979424161,
+        "absoluteDifferenceOverJ32": 0.0025562189569859604,
+        "ratioToClassical": 2.9108003095448955
+      },
+      "al": {
+        "geometryMatchedMeanOverJ32": 0.0038939929484475733,
+        "geometryMatchedSDOverJ32": 0.00238087397942416,
+        "absoluteDifferenceOverJ32": 0.0025562189569859604,
+        "ratioToClassical": 2.9108003095448955
+      }
+    },
+    {
+      "J": 8,
+      "phiRadians": 1.5707963267948966,
+      "classicalVolumeAtUnitTotalArea": 0.05170026995011663,
+      "classicalVolumeProjectUnitsAtUnitTotalArea": 0.005983953797951861,
+      "normalClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 3.177651709940706e-16,
+      "faceNormalCrossRatioReal": 0.5,
+      "faceNormalCrossRatioImag": 0.8660254037844386,
+      "rs": {
+        "geometryMatchedMeanOverJ32": 0.005787982210048478,
+        "geometryMatchedSDOverJ32": 0.0014127307436094894,
+        "absoluteDifferenceOverJ32": 0.00019597158790338274,
+        "ratioToClassical": 0.9672504844588776
+      },
+      "al": {
+        "geometryMatchedMeanOverJ32": 0.005787982210048478,
+        "geometryMatchedSDOverJ32": 0.0014127307436094894,
+        "absoluteDifferenceOverJ32": 0.00019597158790338274,
+        "ratioToClassical": 0.9672504844588776
+      }
+    },
+    {
+      "J": 9,
+      "phiRadians": 0.0,
+      "classicalVolumeAtUnitTotalArea": 0.0,
+      "classicalVolumeProjectUnitsAtUnitTotalArea": 0.0,
+      "normalClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 3.1401849173675503e-16,
+      "faceNormalCrossRatioReal": 0.3333333333333333,
+      "faceNormalCrossRatioImag": 4.7136677276662527e-17,
+      "rs": {
+        "geometryMatchedMeanOverJ32": 0.003798689493907662,
+        "geometryMatchedSDOverJ32": 0.0022104038825236697,
+        "absoluteDifferenceOverJ32": 0.003798689493907662,
+        "ratioToClassical": null
+      },
+      "al": {
+        "geometryMatchedMeanOverJ32": 0.003798689493907662,
+        "geometryMatchedSDOverJ32": 0.002210403882523671,
+        "absoluteDifferenceOverJ32": 0.003798689493907662,
+        "ratioToClassical": null
+      }
+    },
+    {
+      "J": 9,
+      "phiRadians": 0.05,
+      "classicalVolumeAtUnitTotalArea": 0.011558123412397175,
+      "classicalVolumeProjectUnitsAtUnitTotalArea": 0.001337773991461613,
+      "normalClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 3.178335107142479e-16,
+      "faceNormalCrossRatioReal": 0.33333344912230845,
+      "faceNormalCrossRatioImag": 0.019253028728732198,
+      "rs": {
+        "geometryMatchedMeanOverJ32": 0.0038040842603674608,
+        "geometryMatchedSDOverJ32": 0.002210521626504857,
+        "absoluteDifferenceOverJ32": 0.002466310268905848,
+        "ratioToClassical": 2.843592628237023
+      },
+      "al": {
+        "geometryMatchedMeanOverJ32": 0.003804084260367461,
+        "geometryMatchedSDOverJ32": 0.002210521626504857,
+        "absoluteDifferenceOverJ32": 0.0024663102689058483,
+        "ratioToClassical": 2.8435926282370234
+      }
+    },
+    {
+      "J": 9,
+      "phiRadians": 1.5707963267948966,
+      "classicalVolumeAtUnitTotalArea": 0.05170026995011663,
+      "classicalVolumeProjectUnitsAtUnitTotalArea": 0.005983953797951861,
+      "normalClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 3.177651709940706e-16,
+      "faceNormalCrossRatioReal": 0.5,
+      "faceNormalCrossRatioImag": 0.8660254037844386,
+      "rs": {
+        "geometryMatchedMeanOverJ32": 0.005839486839856544,
+        "geometryMatchedSDOverJ32": 0.0011929069628009456,
+        "absoluteDifferenceOverJ32": 0.00014446695809531684,
+        "ratioToClassical": 0.9758576080342125
+      },
+      "al": {
+        "geometryMatchedMeanOverJ32": 0.005839486839856546,
+        "geometryMatchedSDOverJ32": 0.0011929069628009426,
+        "absoluteDifferenceOverJ32": 0.0001444669580953151,
+        "ratioToClassical": 0.9758576080342127
+      }
+    },
+    {
+      "J": 10,
+      "phiRadians": 0.0,
+      "classicalVolumeAtUnitTotalArea": 0.0,
+      "classicalVolumeProjectUnitsAtUnitTotalArea": 0.0,
+      "normalClosureResidual": 0.0,
+      "weightedSpinorClosureMatrixError": 3.1401849173675503e-16,
+      "faceNormalCrossRatioReal": 0.3333333333333333,
+      "faceNormalCrossRatioImag": 4.7136677276662527e-17,
+      "rs": {
+        "geometryMatchedMeanOverJ32": 0.0036836478124130756,
+        "geometryMatchedSDOverJ32": 0.0021121041411097923,
+        "absoluteDifferenceOverJ32": 0.0036836478124130756,
+        "ratioToClassical": null
+      },
+      "al": {
+        "geometryMatchedMeanOverJ32": 0.0036836478124130743,
+        "geometryMatchedSDOverJ32": 0.002112104141109796,
+        "absoluteDifferenceOverJ32": 0.0036836478124130743,
+        "ratioToClassical": null
+      }
+    }
+  ],
+  "rustResults": [
+    {
+      "J": 2,
+      "phiRadians": 0.0,
+      "ambientDimension": 495,
+      "norm": 1.0000000000000002,
+      "classicalProject": 0.0,
+      "rsMeanOverJ32": 0.020943838292831526,
+      "alMeanOverJ32": 0.010471919146415761,
+      "rsGeometryMatched": 0.0024682550134892765,
+      "alGeometryMatched": 0.002468255013489276
+    },
+    {
+      "J": 2,
+      "phiRadians": 1.5707963267948966,
+      "ambientDimension": 495,
+      "norm": 1.0000000000000009,
+      "classicalProject": 0.005983953797951862,
+      "rsMeanOverJ32": 0.0179518613938556,
+      "alMeanOverJ32": 0.008975930696927793,
+      "rsGeometryMatched": 0.0021156471544193805,
+      "alGeometryMatched": 0.002115647154419379
+    },
+    {
+      "J": 10,
+      "phiRadians": 0.0,
+      "ambientDimension": 3108105,
+      "norm": 1.0000000000000089,
+      "classicalProject": 0.0,
+      "rsMeanOverJ32": 0.03125679187164419,
+      "alMeanOverJ32": 0.015628394085961516,
+      "rsGeometryMatched": 0.003683648248429361,
+      "alGeometryMatched": 0.0036836478124130413
+    },
+    {
+      "J": 10,
+      "phiRadians": 0.05,
+      "ambientDimension": 3108105,
+      "norm": 0.9999999999999925,
+      "classicalProject": 0.001337773991461613,
+      "rsMeanOverJ32": 0.0313093804294135,
+      "alMeanOverJ32": 0.015654686812679675,
+      "rsGeometryMatched": 0.003689845869397945,
+      "alGeometryMatched": 0.003689845067532473
+    },
+    {
+      "J": 10,
+      "phiRadians": 1.5707963267948966,
+      "ambientDimension": 3108105,
+      "norm": 0.9999999999999832,
+      "classicalProject": 0.005983953797951862,
+      "rsMeanOverJ32": 0.049830200837647,
+      "alMeanOverJ32": 0.024915101331943846,
+      "rsGeometryMatched": 0.005872545486697964,
+      "alGeometryMatched": 0.005872545701922493
+    }
+  ],
+  "interpretation": "Exploratory finite-J points only. The flat-path normalized positive mean decreases slowly from J=7 through J=10, while the regular-shape mean approaches its classical target. No extrapolation or iterated-limit conclusion is supported. Rust RS/AL residuals at J=10 require a kernel-eigenvalue accuracy audit before using the Rust RS result.",
+  "rustIncompleteAttempts": [
+    {
+      "J": 11,
+      "phiRadians": 0.0,
+      "status": "manually stopped after more than four minutes without producing a result",
+      "reason": "The exact dense-block implementation did not meet the exploratory runtime bound; no numerical result was produced.",
+      "interpretation": "This is a runtime limit for the current implementation, not evidence that the mathematical calculation is infeasible."
+    }
+  ]
+}

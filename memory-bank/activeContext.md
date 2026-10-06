@@ -1,26 +1,27 @@
 # Active Context
 
-*Last Updated: 2026-10-05 15:00:41 IST*
+*Last Updated: 2026-10-06 12:55:19 IST*
 
 ## Current Focus
-**Primary Task:** T5c — compare positive RS/AL expectations from FL tetrahedron states with the classical volume of the same input geometry, including weighted areas and degenerate limits.
-**Supporting Tasks:** T1a Python volume numerics; T3c Rust volume implementation; T6 kinematic Minkowski geometry; T4 manuscript audit; T7 thermal/TFD work; T8 amplituhedron program.
+**Primary Task:** T9 — construct thermal/TFD state families and study their physical geometry. The four-face pilot compares the draft squeeze and singlet-projected candidate; physical state/observable selection remains open.
+**Supporting Tasks:** T1a Python volume numerics; T3c Rust volume implementation; T6 kinematic Minkowski geometry; T4 manuscript audit; T8 amplituhedron program.
 
 ## Active Tasks
 - T4: Manuscript claim audit and review preparation — IN PROGRESS; independent audit recorded.
 - T1a: The regular FL tetrahedron sweep covers $J=1\ldots5$. At $J=2$, both RS and AL have their minima at the regular tetrahedron among 440 ordered equal-face-area samples; this is not a global-minimum proof. Initial weighted-area input-volume pilots cover one unequal geometry through $J=7$, a nine-shape grid at $J=2,4$, and selected $J=6$ points. Broader unequal-area coverage and degenerate limits remain open.
 - T3c: The Rust FL Eq. (38) example now builds and matches the Python $J=2$ result after the shared zero-mode cutoff. Physical prefactors and a method for blocks above 512 remain open; the Cargo shim itself is still broken.
 - T5: Volume–positivity numerical-studies program — IN PROGRESS; T5c/T5d/T5g open; the former T5f amplituhedron mapping is now T8b. Initial T5c pilots compare the input classical tetrahedron with weighted FL positive volume: regular/unequal-skew through $J=7$, a nine-shape unequal-area grid at $J=2,4$, selected $J=6$ points, and a flat path through $J=7$. Area means and weighted closure pass; finite-$J$ unequal correlations do not exactly reproduce input angles. Calibrated RS/AL agreement follows from closure and is not independent evidence. Broader shape and iterated-limit conclusions remain open. See `implementation-details/T5c-flux-covariance-volume-comparison.md` and shared `implementation-details/volume-numerical-preliminaries.md`.
-- T7: Thermal/TFD program — reported T7a–T7e runs complete for their tested setups; broader coherent-sector thermal question remains open.
 - T8: Amplituhedron Program — IN PROGRESS; T8a cluster algebra/chart relevance and T8b positive-cell/scattering-region mapping (transferred from T5f) are open. See `tasks/T8.md`.
+- T9: Thermal/TFD state construction and physical study — IN PROGRESS; owns all ongoing TFD construction and analysis, with exactly five completed child-study records T7a–T7e.
 
 ## Project State
 - Published EPJC paper is the frozen baseline.
+- The task inventory has dedicated records for all 29 current registry IDs plus the transferred historical T5f and T7 records. Completed tasks are archived; active tasks remain under `tasks/`. Statuses and task relationships were reconciled against the current Memory Bank and full Git history.
 - T1b's positive-volume follow-up is complete for two $N=4$, $K=6$ real-plane states inside and outside the positive cell; both RS and AL expectations are nonzero and independently cross-checked.
 - Python and Rust implementations exist. The old n=4 comparison shared a truncated Taylor state. Corrected Rust scans now cover n=4..8; SciPy independently checks n=4,5,7,8.
 - `manuscript.md` contains results through T7e but needs corrected conclusions, caveats, independent review, and circulation.
-- Documentation commit `33e332f` is pushed to `origin/main`. The numerical T5c drivers/results, Memory Bank follow-up, and weighted input-volume dashboard extension are local changes after that commit; the new plot/data extension remains undeployed. Separately, the dashboard's math typesetting update was deployed from website commit `15f698f` (workflow `37286586717`) and verified live in the study and fixed-area sections. Chart SVG labels remain compact text; mobile view was not examined, per the user's direction. The earlier plot-artwork update is website commit `9c6670c`. Two pre-existing untracked Python cache directories remain under `__pycache__/` and `dashboard/__pycache__/`.
-- The thermal-intertwiners paper source and assets are copied into `paper/thermal-intertwiners/`; this does not implement or validate its proposed thermal ket.
+- At the start of the 2026-10-06 task-record audit, `main` and `origin/main` both pointed to `0a254849a5e12734ee32d9d8af74bd4309d17648`. Existing local numerical, dashboard, and Memory Bank work remains in the working tree; this audit preserved it while reconstructing task records from the full 79-commit history. Separately, the dashboard's math typesetting update was deployed from website commit `15f698f` (workflow `37286586717`) and verified live in the study and fixed-area sections. Chart SVG labels remain compact text; mobile view was not examined, per the user's direction. The earlier plot-artwork update is website commit `9c6670c`. Two pre-existing untracked Python cache directories remain under `__pycache__/` and `dashboard/__pycache__/`.
+- T7 was archived as the former umbrella; T9 now owns all thermal/TFD work. The draft thermal ket has an exact small-sector implementation. Combined dual closure passes, ordinary per-copy closure fails, and separately labelled singlet postselection restores closure. Physical ensemble/observable selection remains open. See `tasks/T9.md` and `implementation-details/T7-mathematical-background-and-calculations.md`.
 - The constructive F-pair sewing discussion is recorded in [the dialogue note](implementation-details/constructive-geometric-sewing-dialogue.md) and [the session transcript](sessions/2026-10-04-geometric-construction-transcript.md). Triangle and tetrahedron sewing remain conceptual; metric shape and volume have not been validated, and no task ID was assigned.
 
 ## Current Decisions
@@ -40,5 +41,6 @@
 5. Extend the corrected T5a and T5b results across plane controls
   and run T5d with real off-cell controls.
 6. Complete T5c/T6 polyhedron reconstruction and controlled comparisons.
-7. Resolve the TFD right-operator convention before extending T7.
+7. Under T9, select and specify the physical thermal map, support, area ensemble and right-copy convention.
+8. Under T9, extend geometric and two-sided observable comparisons for the selected state families, with cutoff evidence.
 8. Review corrected numerical artifacts before circulating the manuscript.

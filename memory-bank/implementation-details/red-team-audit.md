@@ -117,7 +117,7 @@ All entries are signed-mean proxies, not positive quantum-volume expectations. T
    controlled $K$ and plane families. Extend T5e only where it tests that
    comparison.
 5. Revisit the TFD right-operator convention and energy/cutoff controls
-   before generalizing T7. Then connect stable geometry to scattering
+   before generalizing T9. Then connect stable geometry to scattering
    kinematics (T8b, formerly T5f); use T5g profiling only as needed.
 6. Update the claim ledger and manuscript after each rerun. Circulation
    requires an independent review of the corrected numerical artifacts and
