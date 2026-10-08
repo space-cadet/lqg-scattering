@@ -1,6 +1,6 @@
 # Implementation Progress
 
-*Last Updated: 2026-10-08 12:34:27 IST*
+*Last Updated: 2026-10-08 15:53:57 IST*
 
 ## Active Tasks
 
@@ -78,7 +78,7 @@ common notation is in `implementation-details/volume-numerical-preliminaries.md`
 
 T9 owns the entire thermal/TFD program. The former T7 umbrella was transferred and archived; T7a–T7e retain their IDs and completed evidence as T9 child studies. The new manuscript squeeze is implemented for small FL sectors. Combined dual-copy closure passes, ordinary closure on each copy fails, and a separately labelled double-singlet projection restores ordinary closure; its Gibbs interpretation remains unresolved. The initial pilot compares regular and unequal-skew four-face FL labels at $J=1,2$ over $\beta=3,4,5,8$, with pair cutoff 4 and cutoff-2 comparisons. The data are comparative evidence, not a reconstruction of classical geometry. See `tasks/T9.md`, `archive/T7.md`, the mathematical-background note, and the saved T7-named numerical artifacts.
 
-T9 follow-up: the selected state is $U_\beta(|J,\mathbf z\rangle_L\otimes|\overline{J,\mathbf z}\rangle_R)$, with transformed geometric observables. The new write-up gives its occupation-basis coefficient structure, sector probabilities, and coefficient-level reduced-state construction, plus exact $J=0$ vacuum plots. The nonzero-$J$ sector matrices, entanglement spectrum, and geometric correlations remain uncalculated. For fixed positive $H_A=\lambda N_L/2$ on unrestricted Fock space, the Gibbs low-temperature limit is vacuum while the squeezed family returns its nonzero-$J$ input; that Hamiltonian is therefore excluded as its Gibbs generator over all temperatures. The earlier one-sided pilot remains separate evidence for the draft's original state. See `notes/thermal-area-sectors.md` and `tasks/T9.md`.
+T9 follow-up: the selected state is $U_\beta(|J,\mathbf z\rangle_L\otimes|\overline{J,\mathbf z}\rangle_R)$, with transformed geometric observables. For four faces and $J_{\mathrm{in}}=1$, $P(q,S)$ is implemented by explicit spin coupling and magnetic-component counting with finite differences. The methods agree across 32,805 entries ($q=0\ldots160$; $\beta\hbar\omega=0.5,1,2,4,8$) to maximum absolute discrepancy $2.67\times10^{-16}$. Independent oscillator coefficient and direct Casimir-projector checks cover $q\le4$. Plots show broader occupation and spin distributions at higher temperature. The apparent high-$q$ cutoff is a display/numerical limit: an analytic positive bound establishes nonzero probability at every kinematically allowed $(q,S)$ for finite temperature. Full two-copy reduced-state blocks, entropy, and geometric correlations remain open. For fixed positive $H_A=\lambda N_L/2$ on unrestricted Fock space, the Gibbs low-temperature limit is vacuum while the squeezed family returns its nonzero-$J$ input; that Hamiltonian is excluded as its Gibbs generator over all temperatures. The earlier one-sided pilot remains separate evidence for the draft's original state. See `notes/thermal-area-sectors.md` and `tasks/T9.md`. Calculation and note update by GPT 6.1 Sol.
 
 ## Historical Implementation and Runs
 

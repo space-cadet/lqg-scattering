@@ -324,7 +324,7 @@ convergence evidence.
 
 ### T9: Thermal/TFD State Construction and Physical Study
 **Details:** [Task record](tasks/T9.md)
-**Description**: Own TFD state construction and physical/geometric study; completed child-study records T7a–T7e retain their IDs. The selected T9 state is the same-mode squeeze of conjugate FL intertwiners in both copies, with transformed geometric observables. Its coefficient-level reduced-state construction is documented; excited-$J$ sector matrices remain open. A fixed positive total-area Hamiltonian on unrestricted Fock space is excluded as a Gibbs generator by the different low-temperature limits.
+**Description**: Own TFD state construction and physical/geometric study; completed child-study records T7a–T7e retain their IDs. The selected T9 state is the same-mode squeeze of conjugate FL intertwiners in both copies, with transformed geometric observables. The four-face $J_{\mathrm{in}}=1$ occupation/resultant-spin distribution is implemented by two methods through $q=160$ and cross-checked; general initial $J$, reduced-state blocks, entanglement, and geometry remain open. A fixed positive total-area Hamiltonian on unrestricted Fock space is excluded as a Gibbs generator by the different low-temperature limits.
 **Status**: 🔄 IN PROGRESS
 **Dependencies**: T3c
 **Subtasks**: Five completed child-study records (T7a–T7e); no additional subtask slots remain.

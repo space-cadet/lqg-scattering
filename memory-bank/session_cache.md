@@ -1,9 +1,9 @@
 # Session Cache
 
-*Last Updated: 2026-10-08 13:20:48 IST*
+*Last Updated: 2026-10-08 15:53:57 IST*
 
 ## Overview
-- 2026-10-08 session close: Saved the [detailed handoff](sessions/2026-10-08-physics-handoff.md) and exact [physics-only transcript](sessions/2026-10-08-physics-transcript.md), including the $J,S,M$ and group-averaging discussion. Nonzero-$J$ coefficient matrices remain open.
+- 2026-10-08 T9 calculation close: Added the four-face $J_{\mathrm{in}}=1$ $P(q,S)$ calculation by two methods through $q=160$, method and coefficient checks, temperature plots, and the finite-temperature support result. Full two-copy reduced-state blocks, entropy, and geometry remain open; see [session record](sessions/2026-10-08-j1-spin-distribution.md).
 - 2026-10-08: Saved the thermal-area write-up and a transcript ending before the write-up request; organized Python, Rust, dashboard, Memory Bank tooling, shell workflows, and LaTeX sources under `code/`; moved calculation outputs to `results/` and research records/task specifications to `notes/`.
 - Active work remains T5c, T1a/T3c, T4, T5, T8, and T9; T6 is active for the open FL-covariance-to-polyhedron bridge.
 - Task files are reconciled against all 79 commits reachable from the repository refs at audit start: 29 current registry IDs have records. Transferred umbrellas T5f and T7 have separate archive records. Completed tasks are in `archive/`; active tasks are in `tasks/`.
@@ -51,7 +51,7 @@ Python and Rust implement RS and AL positive expectations by dense spectral deco
 ### T9: Thermal/TFD State Construction and Physical Study
 **Status:** 🔄 IN PROGRESS
 
-T9 owns all thermal/TFD state construction and physical study. Its five completed child records T7a–T7e preserve their prior results and IDs. Gibbs TFD tends to the Fock vacuum at low temperature; fixed-$K$ T7e is beta-flat within its scope. The earlier J=1,2 pilot records positive RS/AL volumes, face diagnostics, entanglement, closure and cutoff comparisons for regular and unequal-skew inputs, without selecting a physical thermal model. The new note derives the occupation-sector and reduced-state coefficient framework and plots the exact J=0 vacuum; the nonzero-J sector matrices remain open. A fixed positive total-area Hamiltonian on unrestricted Fock space is excluded by the different low-temperature limits. See `tasks/T9.md`, `notes/thermal-area-sectors.md`, `archive/T7.md`, and the mathematical-background note.
+T9 owns all thermal/TFD state construction and physical study. Its five completed child records T7a–T7e preserve their prior results and IDs. Gibbs TFD tends to the Fock vacuum at low temperature; fixed-$K$ T7e is beta-flat within its scope. The earlier J=1,2 pilot records positive RS/AL volumes, face diagnostics, entanglement, closure and cutoff comparisons for regular and unequal-skew inputs, without selecting a physical thermal model. The new note derives the occupation-sector and reduced-state coefficient framework, plots the exact $J=0$ vacuum, and now includes the four-face $J_{\mathrm{in}}=1$ $P(q,S)$ calculation by two agreeing methods, with temperature plots and an analytic nonzero-support bound. Full two-copy reduced-state blocks, entropy, and geometric observables remain open. A fixed positive total-area Hamiltonian on unrestricted Fock space is excluded by the different low-temperature limits. See `tasks/T9.md`, `notes/thermal-area-sectors.md`, `archive/T7.md`, and the mathematical-background note.
 
 ## Completed Foundation
 - Python pipeline and published EPJC paper.
@@ -59,6 +59,7 @@ T9 owns all thermal/TFD state construction and physical study. Its five complete
 - Corrected Rust/Python n=4 comparison and converged scans through n=8; independent SciPy checks cover n=4,5,7,8.
 
 ## Session History
+- 2026-10-08: Implemented and plotted the four-face $J_{\mathrm{in}}=1$ occupation/resultant-spin distribution by two independent methods; documented method agreement, independent small-sector checks, and why finite-temperature support has no hard cutoff. See `sessions/2026-10-08-j1-spin-distribution.md`. Work by GPT 6.1 Sol.
 - 2026-10-08: Continued the T9 discussion through the $J,S,M$ reference-state proposal and the distinction between a $U(N)$ action and $SU(2)$ group averaging. The derived extension remains unverified; see `sessions/2026-10-08-physics-handoff.md` and `sessions/2026-10-08-physics-transcript.md`.
 - 2026-10-08: Wrote up T9 occupation coefficients, sector multiplicity, density-matrix assembly, and the exact four-face vacuum plot; saved the preceding discussion transcript. Organized all project code sources under `code/` and retained compiled paper PDFs under `paper/`. See `sessions/2026-10-08-area-sector-writeup.md`.
 - 2026-10-08: Organized root-level calculation records under `results/` and moved experiment notes, task prompts, and the paper overview into `notes/`; updated script defaults and active references. Flattened the dashboard app to `code/dashboard/` to match its configured paths.
