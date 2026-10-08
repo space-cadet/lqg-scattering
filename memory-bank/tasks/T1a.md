@@ -5,7 +5,7 @@ source_commit: 9602c9811278635eb4b3e3e601badd28e7964862
 
 # T1a: Positive-volume construction and validation in Python
 *Created: 2026-10-02 12:15:21 IST*
-*Last Updated: 2026-10-08 10:26:00 IST*
+*Last Updated: 2026-10-08 23:21:44 IST*
 
 **Description**: Implement and validate positive Rovelli–Smolin and Ashtekar–Lewandowski volume expectations in the Python reference implementation at n=4.
 **Status**: 🔄 IN PROGRESS
@@ -56,3 +56,7 @@ The EPJC Eq. (38) fixed-area coherent state is the FL state. With a $64\epsilon_
 The sweep values and chart are in `results/fl_volume_area_results.json` and `code/dashboard/data.json`; the SVG is `code/dashboard/figures/fl-volume-area.svg`. Website copy is on `space-cadet/website` branch `codex/lqg-scattering-dashboard` at `824b2b8`. Host-access workflow run `36990851937` succeeded; live Projects, project, dashboard, JSON, and SVG routes returned HTTP 200. The live card is inside the collapsed “Quantum physics and research” group, so expand that section to see it. The browser loaded all eight run records and rendered the static area plot. Physical prefactors and broader validation remain open. Keep the signed-mean proxy distinct from expectation values of positive volume operators.
 
 The $J=2$ equal-face-area scan and its limits are recorded in `notes/experiments/fl_volume_shape_scan_log.md` and `implementation-details/volume-operator.md`. The regular shape is the minimum only among 440 ordered grid samples. The $J=2$ positive-label enumerator reports one strict assignment with two recoupling channels; it does not enumerate the continuum of shapes. The dashboard's latest visual update, including the refreshed T1a shape figure, is deployed at commit `9c6670c` (workflow `37125090987`); earlier numerical data refreshes remain separate from this presentation update. Classical-volume comparisons at selected points differ from the quantum expectations; exact degenerate limits and fluctuation analysis remain open. Consult the qhe-bhe Thurston/Minkowski material for possible geometric parameterization, without treating it as a proof about the quantum operator.
+
+## Complete closed-basis extension (2026-10-08 23:21:44 IST)
+
+Enumerated all four-labelled-face singlet basis states at $K=2,\ldots,12$ with zero-spin faces allowed: 10,549 states. Stored RS/AL means, variances, spectra and lossless compressed physical operators/CSR basis transforms. Independent sparse triple contractions cover every unordered spin pattern; full tensor and project checks cover $K\leq4$. Recorded residuals are below $8\times10^{-14}$ against $2\times10^{-10}$ tolerance. Extension stopped during $K=13$ verification at the user request; no $K=13$ result is accepted. Physical normalization and broader FL/shape questions remain open. See [results](../../results/closed-basis-volume/README.md), [session](../sessions/2026-10-08-volume-studies.md) and deferred [T10](T10.md). New notation is $K$ area, $J$ resultant spin.

@@ -123,3 +123,7 @@ Corrected Rust/Python and independent SciPy checks agree on $\langle q\rangle=-0
 **Historical run:** 2026-09-19 16:26 IST
 **Summary:** Corrected converged Rust scans were completed for $n=5$–$8$. Independent SciPy checks $n=5,7,8$; $n=6$ remains open. The real-plane signed-mean cancellation
 does not establish zero positive quantum volume.
+
+## 2026-10-08 23:21:44 IST: Closed-basis volume baseline
+
+T1a completed all four-labelled-face singlet basis data at $K=2,\ldots,12$ (10,549 states), with positive RS/AL expectations, fluctuations, spectra and compressed matrices. Independent triple checks and reload verification passed within declared tolerances. The user stopped extension during $K=13$ verification; no $K=13$ output is accepted. T10 is deferred for the variable-face catalogue; no such spectra or new thermal volumes were computed. See [session summary](sessions/2026-10-08-volume-studies.md).

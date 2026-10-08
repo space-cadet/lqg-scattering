@@ -1,6 +1,6 @@
 # Active Context
 
-*Last Updated: 2026-10-08 15:53:57 IST*
+*Last Updated: 2026-10-08 23:21:44 IST*
 
 ## Current Focus
 Session-close handoff: [sessions/2026-10-08-physics-handoff.md](sessions/2026-10-08-physics-handoff.md); exact [physics-only transcript](sessions/2026-10-08-physics-transcript.md). Latest discussion distinguishes area $J$, resultant spin $S$, and magnetic number $M$, derives a nonzero-spin reference-state extension, and clarifies group action versus averaging. The extension remains unimplemented and numerically unchecked.
@@ -50,3 +50,7 @@ Session-close handoff: [sessions/2026-10-08-physics-handoff.md](sessions/2026-10
 8. Form the sector matrices $C_qC_q^\dagger$ and evaluate their spectrum and entropy with explicit convergence controls.
 9. Calculate two-sided and transformed geometric observables; compare with only explicitly specified ensemble Hamiltonians.
 10. Review corrected numerical artifacts before circulating the manuscript.
+
+## Latest volume session
+
+Completed the single-copy four-face closed-basis catalogue and positive RS/AL data through $K=12$ (10,549 states), with matrices, figures and independent checks. The extension stopped at the user request; no $K=13$ result is accepted. New notation: $K$ total linear area, $J$ resultant angular momentum. [T10](tasks/T10.md) is deferred to a later session for all active face counts at fixed $K$; implementation not started. T9 thermal reduced-state/geometry work remains open. See [summary](sessions/2026-10-08-volume-studies.md) and [physics transcript](sessions/2026-10-08-volume-physics-transcript.md).

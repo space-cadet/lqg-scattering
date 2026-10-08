@@ -1,0 +1,147 @@
+{
+  "sources": [
+    {
+      "path": "results/closed-basis-volume/states_k2.csv",
+      "sha256": "d22c12367cdad991ae0c59170d9c21745505e207b4e23e4e6c28d101dba5f8cb"
+    },
+    {
+      "path": "results/closed-basis-volume/states_k3.csv",
+      "sha256": "8a0e687c021d1992b207fff9c8959028f479aa8b9c735a6e63fbac2c065eacc9"
+    },
+    {
+      "path": "results/closed-basis-volume/states_k4.csv",
+      "sha256": "aef3ee9d45db26c832269c2b676e014e444e4cec8ef7da0283b76c590f59371a"
+    },
+    {
+      "path": "results/closed-basis-volume/states_k5.csv",
+      "sha256": "bb9053f1f00bc9ade781a58762469fc7bae1304e904ddda185fbecb8d0f72ebf"
+    },
+    {
+      "path": "results/closed-basis-volume/states_k6.csv",
+      "sha256": "795d91601ed1278910fe0dedc2062d7f984085f3d7bef356802ddfe9a312be5c"
+    },
+    {
+      "path": "results/closed-basis-volume/states_k7.csv",
+      "sha256": "c997298195c2bb1516ce1806a8f77a7d00662f42f05e96231e25d7b29bf419e7"
+    },
+    {
+      "path": "results/closed-basis-volume/states_k8.csv",
+      "sha256": "1bbe690cf827bbbc0be4660419e5cd95a9d30136ba5b506be9a1ee6156cd35b3"
+    },
+    {
+      "path": "results/closed-basis-volume/states_k9.csv",
+      "sha256": "9d4328c1d342d3575c3284afe08c1c11f12995053a6229eec72971ef95c1486f"
+    },
+    {
+      "path": "results/closed-basis-volume/states_k10.csv",
+      "sha256": "bce31c826f04f46e684cc23e6c05038c5c67a220d085c765fbec0c6bbb8772eb"
+    },
+    {
+      "path": "results/closed-basis-volume/states_k11.csv",
+      "sha256": "77a2d54bb91a6e464d5ef7f17381ba7b0bca6d73f992b38fe1fc5452498b37f7"
+    },
+    {
+      "path": "results/closed-basis-volume/states_k12.csv",
+      "sha256": "a83b0e0759c36eb503f1425fae0fe0e748953a65c77b5ea5fe5edd205f65421e"
+    }
+  ],
+  "statistics": [
+    {
+      "K": 2,
+      "mean_all": 0.030465319023639064,
+      "sd_all": 0.0913959570709172,
+      "mean_active": 0.30465319023639065,
+      "active_states": 2,
+      "nonzero_expectation_fraction": 0.1
+    },
+    {
+      "K": 3,
+      "mean_all": 0.09343490644232137,
+      "sd_all": 0.16626863459264832,
+      "mean_active": 0.2919840826322543,
+      "active_states": 16,
+      "nonzero_expectation_fraction": 0.24
+    },
+    {
+      "K": 4,
+      "mean_all": 0.17556365302394777,
+      "sd_all": 0.2339725582588569,
+      "mean_active": 0.3614545797551867,
+      "active_states": 51,
+      "nonzero_expectation_fraction": 0.37142857142857144
+    },
+    {
+      "K": 5,
+      "mean_all": 0.265230799981235,
+      "sd_all": 0.297031117274782,
+      "mean_active": 0.4405528542061191,
+      "active_states": 118,
+      "nonzero_expectation_fraction": 0.47959183673469385
+    },
+    {
+      "K": 6,
+      "mean_all": 0.35971729033962435,
+      "sd_all": 0.35876640310640084,
+      "mean_active": 0.525500041539625,
+      "active_states": 230,
+      "nonzero_expectation_fraction": 0.5654761904761905
+    },
+    {
+      "K": 7,
+      "mean_all": 0.46060327433528886,
+      "sd_all": 0.41988773477343777,
+      "mean_active": 0.6187208162712836,
+      "active_states": 402,
+      "nonzero_expectation_fraction": 0.6333333333333333
+    },
+    {
+      "K": 8,
+      "mean_all": 0.568171902324847,
+      "sd_all": 0.48072426400139073,
+      "mean_active": 0.7200335167711196,
+      "active_states": 651,
+      "nonzero_expectation_fraction": 0.6872727272727273
+    },
+    {
+      "K": 9,
+      "mean_all": 0.6811017957699379,
+      "sd_all": 0.5423180591414937,
+      "mean_active": 0.8274429446602659,
+      "active_states": 996,
+      "nonzero_expectation_fraction": 0.7305785123966942
+    },
+    {
+      "K": 10,
+      "mean_all": 0.7986757106517886,
+      "sd_all": 0.6052938530346926,
+      "mean_active": 0.9400051573926402,
+      "active_states": 1458,
+      "nonzero_expectation_fraction": 0.7657342657342657
+    },
+    {
+      "K": 11,
+      "mean_all": 0.921153419495433,
+      "sd_all": 0.6694404631304397,
+      "mean_active": 1.0579849468573759,
+      "active_states": 2060,
+      "nonzero_expectation_fraction": 0.7945900253592562
+    },
+    {
+      "K": 12,
+      "mean_all": 1.0486165781676349,
+      "sd_all": 0.734633376863003,
+      "mean_active": 1.1814091975464864,
+      "active_states": 2827,
+      "nonzero_expectation_fraction": 0.8185243328100471
+    }
+  ],
+  "png_dpi": 300,
+  "physics_rerun": false,
+  "interpretation": "Equal-weight traces and recoupling basis expectations; not FL coherent-state curves or canonical-temperature results.",
+  "checks": [
+    "row counts",
+    "ensemble means match metadata",
+    "nonnegative ensemble variance"
+  ],
+  "matplotlib": "3.10.8"
+}

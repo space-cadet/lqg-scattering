@@ -1,0 +1,5656 @@
+{
+  "K": 6,
+  "basis_states": 336,
+  "blocks": [
+    {
+      "id": "b0000",
+      "twice_spins": [
+        0,
+        0,
+        6,
+        6
+      ],
+      "twice_k": [
+        0
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 7,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0001",
+      "twice_spins": [
+        0,
+        1,
+        5,
+        6
+      ],
+      "twice_k": [
+        1
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0002",
+      "twice_spins": [
+        0,
+        1,
+        6,
+        5
+      ],
+      "twice_k": [
+        1
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0003",
+      "twice_spins": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0004",
+      "twice_spins": [
+        0,
+        2,
+        5,
+        5
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0005",
+      "twice_spins": [
+        0,
+        2,
+        6,
+        4
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0006",
+      "twice_spins": [
+        0,
+        3,
+        3,
+        6
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0007",
+      "twice_spins": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0008",
+      "twice_spins": [
+        0,
+        3,
+        5,
+        4
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0009",
+      "twice_spins": [
+        0,
+        3,
+        6,
+        3
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0010",
+      "twice_spins": [
+        0,
+        4,
+        2,
+        6
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0011",
+      "twice_spins": [
+        0,
+        4,
+        3,
+        5
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0012",
+      "twice_spins": [
+        0,
+        4,
+        4,
+        4
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 19,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0013",
+      "twice_spins": [
+        0,
+        4,
+        5,
+        3
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0014",
+      "twice_spins": [
+        0,
+        4,
+        6,
+        2
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0015",
+      "twice_spins": [
+        0,
+        5,
+        1,
+        6
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0016",
+      "twice_spins": [
+        0,
+        5,
+        2,
+        5
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0017",
+      "twice_spins": [
+        0,
+        5,
+        3,
+        4
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0018",
+      "twice_spins": [
+        0,
+        5,
+        4,
+        3
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0019",
+      "twice_spins": [
+        0,
+        5,
+        5,
+        2
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0020",
+      "twice_spins": [
+        0,
+        5,
+        6,
+        1
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0021",
+      "twice_spins": [
+        0,
+        6,
+        0,
+        6
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 7,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0022",
+      "twice_spins": [
+        0,
+        6,
+        1,
+        5
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0023",
+      "twice_spins": [
+        0,
+        6,
+        2,
+        4
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0024",
+      "twice_spins": [
+        0,
+        6,
+        3,
+        3
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0025",
+      "twice_spins": [
+        0,
+        6,
+        4,
+        2
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0026",
+      "twice_spins": [
+        0,
+        6,
+        5,
+        1
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0027",
+      "twice_spins": [
+        0,
+        6,
+        6,
+        0
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 7,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0028",
+      "twice_spins": [
+        1,
+        0,
+        5,
+        6
+      ],
+      "twice_k": [
+        1
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0029",
+      "twice_spins": [
+        1,
+        0,
+        6,
+        5
+      ],
+      "twice_k": [
+        1
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0030",
+      "twice_spins": [
+        1,
+        1,
+        4,
+        6
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 20,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0031",
+      "twice_spins": [
+        1,
+        1,
+        5,
+        5
+      ],
+      "twice_k": [
+        0,
+        2
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 22,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.5630441203868392,
+          0.5630441203868392
+        ],
+        "al": [
+          0.2815220601934195,
+          0.2815220601934195
+        ]
+      }
+    },
+    {
+      "id": "b0032",
+      "twice_spins": [
+        1,
+        1,
+        6,
+        4
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 20,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0033",
+      "twice_spins": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0034",
+      "twice_spins": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "twice_k": [
+        1,
+        3
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979389,
+          0.6332459535979389
+        ],
+        "al": [
+          0.31662297679896945,
+          0.31662297679896945
+        ]
+      }
+    },
+    {
+      "id": "b0035",
+      "twice_spins": [
+        1,
+        2,
+        5,
+        4
+      ],
+      "twice_k": [
+        1,
+        3
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979389,
+          0.6332459535979389
+        ],
+        "al": [
+          0.31662297679896945,
+          0.31662297679896945
+        ]
+      }
+    },
+    {
+      "id": "b0036",
+      "twice_spins": [
+        1,
+        2,
+        6,
+        3
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0037",
+      "twice_spins": [
+        1,
+        3,
+        2,
+        6
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0038",
+      "twice_spins": [
+        1,
+        3,
+        3,
+        5
+      ],
+      "twice_k": [
+        2,
+        4
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 30,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6521696046165832,
+          0.6521696046165832
+        ],
+        "al": [
+          0.3260848023082916,
+          0.3260848023082916
+        ]
+      }
+    },
+    {
+      "id": "b0039",
+      "twice_spins": [
+        1,
+        3,
+        4,
+        4
+      ],
+      "twice_k": [
+        2,
+        4
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 32,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.700801847570228,
+          0.700801847570228
+        ],
+        "al": [
+          0.350400923785114,
+          0.350400923785114
+        ]
+      }
+    },
+    {
+      "id": "b0040",
+      "twice_spins": [
+        1,
+        3,
+        5,
+        3
+      ],
+      "twice_k": [
+        2,
+        4
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 30,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6521696046165834,
+          0.6521696046165834
+        ],
+        "al": [
+          0.3260848023082917,
+          0.3260848023082917
+        ]
+      }
+    },
+    {
+      "id": "b0041",
+      "twice_spins": [
+        1,
+        3,
+        6,
+        2
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0042",
+      "twice_spins": [
+        1,
+        4,
+        1,
+        6
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 20,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0043",
+      "twice_spins": [
+        1,
+        4,
+        2,
+        5
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979392,
+          0.6332459535979392
+        ],
+        "al": [
+          0.3166229767989696,
+          0.3166229767989696
+        ]
+      }
+    },
+    {
+      "id": "b0044",
+      "twice_spins": [
+        1,
+        4,
+        3,
+        4
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 32,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.7008018475702281,
+          0.7008018475702281
+        ],
+        "al": [
+          0.35040092378511406,
+          0.35040092378511406
+        ]
+      }
+    },
+    {
+      "id": "b0045",
+      "twice_spins": [
+        1,
+        4,
+        4,
+        3
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 32,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.7008018475702281,
+          0.7008018475702281
+        ],
+        "al": [
+          0.35040092378511406,
+          0.35040092378511406
+        ]
+      }
+    },
+    {
+      "id": "b0046",
+      "twice_spins": [
+        1,
+        4,
+        5,
+        2
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979392,
+          0.6332459535979392
+        ],
+        "al": [
+          0.3166229767989696,
+          0.3166229767989696
+        ]
+      }
+    },
+    {
+      "id": "b0047",
+      "twice_spins": [
+        1,
+        4,
+        6,
+        1
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 20,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0048",
+      "twice_spins": [
+        1,
+        5,
+        0,
+        6
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0049",
+      "twice_spins": [
+        1,
+        5,
+        1,
+        5
+      ],
+      "twice_k": [
+        4,
+        6
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 22,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.5630441203868392,
+          0.5630441203868392
+        ],
+        "al": [
+          0.2815220601934196,
+          0.2815220601934196
+        ]
+      }
+    },
+    {
+      "id": "b0050",
+      "twice_spins": [
+        1,
+        5,
+        2,
+        4
+      ],
+      "twice_k": [
+        4,
+        6
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979391,
+          0.6332459535979391
+        ],
+        "al": [
+          0.31662297679896956,
+          0.31662297679896956
+        ]
+      }
+    },
+    {
+      "id": "b0051",
+      "twice_spins": [
+        1,
+        5,
+        3,
+        3
+      ],
+      "twice_k": [
+        4,
+        6
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 30,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6521696046165832,
+          0.6521696046165832
+        ],
+        "al": [
+          0.3260848023082917,
+          0.3260848023082917
+        ]
+      }
+    },
+    {
+      "id": "b0052",
+      "twice_spins": [
+        1,
+        5,
+        4,
+        2
+      ],
+      "twice_k": [
+        4,
+        6
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979391,
+          0.6332459535979391
+        ],
+        "al": [
+          0.31662297679896956,
+          0.31662297679896956
+        ]
+      }
+    },
+    {
+      "id": "b0053",
+      "twice_spins": [
+        1,
+        5,
+        5,
+        1
+      ],
+      "twice_k": [
+        4,
+        6
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 22,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.5630441203868392,
+          0.5630441203868392
+        ],
+        "al": [
+          0.2815220601934196,
+          0.2815220601934196
+        ]
+      }
+    },
+    {
+      "id": "b0054",
+      "twice_spins": [
+        1,
+        5,
+        6,
+        0
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0055",
+      "twice_spins": [
+        1,
+        6,
+        0,
+        5
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0056",
+      "twice_spins": [
+        1,
+        6,
+        1,
+        4
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 20,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0057",
+      "twice_spins": [
+        1,
+        6,
+        2,
+        3
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0058",
+      "twice_spins": [
+        1,
+        6,
+        3,
+        2
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0059",
+      "twice_spins": [
+        1,
+        6,
+        4,
+        1
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 20,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0060",
+      "twice_spins": [
+        1,
+        6,
+        5,
+        0
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0061",
+      "twice_spins": [
+        2,
+        0,
+        4,
+        6
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0062",
+      "twice_spins": [
+        2,
+        0,
+        5,
+        5
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0063",
+      "twice_spins": [
+        2,
+        0,
+        6,
+        4
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0064",
+      "twice_spins": [
+        2,
+        1,
+        3,
+        6
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0065",
+      "twice_spins": [
+        2,
+        1,
+        4,
+        5
+      ],
+      "twice_k": [
+        1,
+        3
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979389,
+          0.6332459535979389
+        ],
+        "al": [
+          0.31662297679896945,
+          0.31662297679896945
+        ]
+      }
+    },
+    {
+      "id": "b0066",
+      "twice_spins": [
+        2,
+        1,
+        5,
+        4
+      ],
+      "twice_k": [
+        1,
+        3
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979389,
+          0.6332459535979389
+        ],
+        "al": [
+          0.31662297679896945,
+          0.31662297679896945
+        ]
+      }
+    },
+    {
+      "id": "b0067",
+      "twice_spins": [
+        2,
+        1,
+        6,
+        3
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0068",
+      "twice_spins": [
+        2,
+        2,
+        2,
+        6
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 27,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0069",
+      "twice_spins": [
+        2,
+        2,
+        3,
+        5
+      ],
+      "twice_k": [
+        2,
+        4
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 34,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.7008018475702282,
+          0.7008018475702282
+        ],
+        "al": [
+          0.35040092378511417,
+          0.35040092378511417
+        ]
+      }
+    },
+    {
+      "id": "b0070",
+      "twice_spins": [
+        2,
+        2,
+        4,
+        4
+      ],
+      "twice_k": [
+        0,
+        2,
+        4
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 37,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          1.6653345369377323e-16,
+          0.8431475522752465,
+          0.8431475522752468
+        ],
+        "al": [
+          -1.4357011240016e-31,
+          0.4215737761376234,
+          0.42157377613762353
+        ]
+      }
+    },
+    {
+      "id": "b0071",
+      "twice_spins": [
+        2,
+        2,
+        5,
+        3
+      ],
+      "twice_k": [
+        2,
+        4
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 34,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.7008018475702282,
+          0.7008018475702282
+        ],
+        "al": [
+          0.35040092378511417,
+          0.35040092378511417
+        ]
+      }
+    },
+    {
+      "id": "b0072",
+      "twice_spins": [
+        2,
+        2,
+        6,
+        2
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 27,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0073",
+      "twice_spins": [
+        2,
+        3,
+        1,
+        6
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0074",
+      "twice_spins": [
+        2,
+        3,
+        2,
+        5
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 34,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.7008018475702281,
+          0.7008018475702281
+        ],
+        "al": [
+          0.35040092378511406,
+          0.35040092378511406
+        ]
+      }
+    },
+    {
+      "id": "b0075",
+      "twice_spins": [
+        2,
+        3,
+        3,
+        4
+      ],
+      "twice_k": [
+        1,
+        3,
+        5
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 40,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          -5.551115123125783e-17,
+          0.8874397025049211,
+          0.8874397025049213
+        ],
+        "al": [
+          -5.551115123125783e-17,
+          0.4437198512524604,
+          0.4437198512524606
+        ]
+      }
+    },
+    {
+      "id": "b0076",
+      "twice_spins": [
+        2,
+        3,
+        4,
+        3
+      ],
+      "twice_k": [
+        1,
+        3,
+        5
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 40,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          1.1102230246251565e-16,
+          0.8874397025049213,
+          0.8874397025049214
+        ],
+        "al": [
+          5.551115123125783e-17,
+          0.4437198512524606,
+          0.4437198512524607
+        ]
+      }
+    },
+    {
+      "id": "b0077",
+      "twice_spins": [
+        2,
+        3,
+        5,
+        2
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 34,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.7008018475702281,
+          0.7008018475702281
+        ],
+        "al": [
+          0.35040092378511406,
+          0.35040092378511406
+        ]
+      }
+    },
+    {
+      "id": "b0078",
+      "twice_spins": [
+        2,
+        3,
+        6,
+        1
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0079",
+      "twice_spins": [
+        2,
+        4,
+        0,
+        6
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0080",
+      "twice_spins": [
+        2,
+        4,
+        1,
+        5
+      ],
+      "twice_k": [
+        4,
+        6
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979391,
+          0.6332459535979391
+        ],
+        "al": [
+          0.31662297679896956,
+          0.31662297679896956
+        ]
+      }
+    },
+    {
+      "id": "b0081",
+      "twice_spins": [
+        2,
+        4,
+        2,
+        4
+      ],
+      "twice_k": [
+        2,
+        4,
+        6
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 37,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          5.044120927382492e-17,
+          0.8431475522752464,
+          0.843147552275247
+        ],
+        "al": [
+          2.7755575615628914e-17,
+          0.4215737761376235,
+          0.42157377613762376
+        ]
+      }
+    },
+    {
+      "id": "b0082",
+      "twice_spins": [
+        2,
+        4,
+        3,
+        3
+      ],
+      "twice_k": [
+        2,
+        4,
+        6
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 40,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          -2.220446049250314e-16,
+          0.887439702504921,
+          0.8874397025049211
+        ],
+        "al": [
+          -4.5800624098014987e-32,
+          0.4437198512524602,
+          0.4437198512524603
+        ]
+      }
+    },
+    {
+      "id": "b0083",
+      "twice_spins": [
+        2,
+        4,
+        4,
+        2
+      ],
+      "twice_k": [
+        2,
+        4,
+        6
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 37,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          -1.1102230246251568e-16,
+          0.843147552275247,
+          0.843147552275247
+        ],
+        "al": [
+          -3.242945530833375e-33,
+          0.4215737761376234,
+          0.4215737761376239
+        ]
+      }
+    },
+    {
+      "id": "b0084",
+      "twice_spins": [
+        2,
+        4,
+        5,
+        1
+      ],
+      "twice_k": [
+        4,
+        6
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979391,
+          0.6332459535979391
+        ],
+        "al": [
+          0.31662297679896956,
+          0.31662297679896956
+        ]
+      }
+    },
+    {
+      "id": "b0085",
+      "twice_spins": [
+        2,
+        4,
+        6,
+        0
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0086",
+      "twice_spins": [
+        2,
+        5,
+        0,
+        5
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0087",
+      "twice_spins": [
+        2,
+        5,
+        1,
+        4
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979391,
+          0.6332459535979391
+        ],
+        "al": [
+          0.3166229767989696,
+          0.3166229767989696
+        ]
+      }
+    },
+    {
+      "id": "b0088",
+      "twice_spins": [
+        2,
+        5,
+        2,
+        3
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 34,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.7008018475702281,
+          0.7008018475702281
+        ],
+        "al": [
+          0.35040092378511406,
+          0.35040092378511406
+        ]
+      }
+    },
+    {
+      "id": "b0089",
+      "twice_spins": [
+        2,
+        5,
+        3,
+        2
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 34,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.7008018475702281,
+          0.7008018475702281
+        ],
+        "al": [
+          0.35040092378511406,
+          0.35040092378511406
+        ]
+      }
+    },
+    {
+      "id": "b0090",
+      "twice_spins": [
+        2,
+        5,
+        4,
+        1
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979391,
+          0.6332459535979391
+        ],
+        "al": [
+          0.3166229767989696,
+          0.3166229767989696
+        ]
+      }
+    },
+    {
+      "id": "b0091",
+      "twice_spins": [
+        2,
+        5,
+        5,
+        0
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0092",
+      "twice_spins": [
+        2,
+        6,
+        0,
+        4
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0093",
+      "twice_spins": [
+        2,
+        6,
+        1,
+        3
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0094",
+      "twice_spins": [
+        2,
+        6,
+        2,
+        2
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 27,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0095",
+      "twice_spins": [
+        2,
+        6,
+        3,
+        1
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0096",
+      "twice_spins": [
+        2,
+        6,
+        4,
+        0
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0097",
+      "twice_spins": [
+        3,
+        0,
+        3,
+        6
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0098",
+      "twice_spins": [
+        3,
+        0,
+        4,
+        5
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0099",
+      "twice_spins": [
+        3,
+        0,
+        5,
+        4
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0100",
+      "twice_spins": [
+        3,
+        0,
+        6,
+        3
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0101",
+      "twice_spins": [
+        3,
+        1,
+        2,
+        6
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0102",
+      "twice_spins": [
+        3,
+        1,
+        3,
+        5
+      ],
+      "twice_k": [
+        2,
+        4
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 30,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6521696046165832,
+          0.6521696046165832
+        ],
+        "al": [
+          0.3260848023082917,
+          0.3260848023082917
+        ]
+      }
+    },
+    {
+      "id": "b0103",
+      "twice_spins": [
+        3,
+        1,
+        4,
+        4
+      ],
+      "twice_k": [
+        2,
+        4
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 32,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.700801847570228,
+          0.700801847570228
+        ],
+        "al": [
+          0.350400923785114,
+          0.350400923785114
+        ]
+      }
+    },
+    {
+      "id": "b0104",
+      "twice_spins": [
+        3,
+        1,
+        5,
+        3
+      ],
+      "twice_k": [
+        2,
+        4
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 30,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6521696046165835,
+          0.6521696046165835
+        ],
+        "al": [
+          0.3260848023082917,
+          0.3260848023082917
+        ]
+      }
+    },
+    {
+      "id": "b0105",
+      "twice_spins": [
+        3,
+        1,
+        6,
+        2
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0106",
+      "twice_spins": [
+        3,
+        2,
+        1,
+        6
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0107",
+      "twice_spins": [
+        3,
+        2,
+        2,
+        5
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 34,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.700801847570228,
+          0.700801847570228
+        ],
+        "al": [
+          0.35040092378511406,
+          0.35040092378511406
+        ]
+      }
+    },
+    {
+      "id": "b0108",
+      "twice_spins": [
+        3,
+        2,
+        3,
+        4
+      ],
+      "twice_k": [
+        1,
+        3,
+        5
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 40,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          1.110223024625154e-16,
+          0.8874397025049207,
+          0.8874397025049212
+        ],
+        "al": [
+          -5.551115123125786e-17,
+          0.44371985125246055,
+          0.44371985125246066
+        ]
+      }
+    },
+    {
+      "id": "b0109",
+      "twice_spins": [
+        3,
+        2,
+        4,
+        3
+      ],
+      "twice_k": [
+        1,
+        3,
+        5
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 40,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          1.6653345369377336e-16,
+          0.8874397025049208,
+          0.8874397025049212
+        ],
+        "al": [
+          -5.551115123125784e-17,
+          0.4437198512524607,
+          0.44371985125246094
+        ]
+      }
+    },
+    {
+      "id": "b0110",
+      "twice_spins": [
+        3,
+        2,
+        5,
+        2
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 34,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.700801847570228,
+          0.700801847570228
+        ],
+        "al": [
+          0.35040092378511406,
+          0.35040092378511406
+        ]
+      }
+    },
+    {
+      "id": "b0111",
+      "twice_spins": [
+        3,
+        2,
+        6,
+        1
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0112",
+      "twice_spins": [
+        3,
+        3,
+        0,
+        6
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0113",
+      "twice_spins": [
+        3,
+        3,
+        1,
+        5
+      ],
+      "twice_k": [
+        4,
+        6
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 30,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6521696046165832,
+          0.6521696046165832
+        ],
+        "al": [
+          0.3260848023082917,
+          0.3260848023082917
+        ]
+      }
+    },
+    {
+      "id": "b0114",
+      "twice_spins": [
+        3,
+        3,
+        2,
+        4
+      ],
+      "twice_k": [
+        2,
+        4,
+        6
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 40,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          -1.110223024625157e-16,
+          0.8874397025049212,
+          0.8874397025049213
+        ],
+        "al": [
+          -4.3339826520526147e-17,
+          0.44371985125246016,
+          0.4437198512524603
+        ]
+      }
+    },
+    {
+      "id": "b0115",
+      "twice_spins": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "twice_k": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "singlet_dimension": 4,
+      "magnetic_m0_dimension": 44,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.5276748041773752,
+          0.5276748041773753,
+          0.9752210234129335,
+          0.9752210234129339
+        ],
+        "al": [
+          0.26383740208868756,
+          0.26383740208868767,
+          0.48761051170646624,
+          0.48761051170646647
+        ]
+      }
+    },
+    {
+      "id": "b0116",
+      "twice_spins": [
+        3,
+        3,
+        4,
+        2
+      ],
+      "twice_k": [
+        2,
+        4,
+        6
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 40,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          -1.156572352361742e-16,
+          0.887439702504921,
+          0.8874397025049213
+        ],
+        "al": [
+          -4.3339826520526147e-17,
+          0.44371985125246016,
+          0.4437198512524603
+        ]
+      }
+    },
+    {
+      "id": "b0117",
+      "twice_spins": [
+        3,
+        3,
+        5,
+        1
+      ],
+      "twice_k": [
+        4,
+        6
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 30,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6521696046165832,
+          0.6521696046165832
+        ],
+        "al": [
+          0.3260848023082916,
+          0.3260848023082916
+        ]
+      }
+    },
+    {
+      "id": "b0118",
+      "twice_spins": [
+        3,
+        3,
+        6,
+        0
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0119",
+      "twice_spins": [
+        3,
+        4,
+        0,
+        5
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0120",
+      "twice_spins": [
+        3,
+        4,
+        1,
+        4
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 32,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.7008018475702281,
+          0.7008018475702281
+        ],
+        "al": [
+          0.35040092378511406,
+          0.35040092378511406
+        ]
+      }
+    },
+    {
+      "id": "b0121",
+      "twice_spins": [
+        3,
+        4,
+        2,
+        3
+      ],
+      "twice_k": [
+        1,
+        3,
+        5
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 40,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          5.5511151231257815e-17,
+          0.887439702504921,
+          0.8874397025049214
+        ],
+        "al": [
+          -2.1304450864858442e-18,
+          0.44371985125246055,
+          0.44371985125246055
+        ]
+      }
+    },
+    {
+      "id": "b0122",
+      "twice_spins": [
+        3,
+        4,
+        3,
+        2
+      ],
+      "twice_k": [
+        1,
+        3,
+        5
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 40,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          5.551115123125783e-17,
+          0.887439702504921,
+          0.8874397025049211
+        ],
+        "al": [
+          -5.551115123125783e-17,
+          0.44371985125246055,
+          0.4437198512524606
+        ]
+      }
+    },
+    {
+      "id": "b0123",
+      "twice_spins": [
+        3,
+        4,
+        4,
+        1
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 32,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.7008018475702281,
+          0.7008018475702281
+        ],
+        "al": [
+          0.35040092378511406,
+          0.35040092378511406
+        ]
+      }
+    },
+    {
+      "id": "b0124",
+      "twice_spins": [
+        3,
+        4,
+        5,
+        0
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0125",
+      "twice_spins": [
+        3,
+        5,
+        0,
+        4
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0126",
+      "twice_spins": [
+        3,
+        5,
+        1,
+        3
+      ],
+      "twice_k": [
+        2,
+        4
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 30,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6521696046165832,
+          0.6521696046165832
+        ],
+        "al": [
+          0.3260848023082916,
+          0.3260848023082916
+        ]
+      }
+    },
+    {
+      "id": "b0127",
+      "twice_spins": [
+        3,
+        5,
+        2,
+        2
+      ],
+      "twice_k": [
+        2,
+        4
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 34,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.7008018475702283,
+          0.7008018475702283
+        ],
+        "al": [
+          0.35040092378511417,
+          0.35040092378511417
+        ]
+      }
+    },
+    {
+      "id": "b0128",
+      "twice_spins": [
+        3,
+        5,
+        3,
+        1
+      ],
+      "twice_k": [
+        2,
+        4
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 30,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6521696046165832,
+          0.6521696046165832
+        ],
+        "al": [
+          0.3260848023082916,
+          0.3260848023082916
+        ]
+      }
+    },
+    {
+      "id": "b0129",
+      "twice_spins": [
+        3,
+        5,
+        4,
+        0
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0130",
+      "twice_spins": [
+        3,
+        6,
+        0,
+        3
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0131",
+      "twice_spins": [
+        3,
+        6,
+        1,
+        2
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0132",
+      "twice_spins": [
+        3,
+        6,
+        2,
+        1
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0133",
+      "twice_spins": [
+        3,
+        6,
+        3,
+        0
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0134",
+      "twice_spins": [
+        4,
+        0,
+        2,
+        6
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0135",
+      "twice_spins": [
+        4,
+        0,
+        3,
+        5
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0136",
+      "twice_spins": [
+        4,
+        0,
+        4,
+        4
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 19,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0137",
+      "twice_spins": [
+        4,
+        0,
+        5,
+        3
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0138",
+      "twice_spins": [
+        4,
+        0,
+        6,
+        2
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0139",
+      "twice_spins": [
+        4,
+        1,
+        1,
+        6
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 20,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0140",
+      "twice_spins": [
+        4,
+        1,
+        2,
+        5
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979392,
+          0.6332459535979392
+        ],
+        "al": [
+          0.3166229767989696,
+          0.3166229767989696
+        ]
+      }
+    },
+    {
+      "id": "b0141",
+      "twice_spins": [
+        4,
+        1,
+        3,
+        4
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 32,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.7008018475702281,
+          0.7008018475702281
+        ],
+        "al": [
+          0.35040092378511406,
+          0.35040092378511406
+        ]
+      }
+    },
+    {
+      "id": "b0142",
+      "twice_spins": [
+        4,
+        1,
+        4,
+        3
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 32,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.7008018475702281,
+          0.7008018475702281
+        ],
+        "al": [
+          0.35040092378511406,
+          0.35040092378511406
+        ]
+      }
+    },
+    {
+      "id": "b0143",
+      "twice_spins": [
+        4,
+        1,
+        5,
+        2
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979392,
+          0.6332459535979392
+        ],
+        "al": [
+          0.3166229767989696,
+          0.3166229767989696
+        ]
+      }
+    },
+    {
+      "id": "b0144",
+      "twice_spins": [
+        4,
+        1,
+        6,
+        1
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 20,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0145",
+      "twice_spins": [
+        4,
+        2,
+        0,
+        6
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0146",
+      "twice_spins": [
+        4,
+        2,
+        1,
+        5
+      ],
+      "twice_k": [
+        4,
+        6
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979391,
+          0.6332459535979391
+        ],
+        "al": [
+          0.31662297679896956,
+          0.31662297679896956
+        ]
+      }
+    },
+    {
+      "id": "b0147",
+      "twice_spins": [
+        4,
+        2,
+        2,
+        4
+      ],
+      "twice_k": [
+        2,
+        4,
+        6
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 37,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          -6.972522878460705e-17,
+          0.843147552275247,
+          0.8431475522752472
+        ],
+        "al": [
+          -3.242945530833375e-33,
+          0.4215737761376234,
+          0.4215737761376239
+        ]
+      }
+    },
+    {
+      "id": "b0148",
+      "twice_spins": [
+        4,
+        2,
+        3,
+        3
+      ],
+      "twice_k": [
+        2,
+        4,
+        6
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 40,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          2.811039837716294e-17,
+          0.8874397025049207,
+          0.8874397025049211
+        ],
+        "al": [
+          2.410262942784399e-17,
+          0.4437198512524605,
+          0.443719851252461
+        ]
+      }
+    },
+    {
+      "id": "b0149",
+      "twice_spins": [
+        4,
+        2,
+        4,
+        2
+      ],
+      "twice_k": [
+        2,
+        4,
+        6
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 37,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          5.044120927382492e-17,
+          0.8431475522752464,
+          0.843147552275247
+        ],
+        "al": [
+          2.7755575615628914e-17,
+          0.42157377613762353,
+          0.4215737761376239
+        ]
+      }
+    },
+    {
+      "id": "b0150",
+      "twice_spins": [
+        4,
+        2,
+        5,
+        1
+      ],
+      "twice_k": [
+        4,
+        6
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979391,
+          0.6332459535979391
+        ],
+        "al": [
+          0.31662297679896956,
+          0.31662297679896956
+        ]
+      }
+    },
+    {
+      "id": "b0151",
+      "twice_spins": [
+        4,
+        2,
+        6,
+        0
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0152",
+      "twice_spins": [
+        4,
+        3,
+        0,
+        5
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0153",
+      "twice_spins": [
+        4,
+        3,
+        1,
+        4
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 32,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.7008018475702281,
+          0.7008018475702281
+        ],
+        "al": [
+          0.35040092378511406,
+          0.35040092378511406
+        ]
+      }
+    },
+    {
+      "id": "b0154",
+      "twice_spins": [
+        4,
+        3,
+        2,
+        3
+      ],
+      "twice_k": [
+        1,
+        3,
+        5
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 40,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          5.5511151231257685e-17,
+          0.8874397025049212,
+          0.8874397025049217
+        ],
+        "al": [
+          -2.1304450864858442e-18,
+          0.44371985125246055,
+          0.4437198512524608
+        ]
+      }
+    },
+    {
+      "id": "b0155",
+      "twice_spins": [
+        4,
+        3,
+        3,
+        2
+      ],
+      "twice_k": [
+        1,
+        3,
+        5
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 40,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          5.551115123125778e-17,
+          0.8874397025049209,
+          0.8874397025049211
+        ],
+        "al": [
+          -2.7755575615628926e-17,
+          0.44371985125246055,
+          0.4437198512524606
+        ]
+      }
+    },
+    {
+      "id": "b0156",
+      "twice_spins": [
+        4,
+        3,
+        4,
+        1
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 32,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.7008018475702281,
+          0.7008018475702281
+        ],
+        "al": [
+          0.35040092378511406,
+          0.35040092378511406
+        ]
+      }
+    },
+    {
+      "id": "b0157",
+      "twice_spins": [
+        4,
+        3,
+        5,
+        0
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0158",
+      "twice_spins": [
+        4,
+        4,
+        0,
+        4
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 19,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0159",
+      "twice_spins": [
+        4,
+        4,
+        1,
+        3
+      ],
+      "twice_k": [
+        2,
+        4
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 32,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.700801847570228,
+          0.700801847570228
+        ],
+        "al": [
+          0.350400923785114,
+          0.350400923785114
+        ]
+      }
+    },
+    {
+      "id": "b0160",
+      "twice_spins": [
+        4,
+        4,
+        2,
+        2
+      ],
+      "twice_k": [
+        0,
+        2,
+        4
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 37,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          -2.837547057640885e-17,
+          0.8431475522752464,
+          0.8431475522752467
+        ],
+        "al": [
+          -1.4357011240016e-31,
+          0.4215737761376234,
+          0.42157377613762353
+        ]
+      }
+    },
+    {
+      "id": "b0161",
+      "twice_spins": [
+        4,
+        4,
+        3,
+        1
+      ],
+      "twice_k": [
+        2,
+        4
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 32,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.700801847570228,
+          0.700801847570228
+        ],
+        "al": [
+          0.350400923785114,
+          0.350400923785114
+        ]
+      }
+    },
+    {
+      "id": "b0162",
+      "twice_spins": [
+        4,
+        4,
+        4,
+        0
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 19,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0163",
+      "twice_spins": [
+        4,
+        5,
+        0,
+        3
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0164",
+      "twice_spins": [
+        4,
+        5,
+        1,
+        2
+      ],
+      "twice_k": [
+        1,
+        3
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979389,
+          0.6332459535979389
+        ],
+        "al": [
+          0.31662297679896945,
+          0.31662297679896945
+        ]
+      }
+    },
+    {
+      "id": "b0165",
+      "twice_spins": [
+        4,
+        5,
+        2,
+        1
+      ],
+      "twice_k": [
+        1,
+        3
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979389,
+          0.6332459535979389
+        ],
+        "al": [
+          0.31662297679896945,
+          0.31662297679896945
+        ]
+      }
+    },
+    {
+      "id": "b0166",
+      "twice_spins": [
+        4,
+        5,
+        3,
+        0
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0167",
+      "twice_spins": [
+        4,
+        6,
+        0,
+        2
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0168",
+      "twice_spins": [
+        4,
+        6,
+        1,
+        1
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 20,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0169",
+      "twice_spins": [
+        4,
+        6,
+        2,
+        0
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0170",
+      "twice_spins": [
+        5,
+        0,
+        1,
+        6
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0171",
+      "twice_spins": [
+        5,
+        0,
+        2,
+        5
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0172",
+      "twice_spins": [
+        5,
+        0,
+        3,
+        4
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0173",
+      "twice_spins": [
+        5,
+        0,
+        4,
+        3
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0174",
+      "twice_spins": [
+        5,
+        0,
+        5,
+        2
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0175",
+      "twice_spins": [
+        5,
+        0,
+        6,
+        1
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0176",
+      "twice_spins": [
+        5,
+        1,
+        0,
+        6
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0177",
+      "twice_spins": [
+        5,
+        1,
+        1,
+        5
+      ],
+      "twice_k": [
+        4,
+        6
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 22,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.5630441203868392,
+          0.5630441203868392
+        ],
+        "al": [
+          0.2815220601934196,
+          0.2815220601934196
+        ]
+      }
+    },
+    {
+      "id": "b0178",
+      "twice_spins": [
+        5,
+        1,
+        2,
+        4
+      ],
+      "twice_k": [
+        4,
+        6
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979391,
+          0.6332459535979391
+        ],
+        "al": [
+          0.31662297679896956,
+          0.31662297679896956
+        ]
+      }
+    },
+    {
+      "id": "b0179",
+      "twice_spins": [
+        5,
+        1,
+        3,
+        3
+      ],
+      "twice_k": [
+        4,
+        6
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 30,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6521696046165832,
+          0.6521696046165832
+        ],
+        "al": [
+          0.3260848023082916,
+          0.3260848023082916
+        ]
+      }
+    },
+    {
+      "id": "b0180",
+      "twice_spins": [
+        5,
+        1,
+        4,
+        2
+      ],
+      "twice_k": [
+        4,
+        6
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979391,
+          0.6332459535979391
+        ],
+        "al": [
+          0.31662297679896956,
+          0.31662297679896956
+        ]
+      }
+    },
+    {
+      "id": "b0181",
+      "twice_spins": [
+        5,
+        1,
+        5,
+        1
+      ],
+      "twice_k": [
+        4,
+        6
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 22,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.5630441203868392,
+          0.5630441203868392
+        ],
+        "al": [
+          0.2815220601934196,
+          0.2815220601934196
+        ]
+      }
+    },
+    {
+      "id": "b0182",
+      "twice_spins": [
+        5,
+        1,
+        6,
+        0
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0183",
+      "twice_spins": [
+        5,
+        2,
+        0,
+        5
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0184",
+      "twice_spins": [
+        5,
+        2,
+        1,
+        4
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979393,
+          0.6332459535979393
+        ],
+        "al": [
+          0.3166229767989696,
+          0.3166229767989696
+        ]
+      }
+    },
+    {
+      "id": "b0185",
+      "twice_spins": [
+        5,
+        2,
+        2,
+        3
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 34,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.7008018475702281,
+          0.7008018475702281
+        ],
+        "al": [
+          0.35040092378511406,
+          0.35040092378511406
+        ]
+      }
+    },
+    {
+      "id": "b0186",
+      "twice_spins": [
+        5,
+        2,
+        3,
+        2
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 34,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.7008018475702281,
+          0.7008018475702281
+        ],
+        "al": [
+          0.35040092378511406,
+          0.35040092378511406
+        ]
+      }
+    },
+    {
+      "id": "b0187",
+      "twice_spins": [
+        5,
+        2,
+        4,
+        1
+      ],
+      "twice_k": [
+        3,
+        5
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979393,
+          0.6332459535979393
+        ],
+        "al": [
+          0.3166229767989696,
+          0.3166229767989696
+        ]
+      }
+    },
+    {
+      "id": "b0188",
+      "twice_spins": [
+        5,
+        2,
+        5,
+        0
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0189",
+      "twice_spins": [
+        5,
+        3,
+        0,
+        4
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0190",
+      "twice_spins": [
+        5,
+        3,
+        1,
+        3
+      ],
+      "twice_k": [
+        2,
+        4
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 30,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6521696046165834,
+          0.6521696046165834
+        ],
+        "al": [
+          0.3260848023082917,
+          0.3260848023082917
+        ]
+      }
+    },
+    {
+      "id": "b0191",
+      "twice_spins": [
+        5,
+        3,
+        2,
+        2
+      ],
+      "twice_k": [
+        2,
+        4
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 34,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.7008018475702283,
+          0.7008018475702283
+        ],
+        "al": [
+          0.35040092378511417,
+          0.35040092378511417
+        ]
+      }
+    },
+    {
+      "id": "b0192",
+      "twice_spins": [
+        5,
+        3,
+        3,
+        1
+      ],
+      "twice_k": [
+        2,
+        4
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 30,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6521696046165834,
+          0.6521696046165834
+        ],
+        "al": [
+          0.3260848023082917,
+          0.3260848023082917
+        ]
+      }
+    },
+    {
+      "id": "b0193",
+      "twice_spins": [
+        5,
+        3,
+        4,
+        0
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0194",
+      "twice_spins": [
+        5,
+        4,
+        0,
+        3
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0195",
+      "twice_spins": [
+        5,
+        4,
+        1,
+        2
+      ],
+      "twice_k": [
+        1,
+        3
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979389,
+          0.6332459535979389
+        ],
+        "al": [
+          0.31662297679896945,
+          0.31662297679896945
+        ]
+      }
+    },
+    {
+      "id": "b0196",
+      "twice_spins": [
+        5,
+        4,
+        2,
+        1
+      ],
+      "twice_k": [
+        1,
+        3
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 28,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.6332459535979389,
+          0.6332459535979389
+        ],
+        "al": [
+          0.31662297679896945,
+          0.31662297679896945
+        ]
+      }
+    },
+    {
+      "id": "b0197",
+      "twice_spins": [
+        5,
+        4,
+        3,
+        0
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 18,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0198",
+      "twice_spins": [
+        5,
+        5,
+        0,
+        2
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0199",
+      "twice_spins": [
+        5,
+        5,
+        1,
+        1
+      ],
+      "twice_k": [
+        0,
+        2
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 22,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.5630441203868392,
+          0.5630441203868392
+        ],
+        "al": [
+          0.2815220601934195,
+          0.2815220601934195
+        ]
+      }
+    },
+    {
+      "id": "b0200",
+      "twice_spins": [
+        5,
+        5,
+        2,
+        0
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0201",
+      "twice_spins": [
+        5,
+        6,
+        0,
+        1
+      ],
+      "twice_k": [
+        1
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0202",
+      "twice_spins": [
+        5,
+        6,
+        1,
+        0
+      ],
+      "twice_k": [
+        1
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0203",
+      "twice_spins": [
+        6,
+        0,
+        0,
+        6
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 7,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0204",
+      "twice_spins": [
+        6,
+        0,
+        1,
+        5
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0205",
+      "twice_spins": [
+        6,
+        0,
+        2,
+        4
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0206",
+      "twice_spins": [
+        6,
+        0,
+        3,
+        3
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0207",
+      "twice_spins": [
+        6,
+        0,
+        4,
+        2
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0208",
+      "twice_spins": [
+        6,
+        0,
+        5,
+        1
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0209",
+      "twice_spins": [
+        6,
+        0,
+        6,
+        0
+      ],
+      "twice_k": [
+        6
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 7,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0210",
+      "twice_spins": [
+        6,
+        1,
+        0,
+        5
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0211",
+      "twice_spins": [
+        6,
+        1,
+        1,
+        4
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 20,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0212",
+      "twice_spins": [
+        6,
+        1,
+        2,
+        3
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0213",
+      "twice_spins": [
+        6,
+        1,
+        3,
+        2
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0214",
+      "twice_spins": [
+        6,
+        1,
+        4,
+        1
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 20,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0215",
+      "twice_spins": [
+        6,
+        1,
+        5,
+        0
+      ],
+      "twice_k": [
+        5
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0216",
+      "twice_spins": [
+        6,
+        2,
+        0,
+        4
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0217",
+      "twice_spins": [
+        6,
+        2,
+        1,
+        3
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0218",
+      "twice_spins": [
+        6,
+        2,
+        2,
+        2
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 27,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0219",
+      "twice_spins": [
+        6,
+        2,
+        3,
+        1
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0220",
+      "twice_spins": [
+        6,
+        2,
+        4,
+        0
+      ],
+      "twice_k": [
+        4
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0221",
+      "twice_spins": [
+        6,
+        3,
+        0,
+        3
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0222",
+      "twice_spins": [
+        6,
+        3,
+        1,
+        2
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0223",
+      "twice_spins": [
+        6,
+        3,
+        2,
+        1
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 24,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0224",
+      "twice_spins": [
+        6,
+        3,
+        3,
+        0
+      ],
+      "twice_k": [
+        3
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0225",
+      "twice_spins": [
+        6,
+        4,
+        0,
+        2
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0226",
+      "twice_spins": [
+        6,
+        4,
+        1,
+        1
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 20,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0227",
+      "twice_spins": [
+        6,
+        4,
+        2,
+        0
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 15,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0228",
+      "twice_spins": [
+        6,
+        5,
+        0,
+        1
+      ],
+      "twice_k": [
+        1
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0229",
+      "twice_spins": [
+        6,
+        5,
+        1,
+        0
+      ],
+      "twice_k": [
+        1
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 12,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0230",
+      "twice_spins": [
+        6,
+        6,
+        0,
+        0
+      ],
+      "twice_k": [
+        0
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 7,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    }
+  ],
+  "nonzero_volume_basis_states": 190,
+  "maximum_singlet_dimension": 4,
+  "maximum_magnetic_m0_dimension": 44,
+  "equal_weight_closed_rs_mean": 0.35971729033962446,
+  "equal_weight_closed_al_mean": 0.17985864516981223,
+  "checks_max_absolute_residual": {
+    "orthogonality": 4.440892098500626e-16,
+    "closure": 3.3306690738754696e-16,
+    "recoupling": 3.552713678800501e-15,
+    "hermiticity": 1.7763568394002505e-15,
+    "invariant_subspace": 3.164135620181696e-15,
+    "casimir": 1.0658141036401503e-14,
+    "four_valent_closure": 3.552713678800501e-15,
+    "volume_root_projection": 0.0,
+    "independent_q": 2.220446049250313e-15
+  },
+  "validation": "All-block singlet and scalar checks; independent sparse local-spin q012 per unordered pattern at every K; additional oscillator/dense-tensor and magnetic-space spectral-root checks through K=4.",
+  "archive": "operators_k6.npz",
+  "archive_bytes": 81639,
+  "archive_sha256": "5dde52cb5d9c1d9a6238c926111bd09f179ade06c71085f0114046751c4f955b",
+  "states_csv": "states_k6.csv",
+  "elapsed_seconds": 1.3595046249974985
+}

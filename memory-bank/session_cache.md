@@ -1,6 +1,6 @@
 # Session Cache
 
-*Last Updated: 2026-10-08 15:53:57 IST*
+*Last Updated: 2026-10-08 23:21:44 IST*
 
 ## Overview
 - 2026-10-08 T9 calculation close: Added the four-face $J_{\mathrm{in}}=1$ $P(q,S)$ calculation by two methods through $q=160$, method and coefficient checks, temperature plots, and the finite-temperature support result. Full two-copy reduced-state blocks, entropy, and geometry remain open; see [session record](sessions/2026-10-08-j1-spin-distribution.md).
@@ -88,3 +88,10 @@ T9 owns all thermal/TFD state construction and physical study. Its five complete
 - Cloud checks recorded Rust 1.99/Cargo, NumPy/SciPy, release binaries, n=4 CLI and T5e smoke checks, and arXiv HTTP 200. Its Rust suite had one numerical regression failure (`experiment::tests::n4_sign_matches_python`; 18 other tests passed). Treat that as cloud-host evidence until rerun locally.
 - 2026-10-02 follow-up: pushed the session record as `d0f1e97`, then pulled `9602c98`. A read-only memory-bank audit used the integrated rules. This update reconciled checkout metadata and added October 2 edit chunks; task-registry schema drift and the rules filename/title mismatch remain. T1a/T3c remain open; the FL/F† discussion made no implementation change. Continue with Appendix D Eqs. 47–51 when requested.
 - 2026-10-02 documentation follow-up: committed and pushed individual task records, session transcript/write-up, technical notes, and edit chunks as `1f84fd2`; the checkout is clean and matches `origin/main`.
+
+## Volume-session close
+
+- Completed T1a four-face closed-basis RS/AL data through $K=12$; 10,549 states, compressed operators, independent checks and embedded plots. No $K=13$ result accepted after the user stopped extension.
+- Registered T10 as deferred/not started: complete fixed-$K$ catalogue across active $N$, with exact count checks and explicit volume-kernel/AL-sign distinctions.
+- New notation uses $K$ area and $J$ resultant spin; historical thermal notation remains mapped in the note.
+- Session history: [detailed summary](sessions/2026-10-08-volume-studies.md); [physics-only transcript](sessions/2026-10-08-volume-physics-transcript.md).

@@ -1,5 +1,5 @@
 # Task Registry
-*Last Updated: 2026-10-08 10:31:19 IST*
+*Last Updated: 2026-10-08 23:21:44 IST*
 
 ## Active Tasks
 | ID | Title | Status | Priority | Started | Dependencies | Details |
@@ -17,6 +17,7 @@
 | T9 | Thermal/TFD state construction and physical study | 🔄 IN PROGRESS | HIGH | 2026-10-06 | T3c | [Details](tasks/T9.md) |
 | T8a | Cluster algebra and coordinate charts | 🔄 IN PROGRESS | MEDIUM | 2026-10-04 | T8 | [Details](tasks/T8a.md) |
 | T8b | Positive cells and scattering regions | 🔄 IN PROGRESS | MEDIUM | 2026-10-04 | T8, T1, T2 | [Details](tasks/T8b.md) |
+| T10 | Exact closed-state catalogue at fixed area with variable face number | ⏸️ PAUSED | MEDIUM | Not started | T1a | [Details](tasks/T10.md) |
 
 ## Task Details
 

@@ -1,0 +1,468 @@
+{
+  "K": 2,
+  "basis_states": 20,
+  "blocks": [
+    {
+      "id": "b0000",
+      "twice_spins": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "twice_k": [
+        0
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 3,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0001",
+      "twice_spins": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "twice_k": [
+        1
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 4,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0002",
+      "twice_spins": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "twice_k": [
+        1
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 4,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0003",
+      "twice_spins": [
+        0,
+        2,
+        0,
+        2
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 3,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0004",
+      "twice_spins": [
+        0,
+        2,
+        1,
+        1
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 4,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0005",
+      "twice_spins": [
+        0,
+        2,
+        2,
+        0
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 3,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0006",
+      "twice_spins": [
+        1,
+        0,
+        1,
+        2
+      ],
+      "twice_k": [
+        1
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 4,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0007",
+      "twice_spins": [
+        1,
+        0,
+        2,
+        1
+      ],
+      "twice_k": [
+        1
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 4,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0008",
+      "twice_spins": [
+        1,
+        1,
+        0,
+        2
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 4,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0009",
+      "twice_spins": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "twice_k": [
+        0,
+        2
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 6,
+      "all_faces_active": true,
+      "volume_eigenvalues": {
+        "rs": [
+          0.30465319023639065,
+          0.30465319023639065
+        ],
+        "al": [
+          0.15232659511819532,
+          0.15232659511819532
+        ]
+      }
+    },
+    {
+      "id": "b0010",
+      "twice_spins": [
+        1,
+        1,
+        2,
+        0
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 4,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0011",
+      "twice_spins": [
+        1,
+        2,
+        0,
+        1
+      ],
+      "twice_k": [
+        1
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 4,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0012",
+      "twice_spins": [
+        1,
+        2,
+        1,
+        0
+      ],
+      "twice_k": [
+        1
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 4,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0013",
+      "twice_spins": [
+        2,
+        0,
+        0,
+        2
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 3,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0014",
+      "twice_spins": [
+        2,
+        0,
+        1,
+        1
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 4,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0015",
+      "twice_spins": [
+        2,
+        0,
+        2,
+        0
+      ],
+      "twice_k": [
+        2
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 3,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0016",
+      "twice_spins": [
+        2,
+        1,
+        0,
+        1
+      ],
+      "twice_k": [
+        1
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 4,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0017",
+      "twice_spins": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "twice_k": [
+        1
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 4,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "b0018",
+      "twice_spins": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "twice_k": [
+        0
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 3,
+      "all_faces_active": false,
+      "volume_eigenvalues": {
+        "rs": [
+          0.0
+        ],
+        "al": [
+          0.0
+        ]
+      }
+    }
+  ],
+  "nonzero_volume_basis_states": 2,
+  "maximum_singlet_dimension": 2,
+  "maximum_magnetic_m0_dimension": 6,
+  "equal_weight_closed_rs_mean": 0.030465319023639064,
+  "equal_weight_closed_al_mean": 0.015232659511819532,
+  "checks_max_absolute_residual": {
+    "orthogonality": 4.440892098500626e-16,
+    "closure": 1.1102230246251565e-16,
+    "recoupling": 4.440892098500626e-16,
+    "hermiticity": 5.551115123125783e-17,
+    "invariant_subspace": 2.220446049250313e-16,
+    "casimir": 1.7763568394002505e-15,
+    "four_valent_closure": 0.0,
+    "volume_root_projection": 1.38778123376394e-16,
+    "independent_q": 0.0
+  },
+  "validation": "All-block singlet and scalar checks; independent sparse local-spin q012 per unordered pattern at every K; additional oscillator/dense-tensor and magnetic-space spectral-root checks through K=4.",
+  "archive": "operators_k2.npz",
+  "archive_bytes": 17051,
+  "archive_sha256": "51ae53834b6cea49a9f31d632aac948eaff344800b69a1917849c58c09708d3d",
+  "states_csv": "states_k2.csv",
+  "elapsed_seconds": 0.1418104580079671
+}

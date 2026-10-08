@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-08",
+  "agent": "GPT 6.1 Sol",
+  "sources": [
+    {
+      "path": "results/fl_volume_area_results.json",
+      "sha256": "928b391c258d25ebb61e33d6fb4f0eb66c13f30812fd20119a3ae15fc6f1648b"
+    },
+    {
+      "path": "results/t5c_input_geometry_results.json",
+      "sha256": "c5f804be515481a26638bb297d1404f69a6d49eeada3253eb52c8f0492f85624"
+    }
+  ],
+  "physics_rerun": false,
+  "png_dpi": 300,
+  "figures": {
+    "regular_volume_area": "Raw RS/AL expectations, J=1..5",
+    "weighted_volume_area": "Geometry-matched means and intrinsic spreads, J=1..7"
+  },
+  "checks": [
+    "nonnegative finite means and variances",
+    "validated-sweep tensor agreement",
+    "area-label ranges",
+    "ratios agree with saved normalized means",
+    "standard deviations agree with saved variances and fixed conversion factors",
+    "geometry-matched RS/AL means and spreads coincide"
+  ],
+  "interpretation": "Zero-temperature single-copy FL states; finite-range results, not a classical-limit proof.",
+  "matplotlib": "3.10.8"
+}
