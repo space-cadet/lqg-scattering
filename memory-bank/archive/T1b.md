@@ -32,7 +32,7 @@ angle=0$ for real-plane states.
 ## Related Files
 - `positivity.py`
 - `real_plane_volume.py`
-- `t1b_real_plane_volume_results.json`
+- `results/t1b_real_plane_volume_results.json`
 - `memory-bank/implementation-details/volume-numerical-preliminaries.md`
 
 ## Issues and Blockers

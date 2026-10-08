@@ -1,7 +1,7 @@
 # Numerics dashboard LaTeX audit
 
 - Date: 2026-10-06
-- Target: `dashboard/index.html` served locally
+- Target: `code/dashboard/index.html` served locally
 - Scope: Runs, Figures, Performance, Volume Studies, Theory, run-detail panel, and interactive volume-study controls
 - Status: dashboard page exercise completed; final axis-label overlay changes were not rechecked in the browser
 

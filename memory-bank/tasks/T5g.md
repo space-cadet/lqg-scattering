@@ -30,7 +30,7 @@ Profile the Rust on-the-fly volume calculation at n=10–12 with triple-local re
 
 ## Related Files
 - `memory-bank/implementation-details/performance-benchmarks.md`
-- `rust/src/onthefly.rs`
+- `code/rust/src/onthefly.rs`
 
 ## Issues and Blockers
 - No current T5g profile or performance limit has been established.

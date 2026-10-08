@@ -1,10 +1,46 @@
 # Edit History
 
 *Created: 2026-09-19*
+*Last Updated: 2026-10-08 13:20:48 IST*
 
 ## File Modification Log
 
+### 2026-10-08
+
+#### 13:20:48 IST - T9: Record session-close physics discussion
+- Created `memory-bank/sessions/2026-10-08-physics-handoff.md` - Summarized the full session, research status, code organization, and next T9 calculations.
+- Created `memory-bank/sessions/2026-10-08-physics-transcript.md` - Preserved the physics discussion through the distinction between group action and group averaging.
+- Updated `memory-bank/sessions/2026-10-08-area-sector-writeup.md` - Added a concise record and links for the later nonzero-angular-momentum discussion.
+- Updated `memory-bank/tasks/T9.md` - Refreshed the update time and retained the unverified status of the derived nonzero-spin extension.
+- Updated `memory-bank/activeContext.md` - Refreshed the timestamp and linked the T9 handoff.
+- Updated `memory-bank/session_cache.md` - Refreshed the timestamp and added the session-close handoff to session history.
+- Updated `memory-bank/edit_history.md` - Added missing canonical chunk entries while retaining older records without matching chunks.
+
+#### 12:34 IST - T9: Organize project root and calculation records
+- Moved saved calculation JSON files from the root into `results/` and added an index.
+- Moved experiment logs into `notes/experiments/`, task prompts and the paper overview into `notes/task-specifications/`, and added a notes index.
+- Updated Python/Rust output locations, the T5e run recipe, dashboard input paths, and active Memory Bank references.
+- Flattened the dashboard application from `code/dashboard/dashboard/` to `code/dashboard/` so source paths and generated asset paths agree.
+- Added `.DS_Store` to `.gitignore`; retained the existing local cache and browser-state directories.
+
+#### 10:31:19 IST - T9/T1a/T3c: Document thermal sectors and organize project source
+- Created `notes/thermal-area-sectors.md` - Explained occupation coefficients, sector multiplicity, reduced-state construction, and the distinct canonical-area weighting.
+- Created `memory-bank/sessions/2026-10-08-thermal-area-coefficients-transcript.md` - Preserved the discussion through the multiplicity explanation, stopping before the write-up request.
+- Created `code/thermal/plot_vacuum_coefficients.py` and `figures/thermal-area-sectors/` - Added the exact four-face squeezed-vacuum plot, data, and run summary with normalization, mean, tail, and minimal-cutoff checks.
+- Moved Python, Rust, dashboard, Memory Bank tooling, shell workflows, and LaTeX sources/assets under `code/`; kept compiled paper PDFs under `paper/` and repaired path references and run guidance.
+- Updated T9 context and noted that fixed positive total-area Gibbs weights on unrestricted Fock space have a vacuum low-temperature limit, unlike the selected nonzero-$J$ squeezed family.
+
 ### 2026-10-06
+
+#### 20:52:40 IST - T9: Record two-copy intertwiner construction and derivation
+- Updated `memory-bank/implementation-details/T7-mathematical-background-and-calculations.md` - Preserved the earlier one-sided pilot and appended the selected two-copy FL squeeze, explicit $K_\pm,K_0$ definitions, $SU(1,1)$ disentangling derivation, occupation expansion, and open analytical work.
+- Updated `memory-bank/implementation-details/T7-physical-thermal-intertwiners.md` - Appended the T9 choice and clarified how it updates the earlier open observable choice while preserving the original pilot findings.
+- Updated `memory-bank/tasks/T9.md` - Recorded the selected state, transformed observables, derivation, and remaining reduced-state/Gibbs questions.
+- Updated `memory-bank/tasks.md` - Reflected the T9 state choice in the task description.
+- Updated `memory-bank/activeContext.md` and `memory-bank/session_cache.md` - Recorded the current T9 construction and next mathematical steps while retaining earlier pilot and project context.
+- Updated `memory-bank/progress.md` and `memory-bank/changelog.md` - Added the T9 state selection and clarified that no implementation or numerical result was produced.
+- Created `memory-bank/sessions/2026-10-06-t9-two-copy-construction-transcript.md` - Preserved the discussion, corrections, draft motivation, selected state, and pair-algebra derivation.
+- Created `memory-bank/edits/2026-10-06/205240-t9-two-copy-intertwiner-mathematics.md` - Added this canonical edit chunk.
 
 #### 12:55:19 IST - T7/T9: Consolidate the full TFD program under T9
 - Moved `memory-bank/tasks/T7.md` to `memory-bank/archive/T7.md` - Marked the former umbrella transferred to T9 with scientific work still open.
@@ -155,6 +191,21 @@
 
 ### 2026-10-02
 
+#### 15:11:00 IST - T1a/T3c: Deploy Scattering in LQG dashboard and verify live routes
+- Dispatched website workflow `36990851937` from host access for commit `824b2b8`; the run completed successfully.
+- Verified live Projects, Scattering landing page, dashboard, dashboard JSON, and SVG plot all return HTTP 200.
+- Opened the live Projects page and expanded “Quantum physics and research”; confirmed the Scattering in LQG entry and its links. The section is collapsed by default.
+- Opened the deployed dashboard in the live browser; all eight run records loaded and the area plot rendered.
+- Updated T1a/T3c task status, project volume notes, active context, session cache, and session record.
+
+#### 14:49:00 IST - T1a/T3c: Sweep positive FL volume against area and publish dashboard copy
+- Updated `fl_volume_validation.py` and created `fl_volume_area_results.json` - Recorded the regular-tetrahedron $J=1\ldots5$ positive RS/AL sweep with an independent direct-tensor comparison.
+- Updated `dashboard/data.json` and `dashboard/figures/fl-volume-area.svg` - Added area-sweep records and a static vector plot.
+- Updated `dashboard/index.html` - Added the volume-area figure and a graceful fallback when Observable Plot fails to load; clarified proxy versus positive-volume charts.
+- Copied dashboard and added project landing/listing entries in `/private/tmp/website-lqg-scattering/projects/scattering-in-lqg/` and `projects/index.html`; pushed isolated branch `codex/lqg-scattering-dashboard` at `824b2b8`.
+- Local browser verification passed for dashboard data and chart. GitHub Actions workflow dispatch and live route verification remain pending because the Actions API was unreachable and the browser session was signed out.
+- Updated the T1a/T3c task records and volume-operator, progress, active-context, session-cache, and session documentation.
+
 #### 14:19:29 IST - T1a/T3c: Reproduce and cross-check FL tetrahedron volumes
 - Created `fl_volume_validation.py` - Constructed the Eq. (38) state and independently evaluated positive RS/AL volumes from local spin-j tensor-product matrices.
 - Created `rust/examples/fl_volume.rs` - Added a Rust reproducer for the same fixed-area tetrahedron state.
@@ -283,61 +334,15 @@
 
 ### 2026-09-19
 
-#### 12:00 IST - T1: Python Pipeline Complete
-- Created `coherent_states.py` — U(N) coherent state construction
-- Created `positivity.py` — Positive Grassmannian cell tests
-- Created `manifold.py` — Geometric utilities
-- Created `rotation.py` — Rotation operators
+#### 19:58 IST - T5a: Triple-volume correlations -- per-triple chirality verdict landed
 
-#### 12:00 IST - T1a: Volume Operator at n=4
-- Updated `positivity.py` — BHT volume operator, n=4 eigenvalues computed
-
-#### 12:00 IST - T1b: Zero-Volume Result
-- Updated `positivity.py` — Zero volume confirmed on positive Grassmannian cell
-
-#### 14:47 IST - T2: EPJC Paper Uploaded
-- Created `paper/lqg-amplituhedron.tex` — LaTeX source
-- Created `paper/lqg-amplituhedron.pdf` — Compiled PDF
-- Created `paper/lqg-amplituhedron.bib` — Bibliography
-
-#### 15:10 IST - T3: Rust Port Kickoff
-- Created `rust/Cargo.toml` — Crate manifest
-- Created `rust/src/main.rs` — Binary entry point
-
-#### 15:01 IST - T3a: Fock Space (Rust)
-- Created `rust/src/fock.rs` — Schwinger boson Fock space basis
-- Created `rust/src/ops.rs` — Sparse u(N) operators
-
-#### 15:17 IST - T3b: Coherent States + Grassmannian (Rust)
-- Created `rust/src/coherent.rs` — U(N) Perelomov coherent states
-- Created `rust/src/grassmannian.rs` — Plücker embedding
-- Created `rust/src/lib.rs` — Module re-exports
-
-#### 15:51 IST - T3c: Volume Operator (Rust)
-- Created `rust/src/volume.rs` — BHT volume operator construction
-- Updated `rust/src/ops.rs` — Operator integration
-- Updated `rust/src/lib.rs` — Module re-exports
-
-#### 16:08 IST - T3c: Volume Operator Debug
-- Updated `rust/src/volume.rs` — Debug and optimization
-- Updated `rust/src/main.rs` — Benchmark scan improvements
-- Updated `rust/src/ops.rs` — Sparse matrix improvements
-
-#### 16:26 IST - T3c Complete: Volume Operator (Rust)
-- Updated `rust/src/volume.rs` — Final implementation
-- ORX agent committed: ee72845 "Rust Phase C: volume operator + Python verification at n=4"
-
-#### 16:26 IST - T3d Complete: Verify Rust vs Python at n=4
-- Machine precision match confirmed (rtol=1e-12)
-- ORX agent committed: c0908cf "Rust Phase D: verification + n=5..8 benchmarks"
-
-#### 16:26 IST - T3e Complete: Benchmarks n=5,6,7,8
-- All benchmarks completed. Max runtime 3.35s (n=6)
-- Zero-volume confirmed for all n on positive cell
-
-#### 16:26 IST - Manuscript Restructure
-- Updated `manuscript.md` — Published baseline → follow-up numerical work
-- ORX agent committed: d249e1c "Manuscript restructure: published baseline -> follow-up numerical work"
+- **Action**: Updated
+- **What**: Merged `main-orx` commit `0731eaf` ("T5a: triple-volume correlations at n=6,7 -- per-triple chirality verdict") into workspace `main` as merge commit `2583b6a`. Resolved add/add conflict in `memory-bank/implementation-details/experiments.md` by keeping both sides (workspace Notes block + orx's new T5a spec/results).
+- **Result sign-off**: sign-agreement 0.50-0.70 across seeds at n=6,7; cross-seed Pearson |q| ~ 0 -> **no global handedness, chirality is per-triple**. New `rust/src/onthefly.rs` engine (combinatorial rank indexing + rayon atomic-scatter matvec) handles dim-40M Fock spaces at n=7 in ~3 min; n=8 resource-bound at spec reference (~10 GB/vector), documented.
+- **Verification**: `cargo test --release` passes 19/19 (including `experiment::tests::n4_sign_matches_python` and 4 `onthefly` stored-vs-OTF engine cross-checks).
+- **Memory-bank**: `tasks.md` marks T5a done; `progress.md` T5 block updated with result summary.
+- **Origin**: orx session `chat_66108501-3931-4f5e-a250-1c797d93e50b` (project d2b5f4c2, "LQG-Grassmannian Phases 4-5 completion"). Monitor job orx-t5a-monitor retired after this run.
+<!-- project: github.com/space-cadet/lqg-scattering -->
 
 #### 18:45 IST - T5: Created Experiments program + git reconcile main-orx→main
 - Created `memory-bank/implementation-details/experiments.md` — roadmap for 7 experiments (T5a–T5g) probing the volume–positivity (achirality) boundary
@@ -348,12 +353,20 @@
 - Git: merged `main-orx` (Rust + manuscript) into `main` as `a24dac8`; rust/ tracked; compiles clean
 - Edit chunk: `memory-bank/edits/2026-09-19/184500-t5-experiments-program.md`
 
-#### 16:47 IST - Dashboard Creation
-- Created `dashboard/index.html` — Adapted from info-dash
-- Created `dashboard/data.json` — 8 LQG-Grassmannian runs
+#### 17:15 IST - Memory Bank Updates
+- Updated `memory-bank/progress.md` — T3c/T3d/T3e complete, T4 in progress
+- Updated `memory-bank/activeContext.md` — Focus on T4
+- Updated `memory-bank/session_cache.md` — Session end state
+- Updated `memory-bank/tasks.md` — All T3 subtasks complete
+- Updated `memory-bank/implementation-details/performance-benchmarks.md` — Actual results
+- Updated `memory-bank/edit_history.md` — Session chronology
 
 #### 16:51 IST - Dashboard Committed
 - Committed: ab26ff7 "Add LQG-Grassmannian numerics dashboard"
+
+#### 16:47 IST - Dashboard Creation
+- Created `dashboard/index.html` — Adapted from info-dash
+- Created `dashboard/data.json` — 8 LQG-Grassmannian runs
 
 #### 16:30 IST - Memory Bank Initialization
 - Created `memory-bank/projectbrief.md` — Project overview
@@ -371,13 +384,51 @@
 - Created `memory-bank/implementation-details/verification-protocol.md` — n=4 benchmark
 - Created `memory-bank/implementation-details/performance-benchmarks.md` — Timing results
 
-#### 17:15 IST - Memory Bank Updates
-- Updated `memory-bank/progress.md` — T3c/T3d/T3e complete, T4 in progress
-- Updated `memory-bank/activeContext.md` — Focus on T4
-- Updated `memory-bank/session_cache.md` — Session end state
-- Updated `memory-bank/tasks.md` — All T3 subtasks complete
-- Updated `memory-bank/implementation-details/performance-benchmarks.md` — Actual results
-- Updated `memory-bank/edit_history.md` — Session chronology
+#### 16:26 IST - T3c Complete: Volume Operator (Rust)
+- Updated `rust/src/volume.rs` — Final implementation
+- ORX agent committed: ee72845 "Rust Phase C: volume operator + Python verification at n=4"
+
+#### 16:26 IST - T3d Complete: Verify Rust vs Python at n=4
+- Machine precision match confirmed (rtol=1e-12)
+- ORX agent committed: c0908cf "Rust Phase D: verification + n=5..8 benchmarks"
+
+#### 16:26 IST - T3e Complete: Benchmarks n=5,6,7,8
+- All benchmarks completed. Max runtime 3.35s (n=6)
+- Zero-volume confirmed for all n on positive cell
+
+#### 16:26 IST - Manuscript Restructure
+- Updated `manuscript.md` — Published baseline → follow-up numerical work
+- ORX agent committed: d249e1c "Manuscript restructure: published baseline -> follow-up numerical work"
+
+#### 16:08 IST - T3c: Volume Operator Debug
+- Updated `rust/src/volume.rs` — Debug and optimization
+- Updated `rust/src/main.rs` — Benchmark scan improvements
+- Updated `rust/src/ops.rs` — Sparse matrix improvements
+
+#### 15:51 IST - T3c: Volume Operator (Rust)
+- Created `rust/src/volume.rs` — BHT volume operator construction
+- Updated `rust/src/ops.rs` — Operator integration
+- Updated `rust/src/lib.rs` — Module re-exports
+
+#### 15:17 IST - T3b: Coherent States + Grassmannian (Rust)
+- Created `rust/src/coherent.rs` — U(N) Perelomov coherent states
+- Created `rust/src/grassmannian.rs` — Plücker embedding
+- Created `rust/src/lib.rs` — Module re-exports
+
+#### 15:11:00 IST - T1a/T3c: Deploy Scattering in LQG dashboard and verify live routes
+- Dispatched website workflow `36990851937` from host access for commit `824b2b8`; the run completed successfully.
+- Verified live Projects, Scattering landing page, dashboard, dashboard JSON, and SVG plot all return HTTP 200.
+- Opened the live Projects page and expanded “Quantum physics and research”; confirmed the Scattering in LQG entry and its links. The section is collapsed by default.
+- Opened the deployed dashboard in the live browser; all eight run records loaded and the area plot rendered.
+- Updated T1a/T3c task status, project volume notes, active context, session cache, and session record.
+
+#### 15:10 IST - T3: Rust Port Kickoff
+- Created `rust/Cargo.toml` — Crate manifest
+- Created `rust/src/main.rs` — Binary entry point
+
+#### 15:01 IST - T3a: Fock Space (Rust)
+- Created `rust/src/fock.rs` — Schwinger boson Fock space basis
+- Created `rust/src/ops.rs` — Sparse u(N) operators
 
 #### 14:49:00 IST - T1a/T3c: Sweep positive FL volume against area and publish dashboard copy
 - Updated `fl_volume_validation.py` and created `fl_volume_area_results.json` - Recorded the regular-tetrahedron $J=1\ldots5$ positive RS/AL sweep with an independent direct-tensor comparison.
@@ -387,9 +438,19 @@
 - Local browser verification passed for dashboard data and chart. GitHub Actions workflow dispatch and live route verification remain pending because the Actions API was unreachable and the browser session was signed out.
 - Updated the T1a/T3c task records and volume-operator, progress, active-context, session-cache, and session documentation.
 
-#### 15:11:00 IST - T1a/T3c: Deploy Scattering in LQG dashboard and verify live routes
-- Dispatched website workflow `36990851937` from host access for commit `824b2b8`; the run completed successfully.
-- Verified live Projects, Scattering landing page, dashboard, dashboard JSON, and SVG plot all return HTTP 200.
-- Opened the live Projects page and expanded “Quantum physics and research”; confirmed the Scattering in LQG entry and its links. The section is collapsed by default.
-- Opened the deployed dashboard in the live browser; all eight run records loaded and the area plot rendered.
-- Updated T1a/T3c task status, project volume notes, active context, session cache, and session record.
+#### 14:47 IST - T2: EPJC Paper Uploaded
+- Created `paper/lqg-amplituhedron.tex` — LaTeX source
+- Created `paper/lqg-amplituhedron.pdf` — Compiled PDF
+- Created `paper/lqg-amplituhedron.bib` — Bibliography
+
+#### 12:00 IST - T1: Python Pipeline Complete
+- Created `coherent_states.py` — U(N) coherent state construction
+- Created `positivity.py` — Positive Grassmannian cell tests
+- Created `manifold.py` — Geometric utilities
+- Created `rotation.py` — Rotation operators
+
+#### 12:00 IST - T1a: Volume Operator at n=4
+- Updated `positivity.py` — BHT volume operator, n=4 eigenvalues computed
+
+#### 12:00 IST - T1b: Zero-Volume Result
+- Updated `positivity.py` — Zero volume confirmed on positive Grassmannian cell

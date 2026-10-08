@@ -6,7 +6,7 @@ Full derivations and worked calculation: [mathematical background](T7-mathematic
 
 ## Construction and scope
 
-`t7_geometry_thermal.py` implements the thermal-intertwiners draft's same-mode Bogoliubov squeeze of a normalized FL singlet seed on L and the vacuum on R. Four faces, total seed spin-area $J=1,2$ ($K_0=2J$ bosons), regular and unequal-skew input tetrahedra are tested at $\beta=3,4,5,8$, $\omega=1$. These are quantum states labelled by closed tetrahedron data; they are not an enumeration of classical shapes. Finite-$J$ fluctuations and zero-area face sectors remain present.
+`code/python/t7_geometry_thermal.py` implements the thermal-intertwiners draft's same-mode Bogoliubov squeeze of a normalized FL singlet seed on L and the vacuum on R. Four faces, total seed spin-area $J=1,2$ ($K_0=2J$ bosons), regular and unequal-skew input tetrahedra are tested at $\beta=3,4,5,8$, $\omega=1$. These are quantum states labelled by closed tetrahedron data; they are not an enumeration of classical shapes. Finite-$J$ fluctuations and zero-area face sectors remain present.
 
 For seed occupation $n$ and created pair occupations $r$, the exact coefficient is
 $$
@@ -47,7 +47,7 @@ At regular $J=2$, $\beta=5$, retained projection probability is $0.922702874$, l
 4. Extend cutoff and area coverage only for the selected construction; compare face correlations and positive volume with the same closed input geometry.
 5. T9 now owns state definitions, construction, and geometric/physical study; this note records the work transferred from the former T7 umbrella. Preserve completed T7a–T7e findings within their recorded oscillator/Gibbs scope; they do not establish the new physical thermal-polyhedron response.
 
-Artifacts: `t7_geometry_thermal.py`, `t7_geometry_thermal_results.json`. The manuscript has not been edited.
+Artifacts: `code/python/t7_geometry_thermal.py`, `t7_geometry_thermal_results.json`. The manuscript has not been edited.
 
 ## T9 follow-up — 2026-10-06
 

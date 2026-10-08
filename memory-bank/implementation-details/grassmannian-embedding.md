@@ -36,12 +36,12 @@ so the expectation of a positive quantum volume operator remains open. See
 
 ## Implementation
 
-### Python (`positivity.py`)
+### Python (`code/python/positivity.py`)
 - Direct computation of Plücker coordinates
 - Positivity checks for n=4
 - Analytical real-state cancellation of the signed triple-grasp mean
 
-### Rust (`rust/src/grassmannian.rs`)
+### Rust (`code/rust/src/grassmannian.rs`)
 - Sparse Plücker coordinate computation
 - Parallel positivity verification
 - Extension to n≥5
@@ -50,8 +50,8 @@ so the expectation of a positive quantum volume operator remains open. See
 
 | File | Purpose |
 |------|---------|
-| `rust/src/grassmannian.rs` | Plücker embedding, positivity tests |
-| `positivity.py` | Python reference implementation |
+| `code/rust/src/grassmannian.rs` | Plücker embedding, positivity tests |
+| `code/python/positivity.py` | Python reference implementation |
 | `paper/lqg-amplituhedron.pdf` | Published kinematic correspondence |
 
 ## Related documentation

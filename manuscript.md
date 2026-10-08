@@ -3,7 +3,7 @@
 **Status of this document.** The analytic correspondence between the
 kinematic space of $N$ massless particles and $U(N)$ coherent states in LQG was
 published in EPJC (Vaid & Suresh, arXiv:2208.10632;
-`paper/lqg-amplituhedron.tex` in this repository — the published baseline,
+`code/papers/lqg-amplituhedron.tex` in this repository — the published baseline,
 not modified here). What the publication *lacked* was numerical evidence:
 no coherent states were constructed, no volume operators evaluated, and no
 positivity tests performed. This document tracks the **new numerical
@@ -14,10 +14,10 @@ T5a magnetization and T5b perturbation sweeps were rerun with converged
 states and independent spot checks; their conclusions remain limited to
 the tested plane and reference families. The Rust baseline and $n=5$–$8$ scan have now been rerun with convergence checks; independent SciPy checks cover $n=4,5,7,8$.
 
-- **Python pipeline** (`grassmannian.py`, `coherent_states.py`,
-  `correspondence.py`, `positivity.py`, `classical_limit.py`): the full
+- **Python pipeline** (`code/python/grassmannian.py`, `code/python/coherent_states.py`,
+  `code/python/correspondence.py`, `code/python/positivity.py`, `code/python/classical_limit.py`): the full
   correspondence verified at $n = 4$.
-- **Rust port** (`rust/`): the same pipeline re-engineered for $n \geq 5$,
+- **Rust port** (`code/rust/`): the same pipeline re-engineered for $n \geq 5$,
   where the Fock-space dimension makes Python infeasible.
 - **Follow-up results under review**: signed triple-grasp expectations,
   selected perturbation responses, thermal correlators, and historical
@@ -95,7 +95,7 @@ $(\gamma\hbar)^{3/2}\langle\sqrt{|q_{ijk}|}\rangle$.
 
 Python's Fock basis generation scans $(K+1)^{2N}$ occupation tuples — infeasible
 for $n \geq 5$ ($7^{12} \approx 1.4 \times 10^{10}$ for $n = 6$, $K = 6$). The Rust port
-(`rust/`, sprs sparse matrices + rayon parallel matvec) replaces this with
+(`code/rust/`, sprs sparse matrices + rayon parallel matvec) replaces this with
 combinatorial stars-and-bars generation in $O(\mathrm{dim} \cdot 2N)$.
 
 **Corrected $n=4$ comparison** (`lqg verify4`). Historically, Rust and Python agreed
@@ -365,11 +365,11 @@ space.
 
 ## Appendix: Code
 
-- `paper/lqg-amplituhedron.tex` — published EPJC paper (baseline; frozen).
-- `grassmannian.py`, `coherent_states.py`, `correspondence.py`,
-  `positivity.py`, `classical_limit.py` — Python pipeline ($n = 4$),
+- `code/papers/lqg-amplituhedron.tex` — published EPJC paper (baseline; frozen).
+- `code/python/grassmannian.py`, `code/python/coherent_states.py`, `code/python/correspondence.py`,
+  `code/python/positivity.py`, `code/python/classical_limit.py` — Python pipeline ($n = 4$),
   each self-testing (`python3 <module>.py`).
-- `rust/` — Cargo project; `cargo test --release` (13 tests: Fock
+- `code/rust/` — Cargo project; `cargo test --release` (13 tests: Fock
   dimension, basis uniqueness, su(2) matrix elements, u(3) algebra,
   $J_i \cdot J_j$, closure, vacuum triviality, analytic triple product,
   volume-zero-on-real-planes, volume-nonzero-on-complex, momentum-map

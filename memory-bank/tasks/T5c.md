@@ -32,10 +32,10 @@ Compare positive RS/AL expectations of weighted Freidel–Livine tetrahedron sta
 ## Related Files
 - `memory-bank/implementation-details/T5c-flux-covariance-volume-comparison.md`
 - `memory-bank/implementation-details/volume-numerical-preliminaries.md`
-- `t5c_input_geometry_scan.py`
-- `t5c_weighted_shape_scan.py`
-- `t5c_degenerate_limits_scan.py`
-- `t5c_degenerate_limits_highJ_results.json`
+- `code/python/t5c_input_geometry_scan.py`
+- `code/python/t5c_weighted_shape_scan.py`
+- `code/python/t5c_degenerate_limits_scan.py`
+- `results/t5c_degenerate_limits_highJ_results.json`
 
 ## Issues and Blockers
 - Neither iterated limit is established. Physical regularization factors and dense-block methods above dimension 512 remain open. At J=10 the Rust calibrated RS cross-check differs from Python by about 4.4e-10; AL agrees.

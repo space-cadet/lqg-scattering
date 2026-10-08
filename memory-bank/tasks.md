@@ -1,5 +1,5 @@
 # Task Registry
-*Last Updated: 2026-10-06 20:52:40 IST*
+*Last Updated: 2026-10-08 10:31:19 IST*
 
 ## Active Tasks
 | ID | Title | Status | Priority | Started | Dependencies | Details |
@@ -34,8 +34,8 @@
 - ✅ Positive cell identification
 
 **Related Files**:
-- `coherent_states.py`
-- `positivity.py`
+- `code/python/coherent_states.py`
+- `code/python/positivity.py`
 - `manifold.py`
 - `rotation.py`
 
@@ -66,11 +66,11 @@ operator result; the numerical baseline has now been rerun to convergence.
 - 🔄 Replace dense diagonalization before evaluating active blocks above dimension 512
 
 **Related Files**:
-- `positivity.py`
-- `coherent_states.py`
-- `fl_volume_shape_scan.py`
-- `fl_volume_labels.py`
-- `fl_volume_shape_scan_log.md`
+- `code/python/positivity.py`
+- `code/python/coherent_states.py`
+- `code/python/fl_volume_shape_scan.py`
+- `code/python/fl_volume_labels.py`
+- `notes/experiments/fl_volume_shape_scan_log.md`
 - **Individual Task File**: [T1a details](tasks/T1a.md)
 
 **Notes**:
@@ -79,7 +79,7 @@ positive volume expectations. The new exact small-block RS/AL routines give
 nonzero volume on a paired spin-1/2 singlet even though $\langle q_{012}\rangle=0$.
 The EPJC Eq. (38) fixed-area state evaluated in Python is the Freidel–Livine (FL) state. FL names this fixed-area construction; Freidel–Speziale (FS) supplies the spinorial phase-space framework and is not a separate target state family here. The regular-tetrahedron sweep over $J=1\ldots5$ gives positive RS and AL volume expectations. A shared scale-aware numerical zero-mode cutoff reduces direct-tensor expectation differences to at most $1.67\times10^{-16}$; direct-tensor triple matrices agree within $2.8\times10^{-15}$. The Rust Eq. (38) example now matches the Python $J=2$ values at the displayed precision. The area-dependence plot is live in the dashboard published from website commit `824b2b8` (workflow `36990851937`); local shape and data assets were refreshed with the cutoff.
 
-At $J=2$, the equal-face-area scan evaluates 440 ordered shapes and finds the regular tetrahedron as the sampled RS and AL minimum. Its exact degenerate boundaries are excluded, so this does not establish a global minimum or explain the quantum behavior near classical zero-volume directions. The allowed-label script finds one strict positive assignment with two recoupling channels; shape sampling for unequal assignments remains open. The first shape-thumbnail version was deployed at `f0b6fdd`; the latest visual update, which reuses saved shape thumbnails and adds T5c previews, is website commit `9c6670c` (workflow `37125090987`). The earlier unsaved inline discrepancy remains unrecoverable. Physical prefactors, boundary-limit/fluctuation analysis, and broader validation remain open. See `implementation-details/volume-operator.md` and `fl_volume_shape_scan_log.md`.
+At $J=2$, the equal-face-area scan evaluates 440 ordered shapes and finds the regular tetrahedron as the sampled RS and AL minimum. Its exact degenerate boundaries are excluded, so this does not establish a global minimum or explain the quantum behavior near classical zero-volume directions. The allowed-label script finds one strict positive assignment with two recoupling channels; shape sampling for unequal assignments remains open. The first shape-thumbnail version was deployed at `f0b6fdd`; the latest visual update, which reuses saved shape thumbnails and adds T5c previews, is website commit `9c6670c` (workflow `37125090987`). The earlier unsaved inline discrepancy remains unrecoverable. Physical prefactors, boundary-limit/fluctuation analysis, and broader validation remain open. See `implementation-details/volume-operator.md` and `notes/experiments/fl_volume_shape_scan_log.md`.
 
 ---
 
@@ -97,9 +97,9 @@ At $J=2$, the equal-face-area scan evaluates 440 ordered shapes and finds the re
 - ✅ Evaluate positive RS and AL operators on a strictly positive real plane and a real plane outside the positive cell, with an independent local-spin tensor-product check.
 
 **Related Files**:
-- `positivity.py`
-- `real_plane_volume.py`
-- `t1b_real_plane_volume_results.json`
+- `code/python/positivity.py`
+- `code/python/real_plane_volume.py`
+- `results/t1b_real_plane_volume_results.json`
 - [Shared volume numerical preliminaries](implementation-details/volume-numerical-preliminaries.md)
 
 **Notes**:
@@ -126,9 +126,9 @@ result, not a claim about every real plane or embedding.
 - ✅ Published in EPJC
 
 **Related Files**:
-- `paper/lqg-amplituhedron.tex`
+- `code/papers/lqg-amplituhedron.tex`
 - `paper/lqg-amplituhedron.pdf`
-- `paper/lqg-amplituhedron.bib`
+- `code/papers/lqg-amplituhedron.bib`
 
 **Notes**:
 Paper is PUBLISHED. Do not modify. This is the baseline for all follow-up work.
@@ -157,13 +157,13 @@ Paper is PUBLISHED. Do not modify. This is the baseline for all follow-up work.
 - T3e: Benchmarks n=5,6,7,8 — ✅ CONVERGED RUN RECORDED; independent n=6 check open ([record](tasks/T3e.md))
 
 **Related Files**:
-- `rust/src/fock.rs`
-- `rust/src/ops.rs`
-- `rust/src/coherent.rs`
-- `rust/src/grassmannian.rs`
-- `rust/src/volume.rs`
-- `rust/src/main.rs`
-- `rust/src/lib.rs`
+- `code/rust/src/fock.rs`
+- `code/rust/src/ops.rs`
+- `code/rust/src/coherent.rs`
+- `code/rust/src/grassmannian.rs`
+- `code/rust/src/volume.rs`
+- `code/rust/src/main.rs`
+- `code/rust/src/lib.rs`
 
 **Notes**:
 Implemented by ORX agent (session chat_66108501, ~4h50m runtime). Historical
@@ -181,14 +181,14 @@ positive-cell result concerns the signed mean, not the positive volume.
 - ✅ Triple-grasp matrices constructed from sparse Schwinger generators
 - ✅ Positive RS and AL expectations implemented using active-sector spectral decomposition
 - ✅ Simple-state Rust results match Python and an independent tensor-product calculation
-- ✅ Execute rust/examples/fl_volume.rs and compare with the independently validated Python values using the shared numerical zero-mode cutoff
+- ✅ Execute code/rust/examples/fl_volume.rs and compare with the independently validated Python values using the shared numerical zero-mode cutoff
 - 🔄 Select physical regularization prefactors
 - 🔄 Replace dense diagonalization before evaluating active blocks above dimension 512
 
 **Related Files**:
-- `rust/src/volume.rs`
-- `rust/src/ops.rs`
-- `rust/src/fock.rs`
+- `code/rust/src/volume.rs`
+- `code/rust/src/ops.rs`
+- `code/rust/src/fock.rs`
 - **Individual Task File**: [T3c details](tasks/T3c.md)
 
 **Notes**:
@@ -217,9 +217,9 @@ or validate the Rust state-construction or volume code.
 - ✅ Grassmannian embedding: Rust == Python
 
 **Related Files**:
-- `rust/src/main.rs` (verify4 mode)
-- `coherent_states.py`
-- `positivity.py`
+- `code/rust/src/main.rs` (verify4 mode)
+- `code/python/coherent_states.py`
+- `code/python/positivity.py`
 
 **Notes**:
 The historical machine-precision match compared states with the same 15-term
@@ -247,7 +247,7 @@ value; the converged Rust run reproduces the independent value.
 - 🔄 Independently check the n=6 point and define a positive volume expectation
 
 **Related Files**:
-- `rust/src/main.rs` (scan mode)
+- `code/rust/src/main.rs` (scan mode)
 - `memory-bank/implementation-details/performance-benchmarks.md`
 
 **Notes**:
@@ -273,7 +273,7 @@ The converged complex-plane scan was completed on 2026-10-01. SciPy independentl
 **Related Files**:
 - `manuscript.md` (working draft)
 - `memory-bank/implementation-details/performance-benchmarks.md`
-- `dashboard/data.json`
+- `code/dashboard/data.json`
 
 **Notes**:
 The manuscript is a developed draft, not yet circulated. The red-team audit
@@ -292,13 +292,13 @@ truncation. See `memory-bank/implementation-details/red-team-audit.md`.
 **Roadmap**: `memory-bank/implementation-details/volume-positivity-studies.md`
 
 **Subtasks** (priority order):
-- T5a: Triple-volume correlations (n≥5; [record](archive/T5a.md)). **Base n=6,7 runs recorded complete**: sign-agreement 0.50–0.70 and small cross-seed correlations, consistent with per-triple chirality; modest sign-test power and n=8 resource limit remain. **Magnetization sweep rerun for one fixed plane**: all 10 states converged in 39–41 Taylor terms; four representative sectors matched independent SciPy exponentiation to at most 3.6e-16 in triple means. Sign-agreement stayed 0.50–0.60 for nonpolarized sectors. The one-plane, ten-triple sample does not establish a general handedness law. See `t5a_mag_notes.md` and `t5a_prime_notes.md`.
-- T5a′: Kinematic-polyhedron local chirality ([record](archive/T5a′.md)) — **recorded complete with caveats**. The reported n=5 local sign-agreement tracks all-triples across 10 incoming-pair channels; only 8 planes per channel, so sign-test power is limited. n=4 is planar/degenerate for this polyhedron test. Dense-expm validation found the shared 15-term Taylor reference was not converged (about 25 terms needed at K=6); retain the recorded explicit checks and caveats, and do not treat cross-engine agreement under a shared truncation as independent validation. Spec/results: `implementation-details/T6-minkowski-polyhedron.md`, `t5a_prime_notes.md`.
+- T5a: Triple-volume correlations (n≥5; [record](archive/T5a.md)). **Base n=6,7 runs recorded complete**: sign-agreement 0.50–0.70 and small cross-seed correlations, consistent with per-triple chirality; modest sign-test power and n=8 resource limit remain. **Magnetization sweep rerun for one fixed plane**: all 10 states converged in 39–41 Taylor terms; four representative sectors matched independent SciPy exponentiation to at most 3.6e-16 in triple means. Sign-agreement stayed 0.50–0.60 for nonpolarized sectors. The one-plane, ten-triple sample does not establish a general handedness law. See `notes/experiments/t5a_mag_notes.md` and `notes/experiments/t5a_prime_notes.md`.
+- T5a′: Kinematic-polyhedron local chirality ([record](archive/T5a′.md)) — **recorded complete with caveats**. The reported n=5 local sign-agreement tracks all-triples across 10 incoming-pair channels; only 8 planes per channel, so sign-test power is limited. n=4 is planar/degenerate for this polyhedron test. Dense-expm validation found the shared 15-term Taylor reference was not converged (about 25 terms needed at K=6); retain the recorded explicit checks and caveats, and do not treat cross-engine agreement under a shared truncation as independent validation. Spec/results: `implementation-details/T6-minkowski-polyhedron.md`, `notes/experiments/t5a_prime_notes.md`.
 - T5b: Perturbation response of the signed-mean proxy ([record](archive/T5b.md)) — corrected 13-point
   rerun has convergence assertions and fits α=0.496907 (n=4), 0.499104
   (n=5). Four n=4 and three n=5 points agree with independent SciPy
   exponentiation; generalization across planes remains open.
-- T5c: FL classical/quantum tetrahedron-volume comparison ([record](tasks/T5c.md)) — OPEN. The weighted input pilot checks regular and unequal-skew FL states through $J=7$; a nine-shape unequal-area grid covers $J=2,4$, with four selected points at $J=6$; a fixed-$x$ flat path covers $J=2,4,6,7$. Fixed geometry-matched ratios reach $0.953$ (regular) and $0.904$ (unequal skew) at $J=7$. Weighted closure and scalar area means pass. Individual vector means vanish by gauge invariance; shape recovery is checked through correlations, whose unequal-area finite-$J$ error reaches $0.0584$ at $J=7$. The exact flat boundary has nonzero normalized positive volume in the tested range; neither iterated limit is established. Under signs $(+,-,+,-)$, calibrated RS/AL curves coincide by four-valent closure and are not independent evidence. Physical regularization factors and broader shape/large-$J$ scans remain open. See [T5c implementation details](implementation-details/T5c-flux-covariance-volume-comparison.md) and the four `t5c_*_results.json` records.
+- T5c: FL classical/quantum tetrahedron-volume comparison ([record](tasks/T5c.md)) — OPEN. The weighted input pilot checks regular and unequal-skew FL states through $J=7$; a nine-shape unequal-area grid covers $J=2,4$, with four selected points at $J=6$; a fixed-$x$ flat path covers $J=2,4,6,7$. Fixed geometry-matched ratios reach $0.953$ (regular) and $0.904$ (unequal skew) at $J=7$. Weighted closure and scalar area means pass. Individual vector means vanish by gauge invariance; shape recovery is checked through correlations, whose unequal-area finite-$J$ error reaches $0.0584$ at $J=7$. The exact flat boundary has nonzero normalized positive volume in the tested range; neither iterated limit is established. Under signs $(+,-,+,-)$, calibrated RS/AL curves coincide by four-valent closure and are not independent evidence. Physical regularization factors and broader shape/large-$J$ scans remain open. See [T5c implementation details](implementation-details/T5c-flux-covariance-volume-comparison.md) and the four `results/t5c_*_results.json` records.
 - T5d: Cocycle phase and distance-to-cell response ([record](tasks/T5d.md)) — OPEN. A one-seed Rust pilot tests a Plücker cross-ratio phase; broader families and a separate positivity defect remain open.
 - T5e: Large-K semiclassics ([record](archive/T5e.md)) — complete for recorded families through K=24; target K=20–50 was not fully reached. ✅ DONE for the recorded families/range (27a761a, orx/t5e, Muse Spark 1.3). **The K^1.5 law is not supported by these runs.** Two families: (1) **vertex-scaled** (b-bosons on the measured triple, K=4+3s): ⟨q⟩ is linear in s (q/s=-1.059e-3 to 9 digits), so V~(K-4)^0.5 over the measured range. (2) **uniform M=0** (fixed shape, K=8..24): q=0 to solver precision (|q|<=9e-13). Classical V~r^3 would require ⟨q⟩~K^3; these tested families show ⟨q⟩~K^1 or approximately zero. This does not rule out other state families or higher K. **Caveat:** first run used Taylor cap 2K+4 and produced truncation-shifted results; recorded run uses cap 8K+50 plus a convergence assertion. T5a Rust-driver magnitudes at K=12..14 predate the fix and may be shifted. The on-the-fly engine was compared with the stored engine at K=8,12.
 - T5f: Amplituhedron kinematics — ownership transferred to T8b; [historical record](archive/T5f.md).
@@ -324,7 +324,7 @@ convergence evidence.
 
 ### T9: Thermal/TFD State Construction and Physical Study
 **Details:** [Task record](tasks/T9.md)
-**Description**: Own TFD state construction and physical/geometric study; completed child-study records T7a–T7e retain their IDs. The selected T9 state is the same-mode squeeze of conjugate FL intertwiners in both copies, with transformed geometric observables; reduced-state and Gibbs analysis remain open.
+**Description**: Own TFD state construction and physical/geometric study; completed child-study records T7a–T7e retain their IDs. The selected T9 state is the same-mode squeeze of conjugate FL intertwiners in both copies, with transformed geometric observables. Its coefficient-level reduced-state construction is documented; excited-$J$ sector matrices remain open. A fixed positive total-area Hamiltonian on unrestricted Fock space is excluded as a Gibbs generator by the different low-temperature limits.
 **Status**: 🔄 IN PROGRESS
 **Dependencies**: T3c
 **Subtasks**: Five completed child-study records (T7a–T7e); no additional subtask slots remain.
@@ -421,8 +421,8 @@ graph TD
 - ✅ Volume fluctuation Tr(rho_beta q^2) computed across beta spectrum
 
 **Related Files**:
-- `t7a_thermal.py`
-- `t7a_results.json`
+- `code/python/t7a_thermal.py`
+- `results/t7a_results.json`
 
 **Key Results** (n=4, dim=6435; n=5, dim=43758):
 - Tr(rho_beta q) = 0 exactly at all beta — confirms null signed mean in the tested thermal state

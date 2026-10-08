@@ -7,7 +7,7 @@ The Rust port reimplements the LQG-Grassmannian pipeline for n≥5 vertices, whe
 ## Crate Structure
 
 ```
-rust/
+code/rust/
 ├── Cargo.toml          # sprs, rayon, nalgebra dependencies
 └── src/
     ├── main.rs         # Binary entry, benchmark scan loop

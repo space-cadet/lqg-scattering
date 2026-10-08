@@ -30,9 +30,9 @@ Test whether a higher-valence vertex exhibits one shared handedness or whether s
 
 ## Related Files
 - `t5a_mag_sweep.py`
-- `t5a_mag_results.json`
-- `t5a_mag_notes.md`
-- `t5a_prime_notes.md`
+- `results/t5a_mag_results.json`
+- `notes/experiments/t5a_mag_notes.md`
+- `notes/experiments/t5a_prime_notes.md`
 - `memory-bank/implementation-details/volume-positivity-studies.md`
 
 ## Issues and Blockers

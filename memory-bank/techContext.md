@@ -1,75 +1,68 @@
 # Tech Context
 
-*Last Updated: 2026-10-02 12:22:16 IST*
+*Last Updated: 2026-10-08 10:28 IST*
 
 ## Technology Stack
 
 | Component | Technology | Purpose |
 |-----------|-----------|---------|
-| Rust implementation | Rust (sprs, rayon, nalgebra) | Production numerical code for n≥5 |
-| Python reference | Python 3 (NumPy, SciPy) | n=4 benchmark and validation |
-| Agent orchestration | OpenResearch (ORX) + Kimi K3 | Autonomous implementation and testing |
+| Rust implementation | Rust (`sprs`, `rayon`, `nalgebra`) | Sparse numerical engine |
+| Python reference | Python 3 (NumPy, SciPy) | State construction, n=4 validation, scans, and figure generation |
+| Dashboard | HTML, JavaScript, static JSON/SVG | Research result viewer |
+| Memory Bank tools | Node.js, `sql.js`, Express | Markdown parsers, searchable database, and viewer |
 | Version control | Git + GitHub | Source management |
-| Memory bank | mb-core v6.12 | Project knowledge base |
+| Memory Bank | mb-core v6.12 | Project knowledge base |
 
-## Rust Crate Structure
+## Source Layout
+
+Project source code is grouped under `code/`:
 
 ```
-rust/
-├── Cargo.toml
-└── src/
-    ├── main.rs          # Binary entry, benchmark scan loop
-    ├── lib.rs           # Module re-exports
-    ├── fock.rs          # Fock space basis (Schwinger bosons)
-    ├── ops.rs           # Sparse u(N) operators (J_+, J_-, J_z)
-    ├── coherent.rs      # U(N) Perelomov coherent states
-    ├── volume.rs        # Volume operator (BHT triple-grasp)
-    └── grassmannian.rs  # Plücker embedding, positivity tests
+code/
+├── dashboard/                 # Dashboard page, browser code, static inputs/assets
+├── memory-bank/database/      # Node.js parser and viewer source
+├── papers/                    # LaTeX manuscripts and their build assets
+├── python/                    # Python research calculations
+│   ├── dashboard_assets/      # Python dashboard data and figure builders
+│   └── project_paths.py       # Stable repository paths for Python scripts
+├── rust/                      # Rust crate, sources, and examples
+├── thermal/                   # Thermal coefficient figure and dependencies
+├── tools/                     # Shell run recipes
+└── project-paths.js           # Stable repository paths for Node.js scripts
 ```
 
-## Key Dependencies
-
-| Crate | Version | Purpose |
-|-------|---------|---------|
-| sprs | latest | Sparse matrix operations (essential for large Fock spaces) |
-| rayon | latest | Data-parallel iteration over basis states |
-| nalgebra | latest | Dense linear algebra for small matrices |
+Research notes and session history are in `notes/` and `memory-bank/`. Figures
+and derived presentation assets are in `figures/`; calculation results remain
+at the output paths recorded in their task notes.
 
 ## Python Reference Implementation
 
 | File | Purpose |
 |------|---------|
-| `coherent_states.py` | U(N) coherent state construction |
-| `positivity.py` | Positive Grassmannian cell tests |
-| `manifold.py` | Geometric utilities |
-| `rotation.py` | Rotation operators |
+| `code/python/coherent_states.py` | U(N) coherent-state construction |
+| `code/python/positivity.py` | Positive Grassmannian-cell tests and volume expectations |
+| `code/python/fl_volume_validation.py` | FL volume validation and independent local-spin comparison |
+| `code/python/t7_geometry_thermal.py` | Earlier small-sector thermal-intertwiner pilot |
+| `code/thermal/plot_vacuum_coefficients.py` | Exact squeezed-vacuum coefficient and sector-probability figure |
 
-## Quantum state construction
+Python entry-point scripts should be run from the repository root; see
+`code/README.md` for examples.
 
-The repository constructs its LQG Fock and coherent states in Python and
-Rust: Python reference routines live in `coherent_states.py` and
-`positivity.py`; Rust routines live in `rust/src/fock.rs`,
-`rust/src/coherent.rs`, and `rust/src/volume.rs`. A repository-wide search
-found no `ts-quantum` use or TypeScript state-construction dependency. The
-JavaScript memory-bank database and dashboard are not state-construction code.
+## Rust Crate
 
-## Build and Run
+The Cargo manifest is `code/rust/Cargo.toml`. Rust sources are in
+`code/rust/src/`, and example programs are in `code/rust/examples/`. The
+repository-root recipe for the T5e sweep is `code/tools/run_t5e.sh`.
 
-```bash
-cd rust
-cargo build --release
-cargo test --release          # Unit tests
-cargo run --release -- scan   # Benchmark n=4..8
-```
+## Shared calculation conventions
 
-## Development Environment
-
-- ORX agent session: chat_66108501 (running on port 4791)
-- Model: kimi/k3-agent
-- Workspace: ORX-managed git worktree
+The Python and Rust routines construct LQG Fock and coherent states, with
+independent local-spin checks for selected sectors. The JavaScript Memory Bank
+database and dashboard present project information; neither supplies state
+construction routines.
 
 ## Constraints
 
-- Fock space dimension grows combinatorially: dim = C(n+k-1, k) for k bosons
-- n=4: manageable in Python; n≥5 requires sparse matrices and parallelism
-- All numerical claims must pass red-team protocol before reporting
+- Fock-space dimensions grow combinatorially with the number of modes and bosons.
+- Positive-volume spectral calculations currently limit active dense blocks to dimension 512.
+- Numerical claims remain bounded by the specific states, ranges, controls, and checks recorded in their task notes.

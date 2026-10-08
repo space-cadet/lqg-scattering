@@ -30,8 +30,8 @@ Test the temperature dependence of the Gibbs-TFD two-sided correlator and compar
 - 2026-09-20: The low-temperature correlator showed an approximately $e^{-3\beta}$ onset; capped-basis results are quantitative for $\beta\ge1$.
 
 ## Related Files
-- `t7b_results.json`
-- `t7b_notes.md`
+- `results/t7b_results.json`
+- `notes/experiments/t7b_notes.md`
 - `memory-bank/implementation-details/thermofield-double-volume.md`
 
 ## Issues and Blockers

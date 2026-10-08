@@ -31,8 +31,8 @@ Test large-$K$ scaling for fixed-shape and vertex-scaled state families using co
 ## Related Files
 - `rust/src/bin/t5e.rs`
 - `t5e_fit.py`
-- `t5e_notes.md`
-- `t5e_results.json`
+- `notes/experiments/t5e_notes.md`
+- `results/t5e_results.json`
 - `memory-bank/implementation-details/volume-positivity-studies.md`
 
 ## Issues and Blockers

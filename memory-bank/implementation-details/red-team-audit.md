@@ -69,8 +69,8 @@ The original $n=5$–$8$ complex-plane magnitudes were superseded by the converg
 convergence flag; it now fails if the cap is reached, but the older runs
 did not record that flag.
 
-The corrected core Python path (`coherent_states.py` through
-`positivity.py`) was rerun at the canonical $n=4$ positive and complex
+The corrected core Python path (`code/python/coherent_states.py` through
+`code/python/positivity.py`) was rerun at the canonical $n=4$ positive and complex
 planes. It reproduces the independent complex-plane result
 $\langle q\rangle=-0.000827687168$ and
 $V_{\rm proxy}/\gamma^{3/2}=0.028769553$. It also rejects the real
@@ -94,7 +94,7 @@ All entries are signed-mean proxies, not positive quantum-volume expectations. T
 
 | Claim | Audit disposition |
 |---|---|
-| T5b $\sqrt{\epsilon}$ onset | The original sweep used a short Taylor cap. A corrected 13-point rerun with a convergence assertion gives proxy exponents $0.496907$ ($n=4$) and $0.499104$ ($n=5$); saved values are in `t5b_results.json`. Independent SciPy exponentiation agrees at four $n=4$ points and three $n=5$ points (largest $n=5$ proxy difference $4.2\times10^{-17}$). Universality across planes remains open. |
+| T5b $\sqrt{\epsilon}$ onset | The original sweep used a short Taylor cap. A corrected 13-point rerun with a convergence assertion gives proxy exponents $0.496907$ ($n=4$) and $0.499104$ ($n=5$); saved values are in `results/t5b_results.json`. Independent SciPy exponentiation agrees at four $n=4$ points and three $n=5$ points (largest $n=5$ proxy difference $4.2\times10^{-17}$). Universality across planes remains open. |
 | T5a magnetization sweep | The original 24-term run was unconverged. A corrected rerun converged in 39–41 terms; four sectors matched independent SciPy exponentiation within $3.6\times10^{-16}$ in all triple means. The 0.50–0.60 sign agreement is supported for that one plane, not established generally. |
 | T5a′ local-triple sign test | Limited sample count and a shared reference truncation. Its recorded observation is not a general handedness result. |
 | T5e semiclassical law | Converged recorded families reach $K=24$ and do not show a general $K^{3/2}$ proxy law. A classical-volume match is open. |

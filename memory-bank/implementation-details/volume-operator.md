@@ -91,7 +91,7 @@ positive volume.
 
 ## FL regular-tetrahedron check (updated 2026-10-03)
 
-The reproducible calculation in fl_volume_validation.py evaluates the EPJC
+The reproducible calculation in code/python/fl_volume_validation.py evaluates the EPJC
 Eq. (38) fixed-area FL coherent state for a closed regular tetrahedron
 ($N=4$, $J=2$, $K=4$), using unit spinors aligned with its face normals. The
 closure residual is zero at the input precision. With the project prefactor
@@ -116,17 +116,17 @@ $(+,-,+,-)$ for the listed triples, the results were:
 
 Both methods give positive volume in this tested case. These are
 project-normalized values, not finalized physical units. The Rust reproducer
-`rust/examples/fl_volume.rs` was built and run with the installed Rust 1.92
+`code/rust/examples/fl_volume.rs` was built and run with the installed Rust 1.92
 toolchain by directly invoking its binaries. The configured Cargo shim still
 points to a missing rustup-init. This evidence does not establish a
 family-wide or classical-limit claim.
 
 ## Fixed-area sweep and dashboard (2026-10-02)
 
-`fl_volume_validation.py --sweep` evaluates the regular-tetrahedron FL
+`code/python/fl_volume_validation.py --sweep` evaluates the regular-tetrahedron FL
 fixed-area state at $J=1,2,3,4,5$, with $A_{FL}/\ell_p^2=J$ in the paper's
-labeling. Dashboard records are in `dashboard/data.json`; the standalone
-vector chart is `dashboard/figures/fl-volume-area.svg`. The curve uses the
+labeling. Dashboard records are in `code/dashboard/data.json`; the standalone
+vector chart is `code/dashboard/figures/fl-volume-area.svg`. The curve uses the
 project routines' positive RS and AL expectations (project normalization,
 $\gamma=0.2375$):
 
@@ -153,12 +153,12 @@ area plot.
 
 ## FL equal-face-area shape scan at $J=2$ (updated 2026-10-03)
 
-`fl_volume_shape_scan.py` samples a closed equal-face-area normal family with
+`code/python/fl_volume_shape_scan.py` samples a closed equal-face-area normal family with
 coordinates $x$ (diagonal length) and bending angle $\varphi$. The grid has 20
 $x$ values and 22 nondegenerate angles, for 440 ordered samples. It excludes
 $x=0$, $x=1$, and $\varphi=180^\circ$. Exact records, protocol, and figure/deploy
-history are in `fl_volume_shape_scan_log.md` and
-`dashboard/fl-volume-shape-j2.json`.
+history are in `notes/experiments/fl_volume_shape_scan_log.md` and
+`code/dashboard/fl-volume-shape-j2.json`.
 
 In project-normalized units, sampled RS values range from
 $0.05077553170606508$ to $0.07482161375888345$, and AL values range from
@@ -189,7 +189,7 @@ volume validation or a boundary-limit study.
 
 ## Real-plane positive-volume check (2026-10-03)
 
-`real_plane_volume.py` builds normalized $N=4$, $K=6$ Perelomov states from the
+`code/python/real_plane_volume.py` builds normalized $N=4$, $K=6$ Perelomov states from the
 same non-collinear reference occupations for two explicit real planes: one in
 the strictly positive cell and one outside it (the latter has $M_{34}=-1$).
 Both states have real amplitudes and $\langle q_{012}\rangle=0$ to
@@ -204,11 +204,11 @@ The AL calculation uses regular-tetrahedron orientation signs $(+,-,+,-)$.
 Independent local-spin tensor-product matrices agree within
 $5.6\times10^{-17}$; the largest triple-matrix difference is
 $5.6\times10^{-16}$. Results are saved in
-`t1b_real_plane_volume_results.json`. These values establish nonzero positive
+`results/t1b_real_plane_volume_results.json`. These values establish nonzero positive
 volume for these two examples only; they do not establish a statement for
 every real-plane state or graph embedding.
 
-The dashboard shape figure is `dashboard/figures/fl-volume-shape-j2.svg`; it
+The dashboard shape figure is `code/dashboard/figures/fl-volume-shape-j2.svg`; it
 shows 11 representative tetrahedra in each RS and AL panel, 22 total. The
 latest visual update is website commit
 `9c6670c190e813470975f18037c1ed4a6ecea8bc`, deployed by workflow `37125090987`;
@@ -228,17 +228,17 @@ itself prove a minimum for these quantum operators.
 
 | File | Current role |
 |---|---|
-| `positivity.py` | Python signed-mean proxy and positive RS/AL expectations |
-| `rust/src/volume.rs` | Rust signed-mean proxy and positive RS/AL expectations |
-| `fl_volume_validation.py` | Eq. (38) FL tetrahedron state and independent local-spin tensor-product check |
-| `rust/examples/fl_volume.rs` | Rust reproducer for the same fixed-area tetrahedron state |
-| `real_plane_volume.py` | T1b positive RS/AL evaluations on two real-plane states |
+| `code/python/positivity.py` | Python signed-mean proxy and positive RS/AL expectations |
+| `code/rust/src/volume.rs` | Rust signed-mean proxy and positive RS/AL expectations |
+| `code/python/fl_volume_validation.py` | Eq. (38) FL tetrahedron state and independent local-spin tensor-product check |
+| `code/rust/examples/fl_volume.rs` | Rust reproducer for the same fixed-area tetrahedron state |
+| `code/python/real_plane_volume.py` | T1b positive RS/AL evaluations on two real-plane states |
 | `memory-bank/implementation-details/red-team-audit.md` | Numerical audit and current evidence |
 
 The positive routines are `rovelli_smolin_volume` and
 `ashtekar_lewandowski_volume` in both implementations. The exact small-state
-cross-check is recorded in `volume_prescription_results.json` and can be
-reproduced with `volume_prescription_demo.py`.
+cross-check is recorded in `results/volume_prescription_results.json` and can be
+reproduced with `code/python/volume_prescription_demo.py`.
 
 References: Rovelli and Smolin, [Discreteness of Area and Volume in Quantum Gravity](https://arxiv.org/abs/gr-qc/9411005), and Lewandowski, [Volume and Quantizations](https://arxiv.org/abs/gr-qc/9602035), distinguish the RS sum of positive triple contributions from the AL orientation-weighted sum. Ashtekar and Lewandowski, [Quantum Theory of Geometry II: Volume Operators](https://arxiv.org/abs/gr-qc/9711031), construct the AL operator. Regularization prefactors depend on the selected convention.
 
@@ -254,4 +254,4 @@ References: Rovelli and Smolin, [Discreteness of Area and Volume in Quantum Grav
 - [Verification protocol](./verification-protocol.md)
 - [Red-team audit](./red-team-audit.md)
 - [T1a Python validation task](../tasks/T1a.md) and [T3c Rust validation task](../tasks/T3c.md)
-- [FL shape-scan evidence log](../../fl_volume_shape_scan_log.md)
+- [FL shape-scan evidence log](../../notes/experiments/fl_volume_shape_scan_log.md)

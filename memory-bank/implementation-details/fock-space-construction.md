@@ -108,12 +108,12 @@ For $N=4$, the dimensions relevant to the T5c shape scan are:
 
 ## Implementation
 
-### Python (`coherent_states.py`)
+### Python (`code/python/coherent_states.py`)
 - Direct NumPy array construction
 - Explicit loop over occupation numbers
 - Suitable for n=4 only
 
-### Rust (`rust/src/fock.rs`)
+### Rust (`code/rust/src/fock.rs`)
 - `sprs::CsMat` sparse matrix representation
 - `rayon` parallel basis enumeration
 - Support for n up to 8+

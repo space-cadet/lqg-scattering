@@ -2,7 +2,7 @@
 
 *Created: 2026-10-06 12:28:49 IST*
 
-This note derives the calculation implemented in `t7_geometry_thermal.py` and explains its physical scope. The numerical artifact is `t7_geometry_thermal_results.json`. The companion [findings note](T7-physical-thermal-intertwiners.md) gives the shorter interpretation. The starting manuscript is [Thermal Intertwiners](../../paper/thermal-intertwiners/thermal-intertwiners.tex).
+This note derives the calculation implemented in `code/python/t7_geometry_thermal.py` and explains its physical scope. The numerical artifact is `t7_geometry_thermal_results.json`. The companion [findings note](T7-physical-thermal-intertwiners.md) gives the shorter interpretation. The starting manuscript is [Thermal Intertwiners](../../code/papers/thermal-intertwiners/thermal-intertwiners.tex).
 
 The result is an audit of the manuscript's thermal state and a separate conditional candidate. It does not establish a unique thermal ensemble, a dynamical Hamiltonian of LQG, a classical-limit theorem, or a wormhole geometry.
 
@@ -317,7 +317,7 @@ Run from the repository root with NumPy and SciPy available:
 
 ```sh
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 \
-  /opt/homebrew/bin/python3 t7_geometry_thermal.py \
+  /opt/homebrew/bin/python3 code/python/t7_geometry_thermal.py \
   --pair-cutoff 4 --betas 3 4 5 8 \
   --output t7_geometry_thermal_results.json > /tmp/t7-geometry-thermal.log 2>&1
 ```
@@ -330,13 +330,13 @@ Subsequent work would derive the selected ensemble, test additional geometric st
 
 ## Source map
 
-- `coherent_states.py`: Schwinger ladder actions and occupation representation.
-- `fl_volume_validation.py`: normalized FL seed, regular normals, spinor conversion and project conventions.
-- `t5c_input_geometry_scan.py`: outward face-area vectors from vertices.
-- `positivity.py`: flux dot products, signed triple action and positive RS/AL reference routines.
-- `t7_geometry_thermal.py`: sector/projector assembly, exact squeezed coefficients, candidate projection, moments, entropy and validations.
+- `code/python/coherent_states.py`: Schwinger ladder actions and occupation representation.
+- `code/python/fl_volume_validation.py`: normalized FL seed, regular normals, spinor conversion and project conventions.
+- `code/python/t5c_input_geometry_scan.py`: outward face-area vectors from vertices.
+- `code/python/positivity.py`: flux dot products, signed triple action and positive RS/AL reference routines.
+- `code/python/t7_geometry_thermal.py`: sector/projector assembly, exact squeezed coefficients, candidate projection, moments, entropy and validations.
 - `t7_geometry_thermal_results.json`: numerical evidence for this note.
-- `paper/thermal-intertwiners/thermal-intertwiners.tex`: manuscript background, thermal coherent-state proposal and appendices. Its interpretation is subject to the explicit constraint distinctions derived here.
+- `code/papers/thermal-intertwiners/thermal-intertwiners.tex`: manuscript background, thermal coherent-state proposal and appendices. Its interpretation is subject to the explicit constraint distinctions derived here.
 
 ## 11. T9 follow-up: squeeze two conjugate FL intertwiners
 

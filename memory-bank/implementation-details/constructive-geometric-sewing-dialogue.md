@@ -114,5 +114,5 @@ The next construction step is to make the sewing map explicit in the oscillator 
 
 ## Related files
 
-- The copied [thermal-intertwiners manuscript source](../../paper/thermal-intertwiners/thermal-intertwiners.tex) and its figures/PDFs are available in the repository; the draft-specific thermal state remains unimplemented.
+- The copied [thermal-intertwiners manuscript source](../../code/papers/thermal-intertwiners/thermal-intertwiners.tex) and its figures/PDFs are available in the repository; the draft-specific thermal state remains unimplemented.
 - [Four-edge pair-creation diagram](../../figures/fl_four_edge_pair_creation.svg) and [nearest-neighbor polygon diagram](../../figures/nearest_neighbor_polygon_edges.svg) are earlier visual aids. The latter depicts the restricted-sum operator; it is not the later three-factor triangle product or the sewn tetrahedral network. These root-level figures were untracked at the scan baseline and remain untouched by this documentation update.

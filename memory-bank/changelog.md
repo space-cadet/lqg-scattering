@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-08
+- Wrote the T9 occupation-sector and density-matrix note, saved a transcript ending immediately before the write-up request, and generated the exact four-face squeezed-vacuum figure, CSV, and summary. The excited-$J$ coefficient calculation remains open.
+- Organized Python, Rust, dashboard, Memory Bank tooling, shell workflows, and LaTeX source/assets beneath `code/`; retained compiled paper PDFs under `paper/` and updated active paths and run instructions.
+- Moved calculation JSON records into `results/`, experiment notes and task specifications into `notes/`, updated active references and script defaults, and flattened the dashboard files to `code/dashboard/`.
+- Recorded that a fixed positive total-area Hamiltonian on unrestricted Fock space cannot generate the selected nonzero-$J$ squeezed family at every temperature because the low-temperature limits differ.
+
 ## 2026-10-06
 - Selected the T9 two-copy squeezed FL construction $U_\beta(|J,\mathbf z\rangle_L\otimes|\overline{J,\mathbf z}\rangle_R)$ with transformed geometric observables; recorded the $SU(1,1)$ factorization and occupation expansion. Reduced-state and Gibbs analysis remain open; no implementation was added.
 - Consolidated the full thermal/TFD program under T9. Archived T7 as transferred with work open; retained completed T7a–T7e IDs as T9’s five child studies, updated their parent/dependency links, and kept new work at T9 parent level to respect the five-subtask cap.
@@ -15,7 +21,7 @@
 - Evaluated positive RS/AL volumes for strictly positive and off-cell real-plane states under T1b; added a reproducible driver and result JSON.
 - Applied a shared scale-aware zero-mode cutoff to Python and Rust spectral volume expectations, reran the $J=1\ldots5$ FL sweep and 440-point $J=2$ shape scan, and matched the Rust FL example to Python.
 - Recorded the $J=2$ FL equal-face-area scan of 440 ordered samples. Both sampled RS and AL minima occur at the regular tetrahedron; the Memory Bank states clearly that this is a finite-grid observation, not a global-minimum proof.
-- Added the shape-scan method, numerical ranges, two independent tensor-product checks, selected classical-volume comparisons, and open boundary/fluctuation questions to `fl_volume_shape_scan_log.md` and the volume-operator notes.
+- Added the shape-scan method, numerical ranges, two independent tensor-product checks, selected classical-volume comparisons, and open boundary/fluctuation questions to `notes/experiments/fl_volume_shape_scan_log.md` and the volume-operator notes.
 - Updated the website dashboard so representative tetrahedron thumbnails appear beside both RS and AL panels. Final website commit `f0b6fdd` was deployed by workflow `37033479554`; the live HTML and cache-busted SVG returned HTTP 200.
 - Recorded the $J=2$ strict positive face-spin assignment result (one assignment, two recoupling channels) and planned boundary scaling and shape sampling across unequal allowed assignments.
 - Added reusable T5c input and covariance tetrahedron previews, reused saved input thumbnails in the T1a shape figure, and deployed the visual update at website commit `9c6670c` (workflow `37125090987`). T5c remains open; the preview does not validate the state-to-geometry map.

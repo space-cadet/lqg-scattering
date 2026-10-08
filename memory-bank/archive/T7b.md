@@ -31,8 +31,8 @@ Construct the Gibbs TFD purification and verify its reduced state and L|R entang
 
 ## Related Files
 - `t7b_tfd.py`
-- `t7b_results.json`
-- `t7b_notes.md`
+- `results/t7b_results.json`
+- `notes/experiments/t7b_notes.md`
 - `memory-bank/implementation-details/thermofield-double-volume.md`
 
 ## Issues and Blockers

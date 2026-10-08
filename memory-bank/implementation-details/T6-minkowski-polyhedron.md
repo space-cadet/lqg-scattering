@@ -1,7 +1,7 @@
 # T6 — Minkowski Polyhedron Reconstruction for Vertex Chirality
 *Last Updated: 2026-10-05 10:49:54 IST*
 
-**Status:** Kinematic reconstruction is implemented in `minkowski.py` and used by the T5a′ pilot; the full quantum/state-volume correspondence remains open under T5c.
+**Status:** Kinematic reconstruction is implemented in `code/python/minkowski.py` and used by the T5a′ pilot; the full quantum/state-volume correspondence remains open under T5c.
 **Priority:** HIGH (sharpens the T5a chirality verdict; tests the kinematic↔quantum correspondence)
 **Created:** 2026-09-19
 
@@ -22,7 +22,7 @@ the same closed classical face data.
 
 Minkowski existence/uniqueness: facet normals <tg-math>u_i</tg-math> + areas <tg-math>A_i > 0</tg-math> satisfying closure <tg-math>\sum_i A_i u_i = 0</tg-math> determine a unique convex polytope.
 
-**Obstruction (Muse Spark, 2026-09-19):** on the real section, momenta <tg-math>p_i = \lambda_i \lambda_i^\dagger</tg-math> are future-null (code: `grassmannian.py` rejects past-directed, `E >= 0`), so <tg-math>\sum_i p_i \neq 0</tg-math> — no closure. And <tg-math>\langle J_i\rangle = 0</tg-math> identically (N_a/N_b conservation), so the state's own fluxes are degenerate.
+**Obstruction (Muse Spark, 2026-09-19):** on the real section, momenta <tg-math>p_i = \lambda_i \lambda_i^\dagger</tg-math> are future-null (code: `code/python/grassmannian.py` rejects past-directed, `E >= 0`), so <tg-math>\sum_i p_i \neq 0</tg-math> — no closure. And <tg-math>\langle J_i\rangle = 0</tg-math> identically (N_a/N_b conservation), so the state's own fluxes are degenerate.
 
 **Resolution (Deepak's insight, conceded by Muse Spark):** use the **all-incoming convention**. Assign <tg-math>\varepsilon_i = \pm 1</tg-math> (incoming/outgoing) and set
 
@@ -35,7 +35,7 @@ Then <tg-math>A_i n_i = \varepsilon_i \vec p_i</tg-math>, so <tg-math>\sum_i A_i
 ## Algorithm
 
 1. **Fix a channel** (the in/out assignment is extra input, not determined by the plane). For n=4: three channels (s: 12→34, t: 13→24, u: 14→23). For n=5: choice of the incoming pair.
-2. **Extract momenta** <tg-math>p_i</tg-math> from the plane via the existing spinor map (`grassmannian.py`).
+2. **Extract momenta** <tg-math>p_i</tg-math> from the plane via the existing spinor map (`code/python/grassmannian.py`).
 3. **Assign signs** <tg-math>\varepsilon_i</tg-math> per the chosen channel; compute <tg-math>(A_i, n_i)</tg-math> as above.
 4. **Verify closure** <tg-math>|\sum_i A_i n_i| < \text{tol}</tg-math> (guard against numerical drift).
 5. **Reconstruct the polyhedron** P from <tg-math>\{(A_i, n_i)\}</tg-math> via Minkowski. (Algorithm: this is a convex feasibility / least-squares problem — see "Implementation notes" below.)
@@ -67,9 +67,9 @@ For n=5,6 (small), either is fast. **Recommendation:** start with a scipy halfsp
 
 ## Files
 
-- Existing: `minkowski.py` (kinematic reconstruction + adjacency)
+- Existing: `code/python/minkowski.py` (kinematic reconstruction + adjacency)
 - New: `t6_kinematic_chirality.py` (the local-triple analysis)
-- Reuses: `grassmannian.py` (spinors/momenta), `coherent_states.py` (Perelomov), existing T5a sweep data
+- Reuses: `code/python/grassmannian.py` (spinors/momenta), `code/python/coherent_states.py` (Perelomov), existing T5a sweep data
 
 ## Related documentation
 

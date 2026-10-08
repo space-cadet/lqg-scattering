@@ -29,13 +29,13 @@ This directory contains your Memory Bank - a system for maintaining project know
 
 ### 2. Database Setup (if using database features)
 
-After initializing the memory bank, set up the database:
+After initializing the Memory Bank, set up the database from the repository
+root:
 
 ```bash
-cd memory-bank/database
-pnpm install
-./run-all.sh
-node query.js stats
+pnpm --dir code/memory-bank/database install
+bash code/memory-bank/database/run-all.sh
+pnpm --dir code/memory-bank/database exec node query.js stats
 ```
 
 ### 3. File Structure Reference
@@ -56,10 +56,12 @@ memory-bank/
 ├── tasks/                 # Individual task files
 ├── sessions/              # Session records
 ├── templates/             # File templates
-├── database/              # Database and parser scripts
+├── database/              # Runtime database files
 ├── implementation-details/ # Technical notes
 └── archive/               # Completed/archived items
 ```
+
+The parser and viewer source is in `code/memory-bank/database/`.
 
 ### Implementation details and shared mathematics
 
@@ -89,5 +91,5 @@ When using with an AI assistant:
 1. Fill in **projectbrief.md** with your project details
 2. Add your first tasks to **tasks.md**
 3. Define development standards in **.cursorrules**
-4. If using database: `cd memory-bank/database && pnpm install && ./run-all.sh`
+4. If using database, run `bash code/memory-bank/database/run-all.sh` from the repository root.
 5. Start working and update context files as you progress

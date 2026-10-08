@@ -11,7 +11,7 @@
 - **Cross-implementation verification** — Rust results must match Python at n=4 to f64 machine precision
 
 ### Code Organization
-- **Published paper is frozen** — `paper/lqg-amplituhedron.tex` must not be modified
+- **Published paper is frozen** — `code/papers/lqg-amplituhedron.tex` must not be modified
 - **Rust is the production implementation** — Python is reference/benchmark only
 - **Sparse-first design** — all operators use sprs::CsMat, dense only for small test matrices
 - **Parallel by default** — rayon for basis state iteration and matrix construction

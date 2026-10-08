@@ -31,8 +31,8 @@ Test the T5b complex plane perturbation in a fixed-K Perelomov-weighted TFD and 
 
 ## Related Files
 - `t7e_complex_tfd.py`
-- `t7e_results.json`
-- `t7e_notes.md`
+- `results/t7e_results.json`
+- `notes/experiments/t7e_notes.md`
 - `memory-bank/implementation-details/thermofield-double-volume.md`
 
 ## Issues and Blockers

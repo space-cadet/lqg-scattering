@@ -46,8 +46,8 @@ any order; the priority reflects physics-per-unit-effort, not dependency.
 | ID | Short name | One-line question | Primary code |
 |----|-----------|-------------------|--------------|
 | T5a | Triple-volume correlations (<tg-math>n\ge5</tg-math>) | One vertex handedness, or independent per-triple chirality? | Rust `volume.rs` (extend `scan`) |
-| T5b | Signed-mean proxy response <tg-math>V_{\rm proxy}(\varepsilon)</tg-math> | What exponent appears for a specified complex perturbation? | `t5b_perturbation.py` |
-| T5c | Flux-covariance geometry and volume comparison | How does a candidate tetrahedron reconstructed from <tg-math>G_{ij}=\langle\vec J_i\cdot\vec J_j\rangle</tg-math> compare with named quantum volume observables? | [pilot](../../t5c_covariance_probe.py); [shape scan](../../t5c_shape_recovery_scan.py); specification below |
+| T5b | Signed-mean proxy response <tg-math>V_{\rm proxy}(\varepsilon)</tg-math> | What exponent appears for a specified complex perturbation? | `code/python/t5b_perturbation.py` |
+| T5c | Flux-covariance geometry and volume comparison | How does a candidate tetrahedron reconstructed from <tg-math>G_{ij}=\langle\vec J_i\cdot\vec J_j\rangle</tg-math> compare with named quantum volume observables? | [pilot](../../code/python/t5c_covariance_probe.py); [shape scan](../../code/python/t5c_shape_recovery_scan.py); specification below |
 | T5d | Phase response / gauge-real locus | Which phase changes produce nonzero <tg-math>\langle q\rangle</tg-math>? | Rust `grassmannian.rs` (phase scan) |
 | T5e | Large-K semiclassics | Does <tg-math>V\sim K^{3/2}</tg-math> hold at <tg-math>K=20\text{–}50</tg-math>? | Rust (recorded range currently reaches K=24) |
 | T5g | Performance frontier | Where does sparse matvec stop being the bottleneck? | Rust profiling |
@@ -81,7 +81,7 @@ exponent for that family.
 
 This directly answers: *can chirality be switched on smoothly, or is there a barrier?*
 
-**Implementation.** The corrected `t5b_perturbation.py` completed the
+**Implementation.** The corrected `code/python/t5b_perturbation.py` completed the
 13-point $n=4,5$ sweep with a convergence assertion. Independent SciPy
 exponentiation checked four $n=4$ and three $n=5$ points. Extend this with
 multiple plane/reference controls before claiming a general onset law.
@@ -109,8 +109,8 @@ matrix relation across these equal-area samples is implied by the exact FL
 correlation formula in Eq. (72) of Freidel–Livine, and serves as a numerical
 check rather than a new law. Positive-volume spectra have not been computed
 for the boundary approaches. Results are in the
-[shape-scan data](../../t5c_shape_recovery_results.json) and its
-[driver](../../t5c_shape_recovery_scan.py); definitions and scope are in the
+[shape-scan data](../../results/t5c_shape_recovery_results.json) and its
+[driver](../../code/python/t5c_shape_recovery_scan.py); definitions and scope are in the
 [calculation specification](./T5c-flux-covariance-volume-comparison.md).
 
 **Deliverable.** Build weighted FL spinors from prescribed closed face
@@ -239,9 +239,9 @@ Pearson |q| across seeds ~ 0.
 C(32,16) = 601,080,390 (~10 GB per dense vector) — beyond an 8 GB node;
 n = 8 to be run on larger memory or with an out-of-core engine.
 
-**Engines.** n <= 6: stored sprs operators (`rust/src/ops.rs`,
-pivot scheme in `rust/src/experiment.rs`). n >= 7: on-the-fly engine
-(`rust/src/onthefly.rs`) — combinatorial rank indexing, atomic-scatter
+**Engines.** n <= 6: stored sprs operators (`code/rust/src/ops.rs`,
+pivot scheme in `code/rust/src/experiment.rs`). n >= 7: on-the-fly engine
+(`code/rust/src/onthefly.rs`) — combinatorial rank indexing, atomic-scatter
 parallel matvec, no stored operators.
 
 **Driver.** `cargo run --release --bin t5a -- <n> [seed ...]`
@@ -315,5 +315,5 @@ signed-q coherence over >= 10 seeds.
 - [Performance benchmarks](./performance-benchmarks.md)
 - [Thermofield-double program](./thermofield-double-volume.md)
 - [Open ideas](./open-ideas-park.md)
-- [Shape-scan evidence log](../../fl_volume_shape_scan_log.md)
+- [Shape-scan evidence log](../../notes/experiments/fl_volume_shape_scan_log.md)
 - [T5 registry and status](../tasks.md#t5-volume-positivity-numerical-studies)

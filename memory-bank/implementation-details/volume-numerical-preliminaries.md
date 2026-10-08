@@ -83,7 +83,7 @@ Do not infer a classical normal from the one-point flux of this state.
 
 The FL fixed-area states form a Perelomov U($N$) coherent-state family. This
 pilot constructs Eq. (38) directly with the singlet-pair creator. The generic
-exponential-state API in [coherent_states.py](../../coherent_states.py) is a
+exponential-state API in [code/python/coherent_states.py](../../code/python/coherent_states.py) is a
 different implementation/parameterization used by other calculations.
 FL identifies the fixed-area family above; FS names the spinorial phase-space
 framework. An FL numerical result does not validate an FS construction.

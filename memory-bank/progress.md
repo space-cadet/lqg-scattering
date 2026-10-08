@@ -1,6 +1,6 @@
 # Implementation Progress
 
-*Last Updated: 2026-10-06 20:52:40 IST*
+*Last Updated: 2026-10-08 12:34:27 IST*
 
 ## Active Tasks
 
@@ -71,14 +71,14 @@ state-specific definitions and exploratory covariance pilot are in
 `implementation-details/T5c-flux-covariance-volume-comparison.md`;
 common notation is in `implementation-details/volume-numerical-preliminaries.md`.
 
-**T5a evidence and caveat:** the n=6,7 base triple-correlation runs record sign-agreement 0.50–0.70 and small cross-seed correlations, consistent with per-triple chirality; n=8 remains resource-limited. The n=5 magnetization sweep was rerun with convergence assertions (39–41 terms) and four sectors matched independent SciPy exponentiation to at most 3.6e-16 in triple means. Its fixed-plane sign pattern remains one-plane evidence. T5a′ reports no increase in sign coherence for kinematic-polyhedron-local triples, with 8 planes per n=5 channel and weak per-plane sign-test power. See `t5a_mag_notes.md`, `t5a_prime_notes.md`, and `implementation-details/volume-positivity-studies.md`.
+**T5a evidence and caveat:** the n=6,7 base triple-correlation runs record sign-agreement 0.50–0.70 and small cross-seed correlations, consistent with per-triple chirality; n=8 remains resource-limited. The n=5 magnetization sweep was rerun with convergence assertions (39–41 terms) and four sectors matched independent SciPy exponentiation to at most 3.6e-16 in triple means. Its fixed-plane sign pattern remains one-plane evidence. T5a′ reports no increase in sign coherence for kinematic-polyhedron-local triples, with 8 planes per n=5 channel and weak per-plane sign-test power. See `notes/experiments/t5a_mag_notes.md`, `notes/experiments/t5a_prime_notes.md`, and `implementation-details/volume-positivity-studies.md`.
 
 ### T9: Thermal/TFD State Construction and Physical Study
 **Status:** 🔄 IN PROGRESS; exactly five completed child-study records, with new state-family and geometry work ongoing at parent level.
 
 T9 owns the entire thermal/TFD program. The former T7 umbrella was transferred and archived; T7a–T7e retain their IDs and completed evidence as T9 child studies. The new manuscript squeeze is implemented for small FL sectors. Combined dual-copy closure passes, ordinary closure on each copy fails, and a separately labelled double-singlet projection restores ordinary closure; its Gibbs interpretation remains unresolved. The initial pilot compares regular and unequal-skew four-face FL labels at $J=1,2$ over $\beta=3,4,5,8$, with pair cutoff 4 and cutoff-2 comparisons. The data are comparative evidence, not a reconstruction of classical geometry. See `tasks/T9.md`, `archive/T7.md`, the mathematical-background note, and the saved T7-named numerical artifacts.
 
-T9 follow-up: the selected state is $U_\beta(|J,\mathbf z\rangle_L\otimes|\overline{J,\mathbf z}\rangle_R)$, with transformed geometric observables. Its $SU(1,1)$ disentangling and occupation expansion are derived in the mathematical-background note. The two-copy reduced state, entanglement spectrum, geometric correlations, and Gibbs status remain uncalculated; continue the mathematics before implementation. The earlier one-sided pilot remains separate evidence for the draft's original state.
+T9 follow-up: the selected state is $U_\beta(|J,\mathbf z\rangle_L\otimes|\overline{J,\mathbf z}\rangle_R)$, with transformed geometric observables. The new write-up gives its occupation-basis coefficient structure, sector probabilities, and coefficient-level reduced-state construction, plus exact $J=0$ vacuum plots. The nonzero-$J$ sector matrices, entanglement spectrum, and geometric correlations remain uncalculated. For fixed positive $H_A=\lambda N_L/2$ on unrestricted Fock space, the Gibbs low-temperature limit is vacuum while the squeezed family returns its nonzero-$J$ input; that Hamiltonian is therefore excluded as its Gibbs generator over all temperatures. The earlier one-sided pilot remains separate evidence for the draft's original state. See `notes/thermal-area-sectors.md` and `tasks/T9.md`.
 
 ## Historical Implementation and Runs
 
@@ -95,8 +95,8 @@ T9 follow-up: the selected state is $U_\beta(|J,\mathbf z\rangle_L\otimes|\overl
 **Summary:** Real-plane states have zero signed triple-grasp mean, including
 planes outside the positive cell. At $N=4$, $K=6$, tested strictly positive
 and off-cell Perelomov states have nonzero positive RS and AL expectations.
-The AL values use regular-tetrahedron tangent signs; see `real_plane_volume.py`
-and `t1b_real_plane_volume_results.json`.
+The AL values use regular-tetrahedron tangent signs; see `code/python/real_plane_volume.py`
+and `results/t1b_real_plane_volume_results.json`.
 
 ### T2: Manuscript (EPJC Paper)
 **Completed:** 2026-09-19

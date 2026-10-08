@@ -192,7 +192,7 @@ data with LQG flux geometry.
 At fixed face-area fractions, the closed four-face tetrahedron shape has
 two degrees of freedom after common rotations are removed. One convenient
 pair is $d=|F_0+F_1|$ at unit total area and the bend angle between the
-$F_0,F_1$ and $F_2,F_3$ pairs. `t5c_input_geometry_scan.py` records the
+$F_0,F_1$ and $F_2,F_3$ pairs. `code/python/t5c_input_geometry_scan.py` records the
 complex cross-ratio of the four vertices projected from the unit
 circumsphere. The unequal-area driver also scans $(d,\varphi)$ and records
 the cross-ratio of the face-normal spinor rays.
@@ -214,7 +214,7 @@ $z_i=\sqrt{2a_i}\,\chi_i$, and checks the weighted closure matrix and the
 FL means $\langle j_i\rangle=Ja_i$. The classical target comes from those
 same face vectors. Full cross-ratios, chord lengths, covariance matrices,
 variances, and per-$J$ results are saved in
-`t5c_input_geometry_results.json`.
+`results/t5c_input_geometry_results.json`.
 
 Here $V_{\mathrm{cl,proj}}=(\gamma\hbar)^{3/2}V_{\mathrm{cl}}$ is the
 unit-total-area classical target in the same project units as the quantum
@@ -235,7 +235,7 @@ For the unequal case, the covariance Gram matrix closes to $4.4\times10^{-15}$
 at $J=7$, but its normalized pairwise-correlation error is still $0.0584$;
 its RMS covariance area fractions also differ from the input fractions.
 
-The nine-point unequal-area grid in `t5c_weighted_shape_scan.py` fixes
+The nine-point unequal-area grid in `code/python/t5c_weighted_shape_scan.py` fixes
 $(a_0,a_1,a_2,a_3)=(0.32,0.18,0.30,0.20)$ and samples three interior
 diagonals and three bend angles. The geometry-matched volume ratio ranges
 from $0.325$ to $0.529$ at $J=2$ and from $0.726$ to $1.020$ at $J=4$.
@@ -245,7 +245,7 @@ $3.8\times10^{-15}$. The grid shows finite-$J$ shape dependence, not a
 shape-uniform limit. Four selected grid points at $J=6$ have ratios from
 $0.881$ to $1.034$.
 
-The boundary driver `t5c_degenerate_limits_scan.py` holds
+The boundary driver `code/python/t5c_degenerate_limits_scan.py` holds
 $x=1/\sqrt{3}$ and takes $\varphi\to0$, where the face normals become
 coplanar. At the exact boundary, the classical volume is zero while the
 geometry-matched $\langle V\rangle/J^{3/2}$ values at $J=2,4,6,7$ are
@@ -254,7 +254,7 @@ are $0.00502,0.00350,0.00282,0.00261$. At $\varphi=0.05$, the classical
 project volume is $0.001338$, while the normalized quantum mean is nearly
 the boundary value; its ratio to the classical volume is $1.84$ at $J=2$
 and $2.98$ at $J=7$. These finite samples do not establish either
-iterated limit. Full records are in `t5c_degenerate_limits_results.json`.
+iterated limit. Full records are in `results/t5c_degenerate_limits_results.json`.
 
 ## Correlation geometry
 
@@ -333,9 +333,9 @@ positive RS/AL expectations.
 
 ## Current pilot and what it shows
 
-The saved pilot is [t5c_covariance_probe.py](../../t5c_covariance_probe.py);
+The saved pilot is [code/python/t5c_covariance_probe.py](../../code/python/t5c_covariance_probe.py);
 its complete machine-readable output is
-[t5c_covariance_probe_results.json](../../t5c_covariance_probe_results.json).
+[results/t5c_covariance_probe_results.json](../../results/t5c_covariance_probe_results.json).
 It tests the regular shape
 $(x,\varphi)=(1/\sqrt3,\pi/2)$ and one bent shape
 $(x,\varphi)=(1/2,\pi/3)$ at $J=1,2,3$. All values below are in project
@@ -367,10 +367,10 @@ an optimized reconstruction, or a general classical limit.
 ## Selected-shape recovery follow-up (2026-10-03)
 
 The follow-up driver is
-[t5c_shape_recovery_scan.py](../../t5c_shape_recovery_scan.py), with the full
+[code/python/t5c_shape_recovery_scan.py](../../code/python/t5c_shape_recovery_scan.py), with the full
 covariance matrices, spectra, reconstructed Gram residuals, and volume
 comparisons in
-[t5c_shape_recovery_results.json](../../t5c_shape_recovery_results.json).
+[results/t5c_shape_recovery_results.json](../../results/t5c_shape_recovery_results.json).
 It samples five interior labels from the same closed, equal-face-area family:
 the regular shape, two mirror-related bends at $x=0.5$,
 $\varphi=60^\circ$ and $120^\circ$, one shape at $x=0.65$,
@@ -446,13 +446,13 @@ tetrahedron beside the covariance-reconstructed candidate. Both are scaled
 for display; the candidate is aligned for visual comparison, so the preview
 does not encode an absolute orientation.
 
-`dashboard/tetrahedron_thumbnails.py` generates reusable static SVG assets:
+`code/python/dashboard_assets/tetrahedron_thumbnails.py` generates reusable static SVG assets:
 24 input-shape thumbnails and 84 covariance candidates (14 shape labels at
 $J=1,\ldots,6$). The T1a saved shape figure reuses the input thumbnails.
 Parameterized tetrahedron displays should show the corresponding shape
 thumbnail, and generated assets should be reused across displays. The source
-assets are under `dashboard/figures/t5c-input/` and
-`dashboard/figures/t5c-covariance/`.
+assets are under `code/dashboard/figures/t5c-input/` and
+`code/dashboard/figures/t5c-covariance/`.
 
 The updated dashboard, including the refreshed T1a shape SVG, is deployed at
 website commit `9c6670c190e813470975f18037c1ed4a6ecea8bc` (workflow
@@ -461,10 +461,10 @@ change T5c's numerical status.
 
 ### Weighted input-volume dashboard extension (2026-10-05)
 
-The local dashboard now loads `dashboard/t5c-input-volume.json`, assembled
+The local dashboard now loads `code/dashboard/t5c-input-volume.json`, assembled
 from the four scan result files by
-`dashboard/build_t5c_input_volume_data.py`. The helper plots in
-`dashboard/t5c-input-volume.js` add four views:
+`code/python/dashboard_assets/build_t5c_input_volume_data.py`. The helper plots in
+`code/dashboard/t5c-input-volume.js` add four views:
 
 - Regular and unequal-skew mean/classical ratios and intrinsic spread ratios
   over $J=1,\ldots,7$.
@@ -522,10 +522,10 @@ numerical-status claim.
 - [Grassmannian and coherent-state coordinates](./grassmannian-embedding.md)
 - [Numerical verification protocol](./verification-protocol.md)
 - [Red-team audit and claim limits](./red-team-audit.md)
-- [Shape-scan run log](../../fl_volume_shape_scan_log.md)
-- [Selected-shape covariance results](../../t5c_shape_recovery_results.json)
-- [Selected-shape covariance driver](../../t5c_shape_recovery_scan.py)
-- [Input-geometry weighted scan](../../t5c_input_geometry_scan.py) and [results](../../t5c_input_geometry_results.json)
-- [Unequal-area shape scan](../../t5c_weighted_shape_scan.py) and [results](../../t5c_weighted_shape_results.json), with [selected $J=6$ points](../../t5c_weighted_shape_j6_results.json)
-- [Flat-boundary scan](../../t5c_degenerate_limits_scan.py) and [results](../../t5c_degenerate_limits_results.json)
+- [Shape-scan run log](../../notes/experiments/fl_volume_shape_scan_log.md)
+- [Selected-shape covariance results](../../results/t5c_shape_recovery_results.json)
+- [Selected-shape covariance driver](../../code/python/t5c_shape_recovery_scan.py)
+- [Input-geometry weighted scan](../../code/python/t5c_input_geometry_scan.py) and [results](../../results/t5c_input_geometry_results.json)
+- [Unequal-area shape scan](../../code/python/t5c_weighted_shape_scan.py) and [results](../../results/t5c_weighted_shape_results.json), with [selected $J=6$ points](../../results/t5c_weighted_shape_j6_results.json)
+- [Flat-boundary scan](../../code/python/t5c_degenerate_limits_scan.py) and [results](../../results/t5c_degenerate_limits_results.json)
 - [T1a task record](../tasks/T1a.md) and [T3c task record](../tasks/T3c.md)

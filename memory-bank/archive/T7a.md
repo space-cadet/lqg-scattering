@@ -30,8 +30,8 @@ Compute areas, signed grasp, and grasp fluctuations in the Gibbs state on the n=
 
 ## Related Files
 - `t7a_thermal.py`
-- `t7a_results.json`
-- `t7a_notes.md`
+- `results/t7a_results.json`
+- `notes/experiments/t7a_notes.md`
 - `memory-bank/implementation-details/thermofield-double-volume.md`
 
 ## Issues and Blockers

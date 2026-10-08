@@ -31,8 +31,8 @@ Map positive-cell data to scattering invariants and physical regions, and assess
 ## Related Files
 - `memory-bank/tasks/T8.md`
 - `memory-bank/implementation-details/grassmannian-embedding.md`
-- `grassmannian.py`
-- `paper/lqg-amplituhedron.tex`
+- `code/python/grassmannian.py`
+- `code/papers/lqg-amplituhedron.tex`
 
 ## Issues and Blockers
 - Requires a scoped mapping question and stable geometric-observable conventions; no blocker to independent T8a work.

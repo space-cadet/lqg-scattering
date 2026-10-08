@@ -1,9 +1,11 @@
 # Active Context
 
-*Last Updated: 2026-10-06 20:52:40 IST*
+*Last Updated: 2026-10-08 13:20:48 IST*
 
 ## Current Focus
-**Primary Task:** T9 — construct thermal/TFD state families and study their physical geometry. The selected construction squeezes conjugate FL intertwiners in both copies and uses transformed geometric observables; mathematical reduction and numerical analysis are next.
+Session-close handoff: [sessions/2026-10-08-physics-handoff.md](sessions/2026-10-08-physics-handoff.md); exact [physics-only transcript](sessions/2026-10-08-physics-transcript.md). Latest discussion distinguishes area $J$, resultant spin $S$, and magnetic number $M$, derives a nonzero-spin reference-state extension, and clarifies group action versus averaging. The extension remains unimplemented and numerically unchecked.
+
+**Primary Task:** T9 — analyze the selected two-copy squeezed FL state. The coefficient, sector-probability, and density-matrix framework is written up with an exact vacuum illustration; the nonzero-$J$ sector calculation is next.
 **Supporting Tasks:** T1a Python volume numerics; T3c Rust volume implementation; T6 kinematic Minkowski geometry; T4 manuscript audit; T8 amplituhedron program.
 
 ## Active Tasks
@@ -16,12 +18,14 @@
 
 ## Project State
 - Published EPJC paper is the frozen baseline.
+- All source code, including LaTeX manuscript sources and build assets, is grouped under `code/`; compiled PDFs remain under `paper/`.
+- The project root retains the README and living manuscript. Calculation JSON files are organized under `results/`; experiment records, task specifications, and the published-paper overview are under `notes/`. Dashboard files now sit directly in `code/dashboard/`.
 - The task inventory has dedicated records for all 29 current registry IDs plus the transferred historical T5f and T7 records. Completed tasks are archived; active tasks remain under `tasks/`. Statuses and task relationships were reconciled against the current Memory Bank and full Git history.
 - T1b's positive-volume follow-up is complete for two $N=4$, $K=6$ real-plane states inside and outside the positive cell; both RS and AL expectations are nonzero and independently cross-checked.
 - Python and Rust implementations exist. The old n=4 comparison shared a truncated Taylor state. Corrected Rust scans now cover n=4..8; SciPy independently checks n=4,5,7,8.
 - `manuscript.md` contains results through T7e but needs corrected conclusions, caveats, independent review, and circulation.
-- At the start of the 2026-10-06 task-record audit, `main` and `origin/main` both pointed to `0a254849a5e12734ee32d9d8af74bd4309d17648`. Existing local numerical, dashboard, and Memory Bank work remains in the working tree; this audit preserved it while reconstructing task records from the full 79-commit history. Separately, the dashboard's math typesetting update was deployed from website commit `15f698f` (workflow `37286586717`) and verified live in the study and fixed-area sections. Chart SVG labels remain compact text; mobile view was not examined, per the user's direction. The earlier plot-artwork update is website commit `9c6670c`. Two pre-existing untracked Python cache directories remain under `__pycache__/` and `dashboard/__pycache__/`.
-- T7 was archived as the former umbrella; T9 now owns all thermal/TFD work. The earlier one-sided draft squeeze has an exact small-sector implementation: combined dual closure passes, ordinary per-copy closure fails, and separately labelled singlet postselection restores closure. T9's selected target is now $U_\beta(|J,z\rangle_L\otimes|\overline{J,z}\rangle_R)$ with transformed geometric observables. The $SU(1,1)$ disentangling and occupation expansion are derived, but the reduced state, entropy, correlations, and Gibbs status have not been calculated. See `tasks/T9.md`, the mathematical-background note, and the new T9 transcript.
+- At the start of the 2026-10-06 task-record audit, `main` and `origin/main` both pointed to `0a254849a5e12734ee32d9d8af74bd4309d17648`. Existing local numerical, dashboard, and Memory Bank work remains in the working tree; this audit preserved it while reconstructing task records from the full 79-commit history. Separately, the dashboard's math typesetting update was deployed from website commit `15f698f` (workflow `37286586717`) and verified live in the study and fixed-area sections. Chart SVG labels remain compact text; mobile view was not examined, per the user's direction. The earlier plot-artwork update is website commit `9c6670c`. Two pre-existing untracked Python cache directories remain under `__pycache__/` and `code/dashboard/__pycache__/`.
+- T7 was archived as the former umbrella; T9 now owns all thermal/TFD work. The selected target is $U_\beta(|J,z\rangle_L\otimes|\overline{J,z}\rangle_R)$ with transformed geometric observables. The $SU(1,1)$ factorization, occupation coefficients, sector probabilities, and coefficient-level partial-trace construction are documented. The excited-$J$ sector matrices, entropy, and correlations remain to be calculated. See `tasks/T9.md`, `notes/thermal-area-sectors.md`, and the two session records.
 - The constructive F-pair sewing discussion is recorded in [the dialogue note](implementation-details/constructive-geometric-sewing-dialogue.md) and [the session transcript](sessions/2026-10-04-geometric-construction-transcript.md). Triangle and tetrahedron sewing remain conceptual; metric shape and volume have not been validated, and no task ID was assigned.
 
 ## Current Decisions
@@ -32,7 +36,7 @@
 - Distinguish the signed-mean proxy from positive volume expectations. RS sums positive triple roots; AL takes the positive root after an embedding-signed triple sum. Both are now implemented in project normalization for active blocks up to dimension 512.
 - Set eigenvalues within $64\epsilon_{\rm mach}\max(1,\rho(|Q|))$ to zero in both Python and Rust positive-volume routines; this prevents solver-dependent positive contributions from exact kernel modes.
 - Do not mark numerical claims red-team reviewed without a documented protocol and per-claim evidence.
-- Under T9, study the user's selected two-copy squeezed FL state with transformed observables. This is the target construction; do not treat its reduced state as Gibbs without deriving that result. Keep full doubled-space transformed observables distinct from operators evaluated using only the left reduced state.
+- Under T9, study the user's selected two-copy squeezed FL state with transformed observables. Keep full doubled-space observables distinct from left-reduced-state expectations. A fixed positive total-area Hamiltonian on unrestricted Fock space cannot generate this family at all temperatures: the Gibbs limit is vacuum while the squeezed family returns its nonzero-$J$ input state.
 
 ## Next Actions
 1. Expand the weighted FL shape grid beyond the first area partition and track the face-normal and vertex-sphere cross-ratios alongside Euclidean metric data; treat normals as input labels and correlations as the quantum shape diagnostic.
@@ -42,6 +46,7 @@
 5. Extend the corrected T5a and T5b results across plane controls
   and run T5d with real off-cell controls.
 6. Complete T5c/T6 polyhedron reconstruction and controlled comparisons.
-7. Under T9, combine the selected state's amplitudes by final occupation sector and derive its left reduced density matrix, spectrum, and entropy.
-8. Under T9, calculate two-sided correlations and transformed geometric observables, then determine whether the reduced state has a Gibbs form; specify cutoffs before numerical implementation.
-8. Review corrected numerical artifacts before circulating the manuscript.
+7. Under T9, calculate the selected nonzero-$J$ amplitudes and combine coherent contributions within each final occupation sector.
+8. Form the sector matrices $C_qC_q^\dagger$ and evaluate the excited-state sector probabilities, spectrum, and entropy with explicit convergence controls.
+9. Calculate two-sided and transformed geometric observables; compare with only explicitly specified ensemble Hamiltonians.
+10. Review corrected numerical artifacts before circulating the manuscript.

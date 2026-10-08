@@ -11,7 +11,7 @@ Python is insufficient when both use the same truncated coherent state. The
 ### Step 1: Run Python Reference
 ```bash
 cd lqg-scattering
-python3 positivity.py
+python3 code/python/positivity.py
 ```
 Record: triple-grasp matrix properties, coherent state overlaps, Grassmannian
 Plücker coordinates, and the signed-mean proxy. Separately compute a specified

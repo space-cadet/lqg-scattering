@@ -30,7 +30,7 @@ Measure the signed-mean proxy response for a fixed imaginary perturbation of a p
 
 ## Related Files
 - `t5b_perturbation.py`
-- `t5b_results.json`
+- `results/t5b_results.json`
 - `memory-bank/implementation-details/volume-positivity-studies.md`
 
 ## Issues and Blockers

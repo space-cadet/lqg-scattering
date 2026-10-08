@@ -32,7 +32,7 @@ Assess whether cluster seeds and mutations provide a useful organization for the
 - `memory-bank/tasks/T8.md`
 - `memory-bank/implementation-details/grassmannian-embedding.md`
 - `memory-bank/sessions/2026-10-04-cluster-algebras-transcript.md`
-- `paper/lqg-amplituhedron.tex`
+- `code/papers/lqg-amplituhedron.tex`
 
 ## Issues and Blockers
 - No project-level benefit beyond known small Plücker examples has yet been established.

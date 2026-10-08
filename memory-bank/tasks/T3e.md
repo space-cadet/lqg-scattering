@@ -29,7 +29,7 @@ Complete the higher-valence Rust benchmark record and obtain an independent stat
 - 2026-10-01: Corrected converged signed-mean scans were recorded; SciPy checks cover n=5,7,8, leaving n=6 open.
 
 ## Related Files
-- `rust/src/main.rs`
+- `code/rust/src/main.rs`
 - `memory-bank/implementation-details/performance-benchmarks.md`
 
 ## Issues and Blockers

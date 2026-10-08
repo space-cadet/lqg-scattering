@@ -29,8 +29,8 @@ Determine how the signed triple grasp responds to leaving the gauge-real locus, 
 - 2026-10-06: Rust n=4, K=7 pilot uses $P=M_{01}M_{23}/(M_{02}M_{13})$ and $d_\phi=|\mathrm{Im}P|/|P|$. Both real controls vanish; the sampled small-phase branch is approximately linear and turns over at larger perturbation.
 
 ## Related Files
-- `rust/src/bin/t5d.rs`
-- `t5d_phase_scan_results.json`
+- `code/rust/src/bin/t5d.rs`
+- `results/t5d_phase_scan_results.json`
 - `memory-bank/implementation-details/volume-positivity-studies.md`
 
 ## Issues and Blockers

@@ -31,8 +31,8 @@ Restrict the triple-chirality analysis to facet triples meeting at a vertex of a
 ## Related Files
 - `minkowski.py`
 - `t5a_prime.py`
-- `t5a_prime_notes.md`
-- `t5a_prime_results.json`
+- `notes/experiments/t5a_prime_notes.md`
+- `results/t5a_prime_results.json`
 - `memory-bank/implementation-details/T6-minkowski-polyhedron.md`
 
 ## Issues and Blockers

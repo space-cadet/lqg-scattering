@@ -1,6 +1,6 @@
 # Project Brief
 
-*Last Updated: 2026-10-01 20:31 IST*
+*Last Updated: 2026-10-08 10:28 IST*
 
 ## Project Overview
 LQG-Scattering is a numerical physics project that interfaces Loop Quantum Gravity (LQG) spin networks with scattering amplitudes via Grassmannian geometry. The follow-up code computes signed triple-grasp means and a square-root-of-mean proxy on U(N) coherent states. Its relation to a positive quantum volume operator and classical volume is open.
@@ -31,28 +31,16 @@ The EPJC paper (lqg-amplituhedron) is published. Current work is follow-up numer
 - n=4..8 benchmark suite
 
 ## Project Structure
-```
-lqg-scattering/
-├── paper/
-│   ├── lqg-amplituhedron.tex      # EPJC published paper (DO NOT MODIFY)
-│   ├── lqg-amplituhedron.pdf      # Published PDF
-│   └── lqg-amplituhedron.bib
-├── rust/
-│   ├── Cargo.toml
-│   └── src/
-│       ├── main.rs                # Binary entry + benchmark scan
-│       ├── lib.rs                 # Module re-exports
-│       ├── fock.rs                # Fock space basis (Schwinger bosons)
-│       ├── ops.rs                 # Sparse u(N) operators
-│       ├── coherent.rs            # U(N) Perelomov coherent states
-│       ├── volume.rs              # Triple-grasp commutator and signed-mean proxy
-│       └── grassmannian.rs        # Grassmannian embedding
-├── coherent_states.py             # Python reference (n=4)
-├── positivity.py                  # Python positivity checks
-├── manifold.py                    # Python geometric utilities
-├── rotation.py                    # Python rotation operators
-└── memory-bank/                   # Project knowledge base
-```
+
+All executable source is organized in [`code/`](../code/README.md):
+
+- `code/python/` — Python research calculations and dashboard data builders.
+- `code/rust/` — Rust crate and example programs.
+- `code/dashboard/` — Dashboard application, browser code, and static inputs.
+- `code/memory-bank/database/` — Memory Bank parser/viewer package.
+- `code/papers/` — LaTeX sources, bibliography files, and manuscript assets.
+- `code/thermal/` and `code/tools/` — Thermal figure scripts and repeatable shell workflows.
+- `paper/` — compiled paper PDFs; `notes/`, `figures/`, and `memory-bank/` hold research notes, figures, and project records.
 
 ## Key Components
 - **Fock space**: Schwinger boson formalism, U(N) decomposition, basis enumeration
@@ -91,4 +79,4 @@ See `tasks.md` for current T4, T5, and T9 states. The T3 implementation and corr
 - ORX (OpenResearch): Agent-driven development and benchmarking
 
 ## Notes
-The EPJC paper (lqg-amplituhedron) is the published baseline. Current work extends it with numerical results for n≥5 that were computationally infeasible at publication time. The paper directory is frozen; all new work goes in rust/ and follow-up manuscript drafts.
+The EPJC paper (lqg-amplituhedron) is the published baseline. Current work extends it with numerical results for n≥5 that were computationally infeasible at publication time. The paper directory is frozen; executable research work belongs under `code/`, with follow-up manuscript drafts and results in their documented research locations.

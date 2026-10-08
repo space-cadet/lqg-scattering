@@ -31,8 +31,8 @@ Evaluate the Gibbs-TFD correlator $\langle q_Lq_R\rangle$ and compare it with si
 
 ## Related Files
 - `t7b_tfd.py`
-- `t7b_results.json`
-- `t7b_notes.md`
+- `results/t7b_results.json`
+- `notes/experiments/t7b_notes.md`
 - `memory-bank/implementation-details/thermofield-double-volume.md`
 
 ## Issues and Blockers
