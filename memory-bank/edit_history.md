@@ -1,11 +1,63 @@
 # Edit History
 
 *Created: 2026-09-19*
-*Last Updated: 2026-10-09 11:16:39 IST*
+*Last Updated: 2026-10-10 03:26:38 IST*
 
 ## File Modification Log
 
+### 2026-10-10
+
+#### 03:26:38 IST - T11: Close out extraction, binding and sewing records
+- Updated `code/python/lqg_scattering/` and `code/python/pyproject.toml` - Completed scoped extraction, runtime dependencies, full-number and closure APIs; preserved compatibility facades and validated builds, installation, and saved numerical parity during the session.
+- Created `code/python/closure_probes.py`, `code/python/binding_energy.py`, and `code/python/sewing_probes.py` - Added state-space probes, same-number singlet dissociation, and constructive edge sewing; kept face-site and sewn-network interpretations distinct.
+- Created `code/python/test_binding_energy.py`, `code/python/test_fixed_number_numerics.py`, and `code/python/test_sewing.py` - Verified analytic controls, eigenstate residuals, spin conservation, and independent tensor contraction checks; latest full suite passed 38 tests during the session.
+- Created `notes/binding-energy.md`, `notes/state-space-probes.md`, `notes/constructive-sewing-probe.md`, and related `results/` records - Preserved definitions, computed results, reproducibility, and scope limits.
+- Updated `memory-bank/tasks/T11.md` and `memory-bank/tasks.md` - Recorded full-number and binding milestones while retaining in-progress status; no new sewing task or accepted Hamiltonian design.
+- Updated `memory-bank/activeContext.md`, `memory-bank/progress.md`, `memory-bank/techContext.md`, and `memory-bank/changelog.md` - Replaced stale live extraction status and separated completed numerics from proposed sewn dynamics.
+- Updated `memory-bank/implementation-details/fock-space-construction.md` and `memory-bank/implementation-details/constructive-geometric-sewing-dialogue.md` - Added full-number and small-spin sewing implementation knowledge without rewriting the historical dialogue.
+- Created `memory-bank/sessions/2026-10-10-binding-and-constructive-sewing-summary.md` and `memory-bank/sessions/2026-10-10-binding-and-constructive-sewing-transcript.md` - Saved full handoff and physics-only transcript, including interpretation corrections.
+- Updated `memory-bank/session_cache.md` and `memory-bank/sessions/2026-10-10-python-library-and-backend.md` - Appended continuation records while preserving historical state.
+- Updated `memory-bank/edit_history.md` - Derived this closeout entry from its canonical text chunk; no database regeneration, new release, commit, or push.
+
+#### 01:14:19 IST - Cross-cutting: Record Python library and backend status
+- Created `code/python/lqg_scattering/` and rewired shared imports in `code/python/` - Added reusable basis, state, geometry, observable, and volume modules while retaining selected root files as compatibility facades and leaving study-specific logic in its drivers.
+- Created `code/python/pyproject.toml`, shared requirements files, and extraction checks - Added package metadata and separated pinned numerical dependencies from optional visualization dependencies; final package/build verification remains deferred.
+- Created `code/benchmarks/` and `results/python-vs-ts/` - Saved Python references, the `ts-quantum` adapter benchmark, matched K=2 results, and method/limitation documentation.
+- Updated `memory-bank/techContext.md` - Documented the `lqg_scattering` package, dependency split, compatibility facades, incomplete extraction, and limits of the saved Python-versus-TS benchmark.
+- Updated `memory-bank/tasks/T11.md` - Recorded the K=2-only matched backend comparison without changing T11's scientific scope or status.
+- Updated `memory-bank/tasks/T1a.md`, `memory-bank/tasks/T6.md`, and `memory-bank/implementation-details/` - Changed canonical implementation paths to package modules and retained the root facade roles.
+- Updated `memory-bank/activeContext.md`, `memory-bank/progress.md`, `memory-bank/session_cache.md`, and `memory-bank/changelog.md` - Recorded the Python-plus-Rust decision, incomplete extraction, deferred final testing/build, corrected T10 status, and next-session handoff.
+- Created `memory-bank/sessions/2026-10-10-python-library-and-backend.md` - Summarized the T10/T11 work carried forward, benchmark scope, extraction state, prior checks, and open research questions.
+- Updated `memory-bank/edit_history.md` - Added the canonical edit-chunk entry while preserving earlier dated records.
+
 ### 2026-10-09
+
+#### 21:58:28 IST - T11: Catalogue and publish saved numerical studies
+- Updated `code/dashboard/` - Added a searchable catalogue of 18 saved studies with plots, data, provenance, and downloadable records.
+- Created `code/python/dashboard_assets/build_research_catalogue.py` - Added reproducible assembly from repository results and notes.
+- Updated `code/dashboard/README.md` - Documented catalogue generation and local review.
+- Updated `memory-bank/` - Recorded dashboard coverage, deployment evidence, and continuation context while retaining T11's open larger-system scope.
+- Updated `memory-bank/tasks/T11.md` - Recorded website commit `8f70bc9`, merged website PR `#1`, and live verification of the 18 study records and Hamiltonian plots.
+- Updated `memory-bank/edit_history.md` - Refreshed the generated view from the canonical edit chunk.
+
+#### 20:56:04 IST - T11: Resolve the K=4 thermal-volume crossover
+- Modified `code/python/hamiltonian_studies.py` - Added dense K=4 Gibbs scans, energy-eigenspace volume summaries, and graph-difference/crossover figures.
+- Modified `results/hamiltonian-studies/` - Regenerated the 30-system outputs and added dense scan tables and five PDF/PNG figure pairs using qc-diff.
+- Updated `results/hamiltonian-studies/README.md` and `notes/hamiltonian-studies.md` - Recorded the reproduction environment, low-temperature analysis, and finite-size claim limits.
+- Updated `memory-bank/tasks/T11.md`, `memory-bank/tasks.md`, `memory-bank/activeContext.md`, `memory-bank/progress.md`, `memory-bank/session_cache.md`, and `memory-bank/changelog.md` - Recorded the K=4 crossover results and remaining scope.
+- Updated `memory-bank/sessions/2026-10-09-lattice-hamiltonian-session-summary.md` - Appended the follow-up results while preserving prior session history.
+
+#### 11:42:52 IST - T11: Implement the four-site Hamiltonian–volume pilot
+- Created `code/python/hamiltonian_studies.py` - Built the exact fixed-area singlet Hamiltonian, connected-triple RS volume, Gibbs observables, ground-state correlations, reduced-state entropy, and commutator calculations.
+- Created `results/hamiltonian-studies/` - Saved energy spectra, thermal and volume distributions, kinematic active-site counts, ground-state correlations, reduced-state data, commutator terms, and compressed basis/operator archives.
+- Created `results/hamiltonian-studies/README.md` - Documented generated artifacts and reproduction requirements.
+- Created `notes/hamiltonian-studies.md` - Recorded model conventions, numerical results, commutator evidence, and open scope.
+- Created `memory-bank/tasks/T11.md` - Registered the Hamiltonian–volume program and its completed first pilot milestone.
+- Updated `memory-bank/tasks.md` - Added T11 to the active registry and relationship graph.
+- Updated `memory-bank/activeContext.md`, `memory-bank/session_cache.md`, `memory-bank/progress.md`, and `memory-bank/changelog.md` - Set T11 as the current focus and recorded its results and remaining work.
+- Updated `memory-bank/sessions/2026-10-09-lattice-hamiltonian-session-summary.md` - Appended the pilot results without changing the earlier transcript.
+- Updated `notes/README.md`, `notes/volume-studies.md`, and `code/README.md` - Linked the Hamiltonian study and its run command.
+- Updated `memory-bank/edit_history.md` - Added this generated-view entry from the canonical edit chunk.
 
 #### 11:16:39 IST - T10: Complete and close out the variable-face RS catalogue
 - Updated `results/variable-n-volume/README.md` - Corrected escaped code spans and reproduction examples for readable rendering.

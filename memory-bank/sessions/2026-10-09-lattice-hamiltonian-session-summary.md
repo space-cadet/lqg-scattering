@@ -7,7 +7,7 @@ source_thread: 01a11c9e-6a5a-7d70-94e7-3cbdf32f63c5
 # Session summary: variable-face volume and lattice Hamiltonian research
 
 *Created: 2026-10-09 11:00:29 IST*
-*Last Updated: 2026-10-09 11:10:50 IST*
+*Last Updated: 2026-10-09 11:42:52 IST*
 
 [Recorded dialogue](2026-10-09-lattice-hamiltonian-transcript.md).
 
@@ -225,3 +225,29 @@ The user requested a separate volume-studies file because the thermal-sector not
 ## T10 catalogue closeout — 2026-10-09 11:16:39 IST
 
 Corrected escaped backticks in the data README so that code spans and reproduction instructions render normally. The saved operators, per-sector spectra and basis labels, provenance, readable tables, plots, and prior independent reconstruction checks satisfy the remaining acceptance criterion. T10 is complete for the declared $K=2,3,4$ RS catalogue. No calculations were rerun during this closeout; physical normalization and higher-valence AL orientation data remain unresolved.
+
+## T11 Hamiltonian pilot — 2026-10-09 11:36:56 IST
+
+The user authorized implementation of the Hamiltonian studies program. Registered T11 and completed its first numerical milestone: exact four-site fixed-$K$ singlet sectors at $K=2,3,4$, with complete-graph and periodic-ring hopping, $g=0$, and no-hopping, free-hopping, and $U/t=1,5,20$ controls. The volume includes all connected induced triples; on both four-site graphs every three-site subset is connected, so both use the same four RS terms.
+
+The driver saves energy spectra, ground-state summaries, finite-temperature and zero-temperature observables, volume and active-site distributions, edge–triple commutator norms, and compressed basis/operator matrices under `results/hamiltonian-studies/`. The singlet dimensions are 20, 50, and 105. At $\beta=0$, mean volumes reproduce the saved four-face RS means for these $K$ values. The onsite commutator residual is at most $2.3\times10^{-16}$; the triple and edge–triple decompositions reconstruct the projected commutator within $3.6\times10^{-15}$ and $7.2\times10^{-15}$. The four positive triple-root matrices agree within $8.4\times10^{-17}$ on this support.
+
+The $K=4$, $U/t=20$ complete-graph ground state has a gap near $0.00923$ and mean project-normalized volume near $0.03349$, compared with ring values near $0.35987$ and $0.28317$. This is a finite four-site observation, not a phase claim. Optional figures were skipped because Matplotlib is not installed. Larger systems, spin exchange, quenches, entanglement, graph changes, physical normalization, and the energy-basis TFD comparison remain open. See [T11](../tasks/T11.md) and [the result note](../../notes/hamiltonian-studies.md).
+
+### Additional ground-state observables — 2026-10-09 11:40:46 IST
+
+The pilot also records ground-subspace pair occupation/spin correlations and the site-0 reduced entropy and purity, using the zero-temperature Gibbs mixture when the ground state is degenerate. The site entropy is not presented as an entanglement measure. At $\beta=0$, the active-site distributions reproduce the exact kinematic counts: for $N=2,3,4$ they are $(0.30,0.60,0.10)$ at $K=2$, $(0.12,0.56,0.32)$ at $K=3$, and $(0.057143,0.457143,0.485714)$ at $K=4$; $N=1$ has zero weight. All probability sums and the singlet pair-correlation closure relation pass within $9\times10^{-16}$. New CSV outputs are `ground_state_correlations.csv`, `ground_state_reduced_state.csv`, and `kinematic_active_site_counts.csv` under `results/hamiltonian-studies/`.
+
+## T11 $K=4$ thermal-volume crossover follow-up — 2026-10-09 20:56:04 IST
+
+The complete- and ring-graph ground energies nearly overlap in the raw plot. Distinct line/marker styles now expose both series, and a separate difference plot shows $E_0(\mathrm{complete})-E_0(\mathrm{ring})$; the $K=2$ curves coincide to numerical precision.
+
+Reran the 30-system pilot and detailed scan with the `qc-diff` Conda environment (Python 3.10.19, NumPy 1.24.3, SciPy 1.15.3, SymPy 1.14.0, Matplotlib 3.10.8). For $K=4$, the dense scan covers no hopping and all $t=1$ controls at $\beta=0$, 601 log-spaced values from $10^{-3}$ through $10^3$, and $\beta\to\infty$ for both graphs. It writes 6,030 thermal rows and 409 degenerate-energy group rows, including mean volume, zero-volume probability, active-site count, and energy–volume covariance.
+
+The volume response is nonmonotonic in the no-hopping, $U/t=1,5,20$ controls; the free-hopping $U/t=0$ response rises to its ground-state value. At $U/t=5$, the peak is about $0.4419$ near $\beta/t=0.4$, then the complete-graph ground-state mean is $0.184330$ versus $0.336318$ for the ring. At $U/t=20$, the peak is about $0.4461$ near $\beta/t=0.089$; the complete graph has gap $0.0092257$, with a first excited doublet whose mean volume is $0.601103$, while the ground-state mean is $0.033487$ and $P(V=0)=0.931544$. The ring gap is $0.359870$ and its ground-state mean is $0.283172$. The low-lying groups remain near four active sites. These are finite-sector crossovers, not a phase-transition result.
+
+Added `k4_thermal_volume_scan.csv` and `k4_energy_resolved_volume.csv`, plus the dense thermal and low-energy volume figures in PDF and 300-dpi PNG. The study note and results README now describe the new data and use `conda run -n qc-diff` for reproduction. The broader T11 program remains open.
+
+## Numerics dashboard and website publication — 2026-10-09 21:58:28 IST
+
+Added a reproducible builder for a searchable dashboard catalogue covering 18 saved studies, including T11, complete closed-basis and variable-face volumes, T9 thermal records, and historical T5 pilots. Each record links to plots, saved data, provenance, and stated limitations. The website deployment branch included the latest five `main` commits; dashboard files were published in website commit `8f70bc9`, merged through PR [#1](https://github.com/space-cadet/website/pull/1), and verified at [the live numerics dashboard](https://quantumofgravity.com/projects/scattering-in-lqg/numerics/?v=f05b65c6364b6a7f5d735b96e1ce92c0f6c34618). Larger systems and physical volume calibration remain open.

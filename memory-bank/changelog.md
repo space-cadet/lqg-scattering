@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-10
+- Completed the scoped Python extraction and package validation; added full-number closure probes and same-number singlet detachment energies under T11.
+- Implemented and independently checked constructive F-pair triangle, tetrahedral, and joined exterior-boundary sewing. Preserved the physics transcript and handoff; sewn Hamiltonian and geometry remain open. Latest numerical suite: 38 tests passed; no new release.
+- Recorded the Python-plus-Rust backend decision and scoped K=2 Python-versus-TS evidence; documented the reusable `lqg_scattering` package and corrected implementation references. The Python extraction remains incomplete, with final tests and package-build validation deferred to the next session.
+
+## 2026-10-09
+- Registered T11 and implemented the four-site fixed-area singlet Hamiltonian–volume pilot for complete and ring graphs at $K=2,3,4$. Follow-up work adds a dense $K=4$ thermal-volume scan, energy-resolved low-level volume data, a graph-energy difference plot, and the low-temperature finite-size crossover analysis. Larger supports and physical volume normalization remain open.
+- Added a searchable 18-study numerics catalogue with saved data, provenance, and historical and Hamiltonian plots; deployed it to the website and verified the live dashboard.
+
 ## 2026-10-08
 - Wrote the T9 occupation-sector and density-matrix note, saved a transcript ending immediately before the write-up request, and generated the exact four-face squeezed-vacuum figure, CSV, and summary. The excited-$J$ coefficient calculation remains open.
 - Organized Python, Rust, dashboard, Memory Bank tooling, shell workflows, and LaTeX source/assets beneath `code/`; retained compiled paper PDFs under `paper/` and updated active paths and run instructions.

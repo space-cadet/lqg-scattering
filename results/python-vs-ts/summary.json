@@ -1,0 +1,172 @@
+{
+  "settings": {
+    "ks": [
+      2,
+      3,
+      4
+    ],
+    "repeats": 3,
+    "gamma": 0.2375,
+    "U": 5.0,
+    "t": 1.0,
+    "absolute_tolerance": 2e-09,
+    "matvec_iterations": 100,
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "python_environment": {
+    "python": "3.10.19",
+    "numpy": "1.24.3",
+    "scipy": "1.15.3",
+    "platform": "macOS-26.7-arm64-arm-64bit",
+    "blas": "{}",
+    "process_peak_rss_bytes": 122126336
+  },
+  "ts_environment": {
+    "node": "v22.22.0",
+    "platform": "darwin",
+    "arch": "arm64",
+    "ts_quantum_version": "0.9.0",
+    "built_package": "/Users/deepak/code/ts-quantum/dist/index.js",
+    "process_peak_rss_bytes": 170819584
+  },
+  "rows": [
+    {
+      "K": 2,
+      "dimension": 20,
+      "work": "construction",
+      "python_ms": 56.44666601438075,
+      "ts_ms": 84.33933400000001,
+      "ts_over_python": 1.494141991991398,
+      "max_abs_error": 7.771561172376096e-16
+    },
+    {
+      "K": 2,
+      "dimension": 20,
+      "work": "positive_root",
+      "python_ms": 0.18970799283124506,
+      "ts_ms": 49.52741700000024,
+      "ts_over_python": 261.07185185422003,
+      "max_abs_error": 1.6388322123942574e-17
+    },
+    {
+      "K": 2,
+      "dimension": 20,
+      "work": "complete_pipeline",
+      "python_ms": 0.7309170032385737,
+      "ts_ms": 387.01487499999985,
+      "ts_over_python": 529.4922313822229,
+      "max_abs_error": 1.1368683772161603e-13
+    },
+    {
+      "K": 2,
+      "dimension": 20,
+      "work": "complete_eigendecomposition",
+      "python_ms": 0.21179098985157907,
+      "ts_ms": 186.72154199999977,
+      "ts_over_python": 881.6311880446486,
+      "max_abs_error": 1.1368683772161603e-13
+    },
+    {
+      "K": 2,
+      "dimension": 20,
+      "work": "complete_sparse_apply_100",
+      "python_ms": 2.795167005388066,
+      "ts_ms": 11.06091699999979,
+      "ts_over_python": 3.9571578294528957,
+      "max_abs_error": 1.6653345369377348e-16
+    },
+    {
+      "K": 2,
+      "dimension": 20,
+      "work": "ring_pipeline",
+      "python_ms": 1.0416250152047724,
+      "ts_ms": 258.86491600000045,
+      "ts_over_python": 248.52025654271597,
+      "max_abs_error": 5.684341886080802e-14
+    },
+    {
+      "K": 2,
+      "dimension": 20,
+      "work": "ring_eigendecomposition",
+      "python_ms": 0.23020801017992198,
+      "ts_ms": 199.76595899999938,
+      "ts_over_python": 867.7628499715096,
+      "max_abs_error": 5.684341886080802e-14
+    },
+    {
+      "K": 2,
+      "dimension": 20,
+      "work": "ring_sparse_apply_100",
+      "python_ms": 3.2258330029435456,
+      "ts_ms": 8.662874999999985,
+      "ts_over_python": 2.6854691461384346,
+      "max_abs_error": 2.220446049250313e-16
+    }
+  ],
+  "source_sha256": {
+    "code/benchmarks/run_ts_benchmark.cjs": "de08a77e7520321f053f3faeb912b6247c01423ba593c4c6f772bf61ace6115a",
+    "code/benchmarks/summarize.py": "2da12d621eeba8a7f35b549e6a64e6eabbc55061b4d3d93bb43912698188bb03",
+    "code/benchmarks/ts_quantum_benchmark.ts": "13f12a32c19194c4b9489a15862afbf95f1c361d3739e844d8ad7a07a1649bf8",
+    "code/benchmarks/python_reference.py": "4e0635a6a162b919c532fd30e67e6fe027ff08f7fc07e43c7f6717a01de32a4a"
+  },
+  "ts_source_sha256": {
+    "src/index.ts": "7542ed5b3d9d7495fda9198474fb5f06bee2df4d82034b98755a5b7023a16b3a",
+    "src/core/hilbertSpace.ts": "ca2fd070c84249eab82a4bd69b1d12538425bf33fddfbf74a26a516dc4fe77a5",
+    "src/core/types.ts": "1edce6592b3ef2a7583295ce971c8bd6ecbfb9f713f47c2b8eff348981d114df",
+    "src/core/index.ts": "5b7e8a2362f99fb1f5c8d467cffd2de588f5b8e25c6595134bc8f49ac3bb29ca",
+    "src/operators/hamiltonian.ts": "9f466991ec8bc9db71d03e90bac2417a75b430ec94b013d42cca0472555c2500",
+    "src/operators/sparse.ts": "8c7dfa9045aa28e2eece143ca0544ee92eee01e51684ff7a3ec75b5964996d81",
+    "src/operators/specialized.ts": "e763ce1f85722724267b51d8df8836dfee2db2fc2ebc70e9dda3dffc8f94d8e2",
+    "src/operators/gates.ts": "60015c31714caa31dfe432affaff00e6237134121771e5b038aeca2501458628",
+    "src/operators/operator.ts": "fef1e7c10ab6d5eaea9643ddee100892cdfc3f8af4d2352fd4efaa5cfcada053",
+    "src/operators/measurement.ts": "e99be7ad407666d132ccbba209f04b163baa55a995095e9af251101118433922",
+    "src/operators/algebra.ts": "16f743e8952a71ca2ee7633c8c80495c58b4c4d1d0c88e7e1bf9ad3dcc90aa8e",
+    "src/operators/sparseOperator.ts": "90abac956ebff4e5813006e9cee018f569ccc2a411f73cc73ae32d2899c2d0e3",
+    "src/operators/index.ts": "6224c6ee4a038b89c652a2d98e39f970762c44bfff9e0d7ea35d986e54b89970",
+    "src/operators/sparseEigensolver.ts": "b03626ddacd36d695fcb6d8b0f55c07f109c7351cba4f2c67efcc8afd9676efa",
+    "src/operators/circuit.ts": "67d5cdfc87cfb8e0021ec69b7ff4a1f9fef561234c9a5874697efbad8315c0c2",
+    "src/angularMomentum/representation.ts": "e5aa08d419eaa9e4883287e3ddf9f7f21888fa450a2870248f6dc9fc06111599",
+    "src/angularMomentum/operators.ts": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/angularMomentum/stateAnalysis.ts": "12953137c93a785d1611ea78c9abf08629c57fa466a6d334b97cd8a074b3f55f",
+    "src/angularMomentum/composition.ts": "571506c5472b8edcced032d13511e30f646ffbb7862a7bbc20022e2f5ce9f8f0",
+    "src/angularMomentum/multiSpinState.ts": "7c3a1d78e71be9455503bcfe23294c544d5e60a724989bcc772b31032ebdd51f",
+    "src/angularMomentum/core.ts": "e0d45c60b5e04046f621f9eb56e1b731d15eeee700c44669ffefe2b9d5147489",
+    "src/angularMomentum/wignerSymbols.ts": "b81ac5b4a305e95056a2a5a61f6a665ad684928ccd8853ba95745f3b1febcaf3",
+    "src/angularMomentum/su2.ts": "63deb5089a57bff4fff2359ab086e249fc7c874d3bfe81b65bd9669609d07f27",
+    "src/angularMomentum/index.ts": "0ce2795bbac84ae433e19321852859fcc363fefecee3d015bd4f267c1eda22f5",
+    "src/utils/validation.ts": "ee42822a31aeb66b844ac6993447bd01a183323dbc80b8e55b5901273b32e0a3",
+    "src/utils/math.ts": "61ed8041dae08d86f8a96b3af6a642cf0d628f78078699a6801eb3fd2a459a32",
+    "src/utils/matrixOperations.ts": "b90723f1a0c328d333932d7e1648a371b249bffc6ab0bb59976bacd757032d66",
+    "src/utils/oscillator.ts": "c62fb6a3eaeb425992c447d1fcb1829291adfb9e8a596917904ce595e3d72064",
+    "src/utils/matrixFunctions.ts": "e227ef7c2c22786b113593b5bc94877e8e75656556e01d065ed99eaf25c0ba4c",
+    "src/utils/index.ts": "98ef6307af77ce6568258850035e0cebb174d64b267309d8aee32b2d895ea6ce",
+    "src/utils/information.ts": "04348033b2a761b9b700668bb82d1b7c362bac6a41c093a8b75e9cd20cc256eb",
+    "src/models/czx.ts": "5a41091ab6b4982a6b5e983cefb062de65c8a9b7066bf6f3398d0e132d201c0c",
+    "src/lattice/observables.ts": "7d8ca3c1663435feb041453a4acfd8f1457a338ae21d368ad74991e4bc75f7a7",
+    "src/lattice/geometry.ts": "c6fb3d561e2e60642658155dcc3bdf7a57210571a3671282c3727aa35ed875d2",
+    "src/lattice/monteCarlo.ts": "91f89445fe61420f7bc05ceddf67931a95a587d88aa6b1a33c78029268a89bf0",
+    "src/lattice/action.ts": "631dad1f32de3df332f954d6786501bb8d7b18eee1581b06a81311a1fa989950",
+    "src/lattice/index.ts": "c5e14587c4c73d565b93323c7814cdb40cac904d6c5ec932a91e1839c2e9a957",
+    "src/lattice/checkpoint.ts": "fd7de89bde202f9b5933fb2d011e2a816124da0689d9bd2ee3882fe17bcfa0d1",
+    "src/lattice/gaugeField.ts": "d236c3a7fb10e84f2a1f8a00ca6ece2a4dd7c7420ad6dc873a9536fa3a063560",
+    "src/intertwiner/nValent.ts": "2ea47ba0ae591401371ed24f79aab9170de51d55533346b92fb6c46e8405e153",
+    "src/intertwiner/volumeOperator.ts": "54ad401586fb803fe71f75fcd023b97116576009fa732c90ca4fb90526a42052",
+    "src/intertwiner/tensor.ts": "0347c70773eaa6d3111bc09eed4c94a70e3d80755895120138b7349833dee83f",
+    "src/intertwiner/types.ts": "2247f0be1aedc762ec8f314f1df65013a87589be7877f6fac274d68ede9e4ec0",
+    "src/intertwiner/core.ts": "e96aeb3e33e9b59914c0adf30df59cba927f308b6801829365189d02f2a34af3",
+    "src/intertwiner/index.ts": "50fa26c682566eb5e48f80809ea2240eb4ef5ac6edfd013e31959f3610dd71fb",
+    "src/intertwiner/basis.ts": "34b068d9e64c3ef992b0e6a229c8138aa349f819cfd9c9b08c9b0b49b8d22d55",
+    "src/states/states.ts": "0e8144362134f63ea7c106a351375e8628bdefaf4ca83e5f172537537973e053",
+    "src/states/densityMatrix.ts": "cda15a76c9769e796b204c49462629a67a4221f422feff6b5f6055d228e84f97",
+    "src/states/composite.ts": "45f51111a1f4c02f3d5c08e869874a819e782a516c38ac46878697b67d864ecf",
+    "src/states/stateVector.ts": "489eb4c1acad88a0f1c83e3eb2249e60c74703f0c9e913b115265cd4d4a9b105",
+    "src/states/index.ts": "e6941bd4a964e6819473df41cda44344ae01aa313a14a557820bb2fbbbe681da",
+    "src/geometry/quantumDistance.ts": "3d05a03386584c71fab50d98678c3f6eda9c6046ddab3101f12ef7588398b9c2",
+    "src/geometry/index.ts": "1c1728147d579ccde0377a506273dfbb6e170ccefe1927cb684e8619bb9b4218"
+  },
+  "ts_git_head": "060f3541cf0cee114370321fc7734db257daca40"
+}

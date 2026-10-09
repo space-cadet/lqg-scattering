@@ -1,0 +1,44 @@
+{
+  "exact_analytic_check": {
+    "arithmetic": "exact SymPy rationals and radicals",
+    "triple_eigenvalues": {
+      "0": 4,
+      "+sqrt(3)/4": 2,
+      "-sqrt(3)/4": 2
+    },
+    "identity": "q^2=(3/16)P_{J_triple=1/2}",
+    "closed_all_half_volume": "(gamma*hbar)^(3/2)*sqrt(sqrt(3)/4)*N*(N^2-4)/12",
+    "proof": "P=1/2-(2/3)sum_triple_pairs Ji.Jj; each pair occurs N-2 times; singlet sum_pairs Ji.Jj=-3N/8."
+  },
+  "saved_archive_blocks_checked": 112,
+  "eigenstates_checked": 385,
+  "maximum_reconstruction_residual": 3.553321148488682e-15,
+  "absolute_tolerance": 2e-10,
+  "sources": [
+    {
+      "path": "code/python/variable_n_volume.py",
+      "sha256": "a6cb00cc827f5b2d84c4ecad175037c9d22c5369ca8c7b82a0848012ac457ea9"
+    },
+    {
+      "path": "code/python/closed_basis_volume.py",
+      "sha256": "e2edb8b272772acf616795bb7d961763adb7cb877ea875276750e26219b6644c"
+    },
+    {
+      "path": "code/python/coherent_states.py",
+      "sha256": "39e160596c5acf6f38b2ad21337c833c2e290589422824b967fe3b0a0e29ede2"
+    },
+    {
+      "path": "code/python/positivity.py",
+      "sha256": "9567691a13229214e9b1dfba9bc4ea5506caca8cf36bd2059a1179a3f643343c"
+    },
+    {
+      "path": "code/python/fl_volume_validation.py",
+      "sha256": "5fde46aaea6cc46737fda0ed53d91bd0e586b7bf5bbfd1e90d783bc4f30b5897"
+    },
+    {
+      "path": "code/python/verify_variable_n_volume.py",
+      "sha256": "dd36053cb3c2e57917ec76bac002a2f1cde627aa23a67344455b01a437013b16"
+    }
+  ],
+  "summary_sha256": "e773ffd2cbba66afd49531f98ed44997a549e484b6e122988c6031a34b93443b"
+}

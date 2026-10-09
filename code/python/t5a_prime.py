@@ -23,7 +23,7 @@ channel-(in)dependence. Genuine subsetting needs n >= 5.
 n=5: all C(5,2) = 10 incoming pairs; rows keep fixed identity, reference
 fixed, so each pair gives a different parallel-facet pair / local set.
 
-Only numpy/scipy used. Reuses the T5a fixed-K engine (t5a_mag_sweep) and
+Only numpy/scipy used. Reuses the package's fixed-K engine and the
 grassmannian spinor map. Writes results to results/t5a_prime_results.json.
 """
 
@@ -33,9 +33,17 @@ import time
 
 import numpy as np
 
-import minkowski as mk
-import t5a_mag_sweep as m
-from grassmannian import null_momentum_to_spinor, spinors_to_plane
+from lqg_scattering import minkowski as mk
+from lqg_scattering.grassmannian import null_momentum_to_spinor, spinors_to_plane
+from lqg_scattering.coherent_states import plane_to_Z
+from lqg_scattering.fixed_k import (
+    fixed_number_basis,
+    occupation_index,
+    pairwise_grasp,
+    single_edge_operators,
+    uN_generator,
+    normalized_exponential,
+)
 from project_paths import RESULTS_ROOT
 
 N4, K4 = 4, 6
@@ -89,26 +97,18 @@ def perelomov_converged(A, ref_idx, dim, tol=1e-13, cap=500):
     engine's fixed 2K+8 cap truncates at K=8: 24 terms vs ~40 needed --
     verified against dense expm; both legacy references share a 15-term
     truncation). Raises if the cap is hit."""
-    v0 = np.zeros(dim, dtype=complex)
-    v0[ref_idx] = 1.0
-    result = v0.copy()
-    term = v0.copy()
-    for it in range(1, cap + 1):
-        term = (A @ term) / it
-        inc = float(np.linalg.norm(term))
-        res = float(np.linalg.norm(result))
-        result = result + term
-        if inc < tol * max(1.0, res):
-            return result / np.linalg.norm(result), it
-    raise RuntimeError(f"Taylor did not converge in {cap} terms")
+    try:
+        return normalized_exponential(A, ref_idx, dim, tol=tol, max_terms=cap)
+    except RuntimeError as exc:
+        raise RuntimeError(f"Taylor did not converge in {cap} terms") from exc
 
 
 def measure(n, K, C, ref, edge_ops, pairs_cache):
     """q_ijk on all triples for state built from plane C."""
     occ, index = pairs_cache["basis"]
-    A = m.build_A(occ, index, m.plane_to_z(C), n)
+    A = uN_generator(occ, index, plane_to_Z(C), n)
     flat = [x for pr in ref for x in pr]
-    v, _ = perelomov_converged(A, m.idx_of(index, flat), len(occ))
+    v, _ = perelomov_converged(A, occupation_index(index, flat), len(occ))
     w = {ij: mat @ v for ij, mat in pairs_cache["jdot"].items()}
     triples = [(i, j, k) for i in range(n) for j in range(i + 1, n)
                for k in range(j + 1, n)]
@@ -120,12 +120,12 @@ def measure(n, K, C, ref, edge_ops, pairs_cache):
 
 
 def setup_engine(n, K):
-    occ, index = m.build_fixed_k_basis(n, K)
-    ops = m.single_edge_ops(occ, index, n)
+    occ, index = fixed_number_basis(n, K)
+    ops = single_edge_operators(occ, index, n)
     jdot = {}
     for i in range(n):
         for j in range(i + 1, n):
-            jdot[(i, j)] = m.jdot(ops, i, j)
+            jdot[(i, j)] = pairwise_grasp(ops, i, j)
     return {"basis": (occ, index), "jdot": jdot, "ops": ops}
 
 
@@ -174,10 +174,10 @@ def main():
                 if not calib_done:
                     # red-team: explicit commutator on triple (0,1,2)
                     occ, index = cache["basis"]
-                    A = m.build_A(occ, index, m.plane_to_z(C0 + dC), n)
+                    A = uN_generator(occ, index, plane_to_Z(C0 + dC), n)
                     flat = [x for pr in ref for x in pr]
                     v, nterms = perelomov_converged(
-                        A, m.idx_of(index, flat), len(occ))
+                        A, occupation_index(index, flat), len(occ))
                     A01 = cache["jdot"][(0, 1)]
                     A12 = cache["jdot"][(1, 2)]
                     qm = 1j * (A01 @ A12 - A12 @ A01)

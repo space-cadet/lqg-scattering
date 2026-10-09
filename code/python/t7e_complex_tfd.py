@@ -16,19 +16,24 @@ conjugation). The <q_L q_R> observable itself is conjugation-invariant
 Sweep beta = 0.5, 1, 5 at each eps; compare eps-scaling of |corr| against
 single-copy |q|, pure <q^2>, dephased Tr(rho q^2), and T5b V ~ eps^0.5.
 
-Conventions match T7a/T7b/T5b. Reuses t7a_thermal. Writes
-results/t7e_results.json.
+Conventions match T7a/T7b/T5b. Uses the shared Schwinger package directly.
+Writes results/t7e_results.json.
 """
 
 import json
 
 import numpy as np
 
-import t7a_thermal as T7a
+from lqg_scattering.coherent_states import plane_to_Z
+from lqg_scattering.positivity import positive_plane_curve, vertex_reference
+from lqg_scattering.conventions import DEFAULT_TRIPLE as TRIPLE, GAMMA, HBAR
+from lqg_scattering.schwinger import (
+    SparseSchwingerSpace, q_operator, volume_on_vec,
+)
 from project_paths import RESULTS_ROOT
 
-GAMMA = T7a.GAMMA
-TRIPLE = T7a.TRIPLE
+from lqg_scattering.analysis import fit_power
+
 SEEDS = {4: 11, 5: 12}
 EPSS = [1e-6, 1e-4, 1e-2, 0.1, 1.0]
 BETAS = [0.5, 1.0, 5.0]
@@ -41,32 +46,17 @@ def fixed_perturbation(N):
     return dC
 
 
-def fit_power(x, y):
-    x = np.asarray(x, float)
-    y = np.asarray(y, float)
-    m = y > 0
-    alpha, logc = np.polyfit(np.log(x[m]), np.log(y[m]), 1)
-    yp = alpha * np.log(x[m]) + logc
-    ss_res = float(np.sum((np.log(y[m]) - yp) ** 2))
-    ss_tot = float(np.sum((np.log(y[m]) - np.log(y[m]).mean()) ** 2))
-    r2 = 1 - ss_res / ss_tot if ss_tot > 0 else float("nan")
-    lx, ly = np.log(x[m]), np.log(y[m])
-    slopes = ((ly[1:] - ly[:-1]) / (lx[1:] - lx[:-1])).tolist()
-    return {"alpha": float(alpha), "prefactor": float(np.exp(logc)),
-            "r2": float(r2), "local_slopes": [float(s) for s in slopes]}
-
-
 def sweep_n(N, seed, epss, betas, t5b):
-    C0 = T7a.positive_plane_curve(N, seed=seed)
+    C0 = positive_plane_curve(N, seed=seed)
     dC = fixed_perturbation(N)
-    ref = T7a.vertex_reference(N, TRIPLE)
+    ref = vertex_reference(N, TRIPLE)
     K = int(ref.sum())
-    space = T7a.OpSpace(N, K)
+    space = SparseSchwingerSpace(N, K)
     E = space.energy
     ref_v = space.ref_vec(ref)
     print(f"--- n={N}: dim={space.dim}, K={K}, seed={seed} ---", flush=True)
 
-    q_op = T7a.q_operator(space, triple=TRIPLE).tocsr()
+    q_op = q_operator(space, triple=TRIPLE).tocsr()
     coo = q_op.tocoo()
     rows, cols, data = coo.row, coo.col, coo.data
     data2 = (data * data).real  # (q_nm)^2, real (q imaginary)
@@ -78,15 +68,15 @@ def sweep_n(N, seed, epss, betas, t5b):
     eps_rows = []
     for eps in epss:
         C = C0 + eps * dC
-        Z = T7a.plane_to_Z(C)
+        Z = plane_to_Z(C)
         psi, iters = space.taylor_exp(space.amat(Z), ref_v, K)
         # R-conjugation equivalence: Perelomov(C*) vs conj(Perelomov(C))
         psi_star, _ = space.taylor_exp(
-            space.amat(T7a.plane_to_Z(C.conj())), ref_v, K)
+            space.amat(plane_to_Z(C.conj())), ref_v, K)
         # global phase alignment before comparing
         ov = np.vdot(psi_star, psi.conj())
         conj_diff = float(np.linalg.norm(psi_star - ov * psi.conj()))
-        V_sc, q_sc = T7a.volume_on_vec(psi, space, triple=TRIPLE)
+        V_sc, q_sc = volume_on_vec(psi, space, triple=TRIPLE)
         qv = q_op @ psi
         q2_pure = float(np.vdot(qv, qv).real)
         w = np.abs(psi) ** 2

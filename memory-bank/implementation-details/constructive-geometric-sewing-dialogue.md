@@ -116,3 +116,26 @@ The next construction step is to make the sewing map explicit in the oscillator 
 
 - The copied [thermal-intertwiners manuscript source](../../code/papers/thermal-intertwiners/thermal-intertwiners.tex) and its figures/PDFs are available in the repository; the draft-specific thermal state remains unimplemented.
 - [Four-edge pair-creation diagram](../../figures/fl_four_edge_pair_creation.svg) and [nearest-neighbor polygon diagram](../../figures/nearest_neighbor_polygon_edges.svg) are earlier visual aids. The latter depicts the restricted-sum operator; it is not the later three-factor triangle product or the sewn tetrahedral network. These root-level figures were untracked at the scan baseline and remain untouched by this documentation update.
+
+*Follow-up recorded: 2026-10-10 03:26:38 IST*
+
+## Implemented small-spin follow-up (2026-10-10)
+
+The historical dialogue above remains unchanged. `code/python/lqg_scattering/sewing.py`
+now constructs normalized F-pair triangle tensors and invariant edge
+contractions. `code/python/sewing_probes.py` checks one tetrahedron and two
+three-face patches sewn on the three edges of their omitted common face.
+The joined exterior face graph is a triangular prism, including the three
+new cross-tetrahedron adjacencies. This is an exterior-boundary construction,
+not a retained two-cell bulk model.
+
+The spin-one seed has six nonzero triangle components. Its tetrahedral
+identity evaluation matches the Wigner six-j result; direct exterior-network
+and patch contractions agree. Link transport matrices retain a nonconstant
+spin-network function. Complete contractions are scalar evaluations, not
+energies or norms. Geometry, Haar normalization, and sewn dynamics remain
+open. The Casimir-plus-loop Hamiltonian discussed afterward is an unaccepted,
+unimplemented proposal.
+
+See [the numerical construction note](../../notes/constructive-sewing-probe.md)
+and [session handoff](../sessions/2026-10-10-binding-and-constructive-sewing-summary.md).

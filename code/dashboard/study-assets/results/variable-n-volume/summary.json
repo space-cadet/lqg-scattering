@@ -1,0 +1,627 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-08",
+  "task": "T10",
+  "notation": "K=sum_i j_i=N_bosons/2; resultant J=0",
+  "support": "labelled positive-spin faces, 4 <= N <= 2K; one copy, zero temperature",
+  "basis": "sequential Condon-Shortley CG coupling: s_1=j_1, s_N=0; intermediate labels ascending",
+  "operator": "V_RS=(gamma*hbar)^(3/2) sum_{i<j<k} sqrt(abs(q_ijk)); q_ijk=i[Ji.Jj,Jj.Jk]",
+  "units": {
+    "gamma": 0.2375,
+    "hbar": 1,
+    "physical_regularization": "unresolved",
+    "higher_valence_geometric_conversion": "not applied"
+  },
+  "absolute_tolerance": 2e-10,
+  "spectral_grouping_absolute_tolerance": 2e-10,
+  "triple_zero_eigenvalue_cutoff": "64*eps*max(1,max(abs(eigenvalues)))",
+  "numerical_method": "complete finite-block floating-point diagonalization; no sampling or state truncation",
+  "count_checks": "coupling paths, independent M=0 minus M=1 multiplicities, U(N) inclusion-exclusion",
+  "areas": [
+    {
+      "K": 2,
+      "basis_dimension": 2,
+      "zero_volume_dimension": 0,
+      "positive_volume_dimension": 2,
+      "spectrum": [
+        {
+          "rs_volume": 0.30465319023639065,
+          "multiplicity": 2,
+          "within_group_spread": 0.0
+        }
+      ],
+      "equal_weight_mean": 0.30465319023639065,
+      "equal_weight_sd": 0.0
+    },
+    {
+      "K": 3,
+      "basis_dimension": 36,
+      "zero_volume_dimension": 4,
+      "positive_volume_dimension": 32,
+      "spectrum": [
+        {
+          "rs_volume": 0.0,
+          "multiplicity": 4,
+          "within_group_spread": 0.0
+        },
+        {
+          "rs_volume": 0.3893121101763391,
+          "multiplicity": 12,
+          "within_group_spread": 1.6653345369377348e-16
+        },
+        {
+          "rs_volume": 0.5924142370005997,
+          "multiplicity": 15,
+          "within_group_spread": 1.4432899320127035e-15
+        },
+        {
+          "rs_volume": 1.2186127609455617,
+          "multiplicity": 5,
+          "within_group_spread": 1.1102230246251565e-15
+        }
+      ],
+      "equal_weight_mean": 0.5458617411625798,
+      "equal_weight_sd": 0.3240983347659298
+    },
+    {
+      "K": 4,
+      "basis_dimension": 347,
+      "zero_volume_dimension": 18,
+      "positive_volume_dimension": 329,
+      "spectrum": [
+        {
+          "rs_volume": 0.0,
+          "multiplicity": 18,
+          "within_group_spread": 0.0
+        },
+        {
+          "rs_volume": 0.4555627767151433,
+          "multiplicity": 12,
+          "within_group_spread": 1.1102230246251565e-16
+        },
+        {
+          "rs_volume": 0.48953406191613497,
+          "multiplicity": 24,
+          "within_group_spread": 1.6653345369377348e-16
+        },
+        {
+          "rs_volume": 0.6093063804727813,
+          "multiplicity": 2,
+          "within_group_spread": 2.220446049250313e-16
+        },
+        {
+          "rs_volume": 0.6507827997577064,
+          "multiplicity": 10,
+          "within_group_spread": 4.440892098500626e-16
+        },
+        {
+          "rs_volume": 0.6958075720636303,
+          "multiplicity": 40,
+          "within_group_spread": 1.1102230246251565e-15
+        },
+        {
+          "rs_volume": 0.7623248742023611,
+          "multiplicity": 20,
+          "within_group_spread": 8.881784197001252e-16
+        },
+        {
+          "rs_volume": 0.9491014361920289,
+          "multiplicity": 20,
+          "within_group_spread": 2.7755575615628914e-15
+        },
+        {
+          "rs_volume": 0.9502699586894173,
+          "multiplicity": 24,
+          "within_group_spread": 1.6653345369377348e-15
+        },
+        {
+          "rs_volume": 0.9761741996365592,
+          "multiplicity": 25,
+          "within_group_spread": 1.5543122344752192e-15
+        },
+        {
+          "rs_volume": 1.4725895207654085,
+          "multiplicity": 30,
+          "within_group_spread": 2.6645352591003757e-15
+        },
+        {
+          "rs_volume": 1.5017738021439615,
+          "multiplicity": 45,
+          "within_group_spread": 3.774758283725532e-15
+        },
+        {
+          "rs_volume": 1.9887909095621505,
+          "multiplicity": 63,
+          "within_group_spread": 7.327471962526033e-15
+        },
+        {
+          "rs_volume": 3.0465319023639057,
+          "multiplicity": 14,
+          "within_group_spread": 7.105427357601002e-15
+        }
+      ],
+      "equal_weight_mean": 1.192842810691456,
+      "equal_weight_sd": 0.6782957407373178
+    }
+  ],
+  "by_KN": [
+    {
+      "K": 2,
+      "N": 4,
+      "basis_dimension": 2,
+      "spin_assignments": 1,
+      "independent_dimension": 2,
+      "zero_volume_dimension": 0,
+      "positive_volume_dimension": 2,
+      "spectrum": [
+        {
+          "rs_volume": 0.30465319023639065,
+          "multiplicity": 2,
+          "within_group_spread": 0.0
+        }
+      ],
+      "equal_weight_mean": 0.30465319023639065,
+      "equal_weight_sd": 0.0,
+      "minimum_positive_volume": 0.30465319023639065,
+      "maximum_volume": 0.30465319023639065,
+      "checks_max_absolute_residual": {
+        "orthogonality": 4.440892098500626e-16,
+        "closure": 0.0,
+        "casimir": 1.7763568394002505e-15,
+        "prefix_casimir": 1.7763568394002505e-15,
+        "hermiticity": 5.551115123125783e-17,
+        "invariant_subspace": 2.220446049250313e-16,
+        "epsilon_vs_commutator": 0.0,
+        "dense_tensor_vs_commutator": 0.0,
+        "magnetic_root_projection": 4.444175157415385e-16,
+        "independent_volume": 2.7757820392033873e-16,
+        "eigensystem": 0.0,
+        "trace_moments": 0.0,
+        "permutation_spectrum": 5.551115123125783e-17,
+        "four_face_previous": 0.0,
+        "analytic_half_spin": 1.1102230246251565e-16,
+        "saturated_spin_zero": 0.0
+      },
+      "maximum_singlet_dimension": 2,
+      "maximum_magnetic_m0_dimension": 6,
+      "archive": "operators_k2_n4.npz",
+      "archive_bytes": 13244,
+      "archive_sha256": "690fdd97ab525cfcaf45707df0d55a6762773bc0dc5b3f13d079569ae5b12dc7",
+      "basis_csv": "basis_k2_n4.csv",
+      "eigenstates_csv": "eigenstates_k2_n4.csv",
+      "elapsed_seconds": 0.037232541013509035
+    },
+    {
+      "K": 3,
+      "N": 4,
+      "basis_dimension": 16,
+      "spin_assignments": 10,
+      "independent_dimension": 16,
+      "zero_volume_dimension": 4,
+      "positive_volume_dimension": 12,
+      "spectrum": [
+        {
+          "rs_volume": 0.0,
+          "multiplicity": 4,
+          "within_group_spread": 0.0
+        },
+        {
+          "rs_volume": 0.3893121101763391,
+          "multiplicity": 12,
+          "within_group_spread": 1.6653345369377348e-16
+        }
+      ],
+      "equal_weight_mean": 0.2919840826322544,
+      "equal_weight_sd": 0.16857708870681798,
+      "minimum_positive_volume": 0.38931211017633904,
+      "maximum_volume": 0.3893121101763392,
+      "checks_max_absolute_residual": {
+        "orthogonality": 4.440892098500626e-16,
+        "closure": 2.220446049250313e-16,
+        "casimir": 2.6645352591003757e-15,
+        "prefix_casimir": 2.6645352591003757e-15,
+        "hermiticity": 2.220446049250313e-16,
+        "invariant_subspace": 2.220446049250313e-16,
+        "epsilon_vs_commutator": 1.1102230246251565e-16,
+        "dense_tensor_vs_commutator": 1.1102230246251565e-16,
+        "magnetic_root_projection": 5.556216246276565e-16,
+        "independent_volume": 1.6659133442358926e-16,
+        "eigensystem": 3.763699727329457e-18,
+        "trace_moments": 0.0,
+        "permutation_spectrum": 4.440892098500626e-16,
+        "four_face_previous": 1.6653345369377348e-16,
+        "analytic_half_spin": 0.0,
+        "saturated_spin_zero": 0.0
+      },
+      "maximum_singlet_dimension": 2,
+      "maximum_magnetic_m0_dimension": 10,
+      "archive": "operators_k3_n4.npz",
+      "archive_bytes": 15562,
+      "archive_sha256": "a1e707546f016439c2007eba3c66930c6cd7191623831f15d929382288f490ad",
+      "basis_csv": "basis_k3_n4.csv",
+      "eigenstates_csv": "eigenstates_k3_n4.csv",
+      "elapsed_seconds": 0.10906470799818635
+    },
+    {
+      "K": 3,
+      "N": 5,
+      "basis_dimension": 15,
+      "spin_assignments": 5,
+      "independent_dimension": 15,
+      "zero_volume_dimension": 0,
+      "positive_volume_dimension": 15,
+      "spectrum": [
+        {
+          "rs_volume": 0.5924142370005997,
+          "multiplicity": 15,
+          "within_group_spread": 1.4432899320127035e-15
+        }
+      ],
+      "equal_weight_mean": 0.5924142370005997,
+      "equal_weight_sd": 3.293453726225543e-16,
+      "minimum_positive_volume": 0.592414237000599,
+      "maximum_volume": 0.5924142370006005,
+      "checks_max_absolute_residual": {
+        "orthogonality": 4.440892098500626e-16,
+        "closure": 1.1102230246251565e-16,
+        "casimir": 3.552713678800501e-15,
+        "prefix_casimir": 3.552713678800501e-15,
+        "hermiticity": 2.220446049250313e-16,
+        "invariant_subspace": 1.6653345369377348e-16,
+        "epsilon_vs_commutator": 0.0,
+        "dense_tensor_vs_commutator": 0.0,
+        "magnetic_root_projection": 7.771566062353635e-16,
+        "independent_volume": 2.2211610197027227e-16,
+        "eigensystem": 4.775249788392736e-16,
+        "trace_moments": 6.661338147750939e-16,
+        "permutation_spectrum": 9.992007221626409e-16,
+        "four_face_previous": 0.0,
+        "analytic_half_spin": 0.0,
+        "saturated_spin_zero": 0.0
+      },
+      "maximum_singlet_dimension": 3,
+      "maximum_magnetic_m0_dimension": 14,
+      "archive": "operators_k3_n5.npz",
+      "archive_bytes": 26204,
+      "archive_sha256": "33685692236f9acf6bd5bd66bc0e027449edacc1c09f1f496a962c711233ad3e",
+      "basis_csv": "basis_k3_n5.csv",
+      "eigenstates_csv": "eigenstates_k3_n5.csv",
+      "elapsed_seconds": 0.07993558398447931
+    },
+    {
+      "K": 3,
+      "N": 6,
+      "basis_dimension": 5,
+      "spin_assignments": 1,
+      "independent_dimension": 5,
+      "zero_volume_dimension": 0,
+      "positive_volume_dimension": 5,
+      "spectrum": [
+        {
+          "rs_volume": 1.2186127609455617,
+          "multiplicity": 5,
+          "within_group_spread": 1.1102230246251565e-15
+        }
+      ],
+      "equal_weight_mean": 1.2186127609455617,
+      "equal_weight_sd": 4.550560269027492e-16,
+      "minimum_positive_volume": 1.2186127609455613,
+      "maximum_volume": 1.2186127609455624,
+      "checks_max_absolute_residual": {
+        "orthogonality": 6.661338147750939e-16,
+        "closure": 1.1102230246251565e-16,
+        "casimir": 1.7763568394002505e-15,
+        "prefix_casimir": 1.7763568394002505e-15,
+        "hermiticity": 1.6653345369377348e-16,
+        "invariant_subspace": 1.3877787807814457e-16,
+        "epsilon_vs_commutator": 0.0,
+        "dense_tensor_vs_commutator": 0.0,
+        "magnetic_root_projection": 8.881900006276828e-16,
+        "independent_volume": 1.998410047692482e-15,
+        "eigensystem": 1.246531298897714e-15,
+        "trace_moments": 7.993605777301127e-15,
+        "permutation_spectrum": 8.881784197001252e-16,
+        "four_face_previous": 0.0,
+        "analytic_half_spin": 6.661413546274717e-16,
+        "saturated_spin_zero": 0.0
+      },
+      "maximum_singlet_dimension": 5,
+      "maximum_magnetic_m0_dimension": 20,
+      "archive": "operators_k3_n6.npz",
+      "archive_bytes": 34998,
+      "archive_sha256": "4f872a0ebdcda3fea698226d97f0e3dab01157a5073ee3ef6d3080543aa9401b",
+      "basis_csv": "basis_k3_n6.csv",
+      "eigenstates_csv": "eigenstates_k3_n6.csv",
+      "elapsed_seconds": 0.08581937497365288
+    },
+    {
+      "K": 4,
+      "N": 4,
+      "basis_dimension": 51,
+      "spin_assignments": 31,
+      "independent_dimension": 51,
+      "zero_volume_dimension": 13,
+      "positive_volume_dimension": 38,
+      "spectrum": [
+        {
+          "rs_volume": 0.0,
+          "multiplicity": 13,
+          "within_group_spread": 0.0
+        },
+        {
+          "rs_volume": 0.4555627767151433,
+          "multiplicity": 12,
+          "within_group_spread": 1.1102230246251565e-16
+        },
+        {
+          "rs_volume": 0.48953406191613497,
+          "multiplicity": 24,
+          "within_group_spread": 1.6653345369377348e-16
+        },
+        {
+          "rs_volume": 0.6093063804727813,
+          "multiplicity": 2,
+          "within_group_spread": 2.220446049250313e-16
+        }
+      ],
+      "equal_weight_mean": 0.3614545797551866,
+      "equal_weight_sd": 0.2133433265893787,
+      "minimum_positive_volume": 0.45556277671514317,
+      "maximum_volume": 0.6093063804727814,
+      "checks_max_absolute_residual": {
+        "orthogonality": 4.440892098500626e-16,
+        "closure": 3.3306690738754696e-16,
+        "casimir": 3.552713678800501e-15,
+        "prefix_casimir": 3.552713678800501e-15,
+        "hermiticity": 6.661338147750939e-16,
+        "invariant_subspace": 5.273559366969494e-16,
+        "epsilon_vs_commutator": 1.1102230246251565e-15,
+        "dense_tensor_vs_commutator": 1.1102230246251565e-15,
+        "magnetic_root_projection": 1.1102232379656452e-15,
+        "independent_volume": 3.8859084573478845e-16,
+        "eigensystem": 5.551115123125783e-17,
+        "trace_moments": 0.0,
+        "permutation_spectrum": 3.3306690738754696e-16,
+        "four_face_previous": 2.220446049250313e-16,
+        "analytic_half_spin": 0.0,
+        "saturated_spin_zero": 0.0
+      },
+      "maximum_singlet_dimension": 3,
+      "maximum_magnetic_m0_dimension": 19,
+      "archive": "operators_k4_n4.npz",
+      "archive_bytes": 22101,
+      "archive_sha256": "9d4a02b77dc42f50782567baa2c2931569118f7e51f02a8a891ac723d1c462a6",
+      "basis_csv": "basis_k4_n4.csv",
+      "eigenstates_csv": "eigenstates_k4_n4.csv",
+      "elapsed_seconds": 0.2508141670259647
+    },
+    {
+      "K": 4,
+      "N": 5,
+      "basis_dimension": 105,
+      "spin_assignments": 35,
+      "independent_dimension": 105,
+      "zero_volume_dimension": 5,
+      "positive_volume_dimension": 100,
+      "spectrum": [
+        {
+          "rs_volume": 0.0,
+          "multiplicity": 5,
+          "within_group_spread": 0.0
+        },
+        {
+          "rs_volume": 0.6507827997577064,
+          "multiplicity": 10,
+          "within_group_spread": 4.440892098500626e-16
+        },
+        {
+          "rs_volume": 0.6958075720636303,
+          "multiplicity": 40,
+          "within_group_spread": 1.1102230246251565e-15
+        },
+        {
+          "rs_volume": 0.7623248742023611,
+          "multiplicity": 20,
+          "within_group_spread": 8.881784197001252e-16
+        },
+        {
+          "rs_volume": 0.9491014361920289,
+          "multiplicity": 20,
+          "within_group_spread": 2.7755575615628914e-15
+        },
+        {
+          "rs_volume": 0.9761741996365594,
+          "multiplicity": 10,
+          "within_group_spread": 1.3322676295501878e-15
+        }
+      ],
+      "equal_weight_mean": 0.7460038008035779,
+      "equal_weight_sd": 0.20316893893159418,
+      "minimum_positive_volume": 0.650782799757706,
+      "maximum_volume": 0.97617419963656,
+      "checks_max_absolute_residual": {
+        "orthogonality": 4.440892098500626e-16,
+        "closure": 3.3306690738754696e-16,
+        "casimir": 7.105427357601002e-15,
+        "prefix_casimir": 7.105427357601002e-15,
+        "hermiticity": 8.881784197001252e-16,
+        "invariant_subspace": 6.661338147750939e-16,
+        "epsilon_vs_commutator": 2.220446049250313e-16,
+        "dense_tensor_vs_commutator": 2.220446049250313e-16,
+        "magnetic_root_projection": 1.2215284667138816e-15,
+        "independent_volume": 8.88182262394618e-16,
+        "eigensystem": 9.09180472805593e-16,
+        "trace_moments": 3.9968028886505635e-15,
+        "permutation_spectrum": 1.887379141862766e-15,
+        "four_face_previous": 0.0,
+        "analytic_half_spin": 0.0,
+        "saturated_spin_zero": 0.0
+      },
+      "maximum_singlet_dimension": 4,
+      "maximum_magnetic_m0_dimension": 26,
+      "archive": "operators_k4_n5.npz",
+      "archive_bytes": 70726,
+      "archive_sha256": "424f00548e75eacf5a93c6f802efd01bffcb3f1fd9ef94f8de1911de5660f984",
+      "basis_csv": "basis_k4_n5.csv",
+      "eigenstates_csv": "eigenstates_k4_n5.csv",
+      "elapsed_seconds": 0.3435021670011338
+    },
+    {
+      "K": 4,
+      "N": 6,
+      "basis_dimension": 114,
+      "spin_assignments": 21,
+      "independent_dimension": 114,
+      "zero_volume_dimension": 0,
+      "positive_volume_dimension": 114,
+      "spectrum": [
+        {
+          "rs_volume": 0.9502699586894173,
+          "multiplicity": 24,
+          "within_group_spread": 1.6653345369377348e-15
+        },
+        {
+          "rs_volume": 0.976174199636559,
+          "multiplicity": 15,
+          "within_group_spread": 1.2212453270876722e-15
+        },
+        {
+          "rs_volume": 1.4725895207654085,
+          "multiplicity": 30,
+          "within_group_spread": 2.6645352591003757e-15
+        },
+        {
+          "rs_volume": 1.5017738021439615,
+          "multiplicity": 45,
+          "within_group_spread": 3.774758283725532e-15
+        }
+      ],
+      "equal_weight_mean": 1.3088298133555696,
+      "equal_weight_sd": 0.2517519299864735,
+      "minimum_positive_volume": 0.9502699586894165,
+      "maximum_volume": 1.5017738021439635,
+      "checks_max_absolute_residual": {
+        "orthogonality": 6.661338147750939e-16,
+        "closure": 2.220446049250313e-16,
+        "casimir": 5.329070518200751e-15,
+        "prefix_casimir": 5.329070518200751e-15,
+        "hermiticity": 4.440892098500626e-16,
+        "invariant_subspace": 4.440892098500626e-16,
+        "epsilon_vs_commutator": 1.1102230246251565e-16,
+        "dense_tensor_vs_commutator": 1.1102230246251565e-16,
+        "magnetic_root_projection": 1.3893613331618741e-15,
+        "independent_volume": 1.1102542586463968e-15,
+        "eigensystem": 1.807312143953211e-15,
+        "trace_moments": 1.2434497875801753e-14,
+        "permutation_spectrum": 1.9984014443252818e-15,
+        "four_face_previous": 0.0,
+        "analytic_half_spin": 0.0,
+        "saturated_spin_zero": 0.0
+      },
+      "maximum_singlet_dimension": 6,
+      "maximum_magnetic_m0_dimension": 36,
+      "archive": "operators_k4_n6.npz",
+      "archive_bytes": 169638,
+      "archive_sha256": "eb5c6b9a63edc562083c0f0a61c8b4613406760fddace6f443c1c848b02d5d57",
+      "basis_csv": "basis_k4_n6.csv",
+      "eigenstates_csv": "eigenstates_k4_n6.csv",
+      "elapsed_seconds": 0.41864204200101085
+    },
+    {
+      "K": 4,
+      "N": 7,
+      "basis_dimension": 63,
+      "spin_assignments": 7,
+      "independent_dimension": 63,
+      "zero_volume_dimension": 0,
+      "positive_volume_dimension": 63,
+      "spectrum": [
+        {
+          "rs_volume": 1.9887909095621505,
+          "multiplicity": 63,
+          "within_group_spread": 7.327471962526033e-15
+        }
+      ],
+      "equal_weight_mean": 1.9887909095621505,
+      "equal_weight_sd": 1.3906131230279755e-15,
+      "minimum_positive_volume": 1.988790909562146,
+      "maximum_volume": 1.9887909095621534,
+      "checks_max_absolute_residual": {
+        "orthogonality": 8.881784197001252e-16,
+        "closure": 1.6653345369377348e-16,
+        "casimir": 1.0658141036401503e-14,
+        "prefix_casimir": 1.0658141036401503e-14,
+        "hermiticity": 4.440892098500626e-16,
+        "invariant_subspace": 3.885780586188048e-16,
+        "epsilon_vs_commutator": 0.0,
+        "dense_tensor_vs_commutator": 0.0,
+        "magnetic_root_projection": 1.776409812056443e-15,
+        "independent_volume": 3.3306721061563038e-15,
+        "eigensystem": 3.114690083438059e-15,
+        "trace_moments": 1.4210854715202004e-14,
+        "permutation_spectrum": 2.220446049250313e-15,
+        "four_face_previous": 0.0,
+        "analytic_half_spin": 0.0,
+        "saturated_spin_zero": 0.0
+      },
+      "maximum_singlet_dimension": 9,
+      "maximum_magnetic_m0_dimension": 50,
+      "archive": "operators_k4_n7.npz",
+      "archive_bytes": 241703,
+      "archive_sha256": "d9f3f184821690709a957370429702df1b9b2621544a6050521d468570c02135",
+      "basis_csv": "basis_k4_n7.csv",
+      "eigenstates_csv": "eigenstates_k4_n7.csv",
+      "elapsed_seconds": 0.4688245419820305
+    },
+    {
+      "K": 4,
+      "N": 8,
+      "basis_dimension": 14,
+      "spin_assignments": 1,
+      "independent_dimension": 14,
+      "zero_volume_dimension": 0,
+      "positive_volume_dimension": 14,
+      "spectrum": [
+        {
+          "rs_volume": 3.0465319023639057,
+          "multiplicity": 14,
+          "within_group_spread": 7.105427357601002e-15
+        }
+      ],
+      "equal_weight_mean": 3.0465319023639057,
+      "equal_weight_sd": 2.3348645200851266e-15,
+      "minimum_positive_volume": 3.0465319023639013,
+      "maximum_volume": 3.0465319023639084,
+      "checks_max_absolute_residual": {
+        "orthogonality": 1.3322676295501878e-15,
+        "closure": 1.1102230246251565e-16,
+        "casimir": 1.5987211554602254e-14,
+        "prefix_casimir": 1.5987211554602254e-14,
+        "hermiticity": 4.996003610813204e-16,
+        "invariant_subspace": 3.0531133177191805e-16,
+        "epsilon_vs_commutator": 0.0,
+        "dense_tensor_vs_commutator": 0.0,
+        "magnetic_root_projection": 1.5543724517779099e-15,
+        "independent_volume": 9.769962864956646e-15,
+        "eigensystem": 1.688305753616065e-15,
+        "trace_moments": 2.842170943040401e-14,
+        "permutation_spectrum": 1.7763568394002505e-15,
+        "four_face_previous": 0.0,
+        "analytic_half_spin": 2.2204475100732162e-15,
+        "saturated_spin_zero": 0.0
+      },
+      "maximum_singlet_dimension": 14,
+      "maximum_magnetic_m0_dimension": 70,
+      "archive": "operators_k4_n8.npz",
+      "archive_bytes": 176428,
+      "archive_sha256": "29831408f55c867f811437ea76c10bd0873247e92be5d134c00015d91fa6db31",
+      "basis_csv": "basis_k4_n8.csv",
+      "eigenstates_csv": "eigenstates_k4_n8.csv",
+      "elapsed_seconds": 4.107144875015365
+    }
+  ],
+  "numpy": "1.24.3",
+  "scipy": "1.15.3",
+  "sympy": "1.14.0",
+  "source_sha256": "a6cb00cc827f5b2d84c4ecad175037c9d22c5369ca8c7b82a0848012ac457ea9"
+}

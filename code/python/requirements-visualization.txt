@@ -1,0 +1,4 @@
+# Optional dependencies for plots and dashboard image generation.
+-r requirements.txt
+matplotlib==3.10.8
+Pillow==12.1.0

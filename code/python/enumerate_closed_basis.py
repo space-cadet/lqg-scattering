@@ -8,7 +8,7 @@ import csv
 import json
 from pathlib import Path
 
-from fl_volume_labels import enumerate_total_area
+from lqg_scattering.labels import enumerate_total_area
 
 ROOT = Path(__file__).resolve().parents[2]
 

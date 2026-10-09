@@ -9,17 +9,15 @@ import sys
 
 import numpy as np
 
-from fl_volume_shape_scan import four_point_cross_ratio
-from fl_volume_validation import GAMMA, fixed_area_state, spinors_from_normals
-from t5c_covariance_probe import tetrahedron_from_face_vectors
-from t5c_input_geometry_scan import (
-    GEOMETRY_MATCHING_FACTORS,
-    classical_volume_from_faces,
-    circumsphere_shape_data,
-    closed_face_vectors_from_shape,
-    expected_face_spins,
-    flux_correlation_geometry,
-    volume_moments,
+from lqg_scattering.conventions import GAMMA
+from lqg_scattering.intertwiners import fixed_area_state
+from lqg_scattering.observables import (
+    expected_face_spins, flux_correlation_geometry, volume_moments,
+)
+from lqg_scattering.spinors import four_point_cross_ratio, spinors_from_normals
+from lqg_scattering.tetrahedra import (
+    GEOMETRY_MATCHING_FACTORS, classical_volume_from_faces, circumsphere_shape_data,
+    closed_face_vectors_from_shape, tetrahedron_from_face_vectors,
 )
 from project_paths import RESULTS_ROOT
 

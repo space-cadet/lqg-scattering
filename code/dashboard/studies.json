@@ -1,0 +1,3009 @@
+{
+  "method": "packages saved data; no scientific runs repeated",
+  "jsonNonfinitePolicy": "Nonfinite numbers become null only in dashboard JSON exports; source hashes refer to originals.",
+  "studies": [
+    {
+      "id": "hamiltonian",
+      "task": "T11",
+      "title": "Four-site Hamiltonian and thermal volume",
+      "description": "30 exact singlet calculations on complete and ring graphs. K=2,3,4 means 4,6,8 bosons; dimensions 20,50,105. Dense K=4 temperature scan: 6,030 rows and 409 energy groups.",
+      "limits": "g=0; empty sites allowed. Project-normalized connected-triple RS volume. The temperature response is a finite-sector crossover; the proposed dense U/t transition scan has not been run. Ground-state entropy uses the Gibbs mixture when degenerate.",
+      "status": "Pilot complete; broader program open",
+      "files": [
+        {
+          "name": "README.md",
+          "path": "study-assets/results/hamiltonian-studies/README.md",
+          "source": "results/hamiltonian-studies/README.md",
+          "sourceSha256": "dbd4c4f899ef604e9e705ab9f5069143c2e79e16c2daf721c97ea34830c5e2d3"
+        },
+        {
+          "name": "active_site_probabilities.csv",
+          "path": "study-assets/results/hamiltonian-studies/active_site_probabilities.csv",
+          "source": "results/hamiltonian-studies/active_site_probabilities.csv",
+          "sourceSha256": "2100ddb4bfeb9518c71b67a8a70a56b6df2f1fe31536dfaa30301abcabde8b89"
+        },
+        {
+          "name": "commutator_edge_triple_terms.csv",
+          "path": "study-assets/results/hamiltonian-studies/commutator_edge_triple_terms.csv",
+          "source": "results/hamiltonian-studies/commutator_edge_triple_terms.csv",
+          "sourceSha256": "47d43f71b1166653d570fcca34cd26191ebfd81d98cf1d292f344792f7aae84d"
+        },
+        {
+          "name": "energy_levels.csv",
+          "path": "study-assets/results/hamiltonian-studies/energy_levels.csv",
+          "source": "results/hamiltonian-studies/energy_levels.csv",
+          "sourceSha256": "f8f37d4f68a36795bf3bf5673329d5730dc50f0b3e04935ec1c0b852d1bd1c87"
+        },
+        {
+          "name": "ground_state_correlations.csv",
+          "path": "study-assets/results/hamiltonian-studies/ground_state_correlations.csv",
+          "source": "results/hamiltonian-studies/ground_state_correlations.csv",
+          "sourceSha256": "dd918b91ca889a911388c10ea9a17eb35d2e1e1b8ab36cbc6619b06af9850278"
+        },
+        {
+          "name": "ground_state_reduced_state.csv",
+          "path": "study-assets/results/hamiltonian-studies/ground_state_reduced_state.csv",
+          "source": "results/hamiltonian-studies/ground_state_reduced_state.csv",
+          "sourceSha256": "391d4432b65cdfbe4a65f3ccebac56becdadc94008bc4a31d09c8dfffbd55668"
+        },
+        {
+          "name": "k4_energy_resolved_volume.csv",
+          "path": "study-assets/results/hamiltonian-studies/k4_energy_resolved_volume.csv",
+          "source": "results/hamiltonian-studies/k4_energy_resolved_volume.csv",
+          "sourceSha256": "a372714cfb92cf6a7a0ec38a4165c2b846955509866c02bc28858670c8be0cd1"
+        },
+        {
+          "name": "k4_thermal_volume_scan.csv",
+          "path": "study-assets/results/hamiltonian-studies/k4_thermal_volume_scan.csv",
+          "source": "results/hamiltonian-studies/k4_thermal_volume_scan.csv",
+          "sourceSha256": "233fa4bbb327c4d6a56ca4a5459a0ee1b5eaf78681b55f43bf21fcc0ea0542a1"
+        },
+        {
+          "name": "kinematic_active_site_counts.csv",
+          "path": "study-assets/results/hamiltonian-studies/kinematic_active_site_counts.csv",
+          "source": "results/hamiltonian-studies/kinematic_active_site_counts.csv",
+          "sourceSha256": "0bf6fb307844c326634c9f77176a0d375669da426f3f3787050228638ace38fe"
+        },
+        {
+          "name": "operators_k2_complete.npz",
+          "path": "study-assets/results/hamiltonian-studies/operators_k2_complete.npz",
+          "source": "results/hamiltonian-studies/operators_k2_complete.npz",
+          "sourceSha256": "1d399b4d7db4e01726c77dc99b7592336f288a60e3d92ed9412a6d2db57fcc54"
+        },
+        {
+          "name": "operators_k2_ring.npz",
+          "path": "study-assets/results/hamiltonian-studies/operators_k2_ring.npz",
+          "source": "results/hamiltonian-studies/operators_k2_ring.npz",
+          "sourceSha256": "05a80c39ba120b9ade2404da14417415b9b7c2c653b75647528b4c4a01f93d24"
+        },
+        {
+          "name": "operators_k3_complete.npz",
+          "path": "study-assets/results/hamiltonian-studies/operators_k3_complete.npz",
+          "source": "results/hamiltonian-studies/operators_k3_complete.npz",
+          "sourceSha256": "f7b83abc4af527e7c2eba94a25ca1d39d3f067c2b2b5aec8f5f9ded67de66d20"
+        },
+        {
+          "name": "operators_k3_ring.npz",
+          "path": "study-assets/results/hamiltonian-studies/operators_k3_ring.npz",
+          "source": "results/hamiltonian-studies/operators_k3_ring.npz",
+          "sourceSha256": "7b1255eaeaeaf6838aa1cfaa33787a215539c896fc8126c39a7bf9b9263c51a0"
+        },
+        {
+          "name": "operators_k4_complete.npz",
+          "path": "study-assets/results/hamiltonian-studies/operators_k4_complete.npz",
+          "source": "results/hamiltonian-studies/operators_k4_complete.npz",
+          "sourceSha256": "4da137b965f55452c1ffe60d979c82a4cf163c1885b5e5d489ab989bf9c9ffeb"
+        },
+        {
+          "name": "operators_k4_ring.npz",
+          "path": "study-assets/results/hamiltonian-studies/operators_k4_ring.npz",
+          "source": "results/hamiltonian-studies/operators_k4_ring.npz",
+          "sourceSha256": "0e2843e2d88dddedf1f080204e55dff69765990c391996bd84a1e481a41088e9"
+        },
+        {
+          "name": "spectra.csv",
+          "path": "study-assets/results/hamiltonian-studies/spectra.csv",
+          "source": "results/hamiltonian-studies/spectra.csv",
+          "sourceSha256": "b1dbfd77b0c501ba122944b6f484973e3f5b2cbad68ee7d7ca9fef64ed4b092e"
+        },
+        {
+          "name": "summary.json",
+          "path": "study-assets/results/hamiltonian-studies/summary.json",
+          "source": "results/hamiltonian-studies/summary.json",
+          "sourceSha256": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4"
+        },
+        {
+          "name": "thermodynamics.csv",
+          "path": "study-assets/results/hamiltonian-studies/thermodynamics.csv",
+          "source": "results/hamiltonian-studies/thermodynamics.csv",
+          "sourceSha256": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34"
+        },
+        {
+          "name": "volume_distributions.csv",
+          "path": "study-assets/results/hamiltonian-studies/volume_distributions.csv",
+          "source": "results/hamiltonian-studies/volume_distributions.csv",
+          "sourceSha256": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317"
+        },
+        {
+          "name": "hamiltonian-studies.md",
+          "path": "study-assets/notes/hamiltonian-studies.md",
+          "source": "notes/hamiltonian-studies.md",
+          "sourceSha256": "48ab244a4f3501e4f45bf41e8ca80da9e19735be682724e51d905fa2dd267ec1"
+        }
+      ],
+      "figures": [
+        {
+          "name": "ground_energy_graph_difference.png",
+          "path": "study-assets/results/hamiltonian-studies/ground_energy_graph_difference.png",
+          "source": "results/hamiltonian-studies/ground_energy_graph_difference.png",
+          "sourceSha256": "d1986a2f1ff700480b8ec64199bc4ad0ef38e129e755b4d08e55bc5bec7bbef4",
+          "title": "Ground-energy difference: complete graph minus ring",
+          "width": 3600,
+          "height": 1080,
+          "wide": true,
+          "pdf": "study-assets/results/hamiltonian-studies/ground_energy_graph_difference.pdf"
+        },
+        {
+          "name": "ground_energy_vs_repulsion.png",
+          "path": "study-assets/results/hamiltonian-studies/ground_energy_vs_repulsion.png",
+          "source": "results/hamiltonian-studies/ground_energy_vs_repulsion.png",
+          "sourceSha256": "0b460d9046c9222904c66e2ad851c02b811fdc61dded843775e19577cb012cb1",
+          "title": "Ground energy versus onsite repulsion",
+          "width": 4200,
+          "height": 1320,
+          "wide": true,
+          "pdf": "study-assets/results/hamiltonian-studies/ground_energy_vs_repulsion.pdf"
+        },
+        {
+          "name": "k4_low_energy_volume_spectrum.png",
+          "path": "study-assets/results/hamiltonian-studies/k4_low_energy_volume_spectrum.png",
+          "source": "results/hamiltonian-studies/k4_low_energy_volume_spectrum.png",
+          "sourceSha256": "30e41257faaf39bc08a9c769fd045370932bb969dc6f8012cd0980479b0a4bd8",
+          "title": "K=4 volume of low-energy eigenspaces",
+          "width": 2700,
+          "height": 1140,
+          "wide": true,
+          "pdf": "study-assets/results/hamiltonian-studies/k4_low_energy_volume_spectrum.pdf"
+        },
+        {
+          "name": "k4_thermal_volume_scan.png",
+          "path": "study-assets/results/hamiltonian-studies/k4_thermal_volume_scan.png",
+          "source": "results/hamiltonian-studies/k4_thermal_volume_scan.png",
+          "sourceSha256": "8f632e46fac66592e57535f067c56c8d4319346613ba128797ac145f16c32813",
+          "title": "K=4 mean volume and zero-volume probability versus inverse temperature",
+          "width": 4950,
+          "height": 1980,
+          "wide": true,
+          "pdf": "study-assets/results/hamiltonian-studies/k4_thermal_volume_scan.pdf"
+        },
+        {
+          "name": "thermal_volume_u5.png",
+          "path": "study-assets/results/hamiltonian-studies/thermal_volume_u5.png",
+          "source": "results/hamiltonian-studies/thermal_volume_u5.png",
+          "sourceSha256": "af2ff89487a48b9c51f85ce0fb4a462d6c26c99336e4c431489362e1abe45d9a",
+          "title": "Thermal volume at U/t=5",
+          "width": 4200,
+          "height": 1320,
+          "wide": true,
+          "pdf": "study-assets/results/hamiltonian-studies/thermal_volume_u5.pdf"
+        }
+      ],
+      "table": {
+        "columns": [
+          "K",
+          "graph",
+          "case",
+          "dimension",
+          "ground_energy",
+          "gap",
+          "ground_mean_volume",
+          "ground_probability_zero_volume"
+        ],
+        "rows": [
+          {
+            "K": "2",
+            "graph": "complete",
+            "case": "no_hopping",
+            "t": "0.0",
+            "U": "1.0",
+            "U_over_t": "",
+            "g": "0.0",
+            "dimension": "20",
+            "ground_energy": "0.0",
+            "ground_degeneracy": "2",
+            "gap": "0.9999999999999998",
+            "ground_mean_volume": "0.30465319023639065",
+            "ground_volume_sd": "0.0",
+            "ground_probability_zero_volume": "0.0",
+            "ground_mean_active_sites": "4.0",
+            "ground_commutator_norm_frobenius": "0.0",
+            "ground_commutator_norm_operator": "0.0",
+            "hamiltonian_hermiticity_max_abs": "0.0",
+            "volume_hermiticity_max_abs": "0.0",
+            "onsite_volume_commutator_max_abs": "0.0",
+            "commutator_decomposition_max_abs": "0.0",
+            "commutator_edge_decomposition_max_abs": "0.0",
+            "triple_cancellation_ratio": "0.0",
+            "site0_ground_reduced_entropy": "0.6931471805599453",
+            "site0_ground_reduced_purity": "0.5",
+            "site0_ground_reduced_trace_residual": "4.440892098500626e-16",
+            "ground_spin_closure_correlation_residual": "4.440892098500626e-16",
+            "no_hopping_ground_eigenvalue_spread": "0.0"
+          },
+          {
+            "K": "2",
+            "graph": "complete",
+            "case": "free",
+            "t": "1.0",
+            "U": "0.0",
+            "U_over_t": "0.0",
+            "g": "0.0",
+            "dimension": "20",
+            "ground_energy": "-4.0000000000000036",
+            "ground_degeneracy": "6",
+            "gap": "4.000000000000001",
+            "ground_mean_volume": "0.03808164877954886",
+            "ground_volume_sd": "0.10075457218599261",
+            "ground_probability_zero_volume": "0.8750000000000001",
+            "ground_mean_active_sites": "2.875000000000001",
+            "ground_commutator_norm_frobenius": "2.110699216709502",
+            "ground_commutator_norm_operator": "1.0553496083547511",
+            "hamiltonian_hermiticity_max_abs": "2.220446049250313e-16",
+            "volume_hermiticity_max_abs": "0.0",
+            "onsite_volume_commutator_max_abs": "0.0",
+            "commutator_decomposition_max_abs": "0.0",
+            "commutator_edge_decomposition_max_abs": "0.0",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "1.6874460940243095",
+            "site0_ground_reduced_purity": "0.20117187499999997",
+            "site0_ground_reduced_trace_residual": "2.220446049250313e-16",
+            "ground_spin_closure_correlation_residual": "1.1102230246251565e-16",
+            "no_hopping_ground_eigenvalue_spread": ""
+          },
+          {
+            "K": "2",
+            "graph": "complete",
+            "case": "U1",
+            "t": "1.0",
+            "U": "1.0",
+            "U_over_t": "1.0",
+            "g": "0.0",
+            "dimension": "20",
+            "ground_energy": "-3.3408476172483446",
+            "ground_degeneracy": "2",
+            "gap": "0.5555867524186815",
+            "ground_mean_volume": "0.14785160784355583",
+            "ground_volume_sd": "0.15226084877339427",
+            "ground_probability_zero_volume": "0.5146887917739078",
+            "ground_mean_active_sites": "3.422012911086288",
+            "ground_commutator_norm_frobenius": "2.110699216709502",
+            "ground_commutator_norm_operator": "1.0553496083547511",
+            "hamiltonian_hermiticity_max_abs": "2.220446049250313e-16",
+            "volume_hermiticity_max_abs": "0.0",
+            "onsite_volume_commutator_max_abs": "0.0",
+            "commutator_decomposition_max_abs": "0.0",
+            "commutator_edge_decomposition_max_abs": "0.0",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "1.4531411670538767",
+            "site0_ground_reduced_purity": "0.2806041794912591",
+            "site0_ground_reduced_trace_residual": "1.1102230246251565e-15",
+            "ground_spin_closure_correlation_residual": "2.220446049250313e-16",
+            "no_hopping_ground_eigenvalue_spread": ""
+          },
+          {
+            "K": "2",
+            "graph": "complete",
+            "case": "U5",
+            "t": "1.0",
+            "U": "5.0",
+            "U_over_t": "5.0",
+            "g": "0.0",
+            "dimension": "20",
+            "ground_energy": "-1.844288770224762",
+            "ground_degeneracy": "2",
+            "gap": "3.4963983508782244",
+            "ground_mean_volume": "0.235885111835472",
+            "ground_volume_sd": "0.12736312599929064",
+            "ground_probability_zero_volume": "0.2257257780480117",
+            "ground_mean_active_sites": "3.768016541025193",
+            "ground_commutator_norm_frobenius": "2.110699216709502",
+            "ground_commutator_norm_operator": "1.0553496083547511",
+            "hamiltonian_hermiticity_max_abs": "2.220446049250313e-16",
+            "volume_hermiticity_max_abs": "0.0",
+            "onsite_volume_commutator_max_abs": "0.0",
+            "commutator_decomposition_max_abs": "0.0",
+            "commutator_edge_decomposition_max_abs": "0.0",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "1.1157241270578524",
+            "site0_ground_reduced_purity": "0.3952200049371647",
+            "site0_ground_reduced_trace_residual": "1.1102230246251565e-15",
+            "ground_spin_closure_correlation_residual": "2.220446049250313e-16",
+            "no_hopping_ground_eigenvalue_spread": ""
+          },
+          {
+            "K": "2",
+            "graph": "complete",
+            "case": "U20",
+            "t": "1.0",
+            "U": "20.0",
+            "U_over_t": "20.0",
+            "g": "0.0",
+            "dimension": "20",
+            "ground_energy": "-0.5857322798479174",
+            "ground_degeneracy": "2",
+            "gap": "17.578111551847453",
+            "ground_mean_volume": "0.2961652081293191",
+            "ground_volume_sd": "0.05013825871865511",
+            "ground_probability_zero_volume": "0.027861129898181083",
+            "ground_mean_active_sites": "3.972071377122627",
+            "ground_commutator_norm_frobenius": "2.110699216709502",
+            "ground_commutator_norm_operator": "1.0553496083547511",
+            "hamiltonian_hermiticity_max_abs": "2.220446049250313e-16",
+            "volume_hermiticity_max_abs": "0.0",
+            "onsite_volume_commutator_max_abs": "0.0",
+            "commutator_decomposition_max_abs": "0.0",
+            "commutator_edge_decomposition_max_abs": "0.0",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "0.7743292866728524",
+            "site0_ground_reduced_purity": "0.48619819022294514",
+            "site0_ground_reduced_trace_residual": "1.1102230246251565e-16",
+            "ground_spin_closure_correlation_residual": "2.220446049250313e-16",
+            "no_hopping_ground_eigenvalue_spread": ""
+          },
+          {
+            "K": "2",
+            "graph": "ring",
+            "case": "no_hopping",
+            "t": "0.0",
+            "U": "1.0",
+            "U_over_t": "",
+            "g": "0.0",
+            "dimension": "20",
+            "ground_energy": "0.0",
+            "ground_degeneracy": "2",
+            "gap": "0.9999999999999998",
+            "ground_mean_volume": "0.30465319023639065",
+            "ground_volume_sd": "0.0",
+            "ground_probability_zero_volume": "0.0",
+            "ground_mean_active_sites": "4.0",
+            "ground_commutator_norm_frobenius": "0.0",
+            "ground_commutator_norm_operator": "0.0",
+            "hamiltonian_hermiticity_max_abs": "0.0",
+            "volume_hermiticity_max_abs": "0.0",
+            "onsite_volume_commutator_max_abs": "0.0",
+            "commutator_decomposition_max_abs": "0.0",
+            "commutator_edge_decomposition_max_abs": "0.0",
+            "triple_cancellation_ratio": "0.0",
+            "site0_ground_reduced_entropy": "0.6931471805599453",
+            "site0_ground_reduced_purity": "0.5",
+            "site0_ground_reduced_trace_residual": "4.440892098500626e-16",
+            "ground_spin_closure_correlation_residual": "4.440892098500626e-16",
+            "no_hopping_ground_eigenvalue_spread": "0.0"
+          },
+          {
+            "K": "2",
+            "graph": "ring",
+            "case": "free",
+            "t": "1.0",
+            "U": "0.0",
+            "U_over_t": "0.0",
+            "g": "0.0",
+            "dimension": "20",
+            "ground_energy": "-4.0000000000000036",
+            "ground_degeneracy": "3",
+            "gap": "2.0000000000000013",
+            "ground_mean_volume": "0.050775531706065136",
+            "ground_volume_sd": "0.11353754048845748",
+            "ground_probability_zero_volume": "0.8333333333333333",
+            "ground_mean_active_sites": "2.916666666666667",
+            "ground_commutator_norm_frobenius": "1.7233786938101374",
+            "ground_commutator_norm_operator": "1.0553496083547511",
+            "hamiltonian_hermiticity_max_abs": "2.220446049250313e-16",
+            "volume_hermiticity_max_abs": "0.0",
+            "onsite_volume_commutator_max_abs": "0.0",
+            "commutator_decomposition_max_abs": "0.0",
+            "commutator_edge_decomposition_max_abs": "0.0",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "1.6803589370979184",
+            "site0_ground_reduced_purity": "0.20283564814814814",
+            "site0_ground_reduced_trace_residual": "2.220446049250313e-16",
+            "ground_spin_closure_correlation_residual": "3.3306690738754696e-16",
+            "no_hopping_ground_eigenvalue_spread": ""
+          },
+          {
+            "K": "2",
+            "graph": "ring",
+            "case": "U1",
+            "t": "1.0",
+            "U": "1.0",
+            "U_over_t": "1.0",
+            "g": "0.0",
+            "dimension": "20",
+            "ground_energy": "-3.3408476172483463",
+            "ground_degeneracy": "1",
+            "gap": "0.4769712781787474",
+            "ground_mean_volume": "0.14785160784355617",
+            "ground_volume_sd": "0.15226084877339421",
+            "ground_probability_zero_volume": "0.5146887917739085",
+            "ground_mean_active_sites": "3.422012911086295",
+            "ground_commutator_norm_frobenius": "1.7233786938101374",
+            "ground_commutator_norm_operator": "1.0553496083547511",
+            "hamiltonian_hermiticity_max_abs": "2.220446049250313e-16",
+            "volume_hermiticity_max_abs": "0.0",
+            "onsite_volume_commutator_max_abs": "0.0",
+            "commutator_decomposition_max_abs": "0.0",
+            "commutator_edge_decomposition_max_abs": "0.0",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "1.4531411670538765",
+            "site0_ground_reduced_purity": "0.28060417949125926",
+            "site0_ground_reduced_trace_residual": "4.440892098500626e-16",
+            "ground_spin_closure_correlation_residual": "3.3306690738754696e-16",
+            "no_hopping_ground_eigenvalue_spread": ""
+          },
+          {
+            "K": "2",
+            "graph": "ring",
+            "case": "U5",
+            "t": "1.0",
+            "U": "5.0",
+            "U_over_t": "5.0",
+            "g": "0.0",
+            "dimension": "20",
+            "ground_energy": "-1.8442887702247581",
+            "ground_degeneracy": "1",
+            "gap": "0.9999999999999919",
+            "ground_mean_volume": "0.23588511183547226",
+            "ground_volume_sd": "0.12736312599929056",
+            "ground_probability_zero_volume": "0.22572577804801208",
+            "ground_mean_active_sites": "3.7680165410251973",
+            "ground_commutator_norm_frobenius": "1.7233786938101374",
+            "ground_commutator_norm_operator": "1.0553496083547511",
+            "hamiltonian_hermiticity_max_abs": "2.220446049250313e-16",
+            "volume_hermiticity_max_abs": "0.0",
+            "onsite_volume_commutator_max_abs": "0.0",
+            "commutator_decomposition_max_abs": "0.0",
+            "commutator_edge_decomposition_max_abs": "0.0",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "1.1157241270578522",
+            "site0_ground_reduced_purity": "0.39522000493716475",
+            "site0_ground_reduced_trace_residual": "0.0",
+            "ground_spin_closure_correlation_residual": "5.551115123125783e-16",
+            "no_hopping_ground_eigenvalue_spread": ""
+          },
+          {
+            "K": "2",
+            "graph": "ring",
+            "case": "U20",
+            "t": "1.0",
+            "U": "20.0",
+            "U_over_t": "20.0",
+            "g": "0.0",
+            "dimension": "20",
+            "ground_energy": "-0.5857322798478979",
+            "ground_degeneracy": "1",
+            "gap": "0.38475229939803884",
+            "ground_mean_volume": "0.29616520812931957",
+            "ground_volume_sd": "0.050138258718653586",
+            "ground_probability_zero_volume": "0.027861129898181108",
+            "ground_mean_active_sites": "3.9720713771226324",
+            "ground_commutator_norm_frobenius": "1.7233786938101374",
+            "ground_commutator_norm_operator": "1.0553496083547511",
+            "hamiltonian_hermiticity_max_abs": "2.220446049250313e-16",
+            "volume_hermiticity_max_abs": "0.0",
+            "onsite_volume_commutator_max_abs": "0.0",
+            "commutator_decomposition_max_abs": "0.0",
+            "commutator_edge_decomposition_max_abs": "0.0",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "0.7743292866728524",
+            "site0_ground_reduced_purity": "0.4861981902229451",
+            "site0_ground_reduced_trace_residual": "1.3322676295501878e-15",
+            "ground_spin_closure_correlation_residual": "4.440892098500626e-16",
+            "no_hopping_ground_eigenvalue_spread": ""
+          },
+          {
+            "K": "3",
+            "graph": "complete",
+            "case": "no_hopping",
+            "t": "0.0",
+            "U": "1.0",
+            "U_over_t": "",
+            "g": "0.0",
+            "dimension": "50",
+            "ground_energy": "1.9999999999999996",
+            "ground_degeneracy": "12",
+            "gap": "1.0000000000000013",
+            "ground_mean_volume": "0.389312110176339",
+            "ground_volume_sd": "7.450580596923828e-09",
+            "ground_probability_zero_volume": "0.0",
+            "ground_mean_active_sites": "4.0",
+            "ground_commutator_norm_frobenius": "0.0",
+            "ground_commutator_norm_operator": "0.0",
+            "hamiltonian_hermiticity_max_abs": "0.0",
+            "volume_hermiticity_max_abs": "0.0",
+            "onsite_volume_commutator_max_abs": "0.0",
+            "commutator_decomposition_max_abs": "0.0",
+            "commutator_edge_decomposition_max_abs": "0.0",
+            "triple_cancellation_ratio": "0.0",
+            "site0_ground_reduced_entropy": "1.5890269151739729",
+            "site0_ground_reduced_purity": "0.20833333333333337",
+            "site0_ground_reduced_trace_residual": "1.1102230246251565e-16",
+            "ground_spin_closure_correlation_residual": "2.220446049250313e-16",
+            "no_hopping_ground_eigenvalue_spread": "1.3322676295501878e-15"
+          },
+          {
+            "K": "3",
+            "graph": "complete",
+            "case": "free",
+            "t": "1.0",
+            "U": "0.0",
+            "U_over_t": "0.0",
+            "g": "0.0",
+            "dimension": "50",
+            "ground_energy": "-6.000000000000008",
+            "ground_degeneracy": "10",
+            "gap": "4.000000000000001",
+            "ground_mean_volume": "0.11679363305290169",
+            "ground_volume_sd": "0.17840522138460616",
+            "ground_probability_zero_volume": "0.6999999999999998",
+            "ground_mean_active_sites": "3.3249999999999993",
+            "ground_commutator_norm_frobenius": "6.031197276759316",
+            "ground_commutator_norm_operator": "1.3486167096545454",
+            "hamiltonian_hermiticity_max_abs": "2.220446049250313e-16",
+            "volume_hermiticity_max_abs": "0.0",
+            "onsite_volume_commutator_max_abs": "0.0",
+            "commutator_decomposition_max_abs": "1.1102230246251565e-16",
+            "commutator_edge_decomposition_max_abs": "1.1102230246251565e-16",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "2.163035372316536",
+            "site0_ground_reduced_purity": "0.12695312500000003",
+            "site0_ground_reduced_trace_residual": "2.220446049250313e-16",
+            "ground_spin_closure_correlation_residual": "2.220446049250313e-16",
+            "no_hopping_ground_eigenvalue_spread": ""
+          },
+          {
+            "K": "3",
+            "graph": "complete",
+            "case": "U1",
+            "t": "1.0",
+            "U": "1.0",
+            "U_over_t": "1.0",
+            "g": "0.0",
+            "dimension": "50",
+            "ground_energy": "-3.4953369233910823",
+            "ground_degeneracy": "3",
+            "gap": "0.48078975807168955",
+            "ground_mean_volume": "0.30534784024254286",
+            "ground_volume_sd": "0.16011966925342605",
+            "ground_probability_zero_volume": "0.215673408915445",
+            "ground_mean_active_sites": "3.8345334579709682",
+            "ground_commutator_norm_frobenius": "6.031197276759316",
+            "ground_commutator_norm_operator": "1.3486167096545454",
+            "hamiltonian_hermiticity_max_abs": "2.220446049250313e-16",
+            "volume_hermiticity_max_abs": "0.0",
+            "onsite_volume_commutator_max_abs": "0.0",
+            "commutator_decomposition_max_abs": "1.1102230246251565e-16",
+            "commutator_edge_decomposition_max_abs": "1.1102230246251565e-16",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "1.8844606233935743",
+            "site0_ground_reduced_purity": "0.1760655926340573",
+            "site0_ground_reduced_trace_residual": "2.220446049250313e-16",
+            "ground_spin_closure_correlation_residual": "2.220446049250313e-16",
+            "no_hopping_ground_eigenvalue_spread": ""
+          },
+          {
+            "K": "3",
+            "graph": "complete",
+            "case": "U5",
+            "t": "1.0",
+            "U": "5.0",
+            "U_over_t": "5.0",
+            "g": "0.0",
+            "dimension": "50",
+            "ground_energy": "5.258120603145892",
+            "ground_degeneracy": "3",
+            "gap": "1.3780472991927795",
+            "ground_mean_volume": "0.3664493198776789",
+            "ground_volume_sd": "0.09153171010884709",
+            "ground_probability_zero_volume": "0.058726121538589394",
+            "ground_mean_active_sites": "3.9663631962992434",
+            "ground_commutator_norm_frobenius": "6.031197276759316",
+            "ground_commutator_norm_operator": "1.3486167096545454",
+            "hamiltonian_hermiticity_max_abs": "2.220446049250313e-16",
+            "volume_hermiticity_max_abs": "0.0",
+            "onsite_volume_commutator_max_abs": "0.0",
+            "commutator_decomposition_max_abs": "1.1102230246251565e-16",
+            "commutator_edge_decomposition_max_abs": "1.1102230246251565e-16",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "1.6937346182361193",
+            "site0_ground_reduced_purity": "0.2005509248269416",
+            "site0_ground_reduced_trace_residual": "6.661338147750939e-16",
+            "ground_spin_closure_correlation_residual": "2.220446049250313e-16",
+            "no_hopping_ground_eigenvalue_spread": ""
+          },
+          {
+            "K": "3",
+            "graph": "complete",
+            "case": "U20",
+            "t": "1.0",
+            "U": "20.0",
+            "U_over_t": "20.0",
+            "g": "0.0",
+            "dimension": "50",
+            "ground_energy": "35.74018126719282",
+            "ground_degeneracy": "3",
+            "gap": "1.8668564922131097",
+            "ground_mean_volume": "0.386272097882398",
+            "ground_volume_sd": "0.03426765131095072",
+            "ground_probability_zero_volume": "0.007808676417910833",
+            "ground_mean_active_sites": "3.996569121177862",
+            "ground_commutator_norm_frobenius": "6.031197276759316",
+            "ground_commutator_norm_operator": "1.3486167096545454",
+            "hamiltonian_hermiticity_max_abs": "2.220446049250313e-16",
+            "volume_hermiticity_max_abs": "0.0",
+            "onsite_volume_commutator_max_abs": "0.0",
+            "commutator_decomposition_max_abs": "1.1102230246251565e-16",
+            "commutator_edge_decomposition_max_abs": "1.1102230246251565e-16",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "1.607640202161616",
+            "site0_ground_reduced_purity": "0.2074409295835855",
+            "site0_ground_reduced_trace_residual": "2.220446049250313e-16",
+            "ground_spin_closure_correlation_residual": "4.440892098500626e-16",
+            "no_hopping_ground_eigenvalue_spread": ""
+          },
+          {
+            "K": "3",
+            "graph": "ring",
+            "case": "no_hopping",
+            "t": "0.0",
+            "U": "1.0",
+            "U_over_t": "",
+            "g": "0.0",
+            "dimension": "50",
+            "ground_energy": "1.9999999999999996",
+            "ground_degeneracy": "12",
+            "gap": "1.0000000000000013",
+            "ground_mean_volume": "0.389312110176339",
+            "ground_volume_sd": "7.450580596923828e-09",
+            "ground_probability_zero_volume": "0.0",
+            "ground_mean_active_sites": "4.0",
+            "ground_commutator_norm_frobenius": "0.0",
+            "ground_commutator_norm_operator": "0.0",
+            "hamiltonian_hermiticity_max_abs": "0.0",
+            "volume_hermiticity_max_abs": "0.0",
+            "onsite_volume_commutator_max_abs": "0.0",
+            "commutator_decomposition_max_abs": "0.0",
+            "commutator_edge_decomposition_max_abs": "0.0",
+            "triple_cancellation_ratio": "0.0",
+            "site0_ground_reduced_entropy": "1.5890269151739729",
+            "site0_ground_reduced_purity": "0.20833333333333337",
+            "site0_ground_reduced_trace_residual": "1.1102230246251565e-16",
+            "ground_spin_closure_correlation_residual": "2.220446049250313e-16",
+            "no_hopping_ground_eigenvalue_spread": "1.3322676295501878e-15"
+          },
+          {
+            "K": "3",
+            "graph": "ring",
+            "case": "free",
+            "t": "1.0",
+            "U": "0.0",
+            "U_over_t": "0.0",
+            "g": "0.0",
+            "dimension": "50",
+            "ground_energy": "-6.000000000000005",
+            "ground_degeneracy": "4",
+            "gap": "2.0000000000000027",
+            "ground_mean_volume": "0.1520750430376324",
+            "ground_volume_sd": "0.18994166787527295",
+            "ground_probability_zero_volume": "0.6093749999999993",
+            "ground_mean_active_sites": "3.3749999999999973",
+            "ground_commutator_norm_frobenius": "4.924451955374592",
+            "ground_commutator_norm_operator": "1.298407286453313",
+            "hamiltonian_hermiticity_max_abs": "2.220446049250313e-16",
+            "volume_hermiticity_max_abs": "0.0",
+            "onsite_volume_commutator_max_abs": "0.0",
+            "commutator_decomposition_max_abs": "1.1102230246251565e-16",
+            "commutator_edge_decomposition_max_abs": "1.1102230246251565e-16",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "2.1467593665873173",
+            "site0_ground_reduced_purity": "0.12898763020833334",
+            "site0_ground_reduced_trace_residual": "6.661338147750939e-16",
+            "ground_spin_closure_correlation_residual": "4.440892098500626e-16",
+            "no_hopping_ground_eigenvalue_spread": ""
+          },
+          {
+            "K": "3",
+            "graph": "ring",
+            "case": "U1",
+            "t": "1.0",
+            "U": "1.0",
+            "U_over_t": "1.0",
+            "g": "0.0",
+            "dimension": "50",
+            "ground_energy": "-3.4377996042315324",
+            "ground_degeneracy": "2",
+            "gap": "0.8864420578581189",
+            "ground_mean_volume": "0.3002956988276988",
+            "ground_volume_sd": "0.16349692796219087",
+            "ground_probability_zero_volume": "0.22865050693727593",
+            "ground_mean_active_sites": "3.7912835226510415",
+            "ground_commutator_norm_frobenius": "4.924451955374592",
+            "ground_commutator_norm_operator": "1.298407286453313",
+            "hamiltonian_hermiticity_max_abs": "2.220446049250313e-16",
+            "volume_hermiticity_max_abs": "0.0",
+            "onsite_volume_commutator_max_abs": "0.0",
+            "commutator_decomposition_max_abs": "1.1102230246251565e-16",
+            "commutator_edge_decomposition_max_abs": "1.1102230246251565e-16",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "1.9024249151673152",
+            "site0_ground_reduced_purity": "0.17052294324982042",
+            "site0_ground_reduced_trace_residual": "8.881784197001252e-16",
+            "ground_spin_closure_correlation_residual": "6.661338147750939e-16",
+            "no_hopping_ground_eigenvalue_spread": ""
+          },
+          {
+            "K": "3",
+            "graph": "ring",
+            "case": "U5",
+            "t": "1.0",
+            "U": "5.0",
+            "U_over_t": "5.0",
+            "g": "0.0",
+            "dimension": "50",
+            "ground_energy": "5.352495488852244",
+            "ground_degeneracy": "2",
+            "gap": "1.9190706794835908",
+            "ground_mean_volume": "0.367980084013824",
+            "ground_volume_sd": "0.0885988757234956",
+            "ground_probability_zero_volume": "0.054794150001787",
+            "ground_mean_active_sites": "3.954430547063523",
+            "ground_commutator_norm_frobenius": "4.924451955374592",
+            "ground_commutator_norm_operator": "1.298407286453313",
+            "hamiltonian_hermiticity_max_abs": "2.220446049250313e-16",
+            "volume_hermiticity_max_abs": "0.0",
+            "onsite_volume_commutator_max_abs": "0.0",
+            "commutator_decomposition_max_abs": "1.1102230246251565e-16",
+            "commutator_edge_decomposition_max_abs": "1.1102230246251565e-16",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "1.6930950691884412",
+            "site0_ground_reduced_purity": "0.1991100846800227",
+            "site0_ground_reduced_trace_residual": "1.1102230246251565e-15",
+            "ground_spin_closure_correlation_residual": "2.220446049250313e-16",
+            "no_hopping_ground_eigenvalue_spread": ""
+          },
+          {
+            "K": "3",
+            "graph": "ring",
+            "case": "U20",
+            "t": "1.0",
+            "U": "20.0",
+            "U_over_t": "20.0",
+            "g": "0.0",
+            "dimension": "50",
+            "ground_energy": "35.79396754825477",
+            "ground_degeneracy": "2",
+            "gap": "2.013120472847085",
+            "ground_mean_volume": "0.3869916382919181",
+            "ground_volume_sd": "0.029966701789860054",
+            "ground_probability_zero_volume": "0.005960441054273682",
+            "ground_mean_active_sites": "3.995294553493641",
+            "ground_commutator_norm_frobenius": "4.924451955374592",
+            "ground_commutator_norm_operator": "1.298407286453313",
+            "hamiltonian_hermiticity_max_abs": "2.220446049250313e-16",
+            "volume_hermiticity_max_abs": "0.0",
+            "onsite_volume_commutator_max_abs": "0.0",
+            "commutator_decomposition_max_abs": "1.1102230246251565e-16",
+            "commutator_edge_decomposition_max_abs": "1.1102230246251565e-16",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "1.6051390038378817",
+            "site0_ground_reduced_purity": "0.20735591495008424",
+            "site0_ground_reduced_trace_residual": "0.0",
+            "ground_spin_closure_correlation_residual": "4.440892098500626e-16",
+            "no_hopping_ground_eigenvalue_spread": ""
+          },
+          {
+            "K": "4",
+            "graph": "complete",
+            "case": "no_hopping",
+            "t": "0.0",
+            "U": "1.0",
+            "U_over_t": "",
+            "g": "0.0",
+            "dimension": "105",
+            "ground_energy": "3.9999999999999996",
+            "ground_degeneracy": "3",
+            "gap": "0.9999999999999996",
+            "ground_mean_volume": "0.4062042536485209",
+            "ground_volume_sd": "0.28722978230168944",
+            "ground_probability_zero_volume": "0.33333333333333326",
+            "ground_mean_active_sites": "4.0",
+            "ground_commutator_norm_frobenius": "3.1401849173675503e-16",
+            "ground_commutator_norm_operator": "2.220446049250313e-16",
+            "hamiltonian_hermiticity_max_abs": "2.220446049250313e-16",
+            "volume_hermiticity_max_abs": "6.162975822039155e-33",
+            "onsite_volume_commutator_max_abs": "2.220446049250313e-16",
+            "commutator_decomposition_max_abs": "3.0814879110195774e-33",
+            "commutator_edge_decomposition_max_abs": "2.220446049250313e-16",
+            "triple_cancellation_ratio": "0.0",
+            "site0_ground_reduced_entropy": "1.0986122886681096",
+            "site0_ground_reduced_purity": "0.33333333333333326",
+            "site0_ground_reduced_trace_residual": "4.440892098500626e-16",
+            "ground_spin_closure_correlation_residual": "4.440892098500626e-16",
+            "no_hopping_ground_eigenvalue_spread": "3.9968028886505635e-15"
+          },
+          {
+            "K": "4",
+            "graph": "complete",
+            "case": "free",
+            "t": "1.0",
+            "U": "0.0",
+            "U_over_t": "0.0",
+            "g": "0.0",
+            "dimension": "105",
+            "ground_energy": "-8.000000000000007",
+            "ground_degeneracy": "15",
+            "gap": "4.000000000000003",
+            "ground_mean_volume": "0.2164010109028967",
+            "ground_volume_sd": "0.2428487309603782",
+            "ground_probability_zero_volume": "0.5552083333333331",
+            "ground_mean_active_sites": "3.578124999999999",
+            "ground_commutator_norm_frobenius": "13.015778206357945",
+            "ground_commutator_norm_operator": "3.100888862754637",
+            "hamiltonian_hermiticity_max_abs": "4.440892098500626e-16",
+            "volume_hermiticity_max_abs": "6.162975822039155e-33",
+            "onsite_volume_commutator_max_abs": "2.220446049250313e-16",
+            "commutator_decomposition_max_abs": "2.220446049250313e-16",
+            "commutator_edge_decomposition_max_abs": "2.220446049250313e-16",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "2.5404699225941525",
+            "site0_ground_reduced_purity": "0.08802319335937502",
+            "site0_ground_reduced_trace_residual": "1.1102230246251565e-16",
+            "ground_spin_closure_correlation_residual": "4.440892098500626e-16",
+            "no_hopping_ground_eigenvalue_spread": ""
+          },
+          {
+            "K": "4",
+            "graph": "complete",
+            "case": "U1",
+            "t": "1.0",
+            "U": "1.0",
+            "U_over_t": "1.0",
+            "g": "0.0",
+            "dimension": "105",
+            "ground_energy": "-2.8678551931894294",
+            "ground_degeneracy": "1",
+            "gap": "0.17744048631756826",
+            "ground_mean_volume": "0.29773310233762623",
+            "ground_volume_sd": "0.23398188897825625",
+            "ground_probability_zero_volume": "0.3812298747979659",
+            "ground_mean_active_sites": "3.9868724068215418",
+            "ground_commutator_norm_frobenius": "13.015778206357945",
+            "ground_commutator_norm_operator": "3.100888862754637",
+            "hamiltonian_hermiticity_max_abs": "4.440892098500626e-16",
+            "volume_hermiticity_max_abs": "6.162975822039155e-33",
+            "onsite_volume_commutator_max_abs": "2.220446049250313e-16",
+            "commutator_decomposition_max_abs": "2.220446049250313e-16",
+            "commutator_edge_decomposition_max_abs": "2.220446049250313e-16",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "2.1282141017286635",
+            "site0_ground_reduced_purity": "0.14073049313267888",
+            "site0_ground_reduced_trace_residual": "6.661338147750939e-16",
+            "ground_spin_closure_correlation_residual": "8.881784197001252e-16",
+            "no_hopping_ground_eigenvalue_spread": ""
+          },
+          {
+            "K": "4",
+            "graph": "complete",
+            "case": "U5",
+            "t": "1.0",
+            "U": "5.0",
+            "U_over_t": "5.0",
+            "g": "0.0",
+            "dimension": "105",
+            "ground_energy": "15.757236034791728",
+            "ground_degeneracy": "1",
+            "gap": "0.1249008470163897",
+            "ground_mean_volume": "0.18433040858929045",
+            "ground_volume_sd": "0.23608770730675527",
+            "ground_probability_zero_volume": "0.6211216690513439",
+            "ground_mean_active_sites": "3.997199099155432",
+            "ground_commutator_norm_frobenius": "13.015778206357945",
+            "ground_commutator_norm_operator": "3.100888862754639",
+            "hamiltonian_hermiticity_max_abs": "1.1102230246251565e-15",
+            "volume_hermiticity_max_abs": "6.162975822039155e-33",
+            "onsite_volume_commutator_max_abs": "2.220446049250313e-16",
+            "commutator_decomposition_max_abs": "4.440892098500626e-16",
+            "commutator_edge_decomposition_max_abs": "1.7763568394002505e-15",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "1.7609676897812034",
+            "site0_ground_reduced_purity": "0.21555095383419548",
+            "site0_ground_reduced_trace_residual": "1.1102230246251565e-16",
+            "ground_spin_closure_correlation_residual": "4.440892098500626e-16",
+            "no_hopping_ground_eigenvalue_spread": ""
+          },
+          {
+            "K": "4",
+            "graph": "complete",
+            "case": "U20",
+            "t": "1.0",
+            "U": "20.0",
+            "U_over_t": "20.0",
+            "g": "0.0",
+            "dimension": "105",
+            "ground_energy": "78.4744354619889",
+            "ground_degeneracy": "1",
+            "gap": "0.009225701259239827",
+            "ground_mean_volume": "0.03348745734595996",
+            "ground_volume_sd": "0.12353458139442805",
+            "ground_probability_zero_volume": "0.9315436612208895",
+            "ground_mean_active_sites": "3.9999339051367886",
+            "ground_commutator_norm_frobenius": "13.015778206357945",
+            "ground_commutator_norm_operator": "3.1008888627546374",
+            "hamiltonian_hermiticity_max_abs": "4.440892098500626e-15",
+            "volume_hermiticity_max_abs": "6.162975822039155e-33",
+            "onsite_volume_commutator_max_abs": "2.220446049250313e-16",
+            "commutator_decomposition_max_abs": "1.7763568394002505e-15",
+            "commutator_edge_decomposition_max_abs": "7.105427357601002e-15",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "1.2714801502657436",
+            "site0_ground_reduced_purity": "0.31085102876503673",
+            "site0_ground_reduced_trace_residual": "4.440892098500626e-16",
+            "ground_spin_closure_correlation_residual": "8.881784197001252e-16",
+            "no_hopping_ground_eigenvalue_spread": ""
+          },
+          {
+            "K": "4",
+            "graph": "ring",
+            "case": "no_hopping",
+            "t": "0.0",
+            "U": "1.0",
+            "U_over_t": "",
+            "g": "0.0",
+            "dimension": "105",
+            "ground_energy": "3.9999999999999996",
+            "ground_degeneracy": "3",
+            "gap": "0.9999999999999996",
+            "ground_mean_volume": "0.4062042536485209",
+            "ground_volume_sd": "0.28722978230168944",
+            "ground_probability_zero_volume": "0.33333333333333326",
+            "ground_mean_active_sites": "4.0",
+            "ground_commutator_norm_frobenius": "3.1401849173675503e-16",
+            "ground_commutator_norm_operator": "2.220446049250313e-16",
+            "hamiltonian_hermiticity_max_abs": "2.220446049250313e-16",
+            "volume_hermiticity_max_abs": "6.162975822039155e-33",
+            "onsite_volume_commutator_max_abs": "2.220446049250313e-16",
+            "commutator_decomposition_max_abs": "3.0814879110195774e-33",
+            "commutator_edge_decomposition_max_abs": "2.220446049250313e-16",
+            "triple_cancellation_ratio": "0.0",
+            "site0_ground_reduced_entropy": "1.0986122886681096",
+            "site0_ground_reduced_purity": "0.33333333333333326",
+            "site0_ground_reduced_trace_residual": "4.440892098500626e-16",
+            "ground_spin_closure_correlation_residual": "4.440892098500626e-16",
+            "no_hopping_ground_eigenvalue_spread": "3.9968028886505635e-15"
+          },
+          {
+            "K": "4",
+            "graph": "ring",
+            "case": "free",
+            "t": "1.0",
+            "U": "0.0",
+            "U_over_t": "0.0",
+            "g": "0.0",
+            "dimension": "105",
+            "ground_energy": "-8.0",
+            "ground_degeneracy": "5",
+            "gap": "1.9999999999999964",
+            "ground_mean_volume": "0.26748173032040845",
+            "ground_volume_sd": "0.2445896758039036",
+            "ground_probability_zero_volume": "0.452083333333333",
+            "ground_mean_active_sites": "3.6218749999999984",
+            "ground_commutator_norm_frobenius": "10.627338403604883",
+            "ground_commutator_norm_operator": "2.6459696923171085",
+            "hamiltonian_hermiticity_max_abs": "4.440892098500626e-16",
+            "volume_hermiticity_max_abs": "6.162975822039155e-33",
+            "onsite_volume_commutator_max_abs": "2.220446049250313e-16",
+            "commutator_decomposition_max_abs": "2.220446049250313e-16",
+            "commutator_edge_decomposition_max_abs": "2.220446049250313e-16",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "2.5148437396909777",
+            "site0_ground_reduced_purity": "0.08996980794270834",
+            "site0_ground_reduced_trace_residual": "3.3306690738754696e-16",
+            "ground_spin_closure_correlation_residual": "4.440892098500626e-16",
+            "no_hopping_ground_eigenvalue_spread": ""
+          },
+          {
+            "K": "4",
+            "graph": "ring",
+            "case": "U1",
+            "t": "1.0",
+            "U": "1.0",
+            "U_over_t": "1.0",
+            "g": "0.0",
+            "dimension": "105",
+            "ground_energy": "-2.7877147327990905",
+            "ground_degeneracy": "1",
+            "gap": "0.3496946385997415",
+            "ground_mean_volume": "0.36563195488979955",
+            "ground_volume_sd": "0.2286025961061239",
+            "ground_probability_zero_volume": "0.2740786292459998",
+            "ground_mean_active_sites": "3.947115674290575",
+            "ground_commutator_norm_frobenius": "10.627338403604883",
+            "ground_commutator_norm_operator": "2.6459696923171054",
+            "hamiltonian_hermiticity_max_abs": "4.440892098500626e-16",
+            "volume_hermiticity_max_abs": "6.162975822039155e-33",
+            "onsite_volume_commutator_max_abs": "2.220446049250313e-16",
+            "commutator_decomposition_max_abs": "2.220446049250313e-16",
+            "commutator_edge_decomposition_max_abs": "2.220446049250313e-16",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "2.1417816253258106",
+            "site0_ground_reduced_purity": "0.14045112636002624",
+            "site0_ground_reduced_trace_residual": "2.220446049250313e-16",
+            "ground_spin_closure_correlation_residual": "8.881784197001252e-16",
+            "no_hopping_ground_eigenvalue_spread": ""
+          },
+          {
+            "K": "4",
+            "graph": "ring",
+            "case": "U5",
+            "t": "1.0",
+            "U": "5.0",
+            "U_over_t": "5.0",
+            "g": "0.0",
+            "dimension": "105",
+            "ground_energy": "15.810706432061663",
+            "ground_degeneracy": "1",
+            "gap": "0.6669292535446569",
+            "ground_mean_volume": "0.33631843579350545",
+            "ground_volume_sd": "0.26423790904045963",
+            "ground_probability_zero_volume": "0.3738239780746815",
+            "ground_mean_active_sites": "3.994374775669834",
+            "ground_commutator_norm_frobenius": "10.627338403604883",
+            "ground_commutator_norm_operator": "2.6459696923171068",
+            "hamiltonian_hermiticity_max_abs": "1.1102230246251565e-15",
+            "volume_hermiticity_max_abs": "6.162975822039155e-33",
+            "onsite_volume_commutator_max_abs": "2.220446049250313e-16",
+            "commutator_decomposition_max_abs": "4.440892098500626e-16",
+            "commutator_edge_decomposition_max_abs": "1.7763568394002505e-15",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "1.7499045376347953",
+            "site0_ground_reduced_purity": "0.21838350959339653",
+            "site0_ground_reduced_trace_residual": "4.440892098500626e-16",
+            "ground_spin_closure_correlation_residual": "8.881784197001252e-16",
+            "no_hopping_ground_eigenvalue_spread": ""
+          },
+          {
+            "K": "4",
+            "graph": "ring",
+            "case": "U20",
+            "t": "1.0",
+            "U": "20.0",
+            "U_over_t": "20.0",
+            "g": "0.0",
+            "dimension": "105",
+            "ground_energy": "78.47851810575736",
+            "ground_degeneracy": "1",
+            "gap": "0.35986961695610376",
+            "ground_mean_volume": "0.2831716199512852",
+            "ground_volume_sd": "0.29725452101793615",
+            "ground_probability_zero_volume": "0.5218629186387705",
+            "ground_mean_active_sites": "3.9999059695293013",
+            "ground_commutator_norm_frobenius": "10.627338403604883",
+            "ground_commutator_norm_operator": "2.6459696923171037",
+            "hamiltonian_hermiticity_max_abs": "4.440892098500626e-15",
+            "volume_hermiticity_max_abs": "6.162975822039155e-33",
+            "onsite_volume_commutator_max_abs": "2.220446049250313e-16",
+            "commutator_decomposition_max_abs": "1.7763568394002505e-15",
+            "commutator_edge_decomposition_max_abs": "7.105427357601002e-15",
+            "triple_cancellation_ratio": "1.0",
+            "site0_ground_reduced_entropy": "1.2703872364493891",
+            "site0_ground_reduced_purity": "0.31103296865448427",
+            "site0_ground_reduced_trace_residual": "8.881784197001252e-16",
+            "ground_spin_closure_correlation_residual": "1.3322676295501878e-15",
+            "no_hopping_ground_eigenvalue_spread": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "closed-basis",
+      "task": "T1a",
+      "title": "Complete four-face closed-basis volumes",
+      "description": "Four labelled faces, zero-spin faces allowed; K=2 through 12, 10,549 basis states. RS/AL means, variances, spectra and reconstructible operators.",
+      "limits": "One copy, zero temperature. K=13 was stopped and has no accepted result. Physical volume calibration remains open; full tensor/root checks cover K<=4, with the recorded block checks at higher K.",
+      "status": "Saved calculation",
+      "files": [
+        {
+          "name": "README.md",
+          "path": "study-assets/results/closed-basis-volume/README.md",
+          "source": "results/closed-basis-volume/README.md",
+          "sourceSha256": "f4ceddf43e39f302b6a7e0ebedd37b84cd06fd9009dfc988f4ce642ae80363d7"
+        },
+        {
+          "name": "metadata_k10.json",
+          "path": "study-assets/results/closed-basis-volume/metadata_k10.json",
+          "source": "results/closed-basis-volume/metadata_k10.json",
+          "sourceSha256": "a80142126873617deddc81c6069e84de887ac0f2a965ca0e7259ee36873d2d1d"
+        },
+        {
+          "name": "metadata_k11.json",
+          "path": "study-assets/results/closed-basis-volume/metadata_k11.json",
+          "source": "results/closed-basis-volume/metadata_k11.json",
+          "sourceSha256": "26718cf1e2c2480bedcac2214473f34254f0a9e9c66a4ec6a5e6f4485923518e"
+        },
+        {
+          "name": "metadata_k12.json",
+          "path": "study-assets/results/closed-basis-volume/metadata_k12.json",
+          "source": "results/closed-basis-volume/metadata_k12.json",
+          "sourceSha256": "00372978bec6b10aa1c17d53de8ad25f6d7136eb1f900ee19b45337e0075bece"
+        },
+        {
+          "name": "metadata_k2.json",
+          "path": "study-assets/results/closed-basis-volume/metadata_k2.json",
+          "source": "results/closed-basis-volume/metadata_k2.json",
+          "sourceSha256": "749f7403efb0a12a020faaa364292ef924d2aaa0ce02df2042da4ddca75210a7"
+        },
+        {
+          "name": "metadata_k3.json",
+          "path": "study-assets/results/closed-basis-volume/metadata_k3.json",
+          "source": "results/closed-basis-volume/metadata_k3.json",
+          "sourceSha256": "bc8c197981750b950c42c97aa6e8e95bdd77cc90c12a4777278b0e144bfab199"
+        },
+        {
+          "name": "metadata_k4.json",
+          "path": "study-assets/results/closed-basis-volume/metadata_k4.json",
+          "source": "results/closed-basis-volume/metadata_k4.json",
+          "sourceSha256": "da4e0e19eedb37d42af99e79bd39050a52a95edce2eac5195d74e4c42513aef3"
+        },
+        {
+          "name": "metadata_k5.json",
+          "path": "study-assets/results/closed-basis-volume/metadata_k5.json",
+          "source": "results/closed-basis-volume/metadata_k5.json",
+          "sourceSha256": "5cc68a9662496185033e936be793cede0cd0d2c28515ef8c40cc36fc14741eda"
+        },
+        {
+          "name": "metadata_k6.json",
+          "path": "study-assets/results/closed-basis-volume/metadata_k6.json",
+          "source": "results/closed-basis-volume/metadata_k6.json",
+          "sourceSha256": "3d49ed7047f4c76f0c737dd5edea25aea4c2f8138e43d1186a55bd0e78c04e64"
+        },
+        {
+          "name": "metadata_k7.json",
+          "path": "study-assets/results/closed-basis-volume/metadata_k7.json",
+          "source": "results/closed-basis-volume/metadata_k7.json",
+          "sourceSha256": "6619041969b81567b93b5b6af09fa0fc3f42f351f48e8bcbc00805268b5f534b"
+        },
+        {
+          "name": "metadata_k8.json",
+          "path": "study-assets/results/closed-basis-volume/metadata_k8.json",
+          "source": "results/closed-basis-volume/metadata_k8.json",
+          "sourceSha256": "936d9252a60f1cf919dc70ef53e38139dd5a138c1291a394f67086c583462a68"
+        },
+        {
+          "name": "metadata_k9.json",
+          "path": "study-assets/results/closed-basis-volume/metadata_k9.json",
+          "source": "results/closed-basis-volume/metadata_k9.json",
+          "sourceSha256": "98963ff5f0b01bfdedd71ce07dfb4931a8f55e0c0a96701643bae613236a2c9a"
+        },
+        {
+          "name": "operators_k10.npz",
+          "path": "study-assets/results/closed-basis-volume/operators_k10.npz",
+          "source": "results/closed-basis-volume/operators_k10.npz",
+          "sourceSha256": "7bc876562107e50ab3a4656301678987d77c3710cb40adce73fe8afe6ab74acc"
+        },
+        {
+          "name": "operators_k11.npz",
+          "path": "study-assets/results/closed-basis-volume/operators_k11.npz",
+          "source": "results/closed-basis-volume/operators_k11.npz",
+          "sourceSha256": "d695842d656b8ab093898873c35994b53a6df362f576da3e4cd08996151edc75"
+        },
+        {
+          "name": "operators_k12.npz",
+          "path": "study-assets/results/closed-basis-volume/operators_k12.npz",
+          "source": "results/closed-basis-volume/operators_k12.npz",
+          "sourceSha256": "b3b1c3e8d9acb0126b121ffdc3856dd0efe2fe6f59cde5ee6032377fad6904f3"
+        },
+        {
+          "name": "operators_k2.npz",
+          "path": "study-assets/results/closed-basis-volume/operators_k2.npz",
+          "source": "results/closed-basis-volume/operators_k2.npz",
+          "sourceSha256": "51ae53834b6cea49a9f31d632aac948eaff344800b69a1917849c58c09708d3d"
+        },
+        {
+          "name": "operators_k3.npz",
+          "path": "study-assets/results/closed-basis-volume/operators_k3.npz",
+          "source": "results/closed-basis-volume/operators_k3.npz",
+          "sourceSha256": "999c7319f2d98d321cca4bd8422ab05c301f3096f92e1aeb0e06d04692469e38"
+        },
+        {
+          "name": "operators_k4.npz",
+          "path": "study-assets/results/closed-basis-volume/operators_k4.npz",
+          "source": "results/closed-basis-volume/operators_k4.npz",
+          "sourceSha256": "38d5f1fb6e42efbae429406484f6b35e3c14cc3a970d616f1decd4a6dd2004c4"
+        },
+        {
+          "name": "operators_k5.npz",
+          "path": "study-assets/results/closed-basis-volume/operators_k5.npz",
+          "source": "results/closed-basis-volume/operators_k5.npz",
+          "sourceSha256": "6cdf27858c38d044264d582fd23cacdbb8095e0beae3ec810f75a7f708fe8626"
+        },
+        {
+          "name": "operators_k6.npz",
+          "path": "study-assets/results/closed-basis-volume/operators_k6.npz",
+          "source": "results/closed-basis-volume/operators_k6.npz",
+          "sourceSha256": "5dde52cb5d9c1d9a6238c926111bd09f179ade06c71085f0114046751c4f955b"
+        },
+        {
+          "name": "operators_k7.npz",
+          "path": "study-assets/results/closed-basis-volume/operators_k7.npz",
+          "source": "results/closed-basis-volume/operators_k7.npz",
+          "sourceSha256": "537c4d52540f1583e9809df8ea482a5780eff0cd6a46292214cfc1f242f831a2"
+        },
+        {
+          "name": "operators_k8.npz",
+          "path": "study-assets/results/closed-basis-volume/operators_k8.npz",
+          "source": "results/closed-basis-volume/operators_k8.npz",
+          "sourceSha256": "041c81fbd7ecffd2d0547f1a5084f6f03676f7e10550db2127a61cbcc46f49a4"
+        },
+        {
+          "name": "operators_k9.npz",
+          "path": "study-assets/results/closed-basis-volume/operators_k9.npz",
+          "source": "results/closed-basis-volume/operators_k9.npz",
+          "sourceSha256": "dc406856bb0f500b0c30330a9722bc65d564e5e97830a623a7176f04552e9438"
+        },
+        {
+          "name": "states_k10.csv",
+          "path": "study-assets/results/closed-basis-volume/states_k10.csv",
+          "source": "results/closed-basis-volume/states_k10.csv",
+          "sourceSha256": "bce31c826f04f46e684cc23e6c05038c5c67a220d085c765fbec0c6bbb8772eb"
+        },
+        {
+          "name": "states_k11.csv",
+          "path": "study-assets/results/closed-basis-volume/states_k11.csv",
+          "source": "results/closed-basis-volume/states_k11.csv",
+          "sourceSha256": "77a2d54bb91a6e464d5ef7f17381ba7b0bca6d73f992b38fe1fc5452498b37f7"
+        },
+        {
+          "name": "states_k12.csv",
+          "path": "study-assets/results/closed-basis-volume/states_k12.csv",
+          "source": "results/closed-basis-volume/states_k12.csv",
+          "sourceSha256": "a83b0e0759c36eb503f1425fae0fe0e748953a65c77b5ea5fe5edd205f65421e"
+        },
+        {
+          "name": "states_k2.csv",
+          "path": "study-assets/results/closed-basis-volume/states_k2.csv",
+          "source": "results/closed-basis-volume/states_k2.csv",
+          "sourceSha256": "d22c12367cdad991ae0c59170d9c21745505e207b4e23e4e6c28d101dba5f8cb"
+        },
+        {
+          "name": "states_k3.csv",
+          "path": "study-assets/results/closed-basis-volume/states_k3.csv",
+          "source": "results/closed-basis-volume/states_k3.csv",
+          "sourceSha256": "8a0e687c021d1992b207fff9c8959028f479aa8b9c735a6e63fbac2c065eacc9"
+        },
+        {
+          "name": "states_k4.csv",
+          "path": "study-assets/results/closed-basis-volume/states_k4.csv",
+          "source": "results/closed-basis-volume/states_k4.csv",
+          "sourceSha256": "aef3ee9d45db26c832269c2b676e014e444e4cec8ef7da0283b76c590f59371a"
+        },
+        {
+          "name": "states_k5.csv",
+          "path": "study-assets/results/closed-basis-volume/states_k5.csv",
+          "source": "results/closed-basis-volume/states_k5.csv",
+          "sourceSha256": "bb9053f1f00bc9ade781a58762469fc7bae1304e904ddda185fbecb8d0f72ebf"
+        },
+        {
+          "name": "states_k6.csv",
+          "path": "study-assets/results/closed-basis-volume/states_k6.csv",
+          "source": "results/closed-basis-volume/states_k6.csv",
+          "sourceSha256": "795d91601ed1278910fe0dedc2062d7f984085f3d7bef356802ddfe9a312be5c"
+        },
+        {
+          "name": "states_k7.csv",
+          "path": "study-assets/results/closed-basis-volume/states_k7.csv",
+          "source": "results/closed-basis-volume/states_k7.csv",
+          "sourceSha256": "c997298195c2bb1516ce1806a8f77a7d00662f42f05e96231e25d7b29bf419e7"
+        },
+        {
+          "name": "states_k8.csv",
+          "path": "study-assets/results/closed-basis-volume/states_k8.csv",
+          "source": "results/closed-basis-volume/states_k8.csv",
+          "sourceSha256": "1bbe690cf827bbbc0be4660419e5cd95a9d30136ba5b506be9a1ee6156cd35b3"
+        },
+        {
+          "name": "states_k9.csv",
+          "path": "study-assets/results/closed-basis-volume/states_k9.csv",
+          "source": "results/closed-basis-volume/states_k9.csv",
+          "sourceSha256": "9d4328c1d342d3575c3284afe08c1c11f12995053a6229eec72971ef95c1486f"
+        },
+        {
+          "name": "summary.json",
+          "path": "study-assets/results/closed-basis-volume/summary.json",
+          "source": "results/closed-basis-volume/summary.json",
+          "sourceSha256": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a"
+        },
+        {
+          "name": "basis_k2_k4.csv",
+          "path": "study-assets/results/closed-state-enumeration/basis_k2_k4.csv",
+          "source": "results/closed-state-enumeration/basis_k2_k4.csv",
+          "sourceSha256": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93"
+        },
+        {
+          "name": "summary.json",
+          "path": "study-assets/results/closed-state-enumeration/summary.json",
+          "source": "results/closed-state-enumeration/summary.json",
+          "sourceSha256": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c"
+        },
+        {
+          "name": "thermal-area-sectors.md",
+          "path": "study-assets/notes/thermal-area-sectors.md",
+          "source": "notes/thermal-area-sectors.md",
+          "sourceSha256": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+        }
+      ],
+      "figures": [
+        {
+          "name": "basis_state_volumes_k2_k4.png",
+          "path": "study-assets/figures/closed-basis-volume/basis_state_volumes_k2_k4.png",
+          "source": "figures/closed-basis-volume/basis_state_volumes_k2_k4.png",
+          "sourceSha256": "e0645ee13eb16525c51c12f16e0c09f64ea7076595e9a8f3a2f558636a34afc3",
+          "title": "Four-face recoupling-basis volume expectations, K=2,3,4",
+          "width": 3120,
+          "height": 1080,
+          "wide": true,
+          "pdf": "study-assets/figures/closed-basis-volume/basis_state_volumes_k2_k4.pdf"
+        },
+        {
+          "name": "fixed_area_ensemble_volume.png",
+          "path": "study-assets/figures/closed-basis-volume/fixed_area_ensemble_volume.png",
+          "source": "figures/closed-basis-volume/fixed_area_ensemble_volume.png",
+          "sourceSha256": "3349aa40389279629dbbcbcf45988dee89b737c18d4d23a436d644917b289e0d",
+          "title": "Equal-weight complete closed-basis volume versus area",
+          "width": 2760,
+          "height": 1170,
+          "wide": true,
+          "pdf": "study-assets/figures/closed-basis-volume/fixed_area_ensemble_volume.pdf"
+        },
+        {
+          "name": "regular_volume_area.png",
+          "path": "study-assets/figures/single-copy-volume/regular_volume_area.png",
+          "source": "figures/single-copy-volume/regular_volume_area.png",
+          "sourceSha256": "092a0ce3c4719bf07e7493f856547d9e9f98e589571132b9d749543dc60ef557",
+          "title": "Regular FL state volume versus area",
+          "width": 2040,
+          "height": 1140,
+          "wide": false,
+          "pdf": "study-assets/figures/single-copy-volume/regular_volume_area.pdf"
+        },
+        {
+          "name": "weighted_volume_area.png",
+          "path": "study-assets/figures/single-copy-volume/weighted_volume_area.png",
+          "source": "figures/single-copy-volume/weighted_volume_area.png",
+          "sourceSha256": "0c684a170efea7106cb58086f09e6801c811fec4b7dace8c79ed964005506ca5",
+          "title": "Weighted FL state volume versus area",
+          "width": 2700,
+          "height": 1140,
+          "wide": true,
+          "pdf": "study-assets/figures/single-copy-volume/weighted_volume_area.pdf"
+        }
+      ],
+      "table": {
+        "columns": [
+          "K",
+          "basis_states",
+          "equal_weight_closed_rs_mean",
+          "equal_weight_closed_al_mean"
+        ],
+        "rows": [
+          {
+            "K": 2,
+            "basis_states": 20,
+            "nonzero_volume_basis_states": 2,
+            "maximum_singlet_dimension": 2,
+            "maximum_magnetic_m0_dimension": 6,
+            "equal_weight_closed_rs_mean": 0.030465319023639064,
+            "equal_weight_closed_al_mean": 0.015232659511819532,
+            "checks_max_absolute_residual": {
+              "orthogonality": 4.440892098500626e-16,
+              "closure": 1.1102230246251565e-16,
+              "recoupling": 4.440892098500626e-16,
+              "hermiticity": 5.551115123125783e-17,
+              "invariant_subspace": 2.220446049250313e-16,
+              "casimir": 1.7763568394002505e-15,
+              "four_valent_closure": 0.0,
+              "volume_root_projection": 1.38778123376394e-16,
+              "independent_q": 0.0
+            },
+            "validation": "All-block singlet and scalar checks; independent sparse local-spin q012 per unordered pattern at every K; additional oscillator/dense-tensor and magnetic-space spectral-root checks through K=4.",
+            "archive": "operators_k2.npz",
+            "archive_bytes": 17051,
+            "archive_sha256": "51ae53834b6cea49a9f31d632aac948eaff344800b69a1917849c58c09708d3d",
+            "states_csv": "states_k2.csv",
+            "elapsed_seconds": 0.1418104580079671
+          },
+          {
+            "K": 3,
+            "basis_states": 50,
+            "nonzero_volume_basis_states": 12,
+            "maximum_singlet_dimension": 2,
+            "maximum_magnetic_m0_dimension": 10,
+            "equal_weight_closed_rs_mean": 0.09343490644232137,
+            "equal_weight_closed_al_mean": 0.04671745322116069,
+            "checks_max_absolute_residual": {
+              "orthogonality": 4.440892098500626e-16,
+              "closure": 3.3306690738754696e-16,
+              "recoupling": 6.661338147750939e-16,
+              "hermiticity": 2.220446049250313e-16,
+              "invariant_subspace": 3.608224830031759e-16,
+              "casimir": 2.6645352591003757e-15,
+              "four_valent_closure": 3.3306690738754696e-16,
+              "volume_root_projection": 3.3306753446139176e-16,
+              "independent_q": 2.220446049250313e-16
+            },
+            "validation": "All-block singlet and scalar checks; independent sparse local-spin q012 per unordered pattern at every K; additional oscillator/dense-tensor and magnetic-space spectral-root checks through K=4.",
+            "archive": "operators_k3.npz",
+            "archive_bytes": 20075,
+            "archive_sha256": "999c7319f2d98d321cca4bd8422ab05c301f3096f92e1aeb0e06d04692469e38",
+            "states_csv": "states_k3.csv",
+            "elapsed_seconds": 0.38971212500473484
+          },
+          {
+            "K": 4,
+            "basis_states": 105,
+            "nonzero_volume_basis_states": 39,
+            "maximum_singlet_dimension": 3,
+            "maximum_magnetic_m0_dimension": 19,
+            "equal_weight_closed_rs_mean": 0.17556365302394783,
+            "equal_weight_closed_al_mean": 0.08778182651197391,
+            "checks_max_absolute_residual": {
+              "orthogonality": 6.661338147750939e-16,
+              "closure": 2.7755575615628914e-16,
+              "recoupling": 8.881784197001252e-16,
+              "hermiticity": 4.440892098500626e-16,
+              "invariant_subspace": 8.604228440844963e-16,
+              "casimir": 5.329070518200751e-15,
+              "four_valent_closure": 4.440892098500626e-16,
+              "volume_root_projection": 5.097948026230356e-16,
+              "independent_q": 1.2212453270876722e-15
+            },
+            "validation": "All-block singlet and scalar checks; independent sparse local-spin q012 per unordered pattern at every K; additional oscillator/dense-tensor and magnetic-space spectral-root checks through K=4.",
+            "archive": "operators_k4.npz",
+            "archive_bytes": 28086,
+            "archive_sha256": "38d5f1fb6e42efbae429406484f6b35e3c14cc3a970d616f1decd4a6dd2004c4",
+            "states_csv": "states_k4.csv",
+            "elapsed_seconds": 1.7314428749959916
+          },
+          {
+            "K": 5,
+            "basis_states": 196,
+            "nonzero_volume_basis_states": 94,
+            "maximum_singlet_dimension": 3,
+            "maximum_magnetic_m0_dimension": 28,
+            "equal_weight_closed_rs_mean": 0.2652307999812346,
+            "equal_weight_closed_al_mean": 0.13261539999061733,
+            "checks_max_absolute_residual": {
+              "orthogonality": 4.440892098500626e-16,
+              "closure": 3.3306690738754696e-16,
+              "recoupling": 1.7763568394002505e-15,
+              "hermiticity": 8.881784197001252e-16,
+              "invariant_subspace": 1.2212453270876722e-15,
+              "casimir": 7.105427357601002e-15,
+              "four_valent_closure": 2.6645352591003757e-15,
+              "volume_root_projection": 0.0,
+              "independent_q": 1.1102230246251565e-15
+            },
+            "validation": "All-block singlet and scalar checks; independent sparse local-spin q012 per unordered pattern at every K; additional oscillator/dense-tensor and magnetic-space spectral-root checks through K=4.",
+            "archive": "operators_k5.npz",
+            "archive_bytes": 44690,
+            "archive_sha256": "6cdf27858c38d044264d582fd23cacdbb8095e0beae3ec810f75a7f708fe8626",
+            "states_csv": "states_k5.csv",
+            "elapsed_seconds": 0.7725137089728378
+          },
+          {
+            "K": 6,
+            "basis_states": 336,
+            "nonzero_volume_basis_states": 190,
+            "maximum_singlet_dimension": 4,
+            "maximum_magnetic_m0_dimension": 44,
+            "equal_weight_closed_rs_mean": 0.35971729033962446,
+            "equal_weight_closed_al_mean": 0.17985864516981223,
+            "checks_max_absolute_residual": {
+              "orthogonality": 4.440892098500626e-16,
+              "closure": 3.3306690738754696e-16,
+              "recoupling": 3.552713678800501e-15,
+              "hermiticity": 1.7763568394002505e-15,
+              "invariant_subspace": 3.164135620181696e-15,
+              "casimir": 1.0658141036401503e-14,
+              "four_valent_closure": 3.552713678800501e-15,
+              "volume_root_projection": 0.0,
+              "independent_q": 2.220446049250313e-15
+            },
+            "validation": "All-block singlet and scalar checks; independent sparse local-spin q012 per unordered pattern at every K; additional oscillator/dense-tensor and magnetic-space spectral-root checks through K=4.",
+            "archive": "operators_k6.npz",
+            "archive_bytes": 81639,
+            "archive_sha256": "5dde52cb5d9c1d9a6238c926111bd09f179ade06c71085f0114046751c4f955b",
+            "states_csv": "states_k6.csv",
+            "elapsed_seconds": 1.3595046249974985
+          },
+          {
+            "K": 7,
+            "basis_states": 540,
+            "nonzero_volume_basis_states": 342,
+            "maximum_singlet_dimension": 4,
+            "maximum_magnetic_m0_dimension": 60,
+            "equal_weight_closed_rs_mean": 0.46060327433528897,
+            "equal_weight_closed_al_mean": 0.23030163716764454,
+            "checks_max_absolute_residual": {
+              "orthogonality": 6.661338147750939e-16,
+              "closure": 3.3306690738754696e-16,
+              "recoupling": 3.552713678800501e-15,
+              "hermiticity": 7.105427357601002e-15,
+              "invariant_subspace": 3.219646771412954e-15,
+              "casimir": 1.4210854715202004e-14,
+              "four_valent_closure": 6.661338147750939e-15,
+              "volume_root_projection": 0.0,
+              "independent_q": 2.4424906541753444e-15
+            },
+            "validation": "All-block singlet and scalar checks; independent sparse local-spin q012 per unordered pattern at every K; additional oscillator/dense-tensor and magnetic-space spectral-root checks through K=4.",
+            "archive": "operators_k7.npz",
+            "archive_bytes": 157437,
+            "archive_sha256": "537c4d52540f1583e9809df8ea482a5780eff0cd6a46292214cfc1f242f831a2",
+            "states_csv": "states_k7.csv",
+            "elapsed_seconds": 2.357619208021788
+          },
+          {
+            "K": 8,
+            "basis_states": 825,
+            "nonzero_volume_basis_states": 567,
+            "maximum_singlet_dimension": 5,
+            "maximum_magnetic_m0_dimension": 85,
+            "equal_weight_closed_rs_mean": 0.568171902324847,
+            "equal_weight_closed_al_mean": 0.2840859511624235,
+            "checks_max_absolute_residual": {
+              "orthogonality": 6.661338147750939e-16,
+              "closure": 4.440892098500626e-16,
+              "recoupling": 3.552713678800501e-15,
+              "hermiticity": 7.105427357601002e-15,
+              "invariant_subspace": 4.440892098500626e-15,
+              "casimir": 3.197442310920451e-14,
+              "four_valent_closure": 1.7763568394002505e-14,
+              "volume_root_projection": 0.0,
+              "independent_q": 3.219646771412954e-15
+            },
+            "validation": "All-block singlet and scalar checks; independent sparse local-spin q012 per unordered pattern at every K; additional oscillator/dense-tensor and magnetic-space spectral-root checks through K=4.",
+            "archive": "operators_k8.npz",
+            "archive_bytes": 286950,
+            "archive_sha256": "041c81fbd7ecffd2d0547f1a5084f6f03676f7e10550db2127a61cbcc46f49a4",
+            "states_csv": "states_k8.csv",
+            "elapsed_seconds": 4.107163166976534
+          },
+          {
+            "K": 9,
+            "basis_states": 1210,
+            "nonzero_volume_basis_states": 884,
+            "maximum_singlet_dimension": 5,
+            "maximum_magnetic_m0_dimension": 110,
+            "equal_weight_closed_rs_mean": 0.6811017957699391,
+            "equal_weight_closed_al_mean": 0.3405508978849696,
+            "checks_max_absolute_residual": {
+              "orthogonality": 7.771561172376096e-16,
+              "closure": 4.718447854656915e-16,
+              "recoupling": 7.105427357601002e-15,
+              "hermiticity": 1.4210854715202004e-14,
+              "invariant_subspace": 7.105427357601002e-15,
+              "casimir": 2.842170943040401e-14,
+              "four_valent_closure": 2.6645352591003757e-14,
+              "volume_root_projection": 0.0,
+              "independent_q": 5.551115123125783e-15
+            },
+            "validation": "All-block singlet and scalar checks; independent sparse local-spin q012 per unordered pattern at every K; additional oscillator/dense-tensor and magnetic-space spectral-root checks through K=4.",
+            "archive": "operators_k9.npz",
+            "archive_bytes": 530961,
+            "archive_sha256": "dc406856bb0f500b0c30330a9722bc65d564e5e97830a623a7176f04552e9438",
+            "states_csv": "states_k9.csv",
+            "elapsed_seconds": 7.748626582993893
+          },
+          {
+            "K": 10,
+            "basis_states": 1716,
+            "nonzero_volume_basis_states": 1314,
+            "maximum_singlet_dimension": 6,
+            "maximum_magnetic_m0_dimension": 146,
+            "equal_weight_closed_rs_mean": 0.7986757106517892,
+            "equal_weight_closed_al_mean": 0.3993378553258951,
+            "checks_max_absolute_residual": {
+              "orthogonality": 8.881784197001252e-16,
+              "closure": 4.440892098500626e-16,
+              "recoupling": 1.4210854715202004e-14,
+              "hermiticity": 1.4210854715202004e-14,
+              "invariant_subspace": 1.355497227724294e-14,
+              "casimir": 2.842170943040401e-14,
+              "four_valent_closure": 4.440892098500626e-14,
+              "volume_root_projection": 0.0,
+              "independent_q": 1.1102230246251565e-14
+            },
+            "validation": "All-block singlet and scalar checks; independent sparse local-spin q012 per unordered pattern at every K; additional oscillator/dense-tensor and magnetic-space spectral-root checks through K=4.",
+            "archive": "operators_k10.npz",
+            "archive_bytes": 900729,
+            "archive_sha256": "7bc876562107e50ab3a4656301678987d77c3710cb40adce73fe8afe6ab74acc",
+            "states_csv": "states_k10.csv",
+            "elapsed_seconds": 13.430702499987092
+          },
+          {
+            "K": 11,
+            "basis_states": 2366,
+            "nonzero_volume_basis_states": 1880,
+            "maximum_singlet_dimension": 6,
+            "maximum_magnetic_m0_dimension": 182,
+            "equal_weight_closed_rs_mean": 0.9211534194954334,
+            "equal_weight_closed_al_mean": 0.4605767097477167,
+            "checks_max_absolute_residual": {
+              "orthogonality": 7.771561172376096e-16,
+              "closure": 4.440892098500626e-16,
+              "recoupling": 1.7763568394002505e-14,
+              "hermiticity": 2.842170943040401e-14,
+              "invariant_subspace": 1.942890293094024e-14,
+              "casimir": 3.552713678800501e-14,
+              "four_valent_closure": 7.815970093361102e-14,
+              "volume_root_projection": 0.0,
+              "independent_q": 1.1102230246251565e-14
+            },
+            "validation": "All-block singlet and scalar checks; independent sparse local-spin q012 per unordered pattern at every K; additional oscillator/dense-tensor and magnetic-space spectral-root checks through K=4.",
+            "archive": "operators_k11.npz",
+            "archive_bytes": 1588320,
+            "archive_sha256": "d695842d656b8ab093898873c35994b53a6df362f576da3e4cd08996151edc75",
+            "states_csv": "states_k11.csv",
+            "elapsed_seconds": 26.28589658398414
+          },
+          {
+            "K": 12,
+            "basis_states": 3185,
+            "nonzero_volume_basis_states": 2607,
+            "maximum_singlet_dimension": 7,
+            "maximum_magnetic_m0_dimension": 231,
+            "equal_weight_closed_rs_mean": 1.0486165781676402,
+            "equal_weight_closed_al_mean": 0.5243082890838202,
+            "checks_max_absolute_residual": {
+              "orthogonality": 8.881784197001252e-16,
+              "closure": 4.440892098500626e-16,
+              "recoupling": 2.4868995751603507e-14,
+              "hermiticity": 2.842170943040401e-14,
+              "invariant_subspace": 1.942890293094024e-14,
+              "casimir": 7.105427357601002e-14,
+              "four_valent_closure": 7.283063041541027e-14,
+              "volume_root_projection": 0.0,
+              "independent_q": 0.0
+            },
+            "validation": "All-block singlet and scalar checks; independent oscillator/tensor and full-space root checks through K=4 only.",
+            "archive": "operators_k12.npz",
+            "archive_bytes": 2482819,
+            "archive_sha256": "b3b1c3e8d9acb0126b121ffdc3856dd0efe2fe6f59cde5ee6032377fad6904f3",
+            "states_csv": "states_k12.csv",
+            "elapsed_seconds": 44.87176237499807
+          }
+        ]
+      }
+    },
+    {
+      "id": "variable-faces",
+      "task": "T10",
+      "title": "Variable-face positive RS catalogue",
+      "description": "Nine sectors at K=2,3,4 with 4<=N<=2K. Closed dimensions 2,36,347; positive-volume dimensions 2,32,329. Independent reconstruction covers 112 blocks and 385 eigenstates.",
+      "limits": "Labelled positive-spin active faces, one copy, zero temperature. Closed states and positive-volume eigenstates are counted separately. Higher-valence AL orientation signs and physical calibration remain unspecified.",
+      "status": "Completed declared catalogue",
+      "files": [
+        {
+          "name": "README.md",
+          "path": "study-assets/results/variable-n-volume/README.md",
+          "source": "results/variable-n-volume/README.md",
+          "sourceSha256": "f3e287e5fcda061ef19e9d4d424011a18268fd794fbf973730f05ca4ccb17494"
+        },
+        {
+          "name": "basis_k2_n4.csv",
+          "path": "study-assets/results/variable-n-volume/basis_k2_n4.csv",
+          "source": "results/variable-n-volume/basis_k2_n4.csv",
+          "sourceSha256": "e5a4d11614954143d90cc47b43bc18ebfd16937d99968c5f972daf9098b0103d"
+        },
+        {
+          "name": "basis_k3_n4.csv",
+          "path": "study-assets/results/variable-n-volume/basis_k3_n4.csv",
+          "source": "results/variable-n-volume/basis_k3_n4.csv",
+          "sourceSha256": "5187d28eef2e82de8bb02ace78c6ab93d13f41a3ba83ebac057c0aa733c79394"
+        },
+        {
+          "name": "basis_k3_n5.csv",
+          "path": "study-assets/results/variable-n-volume/basis_k3_n5.csv",
+          "source": "results/variable-n-volume/basis_k3_n5.csv",
+          "sourceSha256": "0b19c76dd6bafb938c5cbf9723c274f5e0fa6749729d993bedabf7d19c9c196b"
+        },
+        {
+          "name": "basis_k3_n6.csv",
+          "path": "study-assets/results/variable-n-volume/basis_k3_n6.csv",
+          "source": "results/variable-n-volume/basis_k3_n6.csv",
+          "sourceSha256": "f3ea34207e2c2dfca9cc6aad79746ae8b7fa7957274bd401c5c0c402c8c35713"
+        },
+        {
+          "name": "basis_k4_n4.csv",
+          "path": "study-assets/results/variable-n-volume/basis_k4_n4.csv",
+          "source": "results/variable-n-volume/basis_k4_n4.csv",
+          "sourceSha256": "e1bedba317287e0db5b7a4d3db5f03c1065c7f5ad3e5af817eaca710cb58a04f"
+        },
+        {
+          "name": "basis_k4_n5.csv",
+          "path": "study-assets/results/variable-n-volume/basis_k4_n5.csv",
+          "source": "results/variable-n-volume/basis_k4_n5.csv",
+          "sourceSha256": "b2442f7cb90167babed0c74f4ac1a6962bc10d760cf470b19f9dd04da1b3b33c"
+        },
+        {
+          "name": "basis_k4_n6.csv",
+          "path": "study-assets/results/variable-n-volume/basis_k4_n6.csv",
+          "source": "results/variable-n-volume/basis_k4_n6.csv",
+          "sourceSha256": "674ee076f09930caf47b9dc2c3d3af358b316208a71ef51d44ba474d14ca875a"
+        },
+        {
+          "name": "basis_k4_n7.csv",
+          "path": "study-assets/results/variable-n-volume/basis_k4_n7.csv",
+          "source": "results/variable-n-volume/basis_k4_n7.csv",
+          "sourceSha256": "17188a6f5e337a9e96a161d9ad68b7837880c27e51cd129d34d9a04c0fff0573"
+        },
+        {
+          "name": "basis_k4_n8.csv",
+          "path": "study-assets/results/variable-n-volume/basis_k4_n8.csv",
+          "source": "results/variable-n-volume/basis_k4_n8.csv",
+          "sourceSha256": "2fb552f8b820decd995d65468a9d2358530d73986ea412129eff1d01f9f7322c"
+        },
+        {
+          "name": "eigenstates_k2_n4.csv",
+          "path": "study-assets/results/variable-n-volume/eigenstates_k2_n4.csv",
+          "source": "results/variable-n-volume/eigenstates_k2_n4.csv",
+          "sourceSha256": "080be3bcfcb5776f9cd5cc16c160767df8fe0622132f59c3842898e2c8e55df4"
+        },
+        {
+          "name": "eigenstates_k3_n4.csv",
+          "path": "study-assets/results/variable-n-volume/eigenstates_k3_n4.csv",
+          "source": "results/variable-n-volume/eigenstates_k3_n4.csv",
+          "sourceSha256": "71e7b05cd4cf31f119b8bd1704ef2c7e40156c096da9957706d672d65ca7553d"
+        },
+        {
+          "name": "eigenstates_k3_n5.csv",
+          "path": "study-assets/results/variable-n-volume/eigenstates_k3_n5.csv",
+          "source": "results/variable-n-volume/eigenstates_k3_n5.csv",
+          "sourceSha256": "bb56f3242ecaaa25b40bb4b9f3554d2f3b5d4d80528d673b8b0831e077e99ef0"
+        },
+        {
+          "name": "eigenstates_k3_n6.csv",
+          "path": "study-assets/results/variable-n-volume/eigenstates_k3_n6.csv",
+          "source": "results/variable-n-volume/eigenstates_k3_n6.csv",
+          "sourceSha256": "03d9fdff5bb9668f6d1caa6aa55922b8d1fb760fef4d92586e4ecc4e3dd3920e"
+        },
+        {
+          "name": "eigenstates_k4_n4.csv",
+          "path": "study-assets/results/variable-n-volume/eigenstates_k4_n4.csv",
+          "source": "results/variable-n-volume/eigenstates_k4_n4.csv",
+          "sourceSha256": "debb47f22676f4d14a9f17c2ae80c9a864672a067ec33b8c77c99ad7130b361b"
+        },
+        {
+          "name": "eigenstates_k4_n5.csv",
+          "path": "study-assets/results/variable-n-volume/eigenstates_k4_n5.csv",
+          "source": "results/variable-n-volume/eigenstates_k4_n5.csv",
+          "sourceSha256": "d0d86ac17874c038d2ad420d768b44035f4e4f698a5f6777c091268604910e54"
+        },
+        {
+          "name": "eigenstates_k4_n6.csv",
+          "path": "study-assets/results/variable-n-volume/eigenstates_k4_n6.csv",
+          "source": "results/variable-n-volume/eigenstates_k4_n6.csv",
+          "sourceSha256": "2ce69712bfaa2922d77ed2919fb077c439bc7290145c7fa94a65acd1ac7a8abe"
+        },
+        {
+          "name": "eigenstates_k4_n7.csv",
+          "path": "study-assets/results/variable-n-volume/eigenstates_k4_n7.csv",
+          "source": "results/variable-n-volume/eigenstates_k4_n7.csv",
+          "sourceSha256": "4d4702d82d2464aedf69bb41976639af43751df5f9b53c8d028ca681c145bbc2"
+        },
+        {
+          "name": "eigenstates_k4_n8.csv",
+          "path": "study-assets/results/variable-n-volume/eigenstates_k4_n8.csv",
+          "source": "results/variable-n-volume/eigenstates_k4_n8.csv",
+          "sourceSha256": "92071be2c336bd6a18dca4f66a166e2f70cd4a46ebae109c2e93bae2678781c0"
+        },
+        {
+          "name": "metadata_k2_n4.json",
+          "path": "study-assets/results/variable-n-volume/metadata_k2_n4.json",
+          "source": "results/variable-n-volume/metadata_k2_n4.json",
+          "sourceSha256": "f1fd0fad625d870c191f5256b82e44699fad55d149f0f1dce79e6ee211133ec5"
+        },
+        {
+          "name": "metadata_k3_n4.json",
+          "path": "study-assets/results/variable-n-volume/metadata_k3_n4.json",
+          "source": "results/variable-n-volume/metadata_k3_n4.json",
+          "sourceSha256": "50c1d38251b4e2ffe49a0852389368cbc4ee2e7064a8bf19526b58abd9ffc93c"
+        },
+        {
+          "name": "metadata_k3_n5.json",
+          "path": "study-assets/results/variable-n-volume/metadata_k3_n5.json",
+          "source": "results/variable-n-volume/metadata_k3_n5.json",
+          "sourceSha256": "bf1f018dbe48610cc621cc02b235fd017137adb3060ce4e3d40481aa5635ef58"
+        },
+        {
+          "name": "metadata_k3_n6.json",
+          "path": "study-assets/results/variable-n-volume/metadata_k3_n6.json",
+          "source": "results/variable-n-volume/metadata_k3_n6.json",
+          "sourceSha256": "c7621a4b0afc18a9eb704b05547edc2094e92d1bff72018530d5643fedaf233b"
+        },
+        {
+          "name": "metadata_k4_n4.json",
+          "path": "study-assets/results/variable-n-volume/metadata_k4_n4.json",
+          "source": "results/variable-n-volume/metadata_k4_n4.json",
+          "sourceSha256": "edb35e9571d491f53a82edb956d95cb8e01ec4e5b90223c641f993925e845c32"
+        },
+        {
+          "name": "metadata_k4_n5.json",
+          "path": "study-assets/results/variable-n-volume/metadata_k4_n5.json",
+          "source": "results/variable-n-volume/metadata_k4_n5.json",
+          "sourceSha256": "8fb9fe9218e8b9c23ea8e83f66596417d8c5d5a0520ecd1b0c3b7866c39a00f3"
+        },
+        {
+          "name": "metadata_k4_n6.json",
+          "path": "study-assets/results/variable-n-volume/metadata_k4_n6.json",
+          "source": "results/variable-n-volume/metadata_k4_n6.json",
+          "sourceSha256": "9c1f8e5d79f46e130bc7a26a26c499f027643452fce3c4814ed6ad22e3740b5f"
+        },
+        {
+          "name": "metadata_k4_n7.json",
+          "path": "study-assets/results/variable-n-volume/metadata_k4_n7.json",
+          "source": "results/variable-n-volume/metadata_k4_n7.json",
+          "sourceSha256": "73150d48416921ed6a462d7b54f2389c53a857f42ca7acb705b96920121eda5c"
+        },
+        {
+          "name": "metadata_k4_n8.json",
+          "path": "study-assets/results/variable-n-volume/metadata_k4_n8.json",
+          "source": "results/variable-n-volume/metadata_k4_n8.json",
+          "sourceSha256": "64746616373e5eccacca96cea21a35e0ccc3dc0c110a30909f127dd73b619dec"
+        },
+        {
+          "name": "operators_k2_n4.npz",
+          "path": "study-assets/results/variable-n-volume/operators_k2_n4.npz",
+          "source": "results/variable-n-volume/operators_k2_n4.npz",
+          "sourceSha256": "690fdd97ab525cfcaf45707df0d55a6762773bc0dc5b3f13d079569ae5b12dc7"
+        },
+        {
+          "name": "operators_k3_n4.npz",
+          "path": "study-assets/results/variable-n-volume/operators_k3_n4.npz",
+          "source": "results/variable-n-volume/operators_k3_n4.npz",
+          "sourceSha256": "a1e707546f016439c2007eba3c66930c6cd7191623831f15d929382288f490ad"
+        },
+        {
+          "name": "operators_k3_n5.npz",
+          "path": "study-assets/results/variable-n-volume/operators_k3_n5.npz",
+          "source": "results/variable-n-volume/operators_k3_n5.npz",
+          "sourceSha256": "33685692236f9acf6bd5bd66bc0e027449edacc1c09f1f496a962c711233ad3e"
+        },
+        {
+          "name": "operators_k3_n6.npz",
+          "path": "study-assets/results/variable-n-volume/operators_k3_n6.npz",
+          "source": "results/variable-n-volume/operators_k3_n6.npz",
+          "sourceSha256": "4f872a0ebdcda3fea698226d97f0e3dab01157a5073ee3ef6d3080543aa9401b"
+        },
+        {
+          "name": "operators_k4_n4.npz",
+          "path": "study-assets/results/variable-n-volume/operators_k4_n4.npz",
+          "source": "results/variable-n-volume/operators_k4_n4.npz",
+          "sourceSha256": "9d4a02b77dc42f50782567baa2c2931569118f7e51f02a8a891ac723d1c462a6"
+        },
+        {
+          "name": "operators_k4_n5.npz",
+          "path": "study-assets/results/variable-n-volume/operators_k4_n5.npz",
+          "source": "results/variable-n-volume/operators_k4_n5.npz",
+          "sourceSha256": "424f00548e75eacf5a93c6f802efd01bffcb3f1fd9ef94f8de1911de5660f984"
+        },
+        {
+          "name": "operators_k4_n6.npz",
+          "path": "study-assets/results/variable-n-volume/operators_k4_n6.npz",
+          "source": "results/variable-n-volume/operators_k4_n6.npz",
+          "sourceSha256": "eb5c6b9a63edc562083c0f0a61c8b4613406760fddace6f443c1c848b02d5d57"
+        },
+        {
+          "name": "operators_k4_n7.npz",
+          "path": "study-assets/results/variable-n-volume/operators_k4_n7.npz",
+          "source": "results/variable-n-volume/operators_k4_n7.npz",
+          "sourceSha256": "d9f3f184821690709a957370429702df1b9b2621544a6050521d468570c02135"
+        },
+        {
+          "name": "operators_k4_n8.npz",
+          "path": "study-assets/results/variable-n-volume/operators_k4_n8.npz",
+          "source": "results/variable-n-volume/operators_k4_n8.npz",
+          "sourceSha256": "29831408f55c867f811437ea76c10bd0873247e92be5d134c00015d91fa6db31"
+        },
+        {
+          "name": "spectra.csv",
+          "path": "study-assets/results/variable-n-volume/spectra.csv",
+          "source": "results/variable-n-volume/spectra.csv",
+          "sourceSha256": "218bf46ba318cd171962bee87ff7d6780a2544e01944a681f6c0122538b2a2e1"
+        },
+        {
+          "name": "summary.json",
+          "path": "study-assets/results/variable-n-volume/summary.json",
+          "source": "results/variable-n-volume/summary.json",
+          "sourceSha256": "e773ffd2cbba66afd49531f98ed44997a549e484b6e122988c6031a34b93443b"
+        },
+        {
+          "name": "verification.json",
+          "path": "study-assets/results/variable-n-volume/verification.json",
+          "source": "results/variable-n-volume/verification.json",
+          "sourceSha256": "908edd3c8d046efde205a31ae0732c322b6c38475d7b05b51cdb8726956f7c9e"
+        },
+        {
+          "name": "volume-studies.md",
+          "path": "study-assets/notes/volume-studies.md",
+          "source": "notes/volume-studies.md",
+          "sourceSha256": "590364bfc39f532fb82f89f734c5db3721ddb2cb77e59834579b40c76e084e20"
+        }
+      ],
+      "figures": [
+        {
+          "name": "closed_state_counts.png",
+          "path": "study-assets/figures/variable-n-volume/closed_state_counts.png",
+          "source": "figures/variable-n-volume/closed_state_counts.png",
+          "sourceSha256": "b1c4473e04f589a8c3bfcf383341f632933046ac1fada3b15f732e0f3d433fde",
+          "title": "Closed, zero-volume and positive-volume state counts",
+          "width": 3150,
+          "height": 1140,
+          "wide": true,
+          "pdf": "study-assets/figures/variable-n-volume/closed_state_counts.pdf"
+        },
+        {
+          "name": "rs_volume_distributions.png",
+          "path": "study-assets/figures/variable-n-volume/rs_volume_distributions.png",
+          "source": "figures/variable-n-volume/rs_volume_distributions.png",
+          "sourceSha256": "bc2c70663a46064e060f10570582f8f051b35ae147f348886ca3b79eb7a67b5d",
+          "title": "Variable-face RS volume eigenvalue distributions",
+          "width": 3150,
+          "height": 1560,
+          "wide": false,
+          "pdf": "study-assets/figures/variable-n-volume/rs_volume_distributions.pdf"
+        },
+        {
+          "name": "rs_volume_means.png",
+          "path": "study-assets/figures/variable-n-volume/rs_volume_means.png",
+          "source": "figures/variable-n-volume/rs_volume_means.png",
+          "sourceSha256": "61c7f3cf9ce194b33c1dc8eacbd438712448722ee3320cd6b795a3ad837898ba",
+          "title": "Variable-face mean RS volume",
+          "width": 1500,
+          "height": 1140,
+          "wide": false,
+          "pdf": "study-assets/figures/variable-n-volume/rs_volume_means.pdf"
+        }
+      ],
+      "table": {
+        "columns": [
+          "K",
+          "N",
+          "basis_dimension",
+          "zero_volume_dimension",
+          "positive_volume_dimension",
+          "equal_weight_mean"
+        ],
+        "rows": [
+          {
+            "K": 2,
+            "N": 4,
+            "basis_dimension": 2,
+            "spin_assignments": 1,
+            "independent_dimension": 2,
+            "zero_volume_dimension": 0,
+            "positive_volume_dimension": 2,
+            "spectrum": [
+              {
+                "rs_volume": 0.30465319023639065,
+                "multiplicity": 2,
+                "within_group_spread": 0.0
+              }
+            ],
+            "equal_weight_mean": 0.30465319023639065,
+            "equal_weight_sd": 0.0,
+            "minimum_positive_volume": 0.30465319023639065,
+            "maximum_volume": 0.30465319023639065,
+            "checks_max_absolute_residual": {
+              "orthogonality": 4.440892098500626e-16,
+              "closure": 0.0,
+              "casimir": 1.7763568394002505e-15,
+              "prefix_casimir": 1.7763568394002505e-15,
+              "hermiticity": 5.551115123125783e-17,
+              "invariant_subspace": 2.220446049250313e-16,
+              "epsilon_vs_commutator": 0.0,
+              "dense_tensor_vs_commutator": 0.0,
+              "magnetic_root_projection": 4.444175157415385e-16,
+              "independent_volume": 2.7757820392033873e-16,
+              "eigensystem": 0.0,
+              "trace_moments": 0.0,
+              "permutation_spectrum": 5.551115123125783e-17,
+              "four_face_previous": 0.0,
+              "analytic_half_spin": 1.1102230246251565e-16,
+              "saturated_spin_zero": 0.0
+            },
+            "maximum_singlet_dimension": 2,
+            "maximum_magnetic_m0_dimension": 6,
+            "archive": "operators_k2_n4.npz",
+            "archive_bytes": 13244,
+            "archive_sha256": "690fdd97ab525cfcaf45707df0d55a6762773bc0dc5b3f13d079569ae5b12dc7",
+            "basis_csv": "basis_k2_n4.csv",
+            "eigenstates_csv": "eigenstates_k2_n4.csv",
+            "elapsed_seconds": 0.037232541013509035
+          },
+          {
+            "K": 3,
+            "N": 4,
+            "basis_dimension": 16,
+            "spin_assignments": 10,
+            "independent_dimension": 16,
+            "zero_volume_dimension": 4,
+            "positive_volume_dimension": 12,
+            "spectrum": [
+              {
+                "rs_volume": 0.0,
+                "multiplicity": 4,
+                "within_group_spread": 0.0
+              },
+              {
+                "rs_volume": 0.3893121101763391,
+                "multiplicity": 12,
+                "within_group_spread": 1.6653345369377348e-16
+              }
+            ],
+            "equal_weight_mean": 0.2919840826322544,
+            "equal_weight_sd": 0.16857708870681798,
+            "minimum_positive_volume": 0.38931211017633904,
+            "maximum_volume": 0.3893121101763392,
+            "checks_max_absolute_residual": {
+              "orthogonality": 4.440892098500626e-16,
+              "closure": 2.220446049250313e-16,
+              "casimir": 2.6645352591003757e-15,
+              "prefix_casimir": 2.6645352591003757e-15,
+              "hermiticity": 2.220446049250313e-16,
+              "invariant_subspace": 2.220446049250313e-16,
+              "epsilon_vs_commutator": 1.1102230246251565e-16,
+              "dense_tensor_vs_commutator": 1.1102230246251565e-16,
+              "magnetic_root_projection": 5.556216246276565e-16,
+              "independent_volume": 1.6659133442358926e-16,
+              "eigensystem": 3.763699727329457e-18,
+              "trace_moments": 0.0,
+              "permutation_spectrum": 4.440892098500626e-16,
+              "four_face_previous": 1.6653345369377348e-16,
+              "analytic_half_spin": 0.0,
+              "saturated_spin_zero": 0.0
+            },
+            "maximum_singlet_dimension": 2,
+            "maximum_magnetic_m0_dimension": 10,
+            "archive": "operators_k3_n4.npz",
+            "archive_bytes": 15562,
+            "archive_sha256": "a1e707546f016439c2007eba3c66930c6cd7191623831f15d929382288f490ad",
+            "basis_csv": "basis_k3_n4.csv",
+            "eigenstates_csv": "eigenstates_k3_n4.csv",
+            "elapsed_seconds": 0.10906470799818635
+          },
+          {
+            "K": 3,
+            "N": 5,
+            "basis_dimension": 15,
+            "spin_assignments": 5,
+            "independent_dimension": 15,
+            "zero_volume_dimension": 0,
+            "positive_volume_dimension": 15,
+            "spectrum": [
+              {
+                "rs_volume": 0.5924142370005997,
+                "multiplicity": 15,
+                "within_group_spread": 1.4432899320127035e-15
+              }
+            ],
+            "equal_weight_mean": 0.5924142370005997,
+            "equal_weight_sd": 3.293453726225543e-16,
+            "minimum_positive_volume": 0.592414237000599,
+            "maximum_volume": 0.5924142370006005,
+            "checks_max_absolute_residual": {
+              "orthogonality": 4.440892098500626e-16,
+              "closure": 1.1102230246251565e-16,
+              "casimir": 3.552713678800501e-15,
+              "prefix_casimir": 3.552713678800501e-15,
+              "hermiticity": 2.220446049250313e-16,
+              "invariant_subspace": 1.6653345369377348e-16,
+              "epsilon_vs_commutator": 0.0,
+              "dense_tensor_vs_commutator": 0.0,
+              "magnetic_root_projection": 7.771566062353635e-16,
+              "independent_volume": 2.2211610197027227e-16,
+              "eigensystem": 4.775249788392736e-16,
+              "trace_moments": 6.661338147750939e-16,
+              "permutation_spectrum": 9.992007221626409e-16,
+              "four_face_previous": 0.0,
+              "analytic_half_spin": 0.0,
+              "saturated_spin_zero": 0.0
+            },
+            "maximum_singlet_dimension": 3,
+            "maximum_magnetic_m0_dimension": 14,
+            "archive": "operators_k3_n5.npz",
+            "archive_bytes": 26204,
+            "archive_sha256": "33685692236f9acf6bd5bd66bc0e027449edacc1c09f1f496a962c711233ad3e",
+            "basis_csv": "basis_k3_n5.csv",
+            "eigenstates_csv": "eigenstates_k3_n5.csv",
+            "elapsed_seconds": 0.07993558398447931
+          },
+          {
+            "K": 3,
+            "N": 6,
+            "basis_dimension": 5,
+            "spin_assignments": 1,
+            "independent_dimension": 5,
+            "zero_volume_dimension": 0,
+            "positive_volume_dimension": 5,
+            "spectrum": [
+              {
+                "rs_volume": 1.2186127609455617,
+                "multiplicity": 5,
+                "within_group_spread": 1.1102230246251565e-15
+              }
+            ],
+            "equal_weight_mean": 1.2186127609455617,
+            "equal_weight_sd": 4.550560269027492e-16,
+            "minimum_positive_volume": 1.2186127609455613,
+            "maximum_volume": 1.2186127609455624,
+            "checks_max_absolute_residual": {
+              "orthogonality": 6.661338147750939e-16,
+              "closure": 1.1102230246251565e-16,
+              "casimir": 1.7763568394002505e-15,
+              "prefix_casimir": 1.7763568394002505e-15,
+              "hermiticity": 1.6653345369377348e-16,
+              "invariant_subspace": 1.3877787807814457e-16,
+              "epsilon_vs_commutator": 0.0,
+              "dense_tensor_vs_commutator": 0.0,
+              "magnetic_root_projection": 8.881900006276828e-16,
+              "independent_volume": 1.998410047692482e-15,
+              "eigensystem": 1.246531298897714e-15,
+              "trace_moments": 7.993605777301127e-15,
+              "permutation_spectrum": 8.881784197001252e-16,
+              "four_face_previous": 0.0,
+              "analytic_half_spin": 6.661413546274717e-16,
+              "saturated_spin_zero": 0.0
+            },
+            "maximum_singlet_dimension": 5,
+            "maximum_magnetic_m0_dimension": 20,
+            "archive": "operators_k3_n6.npz",
+            "archive_bytes": 34998,
+            "archive_sha256": "4f872a0ebdcda3fea698226d97f0e3dab01157a5073ee3ef6d3080543aa9401b",
+            "basis_csv": "basis_k3_n6.csv",
+            "eigenstates_csv": "eigenstates_k3_n6.csv",
+            "elapsed_seconds": 0.08581937497365288
+          },
+          {
+            "K": 4,
+            "N": 4,
+            "basis_dimension": 51,
+            "spin_assignments": 31,
+            "independent_dimension": 51,
+            "zero_volume_dimension": 13,
+            "positive_volume_dimension": 38,
+            "spectrum": [
+              {
+                "rs_volume": 0.0,
+                "multiplicity": 13,
+                "within_group_spread": 0.0
+              },
+              {
+                "rs_volume": 0.4555627767151433,
+                "multiplicity": 12,
+                "within_group_spread": 1.1102230246251565e-16
+              },
+              {
+                "rs_volume": 0.48953406191613497,
+                "multiplicity": 24,
+                "within_group_spread": 1.6653345369377348e-16
+              },
+              {
+                "rs_volume": 0.6093063804727813,
+                "multiplicity": 2,
+                "within_group_spread": 2.220446049250313e-16
+              }
+            ],
+            "equal_weight_mean": 0.3614545797551866,
+            "equal_weight_sd": 0.2133433265893787,
+            "minimum_positive_volume": 0.45556277671514317,
+            "maximum_volume": 0.6093063804727814,
+            "checks_max_absolute_residual": {
+              "orthogonality": 4.440892098500626e-16,
+              "closure": 3.3306690738754696e-16,
+              "casimir": 3.552713678800501e-15,
+              "prefix_casimir": 3.552713678800501e-15,
+              "hermiticity": 6.661338147750939e-16,
+              "invariant_subspace": 5.273559366969494e-16,
+              "epsilon_vs_commutator": 1.1102230246251565e-15,
+              "dense_tensor_vs_commutator": 1.1102230246251565e-15,
+              "magnetic_root_projection": 1.1102232379656452e-15,
+              "independent_volume": 3.8859084573478845e-16,
+              "eigensystem": 5.551115123125783e-17,
+              "trace_moments": 0.0,
+              "permutation_spectrum": 3.3306690738754696e-16,
+              "four_face_previous": 2.220446049250313e-16,
+              "analytic_half_spin": 0.0,
+              "saturated_spin_zero": 0.0
+            },
+            "maximum_singlet_dimension": 3,
+            "maximum_magnetic_m0_dimension": 19,
+            "archive": "operators_k4_n4.npz",
+            "archive_bytes": 22101,
+            "archive_sha256": "9d4a02b77dc42f50782567baa2c2931569118f7e51f02a8a891ac723d1c462a6",
+            "basis_csv": "basis_k4_n4.csv",
+            "eigenstates_csv": "eigenstates_k4_n4.csv",
+            "elapsed_seconds": 0.2508141670259647
+          },
+          {
+            "K": 4,
+            "N": 5,
+            "basis_dimension": 105,
+            "spin_assignments": 35,
+            "independent_dimension": 105,
+            "zero_volume_dimension": 5,
+            "positive_volume_dimension": 100,
+            "spectrum": [
+              {
+                "rs_volume": 0.0,
+                "multiplicity": 5,
+                "within_group_spread": 0.0
+              },
+              {
+                "rs_volume": 0.6507827997577064,
+                "multiplicity": 10,
+                "within_group_spread": 4.440892098500626e-16
+              },
+              {
+                "rs_volume": 0.6958075720636303,
+                "multiplicity": 40,
+                "within_group_spread": 1.1102230246251565e-15
+              },
+              {
+                "rs_volume": 0.7623248742023611,
+                "multiplicity": 20,
+                "within_group_spread": 8.881784197001252e-16
+              },
+              {
+                "rs_volume": 0.9491014361920289,
+                "multiplicity": 20,
+                "within_group_spread": 2.7755575615628914e-15
+              },
+              {
+                "rs_volume": 0.9761741996365594,
+                "multiplicity": 10,
+                "within_group_spread": 1.3322676295501878e-15
+              }
+            ],
+            "equal_weight_mean": 0.7460038008035779,
+            "equal_weight_sd": 0.20316893893159418,
+            "minimum_positive_volume": 0.650782799757706,
+            "maximum_volume": 0.97617419963656,
+            "checks_max_absolute_residual": {
+              "orthogonality": 4.440892098500626e-16,
+              "closure": 3.3306690738754696e-16,
+              "casimir": 7.105427357601002e-15,
+              "prefix_casimir": 7.105427357601002e-15,
+              "hermiticity": 8.881784197001252e-16,
+              "invariant_subspace": 6.661338147750939e-16,
+              "epsilon_vs_commutator": 2.220446049250313e-16,
+              "dense_tensor_vs_commutator": 2.220446049250313e-16,
+              "magnetic_root_projection": 1.2215284667138816e-15,
+              "independent_volume": 8.88182262394618e-16,
+              "eigensystem": 9.09180472805593e-16,
+              "trace_moments": 3.9968028886505635e-15,
+              "permutation_spectrum": 1.887379141862766e-15,
+              "four_face_previous": 0.0,
+              "analytic_half_spin": 0.0,
+              "saturated_spin_zero": 0.0
+            },
+            "maximum_singlet_dimension": 4,
+            "maximum_magnetic_m0_dimension": 26,
+            "archive": "operators_k4_n5.npz",
+            "archive_bytes": 70726,
+            "archive_sha256": "424f00548e75eacf5a93c6f802efd01bffcb3f1fd9ef94f8de1911de5660f984",
+            "basis_csv": "basis_k4_n5.csv",
+            "eigenstates_csv": "eigenstates_k4_n5.csv",
+            "elapsed_seconds": 0.3435021670011338
+          },
+          {
+            "K": 4,
+            "N": 6,
+            "basis_dimension": 114,
+            "spin_assignments": 21,
+            "independent_dimension": 114,
+            "zero_volume_dimension": 0,
+            "positive_volume_dimension": 114,
+            "spectrum": [
+              {
+                "rs_volume": 0.9502699586894173,
+                "multiplicity": 24,
+                "within_group_spread": 1.6653345369377348e-15
+              },
+              {
+                "rs_volume": 0.976174199636559,
+                "multiplicity": 15,
+                "within_group_spread": 1.2212453270876722e-15
+              },
+              {
+                "rs_volume": 1.4725895207654085,
+                "multiplicity": 30,
+                "within_group_spread": 2.6645352591003757e-15
+              },
+              {
+                "rs_volume": 1.5017738021439615,
+                "multiplicity": 45,
+                "within_group_spread": 3.774758283725532e-15
+              }
+            ],
+            "equal_weight_mean": 1.3088298133555696,
+            "equal_weight_sd": 0.2517519299864735,
+            "minimum_positive_volume": 0.9502699586894165,
+            "maximum_volume": 1.5017738021439635,
+            "checks_max_absolute_residual": {
+              "orthogonality": 6.661338147750939e-16,
+              "closure": 2.220446049250313e-16,
+              "casimir": 5.329070518200751e-15,
+              "prefix_casimir": 5.329070518200751e-15,
+              "hermiticity": 4.440892098500626e-16,
+              "invariant_subspace": 4.440892098500626e-16,
+              "epsilon_vs_commutator": 1.1102230246251565e-16,
+              "dense_tensor_vs_commutator": 1.1102230246251565e-16,
+              "magnetic_root_projection": 1.3893613331618741e-15,
+              "independent_volume": 1.1102542586463968e-15,
+              "eigensystem": 1.807312143953211e-15,
+              "trace_moments": 1.2434497875801753e-14,
+              "permutation_spectrum": 1.9984014443252818e-15,
+              "four_face_previous": 0.0,
+              "analytic_half_spin": 0.0,
+              "saturated_spin_zero": 0.0
+            },
+            "maximum_singlet_dimension": 6,
+            "maximum_magnetic_m0_dimension": 36,
+            "archive": "operators_k4_n6.npz",
+            "archive_bytes": 169638,
+            "archive_sha256": "eb5c6b9a63edc562083c0f0a61c8b4613406760fddace6f443c1c848b02d5d57",
+            "basis_csv": "basis_k4_n6.csv",
+            "eigenstates_csv": "eigenstates_k4_n6.csv",
+            "elapsed_seconds": 0.41864204200101085
+          },
+          {
+            "K": 4,
+            "N": 7,
+            "basis_dimension": 63,
+            "spin_assignments": 7,
+            "independent_dimension": 63,
+            "zero_volume_dimension": 0,
+            "positive_volume_dimension": 63,
+            "spectrum": [
+              {
+                "rs_volume": 1.9887909095621505,
+                "multiplicity": 63,
+                "within_group_spread": 7.327471962526033e-15
+              }
+            ],
+            "equal_weight_mean": 1.9887909095621505,
+            "equal_weight_sd": 1.3906131230279755e-15,
+            "minimum_positive_volume": 1.988790909562146,
+            "maximum_volume": 1.9887909095621534,
+            "checks_max_absolute_residual": {
+              "orthogonality": 8.881784197001252e-16,
+              "closure": 1.6653345369377348e-16,
+              "casimir": 1.0658141036401503e-14,
+              "prefix_casimir": 1.0658141036401503e-14,
+              "hermiticity": 4.440892098500626e-16,
+              "invariant_subspace": 3.885780586188048e-16,
+              "epsilon_vs_commutator": 0.0,
+              "dense_tensor_vs_commutator": 0.0,
+              "magnetic_root_projection": 1.776409812056443e-15,
+              "independent_volume": 3.3306721061563038e-15,
+              "eigensystem": 3.114690083438059e-15,
+              "trace_moments": 1.4210854715202004e-14,
+              "permutation_spectrum": 2.220446049250313e-15,
+              "four_face_previous": 0.0,
+              "analytic_half_spin": 0.0,
+              "saturated_spin_zero": 0.0
+            },
+            "maximum_singlet_dimension": 9,
+            "maximum_magnetic_m0_dimension": 50,
+            "archive": "operators_k4_n7.npz",
+            "archive_bytes": 241703,
+            "archive_sha256": "d9f3f184821690709a957370429702df1b9b2621544a6050521d468570c02135",
+            "basis_csv": "basis_k4_n7.csv",
+            "eigenstates_csv": "eigenstates_k4_n7.csv",
+            "elapsed_seconds": 0.4688245419820305
+          },
+          {
+            "K": 4,
+            "N": 8,
+            "basis_dimension": 14,
+            "spin_assignments": 1,
+            "independent_dimension": 14,
+            "zero_volume_dimension": 0,
+            "positive_volume_dimension": 14,
+            "spectrum": [
+              {
+                "rs_volume": 3.0465319023639057,
+                "multiplicity": 14,
+                "within_group_spread": 7.105427357601002e-15
+              }
+            ],
+            "equal_weight_mean": 3.0465319023639057,
+            "equal_weight_sd": 2.3348645200851266e-15,
+            "minimum_positive_volume": 3.0465319023639013,
+            "maximum_volume": 3.0465319023639084,
+            "checks_max_absolute_residual": {
+              "orthogonality": 1.3322676295501878e-15,
+              "closure": 1.1102230246251565e-16,
+              "casimir": 1.5987211554602254e-14,
+              "prefix_casimir": 1.5987211554602254e-14,
+              "hermiticity": 4.996003610813204e-16,
+              "invariant_subspace": 3.0531133177191805e-16,
+              "epsilon_vs_commutator": 0.0,
+              "dense_tensor_vs_commutator": 0.0,
+              "magnetic_root_projection": 1.5543724517779099e-15,
+              "independent_volume": 9.769962864956646e-15,
+              "eigensystem": 1.688305753616065e-15,
+              "trace_moments": 2.842170943040401e-14,
+              "permutation_spectrum": 1.7763568394002505e-15,
+              "four_face_previous": 0.0,
+              "analytic_half_spin": 2.2204475100732162e-15,
+              "saturated_spin_zero": 0.0
+            },
+            "maximum_singlet_dimension": 14,
+            "maximum_magnetic_m0_dimension": 70,
+            "archive": "operators_k4_n8.npz",
+            "archive_bytes": 176428,
+            "archive_sha256": "29831408f55c867f811437ea76c10bd0873247e92be5d134c00015d91fa6db31",
+            "basis_csv": "basis_k4_n8.csv",
+            "eigenstates_csv": "eigenstates_k4_n8.csv",
+            "elapsed_seconds": 4.107144875015365
+          }
+        ]
+      }
+    },
+    {
+      "id": "vacuum-area",
+      "task": "T9",
+      "title": "Squeezed-vacuum area coefficients",
+      "description": "J_in=0, four faces and eight modes per copy; coefficient and area distributions at four temperatures.",
+      "limits": "Selected two-copy squeeze on full oscillator support; no separate per-copy singlet projection. Ordinary per-copy spin differs from combined/transformed closure. Plot ranges are truncated; full reduced-state spectra and geometric observables remain open.",
+      "status": "Saved calculation",
+      "files": [
+        {
+          "name": "thermal_coefficients_vacuum.csv",
+          "path": "study-assets/figures/thermal-area-sectors/thermal_coefficients_vacuum.csv",
+          "source": "figures/thermal-area-sectors/thermal_coefficients_vacuum.csv",
+          "sourceSha256": "3182a534b4ecd58d4b60d2a0b70bad3aebd26b95cdadc297936b488c426a15fb"
+        },
+        {
+          "name": "thermal_coefficients_vacuum_summary.json",
+          "path": "study-assets/figures/thermal-area-sectors/thermal_coefficients_vacuum_summary.json",
+          "source": "figures/thermal-area-sectors/thermal_coefficients_vacuum_summary.json",
+          "sourceSha256": "e8246bf3899755f90d23ab8e56850e306b7131c021ffc373b137b8736523dea1"
+        },
+        {
+          "name": "thermal-area-sectors.md",
+          "path": "study-assets/notes/thermal-area-sectors.md",
+          "source": "notes/thermal-area-sectors.md",
+          "sourceSha256": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+        }
+      ],
+      "figures": [
+        {
+          "name": "thermal_coefficients_vacuum.png",
+          "path": "study-assets/figures/thermal-area-sectors/thermal_coefficients_vacuum.png",
+          "source": "figures/thermal-area-sectors/thermal_coefficients_vacuum.png",
+          "sourceSha256": "cc0d33cfa80ed0b58cb4794e2387d7463953435b1b719f408225c8a1895c798b",
+          "title": "Squeezed-vacuum area-sector distributions",
+          "width": 3600,
+          "height": 1170,
+          "wide": true,
+          "pdf": "study-assets/figures/thermal-area-sectors/thermal_coefficients_vacuum.pdf"
+        }
+      ],
+      "table": null
+    },
+    {
+      "id": "vacuum-spin",
+      "task": "T9",
+      "title": "Squeezed-vacuum resultant spin",
+      "description": "Ordinary per-copy spin distributions conditioned on boson number, at beta*hbar*omega=1.",
+      "limits": "Selected two-copy squeeze on full oscillator support; no separate per-copy singlet projection. Ordinary per-copy spin differs from combined/transformed closure. Plot ranges are truncated; full reduced-state spectra and geometric observables remain open.",
+      "status": "Saved calculation",
+      "files": [
+        {
+          "name": "README.md",
+          "path": "study-assets/figures/thermal-spin-sectors/README.md",
+          "source": "figures/thermal-spin-sectors/README.md",
+          "sourceSha256": "0f8ff0cf55bd8cf3915ee242b0c59f428b3af5e2fc2bbdeb8690d814e8877298"
+        },
+        {
+          "name": "thermal_vacuum_spin.csv",
+          "path": "study-assets/figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
+          "source": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
+          "sourceSha256": "161f6ce8498a70abc1bf9e534a29fc82e2419d7cfc95f7d0a61ba6bec7b11b63"
+        },
+        {
+          "name": "thermal_vacuum_spin_summary.json",
+          "path": "study-assets/figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json",
+          "source": "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json",
+          "sourceSha256": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
+        }
+      ],
+      "figures": [
+        {
+          "name": "thermal_vacuum_spin.png",
+          "path": "study-assets/figures/thermal-spin-sectors/thermal_vacuum_spin.png",
+          "source": "figures/thermal-spin-sectors/thermal_vacuum_spin.png",
+          "sourceSha256": "7c7023e7f854fe4c4cadc8fc55cbf639e198ddec0153d20f6c4bc666717971eb",
+          "title": "Vacuum-seed per-copy resultant-spin distributions",
+          "width": 3600,
+          "height": 1290,
+          "wide": true,
+          "pdf": "study-assets/figures/thermal-spin-sectors/thermal_vacuum_spin.pdf"
+        }
+      ],
+      "table": null
+    },
+    {
+      "id": "excited-spin",
+      "task": "T9",
+      "title": "Excited J_in=1 joint area and spin",
+      "description": "Five temperatures, q through 160; 32,805 independent-method comparisons with maximum difference 2.67e-16.",
+      "limits": "Selected two-copy squeeze on full oscillator support; no separate per-copy singlet projection. Ordinary per-copy spin differs from combined/transformed closure. Plot ranges are truncated; full reduced-state spectra and geometric observables remain open.",
+      "status": "Saved calculation",
+      "files": [
+        {
+          "name": "j1_spin_method_comparison.csv",
+          "path": "study-assets/results/thermal-j1-spin/j1_spin_method_comparison.csv",
+          "source": "results/thermal-j1-spin/j1_spin_method_comparison.csv",
+          "sourceSha256": "946a5b3e65fac8b79a7405a13f3399180d49d0fe65066047039f49067bf2a7c0"
+        },
+        {
+          "name": "j1_spin_method_summary.json",
+          "path": "study-assets/results/thermal-j1-spin/j1_spin_method_summary.json",
+          "source": "results/thermal-j1-spin/j1_spin_method_summary.json",
+          "sourceSha256": "d70049114358f9ee9194ebc91a545c32e294bcb16f65f6b358fff453024f9262"
+        },
+        {
+          "name": "j1_spin_plot_summary.json",
+          "path": "study-assets/figures/thermal-j1-spin/j1_spin_plot_summary.json",
+          "source": "figures/thermal-j1-spin/j1_spin_plot_summary.json",
+          "sourceSha256": "ed0cf982ca8e96a8ed987f8ceafa4fd30d6ece024366efd235c0f3ba69d9e8da"
+        }
+      ],
+      "figures": [
+        {
+          "name": "j1_spin_joint_maps.png",
+          "path": "study-assets/figures/thermal-j1-spin/j1_spin_joint_maps.png",
+          "source": "figures/thermal-j1-spin/j1_spin_joint_maps.png",
+          "sourceSha256": "3e6ad1ea3f460833225ea50d8d4cf479b76b3b05fe5ede6c323b178926da636a",
+          "title": "Excited-seed joint boson-number and resultant-spin distributions",
+          "width": 2460,
+          "height": 1980,
+          "wide": false,
+          "pdf": "study-assets/figures/thermal-j1-spin/j1_spin_joint_maps.pdf"
+        },
+        {
+          "name": "j1_spin_temperature.png",
+          "path": "study-assets/figures/thermal-j1-spin/j1_spin_temperature.png",
+          "source": "figures/thermal-j1-spin/j1_spin_temperature.png",
+          "sourceSha256": "e92ccc2c500c970e0966b3c600d556f09492404d5cd7c87c1b5ffe85ee285118",
+          "title": "Excited-seed area and spin distributions versus temperature",
+          "width": 3600,
+          "height": 1200,
+          "wide": true,
+          "pdf": "study-assets/figures/thermal-j1-spin/j1_spin_temperature.pdf"
+        }
+      ],
+      "table": null
+    },
+    {
+      "id": "high-j",
+      "task": "T5c",
+      "title": "Higher-J flat-boundary probes",
+      "description": "Saved Python and Rust probes extend the earlier weighted-input boundary scans.",
+      "limits": "Finite exploratory points. Rust/Python RS comparison at J=10 differs by about 4.4e-10 and remains unresolved; AL agrees within about 4e-17. Stopped attempts are recorded as attempts, not results.",
+      "status": "Saved calculation",
+      "files": [
+        {
+          "name": "t5c_degenerate_limits_highJ_results.json",
+          "path": "study-assets/results/t5c_degenerate_limits_highJ_results.json",
+          "source": "results/t5c_degenerate_limits_highJ_results.json",
+          "sourceSha256": "cfac2bd3c940816094b4edd80cc85ff5fa3ab469f5545fe9678b453055d4d7e4"
+        }
+      ],
+      "figures": [
+        {
+          "name": "high_j_boundary.png",
+          "path": "study-assets/figures/dashboard-history/high_j_boundary.png",
+          "source": "figures/dashboard-history/high_j_boundary.png",
+          "sourceSha256": "5c77bef7b3affbd797b879a9c608d36ccf176fbac413a7d2ad05c2f41751e174",
+          "title": "High j boundary",
+          "width": 2160,
+          "height": 1440,
+          "wide": false,
+          "pdf": "study-assets/figures/dashboard-history/high_j_boundary.pdf"
+        }
+      ],
+      "table": null
+    },
+    {
+      "id": "magnetization",
+      "task": "T5a",
+      "title": "Magnetization and signed-grasp correlations",
+      "description": "Converged n=5 magnetization sweep; the tested magnetization hypothesis was not supported.",
+      "limits": "Historical notation is preserved in downloads. Signed grasp and sqrt(abs(mean grasp)) are proxies, distinct from positive-volume expectations. These finite sampled families do not establish universal behavior.",
+      "status": "Saved calculation",
+      "files": [
+        {
+          "name": "t5a_mag_results.json",
+          "path": "study-assets/results/t5a_mag_results.json",
+          "source": "results/t5a_mag_results.json",
+          "sourceSha256": "e5a2d6fbb03ac95a9eb850c3107ed7f7aa02fd7dda6c09fd392a8a7125beb689"
+        },
+        {
+          "name": "t5a_mag_notes.md",
+          "path": "study-assets/notes/experiments/t5a_mag_notes.md",
+          "source": "notes/experiments/t5a_mag_notes.md",
+          "sourceSha256": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee"
+        }
+      ],
+      "figures": [
+        {
+          "name": "magnetization.png",
+          "path": "study-assets/figures/dashboard-history/magnetization.png",
+          "source": "figures/dashboard-history/magnetization.png",
+          "sourceSha256": "83f880fd6078012f4565e8fcc4576d5914e8e70b2d522e99395c01f9d6d19768",
+          "title": "Magnetization",
+          "width": 2160,
+          "height": 1080,
+          "wide": false,
+          "pdf": "study-assets/figures/dashboard-history/magnetization.pdf"
+        }
+      ],
+      "table": null
+    },
+    {
+      "id": "chirality",
+      "task": "T5a\u2032",
+      "title": "Local-chirality pilot",
+      "description": "Saved plane/channel agreement statistics; the local subset did not establish hidden handedness.",
+      "limits": "Historical notation is preserved in downloads. Signed grasp and sqrt(abs(mean grasp)) are proxies, distinct from positive-volume expectations. These finite sampled families do not establish universal behavior.",
+      "status": "Saved calculation",
+      "files": [
+        {
+          "name": "t5a_prime_results.json",
+          "path": "study-assets/results/t5a_prime_results.json",
+          "source": "results/t5a_prime_results.json",
+          "sourceSha256": "268f4decd32eeb1f56a9da797b44c93a01229d9cebe302400e3a48c0cca485d3"
+        },
+        {
+          "name": "t5a_prime_notes.md",
+          "path": "study-assets/notes/experiments/t5a_prime_notes.md",
+          "source": "notes/experiments/t5a_prime_notes.md",
+          "sourceSha256": "87d0fda36d53cdd5127d73f757918d234c9aac6fc775c0333817bc4e4176d5cb"
+        }
+      ],
+      "figures": [
+        {
+          "name": "chirality.png",
+          "path": "study-assets/figures/dashboard-history/chirality.png",
+          "source": "figures/dashboard-history/chirality.png",
+          "sourceSha256": "d0fc26712d915cbfcb31298042625c396a3d622ef3502918d8df0d346a20450d",
+          "title": "Chirality",
+          "width": 2160,
+          "height": 1440,
+          "wide": false,
+          "pdf": "study-assets/figures/dashboard-history/chirality.pdf"
+        }
+      ],
+      "table": null
+    },
+    {
+      "id": "perturbation",
+      "task": "T5b",
+      "title": "Imaginary-perturbation response",
+      "description": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+      "limits": "Historical notation is preserved in downloads. Signed grasp and sqrt(abs(mean grasp)) are proxies, distinct from positive-volume expectations. These finite sampled families do not establish universal behavior.",
+      "status": "Saved calculation",
+      "files": [
+        {
+          "name": "t5b_results.json",
+          "path": "study-assets/results/t5b_results.json",
+          "source": "results/t5b_results.json",
+          "sourceSha256": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa"
+        },
+        {
+          "name": "T5b.md",
+          "path": "study-assets/memory-bank/archive/T5b.md",
+          "source": "memory-bank/archive/T5b.md",
+          "sourceSha256": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        }
+      ],
+      "figures": [
+        {
+          "name": "perturbation.png",
+          "path": "study-assets/figures/dashboard-history/perturbation.png",
+          "source": "figures/dashboard-history/perturbation.png",
+          "sourceSha256": "7ead6de1a85df7375fa0971ec7a02f9bc986bf68b8cbfbe2974869e5e608e9a8",
+          "title": "Perturbation",
+          "width": 2160,
+          "height": 1080,
+          "wide": false,
+          "pdf": "study-assets/figures/dashboard-history/perturbation.pdf"
+        }
+      ],
+      "table": null
+    },
+    {
+      "id": "phase",
+      "task": "T5d",
+      "title": "Cocycle-phase pilot",
+      "description": "Ten recorded points compare phase defect with signed grasp; broader study remains open.",
+      "limits": "Historical notation is preserved in downloads. Signed grasp and sqrt(abs(mean grasp)) are proxies, distinct from positive-volume expectations. These finite sampled families do not establish universal behavior.",
+      "status": "Saved calculation",
+      "files": [
+        {
+          "name": "t5d_phase_scan_results.json",
+          "path": "study-assets/results/t5d_phase_scan_results.json",
+          "source": "results/t5d_phase_scan_results.json",
+          "sourceSha256": "e3504d5f8bc3fe5ee2480933a19b8a6a61cd4fe67777c0f364b50d45f1af5c01"
+        },
+        {
+          "name": "T5d.md",
+          "path": "study-assets/memory-bank/tasks/T5d.md",
+          "source": "memory-bank/tasks/T5d.md",
+          "sourceSha256": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6"
+        }
+      ],
+      "figures": [
+        {
+          "name": "phase.png",
+          "path": "study-assets/figures/dashboard-history/phase.png",
+          "source": "figures/dashboard-history/phase.png",
+          "sourceSha256": "0b953efd13c9c1762024351ed16485256f89b30f01df2cbd05df719fb7204306",
+          "title": "Phase",
+          "width": 2160,
+          "height": 1080,
+          "wide": false,
+          "pdf": "study-assets/figures/dashboard-history/phase.pdf"
+        }
+      ],
+      "table": null
+    },
+    {
+      "id": "large-k",
+      "task": "T5e",
+      "title": "Large-K recorded families and fits",
+      "description": "Saved families through historical K=24. The proposed K^(3/2) scaling was not supported for these families.",
+      "limits": "Historical notation is preserved in downloads. Signed grasp and sqrt(abs(mean grasp)) are proxies, distinct from positive-volume expectations. These finite sampled families do not establish universal behavior.",
+      "status": "Saved calculation",
+      "files": [
+        {
+          "name": "t5e_results.json",
+          "path": "study-assets/results/t5e_results.json",
+          "source": "results/t5e_results.json",
+          "sourceSha256": "5438a14fb40b4f57940cac21c2619a508da51bfa607c87eaa1347523d00727d3"
+        },
+        {
+          "name": "t5e_notes.md",
+          "path": "study-assets/notes/experiments/t5e_notes.md",
+          "source": "notes/experiments/t5e_notes.md",
+          "sourceSha256": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
+        }
+      ],
+      "figures": [
+        {
+          "name": "large_k.png",
+          "path": "study-assets/figures/dashboard-history/large_k.png",
+          "source": "figures/dashboard-history/large_k.png",
+          "sourceSha256": "e5571479d1da873d65a5ba22de179e11a6deaeb82ed34b7af2feb2045e463b81",
+          "title": "Large k",
+          "width": 2160,
+          "height": 1080,
+          "wide": false,
+          "pdf": "study-assets/figures/dashboard-history/large_k.pdf"
+        }
+      ],
+      "table": null
+    },
+    {
+      "id": "t7a",
+      "task": "T9",
+      "title": "Historical single-copy thermal pilot",
+      "description": "Archived T7A study, retained under current T9 ownership.",
+      "limits": "Historical capped oscillator support and historical state construction; this is distinct from the currently selected two-copy squeezed FL family and exact singlet Hamiltonian Gibbs calculation. Undefined JSON numbers are null in dashboard exports.",
+      "status": "Saved calculation",
+      "files": [
+        {
+          "name": "t7a_results.json",
+          "path": "study-assets/results/t7a_results.json",
+          "source": "results/t7a_results.json",
+          "sourceSha256": "03a72389707c0a0ae176191b33f9614b29e3db08ffddfda4ba4f1b3d0d9ca058"
+        },
+        {
+          "name": "t7a_notes.md",
+          "path": "study-assets/notes/experiments/t7a_notes.md",
+          "source": "notes/experiments/t7a_notes.md",
+          "sourceSha256": "c8c2a687994feb058d8a59f020f2ab3de189e5d5f1b6af6a0d72b72c01cb5157"
+        }
+      ],
+      "figures": [
+        {
+          "name": "t7a.png",
+          "path": "study-assets/figures/dashboard-history/t7a.png",
+          "source": "figures/dashboard-history/t7a.png",
+          "sourceSha256": "b567e12c54a41ddf3786164faa5d783648cc7c865505a80bdeadd4a8e8f1ca0e",
+          "title": "T7a",
+          "width": 2160,
+          "height": 1080,
+          "wide": false,
+          "pdf": "study-assets/figures/dashboard-history/t7a.pdf"
+        }
+      ],
+      "table": null
+    },
+    {
+      "id": "t7b",
+      "task": "T9",
+      "title": "Historical energy-basis TFD pilot",
+      "description": "Archived T7B study, retained under current T9 ownership.",
+      "limits": "Historical capped oscillator support and historical state construction; this is distinct from the currently selected two-copy squeezed FL family and exact singlet Hamiltonian Gibbs calculation. Undefined JSON numbers are null in dashboard exports.",
+      "status": "Saved calculation",
+      "files": [
+        {
+          "name": "t7b_results.json",
+          "path": "study-assets/results/t7b_results.json",
+          "source": "results/t7b_results.json",
+          "sourceSha256": "bd1d46bb461b39447617fb3d100fb0262ebb91c6bb5f3e4bc08312b042261b2d"
+        },
+        {
+          "name": "t7b_notes.md",
+          "path": "study-assets/notes/experiments/t7b_notes.md",
+          "source": "notes/experiments/t7b_notes.md",
+          "sourceSha256": "150d3b16786e63aff531df236e84785a232537707c988b11deeb60a2d9795b86"
+        }
+      ],
+      "figures": [
+        {
+          "name": "t7b.png",
+          "path": "study-assets/figures/dashboard-history/t7b.png",
+          "source": "figures/dashboard-history/t7b.png",
+          "sourceSha256": "fc19478dffb1ea85f4449bb378eb106db1f9aa56842202195500acf52d99756e",
+          "title": "T7b",
+          "width": 2160,
+          "height": 1080,
+          "wide": false,
+          "pdf": "study-assets/figures/dashboard-history/t7b.pdf"
+        }
+      ],
+      "table": null
+    },
+    {
+      "id": "t7e",
+      "task": "T9",
+      "title": "Historical complexified purification",
+      "description": "Archived T7E study, retained under current T9 ownership.",
+      "limits": "Historical capped oscillator support and historical state construction; this is distinct from the currently selected two-copy squeezed FL family and exact singlet Hamiltonian Gibbs calculation. Undefined JSON numbers are null in dashboard exports.",
+      "status": "Saved calculation",
+      "files": [
+        {
+          "name": "t7e_results.json",
+          "path": "study-assets/results/t7e_results.json",
+          "source": "results/t7e_results.json",
+          "sourceSha256": "975736e518a476c3f08d51d4c62bff39c44403f9ba70b7af4c5fb38b67ae5bdf"
+        },
+        {
+          "name": "t7e_notes.md",
+          "path": "study-assets/notes/experiments/t7e_notes.md",
+          "source": "notes/experiments/t7e_notes.md",
+          "sourceSha256": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9"
+        }
+      ],
+      "figures": [
+        {
+          "name": "t7e.png",
+          "path": "study-assets/figures/dashboard-history/t7e.png",
+          "source": "figures/dashboard-history/t7e.png",
+          "sourceSha256": "6964606940595d3d2bb1f96fbc5035a980edd13c996094031461e156ef8ee4c8",
+          "title": "T7e",
+          "width": 2160,
+          "height": 1080,
+          "wide": false,
+          "pdf": "study-assets/figures/dashboard-history/t7e.pdf"
+        }
+      ],
+      "table": null
+    },
+    {
+      "id": "geometry-audit",
+      "task": "T9",
+      "title": "Small-sector thermal geometry audit",
+      "description": "Four regular/unequal-shape seed cases; draft squeeze compared with explicit double-singlet postselection.",
+      "limits": "Draft one-sided construction, cutoff and omitted probabilities are recorded. Postselection is not assumed Gibbs and differs from the selected two-copy input construction.",
+      "status": "Saved calculation",
+      "files": [
+        {
+          "name": "t7_geometry_thermal_results.json",
+          "path": "study-assets/results/t7_geometry_thermal_results.json",
+          "source": "results/t7_geometry_thermal_results.json",
+          "sourceSha256": "da117f4ee4702ab8de4398b27c959ee1f3e4ed5243dc1040195a952533dd9437"
+        }
+      ],
+      "figures": [
+        {
+          "name": "geometry_audit.png",
+          "path": "study-assets/figures/dashboard-history/geometry_audit.png",
+          "source": "figures/dashboard-history/geometry_audit.png",
+          "sourceSha256": "24dac73555f42c143d0d825762dba62479b88c7a3ff0c4e1dde9461a624f2a6a",
+          "title": "Geometry audit",
+          "width": 2160,
+          "height": 1440,
+          "wide": false,
+          "pdf": "study-assets/figures/dashboard-history/geometry_audit.pdf"
+        }
+      ],
+      "table": null
+    },
+    {
+      "id": "volume-controls",
+      "task": "T1a",
+      "title": "RS/AL volume-prescription controls",
+      "description": "Independent tensor controls: paired spin-half singlet has positive RS/AL volume despite zero signed mean; collinear product gives zero.",
+      "limits": "Simple-state implementation checks; project normalization and selected four-face AL embedding only.",
+      "status": "Saved calculation",
+      "files": [
+        {
+          "name": "volume_prescription_results.json",
+          "path": "study-assets/results/volume_prescription_results.json",
+          "source": "results/volume_prescription_results.json",
+          "sourceSha256": "9f700c0ed30169af9b1d66d2abffb78d57fb1fee5335e83ca4559c68f325ae7f"
+        }
+      ],
+      "figures": [
+        {
+          "name": "volume_controls.png",
+          "path": "study-assets/figures/dashboard-history/volume_controls.png",
+          "source": "figures/dashboard-history/volume_controls.png",
+          "sourceSha256": "a36e9247717f541ab48e565b42c196835d0158179fbe25373ff9182f734ff368",
+          "title": "Volume controls",
+          "width": 2160,
+          "height": 1080,
+          "wide": false,
+          "pdf": "study-assets/figures/dashboard-history/volume_controls.pdf"
+        }
+      ],
+      "table": null
+    },
+    {
+      "id": "covariance-pilot",
+      "task": "T5c",
+      "title": "Initial covariance reconstruction pilot",
+      "description": "Six saved pilot records; later shape recovery and weighted-input studies are shown in Volume Studies.",
+      "limits": "Exploratory covariance-derived geometry; preserve the distinction from the classical input tetrahedron and positive-volume operator.",
+      "status": "Saved calculation",
+      "files": [
+        {
+          "name": "t5c_covariance_probe_results.json",
+          "path": "study-assets/results/t5c_covariance_probe_results.json",
+          "source": "results/t5c_covariance_probe_results.json",
+          "sourceSha256": "60b3686c42c728f4c284f5e01355ddd8b116f4617d16af19d3216d0a707b3d4d"
+        }
+      ],
+      "figures": [
+        {
+          "name": "covariance_pilot.png",
+          "path": "study-assets/figures/dashboard-history/covariance_pilot.png",
+          "source": "figures/dashboard-history/covariance_pilot.png",
+          "sourceSha256": "6b238d737f89a2800a0f88692ae924a5f27ac780e62bbce9d09d2f419a80832f",
+          "title": "Covariance pilot",
+          "width": 2160,
+          "height": 1080,
+          "wide": false,
+          "pdf": "study-assets/figures/dashboard-history/covariance_pilot.pdf"
+        }
+      ],
+      "table": null
+    }
+  ]
+}

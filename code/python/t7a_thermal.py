@@ -40,150 +40,30 @@ import json
 import time
 
 import numpy as np
-import scipy.sparse as sp
+from lqg_scattering.coherent_states import plane_to_Z
+from lqg_scattering.positivity import positive_plane_curve as _positive_plane_curve
+from lqg_scattering.positivity import vertex_reference
 from project_paths import RESULTS_ROOT
+from lqg_scattering.conventions import DEFAULT_TRIPLE, GAMMA, HBAR
+from lqg_scattering.schwinger import (
+    SparseSchwingerSpace,
+    normalized_taylor_exp,
+    q_operator,
+    volume_on_vec,
+)
 
-GAMMA = 0.2375
-HBAR = 1.0
-TRIPLE = (0, 1, 2)
+TRIPLE = DEFAULT_TRIPLE
 SEEDS = {4: 11, 5: 12}
 BETAS = [0.0, 0.1, 0.5, 1.0, 2.0, 5.0, 10.0]
 TOL = 1e-13
 
 
-# --------------------------------------------------------------------------
-# Occupation basis + sparse operators (from T5b, Taylor converged per T5e)
-# --------------------------------------------------------------------------
-
-def _bounded_compositions(nvars, maxsum):
-    out = []
-    buf = [0] * nvars
-
-    def rec(p, rem):
-        if p == nvars - 1:
-            for v in range(rem + 1):
-                buf[p] = v
-                out.append(tuple(buf))
-            return
-        for v in range(rem + 1):
-            buf[p] = v
-            rec(p + 1, rem - v)
-
-    rec(0, maxsum)
-    return out
-
-
-class OpSpace:
-    """Schwinger Fock space (total bosons <= K_max) with sparse operators."""
-
-    def __init__(self, N, K_max):
-        self.N = N
-        self.K_max = K_max
-        occs = _bounded_compositions(2 * N, K_max)
-        self.occs = np.array(occs, dtype=np.int64)
-        self.dim = len(occs)
-        self.index = {occ: i for i, occ in enumerate(occs)}
-        # total bosons per basis state = H eigenvalue (omega = 1)
-        self.energy = self.occs.sum(axis=1).astype(float)
-        # per-edge totals (n_a + n_b) for area expectations
-        self.edge_total = np.stack(
-            [self.occs[:, 2 * e] + self.occs[:, 2 * e + 1]
-             for e in range(N)], axis=1).astype(float)
-
-        def ladder(edge, dag, species):
-            off = 2 * edge + species
-            rows, cols, data = [], [], []
-            for c, occ in enumerate(occs):
-                n = occ[off]
-                if dag:
-                    lst = list(occ)
-                    lst[off] = n + 1
-                    tgt = tuple(lst)
-                    if tgt in self.index:
-                        rows.append(self.index[tgt])
-                        cols.append(c)
-                        data.append(np.sqrt(n + 1))
-                elif n > 0:
-                    lst = list(occ)
-                    lst[off] = n - 1
-                    rows.append(self.index[tuple(lst)])
-                    cols.append(c)
-                    data.append(np.sqrt(n))
-            return sp.csr_matrix((data, (rows, cols)),
-                                 shape=(self.dim, self.dim))
-
-        self.E = {}
-        adag = [ladder(e, True, 0) for e in range(N)]
-        a = [ladder(e, False, 0) for e in range(N)]
-        bdag = [ladder(e, True, 1) for e in range(N)]
-        b = [ladder(e, False, 1) for e in range(N)]
-        for i in range(N):
-            for j in range(N):
-                self.E[(i, j)] = adag[i] @ a[j] + bdag[i] @ b[j]
-
-        self.Jz, self.Jp, self.Jm = [], [], []
-        for e in range(N):
-            z = sp.diags(
-                [0.5 * (occ[2 * e] - occ[2 * e + 1]) for occ in occs],
-                format="csr")
-            self.Jz.append(z)
-            self.Jp.append(adag[e] @ b[e])
-            self.Jm.append(bdag[e] @ a[e])
-
-        self.A = {}
-        for i in range(N):
-            for j in range(N):
-                self.A[(i, j)] = (self.Jz[i] @ self.Jz[j]
-                                  + 0.5 * (self.Jp[i] @ self.Jm[j]
-                                           + self.Jm[i] @ self.Jp[j]))
-
-    def amat(self, Z):
-        out = sp.csr_matrix((self.dim, self.dim), dtype=complex)
-        for (i, j), Eij in self.E.items():
-            z = Z[i, j]
-            if z != 0:
-                out = out + z * Eij
-        return out
-
-    def ref_vec(self, ref_occupations):
-        v = np.zeros(self.dim, dtype=complex)
-        v[self.index[tuple(int(x) for pair in ref_occupations
-                           for x in pair)]] = 1.0
-        return v
+class OpSpace(SparseSchwingerSpace):
+    """T7a adapter preserving its tolerance and iteration-count return."""
 
     @staticmethod
     def taylor_exp(A, ref_vec, K, tol=TOL):
-        """Converged Taylor (8K+50 cap + assert -- T5e lesson)."""
-        result = ref_vec.copy()
-        term = ref_vec.copy()
-        iters = 0
-        for n in range(1, 8 * K + 50):
-            term = (A @ term) / n
-            iters = n
-            inc = float(np.linalg.norm(term))
-            result = result + term
-            if inc < tol * max(1.0, float(np.linalg.norm(result))):
-                break
-        else:
-            raise RuntimeError("Taylor exponential did not converge")
-        return result / np.linalg.norm(result), iters
-
-
-def q_operator(space, triple=TRIPLE):
-    i, j, k = triple
-    Aij, Ajk = space.A[(i, j)], space.A[(j, k)]
-    return 1j * (Aij @ Ajk - Ajk @ Aij)
-
-
-def volume_on_vec(vec, space, triple=TRIPLE, gamma=GAMMA, hbar=HBAR):
-    i, j, k = triple
-    Aij, Ajk = space.A[(i, j)], space.A[(j, k)]
-    v_ij = Aij @ vec
-    v_jk = Ajk @ vec
-    q_vec = 1j * (Aij @ v_jk - Ajk @ v_ij)
-    q_exp = complex(vec.conj() @ q_vec)
-    V = (gamma * hbar) ** 1.5 * float(np.sqrt(abs(q_exp)))
-    return V, q_exp
+        return normalized_taylor_exp(A, ref_vec, K, tol=tol)
 
 
 # --------------------------------------------------------------------------
@@ -191,28 +71,8 @@ def volume_on_vec(vec, space, triple=TRIPLE, gamma=GAMMA, hbar=HBAR):
 # --------------------------------------------------------------------------
 
 def positive_plane_curve(N, seed=0, t_min=0.2, t_max=3.0):
-    rng = np.random.default_rng(seed)
-    t = np.sort(rng.uniform(t_min, t_max, size=N))
-    return np.stack([t, t * t])
-
-
-def plane_to_Z(plane):
-    plane = np.asarray(plane, dtype=complex)
-    a, b = plane
-    a = a / np.linalg.norm(a)
-    b = b - a * (a.conj() @ b)
-    nb = np.linalg.norm(b)
-    if nb < 1e-14:
-        raise ValueError("plane rows are parallel")
-    b = b / nb
-    return np.outer(a, b.conj()) - np.outer(b, a.conj())
-
-
-def vertex_reference(N, triple=TRIPLE):
-    ref = np.zeros((N, 2), dtype=int)
-    ref[:, 0] = 1
-    ref[list(triple), 1] = 1
-    return ref
+    """T7a's deterministic defaults for the shared positive-plane helper."""
+    return _positive_plane_curve(N, seed=seed, t_min=t_min, t_max=t_max)
 
 
 # --------------------------------------------------------------------------

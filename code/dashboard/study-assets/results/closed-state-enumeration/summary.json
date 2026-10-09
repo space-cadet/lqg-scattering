@@ -1,0 +1,33 @@
+{
+  "notation": "K=sum_i j_i; J_total=0; k_pair is the intermediate pair spin",
+  "faces": "four labelled faces; zero-spin faces permitted",
+  "basis": "couple (j1,j2) to k_pair, (j3,j4) to k_pair, then to J_total=0",
+  "interpretation": "One orthonormal basis state per row; arbitrary superpositions are not separately enumerated.",
+  "csv": "basis_k2_k4.csv",
+  "counts": [
+    {
+      "K": 2,
+      "basis_states": 20,
+      "face_spin_assignments": 19,
+      "all_four_faces_active": 2
+    },
+    {
+      "K": 3,
+      "basis_states": 50,
+      "face_spin_assignments": 44,
+      "all_four_faces_active": 16
+    },
+    {
+      "K": 4,
+      "basis_states": 105,
+      "face_spin_assignments": 85,
+      "all_four_faces_active": 51
+    }
+  ],
+  "checks": [
+    "dimension formula",
+    "unique basis labels",
+    "total area",
+    "pair triangle inequalities and parity"
+  ]
+}

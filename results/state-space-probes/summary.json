@@ -1,0 +1,901 @@
+{
+  "schema_version": 1,
+  "model": "Four-site two-component Schwinger Bose-Hubbard hopping plus onsite repulsion",
+  "hamiltonian": "H=-t*sum_edges(E_ij+E_ji)+U/2*sum_i n_i(n_i-1)",
+  "units": {
+    "hbar": 1.0,
+    "gamma": 0.2375,
+    "face_area_project_units": "gamma*<n_a+n_b>"
+  },
+  "initial_state_conventions": {
+    "closed": "Existing fixed-area Freidel-Livine intertwiner at area label 2, embedded in the fixed four-boson sector.",
+    "single_face": "Spin-coherent j=1 state on site 0, other sites empty.",
+    "missing_face": "Spin-coherent j=1/2 product on sites 0,1,2 using the corresponding outward normals of the regular tetrahedron; site 3 empty.",
+    "open_state_volume": "No geometric volume is assigned to non-singlets."
+  },
+  "times": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "records": [
+    {
+      "state": "closed_fl_tetrahedron",
+      "description": "Four-face regular FL coherent intertwiner, total area label 2; exact singlet.",
+      "graph": "complete",
+      "n_sites": 4,
+      "fixed_boson_number": 4,
+      "hilbert_dimension": 330,
+      "hopping_t": 1.0,
+      "onsite_U": 5.0,
+      "initial_energy": 1.7340136762890963,
+      "initial_energy_std": 3.3166247903554003,
+      "initial_closure": {
+        "norm_or_trace": 1.0000000000000009,
+        "mean_total_spin_vector": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "mean_total_spin_squared": 2.784957219368169e-18,
+        "rms_closure_defect": 0.0,
+        "singlet_weight": 1.0,
+        "total_spin_probabilities": {
+          "0.0": 1.0,
+          "1.0": 2.4834264122975286e-31,
+          "2.0": 4.8268359571262096e-32
+        }
+      },
+      "evolution": [
+        {
+          "time": 0.0,
+          "norm": 1.0000000000000009,
+          "mean_face_bosons": [
+            1.0000000000000002,
+            1.0000000000000007,
+            1.0000000000000007,
+            1.0000000000000004
+          ],
+          "mean_face_areas_project_units": [
+            0.23750000000000013,
+            0.23750000000000016,
+            0.23750000000000016,
+            0.23750000000000016
+          ],
+          "mean_onsite_pair_count": 1.0000000000000002,
+          "mean_total_spin_squared": 2.784957219368169e-18,
+          "spin_sector_probabilities": {
+            "0.0": 1.0,
+            "1.0": 2.4834264122975286e-31,
+            "2.0": 4.8268359571262096e-32
+          },
+          "rms_closure_defect": 0.0
+        },
+        {
+          "time": 0.1,
+          "norm": 1.0000000000000009,
+          "mean_face_bosons": [
+            0.9782186694176025,
+            1.0217813305823982,
+            1.021781330582398,
+            0.9782186694176028
+          ],
+          "mean_face_areas_project_units": [
+            0.2323269339866806,
+            0.2426730660133196,
+            0.24267306601331964,
+            0.23232693398668067
+          ],
+          "mean_onsite_pair_count": 0.9491318423524646,
+          "mean_total_spin_squared": -1.4050515863866387e-17,
+          "spin_sector_probabilities": {
+            "0.0": 1.0,
+            "1.0": 2.362043492309899e-31,
+            "2.0": 7.884077498423274e-32
+          },
+          "rms_closure_defect": 0.0
+        },
+        {
+          "time": 0.25,
+          "norm": 1.0000000000000007,
+          "mean_face_bosons": [
+            0.9005431874094639,
+            1.0994568125905377,
+            1.0994568125905375,
+            0.9005431874094638
+          ],
+          "mean_face_areas_project_units": [
+            0.21387900700974768,
+            0.26112099299025276,
+            0.26112099299025265,
+            0.21387900700974777
+          ],
+          "mean_onsite_pair_count": 0.7795315549375014,
+          "mean_total_spin_squared": -2.2928330627274898e-17,
+          "spin_sector_probabilities": {
+            "0.0": 1.0,
+            "1.0": 2.5343202865560114e-31,
+            "2.0": 2.3355104944130456e-31
+          },
+          "rms_closure_defect": 0.0
+        },
+        {
+          "time": 0.5,
+          "norm": 1.000000000000001,
+          "mean_face_bosons": [
+            0.8866016384062051,
+            1.1133983615937968,
+            1.1133983615937968,
+            0.8866016384062049
+          ],
+          "mean_face_areas_project_units": [
+            0.2105678891214737,
+            0.26443211087852675,
+            0.26443211087852675,
+            0.21056788912147364
+          ],
+          "mean_onsite_pair_count": 0.8009282259769577,
+          "mean_total_spin_squared": -4.015645467164967e-17,
+          "spin_sector_probabilities": {
+            "0.0": 1.0,
+            "1.0": 4.851120797834894e-31,
+            "2.0": 2.337841873197024e-31
+          },
+          "rms_closure_defect": 0.0
+        },
+        {
+          "time": 1.0,
+          "norm": 1.0000000000000016,
+          "mean_face_bosons": [
+            1.0343197710086445,
+            0.965680228991359,
+            0.9656802289913596,
+            1.0343197710086436
+          ],
+          "mean_face_areas_project_units": [
+            0.2456509456145529,
+            0.22934905438544784,
+            0.22934905438544786,
+            0.24565094561455295
+          ],
+          "mean_onsite_pair_count": 0.8001750169260805,
+          "mean_total_spin_squared": -4.860770453654243e-17,
+          "spin_sector_probabilities": {
+            "0.0": 1.0,
+            "1.0": 1.6082719130161663e-30,
+            "2.0": 1.418807021286749e-30
+          },
+          "rms_closure_defect": 0.0
+        }
+      ]
+    },
+    {
+      "state": "single_face_j1",
+      "description": "One j=1 face aligned with tetrahedron face 0; remaining sites empty.",
+      "graph": "complete",
+      "n_sites": 4,
+      "fixed_boson_number": 2,
+      "hilbert_dimension": 36,
+      "hopping_t": 1.0,
+      "onsite_U": 5.0,
+      "initial_energy": 5.0,
+      "initial_energy_std": 2.449489742783178,
+      "initial_closure": {
+        "norm_or_trace": 1.0,
+        "mean_total_spin_vector": {
+          "x": 0.5773502691896257,
+          "y": 0.5773502691896257,
+          "z": 0.5773502691896257
+        },
+        "mean_total_spin_squared": 2.0000000000000004,
+        "rms_closure_defect": 1.4142135623730951,
+        "singlet_weight": 0.0,
+        "total_spin_probabilities": {
+          "0.0": 0.0,
+          "1.0": 1.0
+        }
+      },
+      "evolution": [
+        {
+          "time": 0.0,
+          "norm": 1.0,
+          "mean_face_bosons": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean_face_areas_project_units": [
+            0.475,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean_onsite_pair_count": 1.0,
+          "mean_total_spin_squared": 2.0000000000000004,
+          "spin_sector_probabilities": {
+            "0.0": 0.0,
+            "1.0": 1.0
+          },
+          "rms_closure_defect": 1.4142135623730951
+        },
+        {
+          "time": 0.1,
+          "norm": 1.0,
+          "mean_face_bosons": [
+            1.9429674770320209,
+            0.019010840989326393,
+            0.019010840989326393,
+            0.019010840989326393
+          ],
+          "mean_face_areas_project_units": [
+            0.4614547757951049,
+            0.0045150747349650185,
+            0.0045150747349650185,
+            0.0045150747349650185
+          ],
+          "mean_onsite_pair_count": 0.9441005678963836,
+          "mean_total_spin_squared": 2.0,
+          "spin_sector_probabilities": {
+            "0.0": 2.3809890297292206e-35,
+            "1.0": 1.0
+          },
+          "rms_closure_defect": 1.4142135623730951
+        },
+        {
+          "time": 0.25,
+          "norm": 1.0,
+          "mean_face_bosons": [
+            1.7257675084792012,
+            0.09141083050693288,
+            0.09141083050693287,
+            0.09141083050693287
+          ],
+          "mean_face_areas_project_units": [
+            0.4098697832638103,
+            0.021710072245396558,
+            0.021710072245396554,
+            0.021710072245396554
+          ],
+          "mean_onsite_pair_count": 0.7583547964939237,
+          "mean_total_spin_squared": 2.0,
+          "spin_sector_probabilities": {
+            "0.0": 4.865435321947375e-35,
+            "1.0": 1.0
+          },
+          "rms_closure_defect": 1.4142135623730951
+        },
+        {
+          "time": 0.5,
+          "norm": 1.0,
+          "mean_face_bosons": [
+            1.5360852794627347,
+            0.1546382401790885,
+            0.15463824017908848,
+            0.15463824017908848
+          ],
+          "mean_face_areas_project_units": [
+            0.36482025387239947,
+            0.03672658204253352,
+            0.036726582042533526,
+            0.03672658204253352
+          ],
+          "mean_onsite_pair_count": 0.6993435418170274,
+          "mean_total_spin_squared": 2.0,
+          "spin_sector_probabilities": {
+            "0.0": 6.320118063602632e-34,
+            "1.0": 1.0
+          },
+          "rms_closure_defect": 1.4142135623730951
+        },
+        {
+          "time": 1.0,
+          "norm": 0.9999999999999978,
+          "mean_face_bosons": [
+            1.8291617959962205,
+            0.056946068001258995,
+            0.05694606800125839,
+            0.05694606800125793
+          ],
+          "mean_face_areas_project_units": [
+            0.43442592654910234,
+            0.013524691150299008,
+            0.01352469115029887,
+            0.013524691150298761
+          ],
+          "mean_onsite_pair_count": 0.9689194657621548,
+          "mean_total_spin_squared": 1.9999999999999956,
+          "spin_sector_probabilities": {
+            "0.0": 2.9494519943963734e-31,
+            "1.0": 1.0
+          },
+          "rms_closure_defect": 1.4142135623730934
+        }
+      ]
+    },
+    {
+      "state": "three_faces_missing_fourth",
+      "description": "Product of three j=1/2 coherent faces along tetrahedron normals 0,1,2; face 3 absent.",
+      "graph": "complete",
+      "n_sites": 4,
+      "fixed_boson_number": 3,
+      "hilbert_dimension": 120,
+      "hopping_t": 1.0,
+      "onsite_U": 5.0,
+      "initial_energy": 0.0,
+      "initial_energy_std": 3.3166247903554003,
+      "initial_closure": {
+        "norm_or_trace": 0.9999999999999999,
+        "mean_total_spin_vector": {
+          "x": 0.28867513459481287,
+          "y": 0.2886751345948128,
+          "z": -0.28867513459481287
+        },
+        "mean_total_spin_squared": 1.7499999999999998,
+        "rms_closure_defect": 1.3228756555322951,
+        "singlet_weight": 0.0,
+        "total_spin_probabilities": {
+          "0.5": 0.6666666666666667,
+          "1.5": 0.3333333333333333
+        }
+      },
+      "evolution": [
+        {
+          "time": 0.0,
+          "norm": 0.9999999999999999,
+          "mean_face_bosons": [
+            0.9999999999999999,
+            0.9999999999999999,
+            0.9999999999999999,
+            0.0
+          ],
+          "mean_face_areas_project_units": [
+            0.23749999999999993,
+            0.23749999999999993,
+            0.23749999999999993,
+            0.0
+          ],
+          "mean_onsite_pair_count": 0.0,
+          "mean_total_spin_squared": 1.7499999999999998,
+          "spin_sector_probabilities": {
+            "0.5": 0.6666666666666667,
+            "1.5": 0.3333333333333333
+          },
+          "rms_closure_defect": 1.3228756555322951
+        },
+        {
+          "time": 0.1,
+          "norm": 1.0,
+          "mean_face_bosons": [
+            0.9897023499070657,
+            0.9897023499070662,
+            0.989702349907066,
+            0.03089295027880097
+          ],
+          "mean_face_areas_project_units": [
+            0.23505430810292818,
+            0.23505430810292818,
+            0.23505430810292816,
+            0.007337075691215227
+          ],
+          "mean_onsite_pair_count": 0.0760004976372726,
+          "mean_total_spin_squared": 1.7500000000000002,
+          "spin_sector_probabilities": {
+            "0.5": 0.6666666666666666,
+            "1.5": 0.33333333333333337
+          },
+          "rms_closure_defect": 1.3228756555322954
+        },
+        {
+          "time": 0.25,
+          "norm": 1.0,
+          "mean_face_bosons": [
+            0.9285707341881824,
+            0.9285707341881823,
+            0.9285707341881825,
+            0.21428779743545265
+          ],
+          "mean_face_areas_project_units": [
+            0.22053554936969338,
+            0.22053554936969336,
+            0.22053554936969333,
+            0.05089335189091999
+          ],
+          "mean_onsite_pair_count": 0.3528170947910256,
+          "mean_total_spin_squared": 1.7500000000000002,
+          "spin_sector_probabilities": {
+            "0.5": 0.6666666666666667,
+            "1.5": 0.33333333333333337
+          },
+          "rms_closure_defect": 1.3228756555322954
+        },
+        {
+          "time": 0.5,
+          "norm": 0.9999999999999999,
+          "mean_face_bosons": [
+            0.7193125810051388,
+            0.7193125810051384,
+            0.7193125810051385,
+            0.8420622569845843
+          ],
+          "mean_face_areas_project_units": [
+            0.17083673798872043,
+            0.17083673798872037,
+            0.17083673798872032,
+            0.1999897860338388
+          ],
+          "mean_onsite_pair_count": 0.4997379604088874,
+          "mean_total_spin_squared": 1.7499999999999996,
+          "spin_sector_probabilities": {
+            "0.5": 0.6666666666666666,
+            "1.5": 0.33333333333333326
+          },
+          "rms_closure_defect": 1.3228756555322951
+        },
+        {
+          "time": 1.0,
+          "norm": 0.9999999999999984,
+          "mean_face_bosons": [
+            0.7632958911288408,
+            0.7632958911288413,
+            0.7632958911288416,
+            0.7101123266134718
+          ],
+          "mean_face_areas_project_units": [
+            0.18128277414309968,
+            0.1812827741430998,
+            0.18128277414309982,
+            0.16865167757069954
+          ],
+          "mean_onsite_pair_count": 0.3417953975581729,
+          "mean_total_spin_squared": 1.749999999999997,
+          "spin_sector_probabilities": {
+            "0.5": 0.6666666666666669,
+            "1.5": 0.33333333333333315
+          },
+          "rms_closure_defect": 1.322875655532294
+        }
+      ]
+    },
+    {
+      "state": "closed_fl_tetrahedron",
+      "description": "Four-face regular FL coherent intertwiner, total area label 2; exact singlet.",
+      "graph": "ring",
+      "n_sites": 4,
+      "fixed_boson_number": 4,
+      "hilbert_dimension": 330,
+      "hopping_t": 1.0,
+      "onsite_U": 5.0,
+      "initial_energy": 3.36700683814455,
+      "initial_energy_std": 3.3166247903554,
+      "initial_closure": {
+        "norm_or_trace": 1.0000000000000009,
+        "mean_total_spin_vector": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "mean_total_spin_squared": 2.784957219368169e-18,
+        "rms_closure_defect": 0.0,
+        "singlet_weight": 1.0,
+        "total_spin_probabilities": {
+          "0.0": 1.0,
+          "1.0": 2.4834264122975286e-31,
+          "2.0": 4.8268359571262096e-32
+        }
+      },
+      "evolution": [
+        {
+          "time": 0.0,
+          "norm": 1.0000000000000009,
+          "mean_face_bosons": [
+            1.0000000000000002,
+            1.0000000000000007,
+            1.0000000000000007,
+            1.0000000000000004
+          ],
+          "mean_face_areas_project_units": [
+            0.23750000000000013,
+            0.23750000000000016,
+            0.23750000000000016,
+            0.23750000000000016
+          ],
+          "mean_onsite_pair_count": 1.0000000000000002,
+          "mean_total_spin_squared": 2.784957219368169e-18,
+          "spin_sector_probabilities": {
+            "0.0": 1.0,
+            "1.0": 2.4834264122975286e-31,
+            "2.0": 4.8268359571262096e-32
+          },
+          "rms_closure_defect": 0.0
+        },
+        {
+          "time": 0.1,
+          "norm": 1.0000000000000004,
+          "mean_face_bosons": [
+            1.0783371390450625,
+            0.9216628609549382,
+            0.921662860954938,
+            1.0783371390450625
+          ],
+          "mean_face_areas_project_units": [
+            0.25610507052320236,
+            0.21889492947679778,
+            0.2188949294767978,
+            0.2561050705232023
+          ],
+          "mean_onsite_pair_count": 0.9803150433972571,
+          "mean_total_spin_squared": -5.988978718862434e-17,
+          "spin_sector_probabilities": {
+            "0.0": 1.0,
+            "1.0": 2.467550970105201e-31,
+            "2.0": 8.765874542761209e-32
+          },
+          "rms_closure_defect": 0.0
+        },
+        {
+          "time": 0.25,
+          "norm": 1.0000000000000004,
+          "mean_face_bosons": [
+            1.1565707785996595,
+            0.8434292214003412,
+            0.8434292214003413,
+            1.1565707785996597
+          ],
+          "mean_face_areas_project_units": [
+            0.27468555991741916,
+            0.2003144400825811,
+            0.20031444008258106,
+            0.2746855599174192
+          ],
+          "mean_onsite_pair_count": 0.8983733850855588,
+          "mean_total_spin_squared": 3.023851584162263e-19,
+          "spin_sector_probabilities": {
+            "0.0": 1.0,
+            "1.0": 2.4370827819722136e-31,
+            "2.0": 1.3224941027841355e-31
+          },
+          "rms_closure_defect": 0.0
+        },
+        {
+          "time": 0.5,
+          "norm": 1.0000000000000004,
+          "mean_face_bosons": [
+            1.1239708942911368,
+            0.8760291057088639,
+            0.8760291057088643,
+            1.1239708942911375
+          ],
+          "mean_face_areas_project_units": [
+            0.2669430873941451,
+            0.20805691260585518,
+            0.2080569126058552,
+            0.266943087394145
+          ],
+          "mean_onsite_pair_count": 0.7893037924099374,
+          "mean_total_spin_squared": -2.6302438063366108e-17,
+          "spin_sector_probabilities": {
+            "0.0": 1.0,
+            "1.0": 2.6467111908412075e-31,
+            "2.0": 1.2966146269703365e-31
+          },
+          "rms_closure_defect": 0.0
+        },
+        {
+          "time": 1.0,
+          "norm": 1.0000000000000009,
+          "mean_face_bosons": [
+            1.016312868601838,
+            0.9836871313981641,
+            0.9836871313981641,
+            1.0163128686018374
+          ],
+          "mean_face_areas_project_units": [
+            0.2413743062929365,
+            0.233625693707064,
+            0.23362569370706399,
+            0.24137430629293644
+          ],
+          "mean_onsite_pair_count": 1.0278910486616581,
+          "mean_total_spin_squared": -1.761935104999131e-17,
+          "spin_sector_probabilities": {
+            "0.0": 1.0,
+            "1.0": 1.0809864665130896e-30,
+            "2.0": 5.760429773553035e-31
+          },
+          "rms_closure_defect": 0.0
+        }
+      ]
+    },
+    {
+      "state": "single_face_j1",
+      "description": "One j=1 face aligned with tetrahedron face 0; remaining sites empty.",
+      "graph": "ring",
+      "n_sites": 4,
+      "fixed_boson_number": 2,
+      "hilbert_dimension": 36,
+      "hopping_t": 1.0,
+      "onsite_U": 5.0,
+      "initial_energy": 5.0,
+      "initial_energy_std": 2.000000000000001,
+      "initial_closure": {
+        "norm_or_trace": 1.0,
+        "mean_total_spin_vector": {
+          "x": 0.5773502691896257,
+          "y": 0.5773502691896257,
+          "z": 0.5773502691896257
+        },
+        "mean_total_spin_squared": 2.0000000000000004,
+        "rms_closure_defect": 1.4142135623730951,
+        "singlet_weight": 0.0,
+        "total_spin_probabilities": {
+          "0.0": 0.0,
+          "1.0": 1.0
+        }
+      },
+      "evolution": [
+        {
+          "time": 0.0,
+          "norm": 1.0,
+          "mean_face_bosons": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean_face_areas_project_units": [
+            0.475,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean_onsite_pair_count": 1.0,
+          "mean_total_spin_squared": 2.0000000000000004,
+          "spin_sector_probabilities": {
+            "0.0": 0.0,
+            "1.0": 1.0
+          },
+          "rms_closure_defect": 1.4142135623730951
+        },
+        {
+          "time": 0.1,
+          "norm": 1.0,
+          "mean_face_bosons": [
+            1.961146762556324,
+            0.019328658083726434,
+            0.00019592127622349026,
+            0.019328658083726434
+          ],
+          "mean_face_areas_project_units": [
+            0.4657723561071269,
+            0.004590556294885027,
+            4.653130310307893e-05,
+            0.004590556294885027
+          ],
+          "mean_onsite_pair_count": 0.9617267979402097,
+          "mean_total_spin_squared": 2.0,
+          "spin_sector_probabilities": {
+            "0.0": 5.8818932749252515e-36,
+            "1.0": 1.0
+          },
+          "rms_closure_defect": 1.4142135623730951
+        },
+        {
+          "time": 0.25,
+          "norm": 0.9999999999999999,
+          "mean_face_bosons": [
+            1.7909803737776089,
+            0.1010810492399778,
+            0.006857527742435187,
+            0.1010810492399778
+          ],
+          "mean_face_areas_project_units": [
+            0.42535783877218214,
+            0.024006749194494727,
+            0.0016286628388283567,
+            0.024006749194494727
+          ],
+          "mean_onsite_pair_count": 0.8099838184636006,
+          "mean_total_spin_squared": 2.0,
+          "spin_sector_probabilities": {
+            "0.0": 2.8383737256191904e-35,
+            "1.0": 1.0
+          },
+          "rms_closure_defect": 1.4142135623730951
+        },
+        {
+          "time": 0.5,
+          "norm": 0.9999999999999999,
+          "mean_face_bosons": [
+            1.4864736764473294,
+            0.22049480897836038,
+            0.07253670559594955,
+            0.22049480897836038
+          ],
+          "mean_face_areas_project_units": [
+            0.35303749815624075,
+            0.05236751713236058,
+            0.01722746757903802,
+            0.05236751713236058
+          ],
+          "mean_onsite_pair_count": 0.6547037466283063,
+          "mean_total_spin_squared": 2.0,
+          "spin_sector_probabilities": {
+            "0.0": 2.3777521777967928e-35,
+            "1.0": 1.0
+          },
+          "rms_closure_defect": 1.4142135623730951
+        },
+        {
+          "time": 1.0,
+          "norm": 1.0000000000000013,
+          "mean_face_bosons": [
+            1.245870848294215,
+            0.2949049089578199,
+            0.16431933379014754,
+            0.2949049089578202
+          ],
+          "mean_face_areas_project_units": [
+            0.295894326469876,
+            0.07003991587748223,
+            0.039025841775160025,
+            0.07003991587748232
+          ],
+          "mean_onsite_pair_count": 0.8777087457724071,
+          "mean_total_spin_squared": 2.0000000000000027,
+          "spin_sector_probabilities": {
+            "0.0": 1.6666086805770532e-35,
+            "1.0": 1.0
+          },
+          "rms_closure_defect": 1.414213562373096
+        }
+      ]
+    },
+    {
+      "state": "three_faces_missing_fourth",
+      "description": "Product of three j=1/2 coherent faces along tetrahedron normals 0,1,2; face 3 absent.",
+      "graph": "ring",
+      "n_sites": 4,
+      "fixed_boson_number": 3,
+      "hilbert_dimension": 120,
+      "hopping_t": 1.0,
+      "onsite_U": 5.0,
+      "initial_energy": 0.0,
+      "initial_energy_std": 2.7080128015453204,
+      "initial_closure": {
+        "norm_or_trace": 0.9999999999999999,
+        "mean_total_spin_vector": {
+          "x": 0.28867513459481287,
+          "y": 0.2886751345948128,
+          "z": -0.28867513459481287
+        },
+        "mean_total_spin_squared": 1.7499999999999998,
+        "rms_closure_defect": 1.3228756555322951,
+        "singlet_weight": 0.0,
+        "total_spin_probabilities": {
+          "0.5": 0.6666666666666667,
+          "1.5": 0.3333333333333333
+        }
+      },
+      "evolution": [
+        {
+          "time": 0.0,
+          "norm": 0.9999999999999999,
+          "mean_face_bosons": [
+            0.9999999999999999,
+            0.9999999999999999,
+            0.9999999999999999,
+            0.0
+          ],
+          "mean_face_areas_project_units": [
+            0.23749999999999993,
+            0.23749999999999993,
+            0.23749999999999993,
+            0.0
+          ],
+          "mean_onsite_pair_count": 0.0,
+          "mean_total_spin_squared": 1.7499999999999998,
+          "spin_sector_probabilities": {
+            "0.5": 0.6666666666666667,
+            "1.5": 0.3333333333333333
+          },
+          "rms_closure_defect": 1.3228756555322951
+        },
+        {
+          "time": 0.1,
+          "norm": 1.0000000000000002,
+          "mean_face_bosons": [
+            0.9901346929904744,
+            0.9998950343816739,
+            0.9901347192057606,
+            0.019835553422091808
+          ],
+          "mean_face_areas_project_units": [
+            0.2351569895852376,
+            0.2374750706656475,
+            0.2351569958113681,
+            0.004710943937746803
+          ],
+          "mean_onsite_pair_count": 0.051007939248702505,
+          "mean_total_spin_squared": 1.7500000000000007,
+          "spin_sector_probabilities": {
+            "0.5": 0.6666666666666667,
+            "1.5": 0.3333333333333332
+          },
+          "rms_closure_defect": 1.3228756555322956
+        },
+        {
+          "time": 0.25,
+          "norm": 0.9999999999999998,
+          "mean_face_bosons": [
+            0.9427334655035543,
+            0.995523841465385,
+            0.9427479116735809,
+            0.11899478135747954
+          ],
+          "mean_face_areas_project_units": [
+            0.22389919805709418,
+            0.23643691234802897,
+            0.22390262902247549,
+            0.028261260572401393
+          ],
+          "mean_onsite_pair_count": 0.24958627114872425,
+          "mean_total_spin_squared": 1.7500000000000004,
+          "spin_sector_probabilities": {
+            "0.5": 0.6666666666666666,
+            "1.5": 0.33333333333333337
+          },
+          "rms_closure_defect": 1.3228756555322954
+        },
+        {
+          "time": 0.5,
+          "norm": 0.9999999999999998,
+          "mean_face_bosons": [
+            0.814996239012927,
+            0.9516447320888239,
+            0.8162751333001549,
+            0.41708389559809395
+          ],
+          "mean_face_areas_project_units": [
+            0.1935616067655701,
+            0.2260156238710958,
+            0.1938653441587868,
+            0.09905742520454731
+          ],
+          "mean_onsite_pair_count": 0.4013790105052542,
+          "mean_total_spin_squared": 1.7499999999999991,
+          "spin_sector_probabilities": {
+            "0.5": 0.6666666666666667,
+            "1.5": 0.3333333333333332
+          },
+          "rms_closure_defect": 1.322875655532295
+        },
+        {
+          "time": 1.0,
+          "norm": 0.9999999999999993,
+          "mean_face_bosons": [
+            0.6485696472469173,
+            0.7791845233731572,
+            0.6840439830726007,
+            0.8882018463073228
+          ],
+          "mean_face_areas_project_units": [
+            0.15403529122114296,
+            0.18505632430112484,
+            0.16246044597974268,
+            0.21094793849798926
+          ],
+          "mean_onsite_pair_count": 0.28166408548191524,
+          "mean_total_spin_squared": 1.749999999999998,
+          "spin_sector_probabilities": {
+            "0.5": 0.6666666666666667,
+            "1.5": 0.3333333333333333
+          },
+          "rms_closure_defect": 1.3228756555322945
+        }
+      ]
+    }
+  ]
+}

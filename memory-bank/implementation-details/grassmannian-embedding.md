@@ -36,10 +36,14 @@ so the expectation of a positive quantum volume operator remains open. See
 
 ## Implementation
 
-### Python (`code/python/positivity.py`)
+### Python (`code/python/lqg_scattering/positivity.py`)
 - Direct computation of Plücker coordinates
 - Positivity checks for n=4
 - Analytical real-state cancellation of the signed triple-grasp mean
+
+The root-level `code/python/positivity.py` is a compatibility facade. Related
+spinor and Grassmannian maps are implemented in
+`code/python/lqg_scattering/grassmannian.py`.
 
 ### Rust (`code/rust/src/grassmannian.rs`)
 - Sparse Plücker coordinate computation
@@ -51,7 +55,7 @@ so the expectation of a positive quantum volume operator remains open. See
 | File | Purpose |
 |------|---------|
 | `code/rust/src/grassmannian.rs` | Plücker embedding, positivity tests |
-| `code/python/positivity.py` | Python reference implementation |
+| `code/python/lqg_scattering/positivity.py` | Reusable Python implementation; root `positivity.py` is a compatibility facade |
 | `paper/lqg-amplituhedron.pdf` | Published kinematic correspondence |
 
 ## Related documentation

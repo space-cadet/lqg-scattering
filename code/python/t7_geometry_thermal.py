@@ -21,11 +21,14 @@ import numpy as np
 from scipy import sparse
 from scipy.linalg import expm
 
-from coherent_states import su2_ops
-from fl_volume_validation import GAMMA, ORIENTATIONS, fixed_area_state, spinors_from_normals
-from positivity import _dot_ops, _q_action, rovelli_smolin_volume, ashtekar_lewandowski_volume
-from t5c_input_geometry_scan import face_area_vectors
+from lqg_scattering.coherent_states import su2_ops
+from lqg_scattering.fl_volume import GAMMA, ORIENTATIONS
+from lqg_scattering.intertwiners import fixed_area_state
+from lqg_scattering.spinors import spinors_from_normals
+from lqg_scattering.tetrahedra import face_area_vectors
+from lqg_scattering.positivity import _dot_ops, _q_action, rovelli_smolin_volume, ashtekar_lewandowski_volume
 from project_paths import RESULTS_ROOT
+from lqg_scattering.labels import compositions
 
 N = 4
 MODES = 2 * N
@@ -34,12 +37,8 @@ PAIRS = tuple(itertools.combinations(range(N), 2))
 
 
 def occupations(total, modes=MODES):
-    if modes == 1:
-        yield (total,)
-    else:
-        for value in range(total + 1):
-            for rest in occupations(total - value, modes - 1):
-                yield (value,) + rest
+    """Compatibility entry point for exact fixed-number occupations."""
+    return compositions(total, modes)
 
 
 def matrix_action(basis, action):
@@ -241,7 +240,7 @@ def run(cutoff, betas):
             projected_parts.append(readouts(projected, K+r, r))
         control = assemble(raw_parts, K, None, cutoff)
         assert abs(control['norm']-1) < 1e-12 and abs(control['closure_L']) < 1e-12
-        from coherent_states import FockSpace
+        from lqg_scattering.coherent_states import FockSpace
         reference_space = FockSpace(N, K)
         reference_rs = rovelli_smolin_volume(seed, reference_space)
         reference_al = ashtekar_lewandowski_volume(seed, reference_space, dict(zip(TRIPLES, ORIENTATIONS)))

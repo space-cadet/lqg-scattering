@@ -17,11 +17,12 @@ from pathlib import Path
 
 import numpy as np
 
-from fl_volume_shape_scan import closed_equal_area_normals
-from fl_volume_validation import fixed_area_state, spinors_from_normals
-from coherent_states import GAMMA
-from t5c_covariance_probe import flux_gram, reconstruct_from_gram
-from positivity import (
+from lqg_scattering.coherent_states import GAMMA
+from lqg_scattering.intertwiners import fixed_area_state
+from lqg_scattering.observables import flux_gram
+from lqg_scattering.spinors import spinors_from_normals
+from lqg_scattering.tetrahedra import closed_equal_area_normals, reconstruct_from_gram
+from lqg_scattering.positivity import (
     ashtekar_lewandowski_volume,
     rovelli_smolin_volume,
     spin_vectors,

@@ -39,7 +39,21 @@
     .summary-card .value { font-size: 1.5rem; font-weight: 600; line-height: 1.2; }
     .summary-card .label { font-size: 0.7rem; color: var(--muted); margin-top: 2px; }
     h2 { font-size: 1.1rem; margin: 24px 0 12px; padding-bottom: 6px; border-bottom: 2px solid var(--border); }
-    .tabs { display: flex; gap: 4px; margin-bottom: 12px; border-bottom: 1px solid var(--border); }
+    .tabs { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 12px; border-bottom: 1px solid var(--border); }
+    .research-study { padding: 20px 0; border-top: 1px solid var(--border); scroll-margin-top: 12px; }
+    .research-study p { line-height: 1.6; margin: 10px 0; }
+    .study-status { font-weight: 600; }
+    .study-limits { border-left: 3px solid var(--primary); padding-left: 12px; }
+    .research-figures { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,480px),1fr)); gap: 16px; }
+    .research-figures figure { margin: 12px 0; min-width: 0; }
+    .research-figures figure.wide { grid-column: 1 / -1; }
+    .research-figures img { width: 100%; height: auto; background: white; }
+    .research-figures figcaption { font-size: .9rem; line-height: 1.5; }
+    .research-study details { margin: 12px 0; }
+    .research-study summary { cursor: pointer; padding: 10px 0; font-weight: 600; }
+    .study-downloads { padding-left: 22px; }
+    .study-downloads li { margin: 10px 0; overflow-wrap: anywhere; }
+    .study-downloads small { display: block; }
     .tab { padding: 8px 16px; border: none; background: none; cursor: pointer; font-size: 0.9rem; border-bottom: 2px solid transparent; color: var(--muted); }
     .tab.active { border-bottom-color: var(--primary); color: var(--primary); font-weight: 500; }
     .tab:hover { background: var(--hover); }
@@ -162,17 +176,17 @@
   <div class="container">
     <h1 id="projectName">Loading...</h1>
     <p class="subtitle" id="projectSubtitle">Loading...</p>
-    <p class="hint">The Volume Studies tab presents the T1b real-plane check, the equal-area T5c correlation diagnostic, and new weighted-input positive-volume scans over unequal shapes and a flat path. T3d/T3e are corrected converged Rust runs; independent SciPy checks cover n=4,5,7,8, with n=6 pending. Performance shows the signed-mean proxy; the fixed-area plots show positive-volume expectations.</p>
+    <p class="hint">The Study Catalogue records Hamiltonian, complete closed-basis, variable-face and thermal-sector results, alongside historical numerical pilots. Each study includes saved data, plots, provenance and calculation limits. Volume Studies retains the interactive T1b/T5c comparisons. Performance charts refer to the older T3 signed-mean proxy runs.</p>
 
     <div class="summary" id="summaryCards">
       <div class="summary-card" style="border-color: var(--primary);">
-        <div class="value" id="totalRuns">—</div><div class="label">Total Runs</div>
+        <div class="value" id="totalRuns">—</div><div class="label">Run / Study Records</div>
       </div>
       <div class="summary-card" style="border-color: var(--info);">
         <div class="value" id="totalTasks">—</div><div class="label">Tasks</div>
       </div>
       <div class="summary-card" style="border-color: var(--success);">
-        <div class="value" id="completeRuns">—</div><div class="label">Complete</div>
+        <div class="value" id="completeRuns">—</div><div class="label">Saved Records</div>
       </div>
       <div class="summary-card" style="border-color: var(--danger);">
         <div class="value" id="totalFigures">—</div><div class="label">Figures</div>
@@ -181,8 +195,15 @@
 
     <div class="tabs" id="tabBar"></div>
 
-    <div id="runsTab" class="tab-content">
-      <h2>Runs Table</h2>
+    <div id="studiesTab" class="tab-content">
+      <h2>Saved Numerical Studies</h2>
+      <div class="filters"><div class="filter-group"><label for="studySearch">Search studies:</label><input id="studySearch" type="search" placeholder="Hamiltonian, thermal, volume…" oninput="renderStudyCards()"></div><div class="filter-group"><label for="studyTask">Task:</label><select id="studyTask" onchange="renderStudyCards()"><option>All</option></select></div><span id="studyCount" aria-live="polite"></span></div>
+      <p class="hint">K denotes total linear area in the recent catalogues; total boson number is 2K. Historical datasets retain their own notation. Singlet dimensions, unrestricted Fock dimensions, signed-mean proxies and positive-volume expectations are labelled separately.</p>
+      <div id="studyCards"><p>Loading saved studies…</p></div>
+    </div>
+    <div id="runsTab" class="tab-content hidden">
+      <h2>Run and Study Records</h2>
+      <p class="hint">A study record can contain many individual cases. For example, the Hamiltonian record contains 30 systems. A saved record does not mean its broader research task is complete.</p>
       <div class="filters">
         <div class="filter-group"><label>Status:</label><select id="filterStatus" onchange="filterRuns()"><option>All</option><option>complete</option><option>in-progress</option><option>failed</option></select></div>
         <div class="filter-group"><label>Search:</label><input type="text" id="filterSearch" placeholder="Run ID, description..." oninput="filterRuns()"></div>
@@ -242,12 +263,13 @@
     <div class="modal-content"><img id="modalImg" src="" alt=""></div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/dist/plot.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/dist/plot.umd.min.js"></script>
 <script src="t5c-input-volume.js?v=weighted-latex-3"></script>
+<script src="research-studies.js?v=catalogue-1"></script>
 <script>
 let DATA = {};
-let currentTab = 'runs';
+let currentTab = 'studies';
 let sortCol = null, sortAsc = true;
 let filteredRuns = [];
 let selectedRun = null;
@@ -282,6 +304,7 @@ async function loadData() {
     renderTheory();
     renderVolumeLabels();
     renderVolumeStudies();
+    await renderResearchStudies();
     typesetMath(document.querySelector('.container'));
   } catch (e) {
     document.querySelector('.container').innerHTML = `<div class="error">Error: ${e.message}</div>`;
@@ -304,7 +327,7 @@ function switchTab(tab) {
   document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
   document.getElementById(tab + 'Tab').classList.remove('hidden');
   document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
-  event.target.classList.add('active');
+  document.querySelectorAll('.tab').forEach(el => el.classList.toggle('active', el.getAttribute('onclick') === `switchTab('${tab}')`));
   typesetMath(document.querySelector('.container'));
 }
 
@@ -513,7 +536,7 @@ function renderRuns() {
     return;
   }
   // Determine columns dynamically from first run
-  const keys = Object.keys(runs[0]).filter(k => k !== 'params' && k !== 'figures');
+  const keys = ['runId','task','status','description','n','dim','date'];
   document.getElementById('runsTableHead').innerHTML = keys.map(k =>
     `<th onclick="sortRuns('${k}')">${k} <span class="sort-arrow">▲▼</span></th>`
   ).join('');
@@ -539,9 +562,9 @@ function filterRuns() {
       return 0;
     });
   }
-  const keys = Object.keys(DATA.runs?.[0] || {}).filter(k => k !== 'params' && k !== 'figures');
+  const keys = ['runId','task','status','description','n','dim','date'];
   document.getElementById('runsTableBody').innerHTML = filteredRuns.map((r, idx) =>
-    `<tr onclick="selectRun(${idx})" class="${selectedRun === r.runId ? 'selected' : ''}">${keys.map(k => `<td class="${typeof r[k]==='number'?'mono':''}">${r[k]}</td>`).join('')}</tr>`
+    `<tr onclick="selectRun(${idx})" class="${selectedRun === r.runId ? 'selected' : ''}">${keys.map(k => `<td class="${typeof r[k]==='number'?'mono':''}">${studyEscape(r[k] ?? '—')}</td>`).join('')}</tr>`
   ).join('') || '<tr><td colspan="' + keys.length + '" class="loading">No matching runs</td></tr>';
   
   // Render detail panel if a run is selected
@@ -572,10 +595,11 @@ function renderFigures() {
   }
   container.innerHTML = '<div class="figure-grid">' + figures.map(f => `
     <div class="figure-card">
-      <div class="figure-img"><img src="${f.path}" alt="${f.title}" onclick="openModal('${f.path}')"></div>
+      <div class="figure-img"><img loading="lazy" src="${f.path}" alt="${f.title}" onclick="openModal('${f.path}')"></div>
       <div class="figure-info">
         <div class="figure-title">${f.title}</div>
         <div class="figure-desc">${f.description || ''}</div>
+        ${f.pdf ? `<a href="${f.pdf}">Download PDF</a>` : ''}
         <div>${(f.tags||[]).map(t=>`<span class="tag">${t}</span>`).join('')}</div>
       </div>
     </div>
@@ -585,7 +609,7 @@ function renderFigures() {
 function renderPerformance() {
   const container = document.getElementById('perfChart');
   const hint = document.getElementById('perfHint');
-  const runs = DATA.runs || [];
+  const runs = (DATA.runs || []).filter(r => !r.studyId);
 
   if (!window.Plot || typeof window.Plot.dot !== 'function' || typeof window.Plot.plot !== 'function') {
     container.innerHTML = '<p class="loading">The interactive chart library did not load. Run records and the static volume–area figure are still available.</p>';
@@ -622,7 +646,7 @@ function renderPerformance() {
       yVal = match ? parseFloat(match[0]) : null;
     }
     return { x: xVal, y: yVal, runId: r.runId };
-  }).filter(d => d.y !== null && d.x !== null);
+  }).filter(d => d.y !== null && d.x !== null && d.x !== undefined && (xAxis === 'date' || (Number.isFinite(Number(d.x)) && Number.isFinite(Number(d.y)))));
   
   if (data.length === 0) {
     container.innerHTML = '<p class="loading">No numeric data available for selected axes.</p>';
@@ -672,6 +696,7 @@ function renderRunDetail(run) {
   html += `<h3>Run Details: ${run.runId}</h3>`;
   html += '<button class="btn" onclick="closeDetail()">Close</button>';
   html += '</div>';
+  if (run.studyId) html += `<p><button class="btn" onclick="showStudy('${studyEscape(run.studyId)}')">Open study data and plots</button></p>`;
   html += '<div class="detail-grid">';
   
   // Parameters card

@@ -9,23 +9,12 @@ import json
 
 import numpy as np
 from project_paths import RESULTS_ROOT
+from lqg_scattering.analysis import fit_power
 
 
 def loglog_fit(K, V):
-    K = np.asarray(K, float)
-    V = np.asarray(V, float)
-    m = V > 0
-    alpha, logc = np.polyfit(np.log(K[m]), np.log(V[m]), 1)
-    y = np.log(V[m])
-    yp = alpha * np.log(K[m]) + logc
-    ss_res = float(np.sum((y - yp) ** 2))
-    ss_tot = float(np.sum((y - y.mean()) ** 2))
-    r2 = 1 - ss_res / ss_tot if ss_tot > 0 else float("nan")
-    lk, lV = np.log(K[m]), np.log(V[m])
-    local = ((lV[1:] - lV[:-1]) / (lk[1:] - lk[:-1])).tolist()
-    return {"alpha": float(alpha), "prefactor": float(np.exp(logc)),
-            "r2": float(r2), "local_slopes": [float(s) for s in local],
-            "n_points": int(m.sum())}
+    """Add the study's point count to the shared power-law summary."""
+    return {**fit_power(K, V), "n_points": int(np.count_nonzero(np.asarray(V) > 0))}
 
 
 def load(name):

@@ -2,8 +2,8 @@
 import itertools
 import numpy as np
 
-from coherent_states import FockSpace
-from positivity import (
+from lqg_scattering.coherent_states import FockSpace
+from lqg_scattering.positivity import (
     ashtekar_lewandowski_volume,
     rovelli_smolin_volume,
     volume_operator,

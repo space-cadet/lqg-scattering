@@ -1,6 +1,6 @@
 # Fock Space Construction
 
-*Last Updated: 2026-10-03 IST*
+*Last Updated: 2026-10-10 IST*
 
 ## Overview
 
@@ -108,10 +108,16 @@ For $N=4$, the dimensions relevant to the T5c shape scan are:
 
 ## Implementation
 
-### Python (`code/python/coherent_states.py`)
+### Python (`code/python/lqg_scattering/coherent_states.py`)
 - Direct NumPy array construction
 - Explicit loop over occupation numbers
 - Suitable for n=4 only
+
+The reusable implementation is part of the `lqg_scattering` package. The
+root-level `code/python/coherent_states.py` file remains as a compatibility
+facade for older study scripts. Other shared basis and state routines live in
+the package's `schwinger.py`, `singlets.py`, `intertwiners.py`, and related
+modules; study-specific drivers remain separate.
 
 ### Rust (`code/rust/src/fock.rs`)
 - `sprs::CsMat` sparse matrix representation
@@ -136,3 +142,19 @@ For $N=4$, the dimensions relevant to the T5c shape scan are:
 - [Rust port architecture](./rust-port-architecture.md)
 - [Verification protocol](./verification-protocol.md)
 - [Thermofield-double construction](./thermofield-double-volume.md)
+
+*Follow-up recorded: 2026-10-10 03:26:38 IST*
+
+## Full-number and sewn-space follow-up
+
+`hamiltonian.build_fixed_number_model` supports exact total boson number,
+including odd sectors, with two modes per site and tuple occupation lookup.
+`total_spin` builds SU(2) operators and decomposes local-number/magnetic
+blocks for normalized kets or density matrices. Zero magnetization alone is
+not a singlet criterion; SU(2)-invariant evolution preserves spin weights.
+
+The numerical probes and dissociation comparisons are documented in
+`notes/state-space-probes.md` and `notes/binding-energy.md`. Their full
+face-site Fock space is distinct from `sewing.py`'s locally invariant edge-leg
+tensors. Sewing contracts equal-spin copies without adding occupations.
+It is not a fixed-number unitary operation in the old face-site space.

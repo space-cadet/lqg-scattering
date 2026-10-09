@@ -4,9 +4,7 @@ K=sum(j_i), J_total=0; faces are labelled and all j_i>0.
 Finite blocks are diagonalized numerically, with explicit tolerances.
 """
 import argparse
-from collections import Counter
 import csv
-from functools import lru_cache
 import hashlib
 import itertools
 import json
@@ -18,152 +16,25 @@ import numpy as np
 import scipy
 import sympy
 
-from coherent_states import su2_ops
-from positivity import _dot_ops
-from closed_basis_volume import (
+from lqg_scattering.singlets import (
     ABS_TOL, GAMMA, ZERO_FACTOR, action_matrix, cg, independent_local_q,
     load_block, occupation_basis, pack_blocks, root_abs, save_csr,
 )
 from project_paths import PROJECT_ROOT as ROOT
 
+from lqg_scattering.labels import (
+    compositions, fixed_face_dimension as fixed_n_dimension,
+    positive_face_dimension as active_dimension,
+)
+from lqg_scattering.singlets import (
+    singlet_paths, magnetic_singlet_count, sequential_basis, closure_residual,
+)
+from lqg_scattering.volume_blocks import max_abs, dense_tensor_q, canonical_operators
+
 
 def positive_compositions(total, length):
-    if length == 1:
-        if total >= 1:
-            yield (total,)
-        return
-    for first in range(1, total-length+2):
-        for rest in positive_compositions(total-first, length-1):
-            yield (first,) + rest
-
-
-@lru_cache(maxsize=None)
-def singlet_paths(spins):
-    """Sequential coupling labels (2s_1,...,2s_N), ending at zero."""
-    paths = [(spins[0],)]
-    for spin in spins[1:]:
-        paths = [path+(result,)
-                 for path in paths
-                 for result in range(abs(path[-1]-spin), path[-1]+spin+1, 2)]
-    return tuple(path for path in paths if path[-1] == 0)
-
-
-def magnetic_singlet_count(spins):
-    """Independent multiplicity: dim(M=0)-dim(M=1)."""
-    counts = Counter({0: 1})
-    for spin in spins:
-        updated = Counter()
-        for magnetic, multiplicity in counts.items():
-            for local in range(-spin, spin+1, 2):
-                updated[magnetic+local] += multiplicity
-        counts = updated
-    return counts[0]-counts[2]
-
-
-def fixed_n_dimension(n, k):
-    if n < 2:
-        return int(k == 0)
-    return math.comb(k+n-1, k)*math.comb(k+n-2, k)//(k+1)
-
-
-def active_dimension(n, k):
-    """Inclusion-exclusion removes labelled zero-spin faces."""
-    return sum((-1)**r*math.comb(n, r)*fixed_n_dimension(n-r, k)
-               for r in range(n+1))
-
-
-def sequential_basis(spins, paths, canonical_occupations):
-    order = sorted(range(len(spins)), key=lambda i: (spins[i], i))
-    inverse = [order.index(i) for i in range(len(spins))]
-    occupations = [tuple(v for i in inverse for v in occ[2*i:2*i+2])
-                   for occ in canonical_occupations]
-    basis = np.zeros((len(occupations), len(paths)), complex)
-    for row, occ in enumerate(occupations):
-        magnetic = [occ[2*i]-occ[2*i+1] for i in range(len(spins))]
-        for col, path in enumerate(paths):
-            amplitude, cumulative_m = 1.0, magnetic[0]
-            for i in range(1, len(spins)):
-                amplitude *= cg(path[i-1], spins[i], path[i],
-                                cumulative_m, magnetic[i], cumulative_m+magnetic[i])
-                cumulative_m += magnetic[i]
-                if amplitude == 0:
-                    break
-            basis[row, col] = amplitude
-    return occupations, basis, inverse
-
-
-def closure_residual(occupations, basis):
-    worst = 0.0
-    for step in (-1, 1):
-        targets = {}
-        for row, occ in enumerate(occupations):
-            for i in range(len(occ)//2):
-                a, b = occ[2*i:2*i+2]
-                factor = math.sqrt((a+1)*b if step == 1 else a*(b+1))
-                if not factor:
-                    continue
-                target = list(occ)
-                target[2*i] += step
-                target[2*i+1] -= step
-                key = tuple(target)
-                targets[key] = targets.get(key, np.zeros(basis.shape[1], complex)) + factor*basis[row]
-        if targets:
-            worst = max(worst, max_abs(np.asarray(list(targets.values()))))
-    return worst
-
-
-def max_abs(array):
-    return float(np.max(abs(array))) if np.size(array) else 0.0
-
-
-def dense_tensor_q(occupations, spins, triple):
-    """Direct local tensor matrix elements, independent of oscillator actions."""
-    local = []
-    for spin in spins:
-        raising = np.diag([math.sqrt((a+1)*(spin-a)) for a in range(spin)], -1)
-        lowering = raising.T
-        local.append(((raising+lowering)/2, (raising-lowering)/(2j),
-                      np.diag(np.arange(spin+1)-spin/2)))
-    aa = np.asarray(occupations)[:, ::2]
-    q = np.zeros((len(aa), len(aa)), complex)
-    permutations = ((0, 1, 2, 1), (1, 2, 0, 1), (2, 0, 1, 1),
-                    (0, 2, 1, -1), (2, 1, 0, -1), (1, 0, 2, -1))
-    for a, b, c, sign in permutations:
-        term = np.full(q.shape, complex(sign))
-        axes = dict(zip(triple, (a, b, c)))
-        for face, spin in enumerate(spins):
-            matrix = local[face][axes[face]] if face in axes else np.eye(spin+1)
-            term *= matrix[aa[:, face, None], aa[None, :, face]]
-        q += term
-    return q
-
-
-@lru_cache(maxsize=None)
-def canonical_operators(spins):
-    occupations = occupation_basis(spins)
-    pairs = tuple(itertools.combinations(range(len(spins)), 2))
-    triples = tuple(itertools.combinations(range(len(spins)), 3))
-    dots = {p: action_matrix(occupations, _dot_ops(su2_ops(p[0]), su2_ops(p[1])))
-            for p in pairs}
-    paths = singlet_paths(spins)
-    _, basis, _ = sequential_basis(spins, paths, occupations)
-    checks = {"epsilon_vs_commutator": 0.0, "dense_tensor_vs_commutator": 0.0,
-              "magnetic_root_projection": 0.0}
-    direct_volume = np.zeros((len(paths), len(paths)), complex)
-    for i, j, k in triples:
-        q = (1j*(dots[i, j]@dots[j, k]-dots[j, k]@dots[i, j])).toarray()
-        epsilon = independent_local_q(occupations, spins, (i, j, k)).toarray()
-        tensor = dense_tensor_q(occupations, spins, (i, j, k))
-        checks["epsilon_vs_commutator"] = max(checks["epsilon_vs_commutator"], max_abs(q-epsilon))
-        checks["dense_tensor_vs_commutator"] = max(checks["dense_tensor_vs_commutator"], max_abs(q-tensor))
-        projected = basis.conj().T@tensor@basis
-        projected_root = root_abs(projected)[0]
-        magnetic_root = basis.conj().T@root_abs(tensor)[0]@basis
-        checks["magnetic_root_projection"] = max(checks["magnetic_root_projection"],
-                                                 max_abs(projected_root-magnetic_root))
-        direct_volume += GAMMA**1.5*magnetic_root
-    assert max(checks.values()) < ABS_TOL, checks
-    return occupations, dots, direct_volume, basis, checks
+    """Compatibility entry point for strictly positive compositions."""
+    return compositions(total, length, minimum=1)
 
 
 def grouped_spectrum(values):

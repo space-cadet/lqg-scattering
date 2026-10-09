@@ -21,10 +21,14 @@ from pathlib import Path
 
 import numpy as np
 
-from coherent_states import GAMMA, expectation, su2_ops
-from fl_volume_shape_scan import closed_equal_area_normals
-from fl_volume_validation import fixed_area_state, spinors_from_normals
-from positivity import (
+from lqg_scattering.coherent_states import GAMMA
+from lqg_scattering.intertwiners import fixed_area_state
+from lqg_scattering.observables import flux_gram
+from lqg_scattering.spinors import spinors_from_normals
+from lqg_scattering.tetrahedra import (
+    closed_equal_area_normals, reconstruct_from_gram, tetrahedron_from_face_vectors,
+)
+from lqg_scattering.positivity import (
     _dot_ops,
     ashtekar_lewandowski_volume,
     rovelli_smolin_volume,
@@ -41,88 +45,6 @@ SHAPES = {
     "regular": (1.0 / math.sqrt(3.0), math.pi / 2.0),
     "bent": (0.5, math.pi / 3.0),
 }
-
-
-def flux_gram(state, space):
-    """Return G_ij=<J_i.J_j>, including local Casimirs on the diagonal."""
-    gram = np.zeros((N, N), dtype=float)
-    for i in range(N):
-        def casimir(occupation, edge=i):
-            spin = (occupation[2 * edge] + occupation[2 * edge + 1]) / 2.0
-            return [(occupation, spin * (spin + 1.0))]
-
-        gram[i, i] = expectation(state, casimir, space).real
-        for j in range(i + 1, N):
-            value = expectation(state, _dot_ops(su2_ops(i), su2_ops(j)), space).real
-            gram[i, j] = gram[j, i] = value
-    return gram
-
-
-def tetrahedron_from_face_vectors(face_vectors):
-    """Recover vertices and volume from four closed tetrahedral area vectors."""
-    faces = np.asarray(face_vectors, dtype=float)
-    if faces.shape != (4, 3):
-        raise ValueError("expected four three-dimensional face vectors")
-    if np.linalg.norm(faces.sum(axis=0)) > 1e-8:
-        raise ValueError("face-area vectors do not close")
-
-    # The chosen three faces meet at one vertex.  An O(3) reflection preserves
-    # the Gram matrix and fixes the sign convention used by the dual formula.
-    triple = faces[[1, 2, 3]].copy()
-    determinant = float(np.linalg.det(triple))
-    if determinant > 0.0:
-        faces[:, 2] *= -1.0
-        triple[:, 2] *= -1.0
-        determinant = -determinant
-    if determinant >= -1e-12:
-        raise ValueError("covariance geometry is degenerate")
-
-    dual_scale = math.sqrt(-8.0 * determinant)
-    edges = np.array(
-        [
-            4.0 * np.cross(triple[1], triple[2]) / dual_scale,
-            4.0 * np.cross(triple[2], triple[0]) / dual_scale,
-            4.0 * np.cross(triple[0], triple[1]) / dual_scale,
-        ]
-    )
-    vertices = np.vstack((np.zeros(3), edges))
-    volume = abs(float(np.linalg.det(edges))) / 6.0
-
-    # Check that the reconstructed tetrahedron has the requested outward
-    # area vectors, with face i opposite vertex i.
-    reconstructed = np.zeros((4, 3))
-    for opposite in range(4):
-        ids = [index for index in range(4) if index != opposite]
-        p0, p1, p2 = vertices[ids]
-        area_vector = 0.5 * np.cross(p1 - p0, p2 - p0)
-        face_center = (p0 + p1 + p2) / 3.0
-        if np.dot(area_vector, face_center - vertices[opposite]) < 0.0:
-            area_vector = -area_vector
-        reconstructed[opposite] = area_vector
-    return vertices, volume, reconstructed
-
-
-def reconstruct_from_gram(gram):
-    """Factor a rank-three closed Gram matrix and reconstruct its tetrahedron."""
-    values, vectors = np.linalg.eigh(0.5 * (gram + gram.T))
-    scale = max(1.0, float(np.max(np.abs(values))))
-    tol = 128.0 * np.finfo(float).eps * scale
-    if values[0] < -tol or abs(values[0]) > 1e-8 * scale:
-        raise ValueError(f"Gram matrix is not closed/positive semidefinite: {values}")
-    if values[1] <= tol:
-        raise ValueError("Gram matrix has fewer than three nondegenerate directions")
-
-    face_vectors = vectors[:, 1:] * np.sqrt(values[1:])[None, :]
-    vertices, volume_j_units, reconstructed = tetrahedron_from_face_vectors(face_vectors)
-    gram_error = float(np.max(np.abs(reconstructed @ reconstructed.T - gram)))
-    return {
-        "gramEigenvalues": values.tolist(),
-        "rmsFaceAreasJUnits": np.sqrt(np.maximum(np.diag(gram), 0.0)).tolist(),
-        "verticesJUnits": vertices.tolist(),
-        "volumeJUnits": volume_j_units,
-        "volumeProjectUnits": volume_j_units * GAMMA**1.5,
-        "reconstructedFaceGramMaxAbsError": gram_error,
-    }
 
 
 def evaluate_shape(name, J):

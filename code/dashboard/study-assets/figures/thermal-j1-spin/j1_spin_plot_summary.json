@@ -1,0 +1,56 @@
+{
+  "agent": "GPT 6.1 Sol",
+  "date": "2026-10-08",
+  "source_csv": "results/thermal-j1-spin/j1_spin_method_comparison.csv",
+  "source_csv_sha256": "946a5b3e65fac8b79a7405a13f3399180d49d0fe65066047039f49067bf2a7c0",
+  "q_calculated_max": 160,
+  "q_display_max": 60,
+  "spin_display_max": 20,
+  "joint_map_probability_floor": 1e-10,
+  "temperature_results": [
+    {
+      "beta_hbar_omega": 0.5,
+      "occupation_probability_outside_display": 2.5834927886900738e-05,
+      "spin_probability_outside_display": 8.073923164954124e-05,
+      "map_probability_below_display_floor_in_window": 0.0,
+      "singlet_probability": 0.0034036649491405438
+    },
+    {
+      "beta_hbar_omega": 1.0,
+      "occupation_probability_outside_display": 7.844859306467991e-16,
+      "spin_probability_outside_display": 3.3230579705459384e-12,
+      "map_probability_below_display_floor_in_window": 2.541357416585503e-09,
+      "singlet_probability": 0.02640647623307552
+    },
+    {
+      "beta_hbar_omega": 2.0,
+      "occupation_probability_outside_display": 6.177770434548699e-40,
+      "spin_probability_outside_display": 8.332704972733538e-29,
+      "map_probability_below_display_floor_in_window": 7.537032619890201e-10,
+      "singlet_probability": 0.1953169851215159
+    },
+    {
+      "beta_hbar_omega": 4.0,
+      "occupation_probability_outside_display": 1.4420989397151672e-90,
+      "spin_probability_outside_display": 7.524340205627522e-64,
+      "map_probability_below_display_floor_in_window": 1.6614084697180398e-10,
+      "singlet_probability": 0.7775011889214214
+    },
+    {
+      "beta_hbar_omega": 8.0,
+      "occupation_probability_outside_display": 5.667286850265867e-193,
+      "spin_probability_outside_display": 5.479213541943095e-135,
+      "map_probability_below_display_floor_in_window": 2.5898565675012274e-11,
+      "singlet_probability": 0.9953161028737221
+    }
+  ],
+  "max_method_difference": 2.671474153004283e-16,
+  "normalization": "original joint probabilities; no display renormalization",
+  "checks": [
+    "nonnegative arrays",
+    "marginal normalization against calculation summary",
+    "singlet probabilities against summary",
+    "agreement of input method arrays"
+  ],
+  "matplotlib": "3.10.8"
+}

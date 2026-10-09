@@ -36,138 +36,23 @@ import itertools
 import json
 
 import numpy as np
-import scipy.sparse as sp
+from lqg_scattering.coherent_states import plane_to_Z
+from lqg_scattering.positivity import positive_plane_curve as _positive_plane_curve
+from lqg_scattering.positivity import vertex_reference
 from project_paths import RESULTS_ROOT
+from lqg_scattering.conventions import DEFAULT_TRIPLE, GAMMA, HBAR
+from lqg_scattering.schwinger import SparseSchwingerSpace, normalized_taylor_exp, volume_on_vec
+from lqg_scattering.analysis import fit_power
 
-GAMMA = 0.2375
-HBAR = 1.0
-TRIPLE = (0, 1, 2)
-
-
-# --------------------------------------------------------------------------
-# Occupation basis + sparse operators
-# --------------------------------------------------------------------------
-
-def _bounded_compositions(nvars, maxsum):
-    """All nvars-tuples of nonneg ints with sum <= maxsum (stars/bars)."""
-    out = []
-    buf = [0] * nvars
-
-    def rec(p, rem):
-        if p == nvars - 1:
-            for v in range(rem + 1):
-                buf[p] = v
-                out.append(tuple(buf))
-            return
-        for v in range(rem + 1):
-            buf[p] = v
-            rec(p + 1, rem - v)
-
-    rec(0, maxsum)
-    return out
+TRIPLE = DEFAULT_TRIPLE
 
 
-class OpSpace:
-    """Schwinger Fock space (total bosons <= K_max) with sparse operators.
-
-    E_ij = a_i^dagger a_j + b_i^dagger b_j, J_i su(2) generators, and
-    A_ij = J_i . J_j are precomputed once as CSR matrices.
-    """
-
-    def __init__(self, N, K_max):
-        self.N = N
-        self.K_max = K_max
-        occs = _bounded_compositions(2 * N, K_max)
-        self.dim = len(occs)
-        self.index = {occ: i for i, occ in enumerate(occs)}
-
-        def ladder(edge, dag, species):
-            # species 0 -> a, 1 -> b; returns CSR matrix of the 1-body op
-            off = 2 * edge + species
-            rows, cols, data = [], [], []
-            for c, occ in enumerate(occs):
-                n = occ[off]
-                if dag:
-                    lst = list(occ)
-                    lst[off] = n + 1
-                    tgt = tuple(lst)
-                    if tgt in self.index:
-                        rows.append(self.index[tgt])
-                        cols.append(c)
-                        data.append(np.sqrt(n + 1))
-                elif n > 0:
-                    lst = list(occ)
-                    lst[off] = n - 1
-                    rows.append(self.index[tuple(lst)])
-                    cols.append(c)
-                    data.append(np.sqrt(n))
-            return sp.csr_matrix((data, (rows, cols)),
-                                 shape=(self.dim, self.dim))
-
-        self.E = {}
-        adag = [ladder(e, True, 0) for e in range(N)]
-        a = [ladder(e, False, 0) for e in range(N)]
-        bdag = [ladder(e, True, 1) for e in range(N)]
-        b = [ladder(e, False, 1) for e in range(N)]
-        for i in range(N):
-            for j in range(N):
-                self.E[(i, j)] = adag[i] @ a[j] + bdag[i] @ b[j]
-
-        self.Jz, self.Jp, self.Jm = [], [], []
-        for e in range(N):
-            z = sp.diags(
-                [0.5 * (occ[2 * e] - occ[2 * e + 1]) for occ in occs],
-                format="csr")
-            self.Jz.append(z)
-            self.Jp.append(adag[e] @ b[e])    # a^dagger b
-            self.Jm.append(bdag[e] @ a[e])    # b^dagger a
-
-        self.A = {}
-        for i in range(N):
-            for j in range(N):
-                self.A[(i, j)] = (self.Jz[i] @ self.Jz[j]
-                                  + 0.5 * (self.Jp[i] @ self.Jm[j]
-                                           + self.Jm[i] @ self.Jp[j]))
-
-    def amat(self, Z):
-        """A(Z) = sum_ij Z_ij E_ij as CSR."""
-        out = sp.csr_matrix((self.dim, self.dim), dtype=complex)
-        for (i, j), Eij in self.E.items():
-            z = Z[i, j]
-            if z != 0:
-                out = out + z * Eij
-        return out
-
-    def ref_vec(self, ref_occupations):
-        v = np.zeros(self.dim, dtype=complex)
-        v[self.index[tuple(int(x) for pair in ref_occupations
-                           for x in pair)]] = 1.0
-        return v
+class OpSpace(SparseSchwingerSpace):
+    """T5b adapter preserving its vector-only Taylor helper."""
 
     @staticmethod
     def taylor_exp(A, ref_vec, K, tol=1e-12):
-        result = ref_vec.copy()
-        term = ref_vec.copy()
-        for n in range(1, 8 * K + 50):
-            term = (A @ term) / n
-            inc = float(np.linalg.norm(term))
-            result = result + term
-            if inc < tol * max(1.0, float(np.linalg.norm(result))):
-                break
-        else:
-            raise RuntimeError("Perelomov Taylor exponential did not converge")
-        return result / np.linalg.norm(result)
-
-
-def volume_on_vec(vec, space, triple=(0, 1, 2), gamma=GAMMA, hbar=HBAR):
-    i, j, k = triple
-    Aij, Ajk = space.A[(i, j)], space.A[(j, k)]
-    v_ij = Aij @ vec
-    v_jk = Ajk @ vec
-    q_vec = 1j * (Aij @ v_jk - Ajk @ v_ij)
-    q_exp = complex(vec.conj() @ q_vec)
-    V = (gamma * hbar) ** 1.5 * float(np.sqrt(abs(q_exp)))
-    return V, q_exp
+        return normalized_taylor_exp(A, ref_vec, K, tol=tol)[0]
 
 
 # --------------------------------------------------------------------------
@@ -175,31 +60,8 @@ def volume_on_vec(vec, space, triple=(0, 1, 2), gamma=GAMMA, hbar=HBAR):
 # --------------------------------------------------------------------------
 
 def positive_plane_curve(N, seed=0, t_min=0.2, t_max=3.0):
-    """Real positive plane: columns (t_i, t_i^2), minors > 0."""
-    rng = np.random.default_rng(seed)
-    t = np.sort(rng.uniform(t_min, t_max, size=N))
-    return np.stack([t, t * t])
-
-
-def plane_to_Z(plane):
-    """Momentum map Gr(2,N) -> u(N)*: Z = a b^dagger - b a^dagger."""
-    plane = np.asarray(plane, dtype=complex)
-    a, b = plane
-    a = a / np.linalg.norm(a)
-    b = b - a * (a.conj() @ b)
-    nb = np.linalg.norm(b)
-    if nb < 1e-14:
-        raise ValueError("plane rows are parallel")
-    b = b / nb
-    return np.outer(a, b.conj()) - np.outer(b, a.conj())
-
-
-def vertex_reference(N, triple=(0, 1, 2)):
-    """One a-boson per edge + one b-boson on each triple edge (K = N+3)."""
-    ref = np.zeros((N, 2), dtype=int)
-    ref[:, 0] = 1
-    ref[list(triple), 1] = 1
-    return ref
+    """T5b's deterministic defaults for the shared positive-plane helper."""
+    return _positive_plane_curve(N, seed=seed, t_min=t_min, t_max=t_max)
 
 
 def fixed_perturbation(N):
@@ -239,16 +101,9 @@ def sweep_n(N, epsilons, seed, triple=TRIPLE):
 
 
 def loglog_fit(eps, V):
-    eps = np.asarray(eps, float)
-    V = np.asarray(V, float)
-    m = V > 0
-    alpha, logc = np.polyfit(np.log(eps[m]), np.log(V[m]), 1)
-    y = np.log(V[m])
-    yp = alpha * np.log(eps[m]) + logc
-    ss_res = float(np.sum((y - yp) ** 2))
-    ss_tot = float(np.sum((y - y.mean()) ** 2))
-    r2 = 1 - ss_res / ss_tot if ss_tot > 0 else float("nan")
-    return float(alpha), float(np.exp(logc)), float(r2)
+    """Keep the historical tuple result while using the shared fit."""
+    fit = fit_power(eps, V)
+    return fit["alpha"], fit["prefactor"], fit["r2"]
 
 
 def main():

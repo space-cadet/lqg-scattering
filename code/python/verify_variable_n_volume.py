@@ -7,7 +7,7 @@ from pathlib import Path
 import numpy as np
 import sympy as sp
 
-from closed_basis_volume import load_block
+from lqg_scattering.singlets import load_block
 from project_paths import PROJECT_ROOT as ROOT
 
 

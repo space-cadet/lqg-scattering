@@ -18,42 +18,14 @@ from pathlib import Path
 
 import numpy as np
 
-import fl_volume_validation as volume
+from lqg_scattering.fl_volume import evaluate_area
+from lqg_scattering.spinors import four_point_cross_ratio
+from lqg_scattering.tetrahedra import (
+    closed_equal_area_normals, tetrahedron_vertices,
+)
+from lqg_scattering.intertwiners import spinors_from_normals
 from dashboard_assets.tetrahedron_thumbnails import coordinate_key
 from project_paths import DASHBOARD_ROOT
-
-
-def closed_equal_area_normals(x, phi):
-    """Construct four unit normals with sum zero, away from endpoints."""
-    if not 0.0 < x < 1.0:
-        raise ValueError("x must be strictly between 0 and 1")
-    transverse = math.sqrt(1.0 - x * x)
-    return np.array(
-        [
-            [transverse, 0.0, x],
-            [-transverse, 0.0, x],
-            [transverse * math.cos(phi), transverse * math.sin(phi), -x],
-            [-transverse * math.cos(phi), -transverse * math.sin(phi), -x],
-        ],
-        dtype=float,
-    )
-
-
-def spinor_bracket(left, right):
-    return left[0] * right[1] - left[1] * right[0]
-
-
-def four_point_cross_ratio(spinors):
-    """Möbius-invariant cross ratio for the ordered four spinor rays."""
-    numerator = spinor_bracket(spinors[0], spinors[2]) * spinor_bracket(
-        spinors[1], spinors[3]
-    )
-    denominator = spinor_bracket(spinors[0], spinors[3]) * spinor_bracket(
-        spinors[1], spinors[2]
-    )
-    if abs(denominator) < 1e-12:
-        raise ValueError("sample reached a cross-ratio collision")
-    return numerator / denominator
 
 
 def shape_record(area_label, x, phi, direct_check=False):
@@ -61,7 +33,7 @@ def shape_record(area_label, x, phi, direct_check=False):
     closure = np.sum(normals, axis=0)
     if np.linalg.norm(closure) > 1e-12:
         raise ArithmeticError("constructed face normals failed closure")
-    spinors = volume.spinors_from_normals(normals)
+    spinors = spinors_from_normals(normals)
     cross_ratio = four_point_cross_ratio(spinors)
     t_squared = (1.0 - x) / (1.0 + x)
     phase = np.exp(1j * phi)
@@ -69,7 +41,7 @@ def shape_record(area_label, x, phi, direct_check=False):
     cross_ratio_error = float(abs(cross_ratio - analytic_ratio))
     if cross_ratio_error > 1e-10:
         raise ArithmeticError("spinor cross ratio disagrees with shape-coordinate formula")
-    values = volume.evaluate_area(
+    values = evaluate_area(
         area_label, direct_check=direct_check, spinors=spinors
     )
     return {
@@ -88,10 +60,10 @@ def shape_record(area_label, x, phi, direct_check=False):
 def representative_invariance_check(area_label):
     """Check spinor-column phase and common-frame invariance of the volumes."""
     normals = closed_equal_area_normals(0.5, math.pi / 3.0)
-    spinors = volume.spinors_from_normals(normals)
-    baseline = volume.evaluate_area(area_label, spinors=spinors)
+    spinors = spinors_from_normals(normals)
+    baseline = evaluate_area(area_label, spinors=spinors)
     phases = np.exp(1j * np.array([0.3, 1.4, -0.8, 2.1]))
-    rephased = volume.evaluate_area(area_label, spinors=spinors * phases[:, None])
+    rephased = evaluate_area(area_label, spinors=spinors * phases[:, None])
     angle = 0.73
     rotation = np.array(
         [
@@ -100,7 +72,7 @@ def representative_invariance_check(area_label):
         ],
         dtype=complex,
     )
-    rotated = volume.evaluate_area(area_label, spinors=(rotation @ spinors.T).T)
+    rotated = evaluate_area(area_label, spinors=(rotation @ spinors.T).T)
     keys = ("rsPositiveVolumeProjectUnits", "alPositiveVolumeProjectUnits")
     return {
         key: {
@@ -171,25 +143,6 @@ def color(value, low, high):
         a, b, f = stops[1], stops[2], 2 * (t - 0.5)
     rgb = tuple(round(a[i] + f * (b[i] - a[i])) for i in range(3))
     return "#%02x%02x%02x" % rgb
-
-
-def tetrahedron_vertices(x, phi):
-    """Reconstruct a unit-face-area tetrahedron from its outward normals."""
-    normals = closed_equal_area_normals(x, phi)
-    face_vectors = normals[[1, 2, 3]].copy()
-    determinant = float(np.linalg.det(face_vectors))
-    if determinant > 0:
-        face_vectors[[1, 2]] = face_vectors[[2, 1]]
-        determinant = -determinant
-    if determinant >= -1e-12:
-        raise ValueError("cannot draw a degenerate tetrahedron")
-
-    six_volume = math.sqrt(-8.0 * determinant)
-    edge_a = 4.0 * np.cross(face_vectors[1], face_vectors[2]) / six_volume
-    edge_b = 4.0 * np.cross(face_vectors[2], face_vectors[0]) / six_volume
-    edge_c = 4.0 * np.cross(face_vectors[0], face_vectors[1]) / six_volume
-    vertices = np.array([[0.0, 0.0, 0.0], edge_a, edge_b, edge_c])
-    return vertices - np.mean(vertices, axis=0)
 
 
 def tetrahedron_glyph(x, phi, center_x, center_y, size, title):

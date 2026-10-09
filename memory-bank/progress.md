@@ -1,8 +1,61 @@
 # Implementation Progress
 
-*Last Updated: 2026-10-09 11:16:39 IST*
+*Last Updated: 2026-10-10 03:26:38 IST*
 
 ## Active Tasks
+
+### Python shared-library extraction and backend decision
+**Status:** COMPLETE for the scoped extraction (cross-cutting maintenance; no task ID assigned)
+
+Shared state, geometry, volume, Hamiltonian, variable-face, thermal, and
+fitting routines live in `code/python/lqg_scattering/`; drivers retain study
+sampling and output, with root compatibility facades preserved. Wheel/sdist
+builds, external installation, extraction tests, and saved numerical parity
+passed. Python plus Rust remains selected; the earlier matched TS benchmark
+covers only K=2. Optional standard-library consolidation remains deferred.
+
+### T11: Fixed-number closure and binding follow-up
+
+Full-number and spin-sector APIs support the closed and open state probes.
+The correct dissociation comparison retains four bosons and combined spin
+zero. At $t=1,U=5$, $E_3+E_1-E_{\mathrm{tet}}$ is 0.769253300 (complete)
+and 0.795078777 (ring). These are finite graph ground-state detachment
+energies, not energies of the coherent FL seed or of sewn edge networks.
+
+### Constructive F-pair sewing prototype
+
+Triangle, tetrahedron, and joined exterior-boundary contractions are
+implemented, with link transports retaining spin-network dependence.
+Closure, Wigner six-j, and direct-versus-patch checks pass. Latest full suite:
+38 tests. A sewn Hamiltonian, geometric validation, and two-cell binding
+comparison remain open; the final loop Hamiltonian is a proposal only.
+See [the session handoff](sessions/2026-10-10-binding-and-constructive-sewing-summary.md).
+
+### T11: Four-site Hamiltonian–volume studies
+**Status:** 🔄 IN PROGRESS
+**Priority:** HIGH
+
+The first pilot is calculated for four sites, $K=2,3,4$, total-spin singlets,
+and $g=0$, comparing complete and ring hopping. It includes no-hopping,
+free-hopping, and $U/t=1,5,20$ controls; fixed-$K$ Gibbs observables; connected-
+triple positive RS volume; ground-state correlations and one-site entropy; exact
+infinite-temperature active-site counting; and the projected commutator.
+The onsite contribution vanishes to $2.3\times10^{-16}$ or less, and the
+edge–triple sum reconstructs $[H,V]$ within $7.2\times10^{-15}$. This does not
+establish larger-graph behavior or physical volume calibration. A follow-up
+adds a dense $K=4$ thermal scan through $\beta/t=10^3$ and the zero-temperature
+limit. The mean volume is nonmonotonic for the no-hopping, $U/t=1,5,20$
+controls; at $U/t=20$ the complete-graph ground state has a $0.00923$ gap and
+mean volume $0.03349$, while the first excited doublet has mean volume $0.60110$.
+This is a low-temperature finite-size crossover, not phase-transition evidence.
+The graph-energy difference figure makes the near-overlap in the raw energy
+plot explicit.
+The results and earlier saved volume/thermal studies are now assembled in the 18-record
+searchable dashboard catalogue, with downloadable data and plot assets. Website commit
+`8f70bc9` was merged to `main`; the live route shows the T11 cases and figures.
+
+**Next:** review finite-sector graph dependence, then scope larger $L,K$ and
+any optional spin-exchange term before extending the model.
 
 ### T1a: Positive FL Volume Across Tetrahedron Shapes
 **Status:** 🔄 IN PROGRESS
@@ -130,4 +183,4 @@ T1a completed all four-labelled-face singlet basis data at $K=2,\ldots,12$ (10,5
 
 ## Variable-face RS baseline and volume note — 2026-10-09 11:10:50 IST
 
-T10's completed catalogue covers all labelled positive-face singlets at $K=2,3,4$, with closed dimensions 2, 36, and 347 and positive-volume dimensions 2, 32, and 329. Independent counts, triple matrices, exact spin-half controls, saved operators, readable catalogues and figure exports are recorded in [volume studies](../notes/volume-studies.md). The saved verifier checked 112 blocks and 385 eigenstates. Physical normalization and higher-valence AL orientation data remain unresolved. No Hamiltonian energy, thermal-volume, or graph-changing result is claimed.
+T10's completed catalogue covers all labelled positive-face singlets at $K=2,3,4$, with closed dimensions 2, 36, and 347 and positive-volume dimensions 2, 32, and 329. Independent counts, triple matrices, exact spin-half controls, saved operators, readable catalogues and figure exports are recorded in [volume studies](../notes/volume-studies.md). The saved verifier checked 112 blocks and 385 eigenstates. This is a kinematic catalogue; Hamiltonian spectra and fixed-$K$ thermal volumes are now recorded separately under T11. Physical normalization and higher-valence AL orientation data remain unresolved.

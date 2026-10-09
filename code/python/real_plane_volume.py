@@ -5,10 +5,10 @@ import json
 
 import numpy as np
 
-from coherent_states import FockSpace, perelomov_state, plane_to_Z
-from fl_volume_validation import ORIENTATIONS, direct_tensor_volumes
-from grassmannian import plane_to_plucker
-from positivity import (
+from lqg_scattering.coherent_states import FockSpace, perelomov_state, plane_to_Z
+from lqg_scattering.fl_volume import ORIENTATIONS, direct_tensor_volumes
+from lqg_scattering.grassmannian import plane_to_plucker
+from lqg_scattering.positivity import (
     GAMMA,
     ashtekar_lewandowski_volume,
     is_positive_plane,

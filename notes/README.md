@@ -3,6 +3,9 @@
 - [`volume-studies.md`](volume-studies.md) records closed-state volume counting,
   the lattice-boson interpretation, Hamiltonians, and the volume commutator.
 
+- [`hamiltonian-studies.md`](hamiltonian-studies.md) records the implemented
+  four-site fixed-area Hamiltonian and positive-volume pilot.
+
 - [`thermal-area-sectors.md`](thermal-area-sectors.md) is the current write-up
   on thermal area sectors and the plotted coefficient distribution.
 - [`experiments/`](experiments/) contains calculation protocols, run notes,

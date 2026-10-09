@@ -1,8 +1,9 @@
 # Session Cache
 
-*Last Updated: 2026-10-09 11:16:39 IST*
+*Last Updated: 2026-10-10 03:26:38 IST*
 
 ## Overview
+- 2026-10-09 T11: Implemented the four-site Hamiltonian–volume pilot at $K=2,3,4$, added a dense $K=4$ thermal-volume crossover scan, and published the updated numerics dashboard. The live searchable catalogue contains 18 studies, including T11's 30 exact cases, plots, data, provenance, and claim limits. The run used the `qc-diff` Conda environment and generated five PDF/PNG figure pairs. Larger systems and physical volume calibration remain open.
 - 2026-10-08 T9 calculation close: Added the four-face $J_{\mathrm{in}}=1$ $P(q,S)$ calculation by two methods through $q=160$, method and coefficient checks, temperature plots, and the finite-temperature support result. Full two-copy reduced-state blocks, entropy, and geometry remain open; see [session record](sessions/2026-10-08-j1-spin-distribution.md).
 - 2026-10-08: Saved the thermal-area write-up and a transcript ending before the write-up request; organized Python, Rust, dashboard, Memory Bank tooling, shell workflows, and LaTeX sources under `code/`; moved calculation outputs to `results/` and research records/task specifications to `notes/`.
 - Active work remains T5c, T1a/T3c, T4, T5, T8, and T9; T6 is active for the open FL-covariance-to-polyhedron bridge.
@@ -18,6 +19,7 @@
 - T5c pilot update: weighted regular and unequal-skew input geometries reach $J=7$; the unequal-area grid covers $J=2,4$ plus selected $J=6$ points; a flat path covers $J=2,4,6,7$. Weighted closure and mean areas pass, but finite-$J$ unequal correlations do not exactly recover the input normals. At the exact flat boundary, calibrated positive volume remains finite in the sampled range; limit orders remain open. RS/AL calibrated curves coincide under the tested four-valent closure/sign convention and are not independent checks.
 - T7: Former thermal/TFD umbrella — archived as transferred; scientific work remains open under T9.
 - T9: Thermal/TFD state construction and physical study — 🔄 IN PROGRESS; owns all ongoing construction and analysis, with five completed child-study records T7a–T7e. The earlier one-sided squeeze and conditional singlet pilot remain recorded. The selected target is the same-mode squeeze of conjugate FL intertwiners on both copies, with transformed geometric observables. Its $SU(1,1)$ factorization, sector coefficients, and coefficient-level partial-trace construction are written up; excited-$J$ matrices, entropy, and correlations remain open. The unrestricted fixed positive total-area Gibbs family is excluded by its different low-temperature limit. See `tasks/T9.md`, `notes/thermal-area-sectors.md`, and the October 8 session records.
+- T11: Four-site Hamiltonian–volume studies — 🔄 IN PROGRESS; the $K=4$ dense scan shows nonmonotonic $\langle V\rangle$ and a low-temperature complete-graph crossover tied to a $0.00923$ gap at $U/t=20$. The result remains a finite-size observation; larger systems and physical normalization remain open.
 - T8: Amplituhedron Program — 🔄 IN PROGRESS; T8a cluster algebra/chart relevance and T8b positive-cell/scattering-region mapping (former T5f) are open. See `tasks/T8.md`.
 - T1–T3e: Python/Rust implementation and corrected converged scan recorded; n=6 independent state check remains open.
 
@@ -58,7 +60,13 @@ T9 owns all thermal/TFD state construction and physical study. Its five complete
 - Rust Fock/coherent/volume pipeline.
 - Corrected Rust/Python n=4 comparison and converged scans through n=8; independent SciPy checks cover n=4,5,7,8.
 
+### T11: Four-site Hamiltonian–volume studies
+**Status:** 🔄 IN PROGRESS
+
+The pilot is calculated on complete and ring graphs for $K=2,3,4$ in the exact singlet space. It includes no hopping, free hopping, and $U/t=1,5,20$; Gibbs volume and active-site distributions; ground-state pair correlations and site-0 entropy; and the full projected $[H,V]$. The beta-zero active-site probabilities match exact kinematic counting. The onsite commutator residual is at most $2.3\times10^{-16}$ and edge–triple reconstruction residual at most $7.2\times10^{-15}$. The four connected triple roots agree on this support. Physical normalization, larger systems, optional spin exchange, and the rest of the proposed program remain open. See `tasks/T11.md` and `notes/hamiltonian-studies.md`.
+
 ## Session History
+- 2026-10-09: Added a searchable catalogue of 18 saved numerical studies and historical results, then published the dashboard to the website. The live route shows 18 records and the T11 figures; website commit `8f70bc9` was merged through PR #1. See [T11](tasks/T11.md) and the [lattice-Hamiltonian session summary](sessions/2026-10-09-lattice-hamiltonian-session-summary.md).
 - 2026-10-08: Implemented and plotted the four-face $J_{\mathrm{in}}=1$ occupation/resultant-spin distribution by two independent methods; documented method agreement, independent small-sector checks, and why finite-temperature support has no hard cutoff. See `sessions/2026-10-08-j1-spin-distribution.md`. Work by GPT 6.1 Sol.
 - 2026-10-08: Continued the T9 discussion through the $J,S,M$ reference-state proposal and the distinction between a $U(N)$ action and $SU(2)$ group averaging. The derived extension remains unverified; see `sessions/2026-10-08-physics-handoff.md` and `sessions/2026-10-08-physics-transcript.md`.
 - 2026-10-08: Wrote up T9 occupation coefficients, sector multiplicity, density-matrix assembly, and the exact four-face vacuum plot; saved the preceding discussion transcript. Organized all project code sources under `code/` and retained compiled paper PDFs under `paper/`. See `sessions/2026-10-08-area-sector-writeup.md`.
@@ -92,7 +100,7 @@ T9 owns all thermal/TFD state construction and physical study. Its five complete
 ## Volume-session close
 
 - Completed T1a four-face closed-basis RS/AL data through $K=12$; 10,549 states, compressed operators, independent checks and embedded plots. No $K=13$ result accepted after the user stopped extension.
-- T10 was registered as deferred in the October 8 closeout; the October 9 continuation subsequently produced the checked $K=2,3,4$ RS catalogue. The current task record is IN PROGRESS pending artifact closeout and final acceptance review.
+- T10 was registered as deferred in the October 8 closeout; the October 9 continuation produced the checked $K=2,3,4$ RS catalogue and completed its declared scope. Physical normalization and higher-valence AL orientation data remain open limitations.
 - New notation uses $K$ area and $J$ resultant spin; historical thermal notation remains mapped in the note.
 - Session history: [detailed summary](sessions/2026-10-08-volume-studies.md); [physics-only transcript](sessions/2026-10-08-volume-physics-transcript.md).
 
@@ -116,3 +124,34 @@ T9 owns all thermal/TFD state construction and physical study. Its five complete
 ## T10 catalogue closeout — 2026-10-09 11:16:39 IST
 
 - Corrected escaped code formatting in the catalogue README and completed T10 after confirming all acceptance criteria against the saved artefacts and prior verifier evidence. The $K=2,3,4$ calculator results and Memory Bank closeout are in the requested commit/push scope; no physics rerun was performed. Physical normalization and higher-valence AL orientation remain open limitations.
+
+## T11 four-site Hamiltonian pilot — 2026-10-09 11:36:56 IST
+
+- Registered T11 and implemented the exact four-site singlet Bose–Hubbard pilot for $K=2,3,4$, comparing complete and four-site-ring hopping at $g=0$.
+- Calculated no-hopping, free-hopping, and $U/t=1,5,20$ spectra; fixed-$K$ Gibbs observables; volume and active-site distributions; and the Hamiltonian–volume commutator decomposition.
+- Saved operator/basis archives and CSV/JSON outputs under `results/hamiltonian-studies/`. Matplotlib is unavailable in the current environment, so optional figures were skipped.
+- The dedicated result note records the connected-triple convention, exact scope, numerical evidence, and open extensions. The earlier session transcript and its cutoff are unchanged.
+
+## Python library and backend evaluation — 2026-10-10
+
+- The user selected Python plus Rust for the quantum research code after reviewing a saved Python-versus-TS comparison. The reproducible matched end-to-end TS artifact covers $K=2$ only; its pipeline was about 529 times slower than Python in that local run. The comparison uses `ts-quantum` objects behind an LQG-specific adapter, not a complete domain library. See `results/python-vs-ts/README.md`.
+- Shared Python routines have begun moving into `code/python/lqg_scattering/`, with compatibility facades at selected root paths. The extraction remains unfinished: Hamiltonian and variable-face study logic and potentially duplicated thermal/fitting helpers still need review.
+- Earlier in-session smoke tests and targeted checks passed, including 10 library-extraction tests. No final test suite or fresh wheel/build validation was run after the extraction stopped. The user explicitly deferred testing to the next session.
+- Keep T10 complete for its declared $K=2,3,4$ RS catalogue and T11 IN PROGRESS for the larger research program. Prior T11 numerical, thermal, and dashboard records remain in the October 9 chunks and session summary.
+- Separate future research questions remain: audit historical calculations for observables outside singlet sectors and evaluate the Hamiltonian on Schwinger-boson configurations associated with a closed tetrahedron, one face, and a three-face configuration. These were not answered by the code extraction or backend benchmark.
+- Detailed closeout: [October 10 session summary](sessions/2026-10-10-python-library-and-backend.md).
+
+## 2026-10-10 binding and constructive-sewing closeout
+
+*Recorded: 2026-10-10 03:26:38 IST*
+
+- Session: [detailed handoff](sessions/2026-10-10-binding-and-constructive-sewing-summary.md)
+  and [physics-only transcript](sessions/2026-10-10-binding-and-constructive-sewing-transcript.md).
+- Scoped extraction and package validation completed; earlier incomplete
+  extraction statements above describe the previous stop point.
+- T11: full-number closure probes and four-boson three-plus-one binding
+  comparison calculated. Ground-state binding is positive on both graphs.
+- Constructive edge sewing: small-spin triangle/tetrahedron and joined
+  exterior-boundary tensors verified; latest full suite passed 38 tests.
+- Next: choose the sewn-space Hamiltonian and bulk/boundary comparison.
+  The loop Hamiltonian remains a proposal. No new deployment, commit, or push.

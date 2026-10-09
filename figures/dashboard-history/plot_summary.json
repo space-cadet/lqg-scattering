@@ -1,0 +1,79 @@
+{
+  "method": "plots of saved arrays; no physics rerun",
+  "matplotlib": "3.10.8",
+  "png_dpi": 300,
+  "plots": {
+    "magnetization": [
+      {
+        "path": "results/t5a_mag_results.json",
+        "sha256": "e5a2d6fbb03ac95a9eb850c3107ed7f7aa02fd7dda6c09fd392a8a7125beb689"
+      }
+    ],
+    "chirality": [
+      {
+        "path": "results/t5a_prime_results.json",
+        "sha256": "268f4decd32eeb1f56a9da797b44c93a01229d9cebe302400e3a48c0cca485d3"
+      }
+    ],
+    "perturbation": [
+      {
+        "path": "results/t5b_results.json",
+        "sha256": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa"
+      }
+    ],
+    "phase": [
+      {
+        "path": "results/t5d_phase_scan_results.json",
+        "sha256": "e3504d5f8bc3fe5ee2480933a19b8a6a61cd4fe67777c0f364b50d45f1af5c01"
+      }
+    ],
+    "large_k": [
+      {
+        "path": "results/t5e_results.json",
+        "sha256": "5438a14fb40b4f57940cac21c2619a508da51bfa607c87eaa1347523d00727d3"
+      }
+    ],
+    "t7a": [
+      {
+        "path": "results/t7a_results.json",
+        "sha256": "03a72389707c0a0ae176191b33f9614b29e3db08ffddfda4ba4f1b3d0d9ca058"
+      }
+    ],
+    "t7b": [
+      {
+        "path": "results/t7b_results.json",
+        "sha256": "bd1d46bb461b39447617fb3d100fb0262ebb91c6bb5f3e4bc08312b042261b2d"
+      }
+    ],
+    "t7e": [
+      {
+        "path": "results/t7e_results.json",
+        "sha256": "975736e518a476c3f08d51d4c62bff39c44403f9ba70b7af4c5fb38b67ae5bdf"
+      }
+    ],
+    "geometry_audit": [
+      {
+        "path": "results/t7_geometry_thermal_results.json",
+        "sha256": "da117f4ee4702ab8de4398b27c959ee1f3e4ed5243dc1040195a952533dd9437"
+      }
+    ],
+    "high_j_boundary": [
+      {
+        "path": "results/t5c_degenerate_limits_highJ_results.json",
+        "sha256": "cfac2bd3c940816094b4edd80cc85ff5fa3ab469f5545fe9678b453055d4d7e4"
+      }
+    ],
+    "volume_controls": [
+      {
+        "path": "results/volume_prescription_results.json",
+        "sha256": "9f700c0ed30169af9b1d66d2abffb78d57fb1fee5335e83ca4559c68f325ae7f"
+      }
+    ],
+    "covariance_pilot": [
+      {
+        "path": "results/t5c_covariance_probe_results.json",
+        "sha256": "60b3686c42c728f4c284f5e01355ddd8b116f4617d16af19d3216d0a707b3d4d"
+      }
+    ]
+  }
+}

@@ -26,8 +26,8 @@ source_commit: 9602c9811278635eb4b3e3e601badd28e7964862
 
 ## Related Files
 - [Volume-studies note](../../notes/volume-studies.md) — single-copy counting, lattice Hamiltonian context, and the first volume-commutator identities.
-- `code/python/positivity.py`
-- `code/python/coherent_states.py`
+- `code/python/lqg_scattering/positivity.py` (reusable implementation; root `positivity.py` is a compatibility facade)
+- `code/python/lqg_scattering/coherent_states.py` (reusable implementation; root `coherent_states.py` is a compatibility facade)
 - `code/python/fl_volume_validation.py`
 - `code/python/fl_volume_shape_scan.py`
 - `code/python/fl_volume_labels.py`

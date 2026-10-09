@@ -15,14 +15,14 @@ Only numpy is used.
 
 import numpy as np
 
-from coherent_states import (
+from lqg_scattering.coherent_states import (
     GAMMA,
     area_expectation,
     area_uncertainty,
     plane_to_Z,
     perelomov_state,
 )
-from positivity import positive_region_N4
+from lqg_scattering.positivity import positive_region_N4
 
 
 def classical_limit(N=4, scales=(4, 6, 8, 10, 12), plane=None,

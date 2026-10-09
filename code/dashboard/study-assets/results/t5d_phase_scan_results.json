@@ -1,0 +1,115 @@
+{
+  "study": "T5d cocycle phase pilot",
+  "n": 4,
+  "K": 7,
+  "seed": 11,
+  "points": [
+    {
+      "control": "positive_real",
+      "epsilon": 0.0,
+      "phaseRadians": 0.0,
+      "phaseDefect": 0.0,
+      "signedGrasp": -0.0,
+      "taylorIters": 38
+    },
+    {
+      "control": "mixed_sign_real",
+      "epsilon": 0.0,
+      "phaseRadians": 0.0,
+      "phaseDefect": 0.0,
+      "signedGrasp": -0.0,
+      "taylorIters": 38
+    },
+    {
+      "control": "complex_path",
+      "epsilon": 0.0,
+      "phaseRadians": 0.0,
+      "phaseDefect": 0.0,
+      "signedGrasp": -0.0,
+      "taylorIters": 38
+    },
+    {
+      "control": "complex_path",
+      "epsilon": 0.0001,
+      "phaseRadians": 0.0003455192155238,
+      "phaseDefect": 0.0003455192086489,
+      "signedGrasp": -3.097893743364e-05,
+      "taylorIters": 38
+    },
+    {
+      "control": "complex_path",
+      "epsilon": 0.0003,
+      "phaseRadians": 0.001036523440652,
+      "phaseDefect": 0.001036523255048,
+      "signedGrasp": -9.293498392246e-05,
+      "taylorIters": 38
+    },
+    {
+      "control": "complex_path",
+      "epsilon": 0.001,
+      "phaseRadians": 0.003453781569782,
+      "phaseDefect": 0.003453774703318,
+      "signedGrasp": -0.0003097139674546,
+      "taylorIters": 38
+    },
+    {
+      "control": "complex_path",
+      "epsilon": 0.003,
+      "phaseRadians": 0.01032724631284,
+      "phaseDefect": 0.01032706274355,
+      "signedGrasp": -0.0009273171395071,
+      "taylorIters": 38
+    },
+    {
+      "control": "complex_path",
+      "epsilon": 0.01,
+      "phaseRadians": 0.03317077628472,
+      "phaseDefect": 0.03316469364963,
+      "signedGrasp": -0.003023214531196,
+      "taylorIters": 38
+    },
+    {
+      "control": "complex_path",
+      "epsilon": 0.1,
+      "phaseRadians": 0.02179285950335,
+      "phaseDefect": 0.02179113453514,
+      "signedGrasp": -0.007269748342207,
+      "taylorIters": 38
+    },
+    {
+      "control": "complex_path",
+      "epsilon": 1.0,
+      "phaseRadians": -0.01388119436107,
+      "phaseDefect": 0.01388074857646,
+      "signedGrasp": -0.001059408042691,
+      "taylorIters": 36
+    }
+  ],
+  "observable": {
+    "pluckerCrossRatio": "P = M01*M23/(M02*M13)",
+    "phase": "arg(P)",
+    "gaugeInvariantDefect": "|Im(P)|/|P| = |sin(arg(P))|",
+    "signedGrasp": "q012 = -2 Im <A01 psi | A12 psi>",
+    "referenceOccupations": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ]
+  },
+  "smallPhaseThroughOriginSlope": -0.08978148439072553,
+  "interpretation": "Single-path pilot: both real controls vanish. On the sampled small-phase branch the signed grasp is approximately linear in the gauge-invariant defect; the response turns over at larger perturbation. This does not establish a general onset law.",
+  "engine": "Rust on-the-fly Perelomov state and signed-grasp evaluation, Rust 1.92.0, release profile"
+}

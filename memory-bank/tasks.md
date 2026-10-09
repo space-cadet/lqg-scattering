@@ -1,5 +1,5 @@
 # Task Registry
-*Last Updated: 2026-10-09 11:16:39 IST*
+*Last Updated: 2026-10-10 03:26:38 IST*
 
 ## Active Tasks
 | ID | Title | Status | Priority | Started | Dependencies | Details |
@@ -15,6 +15,7 @@
 | T6 | Minkowski polyhedron reconstruction and quantum bridge | 🔄 IN PROGRESS | HIGH | 2026-09-19 | T5a′, T5c | [Details](tasks/T6.md) |
 | T8 | Amplituhedron Program | 🔄 IN PROGRESS | MEDIUM | 2026-10-04 | T1, T2 | [Details](tasks/T8.md) |
 | T9 | Thermal/TFD state construction and physical study | 🔄 IN PROGRESS | HIGH | 2026-10-06 | T3c | [Details](tasks/T9.md) |
+| T11 | Four-site Hamiltonian–volume studies | 🔄 IN PROGRESS | HIGH | 2026-10-09 | T1a | [Details](tasks/T11.md) |
 | T8a | Cluster algebra and coordinate charts | 🔄 IN PROGRESS | MEDIUM | 2026-10-04 | T8 | [Details](tasks/T8a.md) |
 | T8b | Positive cells and scattering regions | 🔄 IN PROGRESS | MEDIUM | 2026-10-04 | T8, T1, T2 | [Details](tasks/T8b.md) |
 
@@ -329,6 +330,13 @@ convergence evidence.
 **Dependencies**: T3c
 **Subtasks**: Five completed child-study records (T7a–T7e); no additional subtask slots remain.
 
+### T11: Four-site Hamiltonian–volume studies
+**Details**: [Task record](tasks/T11.md)
+**Description**: Implement the first exact four-site Bose–Hubbard/positive-RS pilot at fixed $K=2,3,4$, comparing complete and ring graphs in the total-spin singlet sector. The run includes no-hopping, free-hopping, repulsion, fixed-$K$ Gibbs observables, ground-state correlations and one-site entropy, exact infinite-temperature active-site counting, and the Hamiltonian–volume commutator.
+**Status**: 🔄 IN PROGRESS
+**Dependencies**: T1a
+**Milestone**: Four-site pilot and thermal-volume follow-up complete; full-number closure probes and same-number three-plus-one dissociation energies calculated. At $t=1,U=5$, binding energies are 0.769253300 (complete) and 0.795078777 (ring). Sewn-network dynamics, larger supports, and physical geometry/normalization remain open. The earlier 18-study dashboard deployment is historical evidence, not a new release.
+
 ---
 
 ## Completed Tasks
@@ -387,6 +395,7 @@ graph TD
     T9[T9: Thermal/TFD construction and study]
     T8a[T8a: Cluster algebra and charts]
     T8b[T8b: Positive cells and scattering regions; former T5f]
+    T11[T11: Four-site Hamiltonian-volume studies]
 
     T1 --> T1a --> T1b --> T2
     T3 --> T3a
@@ -405,6 +414,7 @@ graph TD
     T9 --> T7c
     T9 --> T7d
     T9 --> T7e
+    T1a --> T11
 ```
 
 ---

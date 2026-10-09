@@ -1,0 +1,223 @@
+{
+  "K": 4,
+  "N": 8,
+  "basis_dimension": 14,
+  "spin_assignments": 1,
+  "independent_dimension": 14,
+  "blocks": [
+    {
+      "id": "b0000",
+      "twice_spins": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "twice_cumulative_spins": [
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          2,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          2,
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          2,
+          3,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          0,
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          2,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          2,
+          3,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          3,
+          2,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          3,
+          2,
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          3,
+          2,
+          3,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      ],
+      "singlet_dimension": 14,
+      "magnetic_m0_dimension": 70,
+      "rs_eigenvalues": [
+        3.0465319023639013,
+        3.046531902363902,
+        3.0465319023639026,
+        3.0465319023639035,
+        3.0465319023639035,
+        3.046531902363904,
+        3.0465319023639044,
+        3.0465319023639053,
+        3.046531902363906,
+        3.0465319023639066,
+        3.0465319023639075,
+        3.0465319023639075,
+        3.046531902363908,
+        3.0465319023639084
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    }
+  ],
+  "zero_volume_dimension": 0,
+  "positive_volume_dimension": 14,
+  "spectrum": [
+    {
+      "rs_volume": 3.0465319023639057,
+      "multiplicity": 14,
+      "within_group_spread": 7.105427357601002e-15
+    }
+  ],
+  "equal_weight_mean": 3.0465319023639057,
+  "equal_weight_sd": 2.3348645200851266e-15,
+  "minimum_positive_volume": 3.0465319023639013,
+  "maximum_volume": 3.0465319023639084,
+  "checks_max_absolute_residual": {
+    "orthogonality": 1.3322676295501878e-15,
+    "closure": 1.1102230246251565e-16,
+    "casimir": 1.5987211554602254e-14,
+    "prefix_casimir": 1.5987211554602254e-14,
+    "hermiticity": 4.996003610813204e-16,
+    "invariant_subspace": 3.0531133177191805e-16,
+    "epsilon_vs_commutator": 0.0,
+    "dense_tensor_vs_commutator": 0.0,
+    "magnetic_root_projection": 1.5543724517779099e-15,
+    "independent_volume": 9.769962864956646e-15,
+    "eigensystem": 1.688305753616065e-15,
+    "trace_moments": 2.842170943040401e-14,
+    "permutation_spectrum": 1.7763568394002505e-15,
+    "four_face_previous": 0.0,
+    "analytic_half_spin": 2.2204475100732162e-15,
+    "saturated_spin_zero": 0.0
+  },
+  "maximum_singlet_dimension": 14,
+  "maximum_magnetic_m0_dimension": 70,
+  "archive": "operators_k4_n8.npz",
+  "archive_bytes": 176428,
+  "archive_sha256": "29831408f55c867f811437ea76c10bd0873247e92be5d134c00015d91fa6db31",
+  "basis_csv": "basis_k4_n8.csv",
+  "eigenstates_csv": "eigenstates_k4_n8.csv",
+  "elapsed_seconds": 4.107144875015365
+}

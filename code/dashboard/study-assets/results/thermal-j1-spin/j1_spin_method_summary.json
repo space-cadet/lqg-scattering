@@ -1,0 +1,161 @@
+{
+  "agent": "GPT 6.1 Sol",
+  "date": "2026-10-08",
+  "initial_J": 1,
+  "faces": 4,
+  "input": "normalized F12^dagger vacuum in each copy, conjugate paired",
+  "support": "full oscillator Fock space, no per-copy singlet projection",
+  "observable": "ordinary per-copy resultant spin",
+  "q_max": 160,
+  "beta_hbar_omega_values": [
+    0.5,
+    1.0,
+    2.0,
+    4.0,
+    8.0
+  ],
+  "abs_tolerance": 2e-12,
+  "independent_abs_tolerance": 2e-11,
+  "pair_matrix_cutoffs": [
+    40,
+    64
+  ],
+  "independent_check_q_max": 4,
+  "max_method_absolute_difference": 2.671474153004283e-16,
+  "min_computed_probability": 0.0,
+  "temperature_results": [
+    {
+      "beta_hbar_omega": 0.5,
+      "retained_probability": 1.0,
+      "mean_q_retained": 20.497928990441583,
+      "mean_q_analytic": 20.49792899044158,
+      "mean_per_copy_closure_casimir_retained": 41.135829934844026,
+      "singlet_probability_retained": 0.0034036649491405438,
+      "tail_upper_bounds": {
+        "q_power_0": 8.936403228451495e-21,
+        "q_power_1": 1.4554471138720414e-18,
+        "q_power_2": 2.3709378662309234e-16
+      },
+      "tail_log10_upper_bounds": {
+        "q_power_0": -20.048837243211548,
+        "q_power_1": -17.837003570761638,
+        "q_power_2": -15.6250798271718
+      },
+      "tail_bound_underflow": false,
+      "independent_checks": {
+        "pair_cutoff_coefficient_difference": 0.0,
+        "polynomial_coefficient_difference": 1.6653345369377348e-16,
+        "casimir_probability_difference": 3.187554387107383e-17,
+        "magnetic_occupation_difference": 2.2551405187698492e-17,
+        "combined_closure_relative_residual": 4.192372672037108e-29
+      }
+    },
+    {
+      "beta_hbar_omega": 1.0,
+      "retained_probability": 0.9999999999999999,
+      "mean_q_retained": 8.983720482431917,
+      "mean_q_analytic": 8.983720482431917,
+      "mean_per_copy_closure_casimir_retained": 9.667072739181819,
+      "singlet_probability_retained": 0.02640647623307552,
+      "tail_upper_bounds": {
+        "q_power_0": 4.343699906264882e-53,
+        "q_power_1": 7.021641037325688e-51,
+        "q_power_2": 1.1351035760553074e-48
+      },
+      "tail_log10_upper_bounds": {
+        "q_power_0": -52.362140186539634,
+        "q_power_1": -50.153561376450476,
+        "q_power_2": -47.94496450811233
+      },
+      "tail_bound_underflow": false,
+      "independent_checks": {
+        "pair_cutoff_coefficient_difference": 4.85722573273506e-17,
+        "polynomial_coefficient_difference": 3.2612801348363973e-16,
+        "casimir_probability_difference": 2.498001805406602e-16,
+        "magnetic_occupation_difference": 2.0816681711721685e-16,
+        "combined_closure_relative_residual": 2.1108046122855495e-29
+      }
+    },
+    {
+      "beta_hbar_omega": 2.0,
+      "retained_probability": 1.0,
+      "mean_q_retained": 3.878211712995988,
+      "mean_q_analytic": 3.878211712995988,
+      "mean_per_copy_closure_casimir_retained": 1.9006618600365643,
+      "singlet_probability_retained": 0.1953169851215159,
+      "tail_upper_bounds": {
+        "q_power_0": 1.1464049767361358e-120,
+        "q_power_1": 1.8476539155308547e-118,
+        "q_power_2": 2.977875334103235e-116
+      },
+      "tail_log10_upper_bounds": {
+        "q_power_0": -119.94066193726148,
+        "q_power_1": -117.73337937329498,
+        "q_power_2": -115.52609348752551
+      },
+      "tail_bound_underflow": false,
+      "independent_checks": {
+        "pair_cutoff_coefficient_difference": 9.159339953157541e-16,
+        "polynomial_coefficient_difference": 9.43689570931383e-16,
+        "casimir_probability_difference": 1.7486012637846216e-15,
+        "magnetic_occupation_difference": 1.1934897514720433e-15,
+        "combined_closure_relative_residual": 3.497897092423782e-30
+      }
+    },
+    {
+      "beta_hbar_omega": 4.0,
+      "retained_probability": 0.9999999999999992,
+      "mean_q_retained": 2.223888324365287,
+      "mean_q_analytic": 2.2238883243652885,
+      "mean_per_copy_closure_casimir_retained": 0.19955730332493596,
+      "singlet_probability_retained": 0.7775011889214215,
+      "tail_upper_bounds": {
+        "q_power_0": 3.572242659451563e-258,
+        "q_power_1": 5.752024414669368e-256,
+        "q_power_2": 9.261915842906733e-254
+      },
+      "tail_log10_upper_bounds": {
+        "q_power_0": -257.44705904752107,
+        "q_power_1": -255.24017927924308,
+        "q_power_2": -253.0332991694798
+      },
+      "tail_bound_underflow": false,
+      "independent_checks": {
+        "pair_cutoff_coefficient_difference": 0.0,
+        "polynomial_coefficient_difference": 4.440892098500626e-16,
+        "casimir_probability_difference": 3.1051550219984847e-16,
+        "magnetic_occupation_difference": 4.163336342344337e-17,
+        "combined_closure_relative_residual": 3.2847430647625214e-30
+      }
+    },
+    {
+      "beta_hbar_omega": 8.0,
+      "retained_probability": 1.0,
+      "mean_q_retained": 2.0040269024100947,
+      "mean_q_analytic": 2.0040269024100947,
+      "mean_per_copy_closure_casimir_retained": 0.0035247220213449277,
+      "singlet_probability_retained": 0.995316102873722,
+      "tail_upper_bounds": {
+        "q_power_0": 0.0,
+        "q_power_1": 0.0,
+        "q_power_2": 0.0
+      },
+      "tail_log10_upper_bounds": {
+        "q_power_0": -533.5725858695946,
+        "q_power_1": -531.3657590255365,
+        "q_power_2": -529.1589321754637
+      },
+      "tail_bound_underflow": true,
+      "independent_checks": {
+        "pair_cutoff_coefficient_difference": 1.734723475976807e-18,
+        "polynomial_coefficient_difference": 1.6653345369377348e-16,
+        "casimir_probability_difference": 5.551115123125783e-16,
+        "magnetic_occupation_difference": 4.440892098500626e-16,
+        "combined_closure_relative_residual": 4.870861055814108e-31
+      }
+    }
+  ],
+  "python": "3.10.19",
+  "numpy": "1.24.3",
+  "scipy": "1.15.3"
+}

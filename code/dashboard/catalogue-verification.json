@@ -1,0 +1,27 @@
+{
+  "checked_at_utc": "2026-10-09T16:21:37.431476+00:00",
+  "environment": "qc-diff",
+  "scope": "local source and browser; no scientific reruns or hosted deployment",
+  "added_studies": 18,
+  "run_or_study_records": 26,
+  "registered_figures": 30,
+  "linked_artifacts_checked": 183,
+  "new_historical_pdf_png_pairs": 12,
+  "checks": {
+    "all_manifest_files_exist_and_are_nonempty": true,
+    "original_source_hashes_match": true,
+    "all_dashboard_json_strict": true,
+    "run_ids_unique": true,
+    "node_js_syntax": true,
+    "git_diff_check": true,
+    "browser_task_filter": true,
+    "browser_search": true,
+    "browser_hamiltonian_30_row_table": true,
+    "browser_all_five_hamiltonian_images_loaded": true,
+    "browser_no_horizontal_overflow_at_default_viewport": true,
+    "browser_existing_volume_studies_render": true,
+    "browser_performance_svg_render": true,
+    "browser_no_new_console_errors_after_d3_load_order_fix": true
+  },
+  "plot_inspection": "All twelve historical PNGs visually inspected as a contact sheet; geometry and higher-J plots also inspected at larger size. Dedicated plot-check/physics-check/VLM tools are unavailable; no new numerical physics was calculated."
+}

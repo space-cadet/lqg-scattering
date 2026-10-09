@@ -19,12 +19,20 @@ Fixed-K Fock space with scipy.sparse; dim C(K+2n-1,2n-1) = C(17,9) =
 24310 for n=5, K=8. Only numpy/scipy used.
 """
 
-import itertools
 import json
 import time
 
 import numpy as np
-import scipy.sparse as sp
+from lqg_scattering.coherent_states import plane_to_Z as plane_to_z
+from lqg_scattering.positivity import positive_plane_curve as _positive_plane_curve
+from lqg_scattering.fixed_k import (
+    normalized_exponential,
+    occupation_index as idx_of,
+    pairwise_grasp as jdot,
+    single_edge_operators as single_edge_ops,
+    fixed_number_basis as build_fixed_k_basis,
+    uN_generator as build_A,
+)
 from project_paths import RESULTS_ROOT
 
 N = 5
@@ -32,6 +40,11 @@ K = 8
 PLANE_SEED = 1000
 TOL = 1e-13
 NONZERO_TOL = 1e-9
+
+
+def perelomov(A, ref_idx, dim, tol=TOL):
+    """T5a convergence setting around the reusable exponential action."""
+    return normalized_exponential(A, ref_idx, dim, tol=tol, max_terms=8 * K + 49)
 
 # Reference occupations: (label, [(na, nb) x N]). All sum to K=8.
 CONFIGS = [
@@ -48,90 +61,15 @@ CONFIGS = [
 ]
 
 
-def build_fixed_k_basis(n, k):
-    """All occupation vectors of length 2n with sum exactly k (stars/bars)."""
-    m = 2 * n
-    occ = []
-    for bars in itertools.combinations(range(k + m - 1), m - 1):
-        prev = -1
-        state = []
-        for b in list(bars) + [k + m - 1]:
-            state.append(b - prev - 1)
-            prev = b
-        occ.append(state)
-    occ = np.array(occ, dtype=np.int64)
-    assert np.all(occ.sum(axis=1) == k)
-    index = {bytes(o.astype(np.uint8).tobytes()): i for i, o in enumerate(occ)}
-    return occ, index
-
-
-def idx_of(index, state):
-    return index[bytes(np.asarray(state, dtype=np.uint8).tobytes())]
-
-
 def moment_curve_plane(n, seed):
-    rng = np.random.default_rng(seed)
-    t = np.sort(rng.uniform(0.2, 3.0, size=n))
-    return np.stack([t, t * t]).astype(complex)
+    return _positive_plane_curve(n, seed=seed).astype(complex)
 
 
 def fixed_complex_plane(n, seed):
     c0 = moment_curve_plane(n, seed)
-    c = c0.copy()
+    c = c0.astype(complex)
     c[1, :] = c[1, :] + 1j * 0.35 * (np.arange(n) + 0.5)
     return c
-
-
-def plane_to_z(plane):
-    a, b = plane[0].copy(), plane[1].copy()
-    a = a / np.linalg.norm(a)
-    b = b - a * (a.conj() @ b)
-    b = b / np.linalg.norm(b)
-    return np.outer(a, b.conj()) - np.outer(b, a.conj())
-
-
-def build_A(occ, index, z, n):
-    """A = sum_ij Z_ij E_ij with E_ij = a_i^dag a_j + b_i^dag b_j."""
-    dim = len(occ)
-    rows, cols, data = [], [], []
-    na = occ[:, 0::2]
-    nb = occ[:, 1::2]
-    for i in range(n):
-        for j in range(n):
-            zij = z[i, j]
-            if abs(zij) == 0:
-                continue
-            if i == j:
-                d = (na[:, i] + nb[:, i]) * zij
-                rows.extend(range(dim))
-                cols.extend(range(dim))
-                data.extend(d.tolist())
-                continue
-            # a-part: donor edge j needs na_j > 0
-            m = na[:, j] > 0
-            cols_a = np.nonzero(m)[0]
-            if len(cols_a):
-                tgt = occ[cols_a].copy()
-                tgt[:, 2 * i] += 1
-                tgt[:, 2 * j] -= 1
-                fac = np.sqrt(na[cols_a, j] * (na[cols_a, i] + 1)) * zij
-                for c, trow, f in zip(cols_a, tgt, fac):
-                    rows.append(idx_of(index, trow))
-                    cols.append(int(c))
-                    data.append(complex(f))
-            # b-part
-            m = nb[:, j] > 0
-            cols_b = np.nonzero(m)[0]
-            if len(cols_b):
-                tgt = occ[cols_b].copy()
-                tgt[:, 2 * i + 1] += 1
-                tgt[:, 2 * j + 1] -= 1
-                fac = np.sqrt(nb[cols_b, j] * (nb[cols_b, i] + 1)) * zij
-                for c, trow, f in zip(cols_b, tgt, fac):
-                    rows.append(idx_of(index, trow))
-                    cols.append(int(c))
-                    data.append(complex(f))
-    return sp.csr_matrix((data, (rows, cols)), shape=(dim, dim), dtype=complex)
 
 
 def perelomov(A, ref_idx, dim, tol=TOL):
@@ -149,48 +87,6 @@ def perelomov(A, ref_idx, dim, tol=TOL):
     else:
         raise RuntimeError("Perelomov Taylor exponential did not converge")
     return result / np.linalg.norm(result), it
-
-
-def single_edge_ops(occ, index, n):
-    """Per-edge Jz (diag), J+, J- as sparse matrices (each col <= 1 nnz)."""
-    dim = len(occ)
-    na = occ[:, 0::2]
-    nb = occ[:, 1::2]
-    ops = []
-    for e in range(n):
-        jz = sp.diags(0.5 * (na[:, e] - nb[:, e]).astype(float), format="csr")
-        # J+ = a^dag b
-        m = nb[:, e] > 0
-        cb = np.nonzero(m)[0]
-        rp, cp_, dp = [], [], []
-        for c in cb:
-            t = occ[c].copy()
-            t[2 * e] += 1
-            t[2 * e + 1] -= 1
-            rp.append(idx_of(index, t))
-            cp_.append(int(c))
-            dp.append(np.sqrt((na[c, e] + 1) * nb[c, e]))
-        jp = sp.csr_matrix((dp, (rp, cp_)), shape=(dim, dim), dtype=complex)
-        # J- = b^dag a
-        m = na[:, e] > 0
-        cb = np.nonzero(m)[0]
-        rp, cp_, dp = [], [], []
-        for c in cb:
-            t = occ[c].copy()
-            t[2 * e] -= 1
-            t[2 * e + 1] += 1
-            rp.append(idx_of(index, t))
-            cp_.append(int(c))
-            dp.append(np.sqrt(na[c, e] * (nb[c, e] + 1)))
-        jm = sp.csr_matrix((dp, (rp, cp_)), shape=(dim, dim), dtype=complex)
-        ops.append((jz, jp, jm))
-    return ops
-
-
-def jdot(ops, i, j):
-    jzi, jpi, jmi = ops[i]
-    jzj, jpj, jmj = ops[j]
-    return jzi @ jzj + 0.5 * (jpi @ jmj + jmi @ jpj)
 
 
 def sign_agreement(qs, tol=NONZERO_TOL):

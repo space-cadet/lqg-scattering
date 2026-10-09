@@ -15,225 +15,23 @@ import sys
 
 import numpy as np
 
-from coherent_states import expectation, su2_ops
-from fl_volume_validation import GAMMA, N, ORIENTATIONS, fixed_area_state, spinors_from_normals
-from positivity import (
-    _active_vertex_blocks,
-    _dot_ops,
-    _triple_matrix_block,
-    ashtekar_lewandowski_volume,
-    rovelli_smolin_volume,
+from lqg_scattering.conventions import GAMMA
+from lqg_scattering.fl_volume import N, ORIENTATIONS
+from lqg_scattering.intertwiners import fixed_area_state
+from lqg_scattering.observables import (
+    expected_face_spins, flux_correlation_geometry, volume_moments,
 )
+from lqg_scattering.spinors import spinors_from_normals
+from lqg_scattering.tetrahedra import (
+    GEOMETRY_MATCHING_FACTORS, circumsphere_shape_data, classical_volume_from_faces,
+    face_area_vectors,
+)
+from lqg_scattering.positivity import ashtekar_lewandowski_volume, rovelli_smolin_volume
 from project_paths import RESULTS_ROOT
 
 
 TRIPLES = tuple(itertools.combinations(range(N), 3))
 AL_SIGNS = dict(zip(TRIPLES, ORIENTATIONS))
-ZERO_FACTOR = 64.0 * np.finfo(float).eps
-GEOMETRY_MATCHING_FACTORS = {
-    # V_class = sqrt(2/9) sqrt(|det(F1,F2,F3)|). On a closed 4-valent
-    # vertex the repository RS sum is 4 sqrt(|q|), while this AL sign map
-    # gives sqrt(|4 q|) = 2 sqrt(|q|).
-    "rs": math.sqrt(2.0) / 12.0,
-    "al": math.sqrt(2.0) / 6.0,
-}
-
-
-def face_area_vectors(vertices):
-    """Return outward face-area vectors, ordered by opposite vertex."""
-    points = np.asarray(vertices, dtype=float)
-    if points.shape != (4, 3):
-        raise ValueError("vertices must have shape (4, 3)")
-    faces = np.zeros((4, 3), dtype=float)
-    for opposite in range(4):
-        ids = [i for i in range(4) if i != opposite]
-        p0, p1, p2 = points[ids]
-        area_vector = 0.5 * np.cross(p1 - p0, p2 - p0)
-        face_center = (p0 + p1 + p2) / 3.0
-        if np.dot(area_vector, face_center - points[opposite]) < 0.0:
-            area_vector = -area_vector
-        faces[opposite] = area_vector
-    return faces
-
-
-def closed_face_vectors_from_shape(area_fractions, diagonal, phi):
-    """Construct closed tetrahedral face vectors at fixed area fractions.
-
-    The diagonal is |F0+F1| in unit-total-area variables. It and the bend
-    angle phi give two shape coordinates after quotienting common rotations.
-    """
-    areas = np.asarray(area_fractions, dtype=float)
-    if areas.shape != (4,) or np.any(areas <= 0.0):
-        raise ValueError("area_fractions must contain four positive values")
-    if not np.isclose(areas.sum(), 1.0, atol=1e-12, rtol=0.0):
-        raise ValueError("area_fractions must sum to one")
-    lower = max(abs(areas[0] - areas[1]), abs(areas[2] - areas[3]))
-    upper = min(areas[0] + areas[1], areas[2] + areas[3])
-    if not lower < diagonal < upper:
-        raise ValueError(f"diagonal must lie strictly between {lower} and {upper}")
-
-    d = float(diagonal)
-    z0 = (d * d + areas[0] ** 2 - areas[1] ** 2) / (2.0 * d)
-    z1 = d - z0
-    z2 = (areas[3] ** 2 - areas[2] ** 2 - d * d) / (2.0 * d)
-    z3 = -d - z2
-    r0_squared = areas[0] ** 2 - z0 * z0
-    r2_squared = areas[2] ** 2 - z2 * z2
-    if min(r0_squared, r2_squared) <= 0.0:
-        raise ValueError("shape lies on a degenerate pair-triangle boundary")
-    r0, r2 = math.sqrt(r0_squared), math.sqrt(r2_squared)
-    c, s = math.cos(phi), math.sin(phi)
-    faces = np.array([
-        [r0, 0.0, z0],
-        [-r0, 0.0, z1],
-        [r2 * c, r2 * s, z2],
-        [-r2 * c, -r2 * s, z3],
-    ])
-    if np.max(np.abs(np.linalg.norm(faces, axis=1) - areas)) > 1e-11:
-        raise ArithmeticError("constructed face-vector lengths miss area labels")
-    if np.linalg.norm(faces.sum(axis=0)) > 1e-11:
-        raise ArithmeticError("constructed face vectors failed closure")
-    return faces
-
-
-def classical_volume_from_faces(face_vectors):
-    """Tetrahedron volume from any three faces meeting at a vertex."""
-    faces = np.asarray(face_vectors, dtype=float)
-    if faces.shape != (4, 3):
-        raise ValueError("face_vectors must have shape (4, 3)")
-    closure = np.linalg.norm(faces.sum(axis=0))
-    if closure > 1e-10:
-        raise ValueError(f"face vectors do not close: {closure:.3e}")
-    determinant = abs(float(np.linalg.det(faces[[1, 2, 3]])))
-    return math.sqrt((2.0 / 9.0) * determinant)
-
-
-def circumsphere_shape_data(vertices):
-    """Return unit-sphere vertices, their complex cross-ratio, and chords."""
-    points = np.asarray(vertices, dtype=float)
-    edges = points[1:] - points[0]
-    center = np.linalg.solve(
-        2.0 * edges,
-        np.sum(points[1:] ** 2, axis=1) - float(np.dot(points[0], points[0])),
-    )
-    radius = float(np.linalg.norm(points[0] - center))
-    if radius <= 0.0:
-        raise ValueError("tetrahedron has a zero circumradius")
-    sphere_points = (points - center) / radius
-
-    # Pick a stereographic pole that is not close to any vertex.
-    axes = np.vstack((np.eye(3), -np.eye(3)))
-    pole = axes[int(np.argmax(np.min(1.0 + sphere_points @ axes.T, axis=0)))]
-    seed = np.eye(3)[int(np.argmin(np.abs(pole)))]
-    e1 = np.cross(pole, seed)
-    e1 /= np.linalg.norm(e1)
-    e2 = np.cross(pole, e1)
-    denominator = 1.0 + sphere_points @ pole
-    if np.min(denominator) <= 1e-12:
-        raise ArithmeticError("stereographic projection hit its pole")
-    z = (sphere_points @ e1 + 1j * (sphere_points @ e2)) / denominator
-    cross_ratio = ((z[0] - z[2]) * (z[1] - z[3])) / (
-        (z[0] - z[3]) * (z[1] - z[2])
-    )
-    chords = {
-        f"{i}{j}": float(np.linalg.norm(sphere_points[i] - sphere_points[j]))
-        for i, j in itertools.combinations(range(4), 2)
-    }
-    return {
-        "circumcenter": center.tolist(),
-        "circumradius": radius,
-        "unitSphereVertices": sphere_points.tolist(),
-        "tetrahedronVolumeAtUnitCircumradius": abs(float(np.linalg.det(
-            sphere_points[1:] - sphere_points[0]
-        ))) / 6.0,
-        "unitSphereRadiusResidual": float(np.max(np.abs(
-            np.linalg.norm(sphere_points, axis=1) - 1.0
-        ))),
-        "vertexCrossRatioReal": float(cross_ratio.real),
-        "vertexCrossRatioImag": float(cross_ratio.imag),
-        "unitSphereChordDistances": chords,
-    }
-
-
-def expected_face_spins(state):
-    """Return <j_i> using the occupation probabilities in the FL state."""
-    means = np.zeros(N, dtype=float)
-    norm2 = 0.0
-    for occupation, amplitude in state.items():
-        probability = float(abs(amplitude) ** 2)
-        norm2 += probability
-        for edge in range(N):
-            means[edge] += probability * 0.5 * (
-                occupation[2 * edge] + occupation[2 * edge + 1]
-            )
-    return means / norm2
-
-
-def flux_correlation_geometry(state, space, normals):
-    """Summarize covariance closure and its match to input shape labels."""
-    gram = np.zeros((N, N), dtype=float)
-    for i in range(N):
-        def casimir(occupation, edge=i):
-            spin = (occupation[2 * edge] + occupation[2 * edge + 1]) / 2.0
-            return [(occupation, spin * (spin + 1.0))]
-
-        gram[i, i] = expectation(state, casimir, space).real
-        for j in range(i + 1, N):
-            value = expectation(
-                state, _dot_ops(su2_ops(i), su2_ops(j)), space
-            ).real
-            gram[i, j] = gram[j, i] = value
-    rms = np.sqrt(np.maximum(np.diag(gram), 0.0))
-    normalized = gram / np.outer(rms, rms)
-    input_gram = np.asarray(normals) @ np.asarray(normals).T
-    return {
-        "closureResidual": float(np.linalg.norm(gram @ np.ones(N))),
-        "minimumEigenvalue": float(np.min(np.linalg.eigvalsh(gram))),
-        "rmsFaceAreaFractions": (rms / rms.sum()).tolist(),
-        "maxNormalizedCorrelationError": float(
-            np.max(np.abs(normalized - input_gram))
-        ),
-        "fluxGram": gram.tolist(),
-    }
-
-
-def positive_sqrt_abs(matrix):
-    """Hermitian sqrt(abs(M)), using the repository's zero-mode cutoff."""
-    values, vectors = np.linalg.eigh(0.5 * (matrix + matrix.conj().T))
-    scale = max(1.0, float(np.max(np.abs(values))))
-    values[np.abs(values) <= ZERO_FACTOR * scale] = 0.0
-    return (vectors * np.sqrt(np.abs(values))[None, :]) @ vectors.conj().T
-
-
-def volume_moments(state, space):
-    """Return means and variances of the RS and fixed-sign AL operators."""
-    norm2 = float(np.vdot(space.vec(state), space.vec(state)).real)
-    moments = {"rs": [0.0, 0.0], "al": [0.0, 0.0]}
-    for basis, vector in _active_vertex_blocks(space, state):
-        q_matrices = {
-            triple: _triple_matrix_block(space, basis, triple)
-            for triple in TRIPLES
-        }
-        rs_matrix = sum((positive_sqrt_abs(q) for q in q_matrices.values()),
-                        np.zeros_like(next(iter(q_matrices.values()))))
-        al_q = sum((AL_SIGNS[t] * q_matrices[t] for t in TRIPLES),
-                   np.zeros_like(rs_matrix))
-        al_matrix = positive_sqrt_abs(al_q)
-        for key, operator in (("rs", rs_matrix), ("al", al_matrix)):
-            applied = operator @ vector
-            moments[key][0] += float(np.vdot(vector, applied).real)
-            moments[key][1] += float(np.vdot(applied, applied).real)
-
-    scale = GAMMA**1.5
-    output = {}
-    for key, (first, second) in moments.items():
-        mean = first / norm2
-        variance = max(0.0, second / norm2 - mean * mean)
-        output[key] = {
-            "meanProjectUnits": scale * mean,
-            "varianceProjectUnitsSquared": scale**2 * variance,
-        }
-    return output
 
 
 def geometry_case(name, vertices):

@@ -9,12 +9,12 @@ import sys
 
 import numpy as np
 
-from fl_volume_shape_scan import closed_equal_area_normals, four_point_cross_ratio
-from fl_volume_validation import GAMMA, fixed_area_state, spinors_from_normals
-from t5c_input_geometry_scan import (
-    GEOMETRY_MATCHING_FACTORS,
-    classical_volume_from_faces,
-    volume_moments,
+from lqg_scattering.conventions import GAMMA
+from lqg_scattering.intertwiners import fixed_area_state
+from lqg_scattering.observables import volume_moments
+from lqg_scattering.spinors import four_point_cross_ratio, spinors_from_normals
+from lqg_scattering.tetrahedra import (
+    GEOMETRY_MATCHING_FACTORS, closed_equal_area_normals, classical_volume_from_faces,
 )
 from project_paths import RESULTS_ROOT
 

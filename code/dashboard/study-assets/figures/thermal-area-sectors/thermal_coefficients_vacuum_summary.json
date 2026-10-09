@@ -1,0 +1,46 @@
+{
+  "construction": "same-mode two-copy squeezed vacuum",
+  "hilbert_space": "full oscillator Fock space, no per-copy singlet projection",
+  "initial_J": 0,
+  "faces": 4,
+  "modes_per_copy": 8,
+  "q_min": 0,
+  "q_max": 240,
+  "q_step": 1,
+  "normalization_check_q_max": 2000,
+  "tail_tolerance": 1e-06,
+  "python": "3.10.19",
+  "numpy": "1.24.3",
+  "scipy": "1.15.3",
+  "matplotlib": "3.10.8",
+  "temperature_results": [
+    {
+      "beta_hbar_omega": 2.0,
+      "mean_q": 1.2521411419973254,
+      "mode_q": 1,
+      "cutoff_tail_1e_minus_6": 11,
+      "tail_at_cutoff": 7.494029237969596e-07
+    },
+    {
+      "beta_hbar_omega": 1.0,
+      "mean_q": 4.655813654954612,
+      "mode_q": 4,
+      "cutoff_tail_1e_minus_6": 26,
+      "tail_at_cutoff": 4.7497262295407044e-07
+    },
+    {
+      "beta_hbar_omega": 0.5,
+      "mean_q": 12.331952660294386,
+      "mode_q": 10,
+      "cutoff_tail_1e_minus_6": 55,
+      "tail_at_cutoff": 6.836054953069906e-07
+    },
+    {
+      "beta_hbar_omega": 0.25,
+      "mean_q": 28.16649331350239,
+      "mode_q": 24,
+      "cutoff_tail_1e_minus_6": 113,
+      "tail_at_cutoff": 8.644938924828085e-07
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Volume Operator: Implemented Prescriptions and Limits
 
-*Last Updated: 2026-10-05 10:49:54 IST*
+*Last Updated: 2026-10-10 01:14 IST*
 
 ## Current code
 
@@ -228,7 +228,7 @@ itself prove a minimum for these quantum operators.
 
 | File | Current role |
 |---|---|
-| `code/python/positivity.py` | Python signed-mean proxy and positive RS/AL expectations |
+| `code/python/lqg_scattering/positivity.py` | Reusable Python signed-mean proxy and positive RS/AL expectations; root `positivity.py` is a compatibility facade |
 | `code/rust/src/volume.rs` | Rust signed-mean proxy and positive RS/AL expectations |
 | `code/python/fl_volume_validation.py` | Eq. (38) FL tetrahedron state and independent local-spin tensor-product check |
 | `code/rust/examples/fl_volume.rs` | Rust reproducer for the same fixed-area tetrahedron state |
