@@ -1,0 +1,79 @@
+{
+  "K": 2,
+  "N": 4,
+  "basis_dimension": 2,
+  "spin_assignments": 1,
+  "independent_dimension": 2,
+  "blocks": [
+    {
+      "id": "b0000",
+      "twice_spins": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "twice_cumulative_spins": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          0
+        ]
+      ],
+      "singlet_dimension": 2,
+      "magnetic_m0_dimension": 6,
+      "rs_eigenvalues": [
+        0.30465319023639065,
+        0.30465319023639065
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    }
+  ],
+  "zero_volume_dimension": 0,
+  "positive_volume_dimension": 2,
+  "spectrum": [
+    {
+      "rs_volume": 0.30465319023639065,
+      "multiplicity": 2,
+      "within_group_spread": 0.0
+    }
+  ],
+  "equal_weight_mean": 0.30465319023639065,
+  "equal_weight_sd": 0.0,
+  "minimum_positive_volume": 0.30465319023639065,
+  "maximum_volume": 0.30465319023639065,
+  "checks_max_absolute_residual": {
+    "orthogonality": 4.440892098500626e-16,
+    "closure": 0.0,
+    "casimir": 1.7763568394002505e-15,
+    "prefix_casimir": 1.7763568394002505e-15,
+    "hermiticity": 5.551115123125783e-17,
+    "invariant_subspace": 2.220446049250313e-16,
+    "epsilon_vs_commutator": 0.0,
+    "dense_tensor_vs_commutator": 0.0,
+    "magnetic_root_projection": 4.444175157415385e-16,
+    "independent_volume": 2.7757820392033873e-16,
+    "eigensystem": 0.0,
+    "trace_moments": 0.0,
+    "permutation_spectrum": 5.551115123125783e-17,
+    "four_face_previous": 0.0,
+    "analytic_half_spin": 1.1102230246251565e-16,
+    "saturated_spin_zero": 0.0
+  },
+  "maximum_singlet_dimension": 2,
+  "maximum_magnetic_m0_dimension": 6,
+  "archive": "operators_k2_n4.npz",
+  "archive_bytes": 13244,
+  "archive_sha256": "690fdd97ab525cfcaf45707df0d55a6762773bc0dc5b3f13d079569ae5b12dc7",
+  "basis_csv": "basis_k2_n4.csv",
+  "eigenstates_csv": "eigenstates_k2_n4.csv",
+  "elapsed_seconds": 0.037232541013509035
+}

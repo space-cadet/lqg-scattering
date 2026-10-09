@@ -1,6 +1,6 @@
 # Session Cache
 
-*Last Updated: 2026-10-08 23:21:44 IST*
+*Last Updated: 2026-10-09 11:16:39 IST*
 
 ## Overview
 - 2026-10-08 T9 calculation close: Added the four-face $J_{\mathrm{in}}=1$ $P(q,S)$ calculation by two methods through $q=160$, method and coefficient checks, temperature plots, and the finite-temperature support result. Full two-copy reduced-state blocks, entropy, and geometry remain open; see [session record](sessions/2026-10-08-j1-spin-distribution.md).
@@ -92,6 +92,27 @@ T9 owns all thermal/TFD state construction and physical study. Its five complete
 ## Volume-session close
 
 - Completed T1a four-face closed-basis RS/AL data through $K=12$; 10,549 states, compressed operators, independent checks and embedded plots. No $K=13$ result accepted after the user stopped extension.
-- Registered T10 as deferred/not started: complete fixed-$K$ catalogue across active $N$, with exact count checks and explicit volume-kernel/AL-sign distinctions.
+- T10 was registered as deferred in the October 8 closeout; the October 9 continuation subsequently produced the checked $K=2,3,4$ RS catalogue. The current task record is IN PROGRESS pending artifact closeout and final acceptance review.
 - New notation uses $K$ area and $J$ resultant spin; historical thermal notation remains mapped in the note.
 - Session history: [detailed summary](sessions/2026-10-08-volume-studies.md); [physics-only transcript](sessions/2026-10-08-volume-physics-transcript.md).
+
+
+## Variable-face and lattice-Hamiltonian session close — 2026-10-09
+
+- Recorded 2026-10-09 11:00:29 IST: [detailed session summary](sessions/2026-10-09-lattice-hamiltonian-session-summary.md) and [dialogue transcript](sessions/2026-10-09-lattice-hamiltonian-transcript.md).
+- T10 numerical artifacts now cover positive-face $K=2,3,4$ closed dimensions 2, 36, and 347, with independent checks and figures; scripts/results remain uncommitted and the task registry has not been reconciled.
+- Lattice Hamiltonian, area/closure support, Feller–Livine attribution, and a ten-stage research program were discussed; no Hamiltonian simulation was implemented.
+- The user requested connected triples for physical volume and retention of unconnected triples as potential reordering channels, then redirected work to the single-copy Hamiltonian–volume commutator. Graph-labelled reordering dynamics remain an assistant proposal.
+- The transcript ends at the user's redirection message and excludes the subsequent assistant commutator derivation. The complete summary records that last derivation separately.
+- Continue with hopping versus positive volume, keeping the onsite repulsion's exact zero commutator and the operator spectral-function distinction.
+
+## Dedicated volume note — 2026-10-09 11:10:50 IST
+
+- Created [notes/volume-studies.md](../notes/volume-studies.md) for further single-copy volume, analytic counting, lattice Hamiltonians, and commutator work. Added a short link from the thermal note; its existing material is preserved.
+- Reconciled T10 from the earlier deferred state to IN PROGRESS: the checked $K=2,3,4$ RS baseline exists locally; artifact closeout and final acceptance remain open. AL orientations and physical normalization are unresolved.
+- T1a remains the positive-volume baseline owner; T9 retains all ongoing thermal/TFD work. No new task was created and no Hamiltonian numerical work was performed.
+- The recorded session summary and transcript remain the history sources; the transcript cutoff is unchanged. Continue with the single-copy Hamiltonian–volume commutator before expanding reordering dynamics.
+
+## T10 catalogue closeout — 2026-10-09 11:16:39 IST
+
+- Corrected escaped code formatting in the catalogue README and completed T10 after confirming all acceptance criteria against the saved artefacts and prior verifier evidence. The $K=2,3,4$ calculator results and Memory Bank closeout are in the requested commit/push scope; no physics rerun was performed. Physical normalization and higher-valence AL orientation remain open limitations.

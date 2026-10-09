@@ -1,0 +1,112 @@
+{
+  "K": 3,
+  "N": 6,
+  "basis_dimension": 5,
+  "spin_assignments": 1,
+  "independent_dimension": 5,
+  "blocks": [
+    {
+      "id": "b0000",
+      "twice_spins": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "twice_cumulative_spins": [
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          3,
+          2,
+          1,
+          0
+        ]
+      ],
+      "singlet_dimension": 5,
+      "magnetic_m0_dimension": 20,
+      "rs_eigenvalues": [
+        1.2186127609455613,
+        1.2186127609455613,
+        1.2186127609455617,
+        1.2186127609455621,
+        1.2186127609455624
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    }
+  ],
+  "zero_volume_dimension": 0,
+  "positive_volume_dimension": 5,
+  "spectrum": [
+    {
+      "rs_volume": 1.2186127609455617,
+      "multiplicity": 5,
+      "within_group_spread": 1.1102230246251565e-15
+    }
+  ],
+  "equal_weight_mean": 1.2186127609455617,
+  "equal_weight_sd": 4.550560269027492e-16,
+  "minimum_positive_volume": 1.2186127609455613,
+  "maximum_volume": 1.2186127609455624,
+  "checks_max_absolute_residual": {
+    "orthogonality": 6.661338147750939e-16,
+    "closure": 1.1102230246251565e-16,
+    "casimir": 1.7763568394002505e-15,
+    "prefix_casimir": 1.7763568394002505e-15,
+    "hermiticity": 1.6653345369377348e-16,
+    "invariant_subspace": 1.3877787807814457e-16,
+    "epsilon_vs_commutator": 0.0,
+    "dense_tensor_vs_commutator": 0.0,
+    "magnetic_root_projection": 8.881900006276828e-16,
+    "independent_volume": 1.998410047692482e-15,
+    "eigensystem": 1.246531298897714e-15,
+    "trace_moments": 7.993605777301127e-15,
+    "permutation_spectrum": 8.881784197001252e-16,
+    "four_face_previous": 0.0,
+    "analytic_half_spin": 6.661413546274717e-16,
+    "saturated_spin_zero": 0.0
+  },
+  "maximum_singlet_dimension": 5,
+  "maximum_magnetic_m0_dimension": 20,
+  "archive": "operators_k3_n6.npz",
+  "archive_bytes": 34998,
+  "archive_sha256": "4f872a0ebdcda3fea698226d97f0e3dab01157a5073ee3ef6d3080543aa9401b",
+  "basis_csv": "basis_k3_n6.csv",
+  "eigenstates_csv": "eigenstates_k3_n6.csv",
+  "elapsed_seconds": 0.08581937497365288
+}

@@ -1,0 +1,140 @@
+{
+  "sources": [
+    {
+      "path": "results/variable-n-volume/metadata_k2_n4.json",
+      "sha256": "f1fd0fad625d870c191f5256b82e44699fad55d149f0f1dce79e6ee211133ec5"
+    },
+    {
+      "path": "results/variable-n-volume/metadata_k3_n4.json",
+      "sha256": "50c1d38251b4e2ffe49a0852389368cbc4ee2e7064a8bf19526b58abd9ffc93c"
+    },
+    {
+      "path": "results/variable-n-volume/metadata_k3_n5.json",
+      "sha256": "bf1f018dbe48610cc621cc02b235fd017137adb3060ce4e3d40481aa5635ef58"
+    },
+    {
+      "path": "results/variable-n-volume/metadata_k3_n6.json",
+      "sha256": "c7621a4b0afc18a9eb704b05547edc2094e92d1bff72018530d5643fedaf233b"
+    },
+    {
+      "path": "results/variable-n-volume/metadata_k4_n4.json",
+      "sha256": "edb35e9571d491f53a82edb956d95cb8e01ec4e5b90223c641f993925e845c32"
+    },
+    {
+      "path": "results/variable-n-volume/metadata_k4_n5.json",
+      "sha256": "8fb9fe9218e8b9c23ea8e83f66596417d8c5d5a0520ecd1b0c3b7866c39a00f3"
+    },
+    {
+      "path": "results/variable-n-volume/metadata_k4_n6.json",
+      "sha256": "9c1f8e5d79f46e130bc7a26a26c499f027643452fce3c4814ed6ad22e3740b5f"
+    },
+    {
+      "path": "results/variable-n-volume/metadata_k4_n7.json",
+      "sha256": "73150d48416921ed6a462d7b54f2389c53a857f42ca7acb705b96920121eda5c"
+    },
+    {
+      "path": "results/variable-n-volume/metadata_k4_n8.json",
+      "sha256": "64746616373e5eccacca96cea21a35e0ccc3dc0c110a30909f127dd73b619dec"
+    },
+    {
+      "path": "results/variable-n-volume/summary.json",
+      "sha256": "e773ffd2cbba66afd49531f98ed44997a549e484b6e122988c6031a34b93443b"
+    }
+  ],
+  "statistics": [
+    {
+      "K": 2,
+      "N": 4,
+      "basis_dimension": 2,
+      "zero_volume_dimension": 0,
+      "positive_volume_dimension": 2,
+      "equal_weight_mean": 0.30465319023639065,
+      "equal_weight_sd": 0.0
+    },
+    {
+      "K": 3,
+      "N": 4,
+      "basis_dimension": 16,
+      "zero_volume_dimension": 4,
+      "positive_volume_dimension": 12,
+      "equal_weight_mean": 0.2919840826322544,
+      "equal_weight_sd": 0.16857708870681798
+    },
+    {
+      "K": 3,
+      "N": 5,
+      "basis_dimension": 15,
+      "zero_volume_dimension": 0,
+      "positive_volume_dimension": 15,
+      "equal_weight_mean": 0.5924142370005997,
+      "equal_weight_sd": 3.293453726225543e-16
+    },
+    {
+      "K": 3,
+      "N": 6,
+      "basis_dimension": 5,
+      "zero_volume_dimension": 0,
+      "positive_volume_dimension": 5,
+      "equal_weight_mean": 1.2186127609455617,
+      "equal_weight_sd": 4.550560269027492e-16
+    },
+    {
+      "K": 4,
+      "N": 4,
+      "basis_dimension": 51,
+      "zero_volume_dimension": 13,
+      "positive_volume_dimension": 38,
+      "equal_weight_mean": 0.3614545797551866,
+      "equal_weight_sd": 0.2133433265893787
+    },
+    {
+      "K": 4,
+      "N": 5,
+      "basis_dimension": 105,
+      "zero_volume_dimension": 5,
+      "positive_volume_dimension": 100,
+      "equal_weight_mean": 0.7460038008035779,
+      "equal_weight_sd": 0.20316893893159418
+    },
+    {
+      "K": 4,
+      "N": 6,
+      "basis_dimension": 114,
+      "zero_volume_dimension": 0,
+      "positive_volume_dimension": 114,
+      "equal_weight_mean": 1.3088298133555696,
+      "equal_weight_sd": 0.2517519299864735
+    },
+    {
+      "K": 4,
+      "N": 7,
+      "basis_dimension": 63,
+      "zero_volume_dimension": 0,
+      "positive_volume_dimension": 63,
+      "equal_weight_mean": 1.9887909095621505,
+      "equal_weight_sd": 1.3906131230279755e-15
+    },
+    {
+      "K": 4,
+      "N": 8,
+      "basis_dimension": 14,
+      "zero_volume_dimension": 0,
+      "positive_volume_dimension": 14,
+      "equal_weight_mean": 3.0465319023639057,
+      "equal_weight_sd": 2.3348645200851266e-15
+    }
+  ],
+  "png_dpi": 300,
+  "physics_rerun": false,
+  "matplotlib": "3.10.8",
+  "checks": [
+    "archive hashes",
+    "dimensions and multiplicities",
+    "zero counts",
+    "trace means and variances",
+    "CDF monotonicity and normalization",
+    "text inside canvas",
+    "PNG DPI"
+  ],
+  "interpretation": "Equal weights per independent eigenstate; pooled N weights are proportional to dimensions; raw RS units with no geometric conversion."
+}

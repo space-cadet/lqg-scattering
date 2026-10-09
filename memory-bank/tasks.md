@@ -1,5 +1,5 @@
 # Task Registry
-*Last Updated: 2026-10-08 23:21:44 IST*
+*Last Updated: 2026-10-09 11:16:39 IST*
 
 ## Active Tasks
 | ID | Title | Status | Priority | Started | Dependencies | Details |
@@ -17,7 +17,6 @@
 | T9 | Thermal/TFD state construction and physical study | 🔄 IN PROGRESS | HIGH | 2026-10-06 | T3c | [Details](tasks/T9.md) |
 | T8a | Cluster algebra and coordinate charts | 🔄 IN PROGRESS | MEDIUM | 2026-10-04 | T8 | [Details](tasks/T8a.md) |
 | T8b | Positive cells and scattering regions | 🔄 IN PROGRESS | MEDIUM | 2026-10-04 | T8, T1, T2 | [Details](tasks/T8b.md) |
-| T10 | Exact closed-state catalogue at fixed area with variable face number | ⏸️ PAUSED | MEDIUM | Not started | T1a | [Details](tasks/T10.md) |
 
 ## Task Details
 
@@ -351,6 +350,7 @@ convergence evidence.
 | T7c | Two-sided chirality correlator | ✅ COMPLETED | HIGH | 2026-09-20 | T9, T7a, T7b | [Details](archive/T7c.md) |
 | T7d | Thermal scaling laws | ✅ COMPLETED | HIGH | 2026-09-20 | T9, T7a, T7c | [Details](archive/T7d.md) |
 | T7e | Complexified momenta in the TFD | ✅ COMPLETED | HIGH | 2026-09-20 | T9, T7b, T7c | [Details](archive/T7e.md) |
+| T10 | Exact closed-state catalogue at fixed area with variable face number | ✅ COMPLETED | MEDIUM | 2026-10-08 | T1a | [Details](tasks/T10.md) |
 
 ## Transferred / Historical Task IDs
 

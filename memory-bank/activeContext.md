@@ -1,6 +1,6 @@
 # Active Context
 
-*Last Updated: 2026-10-08 23:21:44 IST*
+*Last Updated: 2026-10-09 11:16:39 IST*
 
 ## Current Focus
 Session-close handoff: [sessions/2026-10-08-physics-handoff.md](sessions/2026-10-08-physics-handoff.md); exact [physics-only transcript](sessions/2026-10-08-physics-transcript.md). Latest discussion distinguishes area $J$, resultant spin $S$, and magnetic number $M$, derives a nonzero-spin reference-state extension, and clarifies group action versus averaging. The extension remains unimplemented and numerically unchecked.
@@ -53,4 +53,8 @@ Session-close handoff: [sessions/2026-10-08-physics-handoff.md](sessions/2026-10
 
 ## Latest volume session
 
-Completed the single-copy four-face closed-basis catalogue and positive RS/AL data through $K=12$ (10,549 states), with matrices, figures and independent checks. The extension stopped at the user request; no $K=13$ result is accepted. New notation: $K$ total linear area, $J$ resultant angular momentum. [T10](tasks/T10.md) is deferred to a later session for all active face counts at fixed $K$; implementation not started. T9 thermal reduced-state/geometry work remains open. See [summary](sessions/2026-10-08-volume-studies.md) and [physics transcript](sessions/2026-10-08-volume-physics-transcript.md).
+Completed the single-copy four-face closed-basis catalogue and positive RS/AL data through $K=12$ (10,549 states), with matrices, figures and independent checks. The extension stopped at the user request; no $K=13$ result is accepted. New notation: $K$ total linear area, $J$ resultant angular momentum. [T10](tasks/T10.md) is complete for the labelled positive-face RS catalogue at $K=2,3,4$; higher-valence AL geometry and physical normalization remain open limitations. Further single-copy content is in [volume studies](../notes/volume-studies.md). T9 thermal reduced-state/geometry work remains open. See [summary](sessions/2026-10-08-volume-studies.md) and [physics transcript](sessions/2026-10-08-volume-physics-transcript.md).
+
+## Separate volume-studies record — 2026-10-09 11:10:50 IST
+
+The user requested a dedicated [volume note](../notes/volume-studies.md) to keep the thermal-sector write-up focused. It records the numerical catalogue, analytic counting, Feller–Livine attribution, area/closure restrictions, and the proposed lattice program. The immediate physics continuation is the single-copy Hamiltonian–volume commutator; reordering details are deferred. The connected-triple prescription and unconnected transition channels are recorded as the user's research direction; the assistant's graph-labelled formulation was not adopted. No Hamiltonian or thermal numerical calculation was added.

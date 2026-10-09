@@ -1,6 +1,6 @@
 # Implementation Progress
 
-*Last Updated: 2026-10-08 15:53:57 IST*
+*Last Updated: 2026-10-09 11:16:39 IST*
 
 ## Active Tasks
 
@@ -127,3 +127,7 @@ does not establish zero positive quantum volume.
 ## 2026-10-08 23:21:44 IST: Closed-basis volume baseline
 
 T1a completed all four-labelled-face singlet basis data at $K=2,\ldots,12$ (10,549 states), with positive RS/AL expectations, fluctuations, spectra and compressed matrices. Independent triple checks and reload verification passed within declared tolerances. The user stopped extension during $K=13$ verification; no $K=13$ output is accepted. T10 is deferred for the variable-face catalogue; no such spectra or new thermal volumes were computed. See [session summary](sessions/2026-10-08-volume-studies.md).
+
+## Variable-face RS baseline and volume note — 2026-10-09 11:10:50 IST
+
+T10's completed catalogue covers all labelled positive-face singlets at $K=2,3,4$, with closed dimensions 2, 36, and 347 and positive-volume dimensions 2, 32, and 329. Independent counts, triple matrices, exact spin-half controls, saved operators, readable catalogues and figure exports are recorded in [volume studies](../notes/volume-studies.md). The saved verifier checked 112 blocks and 385 eigenstates. Physical normalization and higher-valence AL orientation data remain unresolved. No Hamiltonian energy, thermal-volume, or graph-changing result is claimed.

@@ -5,7 +5,7 @@ source_commit: 9602c9811278635eb4b3e3e601badd28e7964862
 
 # T1a: Positive-volume construction and validation in Python
 *Created: 2026-10-02 12:15:21 IST*
-*Last Updated: 2026-10-08 23:21:44 IST*
+*Last Updated: 2026-10-09 11:10:50 IST*
 
 **Description**: Implement and validate positive Rovelli–Smolin and Ashtekar–Lewandowski volume expectations in the Python reference implementation at n=4.
 **Status**: 🔄 IN PROGRESS
@@ -25,6 +25,7 @@ source_commit: 9602c9811278635eb4b3e3e601badd28e7964862
 - 🔄 Replace dense diagonalization before evaluating active blocks above dimension 512.
 
 ## Related Files
+- [Volume-studies note](../../notes/volume-studies.md) — single-copy counting, lattice Hamiltonian context, and the first volume-commutator identities.
 - `code/python/positivity.py`
 - `code/python/coherent_states.py`
 - `code/python/fl_volume_validation.py`

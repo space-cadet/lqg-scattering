@@ -1,9 +1,40 @@
 # Edit History
 
 *Created: 2026-09-19*
-*Last Updated: 2026-10-08 23:21:44 IST*
+*Last Updated: 2026-10-09 11:16:39 IST*
 
 ## File Modification Log
+
+### 2026-10-09
+
+#### 11:16:39 IST - T10: Complete and close out the variable-face RS catalogue
+- Updated `results/variable-n-volume/README.md` - Corrected escaped code spans and reproduction examples for readable rendering.
+- Updated `notes/volume-studies.md` - Recorded T10 completion and remaining physical scope limits.
+- Updated `memory-bank/tasks/T10.md` - Checked all acceptance criteria and recorded the completed $K=2,3,4$ catalogue and verification evidence.
+- Updated `memory-bank/tasks.md` - Moved T10 from active to completed tasks.
+- Updated `memory-bank/activeContext.md` and `memory-bank/progress.md` - Reflected T10 completion and preserved open physical limitations.
+- Updated `memory-bank/session_cache.md` and `memory-bank/sessions/2026-10-09-lattice-hamiltonian-session-summary.md` - Added the final catalogue closeout without changing the transcript.
+- Updated `memory-bank/edit_history.md` - Added this entry from the canonical chunk.
+
+#### 11:10:50 IST - T1a, T9, T10: Separate volume studies from the thermal-sector write-up
+- Created `notes/volume-studies.md` - Collected numerical volume evidence, counting, lattice constraints, Feller–Livine context, proposed program, and first commutator identities in a separate research note.
+- Updated `notes/thermal-area-sectors.md` - Added a cross-reference while preserving its existing construction and volume sections.
+- Updated `notes/README.md` - Listed the separate volume research note.
+- Updated `memory-bank/tasks/T10.md` - Recorded the checked RS baseline, changed the stale deferred status to IN PROGRESS, linked artifacts, and retained open artifact closeout and final acceptance.
+- Updated `memory-bank/tasks.md` - Reconciled the T10 registry row and added its current baseline description.
+- Updated `memory-bank/tasks/T1a.md` - Linked the separate volume note as a reference for the existing baseline.
+- Updated `memory-bank/tasks/T9.md` - Linked the separate volume note and retained the selected two-copy construction and open thermal calculations.
+- Updated `memory-bank/activeContext.md` - Recorded the separate volume note, current T10 evidence, and commutator continuation.
+- Updated `memory-bank/session_cache.md` - Added note links and reconciled current catalogue status without changing the transcript cutoff.
+- Updated `memory-bank/progress.md` - Recorded the existing variable-face RS milestone and its unresolved acceptance and physical conventions.
+- Updated `memory-bank/sessions/2026-10-09-lattice-hamiltonian-session-summary.md` - Appended the documentation-organization follow-up while preserving the earlier handoff.
+- Updated `memory-bank/edit_history.md` - Regenerated the new dated entry from this canonical chunk while retaining historical entries.
+
+#### 11:00:29 IST - T9, T10: Record lattice-Hamiltonian discussion and variable-face results
+- Created `memory-bank/sessions/2026-10-09-lattice-hamiltonian-transcript.md` - Transcribed substantive dialogue through the user-directed commutator return, excluding the final derivation and wrap-up requests.
+- Created `memory-bank/sessions/2026-10-09-lattice-hamiltonian-session-summary.md` - Recorded numerical evidence, analytic counting, literature review, constraints, proposed research program, user steering, and the final commutator derivation outside the transcript cutoff.
+- Updated `memory-bank/session_cache.md` - Appended session links and continuation context without changing existing task statuses.
+- Updated `memory-bank/edit_history.md` - Regenerated the current dated entry from this canonical chunk while retaining the previous historical view.
 
 ### 2026-10-08
 

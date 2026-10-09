@@ -8,6 +8,8 @@ This note consolidates the October 6 and October 8 physics discussions. The chro
 
 Read the single-copy preliminaries first if the oscillator notation is unfamiliar. They explain what area fixes, what shape can still change, and why the smallest four-face sector needs care. The thermal sections then show how squeezing distributes probability over occupation and spin sectors. The volume baseline and the later closure discussion together specify what a finite-temperature volume study would need to measure.
 
+Further single-copy counting, lattice Hamiltonians, and Hamiltonian–volume commutators are recorded in the separate [volume-studies note](volume-studies.md). The existing thermal construction and volume baseline below are preserved.
+
 ## Contents
 
 - [Motivation, earlier construction, and canonical TFD](#section-01)

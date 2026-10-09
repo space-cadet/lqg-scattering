@@ -1,0 +1,1543 @@
+{
+  "K": 4,
+  "N": 5,
+  "basis_dimension": 105,
+  "spin_assignments": 35,
+  "independent_dimension": 105,
+  "blocks": [
+    {
+      "id": "b0000",
+      "twice_spins": [
+        1,
+        1,
+        1,
+        1,
+        4
+      ],
+      "twice_cumulative_spins": [
+        [
+          1,
+          2,
+          3,
+          4,
+          0
+        ]
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "rs_eigenvalues": [
+        0.0
+      ],
+      "zero_volume_dimension": 1,
+      "common_triple_kernel_dimension": 1
+    },
+    {
+      "id": "b0001",
+      "twice_spins": [
+        1,
+        1,
+        1,
+        2,
+        3
+      ],
+      "twice_cumulative_spins": [
+        [
+          1,
+          0,
+          1,
+          3,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          3,
+          0
+        ],
+        [
+          1,
+          2,
+          3,
+          3,
+          0
+        ]
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 22,
+      "rs_eigenvalues": [
+        0.6958075720636303,
+        0.6958075720636304,
+        0.7623248742023612
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0002",
+      "twice_spins": [
+        1,
+        1,
+        1,
+        3,
+        2
+      ],
+      "twice_cumulative_spins": [
+        [
+          1,
+          0,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          3,
+          2,
+          0
+        ]
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 22,
+      "rs_eigenvalues": [
+        0.6958075720636303,
+        0.6958075720636305,
+        0.762324874202361
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0003",
+      "twice_spins": [
+        1,
+        1,
+        1,
+        4,
+        1
+      ],
+      "twice_cumulative_spins": [
+        [
+          1,
+          2,
+          3,
+          1,
+          0
+        ]
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "rs_eigenvalues": [
+        0.0
+      ],
+      "zero_volume_dimension": 1,
+      "common_triple_kernel_dimension": 1
+    },
+    {
+      "id": "b0004",
+      "twice_spins": [
+        1,
+        1,
+        2,
+        1,
+        3
+      ],
+      "twice_cumulative_spins": [
+        [
+          1,
+          0,
+          2,
+          3,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          3,
+          0
+        ],
+        [
+          1,
+          2,
+          4,
+          3,
+          0
+        ]
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 22,
+      "rs_eigenvalues": [
+        0.6958075720636303,
+        0.6958075720636304,
+        0.7623248742023612
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0005",
+      "twice_spins": [
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "twice_cumulative_spins": [
+        [
+          1,
+          0,
+          2,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          4,
+          2,
+          0
+        ]
+      ],
+      "singlet_dimension": 4,
+      "magnetic_m0_dimension": 26,
+      "rs_eigenvalues": [
+        0.650782799757706,
+        0.9491014361920281,
+        0.9491014361920285,
+        0.9761741996365595
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0006",
+      "twice_spins": [
+        1,
+        1,
+        2,
+        3,
+        1
+      ],
+      "twice_cumulative_spins": [
+        [
+          1,
+          0,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          4,
+          1,
+          0
+        ]
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 22,
+      "rs_eigenvalues": [
+        0.6958075720636306,
+        0.6958075720636308,
+        0.7623248742023618
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0007",
+      "twice_spins": [
+        1,
+        1,
+        3,
+        1,
+        2
+      ],
+      "twice_cumulative_spins": [
+        [
+          1,
+          0,
+          3,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          3,
+          2,
+          0
+        ]
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 22,
+      "rs_eigenvalues": [
+        0.6958075720636303,
+        0.6958075720636304,
+        0.7623248742023616
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0008",
+      "twice_spins": [
+        1,
+        1,
+        3,
+        2,
+        1
+      ],
+      "twice_cumulative_spins": [
+        [
+          1,
+          0,
+          3,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          3,
+          1,
+          0
+        ]
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 22,
+      "rs_eigenvalues": [
+        0.6958075720636301,
+        0.6958075720636304,
+        0.7623248742023611
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0009",
+      "twice_spins": [
+        1,
+        1,
+        4,
+        1,
+        1
+      ],
+      "twice_cumulative_spins": [
+        [
+          1,
+          2,
+          2,
+          1,
+          0
+        ]
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "rs_eigenvalues": [
+        0.0
+      ],
+      "zero_volume_dimension": 1,
+      "common_triple_kernel_dimension": 1
+    },
+    {
+      "id": "b0010",
+      "twice_spins": [
+        1,
+        2,
+        1,
+        1,
+        3
+      ],
+      "twice_cumulative_spins": [
+        [
+          1,
+          1,
+          2,
+          3,
+          0
+        ],
+        [
+          1,
+          3,
+          2,
+          3,
+          0
+        ],
+        [
+          1,
+          3,
+          4,
+          3,
+          0
+        ]
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 22,
+      "rs_eigenvalues": [
+        0.6958075720636303,
+        0.6958075720636306,
+        0.7623248742023612
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0011",
+      "twice_spins": [
+        1,
+        2,
+        1,
+        2,
+        2
+      ],
+      "twice_cumulative_spins": [
+        [
+          1,
+          1,
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          1,
+          2,
+          2,
+          0
+        ],
+        [
+          1,
+          3,
+          2,
+          2,
+          0
+        ],
+        [
+          1,
+          3,
+          4,
+          2,
+          0
+        ]
+      ],
+      "singlet_dimension": 4,
+      "magnetic_m0_dimension": 26,
+      "rs_eigenvalues": [
+        0.6507827997577063,
+        0.9491014361920287,
+        0.9491014361920289,
+        0.9761741996365589
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0012",
+      "twice_spins": [
+        1,
+        2,
+        1,
+        3,
+        1
+      ],
+      "twice_cumulative_spins": [
+        [
+          1,
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          3,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          3,
+          4,
+          1,
+          0
+        ]
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 22,
+      "rs_eigenvalues": [
+        0.6958075720636304,
+        0.6958075720636305,
+        0.7623248742023612
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0013",
+      "twice_spins": [
+        1,
+        2,
+        2,
+        1,
+        2
+      ],
+      "twice_cumulative_spins": [
+        [
+          1,
+          1,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          1,
+          3,
+          2,
+          0
+        ],
+        [
+          1,
+          3,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          3,
+          3,
+          2,
+          0
+        ]
+      ],
+      "singlet_dimension": 4,
+      "magnetic_m0_dimension": 26,
+      "rs_eigenvalues": [
+        0.6507827997577065,
+        0.9491014361920278,
+        0.9491014361920282,
+        0.9761741996365587
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0014",
+      "twice_spins": [
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "twice_cumulative_spins": [
+        [
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          3,
+          1,
+          0
+        ],
+        [
+          1,
+          3,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          3,
+          3,
+          1,
+          0
+        ]
+      ],
+      "singlet_dimension": 4,
+      "magnetic_m0_dimension": 26,
+      "rs_eigenvalues": [
+        0.6507827997577064,
+        0.9491014361920288,
+        0.9491014361920304,
+        0.97617419963656
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0015",
+      "twice_spins": [
+        1,
+        2,
+        3,
+        1,
+        1
+      ],
+      "twice_cumulative_spins": [
+        [
+          1,
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          3,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          3,
+          2,
+          1,
+          0
+        ]
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 22,
+      "rs_eigenvalues": [
+        0.6958075720636302,
+        0.6958075720636308,
+        0.7623248742023611
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0016",
+      "twice_spins": [
+        1,
+        3,
+        1,
+        1,
+        2
+      ],
+      "twice_cumulative_spins": [
+        [
+          1,
+          2,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          3,
+          2,
+          0
+        ],
+        [
+          1,
+          4,
+          3,
+          2,
+          0
+        ]
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 22,
+      "rs_eigenvalues": [
+        0.6958075720636302,
+        0.6958075720636303,
+        0.762324874202361
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0017",
+      "twice_spins": [
+        1,
+        3,
+        1,
+        2,
+        1
+      ],
+      "twice_cumulative_spins": [
+        [
+          1,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          3,
+          1,
+          0
+        ],
+        [
+          1,
+          4,
+          3,
+          1,
+          0
+        ]
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 22,
+      "rs_eigenvalues": [
+        0.6958075720636301,
+        0.6958075720636309,
+        0.762324874202361
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0018",
+      "twice_spins": [
+        1,
+        3,
+        2,
+        1,
+        1
+      ],
+      "twice_cumulative_spins": [
+        [
+          1,
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          4,
+          2,
+          1,
+          0
+        ]
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 22,
+      "rs_eigenvalues": [
+        0.6958075720636301,
+        0.6958075720636303,
+        0.762324874202361
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0019",
+      "twice_spins": [
+        1,
+        4,
+        1,
+        1,
+        1
+      ],
+      "twice_cumulative_spins": [
+        [
+          1,
+          3,
+          2,
+          1,
+          0
+        ]
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "rs_eigenvalues": [
+        0.0
+      ],
+      "zero_volume_dimension": 1,
+      "common_triple_kernel_dimension": 1
+    },
+    {
+      "id": "b0020",
+      "twice_spins": [
+        2,
+        1,
+        1,
+        1,
+        3
+      ],
+      "twice_cumulative_spins": [
+        [
+          2,
+          1,
+          2,
+          3,
+          0
+        ],
+        [
+          2,
+          3,
+          2,
+          3,
+          0
+        ],
+        [
+          2,
+          3,
+          4,
+          3,
+          0
+        ]
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 22,
+      "rs_eigenvalues": [
+        0.6958075720636304,
+        0.6958075720636309,
+        0.762324874202361
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0021",
+      "twice_spins": [
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "twice_cumulative_spins": [
+        [
+          2,
+          1,
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          1,
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          3,
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          3,
+          4,
+          2,
+          0
+        ]
+      ],
+      "singlet_dimension": 4,
+      "magnetic_m0_dimension": 26,
+      "rs_eigenvalues": [
+        0.6507827997577063,
+        0.9491014361920285,
+        0.9491014361920287,
+        0.976174199636559
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0022",
+      "twice_spins": [
+        2,
+        1,
+        1,
+        3,
+        1
+      ],
+      "twice_cumulative_spins": [
+        [
+          2,
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          3,
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          3,
+          4,
+          1,
+          0
+        ]
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 22,
+      "rs_eigenvalues": [
+        0.6958075720636303,
+        0.6958075720636305,
+        0.7623248742023612
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0023",
+      "twice_spins": [
+        2,
+        1,
+        2,
+        1,
+        2
+      ],
+      "twice_cumulative_spins": [
+        [
+          2,
+          1,
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          1,
+          3,
+          2,
+          0
+        ],
+        [
+          2,
+          3,
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          3,
+          3,
+          2,
+          0
+        ]
+      ],
+      "singlet_dimension": 4,
+      "magnetic_m0_dimension": 26,
+      "rs_eigenvalues": [
+        0.650782799757706,
+        0.9491014361920281,
+        0.9491014361920287,
+        0.976174199636559
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0024",
+      "twice_spins": [
+        2,
+        1,
+        2,
+        2,
+        1
+      ],
+      "twice_cumulative_spins": [
+        [
+          2,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          3,
+          1,
+          0
+        ],
+        [
+          2,
+          3,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          3,
+          3,
+          1,
+          0
+        ]
+      ],
+      "singlet_dimension": 4,
+      "magnetic_m0_dimension": 26,
+      "rs_eigenvalues": [
+        0.6507827997577065,
+        0.9491014361920287,
+        0.9491014361920297,
+        0.9761741996365595
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0025",
+      "twice_spins": [
+        2,
+        1,
+        3,
+        1,
+        1
+      ],
+      "twice_cumulative_spins": [
+        [
+          2,
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          3,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          3,
+          2,
+          1,
+          0
+        ]
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 22,
+      "rs_eigenvalues": [
+        0.6958075720636302,
+        0.6958075720636302,
+        0.762324874202361
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0026",
+      "twice_spins": [
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "twice_cumulative_spins": [
+        [
+          2,
+          0,
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          3,
+          2,
+          0
+        ],
+        [
+          2,
+          4,
+          3,
+          2,
+          0
+        ]
+      ],
+      "singlet_dimension": 4,
+      "magnetic_m0_dimension": 26,
+      "rs_eigenvalues": [
+        0.6507827997577063,
+        0.9491014361920276,
+        0.9491014361920288,
+        0.9761741996365589
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0027",
+      "twice_spins": [
+        2,
+        2,
+        1,
+        2,
+        1
+      ],
+      "twice_cumulative_spins": [
+        [
+          2,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          3,
+          1,
+          0
+        ],
+        [
+          2,
+          4,
+          3,
+          1,
+          0
+        ]
+      ],
+      "singlet_dimension": 4,
+      "magnetic_m0_dimension": 26,
+      "rs_eigenvalues": [
+        0.6507827997577064,
+        0.9491014361920287,
+        0.9491014361920292,
+        0.976174199636559
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0028",
+      "twice_spins": [
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "twice_cumulative_spins": [
+        [
+          2,
+          0,
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          4,
+          2,
+          1,
+          0
+        ]
+      ],
+      "singlet_dimension": 4,
+      "magnetic_m0_dimension": 26,
+      "rs_eigenvalues": [
+        0.6507827997577065,
+        0.9491014361920285,
+        0.9491014361920289,
+        0.9761741996365596
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0029",
+      "twice_spins": [
+        2,
+        3,
+        1,
+        1,
+        1
+      ],
+      "twice_cumulative_spins": [
+        [
+          2,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          3,
+          2,
+          1,
+          0
+        ]
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 22,
+      "rs_eigenvalues": [
+        0.6958075720636298,
+        0.6958075720636304,
+        0.762324874202361
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0030",
+      "twice_spins": [
+        3,
+        1,
+        1,
+        1,
+        2
+      ],
+      "twice_cumulative_spins": [
+        [
+          3,
+          2,
+          1,
+          2,
+          0
+        ],
+        [
+          3,
+          2,
+          3,
+          2,
+          0
+        ],
+        [
+          3,
+          4,
+          3,
+          2,
+          0
+        ]
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 22,
+      "rs_eigenvalues": [
+        0.6958075720636299,
+        0.6958075720636304,
+        0.762324874202361
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0031",
+      "twice_spins": [
+        3,
+        1,
+        1,
+        2,
+        1
+      ],
+      "twice_cumulative_spins": [
+        [
+          3,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          3,
+          2,
+          3,
+          1,
+          0
+        ],
+        [
+          3,
+          4,
+          3,
+          1,
+          0
+        ]
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 22,
+      "rs_eigenvalues": [
+        0.6958075720636302,
+        0.6958075720636304,
+        0.762324874202361
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0032",
+      "twice_spins": [
+        3,
+        1,
+        2,
+        1,
+        1
+      ],
+      "twice_cumulative_spins": [
+        [
+          3,
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          2,
+          2,
+          1,
+          0
+        ],
+        [
+          3,
+          4,
+          2,
+          1,
+          0
+        ]
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 22,
+      "rs_eigenvalues": [
+        0.6958075720636301,
+        0.6958075720636302,
+        0.7623248742023611
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0033",
+      "twice_spins": [
+        3,
+        2,
+        1,
+        1,
+        1
+      ],
+      "twice_cumulative_spins": [
+        [
+          3,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          3,
+          3,
+          2,
+          1,
+          0
+        ]
+      ],
+      "singlet_dimension": 3,
+      "magnetic_m0_dimension": 22,
+      "rs_eigenvalues": [
+        0.6958075720636303,
+        0.6958075720636304,
+        0.7623248742023611
+      ],
+      "zero_volume_dimension": 0,
+      "common_triple_kernel_dimension": 0
+    },
+    {
+      "id": "b0034",
+      "twice_spins": [
+        4,
+        1,
+        1,
+        1,
+        1
+      ],
+      "twice_cumulative_spins": [
+        [
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      ],
+      "singlet_dimension": 1,
+      "magnetic_m0_dimension": 16,
+      "rs_eigenvalues": [
+        0.0
+      ],
+      "zero_volume_dimension": 1,
+      "common_triple_kernel_dimension": 1
+    }
+  ],
+  "zero_volume_dimension": 5,
+  "positive_volume_dimension": 100,
+  "spectrum": [
+    {
+      "rs_volume": 0.0,
+      "multiplicity": 5,
+      "within_group_spread": 0.0
+    },
+    {
+      "rs_volume": 0.6507827997577064,
+      "multiplicity": 10,
+      "within_group_spread": 4.440892098500626e-16
+    },
+    {
+      "rs_volume": 0.6958075720636303,
+      "multiplicity": 40,
+      "within_group_spread": 1.1102230246251565e-15
+    },
+    {
+      "rs_volume": 0.7623248742023611,
+      "multiplicity": 20,
+      "within_group_spread": 8.881784197001252e-16
+    },
+    {
+      "rs_volume": 0.9491014361920289,
+      "multiplicity": 20,
+      "within_group_spread": 2.7755575615628914e-15
+    },
+    {
+      "rs_volume": 0.9761741996365594,
+      "multiplicity": 10,
+      "within_group_spread": 1.3322676295501878e-15
+    }
+  ],
+  "equal_weight_mean": 0.7460038008035779,
+  "equal_weight_sd": 0.20316893893159418,
+  "minimum_positive_volume": 0.650782799757706,
+  "maximum_volume": 0.97617419963656,
+  "checks_max_absolute_residual": {
+    "orthogonality": 4.440892098500626e-16,
+    "closure": 3.3306690738754696e-16,
+    "casimir": 7.105427357601002e-15,
+    "prefix_casimir": 7.105427357601002e-15,
+    "hermiticity": 8.881784197001252e-16,
+    "invariant_subspace": 6.661338147750939e-16,
+    "epsilon_vs_commutator": 2.220446049250313e-16,
+    "dense_tensor_vs_commutator": 2.220446049250313e-16,
+    "magnetic_root_projection": 1.2215284667138816e-15,
+    "independent_volume": 8.88182262394618e-16,
+    "eigensystem": 9.09180472805593e-16,
+    "trace_moments": 3.9968028886505635e-15,
+    "permutation_spectrum": 1.887379141862766e-15,
+    "four_face_previous": 0.0,
+    "analytic_half_spin": 0.0,
+    "saturated_spin_zero": 0.0
+  },
+  "maximum_singlet_dimension": 4,
+  "maximum_magnetic_m0_dimension": 26,
+  "archive": "operators_k4_n5.npz",
+  "archive_bytes": 70726,
+  "archive_sha256": "424f00548e75eacf5a93c6f802efd01bffcb3f1fd9ef94f8de1911de5660f984",
+  "basis_csv": "basis_k4_n5.csv",
+  "eigenstates_csv": "eigenstates_k4_n5.csv",
+  "elapsed_seconds": 0.3435021670011338
+}
