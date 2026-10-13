@@ -1,0 +1,50 @@
+[
+  {
+    "L": 4,
+    "K": 4,
+    "graph": "complete",
+    "beta": 0.08970732084237028,
+    "mean_volume": 0.4461064958087603,
+    "kind": "maximum"
+  },
+  {
+    "L": 5,
+    "K": 5,
+    "graph": "complete",
+    "beta": 0.11964215391410753,
+    "mean_volume": 1.0460863408259025,
+    "kind": "maximum"
+  },
+  {
+    "L": 5,
+    "K": 5,
+    "graph": "complete",
+    "beta": 0.419258903764166,
+    "mean_volume": 1.0341451878122736,
+    "kind": "minimum"
+  },
+  {
+    "L": 4,
+    "K": 4,
+    "graph": "ring",
+    "beta": 0.08936656161511217,
+    "mean_volume": 0.44619348798301295,
+    "kind": "maximum"
+  },
+  {
+    "L": 5,
+    "K": 5,
+    "graph": "ring",
+    "beta": 0.12496271860945328,
+    "mean_volume": 0.5247637280350455,
+    "kind": "maximum"
+  },
+  {
+    "L": 5,
+    "K": 5,
+    "graph": "ring",
+    "beta": 0.2088959909124835,
+    "mean_volume": 0.5229501690878313,
+    "kind": "minimum"
+  }
+]

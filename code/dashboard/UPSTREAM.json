@@ -1,0 +1,18 @@
+{
+  "repository": "https://github.com/space-cadet/info-dash",
+  "revision": "80f8a983feb8d33dbdab837fc00c21dc96f25770",
+  "localAdditions": [
+    "project-navigation.js",
+    "datasets.json",
+    "datasets/",
+    "data.json",
+    "markdown-renderer.js",
+    "vendor/marked-17.0.1.min.js",
+    "vendor/katex/ (KaTeX 0.16.47)",
+    "infodash/index.html (legacy URL redirect)"
+  ],
+  "localChanges": {
+    "index.html": "Four responsive section tabs and local Markdown/math rendering assets",
+    "dashboard.js": "Persistent four-tab InfoDash navigation and an in-dashboard Markdown/LaTeX reader for notes"
+  }
+}

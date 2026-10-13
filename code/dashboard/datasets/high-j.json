@@ -1,0 +1,788 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "Higher-J flat-boundary probes",
+    "subtitle": "Saved Python and Rust probes extend the earlier weighted-input boundary scans."
+  },
+  "columns": [
+    {
+      "key": "runId",
+      "label": "Case",
+      "type": "string"
+    },
+    {
+      "key": "parameters.J",
+      "label": "J",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.phiRadians",
+      "label": "phiRadians",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.sourceGroup",
+      "label": "sourceGroup",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.classicalVolumeAtUnitTotalArea",
+      "label": "classicalVolumeAtUnitTotalArea",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.classicalVolumeProjectUnitsAtUnitTotalArea",
+      "label": "classicalVolumeProjectUnitsAtUnitTotalArea",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.normalClosureResidual",
+      "label": "normalClosureResidual",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.weightedSpinorClosureMatrixError",
+      "label": "weightedSpinorClosureMatrixError",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.faceNormalCrossRatioReal",
+      "label": "faceNormalCrossRatioReal",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.faceNormalCrossRatioImag",
+      "label": "faceNormalCrossRatioImag",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.rs.geometryMatchedMeanOverJ32",
+      "label": "rs.geometryMatchedMeanOverJ32",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.rs.geometryMatchedSDOverJ32",
+      "label": "rs.geometryMatchedSDOverJ32",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.rs.absoluteDifferenceOverJ32",
+      "label": "rs.absoluteDifferenceOverJ32",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.rs.ratioToClassical",
+      "label": "rs.ratioToClassical",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.al.geometryMatchedMeanOverJ32",
+      "label": "al.geometryMatchedMeanOverJ32",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.al.geometryMatchedSDOverJ32",
+      "label": "al.geometryMatchedSDOverJ32",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.al.absoluteDifferenceOverJ32",
+      "label": "al.absoluteDifferenceOverJ32",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.al.ratioToClassical",
+      "label": "al.ratioToClassical",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.ambientDimension",
+      "label": "ambientDimension",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.norm",
+      "label": "norm",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.classicalProject",
+      "label": "classicalProject",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.rsMeanOverJ32",
+      "label": "rsMeanOverJ32",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.alMeanOverJ32",
+      "label": "alMeanOverJ32",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.rsGeometryMatched",
+      "label": "rsGeometryMatched",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.alGeometryMatched",
+      "label": "alGeometryMatched",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "series",
+      "label": "Series",
+      "type": "string",
+      "visible": false
+    }
+  ],
+  "charts": {
+    "type": "scatter",
+    "x": "parameters.J",
+    "y": "results.classicalVolumeAtUnitTotalArea",
+    "groupBy": "series"
+  },
+  "runs": [
+    {
+      "runId": "high-j:case-0001:1",
+      "task": "T5c",
+      "status": "complete",
+      "description": "Higher-J flat-boundary probes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "J": 8,
+        "phiRadians": 0.0
+      },
+      "results": {
+        "sourceGroup": "pythonResults",
+        "classicalVolumeAtUnitTotalArea": 0.0,
+        "classicalVolumeProjectUnitsAtUnitTotalArea": 0.0,
+        "normalClosureResidual": 0.0,
+        "weightedSpinorClosureMatrixError": 3.1401849173675503e-16,
+        "faceNormalCrossRatioReal": 0.3333333333333333,
+        "faceNormalCrossRatioImag": 4.7136677276662527e-17,
+        "rs": {
+          "geometryMatchedMeanOverJ32": 0.003889270473042548,
+          "geometryMatchedSDOverJ32": 0.002380892830497959,
+          "absoluteDifferenceOverJ32": 0.003889270473042548,
+          "ratioToClassical": null
+        },
+        "al": {
+          "geometryMatchedMeanOverJ32": 0.0038892704730425485,
+          "geometryMatchedSDOverJ32": 0.0023808928304979568,
+          "absoluteDifferenceOverJ32": 0.0038892704730425485,
+          "ratioToClassical": null
+        }
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5c_degenerate_limits_highJ_results.json": "cfac2bd3c940816094b4edd80cc85ff5fa3ab469f5545fe9678b453055d4d7e4"
+        },
+        "presentationSource": "results/t5c_degenerate_limits_highJ_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$.pythonResults[0]"
+      },
+      "assessment": {
+        "summary": "Saved Python and Rust probes extend the earlier weighted-input boundary scans.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "t5c_degenerate_limits_highJ_results.json",
+          "path": "../study-assets/results/t5c_degenerate_limits_highJ_results.json",
+          "kind": "data",
+          "sha256": "cfac2bd3c940816094b4edd80cc85ff5fa3ab469f5545fe9678b453055d4d7e4",
+          "sourcePath": "results/t5c_degenerate_limits_highJ_results.json",
+          "sourceSha256": "cfac2bd3c940816094b4edd80cc85ff5fa3ab469f5545fe9678b453055d4d7e4"
+        }
+      ],
+      "figures": [
+        {
+          "title": "High j boundary",
+          "path": "../study-assets/figures/dashboard-history/high_j_boundary.png",
+          "tags": [
+            "T5c"
+          ]
+        }
+      ],
+      "series": "sourceGroup=pythonResults"
+    },
+    {
+      "runId": "high-j:case-0002:2",
+      "task": "T5c",
+      "status": "complete",
+      "description": "Higher-J flat-boundary probes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "J": 8,
+        "phiRadians": 0.01
+      },
+      "results": {
+        "sourceGroup": "pythonResults",
+        "classicalVolumeAtUnitTotalArea": 0.0051699839114892725,
+        "classicalVolumeProjectUnitsAtUnitTotalArea": 0.0005983903931711765,
+        "normalClosureResidual": 0.0,
+        "weightedSpinorClosureMatrixError": 3.199518867891292e-16,
+        "faceNormalCrossRatioReal": 0.3333333335185216,
+        "faceNormalCrossRatioImag": 0.0038490659449481684,
+        "rs": {
+          "geometryMatchedMeanOverJ32": 0.003889459521401364,
+          "geometryMatchedSDOverJ32": 0.0023808922577986894,
+          "absoluteDifferenceOverJ32": 0.0032910691282301875,
+          "ratioToClassical": 6.499869593141579
+        },
+        "al": {
+          "geometryMatchedMeanOverJ32": 0.0038894595214013614,
+          "geometryMatchedSDOverJ32": 0.002380892257798694,
+          "absoluteDifferenceOverJ32": 0.003291069128230185,
+          "ratioToClassical": 6.499869593141574
+        }
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5c_degenerate_limits_highJ_results.json": "cfac2bd3c940816094b4edd80cc85ff5fa3ab469f5545fe9678b453055d4d7e4"
+        },
+        "presentationSource": "results/t5c_degenerate_limits_highJ_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$.pythonResults[1]"
+      },
+      "assessment": {
+        "summary": "Saved Python and Rust probes extend the earlier weighted-input boundary scans.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "sourceGroup=pythonResults"
+    },
+    {
+      "runId": "high-j:case-0003:3",
+      "task": "T5c",
+      "status": "complete",
+      "description": "Higher-J flat-boundary probes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "J": 8,
+        "phiRadians": 0.05
+      },
+      "results": {
+        "sourceGroup": "pythonResults",
+        "classicalVolumeAtUnitTotalArea": 0.011558123412397175,
+        "classicalVolumeProjectUnitsAtUnitTotalArea": 0.001337773991461613,
+        "normalClosureResidual": 0.0,
+        "weightedSpinorClosureMatrixError": 3.178335107142479e-16,
+        "faceNormalCrossRatioReal": 0.33333344912230845,
+        "faceNormalCrossRatioImag": 0.019253028728732198,
+        "rs": {
+          "geometryMatchedMeanOverJ32": 0.0038939929484475733,
+          "geometryMatchedSDOverJ32": 0.002380873979424161,
+          "absoluteDifferenceOverJ32": 0.0025562189569859604,
+          "ratioToClassical": 2.9108003095448955
+        },
+        "al": {
+          "geometryMatchedMeanOverJ32": 0.0038939929484475733,
+          "geometryMatchedSDOverJ32": 0.00238087397942416,
+          "absoluteDifferenceOverJ32": 0.0025562189569859604,
+          "ratioToClassical": 2.9108003095448955
+        }
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5c_degenerate_limits_highJ_results.json": "cfac2bd3c940816094b4edd80cc85ff5fa3ab469f5545fe9678b453055d4d7e4"
+        },
+        "presentationSource": "results/t5c_degenerate_limits_highJ_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$.pythonResults[2]"
+      },
+      "assessment": {
+        "summary": "Saved Python and Rust probes extend the earlier weighted-input boundary scans.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "sourceGroup=pythonResults"
+    },
+    {
+      "runId": "high-j:case-0004:4",
+      "task": "T5c",
+      "status": "complete",
+      "description": "Higher-J flat-boundary probes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "J": 8,
+        "phiRadians": 1.5707963267948966
+      },
+      "results": {
+        "sourceGroup": "pythonResults",
+        "classicalVolumeAtUnitTotalArea": 0.05170026995011663,
+        "classicalVolumeProjectUnitsAtUnitTotalArea": 0.005983953797951861,
+        "normalClosureResidual": 0.0,
+        "weightedSpinorClosureMatrixError": 3.177651709940706e-16,
+        "faceNormalCrossRatioReal": 0.5,
+        "faceNormalCrossRatioImag": 0.8660254037844386,
+        "rs": {
+          "geometryMatchedMeanOverJ32": 0.005787982210048478,
+          "geometryMatchedSDOverJ32": 0.0014127307436094894,
+          "absoluteDifferenceOverJ32": 0.00019597158790338274,
+          "ratioToClassical": 0.9672504844588776
+        },
+        "al": {
+          "geometryMatchedMeanOverJ32": 0.005787982210048478,
+          "geometryMatchedSDOverJ32": 0.0014127307436094894,
+          "absoluteDifferenceOverJ32": 0.00019597158790338274,
+          "ratioToClassical": 0.9672504844588776
+        }
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5c_degenerate_limits_highJ_results.json": "cfac2bd3c940816094b4edd80cc85ff5fa3ab469f5545fe9678b453055d4d7e4"
+        },
+        "presentationSource": "results/t5c_degenerate_limits_highJ_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$.pythonResults[3]"
+      },
+      "assessment": {
+        "summary": "Saved Python and Rust probes extend the earlier weighted-input boundary scans.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "sourceGroup=pythonResults"
+    },
+    {
+      "runId": "high-j:case-0005:5",
+      "task": "T5c",
+      "status": "complete",
+      "description": "Higher-J flat-boundary probes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "J": 9,
+        "phiRadians": 0.0
+      },
+      "results": {
+        "sourceGroup": "pythonResults",
+        "classicalVolumeAtUnitTotalArea": 0.0,
+        "classicalVolumeProjectUnitsAtUnitTotalArea": 0.0,
+        "normalClosureResidual": 0.0,
+        "weightedSpinorClosureMatrixError": 3.1401849173675503e-16,
+        "faceNormalCrossRatioReal": 0.3333333333333333,
+        "faceNormalCrossRatioImag": 4.7136677276662527e-17,
+        "rs": {
+          "geometryMatchedMeanOverJ32": 0.003798689493907662,
+          "geometryMatchedSDOverJ32": 0.0022104038825236697,
+          "absoluteDifferenceOverJ32": 0.003798689493907662,
+          "ratioToClassical": null
+        },
+        "al": {
+          "geometryMatchedMeanOverJ32": 0.003798689493907662,
+          "geometryMatchedSDOverJ32": 0.002210403882523671,
+          "absoluteDifferenceOverJ32": 0.003798689493907662,
+          "ratioToClassical": null
+        }
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5c_degenerate_limits_highJ_results.json": "cfac2bd3c940816094b4edd80cc85ff5fa3ab469f5545fe9678b453055d4d7e4"
+        },
+        "presentationSource": "results/t5c_degenerate_limits_highJ_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$.pythonResults[4]"
+      },
+      "assessment": {
+        "summary": "Saved Python and Rust probes extend the earlier weighted-input boundary scans.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "sourceGroup=pythonResults"
+    },
+    {
+      "runId": "high-j:case-0006:6",
+      "task": "T5c",
+      "status": "complete",
+      "description": "Higher-J flat-boundary probes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "J": 9,
+        "phiRadians": 0.05
+      },
+      "results": {
+        "sourceGroup": "pythonResults",
+        "classicalVolumeAtUnitTotalArea": 0.011558123412397175,
+        "classicalVolumeProjectUnitsAtUnitTotalArea": 0.001337773991461613,
+        "normalClosureResidual": 0.0,
+        "weightedSpinorClosureMatrixError": 3.178335107142479e-16,
+        "faceNormalCrossRatioReal": 0.33333344912230845,
+        "faceNormalCrossRatioImag": 0.019253028728732198,
+        "rs": {
+          "geometryMatchedMeanOverJ32": 0.0038040842603674608,
+          "geometryMatchedSDOverJ32": 0.002210521626504857,
+          "absoluteDifferenceOverJ32": 0.002466310268905848,
+          "ratioToClassical": 2.843592628237023
+        },
+        "al": {
+          "geometryMatchedMeanOverJ32": 0.003804084260367461,
+          "geometryMatchedSDOverJ32": 0.002210521626504857,
+          "absoluteDifferenceOverJ32": 0.0024663102689058483,
+          "ratioToClassical": 2.8435926282370234
+        }
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5c_degenerate_limits_highJ_results.json": "cfac2bd3c940816094b4edd80cc85ff5fa3ab469f5545fe9678b453055d4d7e4"
+        },
+        "presentationSource": "results/t5c_degenerate_limits_highJ_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$.pythonResults[5]"
+      },
+      "assessment": {
+        "summary": "Saved Python and Rust probes extend the earlier weighted-input boundary scans.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "sourceGroup=pythonResults"
+    },
+    {
+      "runId": "high-j:case-0007:7",
+      "task": "T5c",
+      "status": "complete",
+      "description": "Higher-J flat-boundary probes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "J": 9,
+        "phiRadians": 1.5707963267948966
+      },
+      "results": {
+        "sourceGroup": "pythonResults",
+        "classicalVolumeAtUnitTotalArea": 0.05170026995011663,
+        "classicalVolumeProjectUnitsAtUnitTotalArea": 0.005983953797951861,
+        "normalClosureResidual": 0.0,
+        "weightedSpinorClosureMatrixError": 3.177651709940706e-16,
+        "faceNormalCrossRatioReal": 0.5,
+        "faceNormalCrossRatioImag": 0.8660254037844386,
+        "rs": {
+          "geometryMatchedMeanOverJ32": 0.005839486839856544,
+          "geometryMatchedSDOverJ32": 0.0011929069628009456,
+          "absoluteDifferenceOverJ32": 0.00014446695809531684,
+          "ratioToClassical": 0.9758576080342125
+        },
+        "al": {
+          "geometryMatchedMeanOverJ32": 0.005839486839856546,
+          "geometryMatchedSDOverJ32": 0.0011929069628009426,
+          "absoluteDifferenceOverJ32": 0.0001444669580953151,
+          "ratioToClassical": 0.9758576080342127
+        }
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5c_degenerate_limits_highJ_results.json": "cfac2bd3c940816094b4edd80cc85ff5fa3ab469f5545fe9678b453055d4d7e4"
+        },
+        "presentationSource": "results/t5c_degenerate_limits_highJ_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$.pythonResults[6]"
+      },
+      "assessment": {
+        "summary": "Saved Python and Rust probes extend the earlier weighted-input boundary scans.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "sourceGroup=pythonResults"
+    },
+    {
+      "runId": "high-j:case-0008:8",
+      "task": "T5c",
+      "status": "complete",
+      "description": "Higher-J flat-boundary probes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "J": 10,
+        "phiRadians": 0.0
+      },
+      "results": {
+        "sourceGroup": "pythonResults",
+        "classicalVolumeAtUnitTotalArea": 0.0,
+        "classicalVolumeProjectUnitsAtUnitTotalArea": 0.0,
+        "normalClosureResidual": 0.0,
+        "weightedSpinorClosureMatrixError": 3.1401849173675503e-16,
+        "faceNormalCrossRatioReal": 0.3333333333333333,
+        "faceNormalCrossRatioImag": 4.7136677276662527e-17,
+        "rs": {
+          "geometryMatchedMeanOverJ32": 0.0036836478124130756,
+          "geometryMatchedSDOverJ32": 0.0021121041411097923,
+          "absoluteDifferenceOverJ32": 0.0036836478124130756,
+          "ratioToClassical": null
+        },
+        "al": {
+          "geometryMatchedMeanOverJ32": 0.0036836478124130743,
+          "geometryMatchedSDOverJ32": 0.002112104141109796,
+          "absoluteDifferenceOverJ32": 0.0036836478124130743,
+          "ratioToClassical": null
+        }
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5c_degenerate_limits_highJ_results.json": "cfac2bd3c940816094b4edd80cc85ff5fa3ab469f5545fe9678b453055d4d7e4"
+        },
+        "presentationSource": "results/t5c_degenerate_limits_highJ_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$.pythonResults[7]"
+      },
+      "assessment": {
+        "summary": "Saved Python and Rust probes extend the earlier weighted-input boundary scans.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "sourceGroup=pythonResults"
+    },
+    {
+      "runId": "high-j:case-0009:9",
+      "task": "T5c",
+      "status": "complete",
+      "description": "Higher-J flat-boundary probes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "J": 2,
+        "phiRadians": 0.0
+      },
+      "results": {
+        "sourceGroup": "rustResults",
+        "ambientDimension": 495,
+        "norm": 1.0000000000000002,
+        "classicalProject": 0.0,
+        "rsMeanOverJ32": 0.020943838292831526,
+        "alMeanOverJ32": 0.010471919146415761,
+        "rsGeometryMatched": 0.0024682550134892765,
+        "alGeometryMatched": 0.002468255013489276
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5c_degenerate_limits_highJ_results.json": "cfac2bd3c940816094b4edd80cc85ff5fa3ab469f5545fe9678b453055d4d7e4"
+        },
+        "presentationSource": "results/t5c_degenerate_limits_highJ_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$.rustResults[0]"
+      },
+      "assessment": {
+        "summary": "Saved Python and Rust probes extend the earlier weighted-input boundary scans.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "sourceGroup=rustResults"
+    },
+    {
+      "runId": "high-j:case-0010:10",
+      "task": "T5c",
+      "status": "complete",
+      "description": "Higher-J flat-boundary probes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "J": 2,
+        "phiRadians": 1.5707963267948966
+      },
+      "results": {
+        "sourceGroup": "rustResults",
+        "ambientDimension": 495,
+        "norm": 1.0000000000000009,
+        "classicalProject": 0.005983953797951862,
+        "rsMeanOverJ32": 0.0179518613938556,
+        "alMeanOverJ32": 0.008975930696927793,
+        "rsGeometryMatched": 0.0021156471544193805,
+        "alGeometryMatched": 0.002115647154419379
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5c_degenerate_limits_highJ_results.json": "cfac2bd3c940816094b4edd80cc85ff5fa3ab469f5545fe9678b453055d4d7e4"
+        },
+        "presentationSource": "results/t5c_degenerate_limits_highJ_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$.rustResults[1]"
+      },
+      "assessment": {
+        "summary": "Saved Python and Rust probes extend the earlier weighted-input boundary scans.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "sourceGroup=rustResults"
+    },
+    {
+      "runId": "high-j:case-0011:11",
+      "task": "T5c",
+      "status": "complete",
+      "description": "Higher-J flat-boundary probes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "J": 10,
+        "phiRadians": 0.0
+      },
+      "results": {
+        "sourceGroup": "rustResults",
+        "ambientDimension": 3108105,
+        "norm": 1.0000000000000089,
+        "classicalProject": 0.0,
+        "rsMeanOverJ32": 0.03125679187164419,
+        "alMeanOverJ32": 0.015628394085961516,
+        "rsGeometryMatched": 0.003683648248429361,
+        "alGeometryMatched": 0.0036836478124130413
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5c_degenerate_limits_highJ_results.json": "cfac2bd3c940816094b4edd80cc85ff5fa3ab469f5545fe9678b453055d4d7e4"
+        },
+        "presentationSource": "results/t5c_degenerate_limits_highJ_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$.rustResults[2]"
+      },
+      "assessment": {
+        "summary": "Saved Python and Rust probes extend the earlier weighted-input boundary scans.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "sourceGroup=rustResults"
+    },
+    {
+      "runId": "high-j:case-0012:12",
+      "task": "T5c",
+      "status": "complete",
+      "description": "Higher-J flat-boundary probes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "J": 10,
+        "phiRadians": 0.05
+      },
+      "results": {
+        "sourceGroup": "rustResults",
+        "ambientDimension": 3108105,
+        "norm": 0.9999999999999925,
+        "classicalProject": 0.001337773991461613,
+        "rsMeanOverJ32": 0.0313093804294135,
+        "alMeanOverJ32": 0.015654686812679675,
+        "rsGeometryMatched": 0.003689845869397945,
+        "alGeometryMatched": 0.003689845067532473
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5c_degenerate_limits_highJ_results.json": "cfac2bd3c940816094b4edd80cc85ff5fa3ab469f5545fe9678b453055d4d7e4"
+        },
+        "presentationSource": "results/t5c_degenerate_limits_highJ_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$.rustResults[3]"
+      },
+      "assessment": {
+        "summary": "Saved Python and Rust probes extend the earlier weighted-input boundary scans.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "sourceGroup=rustResults"
+    },
+    {
+      "runId": "high-j:case-0013:13",
+      "task": "T5c",
+      "status": "complete",
+      "description": "Higher-J flat-boundary probes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "J": 10,
+        "phiRadians": 1.5707963267948966
+      },
+      "results": {
+        "sourceGroup": "rustResults",
+        "ambientDimension": 3108105,
+        "norm": 0.9999999999999832,
+        "classicalProject": 0.005983953797951862,
+        "rsMeanOverJ32": 0.049830200837647,
+        "alMeanOverJ32": 0.024915101331943846,
+        "rsGeometryMatched": 0.005872545486697964,
+        "alGeometryMatched": 0.005872545701922493
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5c_degenerate_limits_highJ_results.json": "cfac2bd3c940816094b4edd80cc85ff5fa3ab469f5545fe9678b453055d4d7e4"
+        },
+        "presentationSource": "results/t5c_degenerate_limits_highJ_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$.rustResults[4]"
+      },
+      "assessment": {
+        "summary": "Saved Python and Rust probes extend the earlier weighted-input boundary scans.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "sourceGroup=rustResults"
+    }
+  ],
+  "figures": [
+    {
+      "title": "High j boundary",
+      "path": "../study-assets/figures/dashboard-history/high_j_boundary.png",
+      "tags": [
+        "T5c"
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "title": "Numerical studies overview",
+      "path": "../index.html"
+    }
+  ]
+}

@@ -3,18 +3,1035 @@
   "jsonNonfinitePolicy": "Nonfinite numbers become null only in dashboard JSON exports; source hashes refer to originals.",
   "studies": [
     {
-      "id": "hamiltonian",
+      "id": "t11-size-comparison",
       "task": "T11",
-      "title": "Four-site Hamiltonian and thermal volume",
-      "description": "30 exact singlet calculations on complete and ring graphs. K=2,3,4 means 4,6,8 bosons; dimensions 20,50,105. Dense K=4 temperature scan: 6,030 rows and 409 energy groups.",
-      "limits": "g=0; empty sites allowed. Project-normalized connected-triple RS volume. The temperature response is a finite-sector crossover; the proposed dense U/t transition scan has not been run. Ground-state entropy uses the Gibbs mixture when degenerate.",
-      "status": "Pilot complete; broader program open",
+      "title": "Four versus five sites: thermal-volume persistence",
+      "description": "Matched mean occupation 2K/L=2: (L,K)=(4,4) and (5,5), singlet dimensions 105 and 1,176. Complete and ring graphs at t=1,U=20, plus free and no-hopping controls. Intermediate-temperature nonmonotonicity persists; the pronounced four-site complete-graph low-temperature collapse does not.",
+      "limits": "The plot reports volume per selected triple; CSV files also retain total volume. Triple counts: 4 for both four-site graphs, 10 for five-site complete, 5 for five-site ring. Unit hopping per bond, g=0. Coordination changes and the odd ring make this a persistence test, not clean finite-size scaling. Six sites were not calculated.",
+      "status": "Calculated and independently checked; prior 38-test suite passed",
+      "catalogueDate": "2026-10-11",
+      "files": [
+        {
+          "name": "L4_K4_complete_U20.npz",
+          "path": "study-assets/results/t11-size-comparison/L4_K4_complete_U20.npz",
+          "source": "results/t11-size-comparison/L4_K4_complete_U20.npz",
+          "sourceSha256": "6628d550cb4b225f0eba79315e325784b1da53e54c9c74116f1d18c4a05b429f"
+        },
+        {
+          "name": "L4_K4_complete_free.npz",
+          "path": "study-assets/results/t11-size-comparison/L4_K4_complete_free.npz",
+          "source": "results/t11-size-comparison/L4_K4_complete_free.npz",
+          "sourceSha256": "d99709afe723d9206e3a662d2377a45e288446c3c9754ed635d7329c050b5c50"
+        },
+        {
+          "name": "L4_K4_complete_no_hopping.npz",
+          "path": "study-assets/results/t11-size-comparison/L4_K4_complete_no_hopping.npz",
+          "source": "results/t11-size-comparison/L4_K4_complete_no_hopping.npz",
+          "sourceSha256": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d"
+        },
+        {
+          "name": "L4_K4_ring_U20.npz",
+          "path": "study-assets/results/t11-size-comparison/L4_K4_ring_U20.npz",
+          "source": "results/t11-size-comparison/L4_K4_ring_U20.npz",
+          "sourceSha256": "4b89f7ef52295a60a3b808b2e30e74e8bed6699b9dee179fde1eb0403a33d01f"
+        },
+        {
+          "name": "L4_K4_ring_free.npz",
+          "path": "study-assets/results/t11-size-comparison/L4_K4_ring_free.npz",
+          "source": "results/t11-size-comparison/L4_K4_ring_free.npz",
+          "sourceSha256": "7f23ba541c89564bb878eae961b7fc9e872eceb25d0150d9c3abae9cd2ff0130"
+        },
+        {
+          "name": "L4_K4_ring_no_hopping.npz",
+          "path": "study-assets/results/t11-size-comparison/L4_K4_ring_no_hopping.npz",
+          "source": "results/t11-size-comparison/L4_K4_ring_no_hopping.npz",
+          "sourceSha256": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d"
+        },
+        {
+          "name": "L5_K5_complete_U20.npz",
+          "path": "study-assets/results/t11-size-comparison/L5_K5_complete_U20.npz",
+          "source": "results/t11-size-comparison/L5_K5_complete_U20.npz",
+          "sourceSha256": "aff47f842e0367735a6cce637339152d2617adbde0850ec2822f9b51d9da8c53"
+        },
+        {
+          "name": "L5_K5_complete_free.npz",
+          "path": "study-assets/results/t11-size-comparison/L5_K5_complete_free.npz",
+          "source": "results/t11-size-comparison/L5_K5_complete_free.npz",
+          "sourceSha256": "ba66be3dbadf813a7c2db1887d8a2da59a100ca3ad7fee5a578fb908cc9324d1"
+        },
+        {
+          "name": "L5_K5_complete_no_hopping.npz",
+          "path": "study-assets/results/t11-size-comparison/L5_K5_complete_no_hopping.npz",
+          "source": "results/t11-size-comparison/L5_K5_complete_no_hopping.npz",
+          "sourceSha256": "bee2eb1d62db1bde43bad5d1ef1531235bbfc8a10073c9c7915979ba93ad4480"
+        },
+        {
+          "name": "L5_K5_ring_U20.npz",
+          "path": "study-assets/results/t11-size-comparison/L5_K5_ring_U20.npz",
+          "source": "results/t11-size-comparison/L5_K5_ring_U20.npz",
+          "sourceSha256": "5079b3be44b0e4003b5eb01b4485693a2049ba4c4355d4d2a798cea9d825d13f"
+        },
+        {
+          "name": "L5_K5_ring_free.npz",
+          "path": "study-assets/results/t11-size-comparison/L5_K5_ring_free.npz",
+          "source": "results/t11-size-comparison/L5_K5_ring_free.npz",
+          "sourceSha256": "c82c2c106ff85c623ce04615d6c8440989649aae73e559d9afc19bc3ca873e1d"
+        },
+        {
+          "name": "L5_K5_ring_no_hopping.npz",
+          "path": "study-assets/results/t11-size-comparison/L5_K5_ring_no_hopping.npz",
+          "source": "results/t11-size-comparison/L5_K5_ring_no_hopping.npz",
+          "sourceSha256": "2cfdbc42aabf149773684273ba1e7b5f051f441478656cb47268069f42cb1ee3"
+        },
+        {
+          "name": "README.md",
+          "path": "study-assets/results/t11-size-comparison/README.txt",
+          "source": "results/t11-size-comparison/README.md",
+          "sourceSha256": "d2cdca9d753c6dafc02c1e117ba890414aac8ef7d0145add60fc55adfb3ee010"
+        },
+        {
+          "name": "energy_levels.csv",
+          "path": "study-assets/results/t11-size-comparison/energy_levels.csv",
+          "source": "results/t11-size-comparison/energy_levels.csv",
+          "sourceSha256": "c72071429162bd1c7dd5dbfa020537e3976d4c2b2ecfd6b51059a373611d163c"
+        },
+        {
+          "name": "independent_checks.json",
+          "path": "study-assets/results/t11-size-comparison/independent_checks.json",
+          "source": "results/t11-size-comparison/independent_checks.json",
+          "sourceSha256": "0da56707d73907ef8a764dc83bdc1374784e4de4e28568d11c728264d4ce6435"
+        },
+        {
+          "name": "protocol.json",
+          "path": "study-assets/results/t11-size-comparison/protocol.json",
+          "source": "results/t11-size-comparison/protocol.json",
+          "sourceSha256": "4b0307ad3cd4dd925c741a377e9dcab060ff9e50d6ae28e6c79c2e28c471586d"
+        },
+        {
+          "name": "sha256.json",
+          "path": "study-assets/results/t11-size-comparison/sha256.json",
+          "source": "results/t11-size-comparison/sha256.json",
+          "sourceSha256": "a0ff40c8b915f8d8a33f74309917d1e4a4e1e3ea918938dfa7ec6e8d3ded6845"
+        },
+        {
+          "name": "summary.csv",
+          "path": "study-assets/results/t11-size-comparison/summary.csv",
+          "source": "results/t11-size-comparison/summary.csv",
+          "sourceSha256": "181539c4faa126bbb75a1809e18ecb039b1f49034f542abdca70d6caff1e9620"
+        },
+        {
+          "name": "thermal_scan.csv",
+          "path": "study-assets/results/t11-size-comparison/thermal_scan.csv",
+          "source": "results/t11-size-comparison/thermal_scan.csv",
+          "sourceSha256": "71c31045d7a123a477faa778ffbfafadcc200aa3c71545dd63310e90e9b2a81b"
+        },
+        {
+          "name": "turning_points.json",
+          "path": "study-assets/results/t11-size-comparison/turning_points.json",
+          "source": "results/t11-size-comparison/turning_points.json",
+          "sourceSha256": "2007d409d63ef4c31e063f58a570d9b643c82718b8792a57c5a747466f799711"
+        },
+        {
+          "name": "validation.json",
+          "path": "study-assets/results/t11-size-comparison/validation.json",
+          "source": "results/t11-size-comparison/validation.json",
+          "sourceSha256": "eb54e9179fac09a33dd45004698fed3fffcf87c953afe68f9284df977477354b"
+        },
+        {
+          "name": "t11_size_comparison.py",
+          "path": "study-assets/code/python/t11_size_comparison.py",
+          "source": "code/python/t11_size_comparison.py",
+          "sourceSha256": "217d818a53ea9aa19ed198313819bc14a9c5eccbf1db359a2a2bbc3a7215488b"
+        },
+        {
+          "name": "verify_t11_size_comparison.py",
+          "path": "study-assets/code/python/verify_t11_size_comparison.py",
+          "source": "code/python/verify_t11_size_comparison.py",
+          "sourceSha256": "608d140ac55feb688c76223a5d7a3c0a64053316ab8315d4d39ccd100bdd0acf"
+        },
+        {
+          "name": "plot_t11_size_comparison.py",
+          "path": "study-assets/code/python/plot_t11_size_comparison.py",
+          "source": "code/python/plot_t11_size_comparison.py",
+          "sourceSha256": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
+        }
+      ],
+      "figures": [
+        {
+          "name": "volume_comparison.png",
+          "path": "study-assets/results/t11-size-comparison/volume_comparison.png",
+          "source": "results/t11-size-comparison/volume_comparison.png",
+          "sourceSha256": "a6e79b800df92bacfd177d623aaadf2b9adbacce1122a932c1ea630802a7d6db",
+          "title": "Four versus five sites: volume per selected triple at U/t=20",
+          "width": 2100,
+          "height": 1020,
+          "wide": false,
+          "pdf": "study-assets/results/t11-size-comparison/volume_comparison.pdf"
+        },
+        {
+          "name": "four-and-five-site-graphs.png",
+          "path": "study-assets/figures/hamiltonian-systems/four-and-five-site-graphs.png",
+          "source": "figures/hamiltonian-systems/four-and-five-site-graphs.png",
+          "sourceSha256": "1760c1c22599f6c6aefc0af6923f308ce81ee4cefa657f18544421e00b9716fd",
+          "title": "Complete and ring interaction graphs, with one selected volume triple",
+          "width": 1536,
+          "height": 1024,
+          "wide": false
+        }
+      ],
+      "table": {
+        "columns": [
+          "L",
+          "K",
+          "graph",
+          "case",
+          "dimension",
+          "triples",
+          "gap",
+          "ground_degeneracy",
+          "ground_volume",
+          "peak_volume"
+        ],
+        "rows": [
+          {
+            "L": "4",
+            "K": "4",
+            "graph": "complete",
+            "case": "no_hopping",
+            "dimension": "105",
+            "triples": "4",
+            "ground_energy": "4.0",
+            "gap": "0.9999999999999982",
+            "ground_degeneracy": "3",
+            "ground_volume": "0.4062042536485209",
+            "ground_zero_probability": "0.33333333333333326",
+            "infinite_temperature_volume": "0.1755636530239478",
+            "peak_volume": "0.44639247805779614",
+            "peak_beta": "1.7782794100389228",
+            "eigen_residual": "2.220446049250313e-16"
+          },
+          {
+            "L": "4",
+            "K": "4",
+            "graph": "complete",
+            "case": "free",
+            "dimension": "105",
+            "triples": "4",
+            "ground_energy": "-8.00000000000006",
+            "gap": "4.000000000000038",
+            "ground_degeneracy": "15",
+            "ground_volume": "0.21640101090289662",
+            "ground_zero_probability": "0.5552083333333333",
+            "infinite_temperature_volume": "0.1755636530239478",
+            "peak_volume": "0.21640101090846642",
+            "peak_beta": "10000.0",
+            "eigen_residual": "1.7763568394002505e-14"
+          },
+          {
+            "L": "4",
+            "K": "4",
+            "graph": "complete",
+            "case": "U20",
+            "dimension": "105",
+            "triples": "4",
+            "ground_energy": "78.47443546198897",
+            "gap": "0.009225701259197194",
+            "ground_degeneracy": "1",
+            "ground_volume": "0.033487457345959766",
+            "ground_zero_probability": "0.9315436612208893",
+            "infinite_temperature_volume": "0.17556365302394783",
+            "peak_volume": "0.44610328157265006",
+            "peak_beta": "0.08912509381337455",
+            "eigen_residual": "1.3500311979441904e-13"
+          },
+          {
+            "L": "4",
+            "K": "4",
+            "graph": "ring",
+            "case": "no_hopping",
+            "dimension": "105",
+            "triples": "4",
+            "ground_energy": "4.0",
+            "gap": "0.9999999999999982",
+            "ground_degeneracy": "3",
+            "ground_volume": "0.4062042536485209",
+            "ground_zero_probability": "0.33333333333333326",
+            "infinite_temperature_volume": "0.1755636530239478",
+            "peak_volume": "0.44639247805779614",
+            "peak_beta": "1.7782794100389228",
+            "eigen_residual": "2.220446049250313e-16"
+          },
+          {
+            "L": "4",
+            "K": "4",
+            "graph": "ring",
+            "case": "free",
+            "dimension": "105",
+            "triples": "4",
+            "ground_energy": "-8.00000000000001",
+            "gap": "1.9999999999999867",
+            "ground_degeneracy": "5",
+            "ground_volume": "0.2674817303204088",
+            "ground_zero_probability": "0.4520833333333335",
+            "infinite_temperature_volume": "0.1755636530239478",
+            "peak_volume": "0.26748173032215916",
+            "peak_beta": "10000.0",
+            "eigen_residual": "1.1102230246251565e-14"
+          },
+          {
+            "L": "4",
+            "K": "4",
+            "graph": "ring",
+            "case": "U20",
+            "dimension": "105",
+            "triples": "4",
+            "ground_energy": "78.47851810575729",
+            "gap": "0.35986961695610376",
+            "ground_degeneracy": "1",
+            "ground_volume": "0.2831716199512713",
+            "ground_zero_probability": "0.521862918638792",
+            "infinite_temperature_volume": "0.17556365302394789",
+            "peak_volume": "0.4461929198804264",
+            "peak_beta": "0.08912509381337455",
+            "eigen_residual": "2.8421709430404007e-13"
+          },
+          {
+            "L": "5",
+            "K": "5",
+            "graph": "complete",
+            "case": "no_hopping",
+            "dimension": "1176",
+            "triples": "10",
+            "ground_energy": "4.999999999999998",
+            "gap": "0.9999999999999964",
+            "ground_degeneracy": "6",
+            "ground_volume": "1.0155106341213023",
+            "ground_zero_probability": "0.0",
+            "infinite_temperature_volume": "0.5317790296681685",
+            "peak_volume": "1.046041805444881",
+            "peak_beta": "2.23872113856834",
+            "eigen_residual": "8.881784197001252e-15"
+          },
+          {
+            "L": "5",
+            "K": "5",
+            "graph": "complete",
+            "case": "free",
+            "dimension": "1176",
+            "triples": "10",
+            "ground_energy": "-15.000000000000053",
+            "gap": "5.000000000000023",
+            "ground_degeneracy": "56",
+            "ground_volume": "0.6256079671627415",
+            "ground_zero_probability": "0.22749010989010987",
+            "infinite_temperature_volume": "0.5317790296681686",
+            "peak_volume": "0.6256079671637694",
+            "peak_beta": "10000.0",
+            "eigen_residual": "1.1087753178496256e-13"
+          },
+          {
+            "L": "5",
+            "K": "5",
+            "graph": "complete",
+            "case": "U20",
+            "dimension": "1176",
+            "triples": "10",
+            "ground_energy": "96.84695163404879",
+            "gap": "12.643382000317303",
+            "ground_degeneracy": "6",
+            "ground_volume": "1.0342172818488102",
+            "ground_zero_probability": "0.00012911960394830168",
+            "infinite_temperature_volume": "0.5317790296681688",
+            "peak_volume": "1.046085068906618",
+            "peak_beta": "0.12022644346174131",
+            "eigen_residual": "1.0231815394945443e-12"
+          },
+          {
+            "L": "5",
+            "K": "5",
+            "graph": "ring",
+            "case": "no_hopping",
+            "dimension": "1176",
+            "triples": "5",
+            "ground_energy": "4.999999999999998",
+            "gap": "0.9999999999999964",
+            "ground_degeneracy": "6",
+            "ground_volume": "0.507755317060651",
+            "ground_zero_probability": "0.0",
+            "infinite_temperature_volume": "0.26588951483408424",
+            "peak_volume": "0.5230209027224381",
+            "peak_beta": "2.23872113856834",
+            "eigen_residual": "8.881784197001252e-15"
+          },
+          {
+            "L": "5",
+            "K": "5",
+            "graph": "ring",
+            "case": "free",
+            "dimension": "1176",
+            "triples": "5",
+            "ground_energy": "-13.090169943749483",
+            "gap": "1.381966011250105",
+            "ground_degeneracy": "6",
+            "ground_volume": "0.3564277403773053",
+            "ground_zero_probability": "0.15469948717948714",
+            "infinite_temperature_volume": "0.26588951483408424",
+            "peak_volume": "0.35642774037779723",
+            "peak_beta": "10000.0",
+            "eigen_residual": "3.4083846855992306e-14"
+          },
+          {
+            "L": "5",
+            "K": "5",
+            "graph": "ring",
+            "case": "U20",
+            "dimension": "1176",
+            "triples": "5",
+            "ground_energy": "97.7522709286855",
+            "gap": "0.5560475106721015",
+            "ground_degeneracy": "1",
+            "ground_volume": "0.6314058171391703",
+            "ground_zero_probability": "5.161024813769624e-05",
+            "infinite_temperature_volume": "0.2658895148340843",
+            "peak_volume": "0.6314058171391705",
+            "peak_beta": "66.06934480075964",
+            "eigen_residual": "6.536993168992922e-13"
+          }
+        ]
+      }
+    },
+    {
+      "id": "t11-geometric-interpretation",
+      "task": "T11",
+      "title": "Prepared tetrahedral FL states and the volume crossover",
+      "description": "Five explicitly constructed K=4 FL references: equal input face areas, phi=90,60,30,10,0 degrees. Saved face-spin distributions, pair correlations, angular fluctuations, volume distributions and overlaps; comparisons with the first three energy groups of complete/ring Hamiltonians at t=1,U=20. The complete ground is kernel-dominated despite nearly unit four-face weight.",
+      "limits": "FL references are prepared states; energy groups and Gibbs mixtures are separate comparisons. This record contains static readouts; the separate T11 candidate-Hamiltonian record includes geometric-coupling scans and time evolution. Angular normalization is assignment-specific and conditioning retains coherence and selection probabilities. Geometric volume uses the established sqrt(2)/12 four-valent conversion. The Hamiltonian in this record uses g=0. No new independent Rust run.",
+      "status": "Calculated and independently checked; prior 42-test suite passed",
+      "catalogueDate": "2026-10-11",
       "files": [
         {
           "name": "README.md",
-          "path": "study-assets/results/hamiltonian-studies/README.md",
+          "path": "study-assets/results/t11-geometric-interpretation/README.txt",
+          "source": "results/t11-geometric-interpretation/README.md",
+          "sourceSha256": "be3c91cb722dd726159f955ee5183e0381268217b02bb47c043462518e7e8875"
+        },
+        {
+          "name": "area_sectors.csv",
+          "path": "study-assets/results/t11-geometric-interpretation/area_sectors.csv",
+          "source": "results/t11-geometric-interpretation/area_sectors.csv",
+          "sourceSha256": "a58745ab6e1dcd5766047b4d38329bde0393b31a8b085fda5f36838e5ae403a1"
+        },
+        {
+          "name": "energy_groups.csv",
+          "path": "study-assets/results/t11-geometric-interpretation/energy_groups.csv",
+          "source": "results/t11-geometric-interpretation/energy_groups.csv",
+          "sourceSha256": "c64f52af751b0b108b041402a335fce7cff2f2c350457d330d207f9cfe1644f4"
+        },
+        {
+          "name": "independent_checks.json",
+          "path": "study-assets/results/t11-geometric-interpretation/independent_checks.json",
+          "source": "results/t11-geometric-interpretation/independent_checks.json",
+          "sourceSha256": "ad5051be30f3b9caba5af41002da5761701df067d141e14aa768559e87efe3f4"
+        },
+        {
+          "name": "pair_correlations.csv",
+          "path": "study-assets/results/t11-geometric-interpretation/pair_correlations.csv",
+          "source": "results/t11-geometric-interpretation/pair_correlations.csv",
+          "sourceSha256": "b0327b99e22ff92020e861469e514377acaa1ba6db2266a14cb05669206d84d5"
+        },
+        {
+          "name": "protocol.json",
+          "path": "study-assets/results/t11-geometric-interpretation/protocol.json",
+          "source": "results/t11-geometric-interpretation/protocol.json",
+          "sourceSha256": "b39fc5121f06cb0c8cea3d022c0cd75aa3493c84bb69b50c7bf0693fe567d699"
+        },
+        {
+          "name": "provenance.json",
+          "path": "study-assets/results/t11-geometric-interpretation/provenance.json",
+          "source": "results/t11-geometric-interpretation/provenance.json",
+          "sourceSha256": "a604e8cd26bc17e8ee8f3bfdb9cf9f042542524a6a24b5c04b026958417f210e"
+        },
+        {
+          "name": "reference_inputs.json",
+          "path": "study-assets/results/t11-geometric-interpretation/reference_inputs.json",
+          "source": "results/t11-geometric-interpretation/reference_inputs.json",
+          "sourceSha256": "a34e6f228fac6f90fca5f57b1d3cb3fdc423e64ec80d736a07412cc4cf19cc4a"
+        },
+        {
+          "name": "reference_overlaps.csv",
+          "path": "study-assets/results/t11-geometric-interpretation/reference_overlaps.csv",
+          "source": "results/t11-geometric-interpretation/reference_overlaps.csv",
+          "sourceSha256": "a8c22345dcb29516b5bbf3d8393b7e679887dbdb5e106d802bb114d3163352d4"
+        },
+        {
+          "name": "sha256.json",
+          "path": "study-assets/results/t11-geometric-interpretation/sha256.json",
+          "source": "results/t11-geometric-interpretation/sha256.json",
+          "sourceSha256": "b2ae3747b3bb653abf555251d5510c2d6eceb18504a3aeed37ce133e5db12228"
+        },
+        {
+          "name": "source_hashes.json",
+          "path": "study-assets/results/t11-geometric-interpretation/source_hashes.json",
+          "source": "results/t11-geometric-interpretation/source_hashes.json",
+          "sourceSha256": "39ce9017b25df623ce2ab0bc376c5230511a305d4801db2fb1b5ac2c219347f9"
+        },
+        {
+          "name": "state_details.json",
+          "path": "study-assets/results/t11-geometric-interpretation/state_details.json",
+          "source": "results/t11-geometric-interpretation/state_details.json",
+          "sourceSha256": "9090f730f90918e5ca995687b49d8a863d22617ec439e0c998a1db40da2dd05c"
+        },
+        {
+          "name": "state_summary.csv",
+          "path": "study-assets/results/t11-geometric-interpretation/state_summary.csv",
+          "source": "results/t11-geometric-interpretation/state_summary.csv",
+          "sourceSha256": "6330264041f6054b89d17c4fc225d5f111d7d2b025116fea7bb45f076f50d384"
+        },
+        {
+          "name": "states_and_operators.npz",
+          "path": "study-assets/results/t11-geometric-interpretation/states_and_operators.npz",
+          "source": "results/t11-geometric-interpretation/states_and_operators.npz",
+          "sourceSha256": "8bc5c04190fd61fcde4167e5a68c0ed32bf8f680cb0d5bf88f83d8fe3ae110f4"
+        },
+        {
+          "name": "thermal_geometry.csv",
+          "path": "study-assets/results/t11-geometric-interpretation/thermal_geometry.csv",
+          "source": "results/t11-geometric-interpretation/thermal_geometry.csv",
+          "sourceSha256": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548"
+        },
+        {
+          "name": "validation.json",
+          "path": "study-assets/results/t11-geometric-interpretation/validation.json",
+          "source": "results/t11-geometric-interpretation/validation.json",
+          "sourceSha256": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3"
+        },
+        {
+          "name": "volume_distributions.csv",
+          "path": "study-assets/results/t11-geometric-interpretation/volume_distributions.csv",
+          "source": "results/t11-geometric-interpretation/volume_distributions.csv",
+          "sourceSha256": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce"
+        },
+        {
+          "name": "t11-geometric-interpretation.md",
+          "path": "study-assets/notes/t11-geometric-interpretation.txt",
+          "source": "notes/t11-geometric-interpretation.md",
+          "sourceSha256": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754"
+        },
+        {
+          "name": "geometric_diagnostics.py",
+          "path": "study-assets/code/python/lqg_scattering/geometric_diagnostics.py",
+          "source": "code/python/lqg_scattering/geometric_diagnostics.py",
+          "sourceSha256": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d"
+        },
+        {
+          "name": "t11_geometric_interpretation.py",
+          "path": "study-assets/code/python/t11_geometric_interpretation.py",
+          "source": "code/python/t11_geometric_interpretation.py",
+          "sourceSha256": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568"
+        },
+        {
+          "name": "verify_t11_geometric_interpretation.py",
+          "path": "study-assets/code/python/verify_t11_geometric_interpretation.py",
+          "source": "code/python/verify_t11_geometric_interpretation.py",
+          "sourceSha256": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f"
+        },
+        {
+          "name": "plot_t11_geometric_interpretation.py",
+          "path": "study-assets/code/python/plot_t11_geometric_interpretation.py",
+          "source": "code/python/plot_t11_geometric_interpretation.py",
+          "sourceSha256": "cae00ec4ce3d21febe19edbee7ca1187973ed0180170cbfa5fa41d31af528ce2"
+        },
+        {
+          "name": "test_geometric_diagnostics.py",
+          "path": "study-assets/code/python/test_geometric_diagnostics.py",
+          "source": "code/python/test_geometric_diagnostics.py",
+          "sourceSha256": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
+        }
+      ],
+      "figures": [
+        {
+          "name": "thermal_geometric_diagnostics.png",
+          "path": "study-assets/results/t11-geometric-interpretation/thermal_geometric_diagnostics.png",
+          "source": "results/t11-geometric-interpretation/thermal_geometric_diagnostics.png",
+          "sourceSha256": "50973a1110323b8c1b0731613932f77f799325200431763373a26c5246ff0af0",
+          "title": "Four-face FL references and thermal geometric diagnostics",
+          "width": 2100,
+          "height": 1680,
+          "wide": false,
+          "pdf": "study-assets/results/t11-geometric-interpretation/thermal_geometric_diagnostics.pdf"
+        }
+      ],
+      "table": {
+        "columns": [
+          "state",
+          "four_face_probability",
+          "volume_mean",
+          "geometric_volume_mean",
+          "probability_zero_volume",
+          "conditional_angle_rms_sd"
+        ],
+        "rows": [
+          {
+            "state": "FL_phi90",
+            "four_face_probability": "0.7546296296296306",
+            "mean_active_faces": "3.750000000000005",
+            "volume_mean": "0.3189380712919666",
+            "volume_sd": "0.23973176781151936",
+            "geometric_volume_mean": "0.03758721216485136",
+            "conditional_volume_mean": "0.422641861343955",
+            "probability_zero_volume": "0.35648148148148195",
+            "signed_q_mean": "-0.7216878364870329",
+            "q_rms": "0.9409658158863523",
+            "conditional_angle_rms_sd": "0.5571473822363604",
+            "conditional_angle_max_sd": "0.5571473822363604"
+          },
+          {
+            "state": "FL_phi60",
+            "four_face_probability": "0.7557990933641979",
+            "mean_active_faces": "3.7500000000000018",
+            "volume_mean": "0.3175040406505154",
+            "volume_sd": "0.2391431162028539",
+            "geometric_volume_mean": "0.037418210033018116",
+            "conditional_volume_mean": "0.4200905286049602",
+            "probability_zero_volume": "0.3576750578703707",
+            "signed_q_mean": "-0.6250000000000007",
+            "q_rms": "0.9340213238108293",
+            "conditional_angle_rms_sd": "0.5373467295891358",
+            "conditional_angle_max_sd": "0.5569076363288967"
+          },
+          {
+            "state": "FL_phi30",
+            "four_face_probability": "0.7582103587962958",
+            "mean_active_faces": "3.749999999999998",
+            "volume_mean": "0.3145337454876812",
+            "volume_sd": "0.23798333814049866",
+            "geometric_volume_mean": "0.03706815739105718",
+            "conditional_volume_mean": "0.4148370459973962",
+            "probability_zero_volume": "0.3602792245370368",
+            "signed_q_mean": "-0.36084391824351586",
+            "q_rms": "0.919975090242484",
+            "conditional_angle_rms_sd": "0.4957171465231671",
+            "conditional_angle_max_sd": "0.5563958029704786"
+          },
+          {
+            "state": "FL_phi10",
+            "four_face_probability": "0.7593011021055589",
+            "mean_active_faces": "3.7500000000000036",
+            "volume_mean": "0.3131845844111653",
+            "volume_sd": "0.23747981225255393",
+            "geometric_volume_mean": "0.03690915723337095",
+            "conditional_volume_mean": "0.4124642826708634",
+            "probability_zero_volume": "0.3615158404797032",
+            "signed_q_mean": "-0.12531977765036292",
+            "q_rms": "0.913730725104704",
+            "conditional_angle_rms_sd": "0.47641891186470653",
+            "conditional_angle_max_sd": "0.5561568935238312"
+          },
+          {
+            "state": "FL_phi0",
+            "four_face_probability": "0.7594521604938277",
+            "mean_active_faces": "3.7500000000000027",
+            "volume_mean": "0.31299748096629876",
+            "volume_sd": "0.23741101823421057",
+            "geometric_volume_mean": "0.036887106880929534",
+            "conditional_volume_mean": "0.4121358753693908",
+            "probability_zero_volume": "0.3616898148148151",
+            "signed_q_mean": "-8.838126989374232e-17",
+            "q_rms": "0.9128709291752777",
+            "conditional_angle_rms_sd": "0.47371843433773214",
+            "conditional_angle_max_sd": "0.5561234573715742"
+          },
+          {
+            "state": "complete_level0",
+            "four_face_probability": "0.9999339053367134",
+            "mean_active_faces": "3.999933905136787",
+            "volume_mean": "0.03348745734595963",
+            "volume_sd": "0.12353458139442741",
+            "geometric_volume_mean": "0.003946534695670553",
+            "conditional_volume_mean": "0.03348967083447698",
+            "probability_zero_volume": "0.9315436612208896",
+            "signed_q_mean": "0.0",
+            "q_rms": "0.29214265083383006",
+            "conditional_angle_rms_sd": "0.7384101386878547",
+            "conditional_angle_max_sd": "0.7384101386893146"
+          },
+          {
+            "state": "complete_level1",
+            "four_face_probability": "0.9998775479476307",
+            "mean_active_faces": "3.999877547866832",
+            "volume_mean": "0.601102502697469",
+            "volume_sd": "0.0312669957421207",
+            "geometric_volume_mean": "0.07084060930759756",
+            "conditional_volume_mean": "0.6011761179469471",
+            "probability_zero_volume": "0.0002026718385399641",
+            "signed_q_mean": "0.0",
+            "q_rms": "1.6974672671239057",
+            "conditional_angle_rms_sd": "0.5547150864431718",
+            "conditional_angle_max_sd": "0.5547150864436541"
+          },
+          {
+            "state": "complete_level2",
+            "four_face_probability": "0.9991958563733829",
+            "mean_active_faces": "3.9991958563733814",
+            "volume_mean": "0.48779500427294403",
+            "volume_sd": "0.02594160648708479",
+            "geometric_volume_mean": "0.057487192558386614",
+            "conditional_volume_mean": "0.4881875772017444",
+            "probability_zero_volume": "0.0027662596883223415",
+            "signed_q_mean": "0.0",
+            "q_rms": "1.1148998572438775",
+            "conditional_angle_rms_sd": "0.5084553554396689",
+            "conditional_angle_max_sd": "0.5084553554396701"
+          },
+          {
+            "state": "ring_level0",
+            "four_face_probability": "0.999905969679671",
+            "mean_active_faces": "3.999905969529295",
+            "volume_mean": "0.2831716199512899",
+            "volume_sd": "0.2972545210179364",
+            "geometric_volume_mean": "0.0333720954511895",
+            "conditional_volume_mean": "0.2831982491733763",
+            "probability_zero_volume": "0.5218629186387609",
+            "signed_q_mean": "0.0",
+            "q_rms": "1.1468576220580071",
+            "conditional_angle_rms_sd": "0.47324523879731567",
+            "conditional_angle_max_sd": "0.5789344800482471"
+          },
+          {
+            "state": "ring_level1",
+            "four_face_probability": "0.9999715587601232",
+            "mean_active_faces": "3.9999715586387583",
+            "volume_mean": "0.6028239059393408",
+            "volume_sd": "0.027313427450839572",
+            "geometric_volume_mean": "0.07104347862517824",
+            "conditional_volume_mean": "0.6028410514862936",
+            "probability_zero_volume": "2.845625920958036e-05",
+            "signed_q_mean": "0.0",
+            "q_rms": "1.7045710893530546",
+            "conditional_angle_rms_sd": "0.5443831164555927",
+            "conditional_angle_max_sd": "0.66087409184237"
+          },
+          {
+            "state": "ring_level2",
+            "four_face_probability": "0.9999827402595534",
+            "mean_active_faces": "3.9999827400939223",
+            "volume_mean": "0.3443009834429305",
+            "volume_sd": "0.30011357028077995",
+            "geometric_volume_mean": "0.0405762600269489",
+            "conditional_volume_mean": "0.34430692609110874",
+            "probability_zero_volume": "0.43099207382148047",
+            "signed_q_mean": "0.0",
+            "q_rms": "1.2930603246017867",
+            "conditional_angle_rms_sd": "0.271179880709029",
+            "conditional_angle_max_sd": "0.3263758359736605"
+          }
+        ]
+      }
+    },
+    {
+      "id": "t11-candidate-hamiltonians",
+      "task": "T11",
+      "title": "Candidate geometric Hamiltonians and prepared-FL dynamics",
+      "description": "Exact K=4, total-spin-zero study (dimension 105). The baseline is complete-graph face-to-face area exchange plus on-site repulsion, with equal hopping strength on each bond. We added the positive RS-volume term and the signed triple-grasp term as separate candidate Hamiltonians, then evolved five explicitly prepared FL references under the baseline and both signed couplings. The 62 parameter settings cover U/t=0,1,5,20 and normalized coupling alpha=-2,-1,-0.5,0,0.5,1,2; the ring is included only as a sparse-hopping control. The study contains 6,510 saved energy levels and 50 prepared-state trajectories.",
+      "limits": "The complete graph represents tetrahedral face adjacency; the ring is a hopping control, not a proposed tetrahedron. The positive-volume and signed-grasp additions are tested candidate models, not derived physical interactions. Results use one copy, fixed K=4, project-normalized volume, and t=1; no physical coupling calibration or phase-transition claim is implied. The long-time dynamics are exact energy-basis samples with adaptive logarithmic coverage, not a uniformly resolved trace of every fast oscillation. Large thermal and dynamics CSVs are gzip-compressed for download; their source and package checksums are both listed.",
+      "status": "62 Hamiltonian parameter settings and 50 FL trajectories calculated; 1,510 independent checks passed (maximum residual 1.07e-12)",
+      "catalogueDate": "2026-10-11",
+      "files": [
+        {
+          "name": "README.md",
+          "path": "study-assets/results/t11-candidate-hamiltonians/README.txt",
+          "source": "results/t11-candidate-hamiltonians/README.md",
+          "sourceSha256": "bbc08b9e6c51b5ec8398bf0d0e223e5e60d9a2736657802869e7c42f82416b64"
+        },
+        {
+          "name": "model_summary.csv",
+          "path": "study-assets/results/t11-candidate-hamiltonians/model_summary.csv",
+          "source": "results/t11-candidate-hamiltonians/model_summary.csv",
+          "sourceSha256": "544bc3e76b63c28c8c7b5cb4f22f137d274a507e2138db42b9ddcb0734265212"
+        },
+        {
+          "name": "energy_levels.csv",
+          "path": "study-assets/results/t11-candidate-hamiltonians/energy_levels.csv",
+          "source": "results/t11-candidate-hamiltonians/energy_levels.csv",
+          "sourceSha256": "88f29759405e03bc96ef2cdd4c7ef41fec11e61b65d692957484f73a5056cbe8"
+        },
+        {
+          "name": "fl_energy_populations.csv",
+          "path": "study-assets/results/t11-candidate-hamiltonians/fl_energy_populations.csv",
+          "source": "results/t11-candidate-hamiltonians/fl_energy_populations.csv",
+          "sourceSha256": "f01d475db2a37574c878074842126a3c41f4812d6b97e200ca566944e6374a4e"
+        },
+        {
+          "name": "thermal_volume_outcomes.csv",
+          "path": "study-assets/results/t11-candidate-hamiltonians/thermal_volume_outcomes.csv",
+          "source": "results/t11-candidate-hamiltonians/thermal_volume_outcomes.csv",
+          "sourceSha256": "1f45bfef694fcbf11d67df04eb24f062d70e3a7da549fdd5132f4b3154bbdc86"
+        },
+        {
+          "name": "state_geometry.csv",
+          "path": "study-assets/results/t11-candidate-hamiltonians/state_geometry.csv",
+          "source": "results/t11-candidate-hamiltonians/state_geometry.csv",
+          "sourceSha256": "08d0e6ddb433b167f080aea1a2e5e48e864d8f0d246765c7134ae314a0cbc1e5"
+        },
+        {
+          "name": "state_volume_distributions.csv",
+          "path": "study-assets/results/t11-candidate-hamiltonians/state_volume_distributions.csv",
+          "source": "results/t11-candidate-hamiltonians/state_volume_distributions.csv",
+          "sourceSha256": "f3c13ef35a3a373346a5f3ae36e472afa4c9a9a4e9bf62aae15d2a34de7f864c"
+        },
+        {
+          "name": "dynamics_schedule.csv",
+          "path": "study-assets/results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+          "source": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+          "sourceSha256": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        {
+          "name": "validation.json",
+          "path": "study-assets/results/t11-candidate-hamiltonians/validation.json",
+          "source": "results/t11-candidate-hamiltonians/validation.json",
+          "sourceSha256": "7ab7be9729c865bde869f7347d48a2bc722d0c659c16a8aec88b675c40096b59"
+        },
+        {
+          "name": "verification.json",
+          "path": "study-assets/results/t11-candidate-hamiltonians/verification.json",
+          "source": "results/t11-candidate-hamiltonians/verification.json",
+          "sourceSha256": "cda83f9a9c0619c69147bfa5e785e6da33f70334561dd00f0d0d60a866ab4dac"
+        },
+        {
+          "name": "protocol.json",
+          "path": "study-assets/results/t11-candidate-hamiltonians/protocol.json",
+          "source": "results/t11-candidate-hamiltonians/protocol.json",
+          "sourceSha256": "a17981d77ca80d8e26f8adb6c90553a12ed19a6e4262529d152d18f2df77e2fc"
+        },
+        {
+          "name": "provenance.json",
+          "path": "study-assets/results/t11-candidate-hamiltonians/provenance.json",
+          "source": "results/t11-candidate-hamiltonians/provenance.json",
+          "sourceSha256": "381d34b2ccd29d15911c36aa858f65452e99bc238d8fdb267cd40744deb8d2f5"
+        },
+        {
+          "name": "t11_candidate_hamiltonians.py",
+          "path": "study-assets/code/python/t11_candidate_hamiltonians.py",
+          "source": "code/python/t11_candidate_hamiltonians.py",
+          "sourceSha256": "2737caf5c8e11cc033f4f779d37bec36be5a5098e2b5b7be6a3874245da424ca"
+        },
+        {
+          "name": "verify_t11_candidate_hamiltonians.py",
+          "path": "study-assets/code/python/verify_t11_candidate_hamiltonians.py",
+          "source": "code/python/verify_t11_candidate_hamiltonians.py",
+          "sourceSha256": "5f8258ad87cecef9526c74ce80dabea311c83d7b0fefbe5c1ae661646f1c3eed"
+        },
+        {
+          "name": "plot_t11_candidate_hamiltonians.py",
+          "path": "study-assets/code/python/plot_t11_candidate_hamiltonians.py",
+          "source": "code/python/plot_t11_candidate_hamiltonians.py",
+          "sourceSha256": "0c2364255bc196946c17a67586130314e53098c842b03543baf1c5d6e535d64f"
+        },
+        {
+          "name": "hamiltonian-studies.md",
+          "path": "study-assets/notes/hamiltonian-studies.txt",
+          "source": "notes/hamiltonian-studies.md",
+          "sourceSha256": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+        },
+        {
+          "name": "state_area_assignments.csv.gz",
+          "path": "study-assets/results/t11-candidate-hamiltonians/state_area_assignments.csv.gz",
+          "source": "results/t11-candidate-hamiltonians/state_area_assignments.csv",
+          "sourceSha256": "fd5793982b10a42143196ff93bf70b035ad994bb7fe39735ddb2d12252778b26",
+          "packageSha256": "8eb45dc2d608eab369f1a1bd6f1aa75f4a02b502d7f1da5a7f748a24f0273c18",
+          "compression": "gzip"
+        },
+        {
+          "name": "thermal_area_assignments_selected.csv.gz",
+          "path": "study-assets/results/t11-candidate-hamiltonians/thermal_area_assignments_selected.csv.gz",
+          "source": "results/t11-candidate-hamiltonians/thermal_area_assignments_selected.csv",
+          "sourceSha256": "fc19d61e22780e099ec73b2fa5c293c3fcdcc9eac8e5152ea75404be7357c7ad",
+          "packageSha256": "4c8bfe5af8d8be9b686f9ed9450a8b16f1aea6fa9c8fcd2ae0973cac39b2fde1",
+          "compression": "gzip"
+        },
+        {
+          "name": "thermal_scan.csv.gz",
+          "path": "study-assets/results/t11-candidate-hamiltonians/thermal_scan.csv.gz",
+          "source": "results/t11-candidate-hamiltonians/thermal_scan.csv",
+          "sourceSha256": "97f7f50414c73393923c67e65d61e7f2633d6ba04ff6dc5466c35f0ab8a9f96e",
+          "packageSha256": "659b652f9c6cdd70aecc1a9a11956322a57918b3900621b3972bb339182bce65",
+          "compression": "gzip"
+        },
+        {
+          "name": "dynamics_scan.csv.gz",
+          "path": "study-assets/results/t11-candidate-hamiltonians/dynamics_scan.csv.gz",
+          "source": "results/t11-candidate-hamiltonians/dynamics_scan.csv",
+          "sourceSha256": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742",
+          "packageSha256": "aeec39aaa74eb815bcf363c7086eda642cb7c16629fa0a2610063678d5e2eb7f",
+          "compression": "gzip"
+        }
+      ],
+      "figures": [
+        {
+          "name": "candidate_ground_energy_shifts.png",
+          "path": "study-assets/results/t11-candidate-hamiltonians/candidate_ground_energy_shifts.png",
+          "source": "results/t11-candidate-hamiltonians/candidate_ground_energy_shifts.png",
+          "sourceSha256": "214c97bf11d2834b8f8f18579473508694041bc8c257be132e93561b082d991e",
+          "title": "Hamiltonian ground-energy shifts relative to the baseline",
+          "width": 2856,
+          "height": 1303,
+          "wide": false,
+          "pdf": "study-assets/results/t11-candidate-hamiltonians/candidate_ground_energy_shifts.pdf"
+        },
+        {
+          "name": "candidate_ground_state_response.png",
+          "path": "study-assets/results/t11-candidate-hamiltonians/candidate_ground_state_response.png",
+          "source": "results/t11-candidate-hamiltonians/candidate_ground_state_response.png",
+          "sourceSha256": "8c37617ee9393a2ea2709cdf38b5c81dad60db1f6a21ab419fc47beae4fdeeda",
+          "title": "Ground-state volume and signed-grasp response",
+          "width": 3035,
+          "height": 2168,
+          "wide": false,
+          "pdf": "study-assets/results/t11-candidate-hamiltonians/candidate_ground_state_response.pdf"
+        },
+        {
+          "name": "candidate_thermal_response_u20.png",
+          "path": "study-assets/results/t11-candidate-hamiltonians/candidate_thermal_response_u20.png",
+          "source": "results/t11-candidate-hamiltonians/candidate_thermal_response_u20.png",
+          "sourceSha256": "3da192d9cd378b7f91b438e3b309d605e1d5d9ea448fa0fce1c6f3372fbfb79b",
+          "title": "Thermal volume and grasp response at U/t=20",
+          "width": 3099,
+          "height": 2152,
+          "wide": false,
+          "pdf": "study-assets/results/t11-candidate-hamiltonians/candidate_thermal_response_u20.pdf"
+        },
+        {
+          "name": "ring_topology_control.png",
+          "path": "study-assets/results/t11-candidate-hamiltonians/ring_topology_control.png",
+          "source": "results/t11-candidate-hamiltonians/ring_topology_control.png",
+          "sourceSha256": "9bb99d40bddd65fb7ebb5cc20403551c19b795aa99cac561703980c42a591ddf",
+          "title": "Ring hopping topology control",
+          "width": 2856,
+          "height": 1242,
+          "wide": false,
+          "pdf": "study-assets/results/t11-candidate-hamiltonians/ring_topology_control.pdf"
+        },
+        {
+          "name": "prepared_FL_early_dynamics_u20.png",
+          "path": "study-assets/results/t11-candidate-hamiltonians/prepared_FL_early_dynamics_u20.png",
+          "source": "results/t11-candidate-hamiltonians/prepared_FL_early_dynamics_u20.png",
+          "sourceSha256": "c6a7ebbec97649b0dba16abe70575adcc952d90dd2f19b40a410b55f1dbe3da1",
+          "title": "Early evolution of prepared FL states at U/t=20",
+          "width": 3995,
+          "height": 1906,
+          "wide": false,
+          "pdf": "study-assets/results/t11-candidate-hamiltonians/prepared_FL_early_dynamics_u20.pdf"
+        }
+      ],
+      "table": {
+        "columns": [
+          "graph",
+          "candidate",
+          "alpha",
+          "ground_energy",
+          "first_distinct_gap",
+          "ground_volume_mean_project_units",
+          "ground_probability_zero_volume",
+          "ground_Q_chi_mean"
+        ],
+        "rows": [
+          {
+            "graph": "complete",
+            "candidate": "positive_volume",
+            "alpha": "-1.0",
+            "ground_energy": "77.49701129695266",
+            "first_distinct_gap": "0.9205520113450802",
+            "ground_volume_mean_project_units": "0.6012410355484328",
+            "ground_probability_zero_volume": "0.00019327215861178536",
+            "ground_Q_chi_mean": "-3.1706564452182648e-27"
+          },
+          {
+            "graph": "complete",
+            "candidate": "positive_volume",
+            "alpha": "0.0",
+            "ground_energy": "78.47443546198895",
+            "first_distinct_gap": "0.009225701259254038",
+            "ground_volume_mean_project_units": "0.03348745734595961",
+            "ground_probability_zero_volume": "0.9315436612208905",
+            "ground_Q_chi_mean": "0.0"
+          },
+          {
+            "graph": "complete",
+            "candidate": "positive_volume",
+            "alpha": "1.0",
+            "ground_energy": "78.52759928091562",
+            "first_distinct_gap": "0.9424815012424119",
+            "ground_volume_mean_project_units": "0.03133202842422639",
+            "ground_probability_zero_volume": "0.9359513758878057",
+            "ground_Q_chi_mean": "1.5097598922207806e-35"
+          },
+          {
+            "graph": "complete",
+            "candidate": "signed_grasp",
+            "alpha": "-1.0",
+            "ground_energy": "77.99647090099788",
+            "first_distinct_gap": "0.4776296319338229",
+            "ground_volume_mean_project_units": "0.6012347286927523",
+            "ground_probability_zero_volume": "0.00019742818470333082",
+            "ground_Q_chi_mean": "6.752494934851324"
+          },
+          {
+            "graph": "complete",
+            "candidate": "signed_grasp",
+            "alpha": "1.0",
+            "ground_energy": "77.99647090099788",
+            "first_distinct_gap": "0.4776296319338229",
+            "ground_volume_mean_project_units": "0.6012347286927523",
+            "ground_probability_zero_volume": "0.00019742818470333082",
+            "ground_Q_chi_mean": "-6.752494934851324"
+          },
+          {
+            "graph": "ring",
+            "candidate": "positive_volume",
+            "alpha": "-1.0",
+            "ground_energy": "77.82708361307651",
+            "first_distinct_gap": "0.021850529692741816",
+            "ground_volume_mean_project_units": "0.4882850589072053",
+            "ground_probability_zero_volume": "0.18644319767646544",
+            "ground_Q_chi_mean": "-1.2302011745290655e-31"
+          },
+          {
+            "graph": "ring",
+            "candidate": "positive_volume",
+            "alpha": "0.0",
+            "ground_energy": "78.47851810575729",
+            "first_distinct_gap": "0.35986961695610376",
+            "ground_volume_mean_project_units": "0.28317161995127704",
+            "ground_probability_zero_volume": "0.5218629186387829",
+            "ground_Q_chi_mean": "0.0"
+          },
+          {
+            "graph": "ring",
+            "candidate": "positive_volume",
+            "alpha": "1.0",
+            "ground_energy": "78.77961426797293",
+            "first_distinct_gap": "1.048040094822582",
+            "ground_volume_mean_project_units": "0.1109093598821257",
+            "ground_probability_zero_volume": "0.8061135017124467",
+            "ground_Q_chi_mean": "9.93918756572822e-33"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hamiltonian",
+      "task": "T11",
+      "title": "Four-site Hamiltonian spectra and RS-volume observables",
+      "description": "Exact diagonalization of the hopping-plus-on-site-repulsion operator H_G=-t \u03a3_(i,j)\u2208E_G(E_ij+E_ji)+(U/2)\u03a3_i n_i(n_i\u22121), where E_ij=a_i\u2020a_j+b_i\u2020b_j and n_i=a_i\u2020a_i+b_i\u2020b_i. Four sites, fixed boson number 2K and total spin zero; K=2,3,4 gives dimensions 20,50,105, with empty sites allowed. Compare the complete graph (6 hopping bonds) and periodic ring (4), with equal t per bond. The 30 cases use (t,U)=(0,1) or t=1 and U/t=0,1,5,20.",
+      "limits": "The positive Rovelli\u2013Smolin (RS) volume V=(\u03b3\u210f)^(3/2)\u03a3_(connected triples)\u221a|q_ijk|, q_ijk=i[J_i\u00b7J_j,J_j\u00b7J_k], is a separate observable evaluated on energy eigenstates and Gibbs states; it is not a term in H_G, and no g_V V coupling was calculated. The optional spin-exchange setting is g=0. Both graphs select the same four connected triples, so V is the same operator and only the hopping graph changes. Project-normalized volume; physical calibration is open. The temperature response is a finite-sector crossover, not a phase transition. Ground-state entropy uses the Gibbs mixture when degenerate.",
+      "status": "Pilot complete; broader program open",
+      "catalogueDate": "2026-10-09",
+      "files": [
+        {
+          "name": "README.md",
+          "path": "study-assets/results/hamiltonian-studies/README.txt",
           "source": "results/hamiltonian-studies/README.md",
-          "sourceSha256": "dbd4c4f899ef604e9e705ab9f5069143c2e79e16c2daf721c97ea34830c5e2d3"
+          "sourceSha256": "b65d9e6c96ad7cf1d85711bc2ad4c82a3ce3e9f8c212293f2cad2ec7e5eed281"
         },
         {
           "name": "active_site_probabilities.csv",
@@ -126,9 +1143,9 @@
         },
         {
           "name": "hamiltonian-studies.md",
-          "path": "study-assets/notes/hamiltonian-studies.md",
+          "path": "study-assets/notes/hamiltonian-studies.txt",
           "source": "notes/hamiltonian-studies.md",
-          "sourceSha256": "48ab244a4f3501e4f45bf41e8ca80da9e19735be682724e51d905fa2dd267ec1"
+          "sourceSha256": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         }
       ],
       "figures": [
@@ -1110,10 +2127,11 @@
       "description": "Four labelled faces, zero-spin faces allowed; K=2 through 12, 10,549 basis states. RS/AL means, variances, spectra and reconstructible operators.",
       "limits": "One copy, zero temperature. K=13 was stopped and has no accepted result. Physical volume calibration remains open; full tensor/root checks cover K<=4, with the recorded block checks at higher K.",
       "status": "Saved calculation",
+      "catalogueDate": "2026-10-09",
       "files": [
         {
           "name": "README.md",
-          "path": "study-assets/results/closed-basis-volume/README.md",
+          "path": "study-assets/results/closed-basis-volume/README.txt",
           "source": "results/closed-basis-volume/README.md",
           "sourceSha256": "f4ceddf43e39f302b6a7e0ebedd37b84cd06fd9009dfc988f4ce642ae80363d7"
         },
@@ -1335,7 +2353,7 @@
         },
         {
           "name": "thermal-area-sectors.md",
-          "path": "study-assets/notes/thermal-area-sectors.md",
+          "path": "study-assets/notes/thermal-area-sectors.txt",
           "source": "notes/thermal-area-sectors.md",
           "sourceSha256": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
         }
@@ -1690,10 +2708,11 @@
       "description": "Nine sectors at K=2,3,4 with 4<=N<=2K. Closed dimensions 2,36,347; positive-volume dimensions 2,32,329. Independent reconstruction covers 112 blocks and 385 eigenstates.",
       "limits": "Labelled positive-spin active faces, one copy, zero temperature. Closed states and positive-volume eigenstates are counted separately. Higher-valence AL orientation signs and physical calibration remain unspecified.",
       "status": "Completed declared catalogue",
+      "catalogueDate": "2026-10-09",
       "files": [
         {
           "name": "README.md",
-          "path": "study-assets/results/variable-n-volume/README.md",
+          "path": "study-assets/results/variable-n-volume/README.txt",
           "source": "results/variable-n-volume/README.md",
           "sourceSha256": "f3e287e5fcda061ef19e9d4d424011a18268fd794fbf973730f05ca4ccb17494"
         },
@@ -1933,7 +2952,7 @@
         },
         {
           "name": "volume-studies.md",
-          "path": "study-assets/notes/volume-studies.md",
+          "path": "study-assets/notes/volume-studies.txt",
           "source": "notes/volume-studies.md",
           "sourceSha256": "590364bfc39f532fb82f89f734c5db3721ddb2cb77e59834579b40c76e084e20"
         }
@@ -2467,6 +3486,7 @@
       "description": "J_in=0, four faces and eight modes per copy; coefficient and area distributions at four temperatures.",
       "limits": "Selected two-copy squeeze on full oscillator support; no separate per-copy singlet projection. Ordinary per-copy spin differs from combined/transformed closure. Plot ranges are truncated; full reduced-state spectra and geometric observables remain open.",
       "status": "Saved calculation",
+      "catalogueDate": "2026-10-09",
       "files": [
         {
           "name": "thermal_coefficients_vacuum.csv",
@@ -2482,7 +3502,7 @@
         },
         {
           "name": "thermal-area-sectors.md",
-          "path": "study-assets/notes/thermal-area-sectors.md",
+          "path": "study-assets/notes/thermal-area-sectors.txt",
           "source": "notes/thermal-area-sectors.md",
           "sourceSha256": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
         }
@@ -2509,10 +3529,11 @@
       "description": "Ordinary per-copy spin distributions conditioned on boson number, at beta*hbar*omega=1.",
       "limits": "Selected two-copy squeeze on full oscillator support; no separate per-copy singlet projection. Ordinary per-copy spin differs from combined/transformed closure. Plot ranges are truncated; full reduced-state spectra and geometric observables remain open.",
       "status": "Saved calculation",
+      "catalogueDate": "2026-10-09",
       "files": [
         {
           "name": "README.md",
-          "path": "study-assets/figures/thermal-spin-sectors/README.md",
+          "path": "study-assets/figures/thermal-spin-sectors/README.txt",
           "source": "figures/thermal-spin-sectors/README.md",
           "sourceSha256": "0f8ff0cf55bd8cf3915ee242b0c59f428b3af5e2fc2bbdeb8690d814e8877298"
         },
@@ -2551,6 +3572,7 @@
       "description": "Five temperatures, q through 160; 32,805 independent-method comparisons with maximum difference 2.67e-16.",
       "limits": "Selected two-copy squeeze on full oscillator support; no separate per-copy singlet projection. Ordinary per-copy spin differs from combined/transformed closure. Plot ranges are truncated; full reduced-state spectra and geometric observables remain open.",
       "status": "Saved calculation",
+      "catalogueDate": "2026-10-09",
       "files": [
         {
           "name": "j1_spin_method_comparison.csv",
@@ -2604,6 +3626,7 @@
       "description": "Saved Python and Rust probes extend the earlier weighted-input boundary scans.",
       "limits": "Finite exploratory points. Rust/Python RS comparison at J=10 differs by about 4.4e-10 and remains unresolved; AL agrees within about 4e-17. Stopped attempts are recorded as attempts, not results.",
       "status": "Saved calculation",
+      "catalogueDate": "2026-10-09",
       "files": [
         {
           "name": "t5c_degenerate_limits_highJ_results.json",
@@ -2634,6 +3657,7 @@
       "description": "Converged n=5 magnetization sweep; the tested magnetization hypothesis was not supported.",
       "limits": "Historical notation is preserved in downloads. Signed grasp and sqrt(abs(mean grasp)) are proxies, distinct from positive-volume expectations. These finite sampled families do not establish universal behavior.",
       "status": "Saved calculation",
+      "catalogueDate": "2026-10-09",
       "files": [
         {
           "name": "t5a_mag_results.json",
@@ -2643,7 +3667,7 @@
         },
         {
           "name": "t5a_mag_notes.md",
-          "path": "study-assets/notes/experiments/t5a_mag_notes.md",
+          "path": "study-assets/notes/experiments/t5a_mag_notes.txt",
           "source": "notes/experiments/t5a_mag_notes.md",
           "sourceSha256": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee"
         }
@@ -2670,6 +3694,7 @@
       "description": "Saved plane/channel agreement statistics; the local subset did not establish hidden handedness.",
       "limits": "Historical notation is preserved in downloads. Signed grasp and sqrt(abs(mean grasp)) are proxies, distinct from positive-volume expectations. These finite sampled families do not establish universal behavior.",
       "status": "Saved calculation",
+      "catalogueDate": "2026-10-09",
       "files": [
         {
           "name": "t5a_prime_results.json",
@@ -2679,7 +3704,7 @@
         },
         {
           "name": "t5a_prime_notes.md",
-          "path": "study-assets/notes/experiments/t5a_prime_notes.md",
+          "path": "study-assets/notes/experiments/t5a_prime_notes.txt",
           "source": "notes/experiments/t5a_prime_notes.md",
           "sourceSha256": "87d0fda36d53cdd5127d73f757918d234c9aac6fc775c0333817bc4e4176d5cb"
         }
@@ -2706,6 +3731,7 @@
       "description": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
       "limits": "Historical notation is preserved in downloads. Signed grasp and sqrt(abs(mean grasp)) are proxies, distinct from positive-volume expectations. These finite sampled families do not establish universal behavior.",
       "status": "Saved calculation",
+      "catalogueDate": "2026-10-09",
       "files": [
         {
           "name": "t5b_results.json",
@@ -2715,7 +3741,7 @@
         },
         {
           "name": "T5b.md",
-          "path": "study-assets/memory-bank/archive/T5b.md",
+          "path": "study-assets/study-records/archive/T5b.txt",
           "source": "memory-bank/archive/T5b.md",
           "sourceSha256": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
         }
@@ -2742,6 +3768,7 @@
       "description": "Ten recorded points compare phase defect with signed grasp; broader study remains open.",
       "limits": "Historical notation is preserved in downloads. Signed grasp and sqrt(abs(mean grasp)) are proxies, distinct from positive-volume expectations. These finite sampled families do not establish universal behavior.",
       "status": "Saved calculation",
+      "catalogueDate": "2026-10-09",
       "files": [
         {
           "name": "t5d_phase_scan_results.json",
@@ -2751,7 +3778,7 @@
         },
         {
           "name": "T5d.md",
-          "path": "study-assets/memory-bank/tasks/T5d.md",
+          "path": "study-assets/study-records/tasks/T5d.txt",
           "source": "memory-bank/tasks/T5d.md",
           "sourceSha256": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6"
         }
@@ -2778,6 +3805,7 @@
       "description": "Saved families through historical K=24. The proposed K^(3/2) scaling was not supported for these families.",
       "limits": "Historical notation is preserved in downloads. Signed grasp and sqrt(abs(mean grasp)) are proxies, distinct from positive-volume expectations. These finite sampled families do not establish universal behavior.",
       "status": "Saved calculation",
+      "catalogueDate": "2026-10-09",
       "files": [
         {
           "name": "t5e_results.json",
@@ -2787,7 +3815,7 @@
         },
         {
           "name": "t5e_notes.md",
-          "path": "study-assets/notes/experiments/t5e_notes.md",
+          "path": "study-assets/notes/experiments/t5e_notes.txt",
           "source": "notes/experiments/t5e_notes.md",
           "sourceSha256": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
         }
@@ -2814,6 +3842,7 @@
       "description": "Archived T7A study, retained under current T9 ownership.",
       "limits": "Historical capped oscillator support and historical state construction; this is distinct from the currently selected two-copy squeezed FL family and exact singlet Hamiltonian Gibbs calculation. Undefined JSON numbers are null in dashboard exports.",
       "status": "Saved calculation",
+      "catalogueDate": "2026-10-09",
       "files": [
         {
           "name": "t7a_results.json",
@@ -2823,7 +3852,7 @@
         },
         {
           "name": "t7a_notes.md",
-          "path": "study-assets/notes/experiments/t7a_notes.md",
+          "path": "study-assets/notes/experiments/t7a_notes.txt",
           "source": "notes/experiments/t7a_notes.md",
           "sourceSha256": "c8c2a687994feb058d8a59f020f2ab3de189e5d5f1b6af6a0d72b72c01cb5157"
         }
@@ -2850,6 +3879,7 @@
       "description": "Archived T7B study, retained under current T9 ownership.",
       "limits": "Historical capped oscillator support and historical state construction; this is distinct from the currently selected two-copy squeezed FL family and exact singlet Hamiltonian Gibbs calculation. Undefined JSON numbers are null in dashboard exports.",
       "status": "Saved calculation",
+      "catalogueDate": "2026-10-09",
       "files": [
         {
           "name": "t7b_results.json",
@@ -2859,7 +3889,7 @@
         },
         {
           "name": "t7b_notes.md",
-          "path": "study-assets/notes/experiments/t7b_notes.md",
+          "path": "study-assets/notes/experiments/t7b_notes.txt",
           "source": "notes/experiments/t7b_notes.md",
           "sourceSha256": "150d3b16786e63aff531df236e84785a232537707c988b11deeb60a2d9795b86"
         }
@@ -2886,6 +3916,7 @@
       "description": "Archived T7E study, retained under current T9 ownership.",
       "limits": "Historical capped oscillator support and historical state construction; this is distinct from the currently selected two-copy squeezed FL family and exact singlet Hamiltonian Gibbs calculation. Undefined JSON numbers are null in dashboard exports.",
       "status": "Saved calculation",
+      "catalogueDate": "2026-10-09",
       "files": [
         {
           "name": "t7e_results.json",
@@ -2895,7 +3926,7 @@
         },
         {
           "name": "t7e_notes.md",
-          "path": "study-assets/notes/experiments/t7e_notes.md",
+          "path": "study-assets/notes/experiments/t7e_notes.txt",
           "source": "notes/experiments/t7e_notes.md",
           "sourceSha256": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9"
         }
@@ -2922,6 +3953,7 @@
       "description": "Four regular/unequal-shape seed cases; draft squeeze compared with explicit double-singlet postselection.",
       "limits": "Draft one-sided construction, cutoff and omitted probabilities are recorded. Postselection is not assumed Gibbs and differs from the selected two-copy input construction.",
       "status": "Saved calculation",
+      "catalogueDate": "2026-10-09",
       "files": [
         {
           "name": "t7_geometry_thermal_results.json",
@@ -2952,6 +3984,7 @@
       "description": "Independent tensor controls: paired spin-half singlet has positive RS/AL volume despite zero signed mean; collinear product gives zero.",
       "limits": "Simple-state implementation checks; project normalization and selected four-face AL embedding only.",
       "status": "Saved calculation",
+      "catalogueDate": "2026-10-09",
       "files": [
         {
           "name": "volume_prescription_results.json",
@@ -2982,6 +4015,7 @@
       "description": "Six saved pilot records; later shape recovery and weighted-input studies are shown in Volume Studies.",
       "limits": "Exploratory covariance-derived geometry; preserve the distinction from the classical input tetrahedron and positive-volume operator.",
       "status": "Saved calculation",
+      "catalogueDate": "2026-10-09",
       "files": [
         {
           "name": "t5c_covariance_probe_results.json",

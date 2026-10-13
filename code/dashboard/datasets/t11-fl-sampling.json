@@ -1,0 +1,2630 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "Prepared FL evolution sampling",
+    "subtitle": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv"
+  },
+  "columns": [
+    {
+      "key": "runId",
+      "label": "Case",
+      "type": "string"
+    },
+    {
+      "key": "parameters.graph",
+      "label": "graph",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "parameters.candidate",
+      "label": "candidate",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "parameters.U_over_t",
+      "label": "U over t",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.alpha",
+      "label": "alpha",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.seed",
+      "label": "seed",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "parameters.case",
+      "label": "case",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.model_id",
+      "label": "model id",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.initial_seed_support_dimension",
+      "label": "initial seed support dimension",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.resolved_pair_count",
+      "label": "resolved pair count",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.resolved_amplitude_threshold",
+      "label": "resolved amplitude threshold",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.seed_probability_cutoff",
+      "label": "seed probability cutoff",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.minimum_resolved_gap",
+      "label": "minimum resolved gap",
+      "type": "number",
+      "precision": 8,
+      "unit": "t"
+    },
+    {
+      "key": "results.maximum_resolved_gap",
+      "label": "maximum resolved gap",
+      "type": "number",
+      "precision": 8,
+      "unit": "t"
+    },
+    {
+      "key": "results.fastest_period",
+      "label": "fastest period",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.slowest_period",
+      "label": "slowest period",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.time_horizon_t_over_hbar",
+      "label": "time horizon t over hbar",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.uniform_grid_dt",
+      "label": "uniform grid dt",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.uniform_grid_points_required",
+      "label": "uniform grid points required",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.computed_exact_sample_count",
+      "label": "computed exact sample count",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.dense_initial_sample_count",
+      "label": "dense initial sample count",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.log_spaced_late_sample_count",
+      "label": "log spaced late sample count",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.resolved_beat_strength_min",
+      "label": "resolved beat strength min",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "series",
+      "label": "Series",
+      "type": "string",
+      "visible": false
+    }
+  ],
+  "charts": {
+    "type": "scatter",
+    "x": "parameters.alpha",
+    "y": "results.initial_seed_support_dimension",
+    "groupBy": "series"
+  },
+  "runs": [
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U5_alphap0:1",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 5.0,
+        "alpha": 0.0,
+        "seed": "regular",
+        "case": "baseline"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U5_alphap0",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5218,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.0006171133019279296,
+        "maximum_resolved_gap": 45.32274386101262,
+        "fastest_period": 0.13863205913674806,
+        "slowest_period": 10181.574902939585,
+        "time_horizon_t_over_hbar": 101815.74902939584,
+        "uniform_grid_dt": 0.006931602956837403,
+        "uniform_grid_points_required": 14688631,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0071113939725033e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-1"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "dynamics_schedule.csv",
+          "path": "../study-assets/results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+          "kind": "data",
+          "sha256": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba",
+          "sourcePath": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+          "sourceSha256": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        }
+      ],
+      "figures": [],
+      "series": "graph=complete, candidate=positive_volume, U_over_t=5.0, case=baseline"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U5_alphap0:2",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 5.0,
+        "alpha": 0.0,
+        "seed": "phi_60",
+        "case": "baseline"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U5_alphap0",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5288,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.0006171133019279296,
+        "maximum_resolved_gap": 45.32274386101262,
+        "fastest_period": 0.13863205913674806,
+        "slowest_period": 10181.574902939585,
+        "time_horizon_t_over_hbar": 101815.74902939584,
+        "uniform_grid_dt": 0.006931602956837403,
+        "uniform_grid_points_required": 14688631,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0147670866570715e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-2"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=5.0, case=baseline"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U5_alphap0:3",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 5.0,
+        "alpha": 0.0,
+        "seed": "phi_30",
+        "case": "baseline"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U5_alphap0",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5315,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.0006171133019279296,
+        "maximum_resolved_gap": 45.32274386101262,
+        "fastest_period": 0.13863205913674806,
+        "slowest_period": 10181.574902939585,
+        "time_horizon_t_over_hbar": 101815.74902939584,
+        "uniform_grid_dt": 0.006931602956837403,
+        "uniform_grid_points_required": 14688631,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0100389107241397e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-3"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=5.0, case=baseline"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U5_alphap0:4",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 5.0,
+        "alpha": 0.0,
+        "seed": "phi_10",
+        "case": "baseline"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U5_alphap0",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5304,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.0006171133019279296,
+        "maximum_resolved_gap": 45.32274386101262,
+        "fastest_period": 0.13863205913674806,
+        "slowest_period": 10181.574902939585,
+        "time_horizon_t_over_hbar": 101815.74902939584,
+        "uniform_grid_dt": 0.006931602956837403,
+        "uniform_grid_points_required": 14688631,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0461410789245911e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-4"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=5.0, case=baseline"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U5_alphap0:5",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 5.0,
+        "alpha": 0.0,
+        "seed": "flat_boundary",
+        "case": "baseline"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U5_alphap0",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5294,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.0006171133019279296,
+        "maximum_resolved_gap": 45.32274386101262,
+        "fastest_period": 0.13863205913674806,
+        "slowest_period": 10181.574902939585,
+        "time_horizon_t_over_hbar": 101815.74902939584,
+        "uniform_grid_dt": 0.006931602956837403,
+        "uniform_grid_points_required": 14688631,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0262752040055296e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-5"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=5.0, case=baseline"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U5_alpham1:6",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 5.0,
+        "alpha": -1.0,
+        "seed": "regular",
+        "case": "positive_volume_-1"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U5_alpham1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5212,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.002090017180485404,
+        "maximum_resolved_gap": 46.11682063743726,
+        "fastest_period": 0.13624498003834523,
+        "slowest_period": 3006.2840467753113,
+        "time_horizon_t_over_hbar": 30062.840467753114,
+        "uniform_grid_dt": 0.006812249001917262,
+        "uniform_grid_points_required": 4413058,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0001634306438112e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-6"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=5.0, case=positive_volume_-1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U5_alpham1:7",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 5.0,
+        "alpha": -1.0,
+        "seed": "phi_60",
+        "case": "positive_volume_-1"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U5_alpham1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5284,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.002090017180485404,
+        "maximum_resolved_gap": 46.11682063743726,
+        "fastest_period": 0.13624498003834523,
+        "slowest_period": 3006.2840467753113,
+        "time_horizon_t_over_hbar": 30062.840467753114,
+        "uniform_grid_dt": 0.006812249001917262,
+        "uniform_grid_points_required": 4413058,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0222976015827427e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-7"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=5.0, case=positive_volume_-1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U5_alpham1:8",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 5.0,
+        "alpha": -1.0,
+        "seed": "phi_30",
+        "case": "positive_volume_-1"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U5_alpham1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5288,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.002090017180485404,
+        "maximum_resolved_gap": 46.11682063743726,
+        "fastest_period": 0.13624498003834523,
+        "slowest_period": 3006.2840467753113,
+        "time_horizon_t_over_hbar": 30062.840467753114,
+        "uniform_grid_dt": 0.006812249001917262,
+        "uniform_grid_points_required": 4413058,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0429903944609945e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-8"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=5.0, case=positive_volume_-1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U5_alpham1:9",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 5.0,
+        "alpha": -1.0,
+        "seed": "phi_10",
+        "case": "positive_volume_-1"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U5_alpham1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5273,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.002090017180485404,
+        "maximum_resolved_gap": 46.11682063743726,
+        "fastest_period": 0.13624498003834523,
+        "slowest_period": 3006.2840467753113,
+        "time_horizon_t_over_hbar": 30062.840467753114,
+        "uniform_grid_dt": 0.006812249001917262,
+        "uniform_grid_points_required": 4413058,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0169091071491547e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-9"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=5.0, case=positive_volume_-1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U5_alpham1:10",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 5.0,
+        "alpha": -1.0,
+        "seed": "flat_boundary",
+        "case": "positive_volume_-1"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U5_alpham1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5256,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.002090017180485404,
+        "maximum_resolved_gap": 46.11682063743726,
+        "fastest_period": 0.13624498003834523,
+        "slowest_period": 3006.2840467753113,
+        "time_horizon_t_over_hbar": 30062.840467753114,
+        "uniform_grid_dt": 0.006812249001917262,
+        "uniform_grid_points_required": 4413058,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0054311075274931e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-10"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=5.0, case=positive_volume_-1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_signed_grasp_U5_alpham1:11",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "signed_grasp",
+        "U_over_t": 5.0,
+        "alpha": -1.0,
+        "seed": "regular",
+        "case": "signed_grasp_-1"
+      },
+      "results": {
+        "model_id": "complete_signed_grasp_U5_alpham1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5221,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 3.080317978287894e-05,
+        "maximum_resolved_gap": 45.61668636569913,
+        "fastest_period": 0.13773874886063942,
+        "slowest_period": 203978.4642841293,
+        "time_horizon_t_over_hbar": 2039784.642841293,
+        "uniform_grid_dt": 0.006886937443031971,
+        "uniform_grid_points_required": 296181673,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.003327179967115e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-11"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=signed_grasp, U_over_t=5.0, case=signed_grasp_-1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_signed_grasp_U5_alpham1:12",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "signed_grasp",
+        "U_over_t": 5.0,
+        "alpha": -1.0,
+        "seed": "phi_60",
+        "case": "signed_grasp_-1"
+      },
+      "results": {
+        "model_id": "complete_signed_grasp_U5_alpham1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5274,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 3.080317978287894e-05,
+        "maximum_resolved_gap": 45.61668636569913,
+        "fastest_period": 0.13773874886063942,
+        "slowest_period": 203978.4642841293,
+        "time_horizon_t_over_hbar": 2039784.642841293,
+        "uniform_grid_dt": 0.006886937443031971,
+        "uniform_grid_points_required": 296181673,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0022882074044914e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-12"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=signed_grasp, U_over_t=5.0, case=signed_grasp_-1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_signed_grasp_U5_alpham1:13",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "signed_grasp",
+        "U_over_t": 5.0,
+        "alpha": -1.0,
+        "seed": "phi_30",
+        "case": "signed_grasp_-1"
+      },
+      "results": {
+        "model_id": "complete_signed_grasp_U5_alpham1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5287,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 3.080317978287894e-05,
+        "maximum_resolved_gap": 45.61668636569913,
+        "fastest_period": 0.13773874886063942,
+        "slowest_period": 203978.4642841293,
+        "time_horizon_t_over_hbar": 2039784.642841293,
+        "uniform_grid_dt": 0.006886937443031971,
+        "uniform_grid_points_required": 296181673,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0018176087665239e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-13"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=signed_grasp, U_over_t=5.0, case=signed_grasp_-1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_signed_grasp_U5_alpham1:14",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "signed_grasp",
+        "U_over_t": 5.0,
+        "alpha": -1.0,
+        "seed": "phi_10",
+        "case": "signed_grasp_-1"
+      },
+      "results": {
+        "model_id": "complete_signed_grasp_U5_alpham1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5282,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 3.080317978287894e-05,
+        "maximum_resolved_gap": 45.61668636569913,
+        "fastest_period": 0.13773874886063942,
+        "slowest_period": 203978.4642841293,
+        "time_horizon_t_over_hbar": 2039784.642841293,
+        "uniform_grid_dt": 0.006886937443031971,
+        "uniform_grid_points_required": 296181673,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0208026035972203e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-14"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=signed_grasp, U_over_t=5.0, case=signed_grasp_-1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_signed_grasp_U5_alpham1:15",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "signed_grasp",
+        "U_over_t": 5.0,
+        "alpha": -1.0,
+        "seed": "flat_boundary",
+        "case": "signed_grasp_-1"
+      },
+      "results": {
+        "model_id": "complete_signed_grasp_U5_alpham1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5272,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 3.080317978287894e-05,
+        "maximum_resolved_gap": 45.61668636569913,
+        "fastest_period": 0.13773874886063942,
+        "slowest_period": 203978.4642841293,
+        "time_horizon_t_over_hbar": 2039784.642841293,
+        "uniform_grid_dt": 0.006886937443031971,
+        "uniform_grid_points_required": 296181673,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.002885718081e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-15"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=signed_grasp, U_over_t=5.0, case=signed_grasp_-1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U5_alphap1:16",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 5.0,
+        "alpha": 1.0,
+        "seed": "regular",
+        "case": "positive_volume_+1"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U5_alphap1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5174,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.0010421844325350094,
+        "maximum_resolved_gap": 45.034013804068366,
+        "fastest_period": 0.13952088158333256,
+        "slowest_period": 6028.861217871357,
+        "time_horizon_t_over_hbar": 60288.61217871358,
+        "uniform_grid_dt": 0.006976044079166628,
+        "uniform_grid_points_required": 8642236,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0319117345642846e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-16"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=5.0, case=positive_volume_+1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U5_alphap1:17",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 5.0,
+        "alpha": 1.0,
+        "seed": "phi_60",
+        "case": "positive_volume_+1"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U5_alphap1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5185,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.0010421844325350094,
+        "maximum_resolved_gap": 45.034013804068366,
+        "fastest_period": 0.13952088158333256,
+        "slowest_period": 6028.861217871357,
+        "time_horizon_t_over_hbar": 60288.61217871358,
+        "uniform_grid_dt": 0.006976044079166628,
+        "uniform_grid_points_required": 8642236,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.009820690225571e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-17"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=5.0, case=positive_volume_+1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U5_alphap1:18",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 5.0,
+        "alpha": 1.0,
+        "seed": "phi_30",
+        "case": "positive_volume_+1"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U5_alphap1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5191,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.0010421844325350094,
+        "maximum_resolved_gap": 45.034013804068366,
+        "fastest_period": 0.13952088158333256,
+        "slowest_period": 6028.861217871357,
+        "time_horizon_t_over_hbar": 60288.61217871358,
+        "uniform_grid_dt": 0.006976044079166628,
+        "uniform_grid_points_required": 8642236,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.1188652041702646e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-18"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=5.0, case=positive_volume_+1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U5_alphap1:19",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 5.0,
+        "alpha": 1.0,
+        "seed": "phi_10",
+        "case": "positive_volume_+1"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U5_alphap1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5184,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.0010421844325350094,
+        "maximum_resolved_gap": 45.034013804068366,
+        "fastest_period": 0.13952088158333256,
+        "slowest_period": 6028.861217871357,
+        "time_horizon_t_over_hbar": 60288.61217871358,
+        "uniform_grid_dt": 0.006976044079166628,
+        "uniform_grid_points_required": 8642236,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0484753948290277e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-19"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=5.0, case=positive_volume_+1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U5_alphap1:20",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 5.0,
+        "alpha": 1.0,
+        "seed": "flat_boundary",
+        "case": "positive_volume_+1"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U5_alphap1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5181,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.0010421844325350094,
+        "maximum_resolved_gap": 45.034013804068366,
+        "fastest_period": 0.13952088158333256,
+        "slowest_period": 6028.861217871357,
+        "time_horizon_t_over_hbar": 60288.61217871358,
+        "uniform_grid_dt": 0.006976044079166628,
+        "uniform_grid_points_required": 8642236,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0223673489678261e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-20"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=5.0, case=positive_volume_+1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_signed_grasp_U5_alphap1:21",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "signed_grasp",
+        "U_over_t": 5.0,
+        "alpha": 1.0,
+        "seed": "regular",
+        "case": "signed_grasp_+1"
+      },
+      "results": {
+        "model_id": "complete_signed_grasp_U5_alphap1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5167,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 3.080317978287894e-05,
+        "maximum_resolved_gap": 45.61668636569913,
+        "fastest_period": 0.13773874886063942,
+        "slowest_period": 203978.4642841293,
+        "time_horizon_t_over_hbar": 2039784.642841293,
+        "uniform_grid_dt": 0.006886937443031971,
+        "uniform_grid_points_required": 296181673,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0055486030015315e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-21"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=signed_grasp, U_over_t=5.0, case=signed_grasp_+1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_signed_grasp_U5_alphap1:22",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "signed_grasp",
+        "U_over_t": 5.0,
+        "alpha": 1.0,
+        "seed": "phi_60",
+        "case": "signed_grasp_+1"
+      },
+      "results": {
+        "model_id": "complete_signed_grasp_U5_alphap1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5275,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 3.080317978287894e-05,
+        "maximum_resolved_gap": 45.61668636569913,
+        "fastest_period": 0.13773874886063942,
+        "slowest_period": 203978.4642841293,
+        "time_horizon_t_over_hbar": 2039784.642841293,
+        "uniform_grid_dt": 0.006886937443031971,
+        "uniform_grid_points_required": 296181673,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0038070614983063e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-22"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=signed_grasp, U_over_t=5.0, case=signed_grasp_+1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_signed_grasp_U5_alphap1:23",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "signed_grasp",
+        "U_over_t": 5.0,
+        "alpha": 1.0,
+        "seed": "phi_30",
+        "case": "signed_grasp_+1"
+      },
+      "results": {
+        "model_id": "complete_signed_grasp_U5_alphap1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5287,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 3.080317978287894e-05,
+        "maximum_resolved_gap": 45.61668636569913,
+        "fastest_period": 0.13773874886063942,
+        "slowest_period": 203978.4642841293,
+        "time_horizon_t_over_hbar": 2039784.642841293,
+        "uniform_grid_dt": 0.006886937443031971,
+        "uniform_grid_points_required": 296181673,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.030406028088915e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-23"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=signed_grasp, U_over_t=5.0, case=signed_grasp_+1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_signed_grasp_U5_alphap1:24",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "signed_grasp",
+        "U_over_t": 5.0,
+        "alpha": 1.0,
+        "seed": "phi_10",
+        "case": "signed_grasp_+1"
+      },
+      "results": {
+        "model_id": "complete_signed_grasp_U5_alphap1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5282,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 3.080317978287894e-05,
+        "maximum_resolved_gap": 45.61668636569913,
+        "fastest_period": 0.13773874886063942,
+        "slowest_period": 203978.4642841293,
+        "time_horizon_t_over_hbar": 2039784.642841293,
+        "uniform_grid_dt": 0.006886937443031971,
+        "uniform_grid_points_required": 296181673,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0210938931808416e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-24"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=signed_grasp, U_over_t=5.0, case=signed_grasp_+1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_signed_grasp_U5_alphap1:25",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "signed_grasp",
+        "U_over_t": 5.0,
+        "alpha": 1.0,
+        "seed": "flat_boundary",
+        "case": "signed_grasp_+1"
+      },
+      "results": {
+        "model_id": "complete_signed_grasp_U5_alphap1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5272,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 3.080317978287894e-05,
+        "maximum_resolved_gap": 45.61668636569913,
+        "fastest_period": 0.13773874886063942,
+        "slowest_period": 203978.4642841293,
+        "time_horizon_t_over_hbar": 2039784.642841293,
+        "uniform_grid_dt": 0.006886937443031971,
+        "uniform_grid_points_required": 296181673,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0028857180809832e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-25"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=signed_grasp, U_over_t=5.0, case=signed_grasp_+1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U20_alphap0:26",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 20.0,
+        "alpha": 0.0,
+        "seed": "regular",
+        "case": "baseline"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U20_alphap0",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5007,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.00016580975307078916,
+        "maximum_resolved_gap": 161.79246646809088,
+        "fastest_period": 0.038834844689253634,
+        "slowest_period": 37893.94285206556,
+        "time_horizon_t_over_hbar": 378939.42852065555,
+        "uniform_grid_dt": 0.0019417422344626817,
+        "uniform_grid_points_required": 195154344,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0002691649907247e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-26"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=20.0, case=baseline"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U20_alphap0:27",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 20.0,
+        "alpha": 0.0,
+        "seed": "phi_60",
+        "case": "baseline"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U20_alphap0",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5123,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.00016580975307078916,
+        "maximum_resolved_gap": 161.79246646809088,
+        "fastest_period": 0.038834844689253634,
+        "slowest_period": 37893.94285206556,
+        "time_horizon_t_over_hbar": 378939.42852065555,
+        "uniform_grid_dt": 0.0019417422344626817,
+        "uniform_grid_points_required": 195154344,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0006447703466065e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-27"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=20.0, case=baseline"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U20_alphap0:28",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 20.0,
+        "alpha": 0.0,
+        "seed": "phi_30",
+        "case": "baseline"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U20_alphap0",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5121,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.00016580975307078916,
+        "maximum_resolved_gap": 161.79246646809088,
+        "fastest_period": 0.038834844689253634,
+        "slowest_period": 37893.94285206556,
+        "time_horizon_t_over_hbar": 378939.42852065555,
+        "uniform_grid_dt": 0.0019417422344626817,
+        "uniform_grid_points_required": 195154344,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0072002516445702e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-28"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=20.0, case=baseline"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U20_alphap0:29",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 20.0,
+        "alpha": 0.0,
+        "seed": "phi_10",
+        "case": "baseline"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U20_alphap0",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5057,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.00016580975307078916,
+        "maximum_resolved_gap": 161.79246646809088,
+        "fastest_period": 0.038834844689253634,
+        "slowest_period": 37893.94285206556,
+        "time_horizon_t_over_hbar": 378939.42852065555,
+        "uniform_grid_dt": 0.0019417422344626817,
+        "uniform_grid_points_required": 195154344,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0078796100344512e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-29"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=20.0, case=baseline"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U20_alphap0:30",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 20.0,
+        "alpha": 0.0,
+        "seed": "flat_boundary",
+        "case": "baseline"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U20_alphap0",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 4988,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.00016580975307078916,
+        "maximum_resolved_gap": 161.79246646809088,
+        "fastest_period": 0.038834844689253634,
+        "slowest_period": 37893.94285206556,
+        "time_horizon_t_over_hbar": 378939.42852065555,
+        "uniform_grid_dt": 0.0019417422344626817,
+        "uniform_grid_points_required": 195154344,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0009647061442676e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-30"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=20.0, case=baseline"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U20_alpham1:31",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 20.0,
+        "alpha": -1.0,
+        "seed": "regular",
+        "case": "positive_volume_-1"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U20_alpham1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 4970,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.00016581380026536863,
+        "maximum_resolved_gap": 162.76988926948627,
+        "fastest_period": 0.03860164392430699,
+        "slowest_period": 37893.017934116266,
+        "time_horizon_t_over_hbar": 378930.1793411627,
+        "uniform_grid_dt": 0.0019300821962153496,
+        "uniform_grid_points_required": 196328521,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0103977803257368e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-31"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=20.0, case=positive_volume_-1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U20_alpham1:32",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 20.0,
+        "alpha": -1.0,
+        "seed": "phi_60",
+        "case": "positive_volume_-1"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U20_alpham1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5071,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.00016581380026536863,
+        "maximum_resolved_gap": 162.76988926948627,
+        "fastest_period": 0.03860164392430699,
+        "slowest_period": 37893.017934116266,
+        "time_horizon_t_over_hbar": 378930.1793411627,
+        "uniform_grid_dt": 0.0019300821962153496,
+        "uniform_grid_points_required": 196328521,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0007365649321753e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-32"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=20.0, case=positive_volume_-1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U20_alpham1:33",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 20.0,
+        "alpha": -1.0,
+        "seed": "phi_30",
+        "case": "positive_volume_-1"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U20_alpham1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5069,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.00016581380026536863,
+        "maximum_resolved_gap": 162.76988926948627,
+        "fastest_period": 0.03860164392430699,
+        "slowest_period": 37893.017934116266,
+        "time_horizon_t_over_hbar": 378930.1793411627,
+        "uniform_grid_dt": 0.0019300821962153496,
+        "uniform_grid_points_required": 196328521,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0025160610179694e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-33"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=20.0, case=positive_volume_-1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U20_alpham1:34",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 20.0,
+        "alpha": -1.0,
+        "seed": "phi_10",
+        "case": "positive_volume_-1"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U20_alpham1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 4989,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.00016581380026536863,
+        "maximum_resolved_gap": 162.76988926948627,
+        "fastest_period": 0.03860164392430699,
+        "slowest_period": 37893.017934116266,
+        "time_horizon_t_over_hbar": 378930.1793411627,
+        "uniform_grid_dt": 0.0019300821962153496,
+        "uniform_grid_points_required": 196328521,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0064249037536717e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-34"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=20.0, case=positive_volume_-1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U20_alpham1:35",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 20.0,
+        "alpha": -1.0,
+        "seed": "flat_boundary",
+        "case": "positive_volume_-1"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U20_alpham1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 4930,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.00016581380026536863,
+        "maximum_resolved_gap": 162.76988926948627,
+        "fastest_period": 0.03860164392430699,
+        "slowest_period": 37893.017934116266,
+        "time_horizon_t_over_hbar": 378930.1793411627,
+        "uniform_grid_dt": 0.0019300821962153496,
+        "uniform_grid_points_required": 196328521,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0057274412787274e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-35"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=20.0, case=positive_volume_-1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_signed_grasp_U20_alpham1:36",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "signed_grasp",
+        "U_over_t": 20.0,
+        "alpha": -1.0,
+        "seed": "regular",
+        "case": "signed_grasp_-1"
+      },
+      "results": {
+        "model_id": "complete_signed_grasp_U20_alpham1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5027,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 1.6186267231432794e-05,
+        "maximum_resolved_gap": 161.79280139834412,
+        "fastest_period": 0.038834764296527546,
+        "slowest_period": 388180.00576303375,
+        "time_horizon_t_over_hbar": 3881800.057630338,
+        "uniform_grid_dt": 0.0019417382148263773,
+        "uniform_grid_points_required": 1999136666,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0056872619874962e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-36"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=signed_grasp, U_over_t=20.0, case=signed_grasp_-1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_signed_grasp_U20_alpham1:37",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "signed_grasp",
+        "U_over_t": 20.0,
+        "alpha": -1.0,
+        "seed": "phi_60",
+        "case": "signed_grasp_-1"
+      },
+      "results": {
+        "model_id": "complete_signed_grasp_U20_alpham1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5222,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 1.6186267231432794e-05,
+        "maximum_resolved_gap": 162.27043103027796,
+        "fastest_period": 0.03872045737037088,
+        "slowest_period": 388180.00576303375,
+        "time_horizon_t_over_hbar": 3881800.057630338,
+        "uniform_grid_dt": 0.001936022868518544,
+        "uniform_grid_points_required": 2005038331,
+        "computed_exact_sample_count": 1101,
+        "dense_initial_sample_count": 202,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.01303822727399e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-37"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=signed_grasp, U_over_t=20.0, case=signed_grasp_-1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_signed_grasp_U20_alpham1:38",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "signed_grasp",
+        "U_over_t": 20.0,
+        "alpha": -1.0,
+        "seed": "phi_30",
+        "case": "signed_grasp_-1"
+      },
+      "results": {
+        "model_id": "complete_signed_grasp_U20_alpham1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5246,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 1.6186267231432794e-05,
+        "maximum_resolved_gap": 162.27043103027796,
+        "fastest_period": 0.03872045737037088,
+        "slowest_period": 388180.00576303375,
+        "time_horizon_t_over_hbar": 3881800.057630338,
+        "uniform_grid_dt": 0.001936022868518544,
+        "uniform_grid_points_required": 2005038331,
+        "computed_exact_sample_count": 1101,
+        "dense_initial_sample_count": 202,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0119406784131559e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-38"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=signed_grasp, U_over_t=20.0, case=signed_grasp_-1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_signed_grasp_U20_alpham1:39",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "signed_grasp",
+        "U_over_t": 20.0,
+        "alpha": -1.0,
+        "seed": "phi_10",
+        "case": "signed_grasp_-1"
+      },
+      "results": {
+        "model_id": "complete_signed_grasp_U20_alpham1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5189,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 1.6186267231432794e-05,
+        "maximum_resolved_gap": 162.27043103027796,
+        "fastest_period": 0.03872045737037088,
+        "slowest_period": 388180.00576303375,
+        "time_horizon_t_over_hbar": 3881800.057630338,
+        "uniform_grid_dt": 0.001936022868518544,
+        "uniform_grid_points_required": 2005038331,
+        "computed_exact_sample_count": 1101,
+        "dense_initial_sample_count": 202,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0013397710803003e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-39"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=signed_grasp, U_over_t=20.0, case=signed_grasp_-1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_signed_grasp_U20_alpham1:40",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "signed_grasp",
+        "U_over_t": 20.0,
+        "alpha": -1.0,
+        "seed": "flat_boundary",
+        "case": "signed_grasp_-1"
+      },
+      "results": {
+        "model_id": "complete_signed_grasp_U20_alpham1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5094,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 1.6186267231432794e-05,
+        "maximum_resolved_gap": 162.27043103027796,
+        "fastest_period": 0.03872045737037088,
+        "slowest_period": 388180.00576303375,
+        "time_horizon_t_over_hbar": 3881800.057630338,
+        "uniform_grid_dt": 0.001936022868518544,
+        "uniform_grid_points_required": 2005038331,
+        "computed_exact_sample_count": 1101,
+        "dense_initial_sample_count": 202,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0103106142922963e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-40"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=signed_grasp, U_over_t=20.0, case=signed_grasp_-1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U20_alphap1:41",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 20.0,
+        "alpha": 1.0,
+        "seed": "regular",
+        "case": "positive_volume_+1"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U20_alphap1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5116,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.00016580565244339596,
+        "maximum_resolved_gap": 161.73930402994876,
+        "fastest_period": 0.03884760939750395,
+        "slowest_period": 37894.880027233026,
+        "time_horizon_t_over_hbar": 378948.8002723303,
+        "uniform_grid_dt": 0.0019423804698751976,
+        "uniform_grid_points_required": 195095044,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0067869421918337e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-41"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=20.0, case=positive_volume_+1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U20_alphap1:42",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 20.0,
+        "alpha": 1.0,
+        "seed": "phi_60",
+        "case": "positive_volume_+1"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U20_alphap1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5234,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.00016580565244339596,
+        "maximum_resolved_gap": 161.73930402994876,
+        "fastest_period": 0.03884760939750395,
+        "slowest_period": 37894.880027233026,
+        "time_horizon_t_over_hbar": 378948.8002723303,
+        "uniform_grid_dt": 0.0019423804698751976,
+        "uniform_grid_points_required": 195095044,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0247137830659567e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-42"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=20.0, case=positive_volume_+1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U20_alphap1:43",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 20.0,
+        "alpha": 1.0,
+        "seed": "phi_30",
+        "case": "positive_volume_+1"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U20_alphap1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5228,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.00016580565244339596,
+        "maximum_resolved_gap": 161.73930402994876,
+        "fastest_period": 0.03884760939750395,
+        "slowest_period": 37894.880027233026,
+        "time_horizon_t_over_hbar": 378948.8002723303,
+        "uniform_grid_dt": 0.0019423804698751976,
+        "uniform_grid_points_required": 195095044,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0049095456129729e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-43"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=20.0, case=positive_volume_+1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U20_alphap1:44",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 20.0,
+        "alpha": 1.0,
+        "seed": "phi_10",
+        "case": "positive_volume_+1"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U20_alphap1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5176,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.00016580565244339596,
+        "maximum_resolved_gap": 161.73930402994876,
+        "fastest_period": 0.03884760939750395,
+        "slowest_period": 37894.880027233026,
+        "time_horizon_t_over_hbar": 378948.8002723303,
+        "uniform_grid_dt": 0.0019423804698751976,
+        "uniform_grid_points_required": 195095044,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0103454548845863e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-44"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=20.0, case=positive_volume_+1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_positive_volume_U20_alphap1:45",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "positive_volume",
+        "U_over_t": 20.0,
+        "alpha": 1.0,
+        "seed": "flat_boundary",
+        "case": "positive_volume_+1"
+      },
+      "results": {
+        "model_id": "complete_positive_volume_U20_alphap1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5106,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 0.00016580565244339596,
+        "maximum_resolved_gap": 161.73930402994876,
+        "fastest_period": 0.03884760939750395,
+        "slowest_period": 37894.880027233026,
+        "time_horizon_t_over_hbar": 378948.8002723303,
+        "uniform_grid_dt": 0.0019423804698751976,
+        "uniform_grid_points_required": 195095044,
+        "computed_exact_sample_count": 1100,
+        "dense_initial_sample_count": 201,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0006491007991822e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-45"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=positive_volume, U_over_t=20.0, case=positive_volume_+1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_signed_grasp_U20_alphap1:46",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "signed_grasp",
+        "U_over_t": 20.0,
+        "alpha": 1.0,
+        "seed": "regular",
+        "case": "signed_grasp_+1"
+      },
+      "results": {
+        "model_id": "complete_signed_grasp_U20_alphap1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5025,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 1.6186267231432794e-05,
+        "maximum_resolved_gap": 162.27043103027796,
+        "fastest_period": 0.03872045737037088,
+        "slowest_period": 388180.00576303375,
+        "time_horizon_t_over_hbar": 3881800.057630338,
+        "uniform_grid_dt": 0.001936022868518544,
+        "uniform_grid_points_required": 2005038331,
+        "computed_exact_sample_count": 1101,
+        "dense_initial_sample_count": 202,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0004988791488732e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-46"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=signed_grasp, U_over_t=20.0, case=signed_grasp_+1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_signed_grasp_U20_alphap1:47",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "signed_grasp",
+        "U_over_t": 20.0,
+        "alpha": 1.0,
+        "seed": "phi_60",
+        "case": "signed_grasp_+1"
+      },
+      "results": {
+        "model_id": "complete_signed_grasp_U20_alphap1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5226,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 1.6186267231432794e-05,
+        "maximum_resolved_gap": 162.27043103027796,
+        "fastest_period": 0.03872045737037088,
+        "slowest_period": 388180.00576303375,
+        "time_horizon_t_over_hbar": 3881800.057630338,
+        "uniform_grid_dt": 0.001936022868518544,
+        "uniform_grid_points_required": 2005038331,
+        "computed_exact_sample_count": 1101,
+        "dense_initial_sample_count": 202,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0092293417366972e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-47"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=signed_grasp, U_over_t=20.0, case=signed_grasp_+1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_signed_grasp_U20_alphap1:48",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "signed_grasp",
+        "U_over_t": 20.0,
+        "alpha": 1.0,
+        "seed": "phi_30",
+        "case": "signed_grasp_+1"
+      },
+      "results": {
+        "model_id": "complete_signed_grasp_U20_alphap1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5247,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 1.6186267231432794e-05,
+        "maximum_resolved_gap": 162.27043103027796,
+        "fastest_period": 0.03872045737037088,
+        "slowest_period": 388180.00576303375,
+        "time_horizon_t_over_hbar": 3881800.057630338,
+        "uniform_grid_dt": 0.001936022868518544,
+        "uniform_grid_points_required": 2005038331,
+        "computed_exact_sample_count": 1101,
+        "dense_initial_sample_count": 202,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0164631885577044e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-48"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=signed_grasp, U_over_t=20.0, case=signed_grasp_+1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_signed_grasp_U20_alphap1:49",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "signed_grasp",
+        "U_over_t": 20.0,
+        "alpha": 1.0,
+        "seed": "phi_10",
+        "case": "signed_grasp_+1"
+      },
+      "results": {
+        "model_id": "complete_signed_grasp_U20_alphap1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5187,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 1.6186267231432794e-05,
+        "maximum_resolved_gap": 162.27043103027796,
+        "fastest_period": 0.03872045737037088,
+        "slowest_period": 388180.00576303375,
+        "time_horizon_t_over_hbar": 3881800.057630338,
+        "uniform_grid_dt": 0.001936022868518544,
+        "uniform_grid_points_required": 2005038331,
+        "computed_exact_sample_count": 1101,
+        "dense_initial_sample_count": 202,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0020862169280856e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-49"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=signed_grasp, U_over_t=20.0, case=signed_grasp_+1"
+    },
+    {
+      "runId": "t11-fl-sampling:complete_signed_grasp_U20_alphap1:50",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {
+        "graph": "complete",
+        "candidate": "signed_grasp",
+        "U_over_t": 20.0,
+        "alpha": 1.0,
+        "seed": "flat_boundary",
+        "case": "signed_grasp_+1"
+      },
+      "results": {
+        "model_id": "complete_signed_grasp_U20_alphap1",
+        "initial_seed_support_dimension": 105,
+        "resolved_pair_count": 5094,
+        "resolved_amplitude_threshold": 1e-08,
+        "seed_probability_cutoff": 1e-12,
+        "minimum_resolved_gap": 1.6186267231432794e-05,
+        "maximum_resolved_gap": 162.27043103027796,
+        "fastest_period": 0.03872045737037088,
+        "slowest_period": 388180.00576303375,
+        "time_horizon_t_over_hbar": 3881800.057630338,
+        "uniform_grid_dt": 0.001936022868518544,
+        "uniform_grid_points_required": 2005038331,
+        "computed_exact_sample_count": 1101,
+        "dense_initial_sample_count": 202,
+        "log_spaced_late_sample_count": 900,
+        "resolved_beat_strength_min": 1.0103106142923224e-08
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-candidate-hamiltonians/dynamics_schedule.csv": "0181f6932f166ca47dda454cd7b8b60fd772ad3bde07ce2534c1e5954df0e0ba"
+        },
+        "presentationSource": "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results/t11-candidate-hamiltonians/dynamics_schedule.csv:row-50"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "graph=complete, candidate=signed_grasp, U_over_t=20.0, case=signed_grasp_+1"
+    }
+  ],
+  "figures": [],
+  "docs": [
+    {
+      "title": "Numerical studies overview",
+      "path": "../index.html"
+    }
+  ]
+}

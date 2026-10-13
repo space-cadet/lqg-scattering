@@ -1,0 +1,263 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "Regular FL volume versus area",
+    "subtitle": "Saved numerical records from results/fl_volume_area_results.json"
+  },
+  "columns": [
+    {
+      "key": "runId",
+      "label": "Case",
+      "type": "string"
+    },
+    {
+      "key": "results.areaLabelJ",
+      "label": "areaLabelJ",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.flAreaOverLp2",
+      "label": "flAreaOverLp2",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.rsPositiveVolumeProjectUnits",
+      "label": "rsPositiveVolumeProjectUnits",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.alPositiveVolumeProjectUnits",
+      "label": "alPositiveVolumeProjectUnits",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.directTensorRS",
+      "label": "directTensorRS",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.directTensorAL",
+      "label": "directTensorAL",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.maxTripleMatrixDifference",
+      "label": "maxTripleMatrixDifference",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.rsDifference",
+      "label": "rsDifference",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.alDifference",
+      "label": "alDifference",
+      "type": "number",
+      "precision": 8
+    }
+  ],
+  "charts": {
+    "type": "scatter",
+    "x": "results.areaLabelJ",
+    "y": "results.areaLabelJ"
+  },
+  "runs": [
+    {
+      "runId": "fl-regular-area:case-0001:1",
+      "task": "T1a",
+      "status": "complete",
+      "description": "Regular FL volume versus area",
+      "parameters": {},
+      "results": {
+        "areaLabelJ": 1,
+        "flAreaOverLp2": 1,
+        "rsPositiveVolumeProjectUnits": 0.0,
+        "alPositiveVolumeProjectUnits": 0.0,
+        "directTensorRS": 0.0,
+        "directTensorAL": 0.0,
+        "maxTripleMatrixDifference": 0.0,
+        "rsDifference": 0.0,
+        "alDifference": 0.0
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl_volume_area_results.json": "928b391c258d25ebb61e33d6fb4f0eb66c13f30812fd20119a3ae15fc6f1648b"
+        },
+        "presentationSource": "results/fl_volume_area_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$[0]"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/fl_volume_area_results.json",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "fl_volume_area_results.json",
+          "path": "../study-assets/results/fl_volume_area_results.json",
+          "kind": "data",
+          "sha256": "928b391c258d25ebb61e33d6fb4f0eb66c13f30812fd20119a3ae15fc6f1648b",
+          "sourcePath": "results/fl_volume_area_results.json",
+          "sourceSha256": "928b391c258d25ebb61e33d6fb4f0eb66c13f30812fd20119a3ae15fc6f1648b"
+        }
+      ],
+      "figures": []
+    },
+    {
+      "runId": "fl-regular-area:case-0002:2",
+      "task": "T1a",
+      "status": "complete",
+      "description": "Regular FL volume versus area",
+      "parameters": {},
+      "results": {
+        "areaLabelJ": 2,
+        "flAreaOverLp2": 2,
+        "rsPositiveVolumeProjectUnits": 0.05077553170606511,
+        "alPositiveVolumeProjectUnits": 0.025387765853032547,
+        "directTensorRS": 0.0507755317060651,
+        "directTensorAL": 0.025387765853032544,
+        "maxTripleMatrixDifference": 0.0,
+        "rsDifference": 6.938893903907228e-18,
+        "alDifference": 3.469446951953614e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl_volume_area_results.json": "928b391c258d25ebb61e33d6fb4f0eb66c13f30812fd20119a3ae15fc6f1648b"
+        },
+        "presentationSource": "results/fl_volume_area_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$[1]"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/fl_volume_area_results.json",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "fl-regular-area:case-0003:3",
+      "task": "T1a",
+      "status": "complete",
+      "description": "Regular FL volume versus area",
+      "parameters": {},
+      "results": {
+        "areaLabelJ": 3,
+        "flAreaOverLp2": 3,
+        "rsPositiveVolumeProjectUnits": 0.16221337924014134,
+        "alPositiveVolumeProjectUnits": 0.0811066896200707,
+        "directTensorRS": 0.1622133792401414,
+        "directTensorAL": 0.08110668962007068,
+        "maxTripleMatrixDifference": 5.551115123125783e-16,
+        "rsDifference": 5.551115123125783e-17,
+        "alDifference": 1.3877787807814457e-17
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl_volume_area_results.json": "928b391c258d25ebb61e33d6fb4f0eb66c13f30812fd20119a3ae15fc6f1648b"
+        },
+        "presentationSource": "results/fl_volume_area_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$[2]"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/fl_volume_area_results.json",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "fl-regular-area:case-0004:4",
+      "task": "T1a",
+      "status": "complete",
+      "description": "Regular FL volume versus area",
+      "parameters": {},
+      "results": {
+        "areaLabelJ": 4,
+        "flAreaOverLp2": 4,
+        "rsPositiveVolumeProjectUnits": 0.3189380712919665,
+        "alPositiveVolumeProjectUnits": 0.15946903564598316,
+        "directTensorRS": 0.31893807129196666,
+        "directTensorAL": 0.1594690356459832,
+        "maxTripleMatrixDifference": 1.2212453270876722e-15,
+        "rsDifference": 1.6653345369377348e-16,
+        "alDifference": 2.7755575615628914e-17
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl_volume_area_results.json": "928b391c258d25ebb61e33d6fb4f0eb66c13f30812fd20119a3ae15fc6f1648b"
+        },
+        "presentationSource": "results/fl_volume_area_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$[3]"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/fl_volume_area_results.json",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "fl-regular-area:case-0005:5",
+      "task": "T1a",
+      "status": "complete",
+      "description": "Regular FL volume versus area",
+      "parameters": {},
+      "results": {
+        "areaLabelJ": 5,
+        "flAreaOverLp2": 5,
+        "rsPositiveVolumeProjectUnits": 0.49885965362368506,
+        "alPositiveVolumeProjectUnits": 0.24942982681184314,
+        "directTensorRS": 0.4988596536236852,
+        "directTensorAL": 0.2494298268118432,
+        "maxTripleMatrixDifference": 2.7755575615628914e-15,
+        "rsDifference": 1.1102230246251565e-16,
+        "alDifference": 5.551115123125783e-17
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl_volume_area_results.json": "928b391c258d25ebb61e33d6fb4f0eb66c13f30812fd20119a3ae15fc6f1648b"
+        },
+        "presentationSource": "results/fl_volume_area_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$[4]"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/fl_volume_area_results.json",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    }
+  ],
+  "figures": [],
+  "docs": [
+    {
+      "title": "Numerical studies overview",
+      "path": "../index.html"
+    }
+  ]
+}

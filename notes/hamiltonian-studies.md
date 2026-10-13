@@ -1,39 +1,50 @@
-# Four-site Hamiltonian and volume pilot
+# Four-site Hamiltonian spectra and positive-RS volume observables
 
 *Created: 2026-10-09 11:35:15 IST*
-*Last Updated: 2026-10-09 20:53:49 IST*
+*Last Updated: 2026-10-11 11:51:12 IST*
 
-This note records the first numerical milestone of the proposed lattice-Hamiltonian program. It covers four available sites, fixed $K=2,3,4$, total SU(2) spin zero, and $g=0$. It is a finite-sector study, not a thermodynamic-limit or phase-transition result.
+This note records the first numerical milestone of the proposed lattice-Hamiltonian program. It covers four available sites, fixed $K=2,3,4$, total SU(2) spin zero, and the optional spin-exchange setting $g=0$. No geometric volume coupling is included. This is a finite-sector study, not a thermodynamic-limit or phase-transition result.
 
-## Model and scope
+## Hamiltonian and separate volume observable
 
-The fixed-area subspace has total boson number $2K$ and includes empty sites. The exact singlet dimensions are 20, 50, and 105 for $K=2,3,4$. The driver compares:
+The calculation has four sites, fixed total boson number $N_b=2K$, and total SU(2) spin zero; empty sites are allowed. The exact singlet dimensions are 20, 50, and 105 for $K=2,3,4$. The driver compares:
 
-- the complete graph on four sites, with six hopping bonds;
-- the periodic four-site ring, with four hopping bonds.
+- the complete graph on four sites, with six allowed hopping bonds;
+- the periodic four-site ring, with four allowed hopping bonds.
 
-The Hamiltonian is
+Every allowed bond has the same hopping strength $t$. With $E_G$ denoting the edge set of the chosen graph, the operator whose spectrum and Gibbs states were calculated is
 
 $$
-H=-t\sum_{\langle i,j\rangle}(E_{ij}+E_{ji})
-+\frac U2\sum_i n_i(n_i-1),\qquad
-E_{ij}=a_i^\dagger a_j+b_i^\dagger b_j,
+H_G=-t\sum_{(i,j)\in E_G}(E_{ij}+E_{ji})
++\frac U2\sum_i n_i(n_i-1),
+\qquad E_{ij}=a_i^\dagger a_j+b_i^\dagger b_j,
+\qquad n_i=a_i^\dagger a_i+b_i^\dagger b_i.
 $$
 
-with $g=0$. The controls are no hopping $(t,U)=(0,1)$ and $t=1$ with $U/t=0,1,5,20$.
+The interaction is on-site repulsion. The controls are no hopping $(t,U)=(0,1)$ and $t=1$ with $U/t=0,1,5,20$. The evaluated matrix contains only the hopping and on-site terms displayed above. In particular, **no volume-dependent term is included in $H_G$**.
 
-The volume is the project-normalized positive RS sum
+The volume is a distinct positive Rovelli–Smolin (RS) operator, evaluated on Hamiltonian eigenstates and Gibbs states as an observable:
 
 $$
 V=(\gamma\hbar)^{3/2}\sum_{\tau\in\mathcal T_G}\sqrt{|q_\tau|},
 \qquad q_{ijk}=i[\mathbf J_i\cdot\mathbf J_j,\mathbf J_j\cdot\mathbf J_k],
 $$
 
-using $\gamma=0.2375$ and $\hbar=1$. A triple is included when its induced three-site subgraph is connected; mutual adjacency is not required. For both the four-site ring and the complete graph, all four three-site subsets are connected. Therefore this pilot uses the same four volume terms on each graph, and the graph comparison changes the hopping Hamiltonian only. Physical volume calibration remains open.
+using $\gamma=0.2375$ and $\hbar=1$. A triple is included when its induced three-site subgraph is connected; mutual adjacency is not required. Both four-site graphs select the same four triples, so they use the same $V$ operator. The graph comparison therefore changes the hopping term in $H_G$, not the volume observable. This is not a calculation with a geometric interaction such as $g_VV$; physical volume calibration also remains open.
 
 The singlet basis couples $((j_0,j_1)k,(j_2,j_3)k)$ to total spin zero, with Condon–Shortley phases. The magnetic $M=0$ occupation basis is used to project the spin-independent hopping terms into the exact singlet space. Volume terms are built in each local-spin block from their positive spectral roots.
 
-The raw ground-energy curves for the two graphs nearly overlap. The difference plot resolves the graph effect: $E_0(\mathrm{complete})-E_0(\mathrm{ring})$ is zero to numerical precision for $K=2$ and $U/t=0$, while for $K=3$ it is $-0.05754,-0.09437,-0.05379$ at $U/t=1,5,20$; for $K=4$ it is $-0.08014,-0.05347,-0.00408$.
+The raw plot shows the ground energies $E_0$ of $H_G$ against $U/t$ for $t=1$, separately for $K=2,3,4$. The complete and ring curves coincide for $K=2$ and remain close, though not identical, for $K=3,4$.
+
+![Four-site ground energy versus on-site repulsion for the complete graph and periodic ring, at K=2, 3, and 4.](../results/hamiltonian-studies/ground_energy_vs_repulsion.png)
+
+*Ground energies of the hopping-plus-repulsion Hamiltonian $H_G$; the plotted cases are $U/t=0,1,5,20$. The separate no-hopping control $(t,U)=(0,1)$ is not on these curves.*
+
+The difference plot resolves the graph effect: $E_0(\mathrm{complete})-E_0(\mathrm{ring})$ is zero to numerical precision for $K=2$ at all plotted $U/t$ values, while for $K=3$ it is $-0.05754,-0.09437,-0.05379$ at $U/t=1,5,20$; for $K=4$ it is $-0.08014,-0.05347,-0.00408$.
+
+![Complete-graph minus ring ground-energy differences for K=2, 3, and 4.](../results/hamiltonian-studies/ground_energy_graph_difference.png)
+
+*The difference plot is derived from the same $E_0(H_G)$ values shown above.*
 
 ## Calculated outputs
 
@@ -121,3 +132,86 @@ The saved run used the `qc-diff` Conda environment (Python 3.10.19, NumPy 1.24.3
 - Detailed figures: `results/hamiltonian-studies/k4_thermal_volume_scan.{pdf,png}` and `results/hamiltonian-studies/k4_low_energy_volume_spectrum.{pdf,png}`.
 
 The broader program remains open: larger site counts and areas, optional spin exchange, quenches and entanglement, fluctuating-area ensembles, and the energy-basis TFD comparison have not been implemented. Strict one-boson-per-site dynamics also require a spin Hamiltonian or a derived effective interaction because ordinary hopping leaves that subspace.
+
+
+## T11 continuation: larger-system and tetrahedral-state results
+
+*Recorded: 2026-10-11 10:27:17 IST*
+
+The previous session completed two studies at the existing $g=0$ Hamiltonian:
+
+- [Four/five-site persistence report](../results/t11-size-comparison/README.md): $(L,K)=(4,4)$ versus $(5,5)$ at $2K/L=2$, complete and ring graphs, $t=1,U=20$, free and no-hop controls. Nonmonotonicity persists, but the pronounced complete-graph low-temperature collapse does not. The complete gap changes from $0.0092257t$ to $12.643382t$; five-site ground degeneracy is six. Coordination and ring parity change, so this is not clean finite-size scaling. Both total volume and volume per selected triple are saved.
+- [Prepared FL diagnostics report](../results/t11-geometric-interpretation/README.md): five $K=4$ references with $\varphi=90,60,30,10,0$ degrees, equal input face areas and closure. Spin means/covariances, assignment probabilities, pair dots, assignment-normalized angles and symmetrized covariances, volume/signed-grasp distributions and overlaps were calculated, then compared with low-energy groups and the full Gibbs spectrum.
+
+The regular FL reference has $\langle j_i\rangle=1$, spin standard deviation $0.5$, four-face weight $0.754630$, all pair-dot means $-0.75$, conditioned angular means $-0.286237$ and standard deviations $0.557147$. Its converted volume is $0.037587$ versus input classical volume $0.047872$, using the existing four-valent factor $\sqrt2/12$.
+
+Complete-graph ground and first excited four-face weights are $0.999934$ and $0.999878$; equal-spin assignment weights are $0.931429$ and $0.932435$. In that assignment, ground/excited positive volumes are $0$/$0.609306$, angular means both $-1/3$, and angular standard deviations $0.745356$/$0.552771$. Ground overlap with the regular reference is zero; the flat-reference overlap is $0.444444$ and regular-reference overlap with the excited mixture is $0.5$, all within the common assignment. Thermal suppression is explained by transfer of weight to a kernel-dominated ground state, rather than disappearing faces.
+
+The $105$-dimensional singlet space contains $38$ positive-volume and $67$ zero-volume eigenstates. Four-active-face support has $51$ dimensions: $38$ positive and $13$ zero. The coupled singlet basis, volume eigenbasis, energy eigenbasis and prepared FL states are distinct objects in this space. The detailed enumeration is preserved in the [2026-10-11 physics transcript](../memory-bank/sessions/2026-10-11-t11-hamiltonian-transcript.md).
+
+Previous-session verification: 38 tests passed for the size comparison, then 42 with the new diagnostics. Independent checks include magnetic counts, closure, hopping leakage, epsilon-contracted triples, analytic free/no-hop limits, conditioning, overlaps, degeneracy and matrix-exponential Gibbs controls. Largest geometric residual was $5.14\times10^{-12}$, below $2\times10^{-10}$. No new Rust calculation. These are previous-session results; this documentation update does not rerun the physics.
+
+### Current modelling discussion and completed calculations
+
+The hopping graph specifies interactions. Complete four-site connectivity also matches tetrahedral face adjacency; the ring is a sparse-interaction control. No particular five-faced polyhedron was constructed in the persistence test. The second term is **on-site repulsion**: $H_U=U\sum_i\binom{n_i}{2}$. Equal occupation at fixed total number is a consequence, not its defining interpretation.
+
+The discussion introduced the positive-volume candidate $H_V=H_0+g_VV_{\mathrm{RS}}$ and the signed candidate $H_\chi=H_0+\lambda_\chi Q_\chi$. Here $g_V$ distinguishes the volume coupling from the earlier optional spin-exchange coefficient $g$. Both candidates are now tested across the parameter ranges recorded below; the signed term uses a fixed, closure-consistent orientation. Nonzero volume was already possible under $H_0$ without either addition.
+
+The prepared $K=4$ FL references have now been evolved under the complete-graph $H_0$, $H_V$ and $H_\chi$ models for $U/t=5,20$. All five input angles ($90^\circ,60^\circ,30^\circ,10^\circ,0^\circ$) are included. The exact energy-basis trajectories record geometric readouts, return probability, and norm, energy, total-area and closure checks. The earlier $K=2,U=5$ probe remains a separate calculation.
+
+## Physics transcripts
+
+The full physics dialogues are kept in separate session records, rather than duplicated in this research note:
+
+- [2026-10-10: T11 geometry and singlet enumeration](../memory-bank/sessions/2026-10-10-t11-geometry-transcript.md)
+- [2026-10-11: T11 Hamiltonian and volume discussion](../memory-bank/sessions/2026-10-11-t11-hamiltonian-transcript.md)
+
+## T11 follow-up: explicit positive-volume coupling
+
+*Recorded: 2026-10-11 12:13 IST*
+
+The first proposed geometry-dependent Hamiltonian has now been tested:
+
+$$
+H=H_0+g_VV_{\mathrm{RS}},\qquad
+H_0=-t\sum_{i<j}(E_{ij}+E_{ji})+
+\frac{U}{2}\sum_i n_i(n_i-1).
+$$
+
+This is the four-site complete graph, interpreted as tetrahedral face adjacency, in the full $K=4$, total-spin-zero space (105 states), with $t=1$, $U/t=20$, and historical spin exchange set to zero. Couplings use $\alpha_V=g_V\Delta V/t$, where the volume-operator spectral range is $\Delta V=0.609306380473$ project units; the scan is $\alpha_V=-1,0,+1$. The zero-coupling result reproduces the earlier pilot.
+
+At zero temperature, the ground-space mean volumes for negative, zero and positive coupling are $0.601241$, $0.033487$ and $0.031332$ project units. The negative-coupling ground space is twofold degenerate and has $P(V=0)=0.000193$; the baseline and positive-coupling ground spaces have zero-volume probabilities $0.931544$ and $0.935951$. The first gap grows from $0.009226t$ at zero coupling to $0.920552t$ and $0.942482t$ for negative and positive coupling, respectively.
+
+At $\beta t=10$, the mean volumes are $0.601213$, $0.400087$ and $0.031424$ for $\alpha_V=-1,0,+1$. Thus negative coupling selects high-volume ground states, while positive coupling makes the low-temperature volume collapse occur much earlier than in the baseline. However, the regular FL reference has only $0.112216$ probability in the negative-coupling ground eigenspace; high volume alone does not select that prepared reference.
+
+The complete thermal scan, ground and FL-reference readouts, volume distributions, protocol, provenance, and independent verification are in the [positive-volume-coupling report](../results/t11-volume-coupling/README.md). The [figure](../results/t11-volume-coupling/volume_coupling_response.png) compares the thermal response, ground-space volume and kernel weight, and FL overlaps. The independent NumPy-spectrum and SciPy matrix-exponential checks passed (78 checks; maximum residual $7.44\times10^{-13}$ below $2\times10^{-10}$). The oriented signed-grasp candidate and prepared FL-state dynamics are completed in the follow-up below.
+
+## T11 follow-up: complete candidate-Hamiltonian comparison
+
+*Recorded: 2026-10-11 13:15 IST*
+
+The full four-site candidate study compares
+
+$$
+H_V=H_0+g_VV_{\mathrm{RS}},
+\qquad
+H_\chi=H_0+\lambda_\chi Q_\chi,
+$$
+
+in the $K=4$, total-spin-zero singlet space. The baseline interaction is on-site repulsion, $U\sum_i\binom{n_i}{2}$. The complete graph represents tetrahedral face adjacency; the ring is retained only as a sparse-hopping control. The complete-graph scans use $U/t=0,1,5,20$ and $\alpha=-2,-1,-0.5,0,0.5,1,2$ for each candidate. The ring control uses $U/t=5,20$ and $\alpha_V=-1,0,1$. All five prepared FL references are included in the static state comparisons.
+
+For the orientation $(+,-,+,-)$ on $(012,013,023,123)$,
+
+$$
+Q_\chi=q_{012}-q_{013}+q_{023}-q_{123}=4q_{012},
+\qquad
+V_{\mathrm{RS}}=2\gamma^{3/2}\sqrt{|Q_\chi|},
+$$
+
+within the existing positive-root cutoff. This is an exact relation in this closed four-face space, so the positive-volume and signed-grasp terms are related tests rather than independent volume observables. $H_\chi$ adds a chirality bias: at $U/t=20$, either sign of $\alpha_\chi$ selects a high-volume ground state, while the sign of $\langle Q_\chi\rangle$ reverses. The spectra at opposite coupling signs agree under complex conjugation. In contrast, $H_V$ with $\alpha_V=-1$ selects high volume and $\alpha_V=+1$ suppresses it.
+
+At $\beta t=10$ and $U/t=20$, the complete-graph mean volume is $0.400087$ for $H_0$, $0.601213$ for $H_V$ with $\alpha_V=-1$, $0.031424$ for $H_V$ with $\alpha_V=+1$, and $0.596491$ for either sign of $H_\chi$. For the ring volume-coupling control, the corresponding means are $0.539372$, $0.291685$, and $0.110923$. All values are project RS units.
+
+All five prepared FL references ($\varphi=90^\circ,60^\circ,30^\circ,10^\circ,0^\circ$) were propagated under $H_0$, $H_V$ at $\alpha_V=\pm1$, and $H_\chi$ at $\alpha_\chi=\pm1$, for $U/t=5,20$. These 50 exact energy-basis trajectories track return probability and the same volume, face-area, active-face, angular and signed-grasp readouts. A uniformly resolved time grid would require $4.4$ million to $2.01$ billion points per trajectory. The saved data therefore use dense samples over ten fastest-beat periods and 900 logarithmic-time samples through ten slowest-beat periods, with the uniform-grid counts recorded separately.
+
+Full parameters, results, plots, and limitations are in the [candidate-Hamiltonian report](../results/t11-candidate-hamiltonians/README.md). The result directory contains all static spectra, full Gibbs scans, prepared-state readouts, all five-seed FL evolution samples, schedules, validation, independent verification, provenance, and five figures. The new ground-energy plot shows the Hamiltonian ground-energy shift $(E_0(\alpha)-E_0(0))/t$ for each candidate term and $U/t$; it is distinct from the volume-response plots. The independent verifier passed 1,510 checks with maximum residual $1.07\times10^{-12}$, below $2\times10^{-10}$. This closes the agreed candidate comparison on the current $K=4$ sector; physical volume calibration and larger-area tests remain open.

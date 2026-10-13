@@ -1,0 +1,34 @@
+{
+  "distribution_checks": [
+    {
+      "beta": 4,
+      "normalization": 1.0000000000000002,
+      "mean_area": 1.006028686489932,
+      "display_tail": 7.804851458114875e-96
+    },
+    {
+      "beta": 2,
+      "normalization": 0.9999999999999999,
+      "mean_area": 1.30277990599749,
+      "display_tail": 8.748644278746989e-44
+    },
+    {
+      "beta": 1,
+      "normalization": 1.0,
+      "mean_area": 2.7877466447460058,
+      "display_tail": 1.8386707252447364e-18
+    },
+    {
+      "beta": 0.5,
+      "normalization": 1.0,
+      "mean_area": 6.475738648691099,
+      "display_tail": 6.466040300435025e-07
+    }
+  ],
+  "checks": "normalized distributions; saved mean parity; nonzero-volume probability <= four-active-face probability",
+  "hashes": {
+    "results/thermal-closed-projection/temperature_summary.csv": "98af4874e48610f3c055d536b4c9c80eb2b5b90c57d6b3b604c447e827d7578a",
+    "results/thermal-closed-projection/area_distribution.csv": "f78c720ca9d71c59be2c629b0af77139747422b884882c57a1f70323288b4aff",
+    "code/thermal/plot_closed_temperature_writeup.py": "99c6caa770fc30457196173b57c5789a82a68065a7ff42ab0c040acfbf33c22d"
+  }
+}

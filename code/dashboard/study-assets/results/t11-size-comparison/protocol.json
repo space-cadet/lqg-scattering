@@ -1,0 +1,64 @@
+{
+  "question": "Does the L4 K4 U20 nonmonotonic response persist at L5 K5?",
+  "sizes": [
+    [
+      4,
+      4
+    ],
+    [
+      5,
+      5
+    ]
+  ],
+  "density": "2K/L=2; K=sum j_i, not sum sqrt(j_i(j_i+1))",
+  "graphs": [
+    "complete",
+    "periodic ring"
+  ],
+  "hopping": "unit per edge; no degree rescaling",
+  "controls": [
+    {
+      "t": 0,
+      "U": 1
+    },
+    {
+      "t": 1,
+      "U": 0
+    },
+    {
+      "t": 1,
+      "U": 20
+    }
+  ],
+  "g": 0,
+  "volume": "gamma^(3/2) sum connected-induced-triple sqrt(abs(q)); gamma=0.2375; hbar=1",
+  "reported_normalizations": [
+    "total",
+    "per selected triple"
+  ],
+  "physical_calibration": false,
+  "beta": "inverse energy, kB=1; beta*t for t=1 and beta*U for t=0,U=1",
+  "grid": "0,701 log-spaced 1e-3..1e4,infinity; uniform ground-space mixture",
+  "tolerance": 2e-10,
+  "root_zero_factor": 1.4210854715202004e-14,
+  "controls_validation": [
+    "CG versus magnetic multiplicity",
+    "raising/lowering closure",
+    "direct epsilon q versus dot commutator",
+    "singlet hopping leakage",
+    "eigenpair residuals",
+    "onsite-volume commutator",
+    "L4 saved archive parity"
+  ],
+  "limitations": [
+    "odd ring changes topology",
+    "complete degree grows",
+    "volume operator changes with graph",
+    "finite crossover is not a phase transition"
+  ],
+  "git_head": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+  "source_sha256": "217d818a53ea9aa19ed198313819bc14a9c5eccbf1db359a2a2bbc3a7215488b",
+  "python": "3.10.19",
+  "numpy": "1.24.3",
+  "scipy": "1.15.3"
+}

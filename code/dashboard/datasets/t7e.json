@@ -1,0 +1,666 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "Historical complexified purification",
+    "subtitle": "Archived T7E study, retained under current T9 ownership."
+  },
+  "columns": [
+    {
+      "key": "runId",
+      "label": "Case",
+      "type": "string"
+    },
+    {
+      "key": "parameters.n",
+      "label": "n",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.K",
+      "label": "K",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.seed",
+      "label": "seed",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.eps",
+      "label": "eps",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.sourceGroup",
+      "label": "sourceGroup",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.dim",
+      "label": "dim",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.t5b_alpha",
+      "label": "t5b alpha",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.taylor_iters",
+      "label": "taylor iters",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.conj_diff",
+      "label": "conj diff",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.V_sc",
+      "label": "V sc",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.q_real",
+      "label": "q real",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.q_imag",
+      "label": "q imag",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.q_abs",
+      "label": "q abs",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.q2_pure",
+      "label": "q2 pure",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.q2_deph",
+      "label": "q2 deph",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.corr_beta_spread",
+      "label": "corr beta spread",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "series",
+      "label": "Series",
+      "type": "string",
+      "visible": false
+    }
+  ],
+  "charts": {
+    "type": "scatter",
+    "x": "parameters.K",
+    "y": "results.dim",
+    "groupBy": "series"
+  },
+  "runs": [
+    {
+      "runId": "t7e:case-0001:1",
+      "task": "T9",
+      "status": "complete",
+      "description": "Historical complexified purification",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "K": 7,
+        "seed": 11,
+        "eps": 1e-06
+      },
+      "results": {
+        "sourceGroup": "4",
+        "dim": 6435,
+        "t5b_alpha": 0.49689706865556843,
+        "taylor_iters": 38,
+        "conj_diff": 0.0,
+        "V_sc": 2.886067052790087e-06,
+        "q_real": 6.217588734507415e-10,
+        "q_imag": -1.2143064331840805e-17,
+        "q_abs": 6.217588734507416e-10,
+        "q2_pure": 0.7066203551699741,
+        "q2_deph": 0.7850079344419265,
+        "corr": {
+          "0.5": 0.03058036169807405,
+          "1.0": 0.03058036169807407,
+          "5.0": 0.030580361698074064
+        },
+        "corr_beta_spread": 2.0816681711721685e-17
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t7e_results.json": "975736e518a476c3f08d51d4c62bff39c44403f9ba70b7af4c5fb38b67ae5bdf",
+          "notes/experiments/t7e_notes.md": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9"
+        },
+        "presentationSource": "results/t7e_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.4.rows[0]"
+      },
+      "assessment": {
+        "summary": "Archived T7E study, retained under current T9 ownership.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "t7e_results.json",
+          "path": "../study-assets/results/t7e_results.json",
+          "kind": "data",
+          "sha256": "a421101ddb5ce227c4a797e3e7ed93783c024278facff51d599be409f4476c41",
+          "sourcePath": "results/t7e_results.json",
+          "sourceSha256": "975736e518a476c3f08d51d4c62bff39c44403f9ba70b7af4c5fb38b67ae5bdf"
+        },
+        {
+          "label": "t7e_notes.md",
+          "path": "../study-assets/notes/experiments/t7e_notes.txt",
+          "kind": "data",
+          "sha256": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9",
+          "sourcePath": "notes/experiments/t7e_notes.md",
+          "sourceSha256": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9"
+        }
+      ],
+      "figures": [
+        {
+          "title": "T7e",
+          "path": "../study-assets/figures/dashboard-history/t7e.png",
+          "tags": [
+            "T9"
+          ]
+        }
+      ],
+      "series": "n=4, sourceGroup=4"
+    },
+    {
+      "runId": "t7e:case-0002:2",
+      "task": "T9",
+      "status": "complete",
+      "description": "Historical complexified purification",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "K": 7,
+        "seed": 11,
+        "eps": 0.0001
+      },
+      "results": {
+        "sourceGroup": "4",
+        "dim": 6435,
+        "t5b_alpha": 0.49689706865556843,
+        "taylor_iters": 38,
+        "conj_diff": 1.637585374748146e-16,
+        "V_sc": 2.8860670499261024e-05,
+        "q_real": 6.217588722167383e-08,
+        "q_imag": -5.204170439239531e-18,
+        "q_abs": 6.217588722167383e-08,
+        "q2_pure": 0.706620355276018,
+        "q2_deph": 0.7850079345583839,
+        "corr": {
+          "0.5": 0.030580361670447555,
+          "1.0": 0.030580361670447566,
+          "5.0": 0.030580361670447576
+        },
+        "corr_beta_spread": 2.0816681711721685e-17
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t7e_results.json": "975736e518a476c3f08d51d4c62bff39c44403f9ba70b7af4c5fb38b67ae5bdf",
+          "notes/experiments/t7e_notes.md": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9"
+        },
+        "presentationSource": "results/t7e_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.4.rows[1]"
+      },
+      "assessment": {
+        "summary": "Archived T7E study, retained under current T9 ownership.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=4"
+    },
+    {
+      "runId": "t7e:case-0003:3",
+      "task": "T9",
+      "status": "complete",
+      "description": "Historical complexified purification",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "K": 7,
+        "seed": 11,
+        "eps": 0.01
+      },
+      "results": {
+        "sourceGroup": "4",
+        "dim": 6435,
+        "t5b_alpha": 0.49689706865556843,
+        "taylor_iters": 38,
+        "conj_diff": 2.1249107083413492e-16,
+        "V_sc": 0.00028860384080669696,
+        "q_real": 6.217465313796352e-06,
+        "q_imag": 8.673802668341247e-18,
+        "q_abs": 6.217465313796352e-06,
+        "q2_pure": 0.7066214157130633,
+        "q2_deph": 0.7850090991268482,
+        "corr": {
+          "0.5": 0.030580085405119514,
+          "1.0": 0.0305800854051195,
+          "5.0": 0.0305800854051195
+        },
+        "corr_beta_spread": 1.3877787807814457e-17
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t7e_results.json": "975736e518a476c3f08d51d4c62bff39c44403f9ba70b7af4c5fb38b67ae5bdf",
+          "notes/experiments/t7e_notes.md": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9"
+        },
+        "presentationSource": "results/t7e_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.4.rows[2]"
+      },
+      "assessment": {
+        "summary": "Archived T7E study, retained under current T9 ownership.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=4"
+    },
+    {
+      "runId": "t7e:case-0004:4",
+      "task": "T9",
+      "status": "complete",
+      "description": "Historical complexified purification",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "K": 7,
+        "seed": 11,
+        "eps": 0.1
+      },
+      "results": {
+        "sourceGroup": "4",
+        "dim": 6435,
+        "t5b_alpha": 0.49689706865556843,
+        "taylor_iters": 38,
+        "conj_diff": 1.6398614534700708e-16,
+        "V_sc": 0.0009117491865412818,
+        "q_real": 6.205259200018208e-05,
+        "q_imag": -3.47452914963714e-18,
+        "q_abs": 6.205259200018208e-05,
+        "q2_pure": 0.7067263317258012,
+        "q2_deph": 0.7851243168344058,
+        "corr": {
+          "0.5": 0.030552761233161564,
+          "1.0": 0.03055276123316157,
+          "5.0": 0.03055276123316157
+        },
+        "corr_beta_spread": 6.938893903907228e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t7e_results.json": "975736e518a476c3f08d51d4c62bff39c44403f9ba70b7af4c5fb38b67ae5bdf",
+          "notes/experiments/t7e_notes.md": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9"
+        },
+        "presentationSource": "results/t7e_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.4.rows[3]"
+      },
+      "assessment": {
+        "summary": "Archived T7E study, retained under current T9 ownership.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=4"
+    },
+    {
+      "runId": "t7e:case-0005:5",
+      "task": "T9",
+      "status": "complete",
+      "description": "Historical complexified purification",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "K": 7,
+        "seed": 11,
+        "eps": 1.0
+      },
+      "results": {
+        "sourceGroup": "4",
+        "dim": 6435,
+        "t5b_alpha": 0.49689706865556843,
+        "taylor_iters": 37,
+        "conj_diff": 2.1200648292195503e-16,
+        "V_sc": 0.002613917806664684,
+        "q_real": 0.0005100268181366586,
+        "q_imag": -1.0083080204115191e-17,
+        "q_abs": 0.0005100268181366586,
+        "q2_pure": 0.7164867717977325,
+        "q2_deph": 0.7958381664669472,
+        "corr": {
+          "0.5": 0.02808251627352311,
+          "1.0": 0.02808251627352309,
+          "5.0": 0.028082516273523088
+        },
+        "corr_beta_spread": 2.0816681711721685e-17
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t7e_results.json": "975736e518a476c3f08d51d4c62bff39c44403f9ba70b7af4c5fb38b67ae5bdf",
+          "notes/experiments/t7e_notes.md": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9"
+        },
+        "presentationSource": "results/t7e_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.4.rows[4]"
+      },
+      "assessment": {
+        "summary": "Archived T7E study, retained under current T9 ownership.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=4"
+    },
+    {
+      "runId": "t7e:case-0006:6",
+      "task": "T9",
+      "status": "complete",
+      "description": "Historical complexified purification",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 5,
+        "K": 8,
+        "seed": 12,
+        "eps": 1e-06
+      },
+      "results": {
+        "sourceGroup": "5",
+        "dim": 43758,
+        "t5b_alpha": 0.499119305062509,
+        "taylor_iters": 40,
+        "conj_diff": 1.593293345773198e-16,
+        "V_sc": 5.259987554874125e-07,
+        "q_real": 2.065278344896369e-11,
+        "q_imag": -4.336808689943497e-18,
+        "q_abs": 2.0652783448964144e-11,
+        "q2_pure": 0.7193065352269157,
+        "q2_deph": 0.6778681407289551,
+        "corr": {
+          "0.5": -0.010736443967656363,
+          "1.0": -0.010736443967656373,
+          "5.0": -0.010736443967656368
+        },
+        "corr_beta_spread": 1.0408340855860843e-17
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t7e_results.json": "975736e518a476c3f08d51d4c62bff39c44403f9ba70b7af4c5fb38b67ae5bdf",
+          "notes/experiments/t7e_notes.md": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9"
+        },
+        "presentationSource": "results/t7e_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.5.rows[0]"
+      },
+      "assessment": {
+        "summary": "Archived T7E study, retained under current T9 ownership.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=5, sourceGroup=5"
+    },
+    {
+      "runId": "t7e:case-0007:7",
+      "task": "T9",
+      "status": "complete",
+      "description": "Historical complexified purification",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 5,
+        "K": 8,
+        "seed": 12,
+        "eps": 0.0001
+      },
+      "results": {
+        "sourceGroup": "5",
+        "dim": 43758,
+        "t5b_alpha": 0.499119305062509,
+        "taylor_iters": 40,
+        "conj_diff": 0.0,
+        "V_sc": 5.2599875530248025e-06,
+        "q_real": 2.065278343444181e-09,
+        "q_imag": -6.0715321554175085e-18,
+        "q_abs": 2.065278343444181e-09,
+        "q2_pure": 0.7193065352757225,
+        "q2_deph": 0.6778681408044918,
+        "corr": {
+          "0.5": -0.010736443952529106,
+          "1.0": -0.010736443952529113,
+          "5.0": -0.010736443952529113
+        },
+        "corr_beta_spread": 6.938893903907228e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t7e_results.json": "975736e518a476c3f08d51d4c62bff39c44403f9ba70b7af4c5fb38b67ae5bdf",
+          "notes/experiments/t7e_notes.md": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9"
+        },
+        "presentationSource": "results/t7e_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.5.rows[1]"
+      },
+      "assessment": {
+        "summary": "Archived T7E study, retained under current T9 ownership.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=5, sourceGroup=5"
+    },
+    {
+      "runId": "t7e:case-0008:8",
+      "task": "T9",
+      "status": "complete",
+      "description": "Historical complexified purification",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 5,
+        "K": 8,
+        "seed": 12,
+        "eps": 0.01
+      },
+      "results": {
+        "sourceGroup": "5",
+        "dim": 43758,
+        "t5b_alpha": 0.499119305062509,
+        "taylor_iters": 40,
+        "conj_diff": 1.5933096964747033e-16,
+        "V_sc": 5.259969073242341e-05,
+        "q_real": 2.065263831688371e-07,
+        "q_imag": -8.672161542005942e-19,
+        "q_abs": 2.065263831688371e-07,
+        "q2_pure": 0.719307023338085,
+        "q2_deph": 0.677868896160045,
+        "corr": {
+          "0.5": -0.01073629268077381,
+          "1.0": -0.010736292680773796,
+          "5.0": -0.010736292680773812
+        },
+        "corr_beta_spread": 1.5612511283791264e-17
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t7e_results.json": "975736e518a476c3f08d51d4c62bff39c44403f9ba70b7af4c5fb38b67ae5bdf",
+          "notes/experiments/t7e_notes.md": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9"
+        },
+        "presentationSource": "results/t7e_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.5.rows[2]"
+      },
+      "assessment": {
+        "summary": "Archived T7E study, retained under current T9 ownership.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=5, sourceGroup=5"
+    },
+    {
+      "runId": "t7e:case-0009:9",
+      "task": "T9",
+      "status": "complete",
+      "description": "Historical complexified purification",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 5,
+        "K": 8,
+        "seed": 12,
+        "eps": 0.1
+      },
+      "results": {
+        "sourceGroup": "5",
+        "dim": 43758,
+        "t5b_alpha": 0.499119305062509,
+        "taylor_iters": 40,
+        "conj_diff": 2.271651915535193e-16,
+        "V_sc": 0.0001662771045058517,
+        "q_real": 2.063830681909777e-06,
+        "q_imag": -2.5961559833344305e-18,
+        "q_abs": 2.063830681909777e-06,
+        "q2_pure": 0.7193552852496478,
+        "q2_deph": 0.677943611775509,
+        "corr": {
+          "0.5": -0.010721326398253388,
+          "1.0": -0.010721326398253392,
+          "5.0": -0.010721326398253392
+        },
+        "corr_beta_spread": 3.469446951953614e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t7e_results.json": "975736e518a476c3f08d51d4c62bff39c44403f9ba70b7af4c5fb38b67ae5bdf",
+          "notes/experiments/t7e_notes.md": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9"
+        },
+        "presentationSource": "results/t7e_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.5.rows[3]"
+      },
+      "assessment": {
+        "summary": "Archived T7E study, retained under current T9 ownership.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=5, sourceGroup=5"
+    },
+    {
+      "runId": "t7e:case-0010:10",
+      "task": "T9",
+      "status": "complete",
+      "description": "Historical complexified purification",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 5,
+        "K": 8,
+        "seed": 12,
+        "eps": 1.0
+      },
+      "results": {
+        "sourceGroup": "5",
+        "dim": 43758,
+        "t5b_alpha": 0.499119305062509,
+        "taylor_iters": 40,
+        "conj_diff": 2.3008556905227105e-16,
+        "V_sc": 0.0005113884515998442,
+        "q_real": 1.9521401369878893e-05,
+        "q_imag": -1.951563910473908e-18,
+        "q_abs": 1.9521401369878893e-05,
+        "q2_pure": 0.7236166497120109,
+        "q2_deph": 0.6847455098666995,
+        "corr": {
+          "0.5": -0.009329798722736154,
+          "1.0": -0.009329798722736158,
+          "5.0": -0.009329798722736149
+        },
+        "corr_beta_spread": 8.673617379884035e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t7e_results.json": "975736e518a476c3f08d51d4c62bff39c44403f9ba70b7af4c5fb38b67ae5bdf",
+          "notes/experiments/t7e_notes.md": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9"
+        },
+        "presentationSource": "results/t7e_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.5.rows[4]"
+      },
+      "assessment": {
+        "summary": "Archived T7E study, retained under current T9 ownership.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=5, sourceGroup=5"
+    }
+  ],
+  "figures": [
+    {
+      "title": "T7e",
+      "path": "../study-assets/figures/dashboard-history/t7e.png",
+      "tags": [
+        "T9"
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "title": "Numerical studies overview",
+      "path": "../index.html"
+    }
+  ]
+}

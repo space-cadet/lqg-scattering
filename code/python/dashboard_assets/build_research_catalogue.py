@@ -4,6 +4,8 @@ Run with conda run -n qc-diff python code/python/dashboard_assets/build_research
 No scientific calculation is rerun. Historical figures are drawn from saved arrays.
 """
 import csv
+import argparse
+import gzip
 import hashlib
 import json
 import math
@@ -37,6 +39,14 @@ FIGURE_TITLES = {
     "thermal_vacuum_spin":"Vacuum-seed per-copy resultant-spin distributions",
     "j1_spin_joint_maps":"Excited-seed joint boson-number and resultant-spin distributions",
     "j1_spin_temperature":"Excited-seed area and spin distributions versus temperature",
+    "volume_comparison":"Four versus five sites: volume per selected triple at U/t=20",
+    "thermal_geometric_diagnostics":"Four-face FL references and thermal geometric diagnostics",
+    "four-and-five-site-graphs":"Complete and ring interaction graphs, with one selected volume triple",
+    "candidate_ground_energy_shifts":"Hamiltonian ground-energy shifts relative to the baseline",
+    "candidate_ground_state_response":"Ground-state volume and signed-grasp response",
+    "candidate_thermal_response_u20":"Thermal volume and grasp response at U/t=20",
+    "ring_topology_control":"Ring hopping topology control",
+    "prepared_FL_early_dynamics_u20":"Early evolution of prepared FL states at U/t=20",
 }
 
 
@@ -57,6 +67,13 @@ def clean(value):
 def export(source):
     source = Path(source)
     target = DASH / "study-assets" / source
+    if source.parts[0] == "memory-bank":
+        # Deployment also excludes directories named memory-bank.
+        target = DASH / "study-assets" / "study-records" / Path(*source.parts[1:])
+    # The website deployment excludes *.md. Serve the same bytes as text,
+    # retaining the original source name in the download manifest.
+    if source.suffix == ".md":
+        target = target.with_suffix(".txt")
     target.parent.mkdir(parents=True, exist_ok=True)
     if source.suffix == ".json":
         target.write_text(json.dumps(clean(read(source)), indent=2, allow_nan=False) + "\n")
@@ -65,6 +82,28 @@ def export(source):
     return {"name": source.name, "path": target.relative_to(DASH).as_posix(),
             "source": source.as_posix(),
             "sourceSha256": hashlib.sha256((ROOT / source).read_bytes()).hexdigest()}
+
+
+def sha256_file(path):
+    digest = hashlib.sha256()
+    with Path(path).open("rb") as stream:
+        for block in iter(lambda: stream.read(1024 * 1024), b""):
+            digest.update(block)
+    return digest.hexdigest()
+
+
+def export_gzip(source):
+    source = Path(source)
+    raw = ROOT / source
+    target = DASH / "study-assets" / source
+    target = target.with_name(target.name + ".gz")
+    target.parent.mkdir(parents=True, exist_ok=True)
+    with raw.open("rb") as input_stream, target.open("wb") as output_stream:
+        with gzip.GzipFile(filename="", mode="wb", fileobj=output_stream, compresslevel=6, mtime=0) as compressed:
+            shutil.copyfileobj(input_stream, compressed, length=1024 * 1024)
+    return {"name": source.name + ".gz", "path": target.relative_to(DASH).as_posix(),
+            "source": source.as_posix(), "sourceSha256": sha256_file(raw),
+            "packageSha256": sha256_file(target), "compression": "gzip"}
 
 
 def plot(name, title, xlabel, ylabel, series, sources, xlog=False, ylog=False):
@@ -161,7 +200,7 @@ def historical_plots():
         "plots": {k:[{"path":p,"sha256":hashlib.sha256((ROOT/p).read_bytes()).hexdigest()} for p in v] for k,v in PLOT_SOURCES.items()}}, indent=2)+"\n")
 
 
-def add(identifier, task, title, description, limits, sources, figures=(), table=None, status="Saved calculation"):
+def add(identifier, task, title, description, limits, sources, figures=(), table=None, status="Saved calculation", catalogue_date="2026-10-09", compressed_sources=()):
     files = []
     for source in sources:
         path = ROOT / source
@@ -169,6 +208,7 @@ def add(identifier, task, title, description, limits, sources, figures=(), table
             files.extend(export(p.relative_to(ROOT)) for p in sorted(path.iterdir()) if p.is_file() and p.suffix in [".json", ".csv", ".md", ".npz"])
         else:
             files.append(export(source))
+    files.extend(export_gzip(source) for source in compressed_sources)
     images = []
     for source in figures:
         path = ROOT / source
@@ -184,14 +224,75 @@ def add(identifier, task, title, description, limits, sources, figures=(), table
                 item["pdf"] = export(pdf.relative_to(ROOT))["path"]
             images.append(item)
     STUDIES.append({"id":identifier,"task":task,"title":title,"description":description,
-                    "limits":limits,"status":status,"files":files,"figures":images,"table":table})
+                    "limits":limits,"status":status,"catalogueDate":catalogue_date,
+                    "files":files,"figures":images,"table":table})
 
 
-def main():
-    historical_plots()
+def main(reuse_history=False):
+    if not reuse_history:
+        historical_plots()
+    size_rows = list(csv.DictReader((ROOT / "results/t11-size-comparison/summary.csv").open()))
+    add("t11-size-comparison", "T11", "Four versus five sites: thermal-volume persistence",
+        "Matched mean occupation 2K/L=2: (L,K)=(4,4) and (5,5), singlet dimensions 105 and 1,176. Complete and ring graphs at t=1,U=20, plus free and no-hopping controls. Intermediate-temperature nonmonotonicity persists; the pronounced four-site complete-graph low-temperature collapse does not.",
+        "The plot reports volume per selected triple; CSV files also retain total volume. Triple counts: 4 for both four-site graphs, 10 for five-site complete, 5 for five-site ring. Unit hopping per bond, g=0. Coordination changes and the odd ring make this a persistence test, not clean finite-size scaling. Six sites were not calculated.",
+        ["results/t11-size-comparison", "code/python/t11_size_comparison.py", "code/python/verify_t11_size_comparison.py", "code/python/plot_t11_size_comparison.py"],
+        ["results/t11-size-comparison/volume_comparison.png", "figures/hamiltonian-systems/four-and-five-site-graphs.png"],
+        {"columns":["L","K","graph","case","dimension","triples","gap","ground_degeneracy","ground_volume","peak_volume"], "rows":size_rows},
+        "Calculated and independently checked; prior 38-test suite passed", catalogue_date="2026-10-11")
+    state_rows = list(csv.DictReader((ROOT / "results/t11-geometric-interpretation/state_summary.csv").open()))
+    add("t11-geometric-interpretation", "T11", "Prepared tetrahedral FL states and the volume crossover",
+        "Five explicitly constructed K=4 FL references: equal input face areas, phi=90,60,30,10,0 degrees. Saved face-spin distributions, pair correlations, angular fluctuations, volume distributions and overlaps; comparisons with the first three energy groups of complete/ring Hamiltonians at t=1,U=20. The complete ground is kernel-dominated despite nearly unit four-face weight.",
+        "FL references are prepared states; energy groups and Gibbs mixtures are separate comparisons. This record contains static readouts; the separate T11 candidate-Hamiltonian record includes geometric-coupling scans and time evolution. Angular normalization is assignment-specific and conditioning retains coherence and selection probabilities. Geometric volume uses the established sqrt(2)/12 four-valent conversion. The Hamiltonian in this record uses g=0. No new independent Rust run.",
+        ["results/t11-geometric-interpretation", "notes/t11-geometric-interpretation.md", "code/python/lqg_scattering/geometric_diagnostics.py", "code/python/t11_geometric_interpretation.py", "code/python/verify_t11_geometric_interpretation.py", "code/python/plot_t11_geometric_interpretation.py", "code/python/test_geometric_diagnostics.py"],
+        ["results/t11-geometric-interpretation/thermal_geometric_diagnostics.png"],
+        {"columns":["state","four_face_probability","volume_mean","geometric_volume_mean","probability_zero_volume","conditional_angle_rms_sd"], "rows":state_rows},
+        "Calculated and independently checked; prior 42-test suite passed", catalogue_date="2026-10-11")
+    model_rows = list(csv.DictReader((ROOT / "results/t11-candidate-hamiltonians/model_summary.csv").open()))
+    selected = []
+    for row in model_rows:
+        alpha = float(row["alpha"])
+        candidate = row["candidate"]
+        graph = row["graph"]
+        if row["U_over_t"] != "20.0":
+            continue
+        if graph == "complete" and ((candidate == "positive_volume" and alpha in (-1, 0, 1)) or
+                                     (candidate == "signed_grasp" and alpha in (-1, 1))):
+            selected.append(row)
+        elif graph == "ring" and candidate == "positive_volume" and alpha in (-1, 0, 1):
+            selected.append(row)
+    candidate_table = {
+        "columns": ["graph", "candidate", "alpha", "ground_energy", "first_distinct_gap",
+                    "ground_volume_mean_project_units", "ground_probability_zero_volume", "ground_Q_chi_mean"],
+        "rows": [{key: row[key] for key in ["graph", "candidate", "alpha", "ground_energy", "first_distinct_gap",
+                                                 "ground_volume_mean_project_units", "ground_probability_zero_volume", "ground_Q_chi_mean"]}
+                 for row in selected],
+    }
+    add("t11-candidate-hamiltonians", "T11", "Candidate geometric Hamiltonians and prepared-FL dynamics",
+        "Exact K=4, total-spin-zero study (dimension 105). The baseline is complete-graph face-to-face area exchange plus on-site repulsion, with equal hopping strength on each bond. We added the positive RS-volume term and the signed triple-grasp term as separate candidate Hamiltonians, then evolved five explicitly prepared FL references under the baseline and both signed couplings. The 62 parameter settings cover U/t=0,1,5,20 and normalized coupling alpha=-2,-1,-0.5,0,0.5,1,2; the ring is included only as a sparse-hopping control. The study contains 6,510 saved energy levels and 50 prepared-state trajectories.",
+        "The complete graph represents tetrahedral face adjacency; the ring is a hopping control, not a proposed tetrahedron. The positive-volume and signed-grasp additions are tested candidate models, not derived physical interactions. Results use one copy, fixed K=4, project-normalized volume, and t=1; no physical coupling calibration or phase-transition claim is implied. The long-time dynamics are exact energy-basis samples with adaptive logarithmic coverage, not a uniformly resolved trace of every fast oscillation. Large thermal and dynamics CSVs are gzip-compressed for download; their source and package checksums are both listed.",
+        ["results/t11-candidate-hamiltonians/README.md", "results/t11-candidate-hamiltonians/model_summary.csv",
+         "results/t11-candidate-hamiltonians/energy_levels.csv", "results/t11-candidate-hamiltonians/fl_energy_populations.csv",
+         "results/t11-candidate-hamiltonians/thermal_volume_outcomes.csv", "results/t11-candidate-hamiltonians/state_geometry.csv",
+         "results/t11-candidate-hamiltonians/state_volume_distributions.csv", "results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+         "results/t11-candidate-hamiltonians/validation.json", "results/t11-candidate-hamiltonians/verification.json",
+         "results/t11-candidate-hamiltonians/protocol.json", "results/t11-candidate-hamiltonians/provenance.json",
+         "code/python/t11_candidate_hamiltonians.py", "code/python/verify_t11_candidate_hamiltonians.py",
+         "code/python/plot_t11_candidate_hamiltonians.py", "notes/hamiltonian-studies.md"],
+        ["results/t11-candidate-hamiltonians/candidate_ground_energy_shifts.png",
+         "results/t11-candidate-hamiltonians/candidate_ground_state_response.png",
+         "results/t11-candidate-hamiltonians/candidate_thermal_response_u20.png",
+         "results/t11-candidate-hamiltonians/ring_topology_control.png",
+         "results/t11-candidate-hamiltonians/prepared_FL_early_dynamics_u20.png"],
+        candidate_table,
+        "62 Hamiltonian parameter settings and 50 FL trajectories calculated; 1,510 independent checks passed (maximum residual 1.07e-12)",
+        catalogue_date="2026-10-11",
+        compressed_sources=["results/t11-candidate-hamiltonians/state_area_assignments.csv",
+                            "results/t11-candidate-hamiltonians/thermal_area_assignments_selected.csv",
+                            "results/t11-candidate-hamiltonians/thermal_scan.csv",
+                            "results/t11-candidate-hamiltonians/dynamics_scan.csv"])
     spectra = list(csv.DictReader((ROOT / "results/hamiltonian-studies/spectra.csv").open()))
-    add("hamiltonian", "T11", "Four-site Hamiltonian and thermal volume", "30 exact singlet calculations on complete and ring graphs. K=2,3,4 means 4,6,8 bosons; dimensions 20,50,105. Dense K=4 temperature scan: 6,030 rows and 409 energy groups.",
-        "g=0; empty sites allowed. Project-normalized connected-triple RS volume. The temperature response is a finite-sector crossover; the proposed dense U/t transition scan has not been run. Ground-state entropy uses the Gibbs mixture when degenerate.",
+    add("hamiltonian", "T11", "Four-site Hamiltonian spectra and RS-volume observables", "Exact diagonalization of the hopping-plus-on-site-repulsion operator H_G=-t Σ_(i,j)∈E_G(E_ij+E_ji)+(U/2)Σ_i n_i(n_i−1), where E_ij=a_i†a_j+b_i†b_j and n_i=a_i†a_i+b_i†b_i. Four sites, fixed boson number 2K and total spin zero; K=2,3,4 gives dimensions 20,50,105, with empty sites allowed. Compare the complete graph (6 hopping bonds) and periodic ring (4), with equal t per bond. The 30 cases use (t,U)=(0,1) or t=1 and U/t=0,1,5,20.",
+        "The positive Rovelli–Smolin (RS) volume V=(γℏ)^(3/2)Σ_(connected triples)√|q_ijk|, q_ijk=i[J_i·J_j,J_j·J_k], is a separate observable evaluated on energy eigenstates and Gibbs states; it is not a term in H_G, and no g_V V coupling was calculated. The optional spin-exchange setting is g=0. Both graphs select the same four connected triples, so V is the same operator and only the hopping graph changes. Project-normalized volume; physical calibration is open. The temperature response is a finite-sector crossover, not a phase transition. Ground-state entropy uses the Gibbs mixture when degenerate.",
         ["results/hamiltonian-studies", "notes/hamiltonian-studies.md"],
         sorted((ROOT/"results/hamiltonian-studies").glob("*.png")),
         {"columns":["K","graph","case","dimension","ground_energy","gap","ground_mean_volume","ground_probability_zero_volume"],"rows":spectra}, "Pilot complete; broader program open")
@@ -240,7 +341,7 @@ def main():
     metadata={"method":"packages saved data; no scientific runs repeated", "jsonNonfinitePolicy":"Nonfinite numbers become null only in dashboard JSON exports; source hashes refer to originals.","studies":STUDIES}
     (DASH/"studies.json").write_text(json.dumps(clean(metadata),indent=2,allow_nan=False)+"\n")
     d=read("code/dashboard/data.json")
-    d["tabs"]=[{"id":"studies","label":"Study Catalogue"}]+[t for t in d["tabs"] if t["id"]!="studies"]
+    d["tabs"]=[{"id":"runs","label":"Runs & Studies"},{"id":"figures","label":"Figure Archive"},{"id":"performance","label":"Charts"},{"id":"theory","label":"Tasks & Numerical Notes"}]
     d["runs"]=[r for r in d["runs"] if not r.get("studyId")]
     d["figures"]=[f for f in d["figures"] if not f.get("studyId")]
     for study in STUDIES:
@@ -248,14 +349,19 @@ def main():
         d["figures"].extend({**f,"studyId":study["id"],"description":study["title"],"tags":[study["task"]]} for f in study["figures"])
     d["summary"].update(totalRuns=len(d["runs"]),completeRuns=sum(r["status"]=="complete" for r in d["runs"]),registeredStudies=len(STUDIES))
     d["project"]["subtitle"]="Hamiltonian, closed-basis volume and thermal-sector results, with data, plots and verification records"
-    d["theory"]["description"]="The catalogue records exact singlet Hamiltonian studies, kinematic RS/AL catalogues, selected squeezed thermal-sector distributions, and earlier proxy studies. Model support, normalization and verification limits accompany each result. The proposed dense interaction scan and bulk phase analysis remain future work."
-    d["tasks"]={"active":[{"id":t,"title":title,"description":desc} for t,title,desc in [("T1a","Positive-volume validation","Complete four-face baseline through K=12 saved; broader physical calibration remains open."),("T5c","Weighted FL volume and shape","Initial and higher-J probes saved; broad convergence and unresolved RS comparison remain open."),("T5d","Cocycle phase","Recorded ten-point pilot; broader phase study open."),("T9","Thermal intertwiners and TFD","Recent area/spin distributions saved; full reduced-state and geometric studies open."),("T11","Hamiltonian studies","Four-site milestone and dense thermal scan saved; interaction-transition scan, larger systems and dynamics open.")]],"completed":[{"id":"T10","title":"Variable-face RS catalogue","description":"Declared K=2,3,4 catalogue complete."},{"id":"T1b","title":"Real-plane volume check","description":"Independent positive-volume comparison saved."},{"id":"T5a/T5a′/T5b/T5e","title":"Archived numerical pilots","description":"Recorded scope complete; finite sampling and proxy interpretation retained."}],"pending":[]}
+    d["theory"]["description"]="The catalogue records exact singlet Hamiltonian studies, kinematic RS/AL catalogues, selected squeezed thermal-sector distributions, and earlier proxy studies. Model support, normalization and verification limits accompany each result. Broader parameter, finite-size and bulk-phase studies remain open."
+    d["tasks"]={"active":[{"id":t,"title":title,"description":desc} for t,title,desc in [("T1a","Positive-volume validation","Complete four-face baseline through K=12 saved; broader physical calibration remains open."),("T5c","Weighted FL volume and shape","Initial and higher-J probes saved; broad convergence and unresolved RS comparison remain open."),("T5d","Cocycle phase","Recorded ten-point pilot; broader phase study open."),("T9","Thermal intertwiners and TFD","Recent area/spin distributions saved; full reduced-state and geometric studies open."),("T11","Hamiltonian studies","Four/five-site persistence, prepared K=4 geometry, candidate volume and signed-grasp Hamiltonians, and 50 prepared-FL trajectories are saved. Physical model selection and broader parameter/size studies remain open.")]],"completed":[{"id":"T10","title":"Variable-face RS catalogue","description":"Declared K=2,3,4 catalogue complete."},{"id":"T1b","title":"Real-plane volume check","description":"Independent positive-volume comparison saved."},{"id":"T5a/T5a′/T5b/T5e","title":"Archived numerical pilots","description":"Recorded scope complete; finite sampling and proxy interpretation retained."}],"pending":[]}
     combined=d["tasks"]["completed"].pop()
     d["tasks"]["completed"].extend({"id":task,"title":title,"description":combined["description"]} for task,title in
         [("T5a","Magnetization pilot"),("T5a′","Local chirality"),("T5b","Perturbation response"),("T5e","Recorded large-K families")])
     (DASH/"data.json").write_text(json.dumps(clean(d),indent=2,allow_nan=False)+"\n")
+    from export_numerical_data import export_numerical_data
+    datasets = export_numerical_data(metadata)
+    print(f"Exported {len(datasets)} InfoDash datasets")
     print(f"Packaged {len(STUDIES)} studies, {len(d['runs'])} run records, {len(d['figures'])} figures")
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--reuse-history", action="store_true", help="Package existing historical plots without redrawing them")
+    main(reuse_history=parser.parse_args().reuse_history)

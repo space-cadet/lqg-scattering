@@ -1,0 +1,1272 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "Imaginary-perturbation response",
+    "subtitle": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5."
+  },
+  "columns": [
+    {
+      "key": "runId",
+      "label": "Case",
+      "type": "string"
+    },
+    {
+      "key": "parameters.n",
+      "label": "n",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.seed",
+      "label": "seed",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.K",
+      "label": "K",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.alpha",
+      "label": "alpha",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.eps",
+      "label": "eps",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.sourceGroup",
+      "label": "sourceGroup",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.dim",
+      "label": "dim",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.prefactor",
+      "label": "prefactor",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.r2",
+      "label": "r2",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.V_eps0",
+      "label": "V eps0",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.V_alla_eps1",
+      "label": "V alla eps1",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.V",
+      "label": "V",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.q_real",
+      "label": "q real",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.q_imag",
+      "label": "q imag",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "series",
+      "label": "Series",
+      "type": "string",
+      "visible": false
+    }
+  ],
+  "charts": {
+    "type": "scatter",
+    "x": "parameters.alpha",
+    "y": "results.V",
+    "groupBy": "series"
+  },
+  "runs": [
+    {
+      "runId": "perturbation:case-0001:1",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 11,
+        "K": 7,
+        "alpha": 0.49690665203215606,
+        "eps": 1e-06
+      },
+      "results": {
+        "sourceGroup": "4",
+        "dim": 6435,
+        "prefactor": 0.002801233171284336,
+        "r2": 0.999888051582497,
+        "V_eps0": 3.0488814959502106e-10,
+        "V_alla_eps1": 0.0,
+        "V": 2.886067052790106e-06,
+        "q_real": 6.217588734507496e-10,
+        "q_imag": 3.469446951953614e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.4[0]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "t5b_results.json",
+          "path": "../study-assets/results/t5b_results.json",
+          "kind": "data",
+          "sha256": "4afee6b8cf700b784ac17c9782d3a979601d894245b5269c6fbf00d47ca5815b",
+          "sourcePath": "results/t5b_results.json",
+          "sourceSha256": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa"
+        },
+        {
+          "label": "T5b.md",
+          "path": "../study-assets/study-records/archive/T5b.txt",
+          "kind": "data",
+          "sha256": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c",
+          "sourcePath": "memory-bank/archive/T5b.md",
+          "sourceSha256": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        }
+      ],
+      "figures": [
+        {
+          "title": "Perturbation",
+          "path": "../study-assets/figures/dashboard-history/perturbation.png",
+          "tags": [
+            "T5b"
+          ]
+        }
+      ],
+      "series": "n=4, sourceGroup=4"
+    },
+    {
+      "runId": "perturbation:case-0002:2",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 11,
+        "K": 7,
+        "alpha": 0.49690665203215606,
+        "eps": 3.162277660168379e-06
+      },
+      "results": {
+        "sourceGroup": "4",
+        "dim": 6435,
+        "prefactor": 0.002801233171284336,
+        "r2": 0.999888051582497,
+        "V_eps0": 3.0488814959502106e-10,
+        "V_alla_eps1": 0.0,
+        "V": 5.132233615963367e-06,
+        "q_real": 1.9661741955209362e-09,
+        "q_imag": -1.734723475976807e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.4[1]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=4"
+    },
+    {
+      "runId": "perturbation:case-0003:3",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 11,
+        "K": 7,
+        "alpha": 0.49690665203215606,
+        "eps": 1e-05
+      },
+      "results": {
+        "sourceGroup": "4",
+        "dim": 6435,
+        "prefactor": 0.002801233171284336,
+        "r2": 0.999888051582497,
+        "V_eps0": 3.0488814959502106e-10,
+        "V_alla_eps1": 0.0,
+        "V": 9.126545366696002e-06,
+        "q_real": 6.21758873438467e-09,
+        "q_imag": -8.673617379884035e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.4[2]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=4"
+    },
+    {
+      "runId": "perturbation:case-0004:4",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 11,
+        "K": 7,
+        "alpha": 0.49690665203215606,
+        "eps": 3.1622776601683795e-05
+      },
+      "results": {
+        "sourceGroup": "4",
+        "dim": 6435,
+        "prefactor": 0.002801233171284336,
+        "r2": 0.999888051582497,
+        "V_eps0": 3.0488814959502106e-10,
+        "V_alla_eps1": 0.0,
+        "V": 1.622954770893173e-05,
+        "q_real": 1.9661741951346187e-08,
+        "q_imag": -3.469446951953614e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.4[3]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=4"
+    },
+    {
+      "runId": "perturbation:case-0005:5",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 11,
+        "K": 7,
+        "alpha": 0.49690665203215606,
+        "eps": 0.0001
+      },
+      "results": {
+        "sourceGroup": "4",
+        "dim": 6435,
+        "prefactor": 0.002801233171284336,
+        "r2": 0.999888051582497,
+        "V_eps0": 3.0488814959502106e-10,
+        "V_alla_eps1": 0.0,
+        "V": 2.8860670499261356e-05,
+        "q_real": 6.217588722167525e-08,
+        "q_imag": -1.734723475976807e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.4[4]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=4"
+    },
+    {
+      "runId": "perturbation:case-0006:6",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 11,
+        "K": 7,
+        "alpha": 0.49690665203215606,
+        "eps": 0.00031622776601683794
+      },
+      "results": {
+        "sourceGroup": "4",
+        "dim": 6435,
+        "prefactor": 0.002801233171284336,
+        "r2": 0.999888051582497,
+        "V_eps0": 3.0488814959502106e-10,
+        "V_alla_eps1": 0.0,
+        "V": 5.132233565029976e-05,
+        "q_real": 1.966174156495465e-07,
+        "q_imag": -1.734723475976807e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.4[5]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=4"
+    },
+    {
+      "runId": "perturbation:case-0007:7",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 11,
+        "K": 7,
+        "alpha": 0.49690665203215606,
+        "eps": 0.001
+      },
+      "results": {
+        "sourceGroup": "4",
+        "dim": 6435,
+        "prefactor": 0.002801233171284336,
+        "r2": 0.999888051582497,
+        "V_eps0": 3.0488814959502106e-10,
+        "V_alla_eps1": 0.0,
+        "V": 9.126544460955101e-05,
+        "q_real": 6.217587500287011e-07,
+        "q_imag": -3.469446951953614e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.4[6]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=4"
+    },
+    {
+      "runId": "perturbation:case-0008:8",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 11,
+        "K": 7,
+        "alpha": 0.49690665203215606,
+        "eps": 0.0031622776601683794
+      },
+      "results": {
+        "sourceGroup": "4",
+        "dim": 6435,
+        "prefactor": 0.002801233171284336,
+        "r2": 0.999888051582497,
+        "V_eps0": 3.0488814959502106e-10,
+        "V_alla_eps1": 0.0,
+        "V": 0.00016229531602352751,
+        "q_real": 1.9661702925829502e-06,
+        "q_imag": -1.5612511283791264e-17
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.4[7]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=4"
+    },
+    {
+      "runId": "perturbation:case-0009:9",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 11,
+        "K": 7,
+        "alpha": 0.49690665203215606,
+        "eps": 0.01
+      },
+      "results": {
+        "sourceGroup": "4",
+        "dim": 6435,
+        "prefactor": 0.002801233171284336,
+        "r2": 0.999888051582497,
+        "V_eps0": 3.0488814959502106e-10,
+        "V_alla_eps1": 0.0,
+        "V": 0.0002886038408067002,
+        "q_real": 6.217465313796491e-06,
+        "q_imag": -6.938893903907228e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.4[8]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=4"
+    },
+    {
+      "runId": "perturbation:case-0010:10",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 11,
+        "K": 7,
+        "alpha": 0.49690665203215606,
+        "eps": 0.03162277660168379
+      },
+      "results": {
+        "sourceGroup": "4",
+        "dim": 6435,
+        "prefactor": 0.002801233171284336,
+        "r2": 0.999888051582497,
+        "V_eps0": 3.0488814959502106e-10,
+        "V_alla_eps1": 0.0,
+        "V": 0.0005131724257071186,
+        "q_real": 1.965783941028395e-05,
+        "q_imag": 1.5612511283791264e-17
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.4[9]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=4"
+    },
+    {
+      "runId": "perturbation:case-0011:11",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 11,
+        "K": 7,
+        "alpha": 0.49690665203215606,
+        "eps": 0.1
+      },
+      "results": {
+        "sourceGroup": "4",
+        "dim": 6435,
+        "prefactor": 0.002801233171284336,
+        "r2": 0.999888051582497,
+        "V_eps0": 3.0488814959502106e-10,
+        "V_alla_eps1": 0.0,
+        "V": 0.000911749186541261,
+        "q_real": 6.205259200017923e-05,
+        "q_imag": 2.0816681711721685e-17
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.4[10]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=4"
+    },
+    {
+      "runId": "perturbation:case-0012:12",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 11,
+        "K": 7,
+        "alpha": 0.49690665203215606,
+        "eps": 0.31622776601683794
+      },
+      "results": {
+        "sourceGroup": "4",
+        "dim": 6435,
+        "prefactor": 0.002801233171284336,
+        "r2": 0.999888051582497,
+        "V_eps0": 3.0488814959502106e-10,
+        "V_alla_eps1": 0.0,
+        "V": 0.0016069315201881198,
+        "q_real": 0.000192754221054664,
+        "q_imag": 1.734723475976807e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.4[11]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=4"
+    },
+    {
+      "runId": "perturbation:case-0013:13",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 11,
+        "K": 7,
+        "alpha": 0.49690665203215606,
+        "eps": 1.0
+      },
+      "results": {
+        "sourceGroup": "4",
+        "dim": 6435,
+        "prefactor": 0.002801233171284336,
+        "r2": 0.999888051582497,
+        "V_eps0": 3.0488814959502106e-10,
+        "V_alla_eps1": 0.0,
+        "V": 0.0026139178066646473,
+        "q_real": 0.0005100268181366442,
+        "q_imag": 0.0
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.4[12]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=4"
+    },
+    {
+      "runId": "perturbation:case-0014:14",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 5,
+        "seed": 12,
+        "K": 8,
+        "alpha": 0.4991041239028365,
+        "eps": 1e-06
+      },
+      "results": {
+        "sourceGroup": "5",
+        "dim": 43758,
+        "prefactor": 0.0005214686219748573,
+        "r2": 0.9999911290796579,
+        "V_eps0": 1.867050987822868e-10,
+        "V_alla_eps1": 0.0,
+        "V": 5.25998755487097e-07,
+        "q_real": 2.0652783448938356e-11,
+        "q_imag": -6.5052130349130266e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.5[0]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=5, sourceGroup=5"
+    },
+    {
+      "runId": "perturbation:case-0015:15",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 5,
+        "seed": 12,
+        "K": 8,
+        "alpha": 0.4991041239028365,
+        "eps": 3.162277660168379e-06
+      },
+      "results": {
+        "sourceGroup": "5",
+        "dim": 43758,
+        "prefactor": 0.0005214686219748573,
+        "r2": 0.9999911290796579,
+        "V_eps0": 1.867050987822868e-10,
+        "V_alla_eps1": 0.0,
+        "V": 9.353727565894301e-07,
+        "q_real": 6.530983572096384e-11,
+        "q_imag": 1.951563910473908e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.5[1]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=5, sourceGroup=5"
+    },
+    {
+      "runId": "perturbation:case-0016:16",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 5,
+        "seed": 12,
+        "K": 8,
+        "alpha": 0.4991041239028365,
+        "eps": 1e-05
+      },
+      "results": {
+        "sourceGroup": "5",
+        "dim": 43758,
+        "prefactor": 0.0005214686219748573,
+        "r2": 0.9999911290796579,
+        "V_eps0": 1.867050987822868e-10,
+        "V_alla_eps1": 0.0,
+        "V": 1.6633541137472164e-06,
+        "q_real": 2.0652783448790373e-10,
+        "q_imag": -4.336808689942018e-19
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.5[2]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=5, sourceGroup=5"
+    },
+    {
+      "runId": "perturbation:case-0017:17",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 5,
+        "seed": 12,
+        "K": 8,
+        "alpha": 0.4991041239028365,
+        "eps": 3.1622776601683795e-05
+      },
+      "results": {
+        "sourceGroup": "5",
+        "dim": 43758,
+        "prefactor": 0.0005214686219748573,
+        "r2": 0.9999911290796579,
+        "V_eps0": 1.867050987822868e-10,
+        "V_alla_eps1": 0.0,
+        "V": 2.957908371984492e-06,
+        "q_real": 6.530983571617794e-10,
+        "q_imag": -5.421010862427522e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.5[3]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=5, sourceGroup=5"
+    },
+    {
+      "runId": "perturbation:case-0018:18",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 5,
+        "seed": 12,
+        "K": 8,
+        "alpha": 0.4991041239028365,
+        "eps": 0.0001
+      },
+      "results": {
+        "sourceGroup": "5",
+        "dim": 43758,
+        "prefactor": 0.0005214686219748573,
+        "r2": 0.9999911290796579,
+        "V_eps0": 1.867050987822868e-10,
+        "V_alla_eps1": 0.0,
+        "V": 5.25998755302658e-06,
+        "q_real": 2.065278343445577e-09,
+        "q_imag": -8.673617379884035e-19
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.5[4]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=5, sourceGroup=5"
+    },
+    {
+      "runId": "perturbation:case-0019:19",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 5,
+        "seed": 12,
+        "K": 8,
+        "alpha": 0.4991041239028365,
+        "eps": 0.00031622776601683794
+      },
+      "results": {
+        "sourceGroup": "5",
+        "dim": 43758,
+        "prefactor": 0.0005214686219748573,
+        "r2": 0.9999911290796579,
+        "V_eps0": 1.867050987822868e-10,
+        "V_alla_eps1": 0.0,
+        "V": 9.353727533022017e-06,
+        "q_real": 6.530983526192046e-09,
+        "q_imag": 4.336808689942018e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.5[5]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=5, sourceGroup=5"
+    },
+    {
+      "runId": "perturbation:case-0020:20",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 5,
+        "seed": 12,
+        "K": 8,
+        "alpha": 0.4991041239028365,
+        "eps": 0.001
+      },
+      "results": {
+        "sourceGroup": "5",
+        "dim": 43758,
+        "prefactor": 0.0005214686219748573,
+        "r2": 0.9999911290796579,
+        "V_eps0": 1.867050987822868e-10,
+        "V_alla_eps1": 0.0,
+        "V": 1.663354055307331e-05,
+        "q_real": 2.0652781997570494e-08,
+        "q_imag": 1.734723475976807e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.5[6]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=5, sourceGroup=5"
+    },
+    {
+      "runId": "perturbation:case-0021:21",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 5,
+        "seed": 12,
+        "K": 8,
+        "alpha": 0.4991041239028365,
+        "eps": 0.0031622776601683794
+      },
+      "results": {
+        "sourceGroup": "5",
+        "dim": 43758,
+        "prefactor": 0.0005214686219748573,
+        "r2": 0.9999911290796579,
+        "V_eps0": 1.867050987822868e-10,
+        "V_alla_eps1": 0.0,
+        "V": 2.957907332768244e-05,
+        "q_real": 6.530978982494537e-08,
+        "q_imag": -2.3852447794681098e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.5[7]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=5, sourceGroup=5"
+    },
+    {
+      "runId": "perturbation:case-0022:22",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 5,
+        "seed": 12,
+        "K": 8,
+        "alpha": 0.4991041239028365,
+        "eps": 0.01
+      },
+      "results": {
+        "sourceGroup": "5",
+        "dim": 43758,
+        "prefactor": 0.0005214686219748573,
+        "r2": 0.9999911290796579,
+        "V_eps0": 1.867050987822868e-10,
+        "V_alla_eps1": 0.0,
+        "V": 5.259969073244628e-05,
+        "q_real": 2.0652638316901668e-07,
+        "q_imag": 8.239936510889834e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.5[8]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=5, sourceGroup=5"
+    },
+    {
+      "runId": "perturbation:case-0023:23",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 5,
+        "seed": 12,
+        "K": 8,
+        "alpha": 0.4991041239028365,
+        "eps": 0.03162277660168379
+      },
+      "results": {
+        "sourceGroup": "5",
+        "dim": 43758,
+        "prefactor": 0.0005214686219748573,
+        "r2": 0.9999911290796579,
+        "V_eps0": 1.867050987822868e-10,
+        "V_alla_eps1": 0.0,
+        "V": 9.353398981112183e-05,
+        "q_real": 6.530524729542742e-07,
+        "q_imag": -3.469446951953614e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.5[9]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=5, sourceGroup=5"
+    },
+    {
+      "runId": "perturbation:case-0024:24",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 5,
+        "seed": 12,
+        "K": 8,
+        "alpha": 0.4991041239028365,
+        "eps": 0.1
+      },
+      "results": {
+        "sourceGroup": "5",
+        "dim": 43758,
+        "prefactor": 0.0005214686219748573,
+        "r2": 0.9999911290796579,
+        "V_eps0": 1.867050987822868e-10,
+        "V_alla_eps1": 0.0,
+        "V": 0.00016627710450578973,
+        "q_real": 2.063830681908239e-06,
+        "q_imag": -6.7220534694101275e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.5[10]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=5, sourceGroup=5"
+    },
+    {
+      "runId": "perturbation:case-0025:25",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 5,
+        "seed": 12,
+        "K": 8,
+        "alpha": 0.4991041239028365,
+        "eps": 0.31622776601683794
+      },
+      "results": {
+        "sourceGroup": "5",
+        "dim": 43758,
+        "prefactor": 0.0005214686219748573,
+        "r2": 0.9999911290796579,
+        "V_eps0": 1.867050987822868e-10,
+        "V_alla_eps1": 0.0,
+        "V": 0.00029477587491416363,
+        "q_real": 6.4862402701388325e-06,
+        "q_imag": 1.3010426069826053e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.5[11]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=5, sourceGroup=5"
+    },
+    {
+      "runId": "perturbation:case-0026:26",
+      "task": "T5b",
+      "status": "complete",
+      "description": "Imaginary-perturbation response",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 5,
+        "seed": 12,
+        "K": 8,
+        "alpha": 0.4991041239028365,
+        "eps": 1.0
+      },
+      "results": {
+        "sourceGroup": "5",
+        "dim": 43758,
+        "prefactor": 0.0005214686219748573,
+        "r2": 0.9999911290796579,
+        "V_eps0": 1.867050987822868e-10,
+        "V_alla_eps1": 0.0,
+        "V": 0.0005113884515998094,
+        "q_real": 1.9521401369876237e-05,
+        "q_imag": 3.2526065174565133e-18
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5b_results.json": "38108855ef0ce83c5dd751deb57f0cc16d790c07d0deebae33f5a69fc3524cfa",
+          "memory-bank/archive/T5b.md": "83be507ac063c21efdffe9114e9a6b4cafb1ccf7bb0e4607b588051a895f864c"
+        },
+        "presentationSource": "results/t5b_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "n.5[12]"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=5, sourceGroup=5"
+    }
+  ],
+  "figures": [
+    {
+      "title": "Perturbation",
+      "path": "../study-assets/figures/dashboard-history/perturbation.png",
+      "tags": [
+        "T5b"
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "title": "Numerical studies overview",
+      "path": "../index.html"
+    }
+  ]
+}

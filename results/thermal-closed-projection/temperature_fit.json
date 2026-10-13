@@ -1,0 +1,47 @@
+{
+  "temperature_variable": "T*=kBT/(hbar omega); b=beta hbar omega=1/T*",
+  "fit_interval": [
+    1,
+    2
+  ],
+  "uniform_fit_points": 1001,
+  "fits": {
+    "area": {
+      "slope": 3.7021307774355705,
+      "intercept": -0.9640556970942906,
+      "r_squared": 0.9996864235427878,
+      "max_relative_residual": 0.017817818738421,
+      "through_origin_slope": 3.082424951148248,
+      "endpoint_local_slopes": [
+        3.350883178102762,
+        3.883436820021552
+      ]
+    },
+    "rs_volume": {
+      "slope": 0.28262296981515506,
+      "intercept": -0.22377499759033034,
+      "r_squared": 0.9951475652069294,
+      "max_relative_residual": 0.18656656420895545,
+      "through_origin_slope": 0.13877788887000936,
+      "endpoint_local_slopes": [
+        0.1960991622530988,
+        0.35125556268093533
+      ]
+    }
+  },
+  "exact_probability_trace_polynomials": [
+    "K**8/240 + K**7/20 + 91*K**6/360 + 7*K**5/10 + 827*K**4/720 + 67*K**3/60 + 107*K**2/180 + 2*K/15",
+    "4*K**6/45 + 11*K**5/15 + 20*K**4/9 + 3*K**3 + 76*K**2/45 + 4*K/15",
+    "K**4/12 + 2*K**3/3 + 23*K**2/12 + 7*K/3 + 1",
+    "K**7/60 + 29*K**6/180 + 37*K**5/60 + 43*K**4/36 + 37*K**3/30 + 29*K**2/45 + 2*K/15",
+    "K**6/72 + K**5/8 + 31*K**4/72 + 17*K**3/24 + 5*K**2/9 + K/6",
+    "K**5/12 + 2*K**4/3 + 23*K**3/12 + 7*K**2/3 + K"
+  ],
+  "trace_sum": "sum_{r=0}^K sum_{l=0}^{K-r} (K-r-l+1)^2 times [f^2,a^2,1,fa,f,a]; f=r(K-l+1), a=K+r-l",
+  "high_temperature_area_over_T_exact": "57/14",
+  "high_temperature_area_over_T": 4.071428571428571,
+  "high_temperature_projection_probability_over_b_cubed": "7/256",
+  "max_probability_trace_relative_error": 0.0,
+  "source_data_sha256": "20d006de3b60cd3976e9e238aaad964b382beb14bd82285503e338b1d49bce1a",
+  "source_script_sha256": "f2eb87a2a1d7e94cb30eded6267974ee0e6afadc09902839c8205867a0010d64"
+}

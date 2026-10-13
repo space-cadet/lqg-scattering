@@ -1,26 +1,68 @@
 # Numerics dashboard
 
-Serve this directory as a static site. The study catalogue, plots and downloads
-are packaged inside it so deployment does not require serving the repository root.
+The [numerical-studies record](../../notes/numerical-studies.md) is the indexed,
+chronological record of the calculations shown here.
+
+Serve this directory as a static site. Its InfoDash page, datasets, figures and
+downloads are packaged together, so deployment does not need the repository root.
 
 Regenerate the catalogue after updating saved studies:
 
 ```bash
-conda run -n qc-diff python code/python/dashboard_assets/build_research_catalogue.py
+conda run -n qc-diff python code/python/dashboard_assets/build_research_catalogue.py --reuse-history
 ```
 
-The builder reads existing numerical results and generates historical plots from
-their saved arrays. It does not rerun scientific calculations. It exports strict
-browser-readable JSON, replacing nonfinite numbers with `null`, while recording
-SHA-256 hashes of the original sources. Original result files remain authoritative.
+The builder packages saved calculations and plots existing arrays; it does not
+rerun scientific calculations. Dashboard JSON converts nonfinite values to
+`null` and records hashes of the original sources. Original result files remain
+authoritative.
 
-- `studies.json`: study descriptions, limits, summary tables and artifact manifest.
-- `research-studies.js`: searchable catalogue, tables and download links.
-- `study-assets/`: packaged data, operator archives, notes, PDF and PNG figures.
-- `data.json`: run/study records, figure archive and task summaries.
-- `figures/dashboard-history/` at the repository root: newly plotted historical
-  arrays, with PDF, 300-dpi PNG and source hashes in `plot_summary.json`.
+- `index.html`: the shared InfoDash numerical interface.
+- `data.json`: overview of eight historical T3 runs and 30 study records.
+- `datasets.json` and `datasets/`: the 30 selectable detailed datasets.
+- `studies.json`: study descriptions, calculation limits and source manifest.
+- `study-assets/`: packaged data, operators, notes, PDFs and figures.
+- `figures/dashboard-history/` at the repository root: plots from saved arrays,
+  with PDFs, 300-dpi PNGs and source hashes in `plot_summary.json`.
 
-The eight historical T3 runs retain their existing performance charts. Study
-records are grouped calculations, not individual-case counts; task completion
-is reported separately. The dense Hamiltonian interaction scan remains proposed.
+T11 includes four/five-site comparisons, prepared-state geometry, candidate
+Hamiltonians, full spectra and thermal data, plus 50 prepared-state trajectories.
+Large CSV artifacts are compressed for download; source and package checksums
+are recorded with each dataset.
+
+The website deployment excludes Markdown files, so source notes are packaged as
+`.txt` and downloaded with their original `.md` names. The shared dashboard
+renders them as Markdown with locally packaged Marked and KaTeX libraries.
+Historical Memory Bank study downloads are packaged under `study-records/`.
+The source bytes and hashes remain recorded.
+
+## Shared InfoDash interface
+
+Open `index.html`. The four shared tabs show Runs & Studies, Figure Archive,
+Charts, and Tasks & Numerical Notes at desktop and mobile widths. The five
+project notes appear at the top of the last tab; open a note to read its rendered
+Markdown, tables, links, images, and LaTeX, or download the original Markdown.
+The study selector switches between the overview and each individual dataset,
+so every numerical study uses the same interface. Dataset details include saved
+values, source selectors, provenance, calculation limits, figures and downloads.
+
+The export includes the 21 catalogue studies and nine additional datasets:
+prepared-FL sampling, real-plane controls, shape recovery, weighted input,
+regular-area and equal-area shape scans, binding energies, state-space probes,
+and sewing. Catalogue tables supply summary rows; saved CSV/JSON files supply
+the other numerical rows. The candidate-Hamiltonian dataset includes all 62
+model settings, and the sampling dataset lists all 50 trajectories.
+
+The builder also exports the chronological numerical index and supporting notes
+for the dashboard's Tasks & Numerical Notes section. `catalogueDate` records when
+a study entered the catalogue; export time, source revision and dirty checkout
+state remain separate provenance fields.
+
+Check generated datasets and compare every exported value with its saved source:
+
+```bash
+node code/python/dashboard_assets/check_numerical_data.cjs
+python3 code/python/dashboard_assets/check_numerical_data_source.py
+```
+
+`UPSTREAM.json` records the reusable InfoDash template revision.

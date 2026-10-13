@@ -6,9 +6,19 @@ function studyNumber(value) {
   const n = Number(value);
   return Number.isFinite(n) ? (Number.isInteger(n) ? String(n) : n.toPrecision(7)) : studyEscape(value);
 }
+function studyDate(value) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value ?? '')) return 'Date unavailable';
+  const [year, month, day] = value.split('-').map(Number);
+  return new Intl.DateTimeFormat(undefined, {year:'numeric', month:'short', day:'numeric'})
+    .format(new Date(year, month - 1, day));
+}
 function studyTable(table) {
   if (!table) return '';
   return `<details><summary>Numerical summary (${table.rows.length} rows)</summary><div class="table-wrap"><table><thead><tr>${table.columns.map(k => `<th>${studyEscape(k.replaceAll('_',' '))}</th>`).join('')}</tr></thead><tbody>${table.rows.map(row => `<tr>${table.columns.map(k => `<td>${studyNumber(row[k])}</td>`).join('')}</tr>`).join('')}</tbody></table></div></details>`;
+}
+function studyHashes(file) {
+  if (!file.packageSha256) return `<details><summary>Source SHA-256</summary><code>${studyEscape(file.sourceSha256)}</code></details>`;
+  return `<details><summary>Source and download SHA-256</summary><small>Original source</small><code>${studyEscape(file.sourceSha256)}</code><small>Compressed download</small><code>${studyEscape(file.packageSha256)}</code></details>`;
 }
 function renderStudyCards() {
   if (!RESEARCH) return;
@@ -19,11 +29,13 @@ function renderStudyCards() {
   document.getElementById('studyCards').innerHTML = studies.map(s => `
     <article class="research-study" id="study-${studyEscape(s.id)}">
       <h3>${studyEscape(s.task)} — ${studyEscape(s.title)}</h3>
+      <p><a class="btn" href="index.html?data=datasets/${encodeURIComponent(s.id)}.json">Numerical table and charts</a></p>
       <p class="study-status">${studyEscape(s.status)}</p>
+      <p class="study-recorded">Added to catalogue <time datetime="${studyEscape(s.catalogueDate)}">${studyEscape(studyDate(s.catalogueDate))}</time></p>
       <p>${studyEscape(s.description)}</p><p class="study-limits">${studyEscape(s.limits)}</p>
       ${studyTable(s.table)}
       <div class="research-figures">${s.figures.map(f => `<figure class="${f.wide ? 'wide' : ''}"><a href="${studyEscape(f.path)}" target="_blank" rel="noopener"><img loading="lazy" width="${f.width}" height="${f.height}" src="${studyEscape(f.path)}" alt="${studyEscape(s.title + ': ' + f.title)}"></a><figcaption>${studyEscape(f.title)}${f.pdf ? ` · <a href="${studyEscape(f.pdf)}">PDF</a>` : ''} · <a href="${studyEscape(f.path)}">PNG</a></figcaption></figure>`).join('')}</div>
-      <details><summary>Data, operators and write-ups (${s.files.length} files)</summary><p class="hint">Source paths and SHA-256 hashes identify the original saved artifacts. Nonfinite numbers are represented as null in dashboard JSON exports.</p><ul class="study-downloads">${s.files.map(f => `<li><a href="${studyEscape(f.path)}" download>${studyEscape(f.name)}</a><small>${studyEscape(f.source)}</small><details><summary>Source SHA-256</summary><code>${studyEscape(f.sourceSha256)}</code></details></li>`).join('')}</ul></details>
+      <details><summary>Data, operators and write-ups (${s.files.length} files)</summary><p class="hint">Source paths and SHA-256 hashes identify the original saved artifacts. Compressed CSV downloads also show a checksum for the compressed file. Nonfinite numbers are represented as null in dashboard JSON exports.</p><ul class="study-downloads">${s.files.map(f => `<li><a href="${studyEscape(f.path)}" download="${studyEscape(f.name)}">${studyEscape(f.name)}</a><small>${studyEscape(f.source)}</small>${studyHashes(f)}</li>`).join('')}</ul></details>
     </article>`).join('') || '<p>No studies match these filters.</p>';
 }
 async function renderResearchStudies() {

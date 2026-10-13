@@ -1,0 +1,134 @@
+{
+  "triangle": {
+    "pair_powers": [
+      1,
+      1,
+      1
+    ],
+    "twice_edge_spins": [
+      2,
+      2,
+      2
+    ],
+    "tensor_shape": [
+      3,
+      3,
+      3
+    ],
+    "nonzero_entries": 6,
+    "norm": 1.0
+  },
+  "single_tetrahedron": {
+    "faces": [
+      [
+        "AB",
+        "BC",
+        "AC"
+      ],
+      [
+        "AB",
+        "BD",
+        "AD"
+      ],
+      [
+        "AC",
+        "CD",
+        "AD"
+      ],
+      [
+        "BC",
+        "CD",
+        "BD"
+      ]
+    ],
+    "sewn_edges": 6,
+    "identity_network_evaluation": 0.006172839506172848
+  },
+  "open_tetrahedron_patch": {
+    "faces": [
+      [
+        "AB",
+        "BD",
+        "AD"
+      ],
+      [
+        "AC",
+        "CD",
+        "AD"
+      ],
+      [
+        "BC",
+        "CD",
+        "BD"
+      ]
+    ],
+    "boundary_edges": [
+      "AB",
+      "AC",
+      "BC"
+    ],
+    "open_legs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "tensor_shape": [
+      3,
+      3,
+      3
+    ],
+    "raw_norm": 0.032075014954979233,
+    "normalized_norm": 0.9999999999999999
+  },
+  "two_separate_open_patches": {
+    "norm": 0.9999999999999998,
+    "boundary_tensor_entries": 729
+  },
+  "glued_patches": {
+    "normalized_boundary_contraction": 0.19245008972987526,
+    "six_exterior_faces": [
+      [
+        "AB",
+        "BD",
+        "AD"
+      ],
+      [
+        "AC",
+        "CD",
+        "AD"
+      ],
+      [
+        "BC",
+        "CD",
+        "BD"
+      ],
+      [
+        "AB",
+        "BE",
+        "AE"
+      ],
+      [
+        "AC",
+        "CE",
+        "AE"
+      ],
+      [
+        "BC",
+        "CE",
+        "BE"
+      ]
+    ],
+    "exterior_sewn_edges": 9,
+    "prism_identity_network_evaluation": 0.00019799391947518066
+  },
+  "interpretation": "Complete contractions are scalar network evaluations, not ket norms or energies. Boundary tensors are normalized kets on their unsewn edge spaces. Keep link holonomy arguments or physical indices to obtain a nontrivial closed-network state. No Hamiltonian or binding energy assigned to these networks."
+}

@@ -1,0 +1,7 @@
+state,graph,group,energy,energy_above_ground,degeneracy
+complete_level0,complete,0,78.47443546198893,0.0,1
+complete_level1,complete,1,78.48366116324823,0.00922570125929667,2
+complete_level2,complete,2,94.2939612575012,15.819525795512263,3
+ring_level0,ring,0,78.4785181057573,0.0,1
+ring_level1,ring,1,78.8383877227134,0.35986961695610376,1
+ring_level2,ring,2,79.59814500925029,1.1196269034929855,1

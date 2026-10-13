@@ -1,0 +1,1153 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "Four versus five sites: thermal-volume persistence",
+    "subtitle": "Matched mean occupation 2K/L=2: (L,K)=(4,4) and (5,5), singlet dimensions 105 and 1,176. Complete and ring graphs at t=1,U=20, plus free and no-hopping controls. Intermediate-temperature nonmonotonicity persists; the pronounced four-site complete-graph low-temperature collapse does not."
+  },
+  "columns": [
+    {
+      "key": "runId",
+      "label": "Case",
+      "type": "string"
+    },
+    {
+      "key": "parameters.L",
+      "label": "L",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.K",
+      "label": "K",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.graph",
+      "label": "graph",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "parameters.case",
+      "label": "case",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.dimension",
+      "label": "dimension",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.triples",
+      "label": "triples",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.ground_energy",
+      "label": "ground energy",
+      "type": "number",
+      "precision": 8,
+      "unit": "t"
+    },
+    {
+      "key": "results.gap",
+      "label": "gap",
+      "type": "number",
+      "precision": 8,
+      "unit": "t"
+    },
+    {
+      "key": "results.ground_degeneracy",
+      "label": "ground degeneracy",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.ground_volume",
+      "label": "ground volume",
+      "type": "number",
+      "precision": 8,
+      "unit": "project units"
+    },
+    {
+      "key": "results.ground_zero_probability",
+      "label": "ground zero probability",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.infinite_temperature_volume",
+      "label": "infinite temperature volume",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.peak_volume",
+      "label": "peak volume",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.peak_beta",
+      "label": "peak beta",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.eigen_residual",
+      "label": "eigen residual",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "series",
+      "label": "Series",
+      "type": "string",
+      "visible": false
+    }
+  ],
+  "charts": {
+    "type": "scatter",
+    "x": "parameters.K",
+    "y": "results.ground_volume",
+    "groupBy": "series"
+  },
+  "runs": [
+    {
+      "runId": "t11-size-comparison:case-0001:1",
+      "task": "T11",
+      "status": "complete",
+      "description": "Four versus five sites: thermal-volume persistence",
+      "catalogueDate": "2026-10-11",
+      "parameters": {
+        "L": 4,
+        "K": 4,
+        "graph": "complete",
+        "case": "no_hopping"
+      },
+      "results": {
+        "dimension": 105,
+        "triples": 4,
+        "ground_energy": 4.0,
+        "gap": 0.9999999999999982,
+        "ground_degeneracy": 3,
+        "ground_volume": 0.4062042536485209,
+        "ground_zero_probability": 0.33333333333333326,
+        "infinite_temperature_volume": 0.1755636530239478,
+        "peak_volume": 0.44639247805779614,
+        "peak_beta": 1.7782794100389228,
+        "eigen_residual": 2.220446049250313e-16
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-size-comparison/L4_K4_complete_U20.npz": "6628d550cb4b225f0eba79315e325784b1da53e54c9c74116f1d18c4a05b429f",
+          "results/t11-size-comparison/L4_K4_complete_free.npz": "d99709afe723d9206e3a662d2377a45e288446c3c9754ed635d7329c050b5c50",
+          "results/t11-size-comparison/L4_K4_complete_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L4_K4_ring_U20.npz": "4b89f7ef52295a60a3b808b2e30e74e8bed6699b9dee179fde1eb0403a33d01f",
+          "results/t11-size-comparison/L4_K4_ring_free.npz": "7f23ba541c89564bb878eae961b7fc9e872eceb25d0150d9c3abae9cd2ff0130",
+          "results/t11-size-comparison/L4_K4_ring_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L5_K5_complete_U20.npz": "aff47f842e0367735a6cce637339152d2617adbde0850ec2822f9b51d9da8c53",
+          "results/t11-size-comparison/L5_K5_complete_free.npz": "ba66be3dbadf813a7c2db1887d8a2da59a100ca3ad7fee5a578fb908cc9324d1",
+          "results/t11-size-comparison/L5_K5_complete_no_hopping.npz": "bee2eb1d62db1bde43bad5d1ef1531235bbfc8a10073c9c7915979ba93ad4480",
+          "results/t11-size-comparison/L5_K5_ring_U20.npz": "5079b3be44b0e4003b5eb01b4485693a2049ba4c4355d4d2a798cea9d825d13f",
+          "results/t11-size-comparison/L5_K5_ring_free.npz": "c82c2c106ff85c623ce04615d6c8440989649aae73e559d9afc19bc3ca873e1d",
+          "results/t11-size-comparison/L5_K5_ring_no_hopping.npz": "2cfdbc42aabf149773684273ba1e7b5f051f441478656cb47268069f42cb1ee3",
+          "results/t11-size-comparison/README.md": "d2cdca9d753c6dafc02c1e117ba890414aac8ef7d0145add60fc55adfb3ee010",
+          "results/t11-size-comparison/energy_levels.csv": "c72071429162bd1c7dd5dbfa020537e3976d4c2b2ecfd6b51059a373611d163c",
+          "results/t11-size-comparison/independent_checks.json": "0da56707d73907ef8a764dc83bdc1374784e4de4e28568d11c728264d4ce6435",
+          "results/t11-size-comparison/protocol.json": "4b0307ad3cd4dd925c741a377e9dcab060ff9e50d6ae28e6c79c2e28c471586d",
+          "results/t11-size-comparison/sha256.json": "a0ff40c8b915f8d8a33f74309917d1e4a4e1e3ea918938dfa7ec6e8d3ded6845",
+          "results/t11-size-comparison/summary.csv": "181539c4faa126bbb75a1809e18ecb039b1f49034f542abdca70d6caff1e9620",
+          "results/t11-size-comparison/thermal_scan.csv": "71c31045d7a123a477faa778ffbfafadcc200aa3c71545dd63310e90e9b2a81b",
+          "results/t11-size-comparison/turning_points.json": "2007d409d63ef4c31e063f58a570d9b643c82718b8792a57c5a747466f799711",
+          "results/t11-size-comparison/validation.json": "eb54e9179fac09a33dd45004698fed3fffcf87c953afe68f9284df977477354b",
+          "code/python/t11_size_comparison.py": "217d818a53ea9aa19ed198313819bc14a9c5eccbf1db359a2a2bbc3a7215488b",
+          "code/python/verify_t11_size_comparison.py": "608d140ac55feb688c76223a5d7a3c0a64053316ab8315d4d39ccd100bdd0acf",
+          "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.t11-size-comparison.table.rows[0]"
+      },
+      "assessment": {
+        "summary": "Matched mean occupation 2K/L=2: (L,K)=(4,4) and (5,5), singlet dimensions 105 and 1,176. Complete and ring graphs at t=1,U=20, plus free and no-hopping controls. Intermediate-temperature nonmonotonicity persists; the pronounced four-site complete-graph low-temperature collapse does not.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 38-test suite passed"
+      },
+      "artifacts": [
+        {
+          "label": "L4_K4_complete_U20.npz",
+          "path": "../study-assets/results/t11-size-comparison/L4_K4_complete_U20.npz",
+          "kind": "operators",
+          "sha256": "6628d550cb4b225f0eba79315e325784b1da53e54c9c74116f1d18c4a05b429f",
+          "sourcePath": "results/t11-size-comparison/L4_K4_complete_U20.npz",
+          "sourceSha256": "6628d550cb4b225f0eba79315e325784b1da53e54c9c74116f1d18c4a05b429f"
+        },
+        {
+          "label": "L4_K4_complete_free.npz",
+          "path": "../study-assets/results/t11-size-comparison/L4_K4_complete_free.npz",
+          "kind": "operators",
+          "sha256": "d99709afe723d9206e3a662d2377a45e288446c3c9754ed635d7329c050b5c50",
+          "sourcePath": "results/t11-size-comparison/L4_K4_complete_free.npz",
+          "sourceSha256": "d99709afe723d9206e3a662d2377a45e288446c3c9754ed635d7329c050b5c50"
+        },
+        {
+          "label": "L4_K4_complete_no_hopping.npz",
+          "path": "../study-assets/results/t11-size-comparison/L4_K4_complete_no_hopping.npz",
+          "kind": "operators",
+          "sha256": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "sourcePath": "results/t11-size-comparison/L4_K4_complete_no_hopping.npz",
+          "sourceSha256": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d"
+        },
+        {
+          "label": "L4_K4_ring_U20.npz",
+          "path": "../study-assets/results/t11-size-comparison/L4_K4_ring_U20.npz",
+          "kind": "operators",
+          "sha256": "4b89f7ef52295a60a3b808b2e30e74e8bed6699b9dee179fde1eb0403a33d01f",
+          "sourcePath": "results/t11-size-comparison/L4_K4_ring_U20.npz",
+          "sourceSha256": "4b89f7ef52295a60a3b808b2e30e74e8bed6699b9dee179fde1eb0403a33d01f"
+        },
+        {
+          "label": "L4_K4_ring_free.npz",
+          "path": "../study-assets/results/t11-size-comparison/L4_K4_ring_free.npz",
+          "kind": "operators",
+          "sha256": "7f23ba541c89564bb878eae961b7fc9e872eceb25d0150d9c3abae9cd2ff0130",
+          "sourcePath": "results/t11-size-comparison/L4_K4_ring_free.npz",
+          "sourceSha256": "7f23ba541c89564bb878eae961b7fc9e872eceb25d0150d9c3abae9cd2ff0130"
+        },
+        {
+          "label": "L4_K4_ring_no_hopping.npz",
+          "path": "../study-assets/results/t11-size-comparison/L4_K4_ring_no_hopping.npz",
+          "kind": "operators",
+          "sha256": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "sourcePath": "results/t11-size-comparison/L4_K4_ring_no_hopping.npz",
+          "sourceSha256": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d"
+        },
+        {
+          "label": "L5_K5_complete_U20.npz",
+          "path": "../study-assets/results/t11-size-comparison/L5_K5_complete_U20.npz",
+          "kind": "operators",
+          "sha256": "aff47f842e0367735a6cce637339152d2617adbde0850ec2822f9b51d9da8c53",
+          "sourcePath": "results/t11-size-comparison/L5_K5_complete_U20.npz",
+          "sourceSha256": "aff47f842e0367735a6cce637339152d2617adbde0850ec2822f9b51d9da8c53"
+        },
+        {
+          "label": "L5_K5_complete_free.npz",
+          "path": "../study-assets/results/t11-size-comparison/L5_K5_complete_free.npz",
+          "kind": "operators",
+          "sha256": "ba66be3dbadf813a7c2db1887d8a2da59a100ca3ad7fee5a578fb908cc9324d1",
+          "sourcePath": "results/t11-size-comparison/L5_K5_complete_free.npz",
+          "sourceSha256": "ba66be3dbadf813a7c2db1887d8a2da59a100ca3ad7fee5a578fb908cc9324d1"
+        },
+        {
+          "label": "L5_K5_complete_no_hopping.npz",
+          "path": "../study-assets/results/t11-size-comparison/L5_K5_complete_no_hopping.npz",
+          "kind": "operators",
+          "sha256": "bee2eb1d62db1bde43bad5d1ef1531235bbfc8a10073c9c7915979ba93ad4480",
+          "sourcePath": "results/t11-size-comparison/L5_K5_complete_no_hopping.npz",
+          "sourceSha256": "bee2eb1d62db1bde43bad5d1ef1531235bbfc8a10073c9c7915979ba93ad4480"
+        },
+        {
+          "label": "L5_K5_ring_U20.npz",
+          "path": "../study-assets/results/t11-size-comparison/L5_K5_ring_U20.npz",
+          "kind": "operators",
+          "sha256": "5079b3be44b0e4003b5eb01b4485693a2049ba4c4355d4d2a798cea9d825d13f",
+          "sourcePath": "results/t11-size-comparison/L5_K5_ring_U20.npz",
+          "sourceSha256": "5079b3be44b0e4003b5eb01b4485693a2049ba4c4355d4d2a798cea9d825d13f"
+        },
+        {
+          "label": "L5_K5_ring_free.npz",
+          "path": "../study-assets/results/t11-size-comparison/L5_K5_ring_free.npz",
+          "kind": "operators",
+          "sha256": "c82c2c106ff85c623ce04615d6c8440989649aae73e559d9afc19bc3ca873e1d",
+          "sourcePath": "results/t11-size-comparison/L5_K5_ring_free.npz",
+          "sourceSha256": "c82c2c106ff85c623ce04615d6c8440989649aae73e559d9afc19bc3ca873e1d"
+        },
+        {
+          "label": "L5_K5_ring_no_hopping.npz",
+          "path": "../study-assets/results/t11-size-comparison/L5_K5_ring_no_hopping.npz",
+          "kind": "operators",
+          "sha256": "2cfdbc42aabf149773684273ba1e7b5f051f441478656cb47268069f42cb1ee3",
+          "sourcePath": "results/t11-size-comparison/L5_K5_ring_no_hopping.npz",
+          "sourceSha256": "2cfdbc42aabf149773684273ba1e7b5f051f441478656cb47268069f42cb1ee3"
+        },
+        {
+          "label": "README.md",
+          "path": "../study-assets/results/t11-size-comparison/README.txt",
+          "kind": "data",
+          "sha256": "d2cdca9d753c6dafc02c1e117ba890414aac8ef7d0145add60fc55adfb3ee010",
+          "sourcePath": "results/t11-size-comparison/README.md",
+          "sourceSha256": "d2cdca9d753c6dafc02c1e117ba890414aac8ef7d0145add60fc55adfb3ee010"
+        },
+        {
+          "label": "energy_levels.csv",
+          "path": "../study-assets/results/t11-size-comparison/energy_levels.csv",
+          "kind": "data",
+          "sha256": "c72071429162bd1c7dd5dbfa020537e3976d4c2b2ecfd6b51059a373611d163c",
+          "sourcePath": "results/t11-size-comparison/energy_levels.csv",
+          "sourceSha256": "c72071429162bd1c7dd5dbfa020537e3976d4c2b2ecfd6b51059a373611d163c"
+        },
+        {
+          "label": "independent_checks.json",
+          "path": "../study-assets/results/t11-size-comparison/independent_checks.json",
+          "kind": "data",
+          "sha256": "0da56707d73907ef8a764dc83bdc1374784e4de4e28568d11c728264d4ce6435",
+          "sourcePath": "results/t11-size-comparison/independent_checks.json",
+          "sourceSha256": "0da56707d73907ef8a764dc83bdc1374784e4de4e28568d11c728264d4ce6435"
+        },
+        {
+          "label": "protocol.json",
+          "path": "../study-assets/results/t11-size-comparison/protocol.json",
+          "kind": "data",
+          "sha256": "4b0307ad3cd4dd925c741a377e9dcab060ff9e50d6ae28e6c79c2e28c471586d",
+          "sourcePath": "results/t11-size-comparison/protocol.json",
+          "sourceSha256": "4b0307ad3cd4dd925c741a377e9dcab060ff9e50d6ae28e6c79c2e28c471586d"
+        },
+        {
+          "label": "sha256.json",
+          "path": "../study-assets/results/t11-size-comparison/sha256.json",
+          "kind": "data",
+          "sha256": "a0ff40c8b915f8d8a33f74309917d1e4a4e1e3ea918938dfa7ec6e8d3ded6845",
+          "sourcePath": "results/t11-size-comparison/sha256.json",
+          "sourceSha256": "a0ff40c8b915f8d8a33f74309917d1e4a4e1e3ea918938dfa7ec6e8d3ded6845"
+        },
+        {
+          "label": "summary.csv",
+          "path": "../study-assets/results/t11-size-comparison/summary.csv",
+          "kind": "data",
+          "sha256": "181539c4faa126bbb75a1809e18ecb039b1f49034f542abdca70d6caff1e9620",
+          "sourcePath": "results/t11-size-comparison/summary.csv",
+          "sourceSha256": "181539c4faa126bbb75a1809e18ecb039b1f49034f542abdca70d6caff1e9620"
+        },
+        {
+          "label": "thermal_scan.csv",
+          "path": "../study-assets/results/t11-size-comparison/thermal_scan.csv",
+          "kind": "data",
+          "sha256": "71c31045d7a123a477faa778ffbfafadcc200aa3c71545dd63310e90e9b2a81b",
+          "sourcePath": "results/t11-size-comparison/thermal_scan.csv",
+          "sourceSha256": "71c31045d7a123a477faa778ffbfafadcc200aa3c71545dd63310e90e9b2a81b"
+        },
+        {
+          "label": "turning_points.json",
+          "path": "../study-assets/results/t11-size-comparison/turning_points.json",
+          "kind": "data",
+          "sha256": "2007d409d63ef4c31e063f58a570d9b643c82718b8792a57c5a747466f799711",
+          "sourcePath": "results/t11-size-comparison/turning_points.json",
+          "sourceSha256": "2007d409d63ef4c31e063f58a570d9b643c82718b8792a57c5a747466f799711"
+        },
+        {
+          "label": "validation.json",
+          "path": "../study-assets/results/t11-size-comparison/validation.json",
+          "kind": "data",
+          "sha256": "eb54e9179fac09a33dd45004698fed3fffcf87c953afe68f9284df977477354b",
+          "sourcePath": "results/t11-size-comparison/validation.json",
+          "sourceSha256": "eb54e9179fac09a33dd45004698fed3fffcf87c953afe68f9284df977477354b"
+        },
+        {
+          "label": "t11_size_comparison.py",
+          "path": "../study-assets/code/python/t11_size_comparison.py",
+          "kind": "data",
+          "sha256": "217d818a53ea9aa19ed198313819bc14a9c5eccbf1db359a2a2bbc3a7215488b",
+          "sourcePath": "code/python/t11_size_comparison.py",
+          "sourceSha256": "217d818a53ea9aa19ed198313819bc14a9c5eccbf1db359a2a2bbc3a7215488b"
+        },
+        {
+          "label": "verify_t11_size_comparison.py",
+          "path": "../study-assets/code/python/verify_t11_size_comparison.py",
+          "kind": "data",
+          "sha256": "608d140ac55feb688c76223a5d7a3c0a64053316ab8315d4d39ccd100bdd0acf",
+          "sourcePath": "code/python/verify_t11_size_comparison.py",
+          "sourceSha256": "608d140ac55feb688c76223a5d7a3c0a64053316ab8315d4d39ccd100bdd0acf"
+        },
+        {
+          "label": "plot_t11_size_comparison.py",
+          "path": "../study-assets/code/python/plot_t11_size_comparison.py",
+          "kind": "data",
+          "sha256": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537",
+          "sourcePath": "code/python/plot_t11_size_comparison.py",
+          "sourceSha256": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
+        }
+      ],
+      "figures": [
+        {
+          "title": "Four versus five sites: volume per selected triple at U/t=20",
+          "path": "../study-assets/results/t11-size-comparison/volume_comparison.png",
+          "tags": [
+            "T11"
+          ]
+        },
+        {
+          "title": "Complete and ring interaction graphs, with one selected volume triple",
+          "path": "../study-assets/figures/hamiltonian-systems/four-and-five-site-graphs.png",
+          "tags": [
+            "T11"
+          ]
+        }
+      ],
+      "verification": {
+        "checks": {
+          "independent_checks.json": {
+            "independence_scope": "operator construction uses shared CG/root code; epsilon-q and orbital/no-hop limits are independent controls; no independent Rust larger-system run"
+          },
+          "validation.json": {}
+        }
+      },
+      "series": "graph=complete, case=no_hopping"
+    },
+    {
+      "runId": "t11-size-comparison:case-0002:2",
+      "task": "T11",
+      "status": "complete",
+      "description": "Four versus five sites: thermal-volume persistence",
+      "catalogueDate": "2026-10-11",
+      "parameters": {
+        "L": 4,
+        "K": 4,
+        "graph": "complete",
+        "case": "free"
+      },
+      "results": {
+        "dimension": 105,
+        "triples": 4,
+        "ground_energy": -8.00000000000006,
+        "gap": 4.000000000000038,
+        "ground_degeneracy": 15,
+        "ground_volume": 0.21640101090289662,
+        "ground_zero_probability": 0.5552083333333333,
+        "infinite_temperature_volume": 0.1755636530239478,
+        "peak_volume": 0.21640101090846642,
+        "peak_beta": 10000.0,
+        "eigen_residual": 1.7763568394002505e-14
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-size-comparison/L4_K4_complete_U20.npz": "6628d550cb4b225f0eba79315e325784b1da53e54c9c74116f1d18c4a05b429f",
+          "results/t11-size-comparison/L4_K4_complete_free.npz": "d99709afe723d9206e3a662d2377a45e288446c3c9754ed635d7329c050b5c50",
+          "results/t11-size-comparison/L4_K4_complete_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L4_K4_ring_U20.npz": "4b89f7ef52295a60a3b808b2e30e74e8bed6699b9dee179fde1eb0403a33d01f",
+          "results/t11-size-comparison/L4_K4_ring_free.npz": "7f23ba541c89564bb878eae961b7fc9e872eceb25d0150d9c3abae9cd2ff0130",
+          "results/t11-size-comparison/L4_K4_ring_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L5_K5_complete_U20.npz": "aff47f842e0367735a6cce637339152d2617adbde0850ec2822f9b51d9da8c53",
+          "results/t11-size-comparison/L5_K5_complete_free.npz": "ba66be3dbadf813a7c2db1887d8a2da59a100ca3ad7fee5a578fb908cc9324d1",
+          "results/t11-size-comparison/L5_K5_complete_no_hopping.npz": "bee2eb1d62db1bde43bad5d1ef1531235bbfc8a10073c9c7915979ba93ad4480",
+          "results/t11-size-comparison/L5_K5_ring_U20.npz": "5079b3be44b0e4003b5eb01b4485693a2049ba4c4355d4d2a798cea9d825d13f",
+          "results/t11-size-comparison/L5_K5_ring_free.npz": "c82c2c106ff85c623ce04615d6c8440989649aae73e559d9afc19bc3ca873e1d",
+          "results/t11-size-comparison/L5_K5_ring_no_hopping.npz": "2cfdbc42aabf149773684273ba1e7b5f051f441478656cb47268069f42cb1ee3",
+          "results/t11-size-comparison/README.md": "d2cdca9d753c6dafc02c1e117ba890414aac8ef7d0145add60fc55adfb3ee010",
+          "results/t11-size-comparison/energy_levels.csv": "c72071429162bd1c7dd5dbfa020537e3976d4c2b2ecfd6b51059a373611d163c",
+          "results/t11-size-comparison/independent_checks.json": "0da56707d73907ef8a764dc83bdc1374784e4de4e28568d11c728264d4ce6435",
+          "results/t11-size-comparison/protocol.json": "4b0307ad3cd4dd925c741a377e9dcab060ff9e50d6ae28e6c79c2e28c471586d",
+          "results/t11-size-comparison/sha256.json": "a0ff40c8b915f8d8a33f74309917d1e4a4e1e3ea918938dfa7ec6e8d3ded6845",
+          "results/t11-size-comparison/summary.csv": "181539c4faa126bbb75a1809e18ecb039b1f49034f542abdca70d6caff1e9620",
+          "results/t11-size-comparison/thermal_scan.csv": "71c31045d7a123a477faa778ffbfafadcc200aa3c71545dd63310e90e9b2a81b",
+          "results/t11-size-comparison/turning_points.json": "2007d409d63ef4c31e063f58a570d9b643c82718b8792a57c5a747466f799711",
+          "results/t11-size-comparison/validation.json": "eb54e9179fac09a33dd45004698fed3fffcf87c953afe68f9284df977477354b",
+          "code/python/t11_size_comparison.py": "217d818a53ea9aa19ed198313819bc14a9c5eccbf1db359a2a2bbc3a7215488b",
+          "code/python/verify_t11_size_comparison.py": "608d140ac55feb688c76223a5d7a3c0a64053316ab8315d4d39ccd100bdd0acf",
+          "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.t11-size-comparison.table.rows[1]"
+      },
+      "assessment": {
+        "summary": "Matched mean occupation 2K/L=2: (L,K)=(4,4) and (5,5), singlet dimensions 105 and 1,176. Complete and ring graphs at t=1,U=20, plus free and no-hopping controls. Intermediate-temperature nonmonotonicity persists; the pronounced four-site complete-graph low-temperature collapse does not.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 38-test suite passed"
+      },
+      "series": "graph=complete, case=free"
+    },
+    {
+      "runId": "t11-size-comparison:case-0003:3",
+      "task": "T11",
+      "status": "complete",
+      "description": "Four versus five sites: thermal-volume persistence",
+      "catalogueDate": "2026-10-11",
+      "parameters": {
+        "L": 4,
+        "K": 4,
+        "graph": "complete",
+        "case": "U20"
+      },
+      "results": {
+        "dimension": 105,
+        "triples": 4,
+        "ground_energy": 78.47443546198897,
+        "gap": 0.009225701259197194,
+        "ground_degeneracy": 1,
+        "ground_volume": 0.033487457345959766,
+        "ground_zero_probability": 0.9315436612208893,
+        "infinite_temperature_volume": 0.17556365302394783,
+        "peak_volume": 0.44610328157265006,
+        "peak_beta": 0.08912509381337455,
+        "eigen_residual": 1.3500311979441904e-13
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-size-comparison/L4_K4_complete_U20.npz": "6628d550cb4b225f0eba79315e325784b1da53e54c9c74116f1d18c4a05b429f",
+          "results/t11-size-comparison/L4_K4_complete_free.npz": "d99709afe723d9206e3a662d2377a45e288446c3c9754ed635d7329c050b5c50",
+          "results/t11-size-comparison/L4_K4_complete_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L4_K4_ring_U20.npz": "4b89f7ef52295a60a3b808b2e30e74e8bed6699b9dee179fde1eb0403a33d01f",
+          "results/t11-size-comparison/L4_K4_ring_free.npz": "7f23ba541c89564bb878eae961b7fc9e872eceb25d0150d9c3abae9cd2ff0130",
+          "results/t11-size-comparison/L4_K4_ring_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L5_K5_complete_U20.npz": "aff47f842e0367735a6cce637339152d2617adbde0850ec2822f9b51d9da8c53",
+          "results/t11-size-comparison/L5_K5_complete_free.npz": "ba66be3dbadf813a7c2db1887d8a2da59a100ca3ad7fee5a578fb908cc9324d1",
+          "results/t11-size-comparison/L5_K5_complete_no_hopping.npz": "bee2eb1d62db1bde43bad5d1ef1531235bbfc8a10073c9c7915979ba93ad4480",
+          "results/t11-size-comparison/L5_K5_ring_U20.npz": "5079b3be44b0e4003b5eb01b4485693a2049ba4c4355d4d2a798cea9d825d13f",
+          "results/t11-size-comparison/L5_K5_ring_free.npz": "c82c2c106ff85c623ce04615d6c8440989649aae73e559d9afc19bc3ca873e1d",
+          "results/t11-size-comparison/L5_K5_ring_no_hopping.npz": "2cfdbc42aabf149773684273ba1e7b5f051f441478656cb47268069f42cb1ee3",
+          "results/t11-size-comparison/README.md": "d2cdca9d753c6dafc02c1e117ba890414aac8ef7d0145add60fc55adfb3ee010",
+          "results/t11-size-comparison/energy_levels.csv": "c72071429162bd1c7dd5dbfa020537e3976d4c2b2ecfd6b51059a373611d163c",
+          "results/t11-size-comparison/independent_checks.json": "0da56707d73907ef8a764dc83bdc1374784e4de4e28568d11c728264d4ce6435",
+          "results/t11-size-comparison/protocol.json": "4b0307ad3cd4dd925c741a377e9dcab060ff9e50d6ae28e6c79c2e28c471586d",
+          "results/t11-size-comparison/sha256.json": "a0ff40c8b915f8d8a33f74309917d1e4a4e1e3ea918938dfa7ec6e8d3ded6845",
+          "results/t11-size-comparison/summary.csv": "181539c4faa126bbb75a1809e18ecb039b1f49034f542abdca70d6caff1e9620",
+          "results/t11-size-comparison/thermal_scan.csv": "71c31045d7a123a477faa778ffbfafadcc200aa3c71545dd63310e90e9b2a81b",
+          "results/t11-size-comparison/turning_points.json": "2007d409d63ef4c31e063f58a570d9b643c82718b8792a57c5a747466f799711",
+          "results/t11-size-comparison/validation.json": "eb54e9179fac09a33dd45004698fed3fffcf87c953afe68f9284df977477354b",
+          "code/python/t11_size_comparison.py": "217d818a53ea9aa19ed198313819bc14a9c5eccbf1db359a2a2bbc3a7215488b",
+          "code/python/verify_t11_size_comparison.py": "608d140ac55feb688c76223a5d7a3c0a64053316ab8315d4d39ccd100bdd0acf",
+          "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.t11-size-comparison.table.rows[2]"
+      },
+      "assessment": {
+        "summary": "Matched mean occupation 2K/L=2: (L,K)=(4,4) and (5,5), singlet dimensions 105 and 1,176. Complete and ring graphs at t=1,U=20, plus free and no-hopping controls. Intermediate-temperature nonmonotonicity persists; the pronounced four-site complete-graph low-temperature collapse does not.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 38-test suite passed"
+      },
+      "series": "graph=complete, case=U20"
+    },
+    {
+      "runId": "t11-size-comparison:case-0004:4",
+      "task": "T11",
+      "status": "complete",
+      "description": "Four versus five sites: thermal-volume persistence",
+      "catalogueDate": "2026-10-11",
+      "parameters": {
+        "L": 4,
+        "K": 4,
+        "graph": "ring",
+        "case": "no_hopping"
+      },
+      "results": {
+        "dimension": 105,
+        "triples": 4,
+        "ground_energy": 4.0,
+        "gap": 0.9999999999999982,
+        "ground_degeneracy": 3,
+        "ground_volume": 0.4062042536485209,
+        "ground_zero_probability": 0.33333333333333326,
+        "infinite_temperature_volume": 0.1755636530239478,
+        "peak_volume": 0.44639247805779614,
+        "peak_beta": 1.7782794100389228,
+        "eigen_residual": 2.220446049250313e-16
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-size-comparison/L4_K4_complete_U20.npz": "6628d550cb4b225f0eba79315e325784b1da53e54c9c74116f1d18c4a05b429f",
+          "results/t11-size-comparison/L4_K4_complete_free.npz": "d99709afe723d9206e3a662d2377a45e288446c3c9754ed635d7329c050b5c50",
+          "results/t11-size-comparison/L4_K4_complete_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L4_K4_ring_U20.npz": "4b89f7ef52295a60a3b808b2e30e74e8bed6699b9dee179fde1eb0403a33d01f",
+          "results/t11-size-comparison/L4_K4_ring_free.npz": "7f23ba541c89564bb878eae961b7fc9e872eceb25d0150d9c3abae9cd2ff0130",
+          "results/t11-size-comparison/L4_K4_ring_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L5_K5_complete_U20.npz": "aff47f842e0367735a6cce637339152d2617adbde0850ec2822f9b51d9da8c53",
+          "results/t11-size-comparison/L5_K5_complete_free.npz": "ba66be3dbadf813a7c2db1887d8a2da59a100ca3ad7fee5a578fb908cc9324d1",
+          "results/t11-size-comparison/L5_K5_complete_no_hopping.npz": "bee2eb1d62db1bde43bad5d1ef1531235bbfc8a10073c9c7915979ba93ad4480",
+          "results/t11-size-comparison/L5_K5_ring_U20.npz": "5079b3be44b0e4003b5eb01b4485693a2049ba4c4355d4d2a798cea9d825d13f",
+          "results/t11-size-comparison/L5_K5_ring_free.npz": "c82c2c106ff85c623ce04615d6c8440989649aae73e559d9afc19bc3ca873e1d",
+          "results/t11-size-comparison/L5_K5_ring_no_hopping.npz": "2cfdbc42aabf149773684273ba1e7b5f051f441478656cb47268069f42cb1ee3",
+          "results/t11-size-comparison/README.md": "d2cdca9d753c6dafc02c1e117ba890414aac8ef7d0145add60fc55adfb3ee010",
+          "results/t11-size-comparison/energy_levels.csv": "c72071429162bd1c7dd5dbfa020537e3976d4c2b2ecfd6b51059a373611d163c",
+          "results/t11-size-comparison/independent_checks.json": "0da56707d73907ef8a764dc83bdc1374784e4de4e28568d11c728264d4ce6435",
+          "results/t11-size-comparison/protocol.json": "4b0307ad3cd4dd925c741a377e9dcab060ff9e50d6ae28e6c79c2e28c471586d",
+          "results/t11-size-comparison/sha256.json": "a0ff40c8b915f8d8a33f74309917d1e4a4e1e3ea918938dfa7ec6e8d3ded6845",
+          "results/t11-size-comparison/summary.csv": "181539c4faa126bbb75a1809e18ecb039b1f49034f542abdca70d6caff1e9620",
+          "results/t11-size-comparison/thermal_scan.csv": "71c31045d7a123a477faa778ffbfafadcc200aa3c71545dd63310e90e9b2a81b",
+          "results/t11-size-comparison/turning_points.json": "2007d409d63ef4c31e063f58a570d9b643c82718b8792a57c5a747466f799711",
+          "results/t11-size-comparison/validation.json": "eb54e9179fac09a33dd45004698fed3fffcf87c953afe68f9284df977477354b",
+          "code/python/t11_size_comparison.py": "217d818a53ea9aa19ed198313819bc14a9c5eccbf1db359a2a2bbc3a7215488b",
+          "code/python/verify_t11_size_comparison.py": "608d140ac55feb688c76223a5d7a3c0a64053316ab8315d4d39ccd100bdd0acf",
+          "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.t11-size-comparison.table.rows[3]"
+      },
+      "assessment": {
+        "summary": "Matched mean occupation 2K/L=2: (L,K)=(4,4) and (5,5), singlet dimensions 105 and 1,176. Complete and ring graphs at t=1,U=20, plus free and no-hopping controls. Intermediate-temperature nonmonotonicity persists; the pronounced four-site complete-graph low-temperature collapse does not.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 38-test suite passed"
+      },
+      "series": "graph=ring, case=no_hopping"
+    },
+    {
+      "runId": "t11-size-comparison:case-0005:5",
+      "task": "T11",
+      "status": "complete",
+      "description": "Four versus five sites: thermal-volume persistence",
+      "catalogueDate": "2026-10-11",
+      "parameters": {
+        "L": 4,
+        "K": 4,
+        "graph": "ring",
+        "case": "free"
+      },
+      "results": {
+        "dimension": 105,
+        "triples": 4,
+        "ground_energy": -8.00000000000001,
+        "gap": 1.9999999999999867,
+        "ground_degeneracy": 5,
+        "ground_volume": 0.2674817303204088,
+        "ground_zero_probability": 0.4520833333333335,
+        "infinite_temperature_volume": 0.1755636530239478,
+        "peak_volume": 0.26748173032215916,
+        "peak_beta": 10000.0,
+        "eigen_residual": 1.1102230246251565e-14
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-size-comparison/L4_K4_complete_U20.npz": "6628d550cb4b225f0eba79315e325784b1da53e54c9c74116f1d18c4a05b429f",
+          "results/t11-size-comparison/L4_K4_complete_free.npz": "d99709afe723d9206e3a662d2377a45e288446c3c9754ed635d7329c050b5c50",
+          "results/t11-size-comparison/L4_K4_complete_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L4_K4_ring_U20.npz": "4b89f7ef52295a60a3b808b2e30e74e8bed6699b9dee179fde1eb0403a33d01f",
+          "results/t11-size-comparison/L4_K4_ring_free.npz": "7f23ba541c89564bb878eae961b7fc9e872eceb25d0150d9c3abae9cd2ff0130",
+          "results/t11-size-comparison/L4_K4_ring_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L5_K5_complete_U20.npz": "aff47f842e0367735a6cce637339152d2617adbde0850ec2822f9b51d9da8c53",
+          "results/t11-size-comparison/L5_K5_complete_free.npz": "ba66be3dbadf813a7c2db1887d8a2da59a100ca3ad7fee5a578fb908cc9324d1",
+          "results/t11-size-comparison/L5_K5_complete_no_hopping.npz": "bee2eb1d62db1bde43bad5d1ef1531235bbfc8a10073c9c7915979ba93ad4480",
+          "results/t11-size-comparison/L5_K5_ring_U20.npz": "5079b3be44b0e4003b5eb01b4485693a2049ba4c4355d4d2a798cea9d825d13f",
+          "results/t11-size-comparison/L5_K5_ring_free.npz": "c82c2c106ff85c623ce04615d6c8440989649aae73e559d9afc19bc3ca873e1d",
+          "results/t11-size-comparison/L5_K5_ring_no_hopping.npz": "2cfdbc42aabf149773684273ba1e7b5f051f441478656cb47268069f42cb1ee3",
+          "results/t11-size-comparison/README.md": "d2cdca9d753c6dafc02c1e117ba890414aac8ef7d0145add60fc55adfb3ee010",
+          "results/t11-size-comparison/energy_levels.csv": "c72071429162bd1c7dd5dbfa020537e3976d4c2b2ecfd6b51059a373611d163c",
+          "results/t11-size-comparison/independent_checks.json": "0da56707d73907ef8a764dc83bdc1374784e4de4e28568d11c728264d4ce6435",
+          "results/t11-size-comparison/protocol.json": "4b0307ad3cd4dd925c741a377e9dcab060ff9e50d6ae28e6c79c2e28c471586d",
+          "results/t11-size-comparison/sha256.json": "a0ff40c8b915f8d8a33f74309917d1e4a4e1e3ea918938dfa7ec6e8d3ded6845",
+          "results/t11-size-comparison/summary.csv": "181539c4faa126bbb75a1809e18ecb039b1f49034f542abdca70d6caff1e9620",
+          "results/t11-size-comparison/thermal_scan.csv": "71c31045d7a123a477faa778ffbfafadcc200aa3c71545dd63310e90e9b2a81b",
+          "results/t11-size-comparison/turning_points.json": "2007d409d63ef4c31e063f58a570d9b643c82718b8792a57c5a747466f799711",
+          "results/t11-size-comparison/validation.json": "eb54e9179fac09a33dd45004698fed3fffcf87c953afe68f9284df977477354b",
+          "code/python/t11_size_comparison.py": "217d818a53ea9aa19ed198313819bc14a9c5eccbf1db359a2a2bbc3a7215488b",
+          "code/python/verify_t11_size_comparison.py": "608d140ac55feb688c76223a5d7a3c0a64053316ab8315d4d39ccd100bdd0acf",
+          "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.t11-size-comparison.table.rows[4]"
+      },
+      "assessment": {
+        "summary": "Matched mean occupation 2K/L=2: (L,K)=(4,4) and (5,5), singlet dimensions 105 and 1,176. Complete and ring graphs at t=1,U=20, plus free and no-hopping controls. Intermediate-temperature nonmonotonicity persists; the pronounced four-site complete-graph low-temperature collapse does not.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 38-test suite passed"
+      },
+      "series": "graph=ring, case=free"
+    },
+    {
+      "runId": "t11-size-comparison:case-0006:6",
+      "task": "T11",
+      "status": "complete",
+      "description": "Four versus five sites: thermal-volume persistence",
+      "catalogueDate": "2026-10-11",
+      "parameters": {
+        "L": 4,
+        "K": 4,
+        "graph": "ring",
+        "case": "U20"
+      },
+      "results": {
+        "dimension": 105,
+        "triples": 4,
+        "ground_energy": 78.47851810575729,
+        "gap": 0.35986961695610376,
+        "ground_degeneracy": 1,
+        "ground_volume": 0.2831716199512713,
+        "ground_zero_probability": 0.521862918638792,
+        "infinite_temperature_volume": 0.17556365302394789,
+        "peak_volume": 0.4461929198804264,
+        "peak_beta": 0.08912509381337455,
+        "eigen_residual": 2.8421709430404007e-13
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-size-comparison/L4_K4_complete_U20.npz": "6628d550cb4b225f0eba79315e325784b1da53e54c9c74116f1d18c4a05b429f",
+          "results/t11-size-comparison/L4_K4_complete_free.npz": "d99709afe723d9206e3a662d2377a45e288446c3c9754ed635d7329c050b5c50",
+          "results/t11-size-comparison/L4_K4_complete_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L4_K4_ring_U20.npz": "4b89f7ef52295a60a3b808b2e30e74e8bed6699b9dee179fde1eb0403a33d01f",
+          "results/t11-size-comparison/L4_K4_ring_free.npz": "7f23ba541c89564bb878eae961b7fc9e872eceb25d0150d9c3abae9cd2ff0130",
+          "results/t11-size-comparison/L4_K4_ring_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L5_K5_complete_U20.npz": "aff47f842e0367735a6cce637339152d2617adbde0850ec2822f9b51d9da8c53",
+          "results/t11-size-comparison/L5_K5_complete_free.npz": "ba66be3dbadf813a7c2db1887d8a2da59a100ca3ad7fee5a578fb908cc9324d1",
+          "results/t11-size-comparison/L5_K5_complete_no_hopping.npz": "bee2eb1d62db1bde43bad5d1ef1531235bbfc8a10073c9c7915979ba93ad4480",
+          "results/t11-size-comparison/L5_K5_ring_U20.npz": "5079b3be44b0e4003b5eb01b4485693a2049ba4c4355d4d2a798cea9d825d13f",
+          "results/t11-size-comparison/L5_K5_ring_free.npz": "c82c2c106ff85c623ce04615d6c8440989649aae73e559d9afc19bc3ca873e1d",
+          "results/t11-size-comparison/L5_K5_ring_no_hopping.npz": "2cfdbc42aabf149773684273ba1e7b5f051f441478656cb47268069f42cb1ee3",
+          "results/t11-size-comparison/README.md": "d2cdca9d753c6dafc02c1e117ba890414aac8ef7d0145add60fc55adfb3ee010",
+          "results/t11-size-comparison/energy_levels.csv": "c72071429162bd1c7dd5dbfa020537e3976d4c2b2ecfd6b51059a373611d163c",
+          "results/t11-size-comparison/independent_checks.json": "0da56707d73907ef8a764dc83bdc1374784e4de4e28568d11c728264d4ce6435",
+          "results/t11-size-comparison/protocol.json": "4b0307ad3cd4dd925c741a377e9dcab060ff9e50d6ae28e6c79c2e28c471586d",
+          "results/t11-size-comparison/sha256.json": "a0ff40c8b915f8d8a33f74309917d1e4a4e1e3ea918938dfa7ec6e8d3ded6845",
+          "results/t11-size-comparison/summary.csv": "181539c4faa126bbb75a1809e18ecb039b1f49034f542abdca70d6caff1e9620",
+          "results/t11-size-comparison/thermal_scan.csv": "71c31045d7a123a477faa778ffbfafadcc200aa3c71545dd63310e90e9b2a81b",
+          "results/t11-size-comparison/turning_points.json": "2007d409d63ef4c31e063f58a570d9b643c82718b8792a57c5a747466f799711",
+          "results/t11-size-comparison/validation.json": "eb54e9179fac09a33dd45004698fed3fffcf87c953afe68f9284df977477354b",
+          "code/python/t11_size_comparison.py": "217d818a53ea9aa19ed198313819bc14a9c5eccbf1db359a2a2bbc3a7215488b",
+          "code/python/verify_t11_size_comparison.py": "608d140ac55feb688c76223a5d7a3c0a64053316ab8315d4d39ccd100bdd0acf",
+          "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.t11-size-comparison.table.rows[5]"
+      },
+      "assessment": {
+        "summary": "Matched mean occupation 2K/L=2: (L,K)=(4,4) and (5,5), singlet dimensions 105 and 1,176. Complete and ring graphs at t=1,U=20, plus free and no-hopping controls. Intermediate-temperature nonmonotonicity persists; the pronounced four-site complete-graph low-temperature collapse does not.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 38-test suite passed"
+      },
+      "series": "graph=ring, case=U20"
+    },
+    {
+      "runId": "t11-size-comparison:case-0007:7",
+      "task": "T11",
+      "status": "complete",
+      "description": "Four versus five sites: thermal-volume persistence",
+      "catalogueDate": "2026-10-11",
+      "parameters": {
+        "L": 5,
+        "K": 5,
+        "graph": "complete",
+        "case": "no_hopping"
+      },
+      "results": {
+        "dimension": 1176,
+        "triples": 10,
+        "ground_energy": 4.999999999999998,
+        "gap": 0.9999999999999964,
+        "ground_degeneracy": 6,
+        "ground_volume": 1.0155106341213023,
+        "ground_zero_probability": 0.0,
+        "infinite_temperature_volume": 0.5317790296681685,
+        "peak_volume": 1.046041805444881,
+        "peak_beta": 2.23872113856834,
+        "eigen_residual": 8.881784197001252e-15
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-size-comparison/L4_K4_complete_U20.npz": "6628d550cb4b225f0eba79315e325784b1da53e54c9c74116f1d18c4a05b429f",
+          "results/t11-size-comparison/L4_K4_complete_free.npz": "d99709afe723d9206e3a662d2377a45e288446c3c9754ed635d7329c050b5c50",
+          "results/t11-size-comparison/L4_K4_complete_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L4_K4_ring_U20.npz": "4b89f7ef52295a60a3b808b2e30e74e8bed6699b9dee179fde1eb0403a33d01f",
+          "results/t11-size-comparison/L4_K4_ring_free.npz": "7f23ba541c89564bb878eae961b7fc9e872eceb25d0150d9c3abae9cd2ff0130",
+          "results/t11-size-comparison/L4_K4_ring_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L5_K5_complete_U20.npz": "aff47f842e0367735a6cce637339152d2617adbde0850ec2822f9b51d9da8c53",
+          "results/t11-size-comparison/L5_K5_complete_free.npz": "ba66be3dbadf813a7c2db1887d8a2da59a100ca3ad7fee5a578fb908cc9324d1",
+          "results/t11-size-comparison/L5_K5_complete_no_hopping.npz": "bee2eb1d62db1bde43bad5d1ef1531235bbfc8a10073c9c7915979ba93ad4480",
+          "results/t11-size-comparison/L5_K5_ring_U20.npz": "5079b3be44b0e4003b5eb01b4485693a2049ba4c4355d4d2a798cea9d825d13f",
+          "results/t11-size-comparison/L5_K5_ring_free.npz": "c82c2c106ff85c623ce04615d6c8440989649aae73e559d9afc19bc3ca873e1d",
+          "results/t11-size-comparison/L5_K5_ring_no_hopping.npz": "2cfdbc42aabf149773684273ba1e7b5f051f441478656cb47268069f42cb1ee3",
+          "results/t11-size-comparison/README.md": "d2cdca9d753c6dafc02c1e117ba890414aac8ef7d0145add60fc55adfb3ee010",
+          "results/t11-size-comparison/energy_levels.csv": "c72071429162bd1c7dd5dbfa020537e3976d4c2b2ecfd6b51059a373611d163c",
+          "results/t11-size-comparison/independent_checks.json": "0da56707d73907ef8a764dc83bdc1374784e4de4e28568d11c728264d4ce6435",
+          "results/t11-size-comparison/protocol.json": "4b0307ad3cd4dd925c741a377e9dcab060ff9e50d6ae28e6c79c2e28c471586d",
+          "results/t11-size-comparison/sha256.json": "a0ff40c8b915f8d8a33f74309917d1e4a4e1e3ea918938dfa7ec6e8d3ded6845",
+          "results/t11-size-comparison/summary.csv": "181539c4faa126bbb75a1809e18ecb039b1f49034f542abdca70d6caff1e9620",
+          "results/t11-size-comparison/thermal_scan.csv": "71c31045d7a123a477faa778ffbfafadcc200aa3c71545dd63310e90e9b2a81b",
+          "results/t11-size-comparison/turning_points.json": "2007d409d63ef4c31e063f58a570d9b643c82718b8792a57c5a747466f799711",
+          "results/t11-size-comparison/validation.json": "eb54e9179fac09a33dd45004698fed3fffcf87c953afe68f9284df977477354b",
+          "code/python/t11_size_comparison.py": "217d818a53ea9aa19ed198313819bc14a9c5eccbf1db359a2a2bbc3a7215488b",
+          "code/python/verify_t11_size_comparison.py": "608d140ac55feb688c76223a5d7a3c0a64053316ab8315d4d39ccd100bdd0acf",
+          "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.t11-size-comparison.table.rows[6]"
+      },
+      "assessment": {
+        "summary": "Matched mean occupation 2K/L=2: (L,K)=(4,4) and (5,5), singlet dimensions 105 and 1,176. Complete and ring graphs at t=1,U=20, plus free and no-hopping controls. Intermediate-temperature nonmonotonicity persists; the pronounced four-site complete-graph low-temperature collapse does not.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 38-test suite passed"
+      },
+      "series": "graph=complete, case=no_hopping"
+    },
+    {
+      "runId": "t11-size-comparison:case-0008:8",
+      "task": "T11",
+      "status": "complete",
+      "description": "Four versus five sites: thermal-volume persistence",
+      "catalogueDate": "2026-10-11",
+      "parameters": {
+        "L": 5,
+        "K": 5,
+        "graph": "complete",
+        "case": "free"
+      },
+      "results": {
+        "dimension": 1176,
+        "triples": 10,
+        "ground_energy": -15.000000000000053,
+        "gap": 5.000000000000023,
+        "ground_degeneracy": 56,
+        "ground_volume": 0.6256079671627415,
+        "ground_zero_probability": 0.22749010989010987,
+        "infinite_temperature_volume": 0.5317790296681686,
+        "peak_volume": 0.6256079671637694,
+        "peak_beta": 10000.0,
+        "eigen_residual": 1.1087753178496256e-13
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-size-comparison/L4_K4_complete_U20.npz": "6628d550cb4b225f0eba79315e325784b1da53e54c9c74116f1d18c4a05b429f",
+          "results/t11-size-comparison/L4_K4_complete_free.npz": "d99709afe723d9206e3a662d2377a45e288446c3c9754ed635d7329c050b5c50",
+          "results/t11-size-comparison/L4_K4_complete_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L4_K4_ring_U20.npz": "4b89f7ef52295a60a3b808b2e30e74e8bed6699b9dee179fde1eb0403a33d01f",
+          "results/t11-size-comparison/L4_K4_ring_free.npz": "7f23ba541c89564bb878eae961b7fc9e872eceb25d0150d9c3abae9cd2ff0130",
+          "results/t11-size-comparison/L4_K4_ring_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L5_K5_complete_U20.npz": "aff47f842e0367735a6cce637339152d2617adbde0850ec2822f9b51d9da8c53",
+          "results/t11-size-comparison/L5_K5_complete_free.npz": "ba66be3dbadf813a7c2db1887d8a2da59a100ca3ad7fee5a578fb908cc9324d1",
+          "results/t11-size-comparison/L5_K5_complete_no_hopping.npz": "bee2eb1d62db1bde43bad5d1ef1531235bbfc8a10073c9c7915979ba93ad4480",
+          "results/t11-size-comparison/L5_K5_ring_U20.npz": "5079b3be44b0e4003b5eb01b4485693a2049ba4c4355d4d2a798cea9d825d13f",
+          "results/t11-size-comparison/L5_K5_ring_free.npz": "c82c2c106ff85c623ce04615d6c8440989649aae73e559d9afc19bc3ca873e1d",
+          "results/t11-size-comparison/L5_K5_ring_no_hopping.npz": "2cfdbc42aabf149773684273ba1e7b5f051f441478656cb47268069f42cb1ee3",
+          "results/t11-size-comparison/README.md": "d2cdca9d753c6dafc02c1e117ba890414aac8ef7d0145add60fc55adfb3ee010",
+          "results/t11-size-comparison/energy_levels.csv": "c72071429162bd1c7dd5dbfa020537e3976d4c2b2ecfd6b51059a373611d163c",
+          "results/t11-size-comparison/independent_checks.json": "0da56707d73907ef8a764dc83bdc1374784e4de4e28568d11c728264d4ce6435",
+          "results/t11-size-comparison/protocol.json": "4b0307ad3cd4dd925c741a377e9dcab060ff9e50d6ae28e6c79c2e28c471586d",
+          "results/t11-size-comparison/sha256.json": "a0ff40c8b915f8d8a33f74309917d1e4a4e1e3ea918938dfa7ec6e8d3ded6845",
+          "results/t11-size-comparison/summary.csv": "181539c4faa126bbb75a1809e18ecb039b1f49034f542abdca70d6caff1e9620",
+          "results/t11-size-comparison/thermal_scan.csv": "71c31045d7a123a477faa778ffbfafadcc200aa3c71545dd63310e90e9b2a81b",
+          "results/t11-size-comparison/turning_points.json": "2007d409d63ef4c31e063f58a570d9b643c82718b8792a57c5a747466f799711",
+          "results/t11-size-comparison/validation.json": "eb54e9179fac09a33dd45004698fed3fffcf87c953afe68f9284df977477354b",
+          "code/python/t11_size_comparison.py": "217d818a53ea9aa19ed198313819bc14a9c5eccbf1db359a2a2bbc3a7215488b",
+          "code/python/verify_t11_size_comparison.py": "608d140ac55feb688c76223a5d7a3c0a64053316ab8315d4d39ccd100bdd0acf",
+          "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.t11-size-comparison.table.rows[7]"
+      },
+      "assessment": {
+        "summary": "Matched mean occupation 2K/L=2: (L,K)=(4,4) and (5,5), singlet dimensions 105 and 1,176. Complete and ring graphs at t=1,U=20, plus free and no-hopping controls. Intermediate-temperature nonmonotonicity persists; the pronounced four-site complete-graph low-temperature collapse does not.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 38-test suite passed"
+      },
+      "series": "graph=complete, case=free"
+    },
+    {
+      "runId": "t11-size-comparison:case-0009:9",
+      "task": "T11",
+      "status": "complete",
+      "description": "Four versus five sites: thermal-volume persistence",
+      "catalogueDate": "2026-10-11",
+      "parameters": {
+        "L": 5,
+        "K": 5,
+        "graph": "complete",
+        "case": "U20"
+      },
+      "results": {
+        "dimension": 1176,
+        "triples": 10,
+        "ground_energy": 96.84695163404879,
+        "gap": 12.643382000317303,
+        "ground_degeneracy": 6,
+        "ground_volume": 1.0342172818488102,
+        "ground_zero_probability": 0.00012911960394830168,
+        "infinite_temperature_volume": 0.5317790296681688,
+        "peak_volume": 1.046085068906618,
+        "peak_beta": 0.12022644346174131,
+        "eigen_residual": 1.0231815394945443e-12
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-size-comparison/L4_K4_complete_U20.npz": "6628d550cb4b225f0eba79315e325784b1da53e54c9c74116f1d18c4a05b429f",
+          "results/t11-size-comparison/L4_K4_complete_free.npz": "d99709afe723d9206e3a662d2377a45e288446c3c9754ed635d7329c050b5c50",
+          "results/t11-size-comparison/L4_K4_complete_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L4_K4_ring_U20.npz": "4b89f7ef52295a60a3b808b2e30e74e8bed6699b9dee179fde1eb0403a33d01f",
+          "results/t11-size-comparison/L4_K4_ring_free.npz": "7f23ba541c89564bb878eae961b7fc9e872eceb25d0150d9c3abae9cd2ff0130",
+          "results/t11-size-comparison/L4_K4_ring_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L5_K5_complete_U20.npz": "aff47f842e0367735a6cce637339152d2617adbde0850ec2822f9b51d9da8c53",
+          "results/t11-size-comparison/L5_K5_complete_free.npz": "ba66be3dbadf813a7c2db1887d8a2da59a100ca3ad7fee5a578fb908cc9324d1",
+          "results/t11-size-comparison/L5_K5_complete_no_hopping.npz": "bee2eb1d62db1bde43bad5d1ef1531235bbfc8a10073c9c7915979ba93ad4480",
+          "results/t11-size-comparison/L5_K5_ring_U20.npz": "5079b3be44b0e4003b5eb01b4485693a2049ba4c4355d4d2a798cea9d825d13f",
+          "results/t11-size-comparison/L5_K5_ring_free.npz": "c82c2c106ff85c623ce04615d6c8440989649aae73e559d9afc19bc3ca873e1d",
+          "results/t11-size-comparison/L5_K5_ring_no_hopping.npz": "2cfdbc42aabf149773684273ba1e7b5f051f441478656cb47268069f42cb1ee3",
+          "results/t11-size-comparison/README.md": "d2cdca9d753c6dafc02c1e117ba890414aac8ef7d0145add60fc55adfb3ee010",
+          "results/t11-size-comparison/energy_levels.csv": "c72071429162bd1c7dd5dbfa020537e3976d4c2b2ecfd6b51059a373611d163c",
+          "results/t11-size-comparison/independent_checks.json": "0da56707d73907ef8a764dc83bdc1374784e4de4e28568d11c728264d4ce6435",
+          "results/t11-size-comparison/protocol.json": "4b0307ad3cd4dd925c741a377e9dcab060ff9e50d6ae28e6c79c2e28c471586d",
+          "results/t11-size-comparison/sha256.json": "a0ff40c8b915f8d8a33f74309917d1e4a4e1e3ea918938dfa7ec6e8d3ded6845",
+          "results/t11-size-comparison/summary.csv": "181539c4faa126bbb75a1809e18ecb039b1f49034f542abdca70d6caff1e9620",
+          "results/t11-size-comparison/thermal_scan.csv": "71c31045d7a123a477faa778ffbfafadcc200aa3c71545dd63310e90e9b2a81b",
+          "results/t11-size-comparison/turning_points.json": "2007d409d63ef4c31e063f58a570d9b643c82718b8792a57c5a747466f799711",
+          "results/t11-size-comparison/validation.json": "eb54e9179fac09a33dd45004698fed3fffcf87c953afe68f9284df977477354b",
+          "code/python/t11_size_comparison.py": "217d818a53ea9aa19ed198313819bc14a9c5eccbf1db359a2a2bbc3a7215488b",
+          "code/python/verify_t11_size_comparison.py": "608d140ac55feb688c76223a5d7a3c0a64053316ab8315d4d39ccd100bdd0acf",
+          "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.t11-size-comparison.table.rows[8]"
+      },
+      "assessment": {
+        "summary": "Matched mean occupation 2K/L=2: (L,K)=(4,4) and (5,5), singlet dimensions 105 and 1,176. Complete and ring graphs at t=1,U=20, plus free and no-hopping controls. Intermediate-temperature nonmonotonicity persists; the pronounced four-site complete-graph low-temperature collapse does not.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 38-test suite passed"
+      },
+      "series": "graph=complete, case=U20"
+    },
+    {
+      "runId": "t11-size-comparison:case-0010:10",
+      "task": "T11",
+      "status": "complete",
+      "description": "Four versus five sites: thermal-volume persistence",
+      "catalogueDate": "2026-10-11",
+      "parameters": {
+        "L": 5,
+        "K": 5,
+        "graph": "ring",
+        "case": "no_hopping"
+      },
+      "results": {
+        "dimension": 1176,
+        "triples": 5,
+        "ground_energy": 4.999999999999998,
+        "gap": 0.9999999999999964,
+        "ground_degeneracy": 6,
+        "ground_volume": 0.507755317060651,
+        "ground_zero_probability": 0.0,
+        "infinite_temperature_volume": 0.26588951483408424,
+        "peak_volume": 0.5230209027224381,
+        "peak_beta": 2.23872113856834,
+        "eigen_residual": 8.881784197001252e-15
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-size-comparison/L4_K4_complete_U20.npz": "6628d550cb4b225f0eba79315e325784b1da53e54c9c74116f1d18c4a05b429f",
+          "results/t11-size-comparison/L4_K4_complete_free.npz": "d99709afe723d9206e3a662d2377a45e288446c3c9754ed635d7329c050b5c50",
+          "results/t11-size-comparison/L4_K4_complete_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L4_K4_ring_U20.npz": "4b89f7ef52295a60a3b808b2e30e74e8bed6699b9dee179fde1eb0403a33d01f",
+          "results/t11-size-comparison/L4_K4_ring_free.npz": "7f23ba541c89564bb878eae961b7fc9e872eceb25d0150d9c3abae9cd2ff0130",
+          "results/t11-size-comparison/L4_K4_ring_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L5_K5_complete_U20.npz": "aff47f842e0367735a6cce637339152d2617adbde0850ec2822f9b51d9da8c53",
+          "results/t11-size-comparison/L5_K5_complete_free.npz": "ba66be3dbadf813a7c2db1887d8a2da59a100ca3ad7fee5a578fb908cc9324d1",
+          "results/t11-size-comparison/L5_K5_complete_no_hopping.npz": "bee2eb1d62db1bde43bad5d1ef1531235bbfc8a10073c9c7915979ba93ad4480",
+          "results/t11-size-comparison/L5_K5_ring_U20.npz": "5079b3be44b0e4003b5eb01b4485693a2049ba4c4355d4d2a798cea9d825d13f",
+          "results/t11-size-comparison/L5_K5_ring_free.npz": "c82c2c106ff85c623ce04615d6c8440989649aae73e559d9afc19bc3ca873e1d",
+          "results/t11-size-comparison/L5_K5_ring_no_hopping.npz": "2cfdbc42aabf149773684273ba1e7b5f051f441478656cb47268069f42cb1ee3",
+          "results/t11-size-comparison/README.md": "d2cdca9d753c6dafc02c1e117ba890414aac8ef7d0145add60fc55adfb3ee010",
+          "results/t11-size-comparison/energy_levels.csv": "c72071429162bd1c7dd5dbfa020537e3976d4c2b2ecfd6b51059a373611d163c",
+          "results/t11-size-comparison/independent_checks.json": "0da56707d73907ef8a764dc83bdc1374784e4de4e28568d11c728264d4ce6435",
+          "results/t11-size-comparison/protocol.json": "4b0307ad3cd4dd925c741a377e9dcab060ff9e50d6ae28e6c79c2e28c471586d",
+          "results/t11-size-comparison/sha256.json": "a0ff40c8b915f8d8a33f74309917d1e4a4e1e3ea918938dfa7ec6e8d3ded6845",
+          "results/t11-size-comparison/summary.csv": "181539c4faa126bbb75a1809e18ecb039b1f49034f542abdca70d6caff1e9620",
+          "results/t11-size-comparison/thermal_scan.csv": "71c31045d7a123a477faa778ffbfafadcc200aa3c71545dd63310e90e9b2a81b",
+          "results/t11-size-comparison/turning_points.json": "2007d409d63ef4c31e063f58a570d9b643c82718b8792a57c5a747466f799711",
+          "results/t11-size-comparison/validation.json": "eb54e9179fac09a33dd45004698fed3fffcf87c953afe68f9284df977477354b",
+          "code/python/t11_size_comparison.py": "217d818a53ea9aa19ed198313819bc14a9c5eccbf1db359a2a2bbc3a7215488b",
+          "code/python/verify_t11_size_comparison.py": "608d140ac55feb688c76223a5d7a3c0a64053316ab8315d4d39ccd100bdd0acf",
+          "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.t11-size-comparison.table.rows[9]"
+      },
+      "assessment": {
+        "summary": "Matched mean occupation 2K/L=2: (L,K)=(4,4) and (5,5), singlet dimensions 105 and 1,176. Complete and ring graphs at t=1,U=20, plus free and no-hopping controls. Intermediate-temperature nonmonotonicity persists; the pronounced four-site complete-graph low-temperature collapse does not.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 38-test suite passed"
+      },
+      "series": "graph=ring, case=no_hopping"
+    },
+    {
+      "runId": "t11-size-comparison:case-0011:11",
+      "task": "T11",
+      "status": "complete",
+      "description": "Four versus five sites: thermal-volume persistence",
+      "catalogueDate": "2026-10-11",
+      "parameters": {
+        "L": 5,
+        "K": 5,
+        "graph": "ring",
+        "case": "free"
+      },
+      "results": {
+        "dimension": 1176,
+        "triples": 5,
+        "ground_energy": -13.090169943749483,
+        "gap": 1.381966011250105,
+        "ground_degeneracy": 6,
+        "ground_volume": 0.3564277403773053,
+        "ground_zero_probability": 0.15469948717948714,
+        "infinite_temperature_volume": 0.26588951483408424,
+        "peak_volume": 0.35642774037779723,
+        "peak_beta": 10000.0,
+        "eigen_residual": 3.4083846855992306e-14
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-size-comparison/L4_K4_complete_U20.npz": "6628d550cb4b225f0eba79315e325784b1da53e54c9c74116f1d18c4a05b429f",
+          "results/t11-size-comparison/L4_K4_complete_free.npz": "d99709afe723d9206e3a662d2377a45e288446c3c9754ed635d7329c050b5c50",
+          "results/t11-size-comparison/L4_K4_complete_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L4_K4_ring_U20.npz": "4b89f7ef52295a60a3b808b2e30e74e8bed6699b9dee179fde1eb0403a33d01f",
+          "results/t11-size-comparison/L4_K4_ring_free.npz": "7f23ba541c89564bb878eae961b7fc9e872eceb25d0150d9c3abae9cd2ff0130",
+          "results/t11-size-comparison/L4_K4_ring_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L5_K5_complete_U20.npz": "aff47f842e0367735a6cce637339152d2617adbde0850ec2822f9b51d9da8c53",
+          "results/t11-size-comparison/L5_K5_complete_free.npz": "ba66be3dbadf813a7c2db1887d8a2da59a100ca3ad7fee5a578fb908cc9324d1",
+          "results/t11-size-comparison/L5_K5_complete_no_hopping.npz": "bee2eb1d62db1bde43bad5d1ef1531235bbfc8a10073c9c7915979ba93ad4480",
+          "results/t11-size-comparison/L5_K5_ring_U20.npz": "5079b3be44b0e4003b5eb01b4485693a2049ba4c4355d4d2a798cea9d825d13f",
+          "results/t11-size-comparison/L5_K5_ring_free.npz": "c82c2c106ff85c623ce04615d6c8440989649aae73e559d9afc19bc3ca873e1d",
+          "results/t11-size-comparison/L5_K5_ring_no_hopping.npz": "2cfdbc42aabf149773684273ba1e7b5f051f441478656cb47268069f42cb1ee3",
+          "results/t11-size-comparison/README.md": "d2cdca9d753c6dafc02c1e117ba890414aac8ef7d0145add60fc55adfb3ee010",
+          "results/t11-size-comparison/energy_levels.csv": "c72071429162bd1c7dd5dbfa020537e3976d4c2b2ecfd6b51059a373611d163c",
+          "results/t11-size-comparison/independent_checks.json": "0da56707d73907ef8a764dc83bdc1374784e4de4e28568d11c728264d4ce6435",
+          "results/t11-size-comparison/protocol.json": "4b0307ad3cd4dd925c741a377e9dcab060ff9e50d6ae28e6c79c2e28c471586d",
+          "results/t11-size-comparison/sha256.json": "a0ff40c8b915f8d8a33f74309917d1e4a4e1e3ea918938dfa7ec6e8d3ded6845",
+          "results/t11-size-comparison/summary.csv": "181539c4faa126bbb75a1809e18ecb039b1f49034f542abdca70d6caff1e9620",
+          "results/t11-size-comparison/thermal_scan.csv": "71c31045d7a123a477faa778ffbfafadcc200aa3c71545dd63310e90e9b2a81b",
+          "results/t11-size-comparison/turning_points.json": "2007d409d63ef4c31e063f58a570d9b643c82718b8792a57c5a747466f799711",
+          "results/t11-size-comparison/validation.json": "eb54e9179fac09a33dd45004698fed3fffcf87c953afe68f9284df977477354b",
+          "code/python/t11_size_comparison.py": "217d818a53ea9aa19ed198313819bc14a9c5eccbf1db359a2a2bbc3a7215488b",
+          "code/python/verify_t11_size_comparison.py": "608d140ac55feb688c76223a5d7a3c0a64053316ab8315d4d39ccd100bdd0acf",
+          "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.t11-size-comparison.table.rows[10]"
+      },
+      "assessment": {
+        "summary": "Matched mean occupation 2K/L=2: (L,K)=(4,4) and (5,5), singlet dimensions 105 and 1,176. Complete and ring graphs at t=1,U=20, plus free and no-hopping controls. Intermediate-temperature nonmonotonicity persists; the pronounced four-site complete-graph low-temperature collapse does not.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 38-test suite passed"
+      },
+      "series": "graph=ring, case=free"
+    },
+    {
+      "runId": "t11-size-comparison:case-0012:12",
+      "task": "T11",
+      "status": "complete",
+      "description": "Four versus five sites: thermal-volume persistence",
+      "catalogueDate": "2026-10-11",
+      "parameters": {
+        "L": 5,
+        "K": 5,
+        "graph": "ring",
+        "case": "U20"
+      },
+      "results": {
+        "dimension": 1176,
+        "triples": 5,
+        "ground_energy": 97.7522709286855,
+        "gap": 0.5560475106721015,
+        "ground_degeneracy": 1,
+        "ground_volume": 0.6314058171391703,
+        "ground_zero_probability": 5.161024813769624e-05,
+        "infinite_temperature_volume": 0.2658895148340843,
+        "peak_volume": 0.6314058171391705,
+        "peak_beta": 66.06934480075964,
+        "eigen_residual": 6.536993168992922e-13
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-size-comparison/L4_K4_complete_U20.npz": "6628d550cb4b225f0eba79315e325784b1da53e54c9c74116f1d18c4a05b429f",
+          "results/t11-size-comparison/L4_K4_complete_free.npz": "d99709afe723d9206e3a662d2377a45e288446c3c9754ed635d7329c050b5c50",
+          "results/t11-size-comparison/L4_K4_complete_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L4_K4_ring_U20.npz": "4b89f7ef52295a60a3b808b2e30e74e8bed6699b9dee179fde1eb0403a33d01f",
+          "results/t11-size-comparison/L4_K4_ring_free.npz": "7f23ba541c89564bb878eae961b7fc9e872eceb25d0150d9c3abae9cd2ff0130",
+          "results/t11-size-comparison/L4_K4_ring_no_hopping.npz": "d800c94979125242fdf5d1bdbd7d6d3720682f70d55ac94f1522c979e773fd3d",
+          "results/t11-size-comparison/L5_K5_complete_U20.npz": "aff47f842e0367735a6cce637339152d2617adbde0850ec2822f9b51d9da8c53",
+          "results/t11-size-comparison/L5_K5_complete_free.npz": "ba66be3dbadf813a7c2db1887d8a2da59a100ca3ad7fee5a578fb908cc9324d1",
+          "results/t11-size-comparison/L5_K5_complete_no_hopping.npz": "bee2eb1d62db1bde43bad5d1ef1531235bbfc8a10073c9c7915979ba93ad4480",
+          "results/t11-size-comparison/L5_K5_ring_U20.npz": "5079b3be44b0e4003b5eb01b4485693a2049ba4c4355d4d2a798cea9d825d13f",
+          "results/t11-size-comparison/L5_K5_ring_free.npz": "c82c2c106ff85c623ce04615d6c8440989649aae73e559d9afc19bc3ca873e1d",
+          "results/t11-size-comparison/L5_K5_ring_no_hopping.npz": "2cfdbc42aabf149773684273ba1e7b5f051f441478656cb47268069f42cb1ee3",
+          "results/t11-size-comparison/README.md": "d2cdca9d753c6dafc02c1e117ba890414aac8ef7d0145add60fc55adfb3ee010",
+          "results/t11-size-comparison/energy_levels.csv": "c72071429162bd1c7dd5dbfa020537e3976d4c2b2ecfd6b51059a373611d163c",
+          "results/t11-size-comparison/independent_checks.json": "0da56707d73907ef8a764dc83bdc1374784e4de4e28568d11c728264d4ce6435",
+          "results/t11-size-comparison/protocol.json": "4b0307ad3cd4dd925c741a377e9dcab060ff9e50d6ae28e6c79c2e28c471586d",
+          "results/t11-size-comparison/sha256.json": "a0ff40c8b915f8d8a33f74309917d1e4a4e1e3ea918938dfa7ec6e8d3ded6845",
+          "results/t11-size-comparison/summary.csv": "181539c4faa126bbb75a1809e18ecb039b1f49034f542abdca70d6caff1e9620",
+          "results/t11-size-comparison/thermal_scan.csv": "71c31045d7a123a477faa778ffbfafadcc200aa3c71545dd63310e90e9b2a81b",
+          "results/t11-size-comparison/turning_points.json": "2007d409d63ef4c31e063f58a570d9b643c82718b8792a57c5a747466f799711",
+          "results/t11-size-comparison/validation.json": "eb54e9179fac09a33dd45004698fed3fffcf87c953afe68f9284df977477354b",
+          "code/python/t11_size_comparison.py": "217d818a53ea9aa19ed198313819bc14a9c5eccbf1db359a2a2bbc3a7215488b",
+          "code/python/verify_t11_size_comparison.py": "608d140ac55feb688c76223a5d7a3c0a64053316ab8315d4d39ccd100bdd0acf",
+          "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.t11-size-comparison.table.rows[11]"
+      },
+      "assessment": {
+        "summary": "Matched mean occupation 2K/L=2: (L,K)=(4,4) and (5,5), singlet dimensions 105 and 1,176. Complete and ring graphs at t=1,U=20, plus free and no-hopping controls. Intermediate-temperature nonmonotonicity persists; the pronounced four-site complete-graph low-temperature collapse does not.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 38-test suite passed"
+      },
+      "series": "graph=ring, case=U20"
+    }
+  ],
+  "figures": [
+    {
+      "title": "Four versus five sites: volume per selected triple at U/t=20",
+      "path": "../study-assets/results/t11-size-comparison/volume_comparison.png",
+      "tags": [
+        "T11"
+      ]
+    },
+    {
+      "title": "Complete and ring interaction graphs, with one selected volume triple",
+      "path": "../study-assets/figures/hamiltonian-systems/four-and-five-site-graphs.png",
+      "tags": [
+        "T11"
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "title": "Numerical studies overview",
+      "path": "../index.html"
+    }
+  ]
+}

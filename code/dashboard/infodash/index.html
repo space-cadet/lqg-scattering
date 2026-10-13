@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Numerical Studies</title>
+</head>
+<body>
+  <p>Numerical studies now use the shared dashboard. <a id="dashboard-link" href="../">Open the numerical dashboard</a>.</p>
+  <script>
+    const target = new URL('../', location.href);
+    target.search = location.search;
+    target.hash = location.hash;
+    document.getElementById('dashboard-link').href = target.href;
+    location.replace(target.href);
+  </script>
+</body>
+</html>

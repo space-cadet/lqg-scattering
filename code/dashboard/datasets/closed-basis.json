@@ -1,0 +1,1493 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "Complete four-face closed-basis volumes",
+    "subtitle": "Four labelled faces, zero-spin faces allowed; K=2 through 12, 10,549 basis states. RS/AL means, variances, spectra and reconstructible operators."
+  },
+  "columns": [
+    {
+      "key": "runId",
+      "label": "Case",
+      "type": "string"
+    },
+    {
+      "key": "parameters.K",
+      "label": "K",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.basis_states",
+      "label": "basis states",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.nonzero_volume_basis_states",
+      "label": "nonzero volume basis states",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.maximum_singlet_dimension",
+      "label": "maximum singlet dimension",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.maximum_magnetic_m0_dimension",
+      "label": "maximum magnetic m0 dimension",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.equal_weight_closed_rs_mean",
+      "label": "equal weight closed rs mean",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.equal_weight_closed_al_mean",
+      "label": "equal weight closed al mean",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.checks_max_absolute_residual.orthogonality",
+      "label": "checks max absolute residual.orthogonality",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.checks_max_absolute_residual.closure",
+      "label": "checks max absolute residual.closure",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.checks_max_absolute_residual.recoupling",
+      "label": "checks max absolute residual.recoupling",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.checks_max_absolute_residual.hermiticity",
+      "label": "checks max absolute residual.hermiticity",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.checks_max_absolute_residual.invariant_subspace",
+      "label": "checks max absolute residual.invariant subspace",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.checks_max_absolute_residual.casimir",
+      "label": "checks max absolute residual.casimir",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.checks_max_absolute_residual.four_valent_closure",
+      "label": "checks max absolute residual.four valent closure",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.checks_max_absolute_residual.volume_root_projection",
+      "label": "checks max absolute residual.volume root projection",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.checks_max_absolute_residual.independent_q",
+      "label": "checks max absolute residual.independent q",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.validation",
+      "label": "validation",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.archive",
+      "label": "archive",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.archive_bytes",
+      "label": "archive bytes",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.archive_sha256",
+      "label": "archive sha256",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.states_csv",
+      "label": "states csv",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.elapsed_seconds",
+      "label": "elapsed seconds",
+      "type": "number",
+      "precision": 8
+    }
+  ],
+  "charts": {
+    "type": "scatter",
+    "x": "parameters.K",
+    "y": "results.equal_weight_closed_rs_mean"
+  },
+  "runs": [
+    {
+      "runId": "closed-basis:case-0001:1",
+      "task": "T1a",
+      "status": "complete",
+      "description": "Complete four-face closed-basis volumes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "K": 2
+      },
+      "results": {
+        "basis_states": 20,
+        "nonzero_volume_basis_states": 2,
+        "maximum_singlet_dimension": 2,
+        "maximum_magnetic_m0_dimension": 6,
+        "equal_weight_closed_rs_mean": 0.030465319023639064,
+        "equal_weight_closed_al_mean": 0.015232659511819532,
+        "checks_max_absolute_residual": {
+          "orthogonality": 4.440892098500626e-16,
+          "closure": 1.1102230246251565e-16,
+          "recoupling": 4.440892098500626e-16,
+          "hermiticity": 5.551115123125783e-17,
+          "invariant_subspace": 2.220446049250313e-16,
+          "casimir": 1.7763568394002505e-15,
+          "four_valent_closure": 0.0,
+          "volume_root_projection": 1.38778123376394e-16,
+          "independent_q": 0.0
+        },
+        "validation": "All-block singlet and scalar checks; independent sparse local-spin q012 per unordered pattern at every K; additional oscillator/dense-tensor and magnetic-space spectral-root checks through K=4.",
+        "archive": "operators_k2.npz",
+        "archive_bytes": 17051,
+        "archive_sha256": "51ae53834b6cea49a9f31d632aac948eaff344800b69a1917849c58c09708d3d",
+        "states_csv": "states_k2.csv",
+        "elapsed_seconds": 0.1418104580079671
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/closed-basis-volume/README.md": "f4ceddf43e39f302b6a7e0ebedd37b84cd06fd9009dfc988f4ce642ae80363d7",
+          "results/closed-basis-volume/metadata_k10.json": "a80142126873617deddc81c6069e84de887ac0f2a965ca0e7259ee36873d2d1d",
+          "results/closed-basis-volume/metadata_k11.json": "26718cf1e2c2480bedcac2214473f34254f0a9e9c66a4ec6a5e6f4485923518e",
+          "results/closed-basis-volume/metadata_k12.json": "00372978bec6b10aa1c17d53de8ad25f6d7136eb1f900ee19b45337e0075bece",
+          "results/closed-basis-volume/metadata_k2.json": "749f7403efb0a12a020faaa364292ef924d2aaa0ce02df2042da4ddca75210a7",
+          "results/closed-basis-volume/metadata_k3.json": "bc8c197981750b950c42c97aa6e8e95bdd77cc90c12a4777278b0e144bfab199",
+          "results/closed-basis-volume/metadata_k4.json": "da4e0e19eedb37d42af99e79bd39050a52a95edce2eac5195d74e4c42513aef3",
+          "results/closed-basis-volume/metadata_k5.json": "5cc68a9662496185033e936be793cede0cd0d2c28515ef8c40cc36fc14741eda",
+          "results/closed-basis-volume/metadata_k6.json": "3d49ed7047f4c76f0c737dd5edea25aea4c2f8138e43d1186a55bd0e78c04e64",
+          "results/closed-basis-volume/metadata_k7.json": "6619041969b81567b93b5b6af09fa0fc3f42f351f48e8bcbc00805268b5f534b",
+          "results/closed-basis-volume/metadata_k8.json": "936d9252a60f1cf919dc70ef53e38139dd5a138c1291a394f67086c583462a68",
+          "results/closed-basis-volume/metadata_k9.json": "98963ff5f0b01bfdedd71ce07dfb4931a8f55e0c0a96701643bae613236a2c9a",
+          "results/closed-basis-volume/operators_k10.npz": "7bc876562107e50ab3a4656301678987d77c3710cb40adce73fe8afe6ab74acc",
+          "results/closed-basis-volume/operators_k11.npz": "d695842d656b8ab093898873c35994b53a6df362f576da3e4cd08996151edc75",
+          "results/closed-basis-volume/operators_k12.npz": "b3b1c3e8d9acb0126b121ffdc3856dd0efe2fe6f59cde5ee6032377fad6904f3",
+          "results/closed-basis-volume/operators_k2.npz": "51ae53834b6cea49a9f31d632aac948eaff344800b69a1917849c58c09708d3d",
+          "results/closed-basis-volume/operators_k3.npz": "999c7319f2d98d321cca4bd8422ab05c301f3096f92e1aeb0e06d04692469e38",
+          "results/closed-basis-volume/operators_k4.npz": "38d5f1fb6e42efbae429406484f6b35e3c14cc3a970d616f1decd4a6dd2004c4",
+          "results/closed-basis-volume/operators_k5.npz": "6cdf27858c38d044264d582fd23cacdbb8095e0beae3ec810f75a7f708fe8626",
+          "results/closed-basis-volume/operators_k6.npz": "5dde52cb5d9c1d9a6238c926111bd09f179ade06c71085f0114046751c4f955b",
+          "results/closed-basis-volume/operators_k7.npz": "537c4d52540f1583e9809df8ea482a5780eff0cd6a46292214cfc1f242f831a2",
+          "results/closed-basis-volume/operators_k8.npz": "041c81fbd7ecffd2d0547f1a5084f6f03676f7e10550db2127a61cbcc46f49a4",
+          "results/closed-basis-volume/operators_k9.npz": "dc406856bb0f500b0c30330a9722bc65d564e5e97830a623a7176f04552e9438",
+          "results/closed-basis-volume/states_k10.csv": "bce31c826f04f46e684cc23e6c05038c5c67a220d085c765fbec0c6bbb8772eb",
+          "results/closed-basis-volume/states_k11.csv": "77a2d54bb91a6e464d5ef7f17381ba7b0bca6d73f992b38fe1fc5452498b37f7",
+          "results/closed-basis-volume/states_k12.csv": "a83b0e0759c36eb503f1425fae0fe0e748953a65c77b5ea5fe5edd205f65421e",
+          "results/closed-basis-volume/states_k2.csv": "d22c12367cdad991ae0c59170d9c21745505e207b4e23e4e6c28d101dba5f8cb",
+          "results/closed-basis-volume/states_k3.csv": "8a0e687c021d1992b207fff9c8959028f479aa8b9c735a6e63fbac2c065eacc9",
+          "results/closed-basis-volume/states_k4.csv": "aef3ee9d45db26c832269c2b676e014e444e4cec8ef7da0283b76c590f59371a",
+          "results/closed-basis-volume/states_k5.csv": "bb9053f1f00bc9ade781a58762469fc7bae1304e904ddda185fbecb8d0f72ebf",
+          "results/closed-basis-volume/states_k6.csv": "795d91601ed1278910fe0dedc2062d7f984085f3d7bef356802ddfe9a312be5c",
+          "results/closed-basis-volume/states_k7.csv": "c997298195c2bb1516ce1806a8f77a7d00662f42f05e96231e25d7b29bf419e7",
+          "results/closed-basis-volume/states_k8.csv": "1bbe690cf827bbbc0be4660419e5cd95a9d30136ba5b506be9a1ee6156cd35b3",
+          "results/closed-basis-volume/states_k9.csv": "9d4328c1d342d3575c3284afe08c1c11f12995053a6229eec72971ef95c1486f",
+          "results/closed-basis-volume/summary.json": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a",
+          "results/closed-state-enumeration/basis_k2_k4.csv": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93",
+          "results/closed-state-enumeration/summary.json": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c",
+          "notes/thermal-area-sectors.md": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.closed-basis.table.rows[0]"
+      },
+      "assessment": {
+        "summary": "Four labelled faces, zero-spin faces allowed; K=2 through 12, 10,549 basis states. RS/AL means, variances, spectra and reconstructible operators.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "README.md",
+          "path": "../study-assets/results/closed-basis-volume/README.txt",
+          "kind": "data",
+          "sha256": "f4ceddf43e39f302b6a7e0ebedd37b84cd06fd9009dfc988f4ce642ae80363d7",
+          "sourcePath": "results/closed-basis-volume/README.md",
+          "sourceSha256": "f4ceddf43e39f302b6a7e0ebedd37b84cd06fd9009dfc988f4ce642ae80363d7"
+        },
+        {
+          "label": "metadata_k10.json",
+          "path": "../study-assets/results/closed-basis-volume/metadata_k10.json",
+          "kind": "data",
+          "sha256": "a80142126873617deddc81c6069e84de887ac0f2a965ca0e7259ee36873d2d1d",
+          "sourcePath": "results/closed-basis-volume/metadata_k10.json",
+          "sourceSha256": "a80142126873617deddc81c6069e84de887ac0f2a965ca0e7259ee36873d2d1d"
+        },
+        {
+          "label": "metadata_k11.json",
+          "path": "../study-assets/results/closed-basis-volume/metadata_k11.json",
+          "kind": "data",
+          "sha256": "26718cf1e2c2480bedcac2214473f34254f0a9e9c66a4ec6a5e6f4485923518e",
+          "sourcePath": "results/closed-basis-volume/metadata_k11.json",
+          "sourceSha256": "26718cf1e2c2480bedcac2214473f34254f0a9e9c66a4ec6a5e6f4485923518e"
+        },
+        {
+          "label": "metadata_k12.json",
+          "path": "../study-assets/results/closed-basis-volume/metadata_k12.json",
+          "kind": "data",
+          "sha256": "00372978bec6b10aa1c17d53de8ad25f6d7136eb1f900ee19b45337e0075bece",
+          "sourcePath": "results/closed-basis-volume/metadata_k12.json",
+          "sourceSha256": "00372978bec6b10aa1c17d53de8ad25f6d7136eb1f900ee19b45337e0075bece"
+        },
+        {
+          "label": "metadata_k2.json",
+          "path": "../study-assets/results/closed-basis-volume/metadata_k2.json",
+          "kind": "data",
+          "sha256": "749f7403efb0a12a020faaa364292ef924d2aaa0ce02df2042da4ddca75210a7",
+          "sourcePath": "results/closed-basis-volume/metadata_k2.json",
+          "sourceSha256": "749f7403efb0a12a020faaa364292ef924d2aaa0ce02df2042da4ddca75210a7"
+        },
+        {
+          "label": "metadata_k3.json",
+          "path": "../study-assets/results/closed-basis-volume/metadata_k3.json",
+          "kind": "data",
+          "sha256": "bc8c197981750b950c42c97aa6e8e95bdd77cc90c12a4777278b0e144bfab199",
+          "sourcePath": "results/closed-basis-volume/metadata_k3.json",
+          "sourceSha256": "bc8c197981750b950c42c97aa6e8e95bdd77cc90c12a4777278b0e144bfab199"
+        },
+        {
+          "label": "metadata_k4.json",
+          "path": "../study-assets/results/closed-basis-volume/metadata_k4.json",
+          "kind": "data",
+          "sha256": "da4e0e19eedb37d42af99e79bd39050a52a95edce2eac5195d74e4c42513aef3",
+          "sourcePath": "results/closed-basis-volume/metadata_k4.json",
+          "sourceSha256": "da4e0e19eedb37d42af99e79bd39050a52a95edce2eac5195d74e4c42513aef3"
+        },
+        {
+          "label": "metadata_k5.json",
+          "path": "../study-assets/results/closed-basis-volume/metadata_k5.json",
+          "kind": "data",
+          "sha256": "5cc68a9662496185033e936be793cede0cd0d2c28515ef8c40cc36fc14741eda",
+          "sourcePath": "results/closed-basis-volume/metadata_k5.json",
+          "sourceSha256": "5cc68a9662496185033e936be793cede0cd0d2c28515ef8c40cc36fc14741eda"
+        },
+        {
+          "label": "metadata_k6.json",
+          "path": "../study-assets/results/closed-basis-volume/metadata_k6.json",
+          "kind": "data",
+          "sha256": "3d49ed7047f4c76f0c737dd5edea25aea4c2f8138e43d1186a55bd0e78c04e64",
+          "sourcePath": "results/closed-basis-volume/metadata_k6.json",
+          "sourceSha256": "3d49ed7047f4c76f0c737dd5edea25aea4c2f8138e43d1186a55bd0e78c04e64"
+        },
+        {
+          "label": "metadata_k7.json",
+          "path": "../study-assets/results/closed-basis-volume/metadata_k7.json",
+          "kind": "data",
+          "sha256": "6619041969b81567b93b5b6af09fa0fc3f42f351f48e8bcbc00805268b5f534b",
+          "sourcePath": "results/closed-basis-volume/metadata_k7.json",
+          "sourceSha256": "6619041969b81567b93b5b6af09fa0fc3f42f351f48e8bcbc00805268b5f534b"
+        },
+        {
+          "label": "metadata_k8.json",
+          "path": "../study-assets/results/closed-basis-volume/metadata_k8.json",
+          "kind": "data",
+          "sha256": "936d9252a60f1cf919dc70ef53e38139dd5a138c1291a394f67086c583462a68",
+          "sourcePath": "results/closed-basis-volume/metadata_k8.json",
+          "sourceSha256": "936d9252a60f1cf919dc70ef53e38139dd5a138c1291a394f67086c583462a68"
+        },
+        {
+          "label": "metadata_k9.json",
+          "path": "../study-assets/results/closed-basis-volume/metadata_k9.json",
+          "kind": "data",
+          "sha256": "98963ff5f0b01bfdedd71ce07dfb4931a8f55e0c0a96701643bae613236a2c9a",
+          "sourcePath": "results/closed-basis-volume/metadata_k9.json",
+          "sourceSha256": "98963ff5f0b01bfdedd71ce07dfb4931a8f55e0c0a96701643bae613236a2c9a"
+        },
+        {
+          "label": "operators_k10.npz",
+          "path": "../study-assets/results/closed-basis-volume/operators_k10.npz",
+          "kind": "operators",
+          "sha256": "7bc876562107e50ab3a4656301678987d77c3710cb40adce73fe8afe6ab74acc",
+          "sourcePath": "results/closed-basis-volume/operators_k10.npz",
+          "sourceSha256": "7bc876562107e50ab3a4656301678987d77c3710cb40adce73fe8afe6ab74acc"
+        },
+        {
+          "label": "operators_k11.npz",
+          "path": "../study-assets/results/closed-basis-volume/operators_k11.npz",
+          "kind": "operators",
+          "sha256": "d695842d656b8ab093898873c35994b53a6df362f576da3e4cd08996151edc75",
+          "sourcePath": "results/closed-basis-volume/operators_k11.npz",
+          "sourceSha256": "d695842d656b8ab093898873c35994b53a6df362f576da3e4cd08996151edc75"
+        },
+        {
+          "label": "operators_k12.npz",
+          "path": "../study-assets/results/closed-basis-volume/operators_k12.npz",
+          "kind": "operators",
+          "sha256": "b3b1c3e8d9acb0126b121ffdc3856dd0efe2fe6f59cde5ee6032377fad6904f3",
+          "sourcePath": "results/closed-basis-volume/operators_k12.npz",
+          "sourceSha256": "b3b1c3e8d9acb0126b121ffdc3856dd0efe2fe6f59cde5ee6032377fad6904f3"
+        },
+        {
+          "label": "operators_k2.npz",
+          "path": "../study-assets/results/closed-basis-volume/operators_k2.npz",
+          "kind": "operators",
+          "sha256": "51ae53834b6cea49a9f31d632aac948eaff344800b69a1917849c58c09708d3d",
+          "sourcePath": "results/closed-basis-volume/operators_k2.npz",
+          "sourceSha256": "51ae53834b6cea49a9f31d632aac948eaff344800b69a1917849c58c09708d3d"
+        },
+        {
+          "label": "operators_k3.npz",
+          "path": "../study-assets/results/closed-basis-volume/operators_k3.npz",
+          "kind": "operators",
+          "sha256": "999c7319f2d98d321cca4bd8422ab05c301f3096f92e1aeb0e06d04692469e38",
+          "sourcePath": "results/closed-basis-volume/operators_k3.npz",
+          "sourceSha256": "999c7319f2d98d321cca4bd8422ab05c301f3096f92e1aeb0e06d04692469e38"
+        },
+        {
+          "label": "operators_k4.npz",
+          "path": "../study-assets/results/closed-basis-volume/operators_k4.npz",
+          "kind": "operators",
+          "sha256": "38d5f1fb6e42efbae429406484f6b35e3c14cc3a970d616f1decd4a6dd2004c4",
+          "sourcePath": "results/closed-basis-volume/operators_k4.npz",
+          "sourceSha256": "38d5f1fb6e42efbae429406484f6b35e3c14cc3a970d616f1decd4a6dd2004c4"
+        },
+        {
+          "label": "operators_k5.npz",
+          "path": "../study-assets/results/closed-basis-volume/operators_k5.npz",
+          "kind": "operators",
+          "sha256": "6cdf27858c38d044264d582fd23cacdbb8095e0beae3ec810f75a7f708fe8626",
+          "sourcePath": "results/closed-basis-volume/operators_k5.npz",
+          "sourceSha256": "6cdf27858c38d044264d582fd23cacdbb8095e0beae3ec810f75a7f708fe8626"
+        },
+        {
+          "label": "operators_k6.npz",
+          "path": "../study-assets/results/closed-basis-volume/operators_k6.npz",
+          "kind": "operators",
+          "sha256": "5dde52cb5d9c1d9a6238c926111bd09f179ade06c71085f0114046751c4f955b",
+          "sourcePath": "results/closed-basis-volume/operators_k6.npz",
+          "sourceSha256": "5dde52cb5d9c1d9a6238c926111bd09f179ade06c71085f0114046751c4f955b"
+        },
+        {
+          "label": "operators_k7.npz",
+          "path": "../study-assets/results/closed-basis-volume/operators_k7.npz",
+          "kind": "operators",
+          "sha256": "537c4d52540f1583e9809df8ea482a5780eff0cd6a46292214cfc1f242f831a2",
+          "sourcePath": "results/closed-basis-volume/operators_k7.npz",
+          "sourceSha256": "537c4d52540f1583e9809df8ea482a5780eff0cd6a46292214cfc1f242f831a2"
+        },
+        {
+          "label": "operators_k8.npz",
+          "path": "../study-assets/results/closed-basis-volume/operators_k8.npz",
+          "kind": "operators",
+          "sha256": "041c81fbd7ecffd2d0547f1a5084f6f03676f7e10550db2127a61cbcc46f49a4",
+          "sourcePath": "results/closed-basis-volume/operators_k8.npz",
+          "sourceSha256": "041c81fbd7ecffd2d0547f1a5084f6f03676f7e10550db2127a61cbcc46f49a4"
+        },
+        {
+          "label": "operators_k9.npz",
+          "path": "../study-assets/results/closed-basis-volume/operators_k9.npz",
+          "kind": "operators",
+          "sha256": "dc406856bb0f500b0c30330a9722bc65d564e5e97830a623a7176f04552e9438",
+          "sourcePath": "results/closed-basis-volume/operators_k9.npz",
+          "sourceSha256": "dc406856bb0f500b0c30330a9722bc65d564e5e97830a623a7176f04552e9438"
+        },
+        {
+          "label": "states_k10.csv",
+          "path": "../study-assets/results/closed-basis-volume/states_k10.csv",
+          "kind": "data",
+          "sha256": "bce31c826f04f46e684cc23e6c05038c5c67a220d085c765fbec0c6bbb8772eb",
+          "sourcePath": "results/closed-basis-volume/states_k10.csv",
+          "sourceSha256": "bce31c826f04f46e684cc23e6c05038c5c67a220d085c765fbec0c6bbb8772eb"
+        },
+        {
+          "label": "states_k11.csv",
+          "path": "../study-assets/results/closed-basis-volume/states_k11.csv",
+          "kind": "data",
+          "sha256": "77a2d54bb91a6e464d5ef7f17381ba7b0bca6d73f992b38fe1fc5452498b37f7",
+          "sourcePath": "results/closed-basis-volume/states_k11.csv",
+          "sourceSha256": "77a2d54bb91a6e464d5ef7f17381ba7b0bca6d73f992b38fe1fc5452498b37f7"
+        },
+        {
+          "label": "states_k12.csv",
+          "path": "../study-assets/results/closed-basis-volume/states_k12.csv",
+          "kind": "data",
+          "sha256": "a83b0e0759c36eb503f1425fae0fe0e748953a65c77b5ea5fe5edd205f65421e",
+          "sourcePath": "results/closed-basis-volume/states_k12.csv",
+          "sourceSha256": "a83b0e0759c36eb503f1425fae0fe0e748953a65c77b5ea5fe5edd205f65421e"
+        },
+        {
+          "label": "states_k2.csv",
+          "path": "../study-assets/results/closed-basis-volume/states_k2.csv",
+          "kind": "data",
+          "sha256": "d22c12367cdad991ae0c59170d9c21745505e207b4e23e4e6c28d101dba5f8cb",
+          "sourcePath": "results/closed-basis-volume/states_k2.csv",
+          "sourceSha256": "d22c12367cdad991ae0c59170d9c21745505e207b4e23e4e6c28d101dba5f8cb"
+        },
+        {
+          "label": "states_k3.csv",
+          "path": "../study-assets/results/closed-basis-volume/states_k3.csv",
+          "kind": "data",
+          "sha256": "8a0e687c021d1992b207fff9c8959028f479aa8b9c735a6e63fbac2c065eacc9",
+          "sourcePath": "results/closed-basis-volume/states_k3.csv",
+          "sourceSha256": "8a0e687c021d1992b207fff9c8959028f479aa8b9c735a6e63fbac2c065eacc9"
+        },
+        {
+          "label": "states_k4.csv",
+          "path": "../study-assets/results/closed-basis-volume/states_k4.csv",
+          "kind": "data",
+          "sha256": "aef3ee9d45db26c832269c2b676e014e444e4cec8ef7da0283b76c590f59371a",
+          "sourcePath": "results/closed-basis-volume/states_k4.csv",
+          "sourceSha256": "aef3ee9d45db26c832269c2b676e014e444e4cec8ef7da0283b76c590f59371a"
+        },
+        {
+          "label": "states_k5.csv",
+          "path": "../study-assets/results/closed-basis-volume/states_k5.csv",
+          "kind": "data",
+          "sha256": "bb9053f1f00bc9ade781a58762469fc7bae1304e904ddda185fbecb8d0f72ebf",
+          "sourcePath": "results/closed-basis-volume/states_k5.csv",
+          "sourceSha256": "bb9053f1f00bc9ade781a58762469fc7bae1304e904ddda185fbecb8d0f72ebf"
+        },
+        {
+          "label": "states_k6.csv",
+          "path": "../study-assets/results/closed-basis-volume/states_k6.csv",
+          "kind": "data",
+          "sha256": "795d91601ed1278910fe0dedc2062d7f984085f3d7bef356802ddfe9a312be5c",
+          "sourcePath": "results/closed-basis-volume/states_k6.csv",
+          "sourceSha256": "795d91601ed1278910fe0dedc2062d7f984085f3d7bef356802ddfe9a312be5c"
+        },
+        {
+          "label": "states_k7.csv",
+          "path": "../study-assets/results/closed-basis-volume/states_k7.csv",
+          "kind": "data",
+          "sha256": "c997298195c2bb1516ce1806a8f77a7d00662f42f05e96231e25d7b29bf419e7",
+          "sourcePath": "results/closed-basis-volume/states_k7.csv",
+          "sourceSha256": "c997298195c2bb1516ce1806a8f77a7d00662f42f05e96231e25d7b29bf419e7"
+        },
+        {
+          "label": "states_k8.csv",
+          "path": "../study-assets/results/closed-basis-volume/states_k8.csv",
+          "kind": "data",
+          "sha256": "1bbe690cf827bbbc0be4660419e5cd95a9d30136ba5b506be9a1ee6156cd35b3",
+          "sourcePath": "results/closed-basis-volume/states_k8.csv",
+          "sourceSha256": "1bbe690cf827bbbc0be4660419e5cd95a9d30136ba5b506be9a1ee6156cd35b3"
+        },
+        {
+          "label": "states_k9.csv",
+          "path": "../study-assets/results/closed-basis-volume/states_k9.csv",
+          "kind": "data",
+          "sha256": "9d4328c1d342d3575c3284afe08c1c11f12995053a6229eec72971ef95c1486f",
+          "sourcePath": "results/closed-basis-volume/states_k9.csv",
+          "sourceSha256": "9d4328c1d342d3575c3284afe08c1c11f12995053a6229eec72971ef95c1486f"
+        },
+        {
+          "label": "summary.json",
+          "path": "../study-assets/results/closed-basis-volume/summary.json",
+          "kind": "data",
+          "sha256": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a",
+          "sourcePath": "results/closed-basis-volume/summary.json",
+          "sourceSha256": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a"
+        },
+        {
+          "label": "basis_k2_k4.csv",
+          "path": "../study-assets/results/closed-state-enumeration/basis_k2_k4.csv",
+          "kind": "data",
+          "sha256": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93",
+          "sourcePath": "results/closed-state-enumeration/basis_k2_k4.csv",
+          "sourceSha256": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93"
+        },
+        {
+          "label": "summary.json",
+          "path": "../study-assets/results/closed-state-enumeration/summary.json",
+          "kind": "data",
+          "sha256": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c",
+          "sourcePath": "results/closed-state-enumeration/summary.json",
+          "sourceSha256": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c"
+        },
+        {
+          "label": "thermal-area-sectors.md",
+          "path": "../study-assets/notes/thermal-area-sectors.txt",
+          "kind": "data",
+          "sha256": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e",
+          "sourcePath": "notes/thermal-area-sectors.md",
+          "sourceSha256": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+        }
+      ],
+      "figures": [
+        {
+          "title": "Four-face recoupling-basis volume expectations, K=2,3,4",
+          "path": "../study-assets/figures/closed-basis-volume/basis_state_volumes_k2_k4.png",
+          "tags": [
+            "T1a"
+          ]
+        },
+        {
+          "title": "Equal-weight complete closed-basis volume versus area",
+          "path": "../study-assets/figures/closed-basis-volume/fixed_area_ensemble_volume.png",
+          "tags": [
+            "T1a"
+          ]
+        },
+        {
+          "title": "Regular FL state volume versus area",
+          "path": "../study-assets/figures/single-copy-volume/regular_volume_area.png",
+          "tags": [
+            "T1a"
+          ]
+        },
+        {
+          "title": "Weighted FL state volume versus area",
+          "path": "../study-assets/figures/single-copy-volume/weighted_volume_area.png",
+          "tags": [
+            "T1a"
+          ]
+        }
+      ]
+    },
+    {
+      "runId": "closed-basis:case-0002:2",
+      "task": "T1a",
+      "status": "complete",
+      "description": "Complete four-face closed-basis volumes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "K": 3
+      },
+      "results": {
+        "basis_states": 50,
+        "nonzero_volume_basis_states": 12,
+        "maximum_singlet_dimension": 2,
+        "maximum_magnetic_m0_dimension": 10,
+        "equal_weight_closed_rs_mean": 0.09343490644232137,
+        "equal_weight_closed_al_mean": 0.04671745322116069,
+        "checks_max_absolute_residual": {
+          "orthogonality": 4.440892098500626e-16,
+          "closure": 3.3306690738754696e-16,
+          "recoupling": 6.661338147750939e-16,
+          "hermiticity": 2.220446049250313e-16,
+          "invariant_subspace": 3.608224830031759e-16,
+          "casimir": 2.6645352591003757e-15,
+          "four_valent_closure": 3.3306690738754696e-16,
+          "volume_root_projection": 3.3306753446139176e-16,
+          "independent_q": 2.220446049250313e-16
+        },
+        "validation": "All-block singlet and scalar checks; independent sparse local-spin q012 per unordered pattern at every K; additional oscillator/dense-tensor and magnetic-space spectral-root checks through K=4.",
+        "archive": "operators_k3.npz",
+        "archive_bytes": 20075,
+        "archive_sha256": "999c7319f2d98d321cca4bd8422ab05c301f3096f92e1aeb0e06d04692469e38",
+        "states_csv": "states_k3.csv",
+        "elapsed_seconds": 0.38971212500473484
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/closed-basis-volume/README.md": "f4ceddf43e39f302b6a7e0ebedd37b84cd06fd9009dfc988f4ce642ae80363d7",
+          "results/closed-basis-volume/metadata_k10.json": "a80142126873617deddc81c6069e84de887ac0f2a965ca0e7259ee36873d2d1d",
+          "results/closed-basis-volume/metadata_k11.json": "26718cf1e2c2480bedcac2214473f34254f0a9e9c66a4ec6a5e6f4485923518e",
+          "results/closed-basis-volume/metadata_k12.json": "00372978bec6b10aa1c17d53de8ad25f6d7136eb1f900ee19b45337e0075bece",
+          "results/closed-basis-volume/metadata_k2.json": "749f7403efb0a12a020faaa364292ef924d2aaa0ce02df2042da4ddca75210a7",
+          "results/closed-basis-volume/metadata_k3.json": "bc8c197981750b950c42c97aa6e8e95bdd77cc90c12a4777278b0e144bfab199",
+          "results/closed-basis-volume/metadata_k4.json": "da4e0e19eedb37d42af99e79bd39050a52a95edce2eac5195d74e4c42513aef3",
+          "results/closed-basis-volume/metadata_k5.json": "5cc68a9662496185033e936be793cede0cd0d2c28515ef8c40cc36fc14741eda",
+          "results/closed-basis-volume/metadata_k6.json": "3d49ed7047f4c76f0c737dd5edea25aea4c2f8138e43d1186a55bd0e78c04e64",
+          "results/closed-basis-volume/metadata_k7.json": "6619041969b81567b93b5b6af09fa0fc3f42f351f48e8bcbc00805268b5f534b",
+          "results/closed-basis-volume/metadata_k8.json": "936d9252a60f1cf919dc70ef53e38139dd5a138c1291a394f67086c583462a68",
+          "results/closed-basis-volume/metadata_k9.json": "98963ff5f0b01bfdedd71ce07dfb4931a8f55e0c0a96701643bae613236a2c9a",
+          "results/closed-basis-volume/operators_k10.npz": "7bc876562107e50ab3a4656301678987d77c3710cb40adce73fe8afe6ab74acc",
+          "results/closed-basis-volume/operators_k11.npz": "d695842d656b8ab093898873c35994b53a6df362f576da3e4cd08996151edc75",
+          "results/closed-basis-volume/operators_k12.npz": "b3b1c3e8d9acb0126b121ffdc3856dd0efe2fe6f59cde5ee6032377fad6904f3",
+          "results/closed-basis-volume/operators_k2.npz": "51ae53834b6cea49a9f31d632aac948eaff344800b69a1917849c58c09708d3d",
+          "results/closed-basis-volume/operators_k3.npz": "999c7319f2d98d321cca4bd8422ab05c301f3096f92e1aeb0e06d04692469e38",
+          "results/closed-basis-volume/operators_k4.npz": "38d5f1fb6e42efbae429406484f6b35e3c14cc3a970d616f1decd4a6dd2004c4",
+          "results/closed-basis-volume/operators_k5.npz": "6cdf27858c38d044264d582fd23cacdbb8095e0beae3ec810f75a7f708fe8626",
+          "results/closed-basis-volume/operators_k6.npz": "5dde52cb5d9c1d9a6238c926111bd09f179ade06c71085f0114046751c4f955b",
+          "results/closed-basis-volume/operators_k7.npz": "537c4d52540f1583e9809df8ea482a5780eff0cd6a46292214cfc1f242f831a2",
+          "results/closed-basis-volume/operators_k8.npz": "041c81fbd7ecffd2d0547f1a5084f6f03676f7e10550db2127a61cbcc46f49a4",
+          "results/closed-basis-volume/operators_k9.npz": "dc406856bb0f500b0c30330a9722bc65d564e5e97830a623a7176f04552e9438",
+          "results/closed-basis-volume/states_k10.csv": "bce31c826f04f46e684cc23e6c05038c5c67a220d085c765fbec0c6bbb8772eb",
+          "results/closed-basis-volume/states_k11.csv": "77a2d54bb91a6e464d5ef7f17381ba7b0bca6d73f992b38fe1fc5452498b37f7",
+          "results/closed-basis-volume/states_k12.csv": "a83b0e0759c36eb503f1425fae0fe0e748953a65c77b5ea5fe5edd205f65421e",
+          "results/closed-basis-volume/states_k2.csv": "d22c12367cdad991ae0c59170d9c21745505e207b4e23e4e6c28d101dba5f8cb",
+          "results/closed-basis-volume/states_k3.csv": "8a0e687c021d1992b207fff9c8959028f479aa8b9c735a6e63fbac2c065eacc9",
+          "results/closed-basis-volume/states_k4.csv": "aef3ee9d45db26c832269c2b676e014e444e4cec8ef7da0283b76c590f59371a",
+          "results/closed-basis-volume/states_k5.csv": "bb9053f1f00bc9ade781a58762469fc7bae1304e904ddda185fbecb8d0f72ebf",
+          "results/closed-basis-volume/states_k6.csv": "795d91601ed1278910fe0dedc2062d7f984085f3d7bef356802ddfe9a312be5c",
+          "results/closed-basis-volume/states_k7.csv": "c997298195c2bb1516ce1806a8f77a7d00662f42f05e96231e25d7b29bf419e7",
+          "results/closed-basis-volume/states_k8.csv": "1bbe690cf827bbbc0be4660419e5cd95a9d30136ba5b506be9a1ee6156cd35b3",
+          "results/closed-basis-volume/states_k9.csv": "9d4328c1d342d3575c3284afe08c1c11f12995053a6229eec72971ef95c1486f",
+          "results/closed-basis-volume/summary.json": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a",
+          "results/closed-state-enumeration/basis_k2_k4.csv": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93",
+          "results/closed-state-enumeration/summary.json": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c",
+          "notes/thermal-area-sectors.md": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.closed-basis.table.rows[1]"
+      },
+      "assessment": {
+        "summary": "Four labelled faces, zero-spin faces allowed; K=2 through 12, 10,549 basis states. RS/AL means, variances, spectra and reconstructible operators.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "closed-basis:case-0003:3",
+      "task": "T1a",
+      "status": "complete",
+      "description": "Complete four-face closed-basis volumes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "K": 4
+      },
+      "results": {
+        "basis_states": 105,
+        "nonzero_volume_basis_states": 39,
+        "maximum_singlet_dimension": 3,
+        "maximum_magnetic_m0_dimension": 19,
+        "equal_weight_closed_rs_mean": 0.17556365302394783,
+        "equal_weight_closed_al_mean": 0.08778182651197391,
+        "checks_max_absolute_residual": {
+          "orthogonality": 6.661338147750939e-16,
+          "closure": 2.7755575615628914e-16,
+          "recoupling": 8.881784197001252e-16,
+          "hermiticity": 4.440892098500626e-16,
+          "invariant_subspace": 8.604228440844963e-16,
+          "casimir": 5.329070518200751e-15,
+          "four_valent_closure": 4.440892098500626e-16,
+          "volume_root_projection": 5.097948026230356e-16,
+          "independent_q": 1.2212453270876722e-15
+        },
+        "validation": "All-block singlet and scalar checks; independent sparse local-spin q012 per unordered pattern at every K; additional oscillator/dense-tensor and magnetic-space spectral-root checks through K=4.",
+        "archive": "operators_k4.npz",
+        "archive_bytes": 28086,
+        "archive_sha256": "38d5f1fb6e42efbae429406484f6b35e3c14cc3a970d616f1decd4a6dd2004c4",
+        "states_csv": "states_k4.csv",
+        "elapsed_seconds": 1.7314428749959916
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/closed-basis-volume/README.md": "f4ceddf43e39f302b6a7e0ebedd37b84cd06fd9009dfc988f4ce642ae80363d7",
+          "results/closed-basis-volume/metadata_k10.json": "a80142126873617deddc81c6069e84de887ac0f2a965ca0e7259ee36873d2d1d",
+          "results/closed-basis-volume/metadata_k11.json": "26718cf1e2c2480bedcac2214473f34254f0a9e9c66a4ec6a5e6f4485923518e",
+          "results/closed-basis-volume/metadata_k12.json": "00372978bec6b10aa1c17d53de8ad25f6d7136eb1f900ee19b45337e0075bece",
+          "results/closed-basis-volume/metadata_k2.json": "749f7403efb0a12a020faaa364292ef924d2aaa0ce02df2042da4ddca75210a7",
+          "results/closed-basis-volume/metadata_k3.json": "bc8c197981750b950c42c97aa6e8e95bdd77cc90c12a4777278b0e144bfab199",
+          "results/closed-basis-volume/metadata_k4.json": "da4e0e19eedb37d42af99e79bd39050a52a95edce2eac5195d74e4c42513aef3",
+          "results/closed-basis-volume/metadata_k5.json": "5cc68a9662496185033e936be793cede0cd0d2c28515ef8c40cc36fc14741eda",
+          "results/closed-basis-volume/metadata_k6.json": "3d49ed7047f4c76f0c737dd5edea25aea4c2f8138e43d1186a55bd0e78c04e64",
+          "results/closed-basis-volume/metadata_k7.json": "6619041969b81567b93b5b6af09fa0fc3f42f351f48e8bcbc00805268b5f534b",
+          "results/closed-basis-volume/metadata_k8.json": "936d9252a60f1cf919dc70ef53e38139dd5a138c1291a394f67086c583462a68",
+          "results/closed-basis-volume/metadata_k9.json": "98963ff5f0b01bfdedd71ce07dfb4931a8f55e0c0a96701643bae613236a2c9a",
+          "results/closed-basis-volume/operators_k10.npz": "7bc876562107e50ab3a4656301678987d77c3710cb40adce73fe8afe6ab74acc",
+          "results/closed-basis-volume/operators_k11.npz": "d695842d656b8ab093898873c35994b53a6df362f576da3e4cd08996151edc75",
+          "results/closed-basis-volume/operators_k12.npz": "b3b1c3e8d9acb0126b121ffdc3856dd0efe2fe6f59cde5ee6032377fad6904f3",
+          "results/closed-basis-volume/operators_k2.npz": "51ae53834b6cea49a9f31d632aac948eaff344800b69a1917849c58c09708d3d",
+          "results/closed-basis-volume/operators_k3.npz": "999c7319f2d98d321cca4bd8422ab05c301f3096f92e1aeb0e06d04692469e38",
+          "results/closed-basis-volume/operators_k4.npz": "38d5f1fb6e42efbae429406484f6b35e3c14cc3a970d616f1decd4a6dd2004c4",
+          "results/closed-basis-volume/operators_k5.npz": "6cdf27858c38d044264d582fd23cacdbb8095e0beae3ec810f75a7f708fe8626",
+          "results/closed-basis-volume/operators_k6.npz": "5dde52cb5d9c1d9a6238c926111bd09f179ade06c71085f0114046751c4f955b",
+          "results/closed-basis-volume/operators_k7.npz": "537c4d52540f1583e9809df8ea482a5780eff0cd6a46292214cfc1f242f831a2",
+          "results/closed-basis-volume/operators_k8.npz": "041c81fbd7ecffd2d0547f1a5084f6f03676f7e10550db2127a61cbcc46f49a4",
+          "results/closed-basis-volume/operators_k9.npz": "dc406856bb0f500b0c30330a9722bc65d564e5e97830a623a7176f04552e9438",
+          "results/closed-basis-volume/states_k10.csv": "bce31c826f04f46e684cc23e6c05038c5c67a220d085c765fbec0c6bbb8772eb",
+          "results/closed-basis-volume/states_k11.csv": "77a2d54bb91a6e464d5ef7f17381ba7b0bca6d73f992b38fe1fc5452498b37f7",
+          "results/closed-basis-volume/states_k12.csv": "a83b0e0759c36eb503f1425fae0fe0e748953a65c77b5ea5fe5edd205f65421e",
+          "results/closed-basis-volume/states_k2.csv": "d22c12367cdad991ae0c59170d9c21745505e207b4e23e4e6c28d101dba5f8cb",
+          "results/closed-basis-volume/states_k3.csv": "8a0e687c021d1992b207fff9c8959028f479aa8b9c735a6e63fbac2c065eacc9",
+          "results/closed-basis-volume/states_k4.csv": "aef3ee9d45db26c832269c2b676e014e444e4cec8ef7da0283b76c590f59371a",
+          "results/closed-basis-volume/states_k5.csv": "bb9053f1f00bc9ade781a58762469fc7bae1304e904ddda185fbecb8d0f72ebf",
+          "results/closed-basis-volume/states_k6.csv": "795d91601ed1278910fe0dedc2062d7f984085f3d7bef356802ddfe9a312be5c",
+          "results/closed-basis-volume/states_k7.csv": "c997298195c2bb1516ce1806a8f77a7d00662f42f05e96231e25d7b29bf419e7",
+          "results/closed-basis-volume/states_k8.csv": "1bbe690cf827bbbc0be4660419e5cd95a9d30136ba5b506be9a1ee6156cd35b3",
+          "results/closed-basis-volume/states_k9.csv": "9d4328c1d342d3575c3284afe08c1c11f12995053a6229eec72971ef95c1486f",
+          "results/closed-basis-volume/summary.json": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a",
+          "results/closed-state-enumeration/basis_k2_k4.csv": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93",
+          "results/closed-state-enumeration/summary.json": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c",
+          "notes/thermal-area-sectors.md": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.closed-basis.table.rows[2]"
+      },
+      "assessment": {
+        "summary": "Four labelled faces, zero-spin faces allowed; K=2 through 12, 10,549 basis states. RS/AL means, variances, spectra and reconstructible operators.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "closed-basis:case-0004:4",
+      "task": "T1a",
+      "status": "complete",
+      "description": "Complete four-face closed-basis volumes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "K": 5
+      },
+      "results": {
+        "basis_states": 196,
+        "nonzero_volume_basis_states": 94,
+        "maximum_singlet_dimension": 3,
+        "maximum_magnetic_m0_dimension": 28,
+        "equal_weight_closed_rs_mean": 0.2652307999812346,
+        "equal_weight_closed_al_mean": 0.13261539999061733,
+        "checks_max_absolute_residual": {
+          "orthogonality": 4.440892098500626e-16,
+          "closure": 3.3306690738754696e-16,
+          "recoupling": 1.7763568394002505e-15,
+          "hermiticity": 8.881784197001252e-16,
+          "invariant_subspace": 1.2212453270876722e-15,
+          "casimir": 7.105427357601002e-15,
+          "four_valent_closure": 2.6645352591003757e-15,
+          "volume_root_projection": 0.0,
+          "independent_q": 1.1102230246251565e-15
+        },
+        "validation": "All-block singlet and scalar checks; independent sparse local-spin q012 per unordered pattern at every K; additional oscillator/dense-tensor and magnetic-space spectral-root checks through K=4.",
+        "archive": "operators_k5.npz",
+        "archive_bytes": 44690,
+        "archive_sha256": "6cdf27858c38d044264d582fd23cacdbb8095e0beae3ec810f75a7f708fe8626",
+        "states_csv": "states_k5.csv",
+        "elapsed_seconds": 0.7725137089728378
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/closed-basis-volume/README.md": "f4ceddf43e39f302b6a7e0ebedd37b84cd06fd9009dfc988f4ce642ae80363d7",
+          "results/closed-basis-volume/metadata_k10.json": "a80142126873617deddc81c6069e84de887ac0f2a965ca0e7259ee36873d2d1d",
+          "results/closed-basis-volume/metadata_k11.json": "26718cf1e2c2480bedcac2214473f34254f0a9e9c66a4ec6a5e6f4485923518e",
+          "results/closed-basis-volume/metadata_k12.json": "00372978bec6b10aa1c17d53de8ad25f6d7136eb1f900ee19b45337e0075bece",
+          "results/closed-basis-volume/metadata_k2.json": "749f7403efb0a12a020faaa364292ef924d2aaa0ce02df2042da4ddca75210a7",
+          "results/closed-basis-volume/metadata_k3.json": "bc8c197981750b950c42c97aa6e8e95bdd77cc90c12a4777278b0e144bfab199",
+          "results/closed-basis-volume/metadata_k4.json": "da4e0e19eedb37d42af99e79bd39050a52a95edce2eac5195d74e4c42513aef3",
+          "results/closed-basis-volume/metadata_k5.json": "5cc68a9662496185033e936be793cede0cd0d2c28515ef8c40cc36fc14741eda",
+          "results/closed-basis-volume/metadata_k6.json": "3d49ed7047f4c76f0c737dd5edea25aea4c2f8138e43d1186a55bd0e78c04e64",
+          "results/closed-basis-volume/metadata_k7.json": "6619041969b81567b93b5b6af09fa0fc3f42f351f48e8bcbc00805268b5f534b",
+          "results/closed-basis-volume/metadata_k8.json": "936d9252a60f1cf919dc70ef53e38139dd5a138c1291a394f67086c583462a68",
+          "results/closed-basis-volume/metadata_k9.json": "98963ff5f0b01bfdedd71ce07dfb4931a8f55e0c0a96701643bae613236a2c9a",
+          "results/closed-basis-volume/operators_k10.npz": "7bc876562107e50ab3a4656301678987d77c3710cb40adce73fe8afe6ab74acc",
+          "results/closed-basis-volume/operators_k11.npz": "d695842d656b8ab093898873c35994b53a6df362f576da3e4cd08996151edc75",
+          "results/closed-basis-volume/operators_k12.npz": "b3b1c3e8d9acb0126b121ffdc3856dd0efe2fe6f59cde5ee6032377fad6904f3",
+          "results/closed-basis-volume/operators_k2.npz": "51ae53834b6cea49a9f31d632aac948eaff344800b69a1917849c58c09708d3d",
+          "results/closed-basis-volume/operators_k3.npz": "999c7319f2d98d321cca4bd8422ab05c301f3096f92e1aeb0e06d04692469e38",
+          "results/closed-basis-volume/operators_k4.npz": "38d5f1fb6e42efbae429406484f6b35e3c14cc3a970d616f1decd4a6dd2004c4",
+          "results/closed-basis-volume/operators_k5.npz": "6cdf27858c38d044264d582fd23cacdbb8095e0beae3ec810f75a7f708fe8626",
+          "results/closed-basis-volume/operators_k6.npz": "5dde52cb5d9c1d9a6238c926111bd09f179ade06c71085f0114046751c4f955b",
+          "results/closed-basis-volume/operators_k7.npz": "537c4d52540f1583e9809df8ea482a5780eff0cd6a46292214cfc1f242f831a2",
+          "results/closed-basis-volume/operators_k8.npz": "041c81fbd7ecffd2d0547f1a5084f6f03676f7e10550db2127a61cbcc46f49a4",
+          "results/closed-basis-volume/operators_k9.npz": "dc406856bb0f500b0c30330a9722bc65d564e5e97830a623a7176f04552e9438",
+          "results/closed-basis-volume/states_k10.csv": "bce31c826f04f46e684cc23e6c05038c5c67a220d085c765fbec0c6bbb8772eb",
+          "results/closed-basis-volume/states_k11.csv": "77a2d54bb91a6e464d5ef7f17381ba7b0bca6d73f992b38fe1fc5452498b37f7",
+          "results/closed-basis-volume/states_k12.csv": "a83b0e0759c36eb503f1425fae0fe0e748953a65c77b5ea5fe5edd205f65421e",
+          "results/closed-basis-volume/states_k2.csv": "d22c12367cdad991ae0c59170d9c21745505e207b4e23e4e6c28d101dba5f8cb",
+          "results/closed-basis-volume/states_k3.csv": "8a0e687c021d1992b207fff9c8959028f479aa8b9c735a6e63fbac2c065eacc9",
+          "results/closed-basis-volume/states_k4.csv": "aef3ee9d45db26c832269c2b676e014e444e4cec8ef7da0283b76c590f59371a",
+          "results/closed-basis-volume/states_k5.csv": "bb9053f1f00bc9ade781a58762469fc7bae1304e904ddda185fbecb8d0f72ebf",
+          "results/closed-basis-volume/states_k6.csv": "795d91601ed1278910fe0dedc2062d7f984085f3d7bef356802ddfe9a312be5c",
+          "results/closed-basis-volume/states_k7.csv": "c997298195c2bb1516ce1806a8f77a7d00662f42f05e96231e25d7b29bf419e7",
+          "results/closed-basis-volume/states_k8.csv": "1bbe690cf827bbbc0be4660419e5cd95a9d30136ba5b506be9a1ee6156cd35b3",
+          "results/closed-basis-volume/states_k9.csv": "9d4328c1d342d3575c3284afe08c1c11f12995053a6229eec72971ef95c1486f",
+          "results/closed-basis-volume/summary.json": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a",
+          "results/closed-state-enumeration/basis_k2_k4.csv": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93",
+          "results/closed-state-enumeration/summary.json": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c",
+          "notes/thermal-area-sectors.md": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.closed-basis.table.rows[3]"
+      },
+      "assessment": {
+        "summary": "Four labelled faces, zero-spin faces allowed; K=2 through 12, 10,549 basis states. RS/AL means, variances, spectra and reconstructible operators.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "closed-basis:case-0005:5",
+      "task": "T1a",
+      "status": "complete",
+      "description": "Complete four-face closed-basis volumes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "K": 6
+      },
+      "results": {
+        "basis_states": 336,
+        "nonzero_volume_basis_states": 190,
+        "maximum_singlet_dimension": 4,
+        "maximum_magnetic_m0_dimension": 44,
+        "equal_weight_closed_rs_mean": 0.35971729033962446,
+        "equal_weight_closed_al_mean": 0.17985864516981223,
+        "checks_max_absolute_residual": {
+          "orthogonality": 4.440892098500626e-16,
+          "closure": 3.3306690738754696e-16,
+          "recoupling": 3.552713678800501e-15,
+          "hermiticity": 1.7763568394002505e-15,
+          "invariant_subspace": 3.164135620181696e-15,
+          "casimir": 1.0658141036401503e-14,
+          "four_valent_closure": 3.552713678800501e-15,
+          "volume_root_projection": 0.0,
+          "independent_q": 2.220446049250313e-15
+        },
+        "validation": "All-block singlet and scalar checks; independent sparse local-spin q012 per unordered pattern at every K; additional oscillator/dense-tensor and magnetic-space spectral-root checks through K=4.",
+        "archive": "operators_k6.npz",
+        "archive_bytes": 81639,
+        "archive_sha256": "5dde52cb5d9c1d9a6238c926111bd09f179ade06c71085f0114046751c4f955b",
+        "states_csv": "states_k6.csv",
+        "elapsed_seconds": 1.3595046249974985
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/closed-basis-volume/README.md": "f4ceddf43e39f302b6a7e0ebedd37b84cd06fd9009dfc988f4ce642ae80363d7",
+          "results/closed-basis-volume/metadata_k10.json": "a80142126873617deddc81c6069e84de887ac0f2a965ca0e7259ee36873d2d1d",
+          "results/closed-basis-volume/metadata_k11.json": "26718cf1e2c2480bedcac2214473f34254f0a9e9c66a4ec6a5e6f4485923518e",
+          "results/closed-basis-volume/metadata_k12.json": "00372978bec6b10aa1c17d53de8ad25f6d7136eb1f900ee19b45337e0075bece",
+          "results/closed-basis-volume/metadata_k2.json": "749f7403efb0a12a020faaa364292ef924d2aaa0ce02df2042da4ddca75210a7",
+          "results/closed-basis-volume/metadata_k3.json": "bc8c197981750b950c42c97aa6e8e95bdd77cc90c12a4777278b0e144bfab199",
+          "results/closed-basis-volume/metadata_k4.json": "da4e0e19eedb37d42af99e79bd39050a52a95edce2eac5195d74e4c42513aef3",
+          "results/closed-basis-volume/metadata_k5.json": "5cc68a9662496185033e936be793cede0cd0d2c28515ef8c40cc36fc14741eda",
+          "results/closed-basis-volume/metadata_k6.json": "3d49ed7047f4c76f0c737dd5edea25aea4c2f8138e43d1186a55bd0e78c04e64",
+          "results/closed-basis-volume/metadata_k7.json": "6619041969b81567b93b5b6af09fa0fc3f42f351f48e8bcbc00805268b5f534b",
+          "results/closed-basis-volume/metadata_k8.json": "936d9252a60f1cf919dc70ef53e38139dd5a138c1291a394f67086c583462a68",
+          "results/closed-basis-volume/metadata_k9.json": "98963ff5f0b01bfdedd71ce07dfb4931a8f55e0c0a96701643bae613236a2c9a",
+          "results/closed-basis-volume/operators_k10.npz": "7bc876562107e50ab3a4656301678987d77c3710cb40adce73fe8afe6ab74acc",
+          "results/closed-basis-volume/operators_k11.npz": "d695842d656b8ab093898873c35994b53a6df362f576da3e4cd08996151edc75",
+          "results/closed-basis-volume/operators_k12.npz": "b3b1c3e8d9acb0126b121ffdc3856dd0efe2fe6f59cde5ee6032377fad6904f3",
+          "results/closed-basis-volume/operators_k2.npz": "51ae53834b6cea49a9f31d632aac948eaff344800b69a1917849c58c09708d3d",
+          "results/closed-basis-volume/operators_k3.npz": "999c7319f2d98d321cca4bd8422ab05c301f3096f92e1aeb0e06d04692469e38",
+          "results/closed-basis-volume/operators_k4.npz": "38d5f1fb6e42efbae429406484f6b35e3c14cc3a970d616f1decd4a6dd2004c4",
+          "results/closed-basis-volume/operators_k5.npz": "6cdf27858c38d044264d582fd23cacdbb8095e0beae3ec810f75a7f708fe8626",
+          "results/closed-basis-volume/operators_k6.npz": "5dde52cb5d9c1d9a6238c926111bd09f179ade06c71085f0114046751c4f955b",
+          "results/closed-basis-volume/operators_k7.npz": "537c4d52540f1583e9809df8ea482a5780eff0cd6a46292214cfc1f242f831a2",
+          "results/closed-basis-volume/operators_k8.npz": "041c81fbd7ecffd2d0547f1a5084f6f03676f7e10550db2127a61cbcc46f49a4",
+          "results/closed-basis-volume/operators_k9.npz": "dc406856bb0f500b0c30330a9722bc65d564e5e97830a623a7176f04552e9438",
+          "results/closed-basis-volume/states_k10.csv": "bce31c826f04f46e684cc23e6c05038c5c67a220d085c765fbec0c6bbb8772eb",
+          "results/closed-basis-volume/states_k11.csv": "77a2d54bb91a6e464d5ef7f17381ba7b0bca6d73f992b38fe1fc5452498b37f7",
+          "results/closed-basis-volume/states_k12.csv": "a83b0e0759c36eb503f1425fae0fe0e748953a65c77b5ea5fe5edd205f65421e",
+          "results/closed-basis-volume/states_k2.csv": "d22c12367cdad991ae0c59170d9c21745505e207b4e23e4e6c28d101dba5f8cb",
+          "results/closed-basis-volume/states_k3.csv": "8a0e687c021d1992b207fff9c8959028f479aa8b9c735a6e63fbac2c065eacc9",
+          "results/closed-basis-volume/states_k4.csv": "aef3ee9d45db26c832269c2b676e014e444e4cec8ef7da0283b76c590f59371a",
+          "results/closed-basis-volume/states_k5.csv": "bb9053f1f00bc9ade781a58762469fc7bae1304e904ddda185fbecb8d0f72ebf",
+          "results/closed-basis-volume/states_k6.csv": "795d91601ed1278910fe0dedc2062d7f984085f3d7bef356802ddfe9a312be5c",
+          "results/closed-basis-volume/states_k7.csv": "c997298195c2bb1516ce1806a8f77a7d00662f42f05e96231e25d7b29bf419e7",
+          "results/closed-basis-volume/states_k8.csv": "1bbe690cf827bbbc0be4660419e5cd95a9d30136ba5b506be9a1ee6156cd35b3",
+          "results/closed-basis-volume/states_k9.csv": "9d4328c1d342d3575c3284afe08c1c11f12995053a6229eec72971ef95c1486f",
+          "results/closed-basis-volume/summary.json": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a",
+          "results/closed-state-enumeration/basis_k2_k4.csv": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93",
+          "results/closed-state-enumeration/summary.json": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c",
+          "notes/thermal-area-sectors.md": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.closed-basis.table.rows[4]"
+      },
+      "assessment": {
+        "summary": "Four labelled faces, zero-spin faces allowed; K=2 through 12, 10,549 basis states. RS/AL means, variances, spectra and reconstructible operators.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "closed-basis:case-0006:6",
+      "task": "T1a",
+      "status": "complete",
+      "description": "Complete four-face closed-basis volumes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "K": 7
+      },
+      "results": {
+        "basis_states": 540,
+        "nonzero_volume_basis_states": 342,
+        "maximum_singlet_dimension": 4,
+        "maximum_magnetic_m0_dimension": 60,
+        "equal_weight_closed_rs_mean": 0.46060327433528897,
+        "equal_weight_closed_al_mean": 0.23030163716764454,
+        "checks_max_absolute_residual": {
+          "orthogonality": 6.661338147750939e-16,
+          "closure": 3.3306690738754696e-16,
+          "recoupling": 3.552713678800501e-15,
+          "hermiticity": 7.105427357601002e-15,
+          "invariant_subspace": 3.219646771412954e-15,
+          "casimir": 1.4210854715202004e-14,
+          "four_valent_closure": 6.661338147750939e-15,
+          "volume_root_projection": 0.0,
+          "independent_q": 2.4424906541753444e-15
+        },
+        "validation": "All-block singlet and scalar checks; independent sparse local-spin q012 per unordered pattern at every K; additional oscillator/dense-tensor and magnetic-space spectral-root checks through K=4.",
+        "archive": "operators_k7.npz",
+        "archive_bytes": 157437,
+        "archive_sha256": "537c4d52540f1583e9809df8ea482a5780eff0cd6a46292214cfc1f242f831a2",
+        "states_csv": "states_k7.csv",
+        "elapsed_seconds": 2.357619208021788
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/closed-basis-volume/README.md": "f4ceddf43e39f302b6a7e0ebedd37b84cd06fd9009dfc988f4ce642ae80363d7",
+          "results/closed-basis-volume/metadata_k10.json": "a80142126873617deddc81c6069e84de887ac0f2a965ca0e7259ee36873d2d1d",
+          "results/closed-basis-volume/metadata_k11.json": "26718cf1e2c2480bedcac2214473f34254f0a9e9c66a4ec6a5e6f4485923518e",
+          "results/closed-basis-volume/metadata_k12.json": "00372978bec6b10aa1c17d53de8ad25f6d7136eb1f900ee19b45337e0075bece",
+          "results/closed-basis-volume/metadata_k2.json": "749f7403efb0a12a020faaa364292ef924d2aaa0ce02df2042da4ddca75210a7",
+          "results/closed-basis-volume/metadata_k3.json": "bc8c197981750b950c42c97aa6e8e95bdd77cc90c12a4777278b0e144bfab199",
+          "results/closed-basis-volume/metadata_k4.json": "da4e0e19eedb37d42af99e79bd39050a52a95edce2eac5195d74e4c42513aef3",
+          "results/closed-basis-volume/metadata_k5.json": "5cc68a9662496185033e936be793cede0cd0d2c28515ef8c40cc36fc14741eda",
+          "results/closed-basis-volume/metadata_k6.json": "3d49ed7047f4c76f0c737dd5edea25aea4c2f8138e43d1186a55bd0e78c04e64",
+          "results/closed-basis-volume/metadata_k7.json": "6619041969b81567b93b5b6af09fa0fc3f42f351f48e8bcbc00805268b5f534b",
+          "results/closed-basis-volume/metadata_k8.json": "936d9252a60f1cf919dc70ef53e38139dd5a138c1291a394f67086c583462a68",
+          "results/closed-basis-volume/metadata_k9.json": "98963ff5f0b01bfdedd71ce07dfb4931a8f55e0c0a96701643bae613236a2c9a",
+          "results/closed-basis-volume/operators_k10.npz": "7bc876562107e50ab3a4656301678987d77c3710cb40adce73fe8afe6ab74acc",
+          "results/closed-basis-volume/operators_k11.npz": "d695842d656b8ab093898873c35994b53a6df362f576da3e4cd08996151edc75",
+          "results/closed-basis-volume/operators_k12.npz": "b3b1c3e8d9acb0126b121ffdc3856dd0efe2fe6f59cde5ee6032377fad6904f3",
+          "results/closed-basis-volume/operators_k2.npz": "51ae53834b6cea49a9f31d632aac948eaff344800b69a1917849c58c09708d3d",
+          "results/closed-basis-volume/operators_k3.npz": "999c7319f2d98d321cca4bd8422ab05c301f3096f92e1aeb0e06d04692469e38",
+          "results/closed-basis-volume/operators_k4.npz": "38d5f1fb6e42efbae429406484f6b35e3c14cc3a970d616f1decd4a6dd2004c4",
+          "results/closed-basis-volume/operators_k5.npz": "6cdf27858c38d044264d582fd23cacdbb8095e0beae3ec810f75a7f708fe8626",
+          "results/closed-basis-volume/operators_k6.npz": "5dde52cb5d9c1d9a6238c926111bd09f179ade06c71085f0114046751c4f955b",
+          "results/closed-basis-volume/operators_k7.npz": "537c4d52540f1583e9809df8ea482a5780eff0cd6a46292214cfc1f242f831a2",
+          "results/closed-basis-volume/operators_k8.npz": "041c81fbd7ecffd2d0547f1a5084f6f03676f7e10550db2127a61cbcc46f49a4",
+          "results/closed-basis-volume/operators_k9.npz": "dc406856bb0f500b0c30330a9722bc65d564e5e97830a623a7176f04552e9438",
+          "results/closed-basis-volume/states_k10.csv": "bce31c826f04f46e684cc23e6c05038c5c67a220d085c765fbec0c6bbb8772eb",
+          "results/closed-basis-volume/states_k11.csv": "77a2d54bb91a6e464d5ef7f17381ba7b0bca6d73f992b38fe1fc5452498b37f7",
+          "results/closed-basis-volume/states_k12.csv": "a83b0e0759c36eb503f1425fae0fe0e748953a65c77b5ea5fe5edd205f65421e",
+          "results/closed-basis-volume/states_k2.csv": "d22c12367cdad991ae0c59170d9c21745505e207b4e23e4e6c28d101dba5f8cb",
+          "results/closed-basis-volume/states_k3.csv": "8a0e687c021d1992b207fff9c8959028f479aa8b9c735a6e63fbac2c065eacc9",
+          "results/closed-basis-volume/states_k4.csv": "aef3ee9d45db26c832269c2b676e014e444e4cec8ef7da0283b76c590f59371a",
+          "results/closed-basis-volume/states_k5.csv": "bb9053f1f00bc9ade781a58762469fc7bae1304e904ddda185fbecb8d0f72ebf",
+          "results/closed-basis-volume/states_k6.csv": "795d91601ed1278910fe0dedc2062d7f984085f3d7bef356802ddfe9a312be5c",
+          "results/closed-basis-volume/states_k7.csv": "c997298195c2bb1516ce1806a8f77a7d00662f42f05e96231e25d7b29bf419e7",
+          "results/closed-basis-volume/states_k8.csv": "1bbe690cf827bbbc0be4660419e5cd95a9d30136ba5b506be9a1ee6156cd35b3",
+          "results/closed-basis-volume/states_k9.csv": "9d4328c1d342d3575c3284afe08c1c11f12995053a6229eec72971ef95c1486f",
+          "results/closed-basis-volume/summary.json": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a",
+          "results/closed-state-enumeration/basis_k2_k4.csv": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93",
+          "results/closed-state-enumeration/summary.json": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c",
+          "notes/thermal-area-sectors.md": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.closed-basis.table.rows[5]"
+      },
+      "assessment": {
+        "summary": "Four labelled faces, zero-spin faces allowed; K=2 through 12, 10,549 basis states. RS/AL means, variances, spectra and reconstructible operators.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "closed-basis:case-0007:7",
+      "task": "T1a",
+      "status": "complete",
+      "description": "Complete four-face closed-basis volumes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "K": 8
+      },
+      "results": {
+        "basis_states": 825,
+        "nonzero_volume_basis_states": 567,
+        "maximum_singlet_dimension": 5,
+        "maximum_magnetic_m0_dimension": 85,
+        "equal_weight_closed_rs_mean": 0.568171902324847,
+        "equal_weight_closed_al_mean": 0.2840859511624235,
+        "checks_max_absolute_residual": {
+          "orthogonality": 6.661338147750939e-16,
+          "closure": 4.440892098500626e-16,
+          "recoupling": 3.552713678800501e-15,
+          "hermiticity": 7.105427357601002e-15,
+          "invariant_subspace": 4.440892098500626e-15,
+          "casimir": 3.197442310920451e-14,
+          "four_valent_closure": 1.7763568394002505e-14,
+          "volume_root_projection": 0.0,
+          "independent_q": 3.219646771412954e-15
+        },
+        "validation": "All-block singlet and scalar checks; independent sparse local-spin q012 per unordered pattern at every K; additional oscillator/dense-tensor and magnetic-space spectral-root checks through K=4.",
+        "archive": "operators_k8.npz",
+        "archive_bytes": 286950,
+        "archive_sha256": "041c81fbd7ecffd2d0547f1a5084f6f03676f7e10550db2127a61cbcc46f49a4",
+        "states_csv": "states_k8.csv",
+        "elapsed_seconds": 4.107163166976534
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/closed-basis-volume/README.md": "f4ceddf43e39f302b6a7e0ebedd37b84cd06fd9009dfc988f4ce642ae80363d7",
+          "results/closed-basis-volume/metadata_k10.json": "a80142126873617deddc81c6069e84de887ac0f2a965ca0e7259ee36873d2d1d",
+          "results/closed-basis-volume/metadata_k11.json": "26718cf1e2c2480bedcac2214473f34254f0a9e9c66a4ec6a5e6f4485923518e",
+          "results/closed-basis-volume/metadata_k12.json": "00372978bec6b10aa1c17d53de8ad25f6d7136eb1f900ee19b45337e0075bece",
+          "results/closed-basis-volume/metadata_k2.json": "749f7403efb0a12a020faaa364292ef924d2aaa0ce02df2042da4ddca75210a7",
+          "results/closed-basis-volume/metadata_k3.json": "bc8c197981750b950c42c97aa6e8e95bdd77cc90c12a4777278b0e144bfab199",
+          "results/closed-basis-volume/metadata_k4.json": "da4e0e19eedb37d42af99e79bd39050a52a95edce2eac5195d74e4c42513aef3",
+          "results/closed-basis-volume/metadata_k5.json": "5cc68a9662496185033e936be793cede0cd0d2c28515ef8c40cc36fc14741eda",
+          "results/closed-basis-volume/metadata_k6.json": "3d49ed7047f4c76f0c737dd5edea25aea4c2f8138e43d1186a55bd0e78c04e64",
+          "results/closed-basis-volume/metadata_k7.json": "6619041969b81567b93b5b6af09fa0fc3f42f351f48e8bcbc00805268b5f534b",
+          "results/closed-basis-volume/metadata_k8.json": "936d9252a60f1cf919dc70ef53e38139dd5a138c1291a394f67086c583462a68",
+          "results/closed-basis-volume/metadata_k9.json": "98963ff5f0b01bfdedd71ce07dfb4931a8f55e0c0a96701643bae613236a2c9a",
+          "results/closed-basis-volume/operators_k10.npz": "7bc876562107e50ab3a4656301678987d77c3710cb40adce73fe8afe6ab74acc",
+          "results/closed-basis-volume/operators_k11.npz": "d695842d656b8ab093898873c35994b53a6df362f576da3e4cd08996151edc75",
+          "results/closed-basis-volume/operators_k12.npz": "b3b1c3e8d9acb0126b121ffdc3856dd0efe2fe6f59cde5ee6032377fad6904f3",
+          "results/closed-basis-volume/operators_k2.npz": "51ae53834b6cea49a9f31d632aac948eaff344800b69a1917849c58c09708d3d",
+          "results/closed-basis-volume/operators_k3.npz": "999c7319f2d98d321cca4bd8422ab05c301f3096f92e1aeb0e06d04692469e38",
+          "results/closed-basis-volume/operators_k4.npz": "38d5f1fb6e42efbae429406484f6b35e3c14cc3a970d616f1decd4a6dd2004c4",
+          "results/closed-basis-volume/operators_k5.npz": "6cdf27858c38d044264d582fd23cacdbb8095e0beae3ec810f75a7f708fe8626",
+          "results/closed-basis-volume/operators_k6.npz": "5dde52cb5d9c1d9a6238c926111bd09f179ade06c71085f0114046751c4f955b",
+          "results/closed-basis-volume/operators_k7.npz": "537c4d52540f1583e9809df8ea482a5780eff0cd6a46292214cfc1f242f831a2",
+          "results/closed-basis-volume/operators_k8.npz": "041c81fbd7ecffd2d0547f1a5084f6f03676f7e10550db2127a61cbcc46f49a4",
+          "results/closed-basis-volume/operators_k9.npz": "dc406856bb0f500b0c30330a9722bc65d564e5e97830a623a7176f04552e9438",
+          "results/closed-basis-volume/states_k10.csv": "bce31c826f04f46e684cc23e6c05038c5c67a220d085c765fbec0c6bbb8772eb",
+          "results/closed-basis-volume/states_k11.csv": "77a2d54bb91a6e464d5ef7f17381ba7b0bca6d73f992b38fe1fc5452498b37f7",
+          "results/closed-basis-volume/states_k12.csv": "a83b0e0759c36eb503f1425fae0fe0e748953a65c77b5ea5fe5edd205f65421e",
+          "results/closed-basis-volume/states_k2.csv": "d22c12367cdad991ae0c59170d9c21745505e207b4e23e4e6c28d101dba5f8cb",
+          "results/closed-basis-volume/states_k3.csv": "8a0e687c021d1992b207fff9c8959028f479aa8b9c735a6e63fbac2c065eacc9",
+          "results/closed-basis-volume/states_k4.csv": "aef3ee9d45db26c832269c2b676e014e444e4cec8ef7da0283b76c590f59371a",
+          "results/closed-basis-volume/states_k5.csv": "bb9053f1f00bc9ade781a58762469fc7bae1304e904ddda185fbecb8d0f72ebf",
+          "results/closed-basis-volume/states_k6.csv": "795d91601ed1278910fe0dedc2062d7f984085f3d7bef356802ddfe9a312be5c",
+          "results/closed-basis-volume/states_k7.csv": "c997298195c2bb1516ce1806a8f77a7d00662f42f05e96231e25d7b29bf419e7",
+          "results/closed-basis-volume/states_k8.csv": "1bbe690cf827bbbc0be4660419e5cd95a9d30136ba5b506be9a1ee6156cd35b3",
+          "results/closed-basis-volume/states_k9.csv": "9d4328c1d342d3575c3284afe08c1c11f12995053a6229eec72971ef95c1486f",
+          "results/closed-basis-volume/summary.json": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a",
+          "results/closed-state-enumeration/basis_k2_k4.csv": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93",
+          "results/closed-state-enumeration/summary.json": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c",
+          "notes/thermal-area-sectors.md": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.closed-basis.table.rows[6]"
+      },
+      "assessment": {
+        "summary": "Four labelled faces, zero-spin faces allowed; K=2 through 12, 10,549 basis states. RS/AL means, variances, spectra and reconstructible operators.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "closed-basis:case-0008:8",
+      "task": "T1a",
+      "status": "complete",
+      "description": "Complete four-face closed-basis volumes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "K": 9
+      },
+      "results": {
+        "basis_states": 1210,
+        "nonzero_volume_basis_states": 884,
+        "maximum_singlet_dimension": 5,
+        "maximum_magnetic_m0_dimension": 110,
+        "equal_weight_closed_rs_mean": 0.6811017957699391,
+        "equal_weight_closed_al_mean": 0.3405508978849696,
+        "checks_max_absolute_residual": {
+          "orthogonality": 7.771561172376096e-16,
+          "closure": 4.718447854656915e-16,
+          "recoupling": 7.105427357601002e-15,
+          "hermiticity": 1.4210854715202004e-14,
+          "invariant_subspace": 7.105427357601002e-15,
+          "casimir": 2.842170943040401e-14,
+          "four_valent_closure": 2.6645352591003757e-14,
+          "volume_root_projection": 0.0,
+          "independent_q": 5.551115123125783e-15
+        },
+        "validation": "All-block singlet and scalar checks; independent sparse local-spin q012 per unordered pattern at every K; additional oscillator/dense-tensor and magnetic-space spectral-root checks through K=4.",
+        "archive": "operators_k9.npz",
+        "archive_bytes": 530961,
+        "archive_sha256": "dc406856bb0f500b0c30330a9722bc65d564e5e97830a623a7176f04552e9438",
+        "states_csv": "states_k9.csv",
+        "elapsed_seconds": 7.748626582993893
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/closed-basis-volume/README.md": "f4ceddf43e39f302b6a7e0ebedd37b84cd06fd9009dfc988f4ce642ae80363d7",
+          "results/closed-basis-volume/metadata_k10.json": "a80142126873617deddc81c6069e84de887ac0f2a965ca0e7259ee36873d2d1d",
+          "results/closed-basis-volume/metadata_k11.json": "26718cf1e2c2480bedcac2214473f34254f0a9e9c66a4ec6a5e6f4485923518e",
+          "results/closed-basis-volume/metadata_k12.json": "00372978bec6b10aa1c17d53de8ad25f6d7136eb1f900ee19b45337e0075bece",
+          "results/closed-basis-volume/metadata_k2.json": "749f7403efb0a12a020faaa364292ef924d2aaa0ce02df2042da4ddca75210a7",
+          "results/closed-basis-volume/metadata_k3.json": "bc8c197981750b950c42c97aa6e8e95bdd77cc90c12a4777278b0e144bfab199",
+          "results/closed-basis-volume/metadata_k4.json": "da4e0e19eedb37d42af99e79bd39050a52a95edce2eac5195d74e4c42513aef3",
+          "results/closed-basis-volume/metadata_k5.json": "5cc68a9662496185033e936be793cede0cd0d2c28515ef8c40cc36fc14741eda",
+          "results/closed-basis-volume/metadata_k6.json": "3d49ed7047f4c76f0c737dd5edea25aea4c2f8138e43d1186a55bd0e78c04e64",
+          "results/closed-basis-volume/metadata_k7.json": "6619041969b81567b93b5b6af09fa0fc3f42f351f48e8bcbc00805268b5f534b",
+          "results/closed-basis-volume/metadata_k8.json": "936d9252a60f1cf919dc70ef53e38139dd5a138c1291a394f67086c583462a68",
+          "results/closed-basis-volume/metadata_k9.json": "98963ff5f0b01bfdedd71ce07dfb4931a8f55e0c0a96701643bae613236a2c9a",
+          "results/closed-basis-volume/operators_k10.npz": "7bc876562107e50ab3a4656301678987d77c3710cb40adce73fe8afe6ab74acc",
+          "results/closed-basis-volume/operators_k11.npz": "d695842d656b8ab093898873c35994b53a6df362f576da3e4cd08996151edc75",
+          "results/closed-basis-volume/operators_k12.npz": "b3b1c3e8d9acb0126b121ffdc3856dd0efe2fe6f59cde5ee6032377fad6904f3",
+          "results/closed-basis-volume/operators_k2.npz": "51ae53834b6cea49a9f31d632aac948eaff344800b69a1917849c58c09708d3d",
+          "results/closed-basis-volume/operators_k3.npz": "999c7319f2d98d321cca4bd8422ab05c301f3096f92e1aeb0e06d04692469e38",
+          "results/closed-basis-volume/operators_k4.npz": "38d5f1fb6e42efbae429406484f6b35e3c14cc3a970d616f1decd4a6dd2004c4",
+          "results/closed-basis-volume/operators_k5.npz": "6cdf27858c38d044264d582fd23cacdbb8095e0beae3ec810f75a7f708fe8626",
+          "results/closed-basis-volume/operators_k6.npz": "5dde52cb5d9c1d9a6238c926111bd09f179ade06c71085f0114046751c4f955b",
+          "results/closed-basis-volume/operators_k7.npz": "537c4d52540f1583e9809df8ea482a5780eff0cd6a46292214cfc1f242f831a2",
+          "results/closed-basis-volume/operators_k8.npz": "041c81fbd7ecffd2d0547f1a5084f6f03676f7e10550db2127a61cbcc46f49a4",
+          "results/closed-basis-volume/operators_k9.npz": "dc406856bb0f500b0c30330a9722bc65d564e5e97830a623a7176f04552e9438",
+          "results/closed-basis-volume/states_k10.csv": "bce31c826f04f46e684cc23e6c05038c5c67a220d085c765fbec0c6bbb8772eb",
+          "results/closed-basis-volume/states_k11.csv": "77a2d54bb91a6e464d5ef7f17381ba7b0bca6d73f992b38fe1fc5452498b37f7",
+          "results/closed-basis-volume/states_k12.csv": "a83b0e0759c36eb503f1425fae0fe0e748953a65c77b5ea5fe5edd205f65421e",
+          "results/closed-basis-volume/states_k2.csv": "d22c12367cdad991ae0c59170d9c21745505e207b4e23e4e6c28d101dba5f8cb",
+          "results/closed-basis-volume/states_k3.csv": "8a0e687c021d1992b207fff9c8959028f479aa8b9c735a6e63fbac2c065eacc9",
+          "results/closed-basis-volume/states_k4.csv": "aef3ee9d45db26c832269c2b676e014e444e4cec8ef7da0283b76c590f59371a",
+          "results/closed-basis-volume/states_k5.csv": "bb9053f1f00bc9ade781a58762469fc7bae1304e904ddda185fbecb8d0f72ebf",
+          "results/closed-basis-volume/states_k6.csv": "795d91601ed1278910fe0dedc2062d7f984085f3d7bef356802ddfe9a312be5c",
+          "results/closed-basis-volume/states_k7.csv": "c997298195c2bb1516ce1806a8f77a7d00662f42f05e96231e25d7b29bf419e7",
+          "results/closed-basis-volume/states_k8.csv": "1bbe690cf827bbbc0be4660419e5cd95a9d30136ba5b506be9a1ee6156cd35b3",
+          "results/closed-basis-volume/states_k9.csv": "9d4328c1d342d3575c3284afe08c1c11f12995053a6229eec72971ef95c1486f",
+          "results/closed-basis-volume/summary.json": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a",
+          "results/closed-state-enumeration/basis_k2_k4.csv": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93",
+          "results/closed-state-enumeration/summary.json": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c",
+          "notes/thermal-area-sectors.md": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.closed-basis.table.rows[7]"
+      },
+      "assessment": {
+        "summary": "Four labelled faces, zero-spin faces allowed; K=2 through 12, 10,549 basis states. RS/AL means, variances, spectra and reconstructible operators.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "closed-basis:case-0009:9",
+      "task": "T1a",
+      "status": "complete",
+      "description": "Complete four-face closed-basis volumes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "K": 10
+      },
+      "results": {
+        "basis_states": 1716,
+        "nonzero_volume_basis_states": 1314,
+        "maximum_singlet_dimension": 6,
+        "maximum_magnetic_m0_dimension": 146,
+        "equal_weight_closed_rs_mean": 0.7986757106517892,
+        "equal_weight_closed_al_mean": 0.3993378553258951,
+        "checks_max_absolute_residual": {
+          "orthogonality": 8.881784197001252e-16,
+          "closure": 4.440892098500626e-16,
+          "recoupling": 1.4210854715202004e-14,
+          "hermiticity": 1.4210854715202004e-14,
+          "invariant_subspace": 1.355497227724294e-14,
+          "casimir": 2.842170943040401e-14,
+          "four_valent_closure": 4.440892098500626e-14,
+          "volume_root_projection": 0.0,
+          "independent_q": 1.1102230246251565e-14
+        },
+        "validation": "All-block singlet and scalar checks; independent sparse local-spin q012 per unordered pattern at every K; additional oscillator/dense-tensor and magnetic-space spectral-root checks through K=4.",
+        "archive": "operators_k10.npz",
+        "archive_bytes": 900729,
+        "archive_sha256": "7bc876562107e50ab3a4656301678987d77c3710cb40adce73fe8afe6ab74acc",
+        "states_csv": "states_k10.csv",
+        "elapsed_seconds": 13.430702499987092
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/closed-basis-volume/README.md": "f4ceddf43e39f302b6a7e0ebedd37b84cd06fd9009dfc988f4ce642ae80363d7",
+          "results/closed-basis-volume/metadata_k10.json": "a80142126873617deddc81c6069e84de887ac0f2a965ca0e7259ee36873d2d1d",
+          "results/closed-basis-volume/metadata_k11.json": "26718cf1e2c2480bedcac2214473f34254f0a9e9c66a4ec6a5e6f4485923518e",
+          "results/closed-basis-volume/metadata_k12.json": "00372978bec6b10aa1c17d53de8ad25f6d7136eb1f900ee19b45337e0075bece",
+          "results/closed-basis-volume/metadata_k2.json": "749f7403efb0a12a020faaa364292ef924d2aaa0ce02df2042da4ddca75210a7",
+          "results/closed-basis-volume/metadata_k3.json": "bc8c197981750b950c42c97aa6e8e95bdd77cc90c12a4777278b0e144bfab199",
+          "results/closed-basis-volume/metadata_k4.json": "da4e0e19eedb37d42af99e79bd39050a52a95edce2eac5195d74e4c42513aef3",
+          "results/closed-basis-volume/metadata_k5.json": "5cc68a9662496185033e936be793cede0cd0d2c28515ef8c40cc36fc14741eda",
+          "results/closed-basis-volume/metadata_k6.json": "3d49ed7047f4c76f0c737dd5edea25aea4c2f8138e43d1186a55bd0e78c04e64",
+          "results/closed-basis-volume/metadata_k7.json": "6619041969b81567b93b5b6af09fa0fc3f42f351f48e8bcbc00805268b5f534b",
+          "results/closed-basis-volume/metadata_k8.json": "936d9252a60f1cf919dc70ef53e38139dd5a138c1291a394f67086c583462a68",
+          "results/closed-basis-volume/metadata_k9.json": "98963ff5f0b01bfdedd71ce07dfb4931a8f55e0c0a96701643bae613236a2c9a",
+          "results/closed-basis-volume/operators_k10.npz": "7bc876562107e50ab3a4656301678987d77c3710cb40adce73fe8afe6ab74acc",
+          "results/closed-basis-volume/operators_k11.npz": "d695842d656b8ab093898873c35994b53a6df362f576da3e4cd08996151edc75",
+          "results/closed-basis-volume/operators_k12.npz": "b3b1c3e8d9acb0126b121ffdc3856dd0efe2fe6f59cde5ee6032377fad6904f3",
+          "results/closed-basis-volume/operators_k2.npz": "51ae53834b6cea49a9f31d632aac948eaff344800b69a1917849c58c09708d3d",
+          "results/closed-basis-volume/operators_k3.npz": "999c7319f2d98d321cca4bd8422ab05c301f3096f92e1aeb0e06d04692469e38",
+          "results/closed-basis-volume/operators_k4.npz": "38d5f1fb6e42efbae429406484f6b35e3c14cc3a970d616f1decd4a6dd2004c4",
+          "results/closed-basis-volume/operators_k5.npz": "6cdf27858c38d044264d582fd23cacdbb8095e0beae3ec810f75a7f708fe8626",
+          "results/closed-basis-volume/operators_k6.npz": "5dde52cb5d9c1d9a6238c926111bd09f179ade06c71085f0114046751c4f955b",
+          "results/closed-basis-volume/operators_k7.npz": "537c4d52540f1583e9809df8ea482a5780eff0cd6a46292214cfc1f242f831a2",
+          "results/closed-basis-volume/operators_k8.npz": "041c81fbd7ecffd2d0547f1a5084f6f03676f7e10550db2127a61cbcc46f49a4",
+          "results/closed-basis-volume/operators_k9.npz": "dc406856bb0f500b0c30330a9722bc65d564e5e97830a623a7176f04552e9438",
+          "results/closed-basis-volume/states_k10.csv": "bce31c826f04f46e684cc23e6c05038c5c67a220d085c765fbec0c6bbb8772eb",
+          "results/closed-basis-volume/states_k11.csv": "77a2d54bb91a6e464d5ef7f17381ba7b0bca6d73f992b38fe1fc5452498b37f7",
+          "results/closed-basis-volume/states_k12.csv": "a83b0e0759c36eb503f1425fae0fe0e748953a65c77b5ea5fe5edd205f65421e",
+          "results/closed-basis-volume/states_k2.csv": "d22c12367cdad991ae0c59170d9c21745505e207b4e23e4e6c28d101dba5f8cb",
+          "results/closed-basis-volume/states_k3.csv": "8a0e687c021d1992b207fff9c8959028f479aa8b9c735a6e63fbac2c065eacc9",
+          "results/closed-basis-volume/states_k4.csv": "aef3ee9d45db26c832269c2b676e014e444e4cec8ef7da0283b76c590f59371a",
+          "results/closed-basis-volume/states_k5.csv": "bb9053f1f00bc9ade781a58762469fc7bae1304e904ddda185fbecb8d0f72ebf",
+          "results/closed-basis-volume/states_k6.csv": "795d91601ed1278910fe0dedc2062d7f984085f3d7bef356802ddfe9a312be5c",
+          "results/closed-basis-volume/states_k7.csv": "c997298195c2bb1516ce1806a8f77a7d00662f42f05e96231e25d7b29bf419e7",
+          "results/closed-basis-volume/states_k8.csv": "1bbe690cf827bbbc0be4660419e5cd95a9d30136ba5b506be9a1ee6156cd35b3",
+          "results/closed-basis-volume/states_k9.csv": "9d4328c1d342d3575c3284afe08c1c11f12995053a6229eec72971ef95c1486f",
+          "results/closed-basis-volume/summary.json": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a",
+          "results/closed-state-enumeration/basis_k2_k4.csv": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93",
+          "results/closed-state-enumeration/summary.json": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c",
+          "notes/thermal-area-sectors.md": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.closed-basis.table.rows[8]"
+      },
+      "assessment": {
+        "summary": "Four labelled faces, zero-spin faces allowed; K=2 through 12, 10,549 basis states. RS/AL means, variances, spectra and reconstructible operators.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "closed-basis:case-0010:10",
+      "task": "T1a",
+      "status": "complete",
+      "description": "Complete four-face closed-basis volumes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "K": 11
+      },
+      "results": {
+        "basis_states": 2366,
+        "nonzero_volume_basis_states": 1880,
+        "maximum_singlet_dimension": 6,
+        "maximum_magnetic_m0_dimension": 182,
+        "equal_weight_closed_rs_mean": 0.9211534194954334,
+        "equal_weight_closed_al_mean": 0.4605767097477167,
+        "checks_max_absolute_residual": {
+          "orthogonality": 7.771561172376096e-16,
+          "closure": 4.440892098500626e-16,
+          "recoupling": 1.7763568394002505e-14,
+          "hermiticity": 2.842170943040401e-14,
+          "invariant_subspace": 1.942890293094024e-14,
+          "casimir": 3.552713678800501e-14,
+          "four_valent_closure": 7.815970093361102e-14,
+          "volume_root_projection": 0.0,
+          "independent_q": 1.1102230246251565e-14
+        },
+        "validation": "All-block singlet and scalar checks; independent sparse local-spin q012 per unordered pattern at every K; additional oscillator/dense-tensor and magnetic-space spectral-root checks through K=4.",
+        "archive": "operators_k11.npz",
+        "archive_bytes": 1588320,
+        "archive_sha256": "d695842d656b8ab093898873c35994b53a6df362f576da3e4cd08996151edc75",
+        "states_csv": "states_k11.csv",
+        "elapsed_seconds": 26.28589658398414
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/closed-basis-volume/README.md": "f4ceddf43e39f302b6a7e0ebedd37b84cd06fd9009dfc988f4ce642ae80363d7",
+          "results/closed-basis-volume/metadata_k10.json": "a80142126873617deddc81c6069e84de887ac0f2a965ca0e7259ee36873d2d1d",
+          "results/closed-basis-volume/metadata_k11.json": "26718cf1e2c2480bedcac2214473f34254f0a9e9c66a4ec6a5e6f4485923518e",
+          "results/closed-basis-volume/metadata_k12.json": "00372978bec6b10aa1c17d53de8ad25f6d7136eb1f900ee19b45337e0075bece",
+          "results/closed-basis-volume/metadata_k2.json": "749f7403efb0a12a020faaa364292ef924d2aaa0ce02df2042da4ddca75210a7",
+          "results/closed-basis-volume/metadata_k3.json": "bc8c197981750b950c42c97aa6e8e95bdd77cc90c12a4777278b0e144bfab199",
+          "results/closed-basis-volume/metadata_k4.json": "da4e0e19eedb37d42af99e79bd39050a52a95edce2eac5195d74e4c42513aef3",
+          "results/closed-basis-volume/metadata_k5.json": "5cc68a9662496185033e936be793cede0cd0d2c28515ef8c40cc36fc14741eda",
+          "results/closed-basis-volume/metadata_k6.json": "3d49ed7047f4c76f0c737dd5edea25aea4c2f8138e43d1186a55bd0e78c04e64",
+          "results/closed-basis-volume/metadata_k7.json": "6619041969b81567b93b5b6af09fa0fc3f42f351f48e8bcbc00805268b5f534b",
+          "results/closed-basis-volume/metadata_k8.json": "936d9252a60f1cf919dc70ef53e38139dd5a138c1291a394f67086c583462a68",
+          "results/closed-basis-volume/metadata_k9.json": "98963ff5f0b01bfdedd71ce07dfb4931a8f55e0c0a96701643bae613236a2c9a",
+          "results/closed-basis-volume/operators_k10.npz": "7bc876562107e50ab3a4656301678987d77c3710cb40adce73fe8afe6ab74acc",
+          "results/closed-basis-volume/operators_k11.npz": "d695842d656b8ab093898873c35994b53a6df362f576da3e4cd08996151edc75",
+          "results/closed-basis-volume/operators_k12.npz": "b3b1c3e8d9acb0126b121ffdc3856dd0efe2fe6f59cde5ee6032377fad6904f3",
+          "results/closed-basis-volume/operators_k2.npz": "51ae53834b6cea49a9f31d632aac948eaff344800b69a1917849c58c09708d3d",
+          "results/closed-basis-volume/operators_k3.npz": "999c7319f2d98d321cca4bd8422ab05c301f3096f92e1aeb0e06d04692469e38",
+          "results/closed-basis-volume/operators_k4.npz": "38d5f1fb6e42efbae429406484f6b35e3c14cc3a970d616f1decd4a6dd2004c4",
+          "results/closed-basis-volume/operators_k5.npz": "6cdf27858c38d044264d582fd23cacdbb8095e0beae3ec810f75a7f708fe8626",
+          "results/closed-basis-volume/operators_k6.npz": "5dde52cb5d9c1d9a6238c926111bd09f179ade06c71085f0114046751c4f955b",
+          "results/closed-basis-volume/operators_k7.npz": "537c4d52540f1583e9809df8ea482a5780eff0cd6a46292214cfc1f242f831a2",
+          "results/closed-basis-volume/operators_k8.npz": "041c81fbd7ecffd2d0547f1a5084f6f03676f7e10550db2127a61cbcc46f49a4",
+          "results/closed-basis-volume/operators_k9.npz": "dc406856bb0f500b0c30330a9722bc65d564e5e97830a623a7176f04552e9438",
+          "results/closed-basis-volume/states_k10.csv": "bce31c826f04f46e684cc23e6c05038c5c67a220d085c765fbec0c6bbb8772eb",
+          "results/closed-basis-volume/states_k11.csv": "77a2d54bb91a6e464d5ef7f17381ba7b0bca6d73f992b38fe1fc5452498b37f7",
+          "results/closed-basis-volume/states_k12.csv": "a83b0e0759c36eb503f1425fae0fe0e748953a65c77b5ea5fe5edd205f65421e",
+          "results/closed-basis-volume/states_k2.csv": "d22c12367cdad991ae0c59170d9c21745505e207b4e23e4e6c28d101dba5f8cb",
+          "results/closed-basis-volume/states_k3.csv": "8a0e687c021d1992b207fff9c8959028f479aa8b9c735a6e63fbac2c065eacc9",
+          "results/closed-basis-volume/states_k4.csv": "aef3ee9d45db26c832269c2b676e014e444e4cec8ef7da0283b76c590f59371a",
+          "results/closed-basis-volume/states_k5.csv": "bb9053f1f00bc9ade781a58762469fc7bae1304e904ddda185fbecb8d0f72ebf",
+          "results/closed-basis-volume/states_k6.csv": "795d91601ed1278910fe0dedc2062d7f984085f3d7bef356802ddfe9a312be5c",
+          "results/closed-basis-volume/states_k7.csv": "c997298195c2bb1516ce1806a8f77a7d00662f42f05e96231e25d7b29bf419e7",
+          "results/closed-basis-volume/states_k8.csv": "1bbe690cf827bbbc0be4660419e5cd95a9d30136ba5b506be9a1ee6156cd35b3",
+          "results/closed-basis-volume/states_k9.csv": "9d4328c1d342d3575c3284afe08c1c11f12995053a6229eec72971ef95c1486f",
+          "results/closed-basis-volume/summary.json": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a",
+          "results/closed-state-enumeration/basis_k2_k4.csv": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93",
+          "results/closed-state-enumeration/summary.json": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c",
+          "notes/thermal-area-sectors.md": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.closed-basis.table.rows[9]"
+      },
+      "assessment": {
+        "summary": "Four labelled faces, zero-spin faces allowed; K=2 through 12, 10,549 basis states. RS/AL means, variances, spectra and reconstructible operators.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "closed-basis:case-0011:11",
+      "task": "T1a",
+      "status": "complete",
+      "description": "Complete four-face closed-basis volumes",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "K": 12
+      },
+      "results": {
+        "basis_states": 3185,
+        "nonzero_volume_basis_states": 2607,
+        "maximum_singlet_dimension": 7,
+        "maximum_magnetic_m0_dimension": 231,
+        "equal_weight_closed_rs_mean": 1.0486165781676402,
+        "equal_weight_closed_al_mean": 0.5243082890838202,
+        "checks_max_absolute_residual": {
+          "orthogonality": 8.881784197001252e-16,
+          "closure": 4.440892098500626e-16,
+          "recoupling": 2.4868995751603507e-14,
+          "hermiticity": 2.842170943040401e-14,
+          "invariant_subspace": 1.942890293094024e-14,
+          "casimir": 7.105427357601002e-14,
+          "four_valent_closure": 7.283063041541027e-14,
+          "volume_root_projection": 0.0,
+          "independent_q": 0.0
+        },
+        "validation": "All-block singlet and scalar checks; independent oscillator/tensor and full-space root checks through K=4 only.",
+        "archive": "operators_k12.npz",
+        "archive_bytes": 2482819,
+        "archive_sha256": "b3b1c3e8d9acb0126b121ffdc3856dd0efe2fe6f59cde5ee6032377fad6904f3",
+        "states_csv": "states_k12.csv",
+        "elapsed_seconds": 44.87176237499807
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/closed-basis-volume/README.md": "f4ceddf43e39f302b6a7e0ebedd37b84cd06fd9009dfc988f4ce642ae80363d7",
+          "results/closed-basis-volume/metadata_k10.json": "a80142126873617deddc81c6069e84de887ac0f2a965ca0e7259ee36873d2d1d",
+          "results/closed-basis-volume/metadata_k11.json": "26718cf1e2c2480bedcac2214473f34254f0a9e9c66a4ec6a5e6f4485923518e",
+          "results/closed-basis-volume/metadata_k12.json": "00372978bec6b10aa1c17d53de8ad25f6d7136eb1f900ee19b45337e0075bece",
+          "results/closed-basis-volume/metadata_k2.json": "749f7403efb0a12a020faaa364292ef924d2aaa0ce02df2042da4ddca75210a7",
+          "results/closed-basis-volume/metadata_k3.json": "bc8c197981750b950c42c97aa6e8e95bdd77cc90c12a4777278b0e144bfab199",
+          "results/closed-basis-volume/metadata_k4.json": "da4e0e19eedb37d42af99e79bd39050a52a95edce2eac5195d74e4c42513aef3",
+          "results/closed-basis-volume/metadata_k5.json": "5cc68a9662496185033e936be793cede0cd0d2c28515ef8c40cc36fc14741eda",
+          "results/closed-basis-volume/metadata_k6.json": "3d49ed7047f4c76f0c737dd5edea25aea4c2f8138e43d1186a55bd0e78c04e64",
+          "results/closed-basis-volume/metadata_k7.json": "6619041969b81567b93b5b6af09fa0fc3f42f351f48e8bcbc00805268b5f534b",
+          "results/closed-basis-volume/metadata_k8.json": "936d9252a60f1cf919dc70ef53e38139dd5a138c1291a394f67086c583462a68",
+          "results/closed-basis-volume/metadata_k9.json": "98963ff5f0b01bfdedd71ce07dfb4931a8f55e0c0a96701643bae613236a2c9a",
+          "results/closed-basis-volume/operators_k10.npz": "7bc876562107e50ab3a4656301678987d77c3710cb40adce73fe8afe6ab74acc",
+          "results/closed-basis-volume/operators_k11.npz": "d695842d656b8ab093898873c35994b53a6df362f576da3e4cd08996151edc75",
+          "results/closed-basis-volume/operators_k12.npz": "b3b1c3e8d9acb0126b121ffdc3856dd0efe2fe6f59cde5ee6032377fad6904f3",
+          "results/closed-basis-volume/operators_k2.npz": "51ae53834b6cea49a9f31d632aac948eaff344800b69a1917849c58c09708d3d",
+          "results/closed-basis-volume/operators_k3.npz": "999c7319f2d98d321cca4bd8422ab05c301f3096f92e1aeb0e06d04692469e38",
+          "results/closed-basis-volume/operators_k4.npz": "38d5f1fb6e42efbae429406484f6b35e3c14cc3a970d616f1decd4a6dd2004c4",
+          "results/closed-basis-volume/operators_k5.npz": "6cdf27858c38d044264d582fd23cacdbb8095e0beae3ec810f75a7f708fe8626",
+          "results/closed-basis-volume/operators_k6.npz": "5dde52cb5d9c1d9a6238c926111bd09f179ade06c71085f0114046751c4f955b",
+          "results/closed-basis-volume/operators_k7.npz": "537c4d52540f1583e9809df8ea482a5780eff0cd6a46292214cfc1f242f831a2",
+          "results/closed-basis-volume/operators_k8.npz": "041c81fbd7ecffd2d0547f1a5084f6f03676f7e10550db2127a61cbcc46f49a4",
+          "results/closed-basis-volume/operators_k9.npz": "dc406856bb0f500b0c30330a9722bc65d564e5e97830a623a7176f04552e9438",
+          "results/closed-basis-volume/states_k10.csv": "bce31c826f04f46e684cc23e6c05038c5c67a220d085c765fbec0c6bbb8772eb",
+          "results/closed-basis-volume/states_k11.csv": "77a2d54bb91a6e464d5ef7f17381ba7b0bca6d73f992b38fe1fc5452498b37f7",
+          "results/closed-basis-volume/states_k12.csv": "a83b0e0759c36eb503f1425fae0fe0e748953a65c77b5ea5fe5edd205f65421e",
+          "results/closed-basis-volume/states_k2.csv": "d22c12367cdad991ae0c59170d9c21745505e207b4e23e4e6c28d101dba5f8cb",
+          "results/closed-basis-volume/states_k3.csv": "8a0e687c021d1992b207fff9c8959028f479aa8b9c735a6e63fbac2c065eacc9",
+          "results/closed-basis-volume/states_k4.csv": "aef3ee9d45db26c832269c2b676e014e444e4cec8ef7da0283b76c590f59371a",
+          "results/closed-basis-volume/states_k5.csv": "bb9053f1f00bc9ade781a58762469fc7bae1304e904ddda185fbecb8d0f72ebf",
+          "results/closed-basis-volume/states_k6.csv": "795d91601ed1278910fe0dedc2062d7f984085f3d7bef356802ddfe9a312be5c",
+          "results/closed-basis-volume/states_k7.csv": "c997298195c2bb1516ce1806a8f77a7d00662f42f05e96231e25d7b29bf419e7",
+          "results/closed-basis-volume/states_k8.csv": "1bbe690cf827bbbc0be4660419e5cd95a9d30136ba5b506be9a1ee6156cd35b3",
+          "results/closed-basis-volume/states_k9.csv": "9d4328c1d342d3575c3284afe08c1c11f12995053a6229eec72971ef95c1486f",
+          "results/closed-basis-volume/summary.json": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a",
+          "results/closed-state-enumeration/basis_k2_k4.csv": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93",
+          "results/closed-state-enumeration/summary.json": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c",
+          "notes/thermal-area-sectors.md": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.closed-basis.table.rows[10]"
+      },
+      "assessment": {
+        "summary": "Four labelled faces, zero-spin faces allowed; K=2 through 12, 10,549 basis states. RS/AL means, variances, spectra and reconstructible operators.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    }
+  ],
+  "figures": [
+    {
+      "title": "Four-face recoupling-basis volume expectations, K=2,3,4",
+      "path": "../study-assets/figures/closed-basis-volume/basis_state_volumes_k2_k4.png",
+      "tags": [
+        "T1a"
+      ]
+    },
+    {
+      "title": "Equal-weight complete closed-basis volume versus area",
+      "path": "../study-assets/figures/closed-basis-volume/fixed_area_ensemble_volume.png",
+      "tags": [
+        "T1a"
+      ]
+    },
+    {
+      "title": "Regular FL state volume versus area",
+      "path": "../study-assets/figures/single-copy-volume/regular_volume_area.png",
+      "tags": [
+        "T1a"
+      ]
+    },
+    {
+      "title": "Weighted FL state volume versus area",
+      "path": "../study-assets/figures/single-copy-volume/weighted_volume_area.png",
+      "tags": [
+        "T1a"
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "title": "Numerical studies overview",
+      "path": "../index.html"
+    }
+  ]
+}

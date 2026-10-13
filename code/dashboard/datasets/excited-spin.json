@@ -1,0 +1,483 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "Excited J_in=1 joint area and spin",
+    "subtitle": "Five temperatures, q through 160; 32,805 independent-method comparisons with maximum difference 2.67e-16."
+  },
+  "columns": [
+    {
+      "key": "runId",
+      "label": "Case",
+      "type": "string"
+    },
+    {
+      "key": "parameters.beta_hbar_omega",
+      "label": "beta hbar omega",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.retained_probability",
+      "label": "retained probability",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.mean_q_retained",
+      "label": "mean q retained",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.mean_q_analytic",
+      "label": "mean q analytic",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.mean_per_copy_closure_casimir_retained",
+      "label": "mean per copy closure casimir retained",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.singlet_probability_retained",
+      "label": "singlet probability retained",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.tail_upper_bounds.q_power_0",
+      "label": "tail upper bounds.q power 0",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.tail_upper_bounds.q_power_1",
+      "label": "tail upper bounds.q power 1",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.tail_upper_bounds.q_power_2",
+      "label": "tail upper bounds.q power 2",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.tail_log10_upper_bounds.q_power_0",
+      "label": "tail log10 upper bounds.q power 0",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.tail_log10_upper_bounds.q_power_1",
+      "label": "tail log10 upper bounds.q power 1",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.tail_log10_upper_bounds.q_power_2",
+      "label": "tail log10 upper bounds.q power 2",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.tail_bound_underflow",
+      "label": "tail bound underflow",
+      "type": "boolean",
+      "precision": 8
+    },
+    {
+      "key": "results.independent_checks.pair_cutoff_coefficient_difference",
+      "label": "independent checks.pair cutoff coefficient difference",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.independent_checks.polynomial_coefficient_difference",
+      "label": "independent checks.polynomial coefficient difference",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.independent_checks.casimir_probability_difference",
+      "label": "independent checks.casimir probability difference",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.independent_checks.magnetic_occupation_difference",
+      "label": "independent checks.magnetic occupation difference",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.independent_checks.combined_closure_relative_residual",
+      "label": "independent checks.combined closure relative residual",
+      "type": "number",
+      "precision": 8
+    }
+  ],
+  "charts": {
+    "type": "scatter",
+    "x": "parameters.beta_hbar_omega",
+    "y": "results.retained_probability"
+  },
+  "runs": [
+    {
+      "runId": "excited-spin:case-0001:1",
+      "task": "T9",
+      "status": "complete",
+      "description": "Excited J_in=1 joint area and spin",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "beta_hbar_omega": 0.5
+      },
+      "results": {
+        "retained_probability": 1.0,
+        "mean_q_retained": 20.497928990441583,
+        "mean_q_analytic": 20.49792899044158,
+        "mean_per_copy_closure_casimir_retained": 41.135829934844026,
+        "singlet_probability_retained": 0.0034036649491405438,
+        "tail_upper_bounds": {
+          "q_power_0": 8.936403228451495e-21,
+          "q_power_1": 1.4554471138720414e-18,
+          "q_power_2": 2.3709378662309234e-16
+        },
+        "tail_log10_upper_bounds": {
+          "q_power_0": -20.048837243211548,
+          "q_power_1": -17.837003570761638,
+          "q_power_2": -15.6250798271718
+        },
+        "tail_bound_underflow": false,
+        "independent_checks": {
+          "pair_cutoff_coefficient_difference": 0.0,
+          "polynomial_coefficient_difference": 1.6653345369377348e-16,
+          "casimir_probability_difference": 3.187554387107383e-17,
+          "magnetic_occupation_difference": 2.2551405187698492e-17,
+          "combined_closure_relative_residual": 4.192372672037108e-29
+        }
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/thermal-j1-spin/j1_spin_method_comparison.csv": "946a5b3e65fac8b79a7405a13f3399180d49d0fe65066047039f49067bf2a7c0",
+          "results/thermal-j1-spin/j1_spin_method_summary.json": "d70049114358f9ee9194ebc91a545c32e294bcb16f65f6b358fff453024f9262",
+          "figures/thermal-j1-spin/j1_spin_plot_summary.json": "ed0cf982ca8e96a8ed987f8ceafa4fd30d6ece024366efd235c0f3ba69d9e8da"
+        },
+        "presentationSource": "results/thermal-j1-spin/j1_spin_method_summary.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "software": {
+          "python": "3.10.19",
+          "numpy": "1.24.3",
+          "scipy": "1.15.3"
+        },
+        "sourceSelector": "temperature_results[0]"
+      },
+      "assessment": {
+        "summary": "Five temperatures, q through 160; 32,805 independent-method comparisons with maximum difference 2.67e-16.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "j1_spin_method_comparison.csv",
+          "path": "../study-assets/results/thermal-j1-spin/j1_spin_method_comparison.csv",
+          "kind": "data",
+          "sha256": "946a5b3e65fac8b79a7405a13f3399180d49d0fe65066047039f49067bf2a7c0",
+          "sourcePath": "results/thermal-j1-spin/j1_spin_method_comparison.csv",
+          "sourceSha256": "946a5b3e65fac8b79a7405a13f3399180d49d0fe65066047039f49067bf2a7c0"
+        },
+        {
+          "label": "j1_spin_method_summary.json",
+          "path": "../study-assets/results/thermal-j1-spin/j1_spin_method_summary.json",
+          "kind": "data",
+          "sha256": "d70049114358f9ee9194ebc91a545c32e294bcb16f65f6b358fff453024f9262",
+          "sourcePath": "results/thermal-j1-spin/j1_spin_method_summary.json",
+          "sourceSha256": "d70049114358f9ee9194ebc91a545c32e294bcb16f65f6b358fff453024f9262"
+        },
+        {
+          "label": "j1_spin_plot_summary.json",
+          "path": "../study-assets/figures/thermal-j1-spin/j1_spin_plot_summary.json",
+          "kind": "data",
+          "sha256": "ed0cf982ca8e96a8ed987f8ceafa4fd30d6ece024366efd235c0f3ba69d9e8da",
+          "sourcePath": "figures/thermal-j1-spin/j1_spin_plot_summary.json",
+          "sourceSha256": "ed0cf982ca8e96a8ed987f8ceafa4fd30d6ece024366efd235c0f3ba69d9e8da"
+        }
+      ],
+      "figures": [
+        {
+          "title": "Excited-seed joint boson-number and resultant-spin distributions",
+          "path": "../study-assets/figures/thermal-j1-spin/j1_spin_joint_maps.png",
+          "tags": [
+            "T9"
+          ]
+        },
+        {
+          "title": "Excited-seed area and spin distributions versus temperature",
+          "path": "../study-assets/figures/thermal-j1-spin/j1_spin_temperature.png",
+          "tags": [
+            "T9"
+          ]
+        }
+      ]
+    },
+    {
+      "runId": "excited-spin:case-0002:2",
+      "task": "T9",
+      "status": "complete",
+      "description": "Excited J_in=1 joint area and spin",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "beta_hbar_omega": 1.0
+      },
+      "results": {
+        "retained_probability": 0.9999999999999999,
+        "mean_q_retained": 8.983720482431917,
+        "mean_q_analytic": 8.983720482431917,
+        "mean_per_copy_closure_casimir_retained": 9.667072739181819,
+        "singlet_probability_retained": 0.02640647623307552,
+        "tail_upper_bounds": {
+          "q_power_0": 4.343699906264882e-53,
+          "q_power_1": 7.021641037325688e-51,
+          "q_power_2": 1.1351035760553074e-48
+        },
+        "tail_log10_upper_bounds": {
+          "q_power_0": -52.362140186539634,
+          "q_power_1": -50.153561376450476,
+          "q_power_2": -47.94496450811233
+        },
+        "tail_bound_underflow": false,
+        "independent_checks": {
+          "pair_cutoff_coefficient_difference": 4.85722573273506e-17,
+          "polynomial_coefficient_difference": 3.2612801348363973e-16,
+          "casimir_probability_difference": 2.498001805406602e-16,
+          "magnetic_occupation_difference": 2.0816681711721685e-16,
+          "combined_closure_relative_residual": 2.1108046122855495e-29
+        }
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/thermal-j1-spin/j1_spin_method_comparison.csv": "946a5b3e65fac8b79a7405a13f3399180d49d0fe65066047039f49067bf2a7c0",
+          "results/thermal-j1-spin/j1_spin_method_summary.json": "d70049114358f9ee9194ebc91a545c32e294bcb16f65f6b358fff453024f9262",
+          "figures/thermal-j1-spin/j1_spin_plot_summary.json": "ed0cf982ca8e96a8ed987f8ceafa4fd30d6ece024366efd235c0f3ba69d9e8da"
+        },
+        "presentationSource": "results/thermal-j1-spin/j1_spin_method_summary.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "software": {
+          "python": "3.10.19",
+          "numpy": "1.24.3",
+          "scipy": "1.15.3"
+        },
+        "sourceSelector": "temperature_results[1]"
+      },
+      "assessment": {
+        "summary": "Five temperatures, q through 160; 32,805 independent-method comparisons with maximum difference 2.67e-16.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "excited-spin:case-0003:3",
+      "task": "T9",
+      "status": "complete",
+      "description": "Excited J_in=1 joint area and spin",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "beta_hbar_omega": 2.0
+      },
+      "results": {
+        "retained_probability": 1.0,
+        "mean_q_retained": 3.878211712995988,
+        "mean_q_analytic": 3.878211712995988,
+        "mean_per_copy_closure_casimir_retained": 1.9006618600365643,
+        "singlet_probability_retained": 0.1953169851215159,
+        "tail_upper_bounds": {
+          "q_power_0": 1.1464049767361358e-120,
+          "q_power_1": 1.8476539155308547e-118,
+          "q_power_2": 2.977875334103235e-116
+        },
+        "tail_log10_upper_bounds": {
+          "q_power_0": -119.94066193726148,
+          "q_power_1": -117.73337937329498,
+          "q_power_2": -115.52609348752551
+        },
+        "tail_bound_underflow": false,
+        "independent_checks": {
+          "pair_cutoff_coefficient_difference": 9.159339953157541e-16,
+          "polynomial_coefficient_difference": 9.43689570931383e-16,
+          "casimir_probability_difference": 1.7486012637846216e-15,
+          "magnetic_occupation_difference": 1.1934897514720433e-15,
+          "combined_closure_relative_residual": 3.497897092423782e-30
+        }
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/thermal-j1-spin/j1_spin_method_comparison.csv": "946a5b3e65fac8b79a7405a13f3399180d49d0fe65066047039f49067bf2a7c0",
+          "results/thermal-j1-spin/j1_spin_method_summary.json": "d70049114358f9ee9194ebc91a545c32e294bcb16f65f6b358fff453024f9262",
+          "figures/thermal-j1-spin/j1_spin_plot_summary.json": "ed0cf982ca8e96a8ed987f8ceafa4fd30d6ece024366efd235c0f3ba69d9e8da"
+        },
+        "presentationSource": "results/thermal-j1-spin/j1_spin_method_summary.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "software": {
+          "python": "3.10.19",
+          "numpy": "1.24.3",
+          "scipy": "1.15.3"
+        },
+        "sourceSelector": "temperature_results[2]"
+      },
+      "assessment": {
+        "summary": "Five temperatures, q through 160; 32,805 independent-method comparisons with maximum difference 2.67e-16.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "excited-spin:case-0004:4",
+      "task": "T9",
+      "status": "complete",
+      "description": "Excited J_in=1 joint area and spin",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "beta_hbar_omega": 4.0
+      },
+      "results": {
+        "retained_probability": 0.9999999999999992,
+        "mean_q_retained": 2.223888324365287,
+        "mean_q_analytic": 2.2238883243652885,
+        "mean_per_copy_closure_casimir_retained": 0.19955730332493596,
+        "singlet_probability_retained": 0.7775011889214215,
+        "tail_upper_bounds": {
+          "q_power_0": 3.572242659451563e-258,
+          "q_power_1": 5.752024414669368e-256,
+          "q_power_2": 9.261915842906733e-254
+        },
+        "tail_log10_upper_bounds": {
+          "q_power_0": -257.44705904752107,
+          "q_power_1": -255.24017927924308,
+          "q_power_2": -253.0332991694798
+        },
+        "tail_bound_underflow": false,
+        "independent_checks": {
+          "pair_cutoff_coefficient_difference": 0.0,
+          "polynomial_coefficient_difference": 4.440892098500626e-16,
+          "casimir_probability_difference": 3.1051550219984847e-16,
+          "magnetic_occupation_difference": 4.163336342344337e-17,
+          "combined_closure_relative_residual": 3.2847430647625214e-30
+        }
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/thermal-j1-spin/j1_spin_method_comparison.csv": "946a5b3e65fac8b79a7405a13f3399180d49d0fe65066047039f49067bf2a7c0",
+          "results/thermal-j1-spin/j1_spin_method_summary.json": "d70049114358f9ee9194ebc91a545c32e294bcb16f65f6b358fff453024f9262",
+          "figures/thermal-j1-spin/j1_spin_plot_summary.json": "ed0cf982ca8e96a8ed987f8ceafa4fd30d6ece024366efd235c0f3ba69d9e8da"
+        },
+        "presentationSource": "results/thermal-j1-spin/j1_spin_method_summary.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "software": {
+          "python": "3.10.19",
+          "numpy": "1.24.3",
+          "scipy": "1.15.3"
+        },
+        "sourceSelector": "temperature_results[3]"
+      },
+      "assessment": {
+        "summary": "Five temperatures, q through 160; 32,805 independent-method comparisons with maximum difference 2.67e-16.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "excited-spin:case-0005:5",
+      "task": "T9",
+      "status": "complete",
+      "description": "Excited J_in=1 joint area and spin",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "beta_hbar_omega": 8.0
+      },
+      "results": {
+        "retained_probability": 1.0,
+        "mean_q_retained": 2.0040269024100947,
+        "mean_q_analytic": 2.0040269024100947,
+        "mean_per_copy_closure_casimir_retained": 0.0035247220213449277,
+        "singlet_probability_retained": 0.995316102873722,
+        "tail_upper_bounds": {
+          "q_power_0": 0.0,
+          "q_power_1": 0.0,
+          "q_power_2": 0.0
+        },
+        "tail_log10_upper_bounds": {
+          "q_power_0": -533.5725858695946,
+          "q_power_1": -531.3657590255365,
+          "q_power_2": -529.1589321754637
+        },
+        "tail_bound_underflow": true,
+        "independent_checks": {
+          "pair_cutoff_coefficient_difference": 1.734723475976807e-18,
+          "polynomial_coefficient_difference": 1.6653345369377348e-16,
+          "casimir_probability_difference": 5.551115123125783e-16,
+          "magnetic_occupation_difference": 4.440892098500626e-16,
+          "combined_closure_relative_residual": 4.870861055814108e-31
+        }
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/thermal-j1-spin/j1_spin_method_comparison.csv": "946a5b3e65fac8b79a7405a13f3399180d49d0fe65066047039f49067bf2a7c0",
+          "results/thermal-j1-spin/j1_spin_method_summary.json": "d70049114358f9ee9194ebc91a545c32e294bcb16f65f6b358fff453024f9262",
+          "figures/thermal-j1-spin/j1_spin_plot_summary.json": "ed0cf982ca8e96a8ed987f8ceafa4fd30d6ece024366efd235c0f3ba69d9e8da"
+        },
+        "presentationSource": "results/thermal-j1-spin/j1_spin_method_summary.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "software": {
+          "python": "3.10.19",
+          "numpy": "1.24.3",
+          "scipy": "1.15.3"
+        },
+        "sourceSelector": "temperature_results[4]"
+      },
+      "assessment": {
+        "summary": "Five temperatures, q through 160; 32,805 independent-method comparisons with maximum difference 2.67e-16.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    }
+  ],
+  "figures": [
+    {
+      "title": "Excited-seed joint boson-number and resultant-spin distributions",
+      "path": "../study-assets/figures/thermal-j1-spin/j1_spin_joint_maps.png",
+      "tags": [
+        "T9"
+      ]
+    },
+    {
+      "title": "Excited-seed area and spin distributions versus temperature",
+      "path": "../study-assets/figures/thermal-j1-spin/j1_spin_temperature.png",
+      "tags": [
+        "T9"
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "title": "Numerical studies overview",
+      "path": "../index.html"
+    }
+  ]
+}

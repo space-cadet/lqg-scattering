@@ -1,0 +1,14 @@
+{
+  "base": "https://quantumofgravity.com/projects/scattering-in-lqg/numerics/",
+  "studies": 20,
+  "assets_checked": 235,
+  "errors": [],
+  "byte_checked": [
+    "study-assets/results/t11-size-comparison/README.txt",
+    "study-assets/results/t11-size-comparison/summary.csv",
+    "study-assets/results/t11-geometric-interpretation/README.txt",
+    "study-assets/results/t11-geometric-interpretation/state_summary.csv",
+    "study-assets/results/hamiltonian-studies/README.txt",
+    "study-assets/notes/hamiltonian-studies.txt"
+  ]
+}

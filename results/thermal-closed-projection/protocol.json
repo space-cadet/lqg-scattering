@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-13",
+  "initial_J": 1,
+  "faces": 4,
+  "state": "normalized (P_L,0 tensor P_R,0) U_beta (F12 FL tensor conjugate F12 FL)",
+  "input": "F12 dagger vacuum / sqrt(2) in each copy",
+  "temperature_range": [
+    0.05,
+    2
+  ],
+  "occupation_probability_cutoff": 160,
+  "volume_area_cutoff": 50,
+  "raw_volume": "RS project units, gamma=0.2375, hbar=1, four triples",
+  "volume_tail_bound": "||V_RS|| <= 4 gamma^(3/2) sqrt(2/9) A^(3/2)",
+  "projection": "separate ordinary singlet support on both copies",
+  "tolerance": 2e-10,
+  "verification": "direct double projection in q=0,2,4; catalogue traces K=2..12; recoupling probabilities"
+}

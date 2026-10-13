@@ -1,11 +1,11 @@
 # Active Context
 
-*Last Updated: 2026-10-10 03:26:38 IST*
+*Last Updated: 2026-10-13 22:50:22 IST*
 
 ## Current Focus
-Current focus: T11, the single-copy lattice-Hamiltonian pilot and its thermal-volume follow-up. It compares four-site complete and ring graphs at fixed $K=2,3,4$ in the exact total-spin singlet sector. A dense $K=4$ scan resolves the nonmonotonic volume response and low-temperature crossover; the finite four-site data do not establish a phase transition. The Bose–Hubbard spectra, thermal observables, ground-state correlations and one-site entropy, exact infinite-temperature active-site counts, connected-triple RS volume, and $[H,V]$ matrices are documented in [the study note](../notes/hamiltonian-studies.md). Larger systems and the rest of the research program remain open.
+Current focus: T11. Four/five-site persistence, prepared-$K=4$ FL geometry, two candidate geometric Hamiltonians, and 50 prepared-state trajectories are calculated and independently checked. The four-site complete-graph thermal drop is associated with a kernel-dominated ground state; the five-site comparison does not show the same low-temperature collapse. The positive-volume and signed-triple interactions are tested candidates, not derived physical terms. Physical coupling justification, volume calibration, controlled size scaling, and sewn dynamics remain open.
 
-**Primary Task:** T11 — extend the four-site pilot with larger supports after reviewing its finite-sector results.
+**Primary Task:** T11 — reconcile results and clarify tetrahedral geometric dynamics.
 **Supporting Tasks:** T9 thermal/TFD construction and physical study; T1a Python volume numerics; T3c Rust volume implementation; T6 kinematic Minkowski geometry; T4 manuscript audit; T8 amplituhedron program.
 
 ## Active Tasks
@@ -14,9 +14,9 @@ Current focus: T11, the single-copy lattice-Hamiltonian pilot and its thermal-vo
 - T3c: The Rust FL Eq. (38) example now builds and matches the Python $J=2$ result after the shared zero-mode cutoff. Physical prefactors and a method for blocks above 512 remain open; the Cargo shim itself is still broken.
 - T5: Volume–positivity numerical-studies program — IN PROGRESS; T5c/T5d/T5g open; the former T5f amplituhedron mapping is now T8b. Initial T5c pilots compare the input classical tetrahedron with weighted FL positive volume: regular/unequal-skew through $J=7$, a nine-shape unequal-area grid at $J=2,4$, selected $J=6$ points, and a flat path through $J=7$. Area means and weighted closure pass; finite-$J$ unequal correlations do not exactly reproduce input angles. Calibrated RS/AL agreement follows from closure and is not independent evidence. Broader shape and iterated-limit conclusions remain open. See `implementation-details/T5c-flux-covariance-volume-comparison.md` and shared `implementation-details/volume-numerical-preliminaries.md`.
 - T8: Amplituhedron Program — IN PROGRESS; T8a cluster algebra/chart relevance and T8b positive-cell/scattering-region mapping (transferred from T5f) are open. See `tasks/T8.md`.
-- T9: Thermal/TFD state construction and physical study — IN PROGRESS; owns all ongoing TFD construction and analysis, with exactly five completed child-study records T7a–T7e. The four-face $J_{\mathrm{in}}=1$ $P(q,S)$ calculation and method comparison are complete through $q=160$ at five temperatures; full reduced-state blocks, entropy, and geometry remain open.
-- T11: Four-site Hamiltonian–volume studies — IN PROGRESS; complete-graph and four-site-ring cases at $K=2,3,4$ are calculated for no hopping, free hopping, and $U/t=1,5,20$. The dense $K=4$ thermal scan resolves a nonmonotonic volume response and near-ground-state crossover; the run in the `qc-diff` Conda environment generated five PDF/PNG figure pairs. Physical normalization and larger systems remain open.
-- The numerics dashboard now catalogues 18 saved studies, including T11's 30 cases and plots, with downloadable data and source records. Website commit `8f70bc9` was merged to `main`; the live dashboard was checked after deployment. T11's larger-system work remains open.
+- T9: Thermal/TFD state construction and physical study — IN PROGRESS; owns all ongoing TFD construction and analysis, with exactly five completed child-study records T7a–T7e. The four-face $J_{\mathrm{in}}=1$ occupation/spin comparison is complete through $q=160$. October 13 results quantify ordinary per-copy closure and show that separate singlet projection retains closed states with increasing mean area and positive RS volume; the area asymptote is $(57/14)T_*$. Full selected-state reduced blocks, entropy, and Gibbs characterization remain open.
+- T11: Hamiltonian–volume studies — IN PROGRESS. The $K=4$ candidate-Hamiltonian scan and exact-phase evolution of five FL references are now complete; the independent verifier performed 1,510 checks with maximum residual $1.07\times10^{-12}$. Full model ranges and limitations are in [the candidate study](../results/t11-candidate-hamiltonians/README.md). Physical justification/calibration, controlled further size scaling, and sewn dynamics remain open.
+- The numerics dashboard includes 30 InfoDash datasets (2,049 rows) alongside the existing catalogue of 21 studies, 29 records, and 38 figures. Website commit `8263c95b2250bc724605a71c73f1a13e429b1b3d` deployed the integration; follow-up website commit `3c1edad` added the desktop note reader. Live review confirmed all four tabs, rendered Markdown and math, and working chronology links. See [deployment session](sessions/2026-10-12-infodash-deployment.md) and [desktop reader session](sessions/2026-10-13-infodash-desktop-note-reader.md).
 
 ## Project State
 - Published EPJC paper is the frozen baseline.
@@ -27,7 +27,7 @@ Current focus: T11, the single-copy lattice-Hamiltonian pilot and its thermal-vo
 - Python and Rust implementations exist. The old n=4 comparison shared a truncated Taylor state. Corrected Rust scans now cover n=4..8; SciPy independently checks n=4,5,7,8.
 - `manuscript.md` contains results through T7e but needs corrected conclusions, caveats, independent review, and circulation.
 - At the start of the 2026-10-06 task-record audit, `main` and `origin/main` both pointed to `0a254849a5e12734ee32d9d8af74bd4309d17648`. Existing local numerical, dashboard, and Memory Bank work remains in the working tree; this audit preserved it while reconstructing task records from the full 79-commit history. Separately, the dashboard's math typesetting update was deployed from website commit `15f698f` (workflow `37286586717`) and verified live in the study and fixed-area sections. Chart SVG labels remain compact text; mobile view was not examined, per the user's direction. The earlier plot-artwork update is website commit `9c6670c`. Two pre-existing untracked Python cache directories remain under `__pycache__/` and `code/dashboard/__pycache__/`.
-- T7 was archived as the former umbrella; T9 now owns all thermal/TFD work. The selected target is $U_\beta(|J,z\rangle_L\otimes|\overline{J,z}\rangle_R)$ with transformed geometric observables. The $SU(1,1)$ factorization and coefficient-level partial-trace construction are documented. The four-face $J_{\mathrm{in}}=1$ $P(q,S)$ marginal has two agreeing implementations through $q=160$ and temperature plots; allowed sectors have positive finite-temperature weight, so plotted cutoffs reflect display/numerical limits. Full two-copy reduced-state blocks, entropy, and geometric correlations remain to be calculated. See `tasks/T9.md`, `notes/thermal-area-sectors.md`, and the October 8 session records.
+- T7 was archived as the former umbrella; T9 now owns all thermal/TFD work. The selected target is $U_\beta(|J,z\rangle_L\otimes|\overline{J,z}\rangle_R)$ with transformed geometric observables. The $SU(1,1)$ factorization and coefficient-level partial-trace construction are documented. The four-face $J_{\mathrm{in}}=1$ $P(q,S)$ marginal has two agreeing implementations through $q=160$. The October 13 study adds ordinary-closure temperature dependence and a separately closed geometric projection; its conditional mean area has the high-temperature coefficient $57/14$, and positive RS volume increases over the studied range. Full selected-state reduced blocks, entropy, and Gibbs characterization remain open. See `tasks/T9.md`, `notes/thermal-area-sectors.md`, and the [October 13 session](sessions/2026-10-13-t9-thermal-closure-and-geometry.md).
 - The constructive F-pair sewing discussion is recorded in [the dialogue note](implementation-details/constructive-geometric-sewing-dialogue.md) and [the session transcript](sessions/2026-10-04-geometric-construction-transcript.md). Triangle, tetrahedron, and joined exterior-boundary tensor sewing are now implemented at small spin, with independent checks; metric shape and volume remain unvalidated, and no dedicated task ID is assigned.
 
 ## Current Decisions
@@ -89,3 +89,41 @@ and [physics transcript](sessions/2026-10-10-binding-and-constructive-sewing-tra
 First specify exterior-boundary versus retained two-cell bulk dynamics and
 conserved resources. The suggested edge-Casimir plus loop Hamiltonian is
 unaccepted and unimplemented; no sewn-network binding energy is calculated.
+
+
+## T11 geometric-result closeout — 2026-10-11 10:27:17 IST
+
+- Completed and checked four/five-site persistence, five explicitly prepared $K=4$ FL references, their geometric diagnostics, energy-group comparisons and Gibbs reconstruction. Prior suite: 42 tests; independent residual maximum $5.14\times10^{-12}$. No physics rerun in this update.
+- The complete-graph collapse does not persist at five sites. At four sites the ground is kernel-dominated with broad angular fluctuations, despite near-unit four-face weight.
+- Preserved both physics dialogs in the Hamiltonian write-up. On-site repulsion is the preferred term interpretation. $g_VV$ and signed-triple terms are proposals; $K=4$ FL evolution is unperformed.
+- [Session record](sessions/2026-10-11-t11-geometry-closeout.md); T11 stays IN PROGRESS. The 18-study deployment references above are historical; current deployment evidence is recorded separately below when verified.
+
+
+### Verified dashboard release — 2026-10-11 11:07:11 IST
+
+Website main `cea6ae9`; deployment run `38113563387` succeeded. Live catalogue: 20 studies, 28 records, 33 figures; all 235 asset URLs passed public checks and browser verification showed the new T11 cards/plots. See [deployment evidence](sessions/2026-10-11-t11-geometry-closeout.md#dashboard-deployment-and-acceptance). Research files remain uncommitted; no new scientific calculation.
+
+
+## T11 candidate-Hamiltonian and FL-evolution follow-up — 2026-10-11 13:52:01 IST
+
+The earlier statement that the prepared-$K=4$ references had not been evolved
+is historical: the later candidate study propagated all five references under
+the baseline and both signs of the positive-volume and signed-grasp terms at
+$U/t=5,20$. It saved 50 exact energy-basis trajectories and passed 1,510
+independent checks with maximum residual $1.07\times10^{-12}$. The candidate
+couplings are not physically derived, and the volume remains in project
+units. See [the study report](../results/t11-candidate-hamiltonians/README.md)
+and [the session closeout](sessions/2026-10-11-t11-geometry-closeout.md).
+
+The newest deployed catalogue contains 21 studies, 29 records, and 38 figures
+(website commit `f59a2ccd4e3b47edd91e1c974dd3eb4b20ed8c98`, workflow
+`38124134232`). All 30 new T11 links returned HTTP 200 and four compressed
+data hashes matched their packaged files.
+
+## InfoDash dashboard deployment — 2026-10-12
+
+Published the pinned InfoDash application and saved numerical datasets. The
+production workflow succeeded, and the live route serves all 30 datasets and
+all 301 referenced asset URLs. The lqg-scattering source work remains local and
+uncommitted; T11 research remains in progress. See the
+[deployment record](sessions/2026-10-12-infodash-deployment.md).

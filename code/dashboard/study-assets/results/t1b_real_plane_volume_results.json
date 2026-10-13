@@ -1,0 +1,174 @@
+[
+  {
+    "name": "positive_real_plane",
+    "plane": [
+      [
+        1.0,
+        0.0,
+        -1.0,
+        -2.0
+      ],
+      [
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    ],
+    "strictlyPositiveCell": true,
+    "pluckerMinors": {
+      "M12": [
+        1.0,
+        0.0
+      ],
+      "M13": [
+        1.0,
+        0.0
+      ],
+      "M14": [
+        1.0,
+        0.0
+      ],
+      "M23": [
+        1.0,
+        0.0
+      ],
+      "M24": [
+        2.0,
+        0.0
+      ],
+      "M34": [
+        1.0,
+        0.0
+      ]
+    },
+    "referenceOccupations": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "totalBosonsK": 6,
+    "stateDimension": 3003,
+    "stateNormSquared": 1.0,
+    "maximumImaginaryAmplitude": 0.0,
+    "q012": [
+      0.0,
+      6.938893903907228e-18
+    ],
+    "signedMeanProxyProjectUnits": 3.0488814959502106e-10,
+    "positiveRSProjectUnits": 0.12052923755145747,
+    "positiveALProjectUnits": 0.0751162653864954,
+    "directTensorRSProjectUnits": 0.12052923755145745,
+    "directTensorALProjectUnits": 0.07511626538649536,
+    "maxTripleMatrixDifference": 5.551115123125783e-16,
+    "rsExpectationDifference": 2.7755575615628914e-17,
+    "alExpectationDifference": 4.163336342344337e-17,
+    "gamma": 0.2375,
+    "hbar": 1.0,
+    "alOrientationSignsLexicographic": [
+      1,
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "name": "off_cell_real_plane",
+    "plane": [
+      [
+        1.0,
+        0.0,
+        -2.0,
+        -1.0
+      ],
+      [
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    ],
+    "strictlyPositiveCell": false,
+    "pluckerMinors": {
+      "M12": [
+        1.0,
+        0.0
+      ],
+      "M13": [
+        1.0,
+        0.0
+      ],
+      "M14": [
+        1.0,
+        0.0
+      ],
+      "M23": [
+        2.0,
+        0.0
+      ],
+      "M24": [
+        1.0,
+        0.0
+      ],
+      "M34": [
+        -1.0,
+        0.0
+      ]
+    },
+    "referenceOccupations": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "totalBosonsK": 6,
+    "stateDimension": 3003,
+    "stateNormSquared": 0.9999999999999998,
+    "maximumImaginaryAmplitude": 0.0,
+    "q012": [
+      0.0,
+      0.0
+    ],
+    "signedMeanProxyProjectUnits": 0.0,
+    "positiveRSProjectUnits": 0.1205292375514575,
+    "positiveALProjectUnits": 0.07511626538649535,
+    "directTensorRSProjectUnits": 0.12052923755145745,
+    "directTensorALProjectUnits": 0.07511626538649532,
+    "maxTripleMatrixDifference": 5.551115123125783e-16,
+    "rsExpectationDifference": 5.551115123125783e-17,
+    "alExpectationDifference": 2.7755575615628914e-17,
+    "gamma": 0.2375,
+    "hbar": 1.0,
+    "alOrientationSignsLexicographic": [
+      1,
+      -1,
+      1,
+      -1
+    ]
+  }
+]

@@ -1,0 +1,184 @@
+{
+  "datasets": [
+    {
+      "id": "t11-size-comparison",
+      "title": "Four versus five sites: thermal-volume persistence",
+      "path": "datasets/t11-size-comparison.json",
+      "cases": 12
+    },
+    {
+      "id": "t11-geometric-interpretation",
+      "title": "Prepared tetrahedral FL states and the volume crossover",
+      "path": "datasets/t11-geometric-interpretation.json",
+      "cases": 11
+    },
+    {
+      "id": "t11-candidate-hamiltonians",
+      "title": "Candidate geometric Hamiltonians and prepared-FL dynamics",
+      "path": "datasets/t11-candidate-hamiltonians.json",
+      "cases": 62
+    },
+    {
+      "id": "hamiltonian",
+      "title": "Four-site Hamiltonian spectra and RS-volume observables",
+      "path": "datasets/hamiltonian.json",
+      "cases": 30
+    },
+    {
+      "id": "closed-basis",
+      "title": "Complete four-face closed-basis volumes",
+      "path": "datasets/closed-basis.json",
+      "cases": 11
+    },
+    {
+      "id": "variable-faces",
+      "title": "Variable-face positive RS catalogue",
+      "path": "datasets/variable-faces.json",
+      "cases": 9
+    },
+    {
+      "id": "vacuum-area",
+      "title": "Squeezed-vacuum area coefficients",
+      "path": "datasets/vacuum-area.json",
+      "cases": 964
+    },
+    {
+      "id": "vacuum-spin",
+      "title": "Squeezed-vacuum resultant spin",
+      "path": "datasets/vacuum-spin.json",
+      "cases": 196
+    },
+    {
+      "id": "excited-spin",
+      "title": "Excited J_in=1 joint area and spin",
+      "path": "datasets/excited-spin.json",
+      "cases": 5
+    },
+    {
+      "id": "high-j",
+      "title": "Higher-J flat-boundary probes",
+      "path": "datasets/high-j.json",
+      "cases": 13
+    },
+    {
+      "id": "magnetization",
+      "title": "Magnetization and signed-grasp correlations",
+      "path": "datasets/magnetization.json",
+      "cases": 10
+    },
+    {
+      "id": "chirality",
+      "title": "Local-chirality pilot",
+      "path": "datasets/chirality.json",
+      "cases": 13
+    },
+    {
+      "id": "perturbation",
+      "title": "Imaginary-perturbation response",
+      "path": "datasets/perturbation.json",
+      "cases": 26
+    },
+    {
+      "id": "phase",
+      "title": "Cocycle-phase pilot",
+      "path": "datasets/phase.json",
+      "cases": 10
+    },
+    {
+      "id": "large-k",
+      "title": "Large-K recorded families and fits",
+      "path": "datasets/large-k.json",
+      "cases": 13
+    },
+    {
+      "id": "t7a",
+      "title": "Historical single-copy thermal pilot",
+      "path": "datasets/t7a.json",
+      "cases": 14
+    },
+    {
+      "id": "t7b",
+      "title": "Historical energy-basis TFD pilot",
+      "path": "datasets/t7b.json",
+      "cases": 14
+    },
+    {
+      "id": "t7e",
+      "title": "Historical complexified purification",
+      "path": "datasets/t7e.json",
+      "cases": 10
+    },
+    {
+      "id": "geometry-audit",
+      "title": "Small-sector thermal geometry audit",
+      "path": "datasets/geometry-audit.json",
+      "cases": 4
+    },
+    {
+      "id": "volume-controls",
+      "title": "RS/AL volume-prescription controls",
+      "path": "datasets/volume-controls.json",
+      "cases": 2
+    },
+    {
+      "id": "covariance-pilot",
+      "title": "Initial covariance reconstruction pilot",
+      "path": "datasets/covariance-pilot.json",
+      "cases": 6
+    },
+    {
+      "id": "t11-fl-sampling",
+      "title": "Prepared FL evolution sampling",
+      "path": "datasets/t11-fl-sampling.json",
+      "cases": 50
+    },
+    {
+      "id": "t1b-real-plane",
+      "title": "Positive volumes on two real-plane states",
+      "path": "datasets/t1b-real-plane.json",
+      "cases": 2
+    },
+    {
+      "id": "t5c-shape-recovery",
+      "title": "FL covariance shape recovery",
+      "path": "datasets/t5c-shape-recovery.json",
+      "cases": 84
+    },
+    {
+      "id": "t5c-weighted-input",
+      "title": "Weighted FL input geometry and volumes",
+      "path": "datasets/t5c-weighted-input.json",
+      "cases": 14
+    },
+    {
+      "id": "fl-regular-area",
+      "title": "Regular FL volume versus area",
+      "path": "datasets/fl-regular-area.json",
+      "cases": 5
+    },
+    {
+      "id": "fl-shape-scan",
+      "title": "Equal-area FL shape scan at J=2",
+      "path": "datasets/fl-shape-scan.json",
+      "cases": 440
+    },
+    {
+      "id": "binding-energy",
+      "title": "Same-number detachment energies",
+      "path": "datasets/binding-energy.json",
+      "cases": 8
+    },
+    {
+      "id": "state-space-probes",
+      "title": "Closed and open state evolution probes",
+      "path": "datasets/state-space-probes.json",
+      "cases": 6
+    },
+    {
+      "id": "sewing-probes",
+      "title": "Constructive edge sewing probes",
+      "path": "datasets/sewing-probes.json",
+      "cases": 5
+    }
+  ]
+}

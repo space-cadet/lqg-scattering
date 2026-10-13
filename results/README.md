@@ -1,5 +1,8 @@
 # Calculation results
 
+The [numerical-studies record](../notes/numerical-studies.md) indexes the
+calculations chronologically and links their drivers, results, and study reports.
+
 This directory holds saved JSON outputs from the project's numerical runs.
 Run records retain their task prefixes so they can be matched to the relevant
 experiment notes and Memory Bank records.
@@ -22,6 +25,9 @@ experiment notes and Memory Bank records.
   [TFD](t7b_results.json), and
   [small-sector geometry audit](t7_geometry_thermal_results.json),
   [complexified TFD](t7e_results.json).
+
+
+- **Thermal closure and closed geometry:** [ordinary-closure sweep](thermal-closure-temperature/README.md) and [separately closed projection](thermal-closed-projection/README.md), including area/volume distributions and the exact high-temperature area coefficient. The connected scientific account is in [the thermal-area note](../notes/thermal-area-sectors.md#section-16).
 
 The Python and Rust drivers write their default outputs here. T5e raw sweep
 inputs also belong here; `code/tools/run_t5e.sh` creates them before fitting.

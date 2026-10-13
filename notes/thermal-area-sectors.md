@@ -1,12 +1,12 @@
 # Thermal intertwiners: area sectors, spin, and volume
 
-Recorded 2026-10-08. This note connects the closed, single-copy Freidel–Livine (FL) volume studies with the selected two-copy squeezed construction, its occupation coefficients, and its reduced-state interpretation. The four-face $J_{\mathrm{in}}=1$ thermal occupation/spin distribution is calculated by two methods and independently checked in small sectors. Existing single-copy volume results provide the zero-temperature baseline; volume and entanglement calculations for the selected finite-temperature two-FL family remain open.
+Recorded 2026-10-08; extended 2026-10-13. This note connects the closed, single-copy Freidel–Livine (FL) volume studies with the selected two-copy squeezed construction, its occupation coefficients, and its geometric interpretation. The four-face $J_{\mathrm{in}}=1$ occupation/spin distribution, temperature-dependent closure, and separately closed projection are calculated and independently checked. The October 13 continuation develops the resulting area and positive-volume growth, with figures, tables, and an exact high-temperature area coefficient.
 
 **Agent responsible for this consolidation and update:** GPT 6.1 Sol (2026-10-08).
 
 This note consolidates the October 6 and October 8 physics discussions. The chronology at the end links their records. Analytic constructions, previously calculated examples, and remaining calculations are identified separately.
 
-Read the single-copy preliminaries first if the oscillator notation is unfamiliar. They explain what area fixes, what shape can still change, and why the smallest four-face sector needs care. The thermal sections then show how squeezing distributes probability over occupation and spin sectors. The volume baseline and the later closure discussion together specify what a finite-temperature volume study would need to measure.
+Read the single-copy preliminaries first if the oscillator notation is unfamiliar. They explain what area fixes, what shape can still change, and why the smallest four-face sector needs care. The thermal sections then show how squeezing distributes probability over occupation and spin sectors. The October 13 continuation then follows the measured closure defect, imposes separate singlet closure, and explains the geometric growth of the projected state.
 
 Further single-copy counting, lattice Hamiltonians, and Hamiltonian–volume commutators are recorded in the separate [volume-studies note](volume-studies.md). The existing thermal construction and volume baseline below are preserved.
 
@@ -43,6 +43,14 @@ Further single-copy counting, lattice Hamiltonians, and Hamiltonian–volume com
   - [Method B: magnetic counting and a finite difference](#section-12-03)
   - [Comparison settings, independent checks, and results](#section-12-04)
   - [Plots of the $J_{\mathrm{in}}=1$ results](#section-12-05)
+- [Heating, closure, and the growth of quantum geometry](#section-16)
+  - [Temperature and the initial state](#section-16-01)
+  - [Measuring how much a copy fails to close](#section-16-02)
+  - [Imposing separate closure without freezing the geometry](#section-16-03)
+  - [What heating does to the closed state](#section-16-04)
+  - [The high-temperature area law](#section-16-05)
+  - [Physical interpretation and Hawking temperature](#section-16-06)
+  - [Numerical checks and source of the figures](#section-16-07)
 - [Scope and next calculations](#section-13)
 - [Proposed further calculations](#section-14)
   - [1. Occupation and resultant-spin distributions](#section-14-01)
@@ -893,22 +901,286 @@ Both figures use the saved comparison arrays without rerunning the physics calcu
 
 The [plotting source](../code/thermal/plot_j1_spin.py) exports vector PDFs and 300-DPI PNGs. PDFs: [temperature and marginals](../figures/thermal-j1-spin/j1_spin_temperature.pdf), [joint spin maps](../figures/thermal-j1-spin/j1_spin_joint_maps.pdf). Array checks cover nonnegativity, marginal normalization, singlet probabilities, and method agreement; the rendered figures were inspected for readable, unclipped labels. Plots and this record were produced by **GPT 6.1 Sol** on 2026-10-08.
 
+<a id="section-16"></a>
+
+## Heating, closure, and the growth of quantum geometry
+
+*Results and physical discussion recorded on 2026-10-13.*
+
+What happens to a quantum polyhedron when we increase its temperature? One might expect its face areas and volume to fluctuate more strongly, while its faces continue to form a closed object. The two requirements are logically distinct. An increase in geometric fluctuations need not destroy closure, and satisfying a constraint on an extended system need not imply that each of its parts is closed. We can now follow these distinctions quantitatively in the two-copy construction developed above.
+
+The calculation has two stages. We first measure how heating changes the ordinary closure of either copy of the squeezed state. We then project onto states which are separately closed in both copies and examine the area and positive volume of the resulting state. This produces a direct answer: separate closure can be retained at every finite temperature without removing the temperature dependence of the geometry.
+
+<a id="section-16-01"></a>
+
+### Temperature and the initial state
+
+We use the four-face reference intertwiner already introduced in the occupation calculation,
+
+$$
+|\phi\rangle=\frac{F_{12}^{\dagger}}{\sqrt2}|0\rangle,
+\qquad
+|\Psi_\beta\rangle
+=U_\beta\bigl(|\phi\rangle_L\otimes|\overline\phi\rangle_R\bigr).
+$$
+
+Its initial total linear area is $J_{\mathrm{in}}=1$. Faces 1 and 2 each have spin $1/2$ and are coupled to a singlet; faces 3 and 4 initially have zero area. Thus the starting point is an exactly closed, zero-volume reference in the four-face Hilbert space. It is particularly useful for asking how heating populates additional faces and produces nonzero volume. The occupation and closure results apply to the coherent orbit as discussed above; the volume results in this section use this explicit reference.
+
+The thermal parameter enters through the same-mode squeeze,
+
+$$
+\tanh\theta=e^{-b/2},\qquad
+b=\beta\hbar\omega,\qquad
+T_*:=\frac{k_BT}{\hbar\omega}=\frac1b.
+$$
+
+The scale $\hbar\omega$ therefore fixes what we mean by temperature in the plots. Increasing $T_*$ strengthens the pair excitation and gives greater weight to higher occupation sectors. We continue to use $q$ for the final boson number in either copy and
+
+$$
+A:=\frac q2=\sum_{i=1}^4 j_i
+$$
+
+for its total linear area in spin units. The area $A$ can change even though the initial area label $J_{\mathrm{in}}$ is held fixed. All volume values below use the positive RS prescription and the existing project units, with $\gamma=0.2375$ and $\hbar=1$.
+
+<a id="section-16-02"></a>
+
+### Measuring how much a copy fails to close
+
+For an ordinary single-copy intertwiner, closure means that the total face flux annihilates the state. On the doubled space the individual operators must act on their respective tensor factors:
+
+$$
+\mathbf G_L=\sum_i\mathbf J_{iL},\qquad
+\mathbf G_R=\sum_i\mathbf J_{iR},
+$$
+
+$$
+(\mathbf G_L\otimes I_R)|\Psi\rangle=0,
+\qquad
+(I_L\otimes\mathbf G_R)|\Psi\rangle=0.
+$$
+
+This is stronger than asking the mean flux to vanish. A rotationally invariant mixed state can have $\langle\mathbf G\rangle=0$ while containing components of nonzero total spin. Those components have a residual flux whose direction averages away. To measure its size, rather than its mean direction, we calculate
+
+$$
+D_\beta:=\operatorname{Tr}(\rho_L\mathbf G_L^2)
+=\sum_{q,S}S(S+1)P_\beta(q,S),
+\qquad
+\rho_L=\operatorname{Tr}_R|\Psi_\beta\rangle\langle\Psi_\beta|.
+$$
+
+The quantity $\sqrt{D_\beta}$ is the RMS closure defect, expressed in units of $\hbar$. A complementary measure is
+
+$$
+P_{0,\beta}:=\sum_{q\ \mathrm{even}}P_\beta(q,S=0),
+$$
+
+which tells us what fraction of the state is exactly closed. The first measure asks how large the residual is; the second asks how much singlet support remains.
+
+**Table 1. Ordinary closure of either copy before separate projection.** The two copies give identical values. Temperature is $T_*=k_BT/(\hbar\omega)$.
+
+| $T_*$ | RMS closure defect $\sqrt{D_\beta}$ | Exactly closed fraction $P_{0,\beta}$ |
+|---:|---:|---:|
+| 0.125 | 0.05937 | 99.5316% |
+| 0.25 | 0.44672 | 77.7501% |
+| 0.5 | 1.37865 | 19.5317% |
+| 1 | 3.10919 | 2.64065% |
+| 2 | 6.41372 | 0.34037% |
+
+The effect is clear. Heating increases the residual flux in each ordinary copy and reduces its singlet fraction. At zero temperature we recover the closed input, with $D_\beta=0$ and $P_{0,\beta}=1$.
+
+![Temperature dependence of the ordinary per-copy closure defect, singlet fraction, and relative defect](../figures/thermal-closure-temperature/closure_temperature.png)
+
+**Figure 1.** Ordinary closure before projection. Panel (a) shows the growing RMS residual on a logarithmic vertical axis; panel (b) shows the decreasing probability of exact closure. Panel (c) divides the defect by the available total-spin scale, displaying $\sqrt{\langle\mathbf G^2\rangle/\langle A(A+1)\rangle}$. This relative measure peaks near $T_*=0.87$ and then decreases slightly, while the absolute residual continues to grow. The decrease reflects the growth of area, rather than a recovery of exact closure. [Vector PDF](../figures/thermal-closure-temperature/closure_temperature.pdf).
+
+The full state nevertheless obeys the combined constraint
+
+$$
+\bigl(\mathbf G_L\otimes I_R
+-I_L\otimes\overline{\mathbf G}_R\bigr)|\Psi_\beta\rangle=0.
+$$
+
+Here the bar indicates the conjugate right-copy representation. The squeeze preserves this combined generator. Its correlations compensate the ordinary closure residual of either copy. Likewise, conjugating the individual Gauss operators with $U_\beta$ preserves the transformed constraints. These are exact statements about the doubled construction. To obtain two polyhedra which are closed with respect to the ordinary fluxes, we must additionally select the separate singlet sectors.
+
+<a id="section-16-03"></a>
+
+### Imposing separate closure without freezing the geometry
+
+Let $P_{X,0}$ project onto total spin zero in copy $X$. The appropriate operator for imposing closure on both copies is a tensor product of these projectors:
+
+$$
+\mathcal P_0=P_{L,0}\otimes P_{R,0}.
+$$
+
+We form the normalized state
+
+$$
+|\Psi_\beta^{\mathrm{closed}}\rangle
+=\frac{\mathcal P_0|\Psi_\beta\rangle}{\sqrt{p_\beta}},
+\qquad
+p_\beta=\langle\Psi_\beta|\mathcal P_0|\Psi_\beta\rangle.
+$$
+
+Every component of this state is an ordinary singlet in both copies. Consequently both separate Gauss constraints vanish exactly. Notice what has and has not been fixed: total resultant spin is zero, but the area is still allowed to fluctuate. Closure restricts how the face angular momenta combine; it does not require their magnitudes to remain fixed.
+
+One might expect projecting two copies to retain the square of the single-copy singlet probability. This would be the answer for independent copies. The squeezed state is correlated. In an occupation sector its coefficient matrix obeys
+
+$$
+G^a C_q=C_qG^a,
+$$
+
+so it connects equal resultant-spin representations on the two sides. If the left copy is a singlet, the right copy is a singlet as well. It follows that
+
+$$
+p_\beta=P_{0,\beta},
+$$
+
+rather than $P_{0,\beta}^2$. Direct double projection of the small-sector coefficient matrices verifies this equality.
+
+The projected state exists at every finite temperature. For $b>0$, its vacuum-vacuum sector alone has positive squared norm $(1-e^{-b})^8e^{-2b}$, so the projected norm cannot vanish. At zero temperature the full input is already closed and $p_\beta\to1$.
+
+<a id="section-16-04"></a>
+
+### What heating does to the closed state
+
+After projection, the area probability is simply the normalized singlet weight,
+
+$$
+\mathcal P_\beta(A)
+=\frac{P_\beta(q=2A,S=0)}{p_\beta}.
+$$
+
+The positive volume is calculated on the same closed support,
+
+$$
+\langle V_{\mathrm{RS}}\rangle_{\mathrm{closed}}
+=\frac{\langle\Psi_\beta|\mathcal P_0
+(V_{\mathrm{RS},L}\otimes I_R)
+\mathcal P_0|\Psi_\beta\rangle}{p_\beta}.
+$$
+
+There is no signed-mean substitution in this expression: $V_{\mathrm{RS}}$ is the positive operator obtained by summing the four $\sqrt{|q_{ijk}|}$ contributions. Its spectrum and kernel determine the mean volume and the probability of nonzero volume separately.
+
+**Table 2. Geometry after imposing separate closure.** All entries refer to the normalized projected state. The area standard deviation makes the increasing spread explicit; the retained fraction refers to the original unprojected state.
+
+| $T_*$ | Retained fraction $p_\beta$ | Mean area $\langle A\rangle$ | Area standard deviation | Mean positive RS volume |
+|---:|---:|---:|---:|---:|
+| 0.125 | 99.5316% | 1.000002 | 0.00150 | $3.43\times10^{-8}$ |
+| 0.25 | 77.7501% | 1.006029 | 0.08229 | 0.0001025 |
+| 0.5 | 19.5317% | 1.302780 | 0.60889 | 0.0064133 |
+| 1 | 2.64065% | 2.787747 | 1.78945 | 0.0723452 |
+| 2 | 0.34037% | 6.475739 | 3.94105 | 0.3535060 |
+
+The constraint has not removed the response to heating. The projected state occupies successively larger area sectors, its area distribution broadens, and its positive mean volume increases. The declining retained fraction and the growing geometry describe different aspects of the same calculation: heating places more of the original state outside separate singlet support, while the normalized part which remains closed expands in area and volume.
+
+![Retained fraction, projected mean area, and projected positive RS volume as functions of temperature](../figures/thermal-closed-projection/closed_projection_temperature.png)
+
+**Figure 2.** Separate closure and geometric growth. Panel (a) shows the fraction retained by double-singlet projection. Panels (b) and (c) show the ordinary area and positive RS volume within the normalized projected state. Exact closure holds throughout all three curves. The area is measured in spin units and the volume in the stated RS project units. [Vector PDF](../figures/thermal-closed-projection/closed_projection_temperature.pdf).
+
+A closed state need not have four active faces or a nonzero volume. The initial two-face singlet illustrates this immediately. We therefore also ask how much of the heated, projected state occupies four nonzero-area faces, and how much lies outside the positive-volume kernel. These are measured probabilities, rather than shape labels inferred from a mean volume.
+
+![Conditional area distributions and probabilities of four active faces and nonzero volume](../figures/thermal-closed-projection/closed_projection_distributions.png)
+
+**Figure 3.** The geometric content of the closed state. Panel (a) shows the area probability after projection: the initially concentrated distribution spreads to larger areas as temperature rises. Curves join discrete integer-area probabilities, with markers at the actual sectors. Panel (b) shows the probabilities of four active faces and nonzero positive volume, both conditional on separate closure. At $T_*=1$ these probabilities are 18.61% and 14.08%; at $T_*=2$ they are 48.48% and 36.34%. Heating thus populates closed configurations with additional active faces and nonzero volume. [Vector PDF](../figures/thermal-closed-projection/closed_projection_distributions.pdf).
+
+<a id="section-16-05"></a>
+
+### The high-temperature area law
+
+The nearly straight area curve suggests a simple question: is there a definite proportionality between area and temperature? On the plotted interval $1\le T_*\le2$, a fit on 1,001 uniformly spaced temperatures gives
+
+$$
+\langle A\rangle_{\mathrm{closed}}
+\simeq3.70213\,T_*-0.96406.
+$$
+
+The coefficient of determination is $R^2=0.999686$. This is an interval fit with an offset. To determine the limiting proportionality constant, we can instead use the exact singlet-sector sums.
+
+Write $K$ for a particular final integer area, and couple faces 1 and 2 to spin $s$, with faces 3 and 4 coupled to the same spin so that the total state is a singlet. We can parameterize the occupations of the two groups as $2s+2r$ and $2s+2l$, where $r,l\ge0$ and $r+l\le K$. Then
+
+$$
+2s=K-r-l,\qquad
+f=r(K-l+1),\qquad
+a=K+r-l.
+$$
+
+Here $f$ is the eigenvalue of $F_{12}^\dagger F_{12}$, $a$ is the occupation of the first pair of faces, and the multiplicity is $(2s+1)^2=(K-r-l+1)^2$. The squared coefficient is built from the six terms $f^2,a^2,1,fa,f,a$. Summing them with this multiplicity produces finite polynomials in $K$. Thus the large-area behavior is available analytically, rather than inferred by extending a truncated numerical distribution to arbitrarily high temperature.
+
+There are two sums to consider. The first is the total retained probability $p_\beta$. The second is the unnormalized area moment
+
+$$
+R_\beta:=\sum_{K=0}^{\infty}K\,P_\beta(q=2K,S=0),
+\qquad
+\langle A\rangle_{\mathrm{closed}}=\frac{R_\beta}{p_\beta}.
+$$
+
+At high temperature, $b=1/T_*\to0$. The sector weights contain $e^{-2bK}$, and their leading polynomial sums can be evaluated using
+
+$$
+\sum_{K=0}^{\infty}K^d e^{-2bK}
+\sim\frac{d!}{(2b)^{d+1}}.
+$$
+
+Combining the six contributions gives
+
+$$
+p_\beta\sim\frac7{256}b^3,
+\qquad
+R_\beta\sim\frac{57}{512}b^2.
+$$
+
+Dividing the two expressions yields the area law
+
+$$
+\boxed{\langle A\rangle_{\mathrm{closed}}
+\sim\frac{57}{14}\,T_*
+=4.07142857\,\frac{k_BT}{\hbar\omega}.}
+$$
+
+The same calculation explains why the retained fraction becomes small at high temperature: $p_\beta$ decreases as $T_*^{-3}$, while the area of the normalized closed state grows as $T_*$. These behaviors are consistent because they concern the probability of obtaining the closed state and the geometry within that state, respectively.
+
+The volume curve is more curved than the area curve. Its linear fit on the same interval is $\langle V_{\mathrm{RS}}\rangle\simeq0.282623T_*-0.223775$, but its local slope rises from 0.196 at $T_*=1$ to 0.351 at $T_*=2$. The data therefore establish increasing positive volume without assigning it a constant linear high-temperature coefficient. Detailed fit statistics and the symbolic finite sums are in the [fit report](../results/thermal-closed-projection/temperature_fit.json).
+
+<a id="section-16-06"></a>
+
+### Physical interpretation and the relation to Hawking temperature
+
+The central physical effect is occupation of higher-area sectors. The squeeze creates matched excitations in the two copies. Separate singlet projection removes the components which fail ordinary closure, while retaining closed superpositions over changing face areas. As heating strengthens the excitation, the surviving closed state acquires larger mean area, larger area fluctuations, and positive volume. Exact gauge closure and thermal changes in geometry are therefore compatible in this construction.
+
+It is useful to compare this result with a familiar relation. For a Schwarzschild black hole, the Hawking temperature measured at infinity and horizon area obey
+
+$$
+T_H=\frac{\hbar c}{2k_B\sqrt{\pi A_H}},
+\qquad
+A_H=\frac{\hbar^2c^2}{4\pi k_B^2T_H^2}.
+$$
+
+The horizon becomes hotter as its area decreases. In the present calculation, by contrast, $T_*$ measures excitation relative to a fixed oscillator scale $\hbar\omega$, and heating increases the occupation-derived area. This identifies the meaning of the observed growth: it is the response of the constrained oscillator geometry to increased excitation. Relating that parameter to a horizon temperature would require specifying how the excitation scale is tied to the horizon's gravitational energy and surface gravity. The Schwarzschild relation itself is reviewed in [Hawking radiation](https://www.scholarpedia.org/article/Hawking_radiation).
+
+<a id="section-16-07"></a>
+
+### Numerical checks and source of the figures
+
+The ordinary-closure sweep covers 125 temperatures; the separately closed geometry calculation covers 85. The latter uses occupation probabilities through $q=160$ and positive-volume traces through final area $A=50$. Magnetic counting and explicit group-spin coupling agree on the projected probabilities. Direct double projection verifies both Gauss constraints and the equality of single- and double-singlet probabilities in independently constructed small sectors. Volume traces are checked against the saved closed-basis catalogue through $A=12$, and kernel probabilities against 148 archived grasp blocks. The largest bound on the omitted conditional mean-volume contribution is $5.4\times10^{-12}$.
+
+The calculations and verification details are collected in the [ordinary-closure report](../results/thermal-closure-temperature/README.md) and [closed-projection report](../results/thermal-closed-projection/README.md). Their tables retain full precision and their figures are available as vector PDFs and 300-dpi PNGs. The drivers live in `code/thermal/`; reusable projected-volume routines live in `code/python/lqg_scattering/thermal_projection.py`. This keeps the scientific narrative here and the full numerical records beside the reproducible calculation.
+
+
 <a id="section-13"></a>
 
 ## Scope and next calculations
 
-The vacuum and first-excited thermal calculations establish occupation and spin information. The single-copy studies establish a separate zero-temperature volume baseline. Neither set alone determines positive volume moments of the selected finite-temperature two-FL state.
+The vacuum and first-excited thermal calculations establish occupation and spin information. The October 13 continuation additionally calculates ordinary closure and the area and positive-volume moments of the separately closed projection. The original single-copy studies remain its zero-temperature operator baseline.
 
 The exact vacuum curve establishes how oscillator-mode multiplicity creates a peak in a sector probability. Its $g_q$ counts the full eight-mode occupation basis. It is not the degeneracy of a separately closed, gauge-invariant intertwiner sector. The actual selected T9 state starts with a conjugate pair of FL intertwiners at nonzero $J$. Its amplitudes include annihilation, creation, and coherent interference within each final sector. The vacuum curve therefore does not predict that excited-state distribution.
 
-The $J_{\mathrm{in}}=1$ sector and spin probabilities are now calculated, with coefficient matrices checked through $q=4$. Further work includes larger initial $J$, the reduced-state spectrum and entropy, and geometric and two-sided observables. Compare the state with an explicitly specified ensemble; the low-temperature limit already excludes the unrestricted positive area Hamiltonian described above. Convergence for area and volume observables should be assessed from their expectation contributions as the cutoff grows, since small omitted probability alone does not bound an unbounded observable.
+The $J_{\mathrm{in}}=1$ sector and spin probabilities are now calculated, with coefficient matrices checked through $q=4$. Further work includes larger initial $J$, the reduced-state spectrum and entropy, rotated geometric inputs, and two-sided observables. Compare the state with an explicitly specified ensemble; the low-temperature limit already excludes the unrestricted positive area Hamiltonian described above. Convergence for area and volume observables should be assessed from their expectation contributions as the cutoff grows, since small omitted probability alone does not bound an unbounded observable.
 
 
 <a id="section-14"></a>
 
 ## Proposed further calculations
 
-Discussed and recorded on 2026-10-08 by **GPT 6.1 Sol**. The following preserves the proposed calculation program. The first $J_{\mathrm{in}}=1$ occupation/spin calculation and closure diagnostics are now implemented as documented above; the broader program remains open. Larger initial areas would follow once the method and convergence checks are established. Temperature values, geometric labels, numerical tolerances, and cutoff sequences must be specified before interpreting new results.
+Discussed and recorded on 2026-10-08 by **GPT 6.1 Sol**. The following preserves the proposed calculation program. The first $J_{\mathrm{in}}=1$ occupation/spin calculation, the ordinary-closure sweep, and the separately closed geometry study are now implemented as documented above; the remaining proposals below preserve their original October 8 wording. Larger initial areas would follow once the method and convergence checks are established. Temperature values, geometric labels, numerical tolerances, and cutoff sequences must be specified before interpreting new results.
 
 <a id="section-14-01"></a>
 
@@ -997,5 +1269,6 @@ The order below follows the saved discussion records. Dates identify sessions; i
 | October 8, 2026 — $J_{\mathrm{in}}=1$ plots | Occupation marginal versus temperature → ordinary spin marginal → graphical overlap of both methods → single-copy singlet probability versus temperature → joint spin/occupation maps with a common logarithmic scale and explicit display cutoffs. | Current chat; [plot summary](../figures/thermal-j1-spin/j1_spin_plot_summary.json); plotted and documented by **GPT 6.1 Sol**. |
 | October 8, 2026 — apparent thermal cutoff | Larger-spin excitation at higher temperature → distinction between the exact $S\le q/2$ and parity restrictions, the probability display floor, and numerical/display occupation cutoffs → a positive lower bound proving support at every allowed $(q,S)$ for finite positive temperature. | Current chat; documented by **GPT 6.1 Sol**. |
 | October 8, 2026 — single-copy volume baseline | Ordinary versus transformed volume and separate closure → existing zero-temperature area and shape studies → integer singlet areas → occupation correction at $J=2$ → fixed total area versus fixed face spins → small-sector volume block weights → existing plots and normalization → proposed thermal volume comparisons. Added pedagogical preliminaries, volume-study links, and a linked contents list; no new volume numerical run was performed. | This note; documentation update by **GPT 6.1 Sol**. |
+| October 13, 2026 — closure, separate projection, and thermal geometric growth | Ordinary per-copy closure versus combined closure → temperature sweep of the RMS defect and singlet fraction → double-singlet projection → equality of single- and double-projection probabilities → projected area and positive volume → occupation and geometric-support distributions → exact high-temperature coefficient $57/14$ → interpretation of heating and comparison with the Schwarzschild relation. | [Pedagogical continuation](#section-16), [closure report](../results/thermal-closure-temperature/README.md), and [projection report](../results/thermal-closed-projection/README.md). |
 
-Earlier numerical studies provide background but are not reconstructed topic by topic here. The October 6 transcript and October 8 recap distinguish those prior pilots from the selected two-FL construction. Its $J_{\mathrm{in}}=1$ occupation/spin calculation is now recorded above; the broader physical and geometric study remains open.
+Earlier numerical studies provide background but are not reconstructed topic by topic here. The October 6 transcript and October 8 recap distinguish those prior pilots from the selected two-FL construction. Its $J_{\mathrm{in}}=1$ occupation/spin calculation and the October 13 separately closed geometry results are recorded above; the further proposals retain their historical context.

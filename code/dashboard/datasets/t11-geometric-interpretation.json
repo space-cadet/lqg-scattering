@@ -1,0 +1,1027 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "Prepared tetrahedral FL states and the volume crossover",
+    "subtitle": "Five explicitly constructed K=4 FL references: equal input face areas, phi=90,60,30,10,0 degrees. Saved face-spin distributions, pair correlations, angular fluctuations, volume distributions and overlaps; comparisons with the first three energy groups of complete/ring Hamiltonians at t=1,U=20. The complete ground is kernel-dominated despite nearly unit four-face weight."
+  },
+  "columns": [
+    {
+      "key": "runId",
+      "label": "Case",
+      "type": "string"
+    },
+    {
+      "key": "parameters.state",
+      "label": "state",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.four_face_probability",
+      "label": "four face probability",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.mean_active_faces",
+      "label": "mean active faces",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.volume_mean",
+      "label": "volume mean",
+      "type": "number",
+      "precision": 8,
+      "unit": "project units"
+    },
+    {
+      "key": "results.volume_sd",
+      "label": "volume sd",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.geometric_volume_mean",
+      "label": "geometric volume mean",
+      "type": "number",
+      "precision": 8,
+      "unit": "project units"
+    },
+    {
+      "key": "results.conditional_volume_mean",
+      "label": "conditional volume mean",
+      "type": "number",
+      "precision": 8,
+      "unit": "project units"
+    },
+    {
+      "key": "results.probability_zero_volume",
+      "label": "probability zero volume",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.signed_q_mean",
+      "label": "signed q mean",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.q_rms",
+      "label": "q rms",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.conditional_angle_rms_sd",
+      "label": "conditional angle rms sd",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.conditional_angle_max_sd",
+      "label": "conditional angle max sd",
+      "type": "number",
+      "precision": 8
+    }
+  ],
+  "charts": {
+    "type": "scatter",
+    "x": "results.four_face_probability",
+    "y": "results.volume_mean"
+  },
+  "runs": [
+    {
+      "runId": "t11-geometric-interpretation:FL_phi90:1",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared tetrahedral FL states and the volume crossover",
+      "catalogueDate": "2026-10-11",
+      "parameters": {
+        "state": "FL_phi90"
+      },
+      "results": {
+        "four_face_probability": 0.7546296296296306,
+        "mean_active_faces": 3.750000000000005,
+        "volume_mean": 0.3189380712919666,
+        "volume_sd": 0.23973176781151936,
+        "geometric_volume_mean": 0.03758721216485136,
+        "conditional_volume_mean": 0.422641861343955,
+        "probability_zero_volume": 0.35648148148148195,
+        "signed_q_mean": -0.7216878364870329,
+        "q_rms": 0.9409658158863523,
+        "conditional_angle_rms_sd": 0.5571473822363604,
+        "conditional_angle_max_sd": 0.5571473822363604
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-geometric-interpretation/README.md": "be3c91cb722dd726159f955ee5183e0381268217b02bb47c043462518e7e8875",
+          "results/t11-geometric-interpretation/area_sectors.csv": "a58745ab6e1dcd5766047b4d38329bde0393b31a8b085fda5f36838e5ae403a1",
+          "results/t11-geometric-interpretation/energy_groups.csv": "c64f52af751b0b108b041402a335fce7cff2f2c350457d330d207f9cfe1644f4",
+          "results/t11-geometric-interpretation/independent_checks.json": "ad5051be30f3b9caba5af41002da5761701df067d141e14aa768559e87efe3f4",
+          "results/t11-geometric-interpretation/pair_correlations.csv": "b0327b99e22ff92020e861469e514377acaa1ba6db2266a14cb05669206d84d5",
+          "results/t11-geometric-interpretation/protocol.json": "b39fc5121f06cb0c8cea3d022c0cd75aa3493c84bb69b50c7bf0693fe567d699",
+          "results/t11-geometric-interpretation/provenance.json": "a604e8cd26bc17e8ee8f3bfdb9cf9f042542524a6a24b5c04b026958417f210e",
+          "results/t11-geometric-interpretation/reference_inputs.json": "a34e6f228fac6f90fca5f57b1d3cb3fdc423e64ec80d736a07412cc4cf19cc4a",
+          "results/t11-geometric-interpretation/reference_overlaps.csv": "a8c22345dcb29516b5bbf3d8393b7e679887dbdb5e106d802bb114d3163352d4",
+          "results/t11-geometric-interpretation/sha256.json": "b2ae3747b3bb653abf555251d5510c2d6eceb18504a3aeed37ce133e5db12228",
+          "results/t11-geometric-interpretation/source_hashes.json": "39ce9017b25df623ce2ab0bc376c5230511a305d4801db2fb1b5ac2c219347f9",
+          "results/t11-geometric-interpretation/state_details.json": "9090f730f90918e5ca995687b49d8a863d22617ec439e0c998a1db40da2dd05c",
+          "results/t11-geometric-interpretation/state_summary.csv": "6330264041f6054b89d17c4fc225d5f111d7d2b025116fea7bb45f076f50d384",
+          "results/t11-geometric-interpretation/states_and_operators.npz": "8bc5c04190fd61fcde4167e5a68c0ed32bf8f680cb0d5bf88f83d8fe3ae110f4",
+          "results/t11-geometric-interpretation/thermal_geometry.csv": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548",
+          "results/t11-geometric-interpretation/validation.json": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3",
+          "results/t11-geometric-interpretation/volume_distributions.csv": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce",
+          "notes/t11-geometric-interpretation.md": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
+          "code/python/t11_geometric_interpretation.py": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
+          "code/python/verify_t11_geometric_interpretation.py": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f",
+          "code/python/plot_t11_geometric_interpretation.py": "cae00ec4ce3d21febe19edbee7ca1187973ed0180170cbfa5fa41d31af528ce2",
+          "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.t11-geometric-interpretation.table.rows[0]"
+      },
+      "assessment": {
+        "summary": "Five explicitly constructed K=4 FL references: equal input face areas, phi=90,60,30,10,0 degrees. Saved face-spin distributions, pair correlations, angular fluctuations, volume distributions and overlaps; comparisons with the first three energy groups of complete/ring Hamiltonians at t=1,U=20. The complete ground is kernel-dominated despite nearly unit four-face weight.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 42-test suite passed"
+      },
+      "artifacts": [
+        {
+          "label": "README.md",
+          "path": "../study-assets/results/t11-geometric-interpretation/README.txt",
+          "kind": "data",
+          "sha256": "be3c91cb722dd726159f955ee5183e0381268217b02bb47c043462518e7e8875",
+          "sourcePath": "results/t11-geometric-interpretation/README.md",
+          "sourceSha256": "be3c91cb722dd726159f955ee5183e0381268217b02bb47c043462518e7e8875"
+        },
+        {
+          "label": "area_sectors.csv",
+          "path": "../study-assets/results/t11-geometric-interpretation/area_sectors.csv",
+          "kind": "data",
+          "sha256": "a58745ab6e1dcd5766047b4d38329bde0393b31a8b085fda5f36838e5ae403a1",
+          "sourcePath": "results/t11-geometric-interpretation/area_sectors.csv",
+          "sourceSha256": "a58745ab6e1dcd5766047b4d38329bde0393b31a8b085fda5f36838e5ae403a1"
+        },
+        {
+          "label": "energy_groups.csv",
+          "path": "../study-assets/results/t11-geometric-interpretation/energy_groups.csv",
+          "kind": "data",
+          "sha256": "c64f52af751b0b108b041402a335fce7cff2f2c350457d330d207f9cfe1644f4",
+          "sourcePath": "results/t11-geometric-interpretation/energy_groups.csv",
+          "sourceSha256": "c64f52af751b0b108b041402a335fce7cff2f2c350457d330d207f9cfe1644f4"
+        },
+        {
+          "label": "independent_checks.json",
+          "path": "../study-assets/results/t11-geometric-interpretation/independent_checks.json",
+          "kind": "data",
+          "sha256": "ad5051be30f3b9caba5af41002da5761701df067d141e14aa768559e87efe3f4",
+          "sourcePath": "results/t11-geometric-interpretation/independent_checks.json",
+          "sourceSha256": "ad5051be30f3b9caba5af41002da5761701df067d141e14aa768559e87efe3f4"
+        },
+        {
+          "label": "pair_correlations.csv",
+          "path": "../study-assets/results/t11-geometric-interpretation/pair_correlations.csv",
+          "kind": "data",
+          "sha256": "b0327b99e22ff92020e861469e514377acaa1ba6db2266a14cb05669206d84d5",
+          "sourcePath": "results/t11-geometric-interpretation/pair_correlations.csv",
+          "sourceSha256": "b0327b99e22ff92020e861469e514377acaa1ba6db2266a14cb05669206d84d5"
+        },
+        {
+          "label": "protocol.json",
+          "path": "../study-assets/results/t11-geometric-interpretation/protocol.json",
+          "kind": "data",
+          "sha256": "b39fc5121f06cb0c8cea3d022c0cd75aa3493c84bb69b50c7bf0693fe567d699",
+          "sourcePath": "results/t11-geometric-interpretation/protocol.json",
+          "sourceSha256": "b39fc5121f06cb0c8cea3d022c0cd75aa3493c84bb69b50c7bf0693fe567d699"
+        },
+        {
+          "label": "provenance.json",
+          "path": "../study-assets/results/t11-geometric-interpretation/provenance.json",
+          "kind": "data",
+          "sha256": "a604e8cd26bc17e8ee8f3bfdb9cf9f042542524a6a24b5c04b026958417f210e",
+          "sourcePath": "results/t11-geometric-interpretation/provenance.json",
+          "sourceSha256": "a604e8cd26bc17e8ee8f3bfdb9cf9f042542524a6a24b5c04b026958417f210e"
+        },
+        {
+          "label": "reference_inputs.json",
+          "path": "../study-assets/results/t11-geometric-interpretation/reference_inputs.json",
+          "kind": "data",
+          "sha256": "a34e6f228fac6f90fca5f57b1d3cb3fdc423e64ec80d736a07412cc4cf19cc4a",
+          "sourcePath": "results/t11-geometric-interpretation/reference_inputs.json",
+          "sourceSha256": "a34e6f228fac6f90fca5f57b1d3cb3fdc423e64ec80d736a07412cc4cf19cc4a"
+        },
+        {
+          "label": "reference_overlaps.csv",
+          "path": "../study-assets/results/t11-geometric-interpretation/reference_overlaps.csv",
+          "kind": "data",
+          "sha256": "a8c22345dcb29516b5bbf3d8393b7e679887dbdb5e106d802bb114d3163352d4",
+          "sourcePath": "results/t11-geometric-interpretation/reference_overlaps.csv",
+          "sourceSha256": "a8c22345dcb29516b5bbf3d8393b7e679887dbdb5e106d802bb114d3163352d4"
+        },
+        {
+          "label": "sha256.json",
+          "path": "../study-assets/results/t11-geometric-interpretation/sha256.json",
+          "kind": "data",
+          "sha256": "b2ae3747b3bb653abf555251d5510c2d6eceb18504a3aeed37ce133e5db12228",
+          "sourcePath": "results/t11-geometric-interpretation/sha256.json",
+          "sourceSha256": "b2ae3747b3bb653abf555251d5510c2d6eceb18504a3aeed37ce133e5db12228"
+        },
+        {
+          "label": "source_hashes.json",
+          "path": "../study-assets/results/t11-geometric-interpretation/source_hashes.json",
+          "kind": "data",
+          "sha256": "39ce9017b25df623ce2ab0bc376c5230511a305d4801db2fb1b5ac2c219347f9",
+          "sourcePath": "results/t11-geometric-interpretation/source_hashes.json",
+          "sourceSha256": "39ce9017b25df623ce2ab0bc376c5230511a305d4801db2fb1b5ac2c219347f9"
+        },
+        {
+          "label": "state_details.json",
+          "path": "../study-assets/results/t11-geometric-interpretation/state_details.json",
+          "kind": "data",
+          "sha256": "9090f730f90918e5ca995687b49d8a863d22617ec439e0c998a1db40da2dd05c",
+          "sourcePath": "results/t11-geometric-interpretation/state_details.json",
+          "sourceSha256": "9090f730f90918e5ca995687b49d8a863d22617ec439e0c998a1db40da2dd05c"
+        },
+        {
+          "label": "state_summary.csv",
+          "path": "../study-assets/results/t11-geometric-interpretation/state_summary.csv",
+          "kind": "data",
+          "sha256": "6330264041f6054b89d17c4fc225d5f111d7d2b025116fea7bb45f076f50d384",
+          "sourcePath": "results/t11-geometric-interpretation/state_summary.csv",
+          "sourceSha256": "6330264041f6054b89d17c4fc225d5f111d7d2b025116fea7bb45f076f50d384"
+        },
+        {
+          "label": "states_and_operators.npz",
+          "path": "../study-assets/results/t11-geometric-interpretation/states_and_operators.npz",
+          "kind": "operators",
+          "sha256": "8bc5c04190fd61fcde4167e5a68c0ed32bf8f680cb0d5bf88f83d8fe3ae110f4",
+          "sourcePath": "results/t11-geometric-interpretation/states_and_operators.npz",
+          "sourceSha256": "8bc5c04190fd61fcde4167e5a68c0ed32bf8f680cb0d5bf88f83d8fe3ae110f4"
+        },
+        {
+          "label": "thermal_geometry.csv",
+          "path": "../study-assets/results/t11-geometric-interpretation/thermal_geometry.csv",
+          "kind": "data",
+          "sha256": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548",
+          "sourcePath": "results/t11-geometric-interpretation/thermal_geometry.csv",
+          "sourceSha256": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548"
+        },
+        {
+          "label": "validation.json",
+          "path": "../study-assets/results/t11-geometric-interpretation/validation.json",
+          "kind": "data",
+          "sha256": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3",
+          "sourcePath": "results/t11-geometric-interpretation/validation.json",
+          "sourceSha256": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3"
+        },
+        {
+          "label": "volume_distributions.csv",
+          "path": "../study-assets/results/t11-geometric-interpretation/volume_distributions.csv",
+          "kind": "data",
+          "sha256": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce",
+          "sourcePath": "results/t11-geometric-interpretation/volume_distributions.csv",
+          "sourceSha256": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce"
+        },
+        {
+          "label": "t11-geometric-interpretation.md",
+          "path": "../study-assets/notes/t11-geometric-interpretation.txt",
+          "kind": "data",
+          "sha256": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "sourcePath": "notes/t11-geometric-interpretation.md",
+          "sourceSha256": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754"
+        },
+        {
+          "label": "geometric_diagnostics.py",
+          "path": "../study-assets/code/python/lqg_scattering/geometric_diagnostics.py",
+          "kind": "data",
+          "sha256": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
+          "sourcePath": "code/python/lqg_scattering/geometric_diagnostics.py",
+          "sourceSha256": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d"
+        },
+        {
+          "label": "t11_geometric_interpretation.py",
+          "path": "../study-assets/code/python/t11_geometric_interpretation.py",
+          "kind": "data",
+          "sha256": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
+          "sourcePath": "code/python/t11_geometric_interpretation.py",
+          "sourceSha256": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568"
+        },
+        {
+          "label": "verify_t11_geometric_interpretation.py",
+          "path": "../study-assets/code/python/verify_t11_geometric_interpretation.py",
+          "kind": "data",
+          "sha256": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f",
+          "sourcePath": "code/python/verify_t11_geometric_interpretation.py",
+          "sourceSha256": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f"
+        },
+        {
+          "label": "plot_t11_geometric_interpretation.py",
+          "path": "../study-assets/code/python/plot_t11_geometric_interpretation.py",
+          "kind": "data",
+          "sha256": "cae00ec4ce3d21febe19edbee7ca1187973ed0180170cbfa5fa41d31af528ce2",
+          "sourcePath": "code/python/plot_t11_geometric_interpretation.py",
+          "sourceSha256": "cae00ec4ce3d21febe19edbee7ca1187973ed0180170cbfa5fa41d31af528ce2"
+        },
+        {
+          "label": "test_geometric_diagnostics.py",
+          "path": "../study-assets/code/python/test_geometric_diagnostics.py",
+          "kind": "data",
+          "sha256": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e",
+          "sourcePath": "code/python/test_geometric_diagnostics.py",
+          "sourceSha256": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
+        }
+      ],
+      "figures": [
+        {
+          "title": "Four-face FL references and thermal geometric diagnostics",
+          "path": "../study-assets/results/t11-geometric-interpretation/thermal_geometric_diagnostics.png",
+          "tags": [
+            "T11"
+          ]
+        }
+      ],
+      "verification": {
+        "checks": {
+          "independent_checks.json": {
+            "threshold": 2e-10,
+            "independence": "explicit magnetic ladder dots, epsilon triples, sliced traces, matrix-exponential Gibbs states; shared singlet basis; no new Rust run"
+          },
+          "validation.json": {
+            "FL_phi90_projection": 4.5102810375396984e-17,
+            "FL_phi60_projection": 5.594315114139762e-17,
+            "FL_phi30_projection": 5.553824967135427e-17,
+            "FL_phi10_projection": 8.092071311423672e-17,
+            "FL_phi0_projection": 5.551115123125783e-17,
+            "complete_eigen_residual": 1.2079226507921703e-13,
+            "ring_eigen_residual": 3.126388037344441e-13,
+            "FL_phi90_trace": 1.1102230246251565e-15,
+            "FL_phi90_positivity": 1.6554906634158862e-16,
+            "FL_phi90_sector_sum": 1.5543122344752192e-15,
+            "FL_phi60_trace": 4.440892098500626e-16,
+            "FL_phi60_positivity": 1.8907252753689574e-16,
+            "FL_phi60_sector_sum": 0.0,
+            "FL_phi30_trace": 6.661338147750939e-16,
+            "FL_phi30_positivity": 3.00694125623345e-16,
+            "FL_phi30_sector_sum": 7.771561172376096e-16,
+            "FL_phi10_trace": 4.440892098500626e-16,
+            "FL_phi10_positivity": 1.9692004939951017e-16,
+            "FL_phi10_sector_sum": 6.661338147750939e-16,
+            "FL_phi0_trace": 8.881784197001252e-16,
+            "FL_phi0_positivity": 2.906794706723019e-16,
+            "FL_phi0_sector_sum": 2.220446049250313e-16,
+            "complete_level0_trace": 3.3306690738754696e-16,
+            "complete_level0_positivity": 1.0582722345377969e-16,
+            "complete_level0_sector_sum": 2.220446049250313e-16,
+            "complete_level1_trace": 4.440892098500626e-16,
+            "complete_level1_positivity": 7.81877150232865e-17,
+            "complete_level1_sector_sum": 6.661338147750939e-16,
+            "complete_level2_trace": 4.440892098500626e-16,
+            "complete_level2_positivity": 8.125431618431609e-17,
+            "complete_level2_sector_sum": 2.220446049250313e-16,
+            "ring_level0_trace": 7.771561172376096e-16,
+            "ring_level0_positivity": 1.6340159225723458e-16,
+            "ring_level0_sector_sum": 1.1102230246251565e-15,
+            "ring_level1_trace": 4.440892098500626e-16,
+            "ring_level1_positivity": 1.1855310969486547e-17,
+            "ring_level1_sector_sum": 6.661338147750939e-16,
+            "ring_level2_trace": 8.881784197001252e-16,
+            "ring_level2_positivity": 3.2542526293088984e-17,
+            "ring_level2_sector_sum": 4.440892098500626e-16
+          }
+        }
+      }
+    },
+    {
+      "runId": "t11-geometric-interpretation:FL_phi60:2",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared tetrahedral FL states and the volume crossover",
+      "catalogueDate": "2026-10-11",
+      "parameters": {
+        "state": "FL_phi60"
+      },
+      "results": {
+        "four_face_probability": 0.7557990933641979,
+        "mean_active_faces": 3.7500000000000018,
+        "volume_mean": 0.3175040406505154,
+        "volume_sd": 0.2391431162028539,
+        "geometric_volume_mean": 0.037418210033018116,
+        "conditional_volume_mean": 0.4200905286049602,
+        "probability_zero_volume": 0.3576750578703707,
+        "signed_q_mean": -0.6250000000000007,
+        "q_rms": 0.9340213238108293,
+        "conditional_angle_rms_sd": 0.5373467295891358,
+        "conditional_angle_max_sd": 0.5569076363288967
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-geometric-interpretation/README.md": "be3c91cb722dd726159f955ee5183e0381268217b02bb47c043462518e7e8875",
+          "results/t11-geometric-interpretation/area_sectors.csv": "a58745ab6e1dcd5766047b4d38329bde0393b31a8b085fda5f36838e5ae403a1",
+          "results/t11-geometric-interpretation/energy_groups.csv": "c64f52af751b0b108b041402a335fce7cff2f2c350457d330d207f9cfe1644f4",
+          "results/t11-geometric-interpretation/independent_checks.json": "ad5051be30f3b9caba5af41002da5761701df067d141e14aa768559e87efe3f4",
+          "results/t11-geometric-interpretation/pair_correlations.csv": "b0327b99e22ff92020e861469e514377acaa1ba6db2266a14cb05669206d84d5",
+          "results/t11-geometric-interpretation/protocol.json": "b39fc5121f06cb0c8cea3d022c0cd75aa3493c84bb69b50c7bf0693fe567d699",
+          "results/t11-geometric-interpretation/provenance.json": "a604e8cd26bc17e8ee8f3bfdb9cf9f042542524a6a24b5c04b026958417f210e",
+          "results/t11-geometric-interpretation/reference_inputs.json": "a34e6f228fac6f90fca5f57b1d3cb3fdc423e64ec80d736a07412cc4cf19cc4a",
+          "results/t11-geometric-interpretation/reference_overlaps.csv": "a8c22345dcb29516b5bbf3d8393b7e679887dbdb5e106d802bb114d3163352d4",
+          "results/t11-geometric-interpretation/sha256.json": "b2ae3747b3bb653abf555251d5510c2d6eceb18504a3aeed37ce133e5db12228",
+          "results/t11-geometric-interpretation/source_hashes.json": "39ce9017b25df623ce2ab0bc376c5230511a305d4801db2fb1b5ac2c219347f9",
+          "results/t11-geometric-interpretation/state_details.json": "9090f730f90918e5ca995687b49d8a863d22617ec439e0c998a1db40da2dd05c",
+          "results/t11-geometric-interpretation/state_summary.csv": "6330264041f6054b89d17c4fc225d5f111d7d2b025116fea7bb45f076f50d384",
+          "results/t11-geometric-interpretation/states_and_operators.npz": "8bc5c04190fd61fcde4167e5a68c0ed32bf8f680cb0d5bf88f83d8fe3ae110f4",
+          "results/t11-geometric-interpretation/thermal_geometry.csv": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548",
+          "results/t11-geometric-interpretation/validation.json": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3",
+          "results/t11-geometric-interpretation/volume_distributions.csv": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce",
+          "notes/t11-geometric-interpretation.md": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
+          "code/python/t11_geometric_interpretation.py": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
+          "code/python/verify_t11_geometric_interpretation.py": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f",
+          "code/python/plot_t11_geometric_interpretation.py": "cae00ec4ce3d21febe19edbee7ca1187973ed0180170cbfa5fa41d31af528ce2",
+          "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.t11-geometric-interpretation.table.rows[1]"
+      },
+      "assessment": {
+        "summary": "Five explicitly constructed K=4 FL references: equal input face areas, phi=90,60,30,10,0 degrees. Saved face-spin distributions, pair correlations, angular fluctuations, volume distributions and overlaps; comparisons with the first three energy groups of complete/ring Hamiltonians at t=1,U=20. The complete ground is kernel-dominated despite nearly unit four-face weight.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 42-test suite passed"
+      }
+    },
+    {
+      "runId": "t11-geometric-interpretation:FL_phi30:3",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared tetrahedral FL states and the volume crossover",
+      "catalogueDate": "2026-10-11",
+      "parameters": {
+        "state": "FL_phi30"
+      },
+      "results": {
+        "four_face_probability": 0.7582103587962958,
+        "mean_active_faces": 3.749999999999998,
+        "volume_mean": 0.3145337454876812,
+        "volume_sd": 0.23798333814049866,
+        "geometric_volume_mean": 0.03706815739105718,
+        "conditional_volume_mean": 0.4148370459973962,
+        "probability_zero_volume": 0.3602792245370368,
+        "signed_q_mean": -0.36084391824351586,
+        "q_rms": 0.919975090242484,
+        "conditional_angle_rms_sd": 0.4957171465231671,
+        "conditional_angle_max_sd": 0.5563958029704786
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-geometric-interpretation/README.md": "be3c91cb722dd726159f955ee5183e0381268217b02bb47c043462518e7e8875",
+          "results/t11-geometric-interpretation/area_sectors.csv": "a58745ab6e1dcd5766047b4d38329bde0393b31a8b085fda5f36838e5ae403a1",
+          "results/t11-geometric-interpretation/energy_groups.csv": "c64f52af751b0b108b041402a335fce7cff2f2c350457d330d207f9cfe1644f4",
+          "results/t11-geometric-interpretation/independent_checks.json": "ad5051be30f3b9caba5af41002da5761701df067d141e14aa768559e87efe3f4",
+          "results/t11-geometric-interpretation/pair_correlations.csv": "b0327b99e22ff92020e861469e514377acaa1ba6db2266a14cb05669206d84d5",
+          "results/t11-geometric-interpretation/protocol.json": "b39fc5121f06cb0c8cea3d022c0cd75aa3493c84bb69b50c7bf0693fe567d699",
+          "results/t11-geometric-interpretation/provenance.json": "a604e8cd26bc17e8ee8f3bfdb9cf9f042542524a6a24b5c04b026958417f210e",
+          "results/t11-geometric-interpretation/reference_inputs.json": "a34e6f228fac6f90fca5f57b1d3cb3fdc423e64ec80d736a07412cc4cf19cc4a",
+          "results/t11-geometric-interpretation/reference_overlaps.csv": "a8c22345dcb29516b5bbf3d8393b7e679887dbdb5e106d802bb114d3163352d4",
+          "results/t11-geometric-interpretation/sha256.json": "b2ae3747b3bb653abf555251d5510c2d6eceb18504a3aeed37ce133e5db12228",
+          "results/t11-geometric-interpretation/source_hashes.json": "39ce9017b25df623ce2ab0bc376c5230511a305d4801db2fb1b5ac2c219347f9",
+          "results/t11-geometric-interpretation/state_details.json": "9090f730f90918e5ca995687b49d8a863d22617ec439e0c998a1db40da2dd05c",
+          "results/t11-geometric-interpretation/state_summary.csv": "6330264041f6054b89d17c4fc225d5f111d7d2b025116fea7bb45f076f50d384",
+          "results/t11-geometric-interpretation/states_and_operators.npz": "8bc5c04190fd61fcde4167e5a68c0ed32bf8f680cb0d5bf88f83d8fe3ae110f4",
+          "results/t11-geometric-interpretation/thermal_geometry.csv": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548",
+          "results/t11-geometric-interpretation/validation.json": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3",
+          "results/t11-geometric-interpretation/volume_distributions.csv": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce",
+          "notes/t11-geometric-interpretation.md": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
+          "code/python/t11_geometric_interpretation.py": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
+          "code/python/verify_t11_geometric_interpretation.py": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f",
+          "code/python/plot_t11_geometric_interpretation.py": "cae00ec4ce3d21febe19edbee7ca1187973ed0180170cbfa5fa41d31af528ce2",
+          "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.t11-geometric-interpretation.table.rows[2]"
+      },
+      "assessment": {
+        "summary": "Five explicitly constructed K=4 FL references: equal input face areas, phi=90,60,30,10,0 degrees. Saved face-spin distributions, pair correlations, angular fluctuations, volume distributions and overlaps; comparisons with the first three energy groups of complete/ring Hamiltonians at t=1,U=20. The complete ground is kernel-dominated despite nearly unit four-face weight.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 42-test suite passed"
+      }
+    },
+    {
+      "runId": "t11-geometric-interpretation:FL_phi10:4",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared tetrahedral FL states and the volume crossover",
+      "catalogueDate": "2026-10-11",
+      "parameters": {
+        "state": "FL_phi10"
+      },
+      "results": {
+        "four_face_probability": 0.7593011021055589,
+        "mean_active_faces": 3.7500000000000036,
+        "volume_mean": 0.3131845844111653,
+        "volume_sd": 0.23747981225255393,
+        "geometric_volume_mean": 0.03690915723337095,
+        "conditional_volume_mean": 0.4124642826708634,
+        "probability_zero_volume": 0.3615158404797032,
+        "signed_q_mean": -0.12531977765036292,
+        "q_rms": 0.913730725104704,
+        "conditional_angle_rms_sd": 0.47641891186470653,
+        "conditional_angle_max_sd": 0.5561568935238312
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-geometric-interpretation/README.md": "be3c91cb722dd726159f955ee5183e0381268217b02bb47c043462518e7e8875",
+          "results/t11-geometric-interpretation/area_sectors.csv": "a58745ab6e1dcd5766047b4d38329bde0393b31a8b085fda5f36838e5ae403a1",
+          "results/t11-geometric-interpretation/energy_groups.csv": "c64f52af751b0b108b041402a335fce7cff2f2c350457d330d207f9cfe1644f4",
+          "results/t11-geometric-interpretation/independent_checks.json": "ad5051be30f3b9caba5af41002da5761701df067d141e14aa768559e87efe3f4",
+          "results/t11-geometric-interpretation/pair_correlations.csv": "b0327b99e22ff92020e861469e514377acaa1ba6db2266a14cb05669206d84d5",
+          "results/t11-geometric-interpretation/protocol.json": "b39fc5121f06cb0c8cea3d022c0cd75aa3493c84bb69b50c7bf0693fe567d699",
+          "results/t11-geometric-interpretation/provenance.json": "a604e8cd26bc17e8ee8f3bfdb9cf9f042542524a6a24b5c04b026958417f210e",
+          "results/t11-geometric-interpretation/reference_inputs.json": "a34e6f228fac6f90fca5f57b1d3cb3fdc423e64ec80d736a07412cc4cf19cc4a",
+          "results/t11-geometric-interpretation/reference_overlaps.csv": "a8c22345dcb29516b5bbf3d8393b7e679887dbdb5e106d802bb114d3163352d4",
+          "results/t11-geometric-interpretation/sha256.json": "b2ae3747b3bb653abf555251d5510c2d6eceb18504a3aeed37ce133e5db12228",
+          "results/t11-geometric-interpretation/source_hashes.json": "39ce9017b25df623ce2ab0bc376c5230511a305d4801db2fb1b5ac2c219347f9",
+          "results/t11-geometric-interpretation/state_details.json": "9090f730f90918e5ca995687b49d8a863d22617ec439e0c998a1db40da2dd05c",
+          "results/t11-geometric-interpretation/state_summary.csv": "6330264041f6054b89d17c4fc225d5f111d7d2b025116fea7bb45f076f50d384",
+          "results/t11-geometric-interpretation/states_and_operators.npz": "8bc5c04190fd61fcde4167e5a68c0ed32bf8f680cb0d5bf88f83d8fe3ae110f4",
+          "results/t11-geometric-interpretation/thermal_geometry.csv": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548",
+          "results/t11-geometric-interpretation/validation.json": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3",
+          "results/t11-geometric-interpretation/volume_distributions.csv": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce",
+          "notes/t11-geometric-interpretation.md": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
+          "code/python/t11_geometric_interpretation.py": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
+          "code/python/verify_t11_geometric_interpretation.py": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f",
+          "code/python/plot_t11_geometric_interpretation.py": "cae00ec4ce3d21febe19edbee7ca1187973ed0180170cbfa5fa41d31af528ce2",
+          "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.t11-geometric-interpretation.table.rows[3]"
+      },
+      "assessment": {
+        "summary": "Five explicitly constructed K=4 FL references: equal input face areas, phi=90,60,30,10,0 degrees. Saved face-spin distributions, pair correlations, angular fluctuations, volume distributions and overlaps; comparisons with the first three energy groups of complete/ring Hamiltonians at t=1,U=20. The complete ground is kernel-dominated despite nearly unit four-face weight.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 42-test suite passed"
+      }
+    },
+    {
+      "runId": "t11-geometric-interpretation:FL_phi0:5",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared tetrahedral FL states and the volume crossover",
+      "catalogueDate": "2026-10-11",
+      "parameters": {
+        "state": "FL_phi0"
+      },
+      "results": {
+        "four_face_probability": 0.7594521604938277,
+        "mean_active_faces": 3.7500000000000027,
+        "volume_mean": 0.31299748096629876,
+        "volume_sd": 0.23741101823421057,
+        "geometric_volume_mean": 0.036887106880929534,
+        "conditional_volume_mean": 0.4121358753693908,
+        "probability_zero_volume": 0.3616898148148151,
+        "signed_q_mean": -8.838126989374232e-17,
+        "q_rms": 0.9128709291752777,
+        "conditional_angle_rms_sd": 0.47371843433773214,
+        "conditional_angle_max_sd": 0.5561234573715742
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-geometric-interpretation/README.md": "be3c91cb722dd726159f955ee5183e0381268217b02bb47c043462518e7e8875",
+          "results/t11-geometric-interpretation/area_sectors.csv": "a58745ab6e1dcd5766047b4d38329bde0393b31a8b085fda5f36838e5ae403a1",
+          "results/t11-geometric-interpretation/energy_groups.csv": "c64f52af751b0b108b041402a335fce7cff2f2c350457d330d207f9cfe1644f4",
+          "results/t11-geometric-interpretation/independent_checks.json": "ad5051be30f3b9caba5af41002da5761701df067d141e14aa768559e87efe3f4",
+          "results/t11-geometric-interpretation/pair_correlations.csv": "b0327b99e22ff92020e861469e514377acaa1ba6db2266a14cb05669206d84d5",
+          "results/t11-geometric-interpretation/protocol.json": "b39fc5121f06cb0c8cea3d022c0cd75aa3493c84bb69b50c7bf0693fe567d699",
+          "results/t11-geometric-interpretation/provenance.json": "a604e8cd26bc17e8ee8f3bfdb9cf9f042542524a6a24b5c04b026958417f210e",
+          "results/t11-geometric-interpretation/reference_inputs.json": "a34e6f228fac6f90fca5f57b1d3cb3fdc423e64ec80d736a07412cc4cf19cc4a",
+          "results/t11-geometric-interpretation/reference_overlaps.csv": "a8c22345dcb29516b5bbf3d8393b7e679887dbdb5e106d802bb114d3163352d4",
+          "results/t11-geometric-interpretation/sha256.json": "b2ae3747b3bb653abf555251d5510c2d6eceb18504a3aeed37ce133e5db12228",
+          "results/t11-geometric-interpretation/source_hashes.json": "39ce9017b25df623ce2ab0bc376c5230511a305d4801db2fb1b5ac2c219347f9",
+          "results/t11-geometric-interpretation/state_details.json": "9090f730f90918e5ca995687b49d8a863d22617ec439e0c998a1db40da2dd05c",
+          "results/t11-geometric-interpretation/state_summary.csv": "6330264041f6054b89d17c4fc225d5f111d7d2b025116fea7bb45f076f50d384",
+          "results/t11-geometric-interpretation/states_and_operators.npz": "8bc5c04190fd61fcde4167e5a68c0ed32bf8f680cb0d5bf88f83d8fe3ae110f4",
+          "results/t11-geometric-interpretation/thermal_geometry.csv": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548",
+          "results/t11-geometric-interpretation/validation.json": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3",
+          "results/t11-geometric-interpretation/volume_distributions.csv": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce",
+          "notes/t11-geometric-interpretation.md": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
+          "code/python/t11_geometric_interpretation.py": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
+          "code/python/verify_t11_geometric_interpretation.py": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f",
+          "code/python/plot_t11_geometric_interpretation.py": "cae00ec4ce3d21febe19edbee7ca1187973ed0180170cbfa5fa41d31af528ce2",
+          "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.t11-geometric-interpretation.table.rows[4]"
+      },
+      "assessment": {
+        "summary": "Five explicitly constructed K=4 FL references: equal input face areas, phi=90,60,30,10,0 degrees. Saved face-spin distributions, pair correlations, angular fluctuations, volume distributions and overlaps; comparisons with the first three energy groups of complete/ring Hamiltonians at t=1,U=20. The complete ground is kernel-dominated despite nearly unit four-face weight.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 42-test suite passed"
+      }
+    },
+    {
+      "runId": "t11-geometric-interpretation:complete_level0:6",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared tetrahedral FL states and the volume crossover",
+      "catalogueDate": "2026-10-11",
+      "parameters": {
+        "state": "complete_level0"
+      },
+      "results": {
+        "four_face_probability": 0.9999339053367134,
+        "mean_active_faces": 3.999933905136787,
+        "volume_mean": 0.03348745734595963,
+        "volume_sd": 0.12353458139442741,
+        "geometric_volume_mean": 0.003946534695670553,
+        "conditional_volume_mean": 0.03348967083447698,
+        "probability_zero_volume": 0.9315436612208896,
+        "signed_q_mean": 0.0,
+        "q_rms": 0.29214265083383006,
+        "conditional_angle_rms_sd": 0.7384101386878547,
+        "conditional_angle_max_sd": 0.7384101386893146
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-geometric-interpretation/README.md": "be3c91cb722dd726159f955ee5183e0381268217b02bb47c043462518e7e8875",
+          "results/t11-geometric-interpretation/area_sectors.csv": "a58745ab6e1dcd5766047b4d38329bde0393b31a8b085fda5f36838e5ae403a1",
+          "results/t11-geometric-interpretation/energy_groups.csv": "c64f52af751b0b108b041402a335fce7cff2f2c350457d330d207f9cfe1644f4",
+          "results/t11-geometric-interpretation/independent_checks.json": "ad5051be30f3b9caba5af41002da5761701df067d141e14aa768559e87efe3f4",
+          "results/t11-geometric-interpretation/pair_correlations.csv": "b0327b99e22ff92020e861469e514377acaa1ba6db2266a14cb05669206d84d5",
+          "results/t11-geometric-interpretation/protocol.json": "b39fc5121f06cb0c8cea3d022c0cd75aa3493c84bb69b50c7bf0693fe567d699",
+          "results/t11-geometric-interpretation/provenance.json": "a604e8cd26bc17e8ee8f3bfdb9cf9f042542524a6a24b5c04b026958417f210e",
+          "results/t11-geometric-interpretation/reference_inputs.json": "a34e6f228fac6f90fca5f57b1d3cb3fdc423e64ec80d736a07412cc4cf19cc4a",
+          "results/t11-geometric-interpretation/reference_overlaps.csv": "a8c22345dcb29516b5bbf3d8393b7e679887dbdb5e106d802bb114d3163352d4",
+          "results/t11-geometric-interpretation/sha256.json": "b2ae3747b3bb653abf555251d5510c2d6eceb18504a3aeed37ce133e5db12228",
+          "results/t11-geometric-interpretation/source_hashes.json": "39ce9017b25df623ce2ab0bc376c5230511a305d4801db2fb1b5ac2c219347f9",
+          "results/t11-geometric-interpretation/state_details.json": "9090f730f90918e5ca995687b49d8a863d22617ec439e0c998a1db40da2dd05c",
+          "results/t11-geometric-interpretation/state_summary.csv": "6330264041f6054b89d17c4fc225d5f111d7d2b025116fea7bb45f076f50d384",
+          "results/t11-geometric-interpretation/states_and_operators.npz": "8bc5c04190fd61fcde4167e5a68c0ed32bf8f680cb0d5bf88f83d8fe3ae110f4",
+          "results/t11-geometric-interpretation/thermal_geometry.csv": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548",
+          "results/t11-geometric-interpretation/validation.json": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3",
+          "results/t11-geometric-interpretation/volume_distributions.csv": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce",
+          "notes/t11-geometric-interpretation.md": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
+          "code/python/t11_geometric_interpretation.py": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
+          "code/python/verify_t11_geometric_interpretation.py": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f",
+          "code/python/plot_t11_geometric_interpretation.py": "cae00ec4ce3d21febe19edbee7ca1187973ed0180170cbfa5fa41d31af528ce2",
+          "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.t11-geometric-interpretation.table.rows[5]"
+      },
+      "assessment": {
+        "summary": "Five explicitly constructed K=4 FL references: equal input face areas, phi=90,60,30,10,0 degrees. Saved face-spin distributions, pair correlations, angular fluctuations, volume distributions and overlaps; comparisons with the first three energy groups of complete/ring Hamiltonians at t=1,U=20. The complete ground is kernel-dominated despite nearly unit four-face weight.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 42-test suite passed"
+      }
+    },
+    {
+      "runId": "t11-geometric-interpretation:complete_level1:7",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared tetrahedral FL states and the volume crossover",
+      "catalogueDate": "2026-10-11",
+      "parameters": {
+        "state": "complete_level1"
+      },
+      "results": {
+        "four_face_probability": 0.9998775479476307,
+        "mean_active_faces": 3.999877547866832,
+        "volume_mean": 0.601102502697469,
+        "volume_sd": 0.0312669957421207,
+        "geometric_volume_mean": 0.07084060930759756,
+        "conditional_volume_mean": 0.6011761179469471,
+        "probability_zero_volume": 0.0002026718385399641,
+        "signed_q_mean": 0.0,
+        "q_rms": 1.6974672671239057,
+        "conditional_angle_rms_sd": 0.5547150864431718,
+        "conditional_angle_max_sd": 0.5547150864436541
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-geometric-interpretation/README.md": "be3c91cb722dd726159f955ee5183e0381268217b02bb47c043462518e7e8875",
+          "results/t11-geometric-interpretation/area_sectors.csv": "a58745ab6e1dcd5766047b4d38329bde0393b31a8b085fda5f36838e5ae403a1",
+          "results/t11-geometric-interpretation/energy_groups.csv": "c64f52af751b0b108b041402a335fce7cff2f2c350457d330d207f9cfe1644f4",
+          "results/t11-geometric-interpretation/independent_checks.json": "ad5051be30f3b9caba5af41002da5761701df067d141e14aa768559e87efe3f4",
+          "results/t11-geometric-interpretation/pair_correlations.csv": "b0327b99e22ff92020e861469e514377acaa1ba6db2266a14cb05669206d84d5",
+          "results/t11-geometric-interpretation/protocol.json": "b39fc5121f06cb0c8cea3d022c0cd75aa3493c84bb69b50c7bf0693fe567d699",
+          "results/t11-geometric-interpretation/provenance.json": "a604e8cd26bc17e8ee8f3bfdb9cf9f042542524a6a24b5c04b026958417f210e",
+          "results/t11-geometric-interpretation/reference_inputs.json": "a34e6f228fac6f90fca5f57b1d3cb3fdc423e64ec80d736a07412cc4cf19cc4a",
+          "results/t11-geometric-interpretation/reference_overlaps.csv": "a8c22345dcb29516b5bbf3d8393b7e679887dbdb5e106d802bb114d3163352d4",
+          "results/t11-geometric-interpretation/sha256.json": "b2ae3747b3bb653abf555251d5510c2d6eceb18504a3aeed37ce133e5db12228",
+          "results/t11-geometric-interpretation/source_hashes.json": "39ce9017b25df623ce2ab0bc376c5230511a305d4801db2fb1b5ac2c219347f9",
+          "results/t11-geometric-interpretation/state_details.json": "9090f730f90918e5ca995687b49d8a863d22617ec439e0c998a1db40da2dd05c",
+          "results/t11-geometric-interpretation/state_summary.csv": "6330264041f6054b89d17c4fc225d5f111d7d2b025116fea7bb45f076f50d384",
+          "results/t11-geometric-interpretation/states_and_operators.npz": "8bc5c04190fd61fcde4167e5a68c0ed32bf8f680cb0d5bf88f83d8fe3ae110f4",
+          "results/t11-geometric-interpretation/thermal_geometry.csv": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548",
+          "results/t11-geometric-interpretation/validation.json": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3",
+          "results/t11-geometric-interpretation/volume_distributions.csv": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce",
+          "notes/t11-geometric-interpretation.md": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
+          "code/python/t11_geometric_interpretation.py": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
+          "code/python/verify_t11_geometric_interpretation.py": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f",
+          "code/python/plot_t11_geometric_interpretation.py": "cae00ec4ce3d21febe19edbee7ca1187973ed0180170cbfa5fa41d31af528ce2",
+          "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.t11-geometric-interpretation.table.rows[6]"
+      },
+      "assessment": {
+        "summary": "Five explicitly constructed K=4 FL references: equal input face areas, phi=90,60,30,10,0 degrees. Saved face-spin distributions, pair correlations, angular fluctuations, volume distributions and overlaps; comparisons with the first three energy groups of complete/ring Hamiltonians at t=1,U=20. The complete ground is kernel-dominated despite nearly unit four-face weight.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 42-test suite passed"
+      }
+    },
+    {
+      "runId": "t11-geometric-interpretation:complete_level2:8",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared tetrahedral FL states and the volume crossover",
+      "catalogueDate": "2026-10-11",
+      "parameters": {
+        "state": "complete_level2"
+      },
+      "results": {
+        "four_face_probability": 0.9991958563733829,
+        "mean_active_faces": 3.9991958563733814,
+        "volume_mean": 0.48779500427294403,
+        "volume_sd": 0.02594160648708479,
+        "geometric_volume_mean": 0.057487192558386614,
+        "conditional_volume_mean": 0.4881875772017444,
+        "probability_zero_volume": 0.0027662596883223415,
+        "signed_q_mean": 0.0,
+        "q_rms": 1.1148998572438775,
+        "conditional_angle_rms_sd": 0.5084553554396689,
+        "conditional_angle_max_sd": 0.5084553554396701
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-geometric-interpretation/README.md": "be3c91cb722dd726159f955ee5183e0381268217b02bb47c043462518e7e8875",
+          "results/t11-geometric-interpretation/area_sectors.csv": "a58745ab6e1dcd5766047b4d38329bde0393b31a8b085fda5f36838e5ae403a1",
+          "results/t11-geometric-interpretation/energy_groups.csv": "c64f52af751b0b108b041402a335fce7cff2f2c350457d330d207f9cfe1644f4",
+          "results/t11-geometric-interpretation/independent_checks.json": "ad5051be30f3b9caba5af41002da5761701df067d141e14aa768559e87efe3f4",
+          "results/t11-geometric-interpretation/pair_correlations.csv": "b0327b99e22ff92020e861469e514377acaa1ba6db2266a14cb05669206d84d5",
+          "results/t11-geometric-interpretation/protocol.json": "b39fc5121f06cb0c8cea3d022c0cd75aa3493c84bb69b50c7bf0693fe567d699",
+          "results/t11-geometric-interpretation/provenance.json": "a604e8cd26bc17e8ee8f3bfdb9cf9f042542524a6a24b5c04b026958417f210e",
+          "results/t11-geometric-interpretation/reference_inputs.json": "a34e6f228fac6f90fca5f57b1d3cb3fdc423e64ec80d736a07412cc4cf19cc4a",
+          "results/t11-geometric-interpretation/reference_overlaps.csv": "a8c22345dcb29516b5bbf3d8393b7e679887dbdb5e106d802bb114d3163352d4",
+          "results/t11-geometric-interpretation/sha256.json": "b2ae3747b3bb653abf555251d5510c2d6eceb18504a3aeed37ce133e5db12228",
+          "results/t11-geometric-interpretation/source_hashes.json": "39ce9017b25df623ce2ab0bc376c5230511a305d4801db2fb1b5ac2c219347f9",
+          "results/t11-geometric-interpretation/state_details.json": "9090f730f90918e5ca995687b49d8a863d22617ec439e0c998a1db40da2dd05c",
+          "results/t11-geometric-interpretation/state_summary.csv": "6330264041f6054b89d17c4fc225d5f111d7d2b025116fea7bb45f076f50d384",
+          "results/t11-geometric-interpretation/states_and_operators.npz": "8bc5c04190fd61fcde4167e5a68c0ed32bf8f680cb0d5bf88f83d8fe3ae110f4",
+          "results/t11-geometric-interpretation/thermal_geometry.csv": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548",
+          "results/t11-geometric-interpretation/validation.json": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3",
+          "results/t11-geometric-interpretation/volume_distributions.csv": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce",
+          "notes/t11-geometric-interpretation.md": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
+          "code/python/t11_geometric_interpretation.py": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
+          "code/python/verify_t11_geometric_interpretation.py": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f",
+          "code/python/plot_t11_geometric_interpretation.py": "cae00ec4ce3d21febe19edbee7ca1187973ed0180170cbfa5fa41d31af528ce2",
+          "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.t11-geometric-interpretation.table.rows[7]"
+      },
+      "assessment": {
+        "summary": "Five explicitly constructed K=4 FL references: equal input face areas, phi=90,60,30,10,0 degrees. Saved face-spin distributions, pair correlations, angular fluctuations, volume distributions and overlaps; comparisons with the first three energy groups of complete/ring Hamiltonians at t=1,U=20. The complete ground is kernel-dominated despite nearly unit four-face weight.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 42-test suite passed"
+      }
+    },
+    {
+      "runId": "t11-geometric-interpretation:ring_level0:9",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared tetrahedral FL states and the volume crossover",
+      "catalogueDate": "2026-10-11",
+      "parameters": {
+        "state": "ring_level0"
+      },
+      "results": {
+        "four_face_probability": 0.999905969679671,
+        "mean_active_faces": 3.999905969529295,
+        "volume_mean": 0.2831716199512899,
+        "volume_sd": 0.2972545210179364,
+        "geometric_volume_mean": 0.0333720954511895,
+        "conditional_volume_mean": 0.2831982491733763,
+        "probability_zero_volume": 0.5218629186387609,
+        "signed_q_mean": 0.0,
+        "q_rms": 1.1468576220580071,
+        "conditional_angle_rms_sd": 0.47324523879731567,
+        "conditional_angle_max_sd": 0.5789344800482471
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-geometric-interpretation/README.md": "be3c91cb722dd726159f955ee5183e0381268217b02bb47c043462518e7e8875",
+          "results/t11-geometric-interpretation/area_sectors.csv": "a58745ab6e1dcd5766047b4d38329bde0393b31a8b085fda5f36838e5ae403a1",
+          "results/t11-geometric-interpretation/energy_groups.csv": "c64f52af751b0b108b041402a335fce7cff2f2c350457d330d207f9cfe1644f4",
+          "results/t11-geometric-interpretation/independent_checks.json": "ad5051be30f3b9caba5af41002da5761701df067d141e14aa768559e87efe3f4",
+          "results/t11-geometric-interpretation/pair_correlations.csv": "b0327b99e22ff92020e861469e514377acaa1ba6db2266a14cb05669206d84d5",
+          "results/t11-geometric-interpretation/protocol.json": "b39fc5121f06cb0c8cea3d022c0cd75aa3493c84bb69b50c7bf0693fe567d699",
+          "results/t11-geometric-interpretation/provenance.json": "a604e8cd26bc17e8ee8f3bfdb9cf9f042542524a6a24b5c04b026958417f210e",
+          "results/t11-geometric-interpretation/reference_inputs.json": "a34e6f228fac6f90fca5f57b1d3cb3fdc423e64ec80d736a07412cc4cf19cc4a",
+          "results/t11-geometric-interpretation/reference_overlaps.csv": "a8c22345dcb29516b5bbf3d8393b7e679887dbdb5e106d802bb114d3163352d4",
+          "results/t11-geometric-interpretation/sha256.json": "b2ae3747b3bb653abf555251d5510c2d6eceb18504a3aeed37ce133e5db12228",
+          "results/t11-geometric-interpretation/source_hashes.json": "39ce9017b25df623ce2ab0bc376c5230511a305d4801db2fb1b5ac2c219347f9",
+          "results/t11-geometric-interpretation/state_details.json": "9090f730f90918e5ca995687b49d8a863d22617ec439e0c998a1db40da2dd05c",
+          "results/t11-geometric-interpretation/state_summary.csv": "6330264041f6054b89d17c4fc225d5f111d7d2b025116fea7bb45f076f50d384",
+          "results/t11-geometric-interpretation/states_and_operators.npz": "8bc5c04190fd61fcde4167e5a68c0ed32bf8f680cb0d5bf88f83d8fe3ae110f4",
+          "results/t11-geometric-interpretation/thermal_geometry.csv": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548",
+          "results/t11-geometric-interpretation/validation.json": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3",
+          "results/t11-geometric-interpretation/volume_distributions.csv": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce",
+          "notes/t11-geometric-interpretation.md": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
+          "code/python/t11_geometric_interpretation.py": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
+          "code/python/verify_t11_geometric_interpretation.py": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f",
+          "code/python/plot_t11_geometric_interpretation.py": "cae00ec4ce3d21febe19edbee7ca1187973ed0180170cbfa5fa41d31af528ce2",
+          "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.t11-geometric-interpretation.table.rows[8]"
+      },
+      "assessment": {
+        "summary": "Five explicitly constructed K=4 FL references: equal input face areas, phi=90,60,30,10,0 degrees. Saved face-spin distributions, pair correlations, angular fluctuations, volume distributions and overlaps; comparisons with the first three energy groups of complete/ring Hamiltonians at t=1,U=20. The complete ground is kernel-dominated despite nearly unit four-face weight.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 42-test suite passed"
+      }
+    },
+    {
+      "runId": "t11-geometric-interpretation:ring_level1:10",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared tetrahedral FL states and the volume crossover",
+      "catalogueDate": "2026-10-11",
+      "parameters": {
+        "state": "ring_level1"
+      },
+      "results": {
+        "four_face_probability": 0.9999715587601232,
+        "mean_active_faces": 3.9999715586387583,
+        "volume_mean": 0.6028239059393408,
+        "volume_sd": 0.027313427450839572,
+        "geometric_volume_mean": 0.07104347862517824,
+        "conditional_volume_mean": 0.6028410514862936,
+        "probability_zero_volume": 2.845625920958036e-05,
+        "signed_q_mean": 0.0,
+        "q_rms": 1.7045710893530546,
+        "conditional_angle_rms_sd": 0.5443831164555927,
+        "conditional_angle_max_sd": 0.66087409184237
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-geometric-interpretation/README.md": "be3c91cb722dd726159f955ee5183e0381268217b02bb47c043462518e7e8875",
+          "results/t11-geometric-interpretation/area_sectors.csv": "a58745ab6e1dcd5766047b4d38329bde0393b31a8b085fda5f36838e5ae403a1",
+          "results/t11-geometric-interpretation/energy_groups.csv": "c64f52af751b0b108b041402a335fce7cff2f2c350457d330d207f9cfe1644f4",
+          "results/t11-geometric-interpretation/independent_checks.json": "ad5051be30f3b9caba5af41002da5761701df067d141e14aa768559e87efe3f4",
+          "results/t11-geometric-interpretation/pair_correlations.csv": "b0327b99e22ff92020e861469e514377acaa1ba6db2266a14cb05669206d84d5",
+          "results/t11-geometric-interpretation/protocol.json": "b39fc5121f06cb0c8cea3d022c0cd75aa3493c84bb69b50c7bf0693fe567d699",
+          "results/t11-geometric-interpretation/provenance.json": "a604e8cd26bc17e8ee8f3bfdb9cf9f042542524a6a24b5c04b026958417f210e",
+          "results/t11-geometric-interpretation/reference_inputs.json": "a34e6f228fac6f90fca5f57b1d3cb3fdc423e64ec80d736a07412cc4cf19cc4a",
+          "results/t11-geometric-interpretation/reference_overlaps.csv": "a8c22345dcb29516b5bbf3d8393b7e679887dbdb5e106d802bb114d3163352d4",
+          "results/t11-geometric-interpretation/sha256.json": "b2ae3747b3bb653abf555251d5510c2d6eceb18504a3aeed37ce133e5db12228",
+          "results/t11-geometric-interpretation/source_hashes.json": "39ce9017b25df623ce2ab0bc376c5230511a305d4801db2fb1b5ac2c219347f9",
+          "results/t11-geometric-interpretation/state_details.json": "9090f730f90918e5ca995687b49d8a863d22617ec439e0c998a1db40da2dd05c",
+          "results/t11-geometric-interpretation/state_summary.csv": "6330264041f6054b89d17c4fc225d5f111d7d2b025116fea7bb45f076f50d384",
+          "results/t11-geometric-interpretation/states_and_operators.npz": "8bc5c04190fd61fcde4167e5a68c0ed32bf8f680cb0d5bf88f83d8fe3ae110f4",
+          "results/t11-geometric-interpretation/thermal_geometry.csv": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548",
+          "results/t11-geometric-interpretation/validation.json": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3",
+          "results/t11-geometric-interpretation/volume_distributions.csv": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce",
+          "notes/t11-geometric-interpretation.md": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
+          "code/python/t11_geometric_interpretation.py": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
+          "code/python/verify_t11_geometric_interpretation.py": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f",
+          "code/python/plot_t11_geometric_interpretation.py": "cae00ec4ce3d21febe19edbee7ca1187973ed0180170cbfa5fa41d31af528ce2",
+          "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.t11-geometric-interpretation.table.rows[9]"
+      },
+      "assessment": {
+        "summary": "Five explicitly constructed K=4 FL references: equal input face areas, phi=90,60,30,10,0 degrees. Saved face-spin distributions, pair correlations, angular fluctuations, volume distributions and overlaps; comparisons with the first three energy groups of complete/ring Hamiltonians at t=1,U=20. The complete ground is kernel-dominated despite nearly unit four-face weight.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 42-test suite passed"
+      }
+    },
+    {
+      "runId": "t11-geometric-interpretation:ring_level2:11",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared tetrahedral FL states and the volume crossover",
+      "catalogueDate": "2026-10-11",
+      "parameters": {
+        "state": "ring_level2"
+      },
+      "results": {
+        "four_face_probability": 0.9999827402595534,
+        "mean_active_faces": 3.9999827400939223,
+        "volume_mean": 0.3443009834429305,
+        "volume_sd": 0.30011357028077995,
+        "geometric_volume_mean": 0.0405762600269489,
+        "conditional_volume_mean": 0.34430692609110874,
+        "probability_zero_volume": 0.43099207382148047,
+        "signed_q_mean": 0.0,
+        "q_rms": 1.2930603246017867,
+        "conditional_angle_rms_sd": 0.271179880709029,
+        "conditional_angle_max_sd": 0.3263758359736605
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-geometric-interpretation/README.md": "be3c91cb722dd726159f955ee5183e0381268217b02bb47c043462518e7e8875",
+          "results/t11-geometric-interpretation/area_sectors.csv": "a58745ab6e1dcd5766047b4d38329bde0393b31a8b085fda5f36838e5ae403a1",
+          "results/t11-geometric-interpretation/energy_groups.csv": "c64f52af751b0b108b041402a335fce7cff2f2c350457d330d207f9cfe1644f4",
+          "results/t11-geometric-interpretation/independent_checks.json": "ad5051be30f3b9caba5af41002da5761701df067d141e14aa768559e87efe3f4",
+          "results/t11-geometric-interpretation/pair_correlations.csv": "b0327b99e22ff92020e861469e514377acaa1ba6db2266a14cb05669206d84d5",
+          "results/t11-geometric-interpretation/protocol.json": "b39fc5121f06cb0c8cea3d022c0cd75aa3493c84bb69b50c7bf0693fe567d699",
+          "results/t11-geometric-interpretation/provenance.json": "a604e8cd26bc17e8ee8f3bfdb9cf9f042542524a6a24b5c04b026958417f210e",
+          "results/t11-geometric-interpretation/reference_inputs.json": "a34e6f228fac6f90fca5f57b1d3cb3fdc423e64ec80d736a07412cc4cf19cc4a",
+          "results/t11-geometric-interpretation/reference_overlaps.csv": "a8c22345dcb29516b5bbf3d8393b7e679887dbdb5e106d802bb114d3163352d4",
+          "results/t11-geometric-interpretation/sha256.json": "b2ae3747b3bb653abf555251d5510c2d6eceb18504a3aeed37ce133e5db12228",
+          "results/t11-geometric-interpretation/source_hashes.json": "39ce9017b25df623ce2ab0bc376c5230511a305d4801db2fb1b5ac2c219347f9",
+          "results/t11-geometric-interpretation/state_details.json": "9090f730f90918e5ca995687b49d8a863d22617ec439e0c998a1db40da2dd05c",
+          "results/t11-geometric-interpretation/state_summary.csv": "6330264041f6054b89d17c4fc225d5f111d7d2b025116fea7bb45f076f50d384",
+          "results/t11-geometric-interpretation/states_and_operators.npz": "8bc5c04190fd61fcde4167e5a68c0ed32bf8f680cb0d5bf88f83d8fe3ae110f4",
+          "results/t11-geometric-interpretation/thermal_geometry.csv": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548",
+          "results/t11-geometric-interpretation/validation.json": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3",
+          "results/t11-geometric-interpretation/volume_distributions.csv": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce",
+          "notes/t11-geometric-interpretation.md": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
+          "code/python/t11_geometric_interpretation.py": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
+          "code/python/verify_t11_geometric_interpretation.py": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f",
+          "code/python/plot_t11_geometric_interpretation.py": "cae00ec4ce3d21febe19edbee7ca1187973ed0180170cbfa5fa41d31af528ce2",
+          "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "studies.t11-geometric-interpretation.table.rows[10]"
+      },
+      "assessment": {
+        "summary": "Five explicitly constructed K=4 FL references: equal input face areas, phi=90,60,30,10,0 degrees. Saved face-spin distributions, pair correlations, angular fluctuations, volume distributions and overlaps; comparisons with the first three energy groups of complete/ring Hamiltonians at t=1,U=20. The complete ground is kernel-dominated despite nearly unit four-face weight.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 42-test suite passed"
+      }
+    }
+  ],
+  "figures": [
+    {
+      "title": "Four-face FL references and thermal geometric diagnostics",
+      "path": "../study-assets/results/t11-geometric-interpretation/thermal_geometric_diagnostics.png",
+      "tags": [
+        "T11"
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "title": "Numerical studies overview",
+      "path": "../index.html"
+    }
+  ]
+}

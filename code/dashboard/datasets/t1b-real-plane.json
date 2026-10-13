@@ -1,0 +1,353 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "Positive volumes on two real-plane states",
+    "subtitle": "Saved numerical records from results/t1b_real_plane_volume_results.json"
+  },
+  "columns": [
+    {
+      "key": "runId",
+      "label": "Case",
+      "type": "string"
+    },
+    {
+      "key": "results.name",
+      "label": "name",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.strictlyPositiveCell",
+      "label": "strictlyPositiveCell",
+      "type": "boolean",
+      "precision": 8
+    },
+    {
+      "key": "results.totalBosonsK",
+      "label": "totalBosonsK",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.stateDimension",
+      "label": "stateDimension",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.stateNormSquared",
+      "label": "stateNormSquared",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.maximumImaginaryAmplitude",
+      "label": "maximumImaginaryAmplitude",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.signedMeanProxyProjectUnits",
+      "label": "signedMeanProxyProjectUnits",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.positiveRSProjectUnits",
+      "label": "positiveRSProjectUnits",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.positiveALProjectUnits",
+      "label": "positiveALProjectUnits",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.directTensorRSProjectUnits",
+      "label": "directTensorRSProjectUnits",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.directTensorALProjectUnits",
+      "label": "directTensorALProjectUnits",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.maxTripleMatrixDifference",
+      "label": "maxTripleMatrixDifference",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.rsExpectationDifference",
+      "label": "rsExpectationDifference",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.alExpectationDifference",
+      "label": "alExpectationDifference",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.gamma",
+      "label": "gamma",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.hbar",
+      "label": "hbar",
+      "type": "number",
+      "precision": 8
+    }
+  ],
+  "charts": {
+    "type": "scatter",
+    "x": "results.totalBosonsK",
+    "y": "results.totalBosonsK"
+  },
+  "runs": [
+    {
+      "runId": "t1b-real-plane:case-0001:1",
+      "task": "T1b",
+      "status": "complete",
+      "description": "Positive volumes on two real-plane states",
+      "parameters": {},
+      "results": {
+        "name": "positive_real_plane",
+        "plane": [
+          [
+            1.0,
+            0.0,
+            -1.0,
+            -2.0
+          ],
+          [
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        ],
+        "strictlyPositiveCell": true,
+        "pluckerMinors": {
+          "M12": [
+            1.0,
+            0.0
+          ],
+          "M13": [
+            1.0,
+            0.0
+          ],
+          "M14": [
+            1.0,
+            0.0
+          ],
+          "M23": [
+            1.0,
+            0.0
+          ],
+          "M24": [
+            2.0,
+            0.0
+          ],
+          "M34": [
+            1.0,
+            0.0
+          ]
+        },
+        "referenceOccupations": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "totalBosonsK": 6,
+        "stateDimension": 3003,
+        "stateNormSquared": 1.0,
+        "maximumImaginaryAmplitude": 0.0,
+        "q012": [
+          0.0,
+          6.938893903907228e-18
+        ],
+        "signedMeanProxyProjectUnits": 3.0488814959502106e-10,
+        "positiveRSProjectUnits": 0.12052923755145747,
+        "positiveALProjectUnits": 0.0751162653864954,
+        "directTensorRSProjectUnits": 0.12052923755145745,
+        "directTensorALProjectUnits": 0.07511626538649536,
+        "maxTripleMatrixDifference": 5.551115123125783e-16,
+        "rsExpectationDifference": 2.7755575615628914e-17,
+        "alExpectationDifference": 4.163336342344337e-17,
+        "gamma": 0.2375,
+        "hbar": 1.0,
+        "alOrientationSignsLexicographic": [
+          1,
+          -1,
+          1,
+          -1
+        ]
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t1b_real_plane_volume_results.json": "cd7b02e6547726f7ab38f319cf12695e56d721a4136bbbfa010d700e57366663"
+        },
+        "presentationSource": "results/t1b_real_plane_volume_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$[0]"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t1b_real_plane_volume_results.json",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "t1b_real_plane_volume_results.json",
+          "path": "../study-assets/results/t1b_real_plane_volume_results.json",
+          "kind": "data",
+          "sha256": "cd7b02e6547726f7ab38f319cf12695e56d721a4136bbbfa010d700e57366663",
+          "sourcePath": "results/t1b_real_plane_volume_results.json",
+          "sourceSha256": "cd7b02e6547726f7ab38f319cf12695e56d721a4136bbbfa010d700e57366663"
+        }
+      ],
+      "figures": []
+    },
+    {
+      "runId": "t1b-real-plane:case-0002:2",
+      "task": "T1b",
+      "status": "complete",
+      "description": "Positive volumes on two real-plane states",
+      "parameters": {},
+      "results": {
+        "name": "off_cell_real_plane",
+        "plane": [
+          [
+            1.0,
+            0.0,
+            -2.0,
+            -1.0
+          ],
+          [
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        ],
+        "strictlyPositiveCell": false,
+        "pluckerMinors": {
+          "M12": [
+            1.0,
+            0.0
+          ],
+          "M13": [
+            1.0,
+            0.0
+          ],
+          "M14": [
+            1.0,
+            0.0
+          ],
+          "M23": [
+            2.0,
+            0.0
+          ],
+          "M24": [
+            1.0,
+            0.0
+          ],
+          "M34": [
+            -1.0,
+            0.0
+          ]
+        },
+        "referenceOccupations": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "totalBosonsK": 6,
+        "stateDimension": 3003,
+        "stateNormSquared": 0.9999999999999998,
+        "maximumImaginaryAmplitude": 0.0,
+        "q012": [
+          0.0,
+          0.0
+        ],
+        "signedMeanProxyProjectUnits": 0.0,
+        "positiveRSProjectUnits": 0.1205292375514575,
+        "positiveALProjectUnits": 0.07511626538649535,
+        "directTensorRSProjectUnits": 0.12052923755145745,
+        "directTensorALProjectUnits": 0.07511626538649532,
+        "maxTripleMatrixDifference": 5.551115123125783e-16,
+        "rsExpectationDifference": 5.551115123125783e-17,
+        "alExpectationDifference": 2.7755575615628914e-17,
+        "gamma": 0.2375,
+        "hbar": 1.0,
+        "alOrientationSignsLexicographic": [
+          1,
+          -1,
+          1,
+          -1
+        ]
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t1b_real_plane_volume_results.json": "cd7b02e6547726f7ab38f319cf12695e56d721a4136bbbfa010d700e57366663"
+        },
+        "presentationSource": "results/t1b_real_plane_volume_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$[1]"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t1b_real_plane_volume_results.json",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    }
+  ],
+  "figures": [],
+  "docs": [
+    {
+      "title": "Numerical studies overview",
+      "path": "../index.html"
+    }
+  ]
+}

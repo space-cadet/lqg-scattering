@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-13
+- Added the T9 temperature-dependent closure study and separately closed geometric projection to the research record. The conditional area grows with high-temperature coefficient $57/14$; positive RS volume rises over the tested interval. See the [thermal note](../notes/thermal-area-sectors.md#section-16) and [numerical reports](../results/thermal-closed-projection/README.md).
+- Deployed the InfoDash desktop note reader in website commit `3c1edad`; all four tabs are visible, notes render Markdown and math, and chronology links navigate correctly. Mobile notes retain their expandable panel layout. No numerical calculations were rerun.
+
 ## 2026-10-10
 - Completed the scoped Python extraction and package validation; added full-number closure probes and same-number singlet detachment energies under T11.
 - Implemented and independently checked constructive F-pair triangle, tetrahedral, and joined exterior-boundary sewing. Preserved the physics transcript and handoff; sewn Hamiltonian and geometry remain open. Latest numerical suite: 38 tests passed; no new release.
@@ -51,3 +55,20 @@
 - Updated project goals and current T4, T5, and T7 status to match the recorded experiments.
 - Corrected the manuscript's T5a caveat, classical-limit summary, and TFD scope.
 - Updated the TFD specification and experiment roadmap with completed results and remaining work.
+
+
+## 2026-10-11 10:27:17 IST — T11 results and physics-dialog reconciliation
+
+Recorded four/five-site persistence and prepared FL diagnostics; reconciled the geometric-plan checklist, scientific provenance and physics-only dialogs. Extended dashboard packaging to expose both studies and their data. No new Hamiltonian physics or FL evolution implemented. Deployment evidence is in the October 11 session record.
+
+## 2026-10-11 13:52:01 IST — T11 candidate interactions and prepared-state evolution
+
+- Compared the baseline with positive RS-volume and signed-triple Hamiltonian candidates, including a limited ring control, in the $K=4$ tetrahedral singlet sector.
+- Completed exact energy-basis evolution of five prepared FL references under five Hamiltonian choices at $U/t=5,20$; independently checked 1,510 conditions with maximum residual $1.07\times10^{-12}$.
+- Recorded the candidate result scope, physical-model limits, and latest 21-study dashboard deployment in the T11 Memory Bank and session closeout.
+
+## 2026-10-12 21:08:16 IST — Publish InfoDash numerical dashboard
+
+- Published the complete numerics dashboard package to `space-cadet/website` at `projects/scattering-in-lqg/numerics/`, website commit `8263c95b2250bc724605a71c73f1a13e429b1b3d`.
+- GitHub Actions deployment workflow `38271093411` succeeded. The live page serves all 30 numerical datasets and all 301 referenced dashboard URLs return HTTP 200.
+- Recorded deployment evidence in the [session](sessions/2026-10-12-infodash-deployment.md). The research checkout remains uncommitted; no calculations were rerun.

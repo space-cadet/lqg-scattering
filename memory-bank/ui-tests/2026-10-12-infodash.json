@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "groups": [
+    "Overview: 30 studies and keyboard-accessible dataset selector",
+    "All 30 datasets load and show their declared row counts",
+    "T11: 62 cases, details, hashed downloads and configured chart",
+    "390px mobile viewport has no page overflow",
+    "Study switching: 50 FL trajectory sampling records"
+  ],
+  "consoleErrors": []
+}

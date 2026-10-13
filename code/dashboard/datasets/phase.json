@@ -1,0 +1,439 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "Cocycle-phase pilot",
+    "subtitle": "Ten recorded points compare phase defect with signed grasp; broader study remains open."
+  },
+  "columns": [
+    {
+      "key": "runId",
+      "label": "Case",
+      "type": "string"
+    },
+    {
+      "key": "parameters.epsilon",
+      "label": "epsilon",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.control",
+      "label": "control",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.phaseRadians",
+      "label": "phaseRadians",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.phaseDefect",
+      "label": "phaseDefect",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.signedGrasp",
+      "label": "signedGrasp",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.taylorIters",
+      "label": "taylorIters",
+      "type": "number",
+      "precision": 8
+    }
+  ],
+  "charts": {
+    "type": "scatter",
+    "x": "parameters.epsilon",
+    "y": "results.phaseRadians"
+  },
+  "runs": [
+    {
+      "runId": "phase:case-0001:1",
+      "task": "T5d",
+      "status": "complete",
+      "description": "Cocycle-phase pilot",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "epsilon": 0.0
+      },
+      "results": {
+        "control": "positive_real",
+        "phaseRadians": 0.0,
+        "phaseDefect": 0.0,
+        "signedGrasp": -0.0,
+        "taylorIters": 38
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5d_phase_scan_results.json": "e3504d5f8bc3fe5ee2480933a19b8a6a61cd4fe67777c0f364b50d45f1af5c01",
+          "memory-bank/tasks/T5d.md": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6"
+        },
+        "presentationSource": "results/t5d_phase_scan_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "points[0]"
+      },
+      "assessment": {
+        "summary": "Ten recorded points compare phase defect with signed grasp; broader study remains open.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "t5d_phase_scan_results.json",
+          "path": "../study-assets/results/t5d_phase_scan_results.json",
+          "kind": "data",
+          "sha256": "e3504d5f8bc3fe5ee2480933a19b8a6a61cd4fe67777c0f364b50d45f1af5c01",
+          "sourcePath": "results/t5d_phase_scan_results.json",
+          "sourceSha256": "e3504d5f8bc3fe5ee2480933a19b8a6a61cd4fe67777c0f364b50d45f1af5c01"
+        },
+        {
+          "label": "T5d.md",
+          "path": "../study-assets/study-records/tasks/T5d.txt",
+          "kind": "data",
+          "sha256": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6",
+          "sourcePath": "memory-bank/tasks/T5d.md",
+          "sourceSha256": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6"
+        }
+      ],
+      "figures": [
+        {
+          "title": "Phase",
+          "path": "../study-assets/figures/dashboard-history/phase.png",
+          "tags": [
+            "T5d"
+          ]
+        }
+      ]
+    },
+    {
+      "runId": "phase:case-0002:2",
+      "task": "T5d",
+      "status": "complete",
+      "description": "Cocycle-phase pilot",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "epsilon": 0.0
+      },
+      "results": {
+        "control": "mixed_sign_real",
+        "phaseRadians": 0.0,
+        "phaseDefect": 0.0,
+        "signedGrasp": -0.0,
+        "taylorIters": 38
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5d_phase_scan_results.json": "e3504d5f8bc3fe5ee2480933a19b8a6a61cd4fe67777c0f364b50d45f1af5c01",
+          "memory-bank/tasks/T5d.md": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6"
+        },
+        "presentationSource": "results/t5d_phase_scan_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "points[1]"
+      },
+      "assessment": {
+        "summary": "Ten recorded points compare phase defect with signed grasp; broader study remains open.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "phase:case-0003:3",
+      "task": "T5d",
+      "status": "complete",
+      "description": "Cocycle-phase pilot",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "epsilon": 0.0
+      },
+      "results": {
+        "control": "complex_path",
+        "phaseRadians": 0.0,
+        "phaseDefect": 0.0,
+        "signedGrasp": -0.0,
+        "taylorIters": 38
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5d_phase_scan_results.json": "e3504d5f8bc3fe5ee2480933a19b8a6a61cd4fe67777c0f364b50d45f1af5c01",
+          "memory-bank/tasks/T5d.md": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6"
+        },
+        "presentationSource": "results/t5d_phase_scan_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "points[2]"
+      },
+      "assessment": {
+        "summary": "Ten recorded points compare phase defect with signed grasp; broader study remains open.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "phase:case-0004:4",
+      "task": "T5d",
+      "status": "complete",
+      "description": "Cocycle-phase pilot",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "epsilon": 0.0001
+      },
+      "results": {
+        "control": "complex_path",
+        "phaseRadians": 0.0003455192155238,
+        "phaseDefect": 0.0003455192086489,
+        "signedGrasp": -3.097893743364e-05,
+        "taylorIters": 38
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5d_phase_scan_results.json": "e3504d5f8bc3fe5ee2480933a19b8a6a61cd4fe67777c0f364b50d45f1af5c01",
+          "memory-bank/tasks/T5d.md": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6"
+        },
+        "presentationSource": "results/t5d_phase_scan_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "points[3]"
+      },
+      "assessment": {
+        "summary": "Ten recorded points compare phase defect with signed grasp; broader study remains open.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "phase:case-0005:5",
+      "task": "T5d",
+      "status": "complete",
+      "description": "Cocycle-phase pilot",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "epsilon": 0.0003
+      },
+      "results": {
+        "control": "complex_path",
+        "phaseRadians": 0.001036523440652,
+        "phaseDefect": 0.001036523255048,
+        "signedGrasp": -9.293498392246e-05,
+        "taylorIters": 38
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5d_phase_scan_results.json": "e3504d5f8bc3fe5ee2480933a19b8a6a61cd4fe67777c0f364b50d45f1af5c01",
+          "memory-bank/tasks/T5d.md": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6"
+        },
+        "presentationSource": "results/t5d_phase_scan_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "points[4]"
+      },
+      "assessment": {
+        "summary": "Ten recorded points compare phase defect with signed grasp; broader study remains open.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "phase:case-0006:6",
+      "task": "T5d",
+      "status": "complete",
+      "description": "Cocycle-phase pilot",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "epsilon": 0.001
+      },
+      "results": {
+        "control": "complex_path",
+        "phaseRadians": 0.003453781569782,
+        "phaseDefect": 0.003453774703318,
+        "signedGrasp": -0.0003097139674546,
+        "taylorIters": 38
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5d_phase_scan_results.json": "e3504d5f8bc3fe5ee2480933a19b8a6a61cd4fe67777c0f364b50d45f1af5c01",
+          "memory-bank/tasks/T5d.md": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6"
+        },
+        "presentationSource": "results/t5d_phase_scan_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "points[5]"
+      },
+      "assessment": {
+        "summary": "Ten recorded points compare phase defect with signed grasp; broader study remains open.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "phase:case-0007:7",
+      "task": "T5d",
+      "status": "complete",
+      "description": "Cocycle-phase pilot",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "epsilon": 0.003
+      },
+      "results": {
+        "control": "complex_path",
+        "phaseRadians": 0.01032724631284,
+        "phaseDefect": 0.01032706274355,
+        "signedGrasp": -0.0009273171395071,
+        "taylorIters": 38
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5d_phase_scan_results.json": "e3504d5f8bc3fe5ee2480933a19b8a6a61cd4fe67777c0f364b50d45f1af5c01",
+          "memory-bank/tasks/T5d.md": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6"
+        },
+        "presentationSource": "results/t5d_phase_scan_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "points[6]"
+      },
+      "assessment": {
+        "summary": "Ten recorded points compare phase defect with signed grasp; broader study remains open.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "phase:case-0008:8",
+      "task": "T5d",
+      "status": "complete",
+      "description": "Cocycle-phase pilot",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "epsilon": 0.01
+      },
+      "results": {
+        "control": "complex_path",
+        "phaseRadians": 0.03317077628472,
+        "phaseDefect": 0.03316469364963,
+        "signedGrasp": -0.003023214531196,
+        "taylorIters": 38
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5d_phase_scan_results.json": "e3504d5f8bc3fe5ee2480933a19b8a6a61cd4fe67777c0f364b50d45f1af5c01",
+          "memory-bank/tasks/T5d.md": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6"
+        },
+        "presentationSource": "results/t5d_phase_scan_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "points[7]"
+      },
+      "assessment": {
+        "summary": "Ten recorded points compare phase defect with signed grasp; broader study remains open.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "phase:case-0009:9",
+      "task": "T5d",
+      "status": "complete",
+      "description": "Cocycle-phase pilot",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "epsilon": 0.1
+      },
+      "results": {
+        "control": "complex_path",
+        "phaseRadians": 0.02179285950335,
+        "phaseDefect": 0.02179113453514,
+        "signedGrasp": -0.007269748342207,
+        "taylorIters": 38
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5d_phase_scan_results.json": "e3504d5f8bc3fe5ee2480933a19b8a6a61cd4fe67777c0f364b50d45f1af5c01",
+          "memory-bank/tasks/T5d.md": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6"
+        },
+        "presentationSource": "results/t5d_phase_scan_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "points[8]"
+      },
+      "assessment": {
+        "summary": "Ten recorded points compare phase defect with signed grasp; broader study remains open.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "phase:case-0010:10",
+      "task": "T5d",
+      "status": "complete",
+      "description": "Cocycle-phase pilot",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "epsilon": 1.0
+      },
+      "results": {
+        "control": "complex_path",
+        "phaseRadians": -0.01388119436107,
+        "phaseDefect": 0.01388074857646,
+        "signedGrasp": -0.001059408042691,
+        "taylorIters": 36
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5d_phase_scan_results.json": "e3504d5f8bc3fe5ee2480933a19b8a6a61cd4fe67777c0f364b50d45f1af5c01",
+          "memory-bank/tasks/T5d.md": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6"
+        },
+        "presentationSource": "results/t5d_phase_scan_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "points[9]"
+      },
+      "assessment": {
+        "summary": "Ten recorded points compare phase defect with signed grasp; broader study remains open.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    }
+  ],
+  "figures": [
+    {
+      "title": "Phase",
+      "path": "../study-assets/figures/dashboard-history/phase.png",
+      "tags": [
+        "T5d"
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "title": "Numerical studies overview",
+      "path": "../index.html"
+    }
+  ]
+}

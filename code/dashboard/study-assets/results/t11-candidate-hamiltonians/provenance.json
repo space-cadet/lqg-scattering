@@ -1,0 +1,9 @@
+{
+  "code/python/t11_candidate_hamiltonians.py": "2737caf5c8e11cc033f4f779d37bec36be5a5098e2b5b7be6a3874245da424ca",
+  "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
+  "code/python/verify_t11_candidate_hamiltonians.py": "5f8258ad87cecef9526c74ce80dabea311c83d7b0fefbe5c1ae661646f1c3eed",
+  "code/python/plot_t11_candidate_hamiltonians.py": "0c2364255bc196946c17a67586130314e53098c842b03543baf1c5d6e535d64f",
+  "results/hamiltonian-studies/operators_k4_complete.npz": "4da137b965f55452c1ffe60d979c82a4cf163c1885b5e5d489ab989bf9c9ffeb",
+  "results/hamiltonian-studies/operators_k4_ring.npz": "0e2843e2d88dddedf1f080204e55dff69765990c391996bd84a1e481a41088e9",
+  "results/t11-geometric-interpretation/protocol.json": "b39fc5121f06cb0c8cea3d022c0cd75aa3493c84bb69b50c7bf0693fe567d699"
+}

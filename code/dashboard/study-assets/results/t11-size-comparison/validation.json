@@ -1,0 +1,20 @@
+{
+  "4": {
+    "gram": 3.3306690738754696e-16,
+    "closure": 2.220446049250313e-16,
+    "epsilon_q": 1.1102230246251565e-15,
+    "global_gram": 4.440892098500626e-16,
+    "hopping_leakage": 4.440892098500626e-16,
+    "complete_onsite_commutator": 2.220446049250313e-16,
+    "ring_onsite_commutator": 2.220446049250313e-16
+  },
+  "5": {
+    "gram": 4.440892098500626e-16,
+    "closure": 3.3306690738754696e-16,
+    "epsilon_q": 2.4424906541753444e-15,
+    "global_gram": 6.661338147750939e-16,
+    "hopping_leakage": 8.881784197001252e-16,
+    "complete_onsite_commutator": 1.3322676295501878e-15,
+    "ring_onsite_commutator": 8.881784197001252e-16
+  }
+}

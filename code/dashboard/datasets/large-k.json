@@ -1,0 +1,985 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "Large-K recorded families and fits",
+    "subtitle": "Saved families through historical K=24. The proposed K^(3/2) scaling was not supported for these families."
+  },
+  "columns": [
+    {
+      "key": "runId",
+      "label": "Case",
+      "type": "string"
+    },
+    {
+      "key": "parameters.n",
+      "label": "n",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.seed",
+      "label": "seed",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.family",
+      "label": "family",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "parameters.K",
+      "label": "K",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.sourceGroup",
+      "label": "sourceGroup",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.experiment",
+      "label": "experiment",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.gamma",
+      "label": "gamma",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.hbar",
+      "label": "hbar",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.plane",
+      "label": "plane",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.engine",
+      "label": "engine",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.dim",
+      "label": "dim",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.q",
+      "label": "q",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.V",
+      "label": "V",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.closure",
+      "label": "closure",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.taylor_iters",
+      "label": "taylor iters",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.secs",
+      "label": "secs",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "series",
+      "label": "Series",
+      "type": "string",
+      "visible": false
+    }
+  ],
+  "charts": {
+    "type": "scatter",
+    "x": "parameters.K",
+    "y": "results.V",
+    "groupBy": "series"
+  },
+  "runs": [
+    {
+      "runId": "large-k:case-0001:1",
+      "task": "T5e",
+      "status": "complete",
+      "description": "Large-K recorded families and fits",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 11,
+        "family": "uniform",
+        "K": 8
+      },
+      "results": {
+        "sourceGroup": "uniform_seed11",
+        "experiment": "T5e large-K semiclassics",
+        "gamma": 0.2375,
+        "hbar": 1.0,
+        "plane": "moment-curve + imag dC[1,i]=0.35*(i+0.5), eps=1",
+        "engine": "rust on-the-fly (q=-2Im<Aij|A jk>)",
+        "dim": 12870,
+        "ref": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "q": -7.895702e-17,
+        "V": 1.028468e-09,
+        "closure": 8.0,
+        "taylor_iters": 38,
+        "secs": 0.0
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5e_results.json": "5438a14fb40b4f57940cac21c2619a508da51bfa607c87eaa1347523d00727d3",
+          "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
+        },
+        "presentationSource": "results/t5e_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "families.uniform_seed11.points[0]"
+      },
+      "assessment": {
+        "summary": "Saved families through historical K=24. The proposed K^(3/2) scaling was not supported for these families.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "t5e_results.json",
+          "path": "../study-assets/results/t5e_results.json",
+          "kind": "data",
+          "sha256": "c70dc39ed28f04185ff59049982a2af82d9199477fa0c6eb902df4827163e566",
+          "sourcePath": "results/t5e_results.json",
+          "sourceSha256": "5438a14fb40b4f57940cac21c2619a508da51bfa607c87eaa1347523d00727d3"
+        },
+        {
+          "label": "t5e_notes.md",
+          "path": "../study-assets/notes/experiments/t5e_notes.txt",
+          "kind": "data",
+          "sha256": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3",
+          "sourcePath": "notes/experiments/t5e_notes.md",
+          "sourceSha256": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
+        }
+      ],
+      "figures": [
+        {
+          "title": "Large k",
+          "path": "../study-assets/figures/dashboard-history/large_k.png",
+          "tags": [
+            "T5e"
+          ]
+        }
+      ],
+      "series": "n=4, sourceGroup=uniform_seed11, family=uniform"
+    },
+    {
+      "runId": "large-k:case-0002:2",
+      "task": "T5e",
+      "status": "complete",
+      "description": "Large-K recorded families and fits",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 11,
+        "family": "uniform",
+        "K": 12
+      },
+      "results": {
+        "sourceGroup": "uniform_seed11",
+        "experiment": "T5e large-K semiclassics",
+        "gamma": 0.2375,
+        "hbar": 1.0,
+        "plane": "moment-curve + imag dC[1,i]=0.35*(i+0.5), eps=1",
+        "engine": "rust on-the-fly (q=-2Im<Aij|A jk>)",
+        "dim": 125970,
+        "ref": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "q": 5.037983e-16,
+        "V": 2.597908e-09,
+        "closure": 12.0,
+        "taylor_iters": 47,
+        "secs": 0.1
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5e_results.json": "5438a14fb40b4f57940cac21c2619a508da51bfa607c87eaa1347523d00727d3",
+          "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
+        },
+        "presentationSource": "results/t5e_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "families.uniform_seed11.points[1]"
+      },
+      "assessment": {
+        "summary": "Saved families through historical K=24. The proposed K^(3/2) scaling was not supported for these families.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=uniform_seed11, family=uniform"
+    },
+    {
+      "runId": "large-k:case-0003:3",
+      "task": "T5e",
+      "status": "complete",
+      "description": "Large-K recorded families and fits",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 11,
+        "family": "uniform",
+        "K": 16
+      },
+      "results": {
+        "sourceGroup": "uniform_seed11",
+        "experiment": "T5e large-K semiclassics",
+        "gamma": 0.2375,
+        "hbar": 1.0,
+        "plane": "moment-curve + imag dC[1,i]=0.35*(i+0.5), eps=1",
+        "engine": "rust on-the-fly (q=-2Im<Aij|A jk>)",
+        "dim": 735471,
+        "ref": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "q": -5.726546e-16,
+        "V": 2.769758e-09,
+        "closure": 16.0,
+        "taylor_iters": 56,
+        "secs": 0.6
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5e_results.json": "5438a14fb40b4f57940cac21c2619a508da51bfa607c87eaa1347523d00727d3",
+          "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
+        },
+        "presentationSource": "results/t5e_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "families.uniform_seed11.points[2]"
+      },
+      "assessment": {
+        "summary": "Saved families through historical K=24. The proposed K^(3/2) scaling was not supported for these families.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=uniform_seed11, family=uniform"
+    },
+    {
+      "runId": "large-k:case-0004:4",
+      "task": "T5e",
+      "status": "complete",
+      "description": "Large-K recorded families and fits",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 11,
+        "family": "uniform",
+        "K": 20
+      },
+      "results": {
+        "sourceGroup": "uniform_seed11",
+        "experiment": "T5e large-K semiclassics",
+        "gamma": 0.2375,
+        "hbar": 1.0,
+        "plane": "moment-curve + imag dC[1,i]=0.35*(i+0.5), eps=1",
+        "engine": "rust on-the-fly (q=-2Im<Aij|A jk>)",
+        "dim": 3108105,
+        "ref": [
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "q": 2.620552e-14,
+        "V": 1.873664e-08,
+        "closure": 20.0,
+        "taylor_iters": 65,
+        "secs": 2.6
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5e_results.json": "5438a14fb40b4f57940cac21c2619a508da51bfa607c87eaa1347523d00727d3",
+          "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
+        },
+        "presentationSource": "results/t5e_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "families.uniform_seed11.points[3]"
+      },
+      "assessment": {
+        "summary": "Saved families through historical K=24. The proposed K^(3/2) scaling was not supported for these families.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=uniform_seed11, family=uniform"
+    },
+    {
+      "runId": "large-k:case-0005:5",
+      "task": "T5e",
+      "status": "complete",
+      "description": "Large-K recorded families and fits",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 11,
+        "family": "uniform",
+        "K": 24
+      },
+      "results": {
+        "sourceGroup": "uniform_seed11",
+        "experiment": "T5e large-K semiclassics",
+        "gamma": 0.2375,
+        "hbar": 1.0,
+        "plane": "moment-curve + imag dC[1,i]=0.35*(i+0.5), eps=1",
+        "engine": "rust on-the-fly (q=-2Im<Aij|A jk>)",
+        "dim": 10518300,
+        "ref": [
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "q": -8.959316e-13,
+        "V": 1.095552e-07,
+        "closure": 24.0,
+        "taylor_iters": 74,
+        "secs": 12.3
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5e_results.json": "5438a14fb40b4f57940cac21c2619a508da51bfa607c87eaa1347523d00727d3",
+          "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
+        },
+        "presentationSource": "results/t5e_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "families.uniform_seed11.points[4]"
+      },
+      "assessment": {
+        "summary": "Saved families through historical K=24. The proposed K^(3/2) scaling was not supported for these families.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=uniform_seed11, family=uniform"
+    },
+    {
+      "runId": "large-k:case-0006:6",
+      "task": "T5e",
+      "status": "complete",
+      "description": "Large-K recorded families and fits",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 11,
+        "family": "vertex",
+        "K": 10
+      },
+      "results": {
+        "sourceGroup": "vertex_seed11",
+        "experiment": "T5e large-K semiclassics",
+        "gamma": 0.2375,
+        "hbar": 1.0,
+        "plane": "moment-curve + imag dC[1,i]=0.35*(i+0.5), eps=1",
+        "engine": "rust on-the-fly (q=-2Im<Aij|A jk>)",
+        "dim": 43758,
+        "ref": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "q": -0.002118816,
+        "V": 0.005327728,
+        "closure": 10.0,
+        "taylor_iters": 45,
+        "secs": 0.0
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5e_results.json": "5438a14fb40b4f57940cac21c2619a508da51bfa607c87eaa1347523d00727d3",
+          "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
+        },
+        "presentationSource": "results/t5e_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "families.vertex_seed11.points[0]"
+      },
+      "assessment": {
+        "summary": "Saved families through historical K=24. The proposed K^(3/2) scaling was not supported for these families.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=vertex_seed11, family=vertex"
+    },
+    {
+      "runId": "large-k:case-0007:7",
+      "task": "T5e",
+      "status": "complete",
+      "description": "Large-K recorded families and fits",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 11,
+        "family": "vertex",
+        "K": 13
+      },
+      "results": {
+        "sourceGroup": "vertex_seed11",
+        "experiment": "T5e large-K semiclassics",
+        "gamma": 0.2375,
+        "hbar": 1.0,
+        "plane": "moment-curve + imag dC[1,i]=0.35*(i+0.5), eps=1",
+        "engine": "rust on-the-fly (q=-2Im<Aij|A jk>)",
+        "dim": 203490,
+        "ref": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "q": -0.003178224,
+        "V": 0.006525108,
+        "closure": 13.0,
+        "taylor_iters": 54,
+        "secs": 0.2
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5e_results.json": "5438a14fb40b4f57940cac21c2619a508da51bfa607c87eaa1347523d00727d3",
+          "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
+        },
+        "presentationSource": "results/t5e_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "families.vertex_seed11.points[1]"
+      },
+      "assessment": {
+        "summary": "Saved families through historical K=24. The proposed K^(3/2) scaling was not supported for these families.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=vertex_seed11, family=vertex"
+    },
+    {
+      "runId": "large-k:case-0008:8",
+      "task": "T5e",
+      "status": "complete",
+      "description": "Large-K recorded families and fits",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 11,
+        "family": "vertex",
+        "K": 16
+      },
+      "results": {
+        "sourceGroup": "vertex_seed11",
+        "experiment": "T5e large-K semiclassics",
+        "gamma": 0.2375,
+        "hbar": 1.0,
+        "plane": "moment-curve + imag dC[1,i]=0.35*(i+0.5), eps=1",
+        "engine": "rust on-the-fly (q=-2Im<Aij|A jk>)",
+        "dim": 735471,
+        "ref": [
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "q": -0.004237632,
+        "V": 0.007534545,
+        "closure": 16.0,
+        "taylor_iters": 62,
+        "secs": 0.6
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5e_results.json": "5438a14fb40b4f57940cac21c2619a508da51bfa607c87eaa1347523d00727d3",
+          "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
+        },
+        "presentationSource": "results/t5e_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "families.vertex_seed11.points[2]"
+      },
+      "assessment": {
+        "summary": "Saved families through historical K=24. The proposed K^(3/2) scaling was not supported for these families.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=vertex_seed11, family=vertex"
+    },
+    {
+      "runId": "large-k:case-0009:9",
+      "task": "T5e",
+      "status": "complete",
+      "description": "Large-K recorded families and fits",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 11,
+        "family": "vertex",
+        "K": 19
+      },
+      "results": {
+        "sourceGroup": "vertex_seed11",
+        "experiment": "T5e large-K semiclassics",
+        "gamma": 0.2375,
+        "hbar": 1.0,
+        "plane": "moment-curve + imag dC[1,i]=0.35*(i+0.5), eps=1",
+        "engine": "rust on-the-fly (q=-2Im<Aij|A jk>)",
+        "dim": 2220075,
+        "ref": [
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "q": -0.00529704,
+        "V": 0.008423878,
+        "closure": 19.0,
+        "taylor_iters": 70,
+        "secs": 1.7
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5e_results.json": "5438a14fb40b4f57940cac21c2619a508da51bfa607c87eaa1347523d00727d3",
+          "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
+        },
+        "presentationSource": "results/t5e_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "families.vertex_seed11.points[3]"
+      },
+      "assessment": {
+        "summary": "Saved families through historical K=24. The proposed K^(3/2) scaling was not supported for these families.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=vertex_seed11, family=vertex"
+    },
+    {
+      "runId": "large-k:case-0010:10",
+      "task": "T5e",
+      "status": "complete",
+      "description": "Large-K recorded families and fits",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 11,
+        "family": "vertex",
+        "K": 22
+      },
+      "results": {
+        "sourceGroup": "vertex_seed11",
+        "experiment": "T5e large-K semiclassics",
+        "gamma": 0.2375,
+        "hbar": 1.0,
+        "plane": "moment-curve + imag dC[1,i]=0.35*(i+0.5), eps=1",
+        "engine": "rust on-the-fly (q=-2Im<Aij|A jk>)",
+        "dim": 5852925,
+        "ref": [
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "q": -0.006356447,
+        "V": 0.009227895,
+        "closure": 22.0,
+        "taylor_iters": 79,
+        "secs": 5.0
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5e_results.json": "5438a14fb40b4f57940cac21c2619a508da51bfa607c87eaa1347523d00727d3",
+          "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
+        },
+        "presentationSource": "results/t5e_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "families.vertex_seed11.points[4]"
+      },
+      "assessment": {
+        "summary": "Saved families through historical K=24. The proposed K^(3/2) scaling was not supported for these families.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=vertex_seed11, family=vertex"
+    },
+    {
+      "runId": "large-k:case-0011:11",
+      "task": "T5e",
+      "status": "complete",
+      "description": "Large-K recorded families and fits",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 42,
+        "family": "uniform",
+        "K": 8
+      },
+      "results": {
+        "sourceGroup": "uniform_seed42",
+        "experiment": "T5e large-K semiclassics",
+        "gamma": 0.2375,
+        "hbar": 1.0,
+        "plane": "moment-curve + imag dC[1,i]=0.35*(i+0.5), eps=1",
+        "engine": "rust on-the-fly (q=-2Im<Aij|A jk>)",
+        "dim": 12870,
+        "ref": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "q": -5.595034e-17,
+        "V": 8.657585e-10,
+        "closure": 8.0,
+        "taylor_iters": 39,
+        "secs": 0.0
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5e_results.json": "5438a14fb40b4f57940cac21c2619a508da51bfa607c87eaa1347523d00727d3",
+          "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
+        },
+        "presentationSource": "results/t5e_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "families.uniform_seed42.points[0]"
+      },
+      "assessment": {
+        "summary": "Saved families through historical K=24. The proposed K^(3/2) scaling was not supported for these families.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=uniform_seed42, family=uniform"
+    },
+    {
+      "runId": "large-k:case-0012:12",
+      "task": "T5e",
+      "status": "complete",
+      "description": "Large-K recorded families and fits",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 42,
+        "family": "uniform",
+        "K": 16
+      },
+      "results": {
+        "sourceGroup": "uniform_seed42",
+        "experiment": "T5e large-K semiclassics",
+        "gamma": 0.2375,
+        "hbar": 1.0,
+        "plane": "moment-curve + imag dC[1,i]=0.35*(i+0.5), eps=1",
+        "engine": "rust on-the-fly (q=-2Im<Aij|A jk>)",
+        "dim": 735471,
+        "ref": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "q": -2.635714e-14,
+        "V": 1.879077e-08,
+        "closure": 16.0,
+        "taylor_iters": 59,
+        "secs": 0.9
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5e_results.json": "5438a14fb40b4f57940cac21c2619a508da51bfa607c87eaa1347523d00727d3",
+          "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
+        },
+        "presentationSource": "results/t5e_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "families.uniform_seed42.points[1]"
+      },
+      "assessment": {
+        "summary": "Saved families through historical K=24. The proposed K^(3/2) scaling was not supported for these families.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=uniform_seed42, family=uniform"
+    },
+    {
+      "runId": "large-k:case-0013:13",
+      "task": "T5e",
+      "status": "complete",
+      "description": "Large-K recorded families and fits",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "n": 4,
+        "seed": 42,
+        "family": "uniform",
+        "K": 24
+      },
+      "results": {
+        "sourceGroup": "uniform_seed42",
+        "experiment": "T5e large-K semiclassics",
+        "gamma": 0.2375,
+        "hbar": 1.0,
+        "plane": "moment-curve + imag dC[1,i]=0.35*(i+0.5), eps=1",
+        "engine": "rust on-the-fly (q=-2Im<Aij|A jk>)",
+        "dim": 10518300,
+        "ref": [
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "q": -8.414114e-13,
+        "V": 1.061695e-07,
+        "closure": 24.0,
+        "taylor_iters": 78,
+        "secs": 13.1
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5e_results.json": "5438a14fb40b4f57940cac21c2619a508da51bfa607c87eaa1347523d00727d3",
+          "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
+        },
+        "presentationSource": "results/t5e_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "families.uniform_seed42.points[2]"
+      },
+      "assessment": {
+        "summary": "Saved families through historical K=24. The proposed K^(3/2) scaling was not supported for these families.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "n=4, sourceGroup=uniform_seed42, family=uniform"
+    }
+  ],
+  "figures": [
+    {
+      "title": "Large k",
+      "path": "../study-assets/figures/dashboard-history/large_k.png",
+      "tags": [
+        "T5e"
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "title": "Numerical studies overview",
+      "path": "../index.html"
+    }
+  ]
+}

@@ -1,9 +1,104 @@
 # Edit History
 
 *Created: 2026-09-19*
-*Last Updated: 2026-10-10 03:26:38 IST*
+*Last Updated: 2026-10-13 22:50:22 IST*
 
 ## File Modification Log
+
+### 2026-10-13
+
+#### 22:50:22 IST - T9, T11: Record thermal closure results and dashboard status
+- Updated `memory-bank/tasks/T9.md` - Recorded the temperature-dependent ordinary-closure sweep and separately closed area/volume results.
+- Updated `memory-bank/tasks.md` - Refreshed T9 numerical status and T11 InfoDash dataset and reader status.
+- Updated `memory-bank/activeContext.md` - Added the new T9 geometry results while retaining T11 as the current focus.
+- Updated `memory-bank/progress.md` - Recorded the closure and projected-geometry milestone with result links.
+- Updated `memory-bank/session_cache.md` - Refreshed the T9 summary and linked this session record.
+- Updated `memory-bank/changelog.md` - Added the October 13 T9 numerical result.
+- Updated `memory-bank/implementation-details/T7-physical-thermal-intertwiners.md` - Preserved the earlier pilot and appended the T9 closure/projection follow-up.
+- Created `memory-bank/sessions/2026-10-13-t9-thermal-closure-and-geometry.md` - Recorded the results, checks, source paths, and current research scope.
+- Updated `memory-bank/edit_history.md` - Refreshed today's view from the current T9 and T11 canonical edit chunks while preserving existing history.
+
+#### 13:20:14 IST - T11: Record deployed InfoDash desktop note reader
+- Updated `memory-bank/activeContext.md` - Record the deployed desktop note reader and link the current acceptance session.
+- Updated `memory-bank/session_cache.md` - Add the October 13 dashboard follow-up to the current session history.
+- Updated `memory-bank/tasks/T11.md` - Record desktop and mobile note behavior, live rendering and navigation acceptance; retain T11 as in progress.
+- Updated `memory-bank/implementation-details/infodash-integration.md` - Document responsive note reading, Markdown/KaTeX rendering and chronology navigation.
+- Updated `memory-bank/changelog.md` - Record the dashboard reader publication.
+- Created `memory-bank/sessions/2026-10-13-infodash-desktop-note-reader.md` - Save deployment and live browser acceptance evidence.
+
+### 2026-10-12
+
+#### 21:08:16 IST - T11: Publish InfoDash numerical dashboard
+- Published the complete dashboard package to `space-cadet/website` at `projects/scattering-in-lqg/numerics/`, website commit `8263c95b2250bc724605a71c73f1a13e429b1b3d`.
+- Production workflow `38271093411` succeeded. The live page serves 30 datasets with 2,049 rows; all 301 referenced dashboard URLs returned HTTP 200.
+- Created `memory-bank/sessions/2026-10-12-infodash-deployment.md` - Record website publication and live acceptance.
+- Updated the integration record, progress, T11 task, active context, session cache and changelog to reflect the live deployment.
+
+#### 16:32:01 IST - T11: Integrate reusable InfoDash with saved project numerics
+- Created `code/dashboard/infodash/` - Pin the InfoDash application, local study navigation and 30 generated numerical datasets.
+- Created `code/python/dashboard_assets/export_infodash.py` - Export 2,049 saved numerical rows with typed columns, charts, provenance and hashed artifact links.
+- Created `code/python/dashboard_assets/check_infodash.cjs` - Validate all datasets, local links and served artifact hashes.
+- Created `code/python/dashboard_assets/check_infodash_source.py` - Compare exported rows and numeric values against saved source records.
+- Modified `code/python/dashboard_assets/build_research_catalogue.py` - Run the InfoDash exporter after packaging the existing catalogue.
+- Modified `code/dashboard/index.html` - Add the InfoDash overview link.
+- Modified `code/dashboard/research-studies.js` - Link catalogue cards to their numerical tables.
+- Modified `code/dashboard/research-studies-catalogue-dates.js` - Add matching links in the deployed catalogue renderer.
+- Modified `code/dashboard/README.md` - Document export, source metadata, validation commands and static packaging.
+- Modified `notes/numerical-studies.md` - Link the central chronological index to the numerical tables and exporter.
+- Created `code/dashboard/study-assets/notes/numerical-studies.txt` - Package the chronology for download.
+- Created `code/dashboard/study-assets/results/binding-energy/summary.json` - Package the saved binding summary byte-for-byte.
+- Created `code/dashboard/study-assets/results/state-space-probes/summary.json` - Package the saved open/closed-state summary byte-for-byte.
+- Created `code/dashboard/study-assets/results/sewing-probes/summary.json` - Package the saved sewing summary byte-for-byte.
+- Created `code/dashboard/study-assets/results/fl_volume_area_results.json` - Package saved regular-area numerical records.
+- Created `code/dashboard/study-assets/results/t1b_real_plane_volume_results.json` - Package saved real-plane controls.
+- Created `code/dashboard/study-assets/results/t5c_input_geometry_results.json` - Package saved weighted-input numerical records.
+- Created `code/dashboard/study-assets/results/t5c_shape_recovery_results.json` - Package saved covariance shape-recovery records.
+- Created `code/dashboard/study-assets/code/dashboard/fl-volume-shape-j2.json` - Package the saved equal-area shape scan.
+- Created `memory-bank/implementation-details/infodash-integration.md` - Record data flow, numerical coverage, metadata and verification.
+- Created `memory-bank/sessions/2026-10-12-infodash-integration.md` - Record the authorized local integration and resulting checks.
+- Created `memory-bank/ui-tests/2026-10-12-infodash.md` - Record five passing browser groups and screenshot links.
+- Created `memory-bank/ui-tests/2026-10-12-infodash.json` - Preserve the machine-readable browser report.
+- Created `memory-bank/screenshots/2026-10-12-infodash-overview.png` - Preserve the overview browser view.
+- Created `memory-bank/screenshots/2026-10-12-infodash-candidates.png` - Preserve the candidate-Hamiltonian chart view.
+- Created `memory-bank/screenshots/2026-10-12-infodash-mobile.png` - Preserve the verified 390px view.
+- Updated `memory-bank/activeContext.md` - Record the local integration separately from the existing website deployment.
+- Updated `memory-bank/session_cache.md` - Add the local integration handoff and verification result.
+- Updated `memory-bank/tasks/T11.md` - Record T11 numerical access through the project-wide integration without changing research status.
+- Updated `memory-bank/edit_history.md` - Refresh the chronological view from this canonical chunk.
+
+### 2026-10-11
+
+#### 13:52:01 IST - T11: Record candidate Hamiltonian and FL evolution results
+- Updated `memory-bank/tasks/T11.md` - Recorded the candidate interactions, 50 prepared-state trajectories, verification evidence, current limits, and deployed catalogue.
+- Updated `memory-bank/tasks.md` - Reconciled the T11 milestone with completed candidate studies and remaining physical questions.
+- Updated `memory-bank/activeContext.md` - Replaced stale pending-evolution and dashboard counts with the current T11 state.
+- Updated `memory-bank/progress.md` - Added the dated candidate-study closeout, numerical findings, validation, deployment, and open work.
+- Updated `memory-bank/session_cache.md` - Refreshed the live T11 handoff and dashboard status.
+- Updated `memory-bank/changelog.md` - Recorded the completed candidate interactions and prepared-state evolution.
+- Updated `memory-bank/techContext.md` - Documented the candidate/evolution implementation and the four-face operator identity without assigning it a physical derivation.
+- Updated `memory-bank/sessions/2026-10-11-t11-geometry-closeout.md` - Appended the candidate results and latest dashboard acceptance evidence, preserving the earlier session record.
+- Updated `memory-bank/edit_history.md` - Generated the new dated view entry from this canonical edit chunk.
+
+
+#### 11:34:57 IST - T11: Separate physics transcripts from the Hamiltonian note
+- Updated `notes/hamiltonian-studies.md` - Removed duplicate dialogue blocks, retained the research summary and modelling status, and linked the two separate physics transcripts.
+- Updated `code/dashboard/study-assets/notes/hamiltonian-studies.txt` - Refreshed the dashboard download, deployed commit `5bedaa9` successfully, and verified the live file has 156 lines.
+- Updated `code/dashboard/studies.json` - Refreshed the note source hash and verified that the deployed manifest matches the live download.
+- Updated `memory-bank/edit_history.md` - Regenerated this view from the canonical edit chunk while preserving earlier entries.
+
+#### 10:27:17 IST - T11: Record geometric results, physics dialogs and dashboard release
+- Updated `memory-bank/tasks/T11.md` and `memory-bank/tasks.md` - Reconciled completed four/five-site persistence and FL diagnostics, preserving in-progress status and pending dynamics/geometric coupling.
+- Updated `memory-bank/activeContext.md`, `memory-bank/progress.md`, `memory-bank/session_cache.md`, `memory-bank/techContext.md`, and `memory-bank/changelog.md` - Recorded current milestones, implementation support and continuation without erasing historical sessions.
+- Created `memory-bank/implementation-details/T11-geometric-diagnostics.md` - Recorded shared diagnostics, artifacts, conditioning conventions and prior verification scope.
+- Created `memory-bank/sessions/2026-10-10-t11-geometry-transcript.md` and `memory-bank/sessions/2026-10-11-t11-hamiltonian-transcript.md` - Recovered physics dialogue from session logs, including the initiating prompt and corrections; omitted non-physics administration and tools.
+- Created `memory-bank/sessions/2026-10-11-t11-geometry-closeout.md` - Recorded the prior-session results, current modelling discussion and deployment verification.
+- Updated `notes/hamiltonian-studies.md` - Added the completed study findings and both session dialogs, preserving on-site-repulsion interpretation and labelling new coupling choices as proposals.
+- Recorded `code/python/lqg_scattering/geometric_diagnostics.py`, `code/python/t11_size_comparison.py`, `code/python/verify_t11_size_comparison.py`, `code/python/plot_t11_size_comparison.py`, `code/python/t11_geometric_interpretation.py`, `code/python/verify_t11_geometric_interpretation.py`, `code/python/plot_t11_geometric_interpretation.py`, and `code/python/test_geometric_diagnostics.py` - Documented existing uncommitted scientific implementation and prior 38/42-test verification; no new scientific calculation in this closeout.
+- Recorded `results/t11-size-comparison/`, `results/t11-geometric-interpretation/`, `notes/t11-geometric-interpretation.md`, and `figures/hamiltonian-systems/four-and-five-site-graphs.png` - Preserved saved outputs, frozen protocols, source/output hashes and corrected illustration.
+- Updated `code/python/dashboard_assets/build_research_catalogue.py`, `code/dashboard/research-studies.js`, and `code/dashboard/` - Packaged 20 studies with separate size/FL records, figures, data and server-compatible report downloads; retained historical figures without redrawing.
+- Updated `code/dashboard/README.md` - Recorded catalogue-only regeneration and Markdown download handling.
+- Updated `memory-bank/edit_history.md` - Derived the new dated entry from this canonical chunk, preserving the prior history.
+- Created `memory-bank/screenshots/2026-10-11-t11-dashboard-live.png` and `memory-bank/sessions/2026-10-11-t11-dashboard-verification.json` - Saved live browser and public-asset verification for the successful website deployment at `cea6ae9`, workflow `38113563387`.
 
 ### 2026-10-10
 

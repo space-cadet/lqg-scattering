@@ -1,5 +1,5 @@
 # Task Registry
-*Last Updated: 2026-10-10 03:26:38 IST*
+*Last Updated: 2026-10-13 22:50:22 IST*
 
 ## Active Tasks
 | ID | Title | Status | Priority | Started | Dependencies | Details |
@@ -325,7 +325,7 @@ convergence evidence.
 
 ### T9: Thermal/TFD State Construction and Physical Study
 **Details:** [Task record](tasks/T9.md)
-**Description**: Own TFD state construction and physical/geometric study; completed child-study records T7a–T7e retain their IDs. The selected T9 state is the same-mode squeeze of conjugate FL intertwiners in both copies, with transformed geometric observables. The four-face $J_{\mathrm{in}}=1$ occupation/resultant-spin distribution is implemented by two methods through $q=160$ and cross-checked; general initial $J$, reduced-state blocks, entanglement, and geometry remain open. A fixed positive total-area Hamiltonian on unrestricted Fock space is excluded as a Gibbs generator by the different low-temperature limits.
+**Description**: Own TFD state construction and physical/geometric study; completed child-study records T7a–T7e retain their IDs. The selected T9 state is the same-mode squeeze of conjugate FL intertwiners in both copies, with transformed geometric observables. The four-face $J_{\mathrm{in}}=1$ occupation/spin distribution is checked by two methods through $q=160$. New closure sweeps quantify the ordinary per-copy Gauss defect; separate singlet projection gives closed area and positive-volume distributions, with projected mean area asymptoting to $(57/14)T_*$. Full selected-state reduced blocks, entropy and Gibbs characterization remain open. A fixed positive total-area Hamiltonian on unrestricted Fock space is excluded as a Gibbs generator by its different low-temperature limit. See [NS28–NS29](../notes/numerical-studies.md#ns28).
 **Status**: 🔄 IN PROGRESS
 **Dependencies**: T3c
 **Subtasks**: Five completed child-study records (T7a–T7e); no additional subtask slots remain.
@@ -335,7 +335,7 @@ convergence evidence.
 **Description**: Implement the first exact four-site Bose–Hubbard/positive-RS pilot at fixed $K=2,3,4$, comparing complete and ring graphs in the total-spin singlet sector. The run includes no-hopping, free-hopping, repulsion, fixed-$K$ Gibbs observables, ground-state correlations and one-site entropy, exact infinite-temperature active-site counting, and the Hamiltonian–volume commutator.
 **Status**: 🔄 IN PROGRESS
 **Dependencies**: T1a
-**Milestone**: Four-site pilot and thermal-volume follow-up complete; full-number closure probes and same-number three-plus-one dissociation energies calculated. At $t=1,U=5$, binding energies are 0.769253300 (complete) and 0.795078777 (ring). Sewn-network dynamics, larger supports, and physical geometry/normalization remain open. The earlier 18-study dashboard deployment is historical evidence, not a new release.
+**Milestone**: Four-site pilot, thermal-volume follow-up, full-number closure probes, and same-number three-plus-one dissociation energies complete. At $t=1,U=5$, binding energies are 0.769253300 (complete) and 0.795078777 (ring). Four/five-site persistence, prepared $K=4$ FL geometry, the 62-setting positive-volume/signed-triple candidate scan, and 50 exact-phase FL trajectories are complete. Independent candidate verification: 1,510 checks, maximum residual $1.07\times10^{-12}$. Physical interaction derivation/calibration, controlled further size scaling, and sewn dynamics remain open. The website catalogue has 21 studies, 29 records and 38 figures; InfoDash adds 30 datasets (2,049 rows), with the desktop note reader accepted. See the October 11 T11 closeout and October 12–13 InfoDash records.
 
 ---
 
@@ -446,3 +446,11 @@ graph TD
 This extends the signed-mean cancellation to occupation-diagonal thermal
 states; nonzero $\mathrm{Tr}(\rho q^2)$ rules out interpreting it as zero
 positive volume. The published EPJC paper did not contain this numerical result.
+
+
+## T11 geometric-result closeout — 2026-10-11 10:27:17 IST
+
+- Completed and checked four/five-site persistence, five explicitly prepared $K=4$ FL references, their geometric diagnostics, energy-group comparisons and Gibbs reconstruction. Prior suite: 42 tests; independent residual maximum $5.14	imes10^{-12}$. No physics rerun in this update.
+- The complete-graph collapse does not persist at five sites. At four sites the ground is kernel-dominated with broad angular fluctuations, despite near-unit four-face weight.
+- Preserved both physics dialogs in the Hamiltonian write-up. On-site repulsion is the preferred term interpretation. $g_VV$ and signed-triple terms are proposals; $K=4$ FL evolution is unperformed.
+- [Session record](sessions/2026-10-11-t11-geometry-closeout.md); T11 stays IN PROGRESS. The 18-study deployment references above are historical; current deployment evidence is recorded separately below when verified.

@@ -1,0 +1,22 @@
+{
+  "residuals": {
+    "D01_independent_magnetic": 8.881784197001252e-16,
+    "D02_independent_magnetic": 8.881784197001252e-16,
+    "D03_independent_magnetic": 8.881784197001252e-16,
+    "D12_independent_magnetic": 1.3322676295501878e-15,
+    "D13_independent_magnetic": 8.881784197001252e-16,
+    "D23_independent_magnetic": 8.881784197001252e-16,
+    "q012_independent_epsilon": 8.881784197001252e-16,
+    "positive_root_reconstruction": 6.106226635438361e-16,
+    "closure": 2.7755575615628914e-16,
+    "conditional_sliced_trace": 2.220446049250313e-16,
+    "angular_covariance": 4.440892098500626e-16,
+    "FL_equal_area_means": 1.7763568394002505e-15,
+    "degenerate_mixture_rotation": 2.2205605428882737e-16,
+    "equal_area_overlaps": 4.440892098500626e-16,
+    "saved_thermal_volume": 4.418687638008123e-13,
+    "thermal_expm_angles": 5.135558645008587e-12
+  },
+  "threshold": 2e-10,
+  "independence": "explicit magnetic ladder dots, epsilon triples, sliced traces, matrix-exponential Gibbs states; shared singlet basis; no new Rust run"
+}

@@ -1,6 +1,6 @@
 # Implementation Progress
 
-*Last Updated: 2026-10-10 03:26:38 IST*
+*Last Updated: 2026-10-12 21:08:16 IST*
 
 ## Active Tasks
 
@@ -54,8 +54,8 @@ The results and earlier saved volume/thermal studies are now assembled in the 18
 searchable dashboard catalogue, with downloadable data and plot assets. Website commit
 `8f70bc9` was merged to `main`; the live route shows the T11 cases and figures.
 
-**Next:** review finite-sector graph dependence, then scope larger $L,K$ and
-any optional spin-exchange term before extending the model.
+**Current extension:** four/five-site persistence and prepared FL diagnostics are complete.
+**Next:** specify the proposed geometric interaction and evolve the prepared $K=4$ states when authorized.
 
 ### T1a: Positive FL Volume Across Tetrahedron Shapes
 **Status:** 🔄 IN PROGRESS
@@ -133,6 +133,8 @@ T9 owns the entire thermal/TFD program. The former T7 umbrella was transferred a
 
 T9 follow-up: the selected state is $U_\beta(|J,\mathbf z\rangle_L\otimes|\overline{J,\mathbf z}\rangle_R)$, with transformed geometric observables. For four faces and $J_{\mathrm{in}}=1$, $P(q,S)$ is implemented by explicit spin coupling and magnetic-component counting with finite differences. The methods agree across 32,805 entries ($q=0\ldots160$; $\beta\hbar\omega=0.5,1,2,4,8$) to maximum absolute discrepancy $2.67\times10^{-16}$. Independent oscillator coefficient and direct Casimir-projector checks cover $q\le4$. Plots show broader occupation and spin distributions at higher temperature. The apparent high-$q$ cutoff is a display/numerical limit: an analytic positive bound establishes nonzero probability at every kinematically allowed $(q,S)$ for finite temperature. Full two-copy reduced-state blocks, entropy, and geometric correlations remain open. For fixed positive $H_A=\lambda N_L/2$ on unrestricted Fock space, the Gibbs low-temperature limit is vacuum while the squeezed family returns its nonzero-$J$ input; that Hamiltonian is excluded as its Gibbs generator over all temperatures. The earlier one-sided pilot remains separate evidence for the draft's original state. See `notes/thermal-area-sectors.md` and `tasks/T9.md`. Calculation and note update by GPT 6.1 Sol.
 
+**October 13 update:** The four-face $J_{\mathrm{in}}=1$ closure sweep measures both the RMS ordinary Gauss defect and singlet fraction over 125 temperatures. Separate projection with $P_{L,0}\otimes P_{R,0}$ yields exactly closed states whose conditional area and positive RS-volume distributions shift upward with temperature. The projected mean area has high-temperature asymptote $\langle A\rangle\sim(57/14)T_*$; the positive-volume curve is nonlinear over the sampled interval. Projection, trace, recoupling, and tail checks are recorded in the [closure report](../results/thermal-closure-temperature/README.md) and [closed-geometry report](../results/thermal-closed-projection/README.md). The pedagogical account and figures are in [thermal-area-sectors.md](../notes/thermal-area-sectors.md#section-16); the full selected-state reduced blocks and Gibbs characterization remain open.
+
 ## Historical Implementation and Runs
 
 ### T1: Python Pipeline
@@ -184,3 +186,53 @@ T1a completed all four-labelled-face singlet basis data at $K=2,\ldots,12$ (10,5
 ## Variable-face RS baseline and volume note — 2026-10-09 11:10:50 IST
 
 T10's completed catalogue covers all labelled positive-face singlets at $K=2,3,4$, with closed dimensions 2, 36, and 347 and positive-volume dimensions 2, 32, and 329. Independent counts, triple matrices, exact spin-half controls, saved operators, readable catalogues and figure exports are recorded in [volume studies](../notes/volume-studies.md). The saved verifier checked 112 blocks and 385 eigenstates. This is a kinematic catalogue; Hamiltonian spectra and fixed-$K$ thermal volumes are now recorded separately under T11. Physical normalization and higher-valence AL orientation data remain unresolved.
+
+
+## T11 geometric-result closeout — 2026-10-11 10:27:17 IST
+
+- Completed and checked four/five-site persistence, five explicitly prepared $K=4$ FL references, their geometric diagnostics, energy-group comparisons and Gibbs reconstruction. Prior suite: 42 tests; independent residual maximum $5.14\times10^{-12}$. No physics rerun in this update.
+- The complete-graph collapse does not persist at five sites. At four sites the ground is kernel-dominated with broad angular fluctuations, despite near-unit four-face weight.
+- Preserved both physics dialogs in the Hamiltonian write-up. On-site repulsion is the preferred term interpretation. $g_VV$ and signed-triple terms are proposals; $K=4$ FL evolution is unperformed.
+- [Session record](sessions/2026-10-11-t11-geometry-closeout.md); T11 stays IN PROGRESS. The 18-study deployment references above are historical; current deployment evidence is recorded separately below when verified.
+
+
+### Verified dashboard release — 2026-10-11 11:07:11 IST
+
+Website main `cea6ae9`; deployment run `38113563387` succeeded. Live catalogue: 20 studies, 28 records, 33 figures; all 235 asset URLs passed public checks and browser verification showed the new T11 cards/plots. See [deployment evidence](sessions/2026-10-11-t11-geometry-closeout.md#dashboard-deployment-and-acceptance). Research files remain uncommitted; no new scientific calculation.
+
+## T11 candidate Hamiltonians and prepared-state evolution — 2026-10-11 13:52:01 IST
+
+Completed the $K=4$, 105-dimensional singlet comparison of the baseline,
+$H_0+g_VV_{\mathrm{RS}}$, and $H_0+\lambda_\chi Q_\chi$, with a limited
+ring control. The 62-setting parameter scan distinguishes energy, positive
+volume, and oriented-grasp readouts. On the closed four-face sector,
+$V_{\mathrm{RS}}=2\gamma^{3/2}\sqrt{|Q_\chi|}$, so the two candidates probe
+related grasp information, with the signed term additionally selecting its
+orientation.
+
+Propagated five explicitly prepared $K=4$ FL references under five
+Hamiltonian choices at $U/t=5,20$ (50 exact energy-basis trajectories).
+Independent verification covered 1,510 checks with maximum residual
+$1.07\times10^{-12}$. At $U/t=20$, the complete-graph ground mean volume is
+0.033487 for the baseline, 0.601241 for $\alpha_V=-1$, 0.031332 for
+$\alpha_V=+1$, and 0.601235 for either sign of $H_\chi$; changing the signed
+coupling reverses the preferred grasp orientation. These are project-volume
+units; physical calibration and a physical derivation of the couplings remain
+open. See [candidate results](../results/t11-candidate-hamiltonians/README.md)
+and [the T11 task](tasks/T11.md).
+
+The latest numerics dashboard deployment is website commit
+`f59a2ccd4e3b47edd91e1c974dd3eb4b20ed8c98` (workflow `38124134232`). Its live
+catalogue has 21 studies, 29 records, and 38 figures. All 30 new T11 file and
+figure URLs returned HTTP 200, and hashes for the four compressed data files
+matched their packaged sources. See the [session closeout](sessions/2026-10-11-t11-geometry-closeout.md).
+
+## InfoDash dashboard deployment — 2026-10-12 21:08:16 IST
+
+Published the reusable numerical tables with the existing catalogue at
+<https://quantumofgravity.com/projects/scattering-in-lqg/numerics/>. Website
+commit `8263c95b2250bc724605a71c73f1a13e429b1b3d` passed production workflow
+`38271093411`. The live manifest lists 30 datasets and 2,049 numerical rows;
+all 301 referenced dashboard URLs returned HTTP 200. No scientific calculations
+were rerun. T11 remains IN PROGRESS. See the
+[deployment session](sessions/2026-10-12-infodash-deployment.md).

@@ -1,6 +1,6 @@
 # Tech Context
 
-*Last Updated: 2026-10-10 03:26:38 IST*
+*Last Updated: 2026-10-11 13:52:01 IST*
 
 ## Technology Stack
 
@@ -95,3 +95,21 @@ neither supplies state construction routines.
 - Fock-space dimensions grow combinatorially with the number of modes and bosons.
 - Positive-volume spectral calculations currently limit active dense blocks to dimension 512.
 - Numerical claims remain bounded by the specific states, ranges, controls, and checks recorded in their task notes.
+
+
+## T11 geometric diagnostics — 2026-10-11 10:27:17 IST
+
+The shared Python library includes `geometric_diagnostics.py`; state preparation, energy-group comparison, full-spectrum thermal reconstruction, plotting, and verification remain in separate drivers. Saved geometric outputs are under `results/t11-size-comparison/` and `results/t11-geometric-interpretation/`. Assignment-specific angular normalization and coherent projector conditioning retain selection probabilities. The October 11 follow-up adds candidate Hamiltonians and exact energy-basis FL evolution in `code/python/t11_candidate_hamiltonians.py`; their saved spectra, thermal data, 50 trajectories, and verification are under `results/t11-candidate-hamiltonians/`. The independent verifier performed 1,510 checks with maximum residual $1.07\times10^{-12}$. The catalogue builder packages saved files with original-source SHA-256 hashes and supports `--reuse-history`. Markdown reports are served as text with their original download names because website deployment excludes `.md`. No new Rust run was performed.
+
+## T11 candidate interactions and evolution — 2026-10-11 13:52:01 IST
+
+The candidate driver compares $H_0$, $H_0+g_VV_{\mathrm{RS}}$, and
+$H_0+\lambda_\chi Q_\chi$ on the four-site $K=4$, total-spin-zero space.
+It uses spectral phases for unitary propagation of prepared FL references and
+records norm, energy, area, and closure conservation residuals. On the closed
+four-face space, the signed grasp and positive RS volume obey
+$V_{\mathrm{RS}}=2\gamma^{3/2}\sqrt{|Q_\chi|}$; this is a space-specific
+operator identity, not a physical derivation of either added interaction.
+The equal-strength complete graph is the tetrahedral face-adjacency model;
+the ring is a sparse-connectivity control. The candidate report specifies
+couplings, sampling, and limitations.

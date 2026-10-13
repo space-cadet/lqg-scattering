@@ -1,0 +1,379 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "Constructive edge sewing probes",
+    "subtitle": "Saved numerical records from results/sewing-probes/summary.json"
+  },
+  "columns": [
+    {
+      "key": "runId",
+      "label": "Case",
+      "type": "string"
+    },
+    {
+      "key": "results.interpretation",
+      "label": "interpretation",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.sourceGroup",
+      "label": "sourceGroup",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.nonzero_entries",
+      "label": "nonzero entries",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.norm",
+      "label": "norm",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.sewn_edges",
+      "label": "sewn edges",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.identity_network_evaluation",
+      "label": "identity network evaluation",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.raw_norm",
+      "label": "raw norm",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.normalized_norm",
+      "label": "normalized norm",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.boundary_tensor_entries",
+      "label": "boundary tensor entries",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.normalized_boundary_contraction",
+      "label": "normalized boundary contraction",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.exterior_sewn_edges",
+      "label": "exterior sewn edges",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.prism_identity_network_evaluation",
+      "label": "prism identity network evaluation",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "series",
+      "label": "Series",
+      "type": "string",
+      "visible": false
+    }
+  ],
+  "charts": {
+    "type": "scatter",
+    "x": "results.nonzero_entries",
+    "y": "results.nonzero_entries",
+    "groupBy": "series"
+  },
+  "runs": [
+    {
+      "runId": "sewing-probes:case-0001:1",
+      "task": "Unassigned",
+      "status": "complete",
+      "description": "Constructive edge sewing probes",
+      "parameters": {},
+      "results": {
+        "interpretation": "Complete contractions are scalar network evaluations, not ket norms or energies. Boundary tensors are normalized kets on their unsewn edge spaces. Keep link holonomy arguments or physical indices to obtain a nontrivial closed-network state. No Hamiltonian or binding energy assigned to these networks.",
+        "sourceGroup": "triangle",
+        "pair_powers": [
+          1,
+          1,
+          1
+        ],
+        "twice_edge_spins": [
+          2,
+          2,
+          2
+        ],
+        "tensor_shape": [
+          3,
+          3,
+          3
+        ],
+        "nonzero_entries": 6,
+        "norm": 1.0
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/sewing-probes/summary.json": "c2f052fd2b4c8ef4ea89363eef9015fe5509e2d7dc204ba4a7edd53c84abc5d0"
+        },
+        "presentationSource": "results/sewing-probes/summary.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$.triangle"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/sewing-probes/summary.json",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "summary.json",
+          "path": "../study-assets/results/sewing-probes/summary.json",
+          "kind": "data",
+          "sha256": "c2f052fd2b4c8ef4ea89363eef9015fe5509e2d7dc204ba4a7edd53c84abc5d0",
+          "sourcePath": "results/sewing-probes/summary.json",
+          "sourceSha256": "c2f052fd2b4c8ef4ea89363eef9015fe5509e2d7dc204ba4a7edd53c84abc5d0"
+        }
+      ],
+      "figures": [],
+      "series": "sourceGroup=triangle"
+    },
+    {
+      "runId": "sewing-probes:case-0002:2",
+      "task": "Unassigned",
+      "status": "complete",
+      "description": "Constructive edge sewing probes",
+      "parameters": {},
+      "results": {
+        "interpretation": "Complete contractions are scalar network evaluations, not ket norms or energies. Boundary tensors are normalized kets on their unsewn edge spaces. Keep link holonomy arguments or physical indices to obtain a nontrivial closed-network state. No Hamiltonian or binding energy assigned to these networks.",
+        "sourceGroup": "single_tetrahedron",
+        "faces": [
+          [
+            "AB",
+            "BC",
+            "AC"
+          ],
+          [
+            "AB",
+            "BD",
+            "AD"
+          ],
+          [
+            "AC",
+            "CD",
+            "AD"
+          ],
+          [
+            "BC",
+            "CD",
+            "BD"
+          ]
+        ],
+        "sewn_edges": 6,
+        "identity_network_evaluation": 0.006172839506172848
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/sewing-probes/summary.json": "c2f052fd2b4c8ef4ea89363eef9015fe5509e2d7dc204ba4a7edd53c84abc5d0"
+        },
+        "presentationSource": "results/sewing-probes/summary.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$.single_tetrahedron"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/sewing-probes/summary.json",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "sourceGroup=single_tetrahedron"
+    },
+    {
+      "runId": "sewing-probes:case-0003:3",
+      "task": "Unassigned",
+      "status": "complete",
+      "description": "Constructive edge sewing probes",
+      "parameters": {},
+      "results": {
+        "interpretation": "Complete contractions are scalar network evaluations, not ket norms or energies. Boundary tensors are normalized kets on their unsewn edge spaces. Keep link holonomy arguments or physical indices to obtain a nontrivial closed-network state. No Hamiltonian or binding energy assigned to these networks.",
+        "sourceGroup": "open_tetrahedron_patch",
+        "faces": [
+          [
+            "AB",
+            "BD",
+            "AD"
+          ],
+          [
+            "AC",
+            "CD",
+            "AD"
+          ],
+          [
+            "BC",
+            "CD",
+            "BD"
+          ]
+        ],
+        "boundary_edges": [
+          "AB",
+          "AC",
+          "BC"
+        ],
+        "open_legs": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        "tensor_shape": [
+          3,
+          3,
+          3
+        ],
+        "raw_norm": 0.032075014954979233,
+        "normalized_norm": 0.9999999999999999
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/sewing-probes/summary.json": "c2f052fd2b4c8ef4ea89363eef9015fe5509e2d7dc204ba4a7edd53c84abc5d0"
+        },
+        "presentationSource": "results/sewing-probes/summary.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$.open_tetrahedron_patch"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/sewing-probes/summary.json",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "sourceGroup=open_tetrahedron_patch"
+    },
+    {
+      "runId": "sewing-probes:case-0004:4",
+      "task": "Unassigned",
+      "status": "complete",
+      "description": "Constructive edge sewing probes",
+      "parameters": {},
+      "results": {
+        "interpretation": "Complete contractions are scalar network evaluations, not ket norms or energies. Boundary tensors are normalized kets on their unsewn edge spaces. Keep link holonomy arguments or physical indices to obtain a nontrivial closed-network state. No Hamiltonian or binding energy assigned to these networks.",
+        "sourceGroup": "two_separate_open_patches",
+        "norm": 0.9999999999999998,
+        "boundary_tensor_entries": 729
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/sewing-probes/summary.json": "c2f052fd2b4c8ef4ea89363eef9015fe5509e2d7dc204ba4a7edd53c84abc5d0"
+        },
+        "presentationSource": "results/sewing-probes/summary.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$.two_separate_open_patches"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/sewing-probes/summary.json",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "sourceGroup=two_separate_open_patches"
+    },
+    {
+      "runId": "sewing-probes:case-0005:5",
+      "task": "Unassigned",
+      "status": "complete",
+      "description": "Constructive edge sewing probes",
+      "parameters": {},
+      "results": {
+        "interpretation": "Complete contractions are scalar network evaluations, not ket norms or energies. Boundary tensors are normalized kets on their unsewn edge spaces. Keep link holonomy arguments or physical indices to obtain a nontrivial closed-network state. No Hamiltonian or binding energy assigned to these networks.",
+        "sourceGroup": "glued_patches",
+        "normalized_boundary_contraction": 0.19245008972987526,
+        "six_exterior_faces": [
+          [
+            "AB",
+            "BD",
+            "AD"
+          ],
+          [
+            "AC",
+            "CD",
+            "AD"
+          ],
+          [
+            "BC",
+            "CD",
+            "BD"
+          ],
+          [
+            "AB",
+            "BE",
+            "AE"
+          ],
+          [
+            "AC",
+            "CE",
+            "AE"
+          ],
+          [
+            "BC",
+            "CE",
+            "BE"
+          ]
+        ],
+        "exterior_sewn_edges": 9,
+        "prism_identity_network_evaluation": 0.00019799391947518066
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/sewing-probes/summary.json": "c2f052fd2b4c8ef4ea89363eef9015fe5509e2d7dc204ba4a7edd53c84abc5d0"
+        },
+        "presentationSource": "results/sewing-probes/summary.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "$.glued_patches"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/sewing-probes/summary.json",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "sourceGroup=glued_patches"
+    }
+  ],
+  "figures": [],
+  "docs": [
+    {
+      "title": "Numerical studies overview",
+      "path": "../index.html"
+    }
+  ]
+}

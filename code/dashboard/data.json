@@ -1,16 +1,12 @@
 {
   "project": {
     "name": "Scattering in LQG",
-    "subtitle": "Hamiltonian, closed-basis volume and thermal-sector results, with data, plots and verification records"
+    "subtitle": "Numerical study records, saved cases, figures, provenance and calculation limits."
   },
   "tabs": [
     {
-      "id": "studies",
-      "label": "Study Catalogue"
-    },
-    {
       "id": "runs",
-      "label": "Runs & Results"
+      "label": "Runs & Studies"
     },
     {
       "id": "figures",
@@ -18,15 +14,11 @@
     },
     {
       "id": "performance",
-      "label": "Performance"
-    },
-    {
-      "id": "volumeStudies",
-      "label": "Volume Studies"
+      "label": "Charts"
     },
     {
       "id": "theory",
-      "label": "Theory"
+      "label": "Tasks & Numerical Notes"
     }
   ],
   "runs": [
@@ -190,14 +182,452 @@
       "sourceRevision": "uncommitted working tree based on cfaf6866c92c8c4d1bda35473bd67bb4bdeb885a"
     },
     {
+      "runId": "t11-fl-sampling",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared FL evolution sampling",
+      "parameters": {},
+      "results": {
+        "caseCount": 50,
+        "fileCount": 1
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
+        "limits": null,
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/t11-fl-sampling.json"
+        }
+      ]
+    },
+    {
+      "runId": "t1b-real-plane",
+      "task": "T1b",
+      "status": "complete",
+      "description": "Positive volumes on two real-plane states",
+      "parameters": {},
+      "results": {
+        "caseCount": 2,
+        "fileCount": 1
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t1b_real_plane_volume_results.json",
+        "limits": null,
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/t1b-real-plane.json"
+        }
+      ]
+    },
+    {
+      "runId": "t5c-shape-recovery",
+      "task": "T5c",
+      "status": "complete",
+      "description": "FL covariance shape recovery",
+      "parameters": {},
+      "results": {
+        "caseCount": 84,
+        "fileCount": 1
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t5c_shape_recovery_results.json",
+        "limits": null,
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/t5c-shape-recovery.json"
+        }
+      ]
+    },
+    {
+      "runId": "t5c-weighted-input",
+      "task": "T5c",
+      "status": "complete",
+      "description": "Weighted FL input geometry and volumes",
+      "parameters": {},
+      "results": {
+        "caseCount": 14,
+        "fileCount": 1
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/t5c_input_geometry_results.json",
+        "limits": null,
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/t5c-weighted-input.json"
+        }
+      ]
+    },
+    {
+      "runId": "fl-regular-area",
+      "task": "T1a",
+      "status": "complete",
+      "description": "Regular FL volume versus area",
+      "parameters": {},
+      "results": {
+        "caseCount": 5,
+        "fileCount": 1
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/fl_volume_area_results.json",
+        "limits": null,
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/fl-regular-area.json"
+        }
+      ]
+    },
+    {
+      "runId": "fl-shape-scan",
+      "task": "T1a",
+      "status": "complete",
+      "description": "Equal-area FL shape scan at J=2",
+      "parameters": {},
+      "results": {
+        "caseCount": 440,
+        "fileCount": 1
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from code/dashboard/fl-volume-shape-j2.json",
+        "limits": null,
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/fl-shape-scan.json"
+        }
+      ]
+    },
+    {
+      "runId": "binding-energy",
+      "task": "T11",
+      "status": "complete",
+      "description": "Same-number detachment energies",
+      "parameters": {},
+      "results": {
+        "caseCount": 8,
+        "fileCount": 1
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/binding-energy/summary.json",
+        "limits": null,
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/binding-energy.json"
+        }
+      ]
+    },
+    {
+      "runId": "state-space-probes",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open state evolution probes",
+      "parameters": {},
+      "results": {
+        "caseCount": 6,
+        "fileCount": 1
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/state-space-probes/summary.json",
+        "limits": null,
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/state-space-probes.json"
+        }
+      ]
+    },
+    {
+      "runId": "sewing-probes",
+      "task": "Unassigned",
+      "status": "complete",
+      "description": "Constructive edge sewing probes",
+      "parameters": {},
+      "results": {
+        "caseCount": 5,
+        "fileCount": 1
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Saved numerical records from results/sewing-probes/summary.json",
+        "limits": null,
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/sewing-probes.json"
+        }
+      ]
+    },
+    {
+      "runId": "t11-size-comparison",
+      "task": "T11",
+      "status": "complete",
+      "description": "Four versus five sites: thermal-volume persistence",
+      "studyId": "t11-size-comparison",
+      "params": {
+        "scope": "Matched mean occupation 2K/L=2: (L,K)=(4,4) and (5,5), singlet dimensions 105 and 1,176. Complete and ring graphs at t=1,U=20, plus free and no-hopping controls. Intermediate-temperature nonmonotonicity persists; the pronounced four-site complete-graph low-temperature collapse does not.",
+        "limits": "The plot reports volume per selected triple; CSV files also retain total volume. Triple counts: 4 for both four-site graphs, 10 for five-site complete, 5 for five-site ring. Unit hopping per bond, g=0. Coordination changes and the odd ring make this a persistence test, not clean finite-size scaling. Six sites were not calculated.",
+        "calculationStatus": "Calculated and independently checked; prior 38-test suite passed"
+      },
+      "figures": [
+        {
+          "name": "volume_comparison.png",
+          "path": "study-assets/results/t11-size-comparison/volume_comparison.png",
+          "source": "results/t11-size-comparison/volume_comparison.png",
+          "sourceSha256": "a6e79b800df92bacfd177d623aaadf2b9adbacce1122a932c1ea630802a7d6db",
+          "title": "Four versus five sites: volume per selected triple at U/t=20",
+          "width": 2100,
+          "height": 1020,
+          "wide": false,
+          "pdf": "study-assets/results/t11-size-comparison/volume_comparison.pdf"
+        },
+        {
+          "name": "four-and-five-site-graphs.png",
+          "path": "study-assets/figures/hamiltonian-systems/four-and-five-site-graphs.png",
+          "source": "figures/hamiltonian-systems/four-and-five-site-graphs.png",
+          "sourceSha256": "1760c1c22599f6c6aefc0af6923f308ce81ee4cefa657f18544421e00b9716fd",
+          "title": "Complete and ring interaction graphs, with one selected volume triple",
+          "width": 1536,
+          "height": 1024,
+          "wide": false
+        }
+      ],
+      "catalogueDate": "2026-10-11",
+      "parameters": {},
+      "results": {
+        "caseCount": 12,
+        "fileCount": 24
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Matched mean occupation 2K/L=2: (L,K)=(4,4) and (5,5), singlet dimensions 105 and 1,176. Complete and ring graphs at t=1,U=20, plus free and no-hopping controls. Intermediate-temperature nonmonotonicity persists; the pronounced four-site complete-graph low-temperature collapse does not.",
+        "limits": "The plot reports volume per selected triple; CSV files also retain total volume. Triple counts: 4 for both four-site graphs, 10 for five-site complete, 5 for five-site ring. Unit hopping per bond, g=0. Coordination changes and the odd ring make this a persistence test, not clean finite-size scaling. Six sites were not calculated.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 38-test suite passed"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/t11-size-comparison.json"
+        }
+      ]
+    },
+    {
+      "runId": "t11-geometric-interpretation",
+      "task": "T11",
+      "status": "complete",
+      "description": "Prepared tetrahedral FL states and the volume crossover",
+      "studyId": "t11-geometric-interpretation",
+      "params": {
+        "scope": "Five explicitly constructed K=4 FL references: equal input face areas, phi=90,60,30,10,0 degrees. Saved face-spin distributions, pair correlations, angular fluctuations, volume distributions and overlaps; comparisons with the first three energy groups of complete/ring Hamiltonians at t=1,U=20. The complete ground is kernel-dominated despite nearly unit four-face weight.",
+        "limits": "FL references are prepared states; energy groups and Gibbs mixtures are separate comparisons. This record contains static readouts; the separate T11 candidate-Hamiltonian record includes geometric-coupling scans and time evolution. Angular normalization is assignment-specific and conditioning retains coherence and selection probabilities. Geometric volume uses the established sqrt(2)/12 four-valent conversion. The Hamiltonian in this record uses g=0. No new independent Rust run.",
+        "calculationStatus": "Calculated and independently checked; prior 42-test suite passed"
+      },
+      "figures": [
+        {
+          "name": "thermal_geometric_diagnostics.png",
+          "path": "study-assets/results/t11-geometric-interpretation/thermal_geometric_diagnostics.png",
+          "source": "results/t11-geometric-interpretation/thermal_geometric_diagnostics.png",
+          "sourceSha256": "50973a1110323b8c1b0731613932f77f799325200431763373a26c5246ff0af0",
+          "title": "Four-face FL references and thermal geometric diagnostics",
+          "width": 2100,
+          "height": 1680,
+          "wide": false,
+          "pdf": "study-assets/results/t11-geometric-interpretation/thermal_geometric_diagnostics.pdf"
+        }
+      ],
+      "catalogueDate": "2026-10-11",
+      "parameters": {},
+      "results": {
+        "caseCount": 11,
+        "fileCount": 23
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Five explicitly constructed K=4 FL references: equal input face areas, phi=90,60,30,10,0 degrees. Saved face-spin distributions, pair correlations, angular fluctuations, volume distributions and overlaps; comparisons with the first three energy groups of complete/ring Hamiltonians at t=1,U=20. The complete ground is kernel-dominated despite nearly unit four-face weight.",
+        "limits": "FL references are prepared states; energy groups and Gibbs mixtures are separate comparisons. This record contains static readouts; the separate T11 candidate-Hamiltonian record includes geometric-coupling scans and time evolution. Angular normalization is assignment-specific and conditioning retains coherence and selection probabilities. Geometric volume uses the established sqrt(2)/12 four-valent conversion. The Hamiltonian in this record uses g=0. No new independent Rust run.",
+        "recordedStudyStatus": "Calculated and independently checked; prior 42-test suite passed"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/t11-geometric-interpretation.json"
+        }
+      ]
+    },
+    {
+      "runId": "t11-candidate-hamiltonians",
+      "task": "T11",
+      "status": "complete",
+      "description": "Candidate geometric Hamiltonians and prepared-FL dynamics",
+      "studyId": "t11-candidate-hamiltonians",
+      "params": {
+        "scope": "Exact K=4, total-spin-zero study (dimension 105). The baseline is complete-graph face-to-face area exchange plus on-site repulsion, with equal hopping strength on each bond. We added the positive RS-volume term and the signed triple-grasp term as separate candidate Hamiltonians, then evolved five explicitly prepared FL references under the baseline and both signed couplings. The 62 parameter settings cover U/t=0,1,5,20 and normalized coupling alpha=-2,-1,-0.5,0,0.5,1,2; the ring is included only as a sparse-hopping control. The study contains 6,510 saved energy levels and 50 prepared-state trajectories.",
+        "limits": "The complete graph represents tetrahedral face adjacency; the ring is a hopping control, not a proposed tetrahedron. The positive-volume and signed-grasp additions are tested candidate models, not derived physical interactions. Results use one copy, fixed K=4, project-normalized volume, and t=1; no physical coupling calibration or phase-transition claim is implied. The long-time dynamics are exact energy-basis samples with adaptive logarithmic coverage, not a uniformly resolved trace of every fast oscillation. Large thermal and dynamics CSVs are gzip-compressed for download; their source and package checksums are both listed.",
+        "calculationStatus": "62 Hamiltonian parameter settings and 50 FL trajectories calculated; 1,510 independent checks passed (maximum residual 1.07e-12)"
+      },
+      "figures": [
+        {
+          "name": "candidate_ground_energy_shifts.png",
+          "path": "study-assets/results/t11-candidate-hamiltonians/candidate_ground_energy_shifts.png",
+          "source": "results/t11-candidate-hamiltonians/candidate_ground_energy_shifts.png",
+          "sourceSha256": "214c97bf11d2834b8f8f18579473508694041bc8c257be132e93561b082d991e",
+          "title": "Hamiltonian ground-energy shifts relative to the baseline",
+          "width": 2856,
+          "height": 1303,
+          "wide": false,
+          "pdf": "study-assets/results/t11-candidate-hamiltonians/candidate_ground_energy_shifts.pdf"
+        },
+        {
+          "name": "candidate_ground_state_response.png",
+          "path": "study-assets/results/t11-candidate-hamiltonians/candidate_ground_state_response.png",
+          "source": "results/t11-candidate-hamiltonians/candidate_ground_state_response.png",
+          "sourceSha256": "8c37617ee9393a2ea2709cdf38b5c81dad60db1f6a21ab419fc47beae4fdeeda",
+          "title": "Ground-state volume and signed-grasp response",
+          "width": 3035,
+          "height": 2168,
+          "wide": false,
+          "pdf": "study-assets/results/t11-candidate-hamiltonians/candidate_ground_state_response.pdf"
+        },
+        {
+          "name": "candidate_thermal_response_u20.png",
+          "path": "study-assets/results/t11-candidate-hamiltonians/candidate_thermal_response_u20.png",
+          "source": "results/t11-candidate-hamiltonians/candidate_thermal_response_u20.png",
+          "sourceSha256": "3da192d9cd378b7f91b438e3b309d605e1d5d9ea448fa0fce1c6f3372fbfb79b",
+          "title": "Thermal volume and grasp response at U/t=20",
+          "width": 3099,
+          "height": 2152,
+          "wide": false,
+          "pdf": "study-assets/results/t11-candidate-hamiltonians/candidate_thermal_response_u20.pdf"
+        },
+        {
+          "name": "ring_topology_control.png",
+          "path": "study-assets/results/t11-candidate-hamiltonians/ring_topology_control.png",
+          "source": "results/t11-candidate-hamiltonians/ring_topology_control.png",
+          "sourceSha256": "9bb99d40bddd65fb7ebb5cc20403551c19b795aa99cac561703980c42a591ddf",
+          "title": "Ring hopping topology control",
+          "width": 2856,
+          "height": 1242,
+          "wide": false,
+          "pdf": "study-assets/results/t11-candidate-hamiltonians/ring_topology_control.pdf"
+        },
+        {
+          "name": "prepared_FL_early_dynamics_u20.png",
+          "path": "study-assets/results/t11-candidate-hamiltonians/prepared_FL_early_dynamics_u20.png",
+          "source": "results/t11-candidate-hamiltonians/prepared_FL_early_dynamics_u20.png",
+          "sourceSha256": "c6a7ebbec97649b0dba16abe70575adcc952d90dd2f19b40a410b55f1dbe3da1",
+          "title": "Early evolution of prepared FL states at U/t=20",
+          "width": 3995,
+          "height": 1906,
+          "wide": false,
+          "pdf": "study-assets/results/t11-candidate-hamiltonians/prepared_FL_early_dynamics_u20.pdf"
+        }
+      ],
+      "catalogueDate": "2026-10-11",
+      "parameters": {},
+      "results": {
+        "caseCount": 62,
+        "fileCount": 20
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Exact K=4, total-spin-zero study (dimension 105). The baseline is complete-graph face-to-face area exchange plus on-site repulsion, with equal hopping strength on each bond. We added the positive RS-volume term and the signed triple-grasp term as separate candidate Hamiltonians, then evolved five explicitly prepared FL references under the baseline and both signed couplings. The 62 parameter settings cover U/t=0,1,5,20 and normalized coupling alpha=-2,-1,-0.5,0,0.5,1,2; the ring is included only as a sparse-hopping control. The study contains 6,510 saved energy levels and 50 prepared-state trajectories.",
+        "limits": "The complete graph represents tetrahedral face adjacency; the ring is a hopping control, not a proposed tetrahedron. The positive-volume and signed-grasp additions are tested candidate models, not derived physical interactions. Results use one copy, fixed K=4, project-normalized volume, and t=1; no physical coupling calibration or phase-transition claim is implied. The long-time dynamics are exact energy-basis samples with adaptive logarithmic coverage, not a uniformly resolved trace of every fast oscillation. Large thermal and dynamics CSVs are gzip-compressed for download; their source and package checksums are both listed.",
+        "recordedStudyStatus": "62 Hamiltonian parameter settings and 50 FL trajectories calculated; 1,510 independent checks passed (maximum residual 1.07e-12)"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/t11-candidate-hamiltonians.json"
+        }
+      ]
+    },
+    {
       "runId": "hamiltonian",
       "task": "T11",
       "status": "complete",
-      "description": "Four-site Hamiltonian and thermal volume",
+      "description": "Four-site Hamiltonian spectra and RS-volume observables",
       "studyId": "hamiltonian",
       "params": {
-        "scope": "30 exact singlet calculations on complete and ring graphs. K=2,3,4 means 4,6,8 bosons; dimensions 20,50,105. Dense K=4 temperature scan: 6,030 rows and 409 energy groups.",
-        "limits": "g=0; empty sites allowed. Project-normalized connected-triple RS volume. The temperature response is a finite-sector crossover; the proposed dense U/t transition scan has not been run. Ground-state entropy uses the Gibbs mixture when degenerate.",
+        "scope": "Exact diagonalization of the hopping-plus-on-site-repulsion operator H_G=-t \u03a3_(i,j)\u2208E_G(E_ij+E_ji)+(U/2)\u03a3_i n_i(n_i\u22121), where E_ij=a_i\u2020a_j+b_i\u2020b_j and n_i=a_i\u2020a_i+b_i\u2020b_i. Four sites, fixed boson number 2K and total spin zero; K=2,3,4 gives dimensions 20,50,105, with empty sites allowed. Compare the complete graph (6 hopping bonds) and periodic ring (4), with equal t per bond. The 30 cases use (t,U)=(0,1) or t=1 and U/t=0,1,5,20.",
+        "limits": "The positive Rovelli\u2013Smolin (RS) volume V=(\u03b3\u210f)^(3/2)\u03a3_(connected triples)\u221a|q_ijk|, q_ijk=i[J_i\u00b7J_j,J_j\u00b7J_k], is a separate observable evaluated on energy eigenstates and Gibbs states; it is not a term in H_G, and no g_V V coupling was calculated. The optional spin-exchange setting is g=0. Both graphs select the same four connected triples, so V is the same operator and only the hopping graph changes. Project-normalized volume; physical calibration is open. The temperature response is a finite-sector crossover, not a phase transition. Ground-state entropy uses the Gibbs mixture when degenerate.",
         "calculationStatus": "Pilot complete; broader program open"
       },
       "figures": [
@@ -255,6 +685,28 @@
           "height": 1320,
           "wide": true,
           "pdf": "study-assets/results/hamiltonian-studies/thermal_volume_u5.pdf"
+        }
+      ],
+      "catalogueDate": "2026-10-09",
+      "parameters": {},
+      "results": {
+        "caseCount": 30,
+        "fileCount": 20
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Exact diagonalization of the hopping-plus-on-site-repulsion operator H_G=-t \u03a3_(i,j)\u2208E_G(E_ij+E_ji)+(U/2)\u03a3_i n_i(n_i\u22121), where E_ij=a_i\u2020a_j+b_i\u2020b_j and n_i=a_i\u2020a_i+b_i\u2020b_i. Four sites, fixed boson number 2K and total spin zero; K=2,3,4 gives dimensions 20,50,105, with empty sites allowed. Compare the complete graph (6 hopping bonds) and periodic ring (4), with equal t per bond. The 30 cases use (t,U)=(0,1) or t=1 and U/t=0,1,5,20.",
+        "limits": "The positive Rovelli\u2013Smolin (RS) volume V=(\u03b3\u210f)^(3/2)\u03a3_(connected triples)\u221a|q_ijk|, q_ijk=i[J_i\u00b7J_j,J_j\u00b7J_k], is a separate observable evaluated on energy eigenstates and Gibbs states; it is not a term in H_G, and no g_V V coupling was calculated. The optional spin-exchange setting is g=0. Both graphs select the same four connected triples, so V is the same operator and only the hopping graph changes. Project-normalized volume; physical calibration is open. The temperature response is a finite-sector crossover, not a phase transition. Ground-state entropy uses the Gibbs mixture when degenerate.",
+        "recordedStudyStatus": "Pilot complete; broader program open"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/hamiltonian.json"
         }
       ]
     },
@@ -314,6 +766,28 @@
           "wide": true,
           "pdf": "study-assets/figures/single-copy-volume/weighted_volume_area.pdf"
         }
+      ],
+      "catalogueDate": "2026-10-09",
+      "parameters": {},
+      "results": {
+        "caseCount": 11,
+        "fileCount": 38
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Four labelled faces, zero-spin faces allowed; K=2 through 12, 10,549 basis states. RS/AL means, variances, spectra and reconstructible operators.",
+        "limits": "One copy, zero temperature. K=13 was stopped and has no accepted result. Physical volume calibration remains open; full tensor/root checks cover K<=4, with the recorded block checks at higher K.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/closed-basis.json"
+        }
       ]
     },
     {
@@ -361,6 +835,28 @@
           "wide": false,
           "pdf": "study-assets/figures/variable-n-volume/rs_volume_means.pdf"
         }
+      ],
+      "catalogueDate": "2026-10-09",
+      "parameters": {},
+      "results": {
+        "caseCount": 9,
+        "fileCount": 41
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Nine sectors at K=2,3,4 with 4<=N<=2K. Closed dimensions 2,36,347; positive-volume dimensions 2,32,329. Independent reconstruction covers 112 blocks and 385 eigenstates.",
+        "limits": "Labelled positive-spin active faces, one copy, zero temperature. Closed states and positive-volume eigenstates are counted separately. Higher-valence AL orientation signs and physical calibration remain unspecified.",
+        "recordedStudyStatus": "Completed declared catalogue"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/variable-faces.json"
+        }
       ]
     },
     {
@@ -386,6 +882,28 @@
           "wide": true,
           "pdf": "study-assets/figures/thermal-area-sectors/thermal_coefficients_vacuum.pdf"
         }
+      ],
+      "catalogueDate": "2026-10-09",
+      "parameters": {},
+      "results": {
+        "caseCount": 964,
+        "fileCount": 3
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "J_in=0, four faces and eight modes per copy; coefficient and area distributions at four temperatures.",
+        "limits": "Selected two-copy squeeze on full oscillator support; no separate per-copy singlet projection. Ordinary per-copy spin differs from combined/transformed closure. Plot ranges are truncated; full reduced-state spectra and geometric observables remain open.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/vacuum-area.json"
+        }
       ]
     },
     {
@@ -410,6 +928,28 @@
           "height": 1290,
           "wide": true,
           "pdf": "study-assets/figures/thermal-spin-sectors/thermal_vacuum_spin.pdf"
+        }
+      ],
+      "catalogueDate": "2026-10-09",
+      "parameters": {},
+      "results": {
+        "caseCount": 196,
+        "fileCount": 3
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Ordinary per-copy spin distributions conditioned on boson number, at beta*hbar*omega=1.",
+        "limits": "Selected two-copy squeeze on full oscillator support; no separate per-copy singlet projection. Ordinary per-copy spin differs from combined/transformed closure. Plot ranges are truncated; full reduced-state spectra and geometric observables remain open.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/vacuum-spin.json"
         }
       ]
     },
@@ -447,6 +987,28 @@
           "wide": true,
           "pdf": "study-assets/figures/thermal-j1-spin/j1_spin_temperature.pdf"
         }
+      ],
+      "catalogueDate": "2026-10-09",
+      "parameters": {},
+      "results": {
+        "caseCount": 5,
+        "fileCount": 3
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Five temperatures, q through 160; 32,805 independent-method comparisons with maximum difference 2.67e-16.",
+        "limits": "Selected two-copy squeeze on full oscillator support; no separate per-copy singlet projection. Ordinary per-copy spin differs from combined/transformed closure. Plot ranges are truncated; full reduced-state spectra and geometric observables remain open.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/excited-spin.json"
+        }
       ]
     },
     {
@@ -471,6 +1033,28 @@
           "height": 1440,
           "wide": false,
           "pdf": "study-assets/figures/dashboard-history/high_j_boundary.pdf"
+        }
+      ],
+      "catalogueDate": "2026-10-09",
+      "parameters": {},
+      "results": {
+        "caseCount": 13,
+        "fileCount": 1
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Saved Python and Rust probes extend the earlier weighted-input boundary scans.",
+        "limits": "Finite exploratory points. Rust/Python RS comparison at J=10 differs by about 4.4e-10 and remains unresolved; AL agrees within about 4e-17. Stopped attempts are recorded as attempts, not results.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/high-j.json"
         }
       ]
     },
@@ -497,6 +1081,28 @@
           "wide": false,
           "pdf": "study-assets/figures/dashboard-history/magnetization.pdf"
         }
+      ],
+      "catalogueDate": "2026-10-09",
+      "parameters": {},
+      "results": {
+        "caseCount": 10,
+        "fileCount": 2
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Converged n=5 magnetization sweep; the tested magnetization hypothesis was not supported.",
+        "limits": "Historical notation is preserved in downloads. Signed grasp and sqrt(abs(mean grasp)) are proxies, distinct from positive-volume expectations. These finite sampled families do not establish universal behavior.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/magnetization.json"
+        }
       ]
     },
     {
@@ -521,6 +1127,28 @@
           "height": 1440,
           "wide": false,
           "pdf": "study-assets/figures/dashboard-history/chirality.pdf"
+        }
+      ],
+      "catalogueDate": "2026-10-09",
+      "parameters": {},
+      "results": {
+        "caseCount": 13,
+        "fileCount": 2
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Saved plane/channel agreement statistics; the local subset did not establish hidden handedness.",
+        "limits": "Historical notation is preserved in downloads. Signed grasp and sqrt(abs(mean grasp)) are proxies, distinct from positive-volume expectations. These finite sampled families do not establish universal behavior.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/chirality.json"
         }
       ]
     },
@@ -547,6 +1175,28 @@
           "wide": false,
           "pdf": "study-assets/figures/dashboard-history/perturbation.pdf"
         }
+      ],
+      "catalogueDate": "2026-10-09",
+      "parameters": {},
+      "results": {
+        "caseCount": 26,
+        "fileCount": 2
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
+        "limits": "Historical notation is preserved in downloads. Signed grasp and sqrt(abs(mean grasp)) are proxies, distinct from positive-volume expectations. These finite sampled families do not establish universal behavior.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/perturbation.json"
+        }
       ]
     },
     {
@@ -571,6 +1221,28 @@
           "height": 1080,
           "wide": false,
           "pdf": "study-assets/figures/dashboard-history/phase.pdf"
+        }
+      ],
+      "catalogueDate": "2026-10-09",
+      "parameters": {},
+      "results": {
+        "caseCount": 10,
+        "fileCount": 2
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Ten recorded points compare phase defect with signed grasp; broader study remains open.",
+        "limits": "Historical notation is preserved in downloads. Signed grasp and sqrt(abs(mean grasp)) are proxies, distinct from positive-volume expectations. These finite sampled families do not establish universal behavior.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/phase.json"
         }
       ]
     },
@@ -597,6 +1269,28 @@
           "wide": false,
           "pdf": "study-assets/figures/dashboard-history/large_k.pdf"
         }
+      ],
+      "catalogueDate": "2026-10-09",
+      "parameters": {},
+      "results": {
+        "caseCount": 13,
+        "fileCount": 2
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Saved families through historical K=24. The proposed K^(3/2) scaling was not supported for these families.",
+        "limits": "Historical notation is preserved in downloads. Signed grasp and sqrt(abs(mean grasp)) are proxies, distinct from positive-volume expectations. These finite sampled families do not establish universal behavior.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/large-k.json"
+        }
       ]
     },
     {
@@ -621,6 +1315,28 @@
           "height": 1080,
           "wide": false,
           "pdf": "study-assets/figures/dashboard-history/t7a.pdf"
+        }
+      ],
+      "catalogueDate": "2026-10-09",
+      "parameters": {},
+      "results": {
+        "caseCount": 14,
+        "fileCount": 2
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Archived T7A study, retained under current T9 ownership.",
+        "limits": "Historical capped oscillator support and historical state construction; this is distinct from the currently selected two-copy squeezed FL family and exact singlet Hamiltonian Gibbs calculation. Undefined JSON numbers are null in dashboard exports.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/t7a.json"
         }
       ]
     },
@@ -647,6 +1363,28 @@
           "wide": false,
           "pdf": "study-assets/figures/dashboard-history/t7b.pdf"
         }
+      ],
+      "catalogueDate": "2026-10-09",
+      "parameters": {},
+      "results": {
+        "caseCount": 14,
+        "fileCount": 2
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Archived T7B study, retained under current T9 ownership.",
+        "limits": "Historical capped oscillator support and historical state construction; this is distinct from the currently selected two-copy squeezed FL family and exact singlet Hamiltonian Gibbs calculation. Undefined JSON numbers are null in dashboard exports.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/t7b.json"
+        }
       ]
     },
     {
@@ -671,6 +1409,28 @@
           "height": 1080,
           "wide": false,
           "pdf": "study-assets/figures/dashboard-history/t7e.pdf"
+        }
+      ],
+      "catalogueDate": "2026-10-09",
+      "parameters": {},
+      "results": {
+        "caseCount": 10,
+        "fileCount": 2
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Archived T7E study, retained under current T9 ownership.",
+        "limits": "Historical capped oscillator support and historical state construction; this is distinct from the currently selected two-copy squeezed FL family and exact singlet Hamiltonian Gibbs calculation. Undefined JSON numbers are null in dashboard exports.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/t7e.json"
         }
       ]
     },
@@ -697,6 +1457,28 @@
           "wide": false,
           "pdf": "study-assets/figures/dashboard-history/geometry_audit.pdf"
         }
+      ],
+      "catalogueDate": "2026-10-09",
+      "parameters": {},
+      "results": {
+        "caseCount": 4,
+        "fileCount": 1
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Four regular/unequal-shape seed cases; draft squeeze compared with explicit double-singlet postselection.",
+        "limits": "Draft one-sided construction, cutoff and omitted probabilities are recorded. Postselection is not assumed Gibbs and differs from the selected two-copy input construction.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/geometry-audit.json"
+        }
       ]
     },
     {
@@ -721,6 +1503,28 @@
           "height": 1080,
           "wide": false,
           "pdf": "study-assets/figures/dashboard-history/volume_controls.pdf"
+        }
+      ],
+      "catalogueDate": "2026-10-09",
+      "parameters": {},
+      "results": {
+        "caseCount": 2,
+        "fileCount": 1
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Independent tensor controls: paired spin-half singlet has positive RS/AL volume despite zero signed mean; collinear product gives zero.",
+        "limits": "Simple-state implementation checks; project normalization and selected four-face AL embedding only.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/volume-controls.json"
         }
       ]
     },
@@ -747,12 +1551,34 @@
           "wide": false,
           "pdf": "study-assets/figures/dashboard-history/covariance_pilot.pdf"
         }
+      ],
+      "catalogueDate": "2026-10-09",
+      "parameters": {},
+      "results": {
+        "caseCount": 6,
+        "fileCount": 1
+      },
+      "provenance": {
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+      },
+      "assessment": {
+        "summary": "Six saved pilot records; later shape recovery and weighted-input studies are shown in Volume Studies.",
+        "limits": "Exploratory covariance-derived geometry; preserve the distinction from the classical input tetrahedron and positive-volume operator.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/covariance-pilot.json"
+        }
       ]
     }
   ],
   "summary": {
-    "totalRuns": 26,
-    "completeRuns": 26,
+    "totalRuns": 38,
+    "completeRuns": 38,
     "zeroSignedMeanOnRealPlanes": true,
     "nRangeRecorded": "4-8",
     "convergedBaselineVerified": true,
@@ -762,10 +1588,10 @@
     "publishedPaper": "EPJC (2022)",
     "followUpManuscript": "In progress",
     "independentN6Pending": true,
-    "registeredStudies": 18
+    "registeredStudies": 21
   },
   "theory": {
-    "description": "The catalogue records exact singlet Hamiltonian studies, kinematic RS/AL catalogues, selected squeezed thermal-sector distributions, and earlier proxy studies. Model support, normalization and verification limits accompany each result. The proposed dense interaction scan and bulk phase analysis remain future work.",
+    "description": "The catalogue records exact singlet Hamiltonian studies, kinematic RS/AL catalogues, selected squeezed thermal-sector distributions, and earlier proxy studies. Model support, normalization and verification limits accompany each result. Broader parameter, finite-size and bulk-phase studies remain open.",
     "citation": "D. Vaid and D. Suresh, EPJC (2022); follow-up calculations under review",
     "arxiv": "2208.10632"
   },
@@ -861,6 +1687,133 @@
       ]
     },
     {
+      "name": "volume_comparison.png",
+      "path": "study-assets/results/t11-size-comparison/volume_comparison.png",
+      "source": "results/t11-size-comparison/volume_comparison.png",
+      "sourceSha256": "a6e79b800df92bacfd177d623aaadf2b9adbacce1122a932c1ea630802a7d6db",
+      "title": "Four versus five sites: volume per selected triple at U/t=20",
+      "width": 2100,
+      "height": 1020,
+      "wide": false,
+      "pdf": "study-assets/results/t11-size-comparison/volume_comparison.pdf",
+      "studyId": "t11-size-comparison",
+      "description": "Four versus five sites: thermal-volume persistence",
+      "tags": [
+        "T11"
+      ]
+    },
+    {
+      "name": "four-and-five-site-graphs.png",
+      "path": "study-assets/figures/hamiltonian-systems/four-and-five-site-graphs.png",
+      "source": "figures/hamiltonian-systems/four-and-five-site-graphs.png",
+      "sourceSha256": "1760c1c22599f6c6aefc0af6923f308ce81ee4cefa657f18544421e00b9716fd",
+      "title": "Complete and ring interaction graphs, with one selected volume triple",
+      "width": 1536,
+      "height": 1024,
+      "wide": false,
+      "studyId": "t11-size-comparison",
+      "description": "Four versus five sites: thermal-volume persistence",
+      "tags": [
+        "T11"
+      ]
+    },
+    {
+      "name": "thermal_geometric_diagnostics.png",
+      "path": "study-assets/results/t11-geometric-interpretation/thermal_geometric_diagnostics.png",
+      "source": "results/t11-geometric-interpretation/thermal_geometric_diagnostics.png",
+      "sourceSha256": "50973a1110323b8c1b0731613932f77f799325200431763373a26c5246ff0af0",
+      "title": "Four-face FL references and thermal geometric diagnostics",
+      "width": 2100,
+      "height": 1680,
+      "wide": false,
+      "pdf": "study-assets/results/t11-geometric-interpretation/thermal_geometric_diagnostics.pdf",
+      "studyId": "t11-geometric-interpretation",
+      "description": "Prepared tetrahedral FL states and the volume crossover",
+      "tags": [
+        "T11"
+      ]
+    },
+    {
+      "name": "candidate_ground_energy_shifts.png",
+      "path": "study-assets/results/t11-candidate-hamiltonians/candidate_ground_energy_shifts.png",
+      "source": "results/t11-candidate-hamiltonians/candidate_ground_energy_shifts.png",
+      "sourceSha256": "214c97bf11d2834b8f8f18579473508694041bc8c257be132e93561b082d991e",
+      "title": "Hamiltonian ground-energy shifts relative to the baseline",
+      "width": 2856,
+      "height": 1303,
+      "wide": false,
+      "pdf": "study-assets/results/t11-candidate-hamiltonians/candidate_ground_energy_shifts.pdf",
+      "studyId": "t11-candidate-hamiltonians",
+      "description": "Candidate geometric Hamiltonians and prepared-FL dynamics",
+      "tags": [
+        "T11"
+      ]
+    },
+    {
+      "name": "candidate_ground_state_response.png",
+      "path": "study-assets/results/t11-candidate-hamiltonians/candidate_ground_state_response.png",
+      "source": "results/t11-candidate-hamiltonians/candidate_ground_state_response.png",
+      "sourceSha256": "8c37617ee9393a2ea2709cdf38b5c81dad60db1f6a21ab419fc47beae4fdeeda",
+      "title": "Ground-state volume and signed-grasp response",
+      "width": 3035,
+      "height": 2168,
+      "wide": false,
+      "pdf": "study-assets/results/t11-candidate-hamiltonians/candidate_ground_state_response.pdf",
+      "studyId": "t11-candidate-hamiltonians",
+      "description": "Candidate geometric Hamiltonians and prepared-FL dynamics",
+      "tags": [
+        "T11"
+      ]
+    },
+    {
+      "name": "candidate_thermal_response_u20.png",
+      "path": "study-assets/results/t11-candidate-hamiltonians/candidate_thermal_response_u20.png",
+      "source": "results/t11-candidate-hamiltonians/candidate_thermal_response_u20.png",
+      "sourceSha256": "3da192d9cd378b7f91b438e3b309d605e1d5d9ea448fa0fce1c6f3372fbfb79b",
+      "title": "Thermal volume and grasp response at U/t=20",
+      "width": 3099,
+      "height": 2152,
+      "wide": false,
+      "pdf": "study-assets/results/t11-candidate-hamiltonians/candidate_thermal_response_u20.pdf",
+      "studyId": "t11-candidate-hamiltonians",
+      "description": "Candidate geometric Hamiltonians and prepared-FL dynamics",
+      "tags": [
+        "T11"
+      ]
+    },
+    {
+      "name": "ring_topology_control.png",
+      "path": "study-assets/results/t11-candidate-hamiltonians/ring_topology_control.png",
+      "source": "results/t11-candidate-hamiltonians/ring_topology_control.png",
+      "sourceSha256": "9bb99d40bddd65fb7ebb5cc20403551c19b795aa99cac561703980c42a591ddf",
+      "title": "Ring hopping topology control",
+      "width": 2856,
+      "height": 1242,
+      "wide": false,
+      "pdf": "study-assets/results/t11-candidate-hamiltonians/ring_topology_control.pdf",
+      "studyId": "t11-candidate-hamiltonians",
+      "description": "Candidate geometric Hamiltonians and prepared-FL dynamics",
+      "tags": [
+        "T11"
+      ]
+    },
+    {
+      "name": "prepared_FL_early_dynamics_u20.png",
+      "path": "study-assets/results/t11-candidate-hamiltonians/prepared_FL_early_dynamics_u20.png",
+      "source": "results/t11-candidate-hamiltonians/prepared_FL_early_dynamics_u20.png",
+      "sourceSha256": "c6a7ebbec97649b0dba16abe70575adcc952d90dd2f19b40a410b55f1dbe3da1",
+      "title": "Early evolution of prepared FL states at U/t=20",
+      "width": 3995,
+      "height": 1906,
+      "wide": false,
+      "pdf": "study-assets/results/t11-candidate-hamiltonians/prepared_FL_early_dynamics_u20.pdf",
+      "studyId": "t11-candidate-hamiltonians",
+      "description": "Candidate geometric Hamiltonians and prepared-FL dynamics",
+      "tags": [
+        "T11"
+      ]
+    },
+    {
       "name": "ground_energy_graph_difference.png",
       "path": "study-assets/results/hamiltonian-studies/ground_energy_graph_difference.png",
       "source": "results/hamiltonian-studies/ground_energy_graph_difference.png",
@@ -871,7 +1824,7 @@
       "wide": true,
       "pdf": "study-assets/results/hamiltonian-studies/ground_energy_graph_difference.pdf",
       "studyId": "hamiltonian",
-      "description": "Four-site Hamiltonian and thermal volume",
+      "description": "Four-site Hamiltonian spectra and RS-volume observables",
       "tags": [
         "T11"
       ]
@@ -887,7 +1840,7 @@
       "wide": true,
       "pdf": "study-assets/results/hamiltonian-studies/ground_energy_vs_repulsion.pdf",
       "studyId": "hamiltonian",
-      "description": "Four-site Hamiltonian and thermal volume",
+      "description": "Four-site Hamiltonian spectra and RS-volume observables",
       "tags": [
         "T11"
       ]
@@ -903,7 +1856,7 @@
       "wide": true,
       "pdf": "study-assets/results/hamiltonian-studies/k4_low_energy_volume_spectrum.pdf",
       "studyId": "hamiltonian",
-      "description": "Four-site Hamiltonian and thermal volume",
+      "description": "Four-site Hamiltonian spectra and RS-volume observables",
       "tags": [
         "T11"
       ]
@@ -919,7 +1872,7 @@
       "wide": true,
       "pdf": "study-assets/results/hamiltonian-studies/k4_thermal_volume_scan.pdf",
       "studyId": "hamiltonian",
-      "description": "Four-site Hamiltonian and thermal volume",
+      "description": "Four-site Hamiltonian spectra and RS-volume observables",
       "tags": [
         "T11"
       ]
@@ -935,7 +1888,7 @@
       "wide": true,
       "pdf": "study-assets/results/hamiltonian-studies/thermal_volume_u5.pdf",
       "studyId": "hamiltonian",
-      "description": "Four-site Hamiltonian and thermal volume",
+      "description": "Four-site Hamiltonian spectra and RS-volume observables",
       "tags": [
         "T11"
       ]
@@ -1568,7 +2521,7 @@
       {
         "id": "T11",
         "title": "Hamiltonian studies",
-        "description": "Four-site milestone and dense thermal scan saved; interaction-transition scan, larger systems and dynamics open."
+        "description": "Four/five-site persistence, prepared K=4 geometry, candidate volume and signed-grasp Hamiltonians, and 50 prepared-FL trajectories are saved. Physical model selection and broader parameter/size studies remain open."
       }
     ],
     "completed": [
@@ -1604,5 +2557,85 @@
       }
     ],
     "pending": []
-  }
+  },
+  "schemaVersion": "1.0.0",
+  "columns": [
+    {
+      "key": "runId",
+      "label": "Study / Run",
+      "type": "string"
+    },
+    {
+      "key": "task",
+      "label": "Task",
+      "type": "string"
+    },
+    {
+      "key": "description",
+      "label": "Calculation",
+      "type": "string"
+    },
+    {
+      "key": "status",
+      "label": "Status",
+      "type": "string"
+    },
+    {
+      "key": "date",
+      "label": "Run date",
+      "type": "date"
+    },
+    {
+      "key": "catalogueDate",
+      "label": "Catalogue date",
+      "type": "date"
+    },
+    {
+      "key": "n",
+      "label": "n",
+      "type": "integer"
+    },
+    {
+      "key": "dim",
+      "label": "Dimension",
+      "type": "integer"
+    },
+    {
+      "key": "results.caseCount",
+      "label": "Saved numerical rows",
+      "type": "integer"
+    },
+    {
+      "key": "results.fileCount",
+      "label": "Downloads",
+      "type": "integer"
+    }
+  ],
+  "docs": [
+    {
+      "title": "Chronological numerical studies",
+      "path": "study-assets/notes/numerical-studies.txt",
+      "description": "Indexed record of the numerical studies in chronological order."
+    },
+    {
+      "title": "Hamiltonian studies",
+      "path": "study-assets/notes/hamiltonian-studies.txt",
+      "description": "Saved Hamiltonian calculations, comparisons and interpretation limits."
+    },
+    {
+      "title": "Volume studies",
+      "path": "study-assets/notes/volume-studies.txt",
+      "description": "Saved volume calculations, validation and open normalization questions."
+    },
+    {
+      "title": "Thermal area sectors",
+      "path": "study-assets/notes/thermal-area-sectors.txt",
+      "description": "Thermal area and spin-sector numerical records."
+    },
+    {
+      "title": "T11 geometric interpretation",
+      "path": "study-assets/notes/t11-geometric-interpretation.txt",
+      "description": "Prepared-state data and the limits of the geometric interpretation."
+    }
+  ]
 }

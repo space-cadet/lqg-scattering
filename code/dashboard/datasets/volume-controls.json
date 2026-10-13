@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "RS/AL volume-prescription controls",
+    "subtitle": "Independent tensor controls: paired spin-half singlet has positive RS/AL volume despite zero signed mean; collinear product gives zero."
+  },
+  "columns": [
+    {
+      "key": "runId",
+      "label": "Case",
+      "type": "string"
+    },
+    {
+      "key": "results.sourceGroup",
+      "label": "sourceGroup",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.old_sqrt_abs_mean_proxy",
+      "label": "old sqrt abs mean proxy",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.rovelli_smolin",
+      "label": "rovelli smolin",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.ashtekar_lewandowski",
+      "label": "ashtekar lewandowski",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.independent_tensor_product_RS",
+      "label": "independent tensor product RS",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.independent_tensor_product_AL",
+      "label": "independent tensor product AL",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "series",
+      "label": "Series",
+      "type": "string",
+      "visible": false
+    }
+  ],
+  "charts": {
+    "type": "scatter",
+    "x": "results.old_sqrt_abs_mean_proxy",
+    "y": "results.old_sqrt_abs_mean_proxy",
+    "groupBy": "series"
+  },
+  "runs": [
+    {
+      "runId": "volume-controls:case-0001:1",
+      "task": "T1a",
+      "status": "complete",
+      "description": "RS/AL volume-prescription controls",
+      "catalogueDate": "2026-10-09",
+      "parameters": {},
+      "results": {
+        "sourceGroup": "paired_spin_half_singlet",
+        "old_sqrt_abs_mean_proxy": 0.0,
+        "rovelli_smolin": 0.3046531902363905,
+        "ashtekar_lewandowski": 0.15232659511819527,
+        "independent_tensor_product_RS": 0.30465319023639054,
+        "independent_tensor_product_AL": 0.1523265951181952
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/volume_prescription_results.json": "9f700c0ed30169af9b1d66d2abffb78d57fb1fee5335e83ca4559c68f325ae7f"
+        },
+        "presentationSource": "results/volume_prescription_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results.paired_spin_half_singlet"
+      },
+      "assessment": {
+        "summary": "Independent tensor controls: paired spin-half singlet has positive RS/AL volume despite zero signed mean; collinear product gives zero.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "volume_prescription_results.json",
+          "path": "../study-assets/results/volume_prescription_results.json",
+          "kind": "data",
+          "sha256": "6e0e4eff7a510bc1b80ebe1c804869211daeb107ebcb93cdffd6cb710593ec26",
+          "sourcePath": "results/volume_prescription_results.json",
+          "sourceSha256": "9f700c0ed30169af9b1d66d2abffb78d57fb1fee5335e83ca4559c68f325ae7f"
+        }
+      ],
+      "figures": [
+        {
+          "title": "Volume controls",
+          "path": "../study-assets/figures/dashboard-history/volume_controls.png",
+          "tags": [
+            "T1a"
+          ]
+        }
+      ],
+      "series": "sourceGroup=paired_spin_half_singlet"
+    },
+    {
+      "runId": "volume-controls:case-0002:2",
+      "task": "T1a",
+      "status": "complete",
+      "description": "RS/AL volume-prescription controls",
+      "catalogueDate": "2026-10-09",
+      "parameters": {},
+      "results": {
+        "sourceGroup": "collinear_up_product",
+        "rovelli_smolin": 0.0,
+        "ashtekar_lewandowski": 0.0
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/volume_prescription_results.json": "9f700c0ed30169af9b1d66d2abffb78d57fb1fee5335e83ca4559c68f325ae7f"
+        },
+        "presentationSource": "results/volume_prescription_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results.collinear_up_product"
+      },
+      "assessment": {
+        "summary": "Independent tensor controls: paired spin-half singlet has positive RS/AL volume despite zero signed mean; collinear product gives zero.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "series": "sourceGroup=collinear_up_product"
+    }
+  ],
+  "figures": [
+    {
+      "title": "Volume controls",
+      "path": "../study-assets/figures/dashboard-history/volume_controls.png",
+      "tags": [
+        "T1a"
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "title": "Numerical studies overview",
+      "path": "../index.html"
+    }
+  ]
+}

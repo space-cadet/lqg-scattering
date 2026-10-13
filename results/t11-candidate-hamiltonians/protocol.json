@@ -1,0 +1,465 @@
+{
+  "title": "T11 K=4 tetrahedral candidate-Hamiltonian comparison",
+  "sector": {
+    "sites": 4,
+    "total_linear_area_K": 4,
+    "total_spin_J": 0,
+    "dimension": 105,
+    "hbar": 1.0,
+    "t": 1.0
+  },
+  "baseline": "H0 = -t sum_edges(E_ij+E_ji) + U/2 sum_i n_i(n_i-1); the second term is the on-site repulsion U sum_i binom(n_i,2)",
+  "candidates": {
+    "positive_volume": {
+      "Hamiltonian": "H = H0 + g_V V_RS",
+      "operator": "existing positive RS volume; sum over four connected triples",
+      "coupling": "alpha_V = g_V * spectral_range(V_RS) / t",
+      "alphas_complete_graph": [
+        -2.0,
+        -1.0,
+        -0.5,
+        0.0,
+        0.5,
+        1.0,
+        2.0
+      ],
+      "U_over_t": [
+        0.0,
+        1.0,
+        5.0,
+        20.0
+      ],
+      "ring_control": {
+        "U_over_t": [
+          5.0,
+          20.0
+        ],
+        "alphas": [
+          -1.0,
+          0.0,
+          1.0
+        ],
+        "meaning": "sparse hopping topology control, not a tetrahedron"
+      }
+    },
+    "signed_grasp": {
+      "Hamiltonian": "H = H0 + lambda_chi Q_chi",
+      "triple": "q_ijk = i[D_ij,D_jk] = J_i dot (J_j cross J_k)",
+      "orientation": {
+        "012": 1,
+        "013": -1,
+        "023": 1,
+        "123": -1
+      },
+      "oriented_operator": "Q_chi = q_012 - q_013 + q_023 - q_123",
+      "closure_relation": "on the four-site singlet space, Q_chi=4*q_012 and V_RS=2*gamma^(3/2)*sqrt(abs(Q_chi)) with the existing positive-root cutoff",
+      "coupling": "alpha_chi = lambda_chi * spectral_range(Q_chi) / t",
+      "alphas": [
+        -2.0,
+        -1.0,
+        -0.5,
+        0.0,
+        0.5,
+        1.0,
+        2.0
+      ],
+      "U_over_t": [
+        0.0,
+        1.0,
+        5.0,
+        20.0
+      ],
+      "interpretation": "orientation-sensitive, time-reversal-odd candidate; tested as a mathematical model, not assumed physically selected"
+    }
+  },
+  "prepared_states": {
+    "family": "normalized K=4 FL, equal input face areas, x=1/sqrt(3)",
+    "phi_degrees": [
+      90,
+      60,
+      30,
+      10,
+      0
+    ],
+    "labels": {
+      "90": "regular",
+      "60": "phi_60",
+      "30": "phi_30",
+      "10": "phi_10",
+      "0": "flat_boundary"
+    },
+    "projection_checks": {
+      "90": {
+        "label": "regular",
+        "phi_degrees": 90,
+        "input_normal_gram": [
+          [
+            0.9999999999999999,
+            -0.3333333333333331,
+            -0.33333333333333337,
+            -0.3333333333333335
+          ],
+          [
+            -0.3333333333333331,
+            0.9999999999999999,
+            -0.3333333333333335,
+            -0.33333333333333337
+          ],
+          [
+            -0.33333333333333337,
+            -0.3333333333333335,
+            0.9999999999999999,
+            -0.3333333333333331
+          ],
+          [
+            -0.3333333333333335,
+            -0.33333333333333337,
+            -0.3333333333333331,
+            0.9999999999999999
+          ]
+        ],
+        "projection_residual": 4.5102810375396984e-17,
+        "norm_residual": 1.3322682386307063e-15
+      },
+      "60": {
+        "label": "phi_60",
+        "phi_degrees": 60,
+        "input_normal_gram": [
+          [
+            0.9999999999999999,
+            -0.3333333333333331,
+            -1.08076172323985e-16,
+            -0.6666666666666667
+          ],
+          [
+            -0.3333333333333331,
+            0.9999999999999999,
+            -0.6666666666666667,
+            -1.08076172323985e-16
+          ],
+          [
+            -1.08076172323985e-16,
+            -0.6666666666666667,
+            0.9999999999999999,
+            -0.3333333333333331
+          ],
+          [
+            -0.6666666666666667,
+            -1.08076172323985e-16,
+            -0.3333333333333331,
+            0.9999999999999999
+          ]
+        ],
+        "projection_residual": 5.594315114139762e-17,
+        "norm_residual": 6.661428497319261e-16
+      },
+      "30": {
+        "label": "phi_30",
+        "phi_degrees": 30,
+        "input_normal_gram": [
+          [
+            0.9999999999999999,
+            -0.3333333333333331,
+            0.2440169358562922,
+            -0.910683602522959
+          ],
+          [
+            -0.3333333333333331,
+            0.9999999999999999,
+            -0.910683602522959,
+            0.2440169358562922
+          ],
+          [
+            0.2440169358562922,
+            -0.910683602522959,
+            0.9999999999999999,
+            -0.3333333333333331
+          ],
+          [
+            -0.910683602522959,
+            0.2440169358562922,
+            -0.3333333333333331,
+            0.9999999999999999
+          ]
+        ],
+        "projection_residual": 5.553824967135427e-17,
+        "norm_residual": 8.881784197001252e-16
+      },
+      "10": {
+        "label": "phi_10",
+        "phi_degrees": 10,
+        "input_normal_gram": [
+          [
+            0.9999999999999999,
+            -0.3333333333333331,
+            0.32320516867480503,
+            -0.9898718353414718
+          ],
+          [
+            -0.3333333333333331,
+            0.9999999999999999,
+            -0.9898718353414718,
+            0.32320516867480503
+          ],
+          [
+            0.32320516867480503,
+            -0.9898718353414718,
+            0.9999999999999997,
+            -0.33333333333333287
+          ],
+          [
+            -0.9898718353414718,
+            0.32320516867480503,
+            -0.33333333333333287,
+            0.9999999999999997
+          ]
+        ],
+        "projection_residual": 8.092071311423672e-17,
+        "norm_residual": 8.891536662303994e-16
+      },
+      "0": {
+        "label": "flat_boundary",
+        "phi_degrees": 0,
+        "input_normal_gram": [
+          [
+            0.9999999999999999,
+            -0.3333333333333331,
+            0.3333333333333331,
+            -0.9999999999999999
+          ],
+          [
+            -0.3333333333333331,
+            0.9999999999999999,
+            -0.9999999999999999,
+            0.3333333333333331
+          ],
+          [
+            0.3333333333333331,
+            -0.9999999999999999,
+            0.9999999999999999,
+            -0.3333333333333331
+          ],
+          [
+            -0.9999999999999999,
+            0.3333333333333331,
+            -0.3333333333333331,
+            0.9999999999999999
+          ]
+        ],
+        "projection_residual": 5.551115123125783e-17,
+        "norm_residual": 6.661338147750939e-16
+      }
+    }
+  },
+  "static_outputs": {
+    "full_spectrum": true,
+    "low_energy_groups": "first three distinct groups; degenerate groups uniform",
+    "thermal_grid": "beta*t=0; 601 geomspace values from 1e-3 to 1e3; exact uniform ground-subspace mixture at beta=infinity",
+    "readouts": [
+      "energy, face-area means/covariances, assignment and active-face probabilities",
+      "six pair-dot means, four-face-conditioned angles and full symmetrized covariance",
+      "positive-volume mean/variance/kernel probability/outcome distribution",
+      "signed q012 and oriented Q_chi means and rms",
+      "prepared FL probabilities in the first three energy groups"
+    ]
+  },
+  "dynamics": {
+    "complete_graph_only": true,
+    "U_over_t": [
+      5.0,
+      20.0
+    ],
+    "models": [
+      "baseline",
+      "positive_volume alpha=-1,+1",
+      "signed_grasp alpha=-1,+1"
+    ],
+    "seeds": [
+      "regular phi=90 degrees",
+      "phi=60 degrees",
+      "phi=30 degrees",
+      "phi=10 degrees",
+      "flat-boundary phi=0 degrees"
+    ],
+    "method": "exact finite-dimensional energy-basis phase evolution",
+    "resolved_pair_rule": "retain off-diagonal beats whose normalized observable coefficient is at least 1e-8; use numerical nonzero-gap floor 1e-10 times max(1, bandwidth)",
+    "sampling": "20 samples per fastest resolved beat for the first 10 fastest periods, then 900 exact logarithmic-time samples through 10 periods of the slowest resolved beat",
+    "uniform_grid_note": "the uniform grid that also resolves the fastest beat over the entire slowest-beat horizon is counted and recorded; it is not materialized when it requires millions or more of points",
+    "tracked": [
+      "return probability, volume mean/variance/kernel probability",
+      "face areas/covariances and active-face probability",
+      "assignment-normalized angular means/covariances",
+      "signed grasp means/rms, energy, total area, singlet closure"
+    ]
+  },
+  "volume_units": "project RS units; physical calibration not specified",
+  "tolerance": 2e-10,
+  "thermal_grid_count": 603,
+  "model_count": 62,
+  "validation_summary": {
+    "dimension": 105,
+    "V_hermiticity": 0.0,
+    "Qchi_hermiticity": 0.0,
+    "Qchi_spectral_range": 13.856406460551025,
+    "V_spectral_range_project_units": 0.6093063804727814,
+    "V_zero_kernel_dimension": 67,
+    "oriented_closure_q012_minus_q013": 4.440892098500626e-16,
+    "oriented_closure_q012_minus_q023": 4.440892098500626e-16,
+    "oriented_closure_q012_plus_q123": 4.440892098500626e-16,
+    "oriented_Qchi_equals_4q012": 1.7763568394002505e-15,
+    "V_RS_Qchi_commutator": 1.3322676295501878e-15,
+    "V_RS_Qchi_functional_relation": 8.881784197001252e-16,
+    "direct_spin1_q_spectrum": 8.881784197001252e-16,
+    "direct_spin1_Qchi_spectrum": 3.770121409954692e-15,
+    "odd_unitary": 1.3322676295501878e-15,
+    "odd_orientation_covariance": 3.552713678800501e-15,
+    "odd_volume_invariance": 8.881784197001252e-16,
+    "even_unitary": 1.1102230246251565e-15,
+    "even_orientation_covariance": 6.217248937900877e-15,
+    "even_volume_invariance": 6.661338147750939e-16,
+    "ring_complete_volume_difference": 0.0,
+    "complete_positive_volume_U0_alpham2_eigen_residual": 1.5987211555461305e-14,
+    "complete_positive_volume_U0_alpham2_orthogonality": 6.518852477702871e-14,
+    "complete_positive_volume_U0_alpham1_eigen_residual": 9.992007222975438e-15,
+    "complete_positive_volume_U0_alpham1_orthogonality": 1.0908226281510694e-14,
+    "complete_positive_volume_U0_alpham0p5_eigen_residual": 1.8207657732973443e-14,
+    "complete_positive_volume_U0_alpham0p5_orthogonality": 6.920687153676171e-14,
+    "complete_positive_volume_U0_alphap0_eigen_residual": 1.865174681370263e-14,
+    "complete_positive_volume_U0_alphap0_orthogonality": 2.744538702654534e-14,
+    "complete_positive_volume_U0_alphap0_alpha0_baseline_spectrum": 4.440892098500626e-14,
+    "complete_positive_volume_U0_alphap0p5_eigen_residual": 1.1546319458972899e-14,
+    "complete_positive_volume_U0_alphap0p5_orthogonality": 1.294393838809321e-14,
+    "complete_positive_volume_U0_alphap1_eigen_residual": 1.2962442422021109e-14,
+    "complete_positive_volume_U0_alphap1_orthogonality": 3.104907195645288e-14,
+    "complete_positive_volume_U0_alphap2_eigen_residual": 1.8651801346410753e-14,
+    "complete_positive_volume_U0_alphap2_orthogonality": 1.801160359049109e-13,
+    "complete_positive_volume_U1_alpham2_eigen_residual": 3.286260152895898e-14,
+    "complete_positive_volume_U1_alpham2_orthogonality": 3.035058512005846e-14,
+    "complete_positive_volume_U1_alpham1_eigen_residual": 1.9650947760387138e-14,
+    "complete_positive_volume_U1_alpham1_orthogonality": 3.180290797040859e-14,
+    "complete_positive_volume_U1_alpham0p5_eigen_residual": 1.3711254355335715e-14,
+    "complete_positive_volume_U1_alpham0p5_orthogonality": 4.5950312491850814e-14,
+    "complete_positive_volume_U1_alphap0_eigen_residual": 2.4952262478450393e-14,
+    "complete_positive_volume_U1_alphap0_orthogonality": 3.013481283049076e-14,
+    "complete_positive_volume_U1_alphap0_alpha0_baseline_spectrum": 3.907985046680551e-14,
+    "complete_positive_volume_U1_alphap0p5_eigen_residual": 1.3182163693947757e-14,
+    "complete_positive_volume_U1_alphap0p5_orthogonality": 7.126653096485172e-14,
+    "complete_positive_volume_U1_alphap1_eigen_residual": 1.8394908305541626e-14,
+    "complete_positive_volume_U1_alphap1_orthogonality": 5.428961577953967e-14,
+    "complete_positive_volume_U1_alphap2_eigen_residual": 1.6236500332486833e-14,
+    "complete_positive_volume_U1_alphap2_orthogonality": 1.1450978648279414e-13,
+    "complete_positive_volume_U5_alpham2_eigen_residual": 7.105427357601007e-14,
+    "complete_positive_volume_U5_alpham2_orthogonality": 1.1802234193750254e-14,
+    "complete_positive_volume_U5_alpham1_eigen_residual": 4.9737991503226514e-14,
+    "complete_positive_volume_U5_alpham1_orthogonality": 1.4291893145316754e-14,
+    "complete_positive_volume_U5_alpham0p5_eigen_residual": 6.750155989720953e-14,
+    "complete_positive_volume_U5_alpham0p5_orthogonality": 9.814882231793147e-14,
+    "complete_positive_volume_U5_alphap0_eigen_residual": 3.1030733538273125e-14,
+    "complete_positive_volume_U5_alphap0_orthogonality": 6.289018287961394e-14,
+    "complete_positive_volume_U5_alphap0_alpha0_baseline_spectrum": 4.973799150320701e-14,
+    "complete_positive_volume_U5_alphap0p5_eigen_residual": 3.019806626981799e-14,
+    "complete_positive_volume_U5_alphap0p5_orthogonality": 3.10735000659682e-14,
+    "complete_positive_volume_U5_alphap1_eigen_residual": 4.2632564145606093e-14,
+    "complete_positive_volume_U5_alphap1_orthogonality": 3.657901452503014e-14,
+    "complete_positive_volume_U5_alphap2_eigen_residual": 6.394884621840907e-14,
+    "complete_positive_volume_U5_alphap2_orthogonality": 3.4182905259964467e-13,
+    "complete_positive_volume_U20_alpham2_eigen_residual": 2.1316282072803006e-13,
+    "complete_positive_volume_U20_alpham2_orthogonality": 1.6707227823496276e-13,
+    "complete_positive_volume_U20_alpham1_eigen_residual": 3.410605131648481e-13,
+    "complete_positive_volume_U20_alpham1_orthogonality": 8.64372697815975e-14,
+    "complete_positive_volume_U20_alpham0p5_eigen_residual": 1.7053025658242404e-13,
+    "complete_positive_volume_U20_alpham0p5_orthogonality": 3.8038417004090196e-14,
+    "complete_positive_volume_U20_alphap0_eigen_residual": 1.9895196601282805e-13,
+    "complete_positive_volume_U20_alphap0_orthogonality": 1.1549086419661982e-13,
+    "complete_positive_volume_U20_alphap0_alpha0_baseline_spectrum": 3.979039320256561e-13,
+    "complete_positive_volume_U20_alphap0p5_eigen_residual": 2.1316282072803006e-13,
+    "complete_positive_volume_U20_alphap0p5_orthogonality": 1.0973643443751057e-13,
+    "complete_positive_volume_U20_alphap1_eigen_residual": 2.5579538487363607e-13,
+    "complete_positive_volume_U20_alphap1_orthogonality": 2.015012656929644e-13,
+    "complete_positive_volume_U20_alphap2_eigen_residual": 1.56319401868162e-13,
+    "complete_positive_volume_U20_alphap2_orthogonality": 8.054844547805934e-14,
+    "complete_signed_grasp_U0_alpham2_eigen_residual": 4.0156476735846046e-15,
+    "complete_signed_grasp_U0_alpham2_orthogonality": 4.888553502035472e-15,
+    "complete_signed_grasp_U0_alpham1_eigen_residual": 5.333617463612173e-15,
+    "complete_signed_grasp_U0_alpham1_orthogonality": 1.4864833213083807e-14,
+    "complete_signed_grasp_U0_alpham0p5_eigen_residual": 4.6264735111967095e-14,
+    "complete_signed_grasp_U0_alpham0p5_orthogonality": 1.76425307569307e-13,
+    "complete_signed_grasp_U0_alphap0_eigen_residual": 1.865174681370263e-14,
+    "complete_signed_grasp_U0_alphap0_orthogonality": 2.744538702654534e-14,
+    "complete_signed_grasp_U0_alphap0_alpha0_baseline_spectrum": 4.440892098500626e-14,
+    "complete_signed_grasp_U0_alphap0p5_eigen_residual": 4.6264735111967095e-14,
+    "complete_signed_grasp_U0_alphap0p5_orthogonality": 1.76425307569307e-13,
+    "complete_signed_grasp_U0_alphap1_eigen_residual": 5.333617463612173e-15,
+    "complete_signed_grasp_U0_alphap1_orthogonality": 1.4864833213083807e-14,
+    "complete_signed_grasp_U0_alphap2_eigen_residual": 4.0156476735846046e-15,
+    "complete_signed_grasp_U0_alphap2_orthogonality": 4.888553502035472e-15,
+    "complete_signed_grasp_U1_alpham2_eigen_residual": 1.4180857038741091e-14,
+    "complete_signed_grasp_U1_alpham2_orthogonality": 7.427278367293182e-14,
+    "complete_signed_grasp_U1_alpham1_eigen_residual": 9.77138183282905e-15,
+    "complete_signed_grasp_U1_alpham1_orthogonality": 1.512884154494769e-13,
+    "complete_signed_grasp_U1_alpham0p5_eigen_residual": 1.5272877574598206e-14,
+    "complete_signed_grasp_U1_alpham0p5_orthogonality": 1.3463250437956163e-13,
+    "complete_signed_grasp_U1_alphap0_eigen_residual": 2.4952262478450393e-14,
+    "complete_signed_grasp_U1_alphap0_orthogonality": 3.013481283049076e-14,
+    "complete_signed_grasp_U1_alphap0_alpha0_baseline_spectrum": 3.907985046680551e-14,
+    "complete_signed_grasp_U1_alphap0p5_eigen_residual": 1.5272877574598206e-14,
+    "complete_signed_grasp_U1_alphap0p5_orthogonality": 1.3463250437956163e-13,
+    "complete_signed_grasp_U1_alphap1_eigen_residual": 9.77138183282905e-15,
+    "complete_signed_grasp_U1_alphap1_orthogonality": 1.512884154494769e-13,
+    "complete_signed_grasp_U1_alphap2_eigen_residual": 1.4180857038741091e-14,
+    "complete_signed_grasp_U1_alphap2_orthogonality": 7.427278367293182e-14,
+    "complete_signed_grasp_U5_alpham2_eigen_residual": 3.6230712748823524e-14,
+    "complete_signed_grasp_U5_alpham2_orthogonality": 1.2543715359696575e-13,
+    "complete_signed_grasp_U5_alpham1_eigen_residual": 5.687116766346677e-14,
+    "complete_signed_grasp_U5_alpham1_orthogonality": 5.236442132832356e-14,
+    "complete_signed_grasp_U5_alpham0p5_eigen_residual": 5.728578676879116e-14,
+    "complete_signed_grasp_U5_alpham0p5_orthogonality": 2.4446396590512002e-14,
+    "complete_signed_grasp_U5_alphap0_eigen_residual": 3.1030733538273125e-14,
+    "complete_signed_grasp_U5_alphap0_orthogonality": 6.289018287961394e-14,
+    "complete_signed_grasp_U5_alphap0_alpha0_baseline_spectrum": 4.973799150320701e-14,
+    "complete_signed_grasp_U5_alphap0p5_eigen_residual": 5.728578676879116e-14,
+    "complete_signed_grasp_U5_alphap0p5_orthogonality": 2.4446396590512002e-14,
+    "complete_signed_grasp_U5_alphap1_eigen_residual": 5.687116766346677e-14,
+    "complete_signed_grasp_U5_alphap1_orthogonality": 5.236442132832356e-14,
+    "complete_signed_grasp_U5_alphap2_eigen_residual": 3.6230712748823524e-14,
+    "complete_signed_grasp_U5_alphap2_orthogonality": 1.2543715359696575e-13,
+    "complete_signed_grasp_U20_alpham2_eigen_residual": 3.3266757983254893e-13,
+    "complete_signed_grasp_U20_alpham2_orthogonality": 9.07941483724777e-14,
+    "complete_signed_grasp_U20_alpham1_eigen_residual": 1.7053026321394258e-13,
+    "complete_signed_grasp_U20_alpham1_orthogonality": 1.3748153570443342e-13,
+    "complete_signed_grasp_U20_alpham0p5_eigen_residual": 2.898457019905882e-13,
+    "complete_signed_grasp_U20_alpham0p5_orthogonality": 1.1930457431435676e-13,
+    "complete_signed_grasp_U20_alphap0_eigen_residual": 1.9895196601282805e-13,
+    "complete_signed_grasp_U20_alphap0_orthogonality": 1.1549086419661982e-13,
+    "complete_signed_grasp_U20_alphap0_alpha0_baseline_spectrum": 3.979039320256561e-13,
+    "complete_signed_grasp_U20_alphap0p5_eigen_residual": 2.898457019905882e-13,
+    "complete_signed_grasp_U20_alphap0p5_orthogonality": 1.1930457431435676e-13,
+    "complete_signed_grasp_U20_alphap1_eigen_residual": 1.7053026321394258e-13,
+    "complete_signed_grasp_U20_alphap1_orthogonality": 1.3748153570443342e-13,
+    "complete_signed_grasp_U20_alphap2_eigen_residual": 3.3266757983254893e-13,
+    "complete_signed_grasp_U20_alphap2_orthogonality": 9.07941483724777e-14,
+    "ring_positive_volume_U5_alpham1_eigen_residual": 9.237055564881302e-14,
+    "ring_positive_volume_U5_alpham1_orthogonality": 2.1978789281512426e-13,
+    "ring_positive_volume_U5_alphap0_eigen_residual": 4.973799150320701e-14,
+    "ring_positive_volume_U5_alphap0_orthogonality": 2.5482867465687623e-13,
+    "ring_positive_volume_U5_alphap0_alpha0_baseline_spectrum": 8.526512829121202e-14,
+    "ring_positive_volume_U5_alphap1_eigen_residual": 3.907985046680551e-14,
+    "ring_positive_volume_U5_alphap1_orthogonality": 8.577041113281556e-14,
+    "ring_positive_volume_U20_alpham1_eigen_residual": 3.410605131648481e-13,
+    "ring_positive_volume_U20_alpham1_orthogonality": 2.3059339545720185e-13,
+    "ring_positive_volume_U20_alphap0_eigen_residual": 2.5579538487363607e-13,
+    "ring_positive_volume_U20_alphap0_orthogonality": 2.407943953416228e-13,
+    "ring_positive_volume_U20_alphap0_alpha0_baseline_spectrum": 4.831690603168681e-13,
+    "ring_positive_volume_U20_alphap1_eigen_residual": 3.694822225952521e-13,
+    "ring_positive_volume_U20_alphap1_orthogonality": 1.7868759548640288e-13,
+    "dynamic_schedule_count": 50,
+    "max_required_uniform_dynamic_points": 2005038331,
+    "max_computed_dynamic_samples": 1101
+  },
+  "runtime": {
+    "python": "3.10.19",
+    "numpy": "1.24.3",
+    "scipy": "1.15.3"
+  },
+  "git_head": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240"
+}

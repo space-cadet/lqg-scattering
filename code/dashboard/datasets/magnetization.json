@@ -1,0 +1,843 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "Magnetization and signed-grasp correlations",
+    "subtitle": "Converged n=5 magnetization sweep; the tested magnetization hypothesis was not supported."
+  },
+  "columns": [
+    {
+      "key": "runId",
+      "label": "Case",
+      "type": "string"
+    },
+    {
+      "key": "parameters.M",
+      "label": "M",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.label",
+      "label": "label",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.taylor_terms",
+      "label": "taylor terms",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.agree",
+      "label": "agree",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.pos",
+      "label": "pos",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.neg",
+      "label": "neg",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.max_abs",
+      "label": "max abs",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.mean_abs",
+      "label": "mean abs",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.pearson_abs_vs_base",
+      "label": "pearson abs vs base",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.pearson_signed_vs_base",
+      "label": "pearson signed vs base",
+      "type": "number",
+      "precision": 8
+    }
+  ],
+  "charts": {
+    "type": "scatter",
+    "x": "parameters.M",
+    "y": "results.taylor_terms"
+  },
+  "runs": [
+    {
+      "runId": "magnetization:case-0001:1",
+      "task": "T5a",
+      "status": "complete",
+      "description": "Magnetization and signed-grasp correlations",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "M": 4.0
+      },
+      "results": {
+        "label": "M=+4_all-a",
+        "ref": [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "taylor_terms": 41,
+        "q": [
+          -2.168404344971009e-18,
+          -5.421010862427522e-18,
+          2.2768245622195593e-18,
+          -0.0,
+          -4.336808689942018e-18,
+          3.7947076036992655e-19,
+          1.734723475976807e-18,
+          -2.3852447794681098e-18,
+          -1.0842021724855044e-18,
+          4.336808689942018e-19
+        ],
+        "agree": 0.0,
+        "pos": 0,
+        "neg": 0,
+        "max_abs": 5.421010862427522e-18,
+        "mean_abs": 2.0220370516854656e-18,
+        "pearson_abs_vs_base": -0.1927622197225272,
+        "pearson_signed_vs_base": -0.08133021764953427
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5a_mag_results.json": "e5a2d6fbb03ac95a9eb850c3107ed7f7aa02fd7dda6c09fd392a8a7125beb689",
+          "notes/experiments/t5a_mag_notes.md": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee"
+        },
+        "presentationSource": "results/t5a_mag_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results[0]"
+      },
+      "assessment": {
+        "summary": "Converged n=5 magnetization sweep; the tested magnetization hypothesis was not supported.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "t5a_mag_results.json",
+          "path": "../study-assets/results/t5a_mag_results.json",
+          "kind": "data",
+          "sha256": "6f6d2b8b2d109174956f8e4d4ff41997b6cb0f35a53045f57849d2cdf7248281",
+          "sourcePath": "results/t5a_mag_results.json",
+          "sourceSha256": "e5a2d6fbb03ac95a9eb850c3107ed7f7aa02fd7dda6c09fd392a8a7125beb689"
+        },
+        {
+          "label": "t5a_mag_notes.md",
+          "path": "../study-assets/notes/experiments/t5a_mag_notes.txt",
+          "kind": "data",
+          "sha256": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee",
+          "sourcePath": "notes/experiments/t5a_mag_notes.md",
+          "sourceSha256": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee"
+        }
+      ],
+      "figures": [
+        {
+          "title": "Magnetization",
+          "path": "../study-assets/figures/dashboard-history/magnetization.png",
+          "tags": [
+            "T5a"
+          ]
+        }
+      ]
+    },
+    {
+      "runId": "magnetization:case-0002:2",
+      "task": "T5a",
+      "status": "complete",
+      "description": "Magnetization and signed-grasp correlations",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "M": 3.0
+      },
+      "results": {
+        "label": "M=+3",
+        "ref": [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "taylor_terms": 40,
+        "q": [
+          0.006455126718958454,
+          -0.001141696900357168,
+          -0.013172867742227395,
+          -0.005393922481575137,
+          0.0031209664042995567,
+          -0.004503482796563417,
+          0.002817724204581949,
+          -0.0061439068918615536,
+          0.004044660240621346,
+          0.0009954592501611353
+        ],
+        "agree": 0.5,
+        "pos": 5,
+        "neg": 5,
+        "max_abs": 0.013172867742227395,
+        "mean_abs": 0.0047789813631207104,
+        "pearson_abs_vs_base": 0.010778519984107617,
+        "pearson_signed_vs_base": 0.013390186026910465
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5a_mag_results.json": "e5a2d6fbb03ac95a9eb850c3107ed7f7aa02fd7dda6c09fd392a8a7125beb689",
+          "notes/experiments/t5a_mag_notes.md": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee"
+        },
+        "presentationSource": "results/t5a_mag_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results[1]"
+      },
+      "assessment": {
+        "summary": "Converged n=5 magnetization sweep; the tested magnetization hypothesis was not supported.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "magnetization:case-0003:3",
+      "task": "T5a",
+      "status": "complete",
+      "description": "Magnetization and signed-grasp correlations",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "M": 2.0
+      },
+      "results": {
+        "label": "M=+2",
+        "ref": [
+          [
+            2,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "taylor_terms": 40,
+        "q": [
+          -0.008500810152707778,
+          0.008094284107503366,
+          0.024948511802093856,
+          -0.0058744974437417215,
+          -0.008828866361294714,
+          -0.009266025725308472,
+          0.0028411828987755733,
+          0.007211335588130167,
+          0.008988894159309018,
+          0.0030860476774492657
+        ],
+        "agree": 0.6,
+        "pos": 6,
+        "neg": 4,
+        "max_abs": 0.024948511802093856,
+        "mean_abs": 0.008764045591631393,
+        "pearson_abs_vs_base": 0.14322025271153782,
+        "pearson_signed_vs_base": -0.5614194407753798
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5a_mag_results.json": "e5a2d6fbb03ac95a9eb850c3107ed7f7aa02fd7dda6c09fd392a8a7125beb689",
+          "notes/experiments/t5a_mag_notes.md": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee"
+        },
+        "presentationSource": "results/t5a_mag_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results[2]"
+      },
+      "assessment": {
+        "summary": "Converged n=5 magnetization sweep; the tested magnetization hypothesis was not supported.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "magnetization:case-0004:4",
+      "task": "T5a",
+      "status": "complete",
+      "description": "Magnetization and signed-grasp correlations",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "M": 1.0
+      },
+      "results": {
+        "label": "M=+1",
+        "ref": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "taylor_terms": 40,
+        "q": [
+          -0.003676720654337067,
+          -0.0029074856414729685,
+          0.006584206295809964,
+          -0.00040648208239684423,
+          -0.003270238571940489,
+          -0.003313967723869698,
+          0.0009087636150396392,
+          0.0027679570392976226,
+          0.003816249256512777,
+          -0.0005022815326428168
+        ],
+        "agree": 0.6,
+        "pos": 4,
+        "neg": 6,
+        "max_abs": 0.006584206295809964,
+        "mean_abs": 0.002815435241331988,
+        "pearson_abs_vs_base": 0.24232545253341764,
+        "pearson_signed_vs_base": -0.6496177469195397
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5a_mag_results.json": "e5a2d6fbb03ac95a9eb850c3107ed7f7aa02fd7dda6c09fd392a8a7125beb689",
+          "notes/experiments/t5a_mag_notes.md": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee"
+        },
+        "presentationSource": "results/t5a_mag_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results[3]"
+      },
+      "assessment": {
+        "summary": "Converged n=5 magnetization sweep; the tested magnetization hypothesis was not supported.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "magnetization:case-0005:5",
+      "task": "T5a",
+      "status": "complete",
+      "description": "Magnetization and signed-grasp correlations",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "M": 0.0
+      },
+      "results": {
+        "label": "M=0_spread",
+        "ref": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "taylor_terms": 40,
+        "q": [
+          0.003811278991541647,
+          0.008348415527035314,
+          -0.006494692275830154,
+          0.0012328965093332507,
+          0.0034197000380849643,
+          0.03228908131347974,
+          0.0007124205618548389,
+          -0.006807794481264064,
+          -0.005895032569736396,
+          -0.004548986576835317
+        ],
+        "agree": 0.6,
+        "pos": 6,
+        "neg": 4,
+        "max_abs": 0.03228908131347974,
+        "mean_abs": 0.007356029884499568,
+        "pearson_abs_vs_base": 1.0,
+        "pearson_signed_vs_base": 1.0
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5a_mag_results.json": "e5a2d6fbb03ac95a9eb850c3107ed7f7aa02fd7dda6c09fd392a8a7125beb689",
+          "notes/experiments/t5a_mag_notes.md": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee"
+        },
+        "presentationSource": "results/t5a_mag_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results[4]"
+      },
+      "assessment": {
+        "summary": "Converged n=5 magnetization sweep; the tested magnetization hypothesis was not supported.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "magnetization:case-0006:6",
+      "task": "T5a",
+      "status": "complete",
+      "description": "Magnetization and signed-grasp correlations",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "M": 0.0
+      },
+      "results": {
+        "label": "M=0_concentrated",
+        "ref": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "taylor_terms": 39,
+        "q": [
+          0.01115101563666091,
+          0.029033547598178996,
+          -0.0401845632348401,
+          0.019078416836917828,
+          -0.007927401200256826,
+          0.04811196443509693,
+          0.005141455091805401,
+          -0.016292470728466332,
+          -0.023892092506373634,
+          -0.02421987192872321
+        ],
+        "agree": 0.5,
+        "pos": 5,
+        "neg": 5,
+        "max_abs": 0.04811196443509693,
+        "mean_abs": 0.022503279919732017,
+        "pearson_abs_vs_base": 0.7632028217819977,
+        "pearson_signed_vs_base": 0.8574761084917428
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5a_mag_results.json": "e5a2d6fbb03ac95a9eb850c3107ed7f7aa02fd7dda6c09fd392a8a7125beb689",
+          "notes/experiments/t5a_mag_notes.md": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee"
+        },
+        "presentationSource": "results/t5a_mag_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results[5]"
+      },
+      "assessment": {
+        "summary": "Converged n=5 magnetization sweep; the tested magnetization hypothesis was not supported.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "magnetization:case-0007:7",
+      "task": "T5a",
+      "status": "complete",
+      "description": "Magnetization and signed-grasp correlations",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "M": -1.0
+      },
+      "results": {
+        "label": "M=-1",
+        "ref": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "taylor_terms": 40,
+        "q": [
+          -0.0036767206543374936,
+          -0.002907485641472845,
+          0.00658420629581013,
+          -0.00040648208239682125,
+          -0.0032702385719406,
+          -0.0033139677238697342,
+          0.0009087636150399319,
+          0.0027679570392978355,
+          0.0038162492565126773,
+          -0.0005022815326428479
+        ],
+        "agree": 0.6,
+        "pos": 4,
+        "neg": 6,
+        "max_abs": 0.00658420629581013,
+        "mean_abs": 0.0028154352413320917,
+        "pearson_abs_vs_base": 0.24232545253339405,
+        "pearson_signed_vs_base": -0.6496177469195313
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5a_mag_results.json": "e5a2d6fbb03ac95a9eb850c3107ed7f7aa02fd7dda6c09fd392a8a7125beb689",
+          "notes/experiments/t5a_mag_notes.md": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee"
+        },
+        "presentationSource": "results/t5a_mag_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results[6]"
+      },
+      "assessment": {
+        "summary": "Converged n=5 magnetization sweep; the tested magnetization hypothesis was not supported.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "magnetization:case-0008:8",
+      "task": "T5a",
+      "status": "complete",
+      "description": "Magnetization and signed-grasp correlations",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "M": -2.0
+      },
+      "results": {
+        "label": "M=-2",
+        "ref": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "taylor_terms": 40,
+        "q": [
+          -0.008500810152707526,
+          0.00809428410750345,
+          0.024948511802093412,
+          -0.005874497443741625,
+          -0.008828866361294775,
+          -0.009266025725308448,
+          0.0028411828987754168,
+          0.0072113355881299425,
+          0.00898889415930905,
+          0.0030860476774495203
+        ],
+        "agree": 0.6,
+        "pos": 6,
+        "neg": 4,
+        "max_abs": 0.024948511802093412,
+        "mean_abs": 0.008764045591631317,
+        "pearson_abs_vs_base": 0.1432202527115438,
+        "pearson_signed_vs_base": -0.5614194407753818
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5a_mag_results.json": "e5a2d6fbb03ac95a9eb850c3107ed7f7aa02fd7dda6c09fd392a8a7125beb689",
+          "notes/experiments/t5a_mag_notes.md": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee"
+        },
+        "presentationSource": "results/t5a_mag_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results[7]"
+      },
+      "assessment": {
+        "summary": "Converged n=5 magnetization sweep; the tested magnetization hypothesis was not supported.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "magnetization:case-0009:9",
+      "task": "T5a",
+      "status": "complete",
+      "description": "Magnetization and signed-grasp correlations",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "M": -3.0
+      },
+      "results": {
+        "label": "M=-3",
+        "ref": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "taylor_terms": 40,
+        "q": [
+          0.006455126718958254,
+          -0.001141696900357059,
+          -0.01317286774222756,
+          -0.005393922481575058,
+          0.003120966404299597,
+          -0.00450348279656344,
+          0.0028177242045818985,
+          -0.0061439068918618615,
+          0.004044660240621355,
+          0.0009954592501611446
+        ],
+        "agree": 0.5,
+        "pos": 5,
+        "neg": 5,
+        "max_abs": 0.01317286774222756,
+        "mean_abs": 0.0047789813631207234,
+        "pearson_abs_vs_base": 0.010778519984112568,
+        "pearson_signed_vs_base": 0.01339018602691677
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5a_mag_results.json": "e5a2d6fbb03ac95a9eb850c3107ed7f7aa02fd7dda6c09fd392a8a7125beb689",
+          "notes/experiments/t5a_mag_notes.md": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee"
+        },
+        "presentationSource": "results/t5a_mag_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results[8]"
+      },
+      "assessment": {
+        "summary": "Converged n=5 magnetization sweep; the tested magnetization hypothesis was not supported.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    },
+    {
+      "runId": "magnetization:case-0010:10",
+      "task": "T5a",
+      "status": "complete",
+      "description": "Magnetization and signed-grasp correlations",
+      "catalogueDate": "2026-10-09",
+      "parameters": {
+        "M": -4.0
+      },
+      "results": {
+        "label": "M=-4_all-b",
+        "ref": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "taylor_terms": 41,
+        "q": [
+          -8.673617379884035e-19,
+          -8.673617379884035e-19,
+          2.6020852139652106e-18,
+          -0.0,
+          5.421010862427522e-20,
+          -0.0,
+          3.469446951953614e-18,
+          -3.903127820947816e-18,
+          -1.734723475976807e-18,
+          -0.0
+        ],
+        "agree": 0.0,
+        "pos": 0,
+        "neg": 0,
+        "max_abs": 3.903127820947816e-18,
+        "mean_abs": 1.349831704744453e-18,
+        "pearson_abs_vs_base": -0.26343504962221487,
+        "pearson_signed_vs_base": 0.07059320134146414
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t5a_mag_results.json": "e5a2d6fbb03ac95a9eb850c3107ed7f7aa02fd7dda6c09fd392a8a7125beb689",
+          "notes/experiments/t5a_mag_notes.md": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee"
+        },
+        "presentationSource": "results/t5a_mag_results.json",
+        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "sourceSelector": "results[9]"
+      },
+      "assessment": {
+        "summary": "Converged n=5 magnetization sweep; the tested magnetization hypothesis was not supported.",
+        "recordedStudyStatus": "Saved calculation"
+      }
+    }
+  ],
+  "figures": [
+    {
+      "title": "Magnetization",
+      "path": "../study-assets/figures/dashboard-history/magnetization.png",
+      "tags": [
+        "T5a"
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "title": "Numerical studies overview",
+      "path": "../index.html"
+    }
+  ]
+}

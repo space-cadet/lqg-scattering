@@ -3,18 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research Dashboard</title>
-  <script>
-    window.MathJax = {
-      tex: {
-        inlineMath: [['\\(', '\\)']],
-        displayMath: [['\\[', '\\]']],
-        processEscapes: true
-      },
-      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
-    };
-  </script>
-  <script defer id="mathjax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+  <title>Scattering in LQG — Numerical Studies</title>
+  <link rel="stylesheet" href="vendor/katex/katex.min.css">
   <style>
     :root {
       --bg: #f8f9fa; --card: #ffffff; --text: #212529; --muted: #6c757d;
@@ -40,21 +30,7 @@
     .summary-card .label { font-size: 0.7rem; color: var(--muted); margin-top: 2px; }
     h2 { font-size: 1.1rem; margin: 24px 0 12px; padding-bottom: 6px; border-bottom: 2px solid var(--border); }
     .tabs { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 12px; border-bottom: 1px solid var(--border); }
-    .research-study { padding: 20px 0; border-top: 1px solid var(--border); scroll-margin-top: 12px; }
-    .research-study p { line-height: 1.6; margin: 10px 0; }
-    .study-status { font-weight: 600; }
-    .study-limits { border-left: 3px solid var(--primary); padding-left: 12px; }
-    .research-figures { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,480px),1fr)); gap: 16px; }
-    .research-figures figure { margin: 12px 0; min-width: 0; }
-    .research-figures figure.wide { grid-column: 1 / -1; }
-    .research-figures img { width: 100%; height: auto; background: white; }
-    .research-figures figcaption { font-size: .9rem; line-height: 1.5; }
-    .research-study details { margin: 12px 0; }
-    .research-study summary { cursor: pointer; padding: 10px 0; font-weight: 600; }
-    .study-downloads { padding-left: 22px; }
-    .study-downloads li { margin: 10px 0; overflow-wrap: anywhere; }
-    .study-downloads small { display: block; }
-    .tab { padding: 8px 16px; border: none; background: none; cursor: pointer; font-size: 0.9rem; border-bottom: 2px solid transparent; color: var(--muted); }
+    .tab { flex: 1 1 auto; min-width: 0; padding: 8px 16px; border: none; background: none; cursor: pointer; font-size: 0.9rem; border-bottom: 2px solid transparent; color: var(--muted); white-space: normal; }
     .tab.active { border-bottom-color: var(--primary); color: var(--primary); font-weight: 500; }
     .tab:hover { background: var(--hover); }
     .filters { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; padding: 12px; background: var(--bg); border-radius: 6px; }
@@ -115,53 +91,25 @@
       .summary-card { flex: 1 1 80px; min-width: 80px; }
       .filters { flex-direction: column; }
       .detail-grid { flex-direction: column; }
-      .t5c-preview-pair { grid-template-columns: 1fr; }
-      .t5c-preview-card img { width: 88px; height: 88px; }
-      .fixed-shape-chart { flex-direction: column; align-items: flex-start; }
     }
+    :focus-visible { outline: 3px solid var(--primary); outline-offset: 3px; }
+    .tabs { flex-wrap: wrap; }
+    .project-nav { flex-direction: row; }
+    .project-nav select { min-width: 0; max-width: 100%; flex: 1 1 260px; }
+    .tab, .btn, select { min-height: 44px; }
+    .sort-button, .run-button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; text-align: left; padding: 4px 0; }
+    .sort-button { font-weight: 600; min-height: 36px; white-space: nowrap; }
+    .run-button { color: var(--primary); min-height: 36px; }
+    .param-row { gap: 12px; }
+    .detail-card { min-width: 0; }
+    .detail-header h3 { overflow-wrap: anywhere; min-width: 0; max-width: 100%; }
+    .param-key { min-width: 0; overflow-wrap: anywhere; }
+    .param-value { max-width: 70%; overflow-wrap: anywhere; }
+    .modal-close { background: transparent; border: 0; min-width: 44px; }
+    .error { overflow-wrap: anywhere; }
     .hidden { display: none !important; }
     .chart-container { background: var(--bg); border-radius: 6px; padding: 16px; }
-    .chart-container svg { max-width: 100%; }
-    .volume-study { margin: 18px 0 26px; }
-    .volume-study h3 { font-size: 1rem; margin: 14px 0 8px; }
-    .volume-study p { margin: 8px 0; }
-    .math-model { margin: 12px 0 16px; padding: 12px 16px; border: 1px solid var(--border); border-radius: 6px; background: var(--bg); }
-    .math-model p { margin: 6px 0; }
-    .math-equation { overflow-x: auto; padding: 4px 0; }
-    .math-equation mjx-container[display="true"] { margin: 0.7em 0 !important; }
-    .study-metrics { display: flex; gap: 10px; flex-wrap: wrap; margin: 12px 0; }
-    .study-metric { flex: 1 1 150px; border: 1px solid var(--border); border-radius: 6px; padding: 10px 12px; background: var(--card); }
-    .study-metric strong { display: block; font-size: 1.05rem; }
-    .study-metric span { color: var(--muted); font-size: 0.75rem; }
-    .study-table { min-width: 760px; }
-    .study-chart { overflow-x: auto; }
-    .study-chart svg { display: block; width: 100%; min-width: 660px; height: auto; }
-    .t5c-input-chart svg { min-width: 900px; }
-    .flat-plot-grid { display: grid; grid-template-columns: 1fr; gap: 12px; align-items: start; }
-    .t5c-data-point { cursor: pointer; outline: none; }
-    .t5c-data-point:hover, .t5c-data-point:focus, .t5c-data-point.is-active { stroke: var(--text); stroke-width: 3px; }
-    .t5c-preview-panel { margin: 12px 0 18px; padding: 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
-    .t5c-preview-heading { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; margin-bottom: 8px; }
-    .t5c-preview-heading strong { font-size: 0.95rem; }
-    .t5c-preview-heading span, .t5c-preview-note { color: var(--muted); font-size: 0.8rem; }
-    .t5c-preview-selectors { display: flex; gap: 12px; flex-wrap: wrap; margin: 0 0 10px; }
-    .t5c-preview-selectors label { display: flex; gap: 6px; align-items: center; color: var(--muted); font-size: 0.8rem; }
-    .t5c-preview-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-    .t5c-preview-card { display: flex; gap: 10px; align-items: center; min-width: 0; padding: 8px; border: 1px solid var(--border); border-radius: 6px; }
-    .t5c-preview-card img { width: 112px; height: 112px; flex: 0 0 auto; }
-    .t5c-preview-card strong { display: block; font-size: 0.82rem; }
-    .t5c-preview-card span { color: var(--muted); font-size: 0.76rem; }
-    .t5c-thumb { display: block; width: 52px; height: 52px; }
-    .t5c-thumb-cell { min-width: 68px; text-align: center; }
-    .t5c-thumb-pair { display: flex; justify-content: center; gap: 4px; }
-    .t5c-thumb-pair .t5c-thumb { width: 46px; height: 46px; }
-    .t5c-boundary-thumbs { display: flex; gap: 2px; }
-    .t5c-boundary-thumbs img { width: 42px; height: 42px; }
-    .fixed-shape-chart { display: flex; align-items: center; gap: 14px; }
-    .fixed-shape-chart > .area-sweep { display: block; width: 100%; min-width: 0; height: auto; flex: 1 1 auto; }
-    .fixed-shape-chart .fixed-shape-figure { display: flex; flex-direction: column; align-items: center; color: var(--muted); font-size: 0.72rem; text-align: center; }
-    .fixed-shape-chart .fixed-shape-figure img { width: 66px; height: 66px; }
-    .fixed-shape-chart .fixed-shape-figure span { max-width: 88px; }
+    .chart-container svg { max-width: 100%; height: auto; }
     .detail-panel { background: var(--bg); border-radius: 6px; padding: 16px; margin-top: 12px; border: 2px solid var(--primary); }
     .detail-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px; }
     .detail-grid { display: flex; gap: 12px; flex-wrap: wrap; }
@@ -170,616 +118,115 @@
     .param-row { display: flex; justify-content: space-between; padding: 3px 0; border-bottom: 1px solid var(--border); font-size: 0.8rem; }
     .param-key { color: var(--muted); }
     .param-value { font-family: monospace; word-break: break-all; max-width: 200px; text-align: right; }
+    .detail-card { min-width: 0; overflow-wrap: anywhere; }
+    .detail-data summary { cursor: pointer; min-height: 44px; padding: 8px 0; font-size: 0.85rem; }
+    .detail-data pre { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 300px; overflow: auto; font-size: 0.8rem; padding: 8px; background: var(--bg); }
+    .note-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 12px; margin: 12px 0 28px; }
+    .note-desktop-reader[hidden] { display: none; }
+    .note-reader-header { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; border-bottom: 1px solid var(--border); padding: 10px 0; }
+    .note-reader-header h4 { margin: 0 auto 0 0; font-size: 1.15rem; }
+    .note-reader-header .note-download { margin: 0; }
+    @media (min-width: 769px) { .note-card.selected { border-color: var(--primary); } .note-card details[open] > .markdown-body { display: none; } .note-desktop-reader { margin: 0 0 30px; } .note-desktop-reader .markdown-body { padding: 14px 0 24px; } }
+    @media (max-width: 768px) { .note-desktop-reader { display: none !important; } }
+    .note-card { min-width: 0; border: 1px solid var(--border); border-radius: 8px; background: var(--card); overflow: hidden; }
+    .note-card details summary { display: flex; flex-direction: column; gap: 6px; padding: 14px; min-height: 112px; cursor: pointer; list-style-position: inside; }
+    .note-card details summary:hover { background: var(--hover); }
+    .note-title { font-size: 0.95rem; font-weight: 600; color: var(--primary); }
+    .note-description { color: var(--muted); font-size: 0.82rem; }
+    .note-open-label { margin-top: auto; color: var(--muted); font-size: 0.76rem; }
+    .note-card details[open] summary { border-bottom: 1px solid var(--border); }
+    .note-download { display: inline-block; margin: 0 14px 12px; font-size: 0.82rem; }
+    .markdown-body { padding: 16px; overflow-wrap: anywhere; line-height: 1.65; }
+    .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 { margin: 1.35em 0 0.55em; line-height: 1.3; }
+    .markdown-body h1 { font-size: 1.55rem; }
+    .markdown-body h2 { font-size: 1.25rem; }
+    .markdown-body h3 { font-size: 1.05rem; }
+    .markdown-body p, .markdown-body ul, .markdown-body ol, .markdown-body blockquote { margin: 0.7em 0; }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.6em; }
+    .markdown-body a { color: var(--primary); text-decoration: underline; text-underline-offset: 2px; }
+    .markdown-body blockquote { border-left: 3px solid var(--border); padding-left: 1em; color: var(--muted); }
+    .markdown-body .note-table-wrap { max-width: 100%; overflow-x: auto; margin: 1em 0; }
+    .markdown-body table { width: max-content; min-width: 100%; font-size: 0.82rem; }
+    .markdown-body th, .markdown-body td { border: 1px solid var(--border); padding: 6px 9px; text-align: left; }
+    .markdown-body img { max-width: 100%; height: auto; }
+    .markdown-body pre { max-width: 100%; overflow-x: auto; padding: 12px; background: var(--bg); border-radius: 6px; }
+    .markdown-body code { font-family: 'SF Mono', Monaco, monospace; font-size: 0.88em; }
+    .markdown-body :not(pre) > code { padding: 1px 4px; border-radius: 3px; background: var(--bg); }
+    .markdown-body .katex-display { max-width: 100%; overflow-x: auto; overflow-y: hidden; padding: 0.2em 0; }
+    @media (max-width: 768px) { .detail-card { flex: 0 1 auto; } .tabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); } .tab { width: 100%; padding: 8px; } }
   </style>
 </head>
 <body>
   <div class="container">
+    <nav aria-label="Numerical datasets" class="filters project-nav"><label for="datasetSelect">Numerical study</label><select id="datasetSelect"><option>Loading studies…</option></select></nav>
     <h1 id="projectName">Loading...</h1>
     <p class="subtitle" id="projectSubtitle">Loading...</p>
-    <p class="hint">The Study Catalogue records Hamiltonian, complete closed-basis, variable-face and thermal-sector results, alongside historical numerical pilots. Each study includes saved data, plots, provenance and calculation limits. Volume Studies retains the interactive T1b/T5c comparisons. Performance charts refer to the older T3 signed-mean proxy runs.</p>
 
     <div class="summary" id="summaryCards">
       <div class="summary-card" style="border-color: var(--primary);">
-        <div class="value" id="totalRuns">—</div><div class="label">Run / Study Records</div>
+        <div class="value" id="totalRuns">—</div><div class="label">Total Runs</div>
       </div>
       <div class="summary-card" style="border-color: var(--info);">
         <div class="value" id="totalTasks">—</div><div class="label">Tasks</div>
       </div>
       <div class="summary-card" style="border-color: var(--success);">
-        <div class="value" id="completeRuns">—</div><div class="label">Saved Records</div>
+        <div class="value" id="completeRuns">—</div><div class="label">Complete</div>
       </div>
       <div class="summary-card" style="border-color: var(--danger);">
         <div class="value" id="totalFigures">—</div><div class="label">Figures</div>
       </div>
     </div>
 
-    <div class="tabs" id="tabBar"></div>
+    <nav class="tabs" id="tabBar" role="tablist" aria-label="Dashboard sections"></nav>
 
-    <div id="studiesTab" class="tab-content">
-      <h2>Saved Numerical Studies</h2>
-      <div class="filters"><div class="filter-group"><label for="studySearch">Search studies:</label><input id="studySearch" type="search" placeholder="Hamiltonian, thermal, volume…" oninput="renderStudyCards()"></div><div class="filter-group"><label for="studyTask">Task:</label><select id="studyTask" onchange="renderStudyCards()"><option>All</option></select></div><span id="studyCount" aria-live="polite"></span></div>
-      <p class="hint">K denotes total linear area in the recent catalogues; total boson number is 2K. Historical datasets retain their own notation. Singlet dimensions, unrestricted Fock dimensions, signed-mean proxies and positive-volume expectations are labelled separately.</p>
-      <div id="studyCards"><p>Loading saved studies…</p></div>
-    </div>
-    <div id="runsTab" class="tab-content hidden">
+    <div id="runsTab" class="tab-content" role="tabpanel">
       <h2>Run and Study Records</h2>
-      <p class="hint">A study record can contain many individual cases. For example, the Hamiltonian record contains 30 systems. A saved record does not mean its broader research task is complete.</p>
       <div class="filters">
-        <div class="filter-group"><label>Status:</label><select id="filterStatus" onchange="filterRuns()"><option>All</option><option>complete</option><option>in-progress</option><option>failed</option></select></div>
-        <div class="filter-group"><label>Search:</label><input type="text" id="filterSearch" placeholder="Run ID, description..." oninput="filterRuns()"></div>
+        <div class="filter-group"><label for="filterStatus">Status:</label><select id="filterStatus" onchange="filterRuns()"><option>All</option><option>complete</option><option>in-progress</option><option>failed</option></select></div>
+        <div class="filter-group"><label for="filterSearch">Search:</label><input type="text" id="filterSearch" placeholder="Run ID, description..." oninput="filterRuns()"></div>
         <div class="filter-group"><button class="btn" onclick="resetFilters()">Reset</button></div>
       </div>
       <div class="table-wrap"><table id="runsTable"><thead><tr id="runsTableHead"></tr></thead><tbody id="runsTableBody"><tr><td colspan="10" class="loading">Loading data...</td></tr></tbody></table></div>
     </div>
 
-    <div id="figuresTab" class="tab-content hidden">
+    <div id="figuresTab" class="tab-content hidden" role="tabpanel">
       <h2>Figure Archive</h2>
       <div id="figuresContainer"></div>
     </div>
 
-    <div id="performanceTab" class="tab-content hidden">
+    <div id="performanceTab" class="tab-content hidden" role="tabpanel">
       <h2>Performance</h2>
       <div class="filters">
-        <div class="filter-group"><label>X-Axis:</label><select id="perfXAxis"><option value="n">Valence (n)</option><option value="dim">Fock Dimension</option><option value="date">Date</option><option value="time">Runtime</option></select></div>
-        <div class="filter-group"><label>Y-Axis:</label><select id="perfYAxis"><option value="volumePositive">Proxy (Positive)</option><option value="volumeComplex">Proxy (Complex)</option><option value="dim">Fock Dimension</option></select></div>
-        <div class="filter-group"><label>Chart Type:</label><select id="perfChartType"><option value="scatter">Scatter</option><option value="line">Line</option></select></div>
-        <div class="filter-group"><button class="btn btn-primary" onclick="renderPerformance()">Update Chart</button></div>
+        <div class="filter-group"><label for="perfXAxis">X-Axis:</label><select id="perfXAxis" onchange="renderPerformance()"></select></div>
+        <div class="filter-group"><label for="perfYAxis">Y-Axis:</label><select id="perfYAxis" onchange="renderPerformance()"></select></div>
+        <div class="filter-group"><label for="perfChartType">Chart Type:</label><select id="perfChartType" onchange="renderPerformance()"><option value="scatter">Scatter</option><option value="line">Line</option></select></div>
+        <div class="filter-group"><label for="perfGroup">Series:</label><select id="perfGroup" onchange="renderPerformance()"></select></div>
       </div>
       <div class="chart-container" id="perfChartContainer">
         <div id="perfChart"></div>
         <p class="hint" id="perfHint">Select axes and chart type, then click Update Chart.</p>
       </div>
-      <h2>Positive Volume vs. FL Area</h2>
-      <div class="chart-container">
-        <div class="fixed-shape-chart"><div class="fixed-shape-figure"><img src="figures/t5c-input/x0p57735027-phi90p00000000.svg" alt="Regular tetrahedron used for the full area sweep"><span>Regular tetrahedron<br>\(x=1/\sqrt{3},\ \phi=90^\circ\)</span></div><img class="area-sweep" src="figures/fl-volume-area.svg" alt="Positive RS and AL volume expectations versus the Freidel-Livine area label J, for the regular tetrahedron shown beside the plot, with J from one to five."></div>
-        <p class="hint">Fixed-area regular tetrahedron states, with \(A_{\mathrm{FL}}/\ell_p^2=J\). Values use project normalization \((\gamma=0.2375)\); the physical volume prefactor remains open. The independent local-spin tensor-product check agrees at matrix level within \(2.8\times10^{-15}\); RS and AL expectation differences are at most \(1.67\times10^{-16}\) and \(5.55\times10^{-17}\), respectively, for \(J=1,\ldots,5\).</p>
-      </div>
-
-      <h2>Positive Volume vs. Four-face Shape at Fixed \(J=2\)</h2>
-      <div class="chart-container">
-        <img src="figures/fl-volume-shape-j2.svg?v=shared-thumbnails-2" alt="RS and AL positive-volume expectations over 440 sampled closed equal-area tetrahedron configurations at fixed FL area label J equals 2, with representative tetrahedra beside and below each graph." style="display:block;width:100%;height:auto;">
-        <p class="hint">Each graph has tetrahedron previews reconstructed from the same equal-area face normals. The bottom row varies \(x\) at fixed \(\phi=90^\circ\); the side column varies \(\phi\) at fixed \(x=1/\sqrt{3}\). Each preview uses the nearest valid scan sample and the same display size, so compare shape proportions rather than absolute size.</p>
-        <p class="hint">The scan varies \(x=|\mathbf n_0+\mathbf n_1|/2\) and the bending angle \(\phi\) while keeping four unit face areas and closure. The highlighted regular tetrahedron is at \(x=1/\sqrt{3},\ \phi=90^\circ\). Face labels remain ordered; points are not deduplicated under leg permutations. The four normalized spinor rays also carry the cross ratio \(\lambda=\frac{\langle z_0,z_2\rangle\langle z_1,z_3\rangle}{\langle z_0,z_3\rangle\langle z_1,z_2\rangle}\), a coordinate on the four-marked-sphere moduli space used by Thurston. This is a coordinate link only; the cone-metric curvature data is not identified with the LQG face areas. Two direct tensor-product checks agree with the project routines within \(1.4\times10^{-17}\). Values remain project-normalized, and this equal-face-area family does not cover every coherent-state label at fixed \(J\). <a href="fl-volume-shape-j2.json">Download the 440 sample records.</a></p>
-      </div>
-
-      <h2>Discrete Spin and Intertwiner Labels at Fixed J</h2>
-      <div class="table-wrap"><table id="volumeLabelsTable"></table></div>
-      <p class="hint">This finite list counts labelled SU(2) spin sectors and recoupling-basis states, not classical shapes. The strict polygon condition excludes collinear closure boundaries, but does not remove planar configurations. Each strict four-face area assignment admits a continuum of shapes; the heatmap above samples one equal-area family. Thurston’s lattice theorem classifies a separate special family of sphere triangulations, so no identification with LQG area labels is assumed. <a id="volumeLabelsDownload" href="fl-volume-allowed-labels.json">Download the sector and channel records.</a></p>
     </div>
 
-    <div id="theoryTab" class="tab-content hidden">
-      <h2>Theory Investigations</h2>
+    <div id="theoryTab" class="tab-content hidden" role="tabpanel">
+      <h2>Tasks and Numerical Notes</h2>
       <div id="theoryContent"></div>
-    </div>
-
-    <div id="volumeStudiesTab" class="tab-content hidden">
-      <h2>Volume Studies</h2>
-      <div id="volumeStudiesContent"><p class="loading">Loading volume-study records...</p></div>
     </div>
   </div>
 
-  <div id="imageModal" class="modal" onclick="closeModal()">
-    <span class="modal-close">&times;</span>
+  <div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-label="Figure preview" onclick="closeModal()">
+    <button class="modal-close" aria-label="Close figure" onclick="closeModal()">&times;</button>
     <div class="modal-content"><img id="modalImg" src="" alt=""></div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/dist/plot.umd.min.js"></script>
-<script src="t5c-input-volume.js?v=weighted-latex-3"></script>
-<script src="research-studies.js?v=catalogue-1"></script>
-<script>
-let DATA = {};
-let currentTab = 'studies';
-let sortCol = null, sortAsc = true;
-let filteredRuns = [];
-let selectedRun = null;
-
-function typesetMath(element) {
-  if (!element) return;
-  const render = () => {
-    const mathJax = window.MathJax;
-    Promise.resolve(mathJax?.startup?.promise)
-      .then(() => mathJax?.typesetPromise?.([element]))
-      .catch(error => console.warn('MathJax could not typeset the dashboard equations.', error));
-  };
-  if (window.MathJax?.typesetPromise || window.MathJax?.startup?.promise) {
-    render();
-    return;
-  }
-  document.getElementById('mathjax-script')?.addEventListener('load', render, { once: true });
-}
-
-async function loadData() {
-  try {
-    const res = await fetch('data.json');
-    if (!res.ok) throw new Error('Failed to load data.json');
-    DATA = await res.json();
-    document.getElementById('projectName').textContent = DATA.project?.name || 'Research Dashboard';
-    document.getElementById('projectSubtitle').textContent = DATA.project?.subtitle || '';
-    renderTabs();
-    renderSummary();
-    renderRuns();
-    renderFigures();
-    renderPerformance();
-    renderTheory();
-    renderVolumeLabels();
-    renderVolumeStudies();
-    await renderResearchStudies();
-    typesetMath(document.querySelector('.container'));
-  } catch (e) {
-    document.querySelector('.container').innerHTML = `<div class="error">Error: ${e.message}</div>`;
-  }
-}
-
-function renderTabs() {
-  const tabs = DATA.tabs || [{id:'runs',label:'Runs'},{id:'figures',label:'Figures'},{id:'performance',label:'Performance'}];
-  // Auto-add theory tab if tasks/docs exist
-  if ((DATA.tasks?.active?.length || 0) > 0 || (DATA.docs?.length || 0) > 0) {
-    if (!tabs.find(t => t.id === 'theory')) tabs.push({id:'theory',label:'Theory'});
-  }
-  document.getElementById('tabBar').innerHTML = tabs.map(t =>
-    `<button class="tab ${t.id===currentTab?'active':''}" onclick="switchTab('${t.id}')">${t.label}</button>`
-  ).join('');
-}
-
-function switchTab(tab) {
-  currentTab = tab;
-  document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
-  document.getElementById(tab + 'Tab').classList.remove('hidden');
-  document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
-  document.querySelectorAll('.tab').forEach(el => el.classList.toggle('active', el.getAttribute('onclick') === `switchTab('${tab}')`));
-  typesetMath(document.querySelector('.container'));
-}
-
-function renderSummary() {
-  const runs = DATA.runs || [];
-  const tasks = DATA.tasks || {};
-  const figures = DATA.figures || [];
-  document.getElementById('totalRuns').textContent = runs.length;
-  document.getElementById('totalTasks').textContent = (tasks.active?.length||0) + (tasks.completed?.length||0) + (tasks.pending?.length||0);
-  document.getElementById('completeRuns').textContent = runs.filter(r => r.status==='complete').length;
-  document.getElementById('totalFigures').textContent = figures.length;
-}
-
-function renderVolumeLabels() {
-  const enumeration = DATA.volumeLabelEnumeration;
-  const table = document.getElementById('volumeLabelsTable');
-  if (!enumeration || !table) return;
-  document.getElementById('volumeLabelsDownload').href = enumeration.recordsFile;
-  table.innerHTML = `
-    <thead><tr><th>J</th><th>Closed spin sectors</th><th>Four positive faces</th><th>Strict-polygon sectors</th><th>Strict-polygon intertwiner states</th></tr></thead>
-    <tbody>${enumeration.totals.map(row => `
-      <tr><td>${row.areaLabelJ}</td><td>${row.closureSectors}</td><td>${row.fourNonzeroFaceSectors}</td><td>${row.strictPolygonSectors}</td><td>${row.strictPolygonIntertwinerDimension}</td></tr>
-    `).join('')}</tbody>`;
-}
-
-async function renderVolumeStudies() {
-  const container = document.getElementById('volumeStudiesContent');
-  const studies = DATA.numericalStudies || {};
-  try {
-    const [t1bResponse, t5cResponse, t5cInputVolumeResponse] = await Promise.all([
-      fetch(studies.t1b?.resultsFile || 't1b-real-plane-volume.json'),
-      fetch(studies.t5c?.resultsFile || 't5c-shape-recovery.json'),
-      fetch(studies.t5c?.inputVolumeResultsFile || 't5c-input-volume.json')
-    ]);
-    if (!t1bResponse.ok || !t5cResponse.ok || !t5cInputVolumeResponse.ok) throw new Error('One or more numerical result files could not be loaded.');
-    const [t1b, t5c, t5cInputVolume] = await Promise.all([t1bResponse.json(), t5cResponse.json(), t5cInputVolumeResponse.json()]);
-    const fmt = (value, digits = 6) => value == null ? '—' : Number(value).toFixed(digits);
-    const sci = value => value == null ? '—' : Number(value).toExponential(3);
-    const esc = value => String(value).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
-    const shapeLabels = {
-      regular: 'Regular', bent_60: 'x=0.5, φ=60°', bent_120: 'x=0.5, φ=120°',
-      x065_bent_60: 'x=0.65, φ=60°', low_x020: 'x=0.2, φ=90°'
-    };
-    const coordLabel = value => Number(value).toFixed(8).replace(/\./g, 'p');
-    const inputThumbPath = record => {
-      const x = coordLabel(record.x);
-      const phi = coordLabel(Number(record.phiRadians) * 180 / Math.PI);
-      return `figures/t5c-input/x${x}-phi${phi}.svg`;
-    };
-    const covarianceThumbPath = record => `figures/t5c-covariance/${record.shape}-j${record.J}.svg`;
-    const shapeText = record => `x=${fmt(record.x,3)}, φ=${fmt(record.phiRadians * 180 / Math.PI,1)}°`;
-    const inputThumb = (record, label = 'Input tetrahedron') => {
-      const alt = `${label} at ${shapeText(record)}`;
-      return `<img class="t5c-thumb" src="${inputThumbPath(record)}" alt="${esc(alt)}" title="${esc(alt)}">`;
-    };
-    const covarianceThumb = (record, label = 'Covariance candidate') => {
-      const alt = `${label} at ${shapeText(record)}, J=${record.J}`;
-      return `<img class="t5c-thumb" src="${covarianceThumbPath(record)}" alt="${esc(alt)}" title="${esc(alt)}">`;
-    };
-
-    const t1bRows = t1b.map(record => {
-      const q = record.q012 || [null, null];
-      return `<tr><td>${esc(record.name.replace(/_/g, ' '))}</td><td>${record.strictlyPositiveCell ? 'Yes' : 'No'}</td><td>${record.totalBosonsK}</td><td class="mono">${sci(q[0])} + ${sci(q[1])}i</td><td class="mono">${sci(record.signedMeanProxyProjectUnits)}</td><td class="mono">${fmt(record.positiveRSProjectUnits)}</td><td class="mono">${fmt(record.positiveALProjectUnits)}</td><td class="mono">${sci(record.maxTripleMatrixDifference)}</td></tr>`;
-    }).join('');
-
-    const interiorRecords = t5c.records.filter(record => Object.prototype.hasOwnProperty.call(shapeLabels, record.shape));
-    const chartShapes = [
-      {id:'regular', label:'Regular', color:'#0d6efd'},
-      {id:'bent_60', label:'x=0.5, φ=60°', color:'#dc3545'},
-      {id:'bent_120', label:'x=0.5, φ=120°', color:'#198754'},
-      {id:'x065_bent_60', label:'x=0.65, φ=60°', color:'#6f42c1'},
-      {id:'low_x020', label:'x=0.2, φ=90°', color:'#fd7e14'}
-    ];
-    const chartW = 900, chartH = 390, left = 72, right = 26, top = 22, bottom = 94;
-    const plotW = chartW - left - right, plotH = chartH - top - bottom, yMax = 0.5;
-    const px = j => left + ((j - 1) / 5) * plotW;
-    const py = error => top + (1 - error / yMax) * plotH;
-    let chart = `<svg viewBox="0 0 ${chartW} ${chartH}" role="group" aria-labelledby="t5c-chart-title t5c-chart-desc"><title id="t5c-chart-title">T5c normalized flux-Gram shape error by J</title><desc id="t5c-chart-desc">Five interior tetrahedron shapes. The regular tetrahedron remains at floating-point error; the four bent shapes have decreasing but nonzero shape error from J one through six. Select any point to preview the input and covariance-reconstructed tetrahedra.</desc>`;
-    for (let tick = 0; tick <= 5; tick++) {
-      const value = tick / 10, y = py(value);
-      chart += `<line x1="${left}" y1="${y}" x2="${chartW-right}" y2="${y}" stroke="var(--border)"/><text x="${left-10}" y="${y+4}" text-anchor="end" fill="currentColor" font-size="12">${value.toFixed(1)}</text>`;
-    }
-    for (let j = 1; j <= 6; j++) {
-      const x = px(j);
-      chart += `<line x1="${x}" y1="${top}" x2="${x}" y2="${top+plotH}" stroke="var(--border)" opacity="0.45"/><text x="${x}" y="${top+plotH+20}" text-anchor="middle" fill="currentColor" font-size="12">${j}</text>`;
-    }
-    chart += `<line x1="${left}" y1="${top+plotH}" x2="${chartW-right}" y2="${top+plotH}" stroke="currentColor"/><line x1="${left}" y1="${top}" x2="${left}" y2="${top+plotH}" stroke="currentColor"/><text x="${left+plotW/2}" y="${top+plotH+43}" text-anchor="middle" fill="currentColor" font-size="13">Area label J</text><text transform="translate(18 ${top+plotH/2}) rotate(-90)" text-anchor="middle" fill="currentColor" font-size="13">Max normalized Gram error</text>`;
-    chartShapes.forEach((shape, index) => {
-      const records = interiorRecords.filter(record => record.shape === shape.id).sort((a,b) => a.J-b.J);
-      const points = records.map(record => `${px(record.J)},${py(record.normalizedShapeMaxAbsError)}`).join(' ');
-      chart += `<polyline points="${points}" fill="none" stroke="${shape.color}" stroke-width="2.5"/>`;
-      records.forEach(record => {
-        const description = `${shape.label}, J=${record.J}, normalized Gram error ${sci(record.normalizedShapeMaxAbsError)}`;
-        chart += `<circle class="t5c-data-point" cx="${px(record.J)}" cy="${py(record.normalizedShapeMaxAbsError)}" r="7" fill="${shape.color}" stroke="white" stroke-width="1.5" tabindex="0" role="button" aria-label="${esc(description)}" data-shape="${record.shape}" data-j="${record.J}"><title>${esc(description)} — focus, hover, or click to preview both tetrahedra</title></circle>`;
-      });
-      const lx = left + (index % 3) * 250, ly = chartH - 31 - Math.floor(index / 3) * 20;
-      chart += `<line x1="${lx}" y1="${ly}" x2="${lx+22}" y2="${ly}" stroke="${shape.color}" stroke-width="2.5"/><text x="${lx+29}" y="${ly+4}" fill="currentColor" font-size="12">${shape.label}</text>`;
-    });
-    chart += '</svg>';
-
-    const selectedJs = [1, 3, 6];
-    const selectedRecords = interiorRecords.filter(record => selectedJs.includes(record.J));
-    const interiorErrorRows = selectedRecords.map(record => `
-      <tr><td>${shapeLabels[record.shape]}</td><td class="t5c-thumb-cell">${inputThumb(record)}</td>
-      <td class="t5c-thumb-cell">${covarianceThumb(record)}</td><td>${fmt(record.x,3)}</td>
-      <td>${fmt(record.phiRadians * 180 / Math.PI,1)}°</td><td>${record.J}</td>
-      <td class="mono">${sci(record.normalizedShapeMaxAbsError)}</td></tr>`).join('');
-    const boundaryRows = (studies.t5c.boundaryGroups || []).map(group => {
-      const values = selectedJs.map(j => group.shapes.map(shape => t5c.records.find(record => record.shape === shape && record.J === j)?.normalizedShapeMaxAbsError).filter(Number.isFinite));
-      const thumbStrip = group.shapes.map(shape => {
-        const record = t5c.records.find(candidate => candidate.shape === shape && candidate.J === 1);
-        return record ? inputThumb(record, `Input shape ${shapeText(record)}`) : '';
-      }).join('');
-      return `<tr><td>${group.label}</td><td><div class="t5c-boundary-thumbs">${thumbStrip}</div></td>${values.map(series => `<td class="mono">${sci(Math.min(...series))}–${sci(Math.max(...series))}</td>`).join('')}</tr>`;
-    }).join('');
-    const volumeRows = interiorRecords.filter(record => record.J <= 3 && record.volumeObservablesProjectUnits).map(record => {
-      const obs = record.volumeObservablesProjectUnits;
-      return `<tr><td>${shapeLabels[record.shape]}</td><td class="t5c-thumb-cell">${inputThumb(record)}</td><td class="t5c-thumb-cell">${covarianceThumb(record)}</td><td>${fmt(record.x,3)}</td><td>${fmt(record.phiRadians * 180 / Math.PI,1)}°</td><td>${record.J}</td><td class="mono">${fmt(record.covarianceVolumeProjectUnits)}</td><td class="mono">${fmt(obs.signedTripleMeanQ012)}</td><td class="mono">${fmt(obs.signedMeanProxy)}</td><td class="mono">${fmt(obs.positiveRS)}</td><td class="mono">${fmt(obs.positiveAL)}</td></tr>`;
-    }).join('');
-
-    const t5cFile = esc(studies.t5c?.resultsFile || 't5c-shape-recovery.json');
-    const t1bFile = esc(studies.t1b?.resultsFile || 't1b-real-plane-volume.json');
-    container.innerHTML = String.raw`
-      <section class="volume-study">
-        <h3>T1b — Real-plane signed mean and positive volume</h3>
-        <p>Two \(N=4\) real-plane states at total boson number \(K=6\) have a signed triple-grasp mean consistent with zero, while both positive volume operators return nonzero expectations. The outside-cell control has the same values to numerical precision. RS and AL were independently checked with a local-spin tensor-product calculation. All volumes use project normalization \((\gamma=0.2375,\ \hbar=1)\); the physical prefactor and AL embedding convention remain model choices.</p>
-        <div class="table-wrap"><table class="study-table"><thead><tr><th>State</th><th>Strictly positive cell</th><th>\(K\)</th><th>\(q_{012}\)</th><th>Signed-mean proxy</th><th>RS positive volume</th><th>AL positive volume</th><th>Max matrix difference</th></tr></thead><tbody>${t1bRows}</tbody></table></div>
-        <p class="hint">Values are in project units. The tiny positive-cell proxy is the square root of a roundoff-scale imaginary component in q₀₁₂. <a href="${t1bFile}">Download both full state records.</a></p>
-      </section>
-      <section class="volume-study">
-        <h3>T5c — Equal-area flux-correlation diagnostic</h3>
-        <div class="math-model">
-          <p>Here the flux covariance is \(G_{ij}(J)=\langle\mathbf{J}_i\cdot\mathbf{J}_j\rangle\). We compare its normalized entries with the input unit-normal Gram matrix:</p>
-          <div class="math-equation">\[\widehat G_{ij}(J)=\frac{G_{ij}(J)}{\sqrt{G_{ii}(J)G_{jj}(J)}},\qquad C_{ij}^{\mathrm{input}}=\mathbf n_i\cdot\mathbf n_j,\qquad E_J=\max_{i,j}\left|\widehat G_{ij}(J)-C_{ij}^{\mathrm{input}}\right|.\]</div>
-          <p>\(E_J\) is the plotted maximum entrywise shape error. A Gram matrix fixes pairwise angles but leaves a common rotation undetermined, so the reconstructed tetrahedron is a candidate aligned for display.</p>
-        </div>
-        <p>For the normalized \(N=4\) Freidel–Livine fixed-area state, this earlier scan forms \(G_{ij}(J)=\langle\mathbf J_i\cdot\mathbf J_j\rangle\) and compares its normalized pair correlations with the input normal Gram matrix. It tracks how well those correlations retain shape information across the sampled equal-area family; the chart’s reconstructed tetrahedra are Gram-factorization candidates, not unique recovered orientations. The scan contains ${t5c.records.length} records: ${Object.keys(t5c.shapes).length} shapes over \(J=1,\ldots,6\); positive RS/AL and signed-mean observables are included for five interior shapes at \(J=1,\ldots,3\). Hover over, focus, or click a chart point to compare its input and covariance candidate.</p>
-        <div class="study-metrics"><div class="study-metric"><strong>${sci(Math.max(...t5c.records.map(r => r.closureMaxAbs)))}</strong><span>maximum closure residual</span></div><div class="study-metric"><strong>${sci(Math.max(...t5c.records.map(r => r.reconstructedFaceGramMaxAbsError)))}</strong><span>maximum reconstructed-Gram residual</span></div><div class="study-metric"><strong>${sci(Math.max(...t5c.records.map(r => r.normalizedGramAffineIn1overJMaxAbsResidual)))}</strong><span>maximum affine-in-1/J fit residual</span></div><div class="study-metric"><strong>14 / 84</strong><span>shape labels / covariance records</span></div></div>
-        <div class="chart-container study-chart">${chart}</div>
-        <div class="t5c-preview-panel"><div class="t5c-preview-heading"><strong id="t5cPreviewTitle">Tetrahedron preview</strong><span id="t5cPreviewParameters"></span></div><div class="t5c-preview-selectors"><label>Shape <select id="t5cPreviewShape">${chartShapes.map(shape => `<option value="${shape.id}">${shape.label}</option>`).join('')}</select></label><label>J <select id="t5cPreviewJ">${[1,2,3,4,5,6].map(j => `<option value="${j}">${j}</option>`).join('')}</select></label></div><div id="t5cPointPreview" aria-live="polite"></div><p class="t5c-preview-note">Each image is fitted to the same display size to compare shape, not absolute scale. The covariance geometry is aligned to the input for viewing; its Gram matrix does not determine an absolute orientation.</p></div>
-        <p class="hint">Vertical values are \(E_J=\max_{i,j}\left|\frac{G_{ij}(J)}{\sqrt{G_{ii}(J)G_{jj}(J)}}-\mathbf n_i\cdot\mathbf n_j\right|\). The regular tetrahedron is recovered to floating-point precision; the bent shapes have nonzero errors that decrease across \(J=1,\ldots,6\). This finite scan does not establish a general state-to-geometry map or a large-\(J\) classical limit.</p>
-        <h3>Interior shape-recovery errors</h3>
-        <div class="table-wrap"><table class="study-table"><thead><tr><th>Shape</th><th>Input</th><th>Covariance candidate</th><th>\(x\)</th><th>\(\phi\)</th><th>\(J\)</th><th>Normalized Gram error</th></tr></thead><tbody>${interiorErrorRows}</tbody></table></div>
-        <h3>Finite boundary-approach errors</h3>
-        <div class="table-wrap"><table class="study-table"><thead><tr><th>Approach</th><th>Input shapes sampled</th>${selectedJs.map(j => `<th>E<sub>${j}</sub> range</th>`).join('')}</tr></thead><tbody>${boundaryRows}</tbody></table></div>
-        <h3>Candidate and quantum volume values</h3>
-        <div class="table-wrap"><table class="study-table"><thead><tr><th>Shape</th><th>Input</th><th>Covariance candidate</th><th>\(x\)</th><th>\(\phi\)</th><th>\(J\)</th><th>Covariance \(V_{\mathrm{cl}}\)</th><th>\(q_{012}\)</th><th>Signed proxy</th><th>RS+</th><th>AL+</th></tr></thead><tbody>${volumeRows}</tbody></table></div>
-        <p class="hint">All volume values are in project units. The covariance volume uses the rank-three Gram factorization. RS and AL are defined as separate positive operators, but with the tested four-valent signs their calibrated curves coincide by closure and do not provide independent evidence; the signed proxy is not a positive-volume test. <a href="${t5cFile}">Download full scan, including covariance matrices and spectra.</a></p>
-      </section>`;
-
-    container.insertAdjacentHTML('beforeend', window.renderT5cInputVolumeSection(
-      t5cInputVolume,
-      studies.t5c?.inputVolumeResultsFile || 't5c-input-volume.json'
-    ));
-    typesetMath(container);
-
-    const recordsByPoint = new Map(interiorRecords.map(record => [`${record.shape}|${record.J}`, record]));
-    const preview = document.getElementById('t5cPointPreview');
-    const previewTitle = document.getElementById('t5cPreviewTitle');
-    const previewParameters = document.getElementById('t5cPreviewParameters');
-    const shapeSelect = document.getElementById('t5cPreviewShape');
-    const jSelect = document.getElementById('t5cPreviewJ');
-    const chartElement = container.querySelector('.study-chart svg');
-    const showPoint = (shapeId, J) => {
-      const record = recordsByPoint.get(`${shapeId}|${J}`);
-      if (!record) return;
-      shapeSelect.value = shapeId;
-      jSelect.value = String(J);
-      const label = shapeLabels[shapeId] || shapeId;
-      previewTitle.textContent = `${label} — J=${record.J}`;
-      previewParameters.textContent = `${shapeText(record)} · max normalized Gram error ${sci(record.normalizedShapeMaxAbsError)}`;
-      preview.innerHTML = `<div class="t5c-preview-pair">
-        <div class="t5c-preview-card">${inputThumb(record)}<div><strong>Input tetrahedron</strong><span>From the shape labels x and φ</span></div></div>
-        <div class="t5c-preview-card">${covarianceThumb(record)}<div><strong>Covariance candidate</strong><span>Reconstructed from Gᵢⱼ at this J</span></div></div>
-      </div>`;
-      chartElement.querySelectorAll('.t5c-data-point').forEach(point => {
-        point.classList.toggle('is-active', point.dataset.shape === shapeId && Number(point.dataset.j) === Number(J));
-      });
-      const selectedPoint = chartElement.querySelector(`.t5c-data-point[data-shape="${shapeId}"][data-j="${J}"]`);
-      if (selectedPoint) selectedPoint.parentNode.appendChild(selectedPoint);
-    };
-    shapeSelect.addEventListener('change', () => showPoint(shapeSelect.value, jSelect.value));
-    jSelect.addEventListener('change', () => showPoint(shapeSelect.value, jSelect.value));
-    chartElement.addEventListener('pointerover', event => {
-      const point = event.target.closest('.t5c-data-point');
-      if (point) showPoint(point.dataset.shape, point.dataset.j);
-    });
-    chartElement.addEventListener('focusin', event => {
-      const point = event.target.closest('.t5c-data-point');
-      if (point) showPoint(point.dataset.shape, point.dataset.j);
-    });
-    chartElement.addEventListener('click', event => {
-      const point = event.target.closest('.t5c-data-point');
-      if (point) showPoint(point.dataset.shape, point.dataset.j);
-    });
-    showPoint('regular', 1);
-  } catch (error) {
-    container.innerHTML = `<div class="error">Could not load the volume-study records: ${error.message}</div>`;
-  }
-}
-
-function renderRuns() {
-  const runs = DATA.runs || [];
-  if (runs.length === 0) {
-    document.getElementById('runsTableBody').innerHTML = '<tr><td colspan="10" class="loading">No runs found. Add entries to data.json.</td></tr>';
-    return;
-  }
-  // Determine columns dynamically from first run
-  const keys = ['runId','task','status','description','n','dim','date'];
-  document.getElementById('runsTableHead').innerHTML = keys.map(k =>
-    `<th onclick="sortRuns('${k}')">${k} <span class="sort-arrow">▲▼</span></th>`
-  ).join('');
-  filterRuns();
-}
-
-function filterRuns() {
-  const status = document.getElementById('filterStatus')?.value || 'All';
-  const search = (document.getElementById('filterSearch')?.value || '').toLowerCase();
-  filteredRuns = (DATA.runs || []).filter(r => {
-    if (status !== 'All' && r.status !== status) return false;
-    if (search) {
-      const text = JSON.stringify(r).toLowerCase();
-      if (!text.includes(search)) return false;
-    }
-    return true;
-  });
-  if (sortCol) {
-    filteredRuns.sort((a,b) => {
-      const va = a[sortCol], vb = b[sortCol];
-      if (va < vb) return sortAsc ? -1 : 1;
-      if (va > vb) return sortAsc ? 1 : -1;
-      return 0;
-    });
-  }
-  const keys = ['runId','task','status','description','n','dim','date'];
-  document.getElementById('runsTableBody').innerHTML = filteredRuns.map((r, idx) =>
-    `<tr onclick="selectRun(${idx})" class="${selectedRun === r.runId ? 'selected' : ''}">${keys.map(k => `<td class="${typeof r[k]==='number'?'mono':''}">${studyEscape(r[k] ?? '—')}</td>`).join('')}</tr>`
-  ).join('') || '<tr><td colspan="' + keys.length + '" class="loading">No matching runs</td></tr>';
-  
-  // Render detail panel if a run is selected
-  if (selectedRun) {
-    const run = DATA.runs?.find(r => r.runId === selectedRun);
-    if (run) renderRunDetail(run);
-  }
-}
-
-function sortRuns(col) {
-  if (sortCol === col) sortAsc = !sortAsc;
-  else { sortCol = col; sortAsc = true; }
-  filterRuns();
-}
-
-function resetFilters() {
-  document.getElementById('filterStatus').value = 'All';
-  document.getElementById('filterSearch').value = '';
-  filterRuns();
-}
-
-function renderFigures() {
-  const figures = DATA.figures || [];
-  const container = document.getElementById('figuresContainer');
-  if (figures.length === 0) {
-    container.innerHTML = '<p class="loading">No figures found. Add entries to data.json.</p>';
-    return;
-  }
-  container.innerHTML = '<div class="figure-grid">' + figures.map(f => `
-    <div class="figure-card">
-      <div class="figure-img"><img loading="lazy" src="${f.path}" alt="${f.title}" onclick="openModal('${f.path}')"></div>
-      <div class="figure-info">
-        <div class="figure-title">${f.title}</div>
-        <div class="figure-desc">${f.description || ''}</div>
-        ${f.pdf ? `<a href="${f.pdf}">Download PDF</a>` : ''}
-        <div>${(f.tags||[]).map(t=>`<span class="tag">${t}</span>`).join('')}</div>
-      </div>
-    </div>
-  `).join('') + '</div>';
-}
-
-function renderPerformance() {
-  const container = document.getElementById('perfChart');
-  const hint = document.getElementById('perfHint');
-  const runs = (DATA.runs || []).filter(r => !r.studyId);
-
-  if (!window.Plot || typeof window.Plot.dot !== 'function' || typeof window.Plot.plot !== 'function') {
-    container.innerHTML = '<p class="loading">The interactive chart library did not load. Run records and the static volume–area figure are still available.</p>';
-    hint.style.display = 'block';
-    hint.textContent = 'Interactive charts require the Observable Plot CDN. The numerical volume–area figure below is available without it.';
-    return;
-  }
-  
-  if (runs.length === 0) {
-    container.innerHTML = '<p class="loading">No run data available for charting.</p>';
-    return;
-  }
-  
-  const xAxis = document.getElementById('perfXAxis')?.value || 'n';
-  const yAxis = document.getElementById('perfYAxis')?.value || 'volumePositive';
-  const chartType = document.getElementById('perfChartType')?.value || 'scatter';
-  
-  // Extract numeric values
-  const data = runs.filter(r => r[yAxis] != null).map(r => {
-    let yVal = r[yAxis];
-    let xVal = r[xAxis];
-    // Parse runtime strings like "264ms", "2.96s", or "3.4s"
-    if (xAxis === 'time' && typeof xVal === 'string') {
-      if (xVal.includes('ms')) {
-        xVal = parseFloat(xVal) / 1000;
-      } else if (xVal.includes('s')) {
-        xVal = parseFloat(xVal);
-      } else if (xVal.includes('m')) {
-        xVal = parseFloat(xVal) * 60;
-      }
-    }
-    if (typeof yVal === 'string') {
-      const match = yVal.match(/[-+]?[0-9]*\.?[0-9]+/);
-      yVal = match ? parseFloat(match[0]) : null;
-    }
-    return { x: xVal, y: yVal, runId: r.runId };
-  }).filter(d => d.y !== null && d.x !== null && d.x !== undefined && (xAxis === 'date' || (Number.isFinite(Number(d.x)) && Number.isFinite(Number(d.y)))));
-  
-  if (data.length === 0) {
-    container.innerHTML = '<p class="loading">No numeric data available for selected axes.</p>';
-    return;
-  }
-  
-  // Sort by x for line charts
-  if (chartType === 'line') {
-    data.sort((a, b) => (a.x > b.x ? 1 : a.x < b.x ? -1 : 0));
-  }
-  
-  hint.style.display = 'none';
-  
-  const marks = [];
-  if (chartType === 'scatter') {
-    marks.push(Plot.dot(data, { x: 'x', y: 'y', fill: 'var(--primary)', r: 5 }));
-  } else if (chartType === 'line') {
-    marks.push(Plot.line(data, { x: 'x', y: 'y', stroke: 'var(--primary)', strokeWidth: 2 }));
-    marks.push(Plot.dot(data, { x: 'x', y: 'y', fill: 'var(--primary)', r: 3 }));
-  }
-  marks.push(Plot.ruleY([0], { stroke: 'var(--border)' }));
-  
-  // Simple scatter/line plot with Observable Plot
-  const plot = Plot.plot({
-    width: Math.min(800, document.getElementById('perfChartContainer').clientWidth - 40),
-    height: 300,
-    margin: 50,
-    x: { label: xAxis },
-    y: { label: yAxis },
-    marks: marks
-  });
-  
-  container.innerHTML = '';
-  container.appendChild(plot);
-}
-
-function selectRun(idx) {
-  const run = filteredRuns[idx];
-  if (!run) return;
-  selectedRun = run.runId;
-  filterRuns(); // Re-render to show selection highlight
-}
-
-function renderRunDetail(run) {
-  let html = '<div class="detail-panel visible">';
-  html += '<div class="detail-header">';
-  html += `<h3>Run Details: ${run.runId}</h3>`;
-  html += '<button class="btn" onclick="closeDetail()">Close</button>';
-  html += '</div>';
-  if (run.studyId) html += `<p><button class="btn" onclick="showStudy('${studyEscape(run.studyId)}')">Open study data and plots</button></p>`;
-  html += '<div class="detail-grid">';
-  
-  // Parameters card
-  html += '<div class="detail-card">';
-  html += '<h4>Parameters</h4>';
-  Object.entries(run).filter(([k]) => k !== 'params' && k !== 'figures').forEach(([k, v]) => {
-    html += `<div class="param-row"><span class="param-key">${k}</span><span class="param-value">${v}</span></div>`;
-  });
-  html += '</div>';
-  
-  // Extra params if present
-  if (run.params) {
-    html += '<div class="detail-card">';
-    html += '<h4>Extended Parameters</h4>';
-    Object.entries(run.params).forEach(([k, v]) => {
-      html += `<div class="param-row"><span class="param-key">${k}</span><span class="param-value">${v}</span></div>`;
-    });
-    html += '</div>';
-  }
-  
-  // Related figures
-  if (run.figures && run.figures.length > 0) {
-    html += '<div class="detail-card">';
-    html += '<h4>Related Figures</h4>';
-    html += '<div class="figure-grid">';
-    run.figures.forEach(fig => {
-      html += `<div class="figure-card"><div class="figure-img"><img src="${fig.path}" alt="${fig.title}" onclick="openModal('${fig.path}')" style="max-height:100px;"></div><div class="figure-info"><div class="figure-title">${fig.title}</div></div></div>`;
-    });
-    html += '</div></div>';
-  }
-  
-  html += '</div></div>';
-  
-  // Insert or update detail panel
-  let panel = document.getElementById('runDetailPanel');
-  if (!panel) {
-    panel = document.createElement('div');
-    panel.id = 'runDetailPanel';
-    document.getElementById('runsTab').appendChild(panel);
-  }
-  panel.innerHTML = html;
-}
-
-function closeDetail() {
-  selectedRun = null;
-  const panel = document.getElementById('runDetailPanel');
-  if (panel) panel.innerHTML = '';
-  filterRuns();
-}
-
-function renderTheory() {
-  const tasks = DATA.tasks || {};
-  const docs = DATA.docs || [];
-  let html = '';
-  if ((tasks.active?.length || 0) > 0) {
-    html += '<h3>Active</h3><div class="figure-grid">' + tasks.active.map(t => renderTaskCard(t)).join('') + '</div>';
-  }
-  if ((tasks.completed?.length || 0) > 0) {
-    html += '<h3>Completed</h3><div class="figure-grid">' + tasks.completed.map(t => renderTaskCard(t)).join('') + '</div>';
-  }
-  if ((tasks.pending?.length || 0) > 0) {
-    html += '<h3>Pending</h3><div class="figure-grid">' + tasks.pending.map(t => renderTaskCard(t)).join('') + '</div>';
-  }
-  if (docs.length > 0) {
-    html += '<h3>Documentation</h3><ul>' + docs.map(d => `<li><a href="${d.file}">${d.title}</a> — ${d.description}</li>`).join('') + '</ul>';
-  }
-  document.getElementById('theoryContent').innerHTML = html || '<p class="loading">No theory data found. Add entries to data.json.</p>';
-}
-
-function renderTaskCard(t) {
-  return `
-    <div class="figure-card" style="padding:12px;">
-      <div class="figure-title">${t.id ? '['+t.id+'] ' : ''}${t.title}</div>
-      <div class="figure-desc">${t.description}</div>
-      <div>${(t.tags||[]).map(tag=>`<span class="tag">${tag}</span>`).join('')}</div>
-    </div>
-  `;
-}
-
-function openModal(src) { document.getElementById('modalImg').src = src; document.getElementById('imageModal').classList.add('visible'); }
-function closeModal() { document.getElementById('imageModal').classList.remove('visible'); }
-
-loadData();
-</script>
+  <script src="vendor/d3-7.9.0.min.js"></script>
+  <script src="vendor/plot-0.6.17.min.js"></script>
+  <script src="vendor/marked-17.0.1.min.js"></script>
+  <script src="vendor/katex/katex.min.js"></script>
+  <script src="vendor/katex/contrib/auto-render.min.js"></script>
+  <script src="data-model.js"></script>
+  <script src="markdown-renderer.js?v=20261013-2"></script>
+  <script src="dashboard.js?v=20261013-2"></script>
+  <script src="project-navigation.js"></script>
 </body>
 </html>

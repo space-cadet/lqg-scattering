@@ -1,0 +1,37 @@
+{
+  "K": 4,
+  "L": 4,
+  "t": 1,
+  "U": 20,
+  "g": 0,
+  "graphs": [
+    "complete",
+    "ring"
+  ],
+  "reference_phi_degrees": [
+    90,
+    60,
+    30,
+    10,
+    0
+  ],
+  "reference_x": 0.5773502691896258,
+  "reference_family": "existing normalized FL; equal input area fractions; fluctuating local spins",
+  "flat_boundary": "phi=0 is a degenerate-input control, not a nondegenerate tetrahedron",
+  "level_groups": 3,
+  "beta_grid": "0,601 geomspace(1e-3,1e3),infinity",
+  "angular_readout": "four-face conditioned operator, normalized per area assignment",
+  "overlap_conditioning": "full state, four active faces, and j_i=1 sector; undefined below probability threshold",
+  "probability_threshold": 1e-14,
+  "acceptance_tolerance": 2e-10,
+  "root_zero_factor": 1.4210854715202004e-14,
+  "gamma": 0.2375,
+  "hbar": 1,
+  "geometric_rs_factor": 0.11785113019775793,
+  "classical_reference": "gamma*K/4 times input normals; separate from quantum angular means",
+  "physical_calibration": false,
+  "git_head": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+  "python": "3.10.19",
+  "numpy": "1.24.3",
+  "scipy": "1.15.3"
+}

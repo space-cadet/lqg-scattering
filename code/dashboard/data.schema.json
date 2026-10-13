@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/space-cadet/info-dash/blob/main/data.schema.json",
+  "title": "InfoDash research dashboard",
+  "type": "object",
+  "required": ["schemaVersion", "project", "runs"],
+  "properties": {
+    "schemaVersion": {"const": "1.0.0"},
+    "project": {"type": "object", "required": ["name"], "properties": {"name": {"type": "string", "minLength": 1}, "subtitle": {"type": "string"}, "repoUrl": {"type": "string"}}},
+    "updatedAt": {"type": "string", "format": "date-time"},
+    "tabs": {"type": "array", "items": {"type": "object", "required": ["id", "label"], "properties": {"id": {"enum": ["runs", "figures", "performance", "theory"]}, "label": {"type": "string"}}}},
+    "columns": {"type": "array", "items": {"$ref": "#/$defs/column"}},
+    "charts": {"type": "object", "properties": {"x": {"type": "string"}, "y": {"type": "string"}, "type": {"enum": ["scatter", "line"]}, "groupBy": {"type": "string"}}},
+    "runs": {"type": "array", "items": {"$ref": "#/$defs/run"}},
+    "figures": {"type": "array", "items": {"$ref": "#/$defs/figure"}},
+    "tasks": {"type": "object", "properties": {"active": {"type": "array", "items": {"$ref": "#/$defs/task"}}, "completed": {"type": "array", "items": {"$ref": "#/$defs/task"}}, "pending": {"type": "array", "items": {"$ref": "#/$defs/task"}}}},
+    "docs": {"type": "array", "items": {"type": "object", "required": ["title", "path"], "properties": {"title": {"type": "string"}, "path": {"type": "string", "minLength": 1}, "description": {"type": "string"}}}}
+  },
+  "$defs": {
+    "column": {"type": "object", "required": ["key", "label", "type"], "properties": {
+      "key": {"type": "string", "minLength": 1}, "label": {"type": "string", "minLength": 1},
+      "type": {"enum": ["string", "number", "integer", "boolean", "date", "datetime"]},
+      "unit": {"type": "string"}, "description": {"type": "string"},
+      "precision": {"type": "integer", "minimum": 1, "maximum": 15},
+      "visible": {"type": "boolean"}, "chart": {"type": "boolean"}
+    }},
+    "run": {"type": "object", "required": ["runId", "status"], "properties": {
+      "runId": {"type": "string", "minLength": 1}, "task": {"type": "string"},
+      "status": {"enum": ["complete", "running", "in-progress", "failed", "pending"]},
+      "description": {"type": "string"}, "date": {"type": "string", "format": "date"},
+      "timestamp": {"type": "string", "format": "date-time"},
+      "parameters": {"type": "object"}, "results": {"type": "object"},
+      "provenance": {"$ref": "#/$defs/provenance"},
+      "verification": {"type": "object", "properties": {"method": {"type": "string"}, "passed": {"type": "boolean"}, "tolerance": {"type": "number", "minimum": 0}, "maxResidual": {"type": "number", "minimum": 0}, "checks": {"type": ["object", "array"]}}},
+      "artifacts": {"type": "array", "items": {"$ref": "#/$defs/artifact"}},
+      "figures": {"type": "array", "items": {"$ref": "#/$defs/figure"}}
+    }},
+    "provenance": {"type": "object", "properties": {
+      "sourceRevision": {"type": "string"}, "dirtySource": {"type": "boolean"},
+      "command": {"type": "string"}, "software": {"type": "object"},
+      "seeds": {"type": "array", "items": {"type": ["number", "string"]}},
+      "startedAt": {"type": "string", "format": "date-time"}, "finishedAt": {"type": "string", "format": "date-time"},
+      "wallTimeSeconds": {"type": "number", "minimum": 0},
+      "sourceHashes": {"type": "object", "additionalProperties": {"type": "string", "pattern": "^[a-fA-F0-9]{64}$"}},
+      "importedAt": {"type": "string", "format": "date-time"}
+    }},
+    "artifact": {"type": "object", "required": ["label", "path"], "properties": {
+      "label": {"type": "string"}, "path": {"type": "string", "minLength": 1},
+      "kind": {"enum": ["data", "operators", "states", "report", "figure", "verification", "protocol", "source"]},
+      "sha256": {"type": "string", "pattern": "^[a-fA-F0-9]{64}$"}
+    }},
+    "figure": {"type": "object", "required": ["title", "path"], "properties": {"id": {"type": "string"}, "title": {"type": "string"}, "path": {"type": "string", "minLength": 1}, "description": {"type": "string"}, "tags": {"type": "array", "items": {"type": "string"}}}},
+    "task": {"type": "object", "required": ["id", "title"], "properties": {"id": {"type": "string"}, "title": {"type": "string"}, "description": {"type": "string"}, "tags": {"type": "array", "items": {"type": "string"}}}}
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "code/python/t11_geometric_interpretation.py": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
+  "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
+  "notes/t11-geometric-interpretation.md": "7eccda4b62aff3279780f91cdd636230ead27772089a4afcb4673d41d2cc6c6e",
+  "results/hamiltonian-studies/operators_k4_complete.npz": "4da137b965f55452c1ffe60d979c82a4cf163c1885b5e5d489ab989bf9c9ffeb",
+  "results/hamiltonian-studies/operators_k4_ring.npz": "0e2843e2d88dddedf1f080204e55dff69765990c391996bd84a1e481a41088e9"
+}

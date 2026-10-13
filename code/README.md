@@ -127,3 +127,21 @@ stored in `memory-bank/database/`.
 
 LaTeX source and its build assets are in `code/papers/`. Compiled PDFs remain
 in `paper/` as research outputs.
+
+## Thermal closure and separately closed projection
+
+The temperature-closure studies use the established thermal driver directory:
+
+```bash
+python code/thermal/closure_temperature_sweep.py
+PYTHONPATH=code/python python code/thermal/closed_projection_study.py
+PYTHONPATH=code/python python code/thermal/fit_closed_temperature.py
+python code/thermal/plot_closed_temperature_writeup.py
+```
+
+The reusable singlet-projection and volume-trace routines are in
+[`python/lqg_scattering/thermal_projection.py`](python/lqg_scattering/thermal_projection.py).
+The drivers preserve earlier calculations and save separate data under
+[`results/thermal-closure-temperature/`](../results/thermal-closure-temperature/README.md)
+and [`results/thermal-closed-projection/`](../results/thermal-closed-projection/README.md),
+with figures in the corresponding `figures/` directories.
