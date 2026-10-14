@@ -1,6 +1,6 @@
 # Thermal intertwiners: area sectors, spin, and volume
 
-Recorded 2026-10-08; extended 2026-10-13. This note connects the closed, single-copy Freidel–Livine (FL) volume studies with the selected two-copy squeezed construction, its occupation coefficients, and its geometric interpretation. The four-face $J_{\mathrm{in}}=1$ occupation/spin distribution, temperature-dependent closure, and separately closed projection are calculated and independently checked. The October 13 continuation develops the resulting area and positive-volume growth, with figures, tables, and an exact high-temperature area coefficient.
+Recorded 2026-10-08; extended 2026-10-14. This note connects the closed, single-copy Freidel–Livine (FL) volume studies with the selected two-copy squeezed construction, its occupation coefficients, and its geometric interpretation. The four-face $J_{\mathrm{in}}=1$ occupation/spin distribution, temperature-dependent closure, and separately closed projection are calculated and independently checked. The October 13 continuation develops the resulting area and positive-volume growth, with figures, tables, and an exact high-temperature area coefficient.
 
 **Agent responsible for this consolidation and update:** GPT 6.1 Sol (2026-10-08).
 
@@ -51,6 +51,13 @@ Further single-copy counting, lattice Hamiltonians, and Hamiltonian–volume com
   - [The high-temperature area law](#section-16-05)
   - [Physical interpretation and Hawking temperature](#section-16-06)
   - [Numerical checks and source of the figures](#section-16-07)
+- [From thermal geometry to equilibrium and area exchange](#section-17)
+  - [Observables of one heated polyhedron](#observables-of-one-heated-polyhedron)
+  - [What Gibbs equilibrium adds](#what-gibbs-equilibrium-adds)
+  - [Reconstructing an energy law from the state](#reconstructing-an-energy-law-from-the-state)
+  - [Fixed area, changing volume, and heating](#fixed-area-changing-volume-and-heating)
+  - [Singlet exchange between closed polyhedra](#singlet-exchange-between-closed-polyhedra)
+  - [Many-body systems with the same ingredients](#many-body-systems-with-the-same-ingredients)
 - [Scope and next calculations](#section-13)
 - [Proposed further calculations](#section-14)
   - [1. Occupation and resultant-spin distributions](#section-14-01)
@@ -1165,6 +1172,187 @@ The ordinary-closure sweep covers 125 temperatures; the separately closed geomet
 The calculations and verification details are collected in the [ordinary-closure report](../results/thermal-closure-temperature/README.md) and [closed-projection report](../results/thermal-closed-projection/README.md). Their tables retain full precision and their figures are available as vector PDFs and 300-dpi PNGs. The drivers live in `code/thermal/`; reusable projected-volume routines live in `code/python/lqg_scattering/thermal_projection.py`. This keeps the scientific narrative here and the full numerical records beside the reproducible calculation.
 
 
+<a id="section-17"></a>
+
+## From thermal geometry to equilibrium and area exchange
+
+*Discussion recorded: 2026-10-14 08:43:32 IST.*
+
+We now have a family of states whose components are closed quantum polyhedra and whose area and volume change with temperature. What statistical mechanics can we extract from this construction? The first step is to examine one copy. The second is to ask what energy law, if any, makes its distribution an equilibrium distribution. These questions lead naturally to a third: how can a polyhedron exchange geometric quanta while remaining closed?
+
+### Observables of one heated polyhedron
+
+The doubled state is pure. A measurement confined to the left copy is described by its reduced density matrix,
+
+$$
+\rho_L^{\mathrm{closed}}(T)
+=\operatorname{Tr}_R|\Psi_T^{\mathrm{closed}}\rangle
+\langle\Psi_T^{\mathrm{closed}}|.
+$$
+
+For an observable $O$, its mean and variance are
+
+$$
+\langle O\rangle_T=\operatorname{Tr}(\rho_L^{\mathrm{closed}}O),
+\qquad
+(\Delta O)^2_T=\langle O^2\rangle_T-\langle O\rangle_T^2.
+$$
+
+We can therefore calculate area and volume distributions, correlations between faces, and the entropy $S=-k_B\operatorname{Tr}(\rho_L^{\mathrm{closed}}\log\rho_L^{\mathrm{closed}})$. We can also differentiate their means with respect to the temperature parameter. The previous section already gives several of these geometric observables.
+
+To turn an energy fluctuation into a heat capacity, however, we need an energy operator and an equilibrium prescription. A derivative such as $d\langle A\rangle/dT$ measures the response of area; calling it a heat capacity would additionally require a specified relation between area and energy.
+
+### What Gibbs equilibrium adds
+
+A Gibbs state describes equilibrium under a specified Hamiltonian:
+
+$$
+\rho_\beta=\frac{e^{-\beta H}}{Z_\beta},
+\qquad Z_\beta=\operatorname{Tr}e^{-\beta H},
+\qquad \beta=(k_BT)^{-1}.
+$$
+
+Its energy eigenstates have Boltzmann weights. Heating changes the occupation of the energy levels of the same system. Equivalently, the Gibbs state maximizes entropy at a prescribed mean energy. The partition function then supplies internal energy, free energy, and equilibrium response relations, including
+
+$$
+U=\langle H\rangle_\beta,
+\qquad \mathcal F=-k_BT\log Z_\beta,
+\qquad
+C=\frac{dU}{dT}=\frac{(\Delta H)^2_\beta}{k_BT^2}.
+$$
+
+For our polyhedron, this would connect the occupation of different geometries to their energy costs. The oscillator relation $\tanh\theta=e^{-\beta\hbar\omega/2}$ specifies the temperature parameter used to prepare the squeezed state. It does not by itself establish a Gibbs description of the excited, separately projected FL state. The canonical construction and its thermodynamic identities are reviewed in [David Tong's statistical mechanics notes](https://www.damtp.cam.ac.uk/user/tong/statphys/statmechhtml/S1.html).
+
+### Reconstructing an energy law from the state
+
+Suppose a family of density matrices is Gibbsian for one temperature-independent $H$. In an energy eigenbasis its eigenvalues obey
+
+$$
+\log\frac{p_n(\beta)}{p_m(\beta)}
+=-\beta(E_n-E_m).
+$$
+
+The normalization disappears in the ratio. Thus an energy gap can be read directly from the slope of the logarithmic probability ratio. The eigenvectors must be compatible with a common energy basis, and the inferred gaps must be independent of temperature. In particular, the ordering of two energy populations cannot reverse at positive temperature.
+
+This gives a direct test of the reference used in our projected-geometry plots. Its coefficient matrix, already derived in [the occupation calculation](#section-12-01), is diagonal in a fixed singlet recoupling basis. Set $x=e^{-b}$, $b=\beta\hbar\omega$, and $\eta=1-x$. In the closed sector of final area $K$, it has the form
+
+$$
+C_K=\eta^4e^{-b(K-1)}
+\left[uX+v n_{12}+wI\right],
+\qquad
+X=F_{12}^{\dagger}F_{12},
+\qquad n_{12}=n_1+n_2,
+$$
+
+$$
+u=\frac{\eta^2}{2},\qquad
+v=-\frac{\eta x}{2},\qquad w=x^2.
+$$
+
+The operators in brackets commute and admit that common basis. The reduced eigenvalues are the squared coefficient eigenvalues divided by the retained probability $p_\beta$.
+
+Consider the vacuum and the original reference $|\phi\rangle=F_{12}^{\dagger}|0\rangle/\sqrt2$. The vacuum has $K=0$, $X=0$, and $n_{12}=0$, so its coefficient is
+
+$$
+c_{\mathrm{vac}}=\eta^4x.
+$$
+
+The reference has $K=1$, $X=2$, and $n_{12}=2$. Its coefficient is
+
+$$
+c_\phi=\eta^4(2u+2v+w)
+=\eta^4(1-3x+3x^2).
+$$
+
+Both are eigenvectors at every temperature. Their reduced-state probability ratio is therefore
+
+$$
+\boxed{\frac{p_{\mathrm{vac}}}{p_\phi}
+=\frac{x^2}{(1-3x+3x^2)^2}.}
+$$
+
+At low temperature, $x\to0$, this ratio approaches $e^{-2b}$. A fixed Gibbs Hamiltonian would assign the vacuum an energy $2\hbar\omega$ above the reference. Yet at $x=1/2$, or $T_*=1/\log2$, the ratio is 4: the vacuum is four times more probable than the reference. No fixed energy gap can give both behaviors. The factor produced by interference in the excited-state coefficients changes the relative preferences as temperature rises.
+
+This rules out a temperature-independent single-copy canonical Hamiltonian for the separately closed $J_{\mathrm{in}}=1$ reference family at the stated temperature. The argument uses individual density-matrix eigenvalues, not total area-sector probabilities, which include degeneracies. It is an analytic deduction from the existing coefficient formula; it does not require computing the complete entropy or a new numerical sweep.
+
+At any one temperature we can still write, on the occupied support,
+
+$$
+H_{\mathrm{eff}}(T)=-k_BT\log\rho_L^{\mathrm{closed}}(T)+c(T)I.
+$$
+
+Here $c(T)$ fixes an arbitrary energy zero. This operator records the preferences of that prepared state. The ratio above shows why those preferences cannot be represented by one fixed $H$. This does not exclude an equilibrium description of a larger interacting system whose reduced state has a temperature-dependent effective energy operator.
+
+### Fixed area, changing volume, and heating
+
+The T11 hopping-plus-repulsion Hamiltonian conserves total area. Hopping redistributes quanta among faces and changes their correlations, so volume can evolve even at fixed area. The project has calculated the corresponding nonzero hopping contribution to $[H,V]$ on its tested supports. The same distinction is familiar classically: fixing the surface area does not fix the enclosed volume.
+
+An area-conserving Hamiltonian can also have equilibrium ensembles with different mean areas at different temperatures if the ensemble spans area sectors. Heating changes their weights. Actual exchange between those sectors requires a reservoir or another system. The fixed-area T11 calculations restrict the support to one sector and therefore cannot describe the area growth plotted above. The [volume note](volume-studies.md#area-conservation-volume-dynamics-and-exchange) develops this connection.
+
+Temperature in our present construction labels preparations. An interaction Hamiltonian would supply the additional description of how energy and geometric quanta are exchanged in time.
+
+### Singlet exchange between closed polyhedra
+
+The FL algebra already supplies an area-changing operation which respects closure. Its pair creator is
+
+$$
+F_{ij}^{\dagger}=a_i^{\dagger}b_j^{\dagger}
+-a_j^{\dagger}b_i^{\dagger}.
+$$
+
+It creates a spin singlet across two faces. With $A=\tfrac12\sum_i n_i$,
+
+$$
+[A,F_{ij}^{\dagger}]=F_{ij}^{\dagger},
+\qquad [G^a,F_{ij}^{\dagger}]=0.
+$$
+
+The first identity says that the area increases by one unit. The second says that the new state remains closed. These operators connect the fixed-area intertwiner spaces in the [Freidel–Livine construction](https://arxiv.org/html/1005.2090).
+
+We use $G_X$ for the single-copy constraint and $\boldsymbol G_L=G_L\otimes I_R$, $\boldsymbol G_R=I_L\otimes G_R$ for its action on the doubled space. A singlet-transfer interaction would take the form
+
+$$
+H_{\mathrm{exchange}}=
+\sum_{i<j}\left(g_{ij}F_{ij,L}^{\dagger}F_{ij,R}
++\overline{g}_{ij}F_{ij,R}^{\dagger}F_{ij,L}\right).
+$$
+
+One copy gains a unit of area as the other loses one. Consequently
+
+$$
+[H_{\mathrm{exchange}},A_L+A_R]=0,
+\qquad
+[H_{\mathrm{exchange}},\boldsymbol G_L]
+=[H_{\mathrm{exchange}},\boldsymbol G_R]=0.
+$$
+
+The conservation law leaves the individual areas free to change. Closure holds throughout the exchange. The natural observables are area imbalance, area current $I_A=(i/\hbar)[H_{\mathrm{exchange}},A_L]$, singlet-pair correlations, and the resulting changes in volume.
+
+A different interaction,
+
+$$
+H_{\mathrm{pair}}=
+\sum_{i<j}\left(\lambda_{ij}F_{ij,L}^{\dagger}F_{ij,R}^{\dagger}
++\overline{\lambda}_{ij}F_{ij,R}F_{ij,L}\right),
+$$
+
+creates or removes one singlet pair in each copy. It preserves separate closure and $A_L-A_R$, while changing $A_L+A_R$. It is quartic in the elementary oscillators and gives a different preparation from the original same-mode squeeze. A driven realization would require a source of energy for the correlated excitation. These two interactions are the proposed dynamical continuation of this discussion; the numerical results above concern the existing squeeze and projection.
+
+### Many-body systems with the same ingredients
+
+The exchange interaction has a familiar interpretation in a Josephson junction. Cooper pairs tunnel between superconductors through a term schematically written as $-g(B_L^{\dagger}B_R+\mathrm{h.c.})$. Conventional pairs are spin singlets. In a phase description the exchange produces the Josephson energy $-E_J\cos(\varphi_L-\varphi_R)$. The corresponding question here is whether coherent singlet transfer produces an area current governed by a relative phase. [Josephson-junction lecture notes](https://scipost.org/SciPostPhysLectNotes.31).
+
+Pair-hopping Bose–Hubbard models give a bosonic counterpart. Their terms $(c_x^{\dagger})^2c_y^2+\mathrm{h.c.}$ transfer two particles together between sites. Such models admit pair-superfluid phases, with coherence of pairs rather than ordinary single-particle coherence. Replacing the same-mode pair by $F_{ij}$ introduces the singlet structure needed for closed geometry. [Atom-pair hopping study](https://arxiv.org/abs/1208.6506).
+
+Quantum antiferromagnets provide the closest operator match. Their Schwinger-boson singlet-bond operator is $a_i b_j-b_i a_j$, precisely $F_{ij}$ up to normalization. Antiferromagnetic bond energies can be expressed using singlet products such as $F_{ij}^{\dagger}F_{ij}$. This connects geometric correlations to singlet formation and bond rearrangement. Ordinary spin models fix the boson occupation at each site; the full intertwiner space allows those occupations, and therefore face areas, to vary. [Schwinger-boson approaches to antiferromagnetism](https://arxiv.org/abs/0809.4836).
+
+Spin-mixing condensates make the excitation source explicit. Two atoms in a spin-1 condensate's $m=0$ component convert into a correlated $m=+1,-1$ pair through $a_+^{\dagger}a_-^{\dagger}a_0^2+\mathrm{h.c.}$. Total atom number and magnetization are conserved, while the populations change. Treating the occupied $m=0$ component as a pump produces a two-mode squeezing interaction. [Spinor-condensate parametric amplifier](https://pmc.ncbi.nlm.nih.gov/articles/PMC6513353/).
+
+Finally, optical parametric down-conversion converts a pump photon into a signal–idler pair through $c_p c_s^{\dagger}c_i^{\dagger}+\mathrm{h.c.}$. A classical pump gives the two-mode squeeze used in our present construction. The singlet-pair creation interaction would excite composite pairs instead of individual modes. [Parametric down-conversion review](https://arxiv.org/abs/1809.00127).
+
+The first concrete dynamical question is therefore whether singlet exchange allows a closed polyhedron to exchange area with another geometric system and approach a stationary thermal distribution. A second is whether coherent pair transfer produces oscillations and collective behavior analogous to Josephson systems and pair superfluids. These questions connect the calculated geometric observables to mechanisms already familiar in many-body physics.
+
+
 <a id="section-13"></a>
 
 ## Scope and next calculations
@@ -1173,7 +1361,7 @@ The vacuum and first-excited thermal calculations establish occupation and spin 
 
 The exact vacuum curve establishes how oscillator-mode multiplicity creates a peak in a sector probability. Its $g_q$ counts the full eight-mode occupation basis. It is not the degeneracy of a separately closed, gauge-invariant intertwiner sector. The actual selected T9 state starts with a conjugate pair of FL intertwiners at nonzero $J$. Its amplitudes include annihilation, creation, and coherent interference within each final sector. The vacuum curve therefore does not predict that excited-state distribution.
 
-The $J_{\mathrm{in}}=1$ sector and spin probabilities are now calculated, with coefficient matrices checked through $q=4$. Further work includes larger initial $J$, the reduced-state spectrum and entropy, rotated geometric inputs, and two-sided observables. Compare the state with an explicitly specified ensemble; the low-temperature limit already excludes the unrestricted positive area Hamiltonian described above. Convergence for area and volume observables should be assessed from their expectation contributions as the cutoff grows, since small omitted probability alone does not bound an unbounded observable.
+The $J_{\mathrm{in}}=1$ sector and spin probabilities are now calculated, with coefficient matrices checked through $q=4$. Further work includes larger initial $J$, the reduced-state spectrum and entropy, rotated geometric inputs, and two-sided observables. The October 14 eigenvalue-ratio argument excludes any fixed single-copy canonical Hamiltonian for the separately closed reference family at the stated temperature; see [the derivation](#reconstructing-an-energy-law-from-the-state). The broader unprojected and other-input questions remain separate. The low-temperature limit also excludes the unrestricted positive area Hamiltonian described above. Convergence for area and volume observables should be assessed from their expectation contributions as the cutoff grows, since small omitted probability alone does not bound an unbounded observable.
 
 
 <a id="section-14"></a>
@@ -1217,6 +1405,8 @@ Form $\rho_{L,q}=C_qC_q^\dagger$, resolve its spin content, and calculate its ei
 <a id="section-14-04"></a>
 
 ### 4. Test for a fixed Gibbs Hamiltonian
+
+October 14 continuation: the projected reference now has a decisive analytic test, derived in [the equilibrium discussion](#reconstructing-an-energy-law-from-the-state). Its vacuum/reference eigenvalue ordering reverses with temperature, excluding a fixed single-copy Gibbs Hamiltonian for this family. The following preserves the earlier general test for other constructions.
 
 On the support of the reduced state, examine its logarithm,
 
@@ -1270,5 +1460,7 @@ The order below follows the saved discussion records. Dates identify sessions; i
 | October 8, 2026 — apparent thermal cutoff | Larger-spin excitation at higher temperature → distinction between the exact $S\le q/2$ and parity restrictions, the probability display floor, and numerical/display occupation cutoffs → a positive lower bound proving support at every allowed $(q,S)$ for finite positive temperature. | Current chat; documented by **GPT 6.1 Sol**. |
 | October 8, 2026 — single-copy volume baseline | Ordinary versus transformed volume and separate closure → existing zero-temperature area and shape studies → integer singlet areas → occupation correction at $J=2$ → fixed total area versus fixed face spins → small-sector volume block weights → existing plots and normalization → proposed thermal volume comparisons. Added pedagogical preliminaries, volume-study links, and a linked contents list; no new volume numerical run was performed. | This note; documentation update by **GPT 6.1 Sol**. |
 | October 13, 2026 — closure, separate projection, and thermal geometric growth | Ordinary per-copy closure versus combined closure → temperature sweep of the RMS defect and singlet fraction → double-singlet projection → equality of single- and double-projection probabilities → projected area and positive volume → occupation and geometric-support distributions → exact high-temperature coefficient $57/14$ → interpretation of heating and comparison with the Schwarzschild relation. | [Pedagogical continuation](#section-16), [closure report](../results/thermal-closure-temperature/README.md), and [projection report](../results/thermal-closed-projection/README.md). |
+
+| October 14, 2026 — manuscript integration, equilibrium, and area exchange | Writing-style review → correction of transformed versus ordinary closure → manuscript temperature section and three plots → successful PDF compilation → thermal observables and Gibbs equilibrium → exact vacuum/reference eigenvalue-ratio obstruction → fixed area versus changing volume → singlet transfer and correlated singlet creation → Josephson, pair-hopping, antiferromagnetic, spinor-condensate, and optical analogues. | [Session record](../memory-bank/sessions/2026-10-14-t9-manuscript-and-equilibrium.md), [equilibrium and exchange discussion](#section-17). |
 
 Earlier numerical studies provide background but are not reconstructed topic by topic here. The October 6 transcript and October 8 recap distinguish those prior pilots from the selected two-FL construction. Its $J_{\mathrm{in}}=1$ occupation/spin calculation and the October 13 separately closed geometry results are recorded above; the further proposals retain their historical context.

@@ -1,7 +1,7 @@
 # Volume studies: closed intertwiners and lattice dynamics
 
 *Created: 2026-10-09 11:10:50 IST*
-*Last Updated: 2026-10-09 11:44:01 IST*
+*Last Updated: 2026-10-14 08:43:32 IST*
 
 ## Scope and notation
 
@@ -30,6 +30,7 @@ The linear area label is distinct from the usual LQG area proportional to $\sum_
 - [Single-copy lattice Hamiltonian](#single-copy-lattice-hamiltonian)
 - [What Feller and Livine calculated](#what-feller-and-livine-calculated)
 - [Hamiltonian–volume commutator](#hamiltonianvolume-commutator)
+- [Area conservation, volume dynamics, and exchange](#area-conservation-volume-dynamics-and-exchange)
 - [Research program](#research-program)
 - [Current continuation and records](#current-continuation-and-records)
 
@@ -328,6 +329,33 @@ $$
 Only matrix elements between different absolute triple-flux eigenvalues contribute to this positive-root commutator. In particular, a nonzero commutator with signed $q_\tau$ does not by itself establish a nonzero commutator with $\sqrt{|q_\tau|}$. Different triples need not have a common spectral basis.
 
 The full sum was still open at the time of the original derivation. It is now evaluated for the four-site $K=2,3,4$ pilot; see [the T11 results](hamiltonian-studies.md). Larger supports remain open.
+
+## Area conservation, volume dynamics, and exchange
+
+*Discussion recorded: 2026-10-14 08:43:32 IST.*
+
+Can an area-conserving Hamiltonian describe a changing quantum polyhedron? It can change the volume and shape correlations. The hopping operators move bosons between faces while leaving their total occupation unchanged:
+
+$$
+[H_0,A]=0,\qquad A=\frac12\sum_i n_i.
+$$
+
+The redistribution changes how the face fluxes combine, so generally $[H_0,V]\ne0$. The T11 calculations already resolve that commutator: the tested on-site repulsion commutes with volume, while hopping supplies the nonzero contribution. A fixed total area therefore leaves room for volume dynamics.
+
+Changing the total area raises a further question: where do the additional geometric quanta come from? The fixed-area T11 calculation has no channel for that exchange. Its canonical ensemble stays within the chosen area sector. An ensemble spanning several sectors can have a temperature-dependent mean area even when its Hamiltonian conserves area, because heating changes sector weights. Actual access to those sectors requires exchange with another system.
+
+The FL singlet operators provide such a channel without breaking closure. Since $[A,F_{ij}^{\dagger}]=F_{ij}^{\dagger}$ and $[G^a,F_{ij}^{\dagger}]=0$, an interaction
+
+$$
+H_{\mathrm{exchange}}=
+\sum_{i<j}\left(g_{ij}F_{ij,L}^{\dagger}F_{ij,R}
++\overline g_{ij}F_{ij,R}^{\dagger}F_{ij,L}\right)
+$$
+
+allows one polyhedron to gain a unit of area while the other loses one. Total area is conserved and both remain closed. A term $F_{ij,L}^{\dagger}F_{ij,R}^{\dagger}+\mathrm{h.c.}$ instead changes both areas together and preserves their difference. These proposed interactions connect the present thermal work to pair transfer in Josephson junctions and Bose–Hubbard models, and to the identical singlet-bond operators used in Schwinger-boson antiferromagnets.
+
+The detailed [thermal continuation](thermal-area-sectors.md#section-17) explains those analogies and distinguishes preparation, real-time exchange, and Gibbs equilibrium. It also derives a fixed-Gibbs-Hamiltonian obstruction for the separately closed $J_{\mathrm{in}}=1$ squeezed reference: its vacuum/reference reduced-state eigenvalue ordering reverses as temperature rises. That result concerns the prepared T9 family; the T11 models remain independently specified Hamiltonian ensembles.
+
 
 ## Research program
 

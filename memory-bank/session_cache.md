@@ -1,8 +1,9 @@
 # Session Cache
 
-*Last Updated: 2026-10-13 22:50:22 IST*
+*Last Updated: 2026-10-14 08:43:32 IST*
 
 ## Overview
+- 2026-10-14 T9: Integrated thermal closure/geometry into the manuscript and compiled its 15-page PDF with three plots. The analytic projected-reference eigenvalue ratio excludes a fixed single-copy Gibbs Hamiltonian. Recorded singlet area exchange and many-body analogues; see [October 14 session](sessions/2026-10-14-t9-manuscript-and-equilibrium.md).
 - 2026-10-13 T9: Measured ordinary per-copy closure over temperature and calculated area/positive-volume distributions after separate singlet projection. The projected mean area has high-temperature coefficient $57/14$; detailed checks and figures are in the closure reports and thermal note.
 - 2026-10-09 T11: Implemented the four-site Hamiltonian–volume pilot at $K=2,3,4$, added a dense $K=4$ thermal-volume crossover scan, and published the updated numerics dashboard. The live searchable catalogue contains 18 studies, including T11's 30 exact cases, plots, data, provenance, and claim limits. The run used the `qc-diff` Conda environment and generated five PDF/PNG figure pairs. Larger systems and physical volume calibration remain open.
 - 2026-10-08 T9 calculation close: Added the four-face $J_{\mathrm{in}}=1$ $P(q,S)$ calculation by two methods through $q=160$, method and coefficient checks, temperature plots, and the finite-temperature support result. Full two-copy reduced-state blocks, entropy, and geometry remain open; see [session record](sessions/2026-10-08-j1-spin-distribution.md).
@@ -54,7 +55,7 @@ Python and Rust implement RS and AL positive expectations by dense spectral deco
 ### T9: Thermal/TFD State Construction and Physical Study
 **Status:** 🔄 IN PROGRESS
 
-T9 owns all thermal/TFD state construction and physical study. Its five completed child records T7a–T7e preserve their prior results and IDs. Gibbs TFD tends to the Fock vacuum at low temperature; fixed-$K$ T7e is beta-flat within its scope. The earlier $J=1,2$ pilot records positive RS/AL volumes, face diagnostics, entanglement, closure and cutoff comparisons for regular and unequal-skew inputs. The note also derives the occupation-sector and reduced-state coefficient framework, plots the exact $J=0$ vacuum, and includes the four-face $J_{\mathrm{in}}=1$ $P(q,S)$ calculation by two agreeing methods. The October 13 continuation quantifies ordinary per-copy closure and calculates the area and positive RS-volume distributions after separate singlet projection; the projected mean area has high-temperature coefficient $57/14$. Full selected-state reduced blocks, entropy, and Gibbs characterization remain open. A fixed positive total-area Hamiltonian on unrestricted Fock space is excluded by the different low-temperature limits. See `tasks/T9.md`, `notes/thermal-area-sectors.md`, the [closure reports](../results/thermal-closure-temperature/README.md), and the [projection report](../results/thermal-closed-projection/README.md).
+T9 owns all thermal/TFD state construction and physical study. Its five completed child records T7a–T7e preserve their prior results and IDs. Gibbs TFD tends to the Fock vacuum at low temperature; fixed-$K$ T7e is beta-flat within its scope. The earlier $J=1,2$ pilot records positive RS/AL volumes, face diagnostics, entanglement, closure and cutoff comparisons for regular and unequal-skew inputs. The note also derives the occupation-sector and reduced-state coefficient framework, plots the exact $J=0$ vacuum, and includes the four-face $J_{\mathrm{in}}=1$ $P(q,S)$ calculation by two agreeing methods. The October 13 continuation quantifies ordinary per-copy closure and calculates the area and positive RS-volume distributions after separate singlet projection; the projected mean area has high-temperature coefficient $57/14$. The October 14 analytic ratio additionally excludes every fixed single-copy canonical Hamiltonian for the separately closed reference family at the stated temperature. Full reduced spectra, entropy, and other-input characterization remain open. A fixed positive total-area Hamiltonian on unrestricted Fock space is also excluded by the different low-temperature limits. See `tasks/T9.md`, `notes/thermal-area-sectors.md`, the [closure reports](../results/thermal-closure-temperature/README.md), and the [projection report](../results/thermal-closed-projection/README.md).
 
 ## Completed Foundation
 - Python pipeline and published EPJC paper.
@@ -67,6 +68,7 @@ T9 owns all thermal/TFD state construction and physical study. Its five complete
 The pilot is calculated on complete and ring graphs for $K=2,3,4$ in the exact singlet space. It includes no hopping, free hopping, and $U/t=1,5,20$; Gibbs volume and active-site distributions; ground-state pair correlations and site-0 entropy; and the full projected $[H,V]$. The beta-zero active-site probabilities match exact kinematic counting. The onsite commutator residual is at most $2.3\times10^{-16}$ and edge–triple reconstruction residual at most $7.2\times10^{-15}$. The four connected triple roots agree on this support. Physical normalization, larger systems, optional spin exchange, and the rest of the proposed program remain open. See `tasks/T11.md` and `notes/hamiltonian-studies.md`.
 
 ## Session History
+- 2026-10-14: Manuscript closure correction, temperature results/plots, PDF compilation, analytic Gibbs obstruction, and proposed closure-preserving singlet interactions. See [October 14 session](sessions/2026-10-14-t9-manuscript-and-equilibrium.md). T4 ownership corrected to the separate numerical follow-up.
 - 2026-10-13: Extended T9 with the ordinary-closure temperature sweep and separately closed geometric study. See [session record](sessions/2026-10-13-t9-thermal-closure-and-geometry.md).
 - 2026-10-13: Published the desktop note-reader fix in website commit `3c1edad`; live review confirmed four visible tabs, full-width desktop note reading, rendered Markdown/math, and working chronology links. See [session record](sessions/2026-10-13-infodash-desktop-note-reader.md). No numerical work was rerun.
 - 2026-10-09: Added a searchable catalogue of 18 saved numerical studies and historical results, then published the dashboard to the website. The live route shows 18 records and the T11 figures; website commit `8f70bc9` was merged through PR #1. See [T11](tasks/T11.md) and the [lattice-Hamiltonian session summary](sessions/2026-10-09-lattice-hamiltonian-session-summary.md).
@@ -196,3 +198,10 @@ Website main `cea6ae9`; deployment run `38113563387` succeeded. Live catalogue: 
   returned HTTP 200. Source parity and local browser evidence remain in the
   [integration session](sessions/2026-10-12-infodash-integration.md).
 - The website copy is published; lqg-scattering source changes remain uncommitted.
+
+
+## Current T9 continuation — 2026-10-14
+
+The latest focus is T9. The detailed analytic and pedagogical account is in `notes/thermal-area-sectors.md`, section 17; the shorter T11 connection is in `notes/volume-studies.md`. The manuscript PDF includes the earlier temperature results and Figures 9–11; the subsequent Gibbs/exchange discussion is in the notes. No new numerical calculation or implementation was performed. Resume with singlet-transfer dynamics, area current and pair coherence, or further reduced-state analysis as requested.
+
+Memory Bank history-view note: the canonical T9 edit chunk and session are saved. `edit_history.md` remains at its prior generated state because the runtime SQLite database is absent and the available chunks do not cover 22 entries in the 71-entry view; regeneration from the partial chunks would lose those records. See the October 14 T9 session record.

@@ -1,5 +1,5 @@
 # Task Registry
-*Last Updated: 2026-10-13 22:50:22 IST*
+*Last Updated: 2026-10-14 08:43:32 IST*
 
 ## Active Tasks
 | ID | Title | Status | Priority | Started | Dependencies | Details |
@@ -306,7 +306,7 @@ truncation. See `memory-bank/implementation-details/red-team-audit.md`.
 - T5g: Performance frontier ([record](tasks/T5g.md)) — OPEN; n=10–12 Rust profiling if required by the physics runs.
 - T6: Minkowski polyhedron reconstruction ([record](tasks/T6.md)) — kinematic implementation and T5a′ pilot exist; full quantum geometry correspondence remains open. Its reconstruction accepts general face areas but does not evaluate FL positive volume. Spec: `implementation-details/T6-minkowski-polyhedron.md`; see also the [T5c specification](implementation-details/T5c-flux-covariance-volume-comparison.md).
 - T7: Former thermal/TFD umbrella ([archived record](archive/T7.md)) — **TRANSFERRED TO T9; scientific work remains open.** Completed child records T7a–T7e retain their identifiers and findings under T9.
-- T9: Thermal/TFD state construction and physical study ([record](tasks/T9.md)) — **IN PROGRESS; five completed child studies T7a–T7e.** Owns the full construction and analysis program. The user selected the two-copy squeeze of conjugate FL intertwiners with transformed observables; the older one-sided squeeze and conditional singlet remain comparative models. Reduced-state and Gibbs characterization remain open.
+- T9: Thermal/TFD state construction and physical study ([record](tasks/T9.md)) — **IN PROGRESS; five completed child studies T7a–T7e.** Owns the full construction and analysis program. The user selected the two-copy squeeze of conjugate FL intertwiners with transformed observables; the older one-sided squeeze and conditional singlet remain comparative models. Full reduced-state analysis and general Gibbs characterization remain open; the separately closed reference now has a fixed-Gibbs-Hamiltonian obstruction recorded in the [October 14 session](sessions/2026-10-14-t9-manuscript-and-equilibrium.md).
 
 **Notes**:
 Current supported result: real-plane states have zero signed triple-grasp mean,
@@ -325,7 +325,7 @@ convergence evidence.
 
 ### T9: Thermal/TFD State Construction and Physical Study
 **Details:** [Task record](tasks/T9.md)
-**Description**: Own TFD state construction and physical/geometric study; completed child-study records T7a–T7e retain their IDs. The selected T9 state is the same-mode squeeze of conjugate FL intertwiners in both copies, with transformed geometric observables. The four-face $J_{\mathrm{in}}=1$ occupation/spin distribution is checked by two methods through $q=160$. New closure sweeps quantify the ordinary per-copy Gauss defect; separate singlet projection gives closed area and positive-volume distributions, with projected mean area asymptoting to $(57/14)T_*$. Full selected-state reduced blocks, entropy and Gibbs characterization remain open. A fixed positive total-area Hamiltonian on unrestricted Fock space is excluded as a Gibbs generator by its different low-temperature limit. See [NS28–NS29](../notes/numerical-studies.md#ns28).
+**Description**: Own TFD state construction and physical/geometric study; completed child-study records T7a–T7e retain their IDs. The selected T9 state is the same-mode squeeze of conjugate FL intertwiners in both copies, with transformed geometric observables. The four-face $J_{\mathrm{in}}=1$ occupation/spin distribution is checked by two methods through $q=160$. New closure sweeps quantify the ordinary per-copy Gauss defect; separate singlet projection gives closed area and positive-volume distributions, with projected mean area asymptoting to $(57/14)T_*$. The October 14 analytic vacuum/reference eigenvalue-ratio test excludes a fixed single-copy canonical Hamiltonian for the separately closed reference family at the specified temperature. Full reduced spectra, entropy, and other-input characterization remain open. The thermal-intertwiners manuscript/PDF incorporates the closure correction, temperature results, and three plots; see [the session record](sessions/2026-10-14-t9-manuscript-and-equilibrium.md). A fixed positive total-area Hamiltonian on unrestricted Fock space is excluded as a Gibbs generator by its different low-temperature limit. See [NS28–NS29](../notes/numerical-studies.md#ns28).
 **Status**: 🔄 IN PROGRESS
 **Dependencies**: T3c
 **Subtasks**: Five completed child-study records (T7a–T7e); no additional subtask slots remain.

@@ -584,10 +584,28 @@ However, there are some subtleties along the way we have to take care of. The fi
 \begin{equation}\label{eqn:global-u-beta}
 	\mb{U} = U(\beta_1) \otimes U(\beta_2) \otimes \ldots \otimes U(\beta_n),
 \end{equation}
-where $ U(\beta_i) $ is the thermalizing operator acting on the Hilbert space of the $ i $\supersc{th} puncture. It is straightforward to see that the closure constraint \eqref{eqn:gauss-constraint} remains unchanged under the action of this global $ \mb{U} $:
-\begin{equation}\label{eqn:closure-preserved}
-	\sum_{i=1}^{n} \vec{J}_i = 0 \Rightarrow \mb{U} \left( \sum_{i=1}^{n} \vec{J}_i \right) \mb{U}^{-1} = 0
+where $ U(\beta_i) $ is the thermalizing operator acting on the doubled Hilbert space of the $ i $\supersc{th} puncture. What happens to the closure constraint under this transformation? Write $G_X$ for the ordinary Gauss constraint on the single-copy intertwiner space and define its action on the doubled space by
+\begin{equation}\label{eqn:doubled-gauss}
+ \boldsymbol{G}_L=G_L\otimes I_R,\qquad
+ \boldsymbol{G}_R=I_L\otimes G_R.
 \end{equation}
+We begin with two conjugate coherent intertwiners and apply the thermal transformation:
+\begin{equation}\label{eqn:two-copy-fl-state}
+\begin{aligned}
+ |\Phi\rangle&=|J,z\rangle_L\otimes|\overline{J,z}\rangle_R,\\
+ |\Psi_\beta\rangle&=\mb{U}|\Phi\rangle.
+\end{aligned}
+\end{equation}
+The original constraints annihilate $|\Phi\rangle$. Unitary conjugation therefore gives
+\begin{equation}\label{eqn:closure-preserved}
+\begin{aligned}
+ \boldsymbol{G}_X|\Phi\rangle&=0,\\
+ \boldsymbol{G}_X(\beta)|\Psi_\beta\rangle&=0,\\
+ \boldsymbol{G}_X(\beta)&=\mb{U}\boldsymbol{G}_X\mb{U}^{\dagger},\quad X=L,R.
+\end{aligned}
+\end{equation}
+The thermal transformation carries closure into a constraint on the thermalized fluxes. To ask whether each heated copy also forms a closed geometry with respect to its original fluxes, we must examine $\boldsymbol{G}_X$ on $|\Psi_\beta\rangle$. These operators need not annihilate the heated state.
+
 %This by itself is not sufficient to ensure that the thermal intertwiner state constructed using $ \mb{U} $ will correspond to the state of a coherent polyhedron. 
 It is not sufficient to understand only how the individual face Hilbert space transform under the thermalizing operator because this is not a system of $ n $ \textit{independent} spins. Rather the coherent state constructed via \eqref{eqn:u-n-coherent-states} relies on the operators $ F_{ij} $ which link pairs of different faces and do not transform in a simple manner under $ U_{ij} = U(\beta_i) \otimes U(\beta_j) $.
 
@@ -597,6 +615,12 @@ By assuming same temperature for all the surfaces, the expression for $ \mb{U}$ 
 \begin{equation}
 	\mb{U} = exp\left[\sum_{i=1}^{N}\theta[ a_{i_{L}}^{\dagger} a_{i_{R}}^{\dagger} - \ a_{i_{L}} a_{i_{R}} + b_{i_{L}}^{\dagger} b_{i_{R}}^{\dagger} - b_{i_{L}} b_{i_{R}}]\right]
 \end{equation}
+
+For the common-temperature squeeze and the conjugate right-copy representation, the doubled state obeys the combined constraint
+\begin{equation}\label{eqn:combined-closure}
+ (G_L\otimes I_R-I_L\otimes\overline{G}_R)|\Psi_\beta\rangle=0.
+\end{equation}
+Here the bar denotes the conjugate representation. The residual flux of one copy is compensated by the other. This combined closure does not require either copy to be an ordinary singlet by itself.
 
 The final expression for thermal coherent states for a semiclassical geometry corresponding to a $ n $-valent polyhedron is therefore given by:
 \begin{equation}\label{eqn:u-n-thermal-coherent-state}
@@ -609,6 +633,90 @@ where $ \tilde F^\dag_\bz $ is defined in terms of the thermalized $ U(n) $ ladd
 By operating with the $\tilde F^\dag_{\bz _{L}}$, we ensure that the $ 2^{nd}$ hilbert space $H_{R}$ remains at vacuum which means that the state $\bket{J, z_i}_{\beta}$ represents the thermal coherent states of the $ 1^{st}$ system.
 
 From \eqref{eqn:thermal vacuum} and \eqref{eqn:thermal-ladder-ops}, we see that there is a clear connection between the 2 hilbert spaces which is induced by the temperature. In case of coherent intertwiners, these states represent the geometry and hence the temperature paramater connects the two geometries which basically is a description of wormhole geometry. Thus the finite temperature state of an extended Hilbert Space gives a mathematical description of wormhole geometry. 
+\section{Temperature and closed quantum geometry}\label{sec:temperature-geometry}
+
+What happens to the geometry when we increase its temperature? The squeeze excites the face oscillators and spreads the state over different areas. We can now ask whether this growth survives when we require both copies to close under their ordinary fluxes.
+
+We use the normalized four-face reference $|\phi\rangle=F_{12}^{\dagger}|0\rangle/\sqrt{2}$ in each copy, with conjugate pairing on the right. Its initial area is $J_{\mathrm{in}}=1$: faces 1 and 2 carry spin $1/2$ and form a singlet, while faces 3 and 4 have zero area. The starting geometry is therefore closed and has zero volume. We measure temperature and final linear area by
+\begin{equation}
+ T_*:=\frac{k_BT}{\hbar\omega},\qquad A=\frac{q}{2},
+\end{equation}
+where $q$ is the final boson number in either copy. The initial area label remains fixed while the final area fluctuates.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.9\textwidth]{../../../figures/thermal-closure-temperature/closure_temperature.pdf}
+\caption{Ordinary closure of either copy as temperature increases. The RMS residual grows and the singlet fraction falls. The relative residual in panel (c) is normalized by $\sqrt{\langle A(A+1)\rangle}$; its eventual decrease reflects growing area, while the absolute closure defect continues to rise.}
+\label{fig:thermal-closure}
+\end{figure*}
+
+\subsection{Ordinary closure and separate singlet projection}
+
+A vanishing mean flux does not establish closure: nonzero resultant spins can have directions which average away. Their size is measured by
+\begin{equation}
+ D_\beta=\langle\Psi_\beta|\boldsymbol{G}_L^2|\Psi_\beta\rangle
+ =\sum_{q,S}S(S+1)P_\beta(q,S),
+\end{equation}
+with angular momenta in units of $\hbar$. Heating increases this ordinary closure defect, as shown in \autoref{fig:thermal-closure}. At $T_*=1$, its RMS value is $\sqrt{D_\beta}=3.10919$, and only $2.64065\%$ of either copy lies in the singlet sector. At $T_*=2$, these values are $6.41372$ and $0.34037\%$. The transformed and combined constraints continue to hold exactly.
+
+To impose ordinary closure on both copies, let $P_{X,0}$ project onto the single-copy singlet space and form
+\begin{equation}\label{eqn:separately-closed-state}
+\begin{aligned}
+ \mathcal P_0&=P_{L,0}\otimes P_{R,0},\\
+ p_\beta&=\langle\Psi_\beta|\mathcal P_0|\Psi_\beta\rangle,\\
+ |\Psi_\beta^{\mathrm{closed}}\rangle
+ &=\frac{\mathcal P_0|\Psi_\beta\rangle}{\sqrt{p_\beta}}.
+\end{aligned}
+\end{equation}
+Both ordinary constraints now annihilate the state:
+\begin{equation}\label{eqn:separate-closure}
+ \boldsymbol{G}_L|\Psi_\beta^{\mathrm{closed}}\rangle
+ =\boldsymbol{G}_R|\Psi_\beta^{\mathrm{closed}}\rangle=0.
+\end{equation}
+Closure fixes the resultant spin, but leaves the area free to fluctuate. Moreover the two copies are correlated: their coefficient matrices connect equal resultant-spin sectors. Selecting a singlet on the left selects a singlet on the right as well, so
+\begin{equation}
+ p_\beta=\sum_q P_\beta(q,S=0).
+\end{equation}
+The retained probability is the single-copy singlet fraction, rather than its square. It is positive at every finite temperature; the vacuum-vacuum component alone contributes $(1-e^{-b})^8e^{-2b}>0$, where $b=1/T_*$. At zero temperature the original closed product returns.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.9\textwidth]{../../../figures/thermal-closed-projection/closed_projection_temperature.pdf}
+\caption{Geometry after separate singlet projection. The retained fraction decreases with temperature, while the mean area and positive RS volume of the normalized closed state increase. Both ordinary Gauss constraints hold throughout. Area is in spin units and volume uses $\gamma=0.2375$, $\hbar=1$, in project units.}
+\label{fig:thermal-closed-growth}
+\end{figure*}
+
+\subsection{Growth of area and volume}
+
+The closed state retains a strong response to temperature, as shown in \autoref{fig:thermal-closed-growth}. Its conditional area distribution is
+\begin{equation}
+ \mathcal P_\beta(A)=\frac{P_\beta(2A,0)}{p_\beta}.
+\end{equation}
+At $T_*=1$, its mean area is $2.78775$ and its mean positive Rovelli--Smolin volume is $0.0723452$. At $T_*=2$, they rise to $6.47574$ and $0.353506$. Volume is evaluated by summing the four positive triple-grasp roots, in project units with $\gamma=0.2375$ and $\hbar=1$. Heating thus populates larger closed configurations and produces positive volume from an initially zero-volume reference.
+
+Closure alone does not require four nonzero-area faces or nonzero volume. \autoref{fig:thermal-closed-support} shows how these configurations become populated. At $T_*=1$, the projected probabilities of these two properties are $18.61\%$ and $14.08\%$; at $T_*=2$, they reach $48.48\%$ and $36.34\%$. The volume probability is obtained from the kernel of the positive volume operator.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.9\textwidth]{../../../figures/thermal-closed-projection/closed_projection_distributions.pdf}
+\caption{The geometric content of the separately closed state. The area distribution broadens towards larger areas as temperature rises. The probabilities of four active faces and nonzero positive RS volume also increase; both are conditional on separate closure. Markers in panel (a) denote discrete area sectors.}
+\label{fig:thermal-closed-support}
+\end{figure*}
+
+The high-temperature area growth can be obtained analytically from the exact singlet-sector sums. With $R_\beta=\sum_A A P_\beta(2A,0)$, their leading terms are
+\begin{equation}
+ p_\beta\sim\frac{7}{256}b^3,\qquad
+ R_\beta\sim\frac{57}{512}b^2.
+\end{equation}
+Their ratio gives
+\begin{equation}\label{eqn:closed-area-temperature-law}
+ \langle A\rangle_{\mathrm{closed}}
+ \sim\frac{57}{14}T_*.
+\end{equation}
+The closed fraction falls as $T_*^{-3}$ while the area within that fraction grows linearly with temperature. Positive volume also increases over the calculated range, but its curve is nonlinear.
+
+The closure calculation covers 125 temperatures and the projected geometry covers 85, over $0.05\le T_*\le2$. Occupation probabilities extend through $q=160$ and volume traces through $A=50$. Independent magnetic counting and spin recoupling agree; direct double projection verifies both Gauss constraints. Volume traces agree with the independently constructed closed-state catalogue through $A=12$, and the largest bound on the omitted conditional mean-volume contribution is $5.4\times10^{-12}$. The area asymptote follows from exact polynomial sector sums rather than extrapolation of the numerical cutoff.
+
 \section{Discussion: }\label{sec:discussion}
 
 

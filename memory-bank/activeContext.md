@@ -1,12 +1,12 @@
 # Active Context
 
-*Last Updated: 2026-10-13 22:50:22 IST*
+*Last Updated: 2026-10-14 08:43:32 IST*
 
 ## Current Focus
-Current focus: T11. Four/five-site persistence, prepared-$K=4$ FL geometry, two candidate geometric Hamiltonians, and 50 prepared-state trajectories are calculated and independently checked. The four-site complete-graph thermal drop is associated with a kernel-dominated ground state; the five-site comparison does not show the same low-temperature collapse. The positive-volume and signed-triple interactions are tested candidates, not derived physical terms. Physical coupling justification, volume calibration, controlled size scaling, and sewn dynamics remain open.
+Current focus: T9. The thermal-intertwiners manuscript now includes corrected transformed/ordinary closure equations, the October 13 temperature study, and three existing figures; its 15-page PDF compiled and Figures 9–11 were visually checked. The October 14 analytic continuation excludes a fixed single-copy Gibbs Hamiltonian for the separately closed $J_{\mathrm{in}}=1$ reference by its vacuum/reference eigenvalue-ratio reversal. Singlet area exchange and correlated singlet creation, with many-body analogues, are documented as the next dynamical questions.
 
-**Primary Task:** T11 — reconcile results and clarify tetrahedral geometric dynamics.
-**Supporting Tasks:** T9 thermal/TFD construction and physical study; T1a Python volume numerics; T3c Rust volume implementation; T6 kinematic Minkowski geometry; T4 manuscript audit; T8 amplituhedron program.
+**Primary Task:** T9 — thermal/TFD construction and physical study, including the thermal-intertwiners manuscript.
+**Supporting Tasks:** T11 Hamiltonian/volume studies; T1a Python volume numerics; T3c Rust volume implementation; T6 kinematic Minkowski geometry; T4 separate numerical follow-up manuscript audit; T8 amplituhedron program.
 
 ## Active Tasks
 - T4: Manuscript claim audit and review preparation — IN PROGRESS; independent audit recorded.
@@ -14,7 +14,7 @@ Current focus: T11. Four/five-site persistence, prepared-$K=4$ FL geometry, two 
 - T3c: The Rust FL Eq. (38) example now builds and matches the Python $J=2$ result after the shared zero-mode cutoff. Physical prefactors and a method for blocks above 512 remain open; the Cargo shim itself is still broken.
 - T5: Volume–positivity numerical-studies program — IN PROGRESS; T5c/T5d/T5g open; the former T5f amplituhedron mapping is now T8b. Initial T5c pilots compare the input classical tetrahedron with weighted FL positive volume: regular/unequal-skew through $J=7$, a nine-shape unequal-area grid at $J=2,4$, selected $J=6$ points, and a flat path through $J=7$. Area means and weighted closure pass; finite-$J$ unequal correlations do not exactly reproduce input angles. Calibrated RS/AL agreement follows from closure and is not independent evidence. Broader shape and iterated-limit conclusions remain open. See `implementation-details/T5c-flux-covariance-volume-comparison.md` and shared `implementation-details/volume-numerical-preliminaries.md`.
 - T8: Amplituhedron Program — IN PROGRESS; T8a cluster algebra/chart relevance and T8b positive-cell/scattering-region mapping (transferred from T5f) are open. See `tasks/T8.md`.
-- T9: Thermal/TFD state construction and physical study — IN PROGRESS; owns all ongoing TFD construction and analysis, with exactly five completed child-study records T7a–T7e. The four-face $J_{\mathrm{in}}=1$ occupation/spin comparison is complete through $q=160$. October 13 results quantify ordinary per-copy closure and show that separate singlet projection retains closed states with increasing mean area and positive RS volume; the area asymptote is $(57/14)T_*$. Full selected-state reduced blocks, entropy, and Gibbs characterization remain open.
+- T9: Thermal/TFD state construction and physical study — IN PROGRESS; owns all ongoing TFD construction and analysis, with exactly five completed child-study records T7a–T7e. The four-face $J_{\mathrm{in}}=1$ occupation/spin comparison is complete through $q=160$. October 13 results quantify ordinary per-copy closure and show that separate singlet projection retains closed states with increasing mean area and positive RS volume; the area asymptote is $(57/14)T_*$. The October 14 analytic eigenvalue-ratio test excludes a fixed single-copy Gibbs Hamiltonian for this separately closed reference family; full reduced spectra, entropy, and other-input characterization remain open.
 - T11: Hamiltonian–volume studies — IN PROGRESS. The $K=4$ candidate-Hamiltonian scan and exact-phase evolution of five FL references are now complete; the independent verifier performed 1,510 checks with maximum residual $1.07\times10^{-12}$. Full model ranges and limitations are in [the candidate study](../results/t11-candidate-hamiltonians/README.md). Physical justification/calibration, controlled further size scaling, and sewn dynamics remain open.
 - The numerics dashboard includes 30 InfoDash datasets (2,049 rows) alongside the existing catalogue of 21 studies, 29 records, and 38 figures. Website commit `8263c95b2250bc724605a71c73f1a13e429b1b3d` deployed the integration; follow-up website commit `3c1edad` added the desktop note reader. Live review confirmed all four tabs, rendered Markdown and math, and working chronology links. See [deployment session](sessions/2026-10-12-infodash-deployment.md) and [desktop reader session](sessions/2026-10-13-infodash-desktop-note-reader.md).
 
@@ -127,3 +127,11 @@ production workflow succeeded, and the live route serves all 30 datasets and
 all 301 referenced asset URLs. The lqg-scattering source work remains local and
 uncommitted; T11 research remains in progress. See the
 [deployment record](sessions/2026-10-12-infodash-deployment.md).
+
+
+## T9 manuscript and equilibrium continuation — 2026-10-14
+
+- [Session record](sessions/2026-10-14-t9-manuscript-and-equilibrium.md): corrected state-specific closure equations and added temperature results/three figures to the thermal-intertwiners manuscript; compiled and delivered the 15-page PDF.
+- [Thermal note](../notes/thermal-area-sectors.md#section-17): pedagogical observables/equilibrium discussion and exact vacuum/reference eigenvalue-ratio obstruction, derived from existing coefficients without a new numerical sweep.
+- [Volume continuation](../notes/volume-studies.md#area-conservation-volume-dynamics-and-exchange): conserved total area allows changing volume; separate singlet exchange permits changing individual areas. Transfer and correlated-creation Hamiltonians and their many-body analogues are proposals for further study.
+- T9 owns this work. T4 concerns `manuscript.md`, the separate numerical follow-up. No new task or numerical implementation was created.
