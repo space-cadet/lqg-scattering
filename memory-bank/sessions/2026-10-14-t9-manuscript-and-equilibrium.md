@@ -6,7 +6,7 @@ source_commit: cd56c4e1e3c4db1fe628016de8e045719367904a
 # Session 2026-10-14 — T9 manuscript, Gibbs equilibrium, and singlet exchange
 
 *Created: 2026-10-14 08:43:32 IST*
-*Last Updated: 2026-10-14 08:43:32 IST*
+*Last Updated: 2026-10-14 17:24:59 IST*
 
 ## Focus Task
 
@@ -31,7 +31,7 @@ The user approved the closure correction and specified ordinary $G_X$ for the si
 - Built with host `/usr/local/bin/pdflatex`, with temporary build artifacts and logs under `/tmp/thermal-intertwiners-build/`. Repeated compilation resolved references; final build produced 15 pages with no undefined-reference diagnostics. Existing overfull-box warnings elsewhere in the manuscript remain.
 - Delivered `paper/thermal-intertwiners/thermal-intertwiners.pdf`. Visually inspected rendered pages 11–12; figures, captions, and equations were readable and unclipped.
 
-The subsequent equilibrium and many-body discussion is recorded in the notes. It has not been added to the LaTeX manuscript in this documentation closeout.
+At this initial closeout, the subsequent equilibrium and many-body discussion was recorded in the notes and had not yet been added to the LaTeX manuscript. The final integration is recorded below.
 
 ## Physics discussion in order
 
@@ -49,8 +49,20 @@ The subsequent equilibrium and many-body discussion is recorded in the notes. It
 - [Projection library](../../code/python/lqg_scattering/thermal_projection.py): existing coefficient formula underlying the analytic eigenvalue-ratio argument.
 - [T9](../tasks/T9.md): continuing owner of the construction and physical study.
 
-The next research questions are singlet-transfer dynamics, area currents, pair coherence, and equilibration with a geometric reservoir. Full reduced spectra/entropy and other initial inputs remain further work. No new simulation, numerical plot, code implementation, deployment, commit, or push was performed in this documentation closeout. The manuscript/PDF edits made earlier in this session remain part of the working tree.
+The next research questions at this checkpoint were singlet-transfer dynamics, area currents, pair coherence, and equilibration with a geometric reservoir. Full reduced spectra/entropy and other initial inputs remain further work. No new simulation, numerical plot, code implementation, deployment, commit, or push was performed in this initial documentation closeout. The manuscript/PDF edits made then remained in the working tree.
 
 ## Memory Bank history-view status
 
 The canonical October 14 edit chunk and task/session records are present. `memory-bank/edit_history.md` was not regenerated: the project generator reads `memory-bank/database/memory_bank.db`, which is absent in this checkout. The available edit chunks contain 49 timestamped entries, whereas the existing view contains 71 entries; rebuilding directly from the available chunks would drop 22 historical entries. Preserve the existing view until the missing chunk/database backfill is available.
+
+## Final manuscript integration — 2026-10-14 17:24:59 IST
+
+The earlier 15-page build recorded above was the intermediate manuscript state. The final version now includes the heating-geometry/equilibrium material and the T9a exchange study.
+
+- Added the fixed-Gibbs eigenvalue-ratio obstruction for the separately closed reference, the area-conservation/heating interpretation, and the exact projected-area asymptote derivation.
+- Added the finite-area exchange Hamiltonian, area current, preparations, controls, results and overview figure; distinguished coherent finite-system dynamics from thermalization.
+- Added the many-body analogies and five bibliography entries, and corrected the one-sided-vacuum description and the unsupported wormhole interpretation.
+- Source: [thermal-intertwiners TeX](../../code/papers/thermal-intertwiners/thermal-intertwiners.tex) and [bibliography](../../code/papers/thermal-intertwiners/thermal-intertwiners.bib). Delivered artifact: [19-page PDF](../../paper/thermal-intertwiners/thermal-intertwiners.pdf). Exchange plot: [overview figure](../../figures/t9a-singlet-exchange/exchange-overview.pdf).
+- Host LaTeX/BibTeX build completed with new citations resolved. Rendered pages 12–17 were visually checked. Existing older layout/label warnings remain. No numerical simulation was rerun for this manuscript update; the finite exchange evidence is in the [T9a report](../../results/t9a-singlet-exchange/README.md).
+
+T9 remains IN PROGRESS. The reservoir, relaxation, recurrence, initial-state dependence, broader area/shape coverage and comparison with the selected thermal family remain open.

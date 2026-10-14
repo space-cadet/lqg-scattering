@@ -1,7 +1,11 @@
 # Changelog
 
+## 2026-10-14
+- Added T9a under explicit user authorization and implemented the two-polyhedron FL singlet-exchange pilot, ground-space mixtures and canonical controls. Reconciled stale T11 prepared-evolution documentation. See [study plan](../notes/t9a-singlet-exchange.md).
+- Completed the final T9 manuscript integration: added the Gibbs obstruction, singlet-exchange model/results, many-body connections and projected-area appendix. The 19-page PDF compiled with citations resolved and was visually checked.
+
 ## 2026-10-13
-- Added the T9 temperature-dependent closure study and separately closed geometric projection to the research record. The conditional area grows with high-temperature coefficient $57/14$; positive RS volume rises over the tested interval. See the [thermal note](../notes/thermal-area-sectors.md#section-16) and [numerical reports](../results/thermal-closed-projection/README.md).
+- Added the T9 temperature-dependent closure study and separately closed geometric projection to the research record. The conditional area grows with high-temperature coefficient $57/14$; positive RS volume rises over the tested interval. See the [thermal note](../notes/thermal-geometry-and-singlet-exchange.md#section-16) and [numerical reports](../results/thermal-closed-projection/README.md).
 - Deployed the InfoDash desktop note reader in website commit `3c1edad`; all four tabs are visible, notes render Markdown and math, and chronology links navigate correctly. Mobile notes retain their expandable panel layout. No numerical calculations were rerun.
 
 ## 2026-10-10

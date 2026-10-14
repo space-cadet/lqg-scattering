@@ -9,8 +9,9 @@
 - [`hamiltonian-studies.md`](hamiltonian-studies.md) records the implemented
   four-site fixed-area Hamiltonian and positive-volume pilot.
 
-- [`thermal-area-sectors.md`](thermal-area-sectors.md) is the current write-up
-  on thermal area sectors, closure, and geometric growth. Its [October 13 continuation](thermal-area-sectors.md#section-16) develops the closure and separate-projection results with figures, tables, and the high-temperature area law.
+- [`thermal-area-sectors.md`](thermal-area-sectors.md) now presents the squeezed-state construction and occupation/spin results in six physical sections, followed by seven technical/historical appendices. All eight figures are retained. [The editorial assessment](thermal-area-sectors-reorganization.md) records the reasoning for this organization.
+- [`thermal-geometry-and-singlet-exchange.md`](thermal-geometry-and-singlet-exchange.md) develops heating, ordinary closure, separately projected geometry, Gibbs equilibrium, and the two-polyhedron FL exchange study, with all four related figures.
+- [`t9a-singlet-exchange.md`](t9a-singlet-exchange.md) is the implementation specification for the exchange study and its open reservoir stages.
 - [`experiments/`](experiments/) contains calculation protocols, run notes,
   and evidence logs.
 - [`task-specifications/`](task-specifications/) contains the original project

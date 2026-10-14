@@ -1,9 +1,9 @@
 # Active Context
 
-*Last Updated: 2026-10-14 08:43:32 IST*
+*Last Updated: 2026-10-14 17:24:59 IST*
 
 ## Current Focus
-Current focus: T9. The thermal-intertwiners manuscript now includes corrected transformed/ordinary closure equations, the October 13 temperature study, and three existing figures; its 15-page PDF compiled and Figures 9–11 were visually checked. The October 14 analytic continuation excludes a fixed single-copy Gibbs Hamiltonian for the separately closed $J_{\mathrm{in}}=1$ reference by its vacuum/reference eigenvalue-ratio reversal. Singlet area exchange and correlated singlet creation, with many-body analogues, are documented as the next dynamical questions.
+Current focus: T9 and its active child T9a. The finite-area exchange pilot is implemented at combined area $K=4$, with regular/deformed FL preparations, ground-space mixtures and canonical controls. Its 46 Python tests and 1,792 independent comparisons passed. The thermal-intertwiners manuscript is now updated through the Gibbs obstruction, exchange model/results, many-body connections, and projected-area derivation; the 19-page PDF compiled and was visually checked. Reservoir dynamics and comparison with the selected thermal-intertwiner family remain open.
 
 **Primary Task:** T9 — thermal/TFD construction and physical study, including the thermal-intertwiners manuscript.
 **Supporting Tasks:** T11 Hamiltonian/volume studies; T1a Python volume numerics; T3c Rust volume implementation; T6 kinematic Minkowski geometry; T4 separate numerical follow-up manuscript audit; T8 amplituhedron program.
@@ -131,7 +131,23 @@ uncommitted; T11 research remains in progress. See the
 
 ## T9 manuscript and equilibrium continuation — 2026-10-14
 
-- [Session record](sessions/2026-10-14-t9-manuscript-and-equilibrium.md): corrected state-specific closure equations and added temperature results/three figures to the thermal-intertwiners manuscript; compiled and delivered the 15-page PDF.
-- [Thermal note](../notes/thermal-area-sectors.md#section-17): pedagogical observables/equilibrium discussion and exact vacuum/reference eigenvalue-ratio obstruction, derived from existing coefficients without a new numerical sweep.
+- [Session record](sessions/2026-10-14-t9-manuscript-and-equilibrium.md): records the initial 15-page build with corrected closure equations and temperature results; the final 19-page version, including equilibrium and exchange material, is documented below.
+- [Thermal note](../notes/thermal-geometry-and-singlet-exchange.md#section-17): pedagogical observables/equilibrium discussion and exact vacuum/reference eigenvalue-ratio obstruction, derived from existing coefficients without a new numerical sweep.
 - [Volume continuation](../notes/volume-studies.md#area-conservation-volume-dynamics-and-exchange): conserved total area allows changing volume; separate singlet exchange permits changing individual areas. Transfer and correlated-creation Hamiltonians and their many-body analogues are proposals for further study.
 - T9 owns this work. T4 concerns `manuscript.md`, the separate numerical follow-up. No new task or numerical implementation was created.
+
+## T9a singlet-exchange continuation — 2026-10-14 14:35:25 IST
+
+New T9 child [T9a](tasks/T9a.md) owns the implemented two-polyhedron finite-area FL exchange pilot and the open reservoir/equilibrium comparison. See [session](sessions/2026-10-14-t9a-singlet-exchange.md) and [study specification](../notes/t9a-singlet-exchange.md). Prior five-child restriction is superseded by explicit user direction; T7a–T7e are preserved.
+
+## Thermal-note extraction — 2026-10-14 16:05:06 IST
+
+The new [heating, equilibrium and exchange note](../notes/thermal-geometry-and-singlet-exchange.md) contains the previous and current sessions' physical work with four figures. The retained [area-sector note](../notes/thermal-area-sectors.md) has a [reorganization assessment](../notes/thermal-area-sectors-reorganization.md); its full rewrite/appendix separation remains pending. Numerical/code state is unchanged by the extraction.
+
+## Thermal-note rewrite complete — 2026-10-14 16:13:37 IST
+
+[The remaining thermal note](../notes/thermal-area-sectors.md) now has six physical sections and seven appendices; all eight figures and legacy anchors remain. The [editorial assessment](../notes/thermal-area-sectors-reorganization.md) records completion. The main-text/appendix rewrite is no longer pending. Scientific implementation and results are unchanged.
+
+## Final T9 manuscript integration — 2026-10-14 17:24:59 IST
+
+The final manuscript adds the fixed-Gibbs eigenvalue-ratio test, singlet-exchange Hamiltonian and current, finite-pilot results, many-body connections, and an appendix deriving the projected-area asymptote. The delivered [19-page PDF](../paper/thermal-intertwiners/thermal-intertwiners.pdf) compiled with the new citations resolved; pages 12–17 were visually checked. This supersedes the earlier 15-page, Figures 9–11 checkpoint recorded above.

@@ -1,6 +1,6 @@
 # Implementation Progress
 
-*Last Updated: 2026-10-12 21:08:16 IST*
+*Last Updated: 2026-10-14 17:24:59 IST*
 
 ## Active Tasks
 
@@ -133,7 +133,7 @@ T9 owns the entire thermal/TFD program. The former T7 umbrella was transferred a
 
 T9 follow-up: the selected state is $U_\beta(|J,\mathbf z\rangle_L\otimes|\overline{J,\mathbf z}\rangle_R)$, with transformed geometric observables. For four faces and $J_{\mathrm{in}}=1$, $P(q,S)$ is implemented by explicit spin coupling and magnetic-component counting with finite differences. The methods agree across 32,805 entries ($q=0\ldots160$; $\beta\hbar\omega=0.5,1,2,4,8$) to maximum absolute discrepancy $2.67\times10^{-16}$. Independent oscillator coefficient and direct Casimir-projector checks cover $q\le4$. Plots show broader occupation and spin distributions at higher temperature. The apparent high-$q$ cutoff is a display/numerical limit: an analytic positive bound establishes nonzero probability at every kinematically allowed $(q,S)$ for finite temperature. Full two-copy reduced-state blocks, entropy, and geometric correlations remain open. For fixed positive $H_A=\lambda N_L/2$ on unrestricted Fock space, the Gibbs low-temperature limit is vacuum while the squeezed family returns its nonzero-$J$ input; that Hamiltonian is excluded as its Gibbs generator over all temperatures. The earlier one-sided pilot remains separate evidence for the draft's original state. See `notes/thermal-area-sectors.md` and `tasks/T9.md`. Calculation and note update by GPT 6.1 Sol.
 
-**October 13 update:** The four-face $J_{\mathrm{in}}=1$ closure sweep measures both the RMS ordinary Gauss defect and singlet fraction over 125 temperatures. Separate projection with $P_{L,0}\otimes P_{R,0}$ yields exactly closed states whose conditional area and positive RS-volume distributions shift upward with temperature. The projected mean area has high-temperature asymptote $\langle A\rangle\sim(57/14)T_*$; the positive-volume curve is nonlinear over the sampled interval. Projection, trace, recoupling, and tail checks are recorded in the [closure report](../results/thermal-closure-temperature/README.md) and [closed-geometry report](../results/thermal-closed-projection/README.md). The pedagogical account and figures are in [thermal-area-sectors.md](../notes/thermal-area-sectors.md#section-16); the full selected-state reduced blocks and Gibbs characterization remain open.
+**October 13 update:** The four-face $J_{\mathrm{in}}=1$ closure sweep measures both the RMS ordinary Gauss defect and singlet fraction over 125 temperatures. Separate projection with $P_{L,0}\otimes P_{R,0}$ yields exactly closed states whose conditional area and positive RS-volume distributions shift upward with temperature. The projected mean area has high-temperature asymptote $\langle A\rangle\sim(57/14)T_*$; the positive-volume curve is nonlinear over the sampled interval. Projection, trace, recoupling, and tail checks are recorded in the [closure report](../results/thermal-closure-temperature/README.md) and [closed-geometry report](../results/thermal-closed-projection/README.md). The pedagogical account and figures are in [thermal-area-sectors.md](../notes/thermal-geometry-and-singlet-exchange.md#section-16); the full selected-state reduced blocks and Gibbs characterization remain open.
 
 ## Historical Implementation and Runs
 
@@ -236,3 +236,11 @@ commit `8263c95b2250bc724605a71c73f1a13e429b1b3d` passed production workflow
 all 301 referenced dashboard URLs returned HTTP 200. No scientific calculations
 were rerun. T11 remains IN PROGRESS. See the
 [deployment session](sessions/2026-10-12-infodash-deployment.md).
+
+## T9a — 2026-10-14 14:35:25 IST
+
+Finite-area exchange pilot, FL readouts, ground-space mixtures and fixed-combined-area canonical controls implemented and calculated. Independent physics tests and numerical verification are in [the report](../results/t9a-singlet-exchange/README.md). Reservoir relaxation and comparison with the selected thermal family remain open.
+
+## T9 manuscript integration — 2026-10-14 17:24:59 IST
+
+The final thermal-intertwiners manuscript adds the fixed-Gibbs eigenvalue-ratio obstruction, the singlet-exchange Hamiltonian/current and finite-pilot readouts, many-body connections, and an appendix deriving the projected-area asymptote. The 19-page PDF compiled with new citations resolved, and pages 12–17 were visually checked. The finite exchange calculation remains T9a; reservoir dynamics, broader shape/area coverage, and comparison with the selected T9 thermal family remain open.

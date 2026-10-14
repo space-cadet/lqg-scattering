@@ -16,4 +16,4 @@ Five FL references use existing normalized $(F_z^\dagger)^4|0\rangle$ preparatio
 
 ## Pending physics
 
-Prepared-$K=4$ evolution is not implemented. Positive-volume and signed-triple couplings are discussed, not added. Use $g_V$ for the new volume proposal to distinguish it from historical spin-exchange $g$. Existing data remains $g=0$. For interpretation and original wording see [Hamiltonian dialogs](../../notes/hamiltonian-studies.md) and [closeout](../sessions/2026-10-11-t11-geometry-closeout.md).
+Reconciled 2026-10-14 14:35:25 IST: the October 11 candidate study implemented the positive-volume and signed-triple couplings, a 62-setting scan, and 50 prepared-FL trajectories. The independent verifier performed 1,510 checks with maximum residual $1.07\times10^{-12}$. See [candidate report](../../results/t11-candidate-hamiltonians/README.md). Earlier baseline reports still use their original $g=0$ models. T9a reuses the volume and flux-dot readouts for two separately closed copies; see [study specification](../../notes/t9a-singlet-exchange.md).

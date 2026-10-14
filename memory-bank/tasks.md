@@ -1,5 +1,5 @@
 # Task Registry
-*Last Updated: 2026-10-14 08:43:32 IST*
+*Last Updated: 2026-10-14 17:24:59 IST*
 
 ## Active Tasks
 | ID | Title | Status | Priority | Started | Dependencies | Details |
@@ -15,6 +15,7 @@
 | T6 | Minkowski polyhedron reconstruction and quantum bridge | 🔄 IN PROGRESS | HIGH | 2026-09-19 | T5a′, T5c | [Details](tasks/T6.md) |
 | T8 | Amplituhedron Program | 🔄 IN PROGRESS | MEDIUM | 2026-10-04 | T1, T2 | [Details](tasks/T8.md) |
 | T9 | Thermal/TFD state construction and physical study | 🔄 IN PROGRESS | HIGH | 2026-10-06 | T3c | [Details](tasks/T9.md) |
+| T9a | Closure-preserving singlet exchange and thermal equilibration | 🔄 IN PROGRESS | HIGH | 2026-10-14 | T9, T11, T1a | [Details](tasks/T9a.md) |
 | T11 | Four-site Hamiltonian–volume studies | 🔄 IN PROGRESS | HIGH | 2026-10-09 | T1a | [Details](tasks/T11.md) |
 | T8a | Cluster algebra and coordinate charts | 🔄 IN PROGRESS | MEDIUM | 2026-10-04 | T8 | [Details](tasks/T8a.md) |
 | T8b | Positive cells and scattering regions | 🔄 IN PROGRESS | MEDIUM | 2026-10-04 | T8, T1, T2 | [Details](tasks/T8b.md) |
@@ -306,7 +307,7 @@ truncation. See `memory-bank/implementation-details/red-team-audit.md`.
 - T5g: Performance frontier ([record](tasks/T5g.md)) — OPEN; n=10–12 Rust profiling if required by the physics runs.
 - T6: Minkowski polyhedron reconstruction ([record](tasks/T6.md)) — kinematic implementation and T5a′ pilot exist; full quantum geometry correspondence remains open. Its reconstruction accepts general face areas but does not evaluate FL positive volume. Spec: `implementation-details/T6-minkowski-polyhedron.md`; see also the [T5c specification](implementation-details/T5c-flux-covariance-volume-comparison.md).
 - T7: Former thermal/TFD umbrella ([archived record](archive/T7.md)) — **TRANSFERRED TO T9; scientific work remains open.** Completed child records T7a–T7e retain their identifiers and findings under T9.
-- T9: Thermal/TFD state construction and physical study ([record](tasks/T9.md)) — **IN PROGRESS; five completed child studies T7a–T7e.** Owns the full construction and analysis program. The user selected the two-copy squeeze of conjugate FL intertwiners with transformed observables; the older one-sided squeeze and conditional singlet remain comparative models. Full reduced-state analysis and general Gibbs characterization remain open; the separately closed reference now has a fixed-Gibbs-Hamiltonian obstruction recorded in the [October 14 session](sessions/2026-10-14-t9-manuscript-and-equilibrium.md).
+- T9: Thermal/TFD state construction and physical study ([record](tasks/T9.md)) — **IN PROGRESS; five completed historical children T7a–T7e and active T9a.** Owns the full construction and analysis program. The user selected the two-copy squeeze of conjugate FL intertwiners with transformed observables; the older one-sided squeeze and conditional singlet remain comparative models. Full reduced-state analysis and general Gibbs characterization remain open; the separately closed reference now has a fixed-Gibbs-Hamiltonian obstruction recorded in the [October 14 session](sessions/2026-10-14-t9-manuscript-and-equilibrium.md).
 
 **Notes**:
 Current supported result: real-plane states have zero signed triple-grasp mean,
@@ -325,10 +326,10 @@ convergence evidence.
 
 ### T9: Thermal/TFD State Construction and Physical Study
 **Details:** [Task record](tasks/T9.md)
-**Description**: Own TFD state construction and physical/geometric study; completed child-study records T7a–T7e retain their IDs. The selected T9 state is the same-mode squeeze of conjugate FL intertwiners in both copies, with transformed geometric observables. The four-face $J_{\mathrm{in}}=1$ occupation/spin distribution is checked by two methods through $q=160$. New closure sweeps quantify the ordinary per-copy Gauss defect; separate singlet projection gives closed area and positive-volume distributions, with projected mean area asymptoting to $(57/14)T_*$. The October 14 analytic vacuum/reference eigenvalue-ratio test excludes a fixed single-copy canonical Hamiltonian for the separately closed reference family at the specified temperature. Full reduced spectra, entropy, and other-input characterization remain open. The thermal-intertwiners manuscript/PDF incorporates the closure correction, temperature results, and three plots; see [the session record](sessions/2026-10-14-t9-manuscript-and-equilibrium.md). A fixed positive total-area Hamiltonian on unrestricted Fock space is excluded as a Gibbs generator by its different low-temperature limit. See [NS28–NS29](../notes/numerical-studies.md#ns28).
+**Description**: Own TFD state construction and physical/geometric study; completed historical child records T7a–T7e retain their IDs. The selected T9 state is the same-mode squeeze of conjugate FL intertwiners in both copies, with transformed geometric observables. The four-face $J_{\mathrm{in}}=1$ occupation/spin distribution is checked by two methods through $q=160$. Closure sweeps quantify the ordinary per-copy Gauss defect; separate singlet projection gives closed area and positive-volume distributions, with projected mean area asymptoting to $(57/14)T_*$. The October 14 eigenvalue-ratio test excludes a fixed single-copy canonical Hamiltonian for the separately closed reference family. T9a implements finite-area singlet exchange. The final 19-page thermal-intertwiners manuscript includes the closure/temperature results, Gibbs obstruction, exchange Hamiltonian and current, many-body connections, projected-area asymptote derivation, and figures 9–12. Full reduced spectra, entropy, other-input characterization, and reservoir comparisons remain open. See [the manuscript session](sessions/2026-10-14-t9-manuscript-and-equilibrium.md), [NS28–NS29](../notes/numerical-studies.md#ns28), and [T9a](tasks/T9a.md).
 **Status**: 🔄 IN PROGRESS
 **Dependencies**: T3c
-**Subtasks**: Five completed child-study records (T7a–T7e); no additional subtask slots remain.
+**Subtasks**: Five completed historical child-study records (T7a–T7e) and active T9a. The earlier five-child limit was superseded by the user's explicit October 14 authorization.
 
 ### T11: Four-site Hamiltonian–volume studies
 **Details**: [Task record](tasks/T11.md)
@@ -363,7 +364,7 @@ convergence evidence.
 ## Transferred / Historical Task IDs
 
 - T5f — ownership transferred to T8b on 2026-10-04; the research work remains open. [Historical task record](archive/T5f.md).
-- T7 — former thermal/TFD umbrella transferred to T9 on 2026-10-06; scientific work remains open and is owned by T9. The completed T7a–T7e records retain their identifiers as T9's five child studies. [Archived parent record](archive/T7.md).
+- T7 — former thermal/TFD umbrella transferred to T9 on 2026-10-06; scientific work remains open and is owned by T9. The completed T7a–T7e records retain their identifiers as T9's five historical child studies; T9a was added under explicit user authorization on October 14. [Archived parent record](archive/T7.md).
 
 ## Individual Task Records
 

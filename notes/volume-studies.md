@@ -354,7 +354,7 @@ $$
 
 allows one polyhedron to gain a unit of area while the other loses one. Total area is conserved and both remain closed. A term $F_{ij,L}^{\dagger}F_{ij,R}^{\dagger}+\mathrm{h.c.}$ instead changes both areas together and preserves their difference. These proposed interactions connect the present thermal work to pair transfer in Josephson junctions and Bose–Hubbard models, and to the identical singlet-bond operators used in Schwinger-boson antiferromagnets.
 
-The detailed [thermal continuation](thermal-area-sectors.md#section-17) explains those analogies and distinguishes preparation, real-time exchange, and Gibbs equilibrium. It also derives a fixed-Gibbs-Hamiltonian obstruction for the separately closed $J_{\mathrm{in}}=1$ squeezed reference: its vacuum/reference reduced-state eigenvalue ordering reverses as temperature rises. That result concerns the prepared T9 family; the T11 models remain independently specified Hamiltonian ensembles.
+The detailed [thermal continuation](thermal-geometry-and-singlet-exchange.md#section-17) explains those analogies and distinguishes preparation, real-time exchange, and Gibbs equilibrium. It also derives a fixed-Gibbs-Hamiltonian obstruction for the separately closed $J_{\mathrm{in}}=1$ squeezed reference: its vacuum/reference reduced-state eigenvalue ordering reverses as temperature rises. That result concerns the prepared T9 family; the T11 models remain independently specified Hamiltonian ensembles.
 
 
 ## Research program
@@ -403,3 +403,7 @@ Research ownership and evidence:
 - [T9](../memory-bank/tasks/T9.md): the selected thermal/two-copy construction and its future geometric comparison.
 - [T11](../memory-bank/tasks/T11.md): the four-site lattice-Hamiltonian and volume pilot, with larger supports and later program stages open.
 - [Full session summary](../memory-bank/sessions/2026-10-09-lattice-hamiltonian-session-summary.md) and [transcript](../memory-bank/sessions/2026-10-09-lattice-hamiltonian-transcript.md): chronology, user steering, and distinction between proposals and results.
+
+## Two-polyhedron exchange — 2026-10-14 14:35:25 IST
+
+[T9a](t9a-singlet-exchange.md) implements singlet transfer between separately closed four-face copies. Existing T11 face hopping redistributes area within one polyhedron; the new transfer changes each polyhedron's area while preserving their sum. It reuses the validated positive RS and flux-dot operators and starts from regular/deformed FL inputs. See [the pilot report](../results/t9a-singlet-exchange/README.md).

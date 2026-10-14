@@ -622,7 +622,7 @@ For the common-temperature squeeze and the conjugate right-copy representation, 
 \end{equation}
 Here the bar denotes the conjugate representation. The residual flux of one copy is compensated by the other. This combined closure does not require either copy to be an ordinary singlet by itself.
 
-The final expression for thermal coherent states for a semiclassical geometry corresponding to a $ n $-valent polyhedron is therefore given by:
+The earlier one-sided construction, with an FL excitation only on the left, can be written as:
 \begin{equation}\label{eqn:u-n-thermal-coherent-state}
 	\bket{J, z_i}_{\beta _{L}} = \frac{1}{\sqrt{J+1}}\frac{(\tilde F^\dag_{\bz _{L}})^J}{J!}\bket{0(\beta)},
 \end{equation}
@@ -630,9 +630,10 @@ where $ \tilde F^\dag_\bz $ is defined in terms of the thermalized $ U(n) $ ladd
 \begin{equation}\label{eqn:u-n-thermal-ops}
 	\tilde F_{ij} = a_i(\beta) b_j (\beta) - a_j(\beta) b_i(\beta)
 \end{equation}
-By operating with the $\tilde F^\dag_{\bz _{L}}$, we ensure that the $ 2^{nd}$ hilbert space $H_{R}$ remains at vacuum which means that the state $\bket{J, z_i}_{\beta}$ represents the thermal coherent states of the $ 1^{st}$ system.
+In this one-sided expression the right copy is vacuum with respect to the transformed right annihilation operators, not the original oscillators. The two-FL state in \eqref{eqn:two-copy-fl-state} additionally excites the conjugate right intertwiner; it is the preparation studied below.
 
-From \eqref{eqn:thermal vacuum} and \eqref{eqn:thermal-ladder-ops}, we see that there is a clear connection between the 2 hilbert spaces which is induced by the temperature. In case of coherent intertwiners, these states represent the geometry and hence the temperature paramater connects the two geometries which basically is a description of wormhole geometry. Thus the finite temperature state of an extended Hilbert Space gives a mathematical description of wormhole geometry. 
+The squeeze correlates geometric degrees of freedom in the two copies. Interpreting this entanglement as a wormhole would require additional geometric matching and gravitational dynamics; the doubled-state construction and combined closure alone do not establish such a geometry.
+
 \section{Temperature and closed quantum geometry}\label{sec:temperature-geometry}
 
 What happens to the geometry when we increase its temperature? The squeeze excites the face oscillators and spreads the state over different areas. We can now ask whether this growth survives when we require both copies to close under their ordinary fluxes.
@@ -713,11 +714,189 @@ Their ratio gives
  \langle A\rangle_{\mathrm{closed}}
  \sim\frac{57}{14}T_*.
 \end{equation}
-The closed fraction falls as $T_*^{-3}$ while the area within that fraction grows linearly with temperature. Positive volume also increases over the calculated range, but its curve is nonlinear.
+The closed fraction falls as $T_*^{-3}$ while the area within that fraction grows linearly with temperature. Positive volume also increases over the calculated range, but its curve is nonlinear. On $1\le T_*\le2$, the area fit is $\langle A\rangle\simeq3.70213T_*-0.96406$ with $R^2=0.999686$, distinct from the asymptotic slope $57/14$. The volume's local slope rises from approximately 0.196 to 0.351 across that interval, so a constant linear high-temperature volume coefficient is not established. The sector-sum derivation is given in \autoref{app:projected-area}.
 
 The closure calculation covers 125 temperatures and the projected geometry covers 85, over $0.05\le T_*\le2$. Occupation probabilities extend through $q=160$ and volume traces through $A=50$. Independent magnetic counting and spin recoupling agree; direct double projection verifies both Gauss constraints. Volume traces agree with the independently constructed closed-state catalogue through $A=12$, and the largest bound on the omitted conditional mean-volume contribution is $5.4\times10^{-12}$. The area asymptote follows from exact polynomial sector sums rather than extrapolation of the numerical cutoff.
 
-\section{Discussion: }\label{sec:discussion}
+\section{Thermal geometry and equilibrium}\label{sec:geometry-equilibrium}
+
+The closed state supplies temperature-dependent geometric distributions. What statistical mechanics can we extract from them? Measurements confined to the left copy are described by
+\begin{equation}
+ \rho_L^{\mathrm{closed}}=\operatorname{Tr}_R
+ |\Psi_\beta^{\mathrm{closed}}\rangle\langle\Psi_\beta^{\mathrm{closed}}|.
+\end{equation}
+This density matrix gives areas, volumes, correlations and their fluctuations, as well as the entropy of the reduced state. A derivative such as $d\langle A\rangle/dT$ measures an area response. To interpret it as a heat capacity, however, we must specify an energy operator and an equilibrium ensemble.
+
+A canonical Gibbs family uses the same Hamiltonian at every temperature:
+\begin{equation}\label{eqn:geometry-gibbs}
+ \rho_\beta=\frac{e^{-\beta H}}{Z_\beta},\qquad
+ Z_\beta=\operatorname{Tr}e^{-\beta H}.
+\end{equation}
+Only with this prescription do the standard relations
+\begin{equation}
+ \mathcal F=-k_BT\log Z_\beta,\qquad
+ C=\frac{d\langle H\rangle}{dT}
+ =\frac{\langle H^2\rangle-\langle H\rangle^2}{k_BT^2}
+\end{equation}
+apply. The relation $\tanh\theta=e^{-\beta\hbar\omega/2}$ fixes our preparation parameter; it does not by itself establish \eqref{eqn:geometry-gibbs} for an excited, separately projected FL state.
+
+\subsection{An obstruction to a fixed Gibbs Hamiltonian}
+
+An energy law can be tested without calculating the complete entropy. If two eigenvectors of $\rho_\beta$ are common to the family, their eigenvalues must satisfy
+\begin{equation}
+ \log\frac{p_n(\beta)}{p_m(\beta)}
+ =-\beta(E_n-E_m).
+\end{equation}
+The inferred gap must be temperature independent. In particular, the ordering of two populations cannot reverse at positive temperature.
+
+For the projected four-face reference, set $x=e^{-b}$ and $\eta=1-x$. In final integer-area sector $K$, the coefficient matrix is
+\begin{equation}\label{eqn:closed-coefficient-polynomial}
+\begin{aligned}
+ C_K&=\eta^4x^{K-1}[uX+v n_{12}+wI],\\
+ X&=F_{12}^{\dagger}F_{12},\qquad n_{12}=n_1+n_2,\\
+ u&=\eta^2/2,\qquad v=-\eta x/2,\qquad w=x^2.
+\end{aligned}
+\end{equation}
+Here $n_i=a_i^\dagger a_i+b_i^\dagger b_i$. The commuting operators admit a common singlet recoupling basis. The reduced eigenvalues are the squared coefficient eigenvalues, divided by the same retained norm $p_\beta$.
+
+The vacuum has $K=0$, $X=n_{12}=0$, while the input reference $|\phi\rangle=F_{12}^{\dagger}|0\rangle/\sqrt2$ has $K=1$, $X=n_{12}=2$. Their coefficients are
+\begin{equation}
+ c_{\mathrm{vac}}=\eta^4x,\qquad
+ c_\phi=\eta^4(1-3x+3x^2).
+\end{equation}
+Consequently
+\begin{equation}\label{eqn:vacuum-reference-gibbs-test}
+ \frac{p_{\mathrm{vac}}}{p_\phi}
+ =\frac{x^2}{(1-3x+3x^2)^2}.
+\end{equation}
+At low temperature this ratio approaches $e^{-2b}$, suggesting that a fixed Gibbs Hamiltonian would place the vacuum $2\hbar\omega$ above the reference. Yet at $x=1/2$, corresponding to $T_*=1/\log2$, the ratio is 4: the vacuum is more probable. No fixed gap reproduces both behaviors. The interference in the excited coefficients changes their relative preferences as temperature rises.
+
+This excludes a temperature-independent single-copy canonical Hamiltonian for this projected reference family at the stated temperature. The argument concerns individual density-matrix eigenvalues, not area-sector probabilities which also include multiplicities. It does not exclude equilibrium in a larger interacting system. At any one temperature an effective operator can still be defined on the occupied support,
+\begin{equation}
+ H_{\mathrm{eff}}(T)=-k_BT\log\rho_L^{\mathrm{closed}}(T)+c(T)I,
+\end{equation}
+but its temperature dependence cannot be replaced by one fixed single-copy energy law.
+
+\subsection{Area conservation and geometric heating}
+
+Fixing area does not fix volume: changing face correlations can change the enclosed geometry. A number-conserving hopping Hamiltonian can therefore generate volume dynamics inside a fixed-area sector. An ensemble spanning several area sectors can also have a temperature-dependent mean area while its Hamiltonian conserves area, because the sector weights change with temperature. Actual dynamical exchange between individual-area sectors requires another system or a source.
+
+The temperature used in \autoref{sec:temperature-geometry} measures excitation relative to a fixed oscillator scale. It should not be identified directly with the Hawking temperature at infinity. For a Schwarzschild horizon,
+\begin{equation}
+ T_H=\frac{\hbar c}{2k_B\sqrt{\pi A_H}},\qquad
+ A_H=\frac{\hbar^2c^2}{4\pi k_B^2T_H^2},
+\end{equation}
+so the horizon area decreases as its temperature increases. Our occupation-derived area instead grows with excitation. Relating these quantities requires a gravitational energy law and a relation between the oscillator scale and surface gravity.
+
+\section{Singlet exchange between closed polyhedra}\label{sec:singlet-exchange}
+
+How can a polyhedron exchange area while remaining closed? The FL algebra already supplies the required operation. For copy $X=L,R$, define
+\begin{equation}
+\begin{aligned}
+ A_X&=\frac12\sum_i(a_{iX}^{\dagger}a_{iX}+b_{iX}^{\dagger}b_{iX}),\\
+ F_{ij,X}^{\dagger}&=a_{iX}^{\dagger}b_{jX}^{\dagger}
+ -a_{jX}^{\dagger}b_{iX}^{\dagger}.
+\end{aligned}
+\end{equation}
+The singlet creator obeys
+\begin{equation}
+ [A_X,F_{ij,X}^{\dagger}]=F_{ij,X}^{\dagger},\qquad
+ [G_X^a,F_{ij,X}^{\dagger}]=0.
+\end{equation}
+It raises area by one unit without violating closure. We can therefore transfer a singlet from one copy to the other, preserving both separate constraints.
+
+\subsection{Hamiltonian and area current}
+
+We examine the Hamiltonian
+\begin{equation}\label{eqn:singlet-exchange-hamiltonian}
+\begin{aligned}
+ H&=H_L+H_R+B+B^{\dagger},\\
+ H_X&=\epsilon_X A_X+\frac{U_X}{2}A_X(A_X-1),\\
+ B&=\sum_{i<j}g_{ij}F_{ij,L}^{\dagger}F_{ij,R}.
+\end{aligned}
+\end{equation}
+The local terms assign an area energy and penalize concentration of area on a copy. This repulsion acts on the whole polyhedron's area, rather than on occupations at individual faces. The exchange term is quartic in elementary oscillators. Its corresponding face labels specify which pairs communicate; they do not impose geometric sewing or identify a shared face.
+
+The Hamiltonian conserves $A_L+A_R$ and commutes with $\boldsymbol G_L$ and $\boldsymbol G_R$. The current into the left copy is
+\begin{equation}\label{eqn:singlet-area-current}
+ I_L=\frac{i}{\hbar}[H,A_L]
+ =\frac{i}{\hbar}(B^{\dagger}-B),\qquad I_R=-I_L.
+\end{equation}
+Thus $\langle I_L\rangle=2\operatorname{Im}\langle B\rangle/\hbar$: the transfer is controlled by inter-copy singlet-pair coherence. A definite-area product has zero initial mean current, but correlations and transfer can develop during evolution.
+
+A different interaction would create or annihilate one singlet in each copy,
+\begin{equation}
+ H_{\mathrm{pair}}=\sum_{i<j}\left(
+ \lambda_{ij}F_{ij,L}^{\dagger}F_{ij,R}^{\dagger}
+ +\overline{\lambda}_{ij}F_{ij,R}F_{ij,L}\right).
+\end{equation}
+It preserves separate closure and $A_L-A_R$, while changing combined area. It would require an energy source in a driven realization and differs from both the same-mode oscillator squeeze and the transfer model calculated here.
+
+\subsection{Geometric preparations and finite-area calculation}
+
+To choose FL labels, specify face-area proportions $a_i$ and outward unit normals with $\sum_i a_i\mathbf n_i=0$, then choose spinors satisfying
+\begin{equation}
+ z_i^{\dagger}z_i=2a_i,\qquad
+ z_i^{\dagger}\boldsymbol\sigma z_i=2a_i\mathbf n_i.
+\end{equation}
+The fixed FL label sets the total quantum area, while relative spinor norms specify its mean proportions. Common rotations are gauge choices. Face-dependent phases must be specified relative to the exchange channels; a common spinor phase merely changes the overall phase of a fixed-area FL ket.
+
+We begin with two regular tetrahedra, then change area or shape separately. The initial state is the ordinary product $|K_L,z_L\rangle\otimes|K_R,z_R\rangle$. The right label is not automatically conjugated: this dynamical preparation is distinct from \eqref{eqn:two-copy-fl-state}. These pure FL inputs also need not be ground states of \eqref{eqn:singlet-exchange-hamiltonian}.
+
+The exact finite support is
+\begin{equation}
+ \mathcal H_{K}=\bigoplus_{k=0}^{K}
+ \mathcal H_{4,k}^{\mathrm{singlet}}\otimes
+ \mathcal H_{4,K-k}^{\mathrm{singlet}},\qquad K=A_L+A_R.
+\end{equation}
+At $K=4$ its dimension is 1,210, with local dimensions $1,6,20,50,105$ at areas $0,1,2,3,4$. Vacuum endpoints and empty faces are retained. There is no occupation truncation inside this declared support.
+
+The three inputs are regular tetrahedra at $(K_L,K_R)=(2,2)$ and $(3,1)$, and a regular/deformed pair at $(2,2)$. Equal-face-area normals use $x=1/\sqrt3$ and bend angles $\varphi=90^{\circ}$ for regular and $30^{\circ}$ for deformed geometry:
+\begin{equation}
+\begin{aligned}
+ \mathbf n_1&=(\sqrt{1-x^2},0,x),\\
+ \mathbf n_2&=(-\sqrt{1-x^2},0,x),\\
+ \mathbf n_3&=(\sqrt{1-x^2}\cos\varphi,\sqrt{1-x^2}\sin\varphi,-x),\\
+ \mathbf n_4&=(-\sqrt{1-x^2}\cos\varphi,-\sqrt{1-x^2}\sin\varphi,-x).
+\end{aligned}
+\end{equation}
+We use unit-norm spinors $(\cos(\vartheta/2),e^{i\chi}\sin(\vartheta/2))$ for each normal; uniform rescaling does not change the normalized fixed-area state. At these small areas the labels characterize preparations, not sharply classical tetrahedra.
+
+All six corresponding face-pair channels have the same real coefficient $g$, without division by six. Setting $U_L=U_R=U$ and $\epsilon_R=0$, we compare
+\begin{equation}
+ (g,U,\epsilon_L)=(0,0,0),\ (0.1,0,0),\ (0.1,1,0),\ (0.1,0,2).
+\end{equation}
+These are no-exchange, resonant, repulsive and detuned controls. With $\hbar=1$, exact energy-basis propagation samples 101 times over $0\le t\le20$ for all twelve input/interaction combinations. Area probabilities, variance, current, pair coherence, return probability, face areas and flux correlations, positive RS volumes and bipartite entropy are followed together.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.96\textwidth]{../../../figures/t9a-singlet-exchange/exchange-overview.pdf}
+\caption{Singlet exchange between separately closed FL polyhedra at combined area $K=4$. Panel (a): left mean area for unequal regular inputs. Panel (b): left-area variance for equal regular inputs. Panel (c): entanglement entropy for unequal regular inputs. Panel (d): positive RS volume of the deformed right input. The resonant, repulsive and detuned settings are distinguished by colour and line style. Time uses the specified model energy units with $\hbar=1$; volume retains repository normalization.}
+\label{fig:singlet-exchange-overview}
+\end{figure*}
+
+\subsection{Transfer, fluctuations and equilibrium comparisons}
+
+The unequal regular input exhibits substantial coherent transfer: its resonant left mean area ranges between sampled values approximately 1.0083 and 3.0000. With detuning the range is approximately 2.5120--3.2200 over the same interval. These are sampled values, not analytic extrema. In the equal regular input the mean areas remain equal, but resonant left-area variance reaches approximately 2.722 and the copies become entangled. Equal mean areas therefore do not imply absence of exchange. Repulsion reduces the maximum sampled equal-input variance to approximately 1.050. Volume and face correlations evolve alongside these fluctuations, as shown in \autoref{fig:singlet-exchange-overview}.
+
+Ground states are calculated separately from the prepared trajectories. All three interacting ground spaces have degeneracy 105, so geometric readouts use their uniform mixtures. Resonant and repulsive ground mixtures have mean left area 2; the detuned ground mixture has mean left area approximately 0.0967. No unique ground-state tetrahedron is inferred. Canonical controls at $\beta=0,0.5,2,10,100$ use the same fixed combined-area support. Their joint Gibbs entropy differs from the pure trajectories' bipartite entropy.
+
+An analytic one-area-unit control gives $\langle A_L(t)\rangle=\cos^2(2|g|t)$ for a left-area-one FL input with equal area energies and six equal transfer channels, in units $\hbar=1$. Direct joint-occupation transfer independently checks the matrix elements and separate-singlet support. Basis closure, creator leakage, Hermiticity, current commutators, norm and energy are checked; the maximum internal residual is $4.53\times10^{-14}$. Independent sparse propagation of 48 sampled states, together with exact infinite-temperature traces, supplies 1,792 comparisons with maximum residual $9.06\times10^{-13}$ against tolerance $2\times10^{-10}$.
+
+These results establish coherent exchange and entanglement in a finite isolated pair. The canonical calculations do not show that the FL trajectories thermalize. A reservoir extension must examine recurrence, relaxation and dependence on the initial state before an equilibrium claim can be made.
+
+\subsection{Connections to many-body physics}
+
+Singlet transfer has a familiar interpretation in Josephson systems: Cooper pairs tunnel between superconductors through a pair-transfer term, with phase-dependent coherent current. Pair-hopping Bose--Hubbard models provide a bosonic counterpart through $(c_x^{\dagger})^2c_y^2+\mathrm{h.c.}$ and can support coherence of pairs rather than individual particles~\cite{Josephson1962Tunnelling,Zhang2013PairHopping}. The geometric model replaces that pair by a singlet across two faces, preserving closure during transfer. A Josephson-like area-current interpretation requires physically specified coherence across individual-area sectors, not an arbitrary overall phase of a fixed-area FL ket.
+
+Quantum antiferromagnets supply the closest operator correspondence. Their Schwinger-boson singlet bond is $a_i b_j-b_i a_j$, the same $F_{ij}$ up to normalization, and antiferromagnetic correlations can be expressed using singlet products~\cite{AuerbachArovas2008Schwinger}. Ordinary spin models fix the occupation at each site; the full intertwiner space permits face occupations and hence areas to vary.
+
+Spinor condensates and optical parametric conversion illustrate the energy source for correlated creation. Spin-changing collisions transfer atoms from an occupied $m=0$ component into correlated $m=+1,-1$ components~\cite{Klempt2010Parametric}. Optical down-conversion uses a pump to produce a signal--idler pair~\cite{Couteau2018DownConversion}. Treating a pump as classical produces a two-mode squeezing term. Singlet-pair creation would instead excite composite pairs. These correspondences suggest mechanisms to investigate; they do not establish a many-body phase or an equilibrium origin for the projected FL family.
+
+\section{Discussion}\label{sec:discussion}
+
+The temperature-labelled construction separates ordinary closure from the constraints carried by the transformed and doubled system. Selecting separate singlets retains a closed family with increasing area and positive volume, but the reference eigenvalue ordering excludes a fixed single-copy Gibbs Hamiltonian for that family. Singlet transfer supplies a distinct, closure-preserving mechanism for area dynamics. Its finite-system oscillations, geometric fluctuations and entanglement motivate a reservoir study, rather than establishing thermal relaxation. In a suitable weak-coupling large-reservoir limit, one may compare a copy with $e^{-\beta(H_L-\mu A_L)}/Z$; the area chemical potential reflects combined-area conservation. The reduced spectra and geometric correlations must then be compared with the squeezed-and-projected family, without assuming the two constructions coincide.
+
 
 
 
@@ -726,6 +905,38 @@ The closure calculation covers 125 temperatures and the projected geometry cover
 \end{acknowledgements}
 
 \appendix
+
+\section{Projected reference coefficients and high-temperature area}\label{app:projected-area}
+
+Write $K_+=\sum_i(a_{iL}^{\dagger}a_{iR}^{\dagger}+b_{iL}^{\dagger}b_{iR}^{\dagger})$ and $K_-=K_+^{\dagger}$, so that the common-temperature squeeze is $e^{\theta(K_+-K_-)}$.
+
+For the initial state $|\phi\rangle_L\otimes|\overline\phi\rangle_R$ with $|\phi\rangle=F_{12}^{\dagger}|0\rangle/\sqrt2$, the first two annihilation actions are $K_-|\Phi\rangle=K_{+,12}|0,0\rangle/2$ and $K_-^2|\Phi\rangle=2|0,0\rangle$, while the third vanishes. Here $K_{+,12}$ restricts the same-mode pair sum to faces 1 and 2. With $\tau=e^{-b/2}$, $\eta=1-\tau^2$ and final occupation $q$, combining these coherent contributions yields
+\begin{equation}
+\begin{aligned}
+ C_q&=\eta^4\tau^{q-2}(uX+v n_{12}+wI_q),\\
+ u&=\eta^2/2,\quad v=-\eta\tau^2/2,\quad w=\tau^4.
+\end{aligned}
+\end{equation}
+Separate singlet projection retains $q=2K$ and gives \eqref{eqn:closed-coefficient-polynomial}. The factors in this expression are amplitudes; their interference must be retained before taking squared coefficients.
+
+Couple faces 1 and 2 to spin $s$ and faces 3 and 4 to the same spin, then couple the two to zero. Write their occupations as $2s+2r$ and $2s+2l$, with $r,l\ge0$ and $r+l\le K$. The common coefficient eigenbasis has
+\begin{equation}
+\begin{aligned}
+ 2s&=K-r-l,\\
+ f&=r(K-l+1),\qquad a=K+r-l,\\
+ X&\longrightarrow f,\qquad n_{12}\longrightarrow a,
+\end{aligned}
+\end{equation}
+and multiplicity $(K-r-l+1)^2$. Squaring $uf+va+w$ gives the six terms $f^2,a^2,1,fa,f,a$. Their multiplicity-weighted sums are finite polynomials in $K$, which determine retained probability and the unnormalized area moment analytically.
+
+Using
+\begin{equation}
+ \sum_{K=0}^{\infty}K^d e^{-2bK}
+ \sim\frac{d!}{(2b)^{d+1}}\qquad(b\to0)
+\end{equation}
+for the leading polynomial terms gives $p_\beta\sim7b^3/256$ and $R_\beta\sim57b^2/512$. Their ratio yields \eqref{eqn:closed-area-temperature-law}. This asymptote is obtained from exact sector sums rather than the finite occupation display or numerical volume cutoff.
+
+
 
 \section{Derivation of Thermofield Double State}\label{sec:tfd}
 

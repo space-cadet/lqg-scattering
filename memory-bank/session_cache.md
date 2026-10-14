@@ -1,14 +1,14 @@
 # Session Cache
 
-*Last Updated: 2026-10-14 08:43:32 IST*
+*Last Updated: 2026-10-14 17:24:59 IST*
 
 ## Overview
-- 2026-10-14 T9: Integrated thermal closure/geometry into the manuscript and compiled its 15-page PDF with three plots. The analytic projected-reference eigenvalue ratio excludes a fixed single-copy Gibbs Hamiltonian. Recorded singlet area exchange and many-body analogues; see [October 14 session](sessions/2026-10-14-t9-manuscript-and-equilibrium.md).
+- 2026-10-14 T9/T9a: Implemented finite-area singlet exchange and integrated the Gibbs obstruction, exchange model/results, many-body connections, and projected-area derivation into the final 19-page manuscript. The PDF compiled with new citations resolved and was visually checked; see [manuscript session](sessions/2026-10-14-t9-manuscript-and-equilibrium.md), [T9a report](../results/t9a-singlet-exchange/README.md), and [illustrated thermal note](../notes/thermal-geometry-and-singlet-exchange.md).
 - 2026-10-13 T9: Measured ordinary per-copy closure over temperature and calculated area/positive-volume distributions after separate singlet projection. The projected mean area has high-temperature coefficient $57/14$; detailed checks and figures are in the closure reports and thermal note.
 - 2026-10-09 T11: Implemented the four-site Hamiltonian–volume pilot at $K=2,3,4$, added a dense $K=4$ thermal-volume crossover scan, and published the updated numerics dashboard. The live searchable catalogue contains 18 studies, including T11's 30 exact cases, plots, data, provenance, and claim limits. The run used the `qc-diff` Conda environment and generated five PDF/PNG figure pairs. Larger systems and physical volume calibration remain open.
 - 2026-10-08 T9 calculation close: Added the four-face $J_{\mathrm{in}}=1$ $P(q,S)$ calculation by two methods through $q=160$, method and coefficient checks, temperature plots, and the finite-temperature support result. Full two-copy reduced-state blocks, entropy, and geometry remain open; see [session record](sessions/2026-10-08-j1-spin-distribution.md).
 - 2026-10-08: Saved the thermal-area write-up and a transcript ending before the write-up request; organized Python, Rust, dashboard, Memory Bank tooling, shell workflows, and LaTeX sources under `code/`; moved calculation outputs to `results/` and research records/task specifications to `notes/`.
-- Active work remains T5c, T1a/T3c, T4, T5, T8, and T9; T6 is active for the open FL-covariance-to-polyhedron bridge.
+- Active work remains T5c, T1a/T3c, T4, T5, T8, T9 and active child T9a; T6 is active for the open FL-covariance-to-polyhedron bridge.
 - Task files are reconciled against all 79 commits reachable from the repository refs at audit start: 29 current registry IDs have records. Transferred umbrellas T5f and T7 have separate archive records. Completed tasks are in `archive/`; active tasks are in `tasks/`.
 - Audit baseline: branch `main`, HEAD and `origin/main` at `0a254849a5e12734ee32d9d8af74bd4309d17648`. Pre-existing local numerical, dashboard, cache, and UI artifacts remain in the working tree.
 
@@ -20,7 +20,7 @@
 - T5: Volume–positivity numerical studies — 🔄 IN PROGRESS; T5a magnetization sweep converged for one plane; T5c/T5d/T5g open. Former T5f positive-cell/scattering-region mapping is now T8b. T5c owns the positive-volume comparison against the input FL tetrahedron; first weighted pilots and variance records now exist, while broad area/shape coverage and limit orders remain open. Its equal-area normalized covariance relation follows the known FL formula and is a consistency check.
 - T5c pilot update: weighted regular and unequal-skew input geometries reach $J=7$; the unequal-area grid covers $J=2,4$ plus selected $J=6$ points; a flat path covers $J=2,4,6,7$. Weighted closure and mean areas pass, but finite-$J$ unequal correlations do not exactly recover the input normals. At the exact flat boundary, calibrated positive volume remains finite in the sampled range; limit orders remain open. RS/AL calibrated curves coincide under the tested four-valent closure/sign convention and are not independent checks.
 - T7: Former thermal/TFD umbrella — archived as transferred; scientific work remains open under T9.
-- T9: Thermal/TFD state construction and physical study — 🔄 IN PROGRESS; owns all ongoing construction and analysis, with five completed child-study records T7a–T7e. The earlier one-sided squeeze and conditional singlet pilot remain recorded. The selected target is the same-mode squeeze of conjugate FL intertwiners on both copies, with transformed geometric observables. Its $SU(1,1)$ factorization and coefficient-level partial-trace construction are written up. The October 13 follow-up quantifies the ordinary per-copy closure defect and calculates geometry after separate singlet projection; full selected-state reduced blocks, entropy, and Gibbs characterization remain open. See `tasks/T9.md`, `notes/thermal-area-sectors.md`, and the [October 13 session](sessions/2026-10-13-t9-thermal-closure-and-geometry.md).
+- T9: Thermal/TFD state construction and physical study — 🔄 IN PROGRESS; owns all ongoing construction and analysis, with five completed historical child-study records T7a–T7e and active T9a. The earlier one-sided squeeze and conditional singlet pilot remain recorded. The selected target is the same-mode squeeze of conjugate FL intertwiners on both copies, with transformed geometric observables. Its $SU(1,1)$ factorization and coefficient-level partial-trace construction are written up. The October 13 follow-up quantifies the ordinary per-copy closure defect and calculates geometry after separate singlet projection; full selected-state reduced blocks, entropy, and Gibbs characterization remain open. See `tasks/T9.md`, `notes/thermal-area-sectors.md`, and the [October 13 session](sessions/2026-10-13-t9-thermal-closure-and-geometry.md).
 - T11: Four-site Hamiltonian–volume studies — 🔄 IN PROGRESS; the $K=4$ dense scan shows nonmonotonic $\langle V\rangle$ and a low-temperature complete-graph crossover tied to a $0.00923$ gap at $U/t=20$. The result remains a finite-size observation; larger systems and physical normalization remain open.
 - T8: Amplituhedron Program — 🔄 IN PROGRESS; T8a cluster algebra/chart relevance and T8b positive-cell/scattering-region mapping (former T5f) are open. See `tasks/T8.md`.
 - T1–T3e: Python/Rust implementation and corrected converged scan recorded; n=6 independent state check remains open.
@@ -200,8 +200,24 @@ Website main `cea6ae9`; deployment run `38113563387` succeeded. Live catalogue: 
 - The website copy is published; lqg-scattering source changes remain uncommitted.
 
 
-## Current T9 continuation — 2026-10-14
+## T9 continuation checkpoint before the exchange pilot — 2026-10-14
 
-The latest focus is T9. The detailed analytic and pedagogical account is in `notes/thermal-area-sectors.md`, section 17; the shorter T11 connection is in `notes/volume-studies.md`. The manuscript PDF includes the earlier temperature results and Figures 9–11; the subsequent Gibbs/exchange discussion is in the notes. No new numerical calculation or implementation was performed. Resume with singlet-transfer dynamics, area current and pair coherence, or further reduced-state analysis as requested.
+At this earlier checkpoint, the analytic and pedagogical account was in `notes/thermal-area-sectors.md`, section 17, and the manuscript then included the temperature results and Figures 9–11. The fixed-Gibbs test and exchange discussion were still only in the notes, and that continuation added no numerical implementation. T9a's later exchange implementation and the final manuscript integration are recorded below.
 
 Memory Bank history-view note: the canonical T9 edit chunk and session are saved. `edit_history.md` remains at its prior generated state because the runtime SQLite database is absent and the available chunks do not cover 22 entries in the 71-entry view; regeneration from the partial chunks would lose those records. See the October 14 T9 session record.
+
+## T9a singlet-exchange continuation — 2026-10-14 14:35:25 IST
+
+New T9 child [T9a](tasks/T9a.md) owns the implemented two-polyhedron finite-area FL exchange pilot and the open reservoir/equilibrium comparison. See [session](sessions/2026-10-14-t9a-singlet-exchange.md) and [study specification](../notes/t9a-singlet-exchange.md). Prior five-child restriction is superseded by explicit user direction; T7a–T7e are preserved.
+
+## Thermal-note extraction — 2026-10-14 16:05:06 IST
+
+The new [heating, equilibrium and exchange note](../notes/thermal-geometry-and-singlet-exchange.md) contains the previous and current sessions' physical work with four figures. The retained [area-sector note](../notes/thermal-area-sectors.md) has a [reorganization assessment](../notes/thermal-area-sectors-reorganization.md); its full rewrite/appendix separation remains pending. Numerical/code state is unchanged by the extraction.
+
+## Thermal-note rewrite complete — 2026-10-14 16:13:37 IST
+
+[The remaining thermal note](../notes/thermal-area-sectors.md) now has six physical sections and seven appendices; all eight figures and legacy anchors remain. The [editorial assessment](../notes/thermal-area-sectors-reorganization.md) records completion. The main-text/appendix rewrite is no longer pending. Scientific implementation and results are unchanged.
+
+## Final T9 manuscript integration — 2026-10-14 17:24:59 IST
+
+The 19-page thermal-intertwiners manuscript now includes the fixed-Gibbs eigenvalue-ratio obstruction, singlet-transfer Hamiltonian/current and finite-pilot results, many-body analogies, and the exact projected-area asymptote derivation. Figures 9–12 are present; new bibliography entries resolve. The PDF compiled and pages 12–17 were visually checked. Existing older layout warnings remain. No new numerical simulation was run for this writing update; T9a's 46-test and independent-propagation evidence is recorded in its task and results report.

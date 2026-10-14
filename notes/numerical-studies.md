@@ -356,14 +356,14 @@ The signed triple flux is $q_{ijk}=\mathbf J_i\cdot(\mathbf J_j\times\mathbf J_k
 <a id="ns28"></a>
 ### NS28 — Temperature dependence of ordinary per-copy closure
 
-The study asks how heating changes the magnitude of the residual total face flux in the selected four-face, initial-area-one two-copy state. Across 125 temperatures, increasing $T_*=k_BT/(\hbar\omega)$ raises the ordinary RMS closure defect and reduces the single-copy singlet fraction. The full state continues to obey combined dual-copy closure. The distinction is developed with definitions, a figure and a table in [the thermal-area note](thermal-area-sectors.md#section-16-02).
+The study asks how heating changes the magnitude of the residual total face flux in the selected four-face, initial-area-one two-copy state. Across 125 temperatures, increasing $T_*=k_BT/(\hbar\omega)$ raises the ordinary RMS closure defect and reduces the single-copy singlet fraction. The full state continues to obey combined dual-copy closure. The distinction is developed with definitions, a figure and a table in [the thermal-area note](thermal-geometry-and-singlet-exchange.md#section-16-02).
 
 [Calculation and verification](../results/thermal-closure-temperature/README.md), [driver](../code/thermal/closure_temperature_sweep.py), and [figure](../figures/thermal-closure-temperature/closure_temperature.pdf).
 
 <a id="ns29"></a>
 ### NS29 — Separately closed projection and thermal geometric growth
 
-Double-singlet projection enforces ordinary closure in each copy while allowing area and volume to change. Because the copies have correlated resultant spins, the retained probability equals the earlier marginal singlet fraction rather than its square. The 85-temperature calculation shows increasing projected mean area, area fluctuations, and positive RS volume; four-active-face and nonzero-volume probabilities increase as well. Exact finite singlet sums give the high-temperature law $\langle A\rangle\sim(57/14)T_*$. The scientific narrative, three figures and compact tables are in [the thermal-area note](thermal-area-sectors.md#section-16).
+Double-singlet projection enforces ordinary closure in each copy while allowing area and volume to change. Because the copies have correlated resultant spins, the retained probability equals the earlier marginal singlet fraction rather than its square. The 85-temperature calculation shows increasing projected mean area, area fluctuations, and positive RS volume; four-active-face and nonzero-volume probabilities increase as well. Exact finite singlet sums give the high-temperature law $\langle A\rangle\sim(57/14)T_*$. The scientific narrative, three figures and compact tables are in [the thermal-area note](thermal-geometry-and-singlet-exchange.md#section-16).
 
 [Study and verification](../results/thermal-closed-projection/README.md), [projection driver](../code/thermal/closed_projection_study.py), [shared library](../code/python/lqg_scattering/thermal_projection.py), [fit and analytic derivation](../code/thermal/fit_closed_temperature.py), and [distribution figure](../figures/thermal-closed-projection/closed_projection_distributions.pdf).
 
