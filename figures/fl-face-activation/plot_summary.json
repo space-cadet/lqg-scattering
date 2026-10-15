@@ -1,0 +1,7 @@
+{
+  "source": "results/fl-face-activation/dynamics.csv",
+  "sha256": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
+  "png_dpi": 300,
+  "figure": "face_activation_control",
+  "scope": "exact complete-graph free hopping; six-channel extra normals coincide; no equilibration claim"
+}

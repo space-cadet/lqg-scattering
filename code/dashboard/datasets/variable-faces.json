@@ -323,14 +323,14 @@
           "results/variable-n-volume/spectra.csv": "218bf46ba318cd171962bee87ff7d6780a2544e01944a681f6c0122538b2a2e1",
           "results/variable-n-volume/summary.json": "e773ffd2cbba66afd49531f98ed44997a549e484b6e122988c6031a34b93443b",
           "results/variable-n-volume/verification.json": "908edd3c8d046efde205a31ae0732c322b6c38475d7b05b51cdb8726956f7c9e",
-          "notes/volume-studies.md": "590364bfc39f532fb82f89f734c5db3721ddb2cb77e59834579b40c76e084e20"
+          "notes/volume-studies.md": "ddcc922e8e255d6b421e2f26aebdf0e2c8f90a789ba79ef3092e08b6a18c107f"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.variable-faces.table.rows[0]"
       },
       "assessment": {
@@ -662,9 +662,9 @@
           "label": "volume-studies.md",
           "path": "../study-assets/notes/volume-studies.txt",
           "kind": "data",
-          "sha256": "590364bfc39f532fb82f89f734c5db3721ddb2cb77e59834579b40c76e084e20",
+          "sha256": "ddcc922e8e255d6b421e2f26aebdf0e2c8f90a789ba79ef3092e08b6a18c107f",
           "sourcePath": "notes/volume-studies.md",
-          "sourceSha256": "590364bfc39f532fb82f89f734c5db3721ddb2cb77e59834579b40c76e084e20"
+          "sourceSha256": "ddcc922e8e255d6b421e2f26aebdf0e2c8f90a789ba79ef3092e08b6a18c107f"
         }
       ],
       "figures": [
@@ -792,14 +792,14 @@
           "results/variable-n-volume/spectra.csv": "218bf46ba318cd171962bee87ff7d6780a2544e01944a681f6c0122538b2a2e1",
           "results/variable-n-volume/summary.json": "e773ffd2cbba66afd49531f98ed44997a549e484b6e122988c6031a34b93443b",
           "results/variable-n-volume/verification.json": "908edd3c8d046efde205a31ae0732c322b6c38475d7b05b51cdb8726956f7c9e",
-          "notes/volume-studies.md": "590364bfc39f532fb82f89f734c5db3721ddb2cb77e59834579b40c76e084e20"
+          "notes/volume-studies.md": "ddcc922e8e255d6b421e2f26aebdf0e2c8f90a789ba79ef3092e08b6a18c107f"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.variable-faces.table.rows[1]"
       },
       "assessment": {
@@ -903,14 +903,14 @@
           "results/variable-n-volume/spectra.csv": "218bf46ba318cd171962bee87ff7d6780a2544e01944a681f6c0122538b2a2e1",
           "results/variable-n-volume/summary.json": "e773ffd2cbba66afd49531f98ed44997a549e484b6e122988c6031a34b93443b",
           "results/variable-n-volume/verification.json": "908edd3c8d046efde205a31ae0732c322b6c38475d7b05b51cdb8726956f7c9e",
-          "notes/volume-studies.md": "590364bfc39f532fb82f89f734c5db3721ddb2cb77e59834579b40c76e084e20"
+          "notes/volume-studies.md": "ddcc922e8e255d6b421e2f26aebdf0e2c8f90a789ba79ef3092e08b6a18c107f"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.variable-faces.table.rows[2]"
       },
       "assessment": {
@@ -1014,14 +1014,14 @@
           "results/variable-n-volume/spectra.csv": "218bf46ba318cd171962bee87ff7d6780a2544e01944a681f6c0122538b2a2e1",
           "results/variable-n-volume/summary.json": "e773ffd2cbba66afd49531f98ed44997a549e484b6e122988c6031a34b93443b",
           "results/variable-n-volume/verification.json": "908edd3c8d046efde205a31ae0732c322b6c38475d7b05b51cdb8726956f7c9e",
-          "notes/volume-studies.md": "590364bfc39f532fb82f89f734c5db3721ddb2cb77e59834579b40c76e084e20"
+          "notes/volume-studies.md": "ddcc922e8e255d6b421e2f26aebdf0e2c8f90a789ba79ef3092e08b6a18c107f"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.variable-faces.table.rows[3]"
       },
       "assessment": {
@@ -1140,14 +1140,14 @@
           "results/variable-n-volume/spectra.csv": "218bf46ba318cd171962bee87ff7d6780a2544e01944a681f6c0122538b2a2e1",
           "results/variable-n-volume/summary.json": "e773ffd2cbba66afd49531f98ed44997a549e484b6e122988c6031a34b93443b",
           "results/variable-n-volume/verification.json": "908edd3c8d046efde205a31ae0732c322b6c38475d7b05b51cdb8726956f7c9e",
-          "notes/volume-studies.md": "590364bfc39f532fb82f89f734c5db3721ddb2cb77e59834579b40c76e084e20"
+          "notes/volume-studies.md": "ddcc922e8e255d6b421e2f26aebdf0e2c8f90a789ba79ef3092e08b6a18c107f"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.variable-faces.table.rows[4]"
       },
       "assessment": {
@@ -1276,14 +1276,14 @@
           "results/variable-n-volume/spectra.csv": "218bf46ba318cd171962bee87ff7d6780a2544e01944a681f6c0122538b2a2e1",
           "results/variable-n-volume/summary.json": "e773ffd2cbba66afd49531f98ed44997a549e484b6e122988c6031a34b93443b",
           "results/variable-n-volume/verification.json": "908edd3c8d046efde205a31ae0732c322b6c38475d7b05b51cdb8726956f7c9e",
-          "notes/volume-studies.md": "590364bfc39f532fb82f89f734c5db3721ddb2cb77e59834579b40c76e084e20"
+          "notes/volume-studies.md": "ddcc922e8e255d6b421e2f26aebdf0e2c8f90a789ba79ef3092e08b6a18c107f"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.variable-faces.table.rows[5]"
       },
       "assessment": {
@@ -1402,14 +1402,14 @@
           "results/variable-n-volume/spectra.csv": "218bf46ba318cd171962bee87ff7d6780a2544e01944a681f6c0122538b2a2e1",
           "results/variable-n-volume/summary.json": "e773ffd2cbba66afd49531f98ed44997a549e484b6e122988c6031a34b93443b",
           "results/variable-n-volume/verification.json": "908edd3c8d046efde205a31ae0732c322b6c38475d7b05b51cdb8726956f7c9e",
-          "notes/volume-studies.md": "590364bfc39f532fb82f89f734c5db3721ddb2cb77e59834579b40c76e084e20"
+          "notes/volume-studies.md": "ddcc922e8e255d6b421e2f26aebdf0e2c8f90a789ba79ef3092e08b6a18c107f"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.variable-faces.table.rows[6]"
       },
       "assessment": {
@@ -1513,14 +1513,14 @@
           "results/variable-n-volume/spectra.csv": "218bf46ba318cd171962bee87ff7d6780a2544e01944a681f6c0122538b2a2e1",
           "results/variable-n-volume/summary.json": "e773ffd2cbba66afd49531f98ed44997a549e484b6e122988c6031a34b93443b",
           "results/variable-n-volume/verification.json": "908edd3c8d046efde205a31ae0732c322b6c38475d7b05b51cdb8726956f7c9e",
-          "notes/volume-studies.md": "590364bfc39f532fb82f89f734c5db3721ddb2cb77e59834579b40c76e084e20"
+          "notes/volume-studies.md": "ddcc922e8e255d6b421e2f26aebdf0e2c8f90a789ba79ef3092e08b6a18c107f"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.variable-faces.table.rows[7]"
       },
       "assessment": {
@@ -1624,14 +1624,14 @@
           "results/variable-n-volume/spectra.csv": "218bf46ba318cd171962bee87ff7d6780a2544e01944a681f6c0122538b2a2e1",
           "results/variable-n-volume/summary.json": "e773ffd2cbba66afd49531f98ed44997a549e484b6e122988c6031a34b93443b",
           "results/variable-n-volume/verification.json": "908edd3c8d046efde205a31ae0732c322b6c38475d7b05b51cdb8726956f7c9e",
-          "notes/volume-studies.md": "590364bfc39f532fb82f89f734c5db3721ddb2cb77e59834579b40c76e084e20"
+          "notes/volume-studies.md": "ddcc922e8e255d6b421e2f26aebdf0e2c8f90a789ba79ef3092e08b6a18c107f"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.variable-faces.table.rows[8]"
       },
       "assessment": {
@@ -1664,6 +1664,12 @@
     }
   ],
   "docs": [
+    {
+      "title": "Volume studies",
+      "path": "../study-assets/notes/volume-studies.txt",
+      "sourcePath": "notes/volume-studies.md",
+      "description": "Explanation and calculation record for this study."
+    },
     {
       "title": "Numerical studies overview",
       "path": "../index.html"

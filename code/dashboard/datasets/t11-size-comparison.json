@@ -170,11 +170,11 @@
           "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.t11-size-comparison.table.rows[0]"
       },
       "assessment": {
@@ -454,11 +454,11 @@
           "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.t11-size-comparison.table.rows[1]"
       },
       "assessment": {
@@ -520,11 +520,11 @@
           "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.t11-size-comparison.table.rows[2]"
       },
       "assessment": {
@@ -586,11 +586,11 @@
           "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.t11-size-comparison.table.rows[3]"
       },
       "assessment": {
@@ -652,11 +652,11 @@
           "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.t11-size-comparison.table.rows[4]"
       },
       "assessment": {
@@ -718,11 +718,11 @@
           "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.t11-size-comparison.table.rows[5]"
       },
       "assessment": {
@@ -784,11 +784,11 @@
           "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.t11-size-comparison.table.rows[6]"
       },
       "assessment": {
@@ -850,11 +850,11 @@
           "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.t11-size-comparison.table.rows[7]"
       },
       "assessment": {
@@ -916,11 +916,11 @@
           "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.t11-size-comparison.table.rows[8]"
       },
       "assessment": {
@@ -982,11 +982,11 @@
           "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.t11-size-comparison.table.rows[9]"
       },
       "assessment": {
@@ -1048,11 +1048,11 @@
           "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.t11-size-comparison.table.rows[10]"
       },
       "assessment": {
@@ -1114,11 +1114,11 @@
           "code/python/plot_t11_size_comparison.py": "acbe1a8f5bba6e4a1c5e1c786885e7d3ff137300d3770bc182fe5dec72bcc537"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.t11-size-comparison.table.rows[11]"
       },
       "assessment": {

@@ -192,9 +192,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
@@ -219,9 +219,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/t1b_real_plane_volume_results.json",
@@ -246,9 +246,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/t5c_shape_recovery_results.json",
@@ -273,9 +273,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/t5c_input_geometry_results.json",
@@ -300,9 +300,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/fl_volume_area_results.json",
@@ -327,9 +327,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from code/dashboard/fl-volume-shape-j2.json",
@@ -354,9 +354,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/binding-energy/summary.json",
@@ -381,9 +381,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/state-space-probes/summary.json",
@@ -408,9 +408,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/sewing-probes/summary.json",
@@ -421,6 +421,263 @@
         {
           "label": "Open numerical cases and charts",
           "path": "index.html?data=datasets/sewing-probes.json"
+        }
+      ]
+    },
+    {
+      "runId": "fl-face-activation",
+      "task": "T11",
+      "status": "complete",
+      "description": "Large-area tetrahedron: face activation and recurrence",
+      "studyId": "fl-face-activation",
+      "params": {
+        "scope": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
+        "limits": "Unit complete-graph hopping, U=0, pure FL manifold. Direct sparse occupation evolution verifies K=1,2. No irreversible equipartition or interacting thermalization established. The two extra symmetric six-channel rows have the same normal, leaving only five distinct classical directions. Phase controls have different conserved initial energies.",
+        "calculationStatus": "360 direct-state, occupation, energy, geometry and recurrence checks passed"
+      },
+      "figures": [
+        {
+          "name": "face_activation_control.png",
+          "path": "study-assets/figures/fl-face-activation/face_activation_control.png",
+          "source": "figures/fl-face-activation/face_activation_control.png",
+          "sourceSha256": "696ebadc239cfffeae516388d52626d985497b7161523ba12e44bdf3bf19fae0",
+          "title": "Face activation control",
+          "width": 2224,
+          "height": 1804,
+          "wide": false,
+          "pdf": "study-assets/figures/fl-face-activation/face_activation_control.pdf"
+        }
+      ],
+      "catalogueDate": "2026-10-16",
+      "parameters": {},
+      "results": {
+        "caseCount": 20,
+        "fileCount": 13
+      },
+      "provenance": {
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+      },
+      "assessment": {
+        "summary": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
+        "limits": "Unit complete-graph hopping, U=0, pure FL manifold. Direct sparse occupation evolution verifies K=1,2. No irreversible equipartition or interacting thermalization established. The two extra symmetric six-channel rows have the same normal, leaving only five distinct classical directions. Phase controls have different conserved initial energies.",
+        "recordedStudyStatus": "360 direct-state, occupation, energy, geometry and recurrence checks passed"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/fl-face-activation.json"
+        }
+      ]
+    },
+    {
+      "runId": "thermal-closed-entanglement",
+      "task": "T9",
+      "status": "complete",
+      "description": "Entanglement of separately closed thermal polyhedra",
+      "studyId": "thermal-closed-entanglement",
+      "params": {
+        "scope": "86 temperatures over T*=0.05..5. Exact Schmidt eigenvalues and multiplicities yield entropy, area-sector decomposition, purity, Renyi-2 entropy and coherent joint singlet creation. Within-area entanglement exceeds area-distribution entropy at T*=1,2,5.",
+        "limits": "Normalized double-singlet projection of the area-one F12 reference; initially only two active faces. Ordinary left/right tensor factorization. Adaptive area cutoffs 12..140; entropy truncation estimate below 6.4e-12 nats. Temperature slopes are prepared-state responses; fixed single-copy Gibbs and AdS interpretations are not assumed. General four-face FL inputs remain open.",
+        "calculationStatus": "802 oscillator, spectrum, geometry and convergence comparisons passed"
+      },
+      "figures": [
+        {
+          "name": "entanglement_overview.png",
+          "path": "study-assets/figures/thermal-closed-entanglement/entanglement_overview.png",
+          "source": "figures/thermal-closed-entanglement/entanglement_overview.png",
+          "sourceSha256": "e78bca2d1fe90da5d708b51d6da01af1b8693f37d59f1caaf8718f2594c05d35",
+          "title": "Entanglement overview",
+          "width": 2190,
+          "height": 1770,
+          "wide": false,
+          "pdf": "study-assets/figures/thermal-closed-entanglement/entanglement_overview.pdf"
+        },
+        {
+          "name": "schmidt_and_area_distributions.png",
+          "path": "study-assets/figures/thermal-closed-entanglement/schmidt_and_area_distributions.png",
+          "source": "figures/thermal-closed-entanglement/schmidt_and_area_distributions.png",
+          "sourceSha256": "aaa5a7f178b7816400d0ad8e4d664ae2bac99c0e662be732661d670a08f95b20",
+          "title": "Schmidt and area distributions",
+          "width": 2190,
+          "height": 975,
+          "wide": false,
+          "pdf": "study-assets/figures/thermal-closed-entanglement/schmidt_and_area_distributions.pdf"
+        }
+      ],
+      "catalogueDate": "2026-10-16",
+      "parameters": {},
+      "results": {
+        "caseCount": 86,
+        "fileCount": 18
+      },
+      "provenance": {
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+      },
+      "assessment": {
+        "summary": "86 temperatures over T*=0.05..5. Exact Schmidt eigenvalues and multiplicities yield entropy, area-sector decomposition, purity, Renyi-2 entropy and coherent joint singlet creation. Within-area entanglement exceeds area-distribution entropy at T*=1,2,5.",
+        "limits": "Normalized double-singlet projection of the area-one F12 reference; initially only two active faces. Ordinary left/right tensor factorization. Adaptive area cutoffs 12..140; entropy truncation estimate below 6.4e-12 nats. Temperature slopes are prepared-state responses; fixed single-copy Gibbs and AdS interpretations are not assumed. General four-face FL inputs remain open.",
+        "recordedStudyStatus": "802 oscillator, spectrum, geometry and convergence comparisons passed"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/thermal-closed-entanglement.json"
+        }
+      ]
+    },
+    {
+      "runId": "thermal-closure-temperature",
+      "task": "T9",
+      "status": "complete",
+      "description": "Ordinary closure versus temperature",
+      "studyId": "thermal-closure-temperature",
+      "params": {
+        "scope": "125 temperatures quantify per-copy Gauss defect and declining singlet fraction for the selected area-one two-copy reference.",
+        "limits": "Ordinary per-copy closure differs from combined dual-copy and transformed closure. Full unprojected oscillator state; temperature is the squeeze preparation parameter.",
+        "calculationStatus": "Saved calculation"
+      },
+      "figures": [
+        {
+          "name": "closure_temperature.png",
+          "path": "study-assets/figures/thermal-closure-temperature/closure_temperature.png",
+          "source": "figures/thermal-closure-temperature/closure_temperature.png",
+          "sourceSha256": "351c038cd490ba23abf6c456ba23ac34861fddb4f03cee19884420cd8f9b8831",
+          "title": "Closure temperature",
+          "width": 3184,
+          "height": 1084,
+          "wide": true,
+          "pdf": "study-assets/figures/thermal-closure-temperature/closure_temperature.pdf"
+        }
+      ],
+      "catalogueDate": "2026-10-13",
+      "parameters": {},
+      "results": {
+        "caseCount": 125,
+        "fileCount": 5
+      },
+      "provenance": {
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+      },
+      "assessment": {
+        "summary": "125 temperatures quantify per-copy Gauss defect and declining singlet fraction for the selected area-one two-copy reference.",
+        "limits": "Ordinary per-copy closure differs from combined dual-copy and transformed closure. Full unprojected oscillator state; temperature is the squeeze preparation parameter.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/thermal-closure-temperature.json"
+        }
+      ]
+    },
+    {
+      "runId": "thermal-closed-projection",
+      "task": "T9",
+      "status": "complete",
+      "description": "Heating separately closed area and positive RS volume",
+      "studyId": "thermal-closed-projection",
+      "params": {
+        "scope": "85 temperatures over T*=0.05..2: retained probability, conditional area and positive RS-volume distributions. Exact high-temperature mean-area coefficient 57/14.",
+        "limits": "F12 reference with separate singlet projection. Volume traces through area 50 and occupation probabilities through q=160; model RS units. The fixed-H Gibbs obstruction applies to this reference.",
+        "calculationStatus": "Saved calculation"
+      },
+      "figures": [
+        {
+          "name": "closed_projection_distributions.png",
+          "path": "study-assets/figures/thermal-closed-projection/closed_projection_distributions.png",
+          "source": "figures/thermal-closed-projection/closed_projection_distributions.png",
+          "sourceSha256": "6c74051dcfbdc77bc41fea1a02ba3b0c1fc5159be51acbeea3bd4cfb9d969bf2",
+          "title": "Closed projection distributions",
+          "width": 2434,
+          "height": 1084,
+          "wide": false,
+          "pdf": "study-assets/figures/thermal-closed-projection/closed_projection_distributions.pdf"
+        },
+        {
+          "name": "closed_projection_temperature.png",
+          "path": "study-assets/figures/thermal-closed-projection/closed_projection_temperature.png",
+          "source": "figures/thermal-closed-projection/closed_projection_temperature.png",
+          "sourceSha256": "c4b82f5425f77c54ab855dbd1ad8f8a995e5507792be49fab1469f858c2ede9a",
+          "title": "Closed projection temperature",
+          "width": 3184,
+          "height": 1084,
+          "wide": true,
+          "pdf": "study-assets/figures/thermal-closed-projection/closed_projection_temperature.pdf"
+        }
+      ],
+      "catalogueDate": "2026-10-13",
+      "parameters": {},
+      "results": {
+        "caseCount": 85,
+        "fileCount": 9
+      },
+      "provenance": {
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+      },
+      "assessment": {
+        "summary": "85 temperatures over T*=0.05..2: retained probability, conditional area and positive RS-volume distributions. Exact high-temperature mean-area coefficient 57/14.",
+        "limits": "F12 reference with separate singlet projection. Volume traces through area 50 and occupation probabilities through q=160; model RS units. The fixed-H Gibbs obstruction applies to this reference.",
+        "recordedStudyStatus": "Saved calculation"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/thermal-closed-projection.json"
+        }
+      ]
+    },
+    {
+      "runId": "t9a-singlet-exchange",
+      "task": "T9a",
+      "status": "complete",
+      "description": "Singlet exchange between closed FL polyhedra",
+      "studyId": "t9a-singlet-exchange",
+      "params": {
+        "scope": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
+        "limits": "Finite isolated pair; prepared-state entanglement differs from mixed-state Gibbs entropy. No reservoir relaxation or equivalence to the T9 squeezed family established. Project volume and model energy units.",
+        "calculationStatus": "46 recorded regression tests and 1792 independent comparisons passed"
+      },
+      "figures": [
+        {
+          "name": "exchange-overview.png",
+          "path": "study-assets/figures/t9a-singlet-exchange/exchange-overview.png",
+          "source": "figures/t9a-singlet-exchange/exchange-overview.png",
+          "sourceSha256": "c0c26e880f46a965dc9e525d47f2fac49d62986399856afe01b307e8b557d656",
+          "title": "Exchange-overview",
+          "width": 2100,
+          "height": 1440,
+          "wide": false,
+          "pdf": "study-assets/figures/t9a-singlet-exchange/exchange-overview.pdf"
+        }
+      ],
+      "catalogueDate": "2026-10-14",
+      "parameters": {},
+      "results": {
+        "caseCount": 20,
+        "fileCount": 14
+      },
+      "provenance": {
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+      },
+      "assessment": {
+        "summary": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
+        "limits": "Finite isolated pair; prepared-state entanglement differs from mixed-state Gibbs entropy. No reservoir relaxation or equivalence to the T9 squeezed family established. Project volume and model energy units.",
+        "recordedStudyStatus": "46 recorded regression tests and 1792 independent comparisons passed"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/t9a-singlet-exchange.json"
         }
       ]
     },
@@ -465,9 +722,9 @@
         "fileCount": 24
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Matched mean occupation 2K/L=2: (L,K)=(4,4) and (5,5), singlet dimensions 105 and 1,176. Complete and ring graphs at t=1,U=20, plus free and no-hopping controls. Intermediate-temperature nonmonotonicity persists; the pronounced four-site complete-graph low-temperature collapse does not.",
@@ -512,9 +769,9 @@
         "fileCount": 23
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Five explicitly constructed K=4 FL references: equal input face areas, phi=90,60,30,10,0 degrees. Saved face-spin distributions, pair correlations, angular fluctuations, volume distributions and overlaps; comparisons with the first three energy groups of complete/ring Hamiltonians at t=1,U=20. The complete ground is kernel-dominated despite nearly unit four-face weight.",
@@ -603,9 +860,9 @@
         "fileCount": 20
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Exact K=4, total-spin-zero study (dimension 105). The baseline is complete-graph face-to-face area exchange plus on-site repulsion, with equal hopping strength on each bond. We added the positive RS-volume term and the signed triple-grasp term as separate candidate Hamiltonians, then evolved five explicitly prepared FL references under the baseline and both signed couplings. The 62 parameter settings cover U/t=0,1,5,20 and normalized coupling alpha=-2,-1,-0.5,0,0.5,1,2; the ring is included only as a sparse-hopping control. The study contains 6,510 saved energy levels and 50 prepared-state trajectories.",
@@ -694,9 +951,9 @@
         "fileCount": 20
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Exact diagonalization of the hopping-plus-on-site-repulsion operator H_G=-t \u03a3_(i,j)\u2208E_G(E_ij+E_ji)+(U/2)\u03a3_i n_i(n_i\u22121), where E_ij=a_i\u2020a_j+b_i\u2020b_j and n_i=a_i\u2020a_i+b_i\u2020b_i. Four sites, fixed boson number 2K and total spin zero; K=2,3,4 gives dimensions 20,50,105, with empty sites allowed. Compare the complete graph (6 hopping bonds) and periodic ring (4), with equal t per bond. The 30 cases use (t,U)=(0,1) or t=1 and U/t=0,1,5,20.",
@@ -774,9 +1031,9 @@
         "fileCount": 38
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Four labelled faces, zero-spin faces allowed; K=2 through 12, 10,549 basis states. RS/AL means, variances, spectra and reconstructible operators.",
@@ -843,9 +1100,9 @@
         "fileCount": 41
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Nine sectors at K=2,3,4 with 4<=N<=2K. Closed dimensions 2,36,347; positive-volume dimensions 2,32,329. Independent reconstruction covers 112 blocks and 385 eigenstates.",
@@ -890,9 +1147,9 @@
         "fileCount": 3
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "J_in=0, four faces and eight modes per copy; coefficient and area distributions at four temperatures.",
@@ -937,9 +1194,9 @@
         "fileCount": 3
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Ordinary per-copy spin distributions conditioned on boson number, at beta*hbar*omega=1.",
@@ -995,9 +1252,9 @@
         "fileCount": 3
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Five temperatures, q through 160; 32,805 independent-method comparisons with maximum difference 2.67e-16.",
@@ -1042,9 +1299,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Saved Python and Rust probes extend the earlier weighted-input boundary scans.",
@@ -1089,9 +1346,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Converged n=5 magnetization sweep; the tested magnetization hypothesis was not supported.",
@@ -1136,9 +1393,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Saved plane/channel agreement statistics; the local subset did not establish hidden handedness.",
@@ -1183,9 +1440,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
@@ -1230,9 +1487,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Ten recorded points compare phase defect with signed grasp; broader study remains open.",
@@ -1277,9 +1534,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Saved families through historical K=24. The proposed K^(3/2) scaling was not supported for these families.",
@@ -1324,9 +1581,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Archived T7A study, retained under current T9 ownership.",
@@ -1371,9 +1628,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Archived T7B study, retained under current T9 ownership.",
@@ -1418,9 +1675,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Archived T7E study, retained under current T9 ownership.",
@@ -1465,9 +1722,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Four regular/unequal-shape seed cases; draft squeeze compared with explicit double-singlet postselection.",
@@ -1512,9 +1769,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Independent tensor controls: paired spin-half singlet has positive RS/AL volume despite zero signed mean; collinear product gives zero.",
@@ -1559,9 +1816,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00"
+        "importedAt": "2026-10-15T23:52:23.831772+00:00"
       },
       "assessment": {
         "summary": "Six saved pilot records; later shape recovery and weighted-input studies are shown in Volume Studies.",
@@ -1577,8 +1834,8 @@
     }
   ],
   "summary": {
-    "totalRuns": 38,
-    "completeRuns": 38,
+    "totalRuns": 43,
+    "completeRuns": 43,
     "zeroSignedMeanOnRealPlanes": true,
     "nRangeRecorded": "4-8",
     "convergedBaselineVerified": true,
@@ -1588,7 +1845,7 @@
     "publishedPaper": "EPJC (2022)",
     "followUpManuscript": "In progress",
     "independentN6Pending": true,
-    "registeredStudies": 21
+    "registeredStudies": 26
   },
   "theory": {
     "description": "The catalogue records exact singlet Hamiltonian studies, kinematic RS/AL catalogues, selected squeezed thermal-sector distributions, and earlier proxy studies. Model support, normalization and verification limits accompany each result. Broader parameter, finite-size and bulk-phase studies remain open.",
@@ -1684,6 +1941,118 @@
         "cross-ratio",
         "RS",
         "AL"
+      ]
+    },
+    {
+      "name": "face_activation_control.png",
+      "path": "study-assets/figures/fl-face-activation/face_activation_control.png",
+      "source": "figures/fl-face-activation/face_activation_control.png",
+      "sourceSha256": "696ebadc239cfffeae516388d52626d985497b7161523ba12e44bdf3bf19fae0",
+      "title": "Face activation control",
+      "width": 2224,
+      "height": 1804,
+      "wide": false,
+      "pdf": "study-assets/figures/fl-face-activation/face_activation_control.pdf",
+      "studyId": "fl-face-activation",
+      "description": "Large-area tetrahedron: face activation and recurrence",
+      "tags": [
+        "T11"
+      ]
+    },
+    {
+      "name": "entanglement_overview.png",
+      "path": "study-assets/figures/thermal-closed-entanglement/entanglement_overview.png",
+      "source": "figures/thermal-closed-entanglement/entanglement_overview.png",
+      "sourceSha256": "e78bca2d1fe90da5d708b51d6da01af1b8693f37d59f1caaf8718f2594c05d35",
+      "title": "Entanglement overview",
+      "width": 2190,
+      "height": 1770,
+      "wide": false,
+      "pdf": "study-assets/figures/thermal-closed-entanglement/entanglement_overview.pdf",
+      "studyId": "thermal-closed-entanglement",
+      "description": "Entanglement of separately closed thermal polyhedra",
+      "tags": [
+        "T9"
+      ]
+    },
+    {
+      "name": "schmidt_and_area_distributions.png",
+      "path": "study-assets/figures/thermal-closed-entanglement/schmidt_and_area_distributions.png",
+      "source": "figures/thermal-closed-entanglement/schmidt_and_area_distributions.png",
+      "sourceSha256": "aaa5a7f178b7816400d0ad8e4d664ae2bac99c0e662be732661d670a08f95b20",
+      "title": "Schmidt and area distributions",
+      "width": 2190,
+      "height": 975,
+      "wide": false,
+      "pdf": "study-assets/figures/thermal-closed-entanglement/schmidt_and_area_distributions.pdf",
+      "studyId": "thermal-closed-entanglement",
+      "description": "Entanglement of separately closed thermal polyhedra",
+      "tags": [
+        "T9"
+      ]
+    },
+    {
+      "name": "closure_temperature.png",
+      "path": "study-assets/figures/thermal-closure-temperature/closure_temperature.png",
+      "source": "figures/thermal-closure-temperature/closure_temperature.png",
+      "sourceSha256": "351c038cd490ba23abf6c456ba23ac34861fddb4f03cee19884420cd8f9b8831",
+      "title": "Closure temperature",
+      "width": 3184,
+      "height": 1084,
+      "wide": true,
+      "pdf": "study-assets/figures/thermal-closure-temperature/closure_temperature.pdf",
+      "studyId": "thermal-closure-temperature",
+      "description": "Ordinary closure versus temperature",
+      "tags": [
+        "T9"
+      ]
+    },
+    {
+      "name": "closed_projection_distributions.png",
+      "path": "study-assets/figures/thermal-closed-projection/closed_projection_distributions.png",
+      "source": "figures/thermal-closed-projection/closed_projection_distributions.png",
+      "sourceSha256": "6c74051dcfbdc77bc41fea1a02ba3b0c1fc5159be51acbeea3bd4cfb9d969bf2",
+      "title": "Closed projection distributions",
+      "width": 2434,
+      "height": 1084,
+      "wide": false,
+      "pdf": "study-assets/figures/thermal-closed-projection/closed_projection_distributions.pdf",
+      "studyId": "thermal-closed-projection",
+      "description": "Heating separately closed area and positive RS volume",
+      "tags": [
+        "T9"
+      ]
+    },
+    {
+      "name": "closed_projection_temperature.png",
+      "path": "study-assets/figures/thermal-closed-projection/closed_projection_temperature.png",
+      "source": "figures/thermal-closed-projection/closed_projection_temperature.png",
+      "sourceSha256": "c4b82f5425f77c54ab855dbd1ad8f8a995e5507792be49fab1469f858c2ede9a",
+      "title": "Closed projection temperature",
+      "width": 3184,
+      "height": 1084,
+      "wide": true,
+      "pdf": "study-assets/figures/thermal-closed-projection/closed_projection_temperature.pdf",
+      "studyId": "thermal-closed-projection",
+      "description": "Heating separately closed area and positive RS volume",
+      "tags": [
+        "T9"
+      ]
+    },
+    {
+      "name": "exchange-overview.png",
+      "path": "study-assets/figures/t9a-singlet-exchange/exchange-overview.png",
+      "source": "figures/t9a-singlet-exchange/exchange-overview.png",
+      "sourceSha256": "c0c26e880f46a965dc9e525d47f2fac49d62986399856afe01b307e8b557d656",
+      "title": "Exchange-overview",
+      "width": 2100,
+      "height": 1440,
+      "wide": false,
+      "pdf": "study-assets/figures/t9a-singlet-exchange/exchange-overview.pdf",
+      "studyId": "t9a-singlet-exchange",
+      "description": "Singlet exchange between closed FL polyhedra",
+      "tags": [
+        "T9a"
       ]
     },
     {
@@ -2516,7 +2885,12 @@
       {
         "id": "T9",
         "title": "Thermal intertwiners and TFD",
-        "description": "Recent area/spin distributions saved; full reduced-state and geometric studies open."
+        "description": "Projected reference entropy, Schmidt spectra, coherent joint creation and thermal geometry saved. General FL inputs and full unprojected spectra remain open."
+      },
+      {
+        "id": "T9a",
+        "title": "Singlet exchange",
+        "description": "Finite combined-area FL dynamics and canonical controls saved; reservoir and thermal-family comparison open."
       },
       {
         "id": "T11",
@@ -2612,6 +2986,21 @@
     }
   ],
   "docs": [
+    {
+      "title": "Face growth and energy sharing",
+      "path": "study-assets/notes/face-energy-equipartition.txt",
+      "description": "Verified large-area free-hopping controls and proposed neighbouring-face F/J interactions."
+    },
+    {
+      "title": "Entanglement of closed thermal polyhedra",
+      "path": "study-assets/notes/thermal-entanglement.txt",
+      "description": "Schmidt spectra, area-sector entropy, joint singlet coherence and convergence."
+    },
+    {
+      "title": "Heating, equilibrium and singlet exchange",
+      "path": "study-assets/notes/thermal-geometry-and-singlet-exchange.txt",
+      "description": "Temperature-dependent closure and geometry, Gibbs test and finite exchange model."
+    },
     {
       "title": "Chronological numerical studies",
       "path": "study-assets/notes/numerical-studies.txt",

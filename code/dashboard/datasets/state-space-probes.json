@@ -288,11 +288,11 @@
           "results/state-space-probes/summary.json": "cb02fb25c4b7492f60b65e52a9ecd130b577798459be353d55e30227e9a502bf"
         },
         "presentationSource": "results/state-space-probes/summary.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "records[0]"
       },
       "assessment": {
@@ -468,11 +468,11 @@
           "results/state-space-probes/summary.json": "cb02fb25c4b7492f60b65e52a9ecd130b577798459be353d55e30227e9a502bf"
         },
         "presentationSource": "results/state-space-probes/summary.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "records[1]"
       },
       "assessment": {
@@ -637,11 +637,11 @@
           "results/state-space-probes/summary.json": "cb02fb25c4b7492f60b65e52a9ecd130b577798459be353d55e30227e9a502bf"
         },
         "presentationSource": "results/state-space-probes/summary.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "records[2]"
       },
       "assessment": {
@@ -812,11 +812,11 @@
           "results/state-space-probes/summary.json": "cb02fb25c4b7492f60b65e52a9ecd130b577798459be353d55e30227e9a502bf"
         },
         "presentationSource": "results/state-space-probes/summary.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "records[3]"
       },
       "assessment": {
@@ -981,11 +981,11 @@
           "results/state-space-probes/summary.json": "cb02fb25c4b7492f60b65e52a9ecd130b577798459be353d55e30227e9a502bf"
         },
         "presentationSource": "results/state-space-probes/summary.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "records[4]"
       },
       "assessment": {
@@ -1150,11 +1150,11 @@
           "results/state-space-probes/summary.json": "cb02fb25c4b7492f60b65e52a9ecd130b577798459be353d55e30227e9a502bf"
         },
         "presentationSource": "results/state-space-probes/summary.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "records[5]"
       },
       "assessment": {

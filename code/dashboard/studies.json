@@ -3,6 +3,507 @@
   "jsonNonfinitePolicy": "Nonfinite numbers become null only in dashboard JSON exports; source hashes refer to originals.",
   "studies": [
     {
+      "id": "fl-face-activation",
+      "task": "T11",
+      "title": "Large-area tetrahedron: face activation and recurrence",
+      "description": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
+      "limits": "Unit complete-graph hopping, U=0, pure FL manifold. Direct sparse occupation evolution verifies K=1,2. No irreversible equipartition or interacting thermalization established. The two extra symmetric six-channel rows have the same normal, leaving only five distinct classical directions. Phase controls have different conserved initial energies.",
+      "status": "360 direct-state, occupation, energy, geometry and recurrence checks passed",
+      "catalogueDate": "2026-10-16",
+      "files": [
+        {
+          "name": "README.md",
+          "path": "study-assets/results/fl-face-activation/README.txt",
+          "source": "results/fl-face-activation/README.md",
+          "sourceSha256": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953"
+        },
+        {
+          "name": "dynamics.csv",
+          "path": "study-assets/results/fl-face-activation/dynamics.csv",
+          "source": "results/fl-face-activation/dynamics.csv",
+          "sourceSha256": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f"
+        },
+        {
+          "name": "inputs.npz",
+          "path": "study-assets/results/fl-face-activation/inputs.npz",
+          "source": "results/fl-face-activation/inputs.npz",
+          "sourceSha256": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd"
+        },
+        {
+          "name": "protocol.json",
+          "path": "study-assets/results/fl-face-activation/protocol.json",
+          "source": "results/fl-face-activation/protocol.json",
+          "sourceSha256": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf"
+        },
+        {
+          "name": "provenance.json",
+          "path": "study-assets/results/fl-face-activation/provenance.json",
+          "source": "results/fl-face-activation/provenance.json",
+          "sourceSha256": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246"
+        },
+        {
+          "name": "summary.csv",
+          "path": "study-assets/results/fl-face-activation/summary.csv",
+          "source": "results/fl-face-activation/summary.csv",
+          "sourceSha256": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455"
+        },
+        {
+          "name": "verification.json",
+          "path": "study-assets/results/fl-face-activation/verification.json",
+          "source": "results/fl-face-activation/verification.json",
+          "sourceSha256": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030"
+        },
+        {
+          "name": "face-energy-equipartition.md",
+          "path": "study-assets/notes/face-energy-equipartition.txt",
+          "source": "notes/face-energy-equipartition.md",
+          "sourceSha256": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7"
+        },
+        {
+          "name": "fl_face_activation.py",
+          "path": "study-assets/code/python/fl_face_activation.py",
+          "source": "code/python/fl_face_activation.py",
+          "sourceSha256": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad"
+        },
+        {
+          "name": "verify_fl_face_activation.py",
+          "path": "study-assets/code/python/verify_fl_face_activation.py",
+          "source": "code/python/verify_fl_face_activation.py",
+          "sourceSha256": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86"
+        },
+        {
+          "name": "plot_fl_face_activation.py",
+          "path": "study-assets/code/python/plot_fl_face_activation.py",
+          "source": "code/python/plot_fl_face_activation.py",
+          "sourceSha256": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8"
+        },
+        {
+          "name": "intertwiners.py",
+          "path": "study-assets/code/python/lqg_scattering/intertwiners.py",
+          "source": "code/python/lqg_scattering/intertwiners.py",
+          "sourceSha256": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b"
+        },
+        {
+          "name": "spinors.py",
+          "path": "study-assets/code/python/lqg_scattering/spinors.py",
+          "source": "code/python/lqg_scattering/spinors.py",
+          "sourceSha256": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
+        }
+      ],
+      "figures": [
+        {
+          "name": "face_activation_control.png",
+          "path": "study-assets/figures/fl-face-activation/face_activation_control.png",
+          "source": "figures/fl-face-activation/face_activation_control.png",
+          "sourceSha256": "696ebadc239cfffeae516388d52626d985497b7161523ba12e44bdf3bf19fae0",
+          "title": "Face activation control",
+          "width": 2224,
+          "height": 1804,
+          "wide": false,
+          "pdf": "study-assets/figures/fl-face-activation/face_activation_control.pdf"
+        }
+      ],
+      "table": null
+    },
+    {
+      "id": "thermal-closed-entanglement",
+      "task": "T9",
+      "title": "Entanglement of separately closed thermal polyhedra",
+      "description": "86 temperatures over T*=0.05..5. Exact Schmidt eigenvalues and multiplicities yield entropy, area-sector decomposition, purity, Renyi-2 entropy and coherent joint singlet creation. Within-area entanglement exceeds area-distribution entropy at T*=1,2,5.",
+      "limits": "Normalized double-singlet projection of the area-one F12 reference; initially only two active faces. Ordinary left/right tensor factorization. Adaptive area cutoffs 12..140; entropy truncation estimate below 6.4e-12 nats. Temperature slopes are prepared-state responses; fixed single-copy Gibbs and AdS interpretations are not assumed. General four-face FL inputs remain open.",
+      "status": "802 oscillator, spectrum, geometry and convergence comparisons passed",
+      "catalogueDate": "2026-10-16",
+      "files": [
+        {
+          "name": "README.md",
+          "path": "study-assets/results/thermal-closed-entanglement/README.txt",
+          "source": "results/thermal-closed-entanglement/README.md",
+          "sourceSha256": "7c9c788d79ca2e1c852e678df264de6bd0c3dd6ed429595848040b5d3cb1bde8"
+        },
+        {
+          "name": "area_sectors.csv",
+          "path": "study-assets/results/thermal-closed-entanglement/area_sectors.csv",
+          "source": "results/thermal-closed-entanglement/area_sectors.csv",
+          "sourceSha256": "ddbea9e45575f9a4dd62a4240631677f58b30583af3a7abeae7bba976c9da2db"
+        },
+        {
+          "name": "protocol.json",
+          "path": "study-assets/results/thermal-closed-entanglement/protocol.json",
+          "source": "results/thermal-closed-entanglement/protocol.json",
+          "sourceSha256": "58ec9a71c526653554bcefe48b7d19ac9e823c226bfeeb8a5c728bfc6a2eb832"
+        },
+        {
+          "name": "provenance.json",
+          "path": "study-assets/results/thermal-closed-entanglement/provenance.json",
+          "source": "results/thermal-closed-entanglement/provenance.json",
+          "sourceSha256": "a2f632c14024f85a19d279a089da5cb37b8f2a761751579977f70378f1748996"
+        },
+        {
+          "name": "spectrum_T0.25.npz",
+          "path": "study-assets/results/thermal-closed-entanglement/spectrum_T0.25.npz",
+          "source": "results/thermal-closed-entanglement/spectrum_T0.25.npz",
+          "sourceSha256": "d2cbaaf91c0d5a839f2b88e2bab51a6545a71f9a4b1d64926e5efaac65811243"
+        },
+        {
+          "name": "spectrum_T0.5.npz",
+          "path": "study-assets/results/thermal-closed-entanglement/spectrum_T0.5.npz",
+          "source": "results/thermal-closed-entanglement/spectrum_T0.5.npz",
+          "sourceSha256": "8ba2351b7445cfc3c3a5ac1c645462dc2a33caec40dac65e4b9f899550d49b9f"
+        },
+        {
+          "name": "spectrum_T1.npz",
+          "path": "study-assets/results/thermal-closed-entanglement/spectrum_T1.npz",
+          "source": "results/thermal-closed-entanglement/spectrum_T1.npz",
+          "sourceSha256": "b6d7da3e62bd701f0b28acc74cc0d4f2fd347f5daa085e4f4960ea2e13b964d0"
+        },
+        {
+          "name": "spectrum_T2.npz",
+          "path": "study-assets/results/thermal-closed-entanglement/spectrum_T2.npz",
+          "source": "results/thermal-closed-entanglement/spectrum_T2.npz",
+          "sourceSha256": "39d836979bacb190c2e0bac9e97c98aa98a4835d066a1213dd0be55b4642bea7"
+        },
+        {
+          "name": "spectrum_T3.npz",
+          "path": "study-assets/results/thermal-closed-entanglement/spectrum_T3.npz",
+          "source": "results/thermal-closed-entanglement/spectrum_T3.npz",
+          "sourceSha256": "9b513ac683a1dac9ceeb8088b29f435e911167ecc90b3cf49be48440d1ba4122"
+        },
+        {
+          "name": "spectrum_T5.npz",
+          "path": "study-assets/results/thermal-closed-entanglement/spectrum_T5.npz",
+          "source": "results/thermal-closed-entanglement/spectrum_T5.npz",
+          "sourceSha256": "33e6688936e06da7d9a9bea6c5293a8c3384e50b60e487328cbe5472feb6340f"
+        },
+        {
+          "name": "temperature_summary.csv",
+          "path": "study-assets/results/thermal-closed-entanglement/temperature_summary.csv",
+          "source": "results/thermal-closed-entanglement/temperature_summary.csv",
+          "sourceSha256": "35d79d09c57ca3a9961ee2c44a411ef57be4f364643cfbd19ba6b4b0c5be27a1"
+        },
+        {
+          "name": "verification.json",
+          "path": "study-assets/results/thermal-closed-entanglement/verification.json",
+          "source": "results/thermal-closed-entanglement/verification.json",
+          "sourceSha256": "cf1f90daa63bb4e17b4cbc62783e033aacbd45a441741a4b69569bd6f871c87c"
+        },
+        {
+          "name": "thermal-entanglement.md",
+          "path": "study-assets/notes/thermal-entanglement.txt",
+          "source": "notes/thermal-entanglement.md",
+          "sourceSha256": "29ab6f76afeffcc19419719167359e24c1f1a63c22594d670c2f4aba18fa5f1e"
+        },
+        {
+          "name": "thermal_projection.py",
+          "path": "study-assets/code/python/lqg_scattering/thermal_projection.py",
+          "source": "code/python/lqg_scattering/thermal_projection.py",
+          "sourceSha256": "466a71409ec56a94cfd9bf6b4a8db63c0af593999c3e26197195ca635048ec0d"
+        },
+        {
+          "name": "thermal_entanglement.py",
+          "path": "study-assets/code/python/lqg_scattering/thermal_entanglement.py",
+          "source": "code/python/lqg_scattering/thermal_entanglement.py",
+          "sourceSha256": "ed06fe128a1ad9d58de15b46255e1154088eabbf390ce39871741dcab46d2968"
+        },
+        {
+          "name": "closed_entanglement_study.py",
+          "path": "study-assets/code/thermal/closed_entanglement_study.py",
+          "source": "code/thermal/closed_entanglement_study.py",
+          "sourceSha256": "8d7452a62d26f3dd81a45dbb28db1df566c64fc46bab4fa24d93b3235f5407ad"
+        },
+        {
+          "name": "verify_closed_entanglement.py",
+          "path": "study-assets/code/thermal/verify_closed_entanglement.py",
+          "source": "code/thermal/verify_closed_entanglement.py",
+          "sourceSha256": "ab2e15cc36d8177839b155e5f931f3c420921fd5e787ae02794b048dfbd35012"
+        },
+        {
+          "name": "plot_closed_entanglement.py",
+          "path": "study-assets/code/thermal/plot_closed_entanglement.py",
+          "source": "code/thermal/plot_closed_entanglement.py",
+          "sourceSha256": "099fd720084fc773c3adf63eaeddc30f376a98c4af1909a3dd7bd418e13f5547"
+        }
+      ],
+      "figures": [
+        {
+          "name": "entanglement_overview.png",
+          "path": "study-assets/figures/thermal-closed-entanglement/entanglement_overview.png",
+          "source": "figures/thermal-closed-entanglement/entanglement_overview.png",
+          "sourceSha256": "e78bca2d1fe90da5d708b51d6da01af1b8693f37d59f1caaf8718f2594c05d35",
+          "title": "Entanglement overview",
+          "width": 2190,
+          "height": 1770,
+          "wide": false,
+          "pdf": "study-assets/figures/thermal-closed-entanglement/entanglement_overview.pdf"
+        },
+        {
+          "name": "schmidt_and_area_distributions.png",
+          "path": "study-assets/figures/thermal-closed-entanglement/schmidt_and_area_distributions.png",
+          "source": "figures/thermal-closed-entanglement/schmidt_and_area_distributions.png",
+          "sourceSha256": "aaa5a7f178b7816400d0ad8e4d664ae2bac99c0e662be732661d670a08f95b20",
+          "title": "Schmidt and area distributions",
+          "width": 2190,
+          "height": 975,
+          "wide": false,
+          "pdf": "study-assets/figures/thermal-closed-entanglement/schmidt_and_area_distributions.pdf"
+        }
+      ],
+      "table": null
+    },
+    {
+      "id": "thermal-closure-temperature",
+      "task": "T9",
+      "title": "Ordinary closure versus temperature",
+      "description": "125 temperatures quantify per-copy Gauss defect and declining singlet fraction for the selected area-one two-copy reference.",
+      "limits": "Ordinary per-copy closure differs from combined dual-copy and transformed closure. Full unprojected oscillator state; temperature is the squeeze preparation parameter.",
+      "status": "Saved calculation",
+      "catalogueDate": "2026-10-13",
+      "files": [
+        {
+          "name": "README.md",
+          "path": "study-assets/results/thermal-closure-temperature/README.txt",
+          "source": "results/thermal-closure-temperature/README.md",
+          "sourceSha256": "fc8ce792daea9aaa3aa9e331e08d26132ff799ed31608a4b07061d3018ad0681"
+        },
+        {
+          "name": "closure_temperature.csv",
+          "path": "study-assets/results/thermal-closure-temperature/closure_temperature.csv",
+          "source": "results/thermal-closure-temperature/closure_temperature.csv",
+          "sourceSha256": "771d51c9d46add8bac85d2e945f123a0bd10e20fe0a68a67318ae71c2e9ccde4"
+        },
+        {
+          "name": "protocol.json",
+          "path": "study-assets/results/thermal-closure-temperature/protocol.json",
+          "source": "results/thermal-closure-temperature/protocol.json",
+          "sourceSha256": "a5954a8d486e10a5aef819e70fd1bac3ab42ccc2118b7592a59d5c09211d1047"
+        },
+        {
+          "name": "verification.json",
+          "path": "study-assets/results/thermal-closure-temperature/verification.json",
+          "source": "results/thermal-closure-temperature/verification.json",
+          "sourceSha256": "73013fca3d59b4771d34d99ec6d2a1836b6df1f3fd9e37eb5a04e55706dd43b2"
+        },
+        {
+          "name": "thermal-geometry-and-singlet-exchange.md",
+          "path": "study-assets/notes/thermal-geometry-and-singlet-exchange.txt",
+          "source": "notes/thermal-geometry-and-singlet-exchange.md",
+          "sourceSha256": "59c87f68a9c363db7ac3d3baa5ac00f0a3dddb58b8e98deaacbdc023a26ab96e"
+        }
+      ],
+      "figures": [
+        {
+          "name": "closure_temperature.png",
+          "path": "study-assets/figures/thermal-closure-temperature/closure_temperature.png",
+          "source": "figures/thermal-closure-temperature/closure_temperature.png",
+          "sourceSha256": "351c038cd490ba23abf6c456ba23ac34861fddb4f03cee19884420cd8f9b8831",
+          "title": "Closure temperature",
+          "width": 3184,
+          "height": 1084,
+          "wide": true,
+          "pdf": "study-assets/figures/thermal-closure-temperature/closure_temperature.pdf"
+        }
+      ],
+      "table": null
+    },
+    {
+      "id": "thermal-closed-projection",
+      "task": "T9",
+      "title": "Heating separately closed area and positive RS volume",
+      "description": "85 temperatures over T*=0.05..2: retained probability, conditional area and positive RS-volume distributions. Exact high-temperature mean-area coefficient 57/14.",
+      "limits": "F12 reference with separate singlet projection. Volume traces through area 50 and occupation probabilities through q=160; model RS units. The fixed-H Gibbs obstruction applies to this reference.",
+      "status": "Saved calculation",
+      "catalogueDate": "2026-10-13",
+      "files": [
+        {
+          "name": "README.md",
+          "path": "study-assets/results/thermal-closed-projection/README.txt",
+          "source": "results/thermal-closed-projection/README.md",
+          "sourceSha256": "905f118d435fdc83d90819eefb9e660d090a348cdf3ebefa190710b08bb88fd2"
+        },
+        {
+          "name": "area_distribution.csv",
+          "path": "study-assets/results/thermal-closed-projection/area_distribution.csv",
+          "source": "results/thermal-closed-projection/area_distribution.csv",
+          "sourceSha256": "f78c720ca9d71c59be2c629b0af77139747422b884882c57a1f70323288b4aff"
+        },
+        {
+          "name": "protocol.json",
+          "path": "study-assets/results/thermal-closed-projection/protocol.json",
+          "source": "results/thermal-closed-projection/protocol.json",
+          "sourceSha256": "95ab05ee2fdfac5625c6e25a870b9fb18e1bbaadabe435007af47f473d31a65e"
+        },
+        {
+          "name": "singlet_sector_traces.npz",
+          "path": "study-assets/results/thermal-closed-projection/singlet_sector_traces.npz",
+          "source": "results/thermal-closed-projection/singlet_sector_traces.npz",
+          "sourceSha256": "20d006de3b60cd3976e9e238aaad964b382beb14bd82285503e338b1d49bce1a"
+        },
+        {
+          "name": "temperature_fit.json",
+          "path": "study-assets/results/thermal-closed-projection/temperature_fit.json",
+          "source": "results/thermal-closed-projection/temperature_fit.json",
+          "sourceSha256": "cff3bbe30d2c30c6120dfaecd610b2f687aa2f413dfb724bf5b3adefb26ead54"
+        },
+        {
+          "name": "temperature_fit_grid.csv",
+          "path": "study-assets/results/thermal-closed-projection/temperature_fit_grid.csv",
+          "source": "results/thermal-closed-projection/temperature_fit_grid.csv",
+          "sourceSha256": "024dd6b8d527216853496e5b22d9ecae5971ada9fc26a388fda529e6f71b17d7"
+        },
+        {
+          "name": "temperature_summary.csv",
+          "path": "study-assets/results/thermal-closed-projection/temperature_summary.csv",
+          "source": "results/thermal-closed-projection/temperature_summary.csv",
+          "sourceSha256": "98af4874e48610f3c055d536b4c9c80eb2b5b90c57d6b3b604c447e827d7578a"
+        },
+        {
+          "name": "verification.json",
+          "path": "study-assets/results/thermal-closed-projection/verification.json",
+          "source": "results/thermal-closed-projection/verification.json",
+          "sourceSha256": "50ff0818520f0afa190966fcedb3e977337b65381d1e87bbc726b4f410d8df72"
+        },
+        {
+          "name": "thermal-geometry-and-singlet-exchange.md",
+          "path": "study-assets/notes/thermal-geometry-and-singlet-exchange.txt",
+          "source": "notes/thermal-geometry-and-singlet-exchange.md",
+          "sourceSha256": "59c87f68a9c363db7ac3d3baa5ac00f0a3dddb58b8e98deaacbdc023a26ab96e"
+        }
+      ],
+      "figures": [
+        {
+          "name": "closed_projection_distributions.png",
+          "path": "study-assets/figures/thermal-closed-projection/closed_projection_distributions.png",
+          "source": "figures/thermal-closed-projection/closed_projection_distributions.png",
+          "sourceSha256": "6c74051dcfbdc77bc41fea1a02ba3b0c1fc5159be51acbeea3bd4cfb9d969bf2",
+          "title": "Closed projection distributions",
+          "width": 2434,
+          "height": 1084,
+          "wide": false,
+          "pdf": "study-assets/figures/thermal-closed-projection/closed_projection_distributions.pdf"
+        },
+        {
+          "name": "closed_projection_temperature.png",
+          "path": "study-assets/figures/thermal-closed-projection/closed_projection_temperature.png",
+          "source": "figures/thermal-closed-projection/closed_projection_temperature.png",
+          "sourceSha256": "c4b82f5425f77c54ab855dbd1ad8f8a995e5507792be49fab1469f858c2ede9a",
+          "title": "Closed projection temperature",
+          "width": 3184,
+          "height": 1084,
+          "wide": true,
+          "pdf": "study-assets/figures/thermal-closed-projection/closed_projection_temperature.pdf"
+        }
+      ],
+      "table": null
+    },
+    {
+      "id": "t9a-singlet-exchange",
+      "task": "T9a",
+      "title": "Singlet exchange between closed FL polyhedra",
+      "description": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
+      "limits": "Finite isolated pair; prepared-state entanglement differs from mixed-state Gibbs entropy. No reservoir relaxation or equivalence to the T9 squeezed family established. Project volume and model energy units.",
+      "status": "46 recorded regression tests and 1792 independent comparisons passed",
+      "catalogueDate": "2026-10-14",
+      "files": [
+        {
+          "name": "README.md",
+          "path": "study-assets/results/t9a-singlet-exchange/README.txt",
+          "source": "results/t9a-singlet-exchange/README.md",
+          "sourceSha256": "f282805b9bf448ef451ee4ffe8a1d594b0b613b40ce94604c021d7d3627c63b1"
+        },
+        {
+          "name": "detuned_operators.npz",
+          "path": "study-assets/results/t9a-singlet-exchange/detuned_operators.npz",
+          "source": "results/t9a-singlet-exchange/detuned_operators.npz",
+          "sourceSha256": "d70b1b58c425fce6a232b5bf463b83c06166180d289a460ab8573c75f3937e18"
+        },
+        {
+          "name": "dynamics.csv",
+          "path": "study-assets/results/t9a-singlet-exchange/dynamics.csv",
+          "source": "results/t9a-singlet-exchange/dynamics.csv",
+          "sourceSha256": "db565e9eb38039fa39f2549054993ae984a6c951ccc0e4c22ca9bd30d5a37983"
+        },
+        {
+          "name": "ground_states.csv",
+          "path": "study-assets/results/t9a-singlet-exchange/ground_states.csv",
+          "source": "results/t9a-singlet-exchange/ground_states.csv",
+          "sourceSha256": "8f1ba01cfe7cc8408567c9cd5f386db1e50f7c6ff3e64ea7305fc8b6a7ecaa28"
+        },
+        {
+          "name": "independent_verification.json",
+          "path": "study-assets/results/t9a-singlet-exchange/independent_verification.json",
+          "source": "results/t9a-singlet-exchange/independent_verification.json",
+          "sourceSha256": "674b6f2e7b7a075e9116b693a892382a307d525fc13c3fe9ddbda98020c4614e"
+        },
+        {
+          "name": "inputs.npz",
+          "path": "study-assets/results/t9a-singlet-exchange/inputs.npz",
+          "source": "results/t9a-singlet-exchange/inputs.npz",
+          "sourceSha256": "15b98aaedd38ce6110303531a8f8f4061d4849ed550d753b6d2e18b2be922053"
+        },
+        {
+          "name": "no_exchange_operators.npz",
+          "path": "study-assets/results/t9a-singlet-exchange/no_exchange_operators.npz",
+          "source": "results/t9a-singlet-exchange/no_exchange_operators.npz",
+          "sourceSha256": "15fbcacc030b9f5b5092103e6a78d62fc9d7d86a28bef7910ff129ef6096e839"
+        },
+        {
+          "name": "provenance.json",
+          "path": "study-assets/results/t9a-singlet-exchange/provenance.json",
+          "source": "results/t9a-singlet-exchange/provenance.json",
+          "sourceSha256": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0"
+        },
+        {
+          "name": "repulsive_operators.npz",
+          "path": "study-assets/results/t9a-singlet-exchange/repulsive_operators.npz",
+          "source": "results/t9a-singlet-exchange/repulsive_operators.npz",
+          "sourceSha256": "c5c33d35e63f2d44b92123bdb759986ab1b7dae0f195dac7b16a4c18befcc1db"
+        },
+        {
+          "name": "resonant_operators.npz",
+          "path": "study-assets/results/t9a-singlet-exchange/resonant_operators.npz",
+          "source": "results/t9a-singlet-exchange/resonant_operators.npz",
+          "sourceSha256": "abc7b02addd159e0201e8ee5518de2fa491dabf6b61ca6dac6bbe6f5a1f179f9"
+        },
+        {
+          "name": "spectra.csv",
+          "path": "study-assets/results/t9a-singlet-exchange/spectra.csv",
+          "source": "results/t9a-singlet-exchange/spectra.csv",
+          "sourceSha256": "46c440833840237ca79d11bec1e6699cb0fe83f910cb26834ed8b6f9e066be2c"
+        },
+        {
+          "name": "summary.json",
+          "path": "study-assets/results/t9a-singlet-exchange/summary.json",
+          "source": "results/t9a-singlet-exchange/summary.json",
+          "sourceSha256": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1"
+        },
+        {
+          "name": "thermal.csv",
+          "path": "study-assets/results/t9a-singlet-exchange/thermal.csv",
+          "source": "results/t9a-singlet-exchange/thermal.csv",
+          "sourceSha256": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e"
+        },
+        {
+          "name": "t9a-singlet-exchange.md",
+          "path": "study-assets/notes/t9a-singlet-exchange.txt",
+          "source": "notes/t9a-singlet-exchange.md",
+          "sourceSha256": "0f897f274a2c4b7e8f57096a7e6663bff132751c6b123587d2703f8412939a2e"
+        }
+      ],
+      "figures": [
+        {
+          "name": "exchange-overview.png",
+          "path": "study-assets/figures/t9a-singlet-exchange/exchange-overview.png",
+          "source": "figures/t9a-singlet-exchange/exchange-overview.png",
+          "sourceSha256": "c0c26e880f46a965dc9e525d47f2fac49d62986399856afe01b307e8b557d656",
+          "title": "Exchange-overview",
+          "width": 2100,
+          "height": 1440,
+          "wide": false,
+          "pdf": "study-assets/figures/t9a-singlet-exchange/exchange-overview.pdf"
+        }
+      ],
+      "table": null
+    },
+    {
       "id": "t11-size-comparison",
       "task": "T11",
       "title": "Four versus five sites: thermal-volume persistence",
@@ -2355,7 +2856,7 @@
           "name": "thermal-area-sectors.md",
           "path": "study-assets/notes/thermal-area-sectors.txt",
           "source": "notes/thermal-area-sectors.md",
-          "sourceSha256": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+          "sourceSha256": "9849e7134d8cd81ff07c2665dd9a63f94fdf98ce41092bc6ea6e87c3c8384db8"
         }
       ],
       "figures": [
@@ -2954,7 +3455,7 @@
           "name": "volume-studies.md",
           "path": "study-assets/notes/volume-studies.txt",
           "source": "notes/volume-studies.md",
-          "sourceSha256": "590364bfc39f532fb82f89f734c5db3721ddb2cb77e59834579b40c76e084e20"
+          "sourceSha256": "ddcc922e8e255d6b421e2f26aebdf0e2c8f90a789ba79ef3092e08b6a18c107f"
         }
       ],
       "figures": [
@@ -3504,7 +4005,7 @@
           "name": "thermal-area-sectors.md",
           "path": "study-assets/notes/thermal-area-sectors.txt",
           "source": "notes/thermal-area-sectors.md",
-          "sourceSha256": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+          "sourceSha256": "9849e7134d8cd81ff07c2665dd9a63f94fdf98ce41092bc6ea6e87c3c8384db8"
         }
       ],
       "figures": [

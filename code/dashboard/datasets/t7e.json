@@ -157,11 +157,11 @@
           "notes/experiments/t7e_notes.md": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9"
         },
         "presentationSource": "results/t7e_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "n.4.rows[0]"
       },
       "assessment": {
@@ -234,11 +234,11 @@
           "notes/experiments/t7e_notes.md": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9"
         },
         "presentationSource": "results/t7e_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "n.4.rows[1]"
       },
       "assessment": {
@@ -284,11 +284,11 @@
           "notes/experiments/t7e_notes.md": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9"
         },
         "presentationSource": "results/t7e_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "n.4.rows[2]"
       },
       "assessment": {
@@ -334,11 +334,11 @@
           "notes/experiments/t7e_notes.md": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9"
         },
         "presentationSource": "results/t7e_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "n.4.rows[3]"
       },
       "assessment": {
@@ -384,11 +384,11 @@
           "notes/experiments/t7e_notes.md": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9"
         },
         "presentationSource": "results/t7e_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "n.4.rows[4]"
       },
       "assessment": {
@@ -434,11 +434,11 @@
           "notes/experiments/t7e_notes.md": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9"
         },
         "presentationSource": "results/t7e_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "n.5.rows[0]"
       },
       "assessment": {
@@ -484,11 +484,11 @@
           "notes/experiments/t7e_notes.md": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9"
         },
         "presentationSource": "results/t7e_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "n.5.rows[1]"
       },
       "assessment": {
@@ -534,11 +534,11 @@
           "notes/experiments/t7e_notes.md": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9"
         },
         "presentationSource": "results/t7e_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "n.5.rows[2]"
       },
       "assessment": {
@@ -584,11 +584,11 @@
           "notes/experiments/t7e_notes.md": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9"
         },
         "presentationSource": "results/t7e_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "n.5.rows[3]"
       },
       "assessment": {
@@ -634,11 +634,11 @@
           "notes/experiments/t7e_notes.md": "3204f155d731b30aba8761e161c220f016c45d7189586c5ce3604dad152202f9"
         },
         "presentationSource": "results/t7e_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "n.5.rows[4]"
       },
       "assessment": {
@@ -658,6 +658,12 @@
     }
   ],
   "docs": [
+    {
+      "title": "T7e_notes",
+      "path": "../study-assets/notes/experiments/t7e_notes.txt",
+      "sourcePath": "notes/experiments/t7e_notes.md",
+      "description": "Explanation and calculation record for this study."
+    },
     {
       "title": "Numerical studies overview",
       "path": "../index.html"

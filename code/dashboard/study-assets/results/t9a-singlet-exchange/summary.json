@@ -1,0 +1,135 @@
+{
+  "total_area": 4,
+  "dimension": 1210,
+  "local_dimensions": [
+    1,
+    6,
+    20,
+    50,
+    105
+  ],
+  "hbar": 1,
+  "time_points": 101,
+  "time_interval": [
+    0,
+    20
+  ],
+  "coupling_convention": "six identical corresponding-pair coefficients; no division by six",
+  "cases": [
+    {
+      "name": "no_exchange",
+      "g": 0.0,
+      "U": 0.0,
+      "detuning": 0.0
+    },
+    {
+      "name": "resonant",
+      "g": 0.1,
+      "U": 0.0,
+      "detuning": 0.0
+    },
+    {
+      "name": "repulsive",
+      "g": 0.1,
+      "U": 1.0,
+      "detuning": 0.0
+    },
+    {
+      "name": "detuned",
+      "g": 0.1,
+      "U": 0.0,
+      "detuning": 2.0
+    }
+  ],
+  "preparations": [
+    {
+      "name": "equal_regular",
+      "K_left": 2,
+      "K_right": 2
+    },
+    {
+      "name": "unequal_regular",
+      "K_left": 3,
+      "K_right": 1
+    },
+    {
+      "name": "equal_deformed_right",
+      "K_left": 2,
+      "K_right": 2
+    }
+  ],
+  "residuals": {
+    "creator_0_(0, 1)": 2.220446049250313e-16,
+    "creator_0_(0, 2)": 2.220446049250313e-16,
+    "creator_0_(0, 3)": 2.220446049250313e-16,
+    "creator_0_(1, 2)": 2.220446049250313e-16,
+    "creator_0_(1, 3)": 2.220446049250313e-16,
+    "creator_0_(2, 3)": 2.220446049250313e-16,
+    "creator_1_(0, 1)": 3.3306690738754696e-16,
+    "creator_1_(0, 2)": 4.440892098500626e-16,
+    "creator_1_(0, 3)": 4.440892098500626e-16,
+    "creator_1_(1, 2)": 4.440892098500626e-16,
+    "creator_1_(1, 3)": 4.440892098500626e-16,
+    "creator_1_(2, 3)": 3.3306690738754696e-16,
+    "creator_2_(0, 1)": 3.3306690738754696e-16,
+    "creator_2_(0, 2)": 2.8000947943419596e-16,
+    "creator_2_(0, 3)": 2.2449832820293813e-16,
+    "creator_2_(1, 2)": 4.440892098500626e-16,
+    "creator_2_(1, 3)": 2.8000947943419596e-16,
+    "creator_2_(2, 3)": 3.3306690738754696e-16,
+    "creator_3_(0, 1)": 4.440892098500626e-16,
+    "creator_3_(0, 2)": 4.440892098500626e-16,
+    "creator_3_(0, 3)": 5.551115123125783e-16,
+    "creator_3_(1, 2)": 4.440892098500626e-16,
+    "creator_3_(1, 3)": 5.551115123125783e-16,
+    "creator_3_(2, 3)": 4.440892098500626e-16,
+    "local_closure": 3.3306690738754696e-16,
+    "local_orthogonality": 6.661338147750939e-16,
+    "no_exchange_eigen_residual": 0.0,
+    "no_exchange_hermiticity": 0.0,
+    "no_exchange_current_commutator": 0.0,
+    "no_exchange_equal_regular_norm": 0.0,
+    "no_exchange_equal_regular_energy": 0.0,
+    "no_exchange_unequal_regular_norm": 4.440892098500626e-16,
+    "no_exchange_unequal_regular_energy": 0.0,
+    "no_exchange_equal_deformed_right_norm": 4.440892098500626e-16,
+    "no_exchange_equal_deformed_right_energy": 0.0,
+    "resonant_eigen_residual": 1.185328024654472e-14,
+    "resonant_hermiticity": 0.0,
+    "resonant_current_commutator": 2.220446049250313e-16,
+    "resonant_equal_regular_norm": 9.992007221626409e-16,
+    "resonant_equal_regular_energy": 6.708968780346983e-16,
+    "resonant_unequal_regular_norm": 6.661338147750939e-16,
+    "resonant_unequal_regular_energy": 2.9226483125060674e-16,
+    "resonant_equal_deformed_right_norm": 2.220446049250313e-15,
+    "resonant_equal_deformed_right_energy": 5.749476893651217e-16,
+    "repulsive_eigen_residual": 1.1435297153639112e-14,
+    "repulsive_hermiticity": 0.0,
+    "repulsive_current_commutator": 2.220446049250313e-16,
+    "repulsive_equal_regular_norm": 3.3306690738754696e-16,
+    "repulsive_equal_regular_energy": 1.354472090042691e-14,
+    "repulsive_unequal_regular_norm": 4.440892098500626e-16,
+    "repulsive_unequal_regular_energy": 4.529709940470639e-14,
+    "repulsive_equal_deformed_right_norm": 6.661338147750939e-16,
+    "repulsive_equal_deformed_right_energy": 9.769962616701378e-15,
+    "detuned_eigen_residual": 1.865174681370263e-14,
+    "detuned_hermiticity": 0.0,
+    "detuned_current_commutator": 2.220446049250313e-16,
+    "detuned_equal_regular_norm": 2.220446049250313e-16,
+    "detuned_equal_regular_energy": 2.930988785010413e-14,
+    "detuned_unequal_regular_norm": 6.661338147750939e-16,
+    "detuned_unequal_regular_energy": 2.1316282072803006e-14,
+    "detuned_equal_deformed_right_norm": 4.440892098500626e-16,
+    "detuned_equal_deformed_right_energy": 1.687538997430238e-14
+  },
+  "max_residual": 4.529709940470639e-14,
+  "source_sha256": {
+    "code/python/lqg_scattering/singlet_exchange.py": "13b31f7ebd50b7889f0f5ffb7d7a1f4c92520cc83bac7eddad7265580a651f52",
+    "code/python/t9a_singlet_exchange.py": "091e774abac62ae403f6c77c78cd22a0bb6bb952308b771fdffa43c48db9b645",
+    "code/python/test_singlet_exchange.py": "b8bf978ac0ce3f9c1ad3e27b4750ac8e6a1f3b06b1ed87cf0d5a1c0c489b157c",
+    "code/python/lqg_scattering/hamiltonian.py": "16d82364d93cbb009448df99803cc21a314ce755a4b66125dd16fe4bede51d5e",
+    "code/python/lqg_scattering/intertwiners.py": "0b9daa5453e2c14cbc573f7151be3e580fe147264d681089370bf2c4a6019f4a",
+    "code/python/lqg_scattering/singlets.py": "5d201831486601bfe7e409d650e1b7eb2ea507650c4e3def3d807e6f0a319f82"
+  },
+  "numpy_version": "1.24.3"
+}

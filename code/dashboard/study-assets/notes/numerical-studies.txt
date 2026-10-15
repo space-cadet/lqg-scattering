@@ -1,8 +1,8 @@
 # Numerical studies: chronological research record
 
-*Last updated: 2026-10-12*
+*Last updated: 2026-10-16*
 
-This is the central record of numerical studies in this repository. Each entry records the question, calculated coverage, findings, and source artifacts. Dates follow calculation records, session records, and Git history. Date ranges group related calculations; corrections and extensions appear at their own dates. The identifiers NS01–NS27 are local index labels for this document. Project task IDs are included for cross-reference.
+This is the central record of numerical studies in this repository. Each entry records the question, calculated coverage, findings, and source artifacts. Dates follow calculation records, session records, and Git history. Date ranges group related calculations; corrections and extensions appear at their own dates. The identifiers NS01–NS32 are local index labels for this document. Project task IDs are included for cross-reference.
 
 ## Index
 
@@ -35,6 +35,11 @@ This is the central record of numerical studies in this repository. Each entry r
 | [NS25](#ns25) | 2026-10-09–10 | Triangle, tetrahedron, and joined-boundary sewing | Constructive sewing |
 | [NS26](#ns26) | 2026-10-10 | Four/five-site comparison and prepared-FL diagnostics | T11 |
 | [NS27](#ns27) | 2026-10-11 | Geometric interactions and prepared-FL evolution | T11 |
+| [NS28](#ns28) | 2026-10-13 | Temperature dependence of ordinary per-copy closure | T9 |
+| [NS29](#ns29) | 2026-10-13 | Separately closed projection and thermal geometric growth | T9 |
+| [NS30](#ns30) | 2026-10-14 | Finite-area singlet exchange and canonical controls | T9a |
+| [NS31](#ns31) | 2026-10-16 | Closed-reference entanglement and coherent singlet creation | T9 |
+| [NS32](#ns32) | 2026-10-16 | Large-area FL face activation and free-hopping recurrence | T11 |
 
 ## Notation
 
@@ -348,6 +353,81 @@ The signed triple flux is $q_{ijk}=\mathbf J_i\cdot(\mathbf J_j\times\mathbf J_k
 **Findings:** At $U/t=20$, ground volume is 0.033487 for the baseline, 0.601241 for the volume-rewarding coupling, and 0.031332 for the volume penalty. Either sign of the signed-flux interaction gives approximately 0.601235 while reversing the preferred orientation. The regular FL preparation has ground-space overlap 0.112216 under the volume-rewarding coupling. The evolution uses exact energy-basis phases. Independent verification passed 1,510 checks with largest residual $1.07\times10^{-12}$.
 
 **Artifacts:** [Initial volume-coupling report](../results/t11-volume-coupling/README.md), [candidate/evolution driver](../code/python/t11_candidate_hamiltonians.py), [independent verifier](../code/python/verify_t11_candidate_hamiltonians.py), [full study report](../results/t11-candidate-hamiltonians/README.md), [results and figures](../results/t11-candidate-hamiltonians/).
+
+## 2026-10-13: closure and the growth of closed thermal geometry
+
+<a id="ns28"></a>
+### NS28 — Temperature dependence of ordinary per-copy closure
+
+The study asks how heating changes the magnitude of the residual total face flux in the selected four-face, initial-area-one two-copy state. Across 125 temperatures, increasing $T_*=k_BT/(\hbar\omega)$ raises the ordinary RMS closure defect and reduces the single-copy singlet fraction. The full state continues to obey combined dual-copy closure. The distinction is developed with definitions, a figure and a table in [the thermal-area note](thermal-geometry-and-singlet-exchange.md#section-16-02).
+
+[Calculation and verification](../results/thermal-closure-temperature/README.md), [driver](../code/thermal/closure_temperature_sweep.py), and [figure](../figures/thermal-closure-temperature/closure_temperature.pdf).
+
+<a id="ns29"></a>
+### NS29 — Separately closed projection and thermal geometric growth
+
+Double-singlet projection enforces ordinary closure in each copy while allowing area and volume to change. Because the copies have correlated resultant spins, the retained probability equals the earlier marginal singlet fraction rather than its square. The 85-temperature calculation shows increasing projected mean area, area fluctuations, and positive RS volume; four-active-face and nonzero-volume probabilities increase as well. Exact finite singlet sums give the high-temperature law $\langle A\rangle\sim(57/14)T_*$. The scientific narrative, three figures and compact tables are in [the thermal-area note](thermal-geometry-and-singlet-exchange.md#section-16).
+
+[Study and verification](../results/thermal-closed-projection/README.md), [projection driver](../code/thermal/closed_projection_study.py), [shared library](../code/python/lqg_scattering/thermal_projection.py), [fit and analytic derivation](../code/thermal/fit_closed_temperature.py), and [distribution figure](../figures/thermal-closed-projection/closed_projection_distributions.pdf).
+
+<a id="ns30"></a>
+
+### NS30 — Finite-area singlet exchange and canonical controls
+
+Calculated October 14 under T9a; entered into this central index October 16.
+The complete fixed-combined-area K=4 space has 1,210 states. Four Hamiltonians
+and three FL inputs give twelve trajectories, with area current, entanglement,
+coherence and positive-volume readouts. Twenty canonical controls retain joint
+Gibbs entropy separately from trajectory entanglement. Prior verification
+records 46 regression tests and 1,792 independent comparisons. The finite pair
+does not establish reservoir relaxation or equivalence to the T9 squeeze.
+
+[Report](../results/t9a-singlet-exchange/README.md),
+[specification](t9a-singlet-exchange.md), and
+[illustrated narrative](thermal-geometry-and-singlet-exchange.md).
+
+<a id="ns31"></a>
+
+### NS31 — Closed-reference entanglement and coherent singlet creation
+
+Calculated October 16 under T9. Direct Schmidt eigenvalues and multiplicities
+for the separately projected F12 area-one reference yield entropy, Rényi-2
+entropy, purity and area-sector decomposition across 86 temperatures,
+T*=0.05..5. Within-area contributions exceed shared-area entropy at T*=1,2,5.
+A joint singlet-creation expectation detects coherence between adjacent area
+sectors; the singlet-transfer mean vanishes by equal-area support. Adaptive
+cutoffs 12..140 control the infinite entropy tail below 6.4e-12 nats. The 802
+comparisons include independent oscillator/Casimir/SVD controls, creator
+matrices, saved geometry, and convergence checks. This reference begins with
+two active faces; general four-face FL inputs remain open.
+
+[Pedagogical note](thermal-entanglement.md),
+[report and artifacts](../results/thermal-closed-entanglement/README.md),
+[driver](../code/thermal/closed_entanglement_study.py),
+[independent verifier](../code/thermal/verify_closed_entanglement.py), and
+[figure](../figures/thermal-closed-entanglement/entanglement_overview.pdf).
+
+<a id="ns32"></a>
+
+### NS32 — Large-area FL face activation and free-hopping recurrence
+
+Calculated October 16 under T11, following the user's question about energy
+sharing and growth beyond a large tetrahedron. Exact U(L) FL evolution embeds
+four regular tetrahedral labels in five/six channels with vacuum extras.
+Twenty controls span K=2,20,100,1000,10000 and two phase choices, using existing
+complete-graph free hopping with U=0. An extra channel receives up to 29.06%
+of total area in the five-channel baseline; face areas and local energies
+remain unequal and recur. The symmetric six-channel run has six occupied
+channels but at most five distinct classical normal directions. All 360
+independent sparse-evolution, face-statistics and conservation comparisons
+pass. This is a coherent activation control, not an interacting equilibration
+or arbitrary-valence refinement result.
+
+[Pedagogical results and proposed F/J interactions](face-energy-equipartition.md),
+[report](../results/fl-face-activation/README.md),
+[driver](../code/python/fl_face_activation.py),
+[verifier](../code/python/verify_fl_face_activation.py), and
+[figure](../figures/fl-face-activation/face_activation_control.pdf).
 
 ## Numerical infrastructure and browsing
 

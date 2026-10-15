@@ -1,0 +1,62 @@
+{
+  "method_checks": [
+    {
+      "beta": 0.5,
+      "max_method_probability_difference": 1.734723475976807e-17,
+      "defect_difference": 7.105427357601002e-15
+    },
+    {
+      "beta": 1.0,
+      "max_method_probability_difference": 2.42861286636753e-17,
+      "defect_difference": 1.7763568394002505e-15
+    },
+    {
+      "beta": 2.0,
+      "max_method_probability_difference": 8.326672684688674e-17,
+      "defect_difference": 8.881784197001252e-16
+    },
+    {
+      "beta": 4.0,
+      "max_method_probability_difference": 2.671474153004283e-16,
+      "defect_difference": 5.551115123125783e-16
+    },
+    {
+      "beta": 8.0,
+      "max_method_probability_difference": 2.3934186474091138e-17,
+      "defect_difference": 5.0306980803327406e-17
+    },
+    {
+      "beta": 20.0,
+      "max_method_probability_difference": 5.098024975002249e-17,
+      "defect_difference": 1.0196050576477273e-16
+    }
+  ],
+  "saved_result_max_difference": 2.842170943040401e-14,
+  "monotonic_defect_increase": true,
+  "monotonic_singlet_decrease": true,
+  "monotonic_relative_defect_increase": false,
+  "maximum_relative_defect": {
+    "temperature_kBT_over_hbar_omega": 0.8721004239571345,
+    "beta_hbar_omega": 1.1466569359782264,
+    "retained_probability": 1.0000000000000007,
+    "singlet_probability": 0.03933201989784287,
+    "closure_defect_casimir": 7.165525674380708,
+    "closure_defect_rms": 2.6768499536546138,
+    "mean_linear_area": 3.7937480613051116,
+    "mean_area_casimir": 20.57478097208829,
+    "relative_defect_squared": 0.3482674097042125,
+    "relative_defect_rms": 0.5901418555772946,
+    "omitted_probability_bound": 7.406569463870954e-63,
+    "omitted_defect_bound": 4.890428772813497e-59,
+    "minimum_probability": 0.0
+  },
+  "max_normalization_error": 1.887379141862766e-15,
+  "max_omitted_probability_bound": 8.936403228451495e-21,
+  "max_omitted_defect_bound": 6.000117021270911e-17,
+  "python": "3.10.19",
+  "numpy": "1.24.3",
+  "source_sha256": {
+    "code/thermal/closure_temperature_sweep.py": "935196122ba177f419833f1768cfe438be41cb82ec8af78b1cf4fc22c84a6d2b",
+    "code/thermal/compare_j1_spin_methods.py": "8406ac384df34e239fa8366daf1abe27ccdb63e8fda0cbf9df1c1388f32f95f0"
+  }
+}

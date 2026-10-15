@@ -883,11 +883,11 @@
           "results/t7_geometry_thermal_results.json": "da117f4ee4702ab8de4398b27c959ee1f3e4ed5243dc1040195a952533dd9437"
         },
         "presentationSource": "results/t7_geometry_thermal_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceRevision": "0a254849a5e12734ee32d9d8af74bd4309d17648",
         "startedAt": "2026-10-06T06:38:15.032725+00:00",
         "sourceSelector": "cases[0]"
@@ -1668,11 +1668,11 @@
           "results/t7_geometry_thermal_results.json": "da117f4ee4702ab8de4398b27c959ee1f3e4ed5243dc1040195a952533dd9437"
         },
         "presentationSource": "results/t7_geometry_thermal_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceRevision": "0a254849a5e12734ee32d9d8af74bd4309d17648",
         "startedAt": "2026-10-06T06:38:15.032725+00:00",
         "sourceSelector": "cases[1]"
@@ -2434,11 +2434,11 @@
           "results/t7_geometry_thermal_results.json": "da117f4ee4702ab8de4398b27c959ee1f3e4ed5243dc1040195a952533dd9437"
         },
         "presentationSource": "results/t7_geometry_thermal_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceRevision": "0a254849a5e12734ee32d9d8af74bd4309d17648",
         "startedAt": "2026-10-06T06:38:15.032725+00:00",
         "sourceSelector": "cases[2]"
@@ -3200,11 +3200,11 @@
           "results/t7_geometry_thermal_results.json": "da117f4ee4702ab8de4398b27c959ee1f3e4ed5243dc1040195a952533dd9437"
         },
         "presentationSource": "results/t7_geometry_thermal_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceRevision": "0a254849a5e12734ee32d9d8af74bd4309d17648",
         "startedAt": "2026-10-06T06:38:15.032725+00:00",
         "sourceSelector": "cases[3]"

@@ -201,11 +201,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-1"
       },
       "assessment": {
@@ -631,11 +631,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-2"
       },
       "assessment": {
@@ -698,11 +698,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-3"
       },
       "assessment": {
@@ -765,11 +765,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-4"
       },
       "assessment": {
@@ -832,11 +832,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-5"
       },
       "assessment": {
@@ -899,11 +899,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-6"
       },
       "assessment": {
@@ -966,11 +966,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-7"
       },
       "assessment": {
@@ -1033,11 +1033,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-8"
       },
       "assessment": {
@@ -1100,11 +1100,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-9"
       },
       "assessment": {
@@ -1167,11 +1167,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-10"
       },
       "assessment": {
@@ -1234,11 +1234,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-11"
       },
       "assessment": {
@@ -1301,11 +1301,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-12"
       },
       "assessment": {
@@ -1368,11 +1368,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-13"
       },
       "assessment": {
@@ -1435,11 +1435,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-14"
       },
       "assessment": {
@@ -1502,11 +1502,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-15"
       },
       "assessment": {
@@ -1569,11 +1569,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-16"
       },
       "assessment": {
@@ -1636,11 +1636,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-17"
       },
       "assessment": {
@@ -1703,11 +1703,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-18"
       },
       "assessment": {
@@ -1770,11 +1770,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-19"
       },
       "assessment": {
@@ -1837,11 +1837,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-20"
       },
       "assessment": {
@@ -1904,11 +1904,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-21"
       },
       "assessment": {
@@ -1971,11 +1971,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-22"
       },
       "assessment": {
@@ -2038,11 +2038,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-23"
       },
       "assessment": {
@@ -2105,11 +2105,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-24"
       },
       "assessment": {
@@ -2172,11 +2172,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-25"
       },
       "assessment": {
@@ -2239,11 +2239,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-26"
       },
       "assessment": {
@@ -2306,11 +2306,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-27"
       },
       "assessment": {
@@ -2373,11 +2373,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-28"
       },
       "assessment": {
@@ -2440,11 +2440,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-29"
       },
       "assessment": {
@@ -2507,11 +2507,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-30"
       },
       "assessment": {
@@ -2574,11 +2574,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-31"
       },
       "assessment": {
@@ -2641,11 +2641,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-32"
       },
       "assessment": {
@@ -2708,11 +2708,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-33"
       },
       "assessment": {
@@ -2775,11 +2775,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-34"
       },
       "assessment": {
@@ -2842,11 +2842,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-35"
       },
       "assessment": {
@@ -2909,11 +2909,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-36"
       },
       "assessment": {
@@ -2976,11 +2976,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-37"
       },
       "assessment": {
@@ -3043,11 +3043,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-38"
       },
       "assessment": {
@@ -3110,11 +3110,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-39"
       },
       "assessment": {
@@ -3177,11 +3177,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-40"
       },
       "assessment": {
@@ -3244,11 +3244,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-41"
       },
       "assessment": {
@@ -3311,11 +3311,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-42"
       },
       "assessment": {
@@ -3378,11 +3378,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-43"
       },
       "assessment": {
@@ -3445,11 +3445,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-44"
       },
       "assessment": {
@@ -3512,11 +3512,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-45"
       },
       "assessment": {
@@ -3579,11 +3579,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-46"
       },
       "assessment": {
@@ -3646,11 +3646,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-47"
       },
       "assessment": {
@@ -3713,11 +3713,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-48"
       },
       "assessment": {
@@ -3780,11 +3780,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-49"
       },
       "assessment": {
@@ -3847,11 +3847,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-50"
       },
       "assessment": {
@@ -3914,11 +3914,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-51"
       },
       "assessment": {
@@ -3981,11 +3981,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-52"
       },
       "assessment": {
@@ -4048,11 +4048,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-53"
       },
       "assessment": {
@@ -4115,11 +4115,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-54"
       },
       "assessment": {
@@ -4182,11 +4182,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-55"
       },
       "assessment": {
@@ -4249,11 +4249,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-56"
       },
       "assessment": {
@@ -4316,11 +4316,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-57"
       },
       "assessment": {
@@ -4383,11 +4383,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-58"
       },
       "assessment": {
@@ -4450,11 +4450,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-59"
       },
       "assessment": {
@@ -4517,11 +4517,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-60"
       },
       "assessment": {
@@ -4584,11 +4584,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-61"
       },
       "assessment": {
@@ -4651,11 +4651,11 @@
           "results/t11-candidate-hamiltonians/dynamics_scan.csv": "00c83e643badd546f5fde84cc27509c969797cff41b8964582dc2ed9693a4742"
         },
         "presentationSource": "results/t11-candidate-hamiltonians/model_summary.csv",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "results/t11-candidate-hamiltonians/model_summary.csv:row-62"
       },
       "assessment": {
@@ -4703,6 +4703,12 @@
     }
   ],
   "docs": [
+    {
+      "title": "Hamiltonian studies",
+      "path": "../study-assets/notes/hamiltonian-studies.txt",
+      "sourcePath": "notes/hamiltonian-studies.md",
+      "description": "Explanation and calculation record for this study."
+    },
     {
       "title": "Numerical studies overview",
       "path": "../index.html"

@@ -231,6 +231,41 @@ def add(identifier, task, title, description, limits, sources, figures=(), table
 def main(reuse_history=False):
     if not reuse_history:
         historical_plots()
+    export('notes/face-energy-equipartition.md')
+    add('fl-face-activation', 'T11', 'Large-area tetrahedron: face activation and recurrence',
+        'Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.',
+        'Unit complete-graph hopping, U=0, pure FL manifold. Direct sparse occupation evolution verifies K=1,2. No irreversible equipartition or interacting thermalization established. The two extra symmetric six-channel rows have the same normal, leaving only five distinct classical directions. Phase controls have different conserved initial energies.',
+        ['results/fl-face-activation','notes/face-energy-equipartition.md',
+         'code/python/fl_face_activation.py','code/python/verify_fl_face_activation.py',
+         'code/python/plot_fl_face_activation.py','code/python/lqg_scattering/intertwiners.py',
+         'code/python/lqg_scattering/spinors.py'],
+        ['figures/fl-face-activation'],status='360 direct-state, occupation, energy, geometry and recurrence checks passed',
+        catalogue_date='2026-10-16')
+    add('thermal-closed-entanglement', 'T9', 'Entanglement of separately closed thermal polyhedra',
+        '86 temperatures over T*=0.05..5. Exact Schmidt eigenvalues and multiplicities yield entropy, area-sector decomposition, purity, Renyi-2 entropy and coherent joint singlet creation. Within-area entanglement exceeds area-distribution entropy at T*=1,2,5.',
+        'Normalized double-singlet projection of the area-one F12 reference; initially only two active faces. Ordinary left/right tensor factorization. Adaptive area cutoffs 12..140; entropy truncation estimate below 6.4e-12 nats. Temperature slopes are prepared-state responses; fixed single-copy Gibbs and AdS interpretations are not assumed. General four-face FL inputs remain open.',
+        ['results/thermal-closed-entanglement', 'notes/thermal-entanglement.md',
+         'code/python/lqg_scattering/thermal_projection.py', 'code/python/lqg_scattering/thermal_entanglement.py',
+         'code/thermal/closed_entanglement_study.py', 'code/thermal/verify_closed_entanglement.py',
+         'code/thermal/plot_closed_entanglement.py'],
+        ['figures/thermal-closed-entanglement'],
+        status='802 oscillator, spectrum, geometry and convergence comparisons passed', catalogue_date='2026-10-16')
+    add('thermal-closure-temperature', 'T9', 'Ordinary closure versus temperature',
+        '125 temperatures quantify per-copy Gauss defect and declining singlet fraction for the selected area-one two-copy reference.',
+        'Ordinary per-copy closure differs from combined dual-copy and transformed closure. Full unprojected oscillator state; temperature is the squeeze preparation parameter.',
+        ['results/thermal-closure-temperature', 'notes/thermal-geometry-and-singlet-exchange.md'],
+        ['figures/thermal-closure-temperature'], catalogue_date='2026-10-13')
+    add('thermal-closed-projection', 'T9', 'Heating separately closed area and positive RS volume',
+        '85 temperatures over T*=0.05..2: retained probability, conditional area and positive RS-volume distributions. Exact high-temperature mean-area coefficient 57/14.',
+        'F12 reference with separate singlet projection. Volume traces through area 50 and occupation probabilities through q=160; model RS units. The fixed-H Gibbs obstruction applies to this reference.',
+        ['results/thermal-closed-projection', 'notes/thermal-geometry-and-singlet-exchange.md'],
+        ['figures/thermal-closed-projection'], catalogue_date='2026-10-13')
+    add('t9a-singlet-exchange', 'T9a', 'Singlet exchange between closed FL polyhedra',
+        'Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.',
+        'Finite isolated pair; prepared-state entanglement differs from mixed-state Gibbs entropy. No reservoir relaxation or equivalence to the T9 squeezed family established. Project volume and model energy units.',
+        ['results/t9a-singlet-exchange', 'notes/t9a-singlet-exchange.md'],
+        ['figures/t9a-singlet-exchange'],
+        status='46 recorded regression tests and 1792 independent comparisons passed', catalogue_date='2026-10-14')
     size_rows = list(csv.DictReader((ROOT / "results/t11-size-comparison/summary.csv").open()))
     add("t11-size-comparison", "T11", "Four versus five sites: thermal-volume persistence",
         "Matched mean occupation 2K/L=2: (L,K)=(4,4) and (5,5), singlet dimensions 105 and 1,176. Complete and ring graphs at t=1,U=20, plus free and no-hopping controls. Intermediate-temperature nonmonotonicity persists; the pronounced four-site complete-graph low-temperature collapse does not.",
@@ -350,7 +385,7 @@ def main(reuse_history=False):
     d["summary"].update(totalRuns=len(d["runs"]),completeRuns=sum(r["status"]=="complete" for r in d["runs"]),registeredStudies=len(STUDIES))
     d["project"]["subtitle"]="Hamiltonian, closed-basis volume and thermal-sector results, with data, plots and verification records"
     d["theory"]["description"]="The catalogue records exact singlet Hamiltonian studies, kinematic RS/AL catalogues, selected squeezed thermal-sector distributions, and earlier proxy studies. Model support, normalization and verification limits accompany each result. Broader parameter, finite-size and bulk-phase studies remain open."
-    d["tasks"]={"active":[{"id":t,"title":title,"description":desc} for t,title,desc in [("T1a","Positive-volume validation","Complete four-face baseline through K=12 saved; broader physical calibration remains open."),("T5c","Weighted FL volume and shape","Initial and higher-J probes saved; broad convergence and unresolved RS comparison remain open."),("T5d","Cocycle phase","Recorded ten-point pilot; broader phase study open."),("T9","Thermal intertwiners and TFD","Recent area/spin distributions saved; full reduced-state and geometric studies open."),("T11","Hamiltonian studies","Four/five-site persistence, prepared K=4 geometry, candidate volume and signed-grasp Hamiltonians, and 50 prepared-FL trajectories are saved. Physical model selection and broader parameter/size studies remain open.")]],"completed":[{"id":"T10","title":"Variable-face RS catalogue","description":"Declared K=2,3,4 catalogue complete."},{"id":"T1b","title":"Real-plane volume check","description":"Independent positive-volume comparison saved."},{"id":"T5a/T5a′/T5b/T5e","title":"Archived numerical pilots","description":"Recorded scope complete; finite sampling and proxy interpretation retained."}],"pending":[]}
+    d["tasks"]={"active":[{"id":t,"title":title,"description":desc} for t,title,desc in [("T1a","Positive-volume validation","Complete four-face baseline through K=12 saved; broader physical calibration remains open."),("T5c","Weighted FL volume and shape","Initial and higher-J probes saved; broad convergence and unresolved RS comparison remain open."),("T5d","Cocycle phase","Recorded ten-point pilot; broader phase study open."),("T9","Thermal intertwiners and TFD","Projected reference entropy, Schmidt spectra, coherent joint creation and thermal geometry saved. General FL inputs and full unprojected spectra remain open."),("T9a","Singlet exchange","Finite combined-area FL dynamics and canonical controls saved; reservoir and thermal-family comparison open."),("T11","Hamiltonian studies","Four/five-site persistence, prepared K=4 geometry, candidate volume and signed-grasp Hamiltonians, and 50 prepared-FL trajectories are saved. Physical model selection and broader parameter/size studies remain open.")]],"completed":[{"id":"T10","title":"Variable-face RS catalogue","description":"Declared K=2,3,4 catalogue complete."},{"id":"T1b","title":"Real-plane volume check","description":"Independent positive-volume comparison saved."},{"id":"T5a/T5a′/T5b/T5e","title":"Archived numerical pilots","description":"Recorded scope complete; finite sampling and proxy interpretation retained."}],"pending":[]}
     combined=d["tasks"]["completed"].pop()
     d["tasks"]["completed"].extend({"id":task,"title":title,"description":combined["description"]} for task,title in
         [("T5a","Magnetization pilot"),("T5a′","Local chirality"),("T5b","Perturbation response"),("T5e","Recorded large-K families")])

@@ -257,11 +257,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[0]"
       },
       "assessment": {
@@ -531,11 +531,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[1]"
       },
       "assessment": {
@@ -606,11 +606,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[2]"
       },
       "assessment": {
@@ -681,11 +681,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[3]"
       },
       "assessment": {
@@ -756,11 +756,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[4]"
       },
       "assessment": {
@@ -831,11 +831,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[5]"
       },
       "assessment": {
@@ -906,11 +906,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[6]"
       },
       "assessment": {
@@ -981,11 +981,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[7]"
       },
       "assessment": {
@@ -1056,11 +1056,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[8]"
       },
       "assessment": {
@@ -1131,11 +1131,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[9]"
       },
       "assessment": {
@@ -1206,11 +1206,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[10]"
       },
       "assessment": {
@@ -1281,11 +1281,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[11]"
       },
       "assessment": {
@@ -1356,11 +1356,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[12]"
       },
       "assessment": {
@@ -1431,11 +1431,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[13]"
       },
       "assessment": {
@@ -1506,11 +1506,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[14]"
       },
       "assessment": {
@@ -1581,11 +1581,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[15]"
       },
       "assessment": {
@@ -1656,11 +1656,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[16]"
       },
       "assessment": {
@@ -1731,11 +1731,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[17]"
       },
       "assessment": {
@@ -1806,11 +1806,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[18]"
       },
       "assessment": {
@@ -1881,11 +1881,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[19]"
       },
       "assessment": {
@@ -1956,11 +1956,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[20]"
       },
       "assessment": {
@@ -2031,11 +2031,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[21]"
       },
       "assessment": {
@@ -2106,11 +2106,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[22]"
       },
       "assessment": {
@@ -2181,11 +2181,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[23]"
       },
       "assessment": {
@@ -2256,11 +2256,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[24]"
       },
       "assessment": {
@@ -2331,11 +2331,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[25]"
       },
       "assessment": {
@@ -2406,11 +2406,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[26]"
       },
       "assessment": {
@@ -2481,11 +2481,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[27]"
       },
       "assessment": {
@@ -2556,11 +2556,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[28]"
       },
       "assessment": {
@@ -2631,11 +2631,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.hamiltonian.table.rows[29]"
       },
       "assessment": {
@@ -2683,6 +2683,12 @@
     }
   ],
   "docs": [
+    {
+      "title": "Hamiltonian studies",
+      "path": "../study-assets/notes/hamiltonian-studies.txt",
+      "sourcePath": "notes/hamiltonian-studies.md",
+      "description": "Explanation and calculation record for this study."
+    },
     {
       "title": "Numerical studies overview",
       "path": "../index.html"

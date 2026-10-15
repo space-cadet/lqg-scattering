@@ -1,0 +1,15 @@
+{
+  "numpy": "1.24.3",
+  "source_sha256": {
+    "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
+    "code/python/lqg_scattering/intertwiners.py": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b",
+    "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5",
+    "code/python/lqg_scattering/tetrahedra.py": "9453669acd3c1dadf2320fa3b7859b55133fc45791a71a4ee37086f915384d3e"
+  },
+  "artifacts": {
+    "dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
+    "summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
+    "protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
+    "inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd"
+  }
+}

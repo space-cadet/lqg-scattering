@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-16",
+  "task": "T9",
+  "state": "normalized double-singlet projection of squeezed F12 reference in conjugate copies",
+  "input_area_per_copy": 1,
+  "faces": 4,
+  "temperature": "T*=kBT/(hbar omega)",
+  "range": [
+    0.05,
+    5.0
+  ],
+  "core_previously_validated_range": [
+    0.05,
+    2.0
+  ],
+  "entropy_units": "S/kB in nats",
+  "tolerance": 1e-09,
+  "cutoff": "adaptive; positive-polynomial envelope bounds infinite entropy and area tails",
+  "claims": "bipartite pure-state entropy in the fixed ordinary L/R tensor factorization; no Gibbs or heat-capacity identification",
+  "seeds": "none: deterministic exact-sector sums"
+}

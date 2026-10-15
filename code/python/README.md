@@ -22,6 +22,8 @@ python -m pip install -e 'code/python[visualization]'
 | `total_spin` | Total SU(2) operators, closure diagnostics, singlet weight, and spin-sector probabilities |
 | `preparations` | Fixed-number FL tetrahedron and face-product coherent kets |
 | `thermal` | Gibbs weights, degenerate-subspace averages, site reduced entropy, and Schmidt-form TFD readouts |
+| `thermal_projection` | Shared squeezed-reference coefficients, singlet eigenvalues, and positive-volume sector traces |
+| `thermal_entanglement` | Closed-reference Schmidt sums, entropy decomposition, joint singlet coherence, and infinite-tail estimates |
 | `analysis` | Shared power-law fit and local logarithmic slopes |
 | `conventions` | Shared project units and conventions |
 

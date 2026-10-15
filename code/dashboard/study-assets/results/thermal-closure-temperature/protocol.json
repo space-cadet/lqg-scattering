@@ -1,0 +1,25 @@
+{
+  "state": "U_beta(|J=1,F12>_L tensor |conjugate J=1,F12>_R)",
+  "faces": 4,
+  "input": "normalized F12 dagger vacuum / sqrt(2) in each copy",
+  "observable": "ordinary per-copy G=sum_i J_i; G^2=S(S+1)",
+  "units": "angular momentum in hbar units; T*=kBT/(hbar omega)",
+  "q_max": 160,
+  "temperature_range": [
+    0.05,
+    2.0
+  ],
+  "curve_points": 121,
+  "tolerance": 2e-10,
+  "normalization": "no cutoff renormalization",
+  "relative_measure": "<G^2>/<A(A+1)>, A=q/2",
+  "check_betas": [
+    0.5,
+    1.0,
+    2.0,
+    4.0,
+    8.0,
+    20.0
+  ],
+  "transformed_and_combined_closure": "exactly zero by conjugation/dual-copy invariance"
+}

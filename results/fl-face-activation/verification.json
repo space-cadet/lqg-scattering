@@ -1,0 +1,1813 @@
+{
+  "status": "passed",
+  "comparisons": 360,
+  "independence": "direct sparse full-occupation exponential and independently constructed FL kets, K=1,2; large-area recurrence and conservation checks",
+  "maximum_residual": 1.8189894035458565e-11,
+  "source_sha256": {
+    "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
+    "code/python/lqg_scattering/hamiltonian.py": "16d82364d93cbb009448df99803cc21a314ce755a4b66125dd16fe4bede51d5e"
+  },
+  "maximum_residual_over_tolerance": 9.094947017729282e-05,
+  "checks": [
+    {
+      "name": "ket-L5-K1-baseline-0.0",
+      "residual": 7.093696453932739e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L5-K1-baseline-0.0",
+      "residual": 3.3306690738754696e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L5-K1-baseline-0.0",
+      "residual": 6.661338147750939e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L5-K1-baseline-0.0",
+      "residual": 2.180110645443405e-32,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L5-K1-baseline-0.0",
+      "residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L5-K1-baseline-0.0",
+      "residual": 4.579669976578771e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L5-K1-baseline-0.1",
+      "residual": 8.117754762569214e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L5-K1-baseline-0.1",
+      "residual": 3.3306690738754696e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L5-K1-baseline-0.1",
+      "residual": 6.661338147750939e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L5-K1-baseline-0.1",
+      "residual": 6.938893903907228e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L5-K1-baseline-0.1",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L5-K1-baseline-0.1",
+      "residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L5-K1-baseline-0.25",
+      "residual": 8.954855721197956e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L5-K1-baseline-0.25",
+      "residual": 3.3306690738754696e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L5-K1-baseline-0.25",
+      "residual": 6.661338147750939e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L5-K1-baseline-0.25",
+      "residual": 2.0816681711721685e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L5-K1-baseline-0.25",
+      "residual": 1.3322676295501878e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L5-K1-baseline-0.25",
+      "residual": 5.828670879282072e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L5-K1-baseline-0.5",
+      "residual": 9.010606577030313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L5-K1-baseline-0.5",
+      "residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L5-K1-baseline-0.5",
+      "residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L5-K1-baseline-0.5",
+      "residual": 2.7755575615628914e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L5-K1-baseline-0.5",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L5-K1-baseline-0.5",
+      "residual": 5.828670879282072e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L5-K1-baseline-1.0",
+      "residual": 1.1176218093873342e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L5-K1-baseline-1.0",
+      "residual": 2.7755575615628914e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L5-K1-baseline-1.0",
+      "residual": 5.551115123125783e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L5-K1-baseline-1.0",
+      "residual": 1.7691253372851575e-32,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L5-K1-baseline-1.0",
+      "residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L5-K1-baseline-1.0",
+      "residual": 4.996003610813204e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L5-K1-phase_shifted-0.0",
+      "residual": 6.90989774936003e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L5-K1-phase_shifted-0.0",
+      "residual": 3.885780586188048e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L5-K1-phase_shifted-0.0",
+      "residual": 7.771561172376096e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L5-K1-phase_shifted-0.0",
+      "residual": 6.938893903907228e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L5-K1-phase_shifted-0.0",
+      "residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L5-K1-phase_shifted-0.0",
+      "residual": 5.551115123125783e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L5-K1-phase_shifted-0.1",
+      "residual": 8.298696546449192e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L5-K1-phase_shifted-0.1",
+      "residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L5-K1-phase_shifted-0.1",
+      "residual": 8.881784197001252e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L5-K1-phase_shifted-0.1",
+      "residual": 5.551115123125783e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L5-K1-phase_shifted-0.1",
+      "residual": 6.661338147750939e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L5-K1-phase_shifted-0.1",
+      "residual": 6.661338147750939e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L5-K1-phase_shifted-0.25",
+      "residual": 6.993642710288909e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L5-K1-phase_shifted-0.25",
+      "residual": 3.3306690738754696e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L5-K1-phase_shifted-0.25",
+      "residual": 6.661338147750939e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L5-K1-phase_shifted-0.25",
+      "residual": 5.551115123125783e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L5-K1-phase_shifted-0.25",
+      "residual": 9.992007221626409e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L5-K1-phase_shifted-0.25",
+      "residual": 8.881784197001252e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L5-K1-phase_shifted-0.5",
+      "residual": 8.210771122966337e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L5-K1-phase_shifted-0.5",
+      "residual": 2.7755575615628914e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L5-K1-phase_shifted-0.5",
+      "residual": 5.551115123125783e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L5-K1-phase_shifted-0.5",
+      "residual": 6.245004513516506e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L5-K1-phase_shifted-0.5",
+      "residual": 1.1102230246251565e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L5-K1-phase_shifted-0.5",
+      "residual": 7.216449660063518e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L5-K1-phase_shifted-1.0",
+      "residual": 8.186781275628048e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L5-K1-phase_shifted-1.0",
+      "residual": 3.885780586188048e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L5-K1-phase_shifted-1.0",
+      "residual": 7.771561172376096e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L5-K1-phase_shifted-1.0",
+      "residual": 5.953700560655719e-32,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L5-K1-phase_shifted-1.0",
+      "residual": 1.1102230246251565e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L5-K1-phase_shifted-1.0",
+      "residual": 1.0547118733938987e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L5-K2-baseline-0.0",
+      "residual": 1.0001831711063982e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L5-K2-baseline-0.0",
+      "residual": 5.551115123125783e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L5-K2-baseline-0.0",
+      "residual": 6.661338147750939e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L5-K2-baseline-0.0",
+      "residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L5-K2-baseline-0.0",
+      "residual": 8.881784197001252e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L5-K2-baseline-0.0",
+      "residual": 6.938893903907228e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L5-K2-baseline-0.1",
+      "residual": 1.1312131538936249e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L5-K2-baseline-0.1",
+      "residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L5-K2-baseline-0.1",
+      "residual": 5.551115123125783e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L5-K2-baseline-0.1",
+      "residual": 1.3877787807814457e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L5-K2-baseline-0.1",
+      "residual": 8.881784197001252e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L5-K2-baseline-0.1",
+      "residual": 8.881784197001252e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L5-K2-baseline-0.25",
+      "residual": 1.2426550458411747e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L5-K2-baseline-0.25",
+      "residual": 6.661338147750939e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L5-K2-baseline-0.25",
+      "residual": 5.551115123125783e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L5-K2-baseline-0.25",
+      "residual": 2.7755575615628914e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L5-K2-baseline-0.25",
+      "residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L5-K2-baseline-0.25",
+      "residual": 1.1102230246251565e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L5-K2-baseline-0.5",
+      "residual": 1.1701669680918271e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L5-K2-baseline-0.5",
+      "residual": 3.3306690738754696e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L5-K2-baseline-0.5",
+      "residual": 1.1102230246251565e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L5-K2-baseline-0.5",
+      "residual": 3.7470027081099033e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L5-K2-baseline-0.5",
+      "residual": 1.3322676295501878e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L5-K2-baseline-0.5",
+      "residual": 1.4432899320127035e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L5-K2-baseline-1.0",
+      "residual": 1.797777533524416e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L5-K2-baseline-1.0",
+      "residual": 8.326672684688674e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L5-K2-baseline-1.0",
+      "residual": 9.992007221626409e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L5-K2-baseline-1.0",
+      "residual": 2.7755575615628914e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L5-K2-baseline-1.0",
+      "residual": 3.1086244689504383e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L5-K2-baseline-1.0",
+      "residual": 1.5543122344752192e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L5-K2-phase_shifted-0.0",
+      "residual": 9.403555052696778e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L5-K2-phase_shifted-0.0",
+      "residual": 6.661338147750939e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L5-K2-phase_shifted-0.0",
+      "residual": 8.881784197001252e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L5-K2-phase_shifted-0.0",
+      "residual": 1.5265566588595902e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L5-K2-phase_shifted-0.0",
+      "residual": 1.1102230246251565e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L5-K2-phase_shifted-0.0",
+      "residual": 1.3322676295501878e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L5-K2-phase_shifted-0.1",
+      "residual": 1.0633805702029292e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L5-K2-phase_shifted-0.1",
+      "residual": 7.771561172376096e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L5-K2-phase_shifted-0.1",
+      "residual": 8.881784197001252e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L5-K2-phase_shifted-0.1",
+      "residual": 1.942890293094024e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L5-K2-phase_shifted-0.1",
+      "residual": 1.3322676295501878e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L5-K2-phase_shifted-0.1",
+      "residual": 1.5543122344752192e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L5-K2-phase_shifted-0.25",
+      "residual": 1.0544491289704452e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L5-K2-phase_shifted-0.25",
+      "residual": 6.661338147750939e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L5-K2-phase_shifted-0.25",
+      "residual": 1.0547118733938987e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L5-K2-phase_shifted-0.25",
+      "residual": 1.1102230246251565e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L5-K2-phase_shifted-0.25",
+      "residual": 1.9984014443252818e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L5-K2-phase_shifted-0.25",
+      "residual": 1.9984014443252818e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L5-K2-phase_shifted-0.5",
+      "residual": 1.2786011072633247e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L5-K2-phase_shifted-0.5",
+      "residual": 1.1102230246251565e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L5-K2-phase_shifted-0.5",
+      "residual": 9.992007221626409e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L5-K2-phase_shifted-0.5",
+      "residual": 2.636779683484747e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L5-K2-phase_shifted-0.5",
+      "residual": 1.3322676295501878e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L5-K2-phase_shifted-0.5",
+      "residual": 1.3322676295501878e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L5-K2-phase_shifted-1.0",
+      "residual": 1.447292891385634e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L5-K2-phase_shifted-1.0",
+      "residual": 6.661338147750939e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L5-K2-phase_shifted-1.0",
+      "residual": 8.881784197001252e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L5-K2-phase_shifted-1.0",
+      "residual": 1.1102230246251565e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L5-K2-phase_shifted-1.0",
+      "residual": 1.7763568394002505e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L5-K2-phase_shifted-1.0",
+      "residual": 2.55351295663786e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L6-K1-baseline-0.0",
+      "residual": 4.679806955904886e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L6-K1-baseline-0.0",
+      "residual": 1.1102230246251565e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L6-K1-baseline-0.0",
+      "residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L6-K1-baseline-0.0",
+      "residual": 1.137971984744459e-32,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L6-K1-baseline-0.0",
+      "residual": 2.886579864025407e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L6-K1-baseline-0.0",
+      "residual": 5.551115123125783e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L6-K1-baseline-0.1",
+      "residual": 5.693290687419666e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L6-K1-baseline-0.1",
+      "residual": 1.6653345369377348e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L6-K1-baseline-0.1",
+      "residual": 3.3306690738754696e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L6-K1-baseline-0.1",
+      "residual": 8.673617379884035e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L6-K1-baseline-0.1",
+      "residual": 2.886579864025407e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L6-K1-baseline-0.1",
+      "residual": 7.494005416219807e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L6-K1-baseline-0.25",
+      "residual": 7.350609231484043e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L6-K1-baseline-0.25",
+      "residual": 2.7755575615628914e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L6-K1-baseline-0.25",
+      "residual": 5.551115123125783e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L6-K1-baseline-0.25",
+      "residual": 5.551115123125783e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L6-K1-baseline-0.25",
+      "residual": 2.220446049250313e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L6-K1-baseline-0.25",
+      "residual": 6.661338147750939e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L6-K1-baseline-0.5",
+      "residual": 8.701939765975523e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L6-K1-baseline-0.5",
+      "residual": 1.6653345369377348e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L6-K1-baseline-0.5",
+      "residual": 3.3306690738754696e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L6-K1-baseline-0.5",
+      "residual": 3.469446951953614e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L6-K1-baseline-0.5",
+      "residual": 8.881784197001252e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L6-K1-baseline-0.5",
+      "residual": 4.85722573273506e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L6-K1-baseline-1.0",
+      "residual": 1.5976751300702724e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L6-K1-baseline-1.0",
+      "residual": 2.7755575615628914e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L6-K1-baseline-1.0",
+      "residual": 5.551115123125783e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L6-K1-baseline-1.0",
+      "residual": 6.938893903907228e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L6-K1-baseline-1.0",
+      "residual": 3.552713678800501e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L6-K1-baseline-1.0",
+      "residual": 9.992007221626409e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L6-K1-phase_shifted-0.0",
+      "residual": 3.9880190270229036e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L6-K1-phase_shifted-0.0",
+      "residual": 1.942890293094024e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L6-K1-phase_shifted-0.0",
+      "residual": 3.885780586188048e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L6-K1-phase_shifted-0.0",
+      "residual": 8.358099193224039e-33,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L6-K1-phase_shifted-0.0",
+      "residual": 1.2212453270876722e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L6-K1-phase_shifted-0.0",
+      "residual": 3.412477922212743e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L6-K1-phase_shifted-0.1",
+      "residual": 5.088601783187669e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L6-K1-phase_shifted-0.1",
+      "residual": 1.6653345369377348e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L6-K1-phase_shifted-0.1",
+      "residual": 3.3306690738754696e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L6-K1-phase_shifted-0.1",
+      "residual": 9.540979117872439e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L6-K1-phase_shifted-0.1",
+      "residual": 1.3322676295501878e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L6-K1-phase_shifted-0.1",
+      "residual": 4.85722573273506e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L6-K1-phase_shifted-0.25",
+      "residual": 4.437346805140536e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L6-K1-phase_shifted-0.25",
+      "residual": 1.3877787807814457e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L6-K1-phase_shifted-0.25",
+      "residual": 2.7755575615628914e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L6-K1-phase_shifted-0.25",
+      "residual": 3.122502256758253e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L6-K1-phase_shifted-0.25",
+      "residual": 1.2212453270876722e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L6-K1-phase_shifted-0.25",
+      "residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L6-K1-phase_shifted-0.5",
+      "residual": 9.122449412684665e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L6-K1-phase_shifted-0.5",
+      "residual": 2.7755575615628914e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L6-K1-phase_shifted-0.5",
+      "residual": 5.551115123125783e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L6-K1-phase_shifted-0.5",
+      "residual": 3.469446951953614e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L6-K1-phase_shifted-0.5",
+      "residual": 1.2212453270876722e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L6-K1-phase_shifted-0.5",
+      "residual": 9.43689570931383e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L6-K1-phase_shifted-1.0",
+      "residual": 1.6018924885767683e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L6-K1-phase_shifted-1.0",
+      "residual": 3.3306690738754696e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L6-K1-phase_shifted-1.0",
+      "residual": 6.661338147750939e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L6-K1-phase_shifted-1.0",
+      "residual": 6.938893903907228e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L6-K1-phase_shifted-1.0",
+      "residual": 2.1094237467877974e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L6-K1-phase_shifted-1.0",
+      "residual": 1.5373561564716647e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L6-K2-baseline-0.0",
+      "residual": 6.945605200089688e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L6-K2-baseline-0.0",
+      "residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L6-K2-baseline-0.0",
+      "residual": 5.551115123125783e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L6-K2-baseline-0.0",
+      "residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L6-K2-baseline-0.0",
+      "residual": 5.773159728050814e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L6-K2-baseline-0.0",
+      "residual": 1.3322676295501878e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L6-K2-baseline-0.1",
+      "residual": 7.221912929182509e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L6-K2-baseline-0.1",
+      "residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L6-K2-baseline-0.1",
+      "residual": 5.551115123125783e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L6-K2-baseline-0.1",
+      "residual": 2.3592239273284576e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L6-K2-baseline-0.1",
+      "residual": 6.217248937900877e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L6-K2-baseline-0.1",
+      "residual": 1.1102230246251565e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L6-K2-baseline-0.25",
+      "residual": 1.108175358801309e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L6-K2-baseline-0.25",
+      "residual": 5.551115123125783e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L6-K2-baseline-0.25",
+      "residual": 5.551115123125783e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L6-K2-baseline-0.25",
+      "residual": 1.249000902703301e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L6-K2-baseline-0.25",
+      "residual": 8.881784197001252e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L6-K2-baseline-0.25",
+      "residual": 1.3322676295501878e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L6-K2-baseline-0.5",
+      "residual": 1.3248320689560204e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L6-K2-baseline-0.5",
+      "residual": 5.551115123125783e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L6-K2-baseline-0.5",
+      "residual": 7.771561172376096e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L6-K2-baseline-0.5",
+      "residual": 1.6653345369377348e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L6-K2-baseline-0.5",
+      "residual": 3.1086244689504383e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L6-K2-baseline-0.5",
+      "residual": 2.220446049250313e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L6-K2-baseline-1.0",
+      "residual": 1.9669283349101555e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L6-K2-baseline-1.0",
+      "residual": 6.106226635438361e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L6-K2-baseline-1.0",
+      "residual": 6.661338147750939e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L6-K2-baseline-1.0",
+      "residual": 1.1102230246251565e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L6-K2-baseline-1.0",
+      "residual": 5.329070518200751e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L6-K2-baseline-1.0",
+      "residual": 1.7763568394002505e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L6-K2-phase_shifted-0.0",
+      "residual": 5.470779066129103e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L6-K2-phase_shifted-0.0",
+      "residual": 3.3306690738754696e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L6-K2-phase_shifted-0.0",
+      "residual": 5.551115123125783e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L6-K2-phase_shifted-0.0",
+      "residual": 1.6653345369377348e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L6-K2-phase_shifted-0.0",
+      "residual": 2.6645352591003757e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L6-K2-phase_shifted-0.0",
+      "residual": 7.935178869050643e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L6-K2-phase_shifted-0.1",
+      "residual": 6.94560652960355e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L6-K2-phase_shifted-0.1",
+      "residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L6-K2-phase_shifted-0.1",
+      "residual": 6.661338147750939e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L6-K2-phase_shifted-0.1",
+      "residual": 1.8041124150158794e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L6-K2-phase_shifted-0.1",
+      "residual": 2.6645352591003757e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L6-K2-phase_shifted-0.1",
+      "residual": 1.0269562977782698e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L6-K2-phase_shifted-0.25",
+      "residual": 7.949970960623362e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L6-K2-phase_shifted-0.25",
+      "residual": 1.6653345369377348e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L6-K2-phase_shifted-0.25",
+      "residual": 3.3306690738754696e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L6-K2-phase_shifted-0.25",
+      "residual": 4.3021142204224816e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L6-K2-phase_shifted-0.25",
+      "residual": 2.220446049250313e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L6-K2-phase_shifted-0.25",
+      "residual": 7.771561172376096e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L6-K2-phase_shifted-0.5",
+      "residual": 1.2301522276339672e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L6-K2-phase_shifted-0.5",
+      "residual": 6.106226635438361e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L6-K2-phase_shifted-0.5",
+      "residual": 6.661338147750939e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L6-K2-phase_shifted-0.5",
+      "residual": 2.7755575615628914e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L6-K2-phase_shifted-0.5",
+      "residual": 2.220446049250313e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L6-K2-phase_shifted-0.5",
+      "residual": 7.771561172376096e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ket-L6-K2-phase_shifted-1.0",
+      "residual": 1.927521275502042e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "means-L6-K2-phase_shifted-1.0",
+      "residual": 5.551115123125783e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "active-L6-K2-phase_shifted-1.0",
+      "residual": 7.771561172376096e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "variance-L6-K2-phase_shifted-1.0",
+      "residual": 1.1102230246251565e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-L6-K2-phase_shifted-1.0",
+      "residual": 3.1086244689504383e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "local-energy-L6-K2-phase_shifted-1.0",
+      "residual": 2.5721381486713917e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "recurrence-0",
+      "residual": 7.045812243893598e-32,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-conservation-0",
+      "residual": 2.6645352591003757e-15,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "area-conservation-0",
+      "residual": 8.881784197001252e-16,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "classical-closure-0",
+      "residual": 3.3540883326478406e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normal-span-0",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "maximum-distinct-directions-0",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "recurrence-1",
+      "residual": 7.045812243893598e-32,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-conservation-1",
+      "residual": 2.842170943040401e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "area-conservation-1",
+      "residual": 7.105427357601002e-15,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "classical-closure-1",
+      "residual": 3.3540883326478406e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normal-span-1",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "maximum-distinct-directions-1",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "recurrence-2",
+      "residual": 7.045812243893599e-32,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-conservation-2",
+      "residual": 1.7053025658242404e-13,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "area-conservation-2",
+      "residual": 4.263256414560601e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "classical-closure-2",
+      "residual": 3.3540883326478406e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normal-span-2",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "maximum-distinct-directions-2",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "recurrence-3",
+      "residual": 7.045812243893598e-32,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-conservation-3",
+      "residual": 1.5916157281026244e-12,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "area-conservation-3",
+      "residual": 4.547473508864641e-13,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "classical-closure-3",
+      "residual": 3.3540883326478406e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normal-span-3",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "maximum-distinct-directions-3",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "recurrence-4",
+      "residual": 7.045812243893598e-32,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-conservation-4",
+      "residual": 1.4551915228366852e-11,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "area-conservation-4",
+      "residual": 5.4569682106375694e-12,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "classical-closure-4",
+      "residual": 3.3540883326478406e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normal-span-4",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "maximum-distinct-directions-4",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "recurrence-5",
+      "residual": 1.3812444874784096e-31,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-conservation-5",
+      "residual": 1.5543122344752192e-15,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "area-conservation-5",
+      "residual": 8.881784197001252e-16,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "classical-closure-5",
+      "residual": 1.1207602539310125e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normal-span-5",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "maximum-distinct-directions-5",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "recurrence-6",
+      "residual": 1.3812444874784096e-31,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-conservation-6",
+      "residual": 1.7763568394002505e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "area-conservation-6",
+      "residual": 1.0658141036401503e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "classical-closure-6",
+      "residual": 1.1207602539310125e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normal-span-6",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "maximum-distinct-directions-6",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "recurrence-7",
+      "residual": 1.3812444874784096e-31,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-conservation-7",
+      "residual": 8.526512829121202e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "area-conservation-7",
+      "residual": 5.684341886080802e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "classical-closure-7",
+      "residual": 1.1207602539310125e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normal-span-7",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "maximum-distinct-directions-7",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "recurrence-8",
+      "residual": 1.3812444874784096e-31,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-conservation-8",
+      "residual": 9.094947017729282e-13,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "area-conservation-8",
+      "residual": 5.684341886080801e-13,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "classical-closure-8",
+      "residual": 1.1207602539310125e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normal-span-8",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "maximum-distinct-directions-8",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "recurrence-9",
+      "residual": 1.3812444874784096e-31,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-conservation-9",
+      "residual": 7.275957614183426e-12,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "area-conservation-9",
+      "residual": 5.4569682106375694e-12,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "classical-closure-9",
+      "residual": 1.1207602539310125e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normal-span-9",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "maximum-distinct-directions-9",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "recurrence-10",
+      "residual": 1.1318394269220218e-30,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-conservation-10",
+      "residual": 3.1086244689504383e-15,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "area-conservation-10",
+      "residual": 8.881784197001252e-16,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "classical-closure-10",
+      "residual": 5.611995424028156e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normal-span-10",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "maximum-distinct-directions-10",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "recurrence-11",
+      "residual": 1.1318394269220218e-30,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-conservation-11",
+      "residual": 2.842170943040401e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "area-conservation-11",
+      "residual": 1.0658141036401503e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "classical-closure-11",
+      "residual": 5.611995424028156e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normal-span-11",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "maximum-distinct-directions-11",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "recurrence-12",
+      "residual": 1.1318394269220218e-30,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-conservation-12",
+      "residual": 1.7053025658242404e-13,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "area-conservation-12",
+      "residual": 5.684341886080802e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "classical-closure-12",
+      "residual": 5.611995424028156e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normal-span-12",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "maximum-distinct-directions-12",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "recurrence-13",
+      "residual": 1.131839426922022e-30,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-conservation-13",
+      "residual": 1.5916157281026244e-12,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "area-conservation-13",
+      "residual": 5.684341886080801e-13,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "classical-closure-13",
+      "residual": 5.611995424028156e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normal-span-13",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "maximum-distinct-directions-13",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "recurrence-14",
+      "residual": 1.1318394269220218e-30,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-conservation-14",
+      "residual": 1.8189894035458565e-11,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "area-conservation-14",
+      "residual": 7.275957614183426e-12,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "classical-closure-14",
+      "residual": 5.611995424028156e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normal-span-14",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "maximum-distinct-directions-14",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "recurrence-15",
+      "residual": 5.274192087118169e-31,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-conservation-15",
+      "residual": 1.5543122344752192e-15,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "area-conservation-15",
+      "residual": 1.3322676295501878e-15,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "classical-closure-15",
+      "residual": 6.758337520795028e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normal-span-15",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "maximum-distinct-directions-15",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "recurrence-16",
+      "residual": 5.274192087118169e-31,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-conservation-16",
+      "residual": 2.1316282072803006e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "area-conservation-16",
+      "residual": 1.0658141036401503e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "classical-closure-16",
+      "residual": 6.758337520795028e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normal-span-16",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "maximum-distinct-directions-16",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "recurrence-17",
+      "residual": 5.27419208711817e-31,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-conservation-17",
+      "residual": 1.1368683772161603e-13,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "area-conservation-17",
+      "residual": 5.684341886080802e-14,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "classical-closure-17",
+      "residual": 6.758337520795028e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normal-span-17",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "maximum-distinct-directions-17",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "recurrence-18",
+      "residual": 5.274192087118169e-31,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-conservation-18",
+      "residual": 9.094947017729282e-13,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "area-conservation-18",
+      "residual": 6.821210263296962e-13,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "classical-closure-18",
+      "residual": 6.758337520795028e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normal-span-18",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "maximum-distinct-directions-18",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "recurrence-19",
+      "residual": 5.274192087118169e-31,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "energy-conservation-19",
+      "residual": 8.185452315956354e-12,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "area-conservation-19",
+      "residual": 7.275957614183426e-12,
+      "tolerance": 2e-07
+    },
+    {
+      "name": "classical-closure-19",
+      "residual": 6.758337520795028e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "normal-span-19",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "maximum-distinct-directions-19",
+      "residual": 0.0,
+      "tolerance": 2e-10
+    }
+  ]
+}

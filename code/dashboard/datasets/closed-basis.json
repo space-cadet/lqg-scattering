@@ -222,14 +222,14 @@
           "results/closed-basis-volume/summary.json": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a",
           "results/closed-state-enumeration/basis_k2_k4.csv": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93",
           "results/closed-state-enumeration/summary.json": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c",
-          "notes/thermal-area-sectors.md": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+          "notes/thermal-area-sectors.md": "9849e7134d8cd81ff07c2665dd9a63f94fdf98ce41092bc6ea6e87c3c8384db8"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.closed-basis.table.rows[0]"
       },
       "assessment": {
@@ -537,9 +537,9 @@
           "label": "thermal-area-sectors.md",
           "path": "../study-assets/notes/thermal-area-sectors.txt",
           "kind": "data",
-          "sha256": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e",
+          "sha256": "9849e7134d8cd81ff07c2665dd9a63f94fdf98ce41092bc6ea6e87c3c8384db8",
           "sourcePath": "notes/thermal-area-sectors.md",
-          "sourceSha256": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+          "sourceSha256": "9849e7134d8cd81ff07c2665dd9a63f94fdf98ce41092bc6ea6e87c3c8384db8"
         }
       ],
       "figures": [
@@ -646,14 +646,14 @@
           "results/closed-basis-volume/summary.json": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a",
           "results/closed-state-enumeration/basis_k2_k4.csv": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93",
           "results/closed-state-enumeration/summary.json": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c",
-          "notes/thermal-area-sectors.md": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+          "notes/thermal-area-sectors.md": "9849e7134d8cd81ff07c2665dd9a63f94fdf98ce41092bc6ea6e87c3c8384db8"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.closed-basis.table.rows[1]"
       },
       "assessment": {
@@ -734,14 +734,14 @@
           "results/closed-basis-volume/summary.json": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a",
           "results/closed-state-enumeration/basis_k2_k4.csv": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93",
           "results/closed-state-enumeration/summary.json": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c",
-          "notes/thermal-area-sectors.md": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+          "notes/thermal-area-sectors.md": "9849e7134d8cd81ff07c2665dd9a63f94fdf98ce41092bc6ea6e87c3c8384db8"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.closed-basis.table.rows[2]"
       },
       "assessment": {
@@ -822,14 +822,14 @@
           "results/closed-basis-volume/summary.json": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a",
           "results/closed-state-enumeration/basis_k2_k4.csv": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93",
           "results/closed-state-enumeration/summary.json": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c",
-          "notes/thermal-area-sectors.md": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+          "notes/thermal-area-sectors.md": "9849e7134d8cd81ff07c2665dd9a63f94fdf98ce41092bc6ea6e87c3c8384db8"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.closed-basis.table.rows[3]"
       },
       "assessment": {
@@ -910,14 +910,14 @@
           "results/closed-basis-volume/summary.json": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a",
           "results/closed-state-enumeration/basis_k2_k4.csv": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93",
           "results/closed-state-enumeration/summary.json": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c",
-          "notes/thermal-area-sectors.md": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+          "notes/thermal-area-sectors.md": "9849e7134d8cd81ff07c2665dd9a63f94fdf98ce41092bc6ea6e87c3c8384db8"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.closed-basis.table.rows[4]"
       },
       "assessment": {
@@ -998,14 +998,14 @@
           "results/closed-basis-volume/summary.json": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a",
           "results/closed-state-enumeration/basis_k2_k4.csv": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93",
           "results/closed-state-enumeration/summary.json": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c",
-          "notes/thermal-area-sectors.md": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+          "notes/thermal-area-sectors.md": "9849e7134d8cd81ff07c2665dd9a63f94fdf98ce41092bc6ea6e87c3c8384db8"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.closed-basis.table.rows[5]"
       },
       "assessment": {
@@ -1086,14 +1086,14 @@
           "results/closed-basis-volume/summary.json": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a",
           "results/closed-state-enumeration/basis_k2_k4.csv": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93",
           "results/closed-state-enumeration/summary.json": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c",
-          "notes/thermal-area-sectors.md": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+          "notes/thermal-area-sectors.md": "9849e7134d8cd81ff07c2665dd9a63f94fdf98ce41092bc6ea6e87c3c8384db8"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.closed-basis.table.rows[6]"
       },
       "assessment": {
@@ -1174,14 +1174,14 @@
           "results/closed-basis-volume/summary.json": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a",
           "results/closed-state-enumeration/basis_k2_k4.csv": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93",
           "results/closed-state-enumeration/summary.json": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c",
-          "notes/thermal-area-sectors.md": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+          "notes/thermal-area-sectors.md": "9849e7134d8cd81ff07c2665dd9a63f94fdf98ce41092bc6ea6e87c3c8384db8"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.closed-basis.table.rows[7]"
       },
       "assessment": {
@@ -1262,14 +1262,14 @@
           "results/closed-basis-volume/summary.json": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a",
           "results/closed-state-enumeration/basis_k2_k4.csv": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93",
           "results/closed-state-enumeration/summary.json": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c",
-          "notes/thermal-area-sectors.md": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+          "notes/thermal-area-sectors.md": "9849e7134d8cd81ff07c2665dd9a63f94fdf98ce41092bc6ea6e87c3c8384db8"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.closed-basis.table.rows[8]"
       },
       "assessment": {
@@ -1350,14 +1350,14 @@
           "results/closed-basis-volume/summary.json": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a",
           "results/closed-state-enumeration/basis_k2_k4.csv": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93",
           "results/closed-state-enumeration/summary.json": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c",
-          "notes/thermal-area-sectors.md": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+          "notes/thermal-area-sectors.md": "9849e7134d8cd81ff07c2665dd9a63f94fdf98ce41092bc6ea6e87c3c8384db8"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.closed-basis.table.rows[9]"
       },
       "assessment": {
@@ -1438,14 +1438,14 @@
           "results/closed-basis-volume/summary.json": "912e9805dc5a437c2e795db85da01a2144f14ca694b3f408785351b2e54df44a",
           "results/closed-state-enumeration/basis_k2_k4.csv": "0c542f3168133bcac44c421e0574cd286476bf92fb41d059a9d65f83ba252f93",
           "results/closed-state-enumeration/summary.json": "8e8e622b5cd8fe7574a5f10591fa9635ec983e9f9c09eae8e31d8b47aecdcc7c",
-          "notes/thermal-area-sectors.md": "98202947e6156cf62c5f7858e48e93e12c50506102a7165c9972fb50c5c6e10e"
+          "notes/thermal-area-sectors.md": "9849e7134d8cd81ff07c2665dd9a63f94fdf98ce41092bc6ea6e87c3c8384db8"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "studies.closed-basis.table.rows[10]"
       },
       "assessment": {
@@ -1485,6 +1485,12 @@
     }
   ],
   "docs": [
+    {
+      "title": "Thermal area sectors",
+      "path": "../study-assets/notes/thermal-area-sectors.txt",
+      "sourcePath": "notes/thermal-area-sectors.md",
+      "description": "Explanation and calculation record for this study."
+    },
     {
       "title": "Numerical studies overview",
       "path": "../index.html"

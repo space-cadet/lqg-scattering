@@ -1,0 +1,1354 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "Large-area tetrahedron: face activation and recurrence",
+    "subtitle": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur."
+  },
+  "columns": [
+    {
+      "key": "runId",
+      "label": "Case",
+      "type": "string"
+    },
+    {
+      "key": "parameters.channels",
+      "label": "channels",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.K",
+      "label": "K",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.phase_case",
+      "label": "phase case",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.singlet_dimension",
+      "label": "singlet dimension",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.initial_energy",
+      "label": "initial energy",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.initial_active_faces",
+      "label": "initial active faces",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.maximum_sampled_active_faces",
+      "label": "maximum sampled active faces",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.maximum_sampled_new_area",
+      "label": "maximum sampled new area",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.maximum_sampled_new_area_fraction",
+      "label": "maximum sampled new area fraction",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.recurrence_new_area_fraction",
+      "label": "recurrence new area fraction",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.maximum_distinct_normal_directions",
+      "label": "maximum distinct normal directions",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.minimum_normal_span_rank",
+      "label": "minimum normal span rank",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.maximum_classical_closure_residual",
+      "label": "maximum classical closure residual",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.maximum_energy_residual",
+      "label": "maximum energy residual",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.maximum_area_residual",
+      "label": "maximum area residual",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "series",
+      "label": "Series",
+      "type": "string",
+      "visible": false
+    }
+  ],
+  "charts": {
+    "type": "scatter",
+    "x": "parameters.K",
+    "y": "results.maximum_sampled_active_faces",
+    "groupBy": "series"
+  },
+  "runs": [
+    {
+      "runId": "fl-face-activation:case-0001:1",
+      "task": "T11",
+      "status": "complete",
+      "description": "Large-area tetrahedron: face activation and recurrence",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 5,
+        "K": 2,
+        "phase_case": "baseline"
+      },
+      "results": {
+        "singlet_dimension": "d=50",
+        "initial_energy": -3.265986323710905,
+        "initial_active_faces": 3.0000000000000004,
+        "maximum_sampled_active_faces": 3.132873220014104,
+        "maximum_sampled_new_area": 0.5812789058968726,
+        "maximum_sampled_new_area_fraction": 0.2906394529484363,
+        "recurrence_new_area_fraction": 7.045812243893598e-32,
+        "maximum_distinct_normal_directions": 5,
+        "minimum_normal_span_rank": 3,
+        "maximum_classical_closure_residual": 3.3540883326478406e-16,
+        "maximum_energy_residual": 2.6645352591003757e-15,
+        "maximum_area_residual": 8.881784197001252e-16
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
+          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
+          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
+          "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
+          "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
+          "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
+          "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
+          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
+          "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
+          "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
+          "code/python/lqg_scattering/intertwiners.py": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b",
+          "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
+        },
+        "presentationSource": "results/fl-face-activation/summary.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/fl-face-activation/summary.csv:row-1"
+      },
+      "assessment": {
+        "summary": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
+        "recordedStudyStatus": "360 direct-state, occupation, energy, geometry and recurrence checks passed"
+      },
+      "artifacts": [
+        {
+          "label": "README.md",
+          "path": "../study-assets/results/fl-face-activation/README.txt",
+          "kind": "data",
+          "sha256": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
+          "sourcePath": "results/fl-face-activation/README.md",
+          "sourceSha256": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953"
+        },
+        {
+          "label": "dynamics.csv",
+          "path": "../study-assets/results/fl-face-activation/dynamics.csv",
+          "kind": "data",
+          "sha256": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
+          "sourcePath": "results/fl-face-activation/dynamics.csv",
+          "sourceSha256": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f"
+        },
+        {
+          "label": "inputs.npz",
+          "path": "../study-assets/results/fl-face-activation/inputs.npz",
+          "kind": "operators",
+          "sha256": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
+          "sourcePath": "results/fl-face-activation/inputs.npz",
+          "sourceSha256": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd"
+        },
+        {
+          "label": "protocol.json",
+          "path": "../study-assets/results/fl-face-activation/protocol.json",
+          "kind": "data",
+          "sha256": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
+          "sourcePath": "results/fl-face-activation/protocol.json",
+          "sourceSha256": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf"
+        },
+        {
+          "label": "provenance.json",
+          "path": "../study-assets/results/fl-face-activation/provenance.json",
+          "kind": "data",
+          "sha256": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
+          "sourcePath": "results/fl-face-activation/provenance.json",
+          "sourceSha256": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246"
+        },
+        {
+          "label": "summary.csv",
+          "path": "../study-assets/results/fl-face-activation/summary.csv",
+          "kind": "data",
+          "sha256": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
+          "sourcePath": "results/fl-face-activation/summary.csv",
+          "sourceSha256": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455"
+        },
+        {
+          "label": "verification.json",
+          "path": "../study-assets/results/fl-face-activation/verification.json",
+          "kind": "data",
+          "sha256": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
+          "sourcePath": "results/fl-face-activation/verification.json",
+          "sourceSha256": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030"
+        },
+        {
+          "label": "face-energy-equipartition.md",
+          "path": "../study-assets/notes/face-energy-equipartition.txt",
+          "kind": "data",
+          "sha256": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "sourcePath": "notes/face-energy-equipartition.md",
+          "sourceSha256": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7"
+        },
+        {
+          "label": "fl_face_activation.py",
+          "path": "../study-assets/code/python/fl_face_activation.py",
+          "kind": "data",
+          "sha256": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
+          "sourcePath": "code/python/fl_face_activation.py",
+          "sourceSha256": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad"
+        },
+        {
+          "label": "verify_fl_face_activation.py",
+          "path": "../study-assets/code/python/verify_fl_face_activation.py",
+          "kind": "data",
+          "sha256": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
+          "sourcePath": "code/python/verify_fl_face_activation.py",
+          "sourceSha256": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86"
+        },
+        {
+          "label": "plot_fl_face_activation.py",
+          "path": "../study-assets/code/python/plot_fl_face_activation.py",
+          "kind": "data",
+          "sha256": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
+          "sourcePath": "code/python/plot_fl_face_activation.py",
+          "sourceSha256": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8"
+        },
+        {
+          "label": "intertwiners.py",
+          "path": "../study-assets/code/python/lqg_scattering/intertwiners.py",
+          "kind": "data",
+          "sha256": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b",
+          "sourcePath": "code/python/lqg_scattering/intertwiners.py",
+          "sourceSha256": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b"
+        },
+        {
+          "label": "spinors.py",
+          "path": "../study-assets/code/python/lqg_scattering/spinors.py",
+          "kind": "data",
+          "sha256": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5",
+          "sourcePath": "code/python/lqg_scattering/spinors.py",
+          "sourceSha256": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
+        }
+      ],
+      "figures": [
+        {
+          "title": "Face activation control",
+          "path": "../study-assets/figures/fl-face-activation/face_activation_control.png",
+          "tags": [
+            "T11"
+          ]
+        }
+      ],
+      "series": "channels=5, phase_case=baseline"
+    },
+    {
+      "runId": "fl-face-activation:case-0002:2",
+      "task": "T11",
+      "status": "complete",
+      "description": "Large-area tetrahedron: face activation and recurrence",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 5,
+        "K": 20,
+        "phase_case": "baseline"
+      },
+      "results": {
+        "singlet_dimension": "d=896126",
+        "initial_energy": -32.65986323710905,
+        "initial_active_faces": 3.9999961853027344,
+        "maximum_sampled_active_faces": 4.9978254004789555,
+        "maximum_sampled_new_area": 5.812789058968725,
+        "maximum_sampled_new_area_fraction": 0.2906394529484363,
+        "recurrence_new_area_fraction": 7.045812243893598e-32,
+        "maximum_distinct_normal_directions": 5,
+        "minimum_normal_span_rank": 3,
+        "maximum_classical_closure_residual": 3.3540883326478406e-16,
+        "maximum_energy_residual": 2.842170943040401e-14,
+        "maximum_area_residual": 7.105427357601002e-15
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
+          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
+          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
+          "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
+          "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
+          "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
+          "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
+          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
+          "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
+          "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
+          "code/python/lqg_scattering/intertwiners.py": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b",
+          "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
+        },
+        "presentationSource": "results/fl-face-activation/summary.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/fl-face-activation/summary.csv:row-2"
+      },
+      "assessment": {
+        "summary": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
+        "recordedStudyStatus": "360 direct-state, occupation, energy, geometry and recurrence checks passed"
+      },
+      "series": "channels=5, phase_case=baseline"
+    },
+    {
+      "runId": "fl-face-activation:case-0003:3",
+      "task": "T11",
+      "status": "complete",
+      "description": "Large-area tetrahedron: face activation and recurrence",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 5,
+        "K": 100,
+        "phase_case": "baseline"
+      },
+      "results": {
+        "singlet_dimension": "d=8051318626",
+        "initial_energy": -163.29931618554528,
+        "initial_active_faces": 4.0,
+        "maximum_sampled_active_faces": 4.999999999999999,
+        "maximum_sampled_new_area": 29.06394529484363,
+        "maximum_sampled_new_area_fraction": 0.2906394529484363,
+        "recurrence_new_area_fraction": 7.045812243893599e-32,
+        "maximum_distinct_normal_directions": 5,
+        "minimum_normal_span_rank": 3,
+        "maximum_classical_closure_residual": 3.3540883326478406e-16,
+        "maximum_energy_residual": 1.7053025658242404e-13,
+        "maximum_area_residual": 4.263256414560601e-14
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
+          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
+          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
+          "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
+          "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
+          "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
+          "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
+          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
+          "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
+          "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
+          "code/python/lqg_scattering/intertwiners.py": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b",
+          "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
+        },
+        "presentationSource": "results/fl-face-activation/summary.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/fl-face-activation/summary.csv:row-3"
+      },
+      "assessment": {
+        "summary": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
+        "recordedStudyStatus": "360 direct-state, occupation, energy, geometry and recurrence checks passed"
+      },
+      "series": "channels=5, phase_case=baseline"
+    },
+    {
+      "runId": "fl-face-activation:case-0004:4",
+      "task": "T11",
+      "status": "complete",
+      "description": "Large-area tetrahedron: face activation and recurrence",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 5,
+        "K": 1000,
+        "phase_case": "baseline"
+      },
+      "results": {
+        "singlet_dimension": "d=7049245038086251",
+        "initial_energy": -1632.9931618554529,
+        "initial_active_faces": 4.0,
+        "maximum_sampled_active_faces": 5.0,
+        "maximum_sampled_new_area": 290.6394529484363,
+        "maximum_sampled_new_area_fraction": 0.2906394529484363,
+        "recurrence_new_area_fraction": 7.045812243893598e-32,
+        "maximum_distinct_normal_directions": 5,
+        "minimum_normal_span_rank": 3,
+        "maximum_classical_closure_residual": 3.3540883326478406e-16,
+        "maximum_energy_residual": 1.5916157281026244e-12,
+        "maximum_area_residual": 4.547473508864641e-13
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
+          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
+          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
+          "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
+          "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
+          "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
+          "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
+          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
+          "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
+          "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
+          "code/python/lqg_scattering/intertwiners.py": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b",
+          "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
+        },
+        "presentationSource": "results/fl-face-activation/summary.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/fl-face-activation/summary.csv:row-4"
+      },
+      "assessment": {
+        "summary": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
+        "recordedStudyStatus": "360 direct-state, occupation, energy, geometry and recurrence checks passed"
+      },
+      "series": "channels=5, phase_case=baseline"
+    },
+    {
+      "runId": "fl-face-activation:case-0005:5",
+      "task": "T11",
+      "status": "complete",
+      "description": "Large-area tetrahedron: face activation and recurrence",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 5,
+        "K": 10000,
+        "phase_case": "baseline"
+      },
+      "results": {
+        "singlet_dimension": "d=6954867432535058362501",
+        "initial_energy": -16329.931618554527,
+        "initial_active_faces": 4.0,
+        "maximum_sampled_active_faces": 5.0,
+        "maximum_sampled_new_area": 2906.394529484363,
+        "maximum_sampled_new_area_fraction": 0.2906394529484363,
+        "recurrence_new_area_fraction": 7.045812243893598e-32,
+        "maximum_distinct_normal_directions": 5,
+        "minimum_normal_span_rank": 3,
+        "maximum_classical_closure_residual": 3.3540883326478406e-16,
+        "maximum_energy_residual": 1.4551915228366852e-11,
+        "maximum_area_residual": 5.4569682106375694e-12
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
+          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
+          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
+          "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
+          "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
+          "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
+          "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
+          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
+          "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
+          "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
+          "code/python/lqg_scattering/intertwiners.py": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b",
+          "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
+        },
+        "presentationSource": "results/fl-face-activation/summary.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/fl-face-activation/summary.csv:row-5"
+      },
+      "assessment": {
+        "summary": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
+        "recordedStudyStatus": "360 direct-state, occupation, energy, geometry and recurrence checks passed"
+      },
+      "series": "channels=5, phase_case=baseline"
+    },
+    {
+      "runId": "fl-face-activation:case-0006:6",
+      "task": "T11",
+      "status": "complete",
+      "description": "Large-area tetrahedron: face activation and recurrence",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 5,
+        "K": 2,
+        "phase_case": "phase_shifted"
+      },
+      "results": {
+        "singlet_dimension": "d=50",
+        "initial_energy": 1.6329931618554518,
+        "initial_active_faces": 3.000000000000001,
+        "maximum_sampled_active_faces": 3.0906878371305613,
+        "maximum_sampled_new_area": 0.18936054705156427,
+        "maximum_sampled_new_area_fraction": 0.09468027352578214,
+        "recurrence_new_area_fraction": 1.3812444874784096e-31,
+        "maximum_distinct_normal_directions": 5,
+        "minimum_normal_span_rank": 3,
+        "maximum_classical_closure_residual": 1.1207602539310125e-15,
+        "maximum_energy_residual": 1.5543122344752192e-15,
+        "maximum_area_residual": 8.881784197001252e-16
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
+          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
+          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
+          "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
+          "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
+          "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
+          "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
+          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
+          "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
+          "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
+          "code/python/lqg_scattering/intertwiners.py": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b",
+          "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
+        },
+        "presentationSource": "results/fl-face-activation/summary.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/fl-face-activation/summary.csv:row-6"
+      },
+      "assessment": {
+        "summary": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
+        "recordedStudyStatus": "360 direct-state, occupation, energy, geometry and recurrence checks passed"
+      },
+      "series": "channels=5, phase_case=phase_shifted"
+    },
+    {
+      "runId": "fl-face-activation:case-0007:7",
+      "task": "T11",
+      "status": "complete",
+      "description": "Large-area tetrahedron: face activation and recurrence",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 5,
+        "K": 20,
+        "phase_case": "phase_shifted"
+      },
+      "results": {
+        "singlet_dimension": "d=896126",
+        "initial_energy": 16.329931618554518,
+        "initial_active_faces": 3.9999961853027344,
+        "maximum_sampled_active_faces": 4.983304195178503,
+        "maximum_sampled_new_area": 1.8936054705156427,
+        "maximum_sampled_new_area_fraction": 0.09468027352578214,
+        "recurrence_new_area_fraction": 1.3812444874784096e-31,
+        "maximum_distinct_normal_directions": 5,
+        "minimum_normal_span_rank": 3,
+        "maximum_classical_closure_residual": 1.1207602539310125e-15,
+        "maximum_energy_residual": 1.7763568394002505e-14,
+        "maximum_area_residual": 1.0658141036401503e-14
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
+          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
+          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
+          "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
+          "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
+          "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
+          "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
+          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
+          "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
+          "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
+          "code/python/lqg_scattering/intertwiners.py": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b",
+          "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
+        },
+        "presentationSource": "results/fl-face-activation/summary.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/fl-face-activation/summary.csv:row-7"
+      },
+      "assessment": {
+        "summary": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
+        "recordedStudyStatus": "360 direct-state, occupation, energy, geometry and recurrence checks passed"
+      },
+      "series": "channels=5, phase_case=phase_shifted"
+    },
+    {
+      "runId": "fl-face-activation:case-0008:8",
+      "task": "T11",
+      "status": "complete",
+      "description": "Large-area tetrahedron: face activation and recurrence",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 5,
+        "K": 100,
+        "phase_case": "phase_shifted"
+      },
+      "results": {
+        "singlet_dimension": "d=8051318626",
+        "initial_energy": 81.6496580927726,
+        "initial_active_faces": 4.0,
+        "maximum_sampled_active_faces": 4.999999999236559,
+        "maximum_sampled_new_area": 9.468027352578213,
+        "maximum_sampled_new_area_fraction": 0.09468027352578214,
+        "recurrence_new_area_fraction": 1.3812444874784096e-31,
+        "maximum_distinct_normal_directions": 5,
+        "minimum_normal_span_rank": 3,
+        "maximum_classical_closure_residual": 1.1207602539310125e-15,
+        "maximum_energy_residual": 8.526512829121202e-14,
+        "maximum_area_residual": 5.684341886080802e-14
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
+          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
+          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
+          "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
+          "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
+          "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
+          "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
+          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
+          "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
+          "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
+          "code/python/lqg_scattering/intertwiners.py": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b",
+          "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
+        },
+        "presentationSource": "results/fl-face-activation/summary.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/fl-face-activation/summary.csv:row-8"
+      },
+      "assessment": {
+        "summary": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
+        "recordedStudyStatus": "360 direct-state, occupation, energy, geometry and recurrence checks passed"
+      },
+      "series": "channels=5, phase_case=phase_shifted"
+    },
+    {
+      "runId": "fl-face-activation:case-0009:9",
+      "task": "T11",
+      "status": "complete",
+      "description": "Large-area tetrahedron: face activation and recurrence",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 5,
+        "K": 1000,
+        "phase_case": "phase_shifted"
+      },
+      "results": {
+        "singlet_dimension": "d=7049245038086251",
+        "initial_energy": 816.496580927726,
+        "initial_active_faces": 4.0,
+        "maximum_sampled_active_faces": 5.0,
+        "maximum_sampled_new_area": 94.68027352578214,
+        "maximum_sampled_new_area_fraction": 0.09468027352578214,
+        "recurrence_new_area_fraction": 1.3812444874784096e-31,
+        "maximum_distinct_normal_directions": 5,
+        "minimum_normal_span_rank": 3,
+        "maximum_classical_closure_residual": 1.1207602539310125e-15,
+        "maximum_energy_residual": 9.094947017729282e-13,
+        "maximum_area_residual": 5.684341886080801e-13
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
+          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
+          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
+          "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
+          "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
+          "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
+          "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
+          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
+          "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
+          "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
+          "code/python/lqg_scattering/intertwiners.py": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b",
+          "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
+        },
+        "presentationSource": "results/fl-face-activation/summary.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/fl-face-activation/summary.csv:row-9"
+      },
+      "assessment": {
+        "summary": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
+        "recordedStudyStatus": "360 direct-state, occupation, energy, geometry and recurrence checks passed"
+      },
+      "series": "channels=5, phase_case=phase_shifted"
+    },
+    {
+      "runId": "fl-face-activation:case-0010:10",
+      "task": "T11",
+      "status": "complete",
+      "description": "Large-area tetrahedron: face activation and recurrence",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 5,
+        "K": 10000,
+        "phase_case": "phase_shifted"
+      },
+      "results": {
+        "singlet_dimension": "d=6954867432535058362501",
+        "initial_energy": 8164.965809277258,
+        "initial_active_faces": 4.0,
+        "maximum_sampled_active_faces": 5.0,
+        "maximum_sampled_new_area": 946.8027352578214,
+        "maximum_sampled_new_area_fraction": 0.09468027352578214,
+        "recurrence_new_area_fraction": 1.3812444874784096e-31,
+        "maximum_distinct_normal_directions": 5,
+        "minimum_normal_span_rank": 3,
+        "maximum_classical_closure_residual": 1.1207602539310125e-15,
+        "maximum_energy_residual": 7.275957614183426e-12,
+        "maximum_area_residual": 5.4569682106375694e-12
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
+          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
+          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
+          "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
+          "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
+          "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
+          "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
+          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
+          "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
+          "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
+          "code/python/lqg_scattering/intertwiners.py": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b",
+          "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
+        },
+        "presentationSource": "results/fl-face-activation/summary.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/fl-face-activation/summary.csv:row-10"
+      },
+      "assessment": {
+        "summary": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
+        "recordedStudyStatus": "360 direct-state, occupation, energy, geometry and recurrence checks passed"
+      },
+      "series": "channels=5, phase_case=phase_shifted"
+    },
+    {
+      "runId": "fl-face-activation:case-0011:11",
+      "task": "T11",
+      "status": "complete",
+      "description": "Large-area tetrahedron: face activation and recurrence",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 6,
+        "K": 2,
+        "phase_case": "baseline"
+      },
+      "results": {
+        "singlet_dimension": "d=105",
+        "initial_energy": -3.2659863237108993,
+        "initial_active_faces": 3.0,
+        "maximum_sampled_active_faces": 3.255623968433307,
+        "maximum_sampled_new_area": 0.8073318137456559,
+        "maximum_sampled_new_area_fraction": 0.40366590687282794,
+        "recurrence_new_area_fraction": 1.1318394269220218e-30,
+        "maximum_distinct_normal_directions": 5,
+        "minimum_normal_span_rank": 3,
+        "maximum_classical_closure_residual": 5.611995424028156e-16,
+        "maximum_energy_residual": 3.1086244689504383e-15,
+        "maximum_area_residual": 8.881784197001252e-16
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
+          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
+          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
+          "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
+          "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
+          "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
+          "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
+          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
+          "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
+          "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
+          "code/python/lqg_scattering/intertwiners.py": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b",
+          "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
+        },
+        "presentationSource": "results/fl-face-activation/summary.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/fl-face-activation/summary.csv:row-11"
+      },
+      "assessment": {
+        "summary": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
+        "recordedStudyStatus": "360 direct-state, occupation, energy, geometry and recurrence checks passed"
+      },
+      "series": "channels=6, phase_case=baseline"
+    },
+    {
+      "runId": "fl-face-activation:case-0012:12",
+      "task": "T11",
+      "status": "complete",
+      "description": "Large-area tetrahedron: face activation and recurrence",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 6,
+        "K": 20,
+        "phase_case": "baseline"
+      },
+      "results": {
+        "singlet_dimension": "d=26883780",
+        "initial_energy": -32.65986323710899,
+        "initial_active_faces": 3.9999961853027344,
+        "maximum_sampled_active_faces": 5.988194205425936,
+        "maximum_sampled_new_area": 8.073318137456559,
+        "maximum_sampled_new_area_fraction": 0.40366590687282794,
+        "recurrence_new_area_fraction": 1.1318394269220218e-30,
+        "maximum_distinct_normal_directions": 5,
+        "minimum_normal_span_rank": 3,
+        "maximum_classical_closure_residual": 5.611995424028156e-16,
+        "maximum_energy_residual": 2.842170943040401e-14,
+        "maximum_area_residual": 1.0658141036401503e-14
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
+          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
+          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
+          "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
+          "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
+          "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
+          "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
+          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
+          "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
+          "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
+          "code/python/lqg_scattering/intertwiners.py": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b",
+          "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
+        },
+        "presentationSource": "results/fl-face-activation/summary.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/fl-face-activation/summary.csv:row-12"
+      },
+      "assessment": {
+        "summary": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
+        "recordedStudyStatus": "360 direct-state, occupation, energy, geometry and recurrence checks passed"
+      },
+      "series": "channels=6, phase_case=baseline"
+    },
+    {
+      "runId": "fl-face-activation:case-0013:13",
+      "task": "T11",
+      "status": "complete",
+      "description": "Large-area tetrahedron: face activation and recurrence",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 6,
+        "K": 100,
+        "phase_case": "baseline"
+      },
+      "results": {
+        "singlet_dimension": "d=4396019969796",
+        "initial_energy": -163.29931618554494,
+        "initial_active_faces": 4.0,
+        "maximum_sampled_active_faces": 5.999999999999006,
+        "maximum_sampled_new_area": 40.366590687282795,
+        "maximum_sampled_new_area_fraction": 0.40366590687282794,
+        "recurrence_new_area_fraction": 1.1318394269220218e-30,
+        "maximum_distinct_normal_directions": 5,
+        "minimum_normal_span_rank": 3,
+        "maximum_classical_closure_residual": 5.611995424028156e-16,
+        "maximum_energy_residual": 1.7053025658242404e-13,
+        "maximum_area_residual": 5.684341886080802e-14
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
+          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
+          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
+          "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
+          "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
+          "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
+          "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
+          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
+          "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
+          "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
+          "code/python/lqg_scattering/intertwiners.py": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b",
+          "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
+        },
+        "presentationSource": "results/fl-face-activation/summary.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/fl-face-activation/summary.csv:row-13"
+      },
+      "assessment": {
+        "summary": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
+        "recordedStudyStatus": "360 direct-state, occupation, energy, geometry and recurrence checks passed"
+      },
+      "series": "channels=6, phase_case=baseline"
+    },
+    {
+      "runId": "fl-face-activation:case-0014:14",
+      "task": "T11",
+      "status": "complete",
+      "description": "Large-area tetrahedron: face activation and recurrence",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 6,
+        "K": 1000,
+        "phase_case": "baseline"
+      },
+      "results": {
+        "singlet_dimension": "d=355641461416489449201",
+        "initial_energy": -1632.99316185545,
+        "initial_active_faces": 4.0,
+        "maximum_sampled_active_faces": 6.0,
+        "maximum_sampled_new_area": 403.6659068728279,
+        "maximum_sampled_new_area_fraction": 0.40366590687282794,
+        "recurrence_new_area_fraction": 1.131839426922022e-30,
+        "maximum_distinct_normal_directions": 5,
+        "minimum_normal_span_rank": 3,
+        "maximum_classical_closure_residual": 5.611995424028156e-16,
+        "maximum_energy_residual": 1.5916157281026244e-12,
+        "maximum_area_residual": 5.684341886080801e-13
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
+          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
+          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
+          "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
+          "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
+          "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
+          "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
+          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
+          "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
+          "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
+          "code/python/lqg_scattering/intertwiners.py": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b",
+          "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
+        },
+        "presentationSource": "results/fl-face-activation/summary.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/fl-face-activation/summary.csv:row-14"
+      },
+      "assessment": {
+        "summary": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
+        "recordedStudyStatus": "360 direct-state, occupation, energy, geometry and recurrence checks passed"
+      },
+      "series": "channels=6, phase_case=baseline"
+    },
+    {
+      "runId": "fl-face-activation:case-0015:15",
+      "task": "T11",
+      "status": "complete",
+      "description": "Large-area tetrahedron: face activation and recurrence",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 6,
+        "K": 10000,
+        "phase_case": "baseline"
+      },
+      "results": {
+        "singlet_dimension": "d=34805641020989132110194617001",
+        "initial_energy": -16329.931618554496,
+        "initial_active_faces": 4.0,
+        "maximum_sampled_active_faces": 6.0,
+        "maximum_sampled_new_area": 4036.659068728279,
+        "maximum_sampled_new_area_fraction": 0.40366590687282794,
+        "recurrence_new_area_fraction": 1.1318394269220218e-30,
+        "maximum_distinct_normal_directions": 5,
+        "minimum_normal_span_rank": 3,
+        "maximum_classical_closure_residual": 5.611995424028156e-16,
+        "maximum_energy_residual": 1.8189894035458565e-11,
+        "maximum_area_residual": 7.275957614183426e-12
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
+          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
+          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
+          "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
+          "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
+          "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
+          "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
+          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
+          "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
+          "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
+          "code/python/lqg_scattering/intertwiners.py": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b",
+          "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
+        },
+        "presentationSource": "results/fl-face-activation/summary.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/fl-face-activation/summary.csv:row-15"
+      },
+      "assessment": {
+        "summary": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
+        "recordedStudyStatus": "360 direct-state, occupation, energy, geometry and recurrence checks passed"
+      },
+      "series": "channels=6, phase_case=baseline"
+    },
+    {
+      "runId": "fl-face-activation:case-0016:16",
+      "task": "T11",
+      "status": "complete",
+      "description": "Large-area tetrahedron: face activation and recurrence",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 6,
+        "K": 2,
+        "phase_case": "phase_shifted"
+      },
+      "results": {
+        "singlet_dimension": "d=105",
+        "initial_energy": 1.632993161855455,
+        "initial_active_faces": 3.0,
+        "maximum_sampled_active_faces": 3.166027840561783,
+        "maximum_sampled_new_area": 0.2630007597938384,
+        "maximum_sampled_new_area_fraction": 0.1315003798969192,
+        "recurrence_new_area_fraction": 5.274192087118169e-31,
+        "maximum_distinct_normal_directions": 5,
+        "minimum_normal_span_rank": 3,
+        "maximum_classical_closure_residual": 6.758337520795028e-16,
+        "maximum_energy_residual": 1.5543122344752192e-15,
+        "maximum_area_residual": 1.3322676295501878e-15
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
+          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
+          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
+          "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
+          "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
+          "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
+          "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
+          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
+          "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
+          "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
+          "code/python/lqg_scattering/intertwiners.py": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b",
+          "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
+        },
+        "presentationSource": "results/fl-face-activation/summary.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/fl-face-activation/summary.csv:row-16"
+      },
+      "assessment": {
+        "summary": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
+        "recordedStudyStatus": "360 direct-state, occupation, energy, geometry and recurrence checks passed"
+      },
+      "series": "channels=6, phase_case=phase_shifted"
+    },
+    {
+      "runId": "fl-face-activation:case-0017:17",
+      "task": "T11",
+      "status": "complete",
+      "description": "Large-area tetrahedron: face activation and recurrence",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 6,
+        "K": 20,
+        "phase_case": "phase_shifted"
+      },
+      "results": {
+        "singlet_dimension": "d=26883780",
+        "initial_energy": 16.329931618554554,
+        "initial_active_faces": 3.9999961853027344,
+        "maximum_sampled_active_faces": 5.879078188141171,
+        "maximum_sampled_new_area": 2.630007597938384,
+        "maximum_sampled_new_area_fraction": 0.1315003798969192,
+        "recurrence_new_area_fraction": 5.274192087118169e-31,
+        "maximum_distinct_normal_directions": 5,
+        "minimum_normal_span_rank": 3,
+        "maximum_classical_closure_residual": 6.758337520795028e-16,
+        "maximum_energy_residual": 2.1316282072803006e-14,
+        "maximum_area_residual": 1.0658141036401503e-14
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
+          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
+          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
+          "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
+          "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
+          "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
+          "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
+          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
+          "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
+          "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
+          "code/python/lqg_scattering/intertwiners.py": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b",
+          "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
+        },
+        "presentationSource": "results/fl-face-activation/summary.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/fl-face-activation/summary.csv:row-17"
+      },
+      "assessment": {
+        "summary": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
+        "recordedStudyStatus": "360 direct-state, occupation, energy, geometry and recurrence checks passed"
+      },
+      "series": "channels=6, phase_case=phase_shifted"
+    },
+    {
+      "runId": "fl-face-activation:case-0018:18",
+      "task": "T11",
+      "status": "complete",
+      "description": "Large-area tetrahedron: face activation and recurrence",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 6,
+        "K": 100,
+        "phase_case": "phase_shifted"
+      },
+      "results": {
+        "singlet_dimension": "d=4396019969796",
+        "initial_energy": 81.6496580927728,
+        "initial_active_faces": 4.0,
+        "maximum_sampled_active_faces": 5.999998493416254,
+        "maximum_sampled_new_area": 13.15003798969192,
+        "maximum_sampled_new_area_fraction": 0.1315003798969192,
+        "recurrence_new_area_fraction": 5.27419208711817e-31,
+        "maximum_distinct_normal_directions": 5,
+        "minimum_normal_span_rank": 3,
+        "maximum_classical_closure_residual": 6.758337520795028e-16,
+        "maximum_energy_residual": 1.1368683772161603e-13,
+        "maximum_area_residual": 5.684341886080802e-14
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
+          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
+          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
+          "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
+          "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
+          "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
+          "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
+          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
+          "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
+          "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
+          "code/python/lqg_scattering/intertwiners.py": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b",
+          "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
+        },
+        "presentationSource": "results/fl-face-activation/summary.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/fl-face-activation/summary.csv:row-18"
+      },
+      "assessment": {
+        "summary": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
+        "recordedStudyStatus": "360 direct-state, occupation, energy, geometry and recurrence checks passed"
+      },
+      "series": "channels=6, phase_case=phase_shifted"
+    },
+    {
+      "runId": "fl-face-activation:case-0019:19",
+      "task": "T11",
+      "status": "complete",
+      "description": "Large-area tetrahedron: face activation and recurrence",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 6,
+        "K": 1000,
+        "phase_case": "phase_shifted"
+      },
+      "results": {
+        "singlet_dimension": "d=355641461416489449201",
+        "initial_energy": 816.4965809277276,
+        "initial_active_faces": 4.0,
+        "maximum_sampled_active_faces": 6.0,
+        "maximum_sampled_new_area": 131.5003798969192,
+        "maximum_sampled_new_area_fraction": 0.1315003798969192,
+        "recurrence_new_area_fraction": 5.274192087118169e-31,
+        "maximum_distinct_normal_directions": 5,
+        "minimum_normal_span_rank": 3,
+        "maximum_classical_closure_residual": 6.758337520795028e-16,
+        "maximum_energy_residual": 9.094947017729282e-13,
+        "maximum_area_residual": 6.821210263296962e-13
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
+          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
+          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
+          "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
+          "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
+          "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
+          "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
+          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
+          "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
+          "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
+          "code/python/lqg_scattering/intertwiners.py": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b",
+          "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
+        },
+        "presentationSource": "results/fl-face-activation/summary.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/fl-face-activation/summary.csv:row-19"
+      },
+      "assessment": {
+        "summary": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
+        "recordedStudyStatus": "360 direct-state, occupation, energy, geometry and recurrence checks passed"
+      },
+      "series": "channels=6, phase_case=phase_shifted"
+    },
+    {
+      "runId": "fl-face-activation:case-0020:20",
+      "task": "T11",
+      "status": "complete",
+      "description": "Large-area tetrahedron: face activation and recurrence",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 6,
+        "K": 10000,
+        "phase_case": "phase_shifted"
+      },
+      "results": {
+        "singlet_dimension": "d=34805641020989132110194617001",
+        "initial_energy": 8164.965809277275,
+        "initial_active_faces": 4.0,
+        "maximum_sampled_active_faces": 6.0,
+        "maximum_sampled_new_area": 1315.003798969192,
+        "maximum_sampled_new_area_fraction": 0.1315003798969192,
+        "recurrence_new_area_fraction": 5.274192087118169e-31,
+        "maximum_distinct_normal_directions": 5,
+        "minimum_normal_span_rank": 3,
+        "maximum_classical_closure_residual": 6.758337520795028e-16,
+        "maximum_energy_residual": 8.185452315956354e-12,
+        "maximum_area_residual": 7.275957614183426e-12
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
+          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
+          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
+          "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
+          "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
+          "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
+          "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
+          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
+          "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
+          "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
+          "code/python/lqg_scattering/intertwiners.py": "0c5ff8bc6ab862176014febba54ba263787d95cd0b5c09c9cc2da2f47be18b6b",
+          "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
+        },
+        "presentationSource": "results/fl-face-activation/summary.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/fl-face-activation/summary.csv:row-20"
+      },
+      "assessment": {
+        "summary": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
+        "recordedStudyStatus": "360 direct-state, occupation, energy, geometry and recurrence checks passed"
+      },
+      "series": "channels=6, phase_case=phase_shifted"
+    }
+  ],
+  "figures": [
+    {
+      "title": "Face activation control",
+      "path": "../study-assets/figures/fl-face-activation/face_activation_control.png",
+      "tags": [
+        "T11"
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "title": "Face energy equipartition",
+      "path": "../study-assets/notes/face-energy-equipartition.txt",
+      "sourcePath": "notes/face-energy-equipartition.md",
+      "description": "Explanation and calculation record for this study."
+    },
+    {
+      "title": "Numerical studies overview",
+      "path": "../index.html"
+    }
+  ]
+}

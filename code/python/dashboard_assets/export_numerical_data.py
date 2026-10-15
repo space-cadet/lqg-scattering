@@ -32,13 +32,19 @@ JSON_SOURCES = {
     'covariance-pilot': ('results/t5c_covariance_probe_results.json', 'records'),
 }
 CSV_SOURCES = {
+    'fl-face-activation': 'results/fl-face-activation/summary.csv',
+    'thermal-closed-entanglement': 'results/thermal-closed-entanglement/temperature_summary.csv',
+    'thermal-closure-temperature': 'results/thermal-closure-temperature/closure_temperature.csv',
+    'thermal-closed-projection': 'results/thermal-closed-projection/temperature_summary.csv',
+    't9a-singlet-exchange': 'results/t9a-singlet-exchange/thermal.csv',
     'vacuum-area': 'figures/thermal-area-sectors/thermal_coefficients_vacuum.csv',
     'vacuum-spin': 'figures/thermal-spin-sectors/thermal_vacuum_spin.csv',
     't11-candidate-hamiltonians': 'results/t11-candidate-hamiltonians/model_summary.csv',
 }
 PARAMETERS = {'n', 'N', 'K', 'J', 'L', 'graph', 'case', 'candidate', 'U_over_t', 'alpha',
               'beta', 'beta_hbar_omega', 'state', 'seed', 'eps', 'epsilon', 'phiRadians',
-              'q_bosons_per_copy', 'bosons_per_copy', 'total_spin_S', 'family', 'channel', 'M'}
+              'q_bosons_per_copy', 'bosons_per_copy', 'total_spin_S', 'family', 'channel', 'M',
+              'temperature', 'temperature_kBT_over_hbar_omega', 'channels', 'phase_case'}
 NUMBER = re.compile(r'^[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?$')
 
 
@@ -221,22 +227,41 @@ def export_numerical_data(catalogue=None):
                 if checks: run['verification'] = {'checks': checks}
             runs.append(clean(run))
         cols = columns(runs)
+        if identifier == 'thermal-closed-entanglement':
+            visible = {'runId', 'parameters.temperature', 'results.projection_probability',
+                'results.entropy_nats', 'results.area_entropy_nats', 'results.within_area_entropy_nats',
+                'results.renyi2_nats', 'results.mean_area', 'results.joint_F12_creation_real'}
+            labels = {'parameters.temperature': 'Temperature T*',
+                'results.projection_probability': 'Closed fraction',
+                'results.entropy_nats': 'Entanglement entropy (nats)',
+                'results.area_entropy_nats': 'Area-distribution entropy (nats)',
+                'results.within_area_entropy_nats': 'Within-area entropy (nats)',
+                'results.renyi2_nats': 'Rényi-2 entropy (nats)',
+                'results.mean_area': 'Mean area per copy',
+                'results.joint_F12_creation_real': 'Joint singlet coherence'}
+            for col in cols:
+                col['visible'] = col['key'] in visible
+                col['label'] = labels.get(col['key'],col['label'])
         numerics = [c['key'] for c in cols if c['type'] == 'number']
-        preferred_x = next((k for k in ('parameters.alpha', 'parameters.K', 'parameters.J', 'parameters.beta', 'parameters.beta_hbar_omega', 'parameters.eps', 'parameters.bosons_per_copy', 'parameters.q_bosons_per_copy') if k in numerics), None)
-        preferred_y = next((k for k in ('results.ground_volume_mean_project_units', 'results.ground_mean_volume', 'results.ground_volume', 'results.volume_mean', 'results.equal_weight_mean', 'results.equal_weight_closed_rs_mean', 'results.sector_probability', 'results.P_q_S', 'results.V', 'results.corr', 'results.gibbs.q2') if k in numerics), None)
+        preferred_x = next((k for k in ('parameters.temperature', 'parameters.temperature_kBT_over_hbar_omega', 'parameters.alpha', 'parameters.K', 'parameters.J', 'parameters.beta', 'parameters.beta_hbar_omega', 'parameters.eps', 'parameters.bosons_per_copy', 'parameters.q_bosons_per_copy') if k in numerics), None)
+        preferred_y = next((k for k in ('results.maximum_sampled_active_faces', 'results.entropy_nats', 'results.conditional_mean_area', 'results.ground_volume_mean_project_units', 'results.ground_mean_volume', 'results.ground_volume', 'results.volume_mean', 'results.equal_weight_mean', 'results.equal_weight_closed_rs_mean', 'results.sector_probability', 'results.P_q_S', 'results.V', 'results.corr', 'results.gibbs.q2') if k in numerics), None)
         chart = {'type': 'scatter'}
         if len(numerics) >= 2:
             chart.update(x=preferred_x or numerics[0], y=preferred_y or next((k for k in numerics if k.startswith('results.')), numerics[1]))
             # A series must include every varying model control to avoid connecting unrelated systems.
-            grouping = [k for k in ('graph', 'candidate', 'U_over_t', 'n', 'sourceGroup', 'family', 'case', 'beta_hbar_omega') if any(k in run['parameters'] or k in run['results'] for run in runs) and 'parameters.' + k != chart['x']]
+            grouping = [k for k in ('graph', 'candidate', 'U_over_t', 'channels', 'phase_case', 'n', 'sourceGroup', 'family', 'case', 'beta_hbar_omega') if any(k in run['parameters'] or k in run['results'] for run in runs) and 'parameters.' + k != chart['x'] and not (k=='beta_hbar_omega' and chart['x'] in ('parameters.temperature','parameters.temperature_kBT_over_hbar_omega'))]
             if grouping:
                 for run in runs:
                     run['series'] = ', '.join(f'{k}={run["parameters"].get(k, run["results"].get(k))}' for k in grouping)
                 cols.append({'key': 'series', 'label': 'Series', 'type': 'string', 'visible': False})
                 chart['groupBy'] = 'series'
+        study_docs = [{'title': Path(f['source']).stem.replace('-', ' ').capitalize(),
+                       'path': '../'+f['path'], 'sourcePath': f['source'],
+                       'description': 'Explanation and calculation record for this study.'}
+                      for f in study['files'] if f['source'].startswith('notes/') and f['source'].endswith('.md')]
         data = {'schemaVersion': '1.0.0', 'project': {'name': study['title'], 'subtitle': study['description']},
                 'columns': cols, 'charts': chart, 'runs': runs, 'figures': figures,
-                'docs': [{'title': 'Numerical studies overview', 'path': '../index.html'}]}
+                'docs': [*study_docs, {'title': 'Numerical studies overview', 'path': '../index.html'}]}
         path = f'datasets/{identifier}.json'
         write(OUT / path, data)
         datasets.append({'id': identifier, 'title': study['title'], 'path': path, 'cases': len(runs)})
@@ -289,6 +314,12 @@ def export_numerical_data(catalogue=None):
         run['artifacts'] = item['artifacts']
         run['assessment'] = item['assessment']
     overview_data['docs'] = [
+        {'title': 'Face growth and energy sharing', 'path': 'study-assets/notes/face-energy-equipartition.txt',
+         'description': 'Verified large-area free-hopping controls and proposed neighbouring-face F/J interactions.'},
+        {'title': 'Entanglement of closed thermal polyhedra', 'path': 'study-assets/notes/thermal-entanglement.txt',
+         'description': 'Schmidt spectra, area-sector entropy, joint singlet coherence and convergence.'},
+        {'title': 'Heating, equilibrium and singlet exchange', 'path': 'study-assets/notes/thermal-geometry-and-singlet-exchange.txt',
+         'description': 'Temperature-dependent closure and geometry, Gibbs test and finite exchange model.'},
         {'title': 'Chronological numerical studies', 'path': 'study-assets/notes/numerical-studies.txt',
          'description': 'Indexed record of the numerical studies in chronological order.'},
         {'title': 'Hamiltonian studies', 'path': 'study-assets/notes/hamiltonian-studies.txt',

@@ -18,8 +18,8 @@ rerun scientific calculations. Dashboard JSON converts nonfinite values to
 authoritative.
 
 - `index.html`: the shared InfoDash numerical interface.
-- `data.json`: overview of eight historical T3 runs and 30 study records.
-- `datasets.json` and `datasets/`: the 30 selectable detailed datasets.
+- `data.json`: overview of eight historical T3 runs and 35 study datasets.
+- `datasets.json` and `datasets/`: the 35 selectable detailed datasets.
 - `studies.json`: study descriptions, calculation limits and source manifest.
 - `study-assets/`: packaged data, operators, notes, PDFs and figures.
 - `figures/dashboard-history/` at the repository root: plots from saved arrays,
@@ -39,14 +39,14 @@ The source bytes and hashes remain recorded.
 ## Shared InfoDash interface
 
 Open `index.html`. The four shared tabs show Runs & Studies, Figure Archive,
-Charts, and Tasks & Numerical Notes at desktop and mobile widths. The five
+Charts, and Tasks & Numerical Notes at desktop and mobile widths. The eight
 project notes appear at the top of the last tab; open a note to read its rendered
 Markdown, tables, links, images, and LaTeX, or download the original Markdown.
 The study selector switches between the overview and each individual dataset,
 so every numerical study uses the same interface. Dataset details include saved
 values, source selectors, provenance, calculation limits, figures and downloads.
 
-The export includes the 21 catalogue studies and nine additional datasets:
+The export includes the 26 catalogue studies and nine additional datasets:
 prepared-FL sampling, real-plane controls, shape recovery, weighted input,
 regular-area and equal-area shape scans, binding energies, state-space probes,
 and sewing. Catalogue tables supply summary rows; saved CSV/JSON files supply

@@ -1,8 +1,22 @@
 # Active Context
 
-*Last Updated: 2026-10-14 17:24:59 IST*
+*Last Updated: 2026-10-16 05:24:47 IST*
 
 ## Current Focus
+T9's separately closed F12 reference now has calculated Schmidt spectra,
+entropy decomposition and coherent joint singlet creation across 86
+temperatures, T*=0.05..5. Infinite entropy tails are bounded below 6.4e-12
+nats; 802 comparisons and the existing 46-test suite pass. See
+[the pedagogical note](../notes/thermal-entanglement.md) and
+[October 16 session](sessions/2026-10-16-t9-entanglement.md).
+The October 16 five/six-channel free-hopping control demonstrated additional
+channel occupation through K=10000, with exact recurrence. The user correctly
+noted that recurrence can coexist with long residence near equilibrium; our
+special integrable hopping model does not test that. An interacting
+closure-preserving model, matched-energy equilibrium comparison, residence-time
+and fluctuation measures, and distinct-normal geometry are next. Many-body
+precedents are now covered in the [face-energy research note](../notes/face-energy-equipartition.md) and the dialogue is preserved in the [physics transcript](sessions/2026-10-16-face-thermalization-transcript.md). The refreshed local dashboard note renders 34 math expressions without errors.
+
 Current focus: T9 and its active child T9a. The finite-area exchange pilot is implemented at combined area $K=4$, with regular/deformed FL preparations, ground-space mixtures and canonical controls. Its 46 Python tests and 1,792 independent comparisons passed. The thermal-intertwiners manuscript is now updated through the Gibbs obstruction, exchange model/results, many-body connections, and projected-area derivation; the 19-page PDF compiled and was visually checked. Reservoir dynamics and comparison with the selected thermal-intertwiner family remain open.
 
 **Primary Task:** T9 — thermal/TFD construction and physical study, including the thermal-intertwiners manuscript.
@@ -14,8 +28,8 @@ Current focus: T9 and its active child T9a. The finite-area exchange pilot is im
 - T3c: The Rust FL Eq. (38) example now builds and matches the Python $J=2$ result after the shared zero-mode cutoff. Physical prefactors and a method for blocks above 512 remain open; the Cargo shim itself is still broken.
 - T5: Volume–positivity numerical-studies program — IN PROGRESS; T5c/T5d/T5g open; the former T5f amplituhedron mapping is now T8b. Initial T5c pilots compare the input classical tetrahedron with weighted FL positive volume: regular/unequal-skew through $J=7$, a nine-shape unequal-area grid at $J=2,4$, selected $J=6$ points, and a flat path through $J=7$. Area means and weighted closure pass; finite-$J$ unequal correlations do not exactly reproduce input angles. Calibrated RS/AL agreement follows from closure and is not independent evidence. Broader shape and iterated-limit conclusions remain open. See `implementation-details/T5c-flux-covariance-volume-comparison.md` and shared `implementation-details/volume-numerical-preliminaries.md`.
 - T8: Amplituhedron Program — IN PROGRESS; T8a cluster algebra/chart relevance and T8b positive-cell/scattering-region mapping (transferred from T5f) are open. See `tasks/T8.md`.
-- T9: Thermal/TFD state construction and physical study — IN PROGRESS; owns all ongoing TFD construction and analysis, with exactly five completed child-study records T7a–T7e. The four-face $J_{\mathrm{in}}=1$ occupation/spin comparison is complete through $q=160$. October 13 results quantify ordinary per-copy closure and show that separate singlet projection retains closed states with increasing mean area and positive RS volume; the area asymptote is $(57/14)T_*$. The October 14 analytic eigenvalue-ratio test excludes a fixed single-copy Gibbs Hamiltonian for this separately closed reference family; full reduced spectra, entropy, and other-input characterization remain open.
-- T11: Hamiltonian–volume studies — IN PROGRESS. The $K=4$ candidate-Hamiltonian scan and exact-phase evolution of five FL references are now complete; the independent verifier performed 1,510 checks with maximum residual $1.07\times10^{-12}$. Full model ranges and limitations are in [the candidate study](../results/t11-candidate-hamiltonians/README.md). Physical justification/calibration, controlled further size scaling, and sewn dynamics remain open.
+- T9: Thermal/TFD state construction and physical study — IN PROGRESS; owns all ongoing TFD construction and analysis, with exactly five completed child-study records T7a–T7e. The four-face $J_{\mathrm{in}}=1$ occupation/spin comparison is complete through $q=160$. October 13 results quantify ordinary per-copy closure and show that separate singlet projection retains closed states with increasing mean area and positive RS volume; the area asymptote is $(57/14)T_*$. The October 14 analytic eigenvalue-ratio test excludes a fixed single-copy Gibbs Hamiltonian for this separately closed reference family; the separately closed reference spectra and entropy are now calculated; unprojected and other-input characterization remain open.
+- T11: Hamiltonian–volume and face dynamics — IN PROGRESS. The earlier $K=4$ interaction scan and five FL trajectories are complete; the October 16 free-hopping control adds 20 five/six-channel cases through $K=10000$, with activation and exact recurrence. Interacting equilibration and distinct-normal geometry remain open. See the [face-energy note](../notes/face-energy-equipartition.md).
 - The numerics dashboard includes 30 InfoDash datasets (2,049 rows) alongside the existing catalogue of 21 studies, 29 records, and 38 figures. Website commit `8263c95b2250bc724605a71c73f1a13e429b1b3d` deployed the integration; follow-up website commit `3c1edad` added the desktop note reader. Live review confirmed all four tabs, rendered Markdown and math, and working chronology links. See [deployment session](sessions/2026-10-12-infodash-deployment.md) and [desktop reader session](sessions/2026-10-13-infodash-desktop-note-reader.md).
 
 ## Project State

@@ -1,5 +1,14 @@
 # Project notes
 
+- [`face-energy-equipartition.md`](face-energy-equipartition.md) reports the
+  verified large-tetrahedron face-activation and recurrence control, relates
+  it to many-body equilibration and recurrence studies, and develops proposed
+  F/J and Hubbard interactions for the next stage.
+
+- [`thermal-entanglement.md`](thermal-entanglement.md) derives and explains the
+  separately closed reference's Schmidt spectrum, entropy decomposition and
+  coherent two-copy singlet creation, with verified temperature curves.
+
 - [`numerical-studies.md`](numerical-studies.md) is the central indexed,
   chronological record of numerical calculations, findings, and source artifacts.
 

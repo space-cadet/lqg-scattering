@@ -1,8 +1,18 @@
 # Session Cache
 
-*Last Updated: 2026-10-14 17:24:59 IST*
+*Last Updated: 2026-10-16 05:09:54 IST*
 
 ## Overview
+- 2026-10-16 T9/T11: Closed-reference entropy and 20 free-hopping face-activation
+  controls are complete. Extra channels activate but recur; interacting
+  equilibration has not been tested. The user highlighted residence near
+  equilibrium despite recurrence. Record the discussion and many-body precedents
+  in [physics transcript](sessions/2026-10-16-face-thermalization-transcript.md);
+  see also [T9 entropy session](sessions/2026-10-16-t9-entanglement.md) and
+  [face-energy note](../notes/face-energy-equipartition.md). Dashboard remains
+  local by user choice. The face-energy note now includes the many-body
+  equilibration/recurrence discussion; its local dashboard copy was rebuilt and
+  browser checked with no math or console errors.
 - 2026-10-14 T9/T9a: Implemented finite-area singlet exchange and integrated the Gibbs obstruction, exchange model/results, many-body connections, and projected-area derivation into the final 19-page manuscript. The PDF compiled with new citations resolved and was visually checked; see [manuscript session](sessions/2026-10-14-t9-manuscript-and-equilibrium.md), [T9a report](../results/t9a-singlet-exchange/README.md), and [illustrated thermal note](../notes/thermal-geometry-and-singlet-exchange.md).
 - 2026-10-13 T9: Measured ordinary per-copy closure over temperature and calculated area/positive-volume distributions after separate singlet projection. The projected mean area has high-temperature coefficient $57/14$; detailed checks and figures are in the closure reports and thermal note.
 - 2026-10-09 T11: Implemented the four-site Hamiltonian–volume pilot at $K=2,3,4$, added a dense $K=4$ thermal-volume crossover scan, and published the updated numerics dashboard. The live searchable catalogue contains 18 studies, including T11's 30 exact cases, plots, data, provenance, and claim limits. The run used the `qc-diff` Conda environment and generated five PDF/PNG figure pairs. Larger systems and physical volume calibration remain open.
@@ -20,7 +30,7 @@
 - T5: Volume–positivity numerical studies — 🔄 IN PROGRESS; T5a magnetization sweep converged for one plane; T5c/T5d/T5g open. Former T5f positive-cell/scattering-region mapping is now T8b. T5c owns the positive-volume comparison against the input FL tetrahedron; first weighted pilots and variance records now exist, while broad area/shape coverage and limit orders remain open. Its equal-area normalized covariance relation follows the known FL formula and is a consistency check.
 - T5c pilot update: weighted regular and unequal-skew input geometries reach $J=7$; the unequal-area grid covers $J=2,4$ plus selected $J=6$ points; a flat path covers $J=2,4,6,7$. Weighted closure and mean areas pass, but finite-$J$ unequal correlations do not exactly recover the input normals. At the exact flat boundary, calibrated positive volume remains finite in the sampled range; limit orders remain open. RS/AL calibrated curves coincide under the tested four-valent closure/sign convention and are not independent checks.
 - T7: Former thermal/TFD umbrella — archived as transferred; scientific work remains open under T9.
-- T9: Thermal/TFD state construction and physical study — 🔄 IN PROGRESS; owns all ongoing construction and analysis, with five completed historical child-study records T7a–T7e and active T9a. The earlier one-sided squeeze and conditional singlet pilot remain recorded. The selected target is the same-mode squeeze of conjugate FL intertwiners on both copies, with transformed geometric observables. Its $SU(1,1)$ factorization and coefficient-level partial-trace construction are written up. The October 13 follow-up quantifies the ordinary per-copy closure defect and calculates geometry after separate singlet projection; full selected-state reduced blocks, entropy, and Gibbs characterization remain open. See `tasks/T9.md`, `notes/thermal-area-sectors.md`, and the [October 13 session](sessions/2026-10-13-t9-thermal-closure-and-geometry.md).
+- T9: Thermal/TFD state construction and physical study — 🔄 IN PROGRESS; owns all ongoing construction and analysis, with five completed historical child-study records T7a–T7e and active T9a. The earlier one-sided squeeze and conditional singlet pilot remain recorded. The selected target is the same-mode squeeze of conjugate FL intertwiners on both copies, with transformed geometric observables. Its $SU(1,1)$ factorization and coefficient-level partial-trace construction are written up. The October 13 follow-up quantifies ordinary per-copy closure and geometry after separate singlet projection. The separately closed F12 reference spectrum and entropy are now calculated across 86 temperatures; unprojected reduced states and general-input characterization remain open. See `tasks/T9.md`, `notes/thermal-area-sectors.md`, and the [October 13 session](sessions/2026-10-13-t9-thermal-closure-and-geometry.md).
 - T11: Four-site Hamiltonian–volume studies — 🔄 IN PROGRESS; the $K=4$ dense scan shows nonmonotonic $\langle V\rangle$ and a low-temperature complete-graph crossover tied to a $0.00923$ gap at $U/t=20$. The result remains a finite-size observation; larger systems and physical normalization remain open.
 - T8: Amplituhedron Program — 🔄 IN PROGRESS; T8a cluster algebra/chart relevance and T8b positive-cell/scattering-region mapping (former T5f) are open. See `tasks/T8.md`.
 - T1–T3e: Python/Rust implementation and corrected converged scan recorded; n=6 independent state check remains open.
@@ -55,7 +65,7 @@ Python and Rust implement RS and AL positive expectations by dense spectral deco
 ### T9: Thermal/TFD State Construction and Physical Study
 **Status:** 🔄 IN PROGRESS
 
-T9 owns all thermal/TFD state construction and physical study. Its five completed child records T7a–T7e preserve their prior results and IDs. Gibbs TFD tends to the Fock vacuum at low temperature; fixed-$K$ T7e is beta-flat within its scope. The earlier $J=1,2$ pilot records positive RS/AL volumes, face diagnostics, entanglement, closure and cutoff comparisons for regular and unequal-skew inputs. The note also derives the occupation-sector and reduced-state coefficient framework, plots the exact $J=0$ vacuum, and includes the four-face $J_{\mathrm{in}}=1$ $P(q,S)$ calculation by two agreeing methods. The October 13 continuation quantifies ordinary per-copy closure and calculates the area and positive RS-volume distributions after separate singlet projection; the projected mean area has high-temperature coefficient $57/14$. The October 14 analytic ratio additionally excludes every fixed single-copy canonical Hamiltonian for the separately closed reference family at the stated temperature. Full reduced spectra, entropy, and other-input characterization remain open. A fixed positive total-area Hamiltonian on unrestricted Fock space is also excluded by the different low-temperature limits. See `tasks/T9.md`, `notes/thermal-area-sectors.md`, the [closure reports](../results/thermal-closure-temperature/README.md), and the [projection report](../results/thermal-closed-projection/README.md).
+T9 owns all thermal/TFD state construction and physical study. Its five completed child records T7a–T7e preserve their prior results and IDs. Gibbs TFD tends to the Fock vacuum at low temperature; fixed-$K$ T7e is beta-flat within its scope. The earlier $J=1,2$ pilot records positive RS/AL volumes, face diagnostics, entanglement, closure and cutoff comparisons for regular and unequal-skew inputs. The note also derives the occupation-sector and reduced-state coefficient framework, plots the exact $J=0$ vacuum, and includes the four-face $J_{\mathrm{in}}=1$ $P(q,S)$ calculation by two agreeing methods. The October 13 continuation quantifies ordinary per-copy closure and calculates the area and positive RS-volume distributions after separate singlet projection; the projected mean area has high-temperature coefficient $57/14$. The October 14 analytic ratio excludes every fixed single-copy canonical Hamiltonian for the separately closed reference family at the stated temperature. The separately closed F12 entropy is now calculated; unprojected reduced spectra and other-input characterization remain open. A fixed positive total-area Hamiltonian on unrestricted Fock space is also excluded by the different low-temperature limits. See `tasks/T9.md`, `notes/thermal-area-sectors.md`, the [closure reports](../results/thermal-closure-temperature/README.md), and the [projection report](../results/thermal-closed-projection/README.md).
 
 ## Completed Foundation
 - Python pipeline and published EPJC paper.
@@ -221,3 +231,26 @@ The new [heating, equilibrium and exchange note](../notes/thermal-geometry-and-s
 ## Final T9 manuscript integration — 2026-10-14 17:24:59 IST
 
 The 19-page thermal-intertwiners manuscript now includes the fixed-Gibbs eigenvalue-ratio obstruction, singlet-transfer Hamiltonian/current and finite-pilot results, many-body analogies, and the exact projected-area asymptote derivation. Figures 9–12 are present; new bibliography entries resolve. The PDF compiled and pages 12–17 were visually checked. Existing older layout warnings remain. No new numerical simulation was run for this writing update; T9a's 46-test and independent-propagation evidence is recorded in its task and results report.
+
+
+## Local completion: face activation control and dashboard
+
+Completed 20 free-hopping FL controls (five/six channels, K=2..10000, two phase
+choices), with exact binomial face marginals and 360 independent comparisons
+(maximum residual 1.82e-11). Initially empty channels activate; unequal areas and
+local energies recur. No thermalization or interacting equipartition is established.
+Six occupied channels can share one normal direction, so channel count is not
+a geometric face count. Inputs, provenance, plots and pedagogical explanation
+are saved under results/fl-face-activation and notes/face-energy-equipartition.md.
+
+The shared dashboard now contains 35 datasets and 26 catalogue studies. Schema,
+532 packaged links, 263 hashes and parity of 2385 numerical rows/33646 numeric
+values pass. Browser: face study has 20 rows, one figure and 33 rendered math
+expressions without KaTeX or console errors. Entropy verification remains 802
+comparisons, and all 46 existing regression tests passed after shared library
+changes.
+
+Automatic approval review rejected website upload/shared-main publication. The
+user explicitly answered "Keep the update local". No website commit or push ran;
+code/dashboard is authoritative. Interacting F/J/Hubbard proposals are documented
+but have not been simulated in this continuation.

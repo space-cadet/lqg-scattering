@@ -170,11 +170,11 @@
           "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
         },
         "presentationSource": "results/t5e_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "families.uniform_seed11.points[0]"
       },
       "assessment": {
@@ -260,11 +260,11 @@
           "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
         },
         "presentationSource": "results/t5e_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "families.uniform_seed11.points[1]"
       },
       "assessment": {
@@ -323,11 +323,11 @@
           "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
         },
         "presentationSource": "results/t5e_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "families.uniform_seed11.points[2]"
       },
       "assessment": {
@@ -386,11 +386,11 @@
           "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
         },
         "presentationSource": "results/t5e_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "families.uniform_seed11.points[3]"
       },
       "assessment": {
@@ -449,11 +449,11 @@
           "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
         },
         "presentationSource": "results/t5e_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "families.uniform_seed11.points[4]"
       },
       "assessment": {
@@ -512,11 +512,11 @@
           "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
         },
         "presentationSource": "results/t5e_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "families.vertex_seed11.points[0]"
       },
       "assessment": {
@@ -575,11 +575,11 @@
           "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
         },
         "presentationSource": "results/t5e_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "families.vertex_seed11.points[1]"
       },
       "assessment": {
@@ -638,11 +638,11 @@
           "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
         },
         "presentationSource": "results/t5e_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "families.vertex_seed11.points[2]"
       },
       "assessment": {
@@ -701,11 +701,11 @@
           "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
         },
         "presentationSource": "results/t5e_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "families.vertex_seed11.points[3]"
       },
       "assessment": {
@@ -764,11 +764,11 @@
           "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
         },
         "presentationSource": "results/t5e_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "families.vertex_seed11.points[4]"
       },
       "assessment": {
@@ -827,11 +827,11 @@
           "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
         },
         "presentationSource": "results/t5e_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "families.uniform_seed42.points[0]"
       },
       "assessment": {
@@ -890,11 +890,11 @@
           "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
         },
         "presentationSource": "results/t5e_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "families.uniform_seed42.points[1]"
       },
       "assessment": {
@@ -953,11 +953,11 @@
           "notes/experiments/t5e_notes.md": "f4fc2ceca5a279231a558b6e36864fe350609fcbee21ddef8e2c9cced93526e3"
         },
         "presentationSource": "results/t5e_results.json",
-        "exportRevision": "9ef9bba2b34dca1624ae7bc03a16fd73eba38240",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
         "exportDirtySource": true,
-        "importedAt": "2026-10-13T05:50:19.898756+00:00",
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4cd1998802cd02513269cc62f4b5d21b0d675549640778bb54ec1c30bec85448",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
         "sourceSelector": "families.uniform_seed42.points[2]"
       },
       "assessment": {
@@ -977,6 +977,12 @@
     }
   ],
   "docs": [
+    {
+      "title": "T5e_notes",
+      "path": "../study-assets/notes/experiments/t5e_notes.txt",
+      "sourcePath": "notes/experiments/t5e_notes.md",
+      "description": "Explanation and calculation record for this study."
+    },
     {
       "title": "Numerical studies overview",
       "path": "../index.html"

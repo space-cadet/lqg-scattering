@@ -1,0 +1,1174 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "Singlet exchange between closed FL polyhedra",
+    "subtitle": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy."
+  },
+  "columns": [
+    {
+      "key": "runId",
+      "label": "Case",
+      "type": "string"
+    },
+    {
+      "key": "parameters.case",
+      "label": "case",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "parameters.beta",
+      "label": "beta",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.energy",
+      "label": "energy",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.area_left",
+      "label": "area left",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.volume_L",
+      "label": "volume L",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.volume_R",
+      "label": "volume R",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.entropy_nats",
+      "label": "entropy nats",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "series",
+      "label": "Series",
+      "type": "string",
+      "visible": false
+    }
+  ],
+  "charts": {
+    "type": "scatter",
+    "x": "parameters.beta",
+    "y": "results.entropy_nats",
+    "groupBy": "series"
+  },
+  "runs": [
+    {
+      "runId": "t9a-singlet-exchange:case-0001:1",
+      "task": "T9a",
+      "status": "complete",
+      "description": "Singlet exchange between closed FL polyhedra",
+      "catalogueDate": "2026-10-14",
+      "parameters": {
+        "case": "no_exchange",
+        "beta": 0.0
+      },
+      "results": {
+        "energy": 0.0,
+        "area_left": 2.0000000000000124,
+        "volume_L": 0.04847172157823669,
+        "volume_R": 0.04847172157823682,
+        "entropy_nats": 7.098375638590788
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t9a-singlet-exchange/README.md": "f282805b9bf448ef451ee4ffe8a1d594b0b613b40ce94604c021d7d3627c63b1",
+          "results/t9a-singlet-exchange/detuned_operators.npz": "d70b1b58c425fce6a232b5bf463b83c06166180d289a460ab8573c75f3937e18",
+          "results/t9a-singlet-exchange/dynamics.csv": "db565e9eb38039fa39f2549054993ae984a6c951ccc0e4c22ca9bd30d5a37983",
+          "results/t9a-singlet-exchange/ground_states.csv": "8f1ba01cfe7cc8408567c9cd5f386db1e50f7c6ff3e64ea7305fc8b6a7ecaa28",
+          "results/t9a-singlet-exchange/independent_verification.json": "674b6f2e7b7a075e9116b693a892382a307d525fc13c3fe9ddbda98020c4614e",
+          "results/t9a-singlet-exchange/inputs.npz": "15b98aaedd38ce6110303531a8f8f4061d4849ed550d753b6d2e18b2be922053",
+          "results/t9a-singlet-exchange/no_exchange_operators.npz": "15fbcacc030b9f5b5092103e6a78d62fc9d7d86a28bef7910ff129ef6096e839",
+          "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
+          "results/t9a-singlet-exchange/repulsive_operators.npz": "c5c33d35e63f2d44b92123bdb759986ab1b7dae0f195dac7b16a4c18befcc1db",
+          "results/t9a-singlet-exchange/resonant_operators.npz": "abc7b02addd159e0201e8ee5518de2fa491dabf6b61ca6dac6bbe6f5a1f179f9",
+          "results/t9a-singlet-exchange/spectra.csv": "46c440833840237ca79d11bec1e6699cb0fe83f910cb26834ed8b6f9e066be2c",
+          "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
+          "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
+          "notes/t9a-singlet-exchange.md": "0f897f274a2c4b7e8f57096a7e6663bff132751c6b123587d2703f8412939a2e"
+        },
+        "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-1"
+      },
+      "assessment": {
+        "summary": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
+        "recordedStudyStatus": "46 recorded regression tests and 1792 independent comparisons passed"
+      },
+      "artifacts": [
+        {
+          "label": "README.md",
+          "path": "../study-assets/results/t9a-singlet-exchange/README.txt",
+          "kind": "data",
+          "sha256": "f282805b9bf448ef451ee4ffe8a1d594b0b613b40ce94604c021d7d3627c63b1",
+          "sourcePath": "results/t9a-singlet-exchange/README.md",
+          "sourceSha256": "f282805b9bf448ef451ee4ffe8a1d594b0b613b40ce94604c021d7d3627c63b1"
+        },
+        {
+          "label": "detuned_operators.npz",
+          "path": "../study-assets/results/t9a-singlet-exchange/detuned_operators.npz",
+          "kind": "operators",
+          "sha256": "d70b1b58c425fce6a232b5bf463b83c06166180d289a460ab8573c75f3937e18",
+          "sourcePath": "results/t9a-singlet-exchange/detuned_operators.npz",
+          "sourceSha256": "d70b1b58c425fce6a232b5bf463b83c06166180d289a460ab8573c75f3937e18"
+        },
+        {
+          "label": "dynamics.csv",
+          "path": "../study-assets/results/t9a-singlet-exchange/dynamics.csv",
+          "kind": "data",
+          "sha256": "db565e9eb38039fa39f2549054993ae984a6c951ccc0e4c22ca9bd30d5a37983",
+          "sourcePath": "results/t9a-singlet-exchange/dynamics.csv",
+          "sourceSha256": "db565e9eb38039fa39f2549054993ae984a6c951ccc0e4c22ca9bd30d5a37983"
+        },
+        {
+          "label": "ground_states.csv",
+          "path": "../study-assets/results/t9a-singlet-exchange/ground_states.csv",
+          "kind": "data",
+          "sha256": "8f1ba01cfe7cc8408567c9cd5f386db1e50f7c6ff3e64ea7305fc8b6a7ecaa28",
+          "sourcePath": "results/t9a-singlet-exchange/ground_states.csv",
+          "sourceSha256": "8f1ba01cfe7cc8408567c9cd5f386db1e50f7c6ff3e64ea7305fc8b6a7ecaa28"
+        },
+        {
+          "label": "independent_verification.json",
+          "path": "../study-assets/results/t9a-singlet-exchange/independent_verification.json",
+          "kind": "data",
+          "sha256": "674b6f2e7b7a075e9116b693a892382a307d525fc13c3fe9ddbda98020c4614e",
+          "sourcePath": "results/t9a-singlet-exchange/independent_verification.json",
+          "sourceSha256": "674b6f2e7b7a075e9116b693a892382a307d525fc13c3fe9ddbda98020c4614e"
+        },
+        {
+          "label": "inputs.npz",
+          "path": "../study-assets/results/t9a-singlet-exchange/inputs.npz",
+          "kind": "operators",
+          "sha256": "15b98aaedd38ce6110303531a8f8f4061d4849ed550d753b6d2e18b2be922053",
+          "sourcePath": "results/t9a-singlet-exchange/inputs.npz",
+          "sourceSha256": "15b98aaedd38ce6110303531a8f8f4061d4849ed550d753b6d2e18b2be922053"
+        },
+        {
+          "label": "no_exchange_operators.npz",
+          "path": "../study-assets/results/t9a-singlet-exchange/no_exchange_operators.npz",
+          "kind": "operators",
+          "sha256": "15fbcacc030b9f5b5092103e6a78d62fc9d7d86a28bef7910ff129ef6096e839",
+          "sourcePath": "results/t9a-singlet-exchange/no_exchange_operators.npz",
+          "sourceSha256": "15fbcacc030b9f5b5092103e6a78d62fc9d7d86a28bef7910ff129ef6096e839"
+        },
+        {
+          "label": "provenance.json",
+          "path": "../study-assets/results/t9a-singlet-exchange/provenance.json",
+          "kind": "data",
+          "sha256": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
+          "sourcePath": "results/t9a-singlet-exchange/provenance.json",
+          "sourceSha256": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0"
+        },
+        {
+          "label": "repulsive_operators.npz",
+          "path": "../study-assets/results/t9a-singlet-exchange/repulsive_operators.npz",
+          "kind": "operators",
+          "sha256": "c5c33d35e63f2d44b92123bdb759986ab1b7dae0f195dac7b16a4c18befcc1db",
+          "sourcePath": "results/t9a-singlet-exchange/repulsive_operators.npz",
+          "sourceSha256": "c5c33d35e63f2d44b92123bdb759986ab1b7dae0f195dac7b16a4c18befcc1db"
+        },
+        {
+          "label": "resonant_operators.npz",
+          "path": "../study-assets/results/t9a-singlet-exchange/resonant_operators.npz",
+          "kind": "operators",
+          "sha256": "abc7b02addd159e0201e8ee5518de2fa491dabf6b61ca6dac6bbe6f5a1f179f9",
+          "sourcePath": "results/t9a-singlet-exchange/resonant_operators.npz",
+          "sourceSha256": "abc7b02addd159e0201e8ee5518de2fa491dabf6b61ca6dac6bbe6f5a1f179f9"
+        },
+        {
+          "label": "spectra.csv",
+          "path": "../study-assets/results/t9a-singlet-exchange/spectra.csv",
+          "kind": "data",
+          "sha256": "46c440833840237ca79d11bec1e6699cb0fe83f910cb26834ed8b6f9e066be2c",
+          "sourcePath": "results/t9a-singlet-exchange/spectra.csv",
+          "sourceSha256": "46c440833840237ca79d11bec1e6699cb0fe83f910cb26834ed8b6f9e066be2c"
+        },
+        {
+          "label": "summary.json",
+          "path": "../study-assets/results/t9a-singlet-exchange/summary.json",
+          "kind": "data",
+          "sha256": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
+          "sourcePath": "results/t9a-singlet-exchange/summary.json",
+          "sourceSha256": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1"
+        },
+        {
+          "label": "thermal.csv",
+          "path": "../study-assets/results/t9a-singlet-exchange/thermal.csv",
+          "kind": "data",
+          "sha256": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
+          "sourcePath": "results/t9a-singlet-exchange/thermal.csv",
+          "sourceSha256": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e"
+        },
+        {
+          "label": "t9a-singlet-exchange.md",
+          "path": "../study-assets/notes/t9a-singlet-exchange.txt",
+          "kind": "data",
+          "sha256": "0f897f274a2c4b7e8f57096a7e6663bff132751c6b123587d2703f8412939a2e",
+          "sourcePath": "notes/t9a-singlet-exchange.md",
+          "sourceSha256": "0f897f274a2c4b7e8f57096a7e6663bff132751c6b123587d2703f8412939a2e"
+        }
+      ],
+      "figures": [
+        {
+          "title": "Exchange-overview",
+          "path": "../study-assets/figures/t9a-singlet-exchange/exchange-overview.png",
+          "tags": [
+            "T9a"
+          ]
+        }
+      ],
+      "series": "case=no_exchange"
+    },
+    {
+      "runId": "t9a-singlet-exchange:case-0002:2",
+      "task": "T9a",
+      "status": "complete",
+      "description": "Singlet exchange between closed FL polyhedra",
+      "catalogueDate": "2026-10-14",
+      "parameters": {
+        "case": "no_exchange",
+        "beta": 0.5
+      },
+      "results": {
+        "energy": 0.0,
+        "area_left": 2.0000000000000124,
+        "volume_L": 0.04847172157823669,
+        "volume_R": 0.04847172157823682,
+        "entropy_nats": 7.098375638590788
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t9a-singlet-exchange/README.md": "f282805b9bf448ef451ee4ffe8a1d594b0b613b40ce94604c021d7d3627c63b1",
+          "results/t9a-singlet-exchange/detuned_operators.npz": "d70b1b58c425fce6a232b5bf463b83c06166180d289a460ab8573c75f3937e18",
+          "results/t9a-singlet-exchange/dynamics.csv": "db565e9eb38039fa39f2549054993ae984a6c951ccc0e4c22ca9bd30d5a37983",
+          "results/t9a-singlet-exchange/ground_states.csv": "8f1ba01cfe7cc8408567c9cd5f386db1e50f7c6ff3e64ea7305fc8b6a7ecaa28",
+          "results/t9a-singlet-exchange/independent_verification.json": "674b6f2e7b7a075e9116b693a892382a307d525fc13c3fe9ddbda98020c4614e",
+          "results/t9a-singlet-exchange/inputs.npz": "15b98aaedd38ce6110303531a8f8f4061d4849ed550d753b6d2e18b2be922053",
+          "results/t9a-singlet-exchange/no_exchange_operators.npz": "15fbcacc030b9f5b5092103e6a78d62fc9d7d86a28bef7910ff129ef6096e839",
+          "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
+          "results/t9a-singlet-exchange/repulsive_operators.npz": "c5c33d35e63f2d44b92123bdb759986ab1b7dae0f195dac7b16a4c18befcc1db",
+          "results/t9a-singlet-exchange/resonant_operators.npz": "abc7b02addd159e0201e8ee5518de2fa491dabf6b61ca6dac6bbe6f5a1f179f9",
+          "results/t9a-singlet-exchange/spectra.csv": "46c440833840237ca79d11bec1e6699cb0fe83f910cb26834ed8b6f9e066be2c",
+          "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
+          "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
+          "notes/t9a-singlet-exchange.md": "0f897f274a2c4b7e8f57096a7e6663bff132751c6b123587d2703f8412939a2e"
+        },
+        "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-2"
+      },
+      "assessment": {
+        "summary": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
+        "recordedStudyStatus": "46 recorded regression tests and 1792 independent comparisons passed"
+      },
+      "series": "case=no_exchange"
+    },
+    {
+      "runId": "t9a-singlet-exchange:case-0003:3",
+      "task": "T9a",
+      "status": "complete",
+      "description": "Singlet exchange between closed FL polyhedra",
+      "catalogueDate": "2026-10-14",
+      "parameters": {
+        "case": "no_exchange",
+        "beta": 2.0
+      },
+      "results": {
+        "energy": 0.0,
+        "area_left": 2.0000000000000124,
+        "volume_L": 0.04847172157823669,
+        "volume_R": 0.04847172157823682,
+        "entropy_nats": 7.098375638590788
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t9a-singlet-exchange/README.md": "f282805b9bf448ef451ee4ffe8a1d594b0b613b40ce94604c021d7d3627c63b1",
+          "results/t9a-singlet-exchange/detuned_operators.npz": "d70b1b58c425fce6a232b5bf463b83c06166180d289a460ab8573c75f3937e18",
+          "results/t9a-singlet-exchange/dynamics.csv": "db565e9eb38039fa39f2549054993ae984a6c951ccc0e4c22ca9bd30d5a37983",
+          "results/t9a-singlet-exchange/ground_states.csv": "8f1ba01cfe7cc8408567c9cd5f386db1e50f7c6ff3e64ea7305fc8b6a7ecaa28",
+          "results/t9a-singlet-exchange/independent_verification.json": "674b6f2e7b7a075e9116b693a892382a307d525fc13c3fe9ddbda98020c4614e",
+          "results/t9a-singlet-exchange/inputs.npz": "15b98aaedd38ce6110303531a8f8f4061d4849ed550d753b6d2e18b2be922053",
+          "results/t9a-singlet-exchange/no_exchange_operators.npz": "15fbcacc030b9f5b5092103e6a78d62fc9d7d86a28bef7910ff129ef6096e839",
+          "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
+          "results/t9a-singlet-exchange/repulsive_operators.npz": "c5c33d35e63f2d44b92123bdb759986ab1b7dae0f195dac7b16a4c18befcc1db",
+          "results/t9a-singlet-exchange/resonant_operators.npz": "abc7b02addd159e0201e8ee5518de2fa491dabf6b61ca6dac6bbe6f5a1f179f9",
+          "results/t9a-singlet-exchange/spectra.csv": "46c440833840237ca79d11bec1e6699cb0fe83f910cb26834ed8b6f9e066be2c",
+          "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
+          "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
+          "notes/t9a-singlet-exchange.md": "0f897f274a2c4b7e8f57096a7e6663bff132751c6b123587d2703f8412939a2e"
+        },
+        "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-3"
+      },
+      "assessment": {
+        "summary": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
+        "recordedStudyStatus": "46 recorded regression tests and 1792 independent comparisons passed"
+      },
+      "series": "case=no_exchange"
+    },
+    {
+      "runId": "t9a-singlet-exchange:case-0004:4",
+      "task": "T9a",
+      "status": "complete",
+      "description": "Singlet exchange between closed FL polyhedra",
+      "catalogueDate": "2026-10-14",
+      "parameters": {
+        "case": "no_exchange",
+        "beta": 10.0
+      },
+      "results": {
+        "energy": 0.0,
+        "area_left": 2.0000000000000124,
+        "volume_L": 0.04847172157823669,
+        "volume_R": 0.04847172157823682,
+        "entropy_nats": 7.098375638590788
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t9a-singlet-exchange/README.md": "f282805b9bf448ef451ee4ffe8a1d594b0b613b40ce94604c021d7d3627c63b1",
+          "results/t9a-singlet-exchange/detuned_operators.npz": "d70b1b58c425fce6a232b5bf463b83c06166180d289a460ab8573c75f3937e18",
+          "results/t9a-singlet-exchange/dynamics.csv": "db565e9eb38039fa39f2549054993ae984a6c951ccc0e4c22ca9bd30d5a37983",
+          "results/t9a-singlet-exchange/ground_states.csv": "8f1ba01cfe7cc8408567c9cd5f386db1e50f7c6ff3e64ea7305fc8b6a7ecaa28",
+          "results/t9a-singlet-exchange/independent_verification.json": "674b6f2e7b7a075e9116b693a892382a307d525fc13c3fe9ddbda98020c4614e",
+          "results/t9a-singlet-exchange/inputs.npz": "15b98aaedd38ce6110303531a8f8f4061d4849ed550d753b6d2e18b2be922053",
+          "results/t9a-singlet-exchange/no_exchange_operators.npz": "15fbcacc030b9f5b5092103e6a78d62fc9d7d86a28bef7910ff129ef6096e839",
+          "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
+          "results/t9a-singlet-exchange/repulsive_operators.npz": "c5c33d35e63f2d44b92123bdb759986ab1b7dae0f195dac7b16a4c18befcc1db",
+          "results/t9a-singlet-exchange/resonant_operators.npz": "abc7b02addd159e0201e8ee5518de2fa491dabf6b61ca6dac6bbe6f5a1f179f9",
+          "results/t9a-singlet-exchange/spectra.csv": "46c440833840237ca79d11bec1e6699cb0fe83f910cb26834ed8b6f9e066be2c",
+          "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
+          "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
+          "notes/t9a-singlet-exchange.md": "0f897f274a2c4b7e8f57096a7e6663bff132751c6b123587d2703f8412939a2e"
+        },
+        "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-4"
+      },
+      "assessment": {
+        "summary": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
+        "recordedStudyStatus": "46 recorded regression tests and 1792 independent comparisons passed"
+      },
+      "series": "case=no_exchange"
+    },
+    {
+      "runId": "t9a-singlet-exchange:case-0005:5",
+      "task": "T9a",
+      "status": "complete",
+      "description": "Singlet exchange between closed FL polyhedra",
+      "catalogueDate": "2026-10-14",
+      "parameters": {
+        "case": "no_exchange",
+        "beta": 100.0
+      },
+      "results": {
+        "energy": 0.0,
+        "area_left": 2.0000000000000124,
+        "volume_L": 0.04847172157823669,
+        "volume_R": 0.04847172157823682,
+        "entropy_nats": 7.098375638590788
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t9a-singlet-exchange/README.md": "f282805b9bf448ef451ee4ffe8a1d594b0b613b40ce94604c021d7d3627c63b1",
+          "results/t9a-singlet-exchange/detuned_operators.npz": "d70b1b58c425fce6a232b5bf463b83c06166180d289a460ab8573c75f3937e18",
+          "results/t9a-singlet-exchange/dynamics.csv": "db565e9eb38039fa39f2549054993ae984a6c951ccc0e4c22ca9bd30d5a37983",
+          "results/t9a-singlet-exchange/ground_states.csv": "8f1ba01cfe7cc8408567c9cd5f386db1e50f7c6ff3e64ea7305fc8b6a7ecaa28",
+          "results/t9a-singlet-exchange/independent_verification.json": "674b6f2e7b7a075e9116b693a892382a307d525fc13c3fe9ddbda98020c4614e",
+          "results/t9a-singlet-exchange/inputs.npz": "15b98aaedd38ce6110303531a8f8f4061d4849ed550d753b6d2e18b2be922053",
+          "results/t9a-singlet-exchange/no_exchange_operators.npz": "15fbcacc030b9f5b5092103e6a78d62fc9d7d86a28bef7910ff129ef6096e839",
+          "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
+          "results/t9a-singlet-exchange/repulsive_operators.npz": "c5c33d35e63f2d44b92123bdb759986ab1b7dae0f195dac7b16a4c18befcc1db",
+          "results/t9a-singlet-exchange/resonant_operators.npz": "abc7b02addd159e0201e8ee5518de2fa491dabf6b61ca6dac6bbe6f5a1f179f9",
+          "results/t9a-singlet-exchange/spectra.csv": "46c440833840237ca79d11bec1e6699cb0fe83f910cb26834ed8b6f9e066be2c",
+          "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
+          "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
+          "notes/t9a-singlet-exchange.md": "0f897f274a2c4b7e8f57096a7e6663bff132751c6b123587d2703f8412939a2e"
+        },
+        "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-5"
+      },
+      "assessment": {
+        "summary": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
+        "recordedStudyStatus": "46 recorded regression tests and 1792 independent comparisons passed"
+      },
+      "series": "case=no_exchange"
+    },
+    {
+      "runId": "t9a-singlet-exchange:case-0006:6",
+      "task": "T9a",
+      "status": "complete",
+      "description": "Singlet exchange between closed FL polyhedra",
+      "catalogueDate": "2026-10-14",
+      "parameters": {
+        "case": "resonant",
+        "beta": 0.0
+      },
+      "results": {
+        "energy": 1.1881307977682833e-17,
+        "area_left": 1.999999999999973,
+        "volume_L": 0.048471721578236766,
+        "volume_R": 0.04847172157823677,
+        "entropy_nats": 7.098375638590788
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t9a-singlet-exchange/README.md": "f282805b9bf448ef451ee4ffe8a1d594b0b613b40ce94604c021d7d3627c63b1",
+          "results/t9a-singlet-exchange/detuned_operators.npz": "d70b1b58c425fce6a232b5bf463b83c06166180d289a460ab8573c75f3937e18",
+          "results/t9a-singlet-exchange/dynamics.csv": "db565e9eb38039fa39f2549054993ae984a6c951ccc0e4c22ca9bd30d5a37983",
+          "results/t9a-singlet-exchange/ground_states.csv": "8f1ba01cfe7cc8408567c9cd5f386db1e50f7c6ff3e64ea7305fc8b6a7ecaa28",
+          "results/t9a-singlet-exchange/independent_verification.json": "674b6f2e7b7a075e9116b693a892382a307d525fc13c3fe9ddbda98020c4614e",
+          "results/t9a-singlet-exchange/inputs.npz": "15b98aaedd38ce6110303531a8f8f4061d4849ed550d753b6d2e18b2be922053",
+          "results/t9a-singlet-exchange/no_exchange_operators.npz": "15fbcacc030b9f5b5092103e6a78d62fc9d7d86a28bef7910ff129ef6096e839",
+          "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
+          "results/t9a-singlet-exchange/repulsive_operators.npz": "c5c33d35e63f2d44b92123bdb759986ab1b7dae0f195dac7b16a4c18befcc1db",
+          "results/t9a-singlet-exchange/resonant_operators.npz": "abc7b02addd159e0201e8ee5518de2fa491dabf6b61ca6dac6bbe6f5a1f179f9",
+          "results/t9a-singlet-exchange/spectra.csv": "46c440833840237ca79d11bec1e6699cb0fe83f910cb26834ed8b6f9e066be2c",
+          "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
+          "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
+          "notes/t9a-singlet-exchange.md": "0f897f274a2c4b7e8f57096a7e6663bff132751c6b123587d2703f8412939a2e"
+        },
+        "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-6"
+      },
+      "assessment": {
+        "summary": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
+        "recordedStudyStatus": "46 recorded regression tests and 1792 independent comparisons passed"
+      },
+      "series": "case=resonant"
+    },
+    {
+      "runId": "t9a-singlet-exchange:case-0007:7",
+      "task": "T9a",
+      "status": "complete",
+      "description": "Singlet exchange between closed FL polyhedra",
+      "catalogueDate": "2026-10-14",
+      "parameters": {
+        "case": "resonant",
+        "beta": 0.5
+      },
+      "results": {
+        "energy": -0.2641526566484392,
+        "area_left": 2.0000000000000027,
+        "volume_L": 0.04831254799238504,
+        "volume_R": 0.048312547992385046,
+        "entropy_nats": 7.032786940522144
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t9a-singlet-exchange/README.md": "f282805b9bf448ef451ee4ffe8a1d594b0b613b40ce94604c021d7d3627c63b1",
+          "results/t9a-singlet-exchange/detuned_operators.npz": "d70b1b58c425fce6a232b5bf463b83c06166180d289a460ab8573c75f3937e18",
+          "results/t9a-singlet-exchange/dynamics.csv": "db565e9eb38039fa39f2549054993ae984a6c951ccc0e4c22ca9bd30d5a37983",
+          "results/t9a-singlet-exchange/ground_states.csv": "8f1ba01cfe7cc8408567c9cd5f386db1e50f7c6ff3e64ea7305fc8b6a7ecaa28",
+          "results/t9a-singlet-exchange/independent_verification.json": "674b6f2e7b7a075e9116b693a892382a307d525fc13c3fe9ddbda98020c4614e",
+          "results/t9a-singlet-exchange/inputs.npz": "15b98aaedd38ce6110303531a8f8f4061d4849ed550d753b6d2e18b2be922053",
+          "results/t9a-singlet-exchange/no_exchange_operators.npz": "15fbcacc030b9f5b5092103e6a78d62fc9d7d86a28bef7910ff129ef6096e839",
+          "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
+          "results/t9a-singlet-exchange/repulsive_operators.npz": "c5c33d35e63f2d44b92123bdb759986ab1b7dae0f195dac7b16a4c18befcc1db",
+          "results/t9a-singlet-exchange/resonant_operators.npz": "abc7b02addd159e0201e8ee5518de2fa491dabf6b61ca6dac6bbe6f5a1f179f9",
+          "results/t9a-singlet-exchange/spectra.csv": "46c440833840237ca79d11bec1e6699cb0fe83f910cb26834ed8b6f9e066be2c",
+          "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
+          "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
+          "notes/t9a-singlet-exchange.md": "0f897f274a2c4b7e8f57096a7e6663bff132751c6b123587d2703f8412939a2e"
+        },
+        "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-7"
+      },
+      "assessment": {
+        "summary": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
+        "recordedStudyStatus": "46 recorded regression tests and 1792 independent comparisons passed"
+      },
+      "series": "case=resonant"
+    },
+    {
+      "runId": "t9a-singlet-exchange:case-0008:8",
+      "task": "T9a",
+      "status": "complete",
+      "description": "Singlet exchange between closed FL polyhedra",
+      "catalogueDate": "2026-10-14",
+      "parameters": {
+        "case": "resonant",
+        "beta": 2.0
+      },
+      "results": {
+        "energy": -0.8858684869571227,
+        "area_left": 2.000000000000003,
+        "volume_L": 0.04674132982527684,
+        "volume_R": 0.04674132982527689,
+        "entropy_nats": 6.297733743917947
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t9a-singlet-exchange/README.md": "f282805b9bf448ef451ee4ffe8a1d594b0b613b40ce94604c021d7d3627c63b1",
+          "results/t9a-singlet-exchange/detuned_operators.npz": "d70b1b58c425fce6a232b5bf463b83c06166180d289a460ab8573c75f3937e18",
+          "results/t9a-singlet-exchange/dynamics.csv": "db565e9eb38039fa39f2549054993ae984a6c951ccc0e4c22ca9bd30d5a37983",
+          "results/t9a-singlet-exchange/ground_states.csv": "8f1ba01cfe7cc8408567c9cd5f386db1e50f7c6ff3e64ea7305fc8b6a7ecaa28",
+          "results/t9a-singlet-exchange/independent_verification.json": "674b6f2e7b7a075e9116b693a892382a307d525fc13c3fe9ddbda98020c4614e",
+          "results/t9a-singlet-exchange/inputs.npz": "15b98aaedd38ce6110303531a8f8f4061d4849ed550d753b6d2e18b2be922053",
+          "results/t9a-singlet-exchange/no_exchange_operators.npz": "15fbcacc030b9f5b5092103e6a78d62fc9d7d86a28bef7910ff129ef6096e839",
+          "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
+          "results/t9a-singlet-exchange/repulsive_operators.npz": "c5c33d35e63f2d44b92123bdb759986ab1b7dae0f195dac7b16a4c18befcc1db",
+          "results/t9a-singlet-exchange/resonant_operators.npz": "abc7b02addd159e0201e8ee5518de2fa491dabf6b61ca6dac6bbe6f5a1f179f9",
+          "results/t9a-singlet-exchange/spectra.csv": "46c440833840237ca79d11bec1e6699cb0fe83f910cb26834ed8b6f9e066be2c",
+          "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
+          "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
+          "notes/t9a-singlet-exchange.md": "0f897f274a2c4b7e8f57096a7e6663bff132751c6b123587d2703f8412939a2e"
+        },
+        "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-8"
+      },
+      "assessment": {
+        "summary": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
+        "recordedStudyStatus": "46 recorded regression tests and 1792 independent comparisons passed"
+      },
+      "series": "case=resonant"
+    },
+    {
+      "runId": "t9a-singlet-exchange:case-0009:9",
+      "task": "T9a",
+      "status": "complete",
+      "description": "Singlet exchange between closed FL polyhedra",
+      "catalogueDate": "2026-10-14",
+      "parameters": {
+        "case": "resonant",
+        "beta": 10.0
+      },
+      "results": {
+        "energy": -1.3544666769220042,
+        "area_left": 1.9999999999999842,
+        "volume_L": 0.04482372290100449,
+        "volume_R": 0.04482372290100447,
+        "entropy_nats": 4.676890318779655
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t9a-singlet-exchange/README.md": "f282805b9bf448ef451ee4ffe8a1d594b0b613b40ce94604c021d7d3627c63b1",
+          "results/t9a-singlet-exchange/detuned_operators.npz": "d70b1b58c425fce6a232b5bf463b83c06166180d289a460ab8573c75f3937e18",
+          "results/t9a-singlet-exchange/dynamics.csv": "db565e9eb38039fa39f2549054993ae984a6c951ccc0e4c22ca9bd30d5a37983",
+          "results/t9a-singlet-exchange/ground_states.csv": "8f1ba01cfe7cc8408567c9cd5f386db1e50f7c6ff3e64ea7305fc8b6a7ecaa28",
+          "results/t9a-singlet-exchange/independent_verification.json": "674b6f2e7b7a075e9116b693a892382a307d525fc13c3fe9ddbda98020c4614e",
+          "results/t9a-singlet-exchange/inputs.npz": "15b98aaedd38ce6110303531a8f8f4061d4849ed550d753b6d2e18b2be922053",
+          "results/t9a-singlet-exchange/no_exchange_operators.npz": "15fbcacc030b9f5b5092103e6a78d62fc9d7d86a28bef7910ff129ef6096e839",
+          "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
+          "results/t9a-singlet-exchange/repulsive_operators.npz": "c5c33d35e63f2d44b92123bdb759986ab1b7dae0f195dac7b16a4c18befcc1db",
+          "results/t9a-singlet-exchange/resonant_operators.npz": "abc7b02addd159e0201e8ee5518de2fa491dabf6b61ca6dac6bbe6f5a1f179f9",
+          "results/t9a-singlet-exchange/spectra.csv": "46c440833840237ca79d11bec1e6699cb0fe83f910cb26834ed8b6f9e066be2c",
+          "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
+          "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
+          "notes/t9a-singlet-exchange.md": "0f897f274a2c4b7e8f57096a7e6663bff132751c6b123587d2703f8412939a2e"
+        },
+        "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-9"
+      },
+      "assessment": {
+        "summary": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
+        "recordedStudyStatus": "46 recorded regression tests and 1792 independent comparisons passed"
+      },
+      "series": "case=resonant"
+    },
+    {
+      "runId": "t9a-singlet-exchange:case-0010:10",
+      "task": "T9a",
+      "status": "complete",
+      "description": "Singlet exchange between closed FL polyhedra",
+      "catalogueDate": "2026-10-14",
+      "parameters": {
+        "case": "resonant",
+        "beta": 100.0
+      },
+      "results": {
+        "energy": -1.3564659966250527,
+        "area_left": 1.9999999999999996,
+        "volume_L": 0.0448214412841754,
+        "volume_R": 0.044821441284175395,
+        "entropy_nats": 4.653960350157522
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t9a-singlet-exchange/README.md": "f282805b9bf448ef451ee4ffe8a1d594b0b613b40ce94604c021d7d3627c63b1",
+          "results/t9a-singlet-exchange/detuned_operators.npz": "d70b1b58c425fce6a232b5bf463b83c06166180d289a460ab8573c75f3937e18",
+          "results/t9a-singlet-exchange/dynamics.csv": "db565e9eb38039fa39f2549054993ae984a6c951ccc0e4c22ca9bd30d5a37983",
+          "results/t9a-singlet-exchange/ground_states.csv": "8f1ba01cfe7cc8408567c9cd5f386db1e50f7c6ff3e64ea7305fc8b6a7ecaa28",
+          "results/t9a-singlet-exchange/independent_verification.json": "674b6f2e7b7a075e9116b693a892382a307d525fc13c3fe9ddbda98020c4614e",
+          "results/t9a-singlet-exchange/inputs.npz": "15b98aaedd38ce6110303531a8f8f4061d4849ed550d753b6d2e18b2be922053",
+          "results/t9a-singlet-exchange/no_exchange_operators.npz": "15fbcacc030b9f5b5092103e6a78d62fc9d7d86a28bef7910ff129ef6096e839",
+          "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
+          "results/t9a-singlet-exchange/repulsive_operators.npz": "c5c33d35e63f2d44b92123bdb759986ab1b7dae0f195dac7b16a4c18befcc1db",
+          "results/t9a-singlet-exchange/resonant_operators.npz": "abc7b02addd159e0201e8ee5518de2fa491dabf6b61ca6dac6bbe6f5a1f179f9",
+          "results/t9a-singlet-exchange/spectra.csv": "46c440833840237ca79d11bec1e6699cb0fe83f910cb26834ed8b6f9e066be2c",
+          "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
+          "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
+          "notes/t9a-singlet-exchange.md": "0f897f274a2c4b7e8f57096a7e6663bff132751c6b123587d2703f8412939a2e"
+        },
+        "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-10"
+      },
+      "assessment": {
+        "summary": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
+        "recordedStudyStatus": "46 recorded regression tests and 1792 independent comparisons passed"
+      },
+      "series": "case=resonant"
+    },
+    {
+      "runId": "t9a-singlet-exchange:case-0011:11",
+      "task": "T9a",
+      "status": "complete",
+      "description": "Singlet exchange between closed FL polyhedra",
+      "catalogueDate": "2026-10-14",
+      "parameters": {
+        "case": "repulsive",
+        "beta": 0.0
+      },
+      "results": {
+        "energy": 3.1900826446281068,
+        "area_left": 1.9999999999999827,
+        "volume_L": 0.04847172157823682,
+        "volume_R": 0.04847172157823686,
+        "entropy_nats": 7.098375638590788
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t9a-singlet-exchange/README.md": "f282805b9bf448ef451ee4ffe8a1d594b0b613b40ce94604c021d7d3627c63b1",
+          "results/t9a-singlet-exchange/detuned_operators.npz": "d70b1b58c425fce6a232b5bf463b83c06166180d289a460ab8573c75f3937e18",
+          "results/t9a-singlet-exchange/dynamics.csv": "db565e9eb38039fa39f2549054993ae984a6c951ccc0e4c22ca9bd30d5a37983",
+          "results/t9a-singlet-exchange/ground_states.csv": "8f1ba01cfe7cc8408567c9cd5f386db1e50f7c6ff3e64ea7305fc8b6a7ecaa28",
+          "results/t9a-singlet-exchange/independent_verification.json": "674b6f2e7b7a075e9116b693a892382a307d525fc13c3fe9ddbda98020c4614e",
+          "results/t9a-singlet-exchange/inputs.npz": "15b98aaedd38ce6110303531a8f8f4061d4849ed550d753b6d2e18b2be922053",
+          "results/t9a-singlet-exchange/no_exchange_operators.npz": "15fbcacc030b9f5b5092103e6a78d62fc9d7d86a28bef7910ff129ef6096e839",
+          "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
+          "results/t9a-singlet-exchange/repulsive_operators.npz": "c5c33d35e63f2d44b92123bdb759986ab1b7dae0f195dac7b16a4c18befcc1db",
+          "results/t9a-singlet-exchange/resonant_operators.npz": "abc7b02addd159e0201e8ee5518de2fa491dabf6b61ca6dac6bbe6f5a1f179f9",
+          "results/t9a-singlet-exchange/spectra.csv": "46c440833840237ca79d11bec1e6699cb0fe83f910cb26834ed8b6f9e066be2c",
+          "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
+          "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
+          "notes/t9a-singlet-exchange.md": "0f897f274a2c4b7e8f57096a7e6663bff132751c6b123587d2703f8412939a2e"
+        },
+        "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-11"
+      },
+      "assessment": {
+        "summary": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
+        "recordedStudyStatus": "46 recorded regression tests and 1792 independent comparisons passed"
+      },
+      "series": "case=repulsive"
+    },
+    {
+      "runId": "t9a-singlet-exchange:case-0012:12",
+      "task": "T9a",
+      "status": "complete",
+      "description": "Singlet exchange between closed FL polyhedra",
+      "catalogueDate": "2026-10-14",
+      "parameters": {
+        "case": "repulsive",
+        "beta": 0.5
+      },
+      "results": {
+        "energy": 2.3392163931953833,
+        "area_left": 1.9999999999999796,
+        "volume_L": 0.04004723525229389,
+        "volume_R": 0.04004723525229391,
+        "entropy_nats": 6.912012110347372
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t9a-singlet-exchange/README.md": "f282805b9bf448ef451ee4ffe8a1d594b0b613b40ce94604c021d7d3627c63b1",
+          "results/t9a-singlet-exchange/detuned_operators.npz": "d70b1b58c425fce6a232b5bf463b83c06166180d289a460ab8573c75f3937e18",
+          "results/t9a-singlet-exchange/dynamics.csv": "db565e9eb38039fa39f2549054993ae984a6c951ccc0e4c22ca9bd30d5a37983",
+          "results/t9a-singlet-exchange/ground_states.csv": "8f1ba01cfe7cc8408567c9cd5f386db1e50f7c6ff3e64ea7305fc8b6a7ecaa28",
+          "results/t9a-singlet-exchange/independent_verification.json": "674b6f2e7b7a075e9116b693a892382a307d525fc13c3fe9ddbda98020c4614e",
+          "results/t9a-singlet-exchange/inputs.npz": "15b98aaedd38ce6110303531a8f8f4061d4849ed550d753b6d2e18b2be922053",
+          "results/t9a-singlet-exchange/no_exchange_operators.npz": "15fbcacc030b9f5b5092103e6a78d62fc9d7d86a28bef7910ff129ef6096e839",
+          "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
+          "results/t9a-singlet-exchange/repulsive_operators.npz": "c5c33d35e63f2d44b92123bdb759986ab1b7dae0f195dac7b16a4c18befcc1db",
+          "results/t9a-singlet-exchange/resonant_operators.npz": "abc7b02addd159e0201e8ee5518de2fa491dabf6b61ca6dac6bbe6f5a1f179f9",
+          "results/t9a-singlet-exchange/spectra.csv": "46c440833840237ca79d11bec1e6699cb0fe83f910cb26834ed8b6f9e066be2c",
+          "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
+          "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
+          "notes/t9a-singlet-exchange.md": "0f897f274a2c4b7e8f57096a7e6663bff132751c6b123587d2703f8412939a2e"
+        },
+        "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-12"
+      },
+      "assessment": {
+        "summary": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
+        "recordedStudyStatus": "46 recorded regression tests and 1792 independent comparisons passed"
+      },
+      "series": "case=repulsive"
+    },
+    {
+      "runId": "t9a-singlet-exchange:case-0013:13",
+      "task": "T9a",
+      "status": "complete",
+      "description": "Singlet exchange between closed FL polyhedra",
+      "catalogueDate": "2026-10-14",
+      "parameters": {
+        "case": "repulsive",
+        "beta": 2.0
+      },
+      "results": {
+        "energy": 1.5271105381644796,
+        "area_left": 2.0000000000000018,
+        "volume_L": 0.035277008008067275,
+        "volume_R": 0.03527700800806731,
+        "entropy_nats": 6.052875460320048
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t9a-singlet-exchange/README.md": "f282805b9bf448ef451ee4ffe8a1d594b0b613b40ce94604c021d7d3627c63b1",
+          "results/t9a-singlet-exchange/detuned_operators.npz": "d70b1b58c425fce6a232b5bf463b83c06166180d289a460ab8573c75f3937e18",
+          "results/t9a-singlet-exchange/dynamics.csv": "db565e9eb38039fa39f2549054993ae984a6c951ccc0e4c22ca9bd30d5a37983",
+          "results/t9a-singlet-exchange/ground_states.csv": "8f1ba01cfe7cc8408567c9cd5f386db1e50f7c6ff3e64ea7305fc8b6a7ecaa28",
+          "results/t9a-singlet-exchange/independent_verification.json": "674b6f2e7b7a075e9116b693a892382a307d525fc13c3fe9ddbda98020c4614e",
+          "results/t9a-singlet-exchange/inputs.npz": "15b98aaedd38ce6110303531a8f8f4061d4849ed550d753b6d2e18b2be922053",
+          "results/t9a-singlet-exchange/no_exchange_operators.npz": "15fbcacc030b9f5b5092103e6a78d62fc9d7d86a28bef7910ff129ef6096e839",
+          "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
+          "results/t9a-singlet-exchange/repulsive_operators.npz": "c5c33d35e63f2d44b92123bdb759986ab1b7dae0f195dac7b16a4c18befcc1db",
+          "results/t9a-singlet-exchange/resonant_operators.npz": "abc7b02addd159e0201e8ee5518de2fa491dabf6b61ca6dac6bbe6f5a1f179f9",
+          "results/t9a-singlet-exchange/spectra.csv": "46c440833840237ca79d11bec1e6699cb0fe83f910cb26834ed8b6f9e066be2c",
+          "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
+          "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
+          "notes/t9a-singlet-exchange.md": "0f897f274a2c4b7e8f57096a7e6663bff132751c6b123587d2703f8412939a2e"
+        },
+        "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-13"
+      },
+      "assessment": {
+        "summary": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
+        "recordedStudyStatus": "46 recorded regression tests and 1792 independent comparisons passed"
+      },
+      "series": "case=repulsive"
+    },
+    {
+      "runId": "t9a-singlet-exchange:case-0014:14",
+      "task": "T9a",
+      "status": "complete",
+      "description": "Singlet exchange between closed FL polyhedra",
+      "catalogueDate": "2026-10-14",
+      "parameters": {
+        "case": "repulsive",
+        "beta": 10.0
+      },
+      "results": {
+        "energy": 1.1812764308501875,
+        "area_left": 2.0000000000000027,
+        "volume_L": 0.03594287977064996,
+        "volume_R": 0.03594287977064998,
+        "entropy_nats": 4.742844885160277
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t9a-singlet-exchange/README.md": "f282805b9bf448ef451ee4ffe8a1d594b0b613b40ce94604c021d7d3627c63b1",
+          "results/t9a-singlet-exchange/detuned_operators.npz": "d70b1b58c425fce6a232b5bf463b83c06166180d289a460ab8573c75f3937e18",
+          "results/t9a-singlet-exchange/dynamics.csv": "db565e9eb38039fa39f2549054993ae984a6c951ccc0e4c22ca9bd30d5a37983",
+          "results/t9a-singlet-exchange/ground_states.csv": "8f1ba01cfe7cc8408567c9cd5f386db1e50f7c6ff3e64ea7305fc8b6a7ecaa28",
+          "results/t9a-singlet-exchange/independent_verification.json": "674b6f2e7b7a075e9116b693a892382a307d525fc13c3fe9ddbda98020c4614e",
+          "results/t9a-singlet-exchange/inputs.npz": "15b98aaedd38ce6110303531a8f8f4061d4849ed550d753b6d2e18b2be922053",
+          "results/t9a-singlet-exchange/no_exchange_operators.npz": "15fbcacc030b9f5b5092103e6a78d62fc9d7d86a28bef7910ff129ef6096e839",
+          "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
+          "results/t9a-singlet-exchange/repulsive_operators.npz": "c5c33d35e63f2d44b92123bdb759986ab1b7dae0f195dac7b16a4c18befcc1db",
+          "results/t9a-singlet-exchange/resonant_operators.npz": "abc7b02addd159e0201e8ee5518de2fa491dabf6b61ca6dac6bbe6f5a1f179f9",
+          "results/t9a-singlet-exchange/spectra.csv": "46c440833840237ca79d11bec1e6699cb0fe83f910cb26834ed8b6f9e066be2c",
+          "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
+          "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
+          "notes/t9a-singlet-exchange.md": "0f897f274a2c4b7e8f57096a7e6663bff132751c6b123587d2703f8412939a2e"
+        },
+        "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-14"
+      },
+      "assessment": {
+        "summary": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
+        "recordedStudyStatus": "46 recorded regression tests and 1792 independent comparisons passed"
+      },
+      "series": "case=repulsive"
+    },
+    {
+      "runId": "t9a-singlet-exchange:case-0015:15",
+      "task": "T9a",
+      "status": "complete",
+      "description": "Singlet exchange between closed FL polyhedra",
+      "catalogueDate": "2026-10-14",
+      "parameters": {
+        "case": "repulsive",
+        "beta": 100.0
+      },
+      "results": {
+        "energy": 1.17392780962179,
+        "area_left": 1.9999999999999998,
+        "volume_L": 0.0359767842035095,
+        "volume_R": 0.03597678420350951,
+        "entropy_nats": 4.653960350157523
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t9a-singlet-exchange/README.md": "f282805b9bf448ef451ee4ffe8a1d594b0b613b40ce94604c021d7d3627c63b1",
+          "results/t9a-singlet-exchange/detuned_operators.npz": "d70b1b58c425fce6a232b5bf463b83c06166180d289a460ab8573c75f3937e18",
+          "results/t9a-singlet-exchange/dynamics.csv": "db565e9eb38039fa39f2549054993ae984a6c951ccc0e4c22ca9bd30d5a37983",
+          "results/t9a-singlet-exchange/ground_states.csv": "8f1ba01cfe7cc8408567c9cd5f386db1e50f7c6ff3e64ea7305fc8b6a7ecaa28",
+          "results/t9a-singlet-exchange/independent_verification.json": "674b6f2e7b7a075e9116b693a892382a307d525fc13c3fe9ddbda98020c4614e",
+          "results/t9a-singlet-exchange/inputs.npz": "15b98aaedd38ce6110303531a8f8f4061d4849ed550d753b6d2e18b2be922053",
+          "results/t9a-singlet-exchange/no_exchange_operators.npz": "15fbcacc030b9f5b5092103e6a78d62fc9d7d86a28bef7910ff129ef6096e839",
+          "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
+          "results/t9a-singlet-exchange/repulsive_operators.npz": "c5c33d35e63f2d44b92123bdb759986ab1b7dae0f195dac7b16a4c18befcc1db",
+          "results/t9a-singlet-exchange/resonant_operators.npz": "abc7b02addd159e0201e8ee5518de2fa491dabf6b61ca6dac6bbe6f5a1f179f9",
+          "results/t9a-singlet-exchange/spectra.csv": "46c440833840237ca79d11bec1e6699cb0fe83f910cb26834ed8b6f9e066be2c",
+          "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
+          "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
+          "notes/t9a-singlet-exchange.md": "0f897f274a2c4b7e8f57096a7e6663bff132751c6b123587d2703f8412939a2e"
+        },
+        "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-15"
+      },
+      "assessment": {
+        "summary": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
+        "recordedStudyStatus": "46 recorded regression tests and 1792 independent comparisons passed"
+      },
+      "series": "case=repulsive"
+    },
+    {
+      "runId": "t9a-singlet-exchange:case-0016:16",
+      "task": "T9a",
+      "status": "complete",
+      "description": "Singlet exchange between closed FL polyhedra",
+      "catalogueDate": "2026-10-14",
+      "parameters": {
+        "case": "detuned",
+        "beta": 0.0
+      },
+      "results": {
+        "energy": 3.999999999999991,
+        "area_left": 1.999999999999993,
+        "volume_L": 0.048471721578236864,
+        "volume_R": 0.04847172157823688,
+        "entropy_nats": 7.098375638590788
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t9a-singlet-exchange/README.md": "f282805b9bf448ef451ee4ffe8a1d594b0b613b40ce94604c021d7d3627c63b1",
+          "results/t9a-singlet-exchange/detuned_operators.npz": "d70b1b58c425fce6a232b5bf463b83c06166180d289a460ab8573c75f3937e18",
+          "results/t9a-singlet-exchange/dynamics.csv": "db565e9eb38039fa39f2549054993ae984a6c951ccc0e4c22ca9bd30d5a37983",
+          "results/t9a-singlet-exchange/ground_states.csv": "8f1ba01cfe7cc8408567c9cd5f386db1e50f7c6ff3e64ea7305fc8b6a7ecaa28",
+          "results/t9a-singlet-exchange/independent_verification.json": "674b6f2e7b7a075e9116b693a892382a307d525fc13c3fe9ddbda98020c4614e",
+          "results/t9a-singlet-exchange/inputs.npz": "15b98aaedd38ce6110303531a8f8f4061d4849ed550d753b6d2e18b2be922053",
+          "results/t9a-singlet-exchange/no_exchange_operators.npz": "15fbcacc030b9f5b5092103e6a78d62fc9d7d86a28bef7910ff129ef6096e839",
+          "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
+          "results/t9a-singlet-exchange/repulsive_operators.npz": "c5c33d35e63f2d44b92123bdb759986ab1b7dae0f195dac7b16a4c18befcc1db",
+          "results/t9a-singlet-exchange/resonant_operators.npz": "abc7b02addd159e0201e8ee5518de2fa491dabf6b61ca6dac6bbe6f5a1f179f9",
+          "results/t9a-singlet-exchange/spectra.csv": "46c440833840237ca79d11bec1e6699cb0fe83f910cb26834ed8b6f9e066be2c",
+          "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
+          "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
+          "notes/t9a-singlet-exchange.md": "0f897f274a2c4b7e8f57096a7e6663bff132751c6b123587d2703f8412939a2e"
+        },
+        "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-16"
+      },
+      "assessment": {
+        "summary": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
+        "recordedStudyStatus": "46 recorded regression tests and 1792 independent comparisons passed"
+      },
+      "series": "case=detuned"
+    },
+    {
+      "runId": "t9a-singlet-exchange:case-0017:17",
+      "task": "T9a",
+      "status": "complete",
+      "description": "Singlet exchange between closed FL polyhedra",
+      "catalogueDate": "2026-10-14",
+      "parameters": {
+        "case": "detuned",
+        "beta": 0.5
+      },
+      "results": {
+        "energy": 1.6952463089080247,
+        "area_left": 0.9618447688016276,
+        "volume_L": 0.012094698313012018,
+        "volume_R": 0.10511063875970608,
+        "entropy_nats": 6.562246218743827
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t9a-singlet-exchange/README.md": "f282805b9bf448ef451ee4ffe8a1d594b0b613b40ce94604c021d7d3627c63b1",
+          "results/t9a-singlet-exchange/detuned_operators.npz": "d70b1b58c425fce6a232b5bf463b83c06166180d289a460ab8573c75f3937e18",
+          "results/t9a-singlet-exchange/dynamics.csv": "db565e9eb38039fa39f2549054993ae984a6c951ccc0e4c22ca9bd30d5a37983",
+          "results/t9a-singlet-exchange/ground_states.csv": "8f1ba01cfe7cc8408567c9cd5f386db1e50f7c6ff3e64ea7305fc8b6a7ecaa28",
+          "results/t9a-singlet-exchange/independent_verification.json": "674b6f2e7b7a075e9116b693a892382a307d525fc13c3fe9ddbda98020c4614e",
+          "results/t9a-singlet-exchange/inputs.npz": "15b98aaedd38ce6110303531a8f8f4061d4849ed550d753b6d2e18b2be922053",
+          "results/t9a-singlet-exchange/no_exchange_operators.npz": "15fbcacc030b9f5b5092103e6a78d62fc9d7d86a28bef7910ff129ef6096e839",
+          "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
+          "results/t9a-singlet-exchange/repulsive_operators.npz": "c5c33d35e63f2d44b92123bdb759986ab1b7dae0f195dac7b16a4c18befcc1db",
+          "results/t9a-singlet-exchange/resonant_operators.npz": "abc7b02addd159e0201e8ee5518de2fa491dabf6b61ca6dac6bbe6f5a1f179f9",
+          "results/t9a-singlet-exchange/spectra.csv": "46c440833840237ca79d11bec1e6699cb0fe83f910cb26834ed8b6f9e066be2c",
+          "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
+          "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
+          "notes/t9a-singlet-exchange.md": "0f897f274a2c4b7e8f57096a7e6663bff132751c6b123587d2703f8412939a2e"
+        },
+        "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-17"
+      },
+      "assessment": {
+        "summary": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
+        "recordedStudyStatus": "46 recorded regression tests and 1792 independent comparisons passed"
+      },
+      "series": "case=detuned"
+    },
+    {
+      "runId": "t9a-singlet-exchange:case-0018:18",
+      "task": "T9a",
+      "status": "complete",
+      "description": "Singlet exchange between closed FL polyhedra",
+      "catalogueDate": "2026-10-14",
+      "parameters": {
+        "case": "detuned",
+        "beta": 2.0
+      },
+      "results": {
+        "energy": -0.10481388794172508,
+        "area_left": 0.1397952151834962,
+        "volume_L": 0.0002680592838680411,
+        "volume_R": 0.16425408630119015,
+        "entropy_nats": 4.885126095100159
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t9a-singlet-exchange/README.md": "f282805b9bf448ef451ee4ffe8a1d594b0b613b40ce94604c021d7d3627c63b1",
+          "results/t9a-singlet-exchange/detuned_operators.npz": "d70b1b58c425fce6a232b5bf463b83c06166180d289a460ab8573c75f3937e18",
+          "results/t9a-singlet-exchange/dynamics.csv": "db565e9eb38039fa39f2549054993ae984a6c951ccc0e4c22ca9bd30d5a37983",
+          "results/t9a-singlet-exchange/ground_states.csv": "8f1ba01cfe7cc8408567c9cd5f386db1e50f7c6ff3e64ea7305fc8b6a7ecaa28",
+          "results/t9a-singlet-exchange/independent_verification.json": "674b6f2e7b7a075e9116b693a892382a307d525fc13c3fe9ddbda98020c4614e",
+          "results/t9a-singlet-exchange/inputs.npz": "15b98aaedd38ce6110303531a8f8f4061d4849ed550d753b6d2e18b2be922053",
+          "results/t9a-singlet-exchange/no_exchange_operators.npz": "15fbcacc030b9f5b5092103e6a78d62fc9d7d86a28bef7910ff129ef6096e839",
+          "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
+          "results/t9a-singlet-exchange/repulsive_operators.npz": "c5c33d35e63f2d44b92123bdb759986ab1b7dae0f195dac7b16a4c18befcc1db",
+          "results/t9a-singlet-exchange/resonant_operators.npz": "abc7b02addd159e0201e8ee5518de2fa491dabf6b61ca6dac6bbe6f5a1f179f9",
+          "results/t9a-singlet-exchange/spectra.csv": "46c440833840237ca79d11bec1e6699cb0fe83f910cb26834ed8b6f9e066be2c",
+          "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
+          "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
+          "notes/t9a-singlet-exchange.md": "0f897f274a2c4b7e8f57096a7e6663bff132751c6b123587d2703f8412939a2e"
+        },
+        "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-18"
+      },
+      "assessment": {
+        "summary": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
+        "recordedStudyStatus": "46 recorded regression tests and 1792 independent comparisons passed"
+      },
+      "series": "case=detuned"
+    },
+    {
+      "runId": "t9a-singlet-exchange:case-0019:19",
+      "task": "T9a",
+      "status": "complete",
+      "description": "Singlet exchange between closed FL polyhedra",
+      "catalogueDate": "2026-10-14",
+      "parameters": {
+        "case": "detuned",
+        "beta": 10.0
+      },
+      "results": {
+        "energy": -0.1978785354355213,
+        "area_left": 0.09671374119656449,
+        "volume_L": 0.0001238921506025144,
+        "volume_R": 0.1676994890443483,
+        "entropy_nats": 4.653960412738126
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t9a-singlet-exchange/README.md": "f282805b9bf448ef451ee4ffe8a1d594b0b613b40ce94604c021d7d3627c63b1",
+          "results/t9a-singlet-exchange/detuned_operators.npz": "d70b1b58c425fce6a232b5bf463b83c06166180d289a460ab8573c75f3937e18",
+          "results/t9a-singlet-exchange/dynamics.csv": "db565e9eb38039fa39f2549054993ae984a6c951ccc0e4c22ca9bd30d5a37983",
+          "results/t9a-singlet-exchange/ground_states.csv": "8f1ba01cfe7cc8408567c9cd5f386db1e50f7c6ff3e64ea7305fc8b6a7ecaa28",
+          "results/t9a-singlet-exchange/independent_verification.json": "674b6f2e7b7a075e9116b693a892382a307d525fc13c3fe9ddbda98020c4614e",
+          "results/t9a-singlet-exchange/inputs.npz": "15b98aaedd38ce6110303531a8f8f4061d4849ed550d753b6d2e18b2be922053",
+          "results/t9a-singlet-exchange/no_exchange_operators.npz": "15fbcacc030b9f5b5092103e6a78d62fc9d7d86a28bef7910ff129ef6096e839",
+          "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
+          "results/t9a-singlet-exchange/repulsive_operators.npz": "c5c33d35e63f2d44b92123bdb759986ab1b7dae0f195dac7b16a4c18befcc1db",
+          "results/t9a-singlet-exchange/resonant_operators.npz": "abc7b02addd159e0201e8ee5518de2fa491dabf6b61ca6dac6bbe6f5a1f179f9",
+          "results/t9a-singlet-exchange/spectra.csv": "46c440833840237ca79d11bec1e6699cb0fe83f910cb26834ed8b6f9e066be2c",
+          "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
+          "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
+          "notes/t9a-singlet-exchange.md": "0f897f274a2c4b7e8f57096a7e6663bff132751c6b123587d2703f8412939a2e"
+        },
+        "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-19"
+      },
+      "assessment": {
+        "summary": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
+        "recordedStudyStatus": "46 recorded regression tests and 1792 independent comparisons passed"
+      },
+      "series": "case=detuned"
+    },
+    {
+      "runId": "t9a-singlet-exchange:case-0020:20",
+      "task": "T9a",
+      "status": "complete",
+      "description": "Singlet exchange between closed FL polyhedra",
+      "catalogueDate": "2026-10-14",
+      "parameters": {
+        "case": "detuned",
+        "beta": 100.0
+      },
+      "results": {
+        "energy": -0.19787854140506972,
+        "area_left": 0.09671373842219891,
+        "volume_L": 0.000123892142108205,
+        "volume_R": 0.16769948926675265,
+        "entropy_nats": 4.653960350157524
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t9a-singlet-exchange/README.md": "f282805b9bf448ef451ee4ffe8a1d594b0b613b40ce94604c021d7d3627c63b1",
+          "results/t9a-singlet-exchange/detuned_operators.npz": "d70b1b58c425fce6a232b5bf463b83c06166180d289a460ab8573c75f3937e18",
+          "results/t9a-singlet-exchange/dynamics.csv": "db565e9eb38039fa39f2549054993ae984a6c951ccc0e4c22ca9bd30d5a37983",
+          "results/t9a-singlet-exchange/ground_states.csv": "8f1ba01cfe7cc8408567c9cd5f386db1e50f7c6ff3e64ea7305fc8b6a7ecaa28",
+          "results/t9a-singlet-exchange/independent_verification.json": "674b6f2e7b7a075e9116b693a892382a307d525fc13c3fe9ddbda98020c4614e",
+          "results/t9a-singlet-exchange/inputs.npz": "15b98aaedd38ce6110303531a8f8f4061d4849ed550d753b6d2e18b2be922053",
+          "results/t9a-singlet-exchange/no_exchange_operators.npz": "15fbcacc030b9f5b5092103e6a78d62fc9d7d86a28bef7910ff129ef6096e839",
+          "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
+          "results/t9a-singlet-exchange/repulsive_operators.npz": "c5c33d35e63f2d44b92123bdb759986ab1b7dae0f195dac7b16a4c18befcc1db",
+          "results/t9a-singlet-exchange/resonant_operators.npz": "abc7b02addd159e0201e8ee5518de2fa491dabf6b61ca6dac6bbe6f5a1f179f9",
+          "results/t9a-singlet-exchange/spectra.csv": "46c440833840237ca79d11bec1e6699cb0fe83f910cb26834ed8b6f9e066be2c",
+          "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
+          "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
+          "notes/t9a-singlet-exchange.md": "0f897f274a2c4b7e8f57096a7e6663bff132751c6b123587d2703f8412939a2e"
+        },
+        "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
+        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-20"
+      },
+      "assessment": {
+        "summary": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
+        "recordedStudyStatus": "46 recorded regression tests and 1792 independent comparisons passed"
+      },
+      "series": "case=detuned"
+    }
+  ],
+  "figures": [
+    {
+      "title": "Exchange-overview",
+      "path": "../study-assets/figures/t9a-singlet-exchange/exchange-overview.png",
+      "tags": [
+        "T9a"
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "title": "T9a singlet exchange",
+      "path": "../study-assets/notes/t9a-singlet-exchange.txt",
+      "sourcePath": "notes/t9a-singlet-exchange.md",
+      "description": "Explanation and calculation record for this study."
+    },
+    {
+      "title": "Numerical studies overview",
+      "path": "../index.html"
+    }
+  ]
+}

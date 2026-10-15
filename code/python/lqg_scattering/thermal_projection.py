@@ -76,9 +76,30 @@ def sector_trace_data(area):
     return trace,dimension,blocks
 
 
-def coefficient_weights(b):
+def coefficient_parameters(b):
+    """Shared eta,x,u,v,w for the area-one conjugate-FL reference."""
+    if not np.isfinite(b) or b <= 0:
+        raise ValueError('b=beta*hbar*omega must be finite and strictly positive')
     x=np.exp(-b); eta=-np.expm1(-b)
     u,v,w=eta**2/2,-eta*x/2,x*x
+    return eta,x,u,v,w
+
+
+def singlet_spectrum(b, indices):
+    """Unnormalized amplitudes, squared eigenvalues and multiplicities.
+
+    indices contains rows (K,r,l), with r,l>=0 and r+l<=K. A single
+    eigenvalue occurs (K-r-l+1)^2 times in the local singlet Hilbert space.
+    """
+    k,r,l=indices.T
+    eta,x,u,v,w=coefficient_parameters(b)
+    f,a=r*(k-l+1),k+r-l
+    c=eta**4*np.exp(-b*(k-1))*(u*f+v*a+w)
+    return c,c*c,(k-r-l+1)**2
+
+
+def coefficient_weights(b):
+    eta,x,u,v,w=coefficient_parameters(b)
     return np.array((u*u,v*v,w*w,2*u*v,2*u*w,2*v*w))
 
 

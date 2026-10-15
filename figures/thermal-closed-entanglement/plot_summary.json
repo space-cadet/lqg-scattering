@@ -1,0 +1,19 @@
+{
+  "sources": {
+    "results/thermal-closed-entanglement/area_sectors.csv": "ddbea9e45575f9a4dd62a4240631677f58b30583af3a7abeae7bba976c9da2db",
+    "results/thermal-closed-entanglement/temperature_summary.csv": "35d79d09c57ca3a9961ee2c44a411ef57be4f364643cfbd19ba6b4b0c5be27a1",
+    "results/thermal-closed-entanglement/spectrum_T2.npz": "39d836979bacb190c2e0bac9e97c98aa98a4835d066a1213dd0be55b4642bea7",
+    "results/thermal-closed-entanglement/spectrum_T3.npz": "9b513ac683a1dac9ceeb8088b29f435e911167ecc90b3cf49be48440d1ba4122",
+    "results/thermal-closed-entanglement/spectrum_T1.npz": "b6d7da3e62bd701f0b28acc74cc0d4f2fd347f5daa085e4f4960ea2e13b964d0",
+    "results/thermal-closed-entanglement/spectrum_T5.npz": "33e6688936e06da7d9a9bea6c5293a8c3384e50b60e487328cbe5472feb6340f",
+    "results/thermal-closed-entanglement/spectrum_T0.25.npz": "d2cbaaf91c0d5a839f2b88e2bab51a6545a71f9a4b1d64926e5efaac65811243",
+    "results/thermal-closed-entanglement/spectrum_T0.5.npz": "8ba2351b7445cfc3c3a5ac1c645462dc2a33caec40dac65e4b9f899550d49b9f"
+  },
+  "figures": [
+    "entanglement_overview",
+    "schmidt_and_area_distributions"
+  ],
+  "png_dpi": 300,
+  "physical_scope": "four labelled faces, F12 reference, normalized double-singlet projection",
+  "rank_plot": "multiplicities retained; lines join grouped eigenvalue endpoints"
+}

@@ -1,6 +1,36 @@
 {
   "datasets": [
     {
+      "id": "fl-face-activation",
+      "title": "Large-area tetrahedron: face activation and recurrence",
+      "path": "datasets/fl-face-activation.json",
+      "cases": 20
+    },
+    {
+      "id": "thermal-closed-entanglement",
+      "title": "Entanglement of separately closed thermal polyhedra",
+      "path": "datasets/thermal-closed-entanglement.json",
+      "cases": 86
+    },
+    {
+      "id": "thermal-closure-temperature",
+      "title": "Ordinary closure versus temperature",
+      "path": "datasets/thermal-closure-temperature.json",
+      "cases": 125
+    },
+    {
+      "id": "thermal-closed-projection",
+      "title": "Heating separately closed area and positive RS volume",
+      "path": "datasets/thermal-closed-projection.json",
+      "cases": 85
+    },
+    {
+      "id": "t9a-singlet-exchange",
+      "title": "Singlet exchange between closed FL polyhedra",
+      "path": "datasets/t9a-singlet-exchange.json",
+      "cases": 20
+    },
+    {
       "id": "t11-size-comparison",
       "title": "Four versus five sites: thermal-volume persistence",
       "path": "datasets/t11-size-comparison.json",

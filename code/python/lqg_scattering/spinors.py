@@ -23,6 +23,15 @@ def spinors_from_normals(normals):
 def spinor_bracket(left, right):
     return left[0] * right[1] - left[1] * right[0]
 
+
+def face_vectors_from_spinors(spinors):
+    """Return z^dagger sigma z/2; vacuum rows give zero face vectors."""
+    z=np.asarray(spinors,dtype=complex)
+    if z.ndim!=2 or z.shape[1]!=2 or not np.all(np.isfinite(z)):
+        raise ValueError('spinors must be a finite (L,2) array')
+    product=z[:,0].conj()*z[:,1]
+    return np.column_stack((product.real,product.imag,(abs(z[:,0])**2-abs(z[:,1])**2)/2))
+
 def four_point_cross_ratio(spinors):
     """Möbius-invariant cross ratio for the ordered four spinor rays."""
     numerator = spinor_bracket(spinors[0], spinors[2]) * spinor_bracket(
@@ -35,4 +44,4 @@ def four_point_cross_ratio(spinors):
         raise ValueError("sample reached a cross-ratio collision")
     return numerator / denominator
 
-__all__ = ["spinors_from_normals", "spinor_bracket", "four_point_cross_ratio"]
+__all__ = ["spinors_from_normals", "face_vectors_from_spinors", "spinor_bracket", "four_point_cross_ratio"]

@@ -1,0 +1,22 @@
+{
+  "python": "3.10.19",
+  "numpy": "1.24.3",
+  "scipy": "1.15.3",
+  "elapsed_seconds": 3.713563919067383,
+  "source_sha256": {
+    "code/thermal/closed_entanglement_study.py": "8d7452a62d26f3dd81a45dbb28db1df566c64fc46bab4fa24d93b3235f5407ad",
+    "code/python/lqg_scattering/thermal_entanglement.py": "ed06fe128a1ad9d58de15b46255e1154088eabbf390ce39871741dcab46d2968",
+    "code/python/lqg_scattering/thermal_projection.py": "466a71409ec56a94cfd9bf6b4a8db63c0af593999c3e26197195ca635048ec0d"
+  },
+  "artifact_sha256": {
+    "area_sectors.csv": "ddbea9e45575f9a4dd62a4240631677f58b30583af3a7abeae7bba976c9da2db",
+    "protocol.json": "58ec9a71c526653554bcefe48b7d19ac9e823c226bfeeb8a5c728bfc6a2eb832",
+    "spectrum_T0.25.npz": "d2cbaaf91c0d5a839f2b88e2bab51a6545a71f9a4b1d64926e5efaac65811243",
+    "spectrum_T0.5.npz": "8ba2351b7445cfc3c3a5ac1c645462dc2a33caec40dac65e4b9f899550d49b9f",
+    "spectrum_T1.npz": "b6d7da3e62bd701f0b28acc74cc0d4f2fd347f5daa085e4f4960ea2e13b964d0",
+    "spectrum_T2.npz": "39d836979bacb190c2e0bac9e97c98aa98a4835d066a1213dd0be55b4642bea7",
+    "spectrum_T3.npz": "9b513ac683a1dac9ceeb8088b29f435e911167ecc90b3cf49be48440d1ba4122",
+    "spectrum_T5.npz": "33e6688936e06da7d9a9bea6c5293a8c3384e50b60e487328cbe5472feb6340f",
+    "temperature_summary.csv": "35d79d09c57ca3a9961ee2c44a411ef57be4f364643cfbd19ba6b4b0c5be27a1"
+  }
+}

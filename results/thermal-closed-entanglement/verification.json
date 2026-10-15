@@ -1,0 +1,4026 @@
+{
+  "status": "passed",
+  "comparisons": 802,
+  "spectrum_and_geometry_tolerance": 2e-10,
+  "max_absolute_residual": 6.241308980747817e-08,
+  "max_nonderivative_absolute_residual": 1.7337242752546445e-11,
+  "max_residual_over_its_tolerance": 0.03495870259939693,
+  "derivative_step_agreement_tolerance": 2e-06,
+  "source_sha256": {
+    "code/thermal/verify_closed_entanglement.py": "ab2e15cc36d8177839b155e5f931f3c420921fd5e787ae02794b048dfbd35012",
+    "code/thermal/compare_j1_spin_methods.py": "8406ac384df34e239fa8366daf1abe27ccdb63e8fda0cbf9df1c1388f32f95f0"
+  },
+  "independence": "per-mode oscillator exponentials and Casimir projection/SVD, plus saved magnetic-counting geometry; cutoff/derivative checks share the analytic spectrum",
+  "checks": [
+    {
+      "name": "trace-probability-b0.2",
+      "absolute_residual": 1.0164395367051604e-20,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "trace-probability-b0.5",
+      "absolute_residual": 1.6263032587282567e-19,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "trace-probability-b1.0",
+      "absolute_residual": 8.673617379884035e-19,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "trace-probability-b2.0",
+      "absolute_residual": 5.551115123125783e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "trace-probability-b4.0",
+      "absolute_residual": 8.673617379884035e-19,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "trace-probability-b20.0",
+      "absolute_residual": 1.1102230246251565e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "dimension-K0",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K1",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K2",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K3",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K4",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K5",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K6",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K7",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K8",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K9",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K10",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K11",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K12",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K13",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K14",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K15",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K16",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K17",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K18",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K19",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K20",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K21",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K22",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K23",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K24",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K25",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K26",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K27",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K28",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K29",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K30",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K31",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K32",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K33",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K34",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K35",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K36",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K37",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K38",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K39",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K40",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K41",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K42",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K43",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K44",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K45",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K46",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K47",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K48",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K49",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "dimension-K50",
+      "absolute_residual": 0.0,
+      "tolerance": 0.0
+    },
+    {
+      "name": "cold-entropy",
+      "absolute_residual": 2.985788935695952e-32,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cold-mean-area",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cold-purity",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b0.5-q0-cut40",
+      "absolute_residual": 4.824699667560495e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b0.5-q0-cut40",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b0.5-q2-cut40",
+      "absolute_residual": 1.748276003132876e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b0.5-q2-cut40",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b0.5-q4-cut40",
+      "absolute_residual": 9.825582188149884e-19,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b0.5-q4-cut40",
+      "absolute_residual": 3.1086244689504383e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b0.5-q0-cut64",
+      "absolute_residual": 4.824699667560495e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b0.5-q0-cut64",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b0.5-q2-cut64",
+      "absolute_residual": 1.748276003132876e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b0.5-q2-cut64",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b0.5-q4-cut64",
+      "absolute_residual": 9.825582188149884e-19,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b0.5-q4-cut64",
+      "absolute_residual": 3.1086244689504383e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b1.0-q0-cut40",
+      "absolute_residual": 4.380176776841438e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b1.0-q0-cut40",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b1.0-q2-cut40",
+      "absolute_residual": 2.905661822261152e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b1.0-q2-cut40",
+      "absolute_residual": 9.992007221626409e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b1.0-q4-cut40",
+      "absolute_residual": 3.2959746043559335e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b1.0-q4-cut40",
+      "absolute_residual": 6.661338147750939e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b1.0-q0-cut64",
+      "absolute_residual": 3.8163916471489756e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b1.0-q0-cut64",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b1.0-q2-cut64",
+      "absolute_residual": 2.7321894746634712e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b1.0-q2-cut64",
+      "absolute_residual": 1.5543122344752192e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b1.0-q4-cut64",
+      "absolute_residual": 3.642919299551295e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b1.0-q4-cut64",
+      "absolute_residual": 8.881784197001252e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b2.0-q0-cut40",
+      "absolute_residual": 1.214306433183765e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b2.0-q0-cut40",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b2.0-q2-cut40",
+      "absolute_residual": 2.7755575615628914e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b2.0-q2-cut40",
+      "absolute_residual": 9.71445146547012e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b2.0-q4-cut40",
+      "absolute_residual": 2.0816681711721685e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b2.0-q4-cut40",
+      "absolute_residual": 6.661338147750939e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b2.0-q0-cut64",
+      "absolute_residual": 1.9081958235744878e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b2.0-q0-cut64",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b2.0-q2-cut64",
+      "absolute_residual": 1.1657341758564144e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b2.0-q2-cut64",
+      "absolute_residual": 4.3021142204224816e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b2.0-q4-cut64",
+      "absolute_residual": 1.1102230246251565e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b2.0-q4-cut64",
+      "absolute_residual": 1.3322676295501878e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b4.0-q0-cut40",
+      "absolute_residual": 4.87890977618477e-19,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b4.0-q0-cut40",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b4.0-q2-cut40",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b4.0-q2-cut40",
+      "absolute_residual": 1.1362438767648086e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b4.0-q4-cut40",
+      "absolute_residual": 1.951563910473908e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b4.0-q4-cut40",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b4.0-q0-cut64",
+      "absolute_residual": 4.87890977618477e-19,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b4.0-q0-cut64",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b4.0-q2-cut64",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b4.0-q2-cut64",
+      "absolute_residual": 1.1362438767648086e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "oscillator-spectrum-b4.0-q4-cut64",
+      "absolute_residual": 1.951563910473908e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-entropy-b4.0-q4-cut64",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "joint-creation-b0.5-q0",
+      "absolute_residual": 5.692061405548898e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "joint-creation-b0.5-q2",
+      "absolute_residual": 1.713039432527097e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "joint-creation-b1.0-q0",
+      "absolute_residual": 6.678685382510707e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "joint-creation-b1.0-q2",
+      "absolute_residual": 2.0816681711721685e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "joint-creation-b2.0-q0",
+      "absolute_residual": 3.400058012914542e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "joint-creation-b2.0-q2",
+      "absolute_residual": 2.1649348980190553e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "joint-creation-b4.0-q0",
+      "absolute_residual": 1.3877787807814457e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "joint-creation-b4.0-q2",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "entropy-decomposition-0",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-0",
+      "absolute_residual": 5.423418723394456e-31,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-0",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0000000000029048e-12
+    },
+    {
+      "name": "cutoff-coherence-0",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-0",
+      "absolute_residual": 4.339716400643481e-18,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-0",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-1",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-1",
+      "absolute_residual": 7.888609052210118e-31,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-1",
+      "absolute_residual": 0.0,
+      "tolerance": 2.000000000069358e-12
+    },
+    {
+      "name": "cutoff-coherence-1",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-1",
+      "absolute_residual": 2.996300300732833e-17,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-1",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-2",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-2",
+      "absolute_residual": 1.262177448353619e-29,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-2",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0000000017178412e-12
+    },
+    {
+      "name": "cutoff-coherence-2",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-2",
+      "absolute_residual": 1.8231254012777884e-16,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-2",
+      "absolute_residual": 1.9789746244697107e-11,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-3",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-3",
+      "absolute_residual": 2.524354896707238e-28,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-3",
+      "absolute_residual": 0.0,
+      "tolerance": 2.000000034800131e-12
+    },
+    {
+      "name": "cutoff-coherence-3",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-3",
+      "absolute_residual": 2.8025072128300163e-11,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-3",
+      "absolute_residual": 3.736545036248963e-11,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-4",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-4",
+      "absolute_residual": 2.8272774843121063e-27,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-4",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0000005887646306e-12
+    },
+    {
+      "name": "cutoff-coherence-4",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-4",
+      "absolute_residual": 8.823561899428489e-12,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-4",
+      "absolute_residual": 1.763762990601506e-11,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-5",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-5",
+      "absolute_residual": 1.6802106192483375e-25,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-5",
+      "absolute_residual": 0.0,
+      "tolerance": 2.000008470753674e-12
+    },
+    {
+      "name": "cutoff-coherence-5",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-5",
+      "absolute_residual": 8.304926747740797e-12,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-5",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-6",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-6",
+      "absolute_residual": 5.072943600422865e-24,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-6",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0000060856693546e-12
+    },
+    {
+      "name": "cutoff-coherence-6",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-6",
+      "absolute_residual": 2.3659905166136527e-11,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-6",
+      "absolute_residual": 3.1439108400383255e-11,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-7",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-7",
+      "absolute_residual": 1.203806285206078e-22,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-7",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0000192101602705e-12
+    },
+    {
+      "name": "cutoff-coherence-7",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-7",
+      "absolute_residual": 1.51270017311513e-11,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-7",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-8",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-8",
+      "absolute_residual": 2.3949980660707225e-21,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-8",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0000152643906686e-12
+    },
+    {
+      "name": "cutoff-coherence-8",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-8",
+      "absolute_residual": 7.937340726936264e-12,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-8",
+      "absolute_residual": 2.8020134855928664e-11,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-9",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-9",
+      "absolute_residual": 4.032836358441031e-20,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-9",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0000223729922557e-12
+    },
+    {
+      "name": "cutoff-coherence-9",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-9",
+      "absolute_residual": 3.831716698320358e-12,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-9",
+      "absolute_residual": 2.6452713065741373e-11,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-10",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-10",
+      "absolute_residual": 5.798072872853694e-19,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-10",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0000119055509994e-12
+    },
+    {
+      "name": "cutoff-coherence-10",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-10",
+      "absolute_residual": 7.649546757338603e-12,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-10",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-11",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-11",
+      "absolute_residual": 7.181588695630287e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-11",
+      "absolute_residual": 0.0,
+      "tolerance": 2.000013643689077e-12
+    },
+    {
+      "name": "cutoff-coherence-11",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-11",
+      "absolute_residual": 1.791997851648651e-12,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-11",
+      "absolute_residual": 3.536400800399503e-11,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-12",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-12",
+      "absolute_residual": 3.375194684236872e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-12",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0000031006699825e-12
+    },
+    {
+      "name": "cutoff-coherence-12",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-12",
+      "absolute_residual": 5.1635535690958134e-11,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-12",
+      "absolute_residual": 1.1128592128255342e-11,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-13",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-13",
+      "absolute_residual": 4.922304332863792e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-13",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0000335179407558e-12
+    },
+    {
+      "name": "cutoff-coherence-13",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-13",
+      "absolute_residual": 1.0690833591661675e-10,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-13",
+      "absolute_residual": 2.1012136871618363e-11,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-14",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-14",
+      "absolute_residual": 5.3837625885720143e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-14",
+      "absolute_residual": 0.0,
+      "tolerance": 2.000007067642912e-12
+    },
+    {
+      "name": "cutoff-coherence-14",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-14",
+      "absolute_residual": 2.2973543629522392e-10,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-14",
+      "absolute_residual": 3.967347269798324e-11,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-15",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-15",
+      "absolute_residual": 2.1879708060525832e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-15",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0000293479975564e-12
+    },
+    {
+      "name": "cutoff-coherence-15",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-15",
+      "absolute_residual": 4.396120451173602e-10,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-15",
+      "absolute_residual": 9.363543347260493e-12,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-16",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-16",
+      "absolute_residual": 9.977201085708404e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-16",
+      "absolute_residual": 0.0,
+      "tolerance": 2.00003221435705e-12
+    },
+    {
+      "name": "cutoff-coherence-16",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-16",
+      "absolute_residual": 7.997669002751673e-10,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-16",
+      "absolute_residual": 5.3038529622927155e-11,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-17",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-17",
+      "absolute_residual": 5.648015692291675e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-17",
+      "absolute_residual": 0.0,
+      "tolerance": 2.000014419888894e-12
+    },
+    {
+      "name": "cutoff-coherence-17",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-17",
+      "absolute_residual": 1.3950521311062447e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-17",
+      "absolute_residual": 1.0848846831740949e-10,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-18",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-18",
+      "absolute_residual": 1.3979431761484973e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-18",
+      "absolute_residual": 0.0,
+      "tolerance": 2.000038299441743e-12
+    },
+    {
+      "name": "cutoff-coherence-18",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-18",
+      "absolute_residual": 2.2906650534726403e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-18",
+      "absolute_residual": 1.969609969912356e-10,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-19",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-19",
+      "absolute_residual": 2.2402327388981735e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-19",
+      "absolute_residual": 0.0,
+      "tolerance": 2.000016588293239e-12
+    },
+    {
+      "name": "cutoff-coherence-19",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-19",
+      "absolute_residual": 3.574434255526615e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-19",
+      "absolute_residual": 3.4213543543409886e-10,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-20",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-20",
+      "absolute_residual": 2.6291902682773483e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-20",
+      "absolute_residual": 0.0,
+      "tolerance": 2.000027105054312e-12
+    },
+    {
+      "name": "cutoff-coherence-20",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-20",
+      "absolute_residual": 5.315950436790562e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-20",
+      "absolute_residual": 4.77473351655211e-10,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-21",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-21",
+      "absolute_residual": 3.382710778154774e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-21",
+      "absolute_residual": 0.0,
+      "tolerance": 2.000057245874707e-12
+    },
+    {
+      "name": "cutoff-coherence-21",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-21",
+      "absolute_residual": 7.50046884323563e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-21",
+      "absolute_residual": 7.822079615971145e-10,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-22",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-22",
+      "absolute_residual": 3.0249240612345574e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-22",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0000429344060304e-12
+    },
+    {
+      "name": "cutoff-coherence-22",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-22",
+      "absolute_residual": 1.0083420848294722e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-22",
+      "absolute_residual": 1.2078069794307922e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-23",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-23",
+      "absolute_residual": 8.239936510889834e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-23",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0000242861286636e-12
+    },
+    {
+      "name": "cutoff-coherence-23",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-23",
+      "absolute_residual": 1.292076512449114e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-23",
+      "absolute_residual": 1.6424230135647644e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-24",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-24",
+      "absolute_residual": 2.42861286636753e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-24",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0000312250225675e-12
+    },
+    {
+      "name": "cutoff-coherence-24",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-24",
+      "absolute_residual": 1.5749314796753566e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-24",
+      "absolute_residual": 2.2867784055247142e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-25",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-25",
+      "absolute_residual": 1.5612511283791264e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-25",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0000451028103754e-12
+    },
+    {
+      "name": "cutoff-coherence-25",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-25",
+      "absolute_residual": 1.8282664271396243e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-25",
+      "absolute_residual": 3.0118702185055746e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-26",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-26",
+      "absolute_residual": 2.6020852139652106e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-26",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0000208166817117e-12
+    },
+    {
+      "name": "cutoff-coherence-26",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-26",
+      "absolute_residual": 2.012360922343248e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-26",
+      "absolute_residual": 3.7481034664832436e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-27",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-27",
+      "absolute_residual": 1.734723475976807e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-27",
+      "absolute_residual": 0.0,
+      "tolerance": 2.000083266726847e-12
+    },
+    {
+      "name": "cutoff-coherence-27",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-27",
+      "absolute_residual": 2.0825278834735172e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-27",
+      "absolute_residual": 4.556794636068062e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-28",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-28",
+      "absolute_residual": 8.673617379884035e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-28",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0001665334536937e-12
+    },
+    {
+      "name": "cutoff-coherence-28",
+      "absolute_residual": 5.551115123125783e-17,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-28",
+      "absolute_residual": 2.009073463149491e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-28",
+      "absolute_residual": 5.222489107836736e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-29",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-29",
+      "absolute_residual": 3.642919299551295e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-29",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0000138777878078e-12
+    },
+    {
+      "name": "cutoff-coherence-29",
+      "absolute_residual": 5.551115123125783e-17,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-29",
+      "absolute_residual": 2.001129950635061e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-29",
+      "absolute_residual": 5.232269728594474e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-30",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-30",
+      "absolute_residual": 3.8163916471489756e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-30",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0001942890293094e-12
+    },
+    {
+      "name": "cutoff-coherence-30",
+      "absolute_residual": 5.551115123125783e-17,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-30",
+      "absolute_residual": 1.730813936617892e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-30",
+      "absolute_residual": 5.767724298166854e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-31",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-31",
+      "absolute_residual": 7.28583859910259e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-31",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0003330669073875e-12
+    },
+    {
+      "name": "cutoff-coherence-31",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-11
+    },
+    {
+      "name": "derivative-entropy-31",
+      "absolute_residual": 1.2564114193480691e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-31",
+      "absolute_residual": 5.9820888242967385e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-32",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-32",
+      "absolute_residual": 4.85722573273506e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-32",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0001110223024625e-12
+    },
+    {
+      "name": "cutoff-coherence-32",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0000000000000073e-11
+    },
+    {
+      "name": "derivative-entropy-32",
+      "absolute_residual": 5.544012804392651e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-32",
+      "absolute_residual": 5.841296057962353e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-33",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-33",
+      "absolute_residual": 6.938893903907228e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-33",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0003330669073875e-12
+    },
+    {
+      "name": "cutoff-coherence-33",
+      "absolute_residual": 1.1102230246251565e-16,
+      "tolerance": 2.0000000000006674e-11
+    },
+    {
+      "name": "derivative-entropy-33",
+      "absolute_residual": 3.5064129377815334e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-33",
+      "absolute_residual": 5.275235581692073e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-34",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-34",
+      "absolute_residual": 1.8041124150158794e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-34",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0005551115123125e-12
+    },
+    {
+      "name": "cutoff-coherence-34",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0000000000473185e-11
+    },
+    {
+      "name": "derivative-entropy-34",
+      "absolute_residual": 1.4231117617669042e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-34",
+      "absolute_residual": 4.073152815031733e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-35",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-35",
+      "absolute_residual": 2.7755575615628914e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-35",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0003330669073875e-12
+    },
+    {
+      "name": "cutoff-coherence-35",
+      "absolute_residual": 4.440892098500626e-16,
+      "tolerance": 2.0000000026381335e-11
+    },
+    {
+      "name": "derivative-entropy-35",
+      "absolute_residual": 2.6042055623065608e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-35",
+      "absolute_residual": 2.3993945719169574e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-36",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-36",
+      "absolute_residual": 8.326672684688674e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-36",
+      "absolute_residual": 0.0,
+      "tolerance": 2.000222044604925e-12
+    },
+    {
+      "name": "cutoff-coherence-36",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2.0000001170903792e-11
+    },
+    {
+      "name": "derivative-entropy-36",
+      "absolute_residual": 3.7958698406725944e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-36",
+      "absolute_residual": 1.362066015531127e-10,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-37",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-37",
+      "absolute_residual": 6.38378239159465e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-37",
+      "absolute_residual": 0.0,
+      "tolerance": 2.00133226762955e-12
+    },
+    {
+      "name": "cutoff-coherence-37",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2.000004184675735e-11
+    },
+    {
+      "name": "derivative-entropy-37",
+      "absolute_residual": 4.878210546621631e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-37",
+      "absolute_residual": 2.613676386431507e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-38",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-38",
+      "absolute_residual": 4.996003610813204e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-38",
+      "absolute_residual": 0.0,
+      "tolerance": 2.00133226762955e-12
+    },
+    {
+      "name": "cutoff-coherence-38",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0001217112690896e-11
+    },
+    {
+      "name": "derivative-entropy-38",
+      "absolute_residual": 5.726904905856145e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-38",
+      "absolute_residual": 5.328151253536362e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-39",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-39",
+      "absolute_residual": 1.1657341758564144e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-39",
+      "absolute_residual": 4.440892098500626e-16,
+      "tolerance": 2.005995204332976e-12
+    },
+    {
+      "name": "cutoff-coherence-39",
+      "absolute_residual": 8.881784197001252e-16,
+      "tolerance": 2.00290960662293e-11
+    },
+    {
+      "name": "derivative-entropy-39",
+      "absolute_residual": 6.212010550399327e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-39",
+      "absolute_residual": 8.072075896592423e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-40",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-40",
+      "absolute_residual": 1.1102230246251565e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-40",
+      "absolute_residual": 6.217248937900877e-15,
+      "tolerance": 2.1303401830909933e-12
+    },
+    {
+      "name": "cutoff-coherence-40",
+      "absolute_residual": 3.1086244689504383e-15,
+      "tolerance": 2.0577051435686196e-11
+    },
+    {
+      "name": "derivative-entropy-40",
+      "absolute_residual": 6.241308980747817e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-40",
+      "absolute_residual": 1.0268900840770812e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-41",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-41",
+      "absolute_residual": 2.1094237467877974e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-41",
+      "absolute_residual": 0.0,
+      "tolerance": 2.001110223024625e-12
+    },
+    {
+      "name": "cutoff-coherence-41",
+      "absolute_residual": 4.440892098500626e-16,
+      "tolerance": 2.0000012711933696e-11
+    },
+    {
+      "name": "derivative-entropy-41",
+      "absolute_residual": 5.7764903971246895e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-41",
+      "absolute_residual": 1.1679546219056647e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-42",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-42",
+      "absolute_residual": 2.220446049250313e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-42",
+      "absolute_residual": 0.0,
+      "tolerance": 2.001554312234475e-12
+    },
+    {
+      "name": "cutoff-coherence-42",
+      "absolute_residual": 8.881784197001252e-16,
+      "tolerance": 2.0000012711933696e-11
+    },
+    {
+      "name": "derivative-entropy-42",
+      "absolute_residual": 5.7769344863345395e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-42",
+      "absolute_residual": 1.1690648449302898e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-43",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-43",
+      "absolute_residual": 2.4424906541753444e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-43",
+      "absolute_residual": 0.0,
+      "tolerance": 2.00133226762955e-12
+    },
+    {
+      "name": "cutoff-coherence-43",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0000434267611786e-11
+    },
+    {
+      "name": "derivative-entropy-43",
+      "absolute_residual": 4.849432944098453e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-43",
+      "absolute_residual": 1.2086898149021863e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-44",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-44",
+      "absolute_residual": 3.552713678800501e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-44",
+      "absolute_residual": 0.0,
+      "tolerance": 2.007993605777301e-12
+    },
+    {
+      "name": "cutoff-coherence-44",
+      "absolute_residual": 1.7763568394002505e-15,
+      "tolerance": 2.001200039872813e-11
+    },
+    {
+      "name": "derivative-entropy-44",
+      "absolute_residual": 3.591839004002395e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-44",
+      "absolute_residual": 1.1683866318890068e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-45",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-45",
+      "absolute_residual": 2.3314683517128287e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-45",
+      "absolute_residual": 4.440892098500626e-16,
+      "tolerance": 2.035971225997855e-12
+    },
+    {
+      "name": "cutoff-coherence-45",
+      "absolute_residual": 8.881784197001252e-16,
+      "tolerance": 2.0271090637686886e-11
+    },
+    {
+      "name": "derivative-entropy-45",
+      "absolute_residual": 2.1485133672172196e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-45",
+      "absolute_residual": 1.0312863896189128e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-46",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-46",
+      "absolute_residual": 4.218847493575595e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-46",
+      "absolute_residual": 2.7533531010703882e-14,
+      "tolerance": 2.6843414723789465e-12
+    },
+    {
+      "name": "cutoff-coherence-46",
+      "absolute_residual": 2.842170943040401e-14,
+      "tolerance": 2.5057567012675502e-11
+    },
+    {
+      "name": "derivative-entropy-46",
+      "absolute_residual": 7.086799591604631e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-46",
+      "absolute_residual": 8.56306936469764e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-47",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-47",
+      "absolute_residual": 3.3306690738754696e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-47",
+      "absolute_residual": 3.2862601528904634e-14,
+      "tolerance": 2.8122391648157645e-12
+    },
+    {
+      "name": "cutoff-coherence-47",
+      "absolute_residual": 3.907985046680551e-14,
+      "tolerance": 2.664815465452776e-11
+    },
+    {
+      "name": "derivative-entropy-47",
+      "absolute_residual": 5.827849314243849e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-47",
+      "absolute_residual": 6.55882725908441e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-48",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-48",
+      "absolute_residual": 9.325873406851315e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-48",
+      "absolute_residual": 4.3520742565306136e-14,
+      "tolerance": 3.0977885267493547e-12
+    },
+    {
+      "name": "cutoff-coherence-48",
+      "absolute_residual": 6.217248937900877e-14,
+      "tolerance": 3.0003420751695215e-11
+    },
+    {
+      "name": "derivative-entropy-48",
+      "absolute_residual": 1.6351480169873867e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-48",
+      "absolute_residual": 4.747305215602182e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-49",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-49",
+      "absolute_residual": 1.1102230246251565e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-49",
+      "absolute_residual": 0.0,
+      "tolerance": 2.013766765505352e-12
+    },
+    {
+      "name": "cutoff-coherence-49",
+      "absolute_residual": 8.881784197001252e-16,
+      "tolerance": 2.002057887218206e-11
+    },
+    {
+      "name": "derivative-entropy-49",
+      "absolute_residual": 2.3990693875930447e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-49",
+      "absolute_residual": 3.233683099068685e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-50",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-50",
+      "absolute_residual": 1.9095836023552692e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-50",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0035527136788005e-12
+    },
+    {
+      "name": "cutoff-coherence-50",
+      "absolute_residual": 8.881784197001252e-16,
+      "tolerance": 2.0057231551016423e-11
+    },
+    {
+      "name": "derivative-entropy-50",
+      "absolute_residual": 2.9376309385042987e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-50",
+      "absolute_residual": 2.2416108969025572e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-51",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-51",
+      "absolute_residual": 1.354472090042691e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-51",
+      "absolute_residual": 0.0,
+      "tolerance": 2.007993605777301e-12
+    },
+    {
+      "name": "cutoff-coherence-51",
+      "absolute_residual": 8.881784197001252e-16,
+      "tolerance": 2.0170586650175867e-11
+    },
+    {
+      "name": "derivative-entropy-51",
+      "absolute_residual": 3.448111129955578e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-51",
+      "absolute_residual": 1.7194263790543118e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-52",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-52",
+      "absolute_residual": 1.9095836023552692e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-52",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0466293670342565e-12
+    },
+    {
+      "name": "cutoff-coherence-52",
+      "absolute_residual": 3.552713678800501e-15,
+      "tolerance": 2.053858583172329e-11
+    },
+    {
+      "name": "derivative-entropy-52",
+      "absolute_residual": 6.047704470546478e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-52",
+      "absolute_residual": 1.4109726720334947e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-53",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-53",
+      "absolute_residual": 2.2648549702353193e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-53",
+      "absolute_residual": 0.0,
+      "tolerance": 2.1332267629550187e-12
+    },
+    {
+      "name": "cutoff-coherence-53",
+      "absolute_residual": 1.0658141036401503e-14,
+      "tolerance": 2.1782154853098014e-11
+    },
+    {
+      "name": "derivative-entropy-53",
+      "absolute_residual": 1.2316105468812566e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-53",
+      "absolute_residual": 1.4310632678871116e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-54",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-54",
+      "absolute_residual": 3.019806626980426e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-54",
+      "absolute_residual": 3.552713678800501e-15,
+      "tolerance": 2.349054118942149e-12
+    },
+    {
+      "name": "cutoff-coherence-54",
+      "absolute_residual": 4.973799150320701e-14,
+      "tolerance": 2.6121119613687916e-11
+    },
+    {
+      "name": "derivative-entropy-54",
+      "absolute_residual": 2.034306945120079e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-54",
+      "absolute_residual": 1.7738979174453107e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-55",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-55",
+      "absolute_residual": 2.6201263381153694e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-55",
+      "absolute_residual": 0.0,
+      "tolerance": 2.07105427357601e-12
+    },
+    {
+      "name": "cutoff-coherence-55",
+      "absolute_residual": 7.105427357601002e-15,
+      "tolerance": 2.130036018499235e-11
+    },
+    {
+      "name": "derivative-entropy-55",
+      "absolute_residual": 2.4780177909633494e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-55",
+      "absolute_residual": 1.5987211554602254e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-56",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-56",
+      "absolute_residual": 4.440892098500626e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-56",
+      "absolute_residual": 0.0,
+      "tolerance": 2.2522426711948355e-12
+    },
+    {
+      "name": "cutoff-coherence-56",
+      "absolute_residual": 3.907985046680551e-14,
+      "tolerance": 2.448738827526661e-11
+    },
+    {
+      "name": "derivative-entropy-56",
+      "absolute_residual": 4.979876511157499e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-56",
+      "absolute_residual": 1.933116333674434e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-57",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-57",
+      "absolute_residual": 4.3520742565306136e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-57",
+      "absolute_residual": 1.1546319456101628e-14,
+      "tolerance": 2.8490985692333197e-12
+    },
+    {
+      "name": "cutoff-coherence-57",
+      "absolute_residual": 1.545430450278218e-13,
+      "tolerance": 3.781028447833014e-11
+    },
+    {
+      "name": "derivative-entropy-57",
+      "absolute_residual": 6.978563948933925e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-57",
+      "absolute_residual": 2.0094614860965976e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-58",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-58",
+      "absolute_residual": 5.684341886080802e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-58",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0399680288865056e-12
+    },
+    {
+      "name": "cutoff-coherence-58",
+      "absolute_residual": 1.7763568394002505e-15,
+      "tolerance": 2.0255240041958638e-11
+    },
+    {
+      "name": "derivative-entropy-58",
+      "absolute_residual": 8.37475289117151e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-58",
+      "absolute_residual": 2.2322685921949414e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-59",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-59",
+      "absolute_residual": 5.417888360170764e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-59",
+      "absolute_residual": 0.0,
+      "tolerance": 2.1758593271006248e-12
+    },
+    {
+      "name": "cutoff-coherence-59",
+      "absolute_residual": 4.973799150320701e-14,
+      "tolerance": 2.5478338130087036e-11
+    },
+    {
+      "name": "derivative-entropy-59",
+      "absolute_residual": 1.027533080844023e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-59",
+      "absolute_residual": 2.4433082224106784e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-60",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-60",
+      "absolute_residual": 6.838973831690964e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-60",
+      "absolute_residual": 3.552713678800501e-15,
+      "tolerance": 2.9610090501155355e-12
+    },
+    {
+      "name": "cutoff-coherence-60",
+      "absolute_residual": 2.5934809855243657e-13,
+      "tolerance": 4.793563659179917e-11
+    },
+    {
+      "name": "derivative-entropy-60",
+      "absolute_residual": 1.3158816702940612e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-60",
+      "absolute_residual": 2.4718680435853457e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-61",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-61",
+      "absolute_residual": 9.281464485866309e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-61",
+      "absolute_residual": 1.0658141036401503e-14,
+      "tolerance": 3.3429257705865893e-12
+    },
+    {
+      "name": "cutoff-coherence-61",
+      "absolute_residual": 4.121147867408581e-13,
+      "tolerance": 6.311293748237988e-11
+    },
+    {
+      "name": "derivative-entropy-61",
+      "absolute_residual": 2.8428562615090414e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-61",
+      "absolute_residual": 2.3824400230409992e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-62",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-62",
+      "absolute_residual": 9.592326932761353e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-62",
+      "absolute_residual": 0.0,
+      "tolerance": 2.0266453525910037e-12
+    },
+    {
+      "name": "cutoff-coherence-62",
+      "absolute_residual": 7.105427357601002e-15,
+      "tolerance": 2.0850600238947578e-11
+    },
+    {
+      "name": "derivative-entropy-62",
+      "absolute_residual": 1.1400548061146765e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-62",
+      "absolute_residual": 2.091488759958793e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-63",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-63",
+      "absolute_residual": 9.992007221626409e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-63",
+      "absolute_residual": 0.0,
+      "tolerance": 3.0969003483296546e-12
+    },
+    {
+      "name": "cutoff-coherence-63",
+      "absolute_residual": 4.973799150320701e-13,
+      "tolerance": 7.013701442391696e-11
+    },
+    {
+      "name": "derivative-entropy-63",
+      "absolute_residual": 3.623181754619509e-10,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-63",
+      "absolute_residual": 2.2160380197533414e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-64",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-64",
+      "absolute_residual": 1.5853984791647235e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-64",
+      "absolute_residual": 2.7533531010703882e-14,
+      "tolerance": 4.348343741687131e-12
+    },
+    {
+      "name": "cutoff-coherence-64",
+      "absolute_residual": 1.1262102361797588e-12,
+      "tolerance": 1.312524221222208e-10
+    },
+    {
+      "name": "derivative-entropy-64",
+      "absolute_residual": 4.176194945415546e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-64",
+      "absolute_residual": 2.3413209149225622e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-65",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-65",
+      "absolute_residual": 1.7053025658242404e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-65",
+      "absolute_residual": 0.0,
+      "tolerance": 2.829558643999917e-12
+    },
+    {
+      "name": "cutoff-coherence-65",
+      "absolute_residual": 4.298783551348606e-13,
+      "tolerance": 6.100935818738808e-11
+    },
+    {
+      "name": "derivative-entropy-65",
+      "absolute_residual": 6.5484413447336465e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-65",
+      "absolute_residual": 1.9124652972379863e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-66",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-66",
+      "absolute_residual": 2.2470914018413168e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-66",
+      "absolute_residual": 0.0,
+      "tolerance": 4.117417352565098e-12
+    },
+    {
+      "name": "cutoff-coherence-66",
+      "absolute_residual": 1.2150280781497713e-12,
+      "tolerance": 1.3598669256363595e-10
+    },
+    {
+      "name": "derivative-entropy-66",
+      "absolute_residual": 1.1163749924492095e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-66",
+      "absolute_residual": 2.2119537312903503e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-67",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-67",
+      "absolute_residual": 2.4513724383723456e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-67",
+      "absolute_residual": 0.0,
+      "tolerance": 2.1669775429036235e-12
+    },
+    {
+      "name": "cutoff-coherence-67",
+      "absolute_residual": 7.105427357601002e-15,
+      "tolerance": 2.096799203518402e-11
+    },
+    {
+      "name": "derivative-entropy-67",
+      "absolute_residual": 1.6431339844302784e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-67",
+      "absolute_residual": 1.3252159369869787e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-68",
+      "absolute_residual": 8.881784197001252e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-68",
+      "absolute_residual": 2.504663143554353e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-68",
+      "absolute_residual": 0.0,
+      "tolerance": 2.4227729277772596e-12
+    },
+    {
+      "name": "cutoff-coherence-68",
+      "absolute_residual": 3.836930773104541e-13,
+      "tolerance": 5.584681004087297e-11
+    },
+    {
+      "name": "derivative-entropy-68",
+      "absolute_residual": 1.2212453270876722e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-68",
+      "absolute_residual": 1.467714838554457e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-69",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-69",
+      "absolute_residual": 3.312905505481467e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-69",
+      "absolute_residual": 0.0,
+      "tolerance": 3.262101534393878e-12
+    },
+    {
+      "name": "cutoff-coherence-69",
+      "absolute_residual": 1.0800249583553523e-12,
+      "tolerance": 1.2027855336111703e-10
+    },
+    {
+      "name": "derivative-entropy-69",
+      "absolute_residual": 5.265508029594912e-10,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-69",
+      "absolute_residual": 1.6470509400789979e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-70",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-70",
+      "absolute_residual": 3.490541189421492e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-70",
+      "absolute_residual": 3.2862601528904634e-14,
+      "tolerance": 6.363620575986715e-12
+    },
+    {
+      "name": "cutoff-coherence-70",
+      "absolute_residual": 3.957723038183758e-12,
+      "tolerance": 3.8379096933766325e-10
+    },
+    {
+      "name": "derivative-entropy-70",
+      "absolute_residual": 3.996651454230005e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-70",
+      "absolute_residual": 1.3859033920482489e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-71",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-71",
+      "absolute_residual": 6.359357485052897e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-71",
+      "absolute_residual": 0.0,
+      "tolerance": 4.257749542877718e-12
+    },
+    {
+      "name": "cutoff-coherence-71",
+      "absolute_residual": 1.8118839761882555e-12,
+      "tolerance": 1.8475529847493837e-10
+    },
+    {
+      "name": "derivative-entropy-71",
+      "absolute_residual": 7.602479534796203e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-71",
+      "absolute_residual": 1.5317587198637739e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-72",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-72",
+      "absolute_residual": 9.263700917472306e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-72",
+      "absolute_residual": 0.0,
+      "tolerance": 3.1191048088221578e-12
+    },
+    {
+      "name": "cutoff-coherence-72",
+      "absolute_residual": 1.0587086762825493e-12,
+      "tolerance": 1.1527814429868917e-10
+    },
+    {
+      "name": "derivative-entropy-72",
+      "absolute_residual": 9.14074416158428e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-72",
+      "absolute_residual": 9.640488407569592e-10,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-73",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-73",
+      "absolute_residual": 1.1048939541069558e-12,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-73",
+      "absolute_residual": 0.0,
+      "tolerance": 4.5242030687877555e-12
+    },
+    {
+      "name": "cutoff-coherence-73",
+      "absolute_residual": 2.7213786779611837e-12,
+      "tolerance": 2.6053031137683175e-10
+    },
+    {
+      "name": "derivative-entropy-73",
+      "absolute_residual": 2.322146919198076e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-73",
+      "absolute_residual": 6.792446605174973e-10,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-74",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-74",
+      "absolute_residual": 1.3704593015972932e-12,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-74",
+      "absolute_residual": 0.0,
+      "tolerance": 3.671551785875635e-12
+    },
+    {
+      "name": "cutoff-coherence-74",
+      "absolute_residual": 2.2595258997171186e-12,
+      "tolerance": 2.180233007419828e-10
+    },
+    {
+      "name": "derivative-entropy-74",
+      "absolute_residual": 5.926019008839489e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-74",
+      "absolute_residual": 9.25545418084539e-10,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-75",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-75",
+      "absolute_residual": 1.6493473253831326e-12,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-75",
+      "absolute_residual": 0.0,
+      "tolerance": 6.408917675391421e-12
+    },
+    {
+      "name": "cutoff-coherence-75",
+      "absolute_residual": 6.821210263296962e-12,
+      "tolerance": 6.153128154393936e-10
+    },
+    {
+      "name": "derivative-entropy-75",
+      "absolute_residual": 5.953872461716969e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-75",
+      "absolute_residual": 1.2644338909240105e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-76",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-76",
+      "absolute_residual": 1.5001333508735115e-12,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-76",
+      "absolute_residual": 0.0,
+      "tolerance": 3.092459456231154e-12
+    },
+    {
+      "name": "cutoff-coherence-76",
+      "absolute_residual": 1.8474111129762605e-12,
+      "tolerance": 1.8111131118762824e-10
+    },
+    {
+      "name": "derivative-entropy-76",
+      "absolute_residual": 1.0288066620844916e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-76",
+      "absolute_residual": 7.105427357601002e-10,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-77",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-77",
+      "absolute_residual": 1.7212897773788427e-12,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-77",
+      "absolute_residual": 0.0,
+      "tolerance": 5.069544618483632e-12
+    },
+    {
+      "name": "cutoff-coherence-77",
+      "absolute_residual": 4.490630090003833e-12,
+      "tolerance": 4.0515853433254457e-10
+    },
+    {
+      "name": "derivative-entropy-77",
+      "absolute_residual": 3.1475455575247224e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-77",
+      "absolute_residual": 1.4358203515030254e-10,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-78",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-78",
+      "absolute_residual": 2.0801138589376933e-12,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-78",
+      "absolute_residual": 0.0,
+      "tolerance": 5.515410185173095e-12
+    },
+    {
+      "name": "cutoff-coherence-78",
+      "absolute_residual": 5.8832938520936295e-12,
+      "tolerance": 5.230936269401185e-10
+    },
+    {
+      "name": "derivative-entropy-78",
+      "absolute_residual": 5.018017779079287e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-78",
+      "absolute_residual": 5.79411185697154e-10,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-79",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-79",
+      "absolute_residual": 2.5908164502652653e-12,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-79",
+      "absolute_residual": 0.0,
+      "tolerance": 4.863487225113203e-12
+    },
+    {
+      "name": "cutoff-coherence-79",
+      "absolute_residual": 5.5422333389287814e-12,
+      "tolerance": 4.888284604212131e-10
+    },
+    {
+      "name": "derivative-entropy-79",
+      "absolute_residual": 2.4037853929570474e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-79",
+      "absolute_residual": 1.455319420529122e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-80",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-80",
+      "absolute_residual": 3.092637257395836e-12,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-80",
+      "absolute_residual": 0.0,
+      "tolerance": 8.330935775622492e-12
+    },
+    {
+      "name": "cutoff-coherence-80",
+      "absolute_residual": 1.4765078049094882e-11,
+      "tolerance": 1.269067007831944e-09
+    },
+    {
+      "name": "derivative-entropy-80",
+      "absolute_residual": 4.211744064619438e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-80",
+      "absolute_residual": 8.88303652857303e-10,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-81",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-81",
+      "absolute_residual": 3.707256723828323e-12,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-81",
+      "absolute_residual": 0.0,
+      "tolerance": 5.987921104453562e-12
+    },
+    {
+      "name": "cutoff-coherence-81",
+      "absolute_residual": 1.1965539670200087e-11,
+      "tolerance": 1.0233147667141762e-09
+    },
+    {
+      "name": "derivative-entropy-81",
+      "absolute_residual": 3.656351754699472e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-81",
+      "absolute_residual": 9.57136592205643e-10,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-82",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-82",
+      "absolute_residual": 4.210853887798294e-12,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-82",
+      "absolute_residual": 0.0,
+      "tolerance": 6.986233648196503e-12
+    },
+    {
+      "name": "cutoff-coherence-82",
+      "absolute_residual": 1.1567635738174431e-11,
+      "tolerance": 9.864403469514528e-10
+    },
+    {
+      "name": "derivative-entropy-82",
+      "absolute_residual": 2.2843227309721215e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-82",
+      "absolute_residual": 2.0056400984458378e-10,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-83",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-83",
+      "absolute_residual": 5.158540261618327e-12,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-83",
+      "absolute_residual": 0.0,
+      "tolerance": 6.68602934233786e-12
+    },
+    {
+      "name": "cutoff-coherence-83",
+      "absolute_residual": 1.318767317570746e-11,
+      "tolerance": 1.1154263402273741e-09
+    },
+    {
+      "name": "derivative-entropy-83",
+      "absolute_residual": 1.0826547214293214e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-83",
+      "absolute_residual": 1.3433529844064651e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-84",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-84",
+      "absolute_residual": 5.821121362714621e-12,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-84",
+      "absolute_residual": 0.0,
+      "tolerance": 6.11759515372978e-12
+    },
+    {
+      "name": "cutoff-coherence-84",
+      "absolute_residual": 1.7337242752546445e-11,
+      "tolerance": 1.455395171649211e-09
+    },
+    {
+      "name": "derivative-entropy-84",
+      "absolute_residual": 1.960640316767126e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-84",
+      "absolute_residual": 7.902833942807774e-11,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "entropy-decomposition-85",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "conditional-sector-average-85",
+      "absolute_residual": 6.991740519879386e-12,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "cutoff-entropy-85",
+      "absolute_residual": 0.0,
+      "tolerance": 6.789058039023075e-12
+    },
+    {
+      "name": "cutoff-coherence-85",
+      "absolute_residual": 9.57811607804615e-12,
+      "tolerance": 8.11690892838227e-10
+    },
+    {
+      "name": "derivative-entropy-85",
+      "absolute_residual": 7.773337529215496e-09,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "derivative-mean_area-85",
+      "absolute_residual": 5.009326287108706e-10,
+      "tolerance": 2e-06
+    },
+    {
+      "name": "previous-area-0",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-0",
+      "absolute_residual": 1.370775197141214e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-1",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-1",
+      "absolute_residual": 2.9329460979737066e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-2",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-2",
+      "absolute_residual": 4.8210968064596695e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-3",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-3",
+      "absolute_residual": 1.8710550396575288e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-4",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-4",
+      "absolute_residual": 1.555343225828998e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-5",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-5",
+      "absolute_residual": 1.6099387312307703e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-6",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-6",
+      "absolute_residual": 1.0307591322893157e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-7",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-7",
+      "absolute_residual": 1.2889711693234547e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-8",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-8",
+      "absolute_residual": 1.789839784226589e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-9",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-9",
+      "absolute_residual": 7.902053611616733e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-10",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-10",
+      "absolute_residual": 2.5623044966790745e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-11",
+      "absolute_residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-11",
+      "absolute_residual": 2.0928074609296598e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-12",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-12",
+      "absolute_residual": 1.8158572671562085e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-13",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-13",
+      "absolute_residual": 2.194670853208977e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-14",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-14",
+      "absolute_residual": 1.253968386979478e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-15",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-15",
+      "absolute_residual": 3.2124417371100415e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-16",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-16",
+      "absolute_residual": 3.078036997494342e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-17",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-17",
+      "absolute_residual": 2.4562658451174227e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-18",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-18",
+      "absolute_residual": 3.2837572128829743e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-19",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-19",
+      "absolute_residual": 3.4820889186913846e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-20",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-20",
+      "absolute_residual": 2.6877710669094557e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-21",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-21",
+      "absolute_residual": 3.274129624646245e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-22",
+      "absolute_residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-22",
+      "absolute_residual": 3.099090266096144e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-23",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-23",
+      "absolute_residual": 1.0645848894270948e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-24",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-24",
+      "absolute_residual": 1.3983158706452892e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-25",
+      "absolute_residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-25",
+      "absolute_residual": 1.3830353962768216e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-26",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-26",
+      "absolute_residual": 3.504683522559393e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-27",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-27",
+      "absolute_residual": 5.839783951550048e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-28",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-28",
+      "absolute_residual": 1.2771901591879242e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-29",
+      "absolute_residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-29",
+      "absolute_residual": 1.235990476633475e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-30",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-30",
+      "absolute_residual": 1.1167282376600696e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-31",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-31",
+      "absolute_residual": 3.5887091909270197e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-32",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-32",
+      "absolute_residual": 8.890457814381136e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-33",
+      "absolute_residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-33",
+      "absolute_residual": 6.505213034913027e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-34",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-34",
+      "absolute_residual": 2.432949675057472e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-35",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-35",
+      "absolute_residual": 2.6020852139652106e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-36",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-36",
+      "absolute_residual": 1.734723475976807e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-37",
+      "absolute_residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-37",
+      "absolute_residual": 8.153200337090993e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-38",
+      "absolute_residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-38",
+      "absolute_residual": 1.6479873021779667e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-39",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-39",
+      "absolute_residual": 3.209238430557093e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-40",
+      "absolute_residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-40",
+      "absolute_residual": 4.5102810375396984e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-41",
+      "absolute_residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-41",
+      "absolute_residual": 2.8449465006019636e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-42",
+      "absolute_residual": 1.1102230246251565e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-42",
+      "absolute_residual": 1.3877787807814457e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-43",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-43",
+      "absolute_residual": 5.48172618408671e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-44",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-44",
+      "absolute_residual": 4.579669976578771e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-45",
+      "absolute_residual": 1.1102230246251565e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-45",
+      "absolute_residual": 1.3877787807814457e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-46",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-46",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-47",
+      "absolute_residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-47",
+      "absolute_residual": 6.106226635438361e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-48",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-48",
+      "absolute_residual": 5.551115123125783e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-49",
+      "absolute_residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-49",
+      "absolute_residual": 1.6653345369377348e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-50",
+      "absolute_residual": 6.661338147750939e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-50",
+      "absolute_residual": 5.551115123125783e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-51",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-51",
+      "absolute_residual": 2.7755575615628914e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-52",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-52",
+      "absolute_residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-53",
+      "absolute_residual": 1.1102230246251565e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-53",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-54",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-54",
+      "absolute_residual": 3.885780586188048e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-55",
+      "absolute_residual": 6.661338147750939e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-55",
+      "absolute_residual": 1.1102230246251565e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-56",
+      "absolute_residual": 2.220446049250313e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-56",
+      "absolute_residual": 8.881784197001252e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-57",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-57",
+      "absolute_residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-58",
+      "absolute_residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-58",
+      "absolute_residual": 1.1102230246251565e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-59",
+      "absolute_residual": 1.7763568394002505e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-59",
+      "absolute_residual": 6.661338147750939e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-60",
+      "absolute_residual": 6.661338147750939e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-60",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-61",
+      "absolute_residual": 3.9968028886505635e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-61",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-62",
+      "absolute_residual": 8.881784197001252e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-62",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-63",
+      "absolute_residual": 1.7763568394002505e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-63",
+      "absolute_residual": 2.220446049250313e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-64",
+      "absolute_residual": 3.552713678800501e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-64",
+      "absolute_residual": 5.551115123125783e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-65",
+      "absolute_residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-65",
+      "absolute_residual": 1.7763568394002505e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-66",
+      "absolute_residual": 1.3322676295501878e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-66",
+      "absolute_residual": 7.993605777301127e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-67",
+      "absolute_residual": 4.884981308350689e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-67",
+      "absolute_residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-68",
+      "absolute_residual": 5.329070518200751e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-68",
+      "absolute_residual": 6.661338147750939e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-69",
+      "absolute_residual": 8.881784197001252e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-69",
+      "absolute_residual": 2.220446049250313e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-70",
+      "absolute_residual": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-70",
+      "absolute_residual": 6.217248937900877e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-71",
+      "absolute_residual": 1.7763568394002505e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-71",
+      "absolute_residual": 1.865174681370263e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-72",
+      "absolute_residual": 2.6645352591003757e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-72",
+      "absolute_residual": 7.105427357601002e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-73",
+      "absolute_residual": 4.440892098500626e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-73",
+      "absolute_residual": 1.0658141036401503e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-74",
+      "absolute_residual": 6.217248937900877e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-74",
+      "absolute_residual": 3.4638958368304884e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-75",
+      "absolute_residual": 7.549516567451064e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-75",
+      "absolute_residual": 2.042810365310288e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-76",
+      "absolute_residual": 1.5987211554602254e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-76",
+      "absolute_residual": 3.9968028886505635e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-77",
+      "absolute_residual": 7.105427357601002e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-77",
+      "absolute_residual": 1.865174681370263e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-78",
+      "absolute_residual": 1.4210854715202004e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-78",
+      "absolute_residual": 3.375077994860476e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-79",
+      "absolute_residual": 2.398081733190338e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-79",
+      "absolute_residual": 3.907985046680551e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-80",
+      "absolute_residual": 2.1316282072803006e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-80",
+      "absolute_residual": 9.592326932761353e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-81",
+      "absolute_residual": 8.881784197001252e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-81",
+      "absolute_residual": 3.197442310920451e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-82",
+      "absolute_residual": 4.796163466380676e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-82",
+      "absolute_residual": 1.1368683772161603e-13,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-83",
+      "absolute_residual": 1.5987211554602254e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-83",
+      "absolute_residual": 3.552713678800501e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-84",
+      "absolute_residual": 4.618527782440651e-14,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "previous-area-variance-84",
+      "absolute_residual": 3.694822225952521e-13,
+      "tolerance": 2e-10
+    }
+  ]
+}
