@@ -97,11 +97,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-1"
       },
       "assessment": {
@@ -170,11 +170,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-2"
       },
       "assessment": {
@@ -208,11 +208,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-3"
       },
       "assessment": {
@@ -246,11 +246,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-4"
       },
       "assessment": {
@@ -284,11 +284,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-5"
       },
       "assessment": {
@@ -322,11 +322,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-6"
       },
       "assessment": {
@@ -360,11 +360,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-7"
       },
       "assessment": {
@@ -398,11 +398,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-8"
       },
       "assessment": {
@@ -436,11 +436,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-9"
       },
       "assessment": {
@@ -474,11 +474,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-10"
       },
       "assessment": {
@@ -512,11 +512,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-11"
       },
       "assessment": {
@@ -550,11 +550,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-12"
       },
       "assessment": {
@@ -588,11 +588,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-13"
       },
       "assessment": {
@@ -626,11 +626,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-14"
       },
       "assessment": {
@@ -664,11 +664,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-15"
       },
       "assessment": {
@@ -702,11 +702,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-16"
       },
       "assessment": {
@@ -740,11 +740,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-17"
       },
       "assessment": {
@@ -778,11 +778,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-18"
       },
       "assessment": {
@@ -816,11 +816,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-19"
       },
       "assessment": {
@@ -854,11 +854,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-20"
       },
       "assessment": {
@@ -892,11 +892,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-21"
       },
       "assessment": {
@@ -930,11 +930,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-22"
       },
       "assessment": {
@@ -968,11 +968,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-23"
       },
       "assessment": {
@@ -1006,11 +1006,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-24"
       },
       "assessment": {
@@ -1044,11 +1044,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-25"
       },
       "assessment": {
@@ -1082,11 +1082,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-26"
       },
       "assessment": {
@@ -1120,11 +1120,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-27"
       },
       "assessment": {
@@ -1158,11 +1158,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-28"
       },
       "assessment": {
@@ -1196,11 +1196,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-29"
       },
       "assessment": {
@@ -1234,11 +1234,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-30"
       },
       "assessment": {
@@ -1272,11 +1272,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-31"
       },
       "assessment": {
@@ -1310,11 +1310,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-32"
       },
       "assessment": {
@@ -1348,11 +1348,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-33"
       },
       "assessment": {
@@ -1386,11 +1386,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-34"
       },
       "assessment": {
@@ -1424,11 +1424,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-35"
       },
       "assessment": {
@@ -1462,11 +1462,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-36"
       },
       "assessment": {
@@ -1500,11 +1500,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-37"
       },
       "assessment": {
@@ -1538,11 +1538,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-38"
       },
       "assessment": {
@@ -1576,11 +1576,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-39"
       },
       "assessment": {
@@ -1614,11 +1614,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-40"
       },
       "assessment": {
@@ -1652,11 +1652,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-41"
       },
       "assessment": {
@@ -1690,11 +1690,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-42"
       },
       "assessment": {
@@ -1728,11 +1728,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-43"
       },
       "assessment": {
@@ -1766,11 +1766,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-44"
       },
       "assessment": {
@@ -1804,11 +1804,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-45"
       },
       "assessment": {
@@ -1842,11 +1842,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-46"
       },
       "assessment": {
@@ -1880,11 +1880,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-47"
       },
       "assessment": {
@@ -1918,11 +1918,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-48"
       },
       "assessment": {
@@ -1956,11 +1956,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-49"
       },
       "assessment": {
@@ -1994,11 +1994,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-50"
       },
       "assessment": {
@@ -2032,11 +2032,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-51"
       },
       "assessment": {
@@ -2070,11 +2070,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-52"
       },
       "assessment": {
@@ -2108,11 +2108,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-53"
       },
       "assessment": {
@@ -2146,11 +2146,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-54"
       },
       "assessment": {
@@ -2184,11 +2184,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-55"
       },
       "assessment": {
@@ -2222,11 +2222,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-56"
       },
       "assessment": {
@@ -2260,11 +2260,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-57"
       },
       "assessment": {
@@ -2298,11 +2298,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-58"
       },
       "assessment": {
@@ -2336,11 +2336,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-59"
       },
       "assessment": {
@@ -2374,11 +2374,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-60"
       },
       "assessment": {
@@ -2412,11 +2412,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-61"
       },
       "assessment": {
@@ -2450,11 +2450,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-62"
       },
       "assessment": {
@@ -2488,11 +2488,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-63"
       },
       "assessment": {
@@ -2526,11 +2526,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-64"
       },
       "assessment": {
@@ -2564,11 +2564,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-65"
       },
       "assessment": {
@@ -2602,11 +2602,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-66"
       },
       "assessment": {
@@ -2640,11 +2640,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-67"
       },
       "assessment": {
@@ -2678,11 +2678,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-68"
       },
       "assessment": {
@@ -2716,11 +2716,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-69"
       },
       "assessment": {
@@ -2754,11 +2754,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-70"
       },
       "assessment": {
@@ -2792,11 +2792,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-71"
       },
       "assessment": {
@@ -2830,11 +2830,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-72"
       },
       "assessment": {
@@ -2868,11 +2868,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-73"
       },
       "assessment": {
@@ -2906,11 +2906,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-74"
       },
       "assessment": {
@@ -2944,11 +2944,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-75"
       },
       "assessment": {
@@ -2982,11 +2982,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-76"
       },
       "assessment": {
@@ -3020,11 +3020,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-77"
       },
       "assessment": {
@@ -3058,11 +3058,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-78"
       },
       "assessment": {
@@ -3096,11 +3096,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-79"
       },
       "assessment": {
@@ -3134,11 +3134,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-80"
       },
       "assessment": {
@@ -3172,11 +3172,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-81"
       },
       "assessment": {
@@ -3210,11 +3210,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-82"
       },
       "assessment": {
@@ -3248,11 +3248,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-83"
       },
       "assessment": {
@@ -3286,11 +3286,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-84"
       },
       "assessment": {
@@ -3324,11 +3324,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-85"
       },
       "assessment": {
@@ -3362,11 +3362,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-86"
       },
       "assessment": {
@@ -3400,11 +3400,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-87"
       },
       "assessment": {
@@ -3438,11 +3438,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-88"
       },
       "assessment": {
@@ -3476,11 +3476,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-89"
       },
       "assessment": {
@@ -3514,11 +3514,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-90"
       },
       "assessment": {
@@ -3552,11 +3552,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-91"
       },
       "assessment": {
@@ -3590,11 +3590,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-92"
       },
       "assessment": {
@@ -3628,11 +3628,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-93"
       },
       "assessment": {
@@ -3666,11 +3666,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-94"
       },
       "assessment": {
@@ -3704,11 +3704,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-95"
       },
       "assessment": {
@@ -3742,11 +3742,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-96"
       },
       "assessment": {
@@ -3780,11 +3780,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-97"
       },
       "assessment": {
@@ -3818,11 +3818,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-98"
       },
       "assessment": {
@@ -3856,11 +3856,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-99"
       },
       "assessment": {
@@ -3894,11 +3894,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-100"
       },
       "assessment": {
@@ -3932,11 +3932,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-101"
       },
       "assessment": {
@@ -3970,11 +3970,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-102"
       },
       "assessment": {
@@ -4008,11 +4008,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-103"
       },
       "assessment": {
@@ -4046,11 +4046,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-104"
       },
       "assessment": {
@@ -4084,11 +4084,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-105"
       },
       "assessment": {
@@ -4122,11 +4122,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-106"
       },
       "assessment": {
@@ -4160,11 +4160,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-107"
       },
       "assessment": {
@@ -4198,11 +4198,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-108"
       },
       "assessment": {
@@ -4236,11 +4236,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-109"
       },
       "assessment": {
@@ -4274,11 +4274,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-110"
       },
       "assessment": {
@@ -4312,11 +4312,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-111"
       },
       "assessment": {
@@ -4350,11 +4350,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-112"
       },
       "assessment": {
@@ -4388,11 +4388,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-113"
       },
       "assessment": {
@@ -4426,11 +4426,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-114"
       },
       "assessment": {
@@ -4464,11 +4464,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-115"
       },
       "assessment": {
@@ -4502,11 +4502,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-116"
       },
       "assessment": {
@@ -4540,11 +4540,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-117"
       },
       "assessment": {
@@ -4578,11 +4578,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-118"
       },
       "assessment": {
@@ -4616,11 +4616,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-119"
       },
       "assessment": {
@@ -4654,11 +4654,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-120"
       },
       "assessment": {
@@ -4692,11 +4692,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-121"
       },
       "assessment": {
@@ -4730,11 +4730,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-122"
       },
       "assessment": {
@@ -4768,11 +4768,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-123"
       },
       "assessment": {
@@ -4806,11 +4806,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-124"
       },
       "assessment": {
@@ -4844,11 +4844,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-125"
       },
       "assessment": {
@@ -4882,11 +4882,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-126"
       },
       "assessment": {
@@ -4920,11 +4920,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-127"
       },
       "assessment": {
@@ -4958,11 +4958,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-128"
       },
       "assessment": {
@@ -4996,11 +4996,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-129"
       },
       "assessment": {
@@ -5034,11 +5034,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-130"
       },
       "assessment": {
@@ -5072,11 +5072,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-131"
       },
       "assessment": {
@@ -5110,11 +5110,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-132"
       },
       "assessment": {
@@ -5148,11 +5148,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-133"
       },
       "assessment": {
@@ -5186,11 +5186,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-134"
       },
       "assessment": {
@@ -5224,11 +5224,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-135"
       },
       "assessment": {
@@ -5262,11 +5262,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-136"
       },
       "assessment": {
@@ -5300,11 +5300,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-137"
       },
       "assessment": {
@@ -5338,11 +5338,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-138"
       },
       "assessment": {
@@ -5376,11 +5376,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-139"
       },
       "assessment": {
@@ -5414,11 +5414,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-140"
       },
       "assessment": {
@@ -5452,11 +5452,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-141"
       },
       "assessment": {
@@ -5490,11 +5490,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-142"
       },
       "assessment": {
@@ -5528,11 +5528,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-143"
       },
       "assessment": {
@@ -5566,11 +5566,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-144"
       },
       "assessment": {
@@ -5604,11 +5604,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-145"
       },
       "assessment": {
@@ -5642,11 +5642,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-146"
       },
       "assessment": {
@@ -5680,11 +5680,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-147"
       },
       "assessment": {
@@ -5718,11 +5718,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-148"
       },
       "assessment": {
@@ -5756,11 +5756,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-149"
       },
       "assessment": {
@@ -5794,11 +5794,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-150"
       },
       "assessment": {
@@ -5832,11 +5832,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-151"
       },
       "assessment": {
@@ -5870,11 +5870,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-152"
       },
       "assessment": {
@@ -5908,11 +5908,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-153"
       },
       "assessment": {
@@ -5946,11 +5946,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-154"
       },
       "assessment": {
@@ -5984,11 +5984,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-155"
       },
       "assessment": {
@@ -6022,11 +6022,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-156"
       },
       "assessment": {
@@ -6060,11 +6060,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-157"
       },
       "assessment": {
@@ -6098,11 +6098,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-158"
       },
       "assessment": {
@@ -6136,11 +6136,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-159"
       },
       "assessment": {
@@ -6174,11 +6174,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-160"
       },
       "assessment": {
@@ -6212,11 +6212,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-161"
       },
       "assessment": {
@@ -6250,11 +6250,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-162"
       },
       "assessment": {
@@ -6288,11 +6288,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-163"
       },
       "assessment": {
@@ -6326,11 +6326,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-164"
       },
       "assessment": {
@@ -6364,11 +6364,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-165"
       },
       "assessment": {
@@ -6402,11 +6402,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-166"
       },
       "assessment": {
@@ -6440,11 +6440,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-167"
       },
       "assessment": {
@@ -6478,11 +6478,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-168"
       },
       "assessment": {
@@ -6516,11 +6516,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-169"
       },
       "assessment": {
@@ -6554,11 +6554,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-170"
       },
       "assessment": {
@@ -6592,11 +6592,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-171"
       },
       "assessment": {
@@ -6630,11 +6630,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-172"
       },
       "assessment": {
@@ -6668,11 +6668,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-173"
       },
       "assessment": {
@@ -6706,11 +6706,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-174"
       },
       "assessment": {
@@ -6744,11 +6744,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-175"
       },
       "assessment": {
@@ -6782,11 +6782,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-176"
       },
       "assessment": {
@@ -6820,11 +6820,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-177"
       },
       "assessment": {
@@ -6858,11 +6858,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-178"
       },
       "assessment": {
@@ -6896,11 +6896,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-179"
       },
       "assessment": {
@@ -6934,11 +6934,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-180"
       },
       "assessment": {
@@ -6972,11 +6972,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-181"
       },
       "assessment": {
@@ -7010,11 +7010,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-182"
       },
       "assessment": {
@@ -7048,11 +7048,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-183"
       },
       "assessment": {
@@ -7086,11 +7086,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-184"
       },
       "assessment": {
@@ -7124,11 +7124,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-185"
       },
       "assessment": {
@@ -7162,11 +7162,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-186"
       },
       "assessment": {
@@ -7200,11 +7200,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-187"
       },
       "assessment": {
@@ -7238,11 +7238,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-188"
       },
       "assessment": {
@@ -7276,11 +7276,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-189"
       },
       "assessment": {
@@ -7314,11 +7314,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-190"
       },
       "assessment": {
@@ -7352,11 +7352,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-191"
       },
       "assessment": {
@@ -7390,11 +7390,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-192"
       },
       "assessment": {
@@ -7428,11 +7428,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-193"
       },
       "assessment": {
@@ -7466,11 +7466,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-194"
       },
       "assessment": {
@@ -7504,11 +7504,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-195"
       },
       "assessment": {
@@ -7542,11 +7542,11 @@
           "figures/thermal-spin-sectors/thermal_vacuum_spin_summary.json": "b711ce6c2d84e60042a85e2b5bd1c89236234d2bd4663efd31363920aadaa6ff"
         },
         "presentationSource": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "figures/thermal-spin-sectors/thermal_vacuum_spin.csv:row-196"
       },
       "assessment": {

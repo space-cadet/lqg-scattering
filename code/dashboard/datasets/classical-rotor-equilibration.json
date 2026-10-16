@@ -1,0 +1,1730 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "Classical rotor spreading and equilibrium comparison",
+    "subtitle": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000."
+  },
+  "columns": [
+    {
+      "key": "runId",
+      "label": "Case",
+      "type": "string"
+    },
+    {
+      "key": "parameters.N",
+      "label": "Rotors N",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.packet_scale_at_N8",
+      "label": "packet scale at N8",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.preparation",
+      "label": "preparation",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "parameters.seed_count",
+      "label": "seed count",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.equilibrium_hot_fraction",
+      "label": "equilibrium hot fraction",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.hot_pair_fraction_mean",
+      "label": "Late-time hot-pair local-energy fraction",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.hot_pair_fraction_min",
+      "label": "hot pair fraction min",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.hot_pair_fraction_max",
+      "label": "hot pair fraction max",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.participation_fraction_mean",
+      "label": "participation fraction mean",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.equilibrium_participation_fraction_mean",
+      "label": "equilibrium participation fraction mean",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.equilibrium_region90_residence_mean",
+      "label": "equilibrium region90 residence mean",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.equilibrium_region90_residence_min",
+      "label": "equilibrium region90 residence min",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.equilibrium_region90_residence_max",
+      "label": "equilibrium region90 residence max",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.hot_fraction_KS_mean",
+      "label": "hot fraction KS mean",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.series",
+      "label": "Packet preparation and energy scale",
+      "type": "string",
+      "precision": 8
+    }
+  ],
+  "charts": {
+    "type": "line",
+    "x": "parameters.N",
+    "y": "results.hot_pair_fraction_mean",
+    "groupBy": "results.series"
+  },
+  "runs": [
+    {
+      "runId": "classical-rotor-equilibration:case-0001:1",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 8,
+        "packet_scale_at_N8": 1.0,
+        "preparation": "fixed_density",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.25,
+        "hot_pair_fraction_mean": 0.30370744954369017,
+        "hot_pair_fraction_min": 0.29395842114851584,
+        "hot_pair_fraction_max": 0.30952468738395406,
+        "participation_fraction_mean": 0.6857630463903339,
+        "equilibrium_participation_fraction_mean": 0.7951690424474317,
+        "equilibrium_region90_residence_mean": 0.529112283624919,
+        "equilibrium_region90_residence_min": 0.507359066925854,
+        "equilibrium_region90_residence_max": 0.5504026659261316,
+        "hot_fraction_KS_mean": 0.23219451772655741,
+        "series": "fixed energy density; packet scale at N=8: 1"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[0]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      },
+      "artifacts": [
+        {
+          "label": "README.md",
+          "path": "../study-assets/results/t11-classical-rotors/README.txt",
+          "kind": "data",
+          "sha256": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "sourcePath": "results/t11-classical-rotors/README.md",
+          "sourceSha256": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db"
+        },
+        {
+          "label": "protocol.json",
+          "path": "../study-assets/results/t11-classical-rotors/protocol.json",
+          "kind": "data",
+          "sha256": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "sourcePath": "results/t11-classical-rotors/protocol.json",
+          "sourceSha256": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230"
+        },
+        {
+          "label": "analysis-protocol.json",
+          "path": "../study-assets/results/t11-classical-rotors/analysis-protocol.json",
+          "kind": "data",
+          "sha256": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "sourcePath": "results/t11-classical-rotors/analysis-protocol.json",
+          "sourceSha256": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e"
+        },
+        {
+          "label": "grouped-summary.csv",
+          "path": "../study-assets/results/t11-classical-rotors/grouped-summary.csv",
+          "kind": "data",
+          "sha256": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "sourcePath": "results/t11-classical-rotors/grouped-summary.csv",
+          "sourceSha256": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e"
+        },
+        {
+          "label": "provenance.json",
+          "path": "../study-assets/results/t11-classical-rotors/provenance.json",
+          "kind": "data",
+          "sha256": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "sourcePath": "results/t11-classical-rotors/provenance.json",
+          "sourceSha256": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045"
+        },
+        {
+          "label": "verification.json",
+          "path": "../study-assets/results/t11-classical-rotors/verification.json",
+          "kind": "data",
+          "sha256": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "sourcePath": "results/t11-classical-rotors/verification.json",
+          "sourceSha256": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0"
+        },
+        {
+          "label": "independent-validation.json",
+          "path": "../study-assets/results/t11-classical-rotors/independent-validation.json",
+          "kind": "data",
+          "sha256": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "sourcePath": "results/t11-classical-rotors/independent-validation.json",
+          "sourceSha256": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1"
+        },
+        {
+          "label": "README.md",
+          "path": "../study-assets/results/t11-equilibration/README.txt",
+          "kind": "data",
+          "sha256": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "sourcePath": "results/t11-equilibration/README.md",
+          "sourceSha256": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773"
+        },
+        {
+          "label": "classical-rotor-equilibration.md",
+          "path": "../study-assets/notes/classical-rotor-equilibration.txt",
+          "kind": "data",
+          "sha256": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "sourcePath": "notes/classical-rotor-equilibration.md",
+          "sourceSha256": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58"
+        },
+        {
+          "label": "few-rotor-energy-transfer.md",
+          "path": "../study-assets/notes/few-rotor-energy-transfer.txt",
+          "kind": "data",
+          "sha256": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "sourcePath": "notes/few-rotor-energy-transfer.md",
+          "sourceSha256": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976"
+        },
+        {
+          "label": "rotor-coupling-crossover.md",
+          "path": "../study-assets/notes/rotor-coupling-crossover.txt",
+          "kind": "data",
+          "sha256": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "sourcePath": "notes/rotor-coupling-crossover.md",
+          "sourceSha256": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578"
+        },
+        {
+          "label": "t11_classical_rotors.py",
+          "path": "../study-assets/code/python/t11_classical_rotors.py",
+          "kind": "data",
+          "sha256": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "sourcePath": "code/python/t11_classical_rotors.py",
+          "sourceSha256": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0"
+        },
+        {
+          "label": "analyze_t11_classical_rotors.py",
+          "path": "../study-assets/code/python/analyze_t11_classical_rotors.py",
+          "kind": "data",
+          "sha256": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "sourcePath": "code/python/analyze_t11_classical_rotors.py",
+          "sourceSha256": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7"
+        },
+        {
+          "label": "verify_t11_classical_rotors.py",
+          "path": "../study-assets/code/python/verify_t11_classical_rotors.py",
+          "kind": "data",
+          "sha256": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "sourcePath": "code/python/verify_t11_classical_rotors.py",
+          "sourceSha256": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3"
+        },
+        {
+          "label": "plot_t11_classical_rotors.py",
+          "path": "../study-assets/code/python/plot_t11_classical_rotors.py",
+          "kind": "data",
+          "sha256": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "sourcePath": "code/python/plot_t11_classical_rotors.py",
+          "sourceSha256": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240"
+        },
+        {
+          "label": "classical_rotors.py",
+          "path": "../study-assets/code/python/lqg_scattering/classical_rotors.py",
+          "kind": "data",
+          "sha256": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "sourcePath": "code/python/lqg_scattering/classical_rotors.py",
+          "sourceSha256": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        {
+          "label": "t11_equilibration.py",
+          "path": "../study-assets/code/python/t11_equilibration.py",
+          "kind": "data",
+          "sha256": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "sourcePath": "code/python/t11_equilibration.py",
+          "sourceSha256": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78"
+        },
+        {
+          "label": "verify_t11_equilibration.py",
+          "path": "../study-assets/code/python/verify_t11_equilibration.py",
+          "kind": "data",
+          "sha256": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc",
+          "sourcePath": "code/python/verify_t11_equilibration.py",
+          "sourceSha256": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        }
+      ],
+      "figures": [
+        {
+          "title": "Packet spreading and persistent high-energy concentration",
+          "path": "../study-assets/figures/t11-classical-rotors/rotor-dynamics.png",
+          "tags": [
+            "T11"
+          ]
+        },
+        {
+          "title": "Rotor-size and preparation comparison",
+          "path": "../study-assets/figures/t11-classical-rotors/rotor-scaling.png",
+          "tags": [
+            "T11"
+          ]
+        }
+      ]
+    },
+    {
+      "runId": "classical-rotor-equilibration:case-0002:2",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 16,
+        "packet_scale_at_N8": 1.0,
+        "preparation": "fixed_density",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.125,
+        "hot_pair_fraction_mean": 0.14420294193415084,
+        "hot_pair_fraction_min": 0.13670124987458,
+        "hot_pair_fraction_max": 0.14917232757453364,
+        "participation_fraction_mean": 0.7070586894250734,
+        "equilibrium_participation_fraction_mean": 0.761438459324934,
+        "equilibrium_region90_residence_mean": 0.6910117559937055,
+        "equilibrium_region90_residence_min": 0.6575951124687587,
+        "equilibrium_region90_residence_max": 0.7389613996112191,
+        "hot_fraction_KS_mean": 0.13925236045542902,
+        "series": "fixed energy density; packet scale at N=8: 1"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[1]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      }
+    },
+    {
+      "runId": "classical-rotor-equilibration:case-0003:3",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 32,
+        "packet_scale_at_N8": 1.0,
+        "preparation": "fixed_density",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.0625,
+        "hot_pair_fraction_mean": 0.06170880704147729,
+        "hot_pair_fraction_min": 0.059376063801594194,
+        "hot_pair_fraction_max": 0.06310140798119342,
+        "participation_fraction_mean": 0.7522554977471803,
+        "equilibrium_participation_fraction_mean": 0.7451133272259467,
+        "equilibrium_region90_residence_mean": 0.844580209201148,
+        "equilibrium_region90_residence_min": 0.8233823937795057,
+        "equilibrium_region90_residence_max": 0.8564287697861706,
+        "hot_fraction_KS_mean": 0.05268371054336759,
+        "series": "fixed energy density; packet scale at N=8: 1"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[2]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      }
+    },
+    {
+      "runId": "classical-rotor-equilibration:case-0004:4",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 64,
+        "packet_scale_at_N8": 1.0,
+        "preparation": "fixed_density",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.03125,
+        "hot_pair_fraction_mean": 0.031077597164869703,
+        "hot_pair_fraction_min": 0.03017917294024945,
+        "hot_pair_fraction_max": 0.03219468455615406,
+        "participation_fraction_mean": 0.7304354735508669,
+        "equilibrium_participation_fraction_mean": 0.7377404876436322,
+        "equilibrium_region90_residence_mean": 0.8882717763584189,
+        "equilibrium_region90_residence_min": 0.8697584004443211,
+        "equilibrium_region90_residence_max": 0.8991946681477367,
+        "hot_fraction_KS_mean": 0.03827537489586227,
+        "series": "fixed energy density; packet scale at N=8: 1"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[3]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      }
+    },
+    {
+      "runId": "classical-rotor-equilibration:case-0005:5",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 8,
+        "packet_scale_at_N8": 10.0,
+        "preparation": "fixed_density",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.25,
+        "hot_pair_fraction_mean": 0.2445772154817948,
+        "hot_pair_fraction_min": 0.2319163869621022,
+        "hot_pair_fraction_max": 0.25370883151461787,
+        "participation_fraction_mean": 0.8076852886921585,
+        "equilibrium_participation_fraction_mean": 0.8080484048880484,
+        "equilibrium_region90_residence_mean": 0.9043784134036842,
+        "equilibrium_region90_residence_min": 0.8978061649541794,
+        "equilibrium_region90_residence_max": 0.9155790058317134,
+        "hot_fraction_KS_mean": 0.05499014162732574,
+        "series": "fixed energy density; packet scale at N=8: 10"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[4]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      }
+    },
+    {
+      "runId": "classical-rotor-equilibration:case-0006:6",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 16,
+        "packet_scale_at_N8": 10.0,
+        "preparation": "fixed_density",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.125,
+        "hot_pair_fraction_mean": 0.9374246936191106,
+        "hot_pair_fraction_min": 0.9367823701335507,
+        "hot_pair_fraction_max": 0.9381386229039886,
+        "participation_fraction_mean": 0.1416076833189849,
+        "equilibrium_participation_fraction_mean": 0.7715346731021476,
+        "equilibrium_region90_residence_mean": 0.0,
+        "equilibrium_region90_residence_min": 0.0,
+        "equilibrium_region90_residence_max": 0.0,
+        "hot_fraction_KS_mean": 1.0,
+        "series": "fixed energy density; packet scale at N=8: 10"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[5]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      }
+    },
+    {
+      "runId": "classical-rotor-equilibration:case-0007:7",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 32,
+        "packet_scale_at_N8": 10.0,
+        "preparation": "fixed_density",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.0625,
+        "hot_pair_fraction_mean": 0.969621182293699,
+        "hot_pair_fraction_min": 0.9687729240047094,
+        "hot_pair_fraction_max": 0.9705720046468367,
+        "participation_fraction_mean": 0.06644935056732934,
+        "equilibrium_participation_fraction_mean": 0.75147587418261,
+        "equilibrium_region90_residence_mean": 0.0,
+        "equilibrium_region90_residence_min": 0.0,
+        "equilibrium_region90_residence_max": 0.0,
+        "hot_fraction_KS_mean": 1.0,
+        "series": "fixed energy density; packet scale at N=8: 10"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[6]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      }
+    },
+    {
+      "runId": "classical-rotor-equilibration:case-0008:8",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 64,
+        "packet_scale_at_N8": 10.0,
+        "preparation": "fixed_density",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.03125,
+        "hot_pair_fraction_mean": 0.9830303125527341,
+        "hot_pair_fraction_min": 0.9826044155514067,
+        "hot_pair_fraction_max": 0.9838007767756477,
+        "participation_fraction_mean": 0.03233521077818575,
+        "equilibrium_participation_fraction_mean": 0.7416348134614604,
+        "equilibrium_region90_residence_mean": 0.0,
+        "equilibrium_region90_residence_min": 0.0,
+        "equilibrium_region90_residence_max": 0.0,
+        "hot_fraction_KS_mean": 1.0,
+        "series": "fixed energy density; packet scale at N=8: 10"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[7]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      }
+    },
+    {
+      "runId": "classical-rotor-equilibration:case-0009:9",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 8,
+        "packet_scale_at_N8": 100.0,
+        "preparation": "fixed_density",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.25,
+        "hot_pair_fraction_mean": 0.9895620030590329,
+        "hot_pair_fraction_min": 0.9894905961914353,
+        "hot_pair_fraction_max": 0.9896601674855035,
+        "participation_fraction_mean": 0.255294514239139,
+        "equilibrium_participation_fraction_mean": 0.6378592560453842,
+        "equilibrium_region90_residence_mean": 0.0,
+        "equilibrium_region90_residence_min": 0.0,
+        "equilibrium_region90_residence_max": 0.0,
+        "hot_fraction_KS_mean": 1.0,
+        "series": "fixed energy density; packet scale at N=8: 100"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[8]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      }
+    },
+    {
+      "runId": "classical-rotor-equilibration:case-0010:10",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 16,
+        "packet_scale_at_N8": 100.0,
+        "preparation": "fixed_density",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.125,
+        "hot_pair_fraction_mean": 0.994677082694817,
+        "hot_pair_fraction_min": 0.9946144098736934,
+        "hot_pair_fraction_max": 0.9947618513678749,
+        "participation_fraction_mean": 0.12633904133171683,
+        "equilibrium_participation_fraction_mean": 0.5910818807907069,
+        "equilibrium_region90_residence_mean": 0.0,
+        "equilibrium_region90_residence_min": 0.0,
+        "equilibrium_region90_residence_max": 0.0,
+        "hot_fraction_KS_mean": 1.0,
+        "series": "fixed energy density; packet scale at N=8: 100"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[9]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      }
+    },
+    {
+      "runId": "classical-rotor-equilibration:case-0011:11",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 32,
+        "packet_scale_at_N8": 100.0,
+        "preparation": "fixed_density",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.0625,
+        "hot_pair_fraction_mean": 0.9971359729377052,
+        "hot_pair_fraction_min": 0.9970525962236653,
+        "hot_pair_fraction_max": 0.9972290337199758,
+        "participation_fraction_mean": 0.06285930173089412,
+        "equilibrium_participation_fraction_mean": 0.5673832053584399,
+        "equilibrium_region90_residence_mean": 0.0,
+        "equilibrium_region90_residence_min": 0.0,
+        "equilibrium_region90_residence_max": 0.0,
+        "hot_fraction_KS_mean": 1.0,
+        "series": "fixed energy density; packet scale at N=8: 100"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[10]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      }
+    },
+    {
+      "runId": "classical-rotor-equilibration:case-0012:12",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 64,
+        "packet_scale_at_N8": 100.0,
+        "preparation": "fixed_density",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.03125,
+        "hot_pair_fraction_mean": 0.9983391968214302,
+        "hot_pair_fraction_min": 0.9982949406638915,
+        "hot_pair_fraction_max": 0.9984182293790311,
+        "participation_fraction_mean": 0.031354049280447945,
+        "equilibrium_participation_fraction_mean": 0.5546587635829825,
+        "equilibrium_region90_residence_mean": 0.0,
+        "equilibrium_region90_residence_min": 0.0,
+        "equilibrium_region90_residence_max": 0.0,
+        "hot_fraction_KS_mean": 1.0,
+        "series": "fixed energy density; packet scale at N=8: 100"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[11]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      }
+    },
+    {
+      "runId": "classical-rotor-equilibration:case-0013:13",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 8,
+        "packet_scale_at_N8": 1.0,
+        "preparation": "fixed_packet",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.25,
+        "hot_pair_fraction_mean": 0.30370744954369017,
+        "hot_pair_fraction_min": 0.29395842114851584,
+        "hot_pair_fraction_max": 0.30952468738395406,
+        "participation_fraction_mean": 0.6857630463903339,
+        "equilibrium_participation_fraction_mean": 0.7951690424474317,
+        "equilibrium_region90_residence_mean": 0.529112283624919,
+        "equilibrium_region90_residence_min": 0.507359066925854,
+        "equilibrium_region90_residence_max": 0.5504026659261316,
+        "hot_fraction_KS_mean": 0.23219451772655741,
+        "series": "fixed packet; packet scale at N=8: 1"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[12]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      }
+    },
+    {
+      "runId": "classical-rotor-equilibration:case-0014:14",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 16,
+        "packet_scale_at_N8": 1.0,
+        "preparation": "fixed_packet",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.125,
+        "hot_pair_fraction_mean": 0.15377757016852614,
+        "hot_pair_fraction_min": 0.1474701453191522,
+        "hot_pair_fraction_max": 0.16083305988049898,
+        "participation_fraction_mean": 0.6439783925997292,
+        "equilibrium_participation_fraction_mean": 0.7620183589461723,
+        "equilibrium_region90_residence_mean": 0.5202258631861519,
+        "equilibrium_region90_residence_min": 0.4812552068869758,
+        "equilibrium_region90_residence_max": 0.5426270480422105,
+        "hot_fraction_KS_mean": 0.1802089697306304,
+        "series": "fixed packet; packet scale at N=8: 1"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[13]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      }
+    },
+    {
+      "runId": "classical-rotor-equilibration:case-0015:15",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 32,
+        "packet_scale_at_N8": 1.0,
+        "preparation": "fixed_packet",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.0625,
+        "hot_pair_fraction_mean": 0.08404942375034004,
+        "hot_pair_fraction_min": 0.08264736807401452,
+        "hot_pair_fraction_max": 0.08568322692434857,
+        "participation_fraction_mean": 0.6281604667875461,
+        "equilibrium_participation_fraction_mean": 0.7456655588820323,
+        "equilibrium_region90_residence_mean": 0.43747107285013426,
+        "equilibrium_region90_residence_min": 0.4232157733962788,
+        "equilibrium_region90_residence_max": 0.4601499583449042,
+        "hot_fraction_KS_mean": 0.20637340322132738,
+        "series": "fixed packet; packet scale at N=8: 1"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[14]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      }
+    },
+    {
+      "runId": "classical-rotor-equilibration:case-0016:16",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 64,
+        "packet_scale_at_N8": 1.0,
+        "preparation": "fixed_packet",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.03125,
+        "hot_pair_fraction_mean": 0.040627165934993825,
+        "hot_pair_fraction_min": 0.03946708580531311,
+        "hot_pair_fraction_max": 0.04215301234903457,
+        "participation_fraction_mean": 0.6439864907044616,
+        "equilibrium_participation_fraction_mean": 0.7357530117769088,
+        "equilibrium_region90_residence_mean": 0.41895769693603624,
+        "equilibrium_region90_residence_min": 0.36462093862815886,
+        "equilibrium_region90_residence_max": 0.4679255762288253,
+        "hot_fraction_KS_mean": 0.1910220656299176,
+        "series": "fixed packet; packet scale at N=8: 1"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[15]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      }
+    },
+    {
+      "runId": "classical-rotor-equilibration:case-0017:17",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 8,
+        "packet_scale_at_N8": 10.0,
+        "preparation": "fixed_packet",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.25,
+        "hot_pair_fraction_mean": 0.2445772154817948,
+        "hot_pair_fraction_min": 0.2319163869621022,
+        "hot_pair_fraction_max": 0.25370883151461787,
+        "participation_fraction_mean": 0.8076852886921585,
+        "equilibrium_participation_fraction_mean": 0.8080484048880484,
+        "equilibrium_region90_residence_mean": 0.9043784134036842,
+        "equilibrium_region90_residence_min": 0.8978061649541794,
+        "equilibrium_region90_residence_max": 0.9155790058317134,
+        "hot_fraction_KS_mean": 0.05499014162732574,
+        "series": "fixed packet; packet scale at N=8: 10"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[16]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      }
+    },
+    {
+      "runId": "classical-rotor-equilibration:case-0018:18",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 16,
+        "packet_scale_at_N8": 10.0,
+        "preparation": "fixed_packet",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.125,
+        "hot_pair_fraction_mean": 0.12404112088131529,
+        "hot_pair_fraction_min": 0.12238777457718682,
+        "hot_pair_fraction_max": 0.12639781652206836,
+        "participation_fraction_mean": 0.7663109410867458,
+        "equilibrium_participation_fraction_mean": 0.7669912745304911,
+        "equilibrium_region90_residence_mean": 0.8925298528186615,
+        "equilibrium_region90_residence_min": 0.8878089419605665,
+        "equilibrium_region90_residence_max": 0.8964176617606221,
+        "hot_fraction_KS_mean": 0.0348409701008979,
+        "series": "fixed packet; packet scale at N=8: 10"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[17]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      }
+    },
+    {
+      "runId": "classical-rotor-equilibration:case-0019:19",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 32,
+        "packet_scale_at_N8": 10.0,
+        "preparation": "fixed_packet",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.0625,
+        "hot_pair_fraction_mean": 0.06255618784749228,
+        "hot_pair_fraction_min": 0.062333111033711294,
+        "hot_pair_fraction_max": 0.06272138232208131,
+        "participation_fraction_mean": 0.7486540145748822,
+        "equilibrium_participation_fraction_mean": 0.7469173315526257,
+        "equilibrium_region90_residence_mean": 0.891326483384245,
+        "equilibrium_region90_residence_min": 0.8864204387670092,
+        "equilibrium_region90_residence_max": 0.8947514579283532,
+        "hot_fraction_KS_mean": 0.021650918726279736,
+        "series": "fixed packet; packet scale at N=8: 10"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[18]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      }
+    },
+    {
+      "runId": "classical-rotor-equilibration:case-0020:20",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 64,
+        "packet_scale_at_N8": 10.0,
+        "preparation": "fixed_packet",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.03125,
+        "hot_pair_fraction_mean": 0.031927481169275906,
+        "hot_pair_fraction_min": 0.029943731013033326,
+        "hot_pair_fraction_max": 0.033093647507901204,
+        "participation_fraction_mean": 0.7295090546143274,
+        "equilibrium_participation_fraction_mean": 0.7377201310174334,
+        "equilibrium_region90_residence_mean": 0.8719800055540127,
+        "equilibrium_region90_residence_min": 0.8444876423215774,
+        "equilibrium_region90_residence_max": 0.8908636489863927,
+        "hot_fraction_KS_mean": 0.042478709617698784,
+        "series": "fixed packet; packet scale at N=8: 10"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[19]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      }
+    },
+    {
+      "runId": "classical-rotor-equilibration:case-0021:21",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 8,
+        "packet_scale_at_N8": 100.0,
+        "preparation": "fixed_packet",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.25,
+        "hot_pair_fraction_mean": 0.9895620030590329,
+        "hot_pair_fraction_min": 0.9894905961914353,
+        "hot_pair_fraction_max": 0.9896601674855035,
+        "participation_fraction_mean": 0.255294514239139,
+        "equilibrium_participation_fraction_mean": 0.6378592560453842,
+        "equilibrium_region90_residence_mean": 0.0,
+        "equilibrium_region90_residence_min": 0.0,
+        "equilibrium_region90_residence_max": 0.0,
+        "hot_fraction_KS_mean": 1.0,
+        "series": "fixed packet; packet scale at N=8: 100"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[20]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      }
+    },
+    {
+      "runId": "classical-rotor-equilibration:case-0022:22",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 16,
+        "packet_scale_at_N8": 100.0,
+        "preparation": "fixed_packet",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.125,
+        "hot_pair_fraction_mean": 0.9892174980240007,
+        "hot_pair_fraction_min": 0.9890957074381896,
+        "hot_pair_fraction_max": 0.9893836067613195,
+        "participation_fraction_mean": 0.12772645369775232,
+        "equilibrium_participation_fraction_mean": 0.6283884040905424,
+        "equilibrium_region90_residence_mean": 0.0,
+        "equilibrium_region90_residence_min": 0.0,
+        "equilibrium_region90_residence_max": 0.0,
+        "hot_fraction_KS_mean": 1.0,
+        "series": "fixed packet; packet scale at N=8: 100"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[21]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      }
+    },
+    {
+      "runId": "classical-rotor-equilibration:case-0023:23",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 32,
+        "packet_scale_at_N8": 100.0,
+        "preparation": "fixed_packet",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.0625,
+        "hot_pair_fraction_mean": 0.9883449016712973,
+        "hot_pair_fraction_min": 0.9880135837358441,
+        "hot_pair_fraction_max": 0.9887141361011139,
+        "participation_fraction_mean": 0.06398077967785286,
+        "equilibrium_participation_fraction_mean": 0.6722331632043055,
+        "equilibrium_region90_residence_mean": 0.0,
+        "equilibrium_region90_residence_min": 0.0,
+        "equilibrium_region90_residence_max": 0.0,
+        "hot_fraction_KS_mean": 1.0,
+        "series": "fixed packet; packet scale at N=8: 100"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[22]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      }
+    },
+    {
+      "runId": "classical-rotor-equilibration:case-0024:24",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "N": 64,
+        "packet_scale_at_N8": 100.0,
+        "preparation": "fixed_packet",
+        "seed_count": 3
+      },
+      "results": {
+        "equilibrium_hot_fraction": 0.03125,
+        "hot_pair_fraction_mean": 0.9865006352512853,
+        "hot_pair_fraction_min": 0.986152857032191,
+        "hot_pair_fraction_max": 0.9871221198115121,
+        "participation_fraction_mean": 0.03211001323494026,
+        "equilibrium_participation_fraction_mean": 0.7317633130823609,
+        "equilibrium_region90_residence_mean": 0.0,
+        "equilibrium_region90_residence_min": 0.0,
+        "equilibrium_region90_residence_max": 0.0,
+        "hot_fraction_KS_mean": 1.0,
+        "series": "fixed packet; packet scale at N=8: 100"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-classical-rotors/README.md": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db",
+          "results/t11-classical-rotors/protocol.json": "fbb1a808678b32e6e256a379de8987082417a2c797d5c055b757593e652c7230",
+          "results/t11-classical-rotors/analysis-protocol.json": "d8b279f5913b6705bf0d53908b01ef5e6ce361e51e500c5802c36739f2cc2b3e",
+          "results/t11-classical-rotors/grouped-summary.csv": "0ec27e41904de44c7ac67346ea07149c4c4a4f7a153b4f8709342e26e225a24e",
+          "results/t11-classical-rotors/provenance.json": "e0741424ef4ebf62323eab6a05b066caa4429b1f22b194b23a94044af2755045",
+          "results/t11-classical-rotors/verification.json": "dd726fa8448775d3ff4060e98e4812f5f1bf97b3075f3af7581c520f03ebafa0",
+          "results/t11-classical-rotors/independent-validation.json": "e33badd82638fc924f2a862c0b688b3e8ff28729b9765f5199fbbf057c618cf1",
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+          "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+          "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+          "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.classical-rotor-equilibration.table.rows[23]"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      }
+    }
+  ],
+  "figures": [
+    {
+      "title": "Packet spreading and persistent high-energy concentration",
+      "path": "../study-assets/figures/t11-classical-rotors/rotor-dynamics.png",
+      "tags": [
+        "T11"
+      ]
+    },
+    {
+      "title": "Rotor-size and preparation comparison",
+      "path": "../study-assets/figures/t11-classical-rotors/rotor-scaling.png",
+      "tags": [
+        "T11"
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "title": "Classical rotor equilibration",
+      "path": "../study-assets/notes/classical-rotor-equilibration.txt",
+      "sourcePath": "notes/classical-rotor-equilibration.md",
+      "description": "Explanation and calculation record for this study."
+    },
+    {
+      "title": "Few rotor energy transfer",
+      "path": "../study-assets/notes/few-rotor-energy-transfer.txt",
+      "sourcePath": "notes/few-rotor-energy-transfer.md",
+      "description": "Explanation and calculation record for this study."
+    },
+    {
+      "title": "Rotor coupling crossover",
+      "path": "../study-assets/notes/rotor-coupling-crossover.txt",
+      "sourcePath": "notes/rotor-coupling-crossover.md",
+      "description": "Explanation and calculation record for this study."
+    },
+    {
+      "title": "Numerical studies overview",
+      "path": "../index.html"
+    }
+  ]
+}

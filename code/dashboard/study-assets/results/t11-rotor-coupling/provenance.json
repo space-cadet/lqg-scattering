@@ -1,0 +1,17 @@
+{
+  "numpy": "2.4.1",
+  "elapsed_seconds": 56.7247987909941,
+  "source_sha256": {
+    "code/classical/rotors.cpp": "9bf19b15dba97ce18e1fa4ee3c615603c9b030e8fc09e0d41a6bd1a074530d10",
+    "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
+    "code/python/check_t11_rotor_delayed_transfer.py": "3b23eab320d243f9b36156d1335ac4efecfffeb13ab1a484c757aa65a41c3f66",
+    "code/python/check_t11_rotor_physical_time.py": "d3b1bb026bd88478a67610adbd849007aee02a88a88724508ab2c66e0545fb59",
+    "code/python/extend_t11_rotor_coupling.py": "e30d69ab99f04ecdccffc4d3dcabd980f83ad0b1162679c960fc971fca790c24",
+    "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+    "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
+    "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
+    "code/python/test_rotor_coupling.py": "695cfd46bcebc90b1e670d503116e1e5856d42a411da6db08291b7234494e5bb"
+  },
+  "compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)",
+  "timing_scope": "elapsed_seconds is initial driver only; follow-ups executed separately"
+}

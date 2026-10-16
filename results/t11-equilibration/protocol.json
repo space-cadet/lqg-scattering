@@ -1,0 +1,63 @@
+{
+  "task": "T11",
+  "sizes": [
+    [
+      4,
+      2
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      6,
+      3
+    ]
+  ],
+  "U": [
+    0.0,
+    1.0,
+    5.0
+  ],
+  "hopping": "complete graph, t_ij=1/(L-1); fixed row-sum hopping scale",
+  "preparations": [
+    "regular",
+    "phase_shifted"
+  ],
+  "initial": "normalized fixed-area FL with four nonzero spinors; NOT four sharply occupied faces",
+  "time_grid": "0..200 inclusive, dt=.1; statistics on [20,100] and [20,200]",
+  "reference": "exact energy-projector dephasing; coherence retained within degeneracies",
+  "canonical": "energy-matched full fixed-K singlet ensemble, including negative beta if needed; permutation sectors NOT resolved",
+  "near_equilibrium": "max(Q concentration absolute error, extra-area fraction absolute error, active-count total variation) <= .05 relative to dephased reference",
+  "threshold_sensitivity": [
+    0.02,
+    0.05,
+    0.1
+  ],
+  "limitations": [
+    "small area",
+    "finite time",
+    "full canonical benchmark does not match all permutation symmetries",
+    "occupation count cannot exceed 2K",
+    "no geometric claim",
+    "no entanglement calculation"
+  ],
+  "git_head": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+  "tolerance": 2e-09
+}

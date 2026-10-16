@@ -137,11 +137,11 @@
           "notes/experiments/t5a_mag_notes.md": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee"
         },
         "presentationSource": "results/t5a_mag_results.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results[0]"
       },
       "assessment": {
@@ -236,11 +236,11 @@
           "notes/experiments/t5a_mag_notes.md": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee"
         },
         "presentationSource": "results/t5a_mag_results.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results[1]"
       },
       "assessment": {
@@ -308,11 +308,11 @@
           "notes/experiments/t5a_mag_notes.md": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee"
         },
         "presentationSource": "results/t5a_mag_results.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results[2]"
       },
       "assessment": {
@@ -380,11 +380,11 @@
           "notes/experiments/t5a_mag_notes.md": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee"
         },
         "presentationSource": "results/t5a_mag_results.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results[3]"
       },
       "assessment": {
@@ -452,11 +452,11 @@
           "notes/experiments/t5a_mag_notes.md": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee"
         },
         "presentationSource": "results/t5a_mag_results.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results[4]"
       },
       "assessment": {
@@ -524,11 +524,11 @@
           "notes/experiments/t5a_mag_notes.md": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee"
         },
         "presentationSource": "results/t5a_mag_results.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results[5]"
       },
       "assessment": {
@@ -596,11 +596,11 @@
           "notes/experiments/t5a_mag_notes.md": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee"
         },
         "presentationSource": "results/t5a_mag_results.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results[6]"
       },
       "assessment": {
@@ -668,11 +668,11 @@
           "notes/experiments/t5a_mag_notes.md": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee"
         },
         "presentationSource": "results/t5a_mag_results.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results[7]"
       },
       "assessment": {
@@ -740,11 +740,11 @@
           "notes/experiments/t5a_mag_notes.md": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee"
         },
         "presentationSource": "results/t5a_mag_results.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results[8]"
       },
       "assessment": {
@@ -812,11 +812,11 @@
           "notes/experiments/t5a_mag_notes.md": "48a2b081a6a1c871be43ad3fad6d6c79c8b120bd89a8c78d1a3fabaeeadfd0ee"
         },
         "presentationSource": "results/t5a_mag_results.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results[9]"
       },
       "assessment": {

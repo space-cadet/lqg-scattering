@@ -9,6 +9,7 @@ import gzip
 import hashlib
 import json
 import math
+import re
 import shutil
 from pathlib import Path
 
@@ -47,11 +48,34 @@ FIGURE_TITLES = {
     "candidate_thermal_response_u20":"Thermal volume and grasp response at U/t=20",
     "ring_topology_control":"Ring hopping topology control",
     "prepared_FL_early_dynamics_u20":"Early evolution of prepared FL states at U/t=20",
+    "rotor-dynamics":"Packet spreading and persistent high-energy concentration",
+    "rotor-scaling":"Rotor-size and preparation comparison",
+    "few-rotor-transfer":"Planar-pair transfer and three-dimensional controls",
+    "coupling-crossover":"Finite-time coupling crossover and delayed release",
 }
 
 
 def read(path):
     return json.loads((ROOT / path).read_text())
+
+
+def csv_records(path):
+    with (ROOT / path).open(newline="", encoding="utf-8-sig") as stream:
+        return list(csv.DictReader(stream))
+
+
+def csv_value(value):
+    if value == "":
+        return None
+    if value in ("True", "False"):
+        return value == "True"
+    if re.fullmatch(r"[+-]?\d+", value):
+        return int(value)
+    try:
+        number = float(value)
+        return number if math.isfinite(number) else None
+    except ValueError:
+        return value
 
 
 def clean(value):
@@ -200,7 +224,7 @@ def historical_plots():
         "plots": {k:[{"path":p,"sha256":hashlib.sha256((ROOT/p).read_bytes()).hexdigest()} for p in v] for k,v in PLOT_SOURCES.items()}}, indent=2)+"\n")
 
 
-def add(identifier, task, title, description, limits, sources, figures=(), table=None, status="Saved calculation", catalogue_date="2026-10-09", compressed_sources=()):
+def add(identifier, task, title, description, limits, sources, figures=(), table=None, status="Saved calculation", catalogue_date="2026-10-09", compressed_sources=(), chart=None):
     files = []
     for source in sources:
         path = ROOT / source
@@ -223,19 +247,267 @@ def add(identifier, task, title, description, limits, sources, figures=(), table
             if pdf.exists():
                 item["pdf"] = export(pdf.relative_to(ROOT))["path"]
             images.append(item)
-    STUDIES.append({"id":identifier,"task":task,"title":title,"description":description,
-                    "limits":limits,"status":status,"catalogueDate":catalogue_date,
-                    "files":files,"figures":images,"table":table})
+    study = {"id":identifier,"task":task,"title":title,"description":description,
+             "limits":limits,"status":status,"catalogueDate":catalogue_date,
+             "files":files,"figures":images,"table":table}
+    if chart:
+        study["chart"] = chart
+    STUDIES.append(study)
+
+
+def prune_curated_result_copies():
+    """Remove old generated dashboard copies of arrays excluded from the release."""
+    keep_by_directory = {
+        "results/fl-face-activation": {"README.txt", "protocol.json", "provenance.json", "summary.csv", "verification.json"},
+        "results/thermal-closed-entanglement": {"README.txt", "protocol.json", "provenance.json", "temperature_summary.csv", "verification.json"},
+        "results/thermal-closure-temperature": {"README.txt", "closure_temperature.csv", "protocol.json", "verification.json"},
+        "results/thermal-closed-projection": {"README.txt", "area_distribution.csv", "protocol.json", "temperature_fit.json", "temperature_summary.csv", "verification.json"},
+        "results/thermal-j1-spin": {"j1_spin_method_summary.json"},
+        "results/t9a-singlet-exchange": {"README.txt", "ground_states.csv", "independent_verification.json", "provenance.json", "summary.json", "thermal.csv"},
+        "results/t11-equilibration": {"README.txt", "independent-validation.json", "protocol.json", "provenance.json", "summary.csv", "validation.json"},
+        "results/t11-classical-rotors": {"README.txt", "analysis-protocol.json", "grouped-summary.csv", "independent-validation.json", "protocol.json", "provenance.json", "verification.json"},
+        "results/t11-few-rotors": {"README.txt", "few-summary.csv", "pair-summary.csv", "protocol.json", "provenance.json", "validation.json", "verification.json"},
+        "results/t11-rotor-coupling": {"README.txt", "analysis-protocol.json", "coupling-comparison.csv", "crossover-brackets.csv", "delayed-transfer-protocol.json", "fixed-physical-summary.csv", "followup-protocol.json", "grouped-scan.csv", "independent-validation.json", "physical-time-protocol.json", "protocol.json", "provenance.json", "threshold-sensitivity.csv", "verification.json"},
+    }
+    for relative, keep in keep_by_directory.items():
+        package_directory = DASH / "study-assets" / relative
+        if not package_directory.exists():
+            continue
+        for path in package_directory.rglob("*"):
+            if path.is_file() and path.name not in keep:
+                path.unlink()
+        for path in sorted(package_directory.rglob("*"), reverse=True):
+            if path.is_dir():
+                try:
+                    path.rmdir()
+                except OSError:
+                    pass
 
 
 def main(reuse_history=False):
     if not reuse_history:
         historical_plots()
+    prune_curated_result_copies()
+
+    # Keep the finite-area channel pilot separate from the classical rotor
+    # results. These rows are selected from the saved late-window summaries.
+    channel_source = "results/t11-equilibration/summary.csv"
+    channel_rows = []
+    for source_row in csv_records(channel_source):
+        if int(source_row["K"]) != 3 or float(source_row["window_end"]) != 200:
+            continue
+        phase = source_row["phase"]
+        interaction = float(source_row["U"])
+        if phase == "regular" or (phase == "phase_shifted" and interaction == 5):
+            channels = int(source_row["L"])
+            channel_rows.append({
+                "channels": channels, "K": 3, "U": interaction,
+                "phase": phase, "window_end": 200,
+                "residence_fraction_0_05": float(source_row["residence_0.05"]),
+                "mean_readout_distance": float(source_row["mean_distance"]),
+                "mean_concentration": float(source_row["mean_concentration"]),
+                "dephased_concentration": float(source_row["dephased_concentration"]),
+                "active_count_TV_from_canonical": float(source_row["canonical_active_count_TV"]),
+                "maximum_return_after_20": float(source_row["max_return_after20"]),
+                "series": f"{phase.replace('_', ' ')}, U={interaction:g}",
+            })
+    channel_rows.sort(key=lambda row: (row["phase"] != "regular", row["U"], row["channels"]))
+    add("t11-channel-equilibration", "T11", "Small-area face-channel equilibration pilot",
+        "Representative K=3 late-window readouts from the finite-area quantum pilot. The regular input covers L=4,5,6 at U=0,1,5; a phase-shifted U=5 control shows preparation dependence. The study asks how readouts approach the exact dephased reference, not whether a canonical state is reached.",
+        "Finite K=2,3 sectors, uniform complete-graph hopping with fixed row sum, two FL phase choices, three interaction strengths, and selected windows ending at t=200. Residence depends on the readout tolerance and observation window; phase-shifted cases are not energy matched. No large-area equilibration claim.",
+        ["results/t11-equilibration/README.md", "results/t11-equilibration/protocol.json",
+         "results/t11-equilibration/provenance.json", channel_source,
+         "results/t11-equilibration/validation.json", "results/t11-equilibration/independent-validation.json",
+         "notes/classical-rotor-equilibration.md", "code/python/t11_equilibration.py",
+         "code/python/verify_t11_equilibration.py"],
+        table={"columns": list(channel_rows[0]), "rows": channel_rows},
+        status="42 trajectories passed; 252,840 independent comparisons (714 analytic); maximum residual 1.88e-13; prior 46-test suite passed",
+        catalogue_date="2026-10-16",
+        chart={"type": "line", "x": "parameters.channels", "y": "results.residence_fraction_0_05",
+               "groupBy": "results.series",
+               "labels": {"parameters.channels": "Available face channels L",
+                          "results.residence_fraction_0_05": "Residence near the dephased readout, d ≤ 0.05",
+                          "results.series": "Input phase and interaction U"}})
+
+    # The compact grouped table averages three orientation seeds and preserves
+    # the two different packet preparations as separate chart series.
+    rotor_source = "results/t11-classical-rotors/grouped-summary.csv"
+    rotor_rows = []
+    for source_row in csv_records(rotor_source):
+        ratio = float(source_row["ratio"])
+        preparation = source_row["scaling"]
+        preparation_label = "fixed packet" if preparation == "fixed_packet" else "fixed energy density"
+        rotor_rows.append({
+            "N": int(source_row["N"]), "packet_scale_at_N8": ratio,
+            "preparation": preparation, "seed_count": int(source_row["seeds"]),
+            "equilibrium_hot_fraction": float(source_row["equilibrium_hot"]),
+            "hot_pair_fraction_mean": float(source_row["mean_hot_fraction_mean"]),
+            "hot_pair_fraction_min": float(source_row["mean_hot_fraction_min"]),
+            "hot_pair_fraction_max": float(source_row["mean_hot_fraction_max"]),
+            "participation_fraction_mean": float(source_row["mean_participation_fraction_mean"]),
+            "equilibrium_participation_fraction_mean": float(source_row["reference_participation_fraction_mean"]),
+            "equilibrium_region90_residence_mean": float(source_row["residence_region90_mean"]),
+            "equilibrium_region90_residence_min": float(source_row["residence_region90_min"]),
+            "equilibrium_region90_residence_max": float(source_row["residence_region90_max"]),
+            "hot_fraction_KS_mean": float(source_row["hot_fraction_KS_mean"]),
+            "series": f"{preparation_label}; packet scale at N=8: {ratio:g}",
+        })
+    rotor_rows.sort(key=lambda row: (row["preparation"], row["packet_scale_at_N8"], row["N"]))
+    add("classical-rotor-equilibration", "T11", "Classical rotor spreading and equilibrium comparison",
+        "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2–90.4%. At packet energy 100, the hot pair retains 98.7–99.0% of local energy through t=2000.",
+        "Classical I=1 nearest-neighbor rings, equal-and-opposite initial hot pair, three related orientation seeds, and finite observation windows. The fixed-density series raises the initial packet energy with N; N=8 cases overlap between preparations. Late-time trapping is not permanent localization, and no quantum rotor evolution is included.",
+        ["results/t11-classical-rotors/README.md", "results/t11-classical-rotors/protocol.json",
+         "results/t11-classical-rotors/analysis-protocol.json", rotor_source,
+         "results/t11-classical-rotors/provenance.json", "results/t11-classical-rotors/verification.json",
+         "results/t11-classical-rotors/independent-validation.json",
+         "results/t11-equilibration/README.md", "notes/classical-rotor-equilibration.md",
+         "notes/few-rotor-energy-transfer.md", "notes/rotor-coupling-crossover.md",
+         "code/python/t11_classical_rotors.py", "code/python/analyze_t11_classical_rotors.py",
+         "code/python/verify_t11_classical_rotors.py", "code/python/plot_t11_classical_rotors.py",
+         "code/python/lqg_scattering/classical_rotors.py", "code/python/t11_equilibration.py",
+         "code/python/verify_t11_equilibration.py"],
+        ["figures/t11-classical-rotors"],
+        {"columns": list(rotor_rows[0]), "rows": rotor_rows},
+        status="72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included",
+        catalogue_date="2026-10-16",
+        chart={"type": "line", "x": "parameters.N", "y": "results.hot_pair_fraction_mean",
+               "groupBy": "results.series",
+               "labels": {"parameters.N": "Rotors N",
+                          "results.hot_pair_fraction_mean": "Late-time hot-pair local-energy fraction",
+                          "results.series": "Packet preparation and energy scale"}})
+
+    # Keep the exact planar benchmark and one representative three-dimensional
+    # seed in distinct series. Their ratios are compatible, while their
+    # conserved quantities and preparation types remain explicitly labelled.
+    pair_source = "results/t11-few-rotors/pair-summary.csv"
+    graph_source = "results/t11-few-rotors/few-summary.csv"
+    pair_samples = {1.0, 3.9, 4.0, 4.1, 10.0, 100.0}
+    few_rows = []
+    selected_pair_keys = set()
+    for source_row in csv_records(pair_source):
+        ratio = float(source_row["ratio"])
+        if ratio not in pair_samples:
+            continue
+        key = ratio
+        if key in selected_pair_keys:
+            continue
+        selected_pair_keys.add(key)
+        few_rows.append({
+            "rotor_count": 2, "graph": "planar_pair",
+            "coupling": float(source_row["coupling"]), "initial_packet_energy": float(source_row["T0"]),
+            "energy_coupling_ratio": ratio, "control_type": "aligned planar pair; one initially resting rotor",
+            "regime": source_row["regime"],
+            "maximum_transfer_fraction": float(source_row["sampled_max_receiver_fraction"]),
+            "exact_transfer_bound_fraction": float(source_row["exact_max_receiver_fraction"]),
+            "mean_transfer_fraction": float(source_row["mean_receiver_fraction"]),
+            "series": "N=2 planar pair; sampled maxima",
+        })
+    for source_row in csv_records(graph_source):
+        if source_row["seed"] != "1701":
+            continue
+        graph = source_row["graph"]
+        rotor_count = 3 if graph == "triangle" else 4
+        graph_label = {"triangle": "triangle", "four_open": "open chain", "four_ring": "ring"}[graph]
+        coupling = float(source_row["coupling"])
+        few_rows.append({
+            "rotor_count": rotor_count, "graph": graph,
+            "coupling": coupling, "initial_packet_energy": float(source_row["packet_energy"]),
+            "energy_coupling_ratio": float(source_row["ratio"]),
+            "control_type": "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701",
+            "regime": "three-dimensional control",
+            "maximum_transfer_fraction": float(source_row["maximum_cold_kinetic_over_initial_packet"]),
+            "mean_transfer_fraction": float(source_row["mean_cold_kinetic_over_initial_packet"]),
+            "series": f"N={rotor_count} {graph_label}; 3D control; seed 1701",
+        })
+    few_rows.sort(key=lambda row: (row["control_type"].startswith("3D"), row["graph"], row["energy_coupling_ratio"]))
+    add("few-rotor-energy-transfer", "T11", "Few-rotor transfer: planar bound and 3D controls",
+        "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "The planar pair is aligned and has one initially resting rotor; its exact threshold is T0=4λ and its maximum is an all-time bound. The 3D controls instead start with an equal-and-opposite hot pair and summarize finite-time cold kinetic energy. Their preparations and conserved quantities differ; they do not establish thermalization. The figure bands use all three seeds, while this downloadable sample fixes seed 1701.",
+        ["results/t11-few-rotors/README.md", "results/t11-few-rotors/protocol.json",
+         "results/t11-few-rotors/provenance.json", pair_source, graph_source,
+         "results/t11-few-rotors/validation.json", "results/t11-few-rotors/verification.json",
+         "notes/few-rotor-energy-transfer.md", "notes/classical-rotor-equilibration.md",
+         "code/python/t11_few_rotors.py", "code/python/plot_t11_few_rotors.py",
+         "code/python/test_few_rotors.py", "code/python/lqg_scattering/classical_rotors.py"],
+        ["figures/t11-few-rotors"],
+        {"columns": list(few_rows[0]), "rows": few_rows},
+        status="14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded",
+        catalogue_date="2026-10-16",
+        chart={"type": "line", "x": "parameters.energy_coupling_ratio", "y": "results.maximum_transfer_fraction",
+               "groupBy": "results.series",
+               "labels": {"parameters.energy_coupling_ratio": "Initial packet energy / coupling",
+                          "results.maximum_transfer_fraction": "Maximum receiver kinetic-energy fraction",
+                          "results.series": "Rotor count and control type"}})
+
+    # Plot the full three-seed ratio summary at the saved late window and add
+    # the eight direct-coupling checks as distinct fixed-physical-time series.
+    coupling_source = "results/t11-rotor-coupling/grouped-scan.csv"
+    direct_source = "results/t11-rotor-coupling/coupling-comparison.csv"
+    coupling_rows = []
+    for source_row in csv_records(coupling_source):
+        if float(source_row["window_end"]) != 2000:
+            continue
+        rotor_count = int(source_row["N"])
+        ratio = float(source_row["ratio"])
+        coupling_rows.append({
+            "N": rotor_count, "energy_coupling_ratio": ratio, "coupling": 1.0,
+            "initial_packet_energy": ratio, "seed_count": 3,
+            "control_type": "primary scaled-time scan; λ=1; three seeds",
+            "mean_transfer_fraction": float(source_row["mean"]),
+            "transfer_fraction_min": float(source_row["minimum"]),
+            "transfer_fraction_max": float(source_row["maximum"]),
+            "series": f"N={rotor_count}; primary scaled-time scan",
+        })
+    for source_row in csv_records(direct_source):
+        rotor_count = int(source_row["N"])
+        coupling = float(source_row["coupling"])
+        coupling_rows.append({
+            "N": rotor_count, "energy_coupling_ratio": float(source_row["ratio"]),
+            "coupling": coupling, "initial_packet_energy": float(source_row["packet_energy"]),
+            "seed": 1701, "control_type": "direct coupling; fixed physical-time window; seed 1701",
+            "mean_transfer_fraction": float(source_row["direct_mean"]),
+            "equivalent_scaled_mean": float(source_row["normalized_mean"]),
+            "early_scaled_history_max_error": float(source_row["early_max_transfer_error"]),
+            "late_mean_difference": float(source_row["late_mean_error"]),
+            "series": f"N={rotor_count}; direct coupling control",
+        })
+    coupling_rows.sort(key=lambda row: (row["N"], row["control_type"].startswith("direct"), row["energy_coupling_ratio"]))
+    add("rotor-coupling-crossover", "T11", "Rotor coupling crossover and delayed release",
+        "The dashboard plots 56 grouped three-seed cases at the primary late window, plus eight direct-coupling checks. The ratio scan spans N=8,16,32,64 and 14 packet-energy-to-coupling ratios; separate direct controls vary λ at fixed packet energy and physical observation time.",
+        "Three related orientation seeds and one equal-and-opposite hot-pair preparation. Significant/suppressed thresholds and the post-inspection half-response bracket are finite-grid diagnostics, not phase-transition estimates. Longer trajectories show delayed transfer, but release timing is step-sensitive; neither permanent localization nor universal equilibration is established.",
+        ["results/t11-rotor-coupling/README.md", "results/t11-rotor-coupling/protocol.json",
+         "results/t11-rotor-coupling/analysis-protocol.json", coupling_source, direct_source,
+         "results/t11-rotor-coupling/fixed-physical-summary.csv",
+         "results/t11-rotor-coupling/crossover-brackets.csv",
+         "results/t11-rotor-coupling/threshold-sensitivity.csv",
+         "results/t11-rotor-coupling/followup-protocol.json",
+         "results/t11-rotor-coupling/delayed-transfer-protocol.json",
+         "results/t11-rotor-coupling/physical-time-protocol.json",
+         "results/t11-rotor-coupling/provenance.json",
+         "results/t11-rotor-coupling/independent-validation.json",
+         "results/t11-rotor-coupling/verification.json",
+         "notes/rotor-coupling-crossover.md", "notes/classical-rotor-equilibration.md",
+         "code/python/t11_rotor_coupling_scan.py", "code/python/analyze_t11_rotor_coupling.py",
+         "code/python/plot_t11_rotor_coupling.py", "code/python/extend_t11_rotor_coupling.py",
+         "code/python/check_t11_rotor_delayed_transfer.py", "code/python/check_t11_rotor_physical_time.py",
+         "code/python/lqg_scattering/classical_rotors.py"],
+        ["figures/t11-rotor-coupling"],
+        {"columns": list(coupling_rows[0]), "rows": coupling_rows},
+        status="168 primary trajectories plus 29 follow-up histories; 409 window summaries; finite-time brackets and delayed-transfer checks recorded",
+        catalogue_date="2026-10-16",
+        chart={"type": "line", "x": "parameters.energy_coupling_ratio", "y": "results.mean_transfer_fraction",
+               "groupBy": "results.series",
+               "labels": {"parameters.energy_coupling_ratio": "Initial packet energy / coupling",
+                          "results.mean_transfer_fraction": "Mean transferred kinetic-energy fraction",
+                          "results.series": "Rotor count and observation/control protocol"}})
+
     export('notes/face-energy-equipartition.md')
     add('fl-face-activation', 'T11', 'Large-area tetrahedron: face activation and recurrence',
         'Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.',
         'Unit complete-graph hopping, U=0, pure FL manifold. Direct sparse occupation evolution verifies K=1,2. No irreversible equipartition or interacting thermalization established. The two extra symmetric six-channel rows have the same normal, leaving only five distinct classical directions. Phase controls have different conserved initial energies.',
-        ['results/fl-face-activation','notes/face-energy-equipartition.md',
+        ['results/fl-face-activation/README.md', 'results/fl-face-activation/protocol.json',
+         'results/fl-face-activation/provenance.json', 'results/fl-face-activation/summary.csv',
+         'results/fl-face-activation/verification.json', 'notes/face-energy-equipartition.md',
          'code/python/fl_face_activation.py','code/python/verify_fl_face_activation.py',
          'code/python/plot_fl_face_activation.py','code/python/lqg_scattering/intertwiners.py',
          'code/python/lqg_scattering/spinors.py'],
@@ -244,7 +516,12 @@ def main(reuse_history=False):
     add('thermal-closed-entanglement', 'T9', 'Entanglement of separately closed thermal polyhedra',
         '86 temperatures over T*=0.05..5. Exact Schmidt eigenvalues and multiplicities yield entropy, area-sector decomposition, purity, Renyi-2 entropy and coherent joint singlet creation. Within-area entanglement exceeds area-distribution entropy at T*=1,2,5.',
         'Normalized double-singlet projection of the area-one F12 reference; initially only two active faces. Ordinary left/right tensor factorization. Adaptive area cutoffs 12..140; entropy truncation estimate below 6.4e-12 nats. Temperature slopes are prepared-state responses; fixed single-copy Gibbs and AdS interpretations are not assumed. General four-face FL inputs remain open.',
-        ['results/thermal-closed-entanglement', 'notes/thermal-entanglement.md',
+        ['results/thermal-closed-entanglement/README.md',
+         'results/thermal-closed-entanglement/temperature_summary.csv',
+         'results/thermal-closed-entanglement/protocol.json',
+         'results/thermal-closed-entanglement/provenance.json',
+         'results/thermal-closed-entanglement/verification.json',
+         'notes/thermal-entanglement.md', 'notes/thermal-geometry-and-singlet-exchange.md',
          'code/python/lqg_scattering/thermal_projection.py', 'code/python/lqg_scattering/thermal_entanglement.py',
          'code/thermal/closed_entanglement_study.py', 'code/thermal/verify_closed_entanglement.py',
          'code/thermal/plot_closed_entanglement.py'],
@@ -253,17 +530,37 @@ def main(reuse_history=False):
     add('thermal-closure-temperature', 'T9', 'Ordinary closure versus temperature',
         '125 temperatures quantify per-copy Gauss defect and declining singlet fraction for the selected area-one two-copy reference.',
         'Ordinary per-copy closure differs from combined dual-copy and transformed closure. Full unprojected oscillator state; temperature is the squeeze preparation parameter.',
-        ['results/thermal-closure-temperature', 'notes/thermal-geometry-and-singlet-exchange.md'],
+        ['results/thermal-closure-temperature/README.md',
+         'results/thermal-closure-temperature/closure_temperature.csv',
+         'results/thermal-closure-temperature/protocol.json',
+         'results/thermal-closure-temperature/verification.json',
+         'notes/thermal-geometry-and-singlet-exchange.md',
+         'code/thermal/closure_temperature_sweep.py'],
         ['figures/thermal-closure-temperature'], catalogue_date='2026-10-13')
     add('thermal-closed-projection', 'T9', 'Heating separately closed area and positive RS volume',
         '85 temperatures over T*=0.05..2: retained probability, conditional area and positive RS-volume distributions. Exact high-temperature mean-area coefficient 57/14.',
         'F12 reference with separate singlet projection. Volume traces through area 50 and occupation probabilities through q=160; model RS units. The fixed-H Gibbs obstruction applies to this reference.',
-        ['results/thermal-closed-projection', 'notes/thermal-geometry-and-singlet-exchange.md'],
+        ['results/thermal-closed-projection/README.md',
+         'results/thermal-closed-projection/area_distribution.csv',
+         'results/thermal-closed-projection/protocol.json',
+         'results/thermal-closed-projection/temperature_fit.json',
+         'results/thermal-closed-projection/temperature_summary.csv',
+         'results/thermal-closed-projection/verification.json',
+         'notes/thermal-geometry-and-singlet-exchange.md',
+         'code/thermal/closed_projection_study.py', 'code/thermal/fit_closed_temperature.py',
+         'code/thermal/plot_closed_temperature_writeup.py',
+         'code/python/lqg_scattering/thermal_projection.py'],
         ['figures/thermal-closed-projection'], catalogue_date='2026-10-13')
     add('t9a-singlet-exchange', 'T9a', 'Singlet exchange between closed FL polyhedra',
         'Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.',
         'Finite isolated pair; prepared-state entanglement differs from mixed-state Gibbs entropy. No reservoir relaxation or equivalence to the T9 squeezed family established. Project volume and model energy units.',
-        ['results/t9a-singlet-exchange', 'notes/t9a-singlet-exchange.md'],
+        ['results/t9a-singlet-exchange/README.md',
+         'results/t9a-singlet-exchange/ground_states.csv',
+         'results/t9a-singlet-exchange/independent_verification.json',
+         'results/t9a-singlet-exchange/provenance.json',
+         'results/t9a-singlet-exchange/summary.json',
+         'results/t9a-singlet-exchange/thermal.csv',
+         'notes/t9a-singlet-exchange.md', 'notes/thermal-geometry-and-singlet-exchange.md'],
         ['figures/t9a-singlet-exchange'],
         status='46 recorded regression tests and 1792 independent comparisons passed', catalogue_date='2026-10-14')
     size_rows = list(csv.DictReader((ROOT / "results/t11-size-comparison/summary.csv").open()))
@@ -344,7 +641,7 @@ def main(reuse_history=False):
     for identifier,title,desc,sources,figs in [
         ("vacuum-area","Squeezed-vacuum area coefficients","J_in=0, four faces and eight modes per copy; coefficient and area distributions at four temperatures.",["figures/thermal-area-sectors","notes/thermal-area-sectors.md"],["figures/thermal-area-sectors"]),
         ("vacuum-spin","Squeezed-vacuum resultant spin","Ordinary per-copy spin distributions conditioned on boson number, at beta*hbar*omega=1.",["figures/thermal-spin-sectors"],["figures/thermal-spin-sectors"]),
-        ("excited-spin","Excited J_in=1 joint area and spin","Five temperatures, q through 160; 32,805 independent-method comparisons with maximum difference 2.67e-16.",["results/thermal-j1-spin","figures/thermal-j1-spin"],["figures/thermal-j1-spin"]),
+        ("excited-spin","Excited J_in=1 joint area and spin","Five temperatures, q through 160; 32,805 independent-method comparisons with maximum difference 2.67e-16.",["results/thermal-j1-spin/j1_spin_method_summary.json","figures/thermal-j1-spin"],["figures/thermal-j1-spin"]),
     ]:
         add(identifier,"T9",title,desc,"Selected two-copy squeeze on full oscillator support; no separate per-copy singlet projection. Ordinary per-copy spin differs from combined/transformed closure. Plot ranges are truncated; full reduced-state spectra and geometric observables remain open.",sources,figs)
     add("high-j", "T5c", "Higher-J flat-boundary probes", "Saved Python and Rust probes extend the earlier weighted-input boundary scans.",
@@ -383,9 +680,9 @@ def main(reuse_history=False):
         d["runs"].append({"runId":study["id"],"task":study["task"],"status":"complete","description":study["title"],"studyId":study["id"],"params":{"scope":study["description"],"limits":study["limits"],"calculationStatus":study["status"]},"figures":study["figures"]})
         d["figures"].extend({**f,"studyId":study["id"],"description":study["title"],"tags":[study["task"]]} for f in study["figures"])
     d["summary"].update(totalRuns=len(d["runs"]),completeRuns=sum(r["status"]=="complete" for r in d["runs"]),registeredStudies=len(STUDIES))
-    d["project"]["subtitle"]="Hamiltonian, closed-basis volume and thermal-sector results, with data, plots and verification records"
-    d["theory"]["description"]="The catalogue records exact singlet Hamiltonian studies, kinematic RS/AL catalogues, selected squeezed thermal-sector distributions, and earlier proxy studies. Model support, normalization and verification limits accompany each result. Broader parameter, finite-size and bulk-phase studies remain open."
-    d["tasks"]={"active":[{"id":t,"title":title,"description":desc} for t,title,desc in [("T1a","Positive-volume validation","Complete four-face baseline through K=12 saved; broader physical calibration remains open."),("T5c","Weighted FL volume and shape","Initial and higher-J probes saved; broad convergence and unresolved RS comparison remain open."),("T5d","Cocycle phase","Recorded ten-point pilot; broader phase study open."),("T9","Thermal intertwiners and TFD","Projected reference entropy, Schmidt spectra, coherent joint creation and thermal geometry saved. General FL inputs and full unprojected spectra remain open."),("T9a","Singlet exchange","Finite combined-area FL dynamics and canonical controls saved; reservoir and thermal-family comparison open."),("T11","Hamiltonian studies","Four/five-site persistence, prepared K=4 geometry, candidate volume and signed-grasp Hamiltonians, and 50 prepared-FL trajectories are saved. Physical model selection and broader parameter/size studies remain open.")]],"completed":[{"id":"T10","title":"Variable-face RS catalogue","description":"Declared K=2,3,4 catalogue complete."},{"id":"T1b","title":"Real-plane volume check","description":"Independent positive-volume comparison saved."},{"id":"T5a/T5a′/T5b/T5e","title":"Archived numerical pilots","description":"Recorded scope complete; finite sampling and proxy interpretation retained."}],"pending":[]}
+    d["project"]["subtitle"]="Hamiltonian, closed-basis volume, thermal-sector and rotor results, with curated data, figures and verification records"
+    d["theory"]["description"]="The catalogue records exact singlet Hamiltonian studies, kinematic RS/AL catalogues, selected squeezed thermal-sector distributions, finite-area face-channel readouts, and classical rotor energy-transfer studies. Model support, sampling choices, normalization and verification limits accompany each result. Broader parameter, finite-size and bulk-phase studies remain open."
+    d["tasks"]={"active":[{"id":t,"title":title,"description":desc} for t,title,desc in [("T1a","Positive-volume validation","Complete four-face baseline through K=12 saved; broader physical calibration remains open."),("T5c","Weighted FL volume and shape","Initial and higher-J probes saved; broad convergence and unresolved RS comparison remain open."),("T5d","Cocycle phase","Recorded ten-point pilot; broader phase study open."),("T9","Thermal intertwiners and TFD","Projected reference entropy, Schmidt spectra, coherent joint creation and thermal geometry saved. General FL inputs and full unprojected spectra remain open."),("T9a","Singlet exchange","Finite combined-area FL dynamics and canonical controls saved; reservoir and thermal-family comparison open."),("T11","Hamiltonian, face-channel and rotor studies","Four/five-site Hamiltonians, large-area face activation, a finite-area equilibration pilot, grouped classical rotor spreading, few-rotor transfer and coupling scans are saved. Rotor records use selected summaries and representative cases; large-area quantum equilibration, permanent localization, universal thermalization and the crossover's infinite-time limit remain open.")]],"completed":[{"id":"T10","title":"Variable-face RS catalogue","description":"Declared K=2,3,4 catalogue complete."},{"id":"T1b","title":"Real-plane volume check","description":"Independent positive-volume comparison saved."},{"id":"T5a/T5a′/T5b/T5e","title":"Archived numerical pilots","description":"Recorded scope complete; finite sampling and proxy interpretation retained."}],"pending":[]}
     combined=d["tasks"]["completed"].pop()
     d["tasks"]["completed"].extend({"id":task,"title":title,"description":combined["description"]} for task,title in
         [("T5a","Magnetization pilot"),("T5a′","Local chirality"),("T5b","Perturbation response"),("T5e","Recorded large-K families")])

@@ -192,9 +192,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
@@ -219,9 +219,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/t1b_real_plane_volume_results.json",
@@ -246,9 +246,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/t5c_shape_recovery_results.json",
@@ -273,9 +273,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/t5c_input_geometry_results.json",
@@ -300,9 +300,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/fl_volume_area_results.json",
@@ -327,9 +327,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from code/dashboard/fl-volume-shape-j2.json",
@@ -354,9 +354,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/binding-energy/summary.json",
@@ -381,9 +381,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/state-space-probes/summary.json",
@@ -408,9 +408,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/sewing-probes/summary.json",
@@ -421,6 +421,193 @@
         {
           "label": "Open numerical cases and charts",
           "path": "index.html?data=datasets/sewing-probes.json"
+        }
+      ]
+    },
+    {
+      "runId": "t11-channel-equilibration",
+      "task": "T11",
+      "status": "complete",
+      "description": "Small-area face-channel equilibration pilot",
+      "studyId": "t11-channel-equilibration",
+      "params": {
+        "scope": "Representative K=3 late-window readouts from the finite-area quantum pilot. The regular input covers L=4,5,6 at U=0,1,5; a phase-shifted U=5 control shows preparation dependence. The study asks how readouts approach the exact dephased reference, not whether a canonical state is reached.",
+        "limits": "Finite K=2,3 sectors, uniform complete-graph hopping with fixed row sum, two FL phase choices, three interaction strengths, and selected windows ending at t=200. Residence depends on the readout tolerance and observation window; phase-shifted cases are not energy matched. No large-area equilibration claim.",
+        "calculationStatus": "42 trajectories passed; 252,840 independent comparisons (714 analytic); maximum residual 1.88e-13; prior 46-test suite passed"
+      },
+      "figures": [],
+      "catalogueDate": "2026-10-16",
+      "parameters": {},
+      "results": {
+        "caseCount": 12,
+        "fileCount": 9
+      },
+      "provenance": {
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+      },
+      "assessment": {
+        "summary": "Representative K=3 late-window readouts from the finite-area quantum pilot. The regular input covers L=4,5,6 at U=0,1,5; a phase-shifted U=5 control shows preparation dependence. The study asks how readouts approach the exact dephased reference, not whether a canonical state is reached.",
+        "limits": "Finite K=2,3 sectors, uniform complete-graph hopping with fixed row sum, two FL phase choices, three interaction strengths, and selected windows ending at t=200. Residence depends on the readout tolerance and observation window; phase-shifted cases are not energy matched. No large-area equilibration claim.",
+        "recordedStudyStatus": "42 trajectories passed; 252,840 independent comparisons (714 analytic); maximum residual 1.88e-13; prior 46-test suite passed"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/t11-channel-equilibration.json"
+        }
+      ]
+    },
+    {
+      "runId": "classical-rotor-equilibration",
+      "task": "T11",
+      "status": "complete",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "studyId": "classical-rotor-equilibration",
+      "params": {
+        "scope": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "limits": "Classical I=1 nearest-neighbor rings, equal-and-opposite initial hot pair, three related orientation seeds, and finite observation windows. The fixed-density series raises the initial packet energy with N; N=8 cases overlap between preparations. Late-time trapping is not permanent localization, and no quantum rotor evolution is included.",
+        "calculationStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      },
+      "figures": [
+        {
+          "name": "rotor-dynamics.png",
+          "path": "study-assets/figures/t11-classical-rotors/rotor-dynamics.png",
+          "source": "figures/t11-classical-rotors/rotor-dynamics.png",
+          "sourceSha256": "51869edd09d08f5ba5490d058a351e29060211e05d29e1b262201528f05063a5",
+          "title": "Packet spreading and persistent high-energy concentration",
+          "width": 2193,
+          "height": 1624,
+          "wide": false,
+          "pdf": "study-assets/figures/t11-classical-rotors/rotor-dynamics.pdf"
+        },
+        {
+          "name": "rotor-scaling.png",
+          "path": "study-assets/figures/t11-classical-rotors/rotor-scaling.png",
+          "source": "figures/t11-classical-rotors/rotor-scaling.png",
+          "sourceSha256": "e1ad7e64c3b8fcfb602cb7c98f46e584a0c077ab612ccc68fa4daea0182df078",
+          "title": "Rotor-size and preparation comparison",
+          "width": 2194,
+          "height": 1534,
+          "wide": false,
+          "pdf": "study-assets/figures/t11-classical-rotors/rotor-scaling.pdf"
+        }
+      ],
+      "catalogueDate": "2026-10-16",
+      "parameters": {},
+      "results": {
+        "caseCount": 24,
+        "fileCount": 18
+      },
+      "provenance": {
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+      },
+      "assessment": {
+        "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
+        "limits": "Classical I=1 nearest-neighbor rings, equal-and-opposite initial hot pair, three related orientation seeds, and finite observation windows. The fixed-density series raises the initial packet energy with N; N=8 cases overlap between preparations. Late-time trapping is not permanent localization, and no quantum rotor evolution is included.",
+        "recordedStudyStatus": "72 production runs (63 unique preparations), 144 microcanonical chains, and ten full-duration half-step controls; verification records included"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/classical-rotor-equilibration.json"
+        }
+      ]
+    },
+    {
+      "runId": "few-rotor-energy-transfer",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "studyId": "few-rotor-energy-transfer",
+      "params": {
+        "scope": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "limits": "The planar pair is aligned and has one initially resting rotor; its exact threshold is T0=4\u03bb and its maximum is an all-time bound. The 3D controls instead start with an equal-and-opposite hot pair and summarize finite-time cold kinetic energy. Their preparations and conserved quantities differ; they do not establish thermalization. The figure bands use all three seeds, while this downloadable sample fixes seed 1701.",
+        "calculationStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      },
+      "figures": [
+        {
+          "name": "few-rotor-transfer.png",
+          "path": "study-assets/figures/t11-few-rotors/few-rotor-transfer.png",
+          "source": "figures/t11-few-rotors/few-rotor-transfer.png",
+          "sourceSha256": "ee861372875071114b0fc3952127a7ce8766a9a5c9971e098ee13513c58871d2",
+          "title": "Planar-pair transfer and three-dimensional controls",
+          "width": 3034,
+          "height": 964,
+          "wide": true,
+          "pdf": "study-assets/figures/t11-few-rotors/few-rotor-transfer.pdf"
+        }
+      ],
+      "catalogueDate": "2026-10-16",
+      "parameters": {},
+      "results": {
+        "caseCount": 27,
+        "fileCount": 13
+      },
+      "provenance": {
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "limits": "The planar pair is aligned and has one initially resting rotor; its exact threshold is T0=4\u03bb and its maximum is an all-time bound. The 3D controls instead start with an equal-and-opposite hot pair and summarize finite-time cold kinetic energy. Their preparations and conserved quantities differ; they do not establish thermalization. The figure bands use all three seeds, while this downloadable sample fixes seed 1701.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/few-rotor-energy-transfer.json"
+        }
+      ]
+    },
+    {
+      "runId": "rotor-coupling-crossover",
+      "task": "T11",
+      "status": "complete",
+      "description": "Rotor coupling crossover and delayed release",
+      "studyId": "rotor-coupling-crossover",
+      "params": {
+        "scope": "The dashboard plots 56 grouped three-seed cases at the primary late window, plus eight direct-coupling checks. The ratio scan spans N=8,16,32,64 and 14 packet-energy-to-coupling ratios; separate direct controls vary \u03bb at fixed packet energy and physical observation time.",
+        "limits": "Three related orientation seeds and one equal-and-opposite hot-pair preparation. Significant/suppressed thresholds and the post-inspection half-response bracket are finite-grid diagnostics, not phase-transition estimates. Longer trajectories show delayed transfer, but release timing is step-sensitive; neither permanent localization nor universal equilibration is established.",
+        "calculationStatus": "168 primary trajectories plus 29 follow-up histories; 409 window summaries; finite-time brackets and delayed-transfer checks recorded"
+      },
+      "figures": [
+        {
+          "name": "coupling-crossover.png",
+          "path": "study-assets/figures/t11-rotor-coupling/coupling-crossover.png",
+          "source": "figures/t11-rotor-coupling/coupling-crossover.png",
+          "sourceSha256": "797e042e04bed2df3be52ba692347fea7b4c5c14dc6743d7a21e691edf280bab",
+          "title": "Finite-time coupling crossover and delayed release",
+          "width": 3034,
+          "height": 1024,
+          "wide": true,
+          "pdf": "study-assets/figures/t11-rotor-coupling/coupling-crossover.pdf"
+        }
+      ],
+      "catalogueDate": "2026-10-16",
+      "parameters": {},
+      "results": {
+        "caseCount": 64,
+        "fileCount": 23
+      },
+      "provenance": {
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+      },
+      "assessment": {
+        "summary": "The dashboard plots 56 grouped three-seed cases at the primary late window, plus eight direct-coupling checks. The ratio scan spans N=8,16,32,64 and 14 packet-energy-to-coupling ratios; separate direct controls vary \u03bb at fixed packet energy and physical observation time.",
+        "limits": "Three related orientation seeds and one equal-and-opposite hot-pair preparation. Significant/suppressed thresholds and the post-inspection half-response bracket are finite-grid diagnostics, not phase-transition estimates. Longer trajectories show delayed transfer, but release timing is step-sensitive; neither permanent localization nor universal equilibration is established.",
+        "recordedStudyStatus": "168 primary trajectories plus 29 follow-up histories; 409 window summaries; finite-time brackets and delayed-transfer checks recorded"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/rotor-coupling-crossover.json"
         }
       ]
     },
@@ -452,12 +639,12 @@
       "parameters": {},
       "results": {
         "caseCount": 20,
-        "fileCount": 13
+        "fileCount": 11
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
@@ -510,12 +697,12 @@
       "parameters": {},
       "results": {
         "caseCount": 86,
-        "fileCount": 18
+        "fileCount": 12
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "86 temperatures over T*=0.05..5. Exact Schmidt eigenvalues and multiplicities yield entropy, area-sector decomposition, purity, Renyi-2 entropy and coherent joint singlet creation. Within-area entanglement exceeds area-distribution entropy at T*=1,2,5.",
@@ -557,12 +744,12 @@
       "parameters": {},
       "results": {
         "caseCount": 125,
-        "fileCount": 5
+        "fileCount": 6
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "125 temperatures quantify per-copy Gauss defect and declining singlet fraction for the selected area-one two-copy reference.",
@@ -615,12 +802,12 @@
       "parameters": {},
       "results": {
         "caseCount": 85,
-        "fileCount": 9
+        "fileCount": 11
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "85 temperatures over T*=0.05..2: retained probability, conditional area and positive RS-volume distributions. Exact high-temperature mean-area coefficient 57/14.",
@@ -662,12 +849,12 @@
       "parameters": {},
       "results": {
         "caseCount": 20,
-        "fileCount": 14
+        "fileCount": 8
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
@@ -722,9 +909,9 @@
         "fileCount": 24
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Matched mean occupation 2K/L=2: (L,K)=(4,4) and (5,5), singlet dimensions 105 and 1,176. Complete and ring graphs at t=1,U=20, plus free and no-hopping controls. Intermediate-temperature nonmonotonicity persists; the pronounced four-site complete-graph low-temperature collapse does not.",
@@ -769,9 +956,9 @@
         "fileCount": 23
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Five explicitly constructed K=4 FL references: equal input face areas, phi=90,60,30,10,0 degrees. Saved face-spin distributions, pair correlations, angular fluctuations, volume distributions and overlaps; comparisons with the first three energy groups of complete/ring Hamiltonians at t=1,U=20. The complete ground is kernel-dominated despite nearly unit four-face weight.",
@@ -860,9 +1047,9 @@
         "fileCount": 20
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Exact K=4, total-spin-zero study (dimension 105). The baseline is complete-graph face-to-face area exchange plus on-site repulsion, with equal hopping strength on each bond. We added the positive RS-volume term and the signed triple-grasp term as separate candidate Hamiltonians, then evolved five explicitly prepared FL references under the baseline and both signed couplings. The 62 parameter settings cover U/t=0,1,5,20 and normalized coupling alpha=-2,-1,-0.5,0,0.5,1,2; the ring is included only as a sparse-hopping control. The study contains 6,510 saved energy levels and 50 prepared-state trajectories.",
@@ -951,9 +1138,9 @@
         "fileCount": 20
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Exact diagonalization of the hopping-plus-on-site-repulsion operator H_G=-t \u03a3_(i,j)\u2208E_G(E_ij+E_ji)+(U/2)\u03a3_i n_i(n_i\u22121), where E_ij=a_i\u2020a_j+b_i\u2020b_j and n_i=a_i\u2020a_i+b_i\u2020b_i. Four sites, fixed boson number 2K and total spin zero; K=2,3,4 gives dimensions 20,50,105, with empty sites allowed. Compare the complete graph (6 hopping bonds) and periodic ring (4), with equal t per bond. The 30 cases use (t,U)=(0,1) or t=1 and U/t=0,1,5,20.",
@@ -1031,9 +1218,9 @@
         "fileCount": 38
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Four labelled faces, zero-spin faces allowed; K=2 through 12, 10,549 basis states. RS/AL means, variances, spectra and reconstructible operators.",
@@ -1100,9 +1287,9 @@
         "fileCount": 41
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Nine sectors at K=2,3,4 with 4<=N<=2K. Closed dimensions 2,36,347; positive-volume dimensions 2,32,329. Independent reconstruction covers 112 blocks and 385 eigenstates.",
@@ -1147,9 +1334,9 @@
         "fileCount": 3
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "J_in=0, four faces and eight modes per copy; coefficient and area distributions at four temperatures.",
@@ -1194,9 +1381,9 @@
         "fileCount": 3
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Ordinary per-copy spin distributions conditioned on boson number, at beta*hbar*omega=1.",
@@ -1249,12 +1436,12 @@
       "parameters": {},
       "results": {
         "caseCount": 5,
-        "fileCount": 3
+        "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Five temperatures, q through 160; 32,805 independent-method comparisons with maximum difference 2.67e-16.",
@@ -1299,9 +1486,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Saved Python and Rust probes extend the earlier weighted-input boundary scans.",
@@ -1346,9 +1533,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Converged n=5 magnetization sweep; the tested magnetization hypothesis was not supported.",
@@ -1393,9 +1580,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Saved plane/channel agreement statistics; the local subset did not establish hidden handedness.",
@@ -1440,9 +1627,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
@@ -1487,9 +1674,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Ten recorded points compare phase defect with signed grasp; broader study remains open.",
@@ -1534,9 +1721,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Saved families through historical K=24. The proposed K^(3/2) scaling was not supported for these families.",
@@ -1581,9 +1768,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Archived T7A study, retained under current T9 ownership.",
@@ -1628,9 +1815,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Archived T7B study, retained under current T9 ownership.",
@@ -1675,9 +1862,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Archived T7E study, retained under current T9 ownership.",
@@ -1722,9 +1909,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Four regular/unequal-shape seed cases; draft squeeze compared with explicit double-singlet postselection.",
@@ -1769,9 +1956,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Independent tensor controls: paired spin-half singlet has positive RS/AL volume despite zero signed mean; collinear product gives zero.",
@@ -1816,9 +2003,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00"
+        "importedAt": "2026-10-16T07:15:37.984068+00:00"
       },
       "assessment": {
         "summary": "Six saved pilot records; later shape recovery and weighted-input studies are shown in Volume Studies.",
@@ -1834,8 +2021,8 @@
     }
   ],
   "summary": {
-    "totalRuns": 43,
-    "completeRuns": 43,
+    "totalRuns": 47,
+    "completeRuns": 47,
     "zeroSignedMeanOnRealPlanes": true,
     "nRangeRecorded": "4-8",
     "convergedBaselineVerified": true,
@@ -1845,10 +2032,10 @@
     "publishedPaper": "EPJC (2022)",
     "followUpManuscript": "In progress",
     "independentN6Pending": true,
-    "registeredStudies": 26
+    "registeredStudies": 30
   },
   "theory": {
-    "description": "The catalogue records exact singlet Hamiltonian studies, kinematic RS/AL catalogues, selected squeezed thermal-sector distributions, and earlier proxy studies. Model support, normalization and verification limits accompany each result. Broader parameter, finite-size and bulk-phase studies remain open.",
+    "description": "The catalogue records exact singlet Hamiltonian studies, kinematic RS/AL catalogues, selected squeezed thermal-sector distributions, finite-area face-channel readouts, and classical rotor energy-transfer studies. Model support, sampling choices, normalization and verification limits accompany each result. Broader parameter, finite-size and bulk-phase studies remain open.",
     "citation": "D. Vaid and D. Suresh, EPJC (2022); follow-up calculations under review",
     "arxiv": "2208.10632"
   },
@@ -1941,6 +2128,70 @@
         "cross-ratio",
         "RS",
         "AL"
+      ]
+    },
+    {
+      "name": "rotor-dynamics.png",
+      "path": "study-assets/figures/t11-classical-rotors/rotor-dynamics.png",
+      "source": "figures/t11-classical-rotors/rotor-dynamics.png",
+      "sourceSha256": "51869edd09d08f5ba5490d058a351e29060211e05d29e1b262201528f05063a5",
+      "title": "Packet spreading and persistent high-energy concentration",
+      "width": 2193,
+      "height": 1624,
+      "wide": false,
+      "pdf": "study-assets/figures/t11-classical-rotors/rotor-dynamics.pdf",
+      "studyId": "classical-rotor-equilibration",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "tags": [
+        "T11"
+      ]
+    },
+    {
+      "name": "rotor-scaling.png",
+      "path": "study-assets/figures/t11-classical-rotors/rotor-scaling.png",
+      "source": "figures/t11-classical-rotors/rotor-scaling.png",
+      "sourceSha256": "e1ad7e64c3b8fcfb602cb7c98f46e584a0c077ab612ccc68fa4daea0182df078",
+      "title": "Rotor-size and preparation comparison",
+      "width": 2194,
+      "height": 1534,
+      "wide": false,
+      "pdf": "study-assets/figures/t11-classical-rotors/rotor-scaling.pdf",
+      "studyId": "classical-rotor-equilibration",
+      "description": "Classical rotor spreading and equilibrium comparison",
+      "tags": [
+        "T11"
+      ]
+    },
+    {
+      "name": "few-rotor-transfer.png",
+      "path": "study-assets/figures/t11-few-rotors/few-rotor-transfer.png",
+      "source": "figures/t11-few-rotors/few-rotor-transfer.png",
+      "sourceSha256": "ee861372875071114b0fc3952127a7ce8766a9a5c9971e098ee13513c58871d2",
+      "title": "Planar-pair transfer and three-dimensional controls",
+      "width": 3034,
+      "height": 964,
+      "wide": true,
+      "pdf": "study-assets/figures/t11-few-rotors/few-rotor-transfer.pdf",
+      "studyId": "few-rotor-energy-transfer",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "tags": [
+        "T11"
+      ]
+    },
+    {
+      "name": "coupling-crossover.png",
+      "path": "study-assets/figures/t11-rotor-coupling/coupling-crossover.png",
+      "source": "figures/t11-rotor-coupling/coupling-crossover.png",
+      "sourceSha256": "797e042e04bed2df3be52ba692347fea7b4c5c14dc6743d7a21e691edf280bab",
+      "title": "Finite-time coupling crossover and delayed release",
+      "width": 3034,
+      "height": 1024,
+      "wide": true,
+      "pdf": "study-assets/figures/t11-rotor-coupling/coupling-crossover.pdf",
+      "studyId": "rotor-coupling-crossover",
+      "description": "Rotor coupling crossover and delayed release",
+      "tags": [
+        "T11"
       ]
     },
     {
@@ -2894,8 +3145,8 @@
       },
       {
         "id": "T11",
-        "title": "Hamiltonian studies",
-        "description": "Four/five-site persistence, prepared K=4 geometry, candidate volume and signed-grasp Hamiltonians, and 50 prepared-FL trajectories are saved. Physical model selection and broader parameter/size studies remain open."
+        "title": "Hamiltonian, face-channel and rotor studies",
+        "description": "Four/five-site Hamiltonians, large-area face activation, a finite-area equilibration pilot, grouped classical rotor spreading, few-rotor transfer and coupling scans are saved. Rotor records use selected summaries and representative cases; large-area quantum equilibration, permanent localization, universal thermalization and the crossover's infinite-time limit remain open."
       }
     ],
     "completed": [
@@ -3025,6 +3276,21 @@
       "title": "T11 geometric interpretation",
       "path": "study-assets/notes/t11-geometric-interpretation.txt",
       "description": "Prepared-state data and the limits of the geometric interpretation."
+    },
+    {
+      "title": "Classical rotor energy transfer and equilibration",
+      "path": "study-assets/notes/classical-rotor-equilibration.txt",
+      "description": "Finite-area face-channel pilot, grouped rotor summaries and equilibrium comparisons."
+    },
+    {
+      "title": "Why fast rotors exchange little energy",
+      "path": "study-assets/notes/few-rotor-energy-transfer.txt",
+      "description": "Exact planar-pair transfer bound and separate three-dimensional controls."
+    },
+    {
+      "title": "Coupling strength and the apparent transfer cutoff",
+      "path": "study-assets/notes/rotor-coupling-crossover.txt",
+      "description": "Finite-time coupling scan, direct controls and delayed transfer."
     }
   ]
 }

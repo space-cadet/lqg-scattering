@@ -2,7 +2,7 @@
 
 *Last updated: 2026-10-16*
 
-This is the central record of numerical studies in this repository. Each entry records the question, calculated coverage, findings, and source artifacts. Dates follow calculation records, session records, and Git history. Date ranges group related calculations; corrections and extensions appear at their own dates. The identifiers NS01–NS32 are local index labels for this document. Project task IDs are included for cross-reference.
+This is the central record of numerical studies in this repository. Each entry records the question, calculated coverage, findings, and source artifacts. Dates follow calculation records, session records, and Git history. Date ranges group related calculations; corrections and extensions appear at their own dates. The identifiers NS01–NS36 are local index labels for this document. Project task IDs are included for cross-reference.
 
 ## Index
 
@@ -40,6 +40,10 @@ This is the central record of numerical studies in this repository. Each entry r
 | [NS30](#ns30) | 2026-10-14 | Finite-area singlet exchange and canonical controls | T9a |
 | [NS31](#ns31) | 2026-10-16 | Closed-reference entanglement and coherent singlet creation | T9 |
 | [NS32](#ns32) | 2026-10-16 | Large-area FL face activation and free-hopping recurrence | T11 |
+| [NS33](#ns33) | 2026-10-16 | Small-area face-channel equilibration pilot | T11 |
+| [NS34](#ns34) | 2026-10-16 | Classical rotor energy spreading and equilibrium comparison | T11 |
+| [NS35](#ns35) | 2026-10-16 | Few-rotor energy transfer and the planar threshold | T11 |
+| [NS36](#ns36) | 2026-10-16 | Rotor coupling crossover and delayed release | T11 |
 
 ## Notation
 
@@ -428,6 +432,82 @@ or arbitrary-valence refinement result.
 [driver](../code/python/fl_face_activation.py),
 [verifier](../code/python/verify_fl_face_activation.py), and
 [figure](../figures/fl-face-activation/face_activation_control.pdf).
+
+<a id="ns33"></a>
+
+### NS33 — Small-area face-channel equilibration pilot
+
+The finite-area quantum pilot compares four to seven available channels at
+$K=2,3$, three repulsion strengths, and two regular FL phase choices. The
+42 trajectories are summarized over windows ending at $t=100$ and $200$.
+For the regular $K=3$ input and distance tolerance $0.05$, late-window
+residence rises from 19.0% to 76.1% as $U$ changes from zero to five at four
+channels; at five and six channels the corresponding $U=5$ values are 76.7%
+and 90.3%. The trend changes for the phase-shifted preparation, so this is not
+a channel-count law or a matched-energy comparison. All 252,840 independent
+comparisons passed; the larger 46-test regression suite also passed. No
+large-area quantum equilibration result follows from this pilot.
+
+[Local report](../results/t11-equilibration/README.md),
+[saved summary](../results/t11-equilibration/summary.csv), and the combined
+[T11 equilibration and rotor note](classical-rotor-equilibration.md).
+
+<a id="ns34"></a>
+
+### NS34 — Classical rotor energy spreading and equilibrium comparison
+
+The classical ring study follows $N=8,16,32,64$ rotors from a neighboring
+equal-and-opposite hot pair, using three orientation seeds and both fixed
+packet-energy and fixed-density preparations. The published table groups the
+three seeds rather than listing trajectories. At packet energy 10, the late
+hot-pair fraction follows the microcanonical mean $2/N$ and residence in the
+sampled 90% equilibrium region ranges from 87.2% to 90.4%. At packet energy
+100, the pair retains 98.7–99.0% of local energy through $t=2000$ and has no
+sampled residence in that region. The distinction is finite-time: it neither
+establishes permanent localization nor proves eventual equilibration.
+
+[Full physical account](classical-rotor-equilibration.md),
+[local result report](../results/t11-classical-rotors/README.md), and
+[grouped summary](../results/t11-classical-rotors/grouped-summary.csv).
+
+<a id="ns35"></a>
+
+### NS35 — Few-rotor energy transfer and the planar threshold
+
+For an aligned planar pair with one initially resting rotor, the relative
+motion is a pendulum. Complete exchange is possible below $T_0=4\lambda$;
+above it the exact maximum receiver fraction is
+$[(1-\sqrt{1-4\lambda/T_0})/2]^2$. The saved scan includes 14 pair cases,
+with numerical maxima checked against the exact bound and a scalar-ODE
+reference. Separate three-dimensional zero-total-angular-momentum controls
+cover a triangle, open four-rotor chain, and four-rotor ring at seven coupling
+values and three seeds. These finite-time controls demonstrate transfer in
+the tested preparations; they do not establish equilibration or a transition.
+
+[Pedagogical note](few-rotor-energy-transfer.md),
+[local result report](../results/t11-few-rotors/README.md), and
+[key figure](../figures/t11-few-rotors/few-rotor-transfer.pdf).
+
+<a id="ns36"></a>
+
+### NS36 — Rotor coupling crossover and delayed release
+
+The primary zero-angular-momentum ring scan covers four sizes, 14 initial
+packet-energy-to-coupling ratios, and three orientation seeds through scaled
+time $\tau=2000$. The 29 additional histories check direct physical couplings,
+step refinement, and longer windows. The sampled half-response brackets lie
+between $12<r_c<16$ and $16<r_c<18$, depending on ring size; they are grid
+brackets, not fitted critical points. For $N=8,r=18$, the mean transferred
+fraction grows from below 1% through $\tau=2000$ to about 30% over
+$[200,10000]$. The late release is qualitatively reproduced across seeds and
+a smaller step, while its timing remains sensitive. The crossover depends on
+the observation window and does not prove permanent localization or universal
+equilibration.
+
+[Full coupling note](rotor-coupling-crossover.md),
+[local result report](../results/t11-rotor-coupling/README.md),
+[grouped scan](../results/t11-rotor-coupling/grouped-scan.csv), and
+[key figure](../figures/t11-rotor-coupling/coupling-crossover.pdf).
 
 ## Numerical infrastructure and browsing
 

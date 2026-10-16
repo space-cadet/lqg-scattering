@@ -2,7 +2,7 @@
 (async function () {
   const select = document.getElementById('datasetSelect');
   try {
-    const response = await fetch('datasets.json');
+    const response = await fetch('datasets.json', {cache: 'no-store'});
     if (!response.ok) throw new Error(`Dataset list returned HTTP ${response.status}`);
     const {datasets} = await response.json();
     const active = new URLSearchParams(location.search).get('data') || 'data.json';

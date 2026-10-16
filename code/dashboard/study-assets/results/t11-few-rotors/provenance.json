@@ -1,0 +1,10 @@
+{
+  "numpy": "2.4.1",
+  "source_sha256": {
+    "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+    "code/classical/rotors.cpp": "cf7effe9a6158d00118e3c56d1fb55a9991d7b850ac3a70dae9de1605051f288",
+    "code/python/lqg_scattering/classical_rotors.py": "2ed54620928d6986bbeb8eea5534b247ede1df93edd26e3edd8439044403859b",
+    "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+    "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13"
+  }
+}

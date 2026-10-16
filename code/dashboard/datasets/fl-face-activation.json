@@ -142,8 +142,6 @@
       "provenance": {
         "sourceHashes": {
           "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
-          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
-          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
           "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
@@ -156,11 +154,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-1"
       },
       "assessment": {
@@ -175,22 +173,6 @@
           "sha256": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
           "sourcePath": "results/fl-face-activation/README.md",
           "sourceSha256": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953"
-        },
-        {
-          "label": "dynamics.csv",
-          "path": "../study-assets/results/fl-face-activation/dynamics.csv",
-          "kind": "data",
-          "sha256": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
-          "sourcePath": "results/fl-face-activation/dynamics.csv",
-          "sourceSha256": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f"
-        },
-        {
-          "label": "inputs.npz",
-          "path": "../study-assets/results/fl-face-activation/inputs.npz",
-          "kind": "operators",
-          "sha256": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
-          "sourcePath": "results/fl-face-activation/inputs.npz",
-          "sourceSha256": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd"
         },
         {
           "label": "protocol.json",
@@ -312,8 +294,6 @@
       "provenance": {
         "sourceHashes": {
           "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
-          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
-          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
           "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
@@ -326,11 +306,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-2"
       },
       "assessment": {
@@ -367,8 +347,6 @@
       "provenance": {
         "sourceHashes": {
           "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
-          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
-          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
           "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
@@ -381,11 +359,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-3"
       },
       "assessment": {
@@ -422,8 +400,6 @@
       "provenance": {
         "sourceHashes": {
           "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
-          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
-          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
           "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
@@ -436,11 +412,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-4"
       },
       "assessment": {
@@ -477,8 +453,6 @@
       "provenance": {
         "sourceHashes": {
           "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
-          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
-          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
           "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
@@ -491,11 +465,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-5"
       },
       "assessment": {
@@ -532,8 +506,6 @@
       "provenance": {
         "sourceHashes": {
           "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
-          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
-          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
           "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
@@ -546,11 +518,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-6"
       },
       "assessment": {
@@ -587,8 +559,6 @@
       "provenance": {
         "sourceHashes": {
           "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
-          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
-          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
           "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
@@ -601,11 +571,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-7"
       },
       "assessment": {
@@ -642,8 +612,6 @@
       "provenance": {
         "sourceHashes": {
           "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
-          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
-          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
           "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
@@ -656,11 +624,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-8"
       },
       "assessment": {
@@ -697,8 +665,6 @@
       "provenance": {
         "sourceHashes": {
           "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
-          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
-          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
           "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
@@ -711,11 +677,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-9"
       },
       "assessment": {
@@ -752,8 +718,6 @@
       "provenance": {
         "sourceHashes": {
           "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
-          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
-          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
           "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
@@ -766,11 +730,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-10"
       },
       "assessment": {
@@ -807,8 +771,6 @@
       "provenance": {
         "sourceHashes": {
           "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
-          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
-          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
           "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
@@ -821,11 +783,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-11"
       },
       "assessment": {
@@ -862,8 +824,6 @@
       "provenance": {
         "sourceHashes": {
           "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
-          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
-          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
           "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
@@ -876,11 +836,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-12"
       },
       "assessment": {
@@ -917,8 +877,6 @@
       "provenance": {
         "sourceHashes": {
           "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
-          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
-          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
           "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
@@ -931,11 +889,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-13"
       },
       "assessment": {
@@ -972,8 +930,6 @@
       "provenance": {
         "sourceHashes": {
           "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
-          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
-          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
           "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
@@ -986,11 +942,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-14"
       },
       "assessment": {
@@ -1027,8 +983,6 @@
       "provenance": {
         "sourceHashes": {
           "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
-          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
-          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
           "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
@@ -1041,11 +995,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-15"
       },
       "assessment": {
@@ -1082,8 +1036,6 @@
       "provenance": {
         "sourceHashes": {
           "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
-          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
-          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
           "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
@@ -1096,11 +1048,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-16"
       },
       "assessment": {
@@ -1137,8 +1089,6 @@
       "provenance": {
         "sourceHashes": {
           "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
-          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
-          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
           "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
@@ -1151,11 +1101,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-17"
       },
       "assessment": {
@@ -1192,8 +1142,6 @@
       "provenance": {
         "sourceHashes": {
           "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
-          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
-          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
           "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
@@ -1206,11 +1154,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-18"
       },
       "assessment": {
@@ -1247,8 +1195,6 @@
       "provenance": {
         "sourceHashes": {
           "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
-          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
-          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
           "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
@@ -1261,11 +1207,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-19"
       },
       "assessment": {
@@ -1302,8 +1248,6 @@
       "provenance": {
         "sourceHashes": {
           "results/fl-face-activation/README.md": "0552dbd045f93e7fd12f74114093eeadfd8bcdc519a8d1f3ab99bdd101998953",
-          "results/fl-face-activation/dynamics.csv": "01bfe87d96ffb1bc27205252764d52b889eba119985233b9448bc4762a845a7f",
-          "results/fl-face-activation/inputs.npz": "5eacb71887a35a44855d1626bd1152f7f0a349853256311c2c3fa37696fabcdd",
           "results/fl-face-activation/protocol.json": "517c8dfeb98cfc26df13e77f5b684829d6ba1c4b71a8ee889ebbfa6c7baf47cf",
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
@@ -1316,11 +1260,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-20"
       },
       "assessment": {

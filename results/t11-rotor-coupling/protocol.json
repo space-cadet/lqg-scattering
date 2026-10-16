@@ -1,0 +1,75 @@
+{
+  "task": "T11",
+  "question": "How does the finite-time energy-transfer crossover scale with coupling in larger rings?",
+  "counts": [
+    8,
+    16,
+    32,
+    64
+  ],
+  "ratios": [
+    2.0,
+    4.0,
+    6.0,
+    8.0,
+    10.0,
+    12.0,
+    14.0,
+    16.0,
+    18.0,
+    20.0,
+    25.0,
+    30.0,
+    50.0,
+    100.0
+  ],
+  "seeds": [
+    1701,
+    1702,
+    1703
+  ],
+  "inertia": 1.0,
+  "initial": "same near-aligned 3D labels and opposite tangent hot-pair momenta; all others initially stationary",
+  "primary_parameter": "r=initial packet kinetic energy/lambda; additional initial potential recorded separately",
+  "duration_tau": 2000.0,
+  "sample_dtau": 0.5,
+  "late_window_start": 200.0,
+  "transfer": "mean kinetic energy outside rotors0,1 divided by initial packet kinetic energy; does not count potential energy as transfer",
+  "thresholds": {
+    "significant": 0.1,
+    "suppressed": 0.01,
+    "sensitivity": [
+      0.005,
+      0.01,
+      0.02,
+      0.05,
+      0.1
+    ]
+  },
+  "cutoff": "per-seed bracket: largest r with >=10% transfer, and smallest larger r with <=1% transfer and all tested larger ratios also <=1%; no forced sharp transition",
+  "explicit_coupling_controls": {
+    "counts": [
+      8,
+      16,
+      32,
+      64
+    ],
+    "fixed_packet_energy": 100.0,
+    "couplings": [
+      1.0,
+      5.0,
+      10.0
+    ],
+    "seed": 1701,
+    "comparison": "r=100,20,10 respectively; lambda=1 control reuses production run; other couplings directly integrated"
+  },
+  "scaling": "at fixed dimensionless initial labels, r and tau=t*sqrt(lambda/I), E_cut=lambda*r_cut exactly by rescaling; test collapse rather than fit independent scaling exponent",
+  "refinement": "N8,64; seed1701; r12,20 at half-step; full tau2000",
+  "longer_time": "predefined ratios12,16; N8,64; seed1701; tau10000",
+  "limitations": [
+    "finite-time crossover only",
+    "three related orientation seeds",
+    "special opposite-momentum hot pair",
+    "no equilibrium or quantum claim"
+  ]
+}

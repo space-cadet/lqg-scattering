@@ -1,0 +1,38 @@
+{
+  "production_runs": 72,
+  "unique_initial_dynamical_problems": 63,
+  "equilibrium_chains": 144,
+  "step_refinements": 10,
+  "regression_tests": 50,
+  "regression_result": "passed",
+  "independent_audit": {
+    "archives": 72,
+    "scalar_comparisons": 12399912,
+    "maximum_residuals": {
+      "local_energy_sum": 1.1368683772161603e-12,
+      "negative_local_energy": 0.0,
+      "concentration_formula": 8.881784197001252e-16,
+      "hot_pair_formula": 0.0,
+      "orientation_norm": 3.2673863614718357e-13,
+      "tangency": 4.6629367034256575e-14,
+      "total_J": 5.698802540976544e-12,
+      "endpoint_energy": 7.958078640513122e-13,
+      "endpoint_local_energies": 5.684341886080802e-14,
+      "microcanonical_energy": 1.7763568394002505e-15,
+      "microcanonical_local_sum": 7.958078640513122e-13,
+      "microcanonical_constraints": 8.473525858756743e-14
+    }
+  },
+  "maximum_production_relative_energy_drift": 7.04831035536202e-05,
+  "maximum_equilibrium_split_rhat": 1.003254599817771,
+  "elapsed_production_seconds_approximately": 59,
+  "figure_exports": "2 vector PDFs and 2 PNGs at 300 dpi; visually inspected and labels shortened",
+  "claim": "selected-observable equilibration at moderate packet energy; persistent high-energy concentration through t=2000, not permanent localization",
+  "open_checks": [
+    "longer observation time",
+    "broader initial states",
+    "finer output sampling for residence convergence",
+    "quantum comparison"
+  ],
+  "publication": "local files only"
+}

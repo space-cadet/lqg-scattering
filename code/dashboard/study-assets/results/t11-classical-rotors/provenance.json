@@ -1,0 +1,20 @@
+{
+  "python": "3.14.2",
+  "numpy": "2.4.1",
+  "source_sha256": {
+    "code/classical/rotors.cpp": "def66269e17b68ae87949a61716090084dac1f68bff78b93aa2a5fed85f1d392",
+    "code/python/lqg_scattering/classical_rotors.py": "6b49033214f04909479b3217dce6314833ef74e9db4227d8b2c0d51998a9ebf0",
+    "code/python/analyze_t11_classical_rotors.py": "1a6cbc2bbc3a7b8055e8c90e11697a87ceee10dcb316a4fa886c23379f548ff7",
+    "code/python/plot_t11_classical_rotors.py": "11b755e7da4405f654f06b1c7c51e6d9b2bbe0e1d3ac73d2f0cdc5818fdb2240",
+    "code/python/t11_classical_rotors.py": "a20f74196d7eaff9d373b881572906053d3a5f0d2b3804688d0cf3c3278a93d0",
+    "code/python/verify_t11_classical_rotors.py": "fcaa96eaa2bf886c66d149d35a626ae6a979d1625dc7a28163ee52225fe5aaa3",
+    "code/python/test_classical_rotors.py": "b08db5b6da5cd4c68903dd1954cbe734cf888ea01733838bfe9944bf11eb9030"
+  },
+  "compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)",
+  "compile_flags": [
+    "-O3",
+    "-std=c++17",
+    "-dynamiclib"
+  ],
+  "platform": "macOS-26.7-arm64-arm-64bit-Mach-O"
+}

@@ -1,0 +1,35 @@
+{
+  "reason": "N8,r18 changes from <1% mean transfer through tau2000 to substantial transfer by tau10000; check seed and step dependence.",
+  "selected_after_initial_long_runs": true,
+  "cases": [
+    {
+      "N": 8,
+      "ratio": 18,
+      "seed": 1702,
+      "duration": 10000,
+      "refinement": 1
+    },
+    {
+      "N": 8,
+      "ratio": 18,
+      "seed": 1703,
+      "duration": 10000,
+      "refinement": 1
+    },
+    {
+      "N": 8,
+      "ratio": 18,
+      "seed": 1701,
+      "duration": 10000,
+      "refinement": 2
+    },
+    {
+      "N": 64,
+      "ratio": 16,
+      "seed": 1701,
+      "duration": 10000,
+      "refinement": 2
+    }
+  ],
+  "note": "Chaotic escape times can vary across numerical and initial-condition perturbations; do not infer a sharp escape time."
+}

@@ -161,16 +161,15 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/thermal-j1-spin/j1_spin_method_comparison.csv": "946a5b3e65fac8b79a7405a13f3399180d49d0fe65066047039f49067bf2a7c0",
           "results/thermal-j1-spin/j1_spin_method_summary.json": "d70049114358f9ee9194ebc91a545c32e294bcb16f65f6b358fff453024f9262",
           "figures/thermal-j1-spin/j1_spin_plot_summary.json": "ed0cf982ca8e96a8ed987f8ceafa4fd30d6ece024366efd235c0f3ba69d9e8da"
         },
         "presentationSource": "results/thermal-j1-spin/j1_spin_method_summary.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "software": {
           "python": "3.10.19",
           "numpy": "1.24.3",
@@ -183,14 +182,6 @@
         "recordedStudyStatus": "Saved calculation"
       },
       "artifacts": [
-        {
-          "label": "j1_spin_method_comparison.csv",
-          "path": "../study-assets/results/thermal-j1-spin/j1_spin_method_comparison.csv",
-          "kind": "data",
-          "sha256": "946a5b3e65fac8b79a7405a13f3399180d49d0fe65066047039f49067bf2a7c0",
-          "sourcePath": "results/thermal-j1-spin/j1_spin_method_comparison.csv",
-          "sourceSha256": "946a5b3e65fac8b79a7405a13f3399180d49d0fe65066047039f49067bf2a7c0"
-        },
         {
           "label": "j1_spin_method_summary.json",
           "path": "../study-assets/results/thermal-j1-spin/j1_spin_method_summary.json",
@@ -261,16 +252,15 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/thermal-j1-spin/j1_spin_method_comparison.csv": "946a5b3e65fac8b79a7405a13f3399180d49d0fe65066047039f49067bf2a7c0",
           "results/thermal-j1-spin/j1_spin_method_summary.json": "d70049114358f9ee9194ebc91a545c32e294bcb16f65f6b358fff453024f9262",
           "figures/thermal-j1-spin/j1_spin_plot_summary.json": "ed0cf982ca8e96a8ed987f8ceafa4fd30d6ece024366efd235c0f3ba69d9e8da"
         },
         "presentationSource": "results/thermal-j1-spin/j1_spin_method_summary.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "software": {
           "python": "3.10.19",
           "numpy": "1.24.3",
@@ -319,16 +309,15 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/thermal-j1-spin/j1_spin_method_comparison.csv": "946a5b3e65fac8b79a7405a13f3399180d49d0fe65066047039f49067bf2a7c0",
           "results/thermal-j1-spin/j1_spin_method_summary.json": "d70049114358f9ee9194ebc91a545c32e294bcb16f65f6b358fff453024f9262",
           "figures/thermal-j1-spin/j1_spin_plot_summary.json": "ed0cf982ca8e96a8ed987f8ceafa4fd30d6ece024366efd235c0f3ba69d9e8da"
         },
         "presentationSource": "results/thermal-j1-spin/j1_spin_method_summary.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "software": {
           "python": "3.10.19",
           "numpy": "1.24.3",
@@ -377,16 +366,15 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/thermal-j1-spin/j1_spin_method_comparison.csv": "946a5b3e65fac8b79a7405a13f3399180d49d0fe65066047039f49067bf2a7c0",
           "results/thermal-j1-spin/j1_spin_method_summary.json": "d70049114358f9ee9194ebc91a545c32e294bcb16f65f6b358fff453024f9262",
           "figures/thermal-j1-spin/j1_spin_plot_summary.json": "ed0cf982ca8e96a8ed987f8ceafa4fd30d6ece024366efd235c0f3ba69d9e8da"
         },
         "presentationSource": "results/thermal-j1-spin/j1_spin_method_summary.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "software": {
           "python": "3.10.19",
           "numpy": "1.24.3",
@@ -435,16 +423,15 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/thermal-j1-spin/j1_spin_method_comparison.csv": "946a5b3e65fac8b79a7405a13f3399180d49d0fe65066047039f49067bf2a7c0",
           "results/thermal-j1-spin/j1_spin_method_summary.json": "d70049114358f9ee9194ebc91a545c32e294bcb16f65f6b358fff453024f9262",
           "figures/thermal-j1-spin/j1_spin_plot_summary.json": "ed0cf982ca8e96a8ed987f8ceafa4fd30d6ece024366efd235c0f3ba69d9e8da"
         },
         "presentationSource": "results/thermal-j1-spin/j1_spin_method_summary.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "software": {
           "python": "3.10.19",
           "numpy": "1.24.3",

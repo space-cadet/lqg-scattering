@@ -75,11 +75,11 @@
           "memory-bank/tasks/T5d.md": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6"
         },
         "presentationSource": "results/t5d_phase_scan_results.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "points[0]"
       },
       "assessment": {
@@ -136,11 +136,11 @@
           "memory-bank/tasks/T5d.md": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6"
         },
         "presentationSource": "results/t5d_phase_scan_results.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "points[1]"
       },
       "assessment": {
@@ -170,11 +170,11 @@
           "memory-bank/tasks/T5d.md": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6"
         },
         "presentationSource": "results/t5d_phase_scan_results.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "points[2]"
       },
       "assessment": {
@@ -204,11 +204,11 @@
           "memory-bank/tasks/T5d.md": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6"
         },
         "presentationSource": "results/t5d_phase_scan_results.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "points[3]"
       },
       "assessment": {
@@ -238,11 +238,11 @@
           "memory-bank/tasks/T5d.md": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6"
         },
         "presentationSource": "results/t5d_phase_scan_results.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "points[4]"
       },
       "assessment": {
@@ -272,11 +272,11 @@
           "memory-bank/tasks/T5d.md": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6"
         },
         "presentationSource": "results/t5d_phase_scan_results.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "points[5]"
       },
       "assessment": {
@@ -306,11 +306,11 @@
           "memory-bank/tasks/T5d.md": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6"
         },
         "presentationSource": "results/t5d_phase_scan_results.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "points[6]"
       },
       "assessment": {
@@ -340,11 +340,11 @@
           "memory-bank/tasks/T5d.md": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6"
         },
         "presentationSource": "results/t5d_phase_scan_results.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "points[7]"
       },
       "assessment": {
@@ -374,11 +374,11 @@
           "memory-bank/tasks/T5d.md": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6"
         },
         "presentationSource": "results/t5d_phase_scan_results.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "points[8]"
       },
       "assessment": {
@@ -408,11 +408,11 @@
           "memory-bank/tasks/T5d.md": "fa700c4d8dfad63563201f8849b2e61210e8e75076637c73186814066cde81a6"
         },
         "presentationSource": "results/t5d_phase_scan_results.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "points[9]"
       },
       "assessment": {

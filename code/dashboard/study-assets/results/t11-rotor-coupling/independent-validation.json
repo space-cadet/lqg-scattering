@@ -1,0 +1,14 @@
+{
+  "comparisons": 33916477,
+  "maximum_residuals": {
+    "local_energy_sum": 1.4210854715202004e-13,
+    "kinetic_sum": 1.2789769243681803e-13,
+    "cold_kinetic_sum": 1.3405943022348765e-13,
+    "nonnegative_kinetic": 0,
+    "endpoint_energy": 8.526512829121202e-14,
+    "endpoint_kinetic": 0,
+    "unit_orientation": 4.0611958240788226e-13,
+    "tangency": 4.549138843401579e-14,
+    "total_J": 1.6686652060116103e-12
+  }
+}

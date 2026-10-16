@@ -15,7 +15,11 @@ async function loadData() {
   try {
     DATA_URL = new URL(new URLSearchParams(location.search).get('data') || 'data.json', location.href);
     if (DATA_URL.origin !== location.origin) throw new Error('Select a data file served by this dashboard.');
-    const responses = await Promise.all([fetch(DATA_URL), fetch('data.schema.json')]);
+    const schemaURL = new URL('data.schema.json', location.href);
+    const responses = await Promise.all([
+      fetch(DATA_URL, {cache: 'no-store'}),
+      fetch(schemaURL, {cache: 'no-store'})
+    ]);
     if (responses.some(response => !response.ok)) throw new Error('Could not load the data file or schema.');
     const [input, schema] = await Promise.all(responses.map(response => response.json()));
     DATA = model.normalize(input);

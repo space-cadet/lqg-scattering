@@ -1,0 +1,1564 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "Few-rotor transfer: planar bound and 3D controls",
+    "subtitle": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate."
+  },
+  "columns": [
+    {
+      "key": "runId",
+      "label": "Case",
+      "type": "string"
+    },
+    {
+      "key": "parameters.rotor_count",
+      "label": "rotor count",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.graph",
+      "label": "graph",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "parameters.coupling",
+      "label": "coupling",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.energy_coupling_ratio",
+      "label": "Initial packet energy / coupling",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.control_type",
+      "label": "control type",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.initial_packet_energy",
+      "label": "initial packet energy",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.regime",
+      "label": "regime",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "results.maximum_transfer_fraction",
+      "label": "Maximum receiver kinetic-energy fraction",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.exact_transfer_bound_fraction",
+      "label": "exact transfer bound fraction",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.mean_transfer_fraction",
+      "label": "mean transfer fraction",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.series",
+      "label": "Rotor count and control type",
+      "type": "string",
+      "precision": 8
+    }
+  ],
+  "charts": {
+    "type": "line",
+    "x": "parameters.energy_coupling_ratio",
+    "y": "results.maximum_transfer_fraction",
+    "groupBy": "results.series"
+  },
+  "runs": [
+    {
+      "runId": "few-rotor-energy-transfer:case-0001:1",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 2,
+        "graph": "planar_pair",
+        "coupling": 1.0,
+        "energy_coupling_ratio": 1.0,
+        "control_type": "aligned planar pair; one initially resting rotor"
+      },
+      "results": {
+        "initial_packet_energy": 1.0,
+        "regime": "libration",
+        "maximum_transfer_fraction": 0.9999999971479023,
+        "exact_transfer_bound_fraction": 1.0,
+        "mean_transfer_fraction": 0.3727780519097653,
+        "series": "N=2 planar pair; sampled maxima"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[0]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      },
+      "artifacts": [
+        {
+          "label": "README.md",
+          "path": "../study-assets/results/t11-few-rotors/README.txt",
+          "kind": "data",
+          "sha256": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "sourcePath": "results/t11-few-rotors/README.md",
+          "sourceSha256": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a"
+        },
+        {
+          "label": "protocol.json",
+          "path": "../study-assets/results/t11-few-rotors/protocol.json",
+          "kind": "data",
+          "sha256": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "sourcePath": "results/t11-few-rotors/protocol.json",
+          "sourceSha256": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3"
+        },
+        {
+          "label": "provenance.json",
+          "path": "../study-assets/results/t11-few-rotors/provenance.json",
+          "kind": "data",
+          "sha256": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "sourcePath": "results/t11-few-rotors/provenance.json",
+          "sourceSha256": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95"
+        },
+        {
+          "label": "pair-summary.csv",
+          "path": "../study-assets/results/t11-few-rotors/pair-summary.csv",
+          "kind": "data",
+          "sha256": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "sourcePath": "results/t11-few-rotors/pair-summary.csv",
+          "sourceSha256": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251"
+        },
+        {
+          "label": "few-summary.csv",
+          "path": "../study-assets/results/t11-few-rotors/few-summary.csv",
+          "kind": "data",
+          "sha256": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "sourcePath": "results/t11-few-rotors/few-summary.csv",
+          "sourceSha256": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354"
+        },
+        {
+          "label": "validation.json",
+          "path": "../study-assets/results/t11-few-rotors/validation.json",
+          "kind": "data",
+          "sha256": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "sourcePath": "results/t11-few-rotors/validation.json",
+          "sourceSha256": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7"
+        },
+        {
+          "label": "verification.json",
+          "path": "../study-assets/results/t11-few-rotors/verification.json",
+          "kind": "data",
+          "sha256": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "sourcePath": "results/t11-few-rotors/verification.json",
+          "sourceSha256": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f"
+        },
+        {
+          "label": "few-rotor-energy-transfer.md",
+          "path": "../study-assets/notes/few-rotor-energy-transfer.txt",
+          "kind": "data",
+          "sha256": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "sourcePath": "notes/few-rotor-energy-transfer.md",
+          "sourceSha256": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976"
+        },
+        {
+          "label": "classical-rotor-equilibration.md",
+          "path": "../study-assets/notes/classical-rotor-equilibration.txt",
+          "kind": "data",
+          "sha256": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "sourcePath": "notes/classical-rotor-equilibration.md",
+          "sourceSha256": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58"
+        },
+        {
+          "label": "t11_few_rotors.py",
+          "path": "../study-assets/code/python/t11_few_rotors.py",
+          "kind": "data",
+          "sha256": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "sourcePath": "code/python/t11_few_rotors.py",
+          "sourceSha256": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc"
+        },
+        {
+          "label": "plot_t11_few_rotors.py",
+          "path": "../study-assets/code/python/plot_t11_few_rotors.py",
+          "kind": "data",
+          "sha256": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "sourcePath": "code/python/plot_t11_few_rotors.py",
+          "sourceSha256": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e"
+        },
+        {
+          "label": "test_few_rotors.py",
+          "path": "../study-assets/code/python/test_few_rotors.py",
+          "kind": "data",
+          "sha256": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "sourcePath": "code/python/test_few_rotors.py",
+          "sourceSha256": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13"
+        },
+        {
+          "label": "classical_rotors.py",
+          "path": "../study-assets/code/python/lqg_scattering/classical_rotors.py",
+          "kind": "data",
+          "sha256": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5",
+          "sourcePath": "code/python/lqg_scattering/classical_rotors.py",
+          "sourceSha256": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        }
+      ],
+      "figures": [
+        {
+          "title": "Planar-pair transfer and three-dimensional controls",
+          "path": "../study-assets/figures/t11-few-rotors/few-rotor-transfer.png",
+          "tags": [
+            "T11"
+          ]
+        }
+      ],
+      "verification": {
+        "checks": {
+          "validation.json": {}
+        }
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0002:2",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 2,
+        "graph": "planar_pair",
+        "coupling": 1.0,
+        "energy_coupling_ratio": 3.9,
+        "control_type": "aligned planar pair; one initially resting rotor"
+      },
+      "results": {
+        "initial_packet_energy": 3.9,
+        "regime": "libration",
+        "maximum_transfer_fraction": 0.9999998193491644,
+        "exact_transfer_bound_fraction": 1.0,
+        "mean_transfer_fraction": 0.3303202685008512,
+        "series": "N=2 planar pair; sampled maxima"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[1]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0003:3",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 2,
+        "graph": "planar_pair",
+        "coupling": 2.5,
+        "energy_coupling_ratio": 4.0,
+        "control_type": "aligned planar pair; one initially resting rotor"
+      },
+      "results": {
+        "initial_packet_energy": 10.0,
+        "regime": "separatrix",
+        "maximum_transfer_fraction": 0.24969622362473834,
+        "exact_transfer_bound_fraction": 0.25,
+        "mean_transfer_fraction": 0.18767568849159552,
+        "series": "N=2 planar pair; sampled maxima"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[2]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0004:4",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 2,
+        "graph": "planar_pair",
+        "coupling": 1.0,
+        "energy_coupling_ratio": 4.1,
+        "control_type": "aligned planar pair; one initially resting rotor"
+      },
+      "results": {
+        "initial_packet_energy": 4.1,
+        "regime": "rotation",
+        "maximum_transfer_fraction": 0.1780102187902756,
+        "exact_transfer_bound_fraction": 0.17801068003130685,
+        "mean_transfer_fraction": 0.08850773777702234,
+        "series": "N=2 planar pair; sampled maxima"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[3]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0005:5",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 2,
+        "graph": "planar_pair",
+        "coupling": 1.0,
+        "energy_coupling_ratio": 10.0,
+        "control_type": "aligned planar pair; one initially resting rotor"
+      },
+      "results": {
+        "initial_packet_energy": 10.0,
+        "regime": "rotation",
+        "maximum_transfer_fraction": 0.012701648074189897,
+        "exact_transfer_bound_fraction": 0.012701665379258308,
+        "mean_transfer_fraction": 0.004970642967789714,
+        "series": "N=2 planar pair; sampled maxima"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[4]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0006:6",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 2,
+        "graph": "planar_pair",
+        "coupling": 1.0,
+        "energy_coupling_ratio": 100.0,
+        "control_type": "aligned planar pair; one initially resting rotor"
+      },
+      "results": {
+        "initial_packet_energy": 100.0,
+        "regime": "rotation",
+        "maximum_transfer_fraction": 0.0001020512937398786,
+        "exact_transfer_bound_fraction": 0.00010205144336438079,
+        "mean_transfer_fraction": 3.84101642321937e-05,
+        "series": "N=2 planar pair; sampled maxima"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[5]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0007:7",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 4,
+        "graph": "four_open",
+        "coupling": 100.0,
+        "energy_coupling_ratio": 1.0,
+        "control_type": "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701"
+      },
+      "results": {
+        "initial_packet_energy": 100.0,
+        "regime": "three-dimensional control",
+        "maximum_transfer_fraction": 1.0072525625693578,
+        "mean_transfer_fraction": 0.2497848403877219,
+        "series": "N=4 open chain; 3D control; seed 1701"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[6]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0008:8",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 4,
+        "graph": "four_open",
+        "coupling": 30.0,
+        "energy_coupling_ratio": 3.3333333333333335,
+        "control_type": "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701"
+      },
+      "results": {
+        "initial_packet_energy": 100.0,
+        "regime": "three-dimensional control",
+        "maximum_transfer_fraction": 0.8363885604638606,
+        "mean_transfer_fraction": 0.23059285755034795,
+        "series": "N=4 open chain; 3D control; seed 1701"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[7]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0009:9",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 4,
+        "graph": "four_open",
+        "coupling": 10.0,
+        "energy_coupling_ratio": 10.0,
+        "control_type": "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701"
+      },
+      "results": {
+        "initial_packet_energy": 100.0,
+        "regime": "three-dimensional control",
+        "maximum_transfer_fraction": 0.8483884129349231,
+        "mean_transfer_fraction": 0.3446389847991218,
+        "series": "N=4 open chain; 3D control; seed 1701"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[8]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0010:10",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 4,
+        "graph": "four_open",
+        "coupling": 3.0,
+        "energy_coupling_ratio": 33.333333333333336,
+        "control_type": "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701"
+      },
+      "results": {
+        "initial_packet_energy": 100.0,
+        "regime": "three-dimensional control",
+        "maximum_transfer_fraction": 0.0029022127197150527,
+        "mean_transfer_fraction": 0.0009583555756890935,
+        "series": "N=4 open chain; 3D control; seed 1701"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[9]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0011:11",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 4,
+        "graph": "four_open",
+        "coupling": 1.0,
+        "energy_coupling_ratio": 100.0,
+        "control_type": "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701"
+      },
+      "results": {
+        "initial_packet_energy": 100.0,
+        "regime": "three-dimensional control",
+        "maximum_transfer_fraction": 0.00039804622572568526,
+        "mean_transfer_fraction": 0.00013102313476005158,
+        "series": "N=4 open chain; 3D control; seed 1701"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[10]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0012:12",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 4,
+        "graph": "four_open",
+        "coupling": 0.3,
+        "energy_coupling_ratio": 333.33333333333337,
+        "control_type": "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701"
+      },
+      "results": {
+        "initial_packet_energy": 100.0,
+        "regime": "three-dimensional control",
+        "maximum_transfer_fraction": 6.649594796284104e-05,
+        "mean_transfer_fraction": 2.3057180359580836e-05,
+        "series": "N=4 open chain; 3D control; seed 1701"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[11]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0013:13",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 4,
+        "graph": "four_open",
+        "coupling": 0.1,
+        "energy_coupling_ratio": 1000.0,
+        "control_type": "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701"
+      },
+      "results": {
+        "initial_packet_energy": 100.0,
+        "regime": "three-dimensional control",
+        "maximum_transfer_fraction": 1.626536695438179e-05,
+        "mean_transfer_fraction": 6.347667416629603e-06,
+        "series": "N=4 open chain; 3D control; seed 1701"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[12]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0014:14",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 4,
+        "graph": "four_ring",
+        "coupling": 100.0,
+        "energy_coupling_ratio": 1.0,
+        "control_type": "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701"
+      },
+      "results": {
+        "initial_packet_energy": 100.0,
+        "regime": "three-dimensional control",
+        "maximum_transfer_fraction": 1.0245224008174836,
+        "mean_transfer_fraction": 0.244843829948149,
+        "series": "N=4 ring; 3D control; seed 1701"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[13]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0015:15",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 4,
+        "graph": "four_ring",
+        "coupling": 30.0,
+        "energy_coupling_ratio": 3.3333333333333335,
+        "control_type": "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701"
+      },
+      "results": {
+        "initial_packet_energy": 100.0,
+        "regime": "three-dimensional control",
+        "maximum_transfer_fraction": 0.9988539757916963,
+        "mean_transfer_fraction": 0.22194063156381091,
+        "series": "N=4 ring; 3D control; seed 1701"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[14]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0016:16",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 4,
+        "graph": "four_ring",
+        "coupling": 10.0,
+        "energy_coupling_ratio": 10.0,
+        "control_type": "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701"
+      },
+      "results": {
+        "initial_packet_energy": 100.0,
+        "regime": "three-dimensional control",
+        "maximum_transfer_fraction": 0.9015162759887536,
+        "mean_transfer_fraction": 0.3618743055182299,
+        "series": "N=4 ring; 3D control; seed 1701"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[15]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0017:17",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 4,
+        "graph": "four_ring",
+        "coupling": 3.0,
+        "energy_coupling_ratio": 33.333333333333336,
+        "control_type": "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701"
+      },
+      "results": {
+        "initial_packet_energy": 100.0,
+        "regime": "three-dimensional control",
+        "maximum_transfer_fraction": 0.007006597414965048,
+        "mean_transfer_fraction": 0.001731927336516146,
+        "series": "N=4 ring; 3D control; seed 1701"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[16]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0018:18",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 4,
+        "graph": "four_ring",
+        "coupling": 1.0,
+        "energy_coupling_ratio": 100.0,
+        "control_type": "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701"
+      },
+      "results": {
+        "initial_packet_energy": 100.0,
+        "regime": "three-dimensional control",
+        "maximum_transfer_fraction": 0.0007884161946122559,
+        "mean_transfer_fraction": 0.00019821031886436597,
+        "series": "N=4 ring; 3D control; seed 1701"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[17]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0019:19",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 4,
+        "graph": "four_ring",
+        "coupling": 0.3,
+        "energy_coupling_ratio": 333.33333333333337,
+        "control_type": "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701"
+      },
+      "results": {
+        "initial_packet_energy": 100.0,
+        "regime": "three-dimensional control",
+        "maximum_transfer_fraction": 0.00010283160600246071,
+        "mean_transfer_fraction": 2.899066344111125e-05,
+        "series": "N=4 ring; 3D control; seed 1701"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[18]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0020:20",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 4,
+        "graph": "four_ring",
+        "coupling": 0.1,
+        "energy_coupling_ratio": 1000.0,
+        "control_type": "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701"
+      },
+      "results": {
+        "initial_packet_energy": 100.0,
+        "regime": "three-dimensional control",
+        "maximum_transfer_fraction": 2.1449315488388927e-05,
+        "mean_transfer_fraction": 7.218263852840927e-06,
+        "series": "N=4 ring; 3D control; seed 1701"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[19]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0021:21",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 3,
+        "graph": "triangle",
+        "coupling": 100.0,
+        "energy_coupling_ratio": 1.0,
+        "control_type": "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701"
+      },
+      "results": {
+        "initial_packet_energy": 100.0,
+        "regime": "three-dimensional control",
+        "maximum_transfer_fraction": 0.6649770522780437,
+        "mean_transfer_fraction": 0.20435288200020055,
+        "series": "N=3 triangle; 3D control; seed 1701"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[20]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0022:22",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 3,
+        "graph": "triangle",
+        "coupling": 30.0,
+        "energy_coupling_ratio": 3.3333333333333335,
+        "control_type": "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701"
+      },
+      "results": {
+        "initial_packet_energy": 100.0,
+        "regime": "three-dimensional control",
+        "maximum_transfer_fraction": 0.6412801516891057,
+        "mean_transfer_fraction": 0.13681025758392495,
+        "series": "N=3 triangle; 3D control; seed 1701"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[21]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0023:23",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 3,
+        "graph": "triangle",
+        "coupling": 10.0,
+        "energy_coupling_ratio": 10.0,
+        "control_type": "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701"
+      },
+      "results": {
+        "initial_packet_energy": 100.0,
+        "regime": "three-dimensional control",
+        "maximum_transfer_fraction": 0.07156684679494077,
+        "mean_transfer_fraction": 0.006562003435151048,
+        "series": "N=3 triangle; 3D control; seed 1701"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[22]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0024:24",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 3,
+        "graph": "triangle",
+        "coupling": 3.0,
+        "energy_coupling_ratio": 33.333333333333336,
+        "control_type": "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701"
+      },
+      "results": {
+        "initial_packet_energy": 100.0,
+        "regime": "three-dimensional control",
+        "maximum_transfer_fraction": 0.004529597925066624,
+        "mean_transfer_fraction": 0.00035354146014631485,
+        "series": "N=3 triangle; 3D control; seed 1701"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[23]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0025:25",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 3,
+        "graph": "triangle",
+        "coupling": 1.0,
+        "energy_coupling_ratio": 100.0,
+        "control_type": "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701"
+      },
+      "results": {
+        "initial_packet_energy": 100.0,
+        "regime": "three-dimensional control",
+        "maximum_transfer_fraction": 0.00046471695097148277,
+        "mean_transfer_fraction": 3.443694336217355e-05,
+        "series": "N=3 triangle; 3D control; seed 1701"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[24]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0026:26",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 3,
+        "graph": "triangle",
+        "coupling": 0.3,
+        "energy_coupling_ratio": 333.33333333333337,
+        "control_type": "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701"
+      },
+      "results": {
+        "initial_packet_energy": 100.0,
+        "regime": "three-dimensional control",
+        "maximum_transfer_fraction": 4.089512252259485e-05,
+        "mean_transfer_fraction": 2.852752499429645e-06,
+        "series": "N=3 triangle; 3D control; seed 1701"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[25]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    },
+    {
+      "runId": "few-rotor-energy-transfer:case-0027:27",
+      "task": "T11",
+      "status": "complete",
+      "description": "Few-rotor transfer: planar bound and 3D controls",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "rotor_count": 3,
+        "graph": "triangle",
+        "coupling": 0.1,
+        "energy_coupling_ratio": 1000.0,
+        "control_type": "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701"
+      },
+      "results": {
+        "initial_packet_energy": 100.0,
+        "regime": "three-dimensional control",
+        "maximum_transfer_fraction": 4.496923879868666e-06,
+        "mean_transfer_fraction": 5.247427042930425e-07,
+        "series": "N=3 triangle; 3D control; seed 1701"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-few-rotors/README.md": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a",
+          "results/t11-few-rotors/protocol.json": "d4873bc32e6700ed55911846f061bae57e627cbf0c5399b06403f1ef59c62da3",
+          "results/t11-few-rotors/provenance.json": "11b2b127b3167921afb3c664fca6178368ddb12858329ad4150d859a75d28b95",
+          "results/t11-few-rotors/pair-summary.csv": "5c64685efd4944ff4a5fa6f008f2efb06e5d9b9c7f8cf30ca02075b55d0b8251",
+          "results/t11-few-rotors/few-summary.csv": "c5862bb5291de0d07378d1488101331e2064c0197fd7a357a7df0b8f12c2e354",
+          "results/t11-few-rotors/validation.json": "52f51f41d6ed59809caa713ca32538d7faf63a73ada3e070a353148367dca1a7",
+          "results/t11-few-rotors/verification.json": "66424273439f00434028ffda1b7ab8a31926293094a8252857fdecca9930530f",
+          "notes/few-rotor-energy-transfer.md": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_few_rotors.py": "aeb12b499df1a4669d47c0b91fafa2aea57016edba410f66914de180c3987fcc",
+          "code/python/plot_t11_few_rotors.py": "55807ad2adb56f99a260a4d2f6c5e734eaed3c2fff8f399b9162107221399f1e",
+          "code/python/test_few_rotors.py": "e44dd3cd4493552f0857f8d91990fa4fdc7d117a15ad8f1083a138513283dc13",
+          "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.few-rotor-energy-transfer.table.rows[26]"
+      },
+      "assessment": {
+        "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
+        "recordedStudyStatus": "14 planar-pair runs and 63 three-dimensional runs; six half-step controls, a symmetric-triangle control, and scalar-ODE/conservation checks recorded"
+      }
+    }
+  ],
+  "figures": [
+    {
+      "title": "Planar-pair transfer and three-dimensional controls",
+      "path": "../study-assets/figures/t11-few-rotors/few-rotor-transfer.png",
+      "tags": [
+        "T11"
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "title": "Few rotor energy transfer",
+      "path": "../study-assets/notes/few-rotor-energy-transfer.txt",
+      "sourcePath": "notes/few-rotor-energy-transfer.md",
+      "description": "Explanation and calculation record for this study."
+    },
+    {
+      "title": "Classical rotor equilibration",
+      "path": "../study-assets/notes/classical-rotor-equilibration.txt",
+      "sourcePath": "notes/classical-rotor-equilibration.md",
+      "description": "Explanation and calculation record for this study."
+    },
+    {
+      "title": "Numerical studies overview",
+      "path": "../index.html"
+    }
+  ]
+}

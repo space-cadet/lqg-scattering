@@ -29,6 +29,12 @@
       "precision": 8
     },
     {
+      "key": "parameters.U",
+      "label": "U",
+      "type": "number",
+      "precision": 8
+    },
+    {
       "key": "parameters.U_over_t",
       "label": "U over t",
       "type": "number",
@@ -37,12 +43,6 @@
     {
       "key": "results.t",
       "label": "t",
-      "type": "number",
-      "precision": 8
-    },
-    {
-      "key": "results.U",
-      "label": "U",
       "type": "number",
       "precision": 8
     },
@@ -205,11 +205,11 @@
         "K": 2,
         "graph": "complete",
         "case": "no_hopping",
+        "U": 1.0,
         "U_over_t": null
       },
       "results": {
         "t": 0.0,
-        "U": 1.0,
         "g": 0.0,
         "dimension": 20,
         "ground_energy": 0.0,
@@ -257,11 +257,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[0]"
       },
       "assessment": {
@@ -479,11 +479,11 @@
         "K": 2,
         "graph": "complete",
         "case": "free",
+        "U": 0.0,
         "U_over_t": 0.0
       },
       "results": {
         "t": 1.0,
-        "U": 0.0,
         "g": 0.0,
         "dimension": 20,
         "ground_energy": -4.0000000000000036,
@@ -531,11 +531,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[1]"
       },
       "assessment": {
@@ -554,11 +554,11 @@
         "K": 2,
         "graph": "complete",
         "case": "U1",
+        "U": 1.0,
         "U_over_t": 1.0
       },
       "results": {
         "t": 1.0,
-        "U": 1.0,
         "g": 0.0,
         "dimension": 20,
         "ground_energy": -3.3408476172483446,
@@ -606,11 +606,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[2]"
       },
       "assessment": {
@@ -629,11 +629,11 @@
         "K": 2,
         "graph": "complete",
         "case": "U5",
+        "U": 5.0,
         "U_over_t": 5.0
       },
       "results": {
         "t": 1.0,
-        "U": 5.0,
         "g": 0.0,
         "dimension": 20,
         "ground_energy": -1.844288770224762,
@@ -681,11 +681,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[3]"
       },
       "assessment": {
@@ -704,11 +704,11 @@
         "K": 2,
         "graph": "complete",
         "case": "U20",
+        "U": 20.0,
         "U_over_t": 20.0
       },
       "results": {
         "t": 1.0,
-        "U": 20.0,
         "g": 0.0,
         "dimension": 20,
         "ground_energy": -0.5857322798479174,
@@ -756,11 +756,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[4]"
       },
       "assessment": {
@@ -779,11 +779,11 @@
         "K": 2,
         "graph": "ring",
         "case": "no_hopping",
+        "U": 1.0,
         "U_over_t": null
       },
       "results": {
         "t": 0.0,
-        "U": 1.0,
         "g": 0.0,
         "dimension": 20,
         "ground_energy": 0.0,
@@ -831,11 +831,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[5]"
       },
       "assessment": {
@@ -854,11 +854,11 @@
         "K": 2,
         "graph": "ring",
         "case": "free",
+        "U": 0.0,
         "U_over_t": 0.0
       },
       "results": {
         "t": 1.0,
-        "U": 0.0,
         "g": 0.0,
         "dimension": 20,
         "ground_energy": -4.0000000000000036,
@@ -906,11 +906,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[6]"
       },
       "assessment": {
@@ -929,11 +929,11 @@
         "K": 2,
         "graph": "ring",
         "case": "U1",
+        "U": 1.0,
         "U_over_t": 1.0
       },
       "results": {
         "t": 1.0,
-        "U": 1.0,
         "g": 0.0,
         "dimension": 20,
         "ground_energy": -3.3408476172483463,
@@ -981,11 +981,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[7]"
       },
       "assessment": {
@@ -1004,11 +1004,11 @@
         "K": 2,
         "graph": "ring",
         "case": "U5",
+        "U": 5.0,
         "U_over_t": 5.0
       },
       "results": {
         "t": 1.0,
-        "U": 5.0,
         "g": 0.0,
         "dimension": 20,
         "ground_energy": -1.8442887702247581,
@@ -1056,11 +1056,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[8]"
       },
       "assessment": {
@@ -1079,11 +1079,11 @@
         "K": 2,
         "graph": "ring",
         "case": "U20",
+        "U": 20.0,
         "U_over_t": 20.0
       },
       "results": {
         "t": 1.0,
-        "U": 20.0,
         "g": 0.0,
         "dimension": 20,
         "ground_energy": -0.5857322798478979,
@@ -1131,11 +1131,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[9]"
       },
       "assessment": {
@@ -1154,11 +1154,11 @@
         "K": 3,
         "graph": "complete",
         "case": "no_hopping",
+        "U": 1.0,
         "U_over_t": null
       },
       "results": {
         "t": 0.0,
-        "U": 1.0,
         "g": 0.0,
         "dimension": 50,
         "ground_energy": 1.9999999999999996,
@@ -1206,11 +1206,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[10]"
       },
       "assessment": {
@@ -1229,11 +1229,11 @@
         "K": 3,
         "graph": "complete",
         "case": "free",
+        "U": 0.0,
         "U_over_t": 0.0
       },
       "results": {
         "t": 1.0,
-        "U": 0.0,
         "g": 0.0,
         "dimension": 50,
         "ground_energy": -6.000000000000008,
@@ -1281,11 +1281,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[11]"
       },
       "assessment": {
@@ -1304,11 +1304,11 @@
         "K": 3,
         "graph": "complete",
         "case": "U1",
+        "U": 1.0,
         "U_over_t": 1.0
       },
       "results": {
         "t": 1.0,
-        "U": 1.0,
         "g": 0.0,
         "dimension": 50,
         "ground_energy": -3.4953369233910823,
@@ -1356,11 +1356,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[12]"
       },
       "assessment": {
@@ -1379,11 +1379,11 @@
         "K": 3,
         "graph": "complete",
         "case": "U5",
+        "U": 5.0,
         "U_over_t": 5.0
       },
       "results": {
         "t": 1.0,
-        "U": 5.0,
         "g": 0.0,
         "dimension": 50,
         "ground_energy": 5.258120603145892,
@@ -1431,11 +1431,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[13]"
       },
       "assessment": {
@@ -1454,11 +1454,11 @@
         "K": 3,
         "graph": "complete",
         "case": "U20",
+        "U": 20.0,
         "U_over_t": 20.0
       },
       "results": {
         "t": 1.0,
-        "U": 20.0,
         "g": 0.0,
         "dimension": 50,
         "ground_energy": 35.74018126719282,
@@ -1506,11 +1506,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[14]"
       },
       "assessment": {
@@ -1529,11 +1529,11 @@
         "K": 3,
         "graph": "ring",
         "case": "no_hopping",
+        "U": 1.0,
         "U_over_t": null
       },
       "results": {
         "t": 0.0,
-        "U": 1.0,
         "g": 0.0,
         "dimension": 50,
         "ground_energy": 1.9999999999999996,
@@ -1581,11 +1581,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[15]"
       },
       "assessment": {
@@ -1604,11 +1604,11 @@
         "K": 3,
         "graph": "ring",
         "case": "free",
+        "U": 0.0,
         "U_over_t": 0.0
       },
       "results": {
         "t": 1.0,
-        "U": 0.0,
         "g": 0.0,
         "dimension": 50,
         "ground_energy": -6.000000000000005,
@@ -1656,11 +1656,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[16]"
       },
       "assessment": {
@@ -1679,11 +1679,11 @@
         "K": 3,
         "graph": "ring",
         "case": "U1",
+        "U": 1.0,
         "U_over_t": 1.0
       },
       "results": {
         "t": 1.0,
-        "U": 1.0,
         "g": 0.0,
         "dimension": 50,
         "ground_energy": -3.4377996042315324,
@@ -1731,11 +1731,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[17]"
       },
       "assessment": {
@@ -1754,11 +1754,11 @@
         "K": 3,
         "graph": "ring",
         "case": "U5",
+        "U": 5.0,
         "U_over_t": 5.0
       },
       "results": {
         "t": 1.0,
-        "U": 5.0,
         "g": 0.0,
         "dimension": 50,
         "ground_energy": 5.352495488852244,
@@ -1806,11 +1806,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[18]"
       },
       "assessment": {
@@ -1829,11 +1829,11 @@
         "K": 3,
         "graph": "ring",
         "case": "U20",
+        "U": 20.0,
         "U_over_t": 20.0
       },
       "results": {
         "t": 1.0,
-        "U": 20.0,
         "g": 0.0,
         "dimension": 50,
         "ground_energy": 35.79396754825477,
@@ -1881,11 +1881,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[19]"
       },
       "assessment": {
@@ -1904,11 +1904,11 @@
         "K": 4,
         "graph": "complete",
         "case": "no_hopping",
+        "U": 1.0,
         "U_over_t": null
       },
       "results": {
         "t": 0.0,
-        "U": 1.0,
         "g": 0.0,
         "dimension": 105,
         "ground_energy": 3.9999999999999996,
@@ -1956,11 +1956,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[20]"
       },
       "assessment": {
@@ -1979,11 +1979,11 @@
         "K": 4,
         "graph": "complete",
         "case": "free",
+        "U": 0.0,
         "U_over_t": 0.0
       },
       "results": {
         "t": 1.0,
-        "U": 0.0,
         "g": 0.0,
         "dimension": 105,
         "ground_energy": -8.000000000000007,
@@ -2031,11 +2031,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[21]"
       },
       "assessment": {
@@ -2054,11 +2054,11 @@
         "K": 4,
         "graph": "complete",
         "case": "U1",
+        "U": 1.0,
         "U_over_t": 1.0
       },
       "results": {
         "t": 1.0,
-        "U": 1.0,
         "g": 0.0,
         "dimension": 105,
         "ground_energy": -2.8678551931894294,
@@ -2106,11 +2106,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[22]"
       },
       "assessment": {
@@ -2129,11 +2129,11 @@
         "K": 4,
         "graph": "complete",
         "case": "U5",
+        "U": 5.0,
         "U_over_t": 5.0
       },
       "results": {
         "t": 1.0,
-        "U": 5.0,
         "g": 0.0,
         "dimension": 105,
         "ground_energy": 15.757236034791728,
@@ -2181,11 +2181,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[23]"
       },
       "assessment": {
@@ -2204,11 +2204,11 @@
         "K": 4,
         "graph": "complete",
         "case": "U20",
+        "U": 20.0,
         "U_over_t": 20.0
       },
       "results": {
         "t": 1.0,
-        "U": 20.0,
         "g": 0.0,
         "dimension": 105,
         "ground_energy": 78.4744354619889,
@@ -2256,11 +2256,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[24]"
       },
       "assessment": {
@@ -2279,11 +2279,11 @@
         "K": 4,
         "graph": "ring",
         "case": "no_hopping",
+        "U": 1.0,
         "U_over_t": null
       },
       "results": {
         "t": 0.0,
-        "U": 1.0,
         "g": 0.0,
         "dimension": 105,
         "ground_energy": 3.9999999999999996,
@@ -2331,11 +2331,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[25]"
       },
       "assessment": {
@@ -2354,11 +2354,11 @@
         "K": 4,
         "graph": "ring",
         "case": "free",
+        "U": 0.0,
         "U_over_t": 0.0
       },
       "results": {
         "t": 1.0,
-        "U": 0.0,
         "g": 0.0,
         "dimension": 105,
         "ground_energy": -8.0,
@@ -2406,11 +2406,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[26]"
       },
       "assessment": {
@@ -2429,11 +2429,11 @@
         "K": 4,
         "graph": "ring",
         "case": "U1",
+        "U": 1.0,
         "U_over_t": 1.0
       },
       "results": {
         "t": 1.0,
-        "U": 1.0,
         "g": 0.0,
         "dimension": 105,
         "ground_energy": -2.7877147327990905,
@@ -2481,11 +2481,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[27]"
       },
       "assessment": {
@@ -2504,11 +2504,11 @@
         "K": 4,
         "graph": "ring",
         "case": "U5",
+        "U": 5.0,
         "U_over_t": 5.0
       },
       "results": {
         "t": 1.0,
-        "U": 5.0,
         "g": 0.0,
         "dimension": 105,
         "ground_energy": 15.810706432061663,
@@ -2556,11 +2556,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[28]"
       },
       "assessment": {
@@ -2579,11 +2579,11 @@
         "K": 4,
         "graph": "ring",
         "case": "U20",
+        "U": 20.0,
         "U_over_t": 20.0
       },
       "results": {
         "t": 1.0,
-        "U": 20.0,
         "g": 0.0,
         "dimension": 105,
         "ground_energy": 78.47851810575736,
@@ -2631,11 +2631,11 @@
           "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.hamiltonian.table.rows[29]"
       },
       "assessment": {

@@ -3,3 +3,7 @@ __pycache__/
 .DS_Store
 *.db
 *.db-journal
+
+# Large generated T11 trajectories stay local; compact summaries remain versioned.
+/results/t11-*/*.npz
+/results/t11-equilibration/dynamics.csv

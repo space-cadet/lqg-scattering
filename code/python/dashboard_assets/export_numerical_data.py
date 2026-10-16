@@ -44,7 +44,9 @@ CSV_SOURCES = {
 PARAMETERS = {'n', 'N', 'K', 'J', 'L', 'graph', 'case', 'candidate', 'U_over_t', 'alpha',
               'beta', 'beta_hbar_omega', 'state', 'seed', 'eps', 'epsilon', 'phiRadians',
               'q_bosons_per_copy', 'bosons_per_copy', 'total_spin_S', 'family', 'channel', 'M',
-              'temperature', 'temperature_kBT_over_hbar_omega', 'channels', 'phase_case'}
+              'temperature', 'temperature_kBT_over_hbar_omega', 'channels', 'phase_case',
+              'rotor_count', 'energy_coupling_ratio', 'coupling', 'control_type',
+              'preparation', 'packet_scale_at_N8', 'seed_count', 'phase', 'window_end', 'U'}
 NUMBER = re.compile(r'^[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?$')
 
 
@@ -243,18 +245,24 @@ def export_numerical_data(catalogue=None):
                 col['visible'] = col['key'] in visible
                 col['label'] = labels.get(col['key'],col['label'])
         numerics = [c['key'] for c in cols if c['type'] == 'number']
-        preferred_x = next((k for k in ('parameters.temperature', 'parameters.temperature_kBT_over_hbar_omega', 'parameters.alpha', 'parameters.K', 'parameters.J', 'parameters.beta', 'parameters.beta_hbar_omega', 'parameters.eps', 'parameters.bosons_per_copy', 'parameters.q_bosons_per_copy') if k in numerics), None)
-        preferred_y = next((k for k in ('results.maximum_sampled_active_faces', 'results.entropy_nats', 'results.conditional_mean_area', 'results.ground_volume_mean_project_units', 'results.ground_mean_volume', 'results.ground_volume', 'results.volume_mean', 'results.equal_weight_mean', 'results.equal_weight_closed_rs_mean', 'results.sector_probability', 'results.P_q_S', 'results.V', 'results.corr', 'results.gibbs.q2') if k in numerics), None)
-        chart = {'type': 'scatter'}
-        if len(numerics) >= 2:
-            chart.update(x=preferred_x or numerics[0], y=preferred_y or next((k for k in numerics if k.startswith('results.')), numerics[1]))
-            # A series must include every varying model control to avoid connecting unrelated systems.
-            grouping = [k for k in ('graph', 'candidate', 'U_over_t', 'channels', 'phase_case', 'n', 'sourceGroup', 'family', 'case', 'beta_hbar_omega') if any(k in run['parameters'] or k in run['results'] for run in runs) and 'parameters.' + k != chart['x'] and not (k=='beta_hbar_omega' and chart['x'] in ('parameters.temperature','parameters.temperature_kBT_over_hbar_omega'))]
-            if grouping:
-                for run in runs:
-                    run['series'] = ', '.join(f'{k}={run["parameters"].get(k, run["results"].get(k))}' for k in grouping)
-                cols.append({'key': 'series', 'label': 'Series', 'type': 'string', 'visible': False})
-                chart['groupBy'] = 'series'
+        if study.get('chart'):
+            chart_spec = study['chart']
+            chart = {key: value for key, value in chart_spec.items() if key != 'labels'}
+            for col in cols:
+                col['label'] = chart_spec.get('labels', {}).get(col['key'], col['label'])
+        else:
+            preferred_x = next((k for k in ('parameters.temperature', 'parameters.temperature_kBT_over_hbar_omega', 'parameters.alpha', 'parameters.K', 'parameters.J', 'parameters.beta', 'parameters.beta_hbar_omega', 'parameters.eps', 'parameters.bosons_per_copy', 'parameters.q_bosons_per_copy') if k in numerics), None)
+            preferred_y = next((k for k in ('results.maximum_sampled_active_faces', 'results.entropy_nats', 'results.conditional_mean_area', 'results.ground_volume_mean_project_units', 'results.ground_mean_volume', 'results.ground_volume', 'results.volume_mean', 'results.equal_weight_mean', 'results.equal_weight_closed_rs_mean', 'results.sector_probability', 'results.P_q_S', 'results.V', 'results.corr', 'results.gibbs.q2') if k in numerics), None)
+            chart = {'type': 'scatter'}
+            if len(numerics) >= 2:
+                chart.update(x=preferred_x or numerics[0], y=preferred_y or next((k for k in numerics if k.startswith('results.')), numerics[1]))
+                # A series must include every varying model control to avoid connecting unrelated systems.
+                grouping = [k for k in ('graph', 'candidate', 'U_over_t', 'channels', 'phase_case', 'n', 'sourceGroup', 'family', 'case', 'beta_hbar_omega') if any(k in run['parameters'] or k in run['results'] for run in runs) and 'parameters.' + k != chart['x'] and not (k=='beta_hbar_omega' and chart['x'] in ('parameters.temperature','parameters.temperature_kBT_over_hbar_omega'))]
+                if grouping:
+                    for run in runs:
+                        run['series'] = ', '.join(f'{k}={run["parameters"].get(k, run["results"].get(k))}' for k in grouping)
+                    cols.append({'key': 'series', 'label': 'Series', 'type': 'string', 'visible': False})
+                    chart['groupBy'] = 'series'
         study_docs = [{'title': Path(f['source']).stem.replace('-', ' ').capitalize(),
                        'path': '../'+f['path'], 'sourcePath': f['source'],
                        'description': 'Explanation and calculation record for this study.'}
@@ -279,8 +287,7 @@ def export_numerical_data(catalogue=None):
     chronology.write_bytes((ROOT / 'notes/numerical-studies.md').read_bytes())
 
     # Keep the project's existing saved records and figures as InfoDash's overview.
-    # The per-study datasets add the nine supplemental studies and give all 30
-    # datasets a direct route from the same root interface.
+    # The supplemental datasets and each catalogue study share one root index.
     overview_data = json.loads((DASH / 'data.json').read_text())
     overview_data['schemaVersion'] = '1.0.0'
     overview_data['project']['name'] = 'Scattering in LQG'
@@ -330,6 +337,12 @@ def export_numerical_data(catalogue=None):
          'description': 'Thermal area and spin-sector numerical records.'},
         {'title': 'T11 geometric interpretation', 'path': 'study-assets/notes/t11-geometric-interpretation.txt',
          'description': 'Prepared-state data and the limits of the geometric interpretation.'},
+        {'title': 'Classical rotor energy transfer and equilibration', 'path': 'study-assets/notes/classical-rotor-equilibration.txt',
+         'description': 'Finite-area face-channel pilot, grouped rotor summaries and equilibrium comparisons.'},
+        {'title': 'Why fast rotors exchange little energy', 'path': 'study-assets/notes/few-rotor-energy-transfer.txt',
+         'description': 'Exact planar-pair transfer bound and separate three-dimensional controls.'},
+        {'title': 'Coupling strength and the apparent transfer cutoff', 'path': 'study-assets/notes/rotor-coupling-crossover.txt',
+         'description': 'Finite-time coupling scan, direct controls and delayed transfer.'},
     ]
     write(DASH / 'data.json', overview_data)
     return datasets

@@ -141,11 +141,11 @@
           "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.t11-geometric-interpretation.table.rows[0]"
       },
       "assessment": {
@@ -447,11 +447,11 @@
           "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.t11-geometric-interpretation.table.rows[1]"
       },
       "assessment": {
@@ -508,11 +508,11 @@
           "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.t11-geometric-interpretation.table.rows[2]"
       },
       "assessment": {
@@ -569,11 +569,11 @@
           "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.t11-geometric-interpretation.table.rows[3]"
       },
       "assessment": {
@@ -630,11 +630,11 @@
           "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.t11-geometric-interpretation.table.rows[4]"
       },
       "assessment": {
@@ -691,11 +691,11 @@
           "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.t11-geometric-interpretation.table.rows[5]"
       },
       "assessment": {
@@ -752,11 +752,11 @@
           "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.t11-geometric-interpretation.table.rows[6]"
       },
       "assessment": {
@@ -813,11 +813,11 @@
           "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.t11-geometric-interpretation.table.rows[7]"
       },
       "assessment": {
@@ -874,11 +874,11 @@
           "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.t11-geometric-interpretation.table.rows[8]"
       },
       "assessment": {
@@ -935,11 +935,11 @@
           "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.t11-geometric-interpretation.table.rows[9]"
       },
       "assessment": {
@@ -996,11 +996,11 @@
           "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "studies.t11-geometric-interpretation.table.rows[10]"
       },
       "assessment": {

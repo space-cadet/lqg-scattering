@@ -1,5 +1,5 @@
 # Task Registry
-*Last Updated: 2026-10-16 05:09:54 IST*
+*Last Updated: 2026-10-16 13:11:31 IST*
 
 ## Active Tasks
 | ID | Title | Status | Priority | Started | Dependencies | Details |
@@ -16,7 +16,7 @@
 | T8 | Amplituhedron Program | 🔄 IN PROGRESS | MEDIUM | 2026-10-04 | T1, T2 | [Details](tasks/T8.md) |
 | T9 | Thermal/TFD state construction and physical study | 🔄 IN PROGRESS | HIGH | 2026-10-06 | T3c | [Details](tasks/T9.md) |
 | T9a | Closure-preserving singlet exchange and thermal equilibration | 🔄 IN PROGRESS | HIGH | 2026-10-14 | T9, T11, T1a | [Details](tasks/T9a.md) |
-| T11 | Four-site Hamiltonian–volume studies | 🔄 IN PROGRESS | HIGH | 2026-10-09 | T1a | [Details](tasks/T11.md) |
+| T11 | Hamiltonian, volume and face/rotor dynamics | 🔄 IN PROGRESS | HIGH | 2026-10-09 | T1a | [Details](tasks/T11.md) |
 | T8a | Cluster algebra and coordinate charts | 🔄 IN PROGRESS | MEDIUM | 2026-10-04 | T8 | [Details](tasks/T8a.md) |
 | T8b | Positive cells and scattering regions | 🔄 IN PROGRESS | MEDIUM | 2026-10-04 | T8, T1, T2 | [Details](tasks/T8b.md) |
 

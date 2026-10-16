@@ -1,0 +1,25 @@
+{
+  "regression_tests": 54,
+  "result": "passed",
+  "planar_pair_runs": 14,
+  "generic_3d_runs": 63,
+  "half_step_controls": 6,
+  "max_generic_relative_energy_drift": 5.596826979203939e-06,
+  "max_independent_planar_phase_error": 1.6747581975673498e-06,
+  "max_independent_planar_momentum_error": 8.225025927233176e-06,
+  "symmetry": {
+    "max_cold_kinetic": 1.691150670794871e-27,
+    "max_orientation_motion": 1.5189201810457324e-13
+  },
+  "scaling": {
+    "q_error": 1.2444559271962419e-12,
+    "J_error": 7.729927808952652e-13
+  },
+  "figure": "vector PDF and 300-dpi PNG visually inspected",
+  "limitations": [
+    "aligned planar pair only for exact threshold",
+    "generic3D finite time and three seeds",
+    "no thermalization claim"
+  ],
+  "publication": "local only"
+}

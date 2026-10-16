@@ -17,6 +17,12 @@
       "precision": 8
     },
     {
+      "key": "parameters.U",
+      "label": "U",
+      "type": "number",
+      "precision": 8
+    },
+    {
       "key": "results.n_bosons",
       "label": "n bosons",
       "type": "number",
@@ -25,12 +31,6 @@
     {
       "key": "results.t",
       "label": "t",
-      "type": "number",
-      "precision": 8
-    },
-    {
-      "key": "results.U",
-      "label": "U",
       "type": "number",
       "precision": 8
     },
@@ -157,7 +157,7 @@
   ],
   "charts": {
     "type": "scatter",
-    "x": "results.n_bosons",
+    "x": "parameters.U",
     "y": "results.n_bosons",
     "groupBy": "series"
   },
@@ -168,7 +168,8 @@
       "status": "complete",
       "description": "Same-number detachment energies",
       "parameters": {
-        "graph": "complete"
+        "graph": "complete",
+        "U": 0.0
       },
       "results": {
         "intact_edges": [
@@ -213,7 +214,6 @@
         ],
         "n_bosons": 4,
         "t": 1.0,
-        "U": 0.0,
         "intact_ground": {
           "energy": -4.00000000000001,
           "eigenstate_residual": 1.2762505335284462e-14,
@@ -275,11 +275,11 @@
           "results/binding-energy/summary.json": "dc439dd90728bc221affb0ea25791b7b1ae7db826ab4dc497347f67fbae2a30e"
         },
         "presentationSource": "results/binding-energy/summary.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "records[0]"
       },
       "assessment": {
@@ -305,7 +305,8 @@
       "status": "complete",
       "description": "Same-number detachment energies",
       "parameters": {
-        "graph": "complete"
+        "graph": "complete",
+        "U": 1.0
       },
       "results": {
         "intact_edges": [
@@ -350,7 +351,6 @@
         ],
         "n_bosons": 4,
         "t": 1.0,
-        "U": 1.0,
         "intact_ground": {
           "energy": -3.3408476172483517,
           "eigenstate_residual": 1.4871595201527365e-14,
@@ -412,11 +412,11 @@
           "results/binding-energy/summary.json": "dc439dd90728bc221affb0ea25791b7b1ae7db826ab4dc497347f67fbae2a30e"
         },
         "presentationSource": "results/binding-energy/summary.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "records[1]"
       },
       "assessment": {
@@ -431,7 +431,8 @@
       "status": "complete",
       "description": "Same-number detachment energies",
       "parameters": {
-        "graph": "complete"
+        "graph": "complete",
+        "U": 5.0
       },
       "results": {
         "intact_edges": [
@@ -476,7 +477,6 @@
         ],
         "n_bosons": 4,
         "t": 1.0,
-        "U": 5.0,
         "intact_ground": {
           "energy": -1.8442887702247552,
           "eigenstate_residual": 1.0654229101682058e-14,
@@ -538,11 +538,11 @@
           "results/binding-energy/summary.json": "dc439dd90728bc221affb0ea25791b7b1ae7db826ab4dc497347f67fbae2a30e"
         },
         "presentationSource": "results/binding-energy/summary.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "records[2]"
       },
       "assessment": {
@@ -557,7 +557,8 @@
       "status": "complete",
       "description": "Same-number detachment energies",
       "parameters": {
-        "graph": "complete"
+        "graph": "complete",
+        "U": 20.0
       },
       "results": {
         "intact_edges": [
@@ -602,7 +603,6 @@
         ],
         "n_bosons": 4,
         "t": 1.0,
-        "U": 20.0,
         "intact_ground": {
           "energy": -0.5857322798478894,
           "eigenstate_residual": 1.7280296345799488e-14,
@@ -664,11 +664,11 @@
           "results/binding-energy/summary.json": "dc439dd90728bc221affb0ea25791b7b1ae7db826ab4dc497347f67fbae2a30e"
         },
         "presentationSource": "results/binding-energy/summary.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "records[3]"
       },
       "assessment": {
@@ -683,7 +683,8 @@
       "status": "complete",
       "description": "Same-number detachment energies",
       "parameters": {
-        "graph": "ring"
+        "graph": "ring",
+        "U": 0.0
       },
       "results": {
         "intact_edges": [
@@ -716,7 +717,6 @@
         ],
         "n_bosons": 4,
         "t": 1.0,
-        "U": 0.0,
         "intact_ground": {
           "energy": -4.00000000000001,
           "eigenstate_residual": 1.2270795439975323e-14,
@@ -778,11 +778,11 @@
           "results/binding-energy/summary.json": "dc439dd90728bc221affb0ea25791b7b1ae7db826ab4dc497347f67fbae2a30e"
         },
         "presentationSource": "results/binding-energy/summary.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "records[4]"
       },
       "assessment": {
@@ -797,7 +797,8 @@
       "status": "complete",
       "description": "Same-number detachment energies",
       "parameters": {
-        "graph": "ring"
+        "graph": "ring",
+        "U": 1.0
       },
       "results": {
         "intact_edges": [
@@ -830,7 +831,6 @@
         ],
         "n_bosons": 4,
         "t": 1.0,
-        "U": 1.0,
         "intact_ground": {
           "energy": -3.340847617248338,
           "eigenstate_residual": 1.7002579777133326e-14,
@@ -892,11 +892,11 @@
           "results/binding-energy/summary.json": "dc439dd90728bc221affb0ea25791b7b1ae7db826ab4dc497347f67fbae2a30e"
         },
         "presentationSource": "results/binding-energy/summary.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "records[5]"
       },
       "assessment": {
@@ -911,7 +911,8 @@
       "status": "complete",
       "description": "Same-number detachment energies",
       "parameters": {
-        "graph": "ring"
+        "graph": "ring",
+        "U": 5.0
       },
       "results": {
         "intact_edges": [
@@ -944,7 +945,6 @@
         ],
         "n_bosons": 4,
         "t": 1.0,
-        "U": 5.0,
         "intact_ground": {
           "energy": -1.844288770224754,
           "eigenstate_residual": 1.9687045781214897e-14,
@@ -1006,11 +1006,11 @@
           "results/binding-energy/summary.json": "dc439dd90728bc221affb0ea25791b7b1ae7db826ab4dc497347f67fbae2a30e"
         },
         "presentationSource": "results/binding-energy/summary.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "records[6]"
       },
       "assessment": {
@@ -1025,7 +1025,8 @@
       "status": "complete",
       "description": "Same-number detachment energies",
       "parameters": {
-        "graph": "ring"
+        "graph": "ring",
+        "U": 20.0
       },
       "results": {
         "intact_edges": [
@@ -1058,7 +1059,6 @@
         ],
         "n_bosons": 4,
         "t": 1.0,
-        "U": 20.0,
         "intact_ground": {
           "energy": -0.5857322798478464,
           "eigenstate_residual": 7.645686759583837e-14,
@@ -1120,11 +1120,11 @@
           "results/binding-energy/summary.json": "dc439dd90728bc221affb0ea25791b7b1ae7db826ab4dc497347f67fbae2a30e"
         },
         "presentationSource": "results/binding-energy/summary.json",
-        "exportRevision": "8dbd02a5be7752a4620a2586b656234801a169de",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
         "exportDirtySource": true,
-        "importedAt": "2026-10-15T23:52:23.831772+00:00",
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "20ab21990e87cf1ab38a97406ff362cc108be68f8b02c0b4ba5cffc286b6f512",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
         "sourceSelector": "records[7]"
       },
       "assessment": {

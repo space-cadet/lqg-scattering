@@ -1,0 +1,32 @@
+{
+  "motivation": "Initial long-time controls at r16 increased transfer. Check neighboring suppressed ratios and step sensitivity at the boundary.",
+  "selected_after_initial_scan": true,
+  "half_step_cases": [
+    [
+      8,
+      16
+    ],
+    [
+      64,
+      16
+    ]
+  ],
+  "duration_tau_half_step": 2000,
+  "long_time_cases": [
+    [
+      8,
+      18
+    ],
+    [
+      64,
+      18
+    ],
+    [
+      64,
+      20
+    ]
+  ],
+  "duration_tau_long": 10000,
+  "seed": 1701,
+  "note": "These are targeted controls, not additional independent seeds or a full long-time scan."
+}

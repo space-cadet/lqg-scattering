@@ -1,0 +1,751 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "Small-area face-channel equilibration pilot",
+    "subtitle": "Representative K=3 late-window readouts from the finite-area quantum pilot. The regular input covers L=4,5,6 at U=0,1,5; a phase-shifted U=5 control shows preparation dependence. The study asks how readouts approach the exact dephased reference, not whether a canonical state is reached."
+  },
+  "columns": [
+    {
+      "key": "runId",
+      "label": "Case",
+      "type": "string"
+    },
+    {
+      "key": "parameters.channels",
+      "label": "Available face channels L",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.K",
+      "label": "K",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.U",
+      "label": "U",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "parameters.phase",
+      "label": "phase",
+      "type": "string",
+      "precision": 8
+    },
+    {
+      "key": "parameters.window_end",
+      "label": "window end",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.residence_fraction_0_05",
+      "label": "Residence near the dephased readout, d \u2264 0.05",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.mean_readout_distance",
+      "label": "mean readout distance",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.mean_concentration",
+      "label": "mean concentration",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.dephased_concentration",
+      "label": "dephased concentration",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.active_count_TV_from_canonical",
+      "label": "active count TV from canonical",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.maximum_return_after_20",
+      "label": "maximum return after 20",
+      "type": "number",
+      "precision": 8
+    },
+    {
+      "key": "results.series",
+      "label": "Input phase and interaction U",
+      "type": "string",
+      "precision": 8
+    }
+  ],
+  "charts": {
+    "type": "line",
+    "x": "parameters.channels",
+    "y": "results.residence_fraction_0_05",
+    "groupBy": "results.series"
+  },
+  "runs": [
+    {
+      "runId": "t11-channel-equilibration:case-0001:1",
+      "task": "T11",
+      "status": "complete",
+      "description": "Small-area face-channel equilibration pilot",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 4,
+        "K": 3,
+        "U": 0.0,
+        "phase": "regular",
+        "window_end": 200
+      },
+      "results": {
+        "residence_fraction_0_05": 0.18989450305385897,
+        "mean_readout_distance": 0.09569387682795097,
+        "mean_concentration": 0.3542361538562021,
+        "dephased_concentration": 0.35416666666666685,
+        "active_count_TV_from_canonical": 0.06411333191487631,
+        "maximum_return_after_20": 0.9999996494122086,
+        "series": "regular, U=0"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
+          "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
+          "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
+          "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
+          "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.t11-channel-equilibration.table.rows[0]"
+      },
+      "assessment": {
+        "summary": "Representative K=3 late-window readouts from the finite-area quantum pilot. The regular input covers L=4,5,6 at U=0,1,5; a phase-shifted U=5 control shows preparation dependence. The study asks how readouts approach the exact dephased reference, not whether a canonical state is reached.",
+        "recordedStudyStatus": "42 trajectories passed; 252,840 independent comparisons (714 analytic); maximum residual 1.88e-13; prior 46-test suite passed"
+      },
+      "artifacts": [
+        {
+          "label": "README.md",
+          "path": "../study-assets/results/t11-equilibration/README.txt",
+          "kind": "data",
+          "sha256": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "sourcePath": "results/t11-equilibration/README.md",
+          "sourceSha256": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773"
+        },
+        {
+          "label": "protocol.json",
+          "path": "../study-assets/results/t11-equilibration/protocol.json",
+          "kind": "data",
+          "sha256": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
+          "sourcePath": "results/t11-equilibration/protocol.json",
+          "sourceSha256": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989"
+        },
+        {
+          "label": "provenance.json",
+          "path": "../study-assets/results/t11-equilibration/provenance.json",
+          "kind": "data",
+          "sha256": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
+          "sourcePath": "results/t11-equilibration/provenance.json",
+          "sourceSha256": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5"
+        },
+        {
+          "label": "summary.csv",
+          "path": "../study-assets/results/t11-equilibration/summary.csv",
+          "kind": "data",
+          "sha256": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
+          "sourcePath": "results/t11-equilibration/summary.csv",
+          "sourceSha256": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2"
+        },
+        {
+          "label": "validation.json",
+          "path": "../study-assets/results/t11-equilibration/validation.json",
+          "kind": "data",
+          "sha256": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
+          "sourcePath": "results/t11-equilibration/validation.json",
+          "sourceSha256": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a"
+        },
+        {
+          "label": "independent-validation.json",
+          "path": "../study-assets/results/t11-equilibration/independent-validation.json",
+          "kind": "data",
+          "sha256": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
+          "sourcePath": "results/t11-equilibration/independent-validation.json",
+          "sourceSha256": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0"
+        },
+        {
+          "label": "classical-rotor-equilibration.md",
+          "path": "../study-assets/notes/classical-rotor-equilibration.txt",
+          "kind": "data",
+          "sha256": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "sourcePath": "notes/classical-rotor-equilibration.md",
+          "sourceSha256": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58"
+        },
+        {
+          "label": "t11_equilibration.py",
+          "path": "../study-assets/code/python/t11_equilibration.py",
+          "kind": "data",
+          "sha256": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "sourcePath": "code/python/t11_equilibration.py",
+          "sourceSha256": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78"
+        },
+        {
+          "label": "verify_t11_equilibration.py",
+          "path": "../study-assets/code/python/verify_t11_equilibration.py",
+          "kind": "data",
+          "sha256": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc",
+          "sourcePath": "code/python/verify_t11_equilibration.py",
+          "sourceSha256": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        }
+      ],
+      "figures": [],
+      "verification": {
+        "checks": {
+          "validation.json": {}
+        }
+      }
+    },
+    {
+      "runId": "t11-channel-equilibration:case-0002:2",
+      "task": "T11",
+      "status": "complete",
+      "description": "Small-area face-channel equilibration pilot",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 5,
+        "K": 3,
+        "U": 0.0,
+        "phase": "regular",
+        "window_end": 200
+      },
+      "results": {
+        "residence_fraction_0_05": 0.0,
+        "mean_readout_distance": 0.10772731523755695,
+        "mean_concentration": 0.32463363333574974,
+        "dephased_concentration": 0.3246240364701031,
+        "active_count_TV_from_canonical": 0.028121266069553452,
+        "maximum_return_after_20": 0.9999970618407047,
+        "series": "regular, U=0"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
+          "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
+          "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
+          "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
+          "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.t11-channel-equilibration.table.rows[1]"
+      },
+      "assessment": {
+        "summary": "Representative K=3 late-window readouts from the finite-area quantum pilot. The regular input covers L=4,5,6 at U=0,1,5; a phase-shifted U=5 control shows preparation dependence. The study asks how readouts approach the exact dephased reference, not whether a canonical state is reached.",
+        "recordedStudyStatus": "42 trajectories passed; 252,840 independent comparisons (714 analytic); maximum residual 1.88e-13; prior 46-test suite passed"
+      }
+    },
+    {
+      "runId": "t11-channel-equilibration:case-0003:3",
+      "task": "T11",
+      "status": "complete",
+      "description": "Small-area face-channel equilibration pilot",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 6,
+        "K": 3,
+        "U": 0.0,
+        "phase": "regular",
+        "window_end": 200
+      },
+      "results": {
+        "residence_fraction_0_05": 0.0,
+        "mean_readout_distance": 0.13988227775288767,
+        "mean_concentration": 0.306028772720652,
+        "dephased_concentration": 0.30586734726676945,
+        "active_count_TV_from_canonical": 0.0331960901236223,
+        "maximum_return_after_20": 0.9999999033118657,
+        "series": "regular, U=0"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
+          "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
+          "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
+          "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
+          "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.t11-channel-equilibration.table.rows[2]"
+      },
+      "assessment": {
+        "summary": "Representative K=3 late-window readouts from the finite-area quantum pilot. The regular input covers L=4,5,6 at U=0,1,5; a phase-shifted U=5 control shows preparation dependence. The study asks how readouts approach the exact dephased reference, not whether a canonical state is reached.",
+        "recordedStudyStatus": "42 trajectories passed; 252,840 independent comparisons (714 analytic); maximum residual 1.88e-13; prior 46-test suite passed"
+      }
+    },
+    {
+      "runId": "t11-channel-equilibration:case-0004:4",
+      "task": "T11",
+      "status": "complete",
+      "description": "Small-area face-channel equilibration pilot",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 4,
+        "K": 3,
+        "U": 1.0,
+        "phase": "regular",
+        "window_end": 200
+      },
+      "results": {
+        "residence_fraction_0_05": 0.6679622431982232,
+        "mean_readout_distance": 0.0413668470135153,
+        "mean_concentration": 0.3164485915889696,
+        "dephased_concentration": 0.3164301985948202,
+        "active_count_TV_from_canonical": 0.009686829772974834,
+        "maximum_return_after_20": 0.7730539383769922,
+        "series": "regular, U=1"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
+          "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
+          "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
+          "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
+          "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.t11-channel-equilibration.table.rows[3]"
+      },
+      "assessment": {
+        "summary": "Representative K=3 late-window readouts from the finite-area quantum pilot. The regular input covers L=4,5,6 at U=0,1,5; a phase-shifted U=5 control shows preparation dependence. The study asks how readouts approach the exact dephased reference, not whether a canonical state is reached.",
+        "recordedStudyStatus": "42 trajectories passed; 252,840 independent comparisons (714 analytic); maximum residual 1.88e-13; prior 46-test suite passed"
+      }
+    },
+    {
+      "runId": "t11-channel-equilibration:case-0005:5",
+      "task": "T11",
+      "status": "complete",
+      "description": "Small-area face-channel equilibration pilot",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 5,
+        "K": 3,
+        "U": 1.0,
+        "phase": "regular",
+        "window_end": 200
+      },
+      "results": {
+        "residence_fraction_0_05": 0.5030538589672404,
+        "mean_readout_distance": 0.05367124041841855,
+        "mean_concentration": 0.3032994121933972,
+        "dephased_concentration": 0.303365394275459,
+        "active_count_TV_from_canonical": 0.06362093422657047,
+        "maximum_return_after_20": 0.31969575346241086,
+        "series": "regular, U=1"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
+          "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
+          "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
+          "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
+          "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.t11-channel-equilibration.table.rows[4]"
+      },
+      "assessment": {
+        "summary": "Representative K=3 late-window readouts from the finite-area quantum pilot. The regular input covers L=4,5,6 at U=0,1,5; a phase-shifted U=5 control shows preparation dependence. The study asks how readouts approach the exact dephased reference, not whether a canonical state is reached.",
+        "recordedStudyStatus": "42 trajectories passed; 252,840 independent comparisons (714 analytic); maximum residual 1.88e-13; prior 46-test suite passed"
+      }
+    },
+    {
+      "runId": "t11-channel-equilibration:case-0006:6",
+      "task": "T11",
+      "status": "complete",
+      "description": "Small-area face-channel equilibration pilot",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 6,
+        "K": 3,
+        "U": 1.0,
+        "phase": "regular",
+        "window_end": 200
+      },
+      "results": {
+        "residence_fraction_0_05": 0.5008328706274292,
+        "mean_readout_distance": 0.05462987290496923,
+        "mean_concentration": 0.29591435934154803,
+        "dephased_concentration": 0.2959268544442306,
+        "active_count_TV_from_canonical": 0.04137706424383144,
+        "maximum_return_after_20": 0.16524673410053822,
+        "series": "regular, U=1"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
+          "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
+          "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
+          "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
+          "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.t11-channel-equilibration.table.rows[5]"
+      },
+      "assessment": {
+        "summary": "Representative K=3 late-window readouts from the finite-area quantum pilot. The regular input covers L=4,5,6 at U=0,1,5; a phase-shifted U=5 control shows preparation dependence. The study asks how readouts approach the exact dephased reference, not whether a canonical state is reached.",
+        "recordedStudyStatus": "42 trajectories passed; 252,840 independent comparisons (714 analytic); maximum residual 1.88e-13; prior 46-test suite passed"
+      }
+    },
+    {
+      "runId": "t11-channel-equilibration:case-0007:7",
+      "task": "T11",
+      "status": "complete",
+      "description": "Small-area face-channel equilibration pilot",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 4,
+        "K": 3,
+        "U": 5.0,
+        "phase": "regular",
+        "window_end": 200
+      },
+      "results": {
+        "residence_fraction_0_05": 0.7612437534702943,
+        "mean_readout_distance": 0.032444838156035195,
+        "mean_concentration": 0.3226550535669827,
+        "dephased_concentration": 0.3226496267218795,
+        "active_count_TV_from_canonical": 0.01766493876666722,
+        "maximum_return_after_20": 0.7530593586392145,
+        "series": "regular, U=5"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
+          "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
+          "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
+          "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
+          "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.t11-channel-equilibration.table.rows[6]"
+      },
+      "assessment": {
+        "summary": "Representative K=3 late-window readouts from the finite-area quantum pilot. The regular input covers L=4,5,6 at U=0,1,5; a phase-shifted U=5 control shows preparation dependence. The study asks how readouts approach the exact dephased reference, not whether a canonical state is reached.",
+        "recordedStudyStatus": "42 trajectories passed; 252,840 independent comparisons (714 analytic); maximum residual 1.88e-13; prior 46-test suite passed"
+      }
+    },
+    {
+      "runId": "t11-channel-equilibration:case-0008:8",
+      "task": "T11",
+      "status": "complete",
+      "description": "Small-area face-channel equilibration pilot",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 5,
+        "K": 3,
+        "U": 5.0,
+        "phase": "regular",
+        "window_end": 200
+      },
+      "results": {
+        "residence_fraction_0_05": 0.7667962243198223,
+        "mean_readout_distance": 0.036986484505876695,
+        "mean_concentration": 0.3235493859143974,
+        "dephased_concentration": 0.32354906809805495,
+        "active_count_TV_from_canonical": 0.10636801954319897,
+        "maximum_return_after_20": 0.4332940000702032,
+        "series": "regular, U=5"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
+          "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
+          "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
+          "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
+          "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.t11-channel-equilibration.table.rows[7]"
+      },
+      "assessment": {
+        "summary": "Representative K=3 late-window readouts from the finite-area quantum pilot. The regular input covers L=4,5,6 at U=0,1,5; a phase-shifted U=5 control shows preparation dependence. The study asks how readouts approach the exact dephased reference, not whether a canonical state is reached.",
+        "recordedStudyStatus": "42 trajectories passed; 252,840 independent comparisons (714 analytic); maximum residual 1.88e-13; prior 46-test suite passed"
+      }
+    },
+    {
+      "runId": "t11-channel-equilibration:case-0009:9",
+      "task": "T11",
+      "status": "complete",
+      "description": "Small-area face-channel equilibration pilot",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 6,
+        "K": 3,
+        "U": 5.0,
+        "phase": "regular",
+        "window_end": 200
+      },
+      "results": {
+        "residence_fraction_0_05": 0.9033870072182121,
+        "mean_readout_distance": 0.029709917540201324,
+        "mean_concentration": 0.3249479793460649,
+        "dephased_concentration": 0.32494648924485875,
+        "active_count_TV_from_canonical": 0.15403507004019476,
+        "maximum_return_after_20": 0.19791708343109504,
+        "series": "regular, U=5"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
+          "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
+          "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
+          "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
+          "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.t11-channel-equilibration.table.rows[8]"
+      },
+      "assessment": {
+        "summary": "Representative K=3 late-window readouts from the finite-area quantum pilot. The regular input covers L=4,5,6 at U=0,1,5; a phase-shifted U=5 control shows preparation dependence. The study asks how readouts approach the exact dephased reference, not whether a canonical state is reached.",
+        "recordedStudyStatus": "42 trajectories passed; 252,840 independent comparisons (714 analytic); maximum residual 1.88e-13; prior 46-test suite passed"
+      }
+    },
+    {
+      "runId": "t11-channel-equilibration:case-0010:10",
+      "task": "T11",
+      "status": "complete",
+      "description": "Small-area face-channel equilibration pilot",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 4,
+        "K": 3,
+        "U": 5.0,
+        "phase": "phase_shifted",
+        "window_end": 200
+      },
+      "results": {
+        "residence_fraction_0_05": 0.9156024430871738,
+        "mean_readout_distance": 0.024246950223027103,
+        "mean_concentration": 0.3407613163904473,
+        "dephased_concentration": 0.34076524519098933,
+        "active_count_TV_from_canonical": 0.02291157861144207,
+        "maximum_return_after_20": 0.522765965153341,
+        "series": "phase shifted, U=5"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
+          "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
+          "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
+          "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
+          "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.t11-channel-equilibration.table.rows[9]"
+      },
+      "assessment": {
+        "summary": "Representative K=3 late-window readouts from the finite-area quantum pilot. The regular input covers L=4,5,6 at U=0,1,5; a phase-shifted U=5 control shows preparation dependence. The study asks how readouts approach the exact dephased reference, not whether a canonical state is reached.",
+        "recordedStudyStatus": "42 trajectories passed; 252,840 independent comparisons (714 analytic); maximum residual 1.88e-13; prior 46-test suite passed"
+      }
+    },
+    {
+      "runId": "t11-channel-equilibration:case-0011:11",
+      "task": "T11",
+      "status": "complete",
+      "description": "Small-area face-channel equilibration pilot",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 5,
+        "K": 3,
+        "U": 5.0,
+        "phase": "phase_shifted",
+        "window_end": 200
+      },
+      "results": {
+        "residence_fraction_0_05": 0.9905607995558023,
+        "mean_readout_distance": 0.020155759281152628,
+        "mean_concentration": 0.3375075107909414,
+        "dephased_concentration": 0.33750809068574694,
+        "active_count_TV_from_canonical": 0.10655982723085097,
+        "maximum_return_after_20": 0.2080094651633256,
+        "series": "phase shifted, U=5"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
+          "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
+          "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
+          "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
+          "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.t11-channel-equilibration.table.rows[10]"
+      },
+      "assessment": {
+        "summary": "Representative K=3 late-window readouts from the finite-area quantum pilot. The regular input covers L=4,5,6 at U=0,1,5; a phase-shifted U=5 control shows preparation dependence. The study asks how readouts approach the exact dephased reference, not whether a canonical state is reached.",
+        "recordedStudyStatus": "42 trajectories passed; 252,840 independent comparisons (714 analytic); maximum residual 1.88e-13; prior 46-test suite passed"
+      }
+    },
+    {
+      "runId": "t11-channel-equilibration:case-0012:12",
+      "task": "T11",
+      "status": "complete",
+      "description": "Small-area face-channel equilibration pilot",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "channels": 6,
+        "K": 3,
+        "U": 5.0,
+        "phase": "phase_shifted",
+        "window_end": 200
+      },
+      "results": {
+        "residence_fraction_0_05": 0.8756246529705719,
+        "mean_readout_distance": 0.026057115955134217,
+        "mean_concentration": 0.33610219033828526,
+        "dephased_concentration": 0.336102263442355,
+        "active_count_TV_from_canonical": 0.15203772870347518,
+        "maximum_return_after_20": 0.19364089076657726,
+        "series": "phase shifted, U=5"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
+          "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
+          "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
+          "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
+          "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
+          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
+          "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "sourceSelector": "studies.t11-channel-equilibration.table.rows[11]"
+      },
+      "assessment": {
+        "summary": "Representative K=3 late-window readouts from the finite-area quantum pilot. The regular input covers L=4,5,6 at U=0,1,5; a phase-shifted U=5 control shows preparation dependence. The study asks how readouts approach the exact dephased reference, not whether a canonical state is reached.",
+        "recordedStudyStatus": "42 trajectories passed; 252,840 independent comparisons (714 analytic); maximum residual 1.88e-13; prior 46-test suite passed"
+      }
+    }
+  ],
+  "figures": [],
+  "docs": [
+    {
+      "title": "Classical rotor equilibration",
+      "path": "../study-assets/notes/classical-rotor-equilibration.txt",
+      "sourcePath": "notes/classical-rotor-equilibration.md",
+      "description": "Explanation and calculation record for this study."
+    },
+    {
+      "title": "Numerical studies overview",
+      "path": "../index.html"
+    }
+  ]
+}

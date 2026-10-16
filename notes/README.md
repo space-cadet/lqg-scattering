@@ -9,6 +9,16 @@
   separately closed reference's Schmidt spectrum, entropy decomposition and
   coherent two-copy singlet creation, with verified temperature curves.
 
+- [`classical-rotor-equilibration.md`](classical-rotor-equilibration.md) explains
+  the small-area face-channel pilot, classical energy spreading, equilibrium
+  comparison, and the limitations that separate finite-time transfer from
+  equilibration.
+- [`few-rotor-energy-transfer.md`](few-rotor-energy-transfer.md) derives the
+  exact planar-pair transfer threshold and contrasts it with three-dimensional
+  zero-angular-momentum controls.
+- [`rotor-coupling-crossover.md`](rotor-coupling-crossover.md) records the
+  finite-time ring crossover, direct-coupling controls, and delayed transfer.
+
 - [`numerical-studies.md`](numerical-studies.md) is the central indexed,
   chronological record of numerical calculations, findings, and source artifacts.
 

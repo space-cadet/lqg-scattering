@@ -1,0 +1,10 @@
+{
+  "reason": "Equilibrium has finite instantaneous fluctuations; fixed tolerance alone is insufficient.",
+  "frozen_before_analysis": true,
+  "equilibrium_region": "90th percentile of max absolute deviations of hot fraction, kinetic fraction and participation from MC means",
+  "expected_reference_residence": 0.9,
+  "equilibrium_distribution_comparison": "two-sample KS distance, statistic only; no IID p values for correlated samples",
+  "refinement": "seed1701, N=8,32,64, ratios10 and100, both scalings; N8 duplicate omitted; same duration2000 with dt/2",
+  "ensemble": "conditional microcanonical at same total energy and total angular momentum zero",
+  "notes": "region residence is one diagnostic and cannot establish ergodicity"
+}

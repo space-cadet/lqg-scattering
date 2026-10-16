@@ -1,11 +1,11 @@
 # Session Cache
 
-*Last Updated: 2026-10-16 05:09:54 IST*
+*Last Updated: 2026-10-16 12:40:16 IST*
 
 ## Overview
 - 2026-10-16 T9/T11: Closed-reference entropy and 20 free-hopping face-activation
   controls are complete. Extra channels activate but recur; interacting
-  equilibration has not been tested. The user highlighted residence near
+  equilibration within that face-channel model has not been tested. The user highlighted residence near
   equilibrium despite recurrence. Record the discussion and many-body precedents
   in [physics transcript](sessions/2026-10-16-face-thermalization-transcript.md);
   see also [T9 entropy session](sessions/2026-10-16-t9-entanglement.md) and
@@ -13,12 +13,22 @@
   local by user choice. The face-energy note now includes the many-body
   equilibration/recurrence discussion; its local dashboard copy was rebuilt and
   browser checked with no math or console errors.
+- 2026-10-16 T11: Added NS33–36 for the small-area quantum channel pilot,
+  classical rotor equilibration, the exact planar pair and few-rotor controls,
+  and the ring coupling crossover with delayed release. Moderate packets match
+  selected microcanonical readouts; high-energy concentration is finite-time,
+  with later release in some cases. Quantum rotor evolution remains planned.
+  The local catalogue now includes four compact datasets, with 30 studies and
+  39 datasets; link/hash validation and saved-source parity pass. Raw histories
+  remain out of the package. See the
+  [physics handoff](sessions/2026-10-16-equilibration-and-rotors-summary.md)
+  and [T11 closeout](sessions/2026-10-16-t11-numerics-closeout.md).
 - 2026-10-14 T9/T9a: Implemented finite-area singlet exchange and integrated the Gibbs obstruction, exchange model/results, many-body connections, and projected-area derivation into the final 19-page manuscript. The PDF compiled with new citations resolved and was visually checked; see [manuscript session](sessions/2026-10-14-t9-manuscript-and-equilibrium.md), [T9a report](../results/t9a-singlet-exchange/README.md), and [illustrated thermal note](../notes/thermal-geometry-and-singlet-exchange.md).
 - 2026-10-13 T9: Measured ordinary per-copy closure over temperature and calculated area/positive-volume distributions after separate singlet projection. The projected mean area has high-temperature coefficient $57/14$; detailed checks and figures are in the closure reports and thermal note.
 - 2026-10-09 T11: Implemented the four-site Hamiltonian–volume pilot at $K=2,3,4$, added a dense $K=4$ thermal-volume crossover scan, and published the updated numerics dashboard. The live searchable catalogue contains 18 studies, including T11's 30 exact cases, plots, data, provenance, and claim limits. The run used the `qc-diff` Conda environment and generated five PDF/PNG figure pairs. Larger systems and physical volume calibration remain open.
 - 2026-10-08 T9 calculation close: Added the four-face $J_{\mathrm{in}}=1$ $P(q,S)$ calculation by two methods through $q=160$, method and coefficient checks, temperature plots, and the finite-temperature support result. Full two-copy reduced-state blocks, entropy, and geometry remain open; see [session record](sessions/2026-10-08-j1-spin-distribution.md).
 - 2026-10-08: Saved the thermal-area write-up and a transcript ending before the write-up request; organized Python, Rust, dashboard, Memory Bank tooling, shell workflows, and LaTeX sources under `code/`; moved calculation outputs to `results/` and research records/task specifications to `notes/`.
-- Active work remains T5c, T1a/T3c, T4, T5, T8, T9 and active child T9a; T6 is active for the open FL-covariance-to-polyhedron bridge.
+- Active work includes T5c, T1a/T3c, T4, T5, T8, T9/T9a and T11; T6 remains active for the open FL-covariance-to-polyhedron bridge.
 - Task files are reconciled against all 79 commits reachable from the repository refs at audit start: 29 current registry IDs have records. Transferred umbrellas T5f and T7 have separate archive records. Completed tasks are in `archive/`; active tasks are in `tasks/`.
 - Audit baseline: branch `main`, HEAD and `origin/main` at `0a254849a5e12734ee32d9d8af74bd4309d17648`. Pre-existing local numerical, dashboard, cache, and UI artifacts remain in the working tree.
 
@@ -31,7 +41,7 @@
 - T5c pilot update: weighted regular and unequal-skew input geometries reach $J=7$; the unequal-area grid covers $J=2,4$ plus selected $J=6$ points; a flat path covers $J=2,4,6,7$. Weighted closure and mean areas pass, but finite-$J$ unequal correlations do not exactly recover the input normals. At the exact flat boundary, calibrated positive volume remains finite in the sampled range; limit orders remain open. RS/AL calibrated curves coincide under the tested four-valent closure/sign convention and are not independent checks.
 - T7: Former thermal/TFD umbrella — archived as transferred; scientific work remains open under T9.
 - T9: Thermal/TFD state construction and physical study — 🔄 IN PROGRESS; owns all ongoing construction and analysis, with five completed historical child-study records T7a–T7e and active T9a. The earlier one-sided squeeze and conditional singlet pilot remain recorded. The selected target is the same-mode squeeze of conjugate FL intertwiners on both copies, with transformed geometric observables. Its $SU(1,1)$ factorization and coefficient-level partial-trace construction are written up. The October 13 follow-up quantifies ordinary per-copy closure and geometry after separate singlet projection. The separately closed F12 reference spectrum and entropy are now calculated across 86 temperatures; unprojected reduced states and general-input characterization remain open. See `tasks/T9.md`, `notes/thermal-area-sectors.md`, and the [October 13 session](sessions/2026-10-13-t9-thermal-closure-and-geometry.md).
-- T11: Four-site Hamiltonian–volume studies — 🔄 IN PROGRESS; the $K=4$ dense scan shows nonmonotonic $\langle V\rangle$ and a low-temperature complete-graph crossover tied to a $0.00923$ gap at $U/t=20$. The result remains a finite-size observation; larger systems and physical normalization remain open.
+- T11: Hamiltonian, volume and face/rotor dynamics — 🔄 IN PROGRESS; in addition to the $K=4$ dense scan and prepared-FL studies, NS32–36 now cover large-area face activation, small-area channel equilibration, classical rotor spreading, the exact pair mechanism, and coupling-dependent delayed release. No permanent transfer cutoff or quantum rotor result is established. The curated local dashboard package contains 30 studies and 39 datasets; data checks pass.
 - T8: Amplituhedron Program — 🔄 IN PROGRESS; T8a cluster algebra/chart relevance and T8b positive-cell/scattering-region mapping (former T5f) are open. See `tasks/T8.md`.
 - T1–T3e: Python/Rust implementation and corrected converged scan recorded; n=6 independent state check remains open.
 
@@ -67,6 +77,20 @@ Python and Rust implement RS and AL positive expectations by dense spectral deco
 
 T9 owns all thermal/TFD state construction and physical study. Its five completed child records T7a–T7e preserve their prior results and IDs. Gibbs TFD tends to the Fock vacuum at low temperature; fixed-$K$ T7e is beta-flat within its scope. The earlier $J=1,2$ pilot records positive RS/AL volumes, face diagnostics, entanglement, closure and cutoff comparisons for regular and unequal-skew inputs. The note also derives the occupation-sector and reduced-state coefficient framework, plots the exact $J=0$ vacuum, and includes the four-face $J_{\mathrm{in}}=1$ $P(q,S)$ calculation by two agreeing methods. The October 13 continuation quantifies ordinary per-copy closure and calculates the area and positive RS-volume distributions after separate singlet projection; the projected mean area has high-temperature coefficient $57/14$. The October 14 analytic ratio excludes every fixed single-copy canonical Hamiltonian for the separately closed reference family at the stated temperature. The separately closed F12 entropy is now calculated; unprojected reduced spectra and other-input characterization remain open. A fixed positive total-area Hamiltonian on unrestricted Fock space is also excluded by the different low-temperature limits. See `tasks/T9.md`, `notes/thermal-area-sectors.md`, the [closure reports](../results/thermal-closure-temperature/README.md), and the [projection report](../results/thermal-closed-projection/README.md).
 
+### T11: Hamiltonian, volume and face/rotor dynamics
+**Status:** 🔄 IN PROGRESS
+
+The $K=4$ quantum Hamiltonian–volume pilot and prepared-FL studies remain the
+original T11 foundation. The October 16 numerical continuation adds the small-
+area channel pilot and classical rotor studies. The latter cover packet
+spreading against microcanonical references, an exact planar-pair threshold,
+few-rotor topology controls, and a coupling scan with delayed release. The
+physics summary contains the numerical values and limits; no quantum rotor
+solver was run. The dashboard now contains 30 studies and 39 datasets; link,
+hash and saved-source parity checks pass. The curated package was published and
+passed hosted checks, recorded in `ui-tests/2026-10-16-numerics-dashboard-refresh.md`.
+Full trajectory archives remain local and are ignored by Git.
+
 ## Completed Foundation
 - Python pipeline and published EPJC paper.
 - Rust Fock/coherent/volume pipeline.
@@ -78,6 +102,11 @@ T9 owns all thermal/TFD state construction and physical study. Its five complete
 The pilot is calculated on complete and ring graphs for $K=2,3,4$ in the exact singlet space. It includes no hopping, free hopping, and $U/t=1,5,20$; Gibbs volume and active-site distributions; ground-state pair correlations and site-0 entropy; and the full projected $[H,V]$. The beta-zero active-site probabilities match exact kinematic counting. The onsite commutator residual is at most $2.3\times10^{-16}$ and edge–triple reconstruction residual at most $7.2\times10^{-15}$. The four connected triple roots agree on this support. Physical normalization, larger systems, optional spin exchange, and the rest of the proposed program remain open. See `tasks/T11.md` and `notes/hamiltonian-studies.md`.
 
 ## Session History
+- 2026-10-16: Added T11 NS33–36 for channel and rotor equilibration, exact pair
+  transfer, coupling crossover and delayed release; rebuilt and checked the
+  curated local dashboard package. See [physics
+  handoff](sessions/2026-10-16-equilibration-and-rotors-summary.md) and [T11
+  closeout](sessions/2026-10-16-t11-numerics-closeout.md).
 - 2026-10-14: Manuscript closure correction, temperature results/plots, PDF compilation, analytic Gibbs obstruction, and proposed closure-preserving singlet interactions. See [October 14 session](sessions/2026-10-14-t9-manuscript-and-equilibrium.md). T4 ownership corrected to the separate numerical follow-up.
 - 2026-10-13: Extended T9 with the ordinary-closure temperature sweep and separately closed geometric study. See [session record](sessions/2026-10-13-t9-thermal-closure-and-geometry.md).
 - 2026-10-13: Published the desktop note-reader fix in website commit `3c1edad`; live review confirmed four visible tabs, full-width desktop note reading, rendered Markdown/math, and working chronology links. See [session record](sessions/2026-10-13-infodash-desktop-note-reader.md). No numerical work was rerun.
@@ -233,7 +262,7 @@ The new [heating, equilibrium and exchange note](../notes/thermal-geometry-and-s
 The 19-page thermal-intertwiners manuscript now includes the fixed-Gibbs eigenvalue-ratio obstruction, singlet-transfer Hamiltonian/current and finite-pilot results, many-body analogies, and the exact projected-area asymptote derivation. Figures 9–12 are present; new bibliography entries resolve. The PDF compiled and pages 12–17 were visually checked. Existing older layout warnings remain. No new numerical simulation was run for this writing update; T9a's 46-test and independent-propagation evidence is recorded in its task and results report.
 
 
-## Local completion: face activation control and dashboard
+## Local completion: face activation control and dashboard — earlier package state
 
 Completed 20 free-hopping FL controls (five/six channels, K=2..10000, two phase
 choices), with exact binomial face marginals and 360 independent comparisons

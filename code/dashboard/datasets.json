@@ -1,6 +1,30 @@
 {
   "datasets": [
     {
+      "id": "t11-channel-equilibration",
+      "title": "Small-area face-channel equilibration pilot",
+      "path": "datasets/t11-channel-equilibration.json",
+      "cases": 12
+    },
+    {
+      "id": "classical-rotor-equilibration",
+      "title": "Classical rotor spreading and equilibrium comparison",
+      "path": "datasets/classical-rotor-equilibration.json",
+      "cases": 24
+    },
+    {
+      "id": "few-rotor-energy-transfer",
+      "title": "Few-rotor transfer: planar bound and 3D controls",
+      "path": "datasets/few-rotor-energy-transfer.json",
+      "cases": 27
+    },
+    {
+      "id": "rotor-coupling-crossover",
+      "title": "Rotor coupling crossover and delayed release",
+      "path": "datasets/rotor-coupling-crossover.json",
+      "cases": 64
+    },
+    {
       "id": "fl-face-activation",
       "title": "Large-area tetrahedron: face activation and recurrence",
       "path": "datasets/fl-face-activation.json",

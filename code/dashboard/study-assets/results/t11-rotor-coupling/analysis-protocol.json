@@ -1,0 +1,18 @@
+{
+  "predefined_primary": "per-seed significant>=10%, suppressed<=1% mean cold kinetic energy / initial packet; grid brackets only",
+  "secondary_added_after_inspection": "half-response location, relative to each seed/N mean transfer at r2,4,6,8,10; separates main drop from weak tails",
+  "windows": [
+    1000,
+    2000
+  ],
+  "sensitivity_thresholds": [
+    0.005,
+    0.01,
+    0.02,
+    0.05,
+    0.1
+  ],
+  "interpolation": "none; no fitted critical exponent or assumed phase transition",
+  "coupling_scale": "E_packet bracket=lambda*r bracket for dimensionless time and matched initial dimensionless data",
+  "control_comparison": "direct lambda5,10 runs at fixed packet100 versus normalized r20,10; compare early trajectories and late means separately"
+}

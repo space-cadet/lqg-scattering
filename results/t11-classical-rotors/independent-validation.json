@@ -1,0 +1,18 @@
+{
+  "archives": 72,
+  "scalar_comparisons": 12399912,
+  "maximum_residuals": {
+    "local_energy_sum": 1.1368683772161603e-12,
+    "negative_local_energy": 0.0,
+    "concentration_formula": 8.881784197001252e-16,
+    "hot_pair_formula": 0.0,
+    "orientation_norm": 3.2673863614718357e-13,
+    "tangency": 4.6629367034256575e-14,
+    "total_J": 5.698802540976544e-12,
+    "endpoint_energy": 7.958078640513122e-13,
+    "endpoint_local_energies": 5.684341886080802e-14,
+    "microcanonical_energy": 1.7763568394002505e-15,
+    "microcanonical_local_sum": 7.958078640513122e-13,
+    "microcanonical_constraints": 8.473525858756743e-14
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "task": "T11",
+  "model": "3D linear rotors, H=sum J_i^2/2 + sum_ring(1-q_i.q_j); I=lambda=1",
+  "rotor_counts": [
+    8,
+    16,
+    32,
+    64
+  ],
+  "ratios": [
+    1.0,
+    10.0,
+    100.0
+  ],
+  "scalings": [
+    "fixed_packet",
+    "fixed_density"
+  ],
+  "seeds": [
+    1701,
+    1702,
+    1703
+  ],
+  "packet_energy": "ratio for fixed_packet; ratio*N/8 for fixed_density. Actual total energy also includes small initial potential.",
+  "initialization": "q_i=normalize(e_z+0.05*N(0,1)); only J0=-J1=sqrt(packet_energy)*normalize(q0 cross q1)",
+  "constraints": "unit orientations; q_i.J_i=0; total J=0; energy conserved. Total area is NOT constrained.",
+  "duration": 2000.0,
+  "sample_interval": 0.5,
+  "step": "dt<=.01/sqrt(max(1,packet_energy/10)), rounded to divide sample interval",
+  "seeds_policy": "same orientation seed across ratios and scalings; N8 scaling cases are identical controls",
+  "integrator": "Strang kick-drift-kick; exact Rodrigues free rotations; no renormalization during evolution",
+  "windows": [
+    [
+      200.0,
+      1000.0
+    ],
+    [
+      200.0,
+      2000.0
+    ]
+  ],
+  "microcanonical": {
+    "chains": 2,
+    "burn_sweeps": 4000,
+    "samples_per_chain": 4000,
+    "thin_sweeps": 4,
+    "q_weight": "det B^(-1/2)*(E-V)^(N-5/2), B=sum(I-q_i q_i^T)",
+    "momentum": "independent tangent Gaussian, projection to total J=0, radial scaling to kinetic energy E-V",
+    "convergence": "split Rhat<=1.05 for kinetic fraction, hot fraction and concentration; block errors also reported",
+    "warning": "Rhat is a diagnostic, not a proof of mixing; references with larger Rhat are flagged"
+  },
+  "local_energy": "J_i^2/2 + half of each adjacent bond potential; sums to conserved H",
+  "distance": "max absolute discrepancy of hot-pair fraction, kinetic fraction and normalized participation 1/(N*sum(e_i/E)^2) from microcanonical means",
+  "residence_thresholds": [
+    0.02,
+    0.05,
+    0.1
+  ],
+  "energy_drift_limit": 0.0005,
+  "scope": "classical preliminary finite-time study; no quantum, fixed-area or geometry claim",
+  "git_head": "2dcb47d02b345b199a5fc4456e90841626031b4c"
+}
