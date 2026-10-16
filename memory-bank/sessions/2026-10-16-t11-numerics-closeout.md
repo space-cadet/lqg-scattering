@@ -48,3 +48,18 @@ The canonical edit chunk was created. The generated
 `memory-bank/edit_history.md` view was left intact because the project database
 is absent and rebuilding from the available chunks would omit historical
 entries that the current view still contains.
+
+## Publication follow-up — 2026-10-16 13:28:54 IST
+
+Website content commit `8599947d6da3cb99f1e509bf1dc6e68065384562` and cache
+refresh `37971d1308a1ae608c46424378413c73e9ea3d47` both deployed successfully
+in workflows `38866682872` and `38867408128`. The cache update makes returning
+browsers fetch current dashboard data and selector metadata. The live route
+lists 39 datasets and an overview of 47 runs, 12 tasks and 49 figures. The
+face-activation summary, three rotor studies, and T9/T9a curated tables and
+figures appeared publicly. Desktop and 390 x 844 checks passed without overflow;
+see the [hosted acceptance record](../ui-tests/2026-10-16-numerics-dashboard-refresh.md).
+
+The research Memory Bank has no complete database source for its generated
+edit-history view, so this closeout is recorded in its canonical edit chunk and
+the existing view is preserved.

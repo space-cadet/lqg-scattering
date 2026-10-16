@@ -81,3 +81,19 @@ packaged notes, and supports chronology anchors such as `#ns01`. Website commit
 `3c1edad` deployed the responsive reader; cache-busted app scripts use
 `?v=20261013-2`. Live review confirmed all four tabs remain visible and note
 content, math, and internal chronology links work. See the [session record](../sessions/2026-10-13-infodash-desktop-note-reader.md).
+
+## Curated publication refresh — 2026-10-16
+
+The live package now includes 30 catalogue studies and 39 selectable datasets.
+The curated face-activation result keeps its 20-case summary, key figure, and
+note. T9/T9a expose selected summary tables and figures. Rotor exports use
+grouped summaries and representative cases with series separated by rotor
+count, coupling or energy ratio, and control/observation type. Full trajectory
+archives stay local. The local checker reports 620 links and 314 hashes; source
+parity covers 2,512 rows and 34,766 numerical values.
+
+Website commit `8599947d6da3cb99f1e509bf1dc6e68065384562` published the content.
+Follow-up commit `37971d1308a1ae608c46424378413c73e9ea3d47` set dashboard data
+fetches to bypass stale browser cache for the overview and dataset selector.
+Both deploys succeeded; the live route lists 39 datasets and shows 47 runs,
+12 tasks, and 49 figures. See the [hosted acceptance record](../ui-tests/2026-10-16-numerics-dashboard-refresh.md).

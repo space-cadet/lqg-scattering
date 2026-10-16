@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-10-16
+- Published the curated 30-study, 39-dataset numerics dashboard, including face activation, selected T9/T9a summaries, and grouped rotor results. Added a cache refresh for returning browsers; both website deployments and live desktop/mobile checks passed. Raw rotor histories remain local.
+
 ## 2026-10-14
 - Added T9a under explicit user authorization and implemented the two-polyhedron FL singlet-exchange pilot, ground-space mixtures and canonical controls. Reconciled stale T11 prepared-evolution documentation. See [study plan](../notes/t9a-singlet-exchange.md).
 - Completed the final T9 manuscript integration: added the Gibbs obstruction, singlet-exchange model/results, many-body connections and projected-area appendix. The 19-page PDF compiled with citations resolved and was visually checked.

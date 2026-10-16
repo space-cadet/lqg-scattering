@@ -1,6 +1,6 @@
 # Session Cache
 
-*Last Updated: 2026-10-16 12:40:16 IST*
+*Last Updated: 2026-10-16 13:28:54 IST*
 
 ## Overview
 - 2026-10-16 T9/T11: Closed-reference entropy and 20 free-hopping face-activation
@@ -9,10 +9,11 @@
   equilibrium despite recurrence. Record the discussion and many-body precedents
   in [physics transcript](sessions/2026-10-16-face-thermalization-transcript.md);
   see also [T9 entropy session](sessions/2026-10-16-t9-entanglement.md) and
-  [face-energy note](../notes/face-energy-equipartition.md). Dashboard remains
-  local by user choice. The face-energy note now includes the many-body
-  equilibration/recurrence discussion; its local dashboard copy was rebuilt and
-  browser checked with no math or console errors.
+  [face-energy note](../notes/face-energy-equipartition.md). The later authorized
+  dashboard publication is complete; hosted details are in the
+  [acceptance record](ui-tests/2026-10-16-numerics-dashboard-refresh.md). The
+  face-energy note's local dashboard copy was rebuilt and browser checked with
+  no math or console errors.
 - 2026-10-16 T11: Added NS33–36 for the small-area quantum channel pilot,
   classical rotor equilibration, the exact planar pair and few-rotor controls,
   and the ring coupling crossover with delayed release. Moderate packets match
@@ -86,10 +87,12 @@ area channel pilot and classical rotor studies. The latter cover packet
 spreading against microcanonical references, an exact planar-pair threshold,
 few-rotor topology controls, and a coupling scan with delayed release. The
 physics summary contains the numerical values and limits; no quantum rotor
-solver was run. The dashboard now contains 30 studies and 39 datasets; link,
-hash and saved-source parity checks pass. The curated package was published and
-passed hosted checks, recorded in `ui-tests/2026-10-16-numerics-dashboard-refresh.md`.
-Full trajectory archives remain local and are ignored by Git.
+solver was run. The dashboard contains 30 studies and 39 datasets; link, hash and saved-source
+parity checks pass. Website commits `8599947` and `37971d1` deployed the
+curated package and data-cache refresh; the public route and desktop/mobile
+layouts passed hosted checks. See
+`ui-tests/2026-10-16-numerics-dashboard-refresh.md`. Full trajectory archives
+remain local and are ignored by Git.
 
 ## Completed Foundation
 - Python pipeline and published EPJC paper.
@@ -103,10 +106,11 @@ The pilot is calculated on complete and ring graphs for $K=2,3,4$ in the exact s
 
 ## Session History
 - 2026-10-16: Added T11 NS33–36 for channel and rotor equilibration, exact pair
-  transfer, coupling crossover and delayed release; rebuilt and checked the
-  curated local dashboard package. See [physics
-  handoff](sessions/2026-10-16-equilibration-and-rotors-summary.md) and [T11
-  closeout](sessions/2026-10-16-t11-numerics-closeout.md).
+  transfer, coupling crossover and delayed release; rebuilt the curated local
+  package and published it with a returning-browser cache refresh. See the
+  [physics handoff](sessions/2026-10-16-equilibration-and-rotors-summary.md),
+  [T11 closeout](sessions/2026-10-16-t11-numerics-closeout.md), and
+  [hosted acceptance](ui-tests/2026-10-16-numerics-dashboard-refresh.md).
 - 2026-10-14: Manuscript closure correction, temperature results/plots, PDF compilation, analytic Gibbs obstruction, and proposed closure-preserving singlet interactions. See [October 14 session](sessions/2026-10-14-t9-manuscript-and-equilibrium.md). T4 ownership corrected to the separate numerical follow-up.
 - 2026-10-13: Extended T9 with the ordinary-closure temperature sweep and separately closed geometric study. See [session record](sessions/2026-10-13-t9-thermal-closure-and-geometry.md).
 - 2026-10-13: Published the desktop note-reader fix in website commit `3c1edad`; live review confirmed four visible tabs, full-width desktop note reading, rendered Markdown/math, and working chronology links. See [session record](sessions/2026-10-13-infodash-desktop-note-reader.md). No numerical work was rerun.

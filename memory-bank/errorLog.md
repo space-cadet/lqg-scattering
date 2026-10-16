@@ -67,3 +67,15 @@ Monitoring context usage. Will manually start new session with resume prompt if 
 - None (tooling limitation)
 
 **Related Task:** T3 (all subtasks)
+
+## 2026-10-16 13:28:54 IST: T11 - Stale dashboard data in returning browsers
+
+**Error:** A previously opened dashboard could retain stale overview and dataset-selector data after a successful publication.
+
+**Cause:** The browser reused cached dashboard JSON and manifest responses.
+
+**Fix:** Website commit §37971d1308a1ae608c46424378413c73e9ea3d47§ changed the dashboard data fetches to bypass the stale cache. The deployment succeeded and the cache-busted public route showed all 39 datasets.
+
+**Affected area:** §projects/scattering-in-lqg/numerics/§ in the website repository.
+
+**Related task:** T11. See [hosted acceptance](ui-tests/2026-10-16-numerics-dashboard-refresh.md).
