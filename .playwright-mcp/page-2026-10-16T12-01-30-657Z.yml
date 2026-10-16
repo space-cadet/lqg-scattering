@@ -1,0 +1,1349 @@
+- generic [ref=f3e2]:
+  - navigation "Numerical datasets" [ref=f3e3]:
+    - generic [ref=f3e4]: Numerical study
+    - combobox "Numerical study" [ref=f3e5]:
+      - option "All studies — overview"
+      - option "Small-area face-channel equilibration pilot (12 rows)"
+      - option "Classical rotor spreading and equilibrium comparison (24 rows)"
+      - 'option "Few-rotor transfer: planar bound and 3D controls (27 rows)"'
+      - option "Rotor coupling crossover and delayed release (64 rows)"
+      - 'option "Large-area tetrahedron: face activation and recurrence (20 rows)"'
+      - option "Entanglement of separately closed thermal polyhedra (86 rows)"
+      - option "Ordinary closure versus temperature (125 rows)"
+      - option "Heating separately closed area and positive RS volume (85 rows)"
+      - option "Singlet exchange between closed FL polyhedra (20 rows)"
+      - 'option "Four versus five sites: thermal-volume persistence (12 rows)"'
+      - option "Prepared tetrahedral FL states and the volume crossover (11 rows)"
+      - option "Candidate geometric Hamiltonians and prepared-FL dynamics (62 rows)"
+      - option "Four-site Hamiltonian spectra and RS-volume observables (30 rows)"
+      - option "Complete four-face closed-basis volumes (11 rows)"
+      - option "Variable-face positive RS catalogue (9 rows)"
+      - option "Squeezed-vacuum area coefficients (964 rows)"
+      - option "Squeezed-vacuum resultant spin (196 rows)"
+      - option "Excited J_in=1 joint area and spin (5 rows)"
+      - option "Higher-J flat-boundary probes (13 rows)"
+      - option "Magnetization and signed-grasp correlations (10 rows)"
+      - option "Local-chirality pilot (13 rows)"
+      - option "Imaginary-perturbation response (26 rows)"
+      - option "Cocycle-phase pilot (10 rows)"
+      - option "Large-K recorded families and fits (13 rows)"
+      - option "Historical single-copy thermal pilot (14 rows)"
+      - option "Historical energy-basis TFD pilot (14 rows)"
+      - option "Historical complexified purification (10 rows)"
+      - option "Small-sector thermal geometry audit (4 rows)"
+      - option "RS/AL volume-prescription controls (2 rows)"
+      - option "Initial covariance reconstruction pilot (6 rows)"
+      - option "Quantum planar-rotor transfer at zero total momentum (NS37) (2 rows)"
+      - option "Closed and open four-to-five-to-six channel transitions (NS38) (30 rows)" [selected]
+      - option "Exact-singlet geometric area redistribution (NS39–NS40) (54 rows)"
+      - option "Prepared FL evolution sampling (50 rows)"
+      - option "Positive volumes on two real-plane states (2 rows)"
+      - option "FL covariance shape recovery (84 rows)"
+      - option "Weighted FL input geometry and volumes (14 rows)"
+      - option "Regular FL volume versus area (5 rows)"
+      - option "Equal-area FL shape scan at J=2 (440 rows)"
+      - option "Same-number detachment energies (8 rows)"
+      - option "Closed and open state evolution probes (6 rows)"
+      - option "Constructive edge sewing probes (5 rows)"
+  - heading "Closed and open four-to-five-to-six channel transitions (NS38)" [level=1] [ref=f3e6]
+  - paragraph [ref=f3e7]: The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.
+  - generic [ref=f3e8]:
+    - generic [ref=f3e9]:
+      - generic [ref=f3e10]: "30"
+      - generic [ref=f3e11]: Total Runs
+    - generic [ref=f3e12]:
+      - generic [ref=f3e13]: "0"
+      - generic [ref=f3e14]: Tasks
+    - generic [ref=f3e15]:
+      - generic [ref=f3e16]: "30"
+      - generic [ref=f3e17]: Complete
+    - generic [ref=f3e18]:
+      - generic [ref=f3e19]: "0"
+      - generic [ref=f3e20]: Figures
+  - tablist "Dashboard sections" [ref=f3e21]:
+    - tab "Runs & Studies" [ref=f3e22] [cursor=pointer]
+    - tab "Figure Archive" [ref=f3e23] [cursor=pointer]
+    - tab "Charts" [ref=f3e24] [cursor=pointer]
+    - tab "Tasks & Numerical Notes" [selected] [ref=f3e25] [cursor=pointer]
+  - tabpanel "Tasks & Numerical Notes" [ref=f3e731]:
+    - heading "Tasks and Numerical Notes" [level=2] [ref=f3e732]
+    - region [ref=f3e734]:
+      - heading "Documentation" [level=3] [ref=f3e735]
+      - generic [ref=f3e736]:
+        - article [ref=f3e737]:
+          - group [ref=f3e738]:
+            - generic "Face activation connectivity Explanation and calculation record for this study. Open note" [active] [ref=f3e739] [cursor=pointer]:
+              - generic [ref=f3e740]: Face activation connectivity
+              - generic [ref=f3e741]: Explanation and calculation record for this study.
+              - generic [ref=f3e742]: Open note
+          - link "Download Markdown" [ref=f3e743] [cursor=pointer]:
+            - /url: http://127.0.0.1:8767/study-assets/notes/face-activation-connectivity.txt
+        - article [ref=f3e744]:
+          - group [ref=f3e745]:
+            - generic "Quantum geometry research Explanation and calculation record for this study. Open note" [ref=f3e746] [cursor=pointer]:
+              - generic [ref=f3e747]: Quantum geometry research
+              - generic [ref=f3e748]: Explanation and calculation record for this study.
+              - generic [ref=f3e749]: Open note
+          - link "Download Markdown" [ref=f3e750] [cursor=pointer]:
+            - /url: http://127.0.0.1:8767/study-assets/notes/quantum-geometry-research.txt
+        - article [ref=f3e751]:
+          - generic [ref=f3e752]:
+            - link "Numerical studies overview" [ref=f3e754] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/index.html
+            - paragraph
+      - region "Selected numerical note" [ref=f3e755]:
+        - generic [ref=f3e756]:
+          - button "All documents" [ref=f3e757] [cursor=pointer]
+          - heading "Face activation connectivity" [level=4] [ref=f3e758]
+          - link "Download Markdown" [ref=f3e759] [cursor=pointer]:
+            - /url: http://127.0.0.1:8767/study-assets/notes/face-activation-connectivity.txt
+        - generic [ref=f3e760]:
+          - heading "Can a closed four-face state connect to five or six faces?" [level=1] [ref=f3e761]
+          - paragraph [ref=f3e762]:
+            - link "Research map" [ref=f3e763] [cursor=pointer]:
+              - /url: "#note-quantum-geometry-research"
+            - text: "· Related:"
+            - link "quantum planar rotor energy transfer" [ref=f3e764] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/notes/quantum-planar-rotor-energy-transfer.txt
+            - text: ","
+            - link "geometric area redistribution" [ref=f3e765] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/notes/geometric-area-redistribution.txt
+            - text: .
+          - paragraph [ref=f3e766]:
+            - emphasis [ref=f3e767]: Hamiltonian connectivity before time evolution, October 16, 2026.
+          - paragraph [ref=f3e768]: Before asking how quickly area spreads, we should check that the proposed Hamiltonian allows the required transitions at all. Does it connect states with area on four channels to states with area on five or six, and does imposing geometric closure prevent those connections?
+          - paragraph [ref=f3e769]:
+            - text: "The answer is yes: both the full fixed-number space and its exactly closed singlet subspace contain explicit four-to-five-to-six transitions. The calculation below establishes the required operator connections. The subsequent"
+            - link "dynamical study" [ref=f3e770] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/notes/geometric-area-redistribution.txt
+            - text: measures how strongly these channels become populated.
+          - heading "What changes and what stays fixed" [level=2] [ref=f3e771]
+          - paragraph [ref=f3e772]: Each channel has two Schwinger modes, with
+          - generic [ref=f3e776]:
+            - math [ref=f3e778]:
+              - generic [ref=f3e780]:
+                - generic [ref=f3e781]:
+                  - generic [ref=f3e782]: "n"
+                  - generic [ref=f3e783]: i
+                - generic [ref=f3e784]: =
+                - generic [ref=f3e785]:
+                  - generic [ref=f3e786]: a
+                  - generic [ref=f3e787]: i
+                  - generic [ref=f3e788]: †
+                - generic [ref=f3e789]:
+                  - generic [ref=f3e790]: a
+                  - generic [ref=f3e791]: i
+                - generic [ref=f3e792]: +
+                - generic [ref=f3e793]:
+                  - generic [ref=f3e794]: b
+                  - generic [ref=f3e795]: i
+                  - generic [ref=f3e796]: †
+                - generic [ref=f3e797]:
+                  - generic [ref=f3e798]: b
+                  - generic [ref=f3e799]: i
+                - generic [ref=f3e800]: ","
+                - generic [ref=f3e801]:
+                  - generic [ref=f3e802]: j
+                  - generic [ref=f3e803]: i
+                - generic [ref=f3e804]: =
+                - generic [ref=f3e805]:
+                  - generic [ref=f3e806]:
+                    - generic [ref=f3e807]: "n"
+                    - generic [ref=f3e808]: i
+                  - generic [ref=f3e809]: "2"
+                - generic [ref=f3e810]: ","
+                - generic [ref=f3e811]:
+                  - generic [ref=f3e812]: J
+                  - generic [ref=f3e813]: i
+                  - generic [ref=f3e814]: "2"
+                - generic [ref=f3e815]: =
+                - generic [ref=f3e816]:
+                  - generic [ref=f3e817]:
+                    - generic [ref=f3e818]:
+                      - generic [ref=f3e819]: "n"
+                      - generic [ref=f3e820]: i
+                    - generic [ref=f3e821]: (
+                    - generic [ref=f3e822]:
+                      - generic [ref=f3e823]: "n"
+                      - generic [ref=f3e824]: i
+                    - generic [ref=f3e825]: +
+                    - generic [ref=f3e826]: "2"
+                    - generic [ref=f3e827]: )
+                  - generic [ref=f3e828]: "4"
+                - generic [ref=f3e829]: .
+            - generic [aria-hidden] [ref=f3e830]:
+              - generic [ref=f3e831]:
+                - generic [ref=f3e832]:
+                  - text: "n"
+                  - generic [ref=f3e833]: i
+                - text: =
+              - generic [ref=f3e841]:
+                - generic [ref=f3e842]:
+                  - text: a
+                  - generic [ref=f3e846]:
+                    - generic [ref=f3e847]: i
+                    - generic [ref=f3e848]: †
+                - generic [ref=f3e852]:
+                  - text: a
+                  - generic [ref=f3e853]: i
+                - text: +
+              - generic [ref=f3e861]:
+                - generic [ref=f3e862]:
+                  - text: b
+                  - generic [ref=f3e866]:
+                    - generic [ref=f3e867]: i
+                    - generic [ref=f3e868]: †
+                - generic [ref=f3e872]:
+                  - text: b
+                  - generic [ref=f3e873]: i
+                - text: ","
+                - generic [ref=f3e881]:
+                  - text: j
+                  - generic [ref=f3e882]: i
+                - text: =
+              - generic [ref=f3e890]:
+                - generic [ref=f3e895]:
+                  - generic [ref=f3e896]: "2"
+                  - generic [ref=f3e899]:
+                    - text: "n"
+                    - generic [ref=f3e900]: i
+                - text: ","
+                - generic [ref=f3e911]:
+                  - text: J
+                  - generic [ref=f3e915]:
+                    - generic [ref=f3e916]: i
+                    - generic [ref=f3e917]: "2"
+                - text: =
+              - generic [ref=f3e921]:
+                - generic [ref=f3e926]:
+                  - generic [ref=f3e927]: "4"
+                  - generic [ref=f3e929]:
+                    - generic [ref=f3e930]:
+                      - text: "n"
+                      - generic [ref=f3e931]: i
+                    - text: (
+                    - generic [ref=f3e939]:
+                      - text: "n"
+                      - generic [ref=f3e940]: i
+                    - text: + 2)
+                - text: .
+          - paragraph [ref=f3e951]:
+            - text: We set
+            - generic [ref=f3e954]:
+              - math [ref=f3e956]:
+                - generic [ref=f3e958]:
+                  - generic [ref=f3e959]: ℏ
+                  - generic [ref=f3e960]: =
+                  - generic [ref=f3e961]: "1"
+              - generic [aria-hidden] [ref=f3e962]:
+                - generic [ref=f3e963]: ℏ =
+                - generic [ref=f3e964]: "1"
+            - text: . A channel is active when
+            - generic [ref=f3e967]:
+              - math [ref=f3e969]:
+                - generic [ref=f3e971]:
+                  - generic [ref=f3e972]:
+                    - generic [ref=f3e973]: "n"
+                    - generic [ref=f3e974]: i
+                  - generic [ref=f3e975]: ">"
+                  - generic [ref=f3e976]: "0"
+              - generic [aria-hidden] [ref=f3e977]:
+                - generic [ref=f3e978]:
+                  - generic [ref=f3e979]:
+                    - text: "n"
+                    - generic [ref=f3e980]: i
+                  - text: ">"
+                - generic [ref=f3e988]: "0"
+            - text: . The fixed linear area is
+            - generic [ref=f3e991]:
+              - math [ref=f3e993]:
+                - generic [ref=f3e995]:
+                  - generic [ref=f3e996]: K
+                  - generic [ref=f3e997]: =
+                  - generic [ref=f3e998]:
+                    - generic [ref=f3e999]: ∑
+                    - generic [ref=f3e1000]: i
+                  - generic [ref=f3e1001]:
+                    - generic [ref=f3e1002]: j
+                    - generic [ref=f3e1003]: i
+                  - generic [ref=f3e1004]: =
+                  - generic [ref=f3e1005]:
+                    - generic [ref=f3e1006]: "N"
+                    - generic [ref=f3e1007]: b
+                  - generic [ref=f3e1008]: /
+                  - generic [ref=f3e1009]: "2"
+              - generic [aria-hidden] [ref=f3e1010]:
+                - generic [ref=f3e1011]: K =
+                - generic [ref=f3e1012]:
+                  - generic [ref=f3e1013]:
+                    - text: ∑
+                    - generic [ref=f3e1014]: i
+                  - generic [ref=f3e1022]:
+                    - text: j
+                    - generic [ref=f3e1023]: i
+                  - text: =
+                - generic [ref=f3e1031]:
+                  - generic [ref=f3e1032]:
+                    - text: "N"
+                    - generic [ref=f3e1033]: b
+                  - text: /2
+            - text: . This is the repository's linear-area convention;
+            - generic [ref=f3e1043]:
+              - math [ref=f3e1045]:
+                - generic [ref=f3e1047]:
+                  - generic [ref=f3e1048]:
+                    - generic [ref=f3e1049]: ∑
+                    - generic [ref=f3e1050]: i
+                  - generic [ref=f3e1052]:
+                    - generic [ref=f3e1053]:
+                      - generic [ref=f3e1054]: j
+                      - generic [ref=f3e1055]: i
+                    - generic [ref=f3e1056]: (
+                    - generic [ref=f3e1057]:
+                      - generic [ref=f3e1058]: j
+                      - generic [ref=f3e1059]: i
+                    - generic [ref=f3e1060]: +
+                    - generic [ref=f3e1061]: "1"
+                    - generic [ref=f3e1062]: )
+              - generic [ref=f3e1064]:
+                - generic [ref=f3e1065]:
+                  - text: ∑
+                  - generic [ref=f3e1066]: i
+                - generic [ref=f3e1078]:
+                  - generic [ref=f3e1079]:
+                    - text: j
+                    - generic [ref=f3e1080]: i
+                  - text: (
+                  - generic [ref=f3e1088]:
+                    - text: j
+                    - generic [ref=f3e1089]: i
+                  - text: + 1)
+            - text: is a different area observable and is not generally conserved by the hopping term.
+          - paragraph [ref=f3e1103]: We test
+          - generic [ref=f3e1107]:
+            - math [ref=f3e1109]:
+              - generic [ref=f3e1111]:
+                - generic [ref=f3e1112]: H
+                - generic [ref=f3e1113]: =
+                - generic [ref=f3e1114]: α
+                - generic [ref=f3e1115]:
+                  - generic [ref=f3e1116]: ∑
+                  - generic [ref=f3e1117]: i
+                - generic [ref=f3e1118]:
+                  - generic [ref=f3e1119]: J
+                  - generic [ref=f3e1120]: i
+                  - generic [ref=f3e1121]: "2"
+                - generic [ref=f3e1122]: −
+                - generic [ref=f3e1123]: t
+                - generic [ref=f3e1124]:
+                  - generic [ref=f3e1125]: ∑
+                  - generic [ref=f3e1126]:
+                    - generic [ref=f3e1127]: ⟨
+                    - generic [ref=f3e1128]: i
+                    - generic [ref=f3e1129]: j
+                    - generic [ref=f3e1130]: ⟩
+                - generic [ref=f3e1131]: (
+                - generic [ref=f3e1132]:
+                  - generic [ref=f3e1133]: E
+                  - generic [ref=f3e1134]:
+                    - generic [ref=f3e1135]: i
+                    - generic [ref=f3e1136]: j
+                - generic [ref=f3e1137]: +
+                - generic [ref=f3e1138]:
+                  - generic [ref=f3e1139]: E
+                  - generic [ref=f3e1140]:
+                    - generic [ref=f3e1141]: j
+                    - generic [ref=f3e1142]: i
+                - generic [ref=f3e1143]: )
+                - generic [ref=f3e1144]: ","
+                - generic [ref=f3e1145]:
+                  - generic [ref=f3e1146]: E
+                  - generic [ref=f3e1147]:
+                    - generic [ref=f3e1148]: i
+                    - generic [ref=f3e1149]: j
+                - generic [ref=f3e1150]: =
+                - generic [ref=f3e1151]:
+                  - generic [ref=f3e1152]: a
+                  - generic [ref=f3e1153]: i
+                  - generic [ref=f3e1154]: †
+                - generic [ref=f3e1155]:
+                  - generic [ref=f3e1156]: a
+                  - generic [ref=f3e1157]: j
+                - generic [ref=f3e1158]: +
+                - generic [ref=f3e1159]:
+                  - generic [ref=f3e1160]: b
+                  - generic [ref=f3e1161]: i
+                  - generic [ref=f3e1162]: †
+                - generic [ref=f3e1163]:
+                  - generic [ref=f3e1164]: b
+                  - generic [ref=f3e1165]: j
+                - generic [ref=f3e1166]: .
+            - generic [aria-hidden] [ref=f3e1167]:
+              - generic [ref=f3e1168]: H =
+              - generic [ref=f3e1169]:
+                - text: α
+                - generic [ref=f3e1173]:
+                  - generic [ref=f3e1174]: i
+                  - generic [ref=f3e1175]: ∑
+                - generic [ref=f3e1179]:
+                  - text: J
+                  - generic [ref=f3e1183]:
+                    - generic [ref=f3e1184]: i
+                    - generic [ref=f3e1185]: "2"
+                - text: −
+              - generic [ref=f3e1189]:
+                - text: t
+                - generic [ref=f3e1193]:
+                  - generic [ref=f3e1194]: ⟨ij⟩
+                  - generic [ref=f3e1196]: ∑
+                - text: (
+                - generic [ref=f3e1200]:
+                  - text: E
+                  - generic [ref=f3e1201]: ij
+                - text: +
+              - generic [ref=f3e1210]:
+                - generic [ref=f3e1211]:
+                  - text: E
+                  - generic [ref=f3e1212]: ji
+                - text: ),
+                - generic [ref=f3e1221]:
+                  - text: E
+                  - generic [ref=f3e1222]: ij
+                - text: =
+              - generic [ref=f3e1231]:
+                - generic [ref=f3e1232]:
+                  - text: a
+                  - generic [ref=f3e1236]:
+                    - generic [ref=f3e1237]: i
+                    - generic [ref=f3e1238]: †
+                - generic [ref=f3e1242]:
+                  - text: a
+                  - generic [ref=f3e1243]: j
+                - text: +
+              - generic [ref=f3e1251]:
+                - generic [ref=f3e1252]:
+                  - text: b
+                  - generic [ref=f3e1256]:
+                    - generic [ref=f3e1257]: i
+                    - generic [ref=f3e1258]: †
+                - generic [ref=f3e1262]:
+                  - text: b
+                  - generic [ref=f3e1263]: j
+                - text: .
+          - paragraph [ref=f3e1271]:
+            - text: "The Casimir term is diagonal in the local occupations. It cannot activate an empty channel. The hopping term can:"
+            - generic [ref=f3e1274]:
+              - math [ref=f3e1276]:
+                - generic [ref=f3e1279]:
+                  - generic [ref=f3e1280]: E
+                  - generic [ref=f3e1281]:
+                    - generic [ref=f3e1282]: i
+                    - generic [ref=f3e1283]: j
+              - generic [ref=f3e1286]:
+                - text: E
+                - generic [ref=f3e1287]: ij
+            - text: takes one boson from
+            - generic [ref=f3e1298]:
+              - math [ref=f3e1300]:
+                - generic [ref=f3e1301]: j
+              - generic [ref=f3e1305]: j
+            - text: and puts it in
+            - generic [ref=f3e1308]:
+              - math [ref=f3e1310]:
+                - generic [ref=f3e1311]: i
+              - generic [ref=f3e1315]: i
+            - text: . Total occupation, and hence
+            - generic [ref=f3e1318]:
+              - math [ref=f3e1320]:
+                - generic [ref=f3e1321]: K
+              - generic [ref=f3e1325]: K
+            - text: ", stays fixed."
+          - paragraph [ref=f3e1326]: The Hamiltonian commutes with every component of total angular momentum. Consequently an exact singlet remains closed, and a state in a nonzero-total-spin sector stays nonclosed. Merely having zero mean angular momentum is not closure.
+          - paragraph [ref=f3e1327]: "The proposed Casimir term also connects to the earlier implementation:"
+          - generic [ref=f3e1331]:
+            - math [ref=f3e1333]:
+              - generic [ref=f3e1335]:
+                - generic [ref=f3e1336]: α
+                - generic [ref=f3e1337]:
+                  - generic [ref=f3e1338]: ∑
+                  - generic [ref=f3e1339]: i
+                - generic [ref=f3e1340]:
+                  - generic [ref=f3e1341]: J
+                  - generic [ref=f3e1342]: i
+                  - generic [ref=f3e1343]: "2"
+                - generic [ref=f3e1344]: =
+                - generic [ref=f3e1345]:
+                  - generic [ref=f3e1346]: α
+                  - generic [ref=f3e1347]: "4"
+                - generic [ref=f3e1348]:
+                  - generic [ref=f3e1349]: ∑
+                  - generic [ref=f3e1350]: i
+                - generic [ref=f3e1351]:
+                  - generic [ref=f3e1352]: "n"
+                  - generic [ref=f3e1353]: i
+                - generic [ref=f3e1354]: (
+                - generic [ref=f3e1355]:
+                  - generic [ref=f3e1356]: "n"
+                  - generic [ref=f3e1357]: i
+                - generic [ref=f3e1358]: −
+                - generic [ref=f3e1359]: "1"
+                - generic [ref=f3e1360]: )
+                - generic [ref=f3e1361]: +
+                - generic [ref=f3e1362]:
+                  - generic [ref=f3e1363]:
+                    - generic [ref=f3e1364]: "3"
+                    - generic [ref=f3e1365]: α
+                  - generic [ref=f3e1366]: "4"
+                - generic [ref=f3e1367]:
+                  - generic [ref=f3e1368]: "N"
+                  - generic [ref=f3e1369]: b
+                - generic [ref=f3e1370]: .
+            - generic [aria-hidden] [ref=f3e1371]:
+              - generic [ref=f3e1372]:
+                - text: α
+                - generic [ref=f3e1376]:
+                  - generic [ref=f3e1377]: i
+                  - generic [ref=f3e1378]: ∑
+                - generic [ref=f3e1382]:
+                  - text: J
+                  - generic [ref=f3e1386]:
+                    - generic [ref=f3e1387]: i
+                    - generic [ref=f3e1388]: "2"
+                - text: =
+              - generic [ref=f3e1392]:
+                - generic [ref=f3e1397]:
+                  - generic [ref=f3e1398]: "4"
+                  - generic [ref=f3e1400]: α
+                - generic [ref=f3e1407]:
+                  - generic [ref=f3e1408]: i
+                  - generic [ref=f3e1409]: ∑
+                - generic [ref=f3e1413]:
+                  - text: "n"
+                  - generic [ref=f3e1414]: i
+                - text: (
+                - generic [ref=f3e1422]:
+                  - text: "n"
+                  - generic [ref=f3e1423]: i
+                - text: −
+              - generic [ref=f3e1431]: 1) +
+              - generic [ref=f3e1432]:
+                - generic [ref=f3e1437]:
+                  - generic [ref=f3e1438]: "4"
+                  - generic [ref=f3e1440]: 3α
+                - generic [ref=f3e1444]:
+                  - text: "N"
+                  - generic [ref=f3e1445]: b
+                - text: .
+          - paragraph [ref=f3e1453]:
+            - text: At fixed
+            - generic [ref=f3e1456]:
+              - math [ref=f3e1458]:
+                - generic [ref=f3e1461]:
+                  - generic [ref=f3e1462]: "N"
+                  - generic [ref=f3e1463]: b
+              - generic [ref=f3e1466]:
+                - text: "N"
+                - generic [ref=f3e1467]: b
+            - text: ", the existing onsite-repulsion builder therefore represents this Hamiltonian with"
+            - generic [ref=f3e1477]:
+              - math [ref=f3e1479]:
+                - generic [ref=f3e1481]:
+                  - generic [ref=f3e1482]: U
+                  - generic [ref=f3e1483]: =
+                  - generic [ref=f3e1484]: α
+                  - generic [ref=f3e1485]: /
+                  - generic [ref=f3e1486]: "2"
+              - generic [aria-hidden] [ref=f3e1487]:
+                - generic [ref=f3e1488]: U =
+                - generic [ref=f3e1489]: α/2
+            - text: ", up to the displayed constant."
+          - heading "Why one extra face is allowed" [level=2] [ref=f3e1490]
+          - paragraph [ref=f3e1491]:
+            - text: Suppose channel
+            - generic [ref=f3e1494]:
+              - math [ref=f3e1496]:
+                - generic [ref=f3e1497]: i
+              - generic [ref=f3e1501]: i
+            - text: is empty and its neighbor
+            - generic [ref=f3e1504]:
+              - math [ref=f3e1506]:
+                - generic [ref=f3e1507]: j
+              - generic [ref=f3e1511]: j
+            - text: has definite occupation
+            - generic [ref=f3e1514]:
+              - math [ref=f3e1516]:
+                - generic [ref=f3e1519]:
+                  - generic [ref=f3e1520]: "n"
+                  - generic [ref=f3e1521]: j
+              - generic [ref=f3e1524]:
+                - text: "n"
+                - generic [ref=f3e1525]: j
+            - text: . On any normalized state with these definite occupations,
+          - generic [ref=f3e1536]:
+            - math [ref=f3e1538]:
+              - generic [ref=f3e1540]:
+                - generic [ref=f3e1541]: ∥
+                - generic [ref=f3e1542]:
+                  - generic [ref=f3e1543]: E
+                  - generic [ref=f3e1544]:
+                    - generic [ref=f3e1545]: i
+                    - generic [ref=f3e1546]: j
+                - generic [ref=f3e1547]: ∣
+                - generic [ref=f3e1548]: ψ
+                - generic [ref=f3e1549]: ⟩
+                - generic [ref=f3e1550]:
+                  - generic [ref=f3e1551]: ∥
+                  - generic [ref=f3e1552]: "2"
+                - generic [ref=f3e1553]: =
+                - generic [ref=f3e1554]: ⟨
+                - generic [ref=f3e1555]: ψ
+                - generic [ref=f3e1556]: ∣
+                - generic [ref=f3e1557]:
+                  - generic [ref=f3e1558]: E
+                  - generic [ref=f3e1559]:
+                    - generic [ref=f3e1560]: j
+                    - generic [ref=f3e1561]: i
+                - generic [ref=f3e1562]:
+                  - generic [ref=f3e1563]: E
+                  - generic [ref=f3e1564]:
+                    - generic [ref=f3e1565]: i
+                    - generic [ref=f3e1566]: j
+                - generic [ref=f3e1567]: ∣
+                - generic [ref=f3e1568]: ψ
+                - generic [ref=f3e1569]: ⟩
+                - generic [ref=f3e1570]: =
+                - generic [ref=f3e1571]:
+                  - generic [ref=f3e1572]: "n"
+                  - generic [ref=f3e1573]: j
+                - generic [ref=f3e1574]: .
+            - generic [aria-hidden] [ref=f3e1575]:
+              - generic [ref=f3e1576]:
+                - text: ∥
+                - generic [ref=f3e1577]:
+                  - text: E
+                  - generic [ref=f3e1578]: ij
+                - text: ∣ψ⟩
+                - generic [ref=f3e1587]:
+                  - text: ∥
+                  - generic [ref=f3e1588]: "2"
+                - text: =
+              - generic [ref=f3e1593]:
+                - text: ⟨ψ∣
+                - generic [ref=f3e1594]:
+                  - text: E
+                  - generic [ref=f3e1595]: ji
+                - generic [ref=f3e1604]:
+                  - text: E
+                  - generic [ref=f3e1605]: ij
+                - text: ∣ψ⟩ =
+              - generic [ref=f3e1614]:
+                - generic [ref=f3e1615]:
+                  - text: "n"
+                  - generic [ref=f3e1616]: j
+                - text: .
+          - paragraph [ref=f3e1624]:
+            - text: The empty destination makes this identity independent of the magnetic coupling of the occupied channels. If
+            - generic [ref=f3e1627]:
+              - math [ref=f3e1629]:
+                - generic [ref=f3e1631]:
+                  - generic [ref=f3e1632]:
+                    - generic [ref=f3e1633]: "n"
+                    - generic [ref=f3e1634]: j
+                  - generic [ref=f3e1635]: ≥
+                  - generic [ref=f3e1636]: "2"
+              - generic [aria-hidden] [ref=f3e1637]:
+                - generic [ref=f3e1638]:
+                  - generic [ref=f3e1639]:
+                    - text: "n"
+                    - generic [ref=f3e1640]: j
+                  - text: ≥
+                - generic [ref=f3e1648]: "2"
+            - text: ", the donor remains occupied, and the number of active channels increases by one. For"
+            - generic [ref=f3e1651]:
+              - math [ref=f3e1653]:
+                - generic [ref=f3e1655]:
+                  - generic [ref=f3e1656]:
+                    - generic [ref=f3e1657]: "n"
+                    - generic [ref=f3e1658]: j
+                  - generic [ref=f3e1659]: =
+                  - generic [ref=f3e1660]: "1"
+              - generic [aria-hidden] [ref=f3e1661]:
+                - generic [ref=f3e1662]:
+                  - generic [ref=f3e1663]:
+                    - text: "n"
+                    - generic [ref=f3e1664]: j
+                  - text: =
+                - generic [ref=f3e1672]: "1"
+            - text: ", the donor empties, so the active count is unchanged. Since"
+            - generic [ref=f3e1675]:
+              - math [ref=f3e1677]:
+                - generic [ref=f3e1680]:
+                  - generic [ref=f3e1681]: E
+                  - generic [ref=f3e1682]:
+                    - generic [ref=f3e1683]: i
+                    - generic [ref=f3e1684]: j
+              - generic [ref=f3e1687]:
+                - text: E
+                - generic [ref=f3e1688]: ij
+            - text: commutes with total angular momentum, the same reasoning applies inside the singlet subspace.
+          - paragraph [ref=f3e1697]: An allowed edge from a multiply occupied donor to an empty receiver is thus a sufficient condition for a direct activation from a definite occupation pattern. The diagonal Casimir coefficient does not change this matrix element.
+          - heading "An explicit closed four-to-five-to-six chain" [level=2] [ref=f3e1698]
+          - paragraph [ref=f3e1699]:
+            - text: Use six channels on the ring
+            - generic [ref=f3e1702]:
+              - math [ref=f3e1704]:
+                - generic [ref=f3e1706]:
+                  - generic [ref=f3e1707]: "1"
+                  - generic [ref=f3e1708]: −
+                  - generic [ref=f3e1709]: "2"
+                  - generic [ref=f3e1710]: −
+                  - generic [ref=f3e1711]: "3"
+                  - generic [ref=f3e1712]: −
+                  - generic [ref=f3e1713]: "4"
+                  - generic [ref=f3e1714]: −
+                  - generic [ref=f3e1715]: "5"
+                  - generic [ref=f3e1716]: −
+                  - generic [ref=f3e1717]: "6"
+                  - generic [ref=f3e1718]: −
+                  - generic [ref=f3e1719]: "1"
+              - generic [aria-hidden] [ref=f3e1720]:
+                - generic [ref=f3e1721]: 1 −
+                - generic [ref=f3e1722]: 2 −
+                - generic [ref=f3e1723]: 3 −
+                - generic [ref=f3e1724]: 4 −
+                - generic [ref=f3e1725]: 5 −
+                - generic [ref=f3e1726]: 6 −
+                - generic [ref=f3e1727]: "1"
+            - text: . Take
+            - generic [ref=f3e1730]:
+              - math [ref=f3e1732]:
+                - generic [ref=f3e1734]:
+                  - generic [ref=f3e1735]: K
+                  - generic [ref=f3e1736]: =
+                  - generic [ref=f3e1737]: "3"
+              - generic [aria-hidden] [ref=f3e1738]:
+                - generic [ref=f3e1739]: K =
+                - generic [ref=f3e1740]: "3"
+            - text: ", or six bosons, with initial local occupations"
+          - generic [ref=f3e1744]:
+            - math [ref=f3e1746]:
+              - generic [ref=f3e1748]:
+                - generic [ref=f3e1749]: (
+                - generic [ref=f3e1750]:
+                  - generic [ref=f3e1751]: "n"
+                  - generic [ref=f3e1752]: "1"
+                - generic [ref=f3e1753]: ","
+                - generic [ref=f3e1754]:
+                  - generic [ref=f3e1755]: "n"
+                  - generic [ref=f3e1756]: "2"
+                - generic [ref=f3e1757]: ","
+                - generic [ref=f3e1758]:
+                  - generic [ref=f3e1759]: "n"
+                  - generic [ref=f3e1760]: "3"
+                - generic [ref=f3e1761]: ","
+                - generic [ref=f3e1762]:
+                  - generic [ref=f3e1763]: "n"
+                  - generic [ref=f3e1764]: "4"
+                - generic [ref=f3e1765]: ","
+                - generic [ref=f3e1766]:
+                  - generic [ref=f3e1767]: "n"
+                  - generic [ref=f3e1768]: "5"
+                - generic [ref=f3e1769]: ","
+                - generic [ref=f3e1770]:
+                  - generic [ref=f3e1771]: "n"
+                  - generic [ref=f3e1772]: "6"
+                - generic [ref=f3e1773]: )
+                - generic [ref=f3e1774]: =
+                - generic [ref=f3e1775]: (
+                - generic [ref=f3e1776]: "2"
+                - generic [ref=f3e1777]: ","
+                - generic [ref=f3e1778]: "1"
+                - generic [ref=f3e1779]: ","
+                - generic [ref=f3e1780]: "1"
+                - generic [ref=f3e1781]: ","
+                - generic [ref=f3e1782]: "2"
+                - generic [ref=f3e1783]: ","
+                - generic [ref=f3e1784]: "0"
+                - generic [ref=f3e1785]: ","
+                - generic [ref=f3e1786]: "0"
+                - generic [ref=f3e1787]: )
+                - generic [ref=f3e1788]: .
+            - generic [aria-hidden] [ref=f3e1789]:
+              - generic [ref=f3e1790]:
+                - text: (
+                - generic [ref=f3e1791]:
+                  - text: "n"
+                  - generic [ref=f3e1792]: "1"
+                - text: ","
+                - generic [ref=f3e1800]:
+                  - text: "n"
+                  - generic [ref=f3e1801]: "2"
+                - text: ","
+                - generic [ref=f3e1809]:
+                  - text: "n"
+                  - generic [ref=f3e1810]: "3"
+                - text: ","
+                - generic [ref=f3e1818]:
+                  - text: "n"
+                  - generic [ref=f3e1819]: "4"
+                - text: ","
+                - generic [ref=f3e1827]:
+                  - text: "n"
+                  - generic [ref=f3e1828]: "5"
+                - text: ","
+                - generic [ref=f3e1836]:
+                  - text: "n"
+                  - generic [ref=f3e1837]: "6"
+                - text: ) =
+              - generic [ref=f3e1845]: (2, 1, 1, 2, 0, 0).
+          - paragraph [ref=f3e1846]: There are four active channels, including two donors that can each give away one boson. Define
+          - generic [ref=f3e1850]:
+            - math [ref=f3e1852]:
+              - generic [ref=f3e1854]:
+                - generic [ref=f3e1855]:
+                  - generic [ref=f3e1856]: F
+                  - generic [ref=f3e1857]:
+                    - generic [ref=f3e1858]: i
+                    - generic [ref=f3e1859]: j
+                  - generic [ref=f3e1860]: †
+                - generic [ref=f3e1861]: =
+                - generic [ref=f3e1862]:
+                  - generic [ref=f3e1863]: a
+                  - generic [ref=f3e1864]: i
+                  - generic [ref=f3e1865]: †
+                - generic [ref=f3e1866]:
+                  - generic [ref=f3e1867]: b
+                  - generic [ref=f3e1868]: j
+                  - generic [ref=f3e1869]: †
+                - generic [ref=f3e1870]: −
+                - generic [ref=f3e1871]:
+                  - generic [ref=f3e1872]: b
+                  - generic [ref=f3e1873]: i
+                  - generic [ref=f3e1874]: †
+                - generic [ref=f3e1875]:
+                  - generic [ref=f3e1876]: a
+                  - generic [ref=f3e1877]: j
+                  - generic [ref=f3e1878]: †
+                - generic [ref=f3e1879]: ","
+                - generic [ref=f3e1880]: ∣
+                - generic [ref=f3e1881]:
+                  - generic [ref=f3e1882]: ψ
+                  - generic [ref=f3e1883]: "4"
+                - generic [ref=f3e1884]: ⟩
+                - generic [ref=f3e1885]: =
+                - generic [ref=f3e1886]:
+                  - generic [ref=f3e1887]:
+                    - generic [ref=f3e1888]: (
+                    - generic [ref=f3e1889]:
+                      - generic [ref=f3e1890]: F
+                      - generic [ref=f3e1891]: "14"
+                      - generic [ref=f3e1892]: †
+                    - generic [ref=f3e1893]:
+                      - generic [ref=f3e1894]: )
+                      - generic [ref=f3e1895]: "2"
+                    - generic [ref=f3e1896]:
+                      - generic [ref=f3e1897]: F
+                      - generic [ref=f3e1898]: "23"
+                      - generic [ref=f3e1899]: †
+                  - generic [ref=f3e1900]: "24"
+                - generic [ref=f3e1902]: ∣
+                - generic [ref=f3e1903]: "0"
+                - generic [ref=f3e1904]: ⟩
+                - generic [ref=f3e1905]: .
+            - generic [aria-hidden] [ref=f3e1906]:
+              - generic [ref=f3e1907]:
+                - generic [ref=f3e1908]:
+                  - text: F
+                  - generic [ref=f3e1912]:
+                    - generic [ref=f3e1913]: ij
+                    - generic [ref=f3e1915]: †
+                - text: =
+              - generic [ref=f3e1919]:
+                - generic [ref=f3e1920]:
+                  - text: a
+                  - generic [ref=f3e1924]:
+                    - generic [ref=f3e1925]: i
+                    - generic [ref=f3e1926]: †
+                - generic [ref=f3e1930]:
+                  - text: b
+                  - generic [ref=f3e1934]:
+                    - generic [ref=f3e1935]: j
+                    - generic [ref=f3e1936]: †
+                - text: −
+              - generic [ref=f3e1940]:
+                - generic [ref=f3e1941]:
+                  - text: b
+                  - generic [ref=f3e1945]:
+                    - generic [ref=f3e1946]: i
+                    - generic [ref=f3e1947]: †
+                - generic [ref=f3e1951]:
+                  - text: a
+                  - generic [ref=f3e1955]:
+                    - generic [ref=f3e1956]: j
+                    - generic [ref=f3e1957]: †
+                - text: ", ∣"
+                - generic [ref=f3e1961]:
+                  - text: ψ
+                  - generic [ref=f3e1962]: "4"
+                - text: ⟩ =
+              - generic [ref=f3e1970]:
+                - generic [ref=f3e1975]:
+                  - generic [ref=f3e1976]: "24"
+                  - generic [ref=f3e1989]:
+                    - text: (
+                    - generic [ref=f3e1990]:
+                      - text: F
+                      - generic [ref=f3e1994]:
+                        - generic [ref=f3e1995]: "14"
+                        - generic [ref=f3e1997]: †
+                    - generic [ref=f3e2001]:
+                      - text: )
+                      - generic [ref=f3e2002]: "2"
+                    - generic [ref=f3e2007]:
+                      - text: F
+                      - generic [ref=f3e2011]:
+                        - generic [ref=f3e2012]: "23"
+                        - generic [ref=f3e2014]: †
+                - text: ∣0⟩.
+          - paragraph [ref=f3e2021]: Each pair creator is an SU(2) scalar, so this normalized state is exactly closed. Its occupation pattern is sharp. It is a convenient witness, not a claim of a sharply semiclassical tetrahedron.
+          - paragraph [ref=f3e2022]: Now form normalized states
+          - generic [ref=f3e2026]:
+            - math [ref=f3e2028]:
+              - generic [ref=f3e2030]:
+                - generic [ref=f3e2031]: ∣
+                - generic [ref=f3e2032]:
+                  - generic [ref=f3e2033]: ψ
+                  - generic [ref=f3e2034]: "5"
+                - generic [ref=f3e2035]: ⟩
+                - generic [ref=f3e2036]: =
+                - generic [ref=f3e2037]:
+                  - generic [ref=f3e2038]:
+                    - generic [ref=f3e2039]: E
+                    - generic [ref=f3e2040]: "61"
+                  - generic [ref=f3e2041]: "2"
+                - generic [ref=f3e2043]: ∣
+                - generic [ref=f3e2044]:
+                  - generic [ref=f3e2045]: ψ
+                  - generic [ref=f3e2046]: "4"
+                - generic [ref=f3e2047]: ⟩
+                - generic [ref=f3e2048]: ","
+                - generic [ref=f3e2049]: ∣
+                - generic [ref=f3e2050]:
+                  - generic [ref=f3e2051]: ψ
+                  - generic [ref=f3e2052]: "6"
+                - generic [ref=f3e2053]: ⟩
+                - generic [ref=f3e2054]: =
+                - generic [ref=f3e2055]:
+                  - generic [ref=f3e2056]:
+                    - generic [ref=f3e2057]: E
+                    - generic [ref=f3e2058]: "54"
+                  - generic [ref=f3e2059]: "2"
+                - generic [ref=f3e2061]: ∣
+                - generic [ref=f3e2062]:
+                  - generic [ref=f3e2063]: ψ
+                  - generic [ref=f3e2064]: "5"
+                - generic [ref=f3e2065]: ⟩
+                - generic [ref=f3e2066]: .
+            - generic [aria-hidden] [ref=f3e2067]:
+              - generic [ref=f3e2068]:
+                - text: ∣
+                - generic [ref=f3e2069]:
+                  - text: ψ
+                  - generic [ref=f3e2070]: "5"
+                - text: ⟩ =
+              - generic [ref=f3e2078]:
+                - generic [ref=f3e2083]:
+                  - generic [ref=f3e2084]: "2"
+                  - generic [ref=f3e2098]:
+                    - text: E
+                    - generic [ref=f3e2099]: "61"
+                - text: ∣
+                - generic [ref=f3e2111]:
+                  - text: ψ
+                  - generic [ref=f3e2112]: "4"
+                - text: ⟩, ∣
+                - generic [ref=f3e2120]:
+                  - text: ψ
+                  - generic [ref=f3e2121]: "6"
+                - text: ⟩ =
+              - generic [ref=f3e2129]:
+                - generic [ref=f3e2134]:
+                  - generic [ref=f3e2135]: "2"
+                  - generic [ref=f3e2149]:
+                    - text: E
+                    - generic [ref=f3e2150]: "54"
+                - text: ∣
+                - generic [ref=f3e2162]:
+                  - text: ψ
+                  - generic [ref=f3e2163]: "5"
+                - text: ⟩.
+          - paragraph [ref=f3e2171]: Their occupation patterns and Hamiltonian matrix elements are
+          - table [ref=f3e2173]:
+            - rowgroup [ref=f3e2174]:
+              - row [ref=f3e2175]:
+                - columnheader "Transition" [ref=f3e2176] [cursor=pointer]
+                - columnheader "Local occupations after the hop" [ref=f3e2177] [cursor=pointer]
+                - columnheader "Matrix element" [ref=f3e2178] [cursor=pointer]
+            - rowgroup [ref=f3e2179]:
+              - row [ref=f3e2180]:
+                - cell [ref=f3e2181]:
+                  - generic [ref=f3e2184]:
+                    - math [ref=f3e2186]:
+                      - generic [ref=f3e2188]:
+                        - generic [ref=f3e2189]:
+                          - generic [ref=f3e2190]: ψ
+                          - generic [ref=f3e2191]: "4"
+                        - generic [ref=f3e2192]: →
+                        - generic [ref=f3e2193]:
+                          - generic [ref=f3e2194]: ψ
+                          - generic [ref=f3e2195]: "5"
+                    - generic [aria-hidden] [ref=f3e2196]:
+                      - generic [ref=f3e2197]:
+                        - generic [ref=f3e2198]:
+                          - text: ψ
+                          - generic [ref=f3e2199]: "4"
+                        - text: →
+                      - generic [ref=f3e2208]:
+                        - text: ψ
+                        - generic [ref=f3e2209]: "5"
+                - cell [ref=f3e2217]:
+                  - generic [ref=f3e2220]:
+                    - math [ref=f3e2222]:
+                      - generic [ref=f3e2224]:
+                        - generic [ref=f3e2225]: (
+                        - generic [ref=f3e2226]: "1"
+                        - generic [ref=f3e2227]: ","
+                        - generic [ref=f3e2228]: "1"
+                        - generic [ref=f3e2229]: ","
+                        - generic [ref=f3e2230]: "1"
+                        - generic [ref=f3e2231]: ","
+                        - generic [ref=f3e2232]: "2"
+                        - generic [ref=f3e2233]: ","
+                        - generic [ref=f3e2234]: "0"
+                        - generic [ref=f3e2235]: ","
+                        - generic [ref=f3e2236]: "1"
+                        - generic [ref=f3e2237]: )
+                    - generic [ref=f3e2239]: (1, 1, 1, 2, 0, 1)
+                - cell "$\\langle\\psi_5" [ref=f3e2240]
+              - row [ref=f3e2241]:
+                - cell [ref=f3e2242]:
+                  - generic [ref=f3e2245]:
+                    - math [ref=f3e2247]:
+                      - generic [ref=f3e2249]:
+                        - generic [ref=f3e2250]:
+                          - generic [ref=f3e2251]: ψ
+                          - generic [ref=f3e2252]: "5"
+                        - generic [ref=f3e2253]: →
+                        - generic [ref=f3e2254]:
+                          - generic [ref=f3e2255]: ψ
+                          - generic [ref=f3e2256]: "6"
+                    - generic [aria-hidden] [ref=f3e2257]:
+                      - generic [ref=f3e2258]:
+                        - generic [ref=f3e2259]:
+                          - text: ψ
+                          - generic [ref=f3e2260]: "5"
+                        - text: →
+                      - generic [ref=f3e2269]:
+                        - text: ψ
+                        - generic [ref=f3e2270]: "6"
+                - cell [ref=f3e2278]:
+                  - generic [ref=f3e2281]:
+                    - math [ref=f3e2283]:
+                      - generic [ref=f3e2285]:
+                        - generic [ref=f3e2286]: (
+                        - generic [ref=f3e2287]: "1"
+                        - generic [ref=f3e2288]: ","
+                        - generic [ref=f3e2289]: "1"
+                        - generic [ref=f3e2290]: ","
+                        - generic [ref=f3e2291]: "1"
+                        - generic [ref=f3e2292]: ","
+                        - generic [ref=f3e2293]: "1"
+                        - generic [ref=f3e2294]: ","
+                        - generic [ref=f3e2295]: "1"
+                        - generic [ref=f3e2296]: ","
+                        - generic [ref=f3e2297]: "1"
+                        - generic [ref=f3e2298]: )
+                    - generic [ref=f3e2300]: (1, 1, 1, 1, 1, 1)
+                - cell "$\\langle\\psi_6" [ref=f3e2301]
+          - paragraph [ref=f3e2302]: All three states are singlets. These are explicit nonzero transitions, not conclusions drawn solely from the number of states in each sector.
+          - paragraph [ref=f3e2303]: A single hop cannot take four active channels directly to six. The ring calculation nevertheless gives
+          - generic [ref=f3e2307]:
+            - math [ref=f3e2309]:
+              - generic [ref=f3e2311]:
+                - generic [ref=f3e2312]:
+                  - generic [ref=f3e2313]: P
+                  - generic [ref=f3e2314]: "6"
+                - generic [ref=f3e2315]: H
+                - generic [ref=f3e2316]: ∣
+                - generic [ref=f3e2317]:
+                  - generic [ref=f3e2318]: ψ
+                  - generic [ref=f3e2319]: "4"
+                - generic [ref=f3e2320]: ⟩
+                - generic [ref=f3e2321]: =
+                - generic [ref=f3e2322]: "0"
+                - generic [ref=f3e2323]: ","
+                - generic [ref=f3e2324]: ∥
+                - generic [ref=f3e2325]:
+                  - generic [ref=f3e2326]: P
+                  - generic [ref=f3e2327]: "6"
+                - generic [ref=f3e2328]:
+                  - generic [ref=f3e2329]: H
+                  - generic [ref=f3e2330]: "2"
+                - generic [ref=f3e2331]: ∣
+                - generic [ref=f3e2332]:
+                  - generic [ref=f3e2333]: ψ
+                  - generic [ref=f3e2334]: "4"
+                - generic [ref=f3e2335]: ⟩
+                - generic [ref=f3e2336]: ∥
+                - generic [ref=f3e2337]: =
+                - generic [ref=f3e2338]: "4"
+                - generic [ref=f3e2339]:
+                  - generic [ref=f3e2340]: t
+                  - generic [ref=f3e2341]: "2"
+                - generic [ref=f3e2342]: ","
+            - generic [aria-hidden] [ref=f3e2343]:
+              - generic [ref=f3e2344]:
+                - generic [ref=f3e2345]:
+                  - text: P
+                  - generic [ref=f3e2346]: "6"
+                - text: H∣
+                - generic [ref=f3e2354]:
+                  - text: ψ
+                  - generic [ref=f3e2355]: "4"
+                - text: ⟩ =
+              - generic [ref=f3e2363]:
+                - text: 0, ∥
+                - generic [ref=f3e2364]:
+                  - text: P
+                  - generic [ref=f3e2365]: "6"
+                - generic [ref=f3e2373]:
+                  - text: H
+                  - generic [ref=f3e2374]: "2"
+                - text: ∣
+                - generic [ref=f3e2379]:
+                  - text: ψ
+                  - generic [ref=f3e2380]: "4"
+                - text: ⟩∥ =
+              - generic [ref=f3e2388]:
+                - text: "4"
+                - generic [ref=f3e2389]:
+                  - text: t
+                  - generic [ref=f3e2390]: "2"
+                - text: ","
+          - paragraph [ref=f3e2395]:
+            - text: where
+            - generic [ref=f3e2398]:
+              - math [ref=f3e2400]:
+                - generic [ref=f3e2403]:
+                  - generic [ref=f3e2404]: P
+                  - generic [ref=f3e2405]: "6"
+              - generic [ref=f3e2408]:
+                - text: P
+                - generic [ref=f3e2409]: "6"
+            - text: selects exactly six active channels. Thus the actual second power of the Hamiltonian has a nonzero six-channel component, including all interference between the possible intermediate states.
+          - heading "The same test without closure" [level=2] [ref=f3e2417]
+          - paragraph [ref=f3e2418]:
+            - text: Choose the same initial occupation pattern with every boson in an
+            - generic [ref=f3e2421]:
+              - math [ref=f3e2423]:
+                - generic [ref=f3e2424]: a
+              - generic [ref=f3e2428]: a
+            - text: mode. It has total spin
+            - generic [ref=f3e2431]:
+              - math [ref=f3e2433]:
+                - generic [ref=f3e2435]:
+                  - generic [ref=f3e2436]: J
+                  - generic [ref=f3e2437]: =
+                  - generic [ref=f3e2438]: "3"
+              - generic [aria-hidden] [ref=f3e2439]:
+                - generic [ref=f3e2440]: J =
+                - generic [ref=f3e2441]: "3"
+            - text: . Both normalized directed hops above again have matrix element
+            - generic [ref=f3e2444]:
+              - math [ref=f3e2446]:
+                - generic [ref=f3e2448]:
+                  - generic [ref=f3e2449]: −
+                  - generic [ref=f3e2450]: "2"
+                  - generic [ref=f3e2452]: t
+              - generic [ref=f3e2454]:
+                - text: −
+                - generic [ref=f3e2455]: "2"
+                - text: t
+            - text: ", and the ring has the same nonzero second-power norm"
+            - generic [ref=f3e2468]:
+              - math [ref=f3e2470]:
+                - generic [ref=f3e2472]:
+                  - generic [ref=f3e2473]: "4"
+                  - generic [ref=f3e2474]:
+                    - generic [ref=f3e2475]: t
+                    - generic [ref=f3e2476]: "2"
+              - generic [ref=f3e2478]:
+                - text: "4"
+                - generic [ref=f3e2479]:
+                  - text: t
+                  - generic [ref=f3e2480]: "2"
+            - text: . Redistribution therefore does not require singlet closure.
+          - paragraph [ref=f3e2485]:
+            - text: We also lower that state to total magnetic number
+            - generic [ref=f3e2488]:
+              - math [ref=f3e2490]:
+                - generic [ref=f3e2492]:
+                  - generic [ref=f3e2493]: M
+                  - generic [ref=f3e2494]: =
+                  - generic [ref=f3e2495]: "0"
+              - generic [aria-hidden] [ref=f3e2496]:
+                - generic [ref=f3e2497]: M =
+                - generic [ref=f3e2498]: "0"
+            - text: while keeping
+            - generic [ref=f3e2501]:
+              - math [ref=f3e2503]:
+                - generic [ref=f3e2505]:
+                  - generic [ref=f3e2506]: J
+                  - generic [ref=f3e2507]: =
+                  - generic [ref=f3e2508]: "3"
+              - generic [aria-hidden] [ref=f3e2509]:
+                - generic [ref=f3e2510]: J =
+                - generic [ref=f3e2511]: "3"
+            - text: . Its mean spin vector vanishes, but
+            - generic [ref=f3e2514]:
+              - math [ref=f3e2516]:
+                - generic [ref=f3e2518]:
+                  - generic [ref=f3e2519]: ⟨
+                  - generic [ref=f3e2520]:
+                    - generic [ref=f3e2521]: J
+                    - generic [ref=f3e2522]:
+                      - generic [ref=f3e2523]: t
+                      - generic [ref=f3e2524]: o
+                      - generic [ref=f3e2525]: t
+                    - generic [ref=f3e2526]: "2"
+                  - generic [ref=f3e2527]: ⟩
+                  - generic [ref=f3e2528]: =
+                  - generic [ref=f3e2529]: "12"
+              - generic [aria-hidden] [ref=f3e2530]:
+                - generic [ref=f3e2531]:
+                  - text: ⟨
+                  - generic [ref=f3e2532]:
+                    - text: J
+                    - generic [ref=f3e2536]:
+                      - generic [ref=f3e2537]: tot
+                      - generic [ref=f3e2540]: "2"
+                  - text: ⟩ =
+                - generic [ref=f3e2544]: "12"
+            - text: . It has the same ring activation amplitudes. This provides an explicit nonclosed comparison that cannot be mistaken for closure merely because its mean angular momentum is zero.
+          - heading "Checking the whole finite space" [level=2] [ref=f3e2545]
+          - paragraph [ref=f3e2546]:
+            - text: The primary calculation uses the complete six-channel, six-boson Fock space of dimension 12,376 and its singlet subspace of dimension 490. Every singlet basis vector has definite local occupations and sequential coupling labels. At
+            - generic [ref=f3e2549]:
+              - math [ref=f3e2551]:
+                - generic [ref=f3e2553]:
+                  - generic [ref=f3e2554]: K
+                  - generic [ref=f3e2555]: =
+                  - generic [ref=f3e2556]: "3"
+              - generic [aria-hidden] [ref=f3e2557]:
+                - generic [ref=f3e2558]: K =
+                - generic [ref=f3e2559]: "3"
+            - text: ", the closed subspaces with four, five and six active channels have dimensions 240, 90 and 5, respectively."
+          - paragraph [ref=f3e2560]:
+            - text: For both the ring and complete graph, the direct block
+            - generic [ref=f3e2563]:
+              - math [ref=f3e2565]:
+                - generic [ref=f3e2567]:
+                  - generic [ref=f3e2568]:
+                    - generic [ref=f3e2569]: P
+                    - generic [ref=f3e2570]: "5"
+                  - generic [ref=f3e2571]: H
+                  - generic [ref=f3e2572]:
+                    - generic [ref=f3e2573]: P
+                    - generic [ref=f3e2574]: "4"
+              - generic [ref=f3e2576]:
+                - generic [ref=f3e2577]:
+                  - text: P
+                  - generic [ref=f3e2578]: "5"
+                - text: H
+                - generic [ref=f3e2586]:
+                  - text: P
+                  - generic [ref=f3e2587]: "4"
+            - text: is nonzero and has rank 90. The direct block
+            - generic [ref=f3e2597]:
+              - math [ref=f3e2599]:
+                - generic [ref=f3e2601]:
+                  - generic [ref=f3e2602]:
+                    - generic [ref=f3e2603]: P
+                    - generic [ref=f3e2604]: "6"
+                  - generic [ref=f3e2605]: H
+                  - generic [ref=f3e2606]:
+                    - generic [ref=f3e2607]: P
+                    - generic [ref=f3e2608]: "4"
+              - generic [ref=f3e2610]:
+                - generic [ref=f3e2611]:
+                  - text: P
+                  - generic [ref=f3e2612]: "6"
+                - text: H
+                - generic [ref=f3e2620]:
+                  - text: P
+                  - generic [ref=f3e2621]: "4"
+            - text: vanishes. The second-power block
+            - generic [ref=f3e2631]:
+              - math [ref=f3e2633]:
+                - generic [ref=f3e2635]:
+                  - generic [ref=f3e2636]:
+                    - generic [ref=f3e2637]: P
+                    - generic [ref=f3e2638]: "6"
+                  - generic [ref=f3e2639]:
+                    - generic [ref=f3e2640]: H
+                    - generic [ref=f3e2641]: "2"
+                  - generic [ref=f3e2642]:
+                    - generic [ref=f3e2643]: P
+                    - generic [ref=f3e2644]: "4"
+              - generic [ref=f3e2646]:
+                - generic [ref=f3e2647]:
+                  - text: P
+                  - generic [ref=f3e2648]: "6"
+                - generic [ref=f3e2656]:
+                  - text: H
+                  - generic [ref=f3e2657]: "2"
+                - generic [ref=f3e2662]:
+                  - text: P
+                  - generic [ref=f3e2663]: "4"
+            - text: is tested separately in the saved results. The coupled-basis Hamiltonian graph has one connected component in the singlet space for both graphs, at either numerical counting threshold.
+          - paragraph [ref=f3e2671]: This does not say every four-channel superposition immediately activates a fifth channel. The direct block has a 150-dimensional source kernel. Its vectors have no first-order five-channel amplitude; that alone does not make them permanently confined. More generally, paths between basis vectors do not remove the need to check interference for a particular prepared state.
+          - paragraph [ref=f3e2672]:
+            - text: A five-channel
+            - generic [ref=f3e2675]:
+              - math [ref=f3e2677]:
+                - generic [ref=f3e2679]:
+                  - generic [ref=f3e2680]: K
+                  - generic [ref=f3e2681]: =
+                  - generic [ref=f3e2682]: "3"
+              - generic [aria-hidden] [ref=f3e2683]:
+                - generic [ref=f3e2684]: K =
+                - generic [ref=f3e2685]: "3"
+            - text: calculation independently confirms direct four-to-five connections. At
+            - generic [ref=f3e2688]:
+              - math [ref=f3e2690]:
+                - generic [ref=f3e2692]:
+                  - generic [ref=f3e2693]: K
+                  - generic [ref=f3e2694]: =
+                  - generic [ref=f3e2695]: "2"
+              - generic [aria-hidden] [ref=f3e2696]:
+                - generic [ref=f3e2697]: K =
+                - generic [ref=f3e2698]: "2"
+            - text: ", only four bosons are available, so five active channels are impossible in either the full or closed space. Turning off hopping, or removing all links from the initially occupied channels to the two empty receivers, makes both witness activation amplitudes zero. The disconnected control is source-specific: a global active-count block includes other initial placements and need not vanish."
+          - heading "What this establishes for the geometric question" [level=2] [ref=f3e2699]
+          - paragraph [ref=f3e2700]: "Closure does not obstruct the proposed redistribution: the Hamiltonian connects exact four-channel singlets to exact five- and six-channel singlets. It also allows these transitions without closure and preserves total spin throughout. The six-channel example uses the minimum even boson number that can populate more than four channels."
+          - paragraph [ref=f3e2701]:
+            - text: An active channel has nonzero spin. The subsequent
+            - link "geometric redistribution calculation" [ref=f3e2702] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/notes/geometric-area-redistribution.txt
+            - text: follows its occupation probability and positive volume. Its
+            - link "face-direction proposal" [ref=f3e2703] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/notes/geometric-area-redistribution.txt#recovering-face-directions
+            - text: explains how to determine whether activated channels have distinct normals.
+          - paragraph [ref=f3e2704]:
+            - text: The
+            - link "result report" [ref=f3e2705] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/results/t11-face-connectivity/README.txt
+            - text: contains the numerical checks and reproduction commands. The
+            - link "pre-run specification" [ref=f3e2706] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/results/t11-face-connectivity/protocol.txt
+            - text: fixes the scope; saved witness coefficients permit independent reconstruction.

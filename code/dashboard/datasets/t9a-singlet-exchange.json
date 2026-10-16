@@ -91,15 +91,15 @@
           "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
           "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
           "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
-          "notes/t9a-singlet-exchange.md": "2a4ba5af5d5fb21640c81f2e4b2be25dfc4a7f3a9a8492dd41826e1a06698a6f",
-          "notes/thermal-geometry-and-singlet-exchange.md": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "notes/t9a-singlet-exchange.md": "590035e2555eac39e394c8715de0ad4feef971cf811fb792856324ee96d59ecd",
+          "notes/thermal-geometry-and-singlet-exchange.md": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         },
         "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-1"
       },
       "assessment": {
@@ -159,17 +159,17 @@
           "label": "t9a-singlet-exchange.md",
           "path": "../study-assets/notes/t9a-singlet-exchange.txt",
           "kind": "data",
-          "sha256": "2a4ba5af5d5fb21640c81f2e4b2be25dfc4a7f3a9a8492dd41826e1a06698a6f",
+          "sha256": "590035e2555eac39e394c8715de0ad4feef971cf811fb792856324ee96d59ecd",
           "sourcePath": "notes/t9a-singlet-exchange.md",
-          "sourceSha256": "2a4ba5af5d5fb21640c81f2e4b2be25dfc4a7f3a9a8492dd41826e1a06698a6f"
+          "sourceSha256": "590035e2555eac39e394c8715de0ad4feef971cf811fb792856324ee96d59ecd"
         },
         {
           "label": "thermal-geometry-and-singlet-exchange.md",
           "path": "../study-assets/notes/thermal-geometry-and-singlet-exchange.txt",
           "kind": "data",
-          "sha256": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9",
+          "sha256": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5",
           "sourcePath": "notes/thermal-geometry-and-singlet-exchange.md",
-          "sourceSha256": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "sourceSha256": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         }
       ],
       "figures": [
@@ -208,15 +208,15 @@
           "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
           "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
           "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
-          "notes/t9a-singlet-exchange.md": "2a4ba5af5d5fb21640c81f2e4b2be25dfc4a7f3a9a8492dd41826e1a06698a6f",
-          "notes/thermal-geometry-and-singlet-exchange.md": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "notes/t9a-singlet-exchange.md": "590035e2555eac39e394c8715de0ad4feef971cf811fb792856324ee96d59ecd",
+          "notes/thermal-geometry-and-singlet-exchange.md": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         },
         "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-2"
       },
       "assessment": {
@@ -250,15 +250,15 @@
           "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
           "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
           "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
-          "notes/t9a-singlet-exchange.md": "2a4ba5af5d5fb21640c81f2e4b2be25dfc4a7f3a9a8492dd41826e1a06698a6f",
-          "notes/thermal-geometry-and-singlet-exchange.md": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "notes/t9a-singlet-exchange.md": "590035e2555eac39e394c8715de0ad4feef971cf811fb792856324ee96d59ecd",
+          "notes/thermal-geometry-and-singlet-exchange.md": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         },
         "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-3"
       },
       "assessment": {
@@ -292,15 +292,15 @@
           "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
           "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
           "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
-          "notes/t9a-singlet-exchange.md": "2a4ba5af5d5fb21640c81f2e4b2be25dfc4a7f3a9a8492dd41826e1a06698a6f",
-          "notes/thermal-geometry-and-singlet-exchange.md": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "notes/t9a-singlet-exchange.md": "590035e2555eac39e394c8715de0ad4feef971cf811fb792856324ee96d59ecd",
+          "notes/thermal-geometry-and-singlet-exchange.md": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         },
         "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-4"
       },
       "assessment": {
@@ -334,15 +334,15 @@
           "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
           "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
           "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
-          "notes/t9a-singlet-exchange.md": "2a4ba5af5d5fb21640c81f2e4b2be25dfc4a7f3a9a8492dd41826e1a06698a6f",
-          "notes/thermal-geometry-and-singlet-exchange.md": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "notes/t9a-singlet-exchange.md": "590035e2555eac39e394c8715de0ad4feef971cf811fb792856324ee96d59ecd",
+          "notes/thermal-geometry-and-singlet-exchange.md": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         },
         "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-5"
       },
       "assessment": {
@@ -376,15 +376,15 @@
           "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
           "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
           "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
-          "notes/t9a-singlet-exchange.md": "2a4ba5af5d5fb21640c81f2e4b2be25dfc4a7f3a9a8492dd41826e1a06698a6f",
-          "notes/thermal-geometry-and-singlet-exchange.md": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "notes/t9a-singlet-exchange.md": "590035e2555eac39e394c8715de0ad4feef971cf811fb792856324ee96d59ecd",
+          "notes/thermal-geometry-and-singlet-exchange.md": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         },
         "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-6"
       },
       "assessment": {
@@ -418,15 +418,15 @@
           "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
           "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
           "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
-          "notes/t9a-singlet-exchange.md": "2a4ba5af5d5fb21640c81f2e4b2be25dfc4a7f3a9a8492dd41826e1a06698a6f",
-          "notes/thermal-geometry-and-singlet-exchange.md": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "notes/t9a-singlet-exchange.md": "590035e2555eac39e394c8715de0ad4feef971cf811fb792856324ee96d59ecd",
+          "notes/thermal-geometry-and-singlet-exchange.md": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         },
         "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-7"
       },
       "assessment": {
@@ -460,15 +460,15 @@
           "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
           "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
           "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
-          "notes/t9a-singlet-exchange.md": "2a4ba5af5d5fb21640c81f2e4b2be25dfc4a7f3a9a8492dd41826e1a06698a6f",
-          "notes/thermal-geometry-and-singlet-exchange.md": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "notes/t9a-singlet-exchange.md": "590035e2555eac39e394c8715de0ad4feef971cf811fb792856324ee96d59ecd",
+          "notes/thermal-geometry-and-singlet-exchange.md": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         },
         "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-8"
       },
       "assessment": {
@@ -502,15 +502,15 @@
           "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
           "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
           "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
-          "notes/t9a-singlet-exchange.md": "2a4ba5af5d5fb21640c81f2e4b2be25dfc4a7f3a9a8492dd41826e1a06698a6f",
-          "notes/thermal-geometry-and-singlet-exchange.md": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "notes/t9a-singlet-exchange.md": "590035e2555eac39e394c8715de0ad4feef971cf811fb792856324ee96d59ecd",
+          "notes/thermal-geometry-and-singlet-exchange.md": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         },
         "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-9"
       },
       "assessment": {
@@ -544,15 +544,15 @@
           "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
           "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
           "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
-          "notes/t9a-singlet-exchange.md": "2a4ba5af5d5fb21640c81f2e4b2be25dfc4a7f3a9a8492dd41826e1a06698a6f",
-          "notes/thermal-geometry-and-singlet-exchange.md": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "notes/t9a-singlet-exchange.md": "590035e2555eac39e394c8715de0ad4feef971cf811fb792856324ee96d59ecd",
+          "notes/thermal-geometry-and-singlet-exchange.md": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         },
         "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-10"
       },
       "assessment": {
@@ -586,15 +586,15 @@
           "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
           "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
           "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
-          "notes/t9a-singlet-exchange.md": "2a4ba5af5d5fb21640c81f2e4b2be25dfc4a7f3a9a8492dd41826e1a06698a6f",
-          "notes/thermal-geometry-and-singlet-exchange.md": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "notes/t9a-singlet-exchange.md": "590035e2555eac39e394c8715de0ad4feef971cf811fb792856324ee96d59ecd",
+          "notes/thermal-geometry-and-singlet-exchange.md": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         },
         "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-11"
       },
       "assessment": {
@@ -628,15 +628,15 @@
           "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
           "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
           "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
-          "notes/t9a-singlet-exchange.md": "2a4ba5af5d5fb21640c81f2e4b2be25dfc4a7f3a9a8492dd41826e1a06698a6f",
-          "notes/thermal-geometry-and-singlet-exchange.md": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "notes/t9a-singlet-exchange.md": "590035e2555eac39e394c8715de0ad4feef971cf811fb792856324ee96d59ecd",
+          "notes/thermal-geometry-and-singlet-exchange.md": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         },
         "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-12"
       },
       "assessment": {
@@ -670,15 +670,15 @@
           "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
           "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
           "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
-          "notes/t9a-singlet-exchange.md": "2a4ba5af5d5fb21640c81f2e4b2be25dfc4a7f3a9a8492dd41826e1a06698a6f",
-          "notes/thermal-geometry-and-singlet-exchange.md": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "notes/t9a-singlet-exchange.md": "590035e2555eac39e394c8715de0ad4feef971cf811fb792856324ee96d59ecd",
+          "notes/thermal-geometry-and-singlet-exchange.md": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         },
         "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-13"
       },
       "assessment": {
@@ -712,15 +712,15 @@
           "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
           "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
           "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
-          "notes/t9a-singlet-exchange.md": "2a4ba5af5d5fb21640c81f2e4b2be25dfc4a7f3a9a8492dd41826e1a06698a6f",
-          "notes/thermal-geometry-and-singlet-exchange.md": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "notes/t9a-singlet-exchange.md": "590035e2555eac39e394c8715de0ad4feef971cf811fb792856324ee96d59ecd",
+          "notes/thermal-geometry-and-singlet-exchange.md": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         },
         "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-14"
       },
       "assessment": {
@@ -754,15 +754,15 @@
           "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
           "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
           "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
-          "notes/t9a-singlet-exchange.md": "2a4ba5af5d5fb21640c81f2e4b2be25dfc4a7f3a9a8492dd41826e1a06698a6f",
-          "notes/thermal-geometry-and-singlet-exchange.md": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "notes/t9a-singlet-exchange.md": "590035e2555eac39e394c8715de0ad4feef971cf811fb792856324ee96d59ecd",
+          "notes/thermal-geometry-and-singlet-exchange.md": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         },
         "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-15"
       },
       "assessment": {
@@ -796,15 +796,15 @@
           "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
           "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
           "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
-          "notes/t9a-singlet-exchange.md": "2a4ba5af5d5fb21640c81f2e4b2be25dfc4a7f3a9a8492dd41826e1a06698a6f",
-          "notes/thermal-geometry-and-singlet-exchange.md": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "notes/t9a-singlet-exchange.md": "590035e2555eac39e394c8715de0ad4feef971cf811fb792856324ee96d59ecd",
+          "notes/thermal-geometry-and-singlet-exchange.md": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         },
         "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-16"
       },
       "assessment": {
@@ -838,15 +838,15 @@
           "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
           "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
           "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
-          "notes/t9a-singlet-exchange.md": "2a4ba5af5d5fb21640c81f2e4b2be25dfc4a7f3a9a8492dd41826e1a06698a6f",
-          "notes/thermal-geometry-and-singlet-exchange.md": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "notes/t9a-singlet-exchange.md": "590035e2555eac39e394c8715de0ad4feef971cf811fb792856324ee96d59ecd",
+          "notes/thermal-geometry-and-singlet-exchange.md": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         },
         "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-17"
       },
       "assessment": {
@@ -880,15 +880,15 @@
           "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
           "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
           "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
-          "notes/t9a-singlet-exchange.md": "2a4ba5af5d5fb21640c81f2e4b2be25dfc4a7f3a9a8492dd41826e1a06698a6f",
-          "notes/thermal-geometry-and-singlet-exchange.md": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "notes/t9a-singlet-exchange.md": "590035e2555eac39e394c8715de0ad4feef971cf811fb792856324ee96d59ecd",
+          "notes/thermal-geometry-and-singlet-exchange.md": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         },
         "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-18"
       },
       "assessment": {
@@ -922,15 +922,15 @@
           "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
           "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
           "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
-          "notes/t9a-singlet-exchange.md": "2a4ba5af5d5fb21640c81f2e4b2be25dfc4a7f3a9a8492dd41826e1a06698a6f",
-          "notes/thermal-geometry-and-singlet-exchange.md": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "notes/t9a-singlet-exchange.md": "590035e2555eac39e394c8715de0ad4feef971cf811fb792856324ee96d59ecd",
+          "notes/thermal-geometry-and-singlet-exchange.md": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         },
         "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-19"
       },
       "assessment": {
@@ -964,15 +964,15 @@
           "results/t9a-singlet-exchange/provenance.json": "5fe54f7667f30b6083e1950b33a46987b0344044cb232ff454c2d4940bed0be0",
           "results/t9a-singlet-exchange/summary.json": "6341554c65172d8aeeda0e1d17724a7cc755bdf1f007dacb0106d27e2499e2d1",
           "results/t9a-singlet-exchange/thermal.csv": "1b40b2f0be820a6225bf93c77588124c34997b963271dc8763bcf0fbfb1be50e",
-          "notes/t9a-singlet-exchange.md": "2a4ba5af5d5fb21640c81f2e4b2be25dfc4a7f3a9a8492dd41826e1a06698a6f",
-          "notes/thermal-geometry-and-singlet-exchange.md": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "notes/t9a-singlet-exchange.md": "590035e2555eac39e394c8715de0ad4feef971cf811fb792856324ee96d59ecd",
+          "notes/thermal-geometry-and-singlet-exchange.md": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         },
         "presentationSource": "results/t9a-singlet-exchange/thermal.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/t9a-singlet-exchange/thermal.csv:row-20"
       },
       "assessment": {

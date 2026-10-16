@@ -1,5 +1,7 @@
 # T11: geometric interpretation of the four-site volume crossover
 
+[Research map](quantum-geometry-research.md) · Related: [volume studies](volume-studies.md), [geometric area redistribution](geometric-area-redistribution.md).
+
 Plan recorded 2026-10-10 21:58:38 IST, before implementation. This is a
 focused T11 sub-study. It does not update the task registry, active context,
 progress, cache, session history, or other Memory Bank records.

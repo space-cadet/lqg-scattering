@@ -1,0 +1,545 @@
+- generic [ref=f1e2]:
+  - navigation "Numerical datasets" [ref=f1e3]:
+    - generic [ref=f1e4]: Numerical study
+    - combobox "Numerical study" [ref=f1e5]:
+      - option "All studies — overview"
+      - option "Small-area face-channel equilibration pilot (12 rows)"
+      - option "Classical rotor spreading and equilibrium comparison (24 rows)" [selected]
+      - 'option "Few-rotor transfer: planar bound and 3D controls (27 rows)"'
+      - option "Rotor coupling crossover and delayed release (64 rows)"
+      - 'option "Large-area tetrahedron: face activation and recurrence (20 rows)"'
+      - option "Entanglement of separately closed thermal polyhedra (86 rows)"
+      - option "Ordinary closure versus temperature (125 rows)"
+      - option "Heating separately closed area and positive RS volume (85 rows)"
+      - option "Singlet exchange between closed FL polyhedra (20 rows)"
+      - 'option "Four versus five sites: thermal-volume persistence (12 rows)"'
+      - option "Prepared tetrahedral FL states and the volume crossover (11 rows)"
+      - option "Candidate geometric Hamiltonians and prepared-FL dynamics (62 rows)"
+      - option "Four-site Hamiltonian spectra and RS-volume observables (30 rows)"
+      - option "Complete four-face closed-basis volumes (11 rows)"
+      - option "Variable-face positive RS catalogue (9 rows)"
+      - option "Squeezed-vacuum area coefficients (964 rows)"
+      - option "Squeezed-vacuum resultant spin (196 rows)"
+      - option "Excited J_in=1 joint area and spin (5 rows)"
+      - option "Higher-J flat-boundary probes (13 rows)"
+      - option "Magnetization and signed-grasp correlations (10 rows)"
+      - option "Local-chirality pilot (13 rows)"
+      - option "Imaginary-perturbation response (26 rows)"
+      - option "Cocycle-phase pilot (10 rows)"
+      - option "Large-K recorded families and fits (13 rows)"
+      - option "Historical single-copy thermal pilot (14 rows)"
+      - option "Historical energy-basis TFD pilot (14 rows)"
+      - option "Historical complexified purification (10 rows)"
+      - option "Small-sector thermal geometry audit (4 rows)"
+      - option "RS/AL volume-prescription controls (2 rows)"
+      - option "Initial covariance reconstruction pilot (6 rows)"
+      - option "Prepared FL evolution sampling (50 rows)"
+      - option "Positive volumes on two real-plane states (2 rows)"
+      - option "FL covariance shape recovery (84 rows)"
+      - option "Weighted FL input geometry and volumes (14 rows)"
+      - option "Regular FL volume versus area (5 rows)"
+      - option "Equal-area FL shape scan at J=2 (440 rows)"
+      - option "Same-number detachment energies (8 rows)"
+      - option "Closed and open state evolution probes (6 rows)"
+      - option "Constructive edge sewing probes (5 rows)"
+  - heading "Classical rotor spreading and equilibrium comparison" [level=1] [ref=f1e6]
+  - paragraph [ref=f1e7]: Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2–90.4%. At packet energy 100, the hot pair retains 98.7–99.0% of local energy through t=2000.
+  - generic [ref=f1e8]:
+    - generic [ref=f1e9]:
+      - generic [ref=f1e10]: "24"
+      - generic [ref=f1e11]: Total Runs
+    - generic [ref=f1e12]:
+      - generic [ref=f1e13]: "0"
+      - generic [ref=f1e14]: Tasks
+    - generic [ref=f1e15]:
+      - generic [ref=f1e16]: "24"
+      - generic [ref=f1e17]: Complete
+    - generic [ref=f1e18]:
+      - generic [ref=f1e19]: "2"
+      - generic [ref=f1e20]: Figures
+  - tablist "Dashboard sections" [ref=f1e21]:
+    - tab "Runs & Studies" [selected] [ref=f1e22] [cursor=pointer]
+    - tab "Figure Archive" [ref=f1e23] [cursor=pointer]
+    - tab "Charts" [ref=f1e24] [cursor=pointer]
+    - tab "Tasks & Numerical Notes" [ref=f1e25] [cursor=pointer]
+  - tabpanel "Runs & Studies" [ref=f1e26]:
+    - heading "Run and Study Records" [level=2] [ref=f1e27]
+    - generic [ref=f1e28]:
+      - generic [ref=f1e29]:
+        - generic [ref=f1e30]: "Status:"
+        - combobox "Status:" [ref=f1e31]:
+          - option "All" [selected]
+          - option "complete"
+      - generic [ref=f1e32]:
+        - generic [ref=f1e33]: "Search:"
+        - textbox "Search:" [ref=f1e34]:
+          - /placeholder: Run ID, description...
+      - button "Reset" [ref=f1e36] [cursor=pointer]
+    - table [ref=f1e38]:
+      - rowgroup [ref=f1e39]:
+        - row [ref=f1e40]:
+          - columnheader [ref=f1e41] [cursor=pointer]:
+            - button "Case" [ref=f1e42]: Case ↕
+          - columnheader [ref=f1e43] [cursor=pointer]:
+            - button "Rotors N" [ref=f1e44]: Rotors N ↕
+          - columnheader [ref=f1e45] [cursor=pointer]:
+            - button "packet scale at N8" [ref=f1e46]: packet scale at N8 ↕
+          - columnheader [ref=f1e47] [cursor=pointer]:
+            - button "preparation" [ref=f1e48]: preparation ↕
+          - columnheader [ref=f1e49] [cursor=pointer]:
+            - button "seed count" [ref=f1e50]: seed count ↕
+          - columnheader [ref=f1e51] [cursor=pointer]:
+            - button "equilibrium hot fraction" [ref=f1e52]: equilibrium hot fraction ↕
+          - columnheader [ref=f1e53] [cursor=pointer]:
+            - button "Late-time hot-pair local-energy fraction" [ref=f1e54]: Late-time hot-pair local-energy fraction ↕
+          - columnheader [ref=f1e55] [cursor=pointer]:
+            - button "hot pair fraction min" [ref=f1e56]: hot pair fraction min ↕
+          - columnheader [ref=f1e57] [cursor=pointer]:
+            - button "hot pair fraction max" [ref=f1e58]: hot pair fraction max ↕
+          - columnheader [ref=f1e59] [cursor=pointer]:
+            - button "participation fraction mean" [ref=f1e60]: participation fraction mean ↕
+          - columnheader [ref=f1e61] [cursor=pointer]:
+            - button "equilibrium participation fraction mean" [ref=f1e62]: equilibrium participation fraction mean ↕
+          - columnheader [ref=f1e63] [cursor=pointer]:
+            - button "equilibrium region90 residence mean" [ref=f1e64]: equilibrium region90 residence mean ↕
+          - columnheader [ref=f1e65] [cursor=pointer]:
+            - button "equilibrium region90 residence min" [ref=f1e66]: equilibrium region90 residence min ↕
+          - columnheader [ref=f1e67] [cursor=pointer]:
+            - button "equilibrium region90 residence max" [ref=f1e68]: equilibrium region90 residence max ↕
+          - columnheader [ref=f1e69] [cursor=pointer]:
+            - button "hot fraction KS mean" [ref=f1e70]: hot fraction KS mean ↕
+          - columnheader [ref=f1e71] [cursor=pointer]:
+            - button "Packet preparation and energy scale" [ref=f1e72]: Packet preparation and energy scale ↕
+      - rowgroup [ref=f1e73]:
+        - row [ref=f1e74]:
+          - cell [ref=f1e75]:
+            - button "Details for classical-rotor-equilibration:case-0001:1" [ref=f1e76] [cursor=pointer]: classical-rotor-equilibration:case-0001:1
+          - cell "8" [ref=f1e77]
+          - cell "1" [ref=f1e78]
+          - cell "fixed_density" [ref=f1e79]
+          - cell "3" [ref=f1e80]
+          - cell "0.25" [ref=f1e81]
+          - cell "0.30370745" [ref=f1e82]
+          - cell "0.29395842" [ref=f1e83]
+          - cell "0.30952469" [ref=f1e84]
+          - cell "0.68576305" [ref=f1e85]
+          - cell "0.79516904" [ref=f1e86]
+          - cell "0.52911228" [ref=f1e87]
+          - cell "0.50735907" [ref=f1e88]
+          - cell "0.55040267" [ref=f1e89]
+          - cell "0.23219452" [ref=f1e90]
+          - 'cell "fixed energy density; packet scale at N=8: 1" [ref=f1e91]'
+        - row [ref=f1e92]:
+          - cell [ref=f1e93]:
+            - button "Details for classical-rotor-equilibration:case-0002:2" [ref=f1e94] [cursor=pointer]: classical-rotor-equilibration:case-0002:2
+          - cell "16" [ref=f1e95]
+          - cell "1" [ref=f1e96]
+          - cell "fixed_density" [ref=f1e97]
+          - cell "3" [ref=f1e98]
+          - cell "0.125" [ref=f1e99]
+          - cell "0.14420294" [ref=f1e100]
+          - cell "0.13670125" [ref=f1e101]
+          - cell "0.14917233" [ref=f1e102]
+          - cell "0.70705869" [ref=f1e103]
+          - cell "0.76143846" [ref=f1e104]
+          - cell "0.69101176" [ref=f1e105]
+          - cell "0.65759511" [ref=f1e106]
+          - cell "0.7389614" [ref=f1e107]
+          - cell "0.13925236" [ref=f1e108]
+          - 'cell "fixed energy density; packet scale at N=8: 1" [ref=f1e109]'
+        - row [ref=f1e110]:
+          - cell [ref=f1e111]:
+            - button "Details for classical-rotor-equilibration:case-0003:3" [ref=f1e112] [cursor=pointer]: classical-rotor-equilibration:case-0003:3
+          - cell "32" [ref=f1e113]
+          - cell "1" [ref=f1e114]
+          - cell "fixed_density" [ref=f1e115]
+          - cell "3" [ref=f1e116]
+          - cell "0.0625" [ref=f1e117]
+          - cell "0.061708807" [ref=f1e118]
+          - cell "0.059376064" [ref=f1e119]
+          - cell "0.063101408" [ref=f1e120]
+          - cell "0.7522555" [ref=f1e121]
+          - cell "0.74511333" [ref=f1e122]
+          - cell "0.84458021" [ref=f1e123]
+          - cell "0.82338239" [ref=f1e124]
+          - cell "0.85642877" [ref=f1e125]
+          - cell "0.052683711" [ref=f1e126]
+          - 'cell "fixed energy density; packet scale at N=8: 1" [ref=f1e127]'
+        - row [ref=f1e128]:
+          - cell [ref=f1e129]:
+            - button "Details for classical-rotor-equilibration:case-0004:4" [ref=f1e130] [cursor=pointer]: classical-rotor-equilibration:case-0004:4
+          - cell "64" [ref=f1e131]
+          - cell "1" [ref=f1e132]
+          - cell "fixed_density" [ref=f1e133]
+          - cell "3" [ref=f1e134]
+          - cell "0.03125" [ref=f1e135]
+          - cell "0.031077597" [ref=f1e136]
+          - cell "0.030179173" [ref=f1e137]
+          - cell "0.032194685" [ref=f1e138]
+          - cell "0.73043547" [ref=f1e139]
+          - cell "0.73774049" [ref=f1e140]
+          - cell "0.88827178" [ref=f1e141]
+          - cell "0.8697584" [ref=f1e142]
+          - cell "0.89919467" [ref=f1e143]
+          - cell "0.038275375" [ref=f1e144]
+          - 'cell "fixed energy density; packet scale at N=8: 1" [ref=f1e145]'
+        - row [ref=f1e146]:
+          - cell [ref=f1e147]:
+            - button "Details for classical-rotor-equilibration:case-0005:5" [ref=f1e148] [cursor=pointer]: classical-rotor-equilibration:case-0005:5
+          - cell "8" [ref=f1e149]
+          - cell "10" [ref=f1e150]
+          - cell "fixed_density" [ref=f1e151]
+          - cell "3" [ref=f1e152]
+          - cell "0.25" [ref=f1e153]
+          - cell "0.24457722" [ref=f1e154]
+          - cell "0.23191639" [ref=f1e155]
+          - cell "0.25370883" [ref=f1e156]
+          - cell "0.80768529" [ref=f1e157]
+          - cell "0.8080484" [ref=f1e158]
+          - cell "0.90437841" [ref=f1e159]
+          - cell "0.89780616" [ref=f1e160]
+          - cell "0.91557901" [ref=f1e161]
+          - cell "0.054990142" [ref=f1e162]
+          - 'cell "fixed energy density; packet scale at N=8: 10" [ref=f1e163]'
+        - row [ref=f1e164]:
+          - cell [ref=f1e165]:
+            - button "Details for classical-rotor-equilibration:case-0006:6" [ref=f1e166] [cursor=pointer]: classical-rotor-equilibration:case-0006:6
+          - cell "16" [ref=f1e167]
+          - cell "10" [ref=f1e168]
+          - cell "fixed_density" [ref=f1e169]
+          - cell "3" [ref=f1e170]
+          - cell "0.125" [ref=f1e171]
+          - cell "0.93742469" [ref=f1e172]
+          - cell "0.93678237" [ref=f1e173]
+          - cell "0.93813862" [ref=f1e174]
+          - cell "0.14160768" [ref=f1e175]
+          - cell "0.77153467" [ref=f1e176]
+          - cell "0" [ref=f1e177]
+          - cell "0" [ref=f1e178]
+          - cell "0" [ref=f1e179]
+          - cell "1" [ref=f1e180]
+          - 'cell "fixed energy density; packet scale at N=8: 10" [ref=f1e181]'
+        - row [ref=f1e182]:
+          - cell [ref=f1e183]:
+            - button "Details for classical-rotor-equilibration:case-0007:7" [ref=f1e184] [cursor=pointer]: classical-rotor-equilibration:case-0007:7
+          - cell "32" [ref=f1e185]
+          - cell "10" [ref=f1e186]
+          - cell "fixed_density" [ref=f1e187]
+          - cell "3" [ref=f1e188]
+          - cell "0.0625" [ref=f1e189]
+          - cell "0.96962118" [ref=f1e190]
+          - cell "0.96877292" [ref=f1e191]
+          - cell "0.970572" [ref=f1e192]
+          - cell "0.066449351" [ref=f1e193]
+          - cell "0.75147587" [ref=f1e194]
+          - cell "0" [ref=f1e195]
+          - cell "0" [ref=f1e196]
+          - cell "0" [ref=f1e197]
+          - cell "1" [ref=f1e198]
+          - 'cell "fixed energy density; packet scale at N=8: 10" [ref=f1e199]'
+        - row [ref=f1e200]:
+          - cell [ref=f1e201]:
+            - button "Details for classical-rotor-equilibration:case-0008:8" [ref=f1e202] [cursor=pointer]: classical-rotor-equilibration:case-0008:8
+          - cell "64" [ref=f1e203]
+          - cell "10" [ref=f1e204]
+          - cell "fixed_density" [ref=f1e205]
+          - cell "3" [ref=f1e206]
+          - cell "0.03125" [ref=f1e207]
+          - cell "0.98303031" [ref=f1e208]
+          - cell "0.98260442" [ref=f1e209]
+          - cell "0.98380078" [ref=f1e210]
+          - cell "0.032335211" [ref=f1e211]
+          - cell "0.74163481" [ref=f1e212]
+          - cell "0" [ref=f1e213]
+          - cell "0" [ref=f1e214]
+          - cell "0" [ref=f1e215]
+          - cell "1" [ref=f1e216]
+          - 'cell "fixed energy density; packet scale at N=8: 10" [ref=f1e217]'
+        - row [ref=f1e218]:
+          - cell [ref=f1e219]:
+            - button "Details for classical-rotor-equilibration:case-0009:9" [ref=f1e220] [cursor=pointer]: classical-rotor-equilibration:case-0009:9
+          - cell "8" [ref=f1e221]
+          - cell "100" [ref=f1e222]
+          - cell "fixed_density" [ref=f1e223]
+          - cell "3" [ref=f1e224]
+          - cell "0.25" [ref=f1e225]
+          - cell "0.989562" [ref=f1e226]
+          - cell "0.9894906" [ref=f1e227]
+          - cell "0.98966017" [ref=f1e228]
+          - cell "0.25529451" [ref=f1e229]
+          - cell "0.63785926" [ref=f1e230]
+          - cell "0" [ref=f1e231]
+          - cell "0" [ref=f1e232]
+          - cell "0" [ref=f1e233]
+          - cell "1" [ref=f1e234]
+          - 'cell "fixed energy density; packet scale at N=8: 100" [ref=f1e235]'
+        - row [ref=f1e236]:
+          - cell [ref=f1e237]:
+            - button "Details for classical-rotor-equilibration:case-0010:10" [ref=f1e238] [cursor=pointer]: classical-rotor-equilibration:case-0010:10
+          - cell "16" [ref=f1e239]
+          - cell "100" [ref=f1e240]
+          - cell "fixed_density" [ref=f1e241]
+          - cell "3" [ref=f1e242]
+          - cell "0.125" [ref=f1e243]
+          - cell "0.99467708" [ref=f1e244]
+          - cell "0.99461441" [ref=f1e245]
+          - cell "0.99476185" [ref=f1e246]
+          - cell "0.12633904" [ref=f1e247]
+          - cell "0.59108188" [ref=f1e248]
+          - cell "0" [ref=f1e249]
+          - cell "0" [ref=f1e250]
+          - cell "0" [ref=f1e251]
+          - cell "1" [ref=f1e252]
+          - 'cell "fixed energy density; packet scale at N=8: 100" [ref=f1e253]'
+        - row [ref=f1e254]:
+          - cell [ref=f1e255]:
+            - button "Details for classical-rotor-equilibration:case-0011:11" [ref=f1e256] [cursor=pointer]: classical-rotor-equilibration:case-0011:11
+          - cell "32" [ref=f1e257]
+          - cell "100" [ref=f1e258]
+          - cell "fixed_density" [ref=f1e259]
+          - cell "3" [ref=f1e260]
+          - cell "0.0625" [ref=f1e261]
+          - cell "0.99713597" [ref=f1e262]
+          - cell "0.9970526" [ref=f1e263]
+          - cell "0.99722903" [ref=f1e264]
+          - cell "0.062859302" [ref=f1e265]
+          - cell "0.56738321" [ref=f1e266]
+          - cell "0" [ref=f1e267]
+          - cell "0" [ref=f1e268]
+          - cell "0" [ref=f1e269]
+          - cell "1" [ref=f1e270]
+          - 'cell "fixed energy density; packet scale at N=8: 100" [ref=f1e271]'
+        - row [ref=f1e272]:
+          - cell [ref=f1e273]:
+            - button "Details for classical-rotor-equilibration:case-0012:12" [ref=f1e274] [cursor=pointer]: classical-rotor-equilibration:case-0012:12
+          - cell "64" [ref=f1e275]
+          - cell "100" [ref=f1e276]
+          - cell "fixed_density" [ref=f1e277]
+          - cell "3" [ref=f1e278]
+          - cell "0.03125" [ref=f1e279]
+          - cell "0.9983392" [ref=f1e280]
+          - cell "0.99829494" [ref=f1e281]
+          - cell "0.99841823" [ref=f1e282]
+          - cell "0.031354049" [ref=f1e283]
+          - cell "0.55465876" [ref=f1e284]
+          - cell "0" [ref=f1e285]
+          - cell "0" [ref=f1e286]
+          - cell "0" [ref=f1e287]
+          - cell "1" [ref=f1e288]
+          - 'cell "fixed energy density; packet scale at N=8: 100" [ref=f1e289]'
+        - row [ref=f1e290]:
+          - cell [ref=f1e291]:
+            - button "Details for classical-rotor-equilibration:case-0013:13" [ref=f1e292] [cursor=pointer]: classical-rotor-equilibration:case-0013:13
+          - cell "8" [ref=f1e293]
+          - cell "1" [ref=f1e294]
+          - cell "fixed_packet" [ref=f1e295]
+          - cell "3" [ref=f1e296]
+          - cell "0.25" [ref=f1e297]
+          - cell "0.30370745" [ref=f1e298]
+          - cell "0.29395842" [ref=f1e299]
+          - cell "0.30952469" [ref=f1e300]
+          - cell "0.68576305" [ref=f1e301]
+          - cell "0.79516904" [ref=f1e302]
+          - cell "0.52911228" [ref=f1e303]
+          - cell "0.50735907" [ref=f1e304]
+          - cell "0.55040267" [ref=f1e305]
+          - cell "0.23219452" [ref=f1e306]
+          - 'cell "fixed packet; packet scale at N=8: 1" [ref=f1e307]'
+        - row [ref=f1e308]:
+          - cell [ref=f1e309]:
+            - button "Details for classical-rotor-equilibration:case-0014:14" [ref=f1e310] [cursor=pointer]: classical-rotor-equilibration:case-0014:14
+          - cell "16" [ref=f1e311]
+          - cell "1" [ref=f1e312]
+          - cell "fixed_packet" [ref=f1e313]
+          - cell "3" [ref=f1e314]
+          - cell "0.125" [ref=f1e315]
+          - cell "0.15377757" [ref=f1e316]
+          - cell "0.14747015" [ref=f1e317]
+          - cell "0.16083306" [ref=f1e318]
+          - cell "0.64397839" [ref=f1e319]
+          - cell "0.76201836" [ref=f1e320]
+          - cell "0.52022586" [ref=f1e321]
+          - cell "0.48125521" [ref=f1e322]
+          - cell "0.54262705" [ref=f1e323]
+          - cell "0.18020897" [ref=f1e324]
+          - 'cell "fixed packet; packet scale at N=8: 1" [ref=f1e325]'
+        - row [ref=f1e326]:
+          - cell [ref=f1e327]:
+            - button "Details for classical-rotor-equilibration:case-0015:15" [ref=f1e328] [cursor=pointer]: classical-rotor-equilibration:case-0015:15
+          - cell "32" [ref=f1e329]
+          - cell "1" [ref=f1e330]
+          - cell "fixed_packet" [ref=f1e331]
+          - cell "3" [ref=f1e332]
+          - cell "0.0625" [ref=f1e333]
+          - cell "0.084049424" [ref=f1e334]
+          - cell "0.082647368" [ref=f1e335]
+          - cell "0.085683227" [ref=f1e336]
+          - cell "0.62816047" [ref=f1e337]
+          - cell "0.74566556" [ref=f1e338]
+          - cell "0.43747107" [ref=f1e339]
+          - cell "0.42321577" [ref=f1e340]
+          - cell "0.46014996" [ref=f1e341]
+          - cell "0.2063734" [ref=f1e342]
+          - 'cell "fixed packet; packet scale at N=8: 1" [ref=f1e343]'
+        - row [ref=f1e344]:
+          - cell [ref=f1e345]:
+            - button "Details for classical-rotor-equilibration:case-0016:16" [ref=f1e346] [cursor=pointer]: classical-rotor-equilibration:case-0016:16
+          - cell "64" [ref=f1e347]
+          - cell "1" [ref=f1e348]
+          - cell "fixed_packet" [ref=f1e349]
+          - cell "3" [ref=f1e350]
+          - cell "0.03125" [ref=f1e351]
+          - cell "0.040627166" [ref=f1e352]
+          - cell "0.039467086" [ref=f1e353]
+          - cell "0.042153012" [ref=f1e354]
+          - cell "0.64398649" [ref=f1e355]
+          - cell "0.73575301" [ref=f1e356]
+          - cell "0.4189577" [ref=f1e357]
+          - cell "0.36462094" [ref=f1e358]
+          - cell "0.46792558" [ref=f1e359]
+          - cell "0.19102207" [ref=f1e360]
+          - 'cell "fixed packet; packet scale at N=8: 1" [ref=f1e361]'
+        - row [ref=f1e362]:
+          - cell [ref=f1e363]:
+            - button "Details for classical-rotor-equilibration:case-0017:17" [ref=f1e364] [cursor=pointer]: classical-rotor-equilibration:case-0017:17
+          - cell "8" [ref=f1e365]
+          - cell "10" [ref=f1e366]
+          - cell "fixed_packet" [ref=f1e367]
+          - cell "3" [ref=f1e368]
+          - cell "0.25" [ref=f1e369]
+          - cell "0.24457722" [ref=f1e370]
+          - cell "0.23191639" [ref=f1e371]
+          - cell "0.25370883" [ref=f1e372]
+          - cell "0.80768529" [ref=f1e373]
+          - cell "0.8080484" [ref=f1e374]
+          - cell "0.90437841" [ref=f1e375]
+          - cell "0.89780616" [ref=f1e376]
+          - cell "0.91557901" [ref=f1e377]
+          - cell "0.054990142" [ref=f1e378]
+          - 'cell "fixed packet; packet scale at N=8: 10" [ref=f1e379]'
+        - row [ref=f1e380]:
+          - cell [ref=f1e381]:
+            - button "Details for classical-rotor-equilibration:case-0018:18" [ref=f1e382] [cursor=pointer]: classical-rotor-equilibration:case-0018:18
+          - cell "16" [ref=f1e383]
+          - cell "10" [ref=f1e384]
+          - cell "fixed_packet" [ref=f1e385]
+          - cell "3" [ref=f1e386]
+          - cell "0.125" [ref=f1e387]
+          - cell "0.12404112" [ref=f1e388]
+          - cell "0.12238777" [ref=f1e389]
+          - cell "0.12639782" [ref=f1e390]
+          - cell "0.76631094" [ref=f1e391]
+          - cell "0.76699127" [ref=f1e392]
+          - cell "0.89252985" [ref=f1e393]
+          - cell "0.88780894" [ref=f1e394]
+          - cell "0.89641766" [ref=f1e395]
+          - cell "0.03484097" [ref=f1e396]
+          - 'cell "fixed packet; packet scale at N=8: 10" [ref=f1e397]'
+        - row [ref=f1e398]:
+          - cell [ref=f1e399]:
+            - button "Details for classical-rotor-equilibration:case-0019:19" [ref=f1e400] [cursor=pointer]: classical-rotor-equilibration:case-0019:19
+          - cell "32" [ref=f1e401]
+          - cell "10" [ref=f1e402]
+          - cell "fixed_packet" [ref=f1e403]
+          - cell "3" [ref=f1e404]
+          - cell "0.0625" [ref=f1e405]
+          - cell "0.062556188" [ref=f1e406]
+          - cell "0.062333111" [ref=f1e407]
+          - cell "0.062721382" [ref=f1e408]
+          - cell "0.74865401" [ref=f1e409]
+          - cell "0.74691733" [ref=f1e410]
+          - cell "0.89132648" [ref=f1e411]
+          - cell "0.88642044" [ref=f1e412]
+          - cell "0.89475146" [ref=f1e413]
+          - cell "0.021650919" [ref=f1e414]
+          - 'cell "fixed packet; packet scale at N=8: 10" [ref=f1e415]'
+        - row [ref=f1e416]:
+          - cell [ref=f1e417]:
+            - button "Details for classical-rotor-equilibration:case-0020:20" [ref=f1e418] [cursor=pointer]: classical-rotor-equilibration:case-0020:20
+          - cell "64" [ref=f1e419]
+          - cell "10" [ref=f1e420]
+          - cell "fixed_packet" [ref=f1e421]
+          - cell "3" [ref=f1e422]
+          - cell "0.03125" [ref=f1e423]
+          - cell "0.031927481" [ref=f1e424]
+          - cell "0.029943731" [ref=f1e425]
+          - cell "0.033093648" [ref=f1e426]
+          - cell "0.72950905" [ref=f1e427]
+          - cell "0.73772013" [ref=f1e428]
+          - cell "0.87198001" [ref=f1e429]
+          - cell "0.84448764" [ref=f1e430]
+          - cell "0.89086365" [ref=f1e431]
+          - cell "0.04247871" [ref=f1e432]
+          - 'cell "fixed packet; packet scale at N=8: 10" [ref=f1e433]'
+        - row [ref=f1e434]:
+          - cell [ref=f1e435]:
+            - button "Details for classical-rotor-equilibration:case-0021:21" [ref=f1e436] [cursor=pointer]: classical-rotor-equilibration:case-0021:21
+          - cell "8" [ref=f1e437]
+          - cell "100" [ref=f1e438]
+          - cell "fixed_packet" [ref=f1e439]
+          - cell "3" [ref=f1e440]
+          - cell "0.25" [ref=f1e441]
+          - cell "0.989562" [ref=f1e442]
+          - cell "0.9894906" [ref=f1e443]
+          - cell "0.98966017" [ref=f1e444]
+          - cell "0.25529451" [ref=f1e445]
+          - cell "0.63785926" [ref=f1e446]
+          - cell "0" [ref=f1e447]
+          - cell "0" [ref=f1e448]
+          - cell "0" [ref=f1e449]
+          - cell "1" [ref=f1e450]
+          - 'cell "fixed packet; packet scale at N=8: 100" [ref=f1e451]'
+        - row [ref=f1e452]:
+          - cell [ref=f1e453]:
+            - button "Details for classical-rotor-equilibration:case-0022:22" [ref=f1e454] [cursor=pointer]: classical-rotor-equilibration:case-0022:22
+          - cell "16" [ref=f1e455]
+          - cell "100" [ref=f1e456]
+          - cell "fixed_packet" [ref=f1e457]
+          - cell "3" [ref=f1e458]
+          - cell "0.125" [ref=f1e459]
+          - cell "0.9892175" [ref=f1e460]
+          - cell "0.98909571" [ref=f1e461]
+          - cell "0.98938361" [ref=f1e462]
+          - cell "0.12772645" [ref=f1e463]
+          - cell "0.6283884" [ref=f1e464]
+          - cell "0" [ref=f1e465]
+          - cell "0" [ref=f1e466]
+          - cell "0" [ref=f1e467]
+          - cell "1" [ref=f1e468]
+          - 'cell "fixed packet; packet scale at N=8: 100" [ref=f1e469]'
+        - row [ref=f1e470]:
+          - cell [ref=f1e471]:
+            - button "Details for classical-rotor-equilibration:case-0023:23" [ref=f1e472] [cursor=pointer]: classical-rotor-equilibration:case-0023:23
+          - cell "32" [ref=f1e473]
+          - cell "100" [ref=f1e474]
+          - cell "fixed_packet" [ref=f1e475]
+          - cell "3" [ref=f1e476]
+          - cell "0.0625" [ref=f1e477]
+          - cell "0.9883449" [ref=f1e478]
+          - cell "0.98801358" [ref=f1e479]
+          - cell "0.98871414" [ref=f1e480]
+          - cell "0.06398078" [ref=f1e481]
+          - cell "0.67223316" [ref=f1e482]
+          - cell "0" [ref=f1e483]
+          - cell "0" [ref=f1e484]
+          - cell "0" [ref=f1e485]
+          - cell "1" [ref=f1e486]
+          - 'cell "fixed packet; packet scale at N=8: 100" [ref=f1e487]'
+        - row [ref=f1e488]:
+          - cell [ref=f1e489]:
+            - button "Details for classical-rotor-equilibration:case-0024:24" [ref=f1e490] [cursor=pointer]: classical-rotor-equilibration:case-0024:24
+          - cell "64" [ref=f1e491]
+          - cell "100" [ref=f1e492]
+          - cell "fixed_packet" [ref=f1e493]
+          - cell "3" [ref=f1e494]
+          - cell "0.03125" [ref=f1e495]
+          - cell "0.98650064" [ref=f1e496]
+          - cell "0.98615286" [ref=f1e497]
+          - cell "0.98712212" [ref=f1e498]
+          - cell "0.032110013" [ref=f1e499]
+          - cell "0.73176331" [ref=f1e500]
+          - cell "0" [ref=f1e501]
+          - cell "0" [ref=f1e502]
+          - cell "0" [ref=f1e503]
+          - cell "1" [ref=f1e504]
+          - 'cell "fixed packet; packet scale at N=8: 100" [ref=f1e505]'

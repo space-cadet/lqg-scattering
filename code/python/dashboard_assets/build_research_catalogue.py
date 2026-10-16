@@ -17,6 +17,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from PIL import Image
+from curated_t11 import face_connectivity_rows, quantum_planar_rows, source_hashes
 
 ROOT = Path(__file__).resolve().parents[3]
 DASH = ROOT / "code/dashboard"
@@ -52,6 +53,9 @@ FIGURE_TITLES = {
     "rotor-scaling":"Rotor-size and preparation comparison",
     "few-rotor-transfer":"Planar-pair transfer and three-dimensional controls",
     "coupling-crossover":"Finite-time coupling crossover and delayed release",
+    "energy-transfer":"Quantum and matched classical planar-rotor energy transfer",
+    "area-transfer":"Area redistribution across exact singlet trajectories",
+    "geometry-and-activation":"Geometry samples and active-channel redistribution",
 }
 
 
@@ -224,7 +228,7 @@ def historical_plots():
         "plots": {k:[{"path":p,"sha256":hashlib.sha256((ROOT/p).read_bytes()).hexdigest()} for p in v] for k,v in PLOT_SOURCES.items()}}, indent=2)+"\n")
 
 
-def add(identifier, task, title, description, limits, sources, figures=(), table=None, status="Saved calculation", catalogue_date="2026-10-09", compressed_sources=(), chart=None):
+def add(identifier, task, title, description, limits, sources, figures=(), table=None, status="Saved calculation", catalogue_date="2026-10-09", compressed_sources=(), chart=None, source_hashes_map=None, document_notes=None):
     files = []
     for source in sources:
         path = ROOT / source
@@ -250,6 +254,10 @@ def add(identifier, task, title, description, limits, sources, figures=(), table
     study = {"id":identifier,"task":task,"title":title,"description":description,
              "limits":limits,"status":status,"catalogueDate":catalogue_date,
              "files":files,"figures":images,"table":table}
+    if source_hashes_map:
+        study["sourceHashes"] = source_hashes_map
+    if document_notes is not None:
+        study["documentNotes"] = document_notes
     if chart:
         study["chart"] = chart
     STUDIES.append(study)
@@ -670,6 +678,120 @@ def main(reuse_history=False):
         "Simple-state implementation checks; project normalization and selected four-face AL embedding only.", ["results/volume_prescription_results.json"], [HISTORY/"volume_controls.png"])
     add("covariance-pilot","T5c","Initial covariance reconstruction pilot","Six saved pilot records; later shape recovery and weighted-input studies are shown in Volume Studies.",
         "Exploratory covariance-derived geometry; preserve the distinction from the classical input tetrahedron and positive-volume operator.", ["results/t5c_covariance_probe_results.json"], [HISTORY/"covariance_pilot.png"])
+
+    # NS37 compares two exactly zero-total-momentum quantum preparations with
+    # matched classical ensembles. Only compact late-window summaries are
+    # selectable; the source time samples remain represented by the saved plot.
+    parent_note = "notes/quantum-geometry-research.md"
+    quantum_note = "notes/quantum-planar-rotor-energy-transfer.md"
+    face_note = "notes/face-activation-connectivity.md"
+    geometry_note = "notes/geometric-area-redistribution.md"
+    parent_sources = [parent_note] if (ROOT / parent_note).is_file() else []
+    quantum_rows = quantum_planar_rows(ROOT)
+    quantum_sources = [
+        "results/t11-quantum-planar-rotors/README.md",
+        "results/t11-quantum-planar-rotors/protocol.md",
+        "results/t11-quantum-planar-rotors/summary.json",
+        quantum_note, *parent_sources,
+        "code/python/t11_quantum_planar_rotors.py",
+        "code/python/lqg_scattering/planar_rotors.py",
+        # Keep every local destination in the parent research map available
+        # in the dashboard package, without adding these references as note cards.
+        "notes/published-paper-overview.md",
+        "notes/state-space-probes.md",
+        "notes/experiments/fl_volume_shape_scan_log.md",
+        "figures/physical-illustrations/README.md",
+        "notes/constructive-sewing-probe.md",
+        "notes/binding-energy.md",
+        "results/README.md",
+        "memory-bank/sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-summary.md",
+        "memory-bank/sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-transcript.md",
+        "notes/task-specifications",
+        "notes/thermal-area-sectors-reorganization.md",
+        "notes/equilibration-session-note-map.md",
+        *[f"figures/physical-illustrations/{name}" for name in sorted(p.name for p in (ROOT / "figures/physical-illustrations").glob("*.svg"))],
+    ]
+    add("t11-quantum-planar-rotors", "T11", "Quantum planar-rotor transfer at zero total momentum (NS37)",
+        "Two four-rotor ring preparations start in |m,-m,0,0| with exactly zero total momentum. Each row compares the saved late-window cold-pair kinetic fraction with an independent classical ensemble and reports the quantum single-rotor entropy for the initially energetic pair, initially cold pair, and all four sites.",
+        "First pilot at epsilon=I=lambda=hbar=1, four sites and times 0 to 20. The reported energy is a mean, not a sharp total-energy eigenvalue. The matched classical initial measure does not establish later quantum/classical agreement, equilibration, a classical limit, or three-dimensional singlet dynamics.",
+        quantum_sources, ["figures/t11-quantum-planar-rotors"],
+        table={"columns": list(quantum_rows[0]), "rows": quantum_rows},
+        status="Two accepted cutoff-10 cases; 6,181 zero-momentum sector states; norm, energy, classical refinement and momentum checks recorded",
+        catalogue_date="2026-10-16",
+        chart={"type": "scatter", "x": "parameters.packet_energy", "y": "results.late_quantum_cold_pair_fraction",
+               "labels": {"parameters.packet_energy": "Initial packet kinetic energy",
+                          "results.late_quantum_cold_pair_fraction": "Late cold-pair kinetic fraction (10 ≤ τ ≤ 20)"}},
+        source_hashes_map=source_hashes(ROOT, [
+            "results/t11-quantum-planar-rotors/quantum-m2-c10.json",
+            "results/t11-quantum-planar-rotors/quantum-m4-c10.json",
+            "results/t11-quantum-planar-rotors/classical-m2.json",
+            "results/t11-quantum-planar-rotors/classical-m4.json",
+        ]),
+        document_notes=[quantum_note, parent_note])
+
+    # NS38 retains the six exact source/graph witnesses as compact transition
+    # rows; full occupation-space coefficient arrays remain out of the package.
+    face_rows = face_connectivity_rows(ROOT)
+    face_sources = [
+        "results/t11-face-connectivity/README.md",
+        "results/t11-face-connectivity/protocol.md",
+        "results/t11-face-connectivity/summary.json",
+        "results/t11-face-connectivity/independent-validation.json",
+        face_note, *parent_sources,
+    ]
+    add("t11-face-connectivity", "T11", "Closed and open four-to-five-to-six channel transitions (NS38)",
+        "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "Operator connectivity at alpha=t=hbar=1, with fixed boson number. A connected singlet basis does not mean every state activates every sector; open zero-mean-spin states are not singlets. This is not time evolution or geometric reconstruction.",
+        face_sources,
+        table={"columns": list(face_rows[0]), "rows": face_rows},
+        status="99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session",
+        catalogue_date="2026-10-16",
+        chart={"type": "scatter", "x": "parameters.to_active_channels", "y": "results.chart_matrix_magnitude",
+               "groupBy": "results.series",
+               "labels": {"parameters.to_active_channels": "Destination active channels",
+                          "results.chart_matrix_magnitude": "Absolute direct-H matrix element",
+                          "results.series": "Graph and source sector"}},
+        source_hashes_map=source_hashes(ROOT, [
+            "results/t11-face-connectivity/L6-K3.json",
+            "results/t11-face-connectivity/L5-K3.json",
+            "results/t11-face-connectivity/L6-K2.json",
+        ]),
+        document_notes=[face_note, parent_note])
+
+    # NS39 uses one compact summary row for each exact trajectory and selected
+    # geometry samples. The 5,454-row dynamics history is deliberately omitted.
+    geometry_sources = [
+        "results/t11-geometric-redistribution/README.md",
+        "results/t11-geometric-redistribution/protocol.md",
+        "results/t11-geometric-redistribution/summary.csv",
+        "results/t11-geometric-redistribution/geometry.json",
+        "results/t11-geometric-redistribution/validation.json",
+        "results/t11-geometric-redistribution/independent-validation.json",
+        "results/t11-geometric-redistribution/symmetry-control.json",
+        "results/t11-geometric-redistribution/provenance.json",
+        "results/t11-geometric-redistribution/postprocessing-provenance.json",
+        "results/t11-geometric-redistribution/performance.json",
+        "results/t11-geometric-redistribution/regression.json",
+        geometry_note, *parent_sources,
+        "code/python/t11_geometric_redistribution.py",
+        "code/python/lqg_scattering/channel_dynamics.py",
+        "code/python/verify_t11_geometric_redistribution.py",
+        "code/python/check_t11_channel_symmetry.py",
+        "code/python/plot_t11_geometric_redistribution.py",
+    ]
+    add("t11-geometric-redistribution", "T11", "Exact-singlet geometric area redistribution (NS39–NS40)",
+        "Fifty-four K=4 exact-singlet trajectories compare L=4,6,8 rings and complete graphs at alpha=0,1,5. The 54 case summaries are grouped in the chart by size, graph and preparation, with one point per coupling. The package also includes 270 selected geometry samples and the post-run permutation selection rule recorded as NS40.",
+        "Finite evolution through τ=20 from regular-sharp, deformed-sharp and regular FL preparations. K is conserved linear area; the higher-valence RS volume stays in project units. Singlet mean fluxes vanish, so the pair and volume readouts do not identify distinct classical face normals or a unique polyhedron. The permutation rule explains a source-specific all-channel suppression and did not select or remove trajectories.",
+        geometry_sources, ["figures/t11-geometric-redistribution"],
+        status="54 exact-singlet trajectories; 270 geometry samples; 91,476 independent observable checks with maximum residual 6.43e-12; NS40 post-run diagnostic included",
+        catalogue_date="2026-10-16",
+        chart={"type": "line", "x": "parameters.alpha", "y": "results.late_receiver_area_fraction",
+               "groupBy": "results.series",
+               "labels": {"parameters.alpha": "Casimir coupling α",
+                          "results.late_receiver_area_fraction": "Late mean area in initially empty receivers / K",
+                          "results.series": "Size, graph and preparation"}},
+        document_notes=[geometry_note, parent_note])
+
     metadata={"method":"packages saved data; no scientific runs repeated", "jsonNonfinitePolicy":"Nonfinite numbers become null only in dashboard JSON exports; source hashes refer to originals.","studies":STUDIES}
     (DASH/"studies.json").write_text(json.dumps(clean(metadata),indent=2,allow_nan=False)+"\n")
     d=read("code/dashboard/data.json")
@@ -682,13 +804,23 @@ def main(reuse_history=False):
     d["summary"].update(totalRuns=len(d["runs"]),completeRuns=sum(r["status"]=="complete" for r in d["runs"]),registeredStudies=len(STUDIES))
     d["project"]["subtitle"]="Hamiltonian, closed-basis volume, thermal-sector and rotor results, with curated data, figures and verification records"
     d["theory"]["description"]="The catalogue records exact singlet Hamiltonian studies, kinematic RS/AL catalogues, selected squeezed thermal-sector distributions, finite-area face-channel readouts, and classical rotor energy-transfer studies. Model support, sampling choices, normalization and verification limits accompany each result. Broader parameter, finite-size and bulk-phase studies remain open."
-    d["tasks"]={"active":[{"id":t,"title":title,"description":desc} for t,title,desc in [("T1a","Positive-volume validation","Complete four-face baseline through K=12 saved; broader physical calibration remains open."),("T5c","Weighted FL volume and shape","Initial and higher-J probes saved; broad convergence and unresolved RS comparison remain open."),("T5d","Cocycle phase","Recorded ten-point pilot; broader phase study open."),("T9","Thermal intertwiners and TFD","Projected reference entropy, Schmidt spectra, coherent joint creation and thermal geometry saved. General FL inputs and full unprojected spectra remain open."),("T9a","Singlet exchange","Finite combined-area FL dynamics and canonical controls saved; reservoir and thermal-family comparison open."),("T11","Hamiltonian, face-channel and rotor studies","Four/five-site Hamiltonians, large-area face activation, a finite-area equilibration pilot, grouped classical rotor spreading, few-rotor transfer and coupling scans are saved. Rotor records use selected summaries and representative cases; large-area quantum equilibration, permanent localization, universal thermalization and the crossover's infinite-time limit remain open.")]],"completed":[{"id":"T10","title":"Variable-face RS catalogue","description":"Declared K=2,3,4 catalogue complete."},{"id":"T1b","title":"Real-plane volume check","description":"Independent positive-volume comparison saved."},{"id":"T5a/T5a′/T5b/T5e","title":"Archived numerical pilots","description":"Recorded scope complete; finite sampling and proxy interpretation retained."}],"pending":[]}
+    d["tasks"]={"active":[{"id":t,"title":title,"description":desc} for t,title,desc in [("T1a","Positive-volume validation","Complete four-face baseline through K=12 saved; broader physical calibration remains open."),("T5c","Weighted FL volume and shape","Initial and higher-J probes saved; broad convergence and unresolved RS comparison remain open."),("T5d","Cocycle phase","Recorded ten-point pilot; broader phase study open."),("T9","Thermal intertwiners and TFD","Projected reference entropy, Schmidt spectra, coherent joint creation and thermal geometry saved. General FL inputs and full unprojected spectra remain open."),("T9a","Singlet exchange","Finite combined-area FL dynamics and canonical controls saved; reservoir and thermal-family comparison open."),("T11","Hamiltonian, face-channel and rotor studies","Four/five-site Hamiltonians, large-area face activation, a finite-area equilibration pilot, grouped classical rotor studies and the NS37–NS40 quantum/geometry records are saved. The geometric dataset has 54 exact-singlet trajectories and a post-run symmetry rule; broader finite-size, equilibration and geometric interpretation remain open.")]],"completed":[{"id":"T10","title":"Variable-face RS catalogue","description":"Declared K=2,3,4 catalogue complete."},{"id":"T1b","title":"Real-plane volume check","description":"Independent positive-volume comparison saved."},{"id":"T5a/T5a′/T5b/T5e","title":"Archived numerical pilots","description":"Recorded scope complete; finite sampling and proxy interpretation retained."}],"pending":[]}
     combined=d["tasks"]["completed"].pop()
     d["tasks"]["completed"].extend({"id":task,"title":title,"description":combined["description"]} for task,title in
         [("T5a","Magnetization pilot"),("T5a′","Local chirality"),("T5b","Perturbation response"),("T5e","Recorded large-K families")])
     (DASH/"data.json").write_text(json.dumps(clean(d),indent=2,allow_nan=False)+"\n")
     from export_numerical_data import export_numerical_data
     datasets = export_numerical_data(metadata)
+    # The research guide keeps its repository-relative dashboard link. In the
+    # package, route that mirrored path back to the working dashboard root.
+    dashboard_alias = DASH / "study-assets/code/dashboard/index.html"
+    dashboard_alias.parent.mkdir(parents=True, exist_ok=True)
+    dashboard_alias.write_text(
+        '<!doctype html><meta charset="utf-8">'
+        '<meta http-equiv="refresh" content="0; url=../../../index.html">'
+        '<title>Numerics dashboard</title>'
+        '<p><a href="../../../index.html">Open the numerics dashboard</a></p>\n'
+    )
     print(f"Exported {len(datasets)} InfoDash datasets")
     print(f"Packaged {len(STUDIES)} studies, {len(d['runs'])} run records, {len(d['figures'])} figures")
 

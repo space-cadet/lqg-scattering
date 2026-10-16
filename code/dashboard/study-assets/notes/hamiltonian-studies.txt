@@ -1,5 +1,7 @@
 # Four-site Hamiltonian spectra and positive-RS volume observables
 
+[Research map](quantum-geometry-research.md) · Related: [volume studies](volume-studies.md), [geometric area redistribution](geometric-area-redistribution.md).
+
 *Created: 2026-10-09 11:35:15 IST*
 *Last Updated: 2026-10-11 11:51:12 IST*
 

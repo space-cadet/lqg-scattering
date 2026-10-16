@@ -1,5 +1,7 @@
 # Explicit F-pair sewing: triangle, tetrahedron, two joined tetrahedra
 
+[Research map](quantum-geometry-research.md) · Related: [binding energy](binding-energy.md), [t9a singlet exchange](t9a-singlet-exchange.md).
+
 This implements the construction recorded in `memory-bank/implementation-details/constructive-geometric-sewing-dialogue.md`. It does not update the Memory Bank or assign an energy to the sewn networks.
 
 ## Triangle seed

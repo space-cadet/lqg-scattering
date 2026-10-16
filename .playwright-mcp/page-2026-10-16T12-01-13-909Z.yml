@@ -1,0 +1,182 @@
+- generic [ref=f3e2]:
+  - navigation "Numerical datasets" [ref=f3e3]:
+    - generic [ref=f3e4]: Numerical study
+    - combobox "Numerical study" [ref=f3e5]:
+      - option "All studies — overview"
+      - option "Small-area face-channel equilibration pilot (12 rows)"
+      - option "Classical rotor spreading and equilibrium comparison (24 rows)"
+      - 'option "Few-rotor transfer: planar bound and 3D controls (27 rows)"'
+      - option "Rotor coupling crossover and delayed release (64 rows)"
+      - 'option "Large-area tetrahedron: face activation and recurrence (20 rows)"'
+      - option "Entanglement of separately closed thermal polyhedra (86 rows)"
+      - option "Ordinary closure versus temperature (125 rows)"
+      - option "Heating separately closed area and positive RS volume (85 rows)"
+      - option "Singlet exchange between closed FL polyhedra (20 rows)"
+      - 'option "Four versus five sites: thermal-volume persistence (12 rows)"'
+      - option "Prepared tetrahedral FL states and the volume crossover (11 rows)"
+      - option "Candidate geometric Hamiltonians and prepared-FL dynamics (62 rows)"
+      - option "Four-site Hamiltonian spectra and RS-volume observables (30 rows)"
+      - option "Complete four-face closed-basis volumes (11 rows)"
+      - option "Variable-face positive RS catalogue (9 rows)"
+      - option "Squeezed-vacuum area coefficients (964 rows)"
+      - option "Squeezed-vacuum resultant spin (196 rows)"
+      - option "Excited J_in=1 joint area and spin (5 rows)"
+      - option "Higher-J flat-boundary probes (13 rows)"
+      - option "Magnetization and signed-grasp correlations (10 rows)"
+      - option "Local-chirality pilot (13 rows)"
+      - option "Imaginary-perturbation response (26 rows)"
+      - option "Cocycle-phase pilot (10 rows)"
+      - option "Large-K recorded families and fits (13 rows)"
+      - option "Historical single-copy thermal pilot (14 rows)"
+      - option "Historical energy-basis TFD pilot (14 rows)"
+      - option "Historical complexified purification (10 rows)"
+      - option "Small-sector thermal geometry audit (4 rows)"
+      - option "RS/AL volume-prescription controls (2 rows)"
+      - option "Initial covariance reconstruction pilot (6 rows)"
+      - option "Quantum planar-rotor transfer at zero total momentum (NS37) (2 rows)"
+      - option "Closed and open four-to-five-to-six channel transitions (NS38) (30 rows)" [selected]
+      - option "Exact-singlet geometric area redistribution (NS39–NS40) (54 rows)"
+      - option "Prepared FL evolution sampling (50 rows)"
+      - option "Positive volumes on two real-plane states (2 rows)"
+      - option "FL covariance shape recovery (84 rows)"
+      - option "Weighted FL input geometry and volumes (14 rows)"
+      - option "Regular FL volume versus area (5 rows)"
+      - option "Equal-area FL shape scan at J=2 (440 rows)"
+      - option "Same-number detachment energies (8 rows)"
+      - option "Closed and open state evolution probes (6 rows)"
+      - option "Constructive edge sewing probes (5 rows)"
+  - heading "Closed and open four-to-five-to-six channel transitions (NS38)" [level=1] [ref=f3e6]
+  - paragraph [ref=f3e7]: The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.
+  - generic [ref=f3e8]:
+    - generic [ref=f3e9]:
+      - generic [ref=f3e10]: "30"
+      - generic [ref=f3e11]: Total Runs
+    - generic [ref=f3e12]:
+      - generic [ref=f3e13]: "0"
+      - generic [ref=f3e14]: Tasks
+    - generic [ref=f3e15]:
+      - generic [ref=f3e16]: "30"
+      - generic [ref=f3e17]: Complete
+    - generic [ref=f3e18]:
+      - generic [ref=f3e19]: "0"
+      - generic [ref=f3e20]: Figures
+  - tablist "Dashboard sections" [ref=f3e21]:
+    - tab "Runs & Studies" [ref=f3e22] [cursor=pointer]
+    - tab "Figure Archive" [ref=f3e23] [cursor=pointer]
+    - tab "Charts" [active] [selected] [ref=f3e24] [cursor=pointer]
+    - tab "Tasks & Numerical Notes" [ref=f3e25] [cursor=pointer]
+  - tabpanel "Charts" [ref=f3e646]:
+    - heading "Performance" [level=2] [ref=f3e647]
+    - generic [ref=f3e648]:
+      - generic [ref=f3e649]:
+        - generic [ref=f3e650]: "X-Axis:"
+        - combobox "X-Axis:" [ref=f3e651]:
+          - option "Available channels L"
+          - option "Fixed area K"
+          - option "source spin"
+          - option "From active channels"
+          - option "Destination active channels" [selected]
+          - option "operator order"
+          - option "singlet dimension"
+          - option "full dimension"
+          - option "Singlet rank, 4→5"
+          - option "Singlet source nullity, 4→5"
+          - option "Direct 4→6 block norm"
+          - option "Signed matrix element (H or H²)"
+          - option "Absolute direct-H matrix element"
+          - option "first hop norm"
+          - option "second hop norm"
+          - option "H2 target6 source"
+          - option "Control singlet block norm"
+      - generic [ref=f3e652]:
+        - generic [ref=f3e653]: "Y-Axis:"
+        - combobox "Y-Axis:" [ref=f3e654]:
+          - option "Available channels L"
+          - option "Fixed area K"
+          - option "source spin"
+          - option "From active channels"
+          - option "Destination active channels"
+          - option "operator order"
+          - option "singlet dimension"
+          - option "full dimension"
+          - option "Singlet rank, 4→5"
+          - option "Singlet source nullity, 4→5"
+          - option "Direct 4→6 block norm"
+          - option "Signed matrix element (H or H²)"
+          - option "Absolute direct-H matrix element" [selected]
+          - option "first hop norm"
+          - option "second hop norm"
+          - option "H2 target6 source"
+          - option "Control singlet block norm"
+      - generic [ref=f3e655]:
+        - generic [ref=f3e656]: "Chart Type:"
+        - combobox "Chart Type:" [ref=f3e657]:
+          - option "Scatter" [selected]
+          - option "Line"
+      - generic [ref=f3e658]:
+        - generic [ref=f3e659]: "Series:"
+        - combobox "Series:" [ref=f3e660]:
+          - option "All runs"
+          - option "Witness / transition"
+          - option "Hopping graph"
+          - option "Source sector"
+          - option "Occupation transition"
+          - option "Operator"
+          - option "Source counts"
+          - option "Five-channel witness"
+          - option "Six-channel witness"
+          - option "Graph and source sector" [selected]
+          - option "display id"
+    - generic [ref=f3e661]:
+      - figure "Absolute direct-H matrix element versus Destination active channels" [ref=f3e663]:
+        - generic [ref=f3e664]:
+          - generic [ref=f3e665]: complete; closed singlet
+          - generic [ref=f3e668]: complete; open J=3 highest weight
+          - generic [ref=f3e671]: complete; open J=3, M=0
+          - generic [ref=f3e674]: ring; closed singlet
+          - generic [ref=f3e677]: ring; open J=3 highest weight
+          - generic [ref=f3e680]: ring; open J=3, M=0
+        - img [ref=f3e683]:
+          - generic "y-axis tick label" [ref=f3e685]:
+            - generic [ref=f3e686]: "0.0"
+            - generic [ref=f3e687]: "0.2"
+            - generic [ref=f3e688]: "0.4"
+            - generic [ref=f3e689]: "0.6"
+            - generic [ref=f3e690]: "0.8"
+            - generic [ref=f3e691]: "1.0"
+            - generic [ref=f3e692]: "1.2"
+            - generic [ref=f3e693]: "1.4"
+          - generic "y-axis label" [ref=f3e694]: ↑ Absolute direct-H matrix element
+          - generic "x-axis tick label" [ref=f3e697]:
+            - generic [ref=f3e698]: "5.0"
+            - generic [ref=f3e699]: "5.1"
+            - generic [ref=f3e700]: "5.2"
+            - generic [ref=f3e701]: "5.3"
+            - generic [ref=f3e702]: "5.4"
+            - generic [ref=f3e703]: "5.5"
+            - generic [ref=f3e704]: "5.6"
+            - generic [ref=f3e705]: "5.7"
+            - generic [ref=f3e706]: "5.8"
+            - generic [ref=f3e707]: "5.9"
+            - generic [ref=f3e708]: "6.0"
+          - generic "x-axis label" [ref=f3e709]: Destination active channels →
+          - generic "dot" [ref=f3e711]:
+            - 'generic "t11-face-connectivity:complete · closed singlet · 4 to 5 (H):13 Destination active channels: 5 Absolute direct-H matrix element: 1.4142135623730954" [ref=f3e712]'
+            - 'generic "t11-face-connectivity:complete · closed singlet · 5 to 6 (H):14 Destination active channels: 6 Absolute direct-H matrix element: 1.4142135623730951" [ref=f3e713]'
+            - 'generic "t11-face-connectivity:complete · closed singlet · 4 to 6 direct (H):15 Destination active channels: 6 Absolute direct-H matrix element: 0" [ref=f3e714]'
+            - 'generic "t11-face-connectivity:complete · open J=3 highest weight · 4 to 5 (H):17 Destination active channels: 5 Absolute direct-H matrix element: 1.4142135623730951" [ref=f3e715]'
+            - 'generic "t11-face-connectivity:complete · open J=3 highest weight · 5 to 6 (H):18 Destination active channels: 6 Absolute direct-H matrix element: 1.4142135623730951" [ref=f3e716]'
+            - 'generic "t11-face-connectivity:complete · open J=3 highest weight · 4 to 6 direct (H):19 Destination active channels: 6 Absolute direct-H matrix element: 0" [ref=f3e717]'
+            - 'generic "t11-face-connectivity:complete · open J=3, M=0 · 4 to 5 (H):21 Destination active channels: 5 Absolute direct-H matrix element: 1.414213562373095" [ref=f3e718]'
+            - 'generic "t11-face-connectivity:complete · open J=3, M=0 · 5 to 6 (H):22 Destination active channels: 6 Absolute direct-H matrix element: 1.414213562373095" [ref=f3e719]'
+            - 'generic "t11-face-connectivity:complete · open J=3, M=0 · 4 to 6 direct (H):23 Destination active channels: 6 Absolute direct-H matrix element: 0" [ref=f3e720]'
+            - 'generic "t11-face-connectivity:ring · closed singlet · 4 to 5 (H):1 Destination active channels: 5 Absolute direct-H matrix element: 1.4142135623730954" [ref=f3e721]'
+            - 'generic "t11-face-connectivity:ring · closed singlet · 5 to 6 (H):2 Destination active channels: 6 Absolute direct-H matrix element: 1.4142135623730951" [ref=f3e722]'
+            - 'generic "t11-face-connectivity:ring · closed singlet · 4 to 6 direct (H):3 Destination active channels: 6 Absolute direct-H matrix element: 0" [ref=f3e723]'
+            - 'generic "t11-face-connectivity:ring · open J=3 highest weight · 4 to 5 (H):5 Destination active channels: 5 Absolute direct-H matrix element: 1.4142135623730951" [ref=f3e724]'
+            - 'generic "t11-face-connectivity:ring · open J=3 highest weight · 5 to 6 (H):6 Destination active channels: 6 Absolute direct-H matrix element: 1.4142135623730951" [ref=f3e725]'
+            - 'generic "t11-face-connectivity:ring · open J=3 highest weight · 4 to 6 direct (H):7 Destination active channels: 6 Absolute direct-H matrix element: 0" [ref=f3e726]'
+            - 'generic "t11-face-connectivity:ring · open J=3, M=0 · 4 to 5 (H):9 Destination active channels: 5 Absolute direct-H matrix element: 1.414213562373095" [ref=f3e727]'
+            - 'generic "t11-face-connectivity:ring · open J=3, M=0 · 5 to 6 (H):10 Destination active channels: 6 Absolute direct-H matrix element: 1.414213562373095" [ref=f3e728]'
+            - 'generic "t11-face-connectivity:ring · open J=3, M=0 · 4 to 6 direct (H):11 Destination active channels: 6 Absolute direct-H matrix element: 0" [ref=f3e729]'
+      - paragraph [ref=f3e730]: 18 recorded points; series by Graph and source sector.

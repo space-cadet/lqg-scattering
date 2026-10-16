@@ -1,0 +1,3 @@
+[    3339ms] [ERROR] Error: <svg> attribute width: A negative value is not valid. ("-40") @ https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js:1
+[    3340ms] [ERROR] Error: <svg> attribute viewBox: A negative value is not valid. ("0 0 -40 300") @ https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js:1
+[    3489ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://quantumofgravity.com/favicon.ico:0

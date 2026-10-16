@@ -1,5 +1,7 @@
 # Why fast rotors exchange little energy
 
+[Research map](quantum-geometry-research.md) · Related: [rotor coupling crossover](rotor-coupling-crossover.md), [quantum planar rotor energy transfer](quantum-planar-rotor-energy-transfer.md).
+
 *Exact planar-pair benchmark and three-dimensional controls, October 16, 2026.*
 
 Energy trapping does not require a long chain. Two planar rotors already show a sharp distinction between complete exchange and bounded exchange. The difference follows from an ordinary pendulum barrier in their relative motion. This gives an exact benchmark for the fast-rotation explanation; it does not turn the previous many-rotor observation into an exact theorem.

@@ -1,5 +1,7 @@
 # Four-site detachment energy
 
+[Research map](quantum-geometry-research.md) · Related: [hamiltonian studies](hamiltonian-studies.md), [constructive sewing probe](constructive-sewing-probe.md).
+
 The calculation compares the intact four-site Schwinger Bose-Hubbard Hamiltonian with a three-site fragment plus an isolated fourth site. Both have four bosons and combined total spin zero. Separation deletes all hopping edges incident on site 3 and retains every onsite term and all eight modes. Complete-graph separation leaves a triangle; ring separation leaves a three-site chain.
 
 $$H=-t\sum_{(i,j)}(E_{ij}+E_{ji})+\frac{U}{2}\sum_i n_i(n_i-1),\qquad E_{\mathrm{bind}}=E_{3}+E_1-E_{\mathrm{intact}}.$$

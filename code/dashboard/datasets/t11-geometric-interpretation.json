@@ -133,7 +133,7 @@
           "results/t11-geometric-interpretation/thermal_geometry.csv": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548",
           "results/t11-geometric-interpretation/validation.json": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3",
           "results/t11-geometric-interpretation/volume_distributions.csv": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce",
-          "notes/t11-geometric-interpretation.md": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "notes/t11-geometric-interpretation.md": "ca1e0af81c8b3362b78c88de176fd4f04c55c7664e8bed973ed94228f98e6229",
           "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
           "code/python/t11_geometric_interpretation.py": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
           "code/python/verify_t11_geometric_interpretation.py": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f",
@@ -141,11 +141,11 @@
           "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.t11-geometric-interpretation.table.rows[0]"
       },
       "assessment": {
@@ -293,9 +293,9 @@
           "label": "t11-geometric-interpretation.md",
           "path": "../study-assets/notes/t11-geometric-interpretation.txt",
           "kind": "data",
-          "sha256": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "sha256": "ca1e0af81c8b3362b78c88de176fd4f04c55c7664e8bed973ed94228f98e6229",
           "sourcePath": "notes/t11-geometric-interpretation.md",
-          "sourceSha256": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754"
+          "sourceSha256": "ca1e0af81c8b3362b78c88de176fd4f04c55c7664e8bed973ed94228f98e6229"
         },
         {
           "label": "geometric_diagnostics.py",
@@ -439,7 +439,7 @@
           "results/t11-geometric-interpretation/thermal_geometry.csv": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548",
           "results/t11-geometric-interpretation/validation.json": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3",
           "results/t11-geometric-interpretation/volume_distributions.csv": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce",
-          "notes/t11-geometric-interpretation.md": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "notes/t11-geometric-interpretation.md": "ca1e0af81c8b3362b78c88de176fd4f04c55c7664e8bed973ed94228f98e6229",
           "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
           "code/python/t11_geometric_interpretation.py": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
           "code/python/verify_t11_geometric_interpretation.py": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f",
@@ -447,11 +447,11 @@
           "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.t11-geometric-interpretation.table.rows[1]"
       },
       "assessment": {
@@ -500,7 +500,7 @@
           "results/t11-geometric-interpretation/thermal_geometry.csv": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548",
           "results/t11-geometric-interpretation/validation.json": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3",
           "results/t11-geometric-interpretation/volume_distributions.csv": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce",
-          "notes/t11-geometric-interpretation.md": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "notes/t11-geometric-interpretation.md": "ca1e0af81c8b3362b78c88de176fd4f04c55c7664e8bed973ed94228f98e6229",
           "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
           "code/python/t11_geometric_interpretation.py": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
           "code/python/verify_t11_geometric_interpretation.py": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f",
@@ -508,11 +508,11 @@
           "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.t11-geometric-interpretation.table.rows[2]"
       },
       "assessment": {
@@ -561,7 +561,7 @@
           "results/t11-geometric-interpretation/thermal_geometry.csv": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548",
           "results/t11-geometric-interpretation/validation.json": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3",
           "results/t11-geometric-interpretation/volume_distributions.csv": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce",
-          "notes/t11-geometric-interpretation.md": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "notes/t11-geometric-interpretation.md": "ca1e0af81c8b3362b78c88de176fd4f04c55c7664e8bed973ed94228f98e6229",
           "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
           "code/python/t11_geometric_interpretation.py": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
           "code/python/verify_t11_geometric_interpretation.py": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f",
@@ -569,11 +569,11 @@
           "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.t11-geometric-interpretation.table.rows[3]"
       },
       "assessment": {
@@ -622,7 +622,7 @@
           "results/t11-geometric-interpretation/thermal_geometry.csv": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548",
           "results/t11-geometric-interpretation/validation.json": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3",
           "results/t11-geometric-interpretation/volume_distributions.csv": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce",
-          "notes/t11-geometric-interpretation.md": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "notes/t11-geometric-interpretation.md": "ca1e0af81c8b3362b78c88de176fd4f04c55c7664e8bed973ed94228f98e6229",
           "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
           "code/python/t11_geometric_interpretation.py": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
           "code/python/verify_t11_geometric_interpretation.py": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f",
@@ -630,11 +630,11 @@
           "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.t11-geometric-interpretation.table.rows[4]"
       },
       "assessment": {
@@ -683,7 +683,7 @@
           "results/t11-geometric-interpretation/thermal_geometry.csv": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548",
           "results/t11-geometric-interpretation/validation.json": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3",
           "results/t11-geometric-interpretation/volume_distributions.csv": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce",
-          "notes/t11-geometric-interpretation.md": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "notes/t11-geometric-interpretation.md": "ca1e0af81c8b3362b78c88de176fd4f04c55c7664e8bed973ed94228f98e6229",
           "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
           "code/python/t11_geometric_interpretation.py": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
           "code/python/verify_t11_geometric_interpretation.py": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f",
@@ -691,11 +691,11 @@
           "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.t11-geometric-interpretation.table.rows[5]"
       },
       "assessment": {
@@ -744,7 +744,7 @@
           "results/t11-geometric-interpretation/thermal_geometry.csv": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548",
           "results/t11-geometric-interpretation/validation.json": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3",
           "results/t11-geometric-interpretation/volume_distributions.csv": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce",
-          "notes/t11-geometric-interpretation.md": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "notes/t11-geometric-interpretation.md": "ca1e0af81c8b3362b78c88de176fd4f04c55c7664e8bed973ed94228f98e6229",
           "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
           "code/python/t11_geometric_interpretation.py": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
           "code/python/verify_t11_geometric_interpretation.py": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f",
@@ -752,11 +752,11 @@
           "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.t11-geometric-interpretation.table.rows[6]"
       },
       "assessment": {
@@ -805,7 +805,7 @@
           "results/t11-geometric-interpretation/thermal_geometry.csv": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548",
           "results/t11-geometric-interpretation/validation.json": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3",
           "results/t11-geometric-interpretation/volume_distributions.csv": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce",
-          "notes/t11-geometric-interpretation.md": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "notes/t11-geometric-interpretation.md": "ca1e0af81c8b3362b78c88de176fd4f04c55c7664e8bed973ed94228f98e6229",
           "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
           "code/python/t11_geometric_interpretation.py": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
           "code/python/verify_t11_geometric_interpretation.py": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f",
@@ -813,11 +813,11 @@
           "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.t11-geometric-interpretation.table.rows[7]"
       },
       "assessment": {
@@ -866,7 +866,7 @@
           "results/t11-geometric-interpretation/thermal_geometry.csv": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548",
           "results/t11-geometric-interpretation/validation.json": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3",
           "results/t11-geometric-interpretation/volume_distributions.csv": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce",
-          "notes/t11-geometric-interpretation.md": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "notes/t11-geometric-interpretation.md": "ca1e0af81c8b3362b78c88de176fd4f04c55c7664e8bed973ed94228f98e6229",
           "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
           "code/python/t11_geometric_interpretation.py": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
           "code/python/verify_t11_geometric_interpretation.py": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f",
@@ -874,11 +874,11 @@
           "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.t11-geometric-interpretation.table.rows[8]"
       },
       "assessment": {
@@ -927,7 +927,7 @@
           "results/t11-geometric-interpretation/thermal_geometry.csv": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548",
           "results/t11-geometric-interpretation/validation.json": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3",
           "results/t11-geometric-interpretation/volume_distributions.csv": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce",
-          "notes/t11-geometric-interpretation.md": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "notes/t11-geometric-interpretation.md": "ca1e0af81c8b3362b78c88de176fd4f04c55c7664e8bed973ed94228f98e6229",
           "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
           "code/python/t11_geometric_interpretation.py": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
           "code/python/verify_t11_geometric_interpretation.py": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f",
@@ -935,11 +935,11 @@
           "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.t11-geometric-interpretation.table.rows[9]"
       },
       "assessment": {
@@ -988,7 +988,7 @@
           "results/t11-geometric-interpretation/thermal_geometry.csv": "1ee65c35ef40f61497b6ef9323324cc598b46b1636c454e77b70da2d3ec4d548",
           "results/t11-geometric-interpretation/validation.json": "540207210aa2f55fa16fd11adf180b8aee28c3e246efdc63eeca61436204c8b3",
           "results/t11-geometric-interpretation/volume_distributions.csv": "ca59378e00d0978bddf4a3b347fabfd9b74d7f0c97ba0f8d8130423a60b830ce",
-          "notes/t11-geometric-interpretation.md": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754",
+          "notes/t11-geometric-interpretation.md": "ca1e0af81c8b3362b78c88de176fd4f04c55c7664e8bed973ed94228f98e6229",
           "code/python/lqg_scattering/geometric_diagnostics.py": "5a797d4cece07c872bf7517f362df7b53b1a6a2474c61320d2a04b4766cc774d",
           "code/python/t11_geometric_interpretation.py": "8cfdf0a876bed83379a18665d4700433c317611dfa778f15f049ee783b55c568",
           "code/python/verify_t11_geometric_interpretation.py": "1422d4e3147e1e9d815fb960d4653beb1594ae582c6636aef8cfb3e2766c654f",
@@ -996,11 +996,11 @@
           "code/python/test_geometric_diagnostics.py": "d6f090b70e70271c4389d1a821cb7711ab61489202de54acf40790a2bb47783e"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.t11-geometric-interpretation.table.rows[10]"
       },
       "assessment": {

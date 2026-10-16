@@ -1,5 +1,7 @@
 # Heating closed quantum geometry: equilibrium and singlet exchange
 
+[Research map](quantum-geometry-research.md) · Related: [thermal entanglement](thermal-entanglement.md), [t9a singlet exchange](t9a-singlet-exchange.md).
+
 *Created: 2026-10-14 16:01:31 IST. Extracted from the thermal area-sector note; incorporates the October 13 heating calculations and October 14 equilibrium, manuscript, and exchange sessions.*
 
 How can a quantum polyhedron change its area and volume while remaining closed? We have studied two approaches. The first prepares a temperature-labelled squeezed state, then selects the separately closed part. The second couples two closed FL polyhedra through singlet transfer and follows their dynamics. They answer related questions, but they are different state constructions. Their connection to thermal equilibrium must be examined explicitly.

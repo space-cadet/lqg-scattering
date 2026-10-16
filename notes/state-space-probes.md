@@ -1,5 +1,7 @@
 # Closed and open Schwinger-state probes
 
+[Research map](quantum-geometry-research.md) · Related: [volume studies](volume-studies.md), [hamiltonian studies](hamiltonian-studies.md).
+
 This numerical probe compares three explicit initial states under the
 four-site Hamiltonian
 

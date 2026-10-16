@@ -1,0 +1,6 @@
+{
+  "command": "python3 -m unittest discover -s code/python -p 'test_*.py'",
+  "tests": 73,
+  "outcome": "passed",
+  "log_summary": ".........................................................................\n----------------------------------------------------------------------\nRan 73 tests in 1.847s\n\nOK"
+}

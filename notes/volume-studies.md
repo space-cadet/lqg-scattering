@@ -1,5 +1,7 @@
 # Volume studies: closed intertwiners and lattice dynamics
 
+[Research map](quantum-geometry-research.md) · Related: [hamiltonian studies](hamiltonian-studies.md), [t11 geometric interpretation](t11-geometric-interpretation.md).
+
 *Created: 2026-10-09 11:10:50 IST*
 *Last Updated: 2026-10-14 08:43:32 IST*
 

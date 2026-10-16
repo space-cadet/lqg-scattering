@@ -124,7 +124,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -138,8 +138,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -149,11 +149,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[0]"
       },
       "assessment": {
@@ -165,9 +165,9 @@
           "label": "README.md",
           "path": "../study-assets/results/t11-rotor-coupling/README.txt",
           "kind": "data",
-          "sha256": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "sha256": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "sourcePath": "results/t11-rotor-coupling/README.md",
-          "sourceSha256": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8"
+          "sourceSha256": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506"
         },
         {
           "label": "protocol.json",
@@ -277,17 +277,17 @@
           "label": "rotor-coupling-crossover.md",
           "path": "../study-assets/notes/rotor-coupling-crossover.txt",
           "kind": "data",
-          "sha256": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
+          "sha256": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
           "sourcePath": "notes/rotor-coupling-crossover.md",
-          "sourceSha256": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578"
+          "sourceSha256": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0"
         },
         {
           "label": "classical-rotor-equilibration.md",
           "path": "../study-assets/notes/classical-rotor-equilibration.txt",
           "kind": "data",
-          "sha256": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "sha256": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "sourcePath": "notes/classical-rotor-equilibration.md",
-          "sourceSha256": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58"
+          "sourceSha256": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0"
         },
         {
           "label": "t11_rotor_coupling_scan.py",
@@ -378,7 +378,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -392,8 +392,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -403,11 +403,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[1]"
       },
       "assessment": {
@@ -437,7 +437,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -451,8 +451,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -462,11 +462,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[2]"
       },
       "assessment": {
@@ -496,7 +496,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -510,8 +510,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -521,11 +521,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[3]"
       },
       "assessment": {
@@ -555,7 +555,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -569,8 +569,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -580,11 +580,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[4]"
       },
       "assessment": {
@@ -614,7 +614,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -628,8 +628,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -639,11 +639,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[5]"
       },
       "assessment": {
@@ -673,7 +673,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -687,8 +687,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -698,11 +698,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[6]"
       },
       "assessment": {
@@ -732,7 +732,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -746,8 +746,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -757,11 +757,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[7]"
       },
       "assessment": {
@@ -791,7 +791,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -805,8 +805,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -816,11 +816,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[8]"
       },
       "assessment": {
@@ -850,7 +850,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -864,8 +864,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -875,11 +875,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[9]"
       },
       "assessment": {
@@ -909,7 +909,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -923,8 +923,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -934,11 +934,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[10]"
       },
       "assessment": {
@@ -968,7 +968,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -982,8 +982,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -993,11 +993,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[11]"
       },
       "assessment": {
@@ -1027,7 +1027,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -1041,8 +1041,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -1052,11 +1052,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[12]"
       },
       "assessment": {
@@ -1086,7 +1086,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -1100,8 +1100,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -1111,11 +1111,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[13]"
       },
       "assessment": {
@@ -1146,7 +1146,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -1160,8 +1160,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -1171,11 +1171,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[14]"
       },
       "assessment": {
@@ -1206,7 +1206,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -1220,8 +1220,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -1231,11 +1231,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[15]"
       },
       "assessment": {
@@ -1265,7 +1265,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -1279,8 +1279,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -1290,11 +1290,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[16]"
       },
       "assessment": {
@@ -1324,7 +1324,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -1338,8 +1338,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -1349,11 +1349,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[17]"
       },
       "assessment": {
@@ -1383,7 +1383,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -1397,8 +1397,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -1408,11 +1408,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[18]"
       },
       "assessment": {
@@ -1442,7 +1442,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -1456,8 +1456,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -1467,11 +1467,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[19]"
       },
       "assessment": {
@@ -1501,7 +1501,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -1515,8 +1515,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -1526,11 +1526,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[20]"
       },
       "assessment": {
@@ -1560,7 +1560,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -1574,8 +1574,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -1585,11 +1585,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[21]"
       },
       "assessment": {
@@ -1619,7 +1619,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -1633,8 +1633,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -1644,11 +1644,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[22]"
       },
       "assessment": {
@@ -1678,7 +1678,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -1692,8 +1692,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -1703,11 +1703,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[23]"
       },
       "assessment": {
@@ -1737,7 +1737,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -1751,8 +1751,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -1762,11 +1762,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[24]"
       },
       "assessment": {
@@ -1796,7 +1796,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -1810,8 +1810,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -1821,11 +1821,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[25]"
       },
       "assessment": {
@@ -1855,7 +1855,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -1869,8 +1869,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -1880,11 +1880,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[26]"
       },
       "assessment": {
@@ -1914,7 +1914,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -1928,8 +1928,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -1939,11 +1939,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[27]"
       },
       "assessment": {
@@ -1973,7 +1973,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -1987,8 +1987,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -1998,11 +1998,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[28]"
       },
       "assessment": {
@@ -2032,7 +2032,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -2046,8 +2046,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -2057,11 +2057,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[29]"
       },
       "assessment": {
@@ -2092,7 +2092,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -2106,8 +2106,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -2117,11 +2117,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[30]"
       },
       "assessment": {
@@ -2152,7 +2152,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -2166,8 +2166,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -2177,11 +2177,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[31]"
       },
       "assessment": {
@@ -2211,7 +2211,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -2225,8 +2225,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -2236,11 +2236,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[32]"
       },
       "assessment": {
@@ -2270,7 +2270,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -2284,8 +2284,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -2295,11 +2295,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[33]"
       },
       "assessment": {
@@ -2329,7 +2329,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -2343,8 +2343,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -2354,11 +2354,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[34]"
       },
       "assessment": {
@@ -2388,7 +2388,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -2402,8 +2402,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -2413,11 +2413,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[35]"
       },
       "assessment": {
@@ -2447,7 +2447,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -2461,8 +2461,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -2472,11 +2472,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[36]"
       },
       "assessment": {
@@ -2506,7 +2506,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -2520,8 +2520,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -2531,11 +2531,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[37]"
       },
       "assessment": {
@@ -2565,7 +2565,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -2579,8 +2579,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -2590,11 +2590,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[38]"
       },
       "assessment": {
@@ -2624,7 +2624,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -2638,8 +2638,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -2649,11 +2649,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[39]"
       },
       "assessment": {
@@ -2683,7 +2683,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -2697,8 +2697,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -2708,11 +2708,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[40]"
       },
       "assessment": {
@@ -2742,7 +2742,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -2756,8 +2756,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -2767,11 +2767,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[41]"
       },
       "assessment": {
@@ -2801,7 +2801,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -2815,8 +2815,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -2826,11 +2826,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[42]"
       },
       "assessment": {
@@ -2860,7 +2860,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -2874,8 +2874,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -2885,11 +2885,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[43]"
       },
       "assessment": {
@@ -2919,7 +2919,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -2933,8 +2933,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -2944,11 +2944,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[44]"
       },
       "assessment": {
@@ -2978,7 +2978,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -2992,8 +2992,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -3003,11 +3003,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[45]"
       },
       "assessment": {
@@ -3038,7 +3038,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -3052,8 +3052,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -3063,11 +3063,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[46]"
       },
       "assessment": {
@@ -3098,7 +3098,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -3112,8 +3112,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -3123,11 +3123,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[47]"
       },
       "assessment": {
@@ -3157,7 +3157,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -3171,8 +3171,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -3182,11 +3182,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[48]"
       },
       "assessment": {
@@ -3216,7 +3216,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -3230,8 +3230,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -3241,11 +3241,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[49]"
       },
       "assessment": {
@@ -3275,7 +3275,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -3289,8 +3289,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -3300,11 +3300,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[50]"
       },
       "assessment": {
@@ -3334,7 +3334,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -3348,8 +3348,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -3359,11 +3359,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[51]"
       },
       "assessment": {
@@ -3393,7 +3393,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -3407,8 +3407,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -3418,11 +3418,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[52]"
       },
       "assessment": {
@@ -3452,7 +3452,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -3466,8 +3466,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -3477,11 +3477,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[53]"
       },
       "assessment": {
@@ -3511,7 +3511,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -3525,8 +3525,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -3536,11 +3536,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[54]"
       },
       "assessment": {
@@ -3570,7 +3570,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -3584,8 +3584,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -3595,11 +3595,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[55]"
       },
       "assessment": {
@@ -3629,7 +3629,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -3643,8 +3643,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -3654,11 +3654,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[56]"
       },
       "assessment": {
@@ -3688,7 +3688,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -3702,8 +3702,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -3713,11 +3713,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[57]"
       },
       "assessment": {
@@ -3747,7 +3747,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -3761,8 +3761,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -3772,11 +3772,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[58]"
       },
       "assessment": {
@@ -3806,7 +3806,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -3820,8 +3820,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -3831,11 +3831,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[59]"
       },
       "assessment": {
@@ -3865,7 +3865,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -3879,8 +3879,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -3890,11 +3890,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[60]"
       },
       "assessment": {
@@ -3924,7 +3924,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -3938,8 +3938,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -3949,11 +3949,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[61]"
       },
       "assessment": {
@@ -3984,7 +3984,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -3998,8 +3998,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -4009,11 +4009,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[62]"
       },
       "assessment": {
@@ -4044,7 +4044,7 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-rotor-coupling/README.md": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8",
+          "results/t11-rotor-coupling/README.md": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506",
           "results/t11-rotor-coupling/protocol.json": "1d294d49230283aabb2366486ef190836e268f9e53d03d1fb266bc5905d23abf",
           "results/t11-rotor-coupling/analysis-protocol.json": "2c2acbbd8fdba15b5c384b8d1357d52275c90d17da535cad1854b984b71cf95f",
           "results/t11-rotor-coupling/grouped-scan.csv": "882490331b7db79f5d5d42d1ce8d37214da25f83110aa3e30a27ad207603bad1",
@@ -4058,8 +4058,8 @@
           "results/t11-rotor-coupling/provenance.json": "65a6f1ddf0808f046c9296e957be5781af99592a537506c9184778ef4cf307d0",
           "results/t11-rotor-coupling/independent-validation.json": "54d987151154ee0c71b2bda3f4e730be244da8e8f6358716ecc6991001a38990",
           "results/t11-rotor-coupling/verification.json": "5bae59c612797225502b5fc358eabeb4107e045a6a4fc68db6d3bd85eeee6aa7",
-          "notes/rotor-coupling-crossover.md": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/rotor-coupling-crossover.md": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_rotor_coupling_scan.py": "cc5c47c226c98460558db65a69a3477b21596d8d642dc0a03f8367b1e8fa3a8c",
           "code/python/analyze_t11_rotor_coupling.py": "5db08adfe480e1b31e5b6ba6245ab980542884aa8c3254721ea6c17c0c423786",
           "code/python/plot_t11_rotor_coupling.py": "eb52dfe35be5c66d70b30fa171a0a68dcbf04d5b670bec8ebcb3244dd23ec3ba",
@@ -4069,11 +4069,11 @@
           "code/python/lqg_scattering/classical_rotors.py": "31891fbc779ded622ee06ca5ca5209e3ae781b21a8868096f6a0229e9d6daea5"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.rotor-coupling-crossover.table.rows[63]"
       },
       "assessment": {

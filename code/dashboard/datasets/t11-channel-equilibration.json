@@ -114,22 +114,22 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/README.md": "be4dc3a2ec073e48e7429d85273266f84c7120406e0aef8671aae7e92340bee0",
           "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
           "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
           "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
           "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
           "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
           "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.t11-channel-equilibration.table.rows[0]"
       },
       "assessment": {
@@ -141,9 +141,9 @@
           "label": "README.md",
           "path": "../study-assets/results/t11-equilibration/README.txt",
           "kind": "data",
-          "sha256": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "sha256": "be4dc3a2ec073e48e7429d85273266f84c7120406e0aef8671aae7e92340bee0",
           "sourcePath": "results/t11-equilibration/README.md",
-          "sourceSha256": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773"
+          "sourceSha256": "be4dc3a2ec073e48e7429d85273266f84c7120406e0aef8671aae7e92340bee0"
         },
         {
           "label": "protocol.json",
@@ -189,9 +189,9 @@
           "label": "classical-rotor-equilibration.md",
           "path": "../study-assets/notes/classical-rotor-equilibration.txt",
           "kind": "data",
-          "sha256": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "sha256": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "sourcePath": "notes/classical-rotor-equilibration.md",
-          "sourceSha256": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58"
+          "sourceSha256": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0"
         },
         {
           "label": "t11_equilibration.py",
@@ -241,22 +241,22 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/README.md": "be4dc3a2ec073e48e7429d85273266f84c7120406e0aef8671aae7e92340bee0",
           "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
           "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
           "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
           "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
           "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
           "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.t11-channel-equilibration.table.rows[1]"
       },
       "assessment": {
@@ -288,22 +288,22 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/README.md": "be4dc3a2ec073e48e7429d85273266f84c7120406e0aef8671aae7e92340bee0",
           "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
           "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
           "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
           "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
           "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
           "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.t11-channel-equilibration.table.rows[2]"
       },
       "assessment": {
@@ -335,22 +335,22 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/README.md": "be4dc3a2ec073e48e7429d85273266f84c7120406e0aef8671aae7e92340bee0",
           "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
           "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
           "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
           "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
           "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
           "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.t11-channel-equilibration.table.rows[3]"
       },
       "assessment": {
@@ -382,22 +382,22 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/README.md": "be4dc3a2ec073e48e7429d85273266f84c7120406e0aef8671aae7e92340bee0",
           "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
           "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
           "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
           "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
           "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
           "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.t11-channel-equilibration.table.rows[4]"
       },
       "assessment": {
@@ -429,22 +429,22 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/README.md": "be4dc3a2ec073e48e7429d85273266f84c7120406e0aef8671aae7e92340bee0",
           "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
           "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
           "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
           "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
           "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
           "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.t11-channel-equilibration.table.rows[5]"
       },
       "assessment": {
@@ -476,22 +476,22 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/README.md": "be4dc3a2ec073e48e7429d85273266f84c7120406e0aef8671aae7e92340bee0",
           "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
           "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
           "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
           "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
           "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
           "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.t11-channel-equilibration.table.rows[6]"
       },
       "assessment": {
@@ -523,22 +523,22 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/README.md": "be4dc3a2ec073e48e7429d85273266f84c7120406e0aef8671aae7e92340bee0",
           "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
           "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
           "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
           "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
           "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
           "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.t11-channel-equilibration.table.rows[7]"
       },
       "assessment": {
@@ -570,22 +570,22 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/README.md": "be4dc3a2ec073e48e7429d85273266f84c7120406e0aef8671aae7e92340bee0",
           "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
           "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
           "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
           "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
           "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
           "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.t11-channel-equilibration.table.rows[8]"
       },
       "assessment": {
@@ -617,22 +617,22 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/README.md": "be4dc3a2ec073e48e7429d85273266f84c7120406e0aef8671aae7e92340bee0",
           "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
           "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
           "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
           "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
           "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
           "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.t11-channel-equilibration.table.rows[9]"
       },
       "assessment": {
@@ -664,22 +664,22 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/README.md": "be4dc3a2ec073e48e7429d85273266f84c7120406e0aef8671aae7e92340bee0",
           "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
           "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
           "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
           "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
           "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
           "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.t11-channel-equilibration.table.rows[10]"
       },
       "assessment": {
@@ -711,22 +711,22 @@
       },
       "provenance": {
         "sourceHashes": {
-          "results/t11-equilibration/README.md": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773",
+          "results/t11-equilibration/README.md": "be4dc3a2ec073e48e7429d85273266f84c7120406e0aef8671aae7e92340bee0",
           "results/t11-equilibration/protocol.json": "8fd070e604cb2fbbfe61200a818bda7b3cf913ac21fabb8283fb1e563b2e8989",
           "results/t11-equilibration/provenance.json": "3abf4b33619adcaa5ce5ce056ca116a912ad8dad8082745f7b709b73e6ed52c5",
           "results/t11-equilibration/summary.csv": "b5e8655600f4915438472df1969b8a6802b1dcc326863a0aa0989aea82bbbae2",
           "results/t11-equilibration/validation.json": "f7f5755fa82d5b9ce54054bdd3b9c790f09d95c9d555b3f8154d6d1e5c2cfc7a",
           "results/t11-equilibration/independent-validation.json": "6b7c1e223cd813504ead694db4cf346256f464394fc7725e0e2d65e207fe3ae0",
-          "notes/classical-rotor-equilibration.md": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58",
+          "notes/classical-rotor-equilibration.md": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0",
           "code/python/t11_equilibration.py": "596d3c9d65db171cafc201f500fb113cc2cc7c60bb5956dae9449c3f2bb47a78",
           "code/python/verify_t11_equilibration.py": "5af7b109adcd90373c641c9b6f106f627e17cbc256458b7c6aeb49aab6fd77cc"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.t11-channel-equilibration.table.rows[11]"
       },
       "assessment": {

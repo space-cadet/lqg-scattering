@@ -1,8 +1,14 @@
 # Session Cache
 
-*Last Updated: 2026-10-16 13:28:54 IST*
+*Last Updated: 2026-10-16 17:45:49 IST*
 
 ## Overview
+- 2026-10-16 T11: Split the Hamiltonian/volume, face-channel, finite-time rotor,
+  and closed-geometric lines into T11a–T11d. T11c is complete for the bounded
+  transfer pilot; T11a, T11b and T11d remain active. The local dashboard now
+  carries NS37–NS40, passed source/hash and desktop/mobile checks, and was
+  deployed after the user's explicit request. See the [session handoff](sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-summary.md),
+  [T11 records](tasks/T11.md), and [dashboard acceptance](ui-tests/2026-10-16-quantum-geometry-dashboard.md).
 - 2026-10-16 T9/T11: Closed-reference entropy and 20 free-hopping face-activation
   controls are complete. Extra channels activate but recur; interacting
   equilibration within that face-channel model has not been tested. The user highlighted residence near
@@ -18,7 +24,8 @@
   classical rotor equilibration, the exact planar pair and few-rotor controls,
   and the ring coupling crossover with delayed release. Moderate packets match
   selected microcanonical readouts; high-energy concentration is finite-time,
-  with later release in some cases. Quantum rotor evolution remains planned.
+  with later release in some cases. At that checkpoint, quantum rotor evolution
+  remained planned; NS37 records the later quantum transfer pilot.
   The local catalogue now includes four compact datasets, with 30 studies and
   39 datasets; link/hash validation and saved-source parity pass. Raw histories
   remain out of the package. See the
@@ -30,7 +37,7 @@
 - 2026-10-08 T9 calculation close: Added the four-face $J_{\mathrm{in}}=1$ $P(q,S)$ calculation by two methods through $q=160$, method and coefficient checks, temperature plots, and the finite-temperature support result. Full two-copy reduced-state blocks, entropy, and geometry remain open; see [session record](sessions/2026-10-08-j1-spin-distribution.md).
 - 2026-10-08: Saved the thermal-area write-up and a transcript ending before the write-up request; organized Python, Rust, dashboard, Memory Bank tooling, shell workflows, and LaTeX sources under `code/`; moved calculation outputs to `results/` and research records/task specifications to `notes/`.
 - Active work includes T5c, T1a/T3c, T4, T5, T8, T9/T9a and T11; T6 remains active for the open FL-covariance-to-polyhedron bridge.
-- Task files are reconciled against all 79 commits reachable from the repository refs at audit start: 29 current registry IDs have records. Transferred umbrellas T5f and T7 have separate archive records. Completed tasks are in `archive/`; active tasks are in `tasks/`.
+- Task files are reconciled against all 79 commits reachable from the repository refs at audit start: 33 current registry IDs now have records. Transferred umbrellas T5f and T7 have separate archive records. Completed tasks are in `archive/`; active tasks are in `tasks/`.
 - Audit baseline: branch `main`, HEAD and `origin/main` at `0a254849a5e12734ee32d9d8af74bd4309d17648`. Pre-existing local numerical, dashboard, cache, and UI artifacts remain in the working tree.
 
 ## Task Registry
@@ -42,7 +49,7 @@
 - T5c pilot update: weighted regular and unequal-skew input geometries reach $J=7$; the unequal-area grid covers $J=2,4$ plus selected $J=6$ points; a flat path covers $J=2,4,6,7$. Weighted closure and mean areas pass, but finite-$J$ unequal correlations do not exactly recover the input normals. At the exact flat boundary, calibrated positive volume remains finite in the sampled range; limit orders remain open. RS/AL calibrated curves coincide under the tested four-valent closure/sign convention and are not independent checks.
 - T7: Former thermal/TFD umbrella — archived as transferred; scientific work remains open under T9.
 - T9: Thermal/TFD state construction and physical study — 🔄 IN PROGRESS; owns all ongoing construction and analysis, with five completed historical child-study records T7a–T7e and active T9a. The earlier one-sided squeeze and conditional singlet pilot remain recorded. The selected target is the same-mode squeeze of conjugate FL intertwiners on both copies, with transformed geometric observables. Its $SU(1,1)$ factorization and coefficient-level partial-trace construction are written up. The October 13 follow-up quantifies ordinary per-copy closure and geometry after separate singlet projection. The separately closed F12 reference spectrum and entropy are now calculated across 86 temperatures; unprojected reduced states and general-input characterization remain open. See `tasks/T9.md`, `notes/thermal-area-sectors.md`, and the [October 13 session](sessions/2026-10-13-t9-thermal-closure-and-geometry.md).
-- T11: Hamiltonian, volume and face/rotor dynamics — 🔄 IN PROGRESS; in addition to the $K=4$ dense scan and prepared-FL studies, NS32–36 now cover large-area face activation, small-area channel equilibration, classical rotor spreading, the exact pair mechanism, and coupling-dependent delayed release. No permanent transfer cutoff or quantum rotor result is established. The curated local dashboard package contains 30 studies and 39 datasets; data checks pass.
+- T11: Hamiltonian, volume and face/rotor dynamics — 🔄 IN PROGRESS; ownership is divided among active T11a (fixed-area Hamiltonian/volume and prepared-FL), T11b (face-channel activation/equilibration), completed T11c (finite-time classical/quantum rotor-transfer pilot), and active T11d (closed geometric connectivity/shape). NS23–NS27 and NS32–NS40 map to these children; NS25 remains constructive sewing. The dashboard now packages 42 datasets, passed source-value/hash and desktop/mobile checks, and was deployed after an explicit user request. See the current T11 session handoff and acceptance record.
 - T8: Amplituhedron Program — 🔄 IN PROGRESS; T8a cluster algebra/chart relevance and T8b positive-cell/scattering-region mapping (former T5f) are open. See `tasks/T8.md`.
 - T1–T3e: Python/Rust implementation and corrected converged scan recorded; n=6 independent state check remains open.
 
@@ -82,17 +89,14 @@ T9 owns all thermal/TFD state construction and physical study. Its five complete
 **Status:** 🔄 IN PROGRESS
 
 The $K=4$ quantum Hamiltonian–volume pilot and prepared-FL studies remain the
-original T11 foundation. The October 16 numerical continuation adds the small-
-area channel pilot and classical rotor studies. The latter cover packet
-spreading against microcanonical references, an exact planar-pair threshold,
-few-rotor topology controls, and a coupling scan with delayed release. The
-physics summary contains the numerical values and limits; no quantum rotor
-solver was run. The dashboard contains 30 studies and 39 datasets; link, hash and saved-source
-parity checks pass. Website commits `8599947` and `37971d1` deployed the
-curated package and data-cache refresh; the public route and desktop/mobile
-layouts passed hosted checks. See
-`ui-tests/2026-10-16-numerics-dashboard-refresh.md`. Full trajectory archives
-remain local and are ignored by Git.
+original T11 foundation. NS32–NS40 add large-area and small-area face-channel
+studies, classical rotor transfer, four-rotor quantum transfer, exact
+closed/nonclosed connectivity and closed geometric redistribution. The T11
+child records define current ownership; face-normal/coherent-intertwiner
+analysis and interacting large-area equilibration remain open. The dashboard
+contains 42 datasets; source parity and desktop/mobile checks pass. It was
+deployed from website commit 5220c5d in workflow 38899436681 after the user's
+explicit request. See the [dashboard acceptance](ui-tests/2026-10-16-quantum-geometry-dashboard.md).
 
 ## Completed Foundation
 - Python pipeline and published EPJC paper.
@@ -105,6 +109,10 @@ remain local and are ignored by Git.
 The pilot is calculated on complete and ring graphs for $K=2,3,4$ in the exact singlet space. It includes no hopping, free hopping, and $U/t=1,5,20$; Gibbs volume and active-site distributions; ground-state pair correlations and site-0 entropy; and the full projected $[H,V]$. The beta-zero active-site probabilities match exact kinematic counting. The onsite commutator residual is at most $2.3\times10^{-16}$ and edge–triple reconstruction residual at most $7.2\times10^{-15}$. The four connected triple roots agree on this support. Physical normalization, larger systems, optional spin exchange, and the rest of the proposed program remain open. See `tasks/T11.md` and `notes/hamiltonian-studies.md`.
 
 ## Session History
+- 2026-10-16: Divided T11 into T11a–T11d, archived the completed bounded rotor-
+  transfer pilot, and recorded dashboard acceptance/publication. See [T11](tasks/T11.md),
+  the [session handoff](sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-summary.md),
+  and [dashboard acceptance](ui-tests/2026-10-16-quantum-geometry-dashboard.md).
 - 2026-10-16: Added T11 NS33–36 for channel and rotor equilibration, exact pair
   transfer, coupling crossover and delayed release; rebuilt the curated local
   package and published it with a returning-browser cache refresh. See the
@@ -287,3 +295,21 @@ Automatic approval review rejected website upload/shared-main publication. The
 user explicitly answered "Keep the update local". No website commit or push ran;
 code/dashboard is authoritative. Interacting F/J/Hubbard proposals are documented
 but have not been simulated in this continuation.
+
+## Quantum rotor and geometric redistribution continuation — 2026-10-16 17:24:17 IST
+
+T11 now includes the completed quantum planar-rotor pilot (NS37), closed/nonclosed
+four-to-five-to-six connectivity (NS38), 54 sparse K=4 geometric trajectories
+(NS39), and the complete-graph selection-rule check (NS40). Earlier statements
+that quantum rotor evolution is unperformed refer to the preceding session.
+All 73 tests pass; geometric saved-data checks cover 91,476 quantities. Outputs
+stay compact (about 5.6 MB for the largest study). Next proposed work is the
+relational face-normal/coherent-intertwiner comparison. See the
+[full handoff](sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-summary.md),
+[51-message transcript](sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-transcript.md), and
+[parent research note](../notes/quantum-geometry-research.md).
+The Luna 6 Extra High dashboard session `01a1448a-c8eb-7781-855c-093b11a9bafc`
+integrated NS37–NS40, passed local acceptance and deployed the package after
+the user's explicit request. The [acceptance record](ui-tests/2026-10-16-quantum-geometry-dashboard.md)
+contains local and hosted evidence. T11 is divided into active T11a, T11b and
+T11d, plus completed T11c for the finite-time rotor-transfer pilot.

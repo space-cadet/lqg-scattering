@@ -1,5 +1,7 @@
 # Thermal intertwiners: from squeezed FL states to occupation and spin
 
+[Research map](quantum-geometry-research.md) · Related: [thermal geometry and singlet exchange](thermal-geometry-and-singlet-exchange.md), [thermal entanglement](thermal-entanglement.md).
+
 *Rewritten 2026-10-14 16:11:14 IST from the October 6–8 construction and numerical records. The subsequent heating, equilibrium and exchange work is in a [separate illustrated note](thermal-geometry-and-singlet-exchange.md).*
 
 A closed quantum polyhedron can have uncertain face areas and shape without losing closure. What happens if we excite its Schwinger oscillators by coupling them to a second copy? The doubled state remains pure, while measurements on one copy see a mixed state. To understand that state, we must distinguish the excitation of oscillator modes from the occupation of closed geometric configurations, and a temperature-labelled preparation from equilibrium under a specified Hamiltonian.

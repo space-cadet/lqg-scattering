@@ -1,0 +1,688 @@
+- generic [ref=f9e2]:
+  - navigation "Numerical datasets" [ref=f9e3]:
+    - generic [ref=f9e4]: Numerical study
+    - combobox "Numerical study" [ref=f9e5]:
+      - option "All studies — overview"
+      - option "Small-area face-channel equilibration pilot (12 rows)"
+      - option "Classical rotor spreading and equilibrium comparison (24 rows)"
+      - 'option "Few-rotor transfer: planar bound and 3D controls (27 rows)"'
+      - option "Rotor coupling crossover and delayed release (64 rows)"
+      - 'option "Large-area tetrahedron: face activation and recurrence (20 rows)"'
+      - option "Entanglement of separately closed thermal polyhedra (86 rows)"
+      - option "Ordinary closure versus temperature (125 rows)"
+      - option "Heating separately closed area and positive RS volume (85 rows)"
+      - option "Singlet exchange between closed FL polyhedra (20 rows)"
+      - 'option "Four versus five sites: thermal-volume persistence (12 rows)"'
+      - option "Prepared tetrahedral FL states and the volume crossover (11 rows)"
+      - option "Candidate geometric Hamiltonians and prepared-FL dynamics (62 rows)"
+      - option "Four-site Hamiltonian spectra and RS-volume observables (30 rows)"
+      - option "Complete four-face closed-basis volumes (11 rows)"
+      - option "Variable-face positive RS catalogue (9 rows)"
+      - option "Squeezed-vacuum area coefficients (964 rows)"
+      - option "Squeezed-vacuum resultant spin (196 rows)"
+      - option "Excited J_in=1 joint area and spin (5 rows)"
+      - option "Higher-J flat-boundary probes (13 rows)"
+      - option "Magnetization and signed-grasp correlations (10 rows)"
+      - option "Local-chirality pilot (13 rows)"
+      - option "Imaginary-perturbation response (26 rows)"
+      - option "Cocycle-phase pilot (10 rows)"
+      - option "Large-K recorded families and fits (13 rows)"
+      - option "Historical single-copy thermal pilot (14 rows)"
+      - option "Historical energy-basis TFD pilot (14 rows)"
+      - option "Historical complexified purification (10 rows)"
+      - option "Small-sector thermal geometry audit (4 rows)"
+      - option "RS/AL volume-prescription controls (2 rows)"
+      - option "Initial covariance reconstruction pilot (6 rows)"
+      - option "Quantum planar-rotor transfer at zero total momentum (NS37) (2 rows)"
+      - option "Closed and open four-to-five-to-six channel transitions (NS38) (30 rows)" [selected]
+      - option "Exact-singlet geometric area redistribution (NS39–NS40) (54 rows)"
+      - option "Prepared FL evolution sampling (50 rows)"
+      - option "Positive volumes on two real-plane states (2 rows)"
+      - option "FL covariance shape recovery (84 rows)"
+      - option "Weighted FL input geometry and volumes (14 rows)"
+      - option "Regular FL volume versus area (5 rows)"
+      - option "Equal-area FL shape scan at J=2 (440 rows)"
+      - option "Same-number detachment energies (8 rows)"
+      - option "Closed and open state evolution probes (6 rows)"
+      - option "Constructive edge sewing probes (5 rows)"
+  - heading "Closed and open four-to-five-to-six channel transitions (NS38)" [level=1] [ref=f9e6]
+  - paragraph [ref=f9e7]: The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.
+  - generic [ref=f9e8]:
+    - generic [ref=f9e9]:
+      - generic [ref=f9e10]: "30"
+      - generic [ref=f9e11]: Total Runs
+    - generic [ref=f9e12]:
+      - generic [ref=f9e13]: "0"
+      - generic [ref=f9e14]: Tasks
+    - generic [ref=f9e15]:
+      - generic [ref=f9e16]: "30"
+      - generic [ref=f9e17]: Complete
+    - generic [ref=f9e18]:
+      - generic [ref=f9e19]: "0"
+      - generic [ref=f9e20]: Figures
+  - tablist "Dashboard sections" [ref=f9e21]:
+    - tab "Runs & Studies" [selected] [ref=f9e22] [cursor=pointer]
+    - tab "Figure Archive" [ref=f9e23] [cursor=pointer]
+    - tab "Charts" [ref=f9e24] [cursor=pointer]
+    - tab "Tasks & Numerical Notes" [ref=f9e25] [cursor=pointer]
+  - tabpanel "Runs & Studies" [ref=f9e26]:
+    - heading "Run and Study Records" [level=2] [ref=f9e27]
+    - generic [ref=f9e28]:
+      - generic [ref=f9e29]:
+        - generic [ref=f9e30]: "Status:"
+        - combobox "Status:" [ref=f9e31]:
+          - option "All" [selected]
+          - option "complete"
+      - generic [ref=f9e32]:
+        - generic [ref=f9e33]: "Search:"
+        - textbox "Search:" [ref=f9e34]:
+          - /placeholder: Run ID, description...
+      - button "Reset" [ref=f9e36] [cursor=pointer]
+    - table [ref=f9e38]:
+      - rowgroup [ref=f9e39]:
+        - row [ref=f9e40]:
+          - columnheader [ref=f9e41] [cursor=pointer]:
+            - button "Witness / transition" [ref=f9e42]: Witness / transition ↕
+          - columnheader [ref=f9e43] [cursor=pointer]:
+            - button "Available channels L" [ref=f9e44]: Available channels L ↕
+          - columnheader [ref=f9e45] [cursor=pointer]:
+            - button "Fixed area K" [ref=f9e46]: Fixed area K ↕
+          - columnheader [ref=f9e47] [cursor=pointer]:
+            - button "Hopping graph" [ref=f9e48]: Hopping graph ↕
+          - columnheader [ref=f9e49] [cursor=pointer]:
+            - button "Source sector" [ref=f9e50]: Source sector ↕
+          - columnheader [ref=f9e51] [cursor=pointer]:
+            - button "Occupation transition" [ref=f9e52]: Occupation transition ↕
+          - columnheader [ref=f9e53] [cursor=pointer]:
+            - button "From active channels" [ref=f9e54]: From active channels ↕
+          - columnheader [ref=f9e55] [cursor=pointer]:
+            - button "Destination active channels" [ref=f9e56]: Destination active channels ↕
+          - columnheader [ref=f9e57] [cursor=pointer]:
+            - button "Operator" [ref=f9e58]: Operator ↕
+          - columnheader [ref=f9e59] [cursor=pointer]:
+            - button "Source counts" [ref=f9e60]: Source counts ↕
+          - columnheader [ref=f9e61] [cursor=pointer]:
+            - button "Five-channel witness" [ref=f9e62]: Five-channel witness ↕
+          - columnheader [ref=f9e63] [cursor=pointer]:
+            - button "Six-channel witness" [ref=f9e64]: Six-channel witness ↕
+          - columnheader [ref=f9e65] [cursor=pointer]:
+            - button "Singlet rank, 4→5" [ref=f9e66]: Singlet rank, 4→5 ↕
+          - columnheader [ref=f9e67] [cursor=pointer]:
+            - button "Singlet source nullity, 4→5" [ref=f9e68]: Singlet source nullity, 4→5 ↕
+          - columnheader [ref=f9e69] [cursor=pointer]:
+            - button "Direct 4→6 block norm" [ref=f9e70]: Direct 4→6 block norm ↕
+          - columnheader [ref=f9e71] [cursor=pointer]:
+            - button "Signed matrix element (H or H²)" [ref=f9e72]: Signed matrix element (H or H²) ↕
+          - columnheader [ref=f9e73] [cursor=pointer]:
+            - button "Control singlet block norm" [ref=f9e74]: Control singlet block norm ↕
+      - rowgroup [ref=f9e75]:
+        - row [ref=f9e76]:
+          - cell [ref=f9e77]:
+            - button "Details for t11-face-connectivity:ring · closed singlet · 4 to 5 (H):1" [ref=f9e78] [cursor=pointer]: t11-face-connectivity:ring · closed singlet · 4 to 5 (H):1
+          - cell "6" [ref=f9e79]
+          - cell "3" [ref=f9e80]
+          - cell "ring" [ref=f9e81]
+          - cell "closed singlet" [ref=f9e82]
+          - cell "4 to 5 (H)" [ref=f9e83]
+          - cell "4" [ref=f9e84]
+          - cell "5" [ref=f9e85]
+          - cell "H" [ref=f9e86]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e87]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e88]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e89]
+          - cell "90" [ref=f9e90]
+          - cell "150" [ref=f9e91]
+          - cell "0" [ref=f9e92]
+          - cell "-1.4142136" [ref=f9e93]
+          - cell "—" [ref=f9e94]
+        - row [ref=f9e95]:
+          - cell [ref=f9e96]:
+            - button "Details for t11-face-connectivity:ring · closed singlet · 5 to 6 (H):2" [ref=f9e97] [cursor=pointer]: t11-face-connectivity:ring · closed singlet · 5 to 6 (H):2
+          - cell "6" [ref=f9e98]
+          - cell "3" [ref=f9e99]
+          - cell "ring" [ref=f9e100]
+          - cell "closed singlet" [ref=f9e101]
+          - cell "5 to 6 (H)" [ref=f9e102]
+          - cell "5" [ref=f9e103]
+          - cell "6" [ref=f9e104]
+          - cell "H" [ref=f9e105]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e106]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e107]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e108]
+          - cell "90" [ref=f9e109]
+          - cell "150" [ref=f9e110]
+          - cell "0" [ref=f9e111]
+          - cell "-1.4142136" [ref=f9e112]
+          - cell "—" [ref=f9e113]
+        - row [ref=f9e114]:
+          - cell [ref=f9e115]:
+            - button "Details for t11-face-connectivity:ring · closed singlet · 4 to 6 direct (H):3" [ref=f9e116] [cursor=pointer]: t11-face-connectivity:ring · closed singlet · 4 to 6 direct (H):3
+          - cell "6" [ref=f9e117]
+          - cell "3" [ref=f9e118]
+          - cell "ring" [ref=f9e119]
+          - cell "closed singlet" [ref=f9e120]
+          - cell "4 to 6 direct (H)" [ref=f9e121]
+          - cell "4" [ref=f9e122]
+          - cell "6" [ref=f9e123]
+          - cell "H" [ref=f9e124]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e125]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e126]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e127]
+          - cell "90" [ref=f9e128]
+          - cell "150" [ref=f9e129]
+          - cell "0" [ref=f9e130]
+          - cell "0" [ref=f9e131]
+          - cell "—" [ref=f9e132]
+        - row [ref=f9e133]:
+          - cell [ref=f9e134]:
+            - button "Details for t11-face-connectivity:ring · closed singlet · 4 to 6 through two hops (H squared):4" [ref=f9e135] [cursor=pointer]: t11-face-connectivity:ring · closed singlet · 4 to 6 through two hops (H squared):4
+          - cell "6" [ref=f9e136]
+          - cell "3" [ref=f9e137]
+          - cell "ring" [ref=f9e138]
+          - cell "closed singlet" [ref=f9e139]
+          - cell "4 to 6 through two hops (H squared)" [ref=f9e140]
+          - cell "4" [ref=f9e141]
+          - cell "6" [ref=f9e142]
+          - cell "H^2" [ref=f9e143]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e144]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e145]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e146]
+          - cell "90" [ref=f9e147]
+          - cell "150" [ref=f9e148]
+          - cell "0" [ref=f9e149]
+          - cell "4" [ref=f9e150]
+          - cell "—" [ref=f9e151]
+        - row [ref=f9e152]:
+          - cell [ref=f9e153]:
+            - button "Details for t11-face-connectivity:ring · open J=3 highest weight · 4 to 5 (H):5" [ref=f9e154] [cursor=pointer]: t11-face-connectivity:ring · open J=3 highest weight · 4 to 5 (H):5
+          - cell "6" [ref=f9e155]
+          - cell "3" [ref=f9e156]
+          - cell "ring" [ref=f9e157]
+          - cell "open J=3 highest weight" [ref=f9e158]
+          - cell "4 to 5 (H)" [ref=f9e159]
+          - cell "4" [ref=f9e160]
+          - cell "5" [ref=f9e161]
+          - cell "H" [ref=f9e162]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e163]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e164]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e165]
+          - cell "90" [ref=f9e166]
+          - cell "150" [ref=f9e167]
+          - cell "0" [ref=f9e168]
+          - cell "-1.4142136" [ref=f9e169]
+          - cell "—" [ref=f9e170]
+        - row [ref=f9e171]:
+          - cell [ref=f9e172]:
+            - button "Details for t11-face-connectivity:ring · open J=3 highest weight · 5 to 6 (H):6" [ref=f9e173] [cursor=pointer]: t11-face-connectivity:ring · open J=3 highest weight · 5 to 6 (H):6
+          - cell "6" [ref=f9e174]
+          - cell "3" [ref=f9e175]
+          - cell "ring" [ref=f9e176]
+          - cell "open J=3 highest weight" [ref=f9e177]
+          - cell "5 to 6 (H)" [ref=f9e178]
+          - cell "5" [ref=f9e179]
+          - cell "6" [ref=f9e180]
+          - cell "H" [ref=f9e181]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e182]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e183]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e184]
+          - cell "90" [ref=f9e185]
+          - cell "150" [ref=f9e186]
+          - cell "0" [ref=f9e187]
+          - cell "-1.4142136" [ref=f9e188]
+          - cell "—" [ref=f9e189]
+        - row [ref=f9e190]:
+          - cell [ref=f9e191]:
+            - button "Details for t11-face-connectivity:ring · open J=3 highest weight · 4 to 6 direct (H):7" [ref=f9e192] [cursor=pointer]: t11-face-connectivity:ring · open J=3 highest weight · 4 to 6 direct (H):7
+          - cell "6" [ref=f9e193]
+          - cell "3" [ref=f9e194]
+          - cell "ring" [ref=f9e195]
+          - cell "open J=3 highest weight" [ref=f9e196]
+          - cell "4 to 6 direct (H)" [ref=f9e197]
+          - cell "4" [ref=f9e198]
+          - cell "6" [ref=f9e199]
+          - cell "H" [ref=f9e200]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e201]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e202]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e203]
+          - cell "90" [ref=f9e204]
+          - cell "150" [ref=f9e205]
+          - cell "0" [ref=f9e206]
+          - cell "0" [ref=f9e207]
+          - cell "—" [ref=f9e208]
+        - row [ref=f9e209]:
+          - cell [ref=f9e210]:
+            - button "Details for t11-face-connectivity:ring · open J=3 highest weight · 4 to 6 through two hops (H squared):8" [ref=f9e211] [cursor=pointer]: t11-face-connectivity:ring · open J=3 highest weight · 4 to 6 through two hops (H squared):8
+          - cell "6" [ref=f9e212]
+          - cell "3" [ref=f9e213]
+          - cell "ring" [ref=f9e214]
+          - cell "open J=3 highest weight" [ref=f9e215]
+          - cell "4 to 6 through two hops (H squared)" [ref=f9e216]
+          - cell "4" [ref=f9e217]
+          - cell "6" [ref=f9e218]
+          - cell "H^2" [ref=f9e219]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e220]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e221]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e222]
+          - cell "90" [ref=f9e223]
+          - cell "150" [ref=f9e224]
+          - cell "0" [ref=f9e225]
+          - cell "4" [ref=f9e226]
+          - cell "—" [ref=f9e227]
+        - row [ref=f9e228]:
+          - cell [ref=f9e229]:
+            - button "Details for t11-face-connectivity:ring · open J=3, M=0 · 4 to 5 (H):9" [ref=f9e230] [cursor=pointer]: t11-face-connectivity:ring · open J=3, M=0 · 4 to 5 (H):9
+          - cell "6" [ref=f9e231]
+          - cell "3" [ref=f9e232]
+          - cell "ring" [ref=f9e233]
+          - cell "open J=3, M=0" [ref=f9e234]
+          - cell "4 to 5 (H)" [ref=f9e235]
+          - cell "4" [ref=f9e236]
+          - cell "5" [ref=f9e237]
+          - cell "H" [ref=f9e238]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e239]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e240]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e241]
+          - cell "90" [ref=f9e242]
+          - cell "150" [ref=f9e243]
+          - cell "0" [ref=f9e244]
+          - cell "-1.4142136" [ref=f9e245]
+          - cell "—" [ref=f9e246]
+        - row [ref=f9e247]:
+          - cell [ref=f9e248]:
+            - button "Details for t11-face-connectivity:ring · open J=3, M=0 · 5 to 6 (H):10" [ref=f9e249] [cursor=pointer]: t11-face-connectivity:ring · open J=3, M=0 · 5 to 6 (H):10
+          - cell "6" [ref=f9e250]
+          - cell "3" [ref=f9e251]
+          - cell "ring" [ref=f9e252]
+          - cell "open J=3, M=0" [ref=f9e253]
+          - cell "5 to 6 (H)" [ref=f9e254]
+          - cell "5" [ref=f9e255]
+          - cell "6" [ref=f9e256]
+          - cell "H" [ref=f9e257]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e258]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e259]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e260]
+          - cell "90" [ref=f9e261]
+          - cell "150" [ref=f9e262]
+          - cell "0" [ref=f9e263]
+          - cell "-1.4142136" [ref=f9e264]
+          - cell "—" [ref=f9e265]
+        - row [ref=f9e266]:
+          - cell [ref=f9e267]:
+            - button "Details for t11-face-connectivity:ring · open J=3, M=0 · 4 to 6 direct (H):11" [ref=f9e268] [cursor=pointer]: t11-face-connectivity:ring · open J=3, M=0 · 4 to 6 direct (H):11
+          - cell "6" [ref=f9e269]
+          - cell "3" [ref=f9e270]
+          - cell "ring" [ref=f9e271]
+          - cell "open J=3, M=0" [ref=f9e272]
+          - cell "4 to 6 direct (H)" [ref=f9e273]
+          - cell "4" [ref=f9e274]
+          - cell "6" [ref=f9e275]
+          - cell "H" [ref=f9e276]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e277]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e278]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e279]
+          - cell "90" [ref=f9e280]
+          - cell "150" [ref=f9e281]
+          - cell "0" [ref=f9e282]
+          - cell "0" [ref=f9e283]
+          - cell "—" [ref=f9e284]
+        - row [ref=f9e285]:
+          - cell [ref=f9e286]:
+            - button "Details for t11-face-connectivity:ring · open J=3, M=0 · 4 to 6 through two hops (H squared):12" [ref=f9e287] [cursor=pointer]: t11-face-connectivity:ring · open J=3, M=0 · 4 to 6 through two hops (H squared):12
+          - cell "6" [ref=f9e288]
+          - cell "3" [ref=f9e289]
+          - cell "ring" [ref=f9e290]
+          - cell "open J=3, M=0" [ref=f9e291]
+          - cell "4 to 6 through two hops (H squared)" [ref=f9e292]
+          - cell "4" [ref=f9e293]
+          - cell "6" [ref=f9e294]
+          - cell "H^2" [ref=f9e295]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e296]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e297]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e298]
+          - cell "90" [ref=f9e299]
+          - cell "150" [ref=f9e300]
+          - cell "0" [ref=f9e301]
+          - cell "4" [ref=f9e302]
+          - cell "—" [ref=f9e303]
+        - row [ref=f9e304]:
+          - cell [ref=f9e305]:
+            - button "Details for t11-face-connectivity:complete · closed singlet · 4 to 5 (H):13" [ref=f9e306] [cursor=pointer]: t11-face-connectivity:complete · closed singlet · 4 to 5 (H):13
+          - cell "6" [ref=f9e307]
+          - cell "3" [ref=f9e308]
+          - cell "complete" [ref=f9e309]
+          - cell "closed singlet" [ref=f9e310]
+          - cell "4 to 5 (H)" [ref=f9e311]
+          - cell "4" [ref=f9e312]
+          - cell "5" [ref=f9e313]
+          - cell "H" [ref=f9e314]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e315]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e316]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e317]
+          - cell "90" [ref=f9e318]
+          - cell "150" [ref=f9e319]
+          - cell "0" [ref=f9e320]
+          - cell "-1.4142136" [ref=f9e321]
+          - cell "—" [ref=f9e322]
+        - row [ref=f9e323]:
+          - cell [ref=f9e324]:
+            - button "Details for t11-face-connectivity:complete · closed singlet · 5 to 6 (H):14" [ref=f9e325] [cursor=pointer]: t11-face-connectivity:complete · closed singlet · 5 to 6 (H):14
+          - cell "6" [ref=f9e326]
+          - cell "3" [ref=f9e327]
+          - cell "complete" [ref=f9e328]
+          - cell "closed singlet" [ref=f9e329]
+          - cell "5 to 6 (H)" [ref=f9e330]
+          - cell "5" [ref=f9e331]
+          - cell "6" [ref=f9e332]
+          - cell "H" [ref=f9e333]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e334]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e335]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e336]
+          - cell "90" [ref=f9e337]
+          - cell "150" [ref=f9e338]
+          - cell "0" [ref=f9e339]
+          - cell "-1.4142136" [ref=f9e340]
+          - cell "—" [ref=f9e341]
+        - row [ref=f9e342]:
+          - cell [ref=f9e343]:
+            - button "Details for t11-face-connectivity:complete · closed singlet · 4 to 6 direct (H):15" [ref=f9e344] [cursor=pointer]: t11-face-connectivity:complete · closed singlet · 4 to 6 direct (H):15
+          - cell "6" [ref=f9e345]
+          - cell "3" [ref=f9e346]
+          - cell "complete" [ref=f9e347]
+          - cell "closed singlet" [ref=f9e348]
+          - cell "4 to 6 direct (H)" [ref=f9e349]
+          - cell "4" [ref=f9e350]
+          - cell "6" [ref=f9e351]
+          - cell "H" [ref=f9e352]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e353]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e354]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e355]
+          - cell "90" [ref=f9e356]
+          - cell "150" [ref=f9e357]
+          - cell "0" [ref=f9e358]
+          - cell "0" [ref=f9e359]
+          - cell "—" [ref=f9e360]
+        - row [ref=f9e361]:
+          - cell [ref=f9e362]:
+            - button "Details for t11-face-connectivity:complete · closed singlet · 4 to 6 through two hops (H squared):16" [ref=f9e363] [cursor=pointer]: t11-face-connectivity:complete · closed singlet · 4 to 6 through two hops (H squared):16
+          - cell "6" [ref=f9e364]
+          - cell "3" [ref=f9e365]
+          - cell "complete" [ref=f9e366]
+          - cell "closed singlet" [ref=f9e367]
+          - cell "4 to 6 through two hops (H squared)" [ref=f9e368]
+          - cell "4" [ref=f9e369]
+          - cell "6" [ref=f9e370]
+          - cell "H^2" [ref=f9e371]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e372]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e373]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e374]
+          - cell "90" [ref=f9e375]
+          - cell "150" [ref=f9e376]
+          - cell "0" [ref=f9e377]
+          - cell "2" [ref=f9e378]
+          - cell "—" [ref=f9e379]
+        - row [ref=f9e380]:
+          - cell [ref=f9e381]:
+            - button "Details for t11-face-connectivity:complete · open J=3 highest weight · 4 to 5 (H):17" [ref=f9e382] [cursor=pointer]: t11-face-connectivity:complete · open J=3 highest weight · 4 to 5 (H):17
+          - cell "6" [ref=f9e383]
+          - cell "3" [ref=f9e384]
+          - cell "complete" [ref=f9e385]
+          - cell "open J=3 highest weight" [ref=f9e386]
+          - cell "4 to 5 (H)" [ref=f9e387]
+          - cell "4" [ref=f9e388]
+          - cell "5" [ref=f9e389]
+          - cell "H" [ref=f9e390]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e391]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e392]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e393]
+          - cell "90" [ref=f9e394]
+          - cell "150" [ref=f9e395]
+          - cell "0" [ref=f9e396]
+          - cell "-1.4142136" [ref=f9e397]
+          - cell "—" [ref=f9e398]
+        - row [ref=f9e399]:
+          - cell [ref=f9e400]:
+            - button "Details for t11-face-connectivity:complete · open J=3 highest weight · 5 to 6 (H):18" [ref=f9e401] [cursor=pointer]: t11-face-connectivity:complete · open J=3 highest weight · 5 to 6 (H):18
+          - cell "6" [ref=f9e402]
+          - cell "3" [ref=f9e403]
+          - cell "complete" [ref=f9e404]
+          - cell "open J=3 highest weight" [ref=f9e405]
+          - cell "5 to 6 (H)" [ref=f9e406]
+          - cell "5" [ref=f9e407]
+          - cell "6" [ref=f9e408]
+          - cell "H" [ref=f9e409]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e410]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e411]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e412]
+          - cell "90" [ref=f9e413]
+          - cell "150" [ref=f9e414]
+          - cell "0" [ref=f9e415]
+          - cell "-1.4142136" [ref=f9e416]
+          - cell "—" [ref=f9e417]
+        - row [ref=f9e418]:
+          - cell [ref=f9e419]:
+            - button "Details for t11-face-connectivity:complete · open J=3 highest weight · 4 to 6 direct (H):19" [ref=f9e420] [cursor=pointer]: t11-face-connectivity:complete · open J=3 highest weight · 4 to 6 direct (H):19
+          - cell "6" [ref=f9e421]
+          - cell "3" [ref=f9e422]
+          - cell "complete" [ref=f9e423]
+          - cell "open J=3 highest weight" [ref=f9e424]
+          - cell "4 to 6 direct (H)" [ref=f9e425]
+          - cell "4" [ref=f9e426]
+          - cell "6" [ref=f9e427]
+          - cell "H" [ref=f9e428]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e429]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e430]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e431]
+          - cell "90" [ref=f9e432]
+          - cell "150" [ref=f9e433]
+          - cell "0" [ref=f9e434]
+          - cell "0" [ref=f9e435]
+          - cell "—" [ref=f9e436]
+        - row [ref=f9e437]:
+          - cell [ref=f9e438]:
+            - button "Details for t11-face-connectivity:complete · open J=3 highest weight · 4 to 6 through two hops (H squared):20" [ref=f9e439] [cursor=pointer]: t11-face-connectivity:complete · open J=3 highest weight · 4 to 6 through two hops (H squared):20
+          - cell "6" [ref=f9e440]
+          - cell "3" [ref=f9e441]
+          - cell "complete" [ref=f9e442]
+          - cell "open J=3 highest weight" [ref=f9e443]
+          - cell "4 to 6 through two hops (H squared)" [ref=f9e444]
+          - cell "4" [ref=f9e445]
+          - cell "6" [ref=f9e446]
+          - cell "H^2" [ref=f9e447]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e448]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e449]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e450]
+          - cell "90" [ref=f9e451]
+          - cell "150" [ref=f9e452]
+          - cell "0" [ref=f9e453]
+          - cell "8" [ref=f9e454]
+          - cell "—" [ref=f9e455]
+        - row [ref=f9e456]:
+          - cell [ref=f9e457]:
+            - button "Details for t11-face-connectivity:complete · open J=3, M=0 · 4 to 5 (H):21" [ref=f9e458] [cursor=pointer]: t11-face-connectivity:complete · open J=3, M=0 · 4 to 5 (H):21
+          - cell "6" [ref=f9e459]
+          - cell "3" [ref=f9e460]
+          - cell "complete" [ref=f9e461]
+          - cell "open J=3, M=0" [ref=f9e462]
+          - cell "4 to 5 (H)" [ref=f9e463]
+          - cell "4" [ref=f9e464]
+          - cell "5" [ref=f9e465]
+          - cell "H" [ref=f9e466]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e467]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e468]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e469]
+          - cell "90" [ref=f9e470]
+          - cell "150" [ref=f9e471]
+          - cell "0" [ref=f9e472]
+          - cell "-1.4142136" [ref=f9e473]
+          - cell "—" [ref=f9e474]
+        - row [ref=f9e475]:
+          - cell [ref=f9e476]:
+            - button "Details for t11-face-connectivity:complete · open J=3, M=0 · 5 to 6 (H):22" [ref=f9e477] [cursor=pointer]: t11-face-connectivity:complete · open J=3, M=0 · 5 to 6 (H):22
+          - cell "6" [ref=f9e478]
+          - cell "3" [ref=f9e479]
+          - cell "complete" [ref=f9e480]
+          - cell "open J=3, M=0" [ref=f9e481]
+          - cell "5 to 6 (H)" [ref=f9e482]
+          - cell "5" [ref=f9e483]
+          - cell "6" [ref=f9e484]
+          - cell "H" [ref=f9e485]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e486]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e487]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e488]
+          - cell "90" [ref=f9e489]
+          - cell "150" [ref=f9e490]
+          - cell "0" [ref=f9e491]
+          - cell "-1.4142136" [ref=f9e492]
+          - cell "—" [ref=f9e493]
+        - row [ref=f9e494]:
+          - cell [ref=f9e495]:
+            - button "Details for t11-face-connectivity:complete · open J=3, M=0 · 4 to 6 direct (H):23" [ref=f9e496] [cursor=pointer]: t11-face-connectivity:complete · open J=3, M=0 · 4 to 6 direct (H):23
+          - cell "6" [ref=f9e497]
+          - cell "3" [ref=f9e498]
+          - cell "complete" [ref=f9e499]
+          - cell "open J=3, M=0" [ref=f9e500]
+          - cell "4 to 6 direct (H)" [ref=f9e501]
+          - cell "4" [ref=f9e502]
+          - cell "6" [ref=f9e503]
+          - cell "H" [ref=f9e504]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e505]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e506]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e507]
+          - cell "90" [ref=f9e508]
+          - cell "150" [ref=f9e509]
+          - cell "0" [ref=f9e510]
+          - cell "0" [ref=f9e511]
+          - cell "—" [ref=f9e512]
+        - row [ref=f9e513]:
+          - cell [ref=f9e514]:
+            - button "Details for t11-face-connectivity:complete · open J=3, M=0 · 4 to 6 through two hops (H squared):24" [ref=f9e515] [cursor=pointer]: t11-face-connectivity:complete · open J=3, M=0 · 4 to 6 through two hops (H squared):24
+          - cell "6" [ref=f9e516]
+          - cell "3" [ref=f9e517]
+          - cell "complete" [ref=f9e518]
+          - cell "open J=3, M=0" [ref=f9e519]
+          - cell "4 to 6 through two hops (H squared)" [ref=f9e520]
+          - cell "4" [ref=f9e521]
+          - cell "6" [ref=f9e522]
+          - cell "H^2" [ref=f9e523]
+          - cell "(2, 1, 1, 2, 0, 0)" [ref=f9e524]
+          - cell "(1, 1, 1, 2, 0, 1)" [ref=f9e525]
+          - cell "(1, 1, 1, 1, 1, 1)" [ref=f9e526]
+          - cell "90" [ref=f9e527]
+          - cell "150" [ref=f9e528]
+          - cell "0" [ref=f9e529]
+          - cell "8" [ref=f9e530]
+          - cell "—" [ref=f9e531]
+        - row [ref=f9e532]:
+          - cell [ref=f9e533]:
+            - button "Details for t11-face-connectivity:L=5, K=3 · ring · size control:25" [ref=f9e534] [cursor=pointer]: t11-face-connectivity:L=5, K=3 · ring · size control:25
+          - cell "5" [ref=f9e535]
+          - cell "3" [ref=f9e536]
+          - cell "ring" [ref=f9e537]
+          - cell "closed-sector block control" [ref=f9e538]
+          - cell "4 to 5 singlet block control" [ref=f9e539]
+          - cell "4" [ref=f9e540]
+          - cell "5" [ref=f9e541]
+          - cell "H" [ref=f9e542]
+          - cell "—" [ref=f9e543]
+          - cell "—" [ref=f9e544]
+          - cell "—" [ref=f9e545]
+          - cell "15" [ref=f9e546]
+          - cell "65" [ref=f9e547]
+          - cell "0" [ref=f9e548]
+          - cell "—" [ref=f9e549]
+          - cell "12.247449" [ref=f9e550]
+        - row [ref=f9e551]:
+          - cell [ref=f9e552]:
+            - button "Details for t11-face-connectivity:L=5, K=3 · complete · size control:26" [ref=f9e553] [cursor=pointer]: t11-face-connectivity:L=5, K=3 · complete · size control:26
+          - cell "5" [ref=f9e554]
+          - cell "3" [ref=f9e555]
+          - cell "complete" [ref=f9e556]
+          - cell "closed-sector block control" [ref=f9e557]
+          - cell "4 to 5 singlet block control" [ref=f9e558]
+          - cell "4" [ref=f9e559]
+          - cell "5" [ref=f9e560]
+          - cell "H" [ref=f9e561]
+          - cell "—" [ref=f9e562]
+          - cell "—" [ref=f9e563]
+          - cell "—" [ref=f9e564]
+          - cell "15" [ref=f9e565]
+          - cell "65" [ref=f9e566]
+          - cell "0" [ref=f9e567]
+          - cell "—" [ref=f9e568]
+          - cell "17.320508" [ref=f9e569]
+        - row [ref=f9e570]:
+          - cell [ref=f9e571]:
+            - button "Details for t11-face-connectivity:L=5, K=3 · disconnected_receivers · size control:27" [ref=f9e572] [cursor=pointer]: t11-face-connectivity:L=5, K=3 · disconnected_receivers · size control:27
+          - cell "5" [ref=f9e573]
+          - cell "3" [ref=f9e574]
+          - cell "disconnected_receivers" [ref=f9e575]
+          - cell "closed-sector block control" [ref=f9e576]
+          - cell "4 to 5 singlet block control" [ref=f9e577]
+          - cell "4" [ref=f9e578]
+          - cell "5" [ref=f9e579]
+          - cell "H" [ref=f9e580]
+          - cell "—" [ref=f9e581]
+          - cell "—" [ref=f9e582]
+          - cell "—" [ref=f9e583]
+          - cell "15" [ref=f9e584]
+          - cell "65" [ref=f9e585]
+          - cell "0" [ref=f9e586]
+          - cell "—" [ref=f9e587]
+          - cell "13.416408" [ref=f9e588]
+        - row [ref=f9e589]:
+          - cell [ref=f9e590]:
+            - button "Details for t11-face-connectivity:L=6, K=2 · ring · size control:28" [ref=f9e591] [cursor=pointer]: t11-face-connectivity:L=6, K=2 · ring · size control:28
+          - cell "6" [ref=f9e592]
+          - cell "2" [ref=f9e593]
+          - cell "ring" [ref=f9e594]
+          - cell "closed-sector block control" [ref=f9e595]
+          - cell "4 to 5 singlet block control" [ref=f9e596]
+          - cell "4" [ref=f9e597]
+          - cell "5" [ref=f9e598]
+          - cell "H" [ref=f9e599]
+          - cell "—" [ref=f9e600]
+          - cell "—" [ref=f9e601]
+          - cell "—" [ref=f9e602]
+          - cell "0" [ref=f9e603]
+          - cell "30" [ref=f9e604]
+          - cell "0" [ref=f9e605]
+          - cell "—" [ref=f9e606]
+          - cell "0" [ref=f9e607]
+        - row [ref=f9e608]:
+          - cell [ref=f9e609]:
+            - button "Details for t11-face-connectivity:L=6, K=2 · complete · size control:29" [ref=f9e610] [cursor=pointer]: t11-face-connectivity:L=6, K=2 · complete · size control:29
+          - cell "6" [ref=f9e611]
+          - cell "2" [ref=f9e612]
+          - cell "complete" [ref=f9e613]
+          - cell "closed-sector block control" [ref=f9e614]
+          - cell "4 to 5 singlet block control" [ref=f9e615]
+          - cell "4" [ref=f9e616]
+          - cell "5" [ref=f9e617]
+          - cell "H" [ref=f9e618]
+          - cell "—" [ref=f9e619]
+          - cell "—" [ref=f9e620]
+          - cell "—" [ref=f9e621]
+          - cell "0" [ref=f9e622]
+          - cell "30" [ref=f9e623]
+          - cell "0" [ref=f9e624]
+          - cell "—" [ref=f9e625]
+          - cell "0" [ref=f9e626]
+        - row [ref=f9e627]:
+          - cell [ref=f9e628]:
+            - button "Details for t11-face-connectivity:L=6, K=2 · disconnected_receivers · size control:30" [ref=f9e629] [cursor=pointer]: t11-face-connectivity:L=6, K=2 · disconnected_receivers · size control:30
+          - cell "6" [ref=f9e630]
+          - cell "2" [ref=f9e631]
+          - cell "disconnected_receivers" [ref=f9e632]
+          - cell "closed-sector block control" [ref=f9e633]
+          - cell "4 to 5 singlet block control" [ref=f9e634]
+          - cell "4" [ref=f9e635]
+          - cell "5" [ref=f9e636]
+          - cell "H" [ref=f9e637]
+          - cell "—" [ref=f9e638]
+          - cell "—" [ref=f9e639]
+          - cell "—" [ref=f9e640]
+          - cell "0" [ref=f9e641]
+          - cell "30" [ref=f9e642]
+          - cell "0" [ref=f9e643]
+          - cell "—" [ref=f9e644]
+          - cell "0" [ref=f9e645]

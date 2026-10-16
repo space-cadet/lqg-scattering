@@ -30,7 +30,7 @@ The plotting script `code/python/plot_t11_classical_rotors.py` also requires Mat
 - `independent-validation.json`: direct endpoint Hamiltonian and saved-array audits.
 - `verification.json`: regression, figure and resource evidence.
 - `provenance.json`, `sha256.json`: source/runtime provenance and artifact hashes.
-- `N*_R*_*_S*.npz`: reproducible initial/final configurations, sampled trajectories and equilibrium samples. `_refined.npz` files hold half-step trajectories. These large per-run archives remain local and are omitted from both Git and the dashboard package.
+- `N*_R*_*_S*.npz`: reproducible initial/final configurations, sampled trajectories and equilibrium samples. `_refined.npz` files hold half-step trajectories. These large per-run archives are generated locally and ignored by Git.
 
 ## Array conventions
 
@@ -38,4 +38,4 @@ Orientations and angular momenta have shape `(N,3)`. `times` has 4,001 entries. 
 
 I=lambda=1. Sites are zero-indexed on a periodic ring. Ratios 1, 10, 100 specify the initial packet kinetic energy at N=8. Fixed-packet runs hold this energy fixed; fixed-density runs multiply it by N/8. Initial potential energy is additional and recorded in the actual total energy. N=8 scaling controls are duplicates, not independent statistical samples.
 
-The primary quantitative caveats are three initial orientation seeds, a special opposite-momentum pair preparation, a finite interval, and residual long-time sampling/step sensitivity in chaotic cases. See the physical account before interpreting individual metrics. The dashboard package contains selected summaries and figures; full per-run archives remain local and are omitted from Git and the website.
+The primary quantitative caveats are three initial orientation seeds, a special opposite-momentum pair preparation, a finite interval, and residual long-time sampling/step sensitivity in chaotic cases. See the physical account before interpreting individual metrics. Full per-run archives remain local and ignored by Git; compact summaries, protocols, validation reports, and curated figures are versioned.

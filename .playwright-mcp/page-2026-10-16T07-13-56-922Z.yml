@@ -1,0 +1,1199 @@
+- generic [ref=f5e2]:
+  - navigation "Numerical datasets" [ref=f5e3]:
+    - generic [ref=f5e4]: Numerical study
+    - combobox "Numerical study" [ref=f5e5]:
+      - option "All studies — overview"
+      - option "Small-area face-channel equilibration pilot (12 rows)"
+      - option "Classical rotor spreading and equilibrium comparison (24 rows)"
+      - 'option "Few-rotor transfer: planar bound and 3D controls (27 rows)"'
+      - option "Rotor coupling crossover and delayed release (64 rows)" [selected]
+      - 'option "Large-area tetrahedron: face activation and recurrence (20 rows)"'
+      - option "Entanglement of separately closed thermal polyhedra (86 rows)"
+      - option "Ordinary closure versus temperature (125 rows)"
+      - option "Heating separately closed area and positive RS volume (85 rows)"
+      - option "Singlet exchange between closed FL polyhedra (20 rows)"
+      - 'option "Four versus five sites: thermal-volume persistence (12 rows)"'
+      - option "Prepared tetrahedral FL states and the volume crossover (11 rows)"
+      - option "Candidate geometric Hamiltonians and prepared-FL dynamics (62 rows)"
+      - option "Four-site Hamiltonian spectra and RS-volume observables (30 rows)"
+      - option "Complete four-face closed-basis volumes (11 rows)"
+      - option "Variable-face positive RS catalogue (9 rows)"
+      - option "Squeezed-vacuum area coefficients (964 rows)"
+      - option "Squeezed-vacuum resultant spin (196 rows)"
+      - option "Excited J_in=1 joint area and spin (5 rows)"
+      - option "Higher-J flat-boundary probes (13 rows)"
+      - option "Magnetization and signed-grasp correlations (10 rows)"
+      - option "Local-chirality pilot (13 rows)"
+      - option "Imaginary-perturbation response (26 rows)"
+      - option "Cocycle-phase pilot (10 rows)"
+      - option "Large-K recorded families and fits (13 rows)"
+      - option "Historical single-copy thermal pilot (14 rows)"
+      - option "Historical energy-basis TFD pilot (14 rows)"
+      - option "Historical complexified purification (10 rows)"
+      - option "Small-sector thermal geometry audit (4 rows)"
+      - option "RS/AL volume-prescription controls (2 rows)"
+      - option "Initial covariance reconstruction pilot (6 rows)"
+      - option "Prepared FL evolution sampling (50 rows)"
+      - option "Positive volumes on two real-plane states (2 rows)"
+      - option "FL covariance shape recovery (84 rows)"
+      - option "Weighted FL input geometry and volumes (14 rows)"
+      - option "Regular FL volume versus area (5 rows)"
+      - option "Equal-area FL shape scan at J=2 (440 rows)"
+      - option "Same-number detachment energies (8 rows)"
+      - option "Closed and open state evolution probes (6 rows)"
+      - option "Constructive edge sewing probes (5 rows)"
+  - heading "Rotor coupling crossover and delayed release" [level=1] [ref=f5e6]
+  - paragraph [ref=f5e7]: The dashboard plots 56 grouped three-seed cases at the primary late window, plus eight direct-coupling checks. The ratio scan spans N=8,16,32,64 and 14 packet-energy-to-coupling ratios; separate direct controls vary λ at fixed packet energy and physical observation time.
+  - generic [ref=f5e8]:
+    - generic [ref=f5e9]:
+      - generic [ref=f5e10]: "64"
+      - generic [ref=f5e11]: Total Runs
+    - generic [ref=f5e12]:
+      - generic [ref=f5e13]: "0"
+      - generic [ref=f5e14]: Tasks
+    - generic [ref=f5e15]:
+      - generic [ref=f5e16]: "64"
+      - generic [ref=f5e17]: Complete
+    - generic [ref=f5e18]:
+      - generic [ref=f5e19]: "1"
+      - generic [ref=f5e20]: Figures
+  - tablist "Dashboard sections" [ref=f5e21]:
+    - tab "Runs & Studies" [selected] [ref=f5e22] [cursor=pointer]
+    - tab "Figure Archive" [ref=f5e23] [cursor=pointer]
+    - tab "Charts" [ref=f5e24] [cursor=pointer]
+    - tab "Tasks & Numerical Notes" [ref=f5e25] [cursor=pointer]
+  - tabpanel "Runs & Studies" [ref=f5e26]:
+    - heading "Run and Study Records" [level=2] [ref=f5e27]
+    - generic [ref=f5e28]:
+      - generic [ref=f5e29]:
+        - generic [ref=f5e30]: "Status:"
+        - combobox "Status:" [ref=f5e31]:
+          - option "All" [selected]
+          - option "complete"
+      - generic [ref=f5e32]:
+        - generic [ref=f5e33]: "Search:"
+        - textbox "Search:" [ref=f5e34]:
+          - /placeholder: Run ID, description...
+      - button "Reset" [ref=f5e36] [cursor=pointer]
+    - table [ref=f5e38]:
+      - rowgroup [ref=f5e39]:
+        - row [ref=f5e40]:
+          - columnheader [ref=f5e41] [cursor=pointer]:
+            - button "Case" [ref=f5e42]: Case ↕
+          - columnheader [ref=f5e43] [cursor=pointer]:
+            - button "N" [ref=f5e44]: N ↕
+          - columnheader [ref=f5e45] [cursor=pointer]:
+            - button "Initial packet energy / coupling" [ref=f5e46]: Initial packet energy / coupling ↕
+          - columnheader [ref=f5e47] [cursor=pointer]:
+            - button "coupling" [ref=f5e48]: coupling ↕
+          - columnheader [ref=f5e49] [cursor=pointer]:
+            - button "seed count" [ref=f5e50]: seed count ↕
+          - columnheader [ref=f5e51] [cursor=pointer]:
+            - button "control type" [ref=f5e52]: control type ↕
+          - columnheader [ref=f5e53] [cursor=pointer]:
+            - button "initial packet energy" [ref=f5e54]: initial packet energy ↕
+          - columnheader [ref=f5e55] [cursor=pointer]:
+            - button "Mean transferred kinetic-energy fraction" [ref=f5e56]: Mean transferred kinetic-energy fraction ↕
+          - columnheader [ref=f5e57] [cursor=pointer]:
+            - button "transfer fraction min" [ref=f5e58]: transfer fraction min ↕
+          - columnheader [ref=f5e59] [cursor=pointer]:
+            - button "transfer fraction max" [ref=f5e60]: transfer fraction max ↕
+          - columnheader [ref=f5e61] [cursor=pointer]:
+            - button "Rotor count and observation/control protocol" [ref=f5e62]: Rotor count and observation/control protocol ↕
+          - columnheader [ref=f5e63] [cursor=pointer]:
+            - button "seed" [ref=f5e64]: seed ↕
+          - columnheader [ref=f5e65] [cursor=pointer]:
+            - button "equivalent scaled mean" [ref=f5e66]: equivalent scaled mean ↕
+          - columnheader [ref=f5e67] [cursor=pointer]:
+            - button "early scaled history max error" [ref=f5e68]: early scaled history max error ↕
+          - columnheader [ref=f5e69] [cursor=pointer]:
+            - button "late mean difference" [ref=f5e70]: late mean difference ↕
+      - rowgroup [ref=f5e71]:
+        - row [ref=f5e72]:
+          - cell [ref=f5e73]:
+            - button "Details for rotor-coupling-crossover:case-0001:1" [ref=f5e74] [cursor=pointer]: rotor-coupling-crossover:case-0001:1
+          - cell "8" [ref=f5e75]
+          - cell "2" [ref=f5e76]
+          - cell "1" [ref=f5e77]
+          - cell "3" [ref=f5e78]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e79]
+          - cell "2" [ref=f5e80]
+          - cell "0.34474207" [ref=f5e81]
+          - cell "0.34042834" [ref=f5e82]
+          - cell "0.34736269" [ref=f5e83]
+          - cell "N=8; primary scaled-time scan" [ref=f5e84]
+          - cell "—" [ref=f5e85]
+          - cell "—" [ref=f5e86]
+          - cell "—" [ref=f5e87]
+          - cell "—" [ref=f5e88]
+        - row [ref=f5e89]:
+          - cell [ref=f5e90]:
+            - button "Details for rotor-coupling-crossover:case-0002:2" [ref=f5e91] [cursor=pointer]: rotor-coupling-crossover:case-0002:2
+          - cell "8" [ref=f5e92]
+          - cell "4" [ref=f5e93]
+          - cell "1" [ref=f5e94]
+          - cell "3" [ref=f5e95]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e96]
+          - cell "4" [ref=f5e97]
+          - cell "0.35794503" [ref=f5e98]
+          - cell "0.34945633" [ref=f5e99]
+          - cell "0.36527131" [ref=f5e100]
+          - cell "N=8; primary scaled-time scan" [ref=f5e101]
+          - cell "—" [ref=f5e102]
+          - cell "—" [ref=f5e103]
+          - cell "—" [ref=f5e104]
+          - cell "—" [ref=f5e105]
+        - row [ref=f5e106]:
+          - cell [ref=f5e107]:
+            - button "Details for rotor-coupling-crossover:case-0003:3" [ref=f5e108] [cursor=pointer]: rotor-coupling-crossover:case-0003:3
+          - cell "8" [ref=f5e109]
+          - cell "6" [ref=f5e110]
+          - cell "1" [ref=f5e111]
+          - cell "3" [ref=f5e112]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e113]
+          - cell "6" [ref=f5e114]
+          - cell "0.35068368" [ref=f5e115]
+          - cell "0.34734818" [ref=f5e116]
+          - cell "0.35509554" [ref=f5e117]
+          - cell "N=8; primary scaled-time scan" [ref=f5e118]
+          - cell "—" [ref=f5e119]
+          - cell "—" [ref=f5e120]
+          - cell "—" [ref=f5e121]
+          - cell "—" [ref=f5e122]
+        - row [ref=f5e123]:
+          - cell [ref=f5e124]:
+            - button "Details for rotor-coupling-crossover:case-0004:4" [ref=f5e125] [cursor=pointer]: rotor-coupling-crossover:case-0004:4
+          - cell "8" [ref=f5e126]
+          - cell "8" [ref=f5e127]
+          - cell "1" [ref=f5e128]
+          - cell "3" [ref=f5e129]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e130]
+          - cell "8" [ref=f5e131]
+          - cell "0.35865687" [ref=f5e132]
+          - cell "0.35563546" [ref=f5e133]
+          - cell "0.36383907" [ref=f5e134]
+          - cell "N=8; primary scaled-time scan" [ref=f5e135]
+          - cell "—" [ref=f5e136]
+          - cell "—" [ref=f5e137]
+          - cell "—" [ref=f5e138]
+          - cell "—" [ref=f5e139]
+        - row [ref=f5e140]:
+          - cell [ref=f5e141]:
+            - button "Details for rotor-coupling-crossover:case-0005:5" [ref=f5e142] [cursor=pointer]: rotor-coupling-crossover:case-0005:5
+          - cell "8" [ref=f5e143]
+          - cell "10" [ref=f5e144]
+          - cell "1" [ref=f5e145]
+          - cell "3" [ref=f5e146]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e147]
+          - cell "10" [ref=f5e148]
+          - cell "0.37775621" [ref=f5e149]
+          - cell "0.37166703" [ref=f5e150]
+          - cell "0.38976961" [ref=f5e151]
+          - cell "N=8; primary scaled-time scan" [ref=f5e152]
+          - cell "—" [ref=f5e153]
+          - cell "—" [ref=f5e154]
+          - cell "—" [ref=f5e155]
+          - cell "—" [ref=f5e156]
+        - row [ref=f5e157]:
+          - cell [ref=f5e158]:
+            - button "Details for rotor-coupling-crossover:case-0006:6" [ref=f5e159] [cursor=pointer]: rotor-coupling-crossover:case-0006:6
+          - cell "8" [ref=f5e160]
+          - cell "12" [ref=f5e161]
+          - cell "1" [ref=f5e162]
+          - cell "3" [ref=f5e163]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e164]
+          - cell "12" [ref=f5e165]
+          - cell "0.40365854" [ref=f5e166]
+          - cell "0.40027156" [ref=f5e167]
+          - cell "0.41023994" [ref=f5e168]
+          - cell "N=8; primary scaled-time scan" [ref=f5e169]
+          - cell "—" [ref=f5e170]
+          - cell "—" [ref=f5e171]
+          - cell "—" [ref=f5e172]
+          - cell "—" [ref=f5e173]
+        - row [ref=f5e174]:
+          - cell [ref=f5e175]:
+            - button "Details for rotor-coupling-crossover:case-0007:7" [ref=f5e176] [cursor=pointer]: rotor-coupling-crossover:case-0007:7
+          - cell "8" [ref=f5e177]
+          - cell "14" [ref=f5e178]
+          - cell "1" [ref=f5e179]
+          - cell "3" [ref=f5e180]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e181]
+          - cell "14" [ref=f5e182]
+          - cell "0.36117468" [ref=f5e183]
+          - cell "0.34849122" [ref=f5e184]
+          - cell "0.37715947" [ref=f5e185]
+          - cell "N=8; primary scaled-time scan" [ref=f5e186]
+          - cell "—" [ref=f5e187]
+          - cell "—" [ref=f5e188]
+          - cell "—" [ref=f5e189]
+          - cell "—" [ref=f5e190]
+        - row [ref=f5e191]:
+          - cell [ref=f5e192]:
+            - button "Details for rotor-coupling-crossover:case-0008:8" [ref=f5e193] [cursor=pointer]: rotor-coupling-crossover:case-0008:8
+          - cell "8" [ref=f5e194]
+          - cell "16" [ref=f5e195]
+          - cell "1" [ref=f5e196]
+          - cell "3" [ref=f5e197]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e198]
+          - cell "16" [ref=f5e199]
+          - cell "0.26216126" [ref=f5e200]
+          - cell "0.23441475" [ref=f5e201]
+          - cell "0.31330628" [ref=f5e202]
+          - cell "N=8; primary scaled-time scan" [ref=f5e203]
+          - cell "—" [ref=f5e204]
+          - cell "—" [ref=f5e205]
+          - cell "—" [ref=f5e206]
+          - cell "—" [ref=f5e207]
+        - row [ref=f5e208]:
+          - cell [ref=f5e209]:
+            - button "Details for rotor-coupling-crossover:case-0009:9" [ref=f5e210] [cursor=pointer]: rotor-coupling-crossover:case-0009:9
+          - cell "8" [ref=f5e211]
+          - cell "18" [ref=f5e212]
+          - cell "1" [ref=f5e213]
+          - cell "3" [ref=f5e214]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e215]
+          - cell "18" [ref=f5e216]
+          - cell "0.008182536" [ref=f5e217]
+          - cell "0.0074103793" [ref=f5e218]
+          - cell "0.0092957579" [ref=f5e219]
+          - cell "N=8; primary scaled-time scan" [ref=f5e220]
+          - cell "—" [ref=f5e221]
+          - cell "—" [ref=f5e222]
+          - cell "—" [ref=f5e223]
+          - cell "—" [ref=f5e224]
+        - row [ref=f5e225]:
+          - cell [ref=f5e226]:
+            - button "Details for rotor-coupling-crossover:case-0010:10" [ref=f5e227] [cursor=pointer]: rotor-coupling-crossover:case-0010:10
+          - cell "8" [ref=f5e228]
+          - cell "20" [ref=f5e229]
+          - cell "1" [ref=f5e230]
+          - cell "3" [ref=f5e231]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e232]
+          - cell "20" [ref=f5e233]
+          - cell "0.0059746341" [ref=f5e234]
+          - cell "0.0058352651" [ref=f5e235]
+          - cell "0.0061002473" [ref=f5e236]
+          - cell "N=8; primary scaled-time scan" [ref=f5e237]
+          - cell "—" [ref=f5e238]
+          - cell "—" [ref=f5e239]
+          - cell "—" [ref=f5e240]
+          - cell "—" [ref=f5e241]
+        - row [ref=f5e242]:
+          - cell [ref=f5e243]:
+            - button "Details for rotor-coupling-crossover:case-0011:11" [ref=f5e244] [cursor=pointer]: rotor-coupling-crossover:case-0011:11
+          - cell "8" [ref=f5e245]
+          - cell "25" [ref=f5e246]
+          - cell "1" [ref=f5e247]
+          - cell "3" [ref=f5e248]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e249]
+          - cell "25" [ref=f5e250]
+          - cell "0.0035007569" [ref=f5e251]
+          - cell "0.0032687383" [ref=f5e252]
+          - cell "0.0037197221" [ref=f5e253]
+          - cell "N=8; primary scaled-time scan" [ref=f5e254]
+          - cell "—" [ref=f5e255]
+          - cell "—" [ref=f5e256]
+          - cell "—" [ref=f5e257]
+          - cell "—" [ref=f5e258]
+        - row [ref=f5e259]:
+          - cell [ref=f5e260]:
+            - button "Details for rotor-coupling-crossover:case-0012:12" [ref=f5e261] [cursor=pointer]: rotor-coupling-crossover:case-0012:12
+          - cell "8" [ref=f5e262]
+          - cell "30" [ref=f5e263]
+          - cell "1" [ref=f5e264]
+          - cell "3" [ref=f5e265]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e266]
+          - cell "30" [ref=f5e267]
+          - cell "0.0023309459" [ref=f5e268]
+          - cell "0.0021376504" [ref=f5e269]
+          - cell "0.0024459907" [ref=f5e270]
+          - cell "N=8; primary scaled-time scan" [ref=f5e271]
+          - cell "—" [ref=f5e272]
+          - cell "—" [ref=f5e273]
+          - cell "—" [ref=f5e274]
+          - cell "—" [ref=f5e275]
+        - row [ref=f5e276]:
+          - cell [ref=f5e277]:
+            - button "Details for rotor-coupling-crossover:case-0013:13" [ref=f5e278] [cursor=pointer]: rotor-coupling-crossover:case-0013:13
+          - cell "8" [ref=f5e279]
+          - cell "50" [ref=f5e280]
+          - cell "1" [ref=f5e281]
+          - cell "3" [ref=f5e282]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e283]
+          - cell "50" [ref=f5e284]
+          - cell "0.00082562737" [ref=f5e285]
+          - cell "0.00071956051" [ref=f5e286]
+          - cell "0.00089554484" [ref=f5e287]
+          - cell "N=8; primary scaled-time scan" [ref=f5e288]
+          - cell "—" [ref=f5e289]
+          - cell "—" [ref=f5e290]
+          - cell "—" [ref=f5e291]
+          - cell "—" [ref=f5e292]
+        - row [ref=f5e293]:
+          - cell [ref=f5e294]:
+            - button "Details for rotor-coupling-crossover:case-0014:14" [ref=f5e295] [cursor=pointer]: rotor-coupling-crossover:case-0014:14
+          - cell "8" [ref=f5e296]
+          - cell "100" [ref=f5e297]
+          - cell "1" [ref=f5e298]
+          - cell "3" [ref=f5e299]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e300]
+          - cell "100" [ref=f5e301]
+          - cell "0.00022092353" [ref=f5e302]
+          - cell "0.00017135033" [ref=f5e303]
+          - cell "0.00025698339" [ref=f5e304]
+          - cell "N=8; primary scaled-time scan" [ref=f5e305]
+          - cell "—" [ref=f5e306]
+          - cell "—" [ref=f5e307]
+          - cell "—" [ref=f5e308]
+          - cell "—" [ref=f5e309]
+        - row [ref=f5e310]:
+          - cell [ref=f5e311]:
+            - button "Details for rotor-coupling-crossover:case-0015:15" [ref=f5e312] [cursor=pointer]: rotor-coupling-crossover:case-0015:15
+          - cell "8" [ref=f5e313]
+          - cell "10" [ref=f5e314]
+          - cell "10" [ref=f5e315]
+          - cell "—" [ref=f5e316]
+          - cell "direct coupling; fixed physical-time window; seed 1701" [ref=f5e317]
+          - cell "100" [ref=f5e318]
+          - cell "0.37438784" [ref=f5e319]
+          - cell "—" [ref=f5e320]
+          - cell "—" [ref=f5e321]
+          - cell "N=8; direct coupling control" [ref=f5e322]
+          - cell "1701" [ref=f5e323]
+          - cell "0.38976961" [ref=f5e324]
+          - cell "1.5959456e-16" [ref=f5e325]
+          - cell "0.015381773" [ref=f5e326]
+        - row [ref=f5e327]:
+          - cell [ref=f5e328]:
+            - button "Details for rotor-coupling-crossover:case-0016:16" [ref=f5e329] [cursor=pointer]: rotor-coupling-crossover:case-0016:16
+          - cell "8" [ref=f5e330]
+          - cell "20" [ref=f5e331]
+          - cell "5" [ref=f5e332]
+          - cell "—" [ref=f5e333]
+          - cell "direct coupling; fixed physical-time window; seed 1701" [ref=f5e334]
+          - cell "100" [ref=f5e335]
+          - cell "0.0059527646" [ref=f5e336]
+          - cell "—" [ref=f5e337]
+          - cell "—" [ref=f5e338]
+          - cell "N=8; direct coupling control" [ref=f5e339]
+          - cell "1701" [ref=f5e340]
+          - cell "0.0059883897" [ref=f5e341]
+          - cell "2.1337099e-16" [ref=f5e342]
+          - cell "0.000035625127" [ref=f5e343]
+        - row [ref=f5e344]:
+          - cell [ref=f5e345]:
+            - button "Details for rotor-coupling-crossover:case-0017:17" [ref=f5e346] [cursor=pointer]: rotor-coupling-crossover:case-0017:17
+          - cell "16" [ref=f5e347]
+          - cell "2" [ref=f5e348]
+          - cell "1" [ref=f5e349]
+          - cell "3" [ref=f5e350]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e351]
+          - cell "2" [ref=f5e352]
+          - cell "0.43568138" [ref=f5e353]
+          - cell "0.42882187" [ref=f5e354]
+          - cell "0.44198876" [ref=f5e355]
+          - cell "N=16; primary scaled-time scan" [ref=f5e356]
+          - cell "—" [ref=f5e357]
+          - cell "—" [ref=f5e358]
+          - cell "—" [ref=f5e359]
+          - cell "—" [ref=f5e360]
+        - row [ref=f5e361]:
+          - cell [ref=f5e362]:
+            - button "Details for rotor-coupling-crossover:case-0018:18" [ref=f5e363] [cursor=pointer]: rotor-coupling-crossover:case-0018:18
+          - cell "16" [ref=f5e364]
+          - cell "4" [ref=f5e365]
+          - cell "1" [ref=f5e366]
+          - cell "3" [ref=f5e367]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e368]
+          - cell "4" [ref=f5e369]
+          - cell "0.43466118" [ref=f5e370]
+          - cell "0.43397385" [ref=f5e371]
+          - cell "0.43576853" [ref=f5e372]
+          - cell "N=16; primary scaled-time scan" [ref=f5e373]
+          - cell "—" [ref=f5e374]
+          - cell "—" [ref=f5e375]
+          - cell "—" [ref=f5e376]
+          - cell "—" [ref=f5e377]
+        - row [ref=f5e378]:
+          - cell [ref=f5e379]:
+            - button "Details for rotor-coupling-crossover:case-0019:19" [ref=f5e380] [cursor=pointer]: rotor-coupling-crossover:case-0019:19
+          - cell "16" [ref=f5e381]
+          - cell "6" [ref=f5e382]
+          - cell "1" [ref=f5e383]
+          - cell "3" [ref=f5e384]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e385]
+          - cell "6" [ref=f5e386]
+          - cell "0.43026325" [ref=f5e387]
+          - cell "0.4294594" [ref=f5e388]
+          - cell "0.43108123" [ref=f5e389]
+          - cell "N=16; primary scaled-time scan" [ref=f5e390]
+          - cell "—" [ref=f5e391]
+          - cell "—" [ref=f5e392]
+          - cell "—" [ref=f5e393]
+          - cell "—" [ref=f5e394]
+        - row [ref=f5e395]:
+          - cell [ref=f5e396]:
+            - button "Details for rotor-coupling-crossover:case-0020:20" [ref=f5e397] [cursor=pointer]: rotor-coupling-crossover:case-0020:20
+          - cell "16" [ref=f5e398]
+          - cell "8" [ref=f5e399]
+          - cell "1" [ref=f5e400]
+          - cell "3" [ref=f5e401]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e402]
+          - cell "8" [ref=f5e403]
+          - cell "0.42272402" [ref=f5e404]
+          - cell "0.42008147" [ref=f5e405]
+          - cell "0.42413914" [ref=f5e406]
+          - cell "N=16; primary scaled-time scan" [ref=f5e407]
+          - cell "—" [ref=f5e408]
+          - cell "—" [ref=f5e409]
+          - cell "—" [ref=f5e410]
+          - cell "—" [ref=f5e411]
+        - row [ref=f5e412]:
+          - cell [ref=f5e413]:
+            - button "Details for rotor-coupling-crossover:case-0021:21" [ref=f5e414] [cursor=pointer]: rotor-coupling-crossover:case-0021:21
+          - cell "16" [ref=f5e415]
+          - cell "10" [ref=f5e416]
+          - cell "1" [ref=f5e417]
+          - cell "3" [ref=f5e418]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e419]
+          - cell "10" [ref=f5e420]
+          - cell "0.42245044" [ref=f5e421]
+          - cell "0.4199545" [ref=f5e422]
+          - cell "0.42528875" [ref=f5e423]
+          - cell "N=16; primary scaled-time scan" [ref=f5e424]
+          - cell "—" [ref=f5e425]
+          - cell "—" [ref=f5e426]
+          - cell "—" [ref=f5e427]
+          - cell "—" [ref=f5e428]
+        - row [ref=f5e429]:
+          - cell [ref=f5e430]:
+            - button "Details for rotor-coupling-crossover:case-0022:22" [ref=f5e431] [cursor=pointer]: rotor-coupling-crossover:case-0022:22
+          - cell "16" [ref=f5e432]
+          - cell "12" [ref=f5e433]
+          - cell "1" [ref=f5e434]
+          - cell "3" [ref=f5e435]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e436]
+          - cell "12" [ref=f5e437]
+          - cell "0.41887167" [ref=f5e438]
+          - cell "0.4127288" [ref=f5e439]
+          - cell "0.42221178" [ref=f5e440]
+          - cell "N=16; primary scaled-time scan" [ref=f5e441]
+          - cell "—" [ref=f5e442]
+          - cell "—" [ref=f5e443]
+          - cell "—" [ref=f5e444]
+          - cell "—" [ref=f5e445]
+        - row [ref=f5e446]:
+          - cell [ref=f5e447]:
+            - button "Details for rotor-coupling-crossover:case-0023:23" [ref=f5e448] [cursor=pointer]: rotor-coupling-crossover:case-0023:23
+          - cell "16" [ref=f5e449]
+          - cell "14" [ref=f5e450]
+          - cell "1" [ref=f5e451]
+          - cell "3" [ref=f5e452]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e453]
+          - cell "14" [ref=f5e454]
+          - cell "0.28270115" [ref=f5e455]
+          - cell "0.26297566" [ref=f5e456]
+          - cell "0.30699154" [ref=f5e457]
+          - cell "N=16; primary scaled-time scan" [ref=f5e458]
+          - cell "—" [ref=f5e459]
+          - cell "—" [ref=f5e460]
+          - cell "—" [ref=f5e461]
+          - cell "—" [ref=f5e462]
+        - row [ref=f5e463]:
+          - cell [ref=f5e464]:
+            - button "Details for rotor-coupling-crossover:case-0024:24" [ref=f5e465] [cursor=pointer]: rotor-coupling-crossover:case-0024:24
+          - cell "16" [ref=f5e466]
+          - cell "16" [ref=f5e467]
+          - cell "1" [ref=f5e468]
+          - cell "3" [ref=f5e469]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e470]
+          - cell "16" [ref=f5e471]
+          - cell "0.057817645" [ref=f5e472]
+          - cell "0.028440877" [ref=f5e473]
+          - cell "0.10905088" [ref=f5e474]
+          - cell "N=16; primary scaled-time scan" [ref=f5e475]
+          - cell "—" [ref=f5e476]
+          - cell "—" [ref=f5e477]
+          - cell "—" [ref=f5e478]
+          - cell "—" [ref=f5e479]
+        - row [ref=f5e480]:
+          - cell [ref=f5e481]:
+            - button "Details for rotor-coupling-crossover:case-0025:25" [ref=f5e482] [cursor=pointer]: rotor-coupling-crossover:case-0025:25
+          - cell "16" [ref=f5e483]
+          - cell "18" [ref=f5e484]
+          - cell "1" [ref=f5e485]
+          - cell "3" [ref=f5e486]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e487]
+          - cell "18" [ref=f5e488]
+          - cell "0.010066365" [ref=f5e489]
+          - cell "0.009534659" [ref=f5e490]
+          - cell "0.010622931" [ref=f5e491]
+          - cell "N=16; primary scaled-time scan" [ref=f5e492]
+          - cell "—" [ref=f5e493]
+          - cell "—" [ref=f5e494]
+          - cell "—" [ref=f5e495]
+          - cell "—" [ref=f5e496]
+        - row [ref=f5e497]:
+          - cell [ref=f5e498]:
+            - button "Details for rotor-coupling-crossover:case-0026:26" [ref=f5e499] [cursor=pointer]: rotor-coupling-crossover:case-0026:26
+          - cell "16" [ref=f5e500]
+          - cell "20" [ref=f5e501]
+          - cell "1" [ref=f5e502]
+          - cell "3" [ref=f5e503]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e504]
+          - cell "20" [ref=f5e505]
+          - cell "0.0071979109" [ref=f5e506]
+          - cell "0.0067444527" [ref=f5e507]
+          - cell "0.0077220265" [ref=f5e508]
+          - cell "N=16; primary scaled-time scan" [ref=f5e509]
+          - cell "—" [ref=f5e510]
+          - cell "—" [ref=f5e511]
+          - cell "—" [ref=f5e512]
+          - cell "—" [ref=f5e513]
+        - row [ref=f5e514]:
+          - cell [ref=f5e515]:
+            - button "Details for rotor-coupling-crossover:case-0027:27" [ref=f5e516] [cursor=pointer]: rotor-coupling-crossover:case-0027:27
+          - cell "16" [ref=f5e517]
+          - cell "25" [ref=f5e518]
+          - cell "1" [ref=f5e519]
+          - cell "3" [ref=f5e520]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e521]
+          - cell "25" [ref=f5e522]
+          - cell "0.0043631496" [ref=f5e523]
+          - cell "0.0041994935" [ref=f5e524]
+          - cell "0.0045630508" [ref=f5e525]
+          - cell "N=16; primary scaled-time scan" [ref=f5e526]
+          - cell "—" [ref=f5e527]
+          - cell "—" [ref=f5e528]
+          - cell "—" [ref=f5e529]
+          - cell "—" [ref=f5e530]
+        - row [ref=f5e531]:
+          - cell [ref=f5e532]:
+            - button "Details for rotor-coupling-crossover:case-0028:28" [ref=f5e533] [cursor=pointer]: rotor-coupling-crossover:case-0028:28
+          - cell "16" [ref=f5e534]
+          - cell "30" [ref=f5e535]
+          - cell "1" [ref=f5e536]
+          - cell "3" [ref=f5e537]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e538]
+          - cell "30" [ref=f5e539]
+          - cell "0.0029038526" [ref=f5e540]
+          - cell "0.0026250993" [ref=f5e541]
+          - cell "0.0030441524" [ref=f5e542]
+          - cell "N=16; primary scaled-time scan" [ref=f5e543]
+          - cell "—" [ref=f5e544]
+          - cell "—" [ref=f5e545]
+          - cell "—" [ref=f5e546]
+          - cell "—" [ref=f5e547]
+        - row [ref=f5e548]:
+          - cell [ref=f5e549]:
+            - button "Details for rotor-coupling-crossover:case-0029:29" [ref=f5e550] [cursor=pointer]: rotor-coupling-crossover:case-0029:29
+          - cell "16" [ref=f5e551]
+          - cell "50" [ref=f5e552]
+          - cell "1" [ref=f5e553]
+          - cell "3" [ref=f5e554]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e555]
+          - cell "50" [ref=f5e556]
+          - cell "0.0011546142" [ref=f5e557]
+          - cell "0.00097687676" [ref=f5e558]
+          - cell "0.0012723583" [ref=f5e559]
+          - cell "N=16; primary scaled-time scan" [ref=f5e560]
+          - cell "—" [ref=f5e561]
+          - cell "—" [ref=f5e562]
+          - cell "—" [ref=f5e563]
+          - cell "—" [ref=f5e564]
+        - row [ref=f5e565]:
+          - cell [ref=f5e566]:
+            - button "Details for rotor-coupling-crossover:case-0030:30" [ref=f5e567] [cursor=pointer]: rotor-coupling-crossover:case-0030:30
+          - cell "16" [ref=f5e568]
+          - cell "100" [ref=f5e569]
+          - cell "1" [ref=f5e570]
+          - cell "3" [ref=f5e571]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e572]
+          - cell "100" [ref=f5e573]
+          - cell "0.00040644139" [ref=f5e574]
+          - cell "0.00032131049" [ref=f5e575]
+          - cell "0.0004690032" [ref=f5e576]
+          - cell "N=16; primary scaled-time scan" [ref=f5e577]
+          - cell "—" [ref=f5e578]
+          - cell "—" [ref=f5e579]
+          - cell "—" [ref=f5e580]
+          - cell "—" [ref=f5e581]
+        - row [ref=f5e582]:
+          - cell [ref=f5e583]:
+            - button "Details for rotor-coupling-crossover:case-0031:31" [ref=f5e584] [cursor=pointer]: rotor-coupling-crossover:case-0031:31
+          - cell "16" [ref=f5e585]
+          - cell "10" [ref=f5e586]
+          - cell "10" [ref=f5e587]
+          - cell "—" [ref=f5e588]
+          - cell "direct coupling; fixed physical-time window; seed 1701" [ref=f5e589]
+          - cell "100" [ref=f5e590]
+          - cell "0.41756635" [ref=f5e591]
+          - cell "—" [ref=f5e592]
+          - cell "—" [ref=f5e593]
+          - cell "N=16; direct coupling control" [ref=f5e594]
+          - cell "1701" [ref=f5e595]
+          - cell "0.42528875" [ref=f5e596]
+          - cell "2.3939184e-16" [ref=f5e597]
+          - cell "0.007722405" [ref=f5e598]
+        - row [ref=f5e599]:
+          - cell [ref=f5e600]:
+            - button "Details for rotor-coupling-crossover:case-0032:32" [ref=f5e601] [cursor=pointer]: rotor-coupling-crossover:case-0032:32
+          - cell "16" [ref=f5e602]
+          - cell "20" [ref=f5e603]
+          - cell "5" [ref=f5e604]
+          - cell "—" [ref=f5e605]
+          - cell "direct coupling; fixed physical-time window; seed 1701" [ref=f5e606]
+          - cell "100" [ref=f5e607]
+          - cell "0.007310456" [ref=f5e608]
+          - cell "—" [ref=f5e609]
+          - cell "—" [ref=f5e610]
+          - cell "N=16; direct coupling control" [ref=f5e611]
+          - cell "1701" [ref=f5e612]
+          - cell "0.0071272536" [ref=f5e613]
+          - cell "2.4849914e-16" [ref=f5e614]
+          - cell "0.00018320244" [ref=f5e615]
+        - row [ref=f5e616]:
+          - cell [ref=f5e617]:
+            - button "Details for rotor-coupling-crossover:case-0033:33" [ref=f5e618] [cursor=pointer]: rotor-coupling-crossover:case-0033:33
+          - cell "32" [ref=f5e619]
+          - cell "2" [ref=f5e620]
+          - cell "1" [ref=f5e621]
+          - cell "3" [ref=f5e622]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e623]
+          - cell "2" [ref=f5e624]
+          - cell "0.4929121" [ref=f5e625]
+          - cell "0.48557579" [ref=f5e626]
+          - cell "0.49840884" [ref=f5e627]
+          - cell "N=32; primary scaled-time scan" [ref=f5e628]
+          - cell "—" [ref=f5e629]
+          - cell "—" [ref=f5e630]
+          - cell "—" [ref=f5e631]
+          - cell "—" [ref=f5e632]
+        - row [ref=f5e633]:
+          - cell [ref=f5e634]:
+            - button "Details for rotor-coupling-crossover:case-0034:34" [ref=f5e635] [cursor=pointer]: rotor-coupling-crossover:case-0034:34
+          - cell "32" [ref=f5e636]
+          - cell "4" [ref=f5e637]
+          - cell "1" [ref=f5e638]
+          - cell "3" [ref=f5e639]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e640]
+          - cell "4" [ref=f5e641]
+          - cell "0.48211331" [ref=f5e642]
+          - cell "0.47794854" [ref=f5e643]
+          - cell "0.48472464" [ref=f5e644]
+          - cell "N=32; primary scaled-time scan" [ref=f5e645]
+          - cell "—" [ref=f5e646]
+          - cell "—" [ref=f5e647]
+          - cell "—" [ref=f5e648]
+          - cell "—" [ref=f5e649]
+        - row [ref=f5e650]:
+          - cell [ref=f5e651]:
+            - button "Details for rotor-coupling-crossover:case-0035:35" [ref=f5e652] [cursor=pointer]: rotor-coupling-crossover:case-0035:35
+          - cell "32" [ref=f5e653]
+          - cell "6" [ref=f5e654]
+          - cell "1" [ref=f5e655]
+          - cell "3" [ref=f5e656]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e657]
+          - cell "6" [ref=f5e658]
+          - cell "0.47383582" [ref=f5e659]
+          - cell "0.47095944" [ref=f5e660]
+          - cell "0.47580544" [ref=f5e661]
+          - cell "N=32; primary scaled-time scan" [ref=f5e662]
+          - cell "—" [ref=f5e663]
+          - cell "—" [ref=f5e664]
+          - cell "—" [ref=f5e665]
+          - cell "—" [ref=f5e666]
+        - row [ref=f5e667]:
+          - cell [ref=f5e668]:
+            - button "Details for rotor-coupling-crossover:case-0036:36" [ref=f5e669] [cursor=pointer]: rotor-coupling-crossover:case-0036:36
+          - cell "32" [ref=f5e670]
+          - cell "8" [ref=f5e671]
+          - cell "1" [ref=f5e672]
+          - cell "3" [ref=f5e673]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e674]
+          - cell "8" [ref=f5e675]
+          - cell "0.46834196" [ref=f5e676]
+          - cell "0.46628722" [ref=f5e677]
+          - cell "0.47012835" [ref=f5e678]
+          - cell "N=32; primary scaled-time scan" [ref=f5e679]
+          - cell "—" [ref=f5e680]
+          - cell "—" [ref=f5e681]
+          - cell "—" [ref=f5e682]
+          - cell "—" [ref=f5e683]
+        - row [ref=f5e684]:
+          - cell [ref=f5e685]:
+            - button "Details for rotor-coupling-crossover:case-0037:37" [ref=f5e686] [cursor=pointer]: rotor-coupling-crossover:case-0037:37
+          - cell "32" [ref=f5e687]
+          - cell "10" [ref=f5e688]
+          - cell "1" [ref=f5e689]
+          - cell "3" [ref=f5e690]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e691]
+          - cell "10" [ref=f5e692]
+          - cell "0.46602044" [ref=f5e693]
+          - cell "0.46453516" [ref=f5e694]
+          - cell "0.46707328" [ref=f5e695]
+          - cell "N=32; primary scaled-time scan" [ref=f5e696]
+          - cell "—" [ref=f5e697]
+          - cell "—" [ref=f5e698]
+          - cell "—" [ref=f5e699]
+          - cell "—" [ref=f5e700]
+        - row [ref=f5e701]:
+          - cell [ref=f5e702]:
+            - button "Details for rotor-coupling-crossover:case-0038:38" [ref=f5e703] [cursor=pointer]: rotor-coupling-crossover:case-0038:38
+          - cell "32" [ref=f5e704]
+          - cell "12" [ref=f5e705]
+          - cell "1" [ref=f5e706]
+          - cell "3" [ref=f5e707]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e708]
+          - cell "12" [ref=f5e709]
+          - cell "0.44271222" [ref=f5e710]
+          - cell "0.4344423" [ref=f5e711]
+          - cell "0.45265037" [ref=f5e712]
+          - cell "N=32; primary scaled-time scan" [ref=f5e713]
+          - cell "—" [ref=f5e714]
+          - cell "—" [ref=f5e715]
+          - cell "—" [ref=f5e716]
+          - cell "—" [ref=f5e717]
+        - row [ref=f5e718]:
+          - cell [ref=f5e719]:
+            - button "Details for rotor-coupling-crossover:case-0039:39" [ref=f5e720] [cursor=pointer]: rotor-coupling-crossover:case-0039:39
+          - cell "32" [ref=f5e721]
+          - cell "14" [ref=f5e722]
+          - cell "1" [ref=f5e723]
+          - cell "3" [ref=f5e724]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e725]
+          - cell "14" [ref=f5e726]
+          - cell "0.31026348" [ref=f5e727]
+          - cell "0.25858961" [ref=f5e728]
+          - cell "0.36301477" [ref=f5e729]
+          - cell "N=32; primary scaled-time scan" [ref=f5e730]
+          - cell "—" [ref=f5e731]
+          - cell "—" [ref=f5e732]
+          - cell "—" [ref=f5e733]
+          - cell "—" [ref=f5e734]
+        - row [ref=f5e735]:
+          - cell [ref=f5e736]:
+            - button "Details for rotor-coupling-crossover:case-0040:40" [ref=f5e737] [cursor=pointer]: rotor-coupling-crossover:case-0040:40
+          - cell "32" [ref=f5e738]
+          - cell "16" [ref=f5e739]
+          - cell "1" [ref=f5e740]
+          - cell "3" [ref=f5e741]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e742]
+          - cell "16" [ref=f5e743]
+          - cell "0.041493674" [ref=f5e744]
+          - cell "0.037358542" [ref=f5e745]
+          - cell "0.046974923" [ref=f5e746]
+          - cell "N=32; primary scaled-time scan" [ref=f5e747]
+          - cell "—" [ref=f5e748]
+          - cell "—" [ref=f5e749]
+          - cell "—" [ref=f5e750]
+          - cell "—" [ref=f5e751]
+        - row [ref=f5e752]:
+          - cell [ref=f5e753]:
+            - button "Details for rotor-coupling-crossover:case-0041:41" [ref=f5e754] [cursor=pointer]: rotor-coupling-crossover:case-0041:41
+          - cell "32" [ref=f5e755]
+          - cell "18" [ref=f5e756]
+          - cell "1" [ref=f5e757]
+          - cell "3" [ref=f5e758]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e759]
+          - cell "18" [ref=f5e760]
+          - cell "0.020038136" [ref=f5e761]
+          - cell "0.017575133" [ref=f5e762]
+          - cell "0.022843868" [ref=f5e763]
+          - cell "N=32; primary scaled-time scan" [ref=f5e764]
+          - cell "—" [ref=f5e765]
+          - cell "—" [ref=f5e766]
+          - cell "—" [ref=f5e767]
+          - cell "—" [ref=f5e768]
+        - row [ref=f5e769]:
+          - cell [ref=f5e770]:
+            - button "Details for rotor-coupling-crossover:case-0042:42" [ref=f5e771] [cursor=pointer]: rotor-coupling-crossover:case-0042:42
+          - cell "32" [ref=f5e772]
+          - cell "20" [ref=f5e773]
+          - cell "1" [ref=f5e774]
+          - cell "3" [ref=f5e775]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e776]
+          - cell "20" [ref=f5e777]
+          - cell "0.013355732" [ref=f5e778]
+          - cell "0.012000033" [ref=f5e779]
+          - cell "0.014618098" [ref=f5e780]
+          - cell "N=32; primary scaled-time scan" [ref=f5e781]
+          - cell "—" [ref=f5e782]
+          - cell "—" [ref=f5e783]
+          - cell "—" [ref=f5e784]
+          - cell "—" [ref=f5e785]
+        - row [ref=f5e786]:
+          - cell [ref=f5e787]:
+            - button "Details for rotor-coupling-crossover:case-0043:43" [ref=f5e788] [cursor=pointer]: rotor-coupling-crossover:case-0043:43
+          - cell "32" [ref=f5e789]
+          - cell "25" [ref=f5e790]
+          - cell "1" [ref=f5e791]
+          - cell "3" [ref=f5e792]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e793]
+          - cell "25" [ref=f5e794]
+          - cell "0.0067313047" [ref=f5e795]
+          - cell "0.0059558652" [ref=f5e796]
+          - cell "0.0073585947" [ref=f5e797]
+          - cell "N=32; primary scaled-time scan" [ref=f5e798]
+          - cell "—" [ref=f5e799]
+          - cell "—" [ref=f5e800]
+          - cell "—" [ref=f5e801]
+          - cell "—" [ref=f5e802]
+        - row [ref=f5e803]:
+          - cell [ref=f5e804]:
+            - button "Details for rotor-coupling-crossover:case-0044:44" [ref=f5e805] [cursor=pointer]: rotor-coupling-crossover:case-0044:44
+          - cell "32" [ref=f5e806]
+          - cell "30" [ref=f5e807]
+          - cell "1" [ref=f5e808]
+          - cell "3" [ref=f5e809]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e810]
+          - cell "30" [ref=f5e811]
+          - cell "0.0045983383" [ref=f5e812]
+          - cell "0.0039597321" [ref=f5e813]
+          - cell "0.0052127867" [ref=f5e814]
+          - cell "N=32; primary scaled-time scan" [ref=f5e815]
+          - cell "—" [ref=f5e816]
+          - cell "—" [ref=f5e817]
+          - cell "—" [ref=f5e818]
+          - cell "—" [ref=f5e819]
+        - row [ref=f5e820]:
+          - cell [ref=f5e821]:
+            - button "Details for rotor-coupling-crossover:case-0045:45" [ref=f5e822] [cursor=pointer]: rotor-coupling-crossover:case-0045:45
+          - cell "32" [ref=f5e823]
+          - cell "50" [ref=f5e824]
+          - cell "1" [ref=f5e825]
+          - cell "3" [ref=f5e826]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e827]
+          - cell "50" [ref=f5e828]
+          - cell "0.0020293775" [ref=f5e829]
+          - cell "0.0016675411" [ref=f5e830]
+          - cell "0.002375998" [ref=f5e831]
+          - cell "N=32; primary scaled-time scan" [ref=f5e832]
+          - cell "—" [ref=f5e833]
+          - cell "—" [ref=f5e834]
+          - cell "—" [ref=f5e835]
+          - cell "—" [ref=f5e836]
+        - row [ref=f5e837]:
+          - cell [ref=f5e838]:
+            - button "Details for rotor-coupling-crossover:case-0046:46" [ref=f5e839] [cursor=pointer]: rotor-coupling-crossover:case-0046:46
+          - cell "32" [ref=f5e840]
+          - cell "100" [ref=f5e841]
+          - cell "1" [ref=f5e842]
+          - cell "3" [ref=f5e843]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e844]
+          - cell "100" [ref=f5e845]
+          - cell "0.0008410346" [ref=f5e846]
+          - cell "0.00065533461" [ref=f5e847]
+          - cell "0.0010081644" [ref=f5e848]
+          - cell "N=32; primary scaled-time scan" [ref=f5e849]
+          - cell "—" [ref=f5e850]
+          - cell "—" [ref=f5e851]
+          - cell "—" [ref=f5e852]
+          - cell "—" [ref=f5e853]
+        - row [ref=f5e854]:
+          - cell [ref=f5e855]:
+            - button "Details for rotor-coupling-crossover:case-0047:47" [ref=f5e856] [cursor=pointer]: rotor-coupling-crossover:case-0047:47
+          - cell "32" [ref=f5e857]
+          - cell "10" [ref=f5e858]
+          - cell "10" [ref=f5e859]
+          - cell "—" [ref=f5e860]
+          - cell "direct coupling; fixed physical-time window; seed 1701" [ref=f5e861]
+          - cell "100" [ref=f5e862]
+          - cell "0.46324488" [ref=f5e863]
+          - cell "—" [ref=f5e864]
+          - cell "—" [ref=f5e865]
+          - cell "N=32; direct coupling control" [ref=f5e866]
+          - cell "1701" [ref=f5e867]
+          - cell "0.46453516" [ref=f5e868]
+          - cell "3.9551695e-16" [ref=f5e869]
+          - cell "0.0012902762" [ref=f5e870]
+        - row [ref=f5e871]:
+          - cell [ref=f5e872]:
+            - button "Details for rotor-coupling-crossover:case-0048:48" [ref=f5e873] [cursor=pointer]: rotor-coupling-crossover:case-0048:48
+          - cell "32" [ref=f5e874]
+          - cell "20" [ref=f5e875]
+          - cell "5" [ref=f5e876]
+          - cell "—" [ref=f5e877]
+          - cell "direct coupling; fixed physical-time window; seed 1701" [ref=f5e878]
+          - cell "100" [ref=f5e879]
+          - cell "0.012147785" [ref=f5e880]
+          - cell "—" [ref=f5e881]
+          - cell "—" [ref=f5e882]
+          - cell "N=32; direct coupling control" [ref=f5e883]
+          - cell "1701" [ref=f5e884]
+          - cell "0.012000033" [ref=f5e885]
+          - cell "3.9118014e-16" [ref=f5e886]
+          - cell "0.00014775193" [ref=f5e887]
+        - row [ref=f5e888]:
+          - cell [ref=f5e889]:
+            - button "Details for rotor-coupling-crossover:case-0049:49" [ref=f5e890] [cursor=pointer]: rotor-coupling-crossover:case-0049:49
+          - cell "64" [ref=f5e891]
+          - cell "2" [ref=f5e892]
+          - cell "1" [ref=f5e893]
+          - cell "3" [ref=f5e894]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e895]
+          - cell "2" [ref=f5e896]
+          - cell "0.55967087" [ref=f5e897]
+          - cell "0.54467521" [ref=f5e898]
+          - cell "0.56966754" [ref=f5e899]
+          - cell "N=64; primary scaled-time scan" [ref=f5e900]
+          - cell "—" [ref=f5e901]
+          - cell "—" [ref=f5e902]
+          - cell "—" [ref=f5e903]
+          - cell "—" [ref=f5e904]
+        - row [ref=f5e905]:
+          - cell [ref=f5e906]:
+            - button "Details for rotor-coupling-crossover:case-0050:50" [ref=f5e907] [cursor=pointer]: rotor-coupling-crossover:case-0050:50
+          - cell "64" [ref=f5e908]
+          - cell "4" [ref=f5e909]
+          - cell "1" [ref=f5e910]
+          - cell "3" [ref=f5e911]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e912]
+          - cell "4" [ref=f5e913]
+          - cell "0.52229075" [ref=f5e914]
+          - cell "0.51418178" [ref=f5e915]
+          - cell "0.52681228" [ref=f5e916]
+          - cell "N=64; primary scaled-time scan" [ref=f5e917]
+          - cell "—" [ref=f5e918]
+          - cell "—" [ref=f5e919]
+          - cell "—" [ref=f5e920]
+          - cell "—" [ref=f5e921]
+        - row [ref=f5e922]:
+          - cell [ref=f5e923]:
+            - button "Details for rotor-coupling-crossover:case-0051:51" [ref=f5e924] [cursor=pointer]: rotor-coupling-crossover:case-0051:51
+          - cell "64" [ref=f5e925]
+          - cell "6" [ref=f5e926]
+          - cell "1" [ref=f5e927]
+          - cell "3" [ref=f5e928]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e929]
+          - cell "6" [ref=f5e930]
+          - cell "0.50743827" [ref=f5e931]
+          - cell "0.50123277" [ref=f5e932]
+          - cell "0.51177783" [ref=f5e933]
+          - cell "N=64; primary scaled-time scan" [ref=f5e934]
+          - cell "—" [ref=f5e935]
+          - cell "—" [ref=f5e936]
+          - cell "—" [ref=f5e937]
+          - cell "—" [ref=f5e938]
+        - row [ref=f5e939]:
+          - cell [ref=f5e940]:
+            - button "Details for rotor-coupling-crossover:case-0052:52" [ref=f5e941] [cursor=pointer]: rotor-coupling-crossover:case-0052:52
+          - cell "64" [ref=f5e942]
+          - cell "8" [ref=f5e943]
+          - cell "1" [ref=f5e944]
+          - cell "3" [ref=f5e945]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e946]
+          - cell "8" [ref=f5e947]
+          - cell "0.49962252" [ref=f5e948]
+          - cell "0.49573608" [ref=f5e949]
+          - cell "0.50165441" [ref=f5e950]
+          - cell "N=64; primary scaled-time scan" [ref=f5e951]
+          - cell "—" [ref=f5e952]
+          - cell "—" [ref=f5e953]
+          - cell "—" [ref=f5e954]
+          - cell "—" [ref=f5e955]
+        - row [ref=f5e956]:
+          - cell [ref=f5e957]:
+            - button "Details for rotor-coupling-crossover:case-0053:53" [ref=f5e958] [cursor=pointer]: rotor-coupling-crossover:case-0053:53
+          - cell "64" [ref=f5e959]
+          - cell "10" [ref=f5e960]
+          - cell "1" [ref=f5e961]
+          - cell "3" [ref=f5e962]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e963]
+          - cell "10" [ref=f5e964]
+          - cell "0.49399453" [ref=f5e965]
+          - cell "0.49113501" [ref=f5e966]
+          - cell "0.49616613" [ref=f5e967]
+          - cell "N=64; primary scaled-time scan" [ref=f5e968]
+          - cell "—" [ref=f5e969]
+          - cell "—" [ref=f5e970]
+          - cell "—" [ref=f5e971]
+          - cell "—" [ref=f5e972]
+        - row [ref=f5e973]:
+          - cell [ref=f5e974]:
+            - button "Details for rotor-coupling-crossover:case-0054:54" [ref=f5e975] [cursor=pointer]: rotor-coupling-crossover:case-0054:54
+          - cell "64" [ref=f5e976]
+          - cell "12" [ref=f5e977]
+          - cell "1" [ref=f5e978]
+          - cell "3" [ref=f5e979]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e980]
+          - cell "12" [ref=f5e981]
+          - cell "0.44540097" [ref=f5e982]
+          - cell "0.43884304" [ref=f5e983]
+          - cell "0.45337351" [ref=f5e984]
+          - cell "N=64; primary scaled-time scan" [ref=f5e985]
+          - cell "—" [ref=f5e986]
+          - cell "—" [ref=f5e987]
+          - cell "—" [ref=f5e988]
+          - cell "—" [ref=f5e989]
+        - row [ref=f5e990]:
+          - cell [ref=f5e991]:
+            - button "Details for rotor-coupling-crossover:case-0055:55" [ref=f5e992] [cursor=pointer]: rotor-coupling-crossover:case-0055:55
+          - cell "64" [ref=f5e993]
+          - cell "14" [ref=f5e994]
+          - cell "1" [ref=f5e995]
+          - cell "3" [ref=f5e996]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e997]
+          - cell "14" [ref=f5e998]
+          - cell "0.22054475" [ref=f5e999]
+          - cell "0.17302963" [ref=f5e1000]
+          - cell "0.31254964" [ref=f5e1001]
+          - cell "N=64; primary scaled-time scan" [ref=f5e1002]
+          - cell "—" [ref=f5e1003]
+          - cell "—" [ref=f5e1004]
+          - cell "—" [ref=f5e1005]
+          - cell "—" [ref=f5e1006]
+        - row [ref=f5e1007]:
+          - cell [ref=f5e1008]:
+            - button "Details for rotor-coupling-crossover:case-0056:56" [ref=f5e1009] [cursor=pointer]: rotor-coupling-crossover:case-0056:56
+          - cell "64" [ref=f5e1010]
+          - cell "16" [ref=f5e1011]
+          - cell "1" [ref=f5e1012]
+          - cell "3" [ref=f5e1013]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e1014]
+          - cell "16" [ref=f5e1015]
+          - cell "0.10097283" [ref=f5e1016]
+          - cell "0.054236801" [ref=f5e1017]
+          - cell "0.14308559" [ref=f5e1018]
+          - cell "N=64; primary scaled-time scan" [ref=f5e1019]
+          - cell "—" [ref=f5e1020]
+          - cell "—" [ref=f5e1021]
+          - cell "—" [ref=f5e1022]
+          - cell "—" [ref=f5e1023]
+        - row [ref=f5e1024]:
+          - cell [ref=f5e1025]:
+            - button "Details for rotor-coupling-crossover:case-0057:57" [ref=f5e1026] [cursor=pointer]: rotor-coupling-crossover:case-0057:57
+          - cell "64" [ref=f5e1027]
+          - cell "18" [ref=f5e1028]
+          - cell "1" [ref=f5e1029]
+          - cell "3" [ref=f5e1030]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e1031]
+          - cell "18" [ref=f5e1032]
+          - cell "0.033465084" [ref=f5e1033]
+          - cell "0.029933837" [ref=f5e1034]
+          - cell "0.039631347" [ref=f5e1035]
+          - cell "N=64; primary scaled-time scan" [ref=f5e1036]
+          - cell "—" [ref=f5e1037]
+          - cell "—" [ref=f5e1038]
+          - cell "—" [ref=f5e1039]
+          - cell "—" [ref=f5e1040]
+        - row [ref=f5e1041]:
+          - cell [ref=f5e1042]:
+            - button "Details for rotor-coupling-crossover:case-0058:58" [ref=f5e1043] [cursor=pointer]: rotor-coupling-crossover:case-0058:58
+          - cell "64" [ref=f5e1044]
+          - cell "20" [ref=f5e1045]
+          - cell "1" [ref=f5e1046]
+          - cell "3" [ref=f5e1047]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e1048]
+          - cell "20" [ref=f5e1049]
+          - cell "0.023527302" [ref=f5e1050]
+          - cell "0.021796558" [ref=f5e1051]
+          - cell "0.026605573" [ref=f5e1052]
+          - cell "N=64; primary scaled-time scan" [ref=f5e1053]
+          - cell "—" [ref=f5e1054]
+          - cell "—" [ref=f5e1055]
+          - cell "—" [ref=f5e1056]
+          - cell "—" [ref=f5e1057]
+        - row [ref=f5e1058]:
+          - cell [ref=f5e1059]:
+            - button "Details for rotor-coupling-crossover:case-0059:59" [ref=f5e1060] [cursor=pointer]: rotor-coupling-crossover:case-0059:59
+          - cell "64" [ref=f5e1061]
+          - cell "25" [ref=f5e1062]
+          - cell "1" [ref=f5e1063]
+          - cell "3" [ref=f5e1064]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e1065]
+          - cell "25" [ref=f5e1066]
+          - cell "0.011537721" [ref=f5e1067]
+          - cell "0.01056133" [ref=f5e1068]
+          - cell "0.012063527" [ref=f5e1069]
+          - cell "N=64; primary scaled-time scan" [ref=f5e1070]
+          - cell "—" [ref=f5e1071]
+          - cell "—" [ref=f5e1072]
+          - cell "—" [ref=f5e1073]
+          - cell "—" [ref=f5e1074]
+        - row [ref=f5e1075]:
+          - cell [ref=f5e1076]:
+            - button "Details for rotor-coupling-crossover:case-0060:60" [ref=f5e1077] [cursor=pointer]: rotor-coupling-crossover:case-0060:60
+          - cell "64" [ref=f5e1078]
+          - cell "30" [ref=f5e1079]
+          - cell "1" [ref=f5e1080]
+          - cell "3" [ref=f5e1081]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e1082]
+          - cell "30" [ref=f5e1083]
+          - cell "0.011015752" [ref=f5e1084]
+          - cell "0.0075801067" [ref=f5e1085]
+          - cell "0.016089735" [ref=f5e1086]
+          - cell "N=64; primary scaled-time scan" [ref=f5e1087]
+          - cell "—" [ref=f5e1088]
+          - cell "—" [ref=f5e1089]
+          - cell "—" [ref=f5e1090]
+          - cell "—" [ref=f5e1091]
+        - row [ref=f5e1092]:
+          - cell [ref=f5e1093]:
+            - button "Details for rotor-coupling-crossover:case-0061:61" [ref=f5e1094] [cursor=pointer]: rotor-coupling-crossover:case-0061:61
+          - cell "64" [ref=f5e1095]
+          - cell "50" [ref=f5e1096]
+          - cell "1" [ref=f5e1097]
+          - cell "3" [ref=f5e1098]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e1099]
+          - cell "50" [ref=f5e1100]
+          - cell "0.0041051818" [ref=f5e1101]
+          - cell "0.0034278979" [ref=f5e1102]
+          - cell "0.0044898782" [ref=f5e1103]
+          - cell "N=64; primary scaled-time scan" [ref=f5e1104]
+          - cell "—" [ref=f5e1105]
+          - cell "—" [ref=f5e1106]
+          - cell "—" [ref=f5e1107]
+          - cell "—" [ref=f5e1108]
+        - row [ref=f5e1109]:
+          - cell [ref=f5e1110]:
+            - button "Details for rotor-coupling-crossover:case-0062:62" [ref=f5e1111] [cursor=pointer]: rotor-coupling-crossover:case-0062:62
+          - cell "64" [ref=f5e1112]
+          - cell "100" [ref=f5e1113]
+          - cell "1" [ref=f5e1114]
+          - cell "3" [ref=f5e1115]
+          - cell "primary scaled-time scan; λ=1; three seeds" [ref=f5e1116]
+          - cell "100" [ref=f5e1117]
+          - cell "0.0017810632" [ref=f5e1118]
+          - cell "0.0014653786" [ref=f5e1119]
+          - cell "0.0019577226" [ref=f5e1120]
+          - cell "N=64; primary scaled-time scan" [ref=f5e1121]
+          - cell "—" [ref=f5e1122]
+          - cell "—" [ref=f5e1123]
+          - cell "—" [ref=f5e1124]
+          - cell "—" [ref=f5e1125]
+        - row [ref=f5e1126]:
+          - cell [ref=f5e1127]:
+            - button "Details for rotor-coupling-crossover:case-0063:63" [ref=f5e1128] [cursor=pointer]: rotor-coupling-crossover:case-0063:63
+          - cell "64" [ref=f5e1129]
+          - cell "10" [ref=f5e1130]
+          - cell "10" [ref=f5e1131]
+          - cell "—" [ref=f5e1132]
+          - cell "direct coupling; fixed physical-time window; seed 1701" [ref=f5e1133]
+          - cell "100" [ref=f5e1134]
+          - cell "0.49616236" [ref=f5e1135]
+          - cell "—" [ref=f5e1136]
+          - cell "—" [ref=f5e1137]
+          - cell "N=64; direct coupling control" [ref=f5e1138]
+          - cell "1701" [ref=f5e1139]
+          - cell "0.49616613" [ref=f5e1140]
+          - cell "3.7470027e-16" [ref=f5e1141]
+          - cell "0.0000037707818" [ref=f5e1142]
+        - row [ref=f5e1143]:
+          - cell [ref=f5e1144]:
+            - button "Details for rotor-coupling-crossover:case-0064:64" [ref=f5e1145] [cursor=pointer]: rotor-coupling-crossover:case-0064:64
+          - cell "64" [ref=f5e1146]
+          - cell "20" [ref=f5e1147]
+          - cell "5" [ref=f5e1148]
+          - cell "—" [ref=f5e1149]
+          - cell "direct coupling; fixed physical-time window; seed 1701" [ref=f5e1150]
+          - cell "100" [ref=f5e1151]
+          - cell "0.02218399" [ref=f5e1152]
+          - cell "—" [ref=f5e1153]
+          - cell "—" [ref=f5e1154]
+          - cell "N=64; direct coupling control" [ref=f5e1155]
+          - cell "1701" [ref=f5e1156]
+          - cell "0.022179776" [ref=f5e1157]
+          - cell "8.9858676e-16" [ref=f5e1158]
+          - cell "0.0000042139247" [ref=f5e1159]

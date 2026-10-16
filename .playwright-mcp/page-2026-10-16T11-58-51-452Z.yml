@@ -1,0 +1,156 @@
+- generic [ref=f1e2]:
+  - navigation "Numerical datasets" [ref=f1e3]:
+    - generic [ref=f1e4]: Numerical study
+    - combobox "Numerical study" [ref=f1e5]:
+      - option "All studies — overview"
+      - option "Small-area face-channel equilibration pilot (12 rows)"
+      - option "Classical rotor spreading and equilibrium comparison (24 rows)"
+      - 'option "Few-rotor transfer: planar bound and 3D controls (27 rows)"'
+      - option "Rotor coupling crossover and delayed release (64 rows)"
+      - 'option "Large-area tetrahedron: face activation and recurrence (20 rows)"'
+      - option "Entanglement of separately closed thermal polyhedra (86 rows)"
+      - option "Ordinary closure versus temperature (125 rows)"
+      - option "Heating separately closed area and positive RS volume (85 rows)"
+      - option "Singlet exchange between closed FL polyhedra (20 rows)"
+      - 'option "Four versus five sites: thermal-volume persistence (12 rows)"'
+      - option "Prepared tetrahedral FL states and the volume crossover (11 rows)"
+      - option "Candidate geometric Hamiltonians and prepared-FL dynamics (62 rows)"
+      - option "Four-site Hamiltonian spectra and RS-volume observables (30 rows)"
+      - option "Complete four-face closed-basis volumes (11 rows)"
+      - option "Variable-face positive RS catalogue (9 rows)"
+      - option "Squeezed-vacuum area coefficients (964 rows)"
+      - option "Squeezed-vacuum resultant spin (196 rows)"
+      - option "Excited J_in=1 joint area and spin (5 rows)"
+      - option "Higher-J flat-boundary probes (13 rows)"
+      - option "Magnetization and signed-grasp correlations (10 rows)"
+      - option "Local-chirality pilot (13 rows)"
+      - option "Imaginary-perturbation response (26 rows)"
+      - option "Cocycle-phase pilot (10 rows)"
+      - option "Large-K recorded families and fits (13 rows)"
+      - option "Historical single-copy thermal pilot (14 rows)"
+      - option "Historical energy-basis TFD pilot (14 rows)"
+      - option "Historical complexified purification (10 rows)"
+      - option "Small-sector thermal geometry audit (4 rows)"
+      - option "RS/AL volume-prescription controls (2 rows)"
+      - option "Initial covariance reconstruction pilot (6 rows)"
+      - option "Quantum planar-rotor transfer at zero total momentum (NS37) (2 rows)" [selected]
+      - option "Closed and open four-to-five-to-six channel transitions (NS38) (30 rows)"
+      - option "Exact-singlet geometric area redistribution (NS39–NS40) (54 rows)"
+      - option "Prepared FL evolution sampling (50 rows)"
+      - option "Positive volumes on two real-plane states (2 rows)"
+      - option "FL covariance shape recovery (84 rows)"
+      - option "Weighted FL input geometry and volumes (14 rows)"
+      - option "Regular FL volume versus area (5 rows)"
+      - option "Equal-area FL shape scan at J=2 (440 rows)"
+      - option "Same-number detachment energies (8 rows)"
+      - option "Closed and open state evolution probes (6 rows)"
+      - option "Constructive edge sewing probes (5 rows)"
+  - heading "Quantum planar-rotor transfer at zero total momentum (NS37)" [level=1] [ref=f1e6]
+  - paragraph [ref=f1e7]: Two four-rotor ring preparations start in |m,-m,0,0| with exactly zero total momentum. Each row compares the saved late-window cold-pair kinetic fraction with an independent classical ensemble and reports the quantum single-rotor entropy for the initially energetic pair, initially cold pair, and all four sites.
+  - generic [ref=f1e8]:
+    - generic [ref=f1e9]:
+      - generic [ref=f1e10]: "2"
+      - generic [ref=f1e11]: Total Runs
+    - generic [ref=f1e12]:
+      - generic [ref=f1e13]: "0"
+      - generic [ref=f1e14]: Tasks
+    - generic [ref=f1e15]:
+      - generic [ref=f1e16]: "2"
+      - generic [ref=f1e17]: Complete
+    - generic [ref=f1e18]:
+      - generic [ref=f1e19]: "1"
+      - generic [ref=f1e20]: Figures
+  - tablist "Dashboard sections" [ref=f1e21]:
+    - tab "Runs & Studies" [selected] [ref=f1e22] [cursor=pointer]
+    - tab "Figure Archive" [ref=f1e23] [cursor=pointer]
+    - tab "Charts" [ref=f1e24] [cursor=pointer]
+    - tab "Tasks & Numerical Notes" [ref=f1e25] [cursor=pointer]
+  - tabpanel "Runs & Studies" [ref=f1e26]:
+    - heading "Run and Study Records" [level=2] [ref=f1e27]
+    - generic [ref=f1e28]:
+      - generic [ref=f1e29]:
+        - generic [ref=f1e30]: "Status:"
+        - combobox "Status:" [ref=f1e31]:
+          - option "All" [selected]
+          - option "complete"
+      - generic [ref=f1e32]:
+        - generic [ref=f1e33]: "Search:"
+        - textbox "Search:" [ref=f1e34]:
+          - /placeholder: Run ID, description...
+      - button "Reset" [ref=f1e36] [cursor=pointer]
+    - table [ref=f1e38]:
+      - rowgroup [ref=f1e39]:
+        - row [ref=f1e40]:
+          - columnheader [ref=f1e41] [cursor=pointer]:
+            - button "Case" [ref=f1e42]: Case ↕
+          - columnheader [ref=f1e43] [cursor=pointer]:
+            - button "m" [ref=f1e44]: m ↕
+          - columnheader [ref=f1e45] [cursor=pointer]:
+            - button "Initial packet kinetic energy" [ref=f1e46]: Initial packet kinetic energy ↕
+          - columnheader [ref=f1e47] [cursor=pointer]:
+            - button "mean total energy" [ref=f1e48]: mean total energy ↕
+          - columnheader [ref=f1e49] [cursor=pointer]:
+            - button "accepted cutoff" [ref=f1e50]: accepted cutoff ↕
+          - columnheader [ref=f1e51] [cursor=pointer]:
+            - button "sector dimension" [ref=f1e52]: sector dimension ↕
+          - columnheader [ref=f1e53] [cursor=pointer]:
+            - button "model id" [ref=f1e54]: model id ↕
+          - columnheader [ref=f1e55] [cursor=pointer]:
+            - button "Late cold-pair kinetic fraction (10 ≤ τ ≤ 20)" [ref=f1e56]: Late cold-pair kinetic fraction (10 ≤ τ ≤ 20) ↕
+          - columnheader [ref=f1e57] [cursor=pointer]:
+            - button "late classical cold pair fraction" [ref=f1e58]: late classical cold pair fraction ↕
+          - columnheader [ref=f1e59] [cursor=pointer]:
+            - button "late quantum entropy hot pair nats" [ref=f1e60]: late quantum entropy hot pair nats ↕
+          - columnheader [ref=f1e61] [cursor=pointer]:
+            - button "late quantum entropy cold pair nats" [ref=f1e62]: late quantum entropy cold pair nats ↕
+          - columnheader [ref=f1e63] [cursor=pointer]:
+            - button "late quantum entropy per rotor nats" [ref=f1e64]: late quantum entropy per rotor nats ↕
+          - columnheader [ref=f1e65] [cursor=pointer]:
+            - button "max quantum norm error" [ref=f1e66]: max quantum norm error ↕
+          - columnheader [ref=f1e67] [cursor=pointer]:
+            - button "max quantum energy error" [ref=f1e68]: max quantum energy error ↕
+          - columnheader [ref=f1e69] [cursor=pointer]:
+            - button "max classical energy error" [ref=f1e70]: max classical energy error ↕
+          - columnheader [ref=f1e71] [cursor=pointer]:
+            - button "max classical momentum error" [ref=f1e72]: max classical momentum error ↕
+          - columnheader [ref=f1e73] [cursor=pointer]:
+            - button "series" [ref=f1e74]: series ↕
+      - rowgroup [ref=f1e75]:
+        - row [ref=f1e76]:
+          - cell [ref=f1e77]:
+            - button "Details for t11-quantum-planar-rotors:m2-zero-total-momentum:1" [ref=f1e78] [cursor=pointer]: t11-quantum-planar-rotors:m2-zero-total-momentum:1
+          - cell "2" [ref=f1e79]
+          - cell "4" [ref=f1e80]
+          - cell "8" [ref=f1e81]
+          - cell "10" [ref=f1e82]
+          - cell "6181" [ref=f1e83]
+          - cell "m2-zero-total-momentum" [ref=f1e84]
+          - cell "0.59203722" [ref=f1e85]
+          - cell "0.48521725" [ref=f1e86]
+          - cell "1.6838958" [ref=f1e87]
+          - cell "1.6519178" [ref=f1e88]
+          - cell "1.6679068" [ref=f1e89]
+          - cell "4.62963e-14" [ref=f1e90]
+          - cell "3.5704772e-13" [ref=f1e91]
+          - cell "2.2367055e-7" [ref=f1e92]
+          - cell "4.0412118e-13" [ref=f1e93]
+          - cell "initial momentum m=2" [ref=f1e94]
+        - row [ref=f1e95]:
+          - cell [ref=f1e96]:
+            - button "Details for t11-quantum-planar-rotors:m4-zero-total-momentum:2" [ref=f1e97] [cursor=pointer]: t11-quantum-planar-rotors:m4-zero-total-momentum:2
+          - cell "4" [ref=f1e98]
+          - cell "16" [ref=f1e99]
+          - cell "20" [ref=f1e100]
+          - cell "10" [ref=f1e101]
+          - cell "6181" [ref=f1e102]
+          - cell "m4-zero-total-momentum" [ref=f1e103]
+          - cell "0.06714281" [ref=f1e104]
+          - cell "0.0531949" [ref=f1e105]
+          - cell "0.62876201" [ref=f1e106]
+          - cell "1.1783051" [ref=f1e107]
+          - cell "0.90353355" [ref=f1e108]
+          - cell "1.7763568e-14" [ref=f1e109]
+          - cell "3.4816594e-13" [ref=f1e110]
+          - cell "0.000008348289" [ref=f1e111]
+          - cell "3.6720627e-13" [ref=f1e112]
+          - cell "initial momentum m=4" [ref=f1e113]

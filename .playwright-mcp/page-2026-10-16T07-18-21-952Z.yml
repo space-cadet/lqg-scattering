@@ -1,0 +1,1045 @@
+- generic [ref=f9e2]:
+  - navigation "Numerical datasets" [ref=f9e3]:
+    - generic [ref=f9e4]: Numerical study
+    - combobox "Numerical study" [ref=f9e5]:
+      - option "All studies — overview"
+      - option "Small-area face-channel equilibration pilot (12 rows)"
+      - option "Classical rotor spreading and equilibrium comparison (24 rows)"
+      - 'option "Few-rotor transfer: planar bound and 3D controls (27 rows)"'
+      - option "Rotor coupling crossover and delayed release (64 rows)"
+      - 'option "Large-area tetrahedron: face activation and recurrence (20 rows)"'
+      - option "Entanglement of separately closed thermal polyhedra (86 rows)" [selected]
+      - option "Ordinary closure versus temperature (125 rows)"
+      - option "Heating separately closed area and positive RS volume (85 rows)"
+      - option "Singlet exchange between closed FL polyhedra (20 rows)"
+      - 'option "Four versus five sites: thermal-volume persistence (12 rows)"'
+      - option "Prepared tetrahedral FL states and the volume crossover (11 rows)"
+      - option "Candidate geometric Hamiltonians and prepared-FL dynamics (62 rows)"
+      - option "Four-site Hamiltonian spectra and RS-volume observables (30 rows)"
+      - option "Complete four-face closed-basis volumes (11 rows)"
+      - option "Variable-face positive RS catalogue (9 rows)"
+      - option "Squeezed-vacuum area coefficients (964 rows)"
+      - option "Squeezed-vacuum resultant spin (196 rows)"
+      - option "Excited J_in=1 joint area and spin (5 rows)"
+      - option "Higher-J flat-boundary probes (13 rows)"
+      - option "Magnetization and signed-grasp correlations (10 rows)"
+      - option "Local-chirality pilot (13 rows)"
+      - option "Imaginary-perturbation response (26 rows)"
+      - option "Cocycle-phase pilot (10 rows)"
+      - option "Large-K recorded families and fits (13 rows)"
+      - option "Historical single-copy thermal pilot (14 rows)"
+      - option "Historical energy-basis TFD pilot (14 rows)"
+      - option "Historical complexified purification (10 rows)"
+      - option "Small-sector thermal geometry audit (4 rows)"
+      - option "RS/AL volume-prescription controls (2 rows)"
+      - option "Initial covariance reconstruction pilot (6 rows)"
+      - option "Prepared FL evolution sampling (50 rows)"
+      - option "Positive volumes on two real-plane states (2 rows)"
+      - option "FL covariance shape recovery (84 rows)"
+      - option "Weighted FL input geometry and volumes (14 rows)"
+      - option "Regular FL volume versus area (5 rows)"
+      - option "Equal-area FL shape scan at J=2 (440 rows)"
+      - option "Same-number detachment energies (8 rows)"
+      - option "Closed and open state evolution probes (6 rows)"
+      - option "Constructive edge sewing probes (5 rows)"
+  - heading "Entanglement of separately closed thermal polyhedra" [level=1] [ref=f9e6]
+  - paragraph [ref=f9e7]: 86 temperatures over T*=0.05..5. Exact Schmidt eigenvalues and multiplicities yield entropy, area-sector decomposition, purity, Renyi-2 entropy and coherent joint singlet creation. Within-area entanglement exceeds area-distribution entropy at T*=1,2,5.
+  - generic [ref=f9e8]:
+    - generic [ref=f9e9]:
+      - generic [ref=f9e10]: "86"
+      - generic [ref=f9e11]: Total Runs
+    - generic [ref=f9e12]:
+      - generic [ref=f9e13]: "0"
+      - generic [ref=f9e14]: Tasks
+    - generic [ref=f9e15]:
+      - generic [ref=f9e16]: "86"
+      - generic [ref=f9e17]: Complete
+    - generic [ref=f9e18]:
+      - generic [ref=f9e19]: "2"
+      - generic [ref=f9e20]: Figures
+  - tablist "Dashboard sections" [ref=f9e21]:
+    - tab "Runs & Studies" [selected] [ref=f9e22] [cursor=pointer]
+    - tab "Figure Archive" [ref=f9e23] [cursor=pointer]
+    - tab "Charts" [ref=f9e24] [cursor=pointer]
+    - tab "Tasks & Numerical Notes" [ref=f9e25] [cursor=pointer]
+  - tabpanel "Runs & Studies" [ref=f9e26]:
+    - heading "Run and Study Records" [level=2] [ref=f9e27]
+    - generic [ref=f9e28]:
+      - generic [ref=f9e29]:
+        - generic [ref=f9e30]: "Status:"
+        - combobox "Status:" [ref=f9e31]:
+          - option "All" [selected]
+          - option "complete"
+      - generic [ref=f9e32]:
+        - generic [ref=f9e33]: "Search:"
+        - textbox "Search:" [ref=f9e34]:
+          - /placeholder: Run ID, description...
+      - button "Reset" [ref=f9e36] [cursor=pointer]
+    - table [ref=f9e38]:
+      - rowgroup [ref=f9e39]:
+        - row [ref=f9e40]:
+          - columnheader [ref=f9e41] [cursor=pointer]:
+            - button "Case" [ref=f9e42]: Case ↕
+          - columnheader [ref=f9e43] [cursor=pointer]:
+            - button "Temperature T*" [ref=f9e44]: Temperature T* ↕
+          - columnheader [ref=f9e45] [cursor=pointer]:
+            - button "Closed fraction" [ref=f9e46]: Closed fraction ↕
+          - columnheader [ref=f9e47] [cursor=pointer]:
+            - button "Entanglement entropy (nats)" [ref=f9e48]: Entanglement entropy (nats) ↕
+          - columnheader [ref=f9e49] [cursor=pointer]:
+            - button "Area-distribution entropy (nats)" [ref=f9e50]: Area-distribution entropy (nats) ↕
+          - columnheader [ref=f9e51] [cursor=pointer]:
+            - button "Within-area entropy (nats)" [ref=f9e52]: Within-area entropy (nats) ↕
+          - columnheader [ref=f9e53] [cursor=pointer]:
+            - button "Rényi-2 entropy (nats)" [ref=f9e54]: Rényi-2 entropy (nats) ↕
+          - columnheader [ref=f9e55] [cursor=pointer]:
+            - button "Mean area per copy" [ref=f9e56]: Mean area per copy ↕
+          - columnheader [ref=f9e57] [cursor=pointer]:
+            - button "Joint singlet coherence" [ref=f9e58]: Joint singlet coherence ↕
+      - rowgroup [ref=f9e59]:
+        - row [ref=f9e60]:
+          - cell [ref=f9e61]:
+            - button "Details for thermal-closed-entanglement:case-0001:1" [ref=f9e62] [cursor=pointer]: thermal-closed-entanglement:case-0001:1
+          - cell "0.05" [ref=f9e63]
+          - cell "0.99999997" [ref=f9e64]
+          - cell "3.4594897e-15" [ref=f9e65]
+          - cell "3.161012e-15" [ref=f9e66]
+          - cell "2.9847765e-16" [ref=f9e67]
+          - cell "0" [ref=f9e68]
+          - cell "1" [ref=f9e69]
+          - cell "4.1223072e-8" [ref=f9e70]
+        - row [ref=f9e71]:
+          - cell [ref=f9e72]:
+            - button "Details for thermal-closed-entanglement:case-0002:2" [ref=f9e73] [cursor=pointer]: thermal-closed-entanglement:case-0002:2
+          - cell "0.052962686" [ref=f9e74]
+          - cell "0.99999991" [ref=f9e75]
+          - cell "3.1323669e-14" [ref=f9e76]
+          - cell "2.8615864e-14" [ref=f9e77]
+          - cell "2.7078051e-15" [ref=f9e78]
+          - cell "1.5543122e-15" [ref=f9e79]
+          - cell "1" [ref=f9e80]
+          - cell "1.2618898e-7" [ref=f9e81]
+        - row [ref=f9e82]:
+          - cell [ref=f9e83]:
+            - button "Details for thermal-closed-entanglement:case-0003:3" [ref=f9e84] [cursor=pointer]: thermal-closed-entanglement:case-0003:3
+          - cell "0.056100923" [ref=f9e85]
+          - cell "0.99999975" [ref=f9e86]
+          - cell "2.4495328e-13" [ref=f9e87]
+          - cell "2.2292726e-13" [ref=f9e88]
+          - cell "2.2026027e-14" [ref=f9e89]
+          - cell "1.398881e-14" [ref=f9e90]
+          - cell "1" [ref=f9e91]
+          - cell "3.6284631e-7" [ref=f9e92]
+        - row [ref=f9e93]:
+          - cell [ref=f9e94]:
+            - button "Details for thermal-closed-entanglement:case-0004:4" [ref=f9e95] [cursor=pointer]: thermal-closed-entanglement:case-0004:4
+          - cell "0.059425111" [ref=f9e96]
+          - cell "0.99999931" [ref=f9e97]
+          - cell "1.6977607e-12" [ref=f9e98]
+          - cell "1.5407719e-12" [ref=f9e99]
+          - cell "1.5698887e-13" [ref=f9e100]
+          - cell "1.0169643e-13" [ref=f9e101]
+          - cell "1" [ref=f9e102]
+          - cell "9.8347802e-7" [ref=f9e103]
+        - row [ref=f9e104]:
+          - cell [ref=f9e105]:
+            - button "Details for thermal-closed-entanglement:case-0005:5" [ref=f9e106] [cursor=pointer]: thermal-closed-entanglement:case-0005:5
+          - cell "0.062946271" [ref=f9e107]
+          - cell "0.99999824" [ref=f9e108]
+          - cell "1.0527392e-11" [ref=f9e109]
+          - cell "9.5258958e-12" [ref=f9e110]
+          - cell "1.0014964e-12" [ref=f9e111]
+          - cell "6.6724404e-13" [ref=f9e112]
+          - cell "1" [ref=f9e113]
+          - cell "0.0000025210567" [ref=f9e114]
+        - row [ref=f9e115]:
+          - cell [ref=f9e116]:
+            - button "Details for thermal-closed-entanglement:case-0006:6" [ref=f9e117] [cursor=pointer]: thermal-closed-entanglement:case-0006:6
+          - cell "0.066676072" [ref=f9e118]
+          - cell "0.99999571" [ref=f9e119]
+          - cell "5.8754206e-11" [ref=f9e120]
+          - cell "5.2998122e-11" [ref=f9e121]
+          - cell "5.756084e-12" [ref=f9e122]
+          - cell "3.9468429e-12" [ref=f9e123]
+          - cell "1" [ref=f9e124]
+          - cell "0.000006131005" [ref=f9e125]
+        - row [ref=f9e126]:
+          - cell [ref=f9e127]:
+            - button "Details for thermal-closed-entanglement:case-0007:7" [ref=f9e128] [cursor=pointer]: thermal-closed-entanglement:case-0007:7
+          - cell "0.070626877" [ref=f9e129]
+          - cell "0.99999007" [ref=f9e130]
+          - cell "2.968691e-10" [ref=f9e131]
+          - cell "2.6689223e-10" [ref=f9e132]
+          - cell "2.9976873e-11" [ref=f9e133]
+          - cell "2.1133539e-11" [ref=f9e134]
+          - cell "1" [ref=f9e135]
+          - cell "0.000014187017" [ref=f9e136]
+        - row [ref=f9e137]:
+          - cell [ref=f9e138]:
+            - button "Details for thermal-closed-entanglement:case-0008:8" [ref=f9e139] [cursor=pointer]: thermal-closed-entanglement:case-0008:8
+          - cell "0.074811783" [ref=f9e140]
+          - cell "0.99997807" [ref=f9e141]
+          - cell "1.3655749e-9" [ref=f9e142]
+          - cell "1.2233297e-9" [ref=f9e143]
+          - cell "1.4224524e-10" [ref=f9e144]
+          - cell "1.0302093e-10" [ref=f9e145]
+          - cell "1" [ref=f9e146]
+          - cell "0.000031323378" [ref=f9e147]
+        - row [ref=f9e148]:
+          - cell [ref=f9e149]:
+            - button "Details for thermal-closed-entanglement:case-0009:9" [ref=f9e150] [cursor=pointer]: thermal-closed-entanglement:case-0009:9
+          - cell "0.07924466" [ref=f9e151]
+          - cell "0.99995369" [ref=f9e152]
+          - cell "5.7487124e-9" [ref=f9e153]
+          - cell "5.1304648e-9" [ref=f9e154]
+          - cell "6.1824767e-10" [ref=f9e155]
+          - cell "4.5961945e-10" [ref=f9e156]
+          - cell "1" [ref=f9e157]
+          - cell "0.000066161349" [ref=f9e158]
+        - row [ref=f9e159]:
+          - cell [ref=f9e160]:
+            - button "Details for thermal-closed-entanglement:case-0010:10" [ref=f9e161] [cursor=pointer]: thermal-closed-entanglement:case-0010:10
+          - cell "0.083940201" [ref=f9e162]
+          - cell "0.99990619" [ref=f9e163]
+          - cell "2.2257797e-8" [ref=f9e164]
+          - cell "1.9784294e-8" [ref=f9e165]
+          - cell "2.4735021e-9" [ref=f9e166]
+          - cell "1.8859914e-9" [ref=f9e167]
+          - cell "1" [ref=f9e168]
+          - cell "0.0001340216" [ref=f9e169]
+        - row [ref=f9e170]:
+          - cell [ref=f9e171]:
+            - button "Details for thermal-closed-entanglement:case-0011:11" [ref=f9e172] [cursor=pointer]: thermal-closed-entanglement:case-0011:11
+          - cell "0.088913971" [ref=f9e173]
+          - cell "0.99981734" [ref=f9e174]
+          - cell "7.9631e-8" [ref=f9e175]
+          - cell "7.0478984e-8" [ref=f9e176]
+          - cell "9.1520164e-9" [ref=f9e177]
+          - cell "7.1512694e-9" [ref=f9e178]
+          - cell "1" [ref=f9e179]
+          - cell "0.00026097335" [ref=f9e180]
+        - row [ref=f9e181]:
+          - cell [ref=f9e182]:
+            - button "Details for thermal-closed-entanglement:case-0012:12" [ref=f9e183] [cursor=pointer]: thermal-closed-entanglement:case-0012:12
+          - cell "0.094182454" [ref=f9e184]
+          - cell "0.99965736" [ref=f9e185]
+          - cell "2.6441671e-7" [ref=f9e186]
+          - cell "2.3296156e-7" [ref=f9e187]
+          - cell "3.145515e-8" [ref=f9e188]
+          - cell "2.5167958e-8" [ref=f9e189]
+          - cell "1" [ref=f9e190]
+          - cell "0.00048958477" [ref=f9e191]
+        - row [ref=f9e192]:
+          - cell [ref=f9e193]:
+            - button "Details for thermal-closed-entanglement:case-0013:13" [ref=f9e194] [cursor=pointer]: thermal-closed-entanglement:case-0013:13
+          - cell "0.099763116" [ref=f9e195]
+          - cell "0.99937954" [ref=f9e196]
+          - cell "8.1830187e-7" [ref=f9e197]
+          - cell "7.1745902e-7" [ref=f9e198]
+          - cell "1.0084285e-7" [ref=f9e199]
+          - cell "8.2555552e-8" [ref=f9e200]
+          - cell "1" [ref=f9e201]
+          - cell "0.00088669832" [ref=f9e202]
+        - row [ref=f9e203]:
+          - cell [ref=f9e204]:
+            - button "Details for thermal-closed-entanglement:case-0014:14" [ref=f9e205] [cursor=pointer]: thermal-closed-entanglement:case-0014:14
+          - cell "0.10567445" [ref=f9e206]
+          - cell "0.99891328" [ref=f9e207]
+          - cell "0.0000023695525" [ref=f9e208]
+          - cell "0.0000020668034" [ref=f9e209]
+          - cell "3.0274913e-7" [ref=f9e210]
+          - cell "2.5338991e-7" [ref=f9e211]
+          - cell "1.0000001" [ref=f9e212]
+          - cell "0.0015534434" [ref=f9e213]
+        - row [ref=f9e214]:
+          - cell [ref=f9e215]:
+            - button "Details for thermal-closed-entanglement:case-0015:15" [ref=f9e216] [cursor=pointer]: thermal-closed-entanglement:case-0015:15
+          - cell "0.11193606" [ref=f9e217]
+          - cell "0.99815573" [ref=f9e218]
+          - cell "0.0000064441004" [ref=f9e219]
+          - cell "0.0000055897908" [ref=f9e220]
+          - cell "8.5430959e-7" [ref=f9e221]
+          - cell "7.3045457e-7" [ref=f9e222]
+          - cell "1.0000003" [ref=f9e223]
+          - cell "0.0026375106" [ref=f9e224]
+        - row [ref=f9e225]:
+          - cell [ref=f9e226]:
+            - button "Details for thermal-closed-entanglement:case-0016:16" [ref=f9e227] [cursor=pointer]: thermal-closed-entanglement:case-0016:16
+          - cell "0.11856869" [ref=f9e228]
+          - cell "0.99696217" [ref=f9e229]
+          - cell "0.000016516833" [ref=f9e230]
+          - cell "0.000014242984" [ref=f9e231]
+          - cell "0.0000022738492" [ref=f9e232]
+          - cell "0.0000019846529" [ref=f9e233]
+          - cell "1.0000009" [ref=f9e234]
+          - cell "0.0043474529" [ref=f9e235]
+        - row [ref=f9e236]:
+          - cell [ref=f9e237]:
+            - button "Details for thermal-closed-entanglement:case-0017:17" [ref=f9e238] [cursor=pointer]: thermal-closed-entanglement:case-0017:17
+          - cell "0.12559432" [ref=f9e239]
+          - cell "0.99513589" [ref=f9e240]
+          - cell "0.000040031387" [ref=f9e241]
+          - cell "0.000034304008" [ref=f9e242]
+          - cell "0.0000057273795" [ref=f9e243]
+          - cell "0.0000050992418" [ref=f9e244]
+          - cell "1.0000022" [ref=f9e245]
+          - cell "0.0069684758" [ref=f9e246]
+        - row [ref=f9e247]:
+          - cell [ref=f9e248]:
+            - button "Details for thermal-closed-entanglement:case-0018:18" [ref=f9e249] [cursor=pointer]: thermal-closed-entanglement:case-0018:18
+          - cell "0.13303625" [ref=f9e250]
+          - cell "0.99241845" [ref=f9e251]
+          - cell "0.000092033332" [ref=f9e252]
+          - cell "0.000078338672" [ref=f9e253]
+          - cell "0.00001369466" [ref=f9e254]
+          - cell "0.000012428515" [ref=f9e255]
+          - cell "1.0000053" [ref=f9e256]
+          - cell "0.010878859" [ref=f9e257]
+        - row [ref=f9e258]:
+          - cell [ref=f9e259]:
+            - button "Details for thermal-closed-entanglement:case-0019:19" [ref=f9e260] [cursor=pointer]: thermal-closed-entanglement:case-0019:19
+          - cell "0.14091915" [ref=f9e261]
+          - cell "0.98848179" [ref=f9e262]
+          - cell "0.0002013013" [ref=f9e263]
+          - cell "0.00017012501" [ref=f9e264]
+          - cell "0.000031176288" [ref=f9e265]
+          - cell "0.000028821297" [ref=f9e266]
+          - cell "1.0000123" [ref=f9e267]
+          - cell "0.016565872" [ref=f9e268]
+        - row [ref=f9e269]:
+          - cell [ref=f9e270]:
+            - button "Details for thermal-closed-entanglement:case-0020:20" [ref=f9e271] [cursor=pointer]: thermal-closed-entanglement:case-0020:20
+          - cell "0.14926913" [ref=f9e272]
+          - cell "0.98292405" [ref=f9e273]
+          - cell "0.00042006884" [ref=f9e274]
+          - cell "0.00035230781" [ref=f9e275]
+          - cell "0.000067761032" [ref=f9e276]
+          - cell "0.000063768495" [ref=f9e277]
+          - cell "1.0000273" [ref=f9e278]
+          - cell "0.024639849" [ref=f9e279]
+        - row [ref=f9e280]:
+          - cell [ref=f9e281]:
+            - button "Details for thermal-closed-entanglement:case-0021:21" [ref=f9e282] [cursor=pointer]: thermal-closed-entanglement:case-0021:21
+          - cell "0.15811388" [ref=f9e283]
+          - cell "0.97527121" [ref=f9e284]
+          - cell "0.00083852414" [ref=f9e285]
+          - cell "0.00069754518" [ref=f9e286]
+          - cell "0.00014097895" [ref=f9e287]
+          - cell "0.00013497345" [ref=f9e288]
+          - cell "1.0000578" [ref=f9e289]
+          - cell "0.035845002" [ref=f9e290]
+        - row [ref=f9e291]:
+          - cell [ref=f9e292]:
+            - button "Details for thermal-closed-entanglement:case-0022:22" [ref=f9e293] [cursor=pointer]: thermal-closed-entanglement:case-0022:22
+          - cell "0.16748272" [ref=f9e294]
+          - cell "0.96498698" [ref=f9e295]
+          - cell "0.0016051563" [ref=f9e296]
+          - cell "0.0013236953" [ref=f9e297]
+          - cell "0.00028146107" [ref=f9e298]
+          - cell "0.00027398603" [ref=f9e299]
+          - cell "1.0001173" [ref=f9e300]
+          - cell "0.051065623" [ref=f9e301]
+        - row [ref=f9e302]:
+          - cell [ref=f9e303]:
+            - button "Details for thermal-closed-entanglement:case-0023:23" [ref=f9e304] [cursor=pointer]: thermal-closed-entanglement:case-0023:23
+          - cell "0.17740669" [ref=f9e305]
+          - cell "0.95149295" [ref=f9e306]
+          - cell "0.0029535955" [ref=f9e307]
+          - cell "0.0024131138" [ref=f9e308]
+          - cell "0.00054048168" [ref=f9e309]
+          - cell "0.00053465658" [ref=f9e310]
+          - cell "1.0002287" [ref=f9e311]
+          - cell "0.071326555" [ref=f9e312]
+        - row [ref=f9e313]:
+          - cell [ref=f9e314]:
+            - button "Details for thermal-closed-entanglement:case-0024:24" [ref=f9e315] [cursor=pointer]: thermal-closed-entanglement:case-0024:24
+          - cell "0.1879187" [ref=f9e316]
+          - cell "0.93420063" [ref=f9e317]
+          - cell "0.0052358151" [ref=f9e318]
+          - cell "0.0042353749" [ref=f9e319]
+          - cell "0.0010004402" [ref=f9e320]
+          - cell "0.0010052159" [ref=f9e321]
+          - cell "1.0004296" [ref=f9e322]
+          - cell "0.097787167" [ref=f9e323]
+        - row [ref=f9e324]:
+          - cell [ref=f9e325]:
+            - button "Details for thermal-closed-entanglement:case-0025:25" [ref=f9e326] [cursor=pointer]: thermal-closed-entanglement:case-0025:25
+          - cell "0.19905359" [ref=f9e327]
+          - cell "0.91255537" [ref=f9e328]
+          - cell "0.0089604432" [ref=f9e329]
+          - cell "0.0071717352" [ref=f9e330]
+          - cell "0.001788708" [ref=f9e331]
+          - cell "0.0018247291" [ref=f9e332]
+          - cell "1.0007791" [ref=f9e333]
+          - cell "0.13172852" [ref=f9e334]
+        - row [ref=f9e335]:
+          - cell [ref=f9e336]:
+            - button "Details for thermal-closed-entanglement:case-0026:26" [ref=f9e337] [cursor=pointer]: thermal-closed-entanglement:case-0026:26
+          - cell "0.21084825" [ref=f9e338]
+          - cell "0.88609047" [ref=f9e339]
+          - cell "0.014833549" [ref=f9e340]
+          - cell "0.011738557" [ref=f9e341]
+          - cell "0.0030949913" [ref=f9e342]
+          - cell "0.0032044643" [ref=f9e343]
+          - cell "1.0013665" [ref=f9e344]
+          - cell "0.17453398" [ref=f9e345]
+        - row [ref=f9e346]:
+          - cell [ref=f9e347]:
+            - button "Details for thermal-closed-entanglement:case-0027:27" [ref=f9e348] [cursor=pointer]: thermal-closed-entanglement:case-0027:27
+          - cell "0.2233418" [ref=f9e349]
+          - cell "0.85448725" [ref=f9e350]
+          - cell "0.023797801" [ref=f9e351]
+          - cell "0.018605881" [ref=f9e352]
+          - cell "0.00519192" [ref=f9e353]
+          - cell "0.0054543336" [ref=f9e354]
+          - cell "1.0023225" [ref=f9e355]
+          - cell "0.22766398" [ref=f9e356]
+        - row [ref=f9e357]:
+          - cell [ref=f9e358]:
+            - button "Details for thermal-closed-entanglement:case-0028:28" [ref=f9e359] [cursor=pointer]: thermal-closed-entanglement:case-0028:28
+          - cell "0.23657563" [ref=f9e360]
+          - cell "0.81763419" [ref=f9e361]
+          - cell "0.037064537" [ref=f9e362]
+          - cell "0.028606584" [ref=f9e363]
+          - cell "0.0084579531" [ref=f9e364]
+          - cell "0.0090139849" [ref=f9e365]
+          - cell "1.0038311" [ref=f9e366]
+          - cell "0.29262619" [ref=f9e367]
+        - row [ref=f9e368]:
+          - cell [ref=f9e369]:
+            - button "Details for thermal-closed-entanglement:case-0029:29" [ref=f9e370] [cursor=pointer]: thermal-closed-entanglement:case-0029:29
+          - cell "0.25" [ref=f9e371]
+          - cell "0.77750119" [ref=f9e372]
+          - cell "0.055209986" [ref=f9e373]
+          - cell "0.0420538" [ref=f9e374]
+          - cell "0.013156186" [ref=f9e375]
+          - cell "0.014214423" [ref=f9e376]
+          - cell "1.0060287" [ref=f9e377]
+          - cell "0.3674327" [ref=f9e378]
+        - row [ref=f9e379]:
+          - cell [ref=f9e380]:
+            - button "Details for thermal-closed-entanglement:case-0030:30" [ref=f9e381] [cursor=pointer]: thermal-closed-entanglement:case-0030:30
+          - cell "0.25059362" [ref=f9e382]
+          - cell "0.77567628" [ref=f9e383]
+          - cell "0.056132228" [ref=f9e384]
+          - cell "0.042731321" [ref=f9e385]
+          - cell "0.013400908" [ref=f9e386]
+          - cell "0.01448735" [ref=f9e387]
+          - cell "1.0061438" [ref=f9e388]
+          - cell "0.37094259" [ref=f9e389]
+        - row [ref=f9e390]:
+          - cell [ref=f9e391]:
+            - button "Details for thermal-closed-entanglement:case-0031:31" [ref=f9e392] [cursor=pointer]: thermal-closed-entanglement:case-0031:31
+          - cell "0.26544222" [ref=f9e393]
+          - cell "0.7290451" [ref=f9e394]
+          - cell "0.082784316" [ref=f9e395]
+          - cell "0.062104826" [ref=f9e396]
+          - cell "0.02067949" [ref=f9e397]
+          - cell "0.022678499" [ref=f9e398]
+          - cell "1.0095924" [ref=f9e399]
+          - cell "0.46411526" [ref=f9e400]
+        - row [ref=f9e401]:
+          - cell [ref=f9e402]:
+            - button "Details for thermal-closed-entanglement:case-0032:32" [ref=f9e403] [cursor=pointer]: thermal-closed-entanglement:case-0032:32
+          - cell "0.28117066" [ref=f9e404]
+          - cell "0.67846096" [ref=f9e405]
+          - cell "0.11905949" [ref=f9e406]
+          - cell "0.087940294" [ref=f9e407]
+          - cell "0.031119199" [ref=f9e408]
+          - cell "0.03462554" [ref=f9e409]
+          - cell "1.0146011" [ref=f9e410]
+          - cell "0.57359267" [ref=f9e411]
+        - row [ref=f9e412]:
+          - cell [ref=f9e413]:
+            - button "Details for thermal-closed-entanglement:case-0033:33" [ref=f9e414] [cursor=pointer]: thermal-closed-entanglement:case-0033:33
+          - cell "0.29783107" [ref=f9e415]
+          - cell "0.62490251" [ref=f9e416]
+          - cell "0.16718847" [ref=f9e417]
+          - cell "0.12147044" [ref=f9e418]
+          - cell "0.045718033" [ref=f9e419]
+          - cell "0.051628065" [ref=f9e420]
+          - cell "1.0216945" [ref=f9e421]
+          - cell "0.70073816" [ref=f9e422]
+        - row [ref=f9e423]:
+          - cell [ref=f9e424]:
+            - button "Details for thermal-closed-entanglement:case-0034:34" [ref=f9e425] [cursor=pointer]: thermal-closed-entanglement:case-0034:34
+          - cell "0.31547867" [ref=f9e426]
+          - cell "0.56954384" [ref=f9e427]
+          - cell "0.22949316" [ref=f9e428]
+          - cell "0.16385647" [ref=f9e429]
+          - cell "0.065636691" [ref=f9e430]
+          - cell "0.075262386" [ref=f9e431]
+          - cell "1.0315005" [ref=f9e432]
+          - cell "0.84680246" [ref=f9e433]
+        - row [ref=f9e434]:
+          - cell [ref=f9e435]:
+            - button "Details for thermal-closed-entanglement:case-0035:35" [ref=f9e436] [cursor=pointer]: thermal-closed-entanglement:case-0035:35
+          - cell "0.33417196" [ref=f9e437]
+          - cell "0.5136659" [ref=f9e438]
+          - cell "0.30824739" [ref=f9e439]
+          - cell "0.2160795" [ref=f9e440]
+          - cell "0.092167889" [ref=f9e441]
+          - cell "0.10737756" [ref=f9e442]
+          - cell "1.0447438" [ref=f9e443]
+          - cell "1.0129019" [ref=f9e444]
+        - row [ref=f9e445]:
+          - cell [ref=f9e446]:
+            - button "Details for thermal-closed-entanglement:case-0036:36" [ref=f9e447] [cursor=pointer]: thermal-closed-entanglement:case-0036:36
+          - cell "0.35397289" [ref=f9e448]
+          - cell "0.45855396" [ref=f9e449]
+          - cell "0.4055029" [ref=f9e450]
+          - cell "0.27882257" [ref=f9e451]
+          - cell "0.12668033" [ref=f9e452]
+          - cell "0.15006435" [ref=f9e453]
+          - cell "1.0622304" [ref=f9e454]
+          - cell "1.2000049" [ref=f9e455]
+        - row [ref=f9e456]:
+          - cell [ref=f9e457]:
+            - button "Details for thermal-closed-entanglement:case-0037:37" [ref=f9e458] [cursor=pointer]: thermal-closed-entanglement:case-0037:37
+          - cell "0.3749471" [ref=f9e459]
+          - cell "0.40539611" [ref=f9e460]
+          - cell "0.52289105" [ref=f9e461]
+          - cell "0.35235566" [ref=f9e462]
+          - cell "0.17053539" [ref=f9e463]
+          - cell "0.20558882" [ref=f9e464]
+          - cell "1.0848198" [ref=f9e465]
+          - cell "1.4089292" [ref=f9e466]
+        - row [ref=f9e467]:
+          - cell [ref=f9e468]:
+            - button "Details for thermal-closed-entanglement:case-0038:38" [ref=f9e469] [cursor=pointer]: thermal-closed-entanglement:case-0038:38
+          - cell "0.39716412" [ref=f9e470]
+          - cell "0.35519754" [ref=f9e471]
+          - cell "0.66141816" [ref=f9e472]
+          - cell "0.43643909" [ref=f9e473]
+          - cell "0.22497907" [ref=f9e474]
+          - cell "0.27628338" [ref=f9e475]
+          - cell "1.1133864" [ref=f9e476]
+          - cell "1.6403559" [ref=f9e477]
+        - row [ref=f9e478]:
+          - cell [ref=f9e479]:
+            - button "Details for thermal-closed-entanglement:case-0039:39" [ref=f9e480] [cursor=pointer]: thermal-closed-entanglement:case-0039:39
+          - cell "0.42069757" [ref=f9e481]
+          - cell "0.30872194" [ref=f9e482]
+          - cell "0.82128148" [ref=f9e483]
+          - cell "0.53026341" [ref=f9e484]
+          - cell "0.29101808" [ref=f9e485]
+          - cell "0.36439005" [ref=f9e486]
+          - cell "1.1487719" [ref=f9e487]
+          - cell "1.8948643" [ref=f9e488]
+        - row [ref=f9e489]:
+          - cell [ref=f9e490]:
+            - button "Details for thermal-closed-entanglement:case-0040:40" [ref=f9e491] [cursor=pointer]: thermal-closed-entanglement:case-0040:40
+          - cell "0.44562547" [ref=f9e492]
+          - cell "0.26646545" [ref=f9e493]
+          - cell "1.0017385" [ref=f9e494]
+          - cell "0.63244243" [ref=f9e495]
+          - cell "0.36929608" [ref=f9e496]
+          - cell "0.47185627" [ref=f9e497]
+          - cell "1.1917362" [ref=f9e498]
+          - cell "2.1729961" [ref=f9e499]
+        - row [ref=f9e500]:
+          - cell [ref=f9e501]:
+            - button "Details for thermal-closed-entanglement:case-0041:41" [ref=f9e502] [cursor=pointer]: thermal-closed-entanglement:case-0041:41
+          - cell "0.47203044" [ref=f9e503]
+          - cell "0.22866245" [ref=f9e504]
+          - cell "1.2010639" [ref=f9e505]
+          - cell "0.74107196" [ref=f9e506]
+          - cell "0.45999197" [ref=f9e507]
+          - cell "0.60009063" [ref=f9e508]
+          - cell "1.2429128" [ref=f9e509]
+          - cell "2.4753527" [ref=f9e510]
+        - row [ref=f9e511]:
+          - cell [ref=f9e512]:
+            - button "Details for thermal-closed-entanglement:case-0042:42" [ref=f9e513] [cursor=pointer]: thermal-closed-entanglement:case-0042:42
+          - cell "0.5" [ref=f9e514]
+          - cell "0.19531699" [ref=f9e515]
+          - cell "1.4166205" [ref=f9e516]
+          - cell "0.85385684" [ref=f9e517]
+          - cell "0.56276368" [ref=f9e518]
+          - cell "0.74969697" [ref=f9e519]
+          - cell "1.3027799" [ref=f9e520]
+          - cell "2.8027276" [ref=f9e521]
+        - row [ref=f9e522]:
+          - cell [ref=f9e523]:
+            - button "Details for thermal-closed-entanglement:case-0043:43" [ref=f9e524] [cursor=pointer]: thermal-closed-entanglement:case-0043:43
+          - cell "0.5" [ref=f9e525]
+          - cell "0.19531699" [ref=f9e526]
+          - cell "1.4166205" [ref=f9e527]
+          - cell "0.85385684" [ref=f9e528]
+          - cell "0.56276368" [ref=f9e529]
+          - cell "0.74969697" [ref=f9e530]
+          - cell "1.3027799" [ref=f9e531]
+          - cell "2.8027276" [ref=f9e532]
+        - row [ref=f9e533]:
+          - cell [ref=f9e534]:
+            - button "Details for thermal-closed-entanglement:case-0044:44" [ref=f9e535] [cursor=pointer]: thermal-closed-entanglement:case-0044:44
+          - cell "0.52962686" [ref=f9e536]
+          - cell "0.16625058" [ref=f9e537]
+          - cell "1.6450524" [ref=f9e538]
+          - cell "0.96829635" [ref=f9e539]
+          - cell "0.67675606" [ref=f9e540]
+          - cell "0.92021833" [ref=f9e541]
+          - cell "1.3716542" [ref=f9e542]
+          - cell "3.1562684" [ref=f9e543]
+        - row [ref=f9e544]:
+          - cell [ref=f9e545]:
+            - button "Details for thermal-closed-entanglement:case-0045:45" [ref=f9e546] [cursor=pointer]: thermal-closed-entanglement:case-0045:45
+          - cell "0.56100923" [ref=f9e547]
+          - cell "0.1411565" [ref=f9e548]
+          - cell "1.8825841" [ref=f9e549]
+          - cell "1.081905" [ref=f9e550]
+          - cell "0.80067913" [ref=f9e551]
+          - cell "1.1099355" [ref=f9e552]
+          - cell "1.4497132" [ref=f9e553]
+          - cell "3.5376569" [ref=f9e554]
+        - row [ref=f9e555]:
+          - cell [ref=f9e556]:
+            - button "Details for thermal-closed-entanglement:case-0046:46" [ref=f9e557] [cursor=pointer]: thermal-closed-entanglement:case-0046:46
+          - cell "0.59425111" [ref=f9e558]
+          - cell "0.11965202" [ref=f9e559]
+          - cell "2.1253834" [ref=f9e560]
+          - cell "1.1924364" [ref=f9e561]
+          - cell "0.93294696" [ref=f9e562]
+          - cell "1.3157752" [ref=f9e563]
+          - cell "1.5370418" [ref=f9e564]
+          - cell "3.9492866" [ref=f9e565]
+        - row [ref=f9e566]:
+          - cell [ref=f9e567]:
+            - button "Details for thermal-closed-entanglement:case-0047:47" [ref=f9e568] [cursor=pointer]: thermal-closed-entanglement:case-0047:47
+          - cell "0.62946271" [ref=f9e569]
+          - cell "0.10132274" [ref=f9e570]
+          - cell "2.3699293" [ref=f9e571]
+          - cell "1.2980764" [ref=f9e572]
+          - cell "1.0718529" [ref=f9e573]
+          - cell "1.5333834" [ref=f9e574]
+          - cell "1.6336962" [ref=f9e575]
+          - cell "4.3944204" [ref=f9e576]
+        - row [ref=f9e577]:
+          - cell [ref=f9e578]:
+            - button "Details for thermal-closed-entanglement:case-0048:48" [ref=f9e579] [cursor=pointer]: thermal-closed-entanglement:case-0048:48
+          - cell "0.66676072" [ref=f9e580]
+          - cell "0.085756322" [ref=f9e581]
+          - cell "2.6133292" [ref=f9e582]
+          - cell "1.397579" [ref=f9e583]
+          - cell "1.2157501" [ref=f9e584]
+          - cell "1.7574014" [ref=f9e585]
+          - cell "1.7397713" [ref=f9e586]
+          - cell "4.877311" [ref=f9e587]
+        - row [ref=f9e588]:
+          - cell [ref=f9e589]:
+            - button "Details for thermal-closed-entanglement:case-0049:49" [ref=f9e590] [cursor=pointer]: thermal-closed-entanglement:case-0049:49
+          - cell "0.70626877" [ref=f9e591]
+          - cell "0.072564983" [ref=f9e592]
+          - cell "2.8535415" [ref=f9e593]
+          - cell "1.49033" [ref=f9e594]
+          - cell "1.3632116" [ref=f9e595]
+          - cell "1.9819487" [ref=f9e596]
+          - cell "1.8554586" [ref=f9e597]
+          - cell "5.4032797" [ref=f9e598]
+        - row [ref=f9e599]:
+          - cell [ref=f9e600]:
+            - button "Details for thermal-closed-entanglement:case-0050:50" [ref=f9e601] [cursor=pointer]: thermal-closed-entanglement:case-0050:50
+          - cell "0.74811783" [ref=f9e602]
+          - cell "0.061398361" [ref=f9e603]
+          - cell "3.0894939" [ref=f9e604]
+          - cell "1.5763371" [ref=f9e605]
+          - cell "1.5131568" [ref=f9e606]
+          - cell "2.2012622" [ref=f9e607]
+          - cell "1.9810856" [ref=f9e608]
+          - cell "5.978758" [ref=f9e609]
+        - row [ref=f9e610]:
+          - cell [ref=f9e611]:
+            - button "Details for thermal-closed-entanglement:case-0051:51" [ref=f9e612] [cursor=pointer]: thermal-closed-entanglement:case-0051:51
+          - cell "0.7924466" [ref=f9e613]
+          - cell "0.051948762" [ref=f9e614]
+          - cell "3.3211122" [ref=f9e615]
+          - cell "1.6561547" [ref=f9e616]
+          - cell "1.6649574" [ref=f9e617]
+          - cell "2.4103991" [ref=f9e618]
+          - cell "2.1171315" [ref=f9e619]
+          - cell "6.6113036" [ref=f9e620]
+        - row [ref=f9e621]:
+          - cell [ref=f9e622]:
+            - button "Details for thermal-closed-entanglement:case-0052:52" [ref=f9e623] [cursor=pointer]: thermal-closed-entanglement:case-0052:52
+          - cell "0.83940201" [ref=f9e624]
+          - cell "0.043951244" [ref=f9e625]
+          - cell "3.5493188" [ref=f9e626]
+          - cell "1.7307555" [ref=f9e627]
+          - cell "1.8185633" [ref=f9e628]
+          - cell "2.6058743" [ref=f9e629]
+          - cell "2.2642235" [ref=f9e630]
+          - cell "7.3096092" [ref=f9e631]
+        - row [ref=f9e632]:
+          - cell [ref=f9e633]:
+            - button "Details for thermal-closed-entanglement:case-0053:53" [ref=f9e634] [cursor=pointer]: thermal-closed-entanglement:case-0053:53
+          - cell "0.88913971" [ref=f9e635]
+          - cell "0.037180581" [ref=f9e636]
+          - cell "3.7761702" [ref=f9e637]
+          - cell "1.8013619" [ref=f9e638]
+          - cell "1.9748083" [ref=f9e639]
+          - cell "2.7860975" [ref=f9e640]
+          - cell "2.4231174" [ref=f9e641]
+          - cell "8.0835196" [ref=f9e642]
+        - row [ref=f9e643]:
+          - cell [ref=f9e644]:
+            - button "Details for thermal-closed-entanglement:case-0054:54" [ref=f9e645] [cursor=pointer]: thermal-closed-entanglement:case-0054:54
+          - cell "0.94182454" [ref=f9e646]
+          - cell "0.03144672" [ref=f9e647]
+          - cell "4.0061782" [ref=f9e648]
+          - cell "1.8692545" [ref=f9e649]
+          - cell "2.1369237" [ref=f9e650]
+          - cell "2.9514951" [ref=f9e651]
+          - cell "2.5946704" [ref=f9e652]
+          - cell "8.9440699" [ref=f9e653]
+        - row [ref=f9e654]:
+          - cell [ref=f9e655]:
+            - button "Details for thermal-closed-entanglement:case-0055:55" [ref=f9e656] [cursor=pointer]: thermal-closed-entanglement:case-0055:55
+          - cell "0.99763116" [ref=f9e657]
+          - cell "0.026589812" [ref=f9e658]
+          - cell "4.2402647" [ref=f9e659]
+          - cell "1.9355785" [ref=f9e660]
+          - cell "2.3046862" [ref=f9e661]
+          - cell "3.1042725" [ref=f9e662]
+          - cell "2.7798132" [ref=f9e663]
+          - cell "9.9035528" [ref=f9e664]
+        - row [ref=f9e665]:
+          - cell [ref=f9e666]:
+            - button "Details for thermal-closed-entanglement:case-0056:56" [ref=f9e667] [cursor=pointer]: thermal-closed-entanglement:case-0056:56
+          - cell "1" [ref=f9e668]
+          - cell "0.026406476" [ref=f9e669]
+          - cell "4.2499615" [ref=f9e670]
+          - cell "1.9382911" [ref=f9e671]
+          - cell "2.3116703" [ref=f9e672]
+          - cell "3.1103436" [ref=f9e673]
+          - cell "2.7877466" [ref=f9e674]
+          - cell "9.9453995" [ref=f9e675]
+        - row [ref=f9e676]:
+          - cell [ref=f9e677]:
+            - button "Details for thermal-closed-entanglement:case-0057:57" [ref=f9e678] [cursor=pointer]: thermal-closed-entanglement:case-0057:57
+          - cell "1.0567445" [ref=f9e679]
+          - cell "0.022475452" [ref=f9e680]
+          - cell "4.4765074" [ref=f9e681]
+          - cell "2.0011877" [ref=f9e682]
+          - cell "2.4753197" [ref=f9e683]
+          - cell "3.2478808" [ref=f9e684]
+          - cell "2.9795246" [ref=f9e685]
+          - cell "10.975619" [ref=f9e686]
+        - row [ref=f9e687]:
+          - cell [ref=f9e688]:
+            - button "Details for thermal-closed-entanglement:case-0058:58" [ref=f9e689] [cursor=pointer]: thermal-closed-entanglement:case-0058:58
+          - cell "1.1193606" [ref=f9e690]
+          - cell "0.018990466" [ref=f9e691]
+          - cell "4.714211" [ref=f9e692]
+          - cell "2.0665698" [ref=f9e693]
+          - cell "2.6476412" [ref=f9e694]
+          - cell "3.3863519" [ref=f9e695]
+          - cell "3.1948134" [ref=f9e696]
+          - cell "12.17541" [ref=f9e697]
+        - row [ref=f9e698]:
+          - cell [ref=f9e699]:
+            - button "Details for thermal-closed-entanglement:case-0059:59" [ref=f9e700] [cursor=pointer]: thermal-closed-entanglement:case-0059:59
+          - cell "1.1856869" [ref=f9e701]
+          - cell "0.016039327" [ref=f9e702]
+          - cell "4.9530054" [ref=f9e703]
+          - cell "2.1318819" [ref=f9e704]
+          - cell "2.8211235" [ref=f9e705]
+          - cell "3.5236846" [ref=f9e706]
+          - cell "3.4267058" [ref=f9e707]
+          - cell "13.519731" [ref=f9e708]
+        - row [ref=f9e709]:
+          - cell [ref=f9e710]:
+            - button "Details for thermal-closed-entanglement:case-0060:60" [ref=f9e711] [cursor=pointer]: thermal-closed-entanglement:case-0060:60
+          - cell "1.2559432" [ref=f9e712]
+          - cell "0.013541201" [ref=f9e713]
+          - cell "5.1928385" [ref=f9e714]
+          - cell "2.1970756" [ref=f9e715]
+          - cell "2.9957629" [ref=f9e716]
+          - cell "3.663407" [ref=f9e717]
+          - cell "3.6762402" [ref=f9e718]
+          - cell "15.027248" [ref=f9e719]
+        - row [ref=f9e720]:
+          - cell [ref=f9e721]:
+            - button "Details for thermal-closed-entanglement:case-0061:61" [ref=f9e722] [cursor=pointer]: thermal-closed-entanglement:case-0061:61
+          - cell "1.3303625" [ref=f9e723]
+          - cell "0.011427531" [ref=f9e724]
+          - cell "5.4340899" [ref=f9e725]
+          - cell "2.2620398" [ref=f9e726]
+          - cell "3.17205" [ref=f9e727]
+          - cell "3.8083465" [ref=f9e728]
+          - cell "3.9444672" [ref=f9e729]
+          - cell "16.718724" [ref=f9e730]
+        - row [ref=f9e731]:
+          - cell [ref=f9e732]:
+            - button "Details for thermal-closed-entanglement:case-0062:62" [ref=f9e733] [cursor=pointer]: thermal-closed-entanglement:case-0062:62
+          - cell "1.4091915" [ref=f9e734]
+          - cell "0.0096400766" [ref=f9e735]
+          - cell "5.6778367" [ref=f9e736]
+          - cell "2.326692" [ref=f9e737]
+          - cell "3.3511447" [ref=f9e738]
+          - cell "3.9605737" [ref=f9e739]
+          - cell "4.2324529" [ref=f9e740]
+          - cell "18.617294" [ref=f9e741]
+        - row [ref=f9e742]:
+          - cell [ref=f9e743]:
+            - button "Details for thermal-closed-entanglement:case-0063:63" [ref=f9e744] [cursor=pointer]: thermal-closed-entanglement:case-0063:63
+          - cell "1.4926913" [ref=f9e745]
+          - cell "0.0081293039" [ref=f9e746]
+          - cell "5.927119" [ref=f9e747]
+          - cell "2.3909934" [ref=f9e748]
+          - cell "3.5361256" [ref=f9e749]
+          - cell "4.1214565" [ref=f9e750]
+          - cell "4.5412864" [ref=f9e751]
+          - cell "20.748763" [ref=f9e752]
+        - row [ref=f9e753]:
+          - cell [ref=f9e754]:
+            - button "Details for thermal-closed-entanglement:case-0064:64" [ref=f9e755] [cursor=pointer]: thermal-closed-entanglement:case-0064:64
+          - cell "1.5811388" [ref=f9e756]
+          - cell "0.0068530684" [ref=f9e757]
+          - cell "6.1815114" [ref=f9e758]
+          - cell "2.4549222" [ref=f9e759]
+          - cell "3.7265892" [ref=f9e760]
+          - cell "4.2917699" [ref=f9e761]
+          - cell "4.8720878" [ref=f9e762]
+          - cell "23.141957" [ref=f9e763]
+        - row [ref=f9e764]:
+          - cell [ref=f9e765]:
+            - button "Details for thermal-closed-entanglement:case-0065:65" [ref=f9e766] [cursor=pointer]: thermal-closed-entanglement:case-0065:65
+          - cell "1.6748272" [ref=f9e767]
+          - cell "0.0057755124" [ref=f9e768]
+          - cell "6.4385529" [ref=f9e769]
+          - cell "2.5184521" [ref=f9e770]
+          - cell "3.9201008" [ref=f9e771]
+          - cell "4.47182" [ref=f9e772]
+          - cell "5.2260178" [ref=f9e773]
+          - cell "25.829104" [ref=f9e774]
+        - row [ref=f9e775]:
+          - cell [ref=f9e776]:
+            - button "Details for thermal-closed-entanglement:case-0066:66" [ref=f9e777] [cursor=pointer]: thermal-closed-entanglement:case-0066:66
+          - cell "1.7740669" [ref=f9e778]
+          - cell "0.0048661412" [ref=f9e779]
+          - cell "6.6975389" [ref=f9e780]
+          - cell "2.5815544" [ref=f9e781]
+          - cell "4.1159845" [ref=f9e782]
+          - cell "4.6615611" [ref=f9e783]
+          - cell "5.604287" [ref=f9e784]
+          - cell "28.846271" [ref=f9e785]
+        - row [ref=f9e786]:
+          - cell [ref=f9e787]:
+            - button "Details for thermal-closed-entanglement:case-0067:67" [ref=f9e788] [cursor=pointer]: thermal-closed-entanglement:case-0067:67
+          - cell "1.879187" [ref=f9e789]
+          - cell "0.004099039" [ref=f9e790]
+          - cell "6.9586628" [ref=f9e791]
+          - cell "2.6442108" [ref=f9e792]
+          - cell "4.314452" [ref=f9e793]
+          - cell "4.8606967" [ref=f9e794]
+          - cell "6.0081659" [ref=f9e795]
+          - cell "32.233847" [ref=f9e796]
+        - row [ref=f9e797]:
+          - cell [ref=f9e798]:
+            - button "Details for thermal-closed-entanglement:case-0068:68" [ref=f9e799] [cursor=pointer]: thermal-closed-entanglement:case-0068:68
+          - cell "1.9905359" [ref=f9e800]
+          - cell "0.0034522004" [ref=f9e801]
+          - cell "7.2234653" [ref=f9e802]
+          - cell "2.7064187" [ref=f9e803]
+          - cell "4.5170466" [ref=f9e804]
+          - cell "5.0687599" [ref=f9e805]
+          - cell "6.4389936" [ref=f9e806]
+          - cell "36.037082" [ref=f9e807]
+        - row [ref=f9e808]:
+          - cell [ref=f9e809]:
+            - button "Details for thermal-closed-entanglement:case-0069:69" [ref=f9e810] [cursor=pointer]: thermal-closed-entanglement:case-0069:69
+          - cell "2" [ref=f9e811]
+          - cell "0.0034036649" [ref=f9e812]
+          - cell "7.2455421" [ref=f9e813]
+          - cell "2.7115248" [ref=f9e814]
+          - cell "4.5340173" [ref=f9e815]
+          - cell "5.0862851" [ref=f9e816]
+          - cell "6.4757386" [ref=f9e817]
+          - cell "36.370532" [ref=f9e818]
+        - row [ref=f9e819]:
+          - cell [ref=f9e820]:
+            - button "Details for thermal-closed-entanglement:case-0070:70" [ref=f9e821] [cursor=pointer]: thermal-closed-entanglement:case-0070:70
+          - cell "2.1084825" [ref=f9e822]
+          - cell "0.0029069584" [ref=f9e823]
+          - cell "7.4928617" [ref=f9e824]
+          - cell "2.7681867" [ref=f9e825]
+          - cell "4.724675" [ref=f9e826]
+          - cell "5.2851774" [ref=f9e827]
+          - cell "6.8981867" [ref=f9e828]
+          - cell "40.306698" [ref=f9e829]
+        - row [ref=f9e830]:
+          - cell [ref=f9e831]:
+            - button "Details for thermal-closed-entanglement:case-0071:71" [ref=f9e832] [cursor=pointer]: thermal-closed-entanglement:case-0071:71
+          - cell "2.233418" [ref=f9e833]
+          - cell "0.0024474931" [ref=f9e834]
+          - cell "7.7642739" [ref=f9e835]
+          - cell "2.8295309" [ref=f9e836]
+          - cell "4.934743" [ref=f9e837]
+          - cell "5.5093173" [ref=f9e838]
+          - cell "7.3872479" [ref=f9e839]
+          - cell "45.099566" [ref=f9e840]
+        - row [ref=f9e841]:
+          - cell [ref=f9e842]:
+            - button "Details for thermal-closed-entanglement:case-0072:72" [ref=f9e843] [cursor=pointer]: thermal-closed-entanglement:case-0072:72
+          - cell "2.3657563" [ref=f9e844]
+          - cell "0.0020604097" [ref=f9e845]
+          - cell "8.0369279" [ref=f9e846]
+          - cell "2.8904735" [ref=f9e847]
+          - cell "5.1464544" [ref=f9e848]
+          - cell "5.7405245" [ref=f9e849]
+          - cell "7.9077732" [ref=f9e850]
+          - cell "50.479463" [ref=f9e851]
+        - row [ref=f9e852]:
+          - cell [ref=f9e853]:
+            - button "Details for thermal-closed-entanglement:case-0073:73" [ref=f9e854] [cursor=pointer]: thermal-closed-entanglement:case-0073:73
+          - cell "2.5059362" [ref=f9e855]
+          - cell "0.001734377" [ref=f9e856]
+          - cell "8.3114804" [ref=f9e857]
+          - cell "2.951041" [ref=f9e858]
+          - cell "5.3604393" [ref=f9e859]
+          - cell "5.9781467" [ref=f9e860]
+          - cell "8.4614601" [ref=f9e861]
+          - cell "56.517927" [ref=f9e862]
+        - row [ref=f9e863]:
+          - cell [ref=f9e864]:
+            - button "Details for thermal-closed-entanglement:case-0074:74" [ref=f9e865] [cursor=pointer]: thermal-closed-entanglement:case-0074:74
+          - cell "2.6544222" [ref=f9e866]
+          - cell "0.001459817" [ref=f9e867]
+          - cell "8.5884794" [ref=f9e868]
+          - cell "3.011263" [ref=f9e869]
+          - cell "5.5772164" [ref=f9e870]
+          - cell "6.221552" [ref=f9e871]
+          - cell "9.0501148" [ref=f9e872]
+          - cell "63.29521" [ref=f9e873]
+        - row [ref=f9e874]:
+          - cell [ref=f9e875]:
+            - button "Details for thermal-closed-entanglement:case-0075:75" [ref=f9e876] [cursor=pointer]: thermal-closed-entanglement:case-0075:75
+          - cell "2.8117066" [ref=f9e877]
+          - cell "0.0012286393" [ref=f9e878]
+          - cell "8.8660954" [ref=f9e879]
+          - cell "3.0711698" [ref=f9e880]
+          - cell "5.7949255" [ref=f9e881]
+          - cell "6.4701412" [ref=f9e882]
+          - cell "9.6756591" [ref=f9e883]
+          - cell "70.901345" [ref=f9e884]
+        - row [ref=f9e885]:
+          - cell [ref=f9e886]:
+            - button "Details for thermal-closed-entanglement:case-0076:76" [ref=f9e887] [cursor=pointer]: thermal-closed-entanglement:case-0076:76
+          - cell "2.9783107" [ref=f9e888]
+          - cell "0.0010340145" [ref=f9e889]
+          - cell "9.1443517" [ref=f9e890]
+          - cell "3.1307921" [ref=f9e891]
+          - cell "6.0135596" [ref=f9e892]
+          - cell "6.723355" [ref=f9e893]
+          - cell "10.340138" [ref=f9e894]
+          - cell "79.437347" [ref=f9e895]
+        - row [ref=f9e896]:
+          - cell [ref=f9e897]:
+            - button "Details for thermal-closed-entanglement:case-0077:77" [ref=f9e898] [cursor=pointer]: thermal-closed-entanglement:case-0077:77
+          - cell "3" [ref=f9e899]
+          - cell "0.0010117758" [ref=f9e900]
+          - cell "9.1795771" [ref=f9e901]
+          - cell "3.1382888" [ref=f9e902]
+          - cell "6.0412883" [ref=f9e903]
+          - cell "6.7555744" [ref=f9e904]
+          - cell "10.426767" [ref=f9e905]
+          - cell "80.584857" [ref=f9e906]
+        - row [ref=f9e907]:
+          - cell [ref=f9e908]:
+            - button "Details for thermal-closed-entanglement:case-0078:78" [ref=f9e909] [cursor=pointer]: thermal-closed-entanglement:case-0078:78
+          - cell "3.1547867" [ref=f9e910]
+          - cell "0.00087018053" [ref=f9e911]
+          - cell "9.4243801" [ref=f9e912]
+          - cell "3.1901594" [ref=f9e913]
+          - cell "6.2342206" [ref=f9e914]
+          - cell "6.9806781" [ref=f9e915]
+          - cell "11.045728" [ref=f9e916]
+          - cell "89.016551" [ref=f9e917]
+        - row [ref=f9e918]:
+          - cell [ref=f9e919]:
+            - button "Details for thermal-closed-entanglement:case-0079:79" [ref=f9e920] [cursor=pointer]: thermal-closed-entanglement:case-0079:79
+          - cell "3.3417196" [ref=f9e921]
+          - cell "0.00073227836" [ref=f9e922]
+          - cell "9.7049307" [ref=f9e923]
+          - cell "3.2493" [ref=f9e924]
+          - cell "6.4556307" [ref=f9e925]
+          - cell "7.2416408" [ref=f9e926]
+          - cell "11.794743" [ref=f9e927]
+          - cell "99.766125" [ref=f9e928]
+        - row [ref=f9e929]:
+          - cell [ref=f9e930]:
+            - button "Details for thermal-closed-entanglement:case-0080:80" [ref=f9e931] [cursor=pointer]: thermal-closed-entanglement:case-0080:80
+          - cell "3.5397289" [ref=f9e932]
+          - cell "0.00061621191" [ref=f9e933]
+          - cell "9.9862873" [ref=f9e934]
+          - cell "3.3082399" [ref=f9e935]
+          - cell "6.6780474" [ref=f9e936]
+          - cell "7.5058186" [ref=f9e937]
+          - cell "12.589641" [ref=f9e938]
+          - cell "111.82876" [ref=f9e939]
+        - row [ref=f9e940]:
+          - cell [ref=f9e941]:
+            - button "Details for thermal-closed-entanglement:case-0081:81" [ref=f9e942] [cursor=pointer]: thermal-closed-entanglement:case-0081:81
+          - cell "3.749471" [ref=f9e943]
+          - cell "0.0005185295" [ref=f9e944]
+          - cell "10.268814" [ref=f9e945]
+          - cell "3.3670033" [ref=f9e946]
+          - cell "6.9018111" [ref=f9e947]
+          - cell "7.7728305" [ref=f9e948]
+          - cell "13.433039" [ref=f9e949]
+          - cell "125.36455" [ref=f9e950]
+        - row [ref=f9e951]:
+          - cell [ref=f9e952]:
+            - button "Details for thermal-closed-entanglement:case-0082:82" [ref=f9e953] [cursor=pointer]: thermal-closed-entanglement:case-0082:82
+          - cell "3.9716412" [ref=f9e954]
+          - cell "0.00043632324" [ref=f9e955]
+          - cell "10.551549" [ref=f9e956]
+          - cell "3.4256119" [ref=f9e957]
+          - cell "7.1259373" [ref=f9e958]
+          - cell "8.0423366" [ref=f9e959]
+          - cell "14.327712" [ref=f9e960]
+          - cell "140.55314" [ref=f9e961]
+        - row [ref=f9e962]:
+          - cell [ref=f9e963]:
+            - button "Details for thermal-closed-entanglement:case-0083:83" [ref=f9e964] [cursor=pointer]: thermal-closed-entanglement:case-0083:83
+          - cell "4.2069757" [ref=f9e965]
+          - cell "0.00036714392" [ref=f9e966]
+          - cell "10.835162" [ref=f9e967]
+          - cell "3.4840853" [ref=f9e968]
+          - cell "7.3510765" [ref=f9e969]
+          - cell "8.3140354" [ref=f9e970]
+          - cell "15.276611" [ref=f9e971]
+          - cell "157.5961" [ref=f9e972]
+        - row [ref=f9e973]:
+          - cell [ref=f9e974]:
+            - button "Details for thermal-closed-entanglement:case-0084:84" [ref=f9e975] [cursor=pointer]: thermal-closed-entanglement:case-0084:84
+          - cell "4.4562547" [ref=f9e976]
+          - cell "0.00030892908" [ref=f9e977]
+          - cell "11.119008" [ref=f9e978]
+          - cell "3.5424408" [ref=f9e979]
+          - cell "7.576567" [ref=f9e980]
+          - cell "8.5876599" [ref=f9e981]
+          - cell "16.282865" [ref=f9e982]
+          - cell "176.7196" [ref=f9e983]
+        - row [ref=f9e984]:
+          - cell [ref=f9e985]:
+            - button "Details for thermal-closed-entanglement:case-0085:85" [ref=f9e986] [cursor=pointer]: thermal-closed-entanglement:case-0085:85
+          - cell "4.7203044" [ref=f9e987]
+          - cell "0.00025994219" [ref=f9e988]
+          - cell "11.403469" [ref=f9e989]
+          - cell "3.6006939" [ref=f9e990]
+          - cell "7.8027754" [ref=f9e991]
+          - cell "8.8629751" [ref=f9e992]
+          - cell "17.349797" [ref=f9e993]
+          - cell "198.17741" [ref=f9e994]
+        - row [ref=f9e995]:
+          - cell [ref=f9e996]:
+            - button "Details for thermal-closed-entanglement:case-0086:86" [ref=f9e997] [cursor=pointer]: thermal-closed-entanglement:case-0086:86
+          - cell "5" [ref=f9e998]
+          - cell "0.00021872135" [ref=f9e999]
+          - cell "11.688214" [ref=f9e1000]
+          - cell "3.658858" [ref=f9e1001]
+          - cell "8.0293555" [ref=f9e1002]
+          - cell "9.1397742" [ref=f9e1003]
+          - cell "18.480933" [ref=f9e1004]
+          - cell "222.25428" [ref=f9e1005]

@@ -1,5 +1,5 @@
 # Task Registry
-*Last Updated: 2026-10-16 13:11:31 IST*
+*Last Updated: 2026-10-16 17:45:49 IST*
 
 ## Active Tasks
 | ID | Title | Status | Priority | Started | Dependencies | Details |
@@ -17,6 +17,9 @@
 | T9 | Thermal/TFD state construction and physical study | 🔄 IN PROGRESS | HIGH | 2026-10-06 | T3c | [Details](tasks/T9.md) |
 | T9a | Closure-preserving singlet exchange and thermal equilibration | 🔄 IN PROGRESS | HIGH | 2026-10-14 | T9, T11, T1a | [Details](tasks/T9a.md) |
 | T11 | Hamiltonian, volume and face/rotor dynamics | 🔄 IN PROGRESS | HIGH | 2026-10-09 | T1a | [Details](tasks/T11.md) |
+| T11a | Fixed-area Hamiltonian, volume and prepared-FL dynamics | 🔄 IN PROGRESS | HIGH | 2026-10-16 | T11, T1a | [Details](tasks/T11a.md) |
+| T11b | Face-channel activation and equilibration | 🔄 IN PROGRESS | HIGH | 2026-10-16 | T11, T11a | [Details](tasks/T11b.md) |
+| T11d | Closed geometric channel connectivity and shape | 🔄 IN PROGRESS | HIGH | 2026-10-16 | T11, T1a | [Details](tasks/T11d.md) |
 | T8a | Cluster algebra and coordinate charts | 🔄 IN PROGRESS | MEDIUM | 2026-10-04 | T8 | [Details](tasks/T8a.md) |
 | T8b | Positive cells and scattering regions | 🔄 IN PROGRESS | MEDIUM | 2026-10-04 | T8, T1, T2 | [Details](tasks/T8b.md) |
 
@@ -333,10 +336,10 @@ convergence evidence.
 
 ### T11: Four-site Hamiltonian–volume studies
 **Details**: [Task record](tasks/T11.md)
-**Description**: Implement the first exact four-site Bose–Hubbard/positive-RS pilot at fixed $K=2,3,4$, comparing complete and ring graphs in the total-spin singlet sector. The run includes no-hopping, free-hopping, repulsion, fixed-$K$ Gibbs observables, ground-state correlations and one-site entropy, exact infinite-temperature active-site counting, and the Hamiltonian–volume commutator.
+**Description**: Umbrella for the fixed-area Hamiltonian/volume program, face-channel activation and equilibration, the completed finite-time rotor-transfer pilot, and closed geometric channel connectivity/shape. The four-site Bose–Hubbard/positive-RS pilot at fixed $K=2,3,4$ remains the foundation. Current work is divided among [T11a](tasks/T11a.md), [T11b](tasks/T11b.md), [T11c](archive/T11c.md), and [T11d](tasks/T11d.md).
 **Status**: 🔄 IN PROGRESS
 **Dependencies**: T1a
-**Milestone**: Four-site pilot, thermal-volume follow-up, full-number closure probes, and same-number three-plus-one dissociation energies complete. At $t=1,U=5$, binding energies are 0.769253300 (complete) and 0.795078777 (ring). Four/five-site persistence, prepared $K=4$ FL geometry, the 62-setting positive-volume/signed-triple candidate scan, and 50 exact-phase FL trajectories are complete. Independent candidate verification: 1,510 checks, maximum residual $1.07\times10^{-12}$. The October 16 large-area free-hopping control activates extra channels but recurs exactly; interacting equilibration and distinct-face geometry remain open. See the [October 16 thermalization discussion](sessions/2026-10-16-face-thermalization-transcript.md) and [face-energy note](../notes/face-energy-equipartition.md). Physical interaction derivation/calibration, controlled further size scaling, and sewn dynamics remain open. The local dashboard now packages 26 studies and 35 datasets; the October 16 face-activation dataset is verified locally and was not published, per user direction. See the October 11 T11 closeout, October 12–13 InfoDash records, and October 16 thermalization transcript.
+**Milestone**: Four-site pilot, prepared-FL studies, rotor-transfer pilot, and exact closed geometric redistribution studies are recorded. The task split assigns Hamiltonian/volume work to T11a, face-channel equilibration to T11b, the completed finite-time rotor pilot to T11c, and closed geometric connectivity/shape to T11d. Physical interaction derivation/calibration, controlled size scaling, interacting equilibration, and relational face-normal analysis remain open. The local dashboard now includes NS37–NS40; its 42-dataset package passed source-value/hash parity and desktop/mobile acceptance, and the website deployment is recorded in the [dashboard acceptance report](ui-tests/2026-10-16-quantum-geometry-dashboard.md). See the [session handoff](sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-summary.md), [research map](../notes/quantum-geometry-research.md), and the earlier thermalization discussion.
 
 ---
 
@@ -360,6 +363,7 @@ convergence evidence.
 | T7d | Thermal scaling laws | ✅ COMPLETED | HIGH | 2026-09-20 | T9, T7a, T7c | [Details](archive/T7d.md) |
 | T7e | Complexified momenta in the TFD | ✅ COMPLETED | HIGH | 2026-09-20 | T9, T7b, T7c | [Details](archive/T7e.md) |
 | T10 | Exact closed-state catalogue at fixed area with variable face number | ✅ COMPLETED | MEDIUM | 2026-10-08 | T1a | [Details](tasks/T10.md) |
+| T11c | Four-rotor finite-time energy-transfer pilot | ✅ COMPLETED | HIGH | 2026-10-16 | T11 | [Details](archive/T11c.md) |
 
 ## Transferred / Historical Task IDs
 
@@ -397,6 +401,10 @@ graph TD
     T8a[T8a: Cluster algebra and charts]
     T8b[T8b: Positive cells and scattering regions; former T5f]
     T11[T11: Four-site Hamiltonian-volume studies]
+    T11a[T11a: Fixed-area Hamiltonian and prepared-FL dynamics]
+    T11b[T11b: Face-channel activation and equilibration]
+    T11c[T11c: Four-rotor finite-time transfer pilot]
+    T11d[T11d: Closed geometric channel connectivity and shape]
 
     T1 --> T1a --> T1b --> T2
     T3 --> T3a
@@ -416,6 +424,10 @@ graph TD
     T9 --> T7d
     T9 --> T7e
     T1a --> T11
+    T11 --> T11a
+    T11 --> T11b
+    T11 --> T11c
+    T11 --> T11d
 ```
 
 ---

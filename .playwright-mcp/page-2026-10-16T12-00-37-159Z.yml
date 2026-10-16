@@ -1,0 +1,75 @@
+- generic [ref=f2e2]:
+  - navigation "Numerical datasets" [ref=f2e3]:
+    - generic [ref=f2e4]: Numerical study
+    - combobox "Numerical study" [ref=f2e5]:
+      - option "All studies — overview"
+      - option "Small-area face-channel equilibration pilot (12 rows)"
+      - option "Classical rotor spreading and equilibrium comparison (24 rows)"
+      - 'option "Few-rotor transfer: planar bound and 3D controls (27 rows)"'
+      - option "Rotor coupling crossover and delayed release (64 rows)"
+      - 'option "Large-area tetrahedron: face activation and recurrence (20 rows)"'
+      - option "Entanglement of separately closed thermal polyhedra (86 rows)"
+      - option "Ordinary closure versus temperature (125 rows)"
+      - option "Heating separately closed area and positive RS volume (85 rows)"
+      - option "Singlet exchange between closed FL polyhedra (20 rows)"
+      - 'option "Four versus five sites: thermal-volume persistence (12 rows)"'
+      - option "Prepared tetrahedral FL states and the volume crossover (11 rows)"
+      - option "Candidate geometric Hamiltonians and prepared-FL dynamics (62 rows)"
+      - option "Four-site Hamiltonian spectra and RS-volume observables (30 rows)"
+      - option "Complete four-face closed-basis volumes (11 rows)"
+      - option "Variable-face positive RS catalogue (9 rows)"
+      - option "Squeezed-vacuum area coefficients (964 rows)"
+      - option "Squeezed-vacuum resultant spin (196 rows)"
+      - option "Excited J_in=1 joint area and spin (5 rows)"
+      - option "Higher-J flat-boundary probes (13 rows)"
+      - option "Magnetization and signed-grasp correlations (10 rows)"
+      - option "Local-chirality pilot (13 rows)"
+      - option "Imaginary-perturbation response (26 rows)"
+      - option "Cocycle-phase pilot (10 rows)"
+      - option "Large-K recorded families and fits (13 rows)"
+      - option "Historical single-copy thermal pilot (14 rows)"
+      - option "Historical energy-basis TFD pilot (14 rows)"
+      - option "Historical complexified purification (10 rows)"
+      - option "Small-sector thermal geometry audit (4 rows)"
+      - option "RS/AL volume-prescription controls (2 rows)"
+      - option "Initial covariance reconstruction pilot (6 rows)"
+      - option "Quantum planar-rotor transfer at zero total momentum (NS37) (2 rows)" [selected]
+      - option "Closed and open four-to-five-to-six channel transitions (NS38) (30 rows)"
+      - option "Exact-singlet geometric area redistribution (NS39–NS40) (54 rows)"
+      - option "Prepared FL evolution sampling (50 rows)"
+      - option "Positive volumes on two real-plane states (2 rows)"
+      - option "FL covariance shape recovery (84 rows)"
+      - option "Weighted FL input geometry and volumes (14 rows)"
+      - option "Regular FL volume versus area (5 rows)"
+      - option "Equal-area FL shape scan at J=2 (440 rows)"
+      - option "Same-number detachment energies (8 rows)"
+      - option "Closed and open state evolution probes (6 rows)"
+      - option "Constructive edge sewing probes (5 rows)"
+  - heading "Quantum planar-rotor transfer at zero total momentum (NS37)" [level=1] [ref=f2e6]
+  - paragraph [ref=f2e7]: Two four-rotor ring preparations start in |m,-m,0,0| with exactly zero total momentum. Each row compares the saved late-window cold-pair kinetic fraction with an independent classical ensemble and reports the quantum single-rotor entropy for the initially energetic pair, initially cold pair, and all four sites.
+  - generic [ref=f2e8]:
+    - generic [ref=f2e9]:
+      - generic [ref=f2e10]: "2"
+      - generic [ref=f2e11]: Total Runs
+    - generic [ref=f2e12]:
+      - generic [ref=f2e13]: "0"
+      - generic [ref=f2e14]: Tasks
+    - generic [ref=f2e15]:
+      - generic [ref=f2e16]: "2"
+      - generic [ref=f2e17]: Complete
+    - generic [ref=f2e18]:
+      - generic [ref=f2e19]: "1"
+      - generic [ref=f2e20]: Figures
+  - tablist "Dashboard sections" [ref=f2e21]:
+    - tab "Runs & Studies" [ref=f2e22] [cursor=pointer]
+    - tab "Figure Archive" [active] [selected] [ref=f2e23] [cursor=pointer]
+    - tab "Charts" [ref=f2e24] [cursor=pointer]
+    - tab "Tasks & Numerical Notes" [ref=f2e25] [cursor=pointer]
+  - tabpanel "Figure Archive" [ref=f2e82]:
+    - heading "Figure Archive" [level=2] [ref=f2e83]
+    - article [ref=f2e86]:
+      - button "Enlarge Quantum and matched classical planar-rotor energy transfer" [ref=f2e88] [cursor=pointer]:
+        - img "Quantum and matched classical planar-rotor energy transfer" [ref=f2e89]
+      - generic [ref=f2e90]:
+        - generic [ref=f2e91]: Quantum and matched classical planar-rotor energy transfer
+        - generic [ref=f2e92]: T11

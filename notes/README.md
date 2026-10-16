@@ -1,39 +1,21 @@
 # Project notes
 
-- [`face-energy-equipartition.md`](face-energy-equipartition.md) reports the
-  verified large-tetrahedron face-activation and recurrence control, relates
-  it to many-body equilibration and recurrence studies, and develops proposed
-  F/J and Hubbard interactions for the next stage.
+Start with **[Quantum geometry: a guide to the research notes](quantum-geometry-research.md)**.
+It organizes the physical story into states and geometry, energy and area
+redistribution, thermal states and entanglement, and joining geometric systems.
+It also gives a suggested reading sequence and links to the related notes.
 
-- [`thermal-entanglement.md`](thermal-entanglement.md) derives and explains the
-  separately closed reference's Schmidt spectrum, entropy decomposition and
-  coherent two-copy singlet creation, with verified temperature curves.
+For a dated account of every numerical study, use the
+[indexed research chronology](numerical-studies.md). The
+[numerics dashboard](../code/dashboard/index.html) provides the interactive
+view, and the [results directory](../results/README.md) contains data and
+reproduction instructions.
 
-- [`classical-rotor-equilibration.md`](classical-rotor-equilibration.md) explains
-  the small-area face-channel pilot, classical energy spreading, equilibrium
-  comparison, and the limitations that separate finite-time transfer from
-  equilibration.
-- [`few-rotor-energy-transfer.md`](few-rotor-energy-transfer.md) derives the
-  exact planar-pair transfer threshold and contrasts it with three-dimensional
-  zero-angular-momentum controls.
-- [`rotor-coupling-crossover.md`](rotor-coupling-crossover.md) records the
-  finite-time ring crossover, direct-coupling controls, and delayed transfer.
+The latest quantum continuation is recorded in
+[four planar rotors](quantum-planar-rotor-energy-transfer.md),
+[closed/nonclosed connectivity](face-activation-connectivity.md), and
+[geometric area redistribution](geometric-area-redistribution.md).
 
-- [`numerical-studies.md`](numerical-studies.md) is the central indexed,
-  chronological record of numerical calculations, findings, and source artifacts.
-
-- [`volume-studies.md`](volume-studies.md) records closed-state volume counting,
-  the lattice-boson interpretation, Hamiltonians, and the volume commutator.
-
-- [`hamiltonian-studies.md`](hamiltonian-studies.md) records the implemented
-  four-site fixed-area Hamiltonian and positive-volume pilot.
-
-- [`thermal-area-sectors.md`](thermal-area-sectors.md) now presents the squeezed-state construction and occupation/spin results in six physical sections, followed by seven technical/historical appendices. All eight figures are retained. [The editorial assessment](thermal-area-sectors-reorganization.md) records the reasoning for this organization.
-- [`thermal-geometry-and-singlet-exchange.md`](thermal-geometry-and-singlet-exchange.md) develops heating, ordinary closure, separately projected geometry, Gibbs equilibrium, and the two-polyhedron FL exchange study, with all four related figures.
-- [`t9a-singlet-exchange.md`](t9a-singlet-exchange.md) is the implementation specification for the exchange study and its open reservoir stages.
-- [`experiments/`](experiments/) contains calculation protocols, run notes,
-  and evidence logs.
-- [`task-specifications/`](task-specifications/) contains the original project
-  task prompts and the published-paper overview.
-
-The maintained research record and task status live in `memory-bank/`.
+[Experiment logs](experiments/) and [original task specifications](task-specifications/)
+retain the detailed protocols and historical prompts. Task status and session
+records live in the [Memory Bank](../memory-bank/).

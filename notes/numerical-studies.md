@@ -2,7 +2,9 @@
 
 *Last updated: 2026-10-16*
 
-This is the central record of numerical studies in this repository. Each entry records the question, calculated coverage, findings, and source artifacts. Dates follow calculation records, session records, and Git history. Date ranges group related calculations; corrections and extensions appear at their own dates. The identifiers NS01–NS36 are local index labels for this document. Project task IDs are included for cross-reference.
+This is the central record of numerical studies in this repository. Each entry records the question, calculated coverage, findings, and source artifacts. Dates follow calculation records, session records, and Git history. Date ranges group related calculations; corrections and extensions appear at their own dates. The identifiers NS01–NS40 are local index labels for this document. Project task IDs are included for cross-reference.
+
+[Research map](quantum-geometry-research.md) · [Project notes](README.md).
 
 ## Index
 
@@ -30,20 +32,24 @@ This is the central record of numerical studies in this repository. Each entry r
 | [NS20](#ns20) | 2026-10-08 | Excited-input joint occupation and spin distribution | T9 |
 | [NS21](#ns21) | 2026-10-08 | Complete four-face closed-basis volume catalogue | T1a |
 | [NS22](#ns22) | 2026-10-08–09 | Variable-face positive-volume catalogue | T10 |
-| [NS23](#ns23) | 2026-10-09 | Four-site Hamiltonian spectra and thermal volumes | T11 |
-| [NS24](#ns24) | 2026-10-09–10 | Open-state evolution and same-number detachment energies | T11 |
+| [NS23](#ns23) | 2026-10-09 | Four-site Hamiltonian spectra and thermal volumes | T11a |
+| [NS24](#ns24) | 2026-10-09–10 | Open-state evolution and same-number detachment energies | T11a |
 | [NS25](#ns25) | 2026-10-09–10 | Triangle, tetrahedron, and joined-boundary sewing | Constructive sewing |
-| [NS26](#ns26) | 2026-10-10 | Four/five-site comparison and prepared-FL diagnostics | T11 |
-| [NS27](#ns27) | 2026-10-11 | Geometric interactions and prepared-FL evolution | T11 |
+| [NS26](#ns26) | 2026-10-10 | Four/five-site comparison and prepared-FL diagnostics | T11a |
+| [NS27](#ns27) | 2026-10-11 | Geometric interactions and prepared-FL evolution | T11a |
 | [NS28](#ns28) | 2026-10-13 | Temperature dependence of ordinary per-copy closure | T9 |
 | [NS29](#ns29) | 2026-10-13 | Separately closed projection and thermal geometric growth | T9 |
 | [NS30](#ns30) | 2026-10-14 | Finite-area singlet exchange and canonical controls | T9a |
 | [NS31](#ns31) | 2026-10-16 | Closed-reference entanglement and coherent singlet creation | T9 |
-| [NS32](#ns32) | 2026-10-16 | Large-area FL face activation and free-hopping recurrence | T11 |
-| [NS33](#ns33) | 2026-10-16 | Small-area face-channel equilibration pilot | T11 |
-| [NS34](#ns34) | 2026-10-16 | Classical rotor energy spreading and equilibrium comparison | T11 |
-| [NS35](#ns35) | 2026-10-16 | Few-rotor energy transfer and the planar threshold | T11 |
-| [NS36](#ns36) | 2026-10-16 | Rotor coupling crossover and delayed release | T11 |
+| [NS32](#ns32) | 2026-10-16 | Large-area FL face activation and free-hopping recurrence | T11b |
+| [NS33](#ns33) | 2026-10-16 | Small-area face-channel equilibration pilot | T11b |
+| [NS34](#ns34) | 2026-10-16 | Classical rotor energy spreading and equilibrium comparison | T11c |
+| [NS35](#ns35) | 2026-10-16 | Few-rotor energy transfer and the planar threshold | T11c |
+| [NS36](#ns36) | 2026-10-16 | Rotor coupling crossover and delayed release | T11c |
+| [NS37](#ns37) | 2026-10-16 | Four quantum planar rotors at zero total momentum | T11c |
+| [NS38](#ns38) | 2026-10-16 | Closed/nonclosed four-to-five-to-six channel connectivity | T11d |
+| [NS39](#ns39) | 2026-10-16 | Sparse geometric redistribution across four, six and eight channels | T11d |
+| [NS40](#ns40) | 2026-10-16 | Complete-graph permutation selection for all-eight occupation | T11d |
 
 ## Notation
 
@@ -509,13 +515,100 @@ equilibration.
 [grouped scan](../results/t11-rotor-coupling/grouped-scan.csv), and
 [key figure](../figures/t11-rotor-coupling/coupling-crossover.pdf).
 
+<a id="ns37"></a>
+
+### NS37 — Four quantum planar rotors at zero total momentum
+
+A four-rotor ring starts in $|m,-m,0,0\rangle$ with $m=2,4$ and
+$I=\lambda=\hbar=1$. The initial packet kinetic energies are 4 and 16;
+mean total energies include another four units of interaction energy. The
+matched classical comparison uses 2,048 uniform-angle samples with the same
+momenta. Over saved times $10\leq t\leq20$, the quantum cold-pair kinetic
+ratios are 59.20% and 6.71%, versus classical 48.52% and 5.32%. Local entropy,
+returns and conservation readouts accompany the transfer curves. Cutoffs
+8 and 10 agree; classical steps were refined until the declared criterion
+passed. The suite then had 62 tests.
+
+[Physical account](quantum-planar-rotor-energy-transfer.md),
+[result report](../results/t11-quantum-planar-rotors/README.md),
+[summary](../results/t11-quantum-planar-rotors/summary.json),
+[driver](../code/python/t11_quantum_planar_rotors.py), and
+[figure](../figures/t11-quantum-planar-rotors/energy-transfer.pdf).
+
+<a id="ns38"></a>
+
+### NS38 — Closed/nonclosed four-to-five-to-six connectivity
+
+The Casimir-plus-hopping Hamiltonian is tested in the full six-channel,
+six-boson space (12,376 states) and its singlet subspace (490 states). A
+normalized singlet with counts $(2,1,1,2,0,0)$ connects to
+$(1,1,1,2,0,1)$ and then $(1,1,1,1,1,1)$, with each directed matrix element
+$-\sqrt2\,t$. The same chain occurs in total-spin-three states, including an
+$M=0$ state whose mean spin is zero. The ring's actual second-power
+six-channel amplitude has norm $4t^2$. Singlet $P_5HP_4$ has rank 90 and
+$P_6H^2P_4$ rank five on both ring and complete graphs. Five-channel and
+minimum-boson controls, no hopping and disconnected receivers were checked.
+The 99 independent dictionary-algebra checks have maximum residual
+$1.99\times10^{-15}$; the suite then had 67 tests.
+
+[Derivation](face-activation-connectivity.md),
+[result report](../results/t11-face-connectivity/README.md),
+[primary record](../results/t11-face-connectivity/L6-K3.json), and
+[driver](../code/python/t11_face_connectivity.py).
+
+<a id="ns39"></a>
+
+### NS39 — Sparse closed-state geometric redistribution
+
+At $K=4$, compare four, six and eight channels on normalized rings and
+complete graphs, with Casimir couplings $\alpha=0,1,5$. Two preparations
+condition regular/deformed FL states onto exactly four spin-one channels;
+a third retains unconditioned regular FL occupation fluctuations. The
+54 trajectories contain 5,454 time rows. For the regular sharp eight-channel
+input at $\alpha=1$, late receiver-area fractions are 50.6% (ring) and
+34.6% (complete), while probabilities for at least five occupied channels
+are 68.1% and 67.6%. Positive RS volume, pair angles and entropies are saved
+at selected times; the volume uses all vertex triples independently of the
+interaction graph. Sparse construction uses 108,900 magnetic states and
+13,860 singlets at the largest size. All 73 tests and 91,476 independent
+saved-data/analytic checks pass, maximum residual $6.43\times10^{-12}$.
+Compact numerical outputs occupy about 5.6 MB; wavefunction histories are
+not retained.
+
+[Pedagogical account](geometric-area-redistribution.md),
+[result report](../results/t11-geometric-redistribution/README.md),
+[run summaries](../results/t11-geometric-redistribution/summary.csv),
+[driver](../code/python/t11_geometric_redistribution.py),
+[area figure](../figures/t11-geometric-redistribution/area-transfer.pdf), and
+[geometry figure](../figures/t11-geometric-redistribution/geometry-and-activation.pdf).
+
+<a id="ns40"></a>
+
+### NS40 — A permutation selection rule for all-eight occupation
+
+A post-run diagnostic explains why the regular sharp preparation on the
+symmetric complete graph has all-eight probability below
+$2\times10^{-30}$, while the deformed preparation does not. Empty receivers
+are initially permutation symmetric. Within the all-eight singlet target,
+receiver symmetry requires original-group symmetry; the corresponding target
+subspace has rank one. The regular sharp source has symmetric weight
+$1.06\times10^{-32}$, versus 0.348993 for the deformed source. The checked
+target-projector identity has residual $2.95\times10^{-17}$. Complete-graph
+permutation invariance preserves the restriction, while the ring permits
+all-eight activation. This check followed inspection of NS39; it is not an
+additional trajectory scan.
+
+[Explanation](geometric-area-redistribution.md),
+[saved symmetry check](../results/t11-geometric-redistribution/symmetry-control.json),
+and [diagnostic program](../code/python/check_t11_channel_symmetry.py).
+
 ## Numerical infrastructure and browsing
 
 The [Python–TypeScript benchmark](../results/python-vs-ts/README.md), recorded in the October 9–10 backend work, independently constructs the matched $K=2$ T11 model and compares matrix construction, roots, eigensystems, sparse actions, and thermal readouts. Its saved numerical parity and timings accompany the Python-plus-Rust research stack.
 
 Shared state, volume, geometry, Hamiltonian, sewing, and thermal routines live in [the Python package](../code/python/lqg_scattering/). Study drivers select parameters and write artifacts. Package extraction retained saved-result parity and passed build, installation, and test checks.
 
-The [InfoDash numerical dashboard](../code/dashboard/index.html) is the single interface for the overview, study records, figures, tasks, and case-level datasets. Its [study catalogue](../code/dashboard/studies.json) and 30 selectable numerical datasets are generated from saved artifacts by [the catalogue builder](../code/python/dashboard_assets/build_research_catalogue.py), which uses [the numerical-data exporter](../code/python/dashboard_assets/export_numerical_data.py). This document supplies the chronological narrative; the dashboard provides the interactive numerical records and downloads.
+The [InfoDash numerical dashboard](../code/dashboard/index.html) is the single interface for the overview, study records, figures, tasks, and case-level datasets. Its [study catalogue](../code/dashboard/studies.json) and selectable numerical datasets are generated from saved artifacts by [the catalogue builder](../code/python/dashboard_assets/build_research_catalogue.py), which uses [the numerical-data exporter](../code/python/dashboard_assets/export_numerical_data.py). This document supplies the chronological narrative; the dashboard provides the interactive numerical records and downloads.
 
 ## Maintaining this record
 

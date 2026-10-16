@@ -46,9 +46,9 @@ All 42 runs passed Gram, singlet closure, hopping leakage, initial-state project
 
 Independent verification additionally compares free readouts with analytic U(L) spinor evolution and FL marginal formulas, and checks saved active-count probability normalization, nonnegativity and occupation bounds. It passed 252,840 comparisons, including 714 analytic comparisons; maximum residual 1.88e-13. All 46 existing regression tests passed.
 
-Run from the repository root with the scientific Python interpreter and OPENBLAS_NUM_THREADS=1, PYTHONPATH=code/python: first code/python/t11_equilibration.py, then code/python/verify_t11_equilibration.py. The full-resolution time series stays local and is omitted from Git and the dashboard package; selected summaries and figures are included in the published dashboard.
+Run from the repository root with the scientific Python interpreter and OPENBLAS_NUM_THREADS=1, PYTHONPATH=code/python: first code/python/t11_equilibration.py, then code/python/verify_t11_equilibration.py. The full-resolution time series stays local and is ignored by Git; compact summaries and selected figures are included in the published dashboard package.
 
-Files: protocol.json; summary.csv (both windows, fluctuations in readout distance, returns and threshold sensitivity); references.csv; validation.json; independent-validation.json; provenance.json; sha256.json. The full-resolution `dynamics.csv` (84,042 samples) is generated locally and omitted from Git and the dashboard package because of its size. Observable indices in references.csv are 0=concentration, 1=extra-area fraction, 2+m=probability of m occupied channels.
+Files: protocol.json; summary.csv (both windows, fluctuations in readout distance, returns and threshold sensitivity); references.csv; validation.json; independent-validation.json; provenance.json; sha256.json. The full-resolution `dynamics.csv` (84,042 samples) is generated locally and ignored by Git because of its size. Observable indices in references.csv are 0=concentration, 1=extra-area fraction, 2+m=probability of m occupied channels.
 
 ## Next calculation
 

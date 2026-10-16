@@ -1,5 +1,7 @@
 # Singlet exchange between closed FL polyhedra
 
+[Research map](quantum-geometry-research.md) · Related: [thermal geometry and singlet exchange](thermal-geometry-and-singlet-exchange.md), [constructive sewing probe](constructive-sewing-probe.md).
+
 *Created: 2026-10-14 14:35:25 IST*
 
 For the consolidated physical narrative and all related heating/exchange figures, see [Heating closed quantum geometry](thermal-geometry-and-singlet-exchange.md). This document remains the detailed implementation specification.

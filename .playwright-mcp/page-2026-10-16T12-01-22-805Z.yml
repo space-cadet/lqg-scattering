@@ -1,0 +1,93 @@
+- generic [ref=f3e2]:
+  - navigation "Numerical datasets" [ref=f3e3]:
+    - generic [ref=f3e4]: Numerical study
+    - combobox "Numerical study" [ref=f3e5]:
+      - option "All studies — overview"
+      - option "Small-area face-channel equilibration pilot (12 rows)"
+      - option "Classical rotor spreading and equilibrium comparison (24 rows)"
+      - 'option "Few-rotor transfer: planar bound and 3D controls (27 rows)"'
+      - option "Rotor coupling crossover and delayed release (64 rows)"
+      - 'option "Large-area tetrahedron: face activation and recurrence (20 rows)"'
+      - option "Entanglement of separately closed thermal polyhedra (86 rows)"
+      - option "Ordinary closure versus temperature (125 rows)"
+      - option "Heating separately closed area and positive RS volume (85 rows)"
+      - option "Singlet exchange between closed FL polyhedra (20 rows)"
+      - 'option "Four versus five sites: thermal-volume persistence (12 rows)"'
+      - option "Prepared tetrahedral FL states and the volume crossover (11 rows)"
+      - option "Candidate geometric Hamiltonians and prepared-FL dynamics (62 rows)"
+      - option "Four-site Hamiltonian spectra and RS-volume observables (30 rows)"
+      - option "Complete four-face closed-basis volumes (11 rows)"
+      - option "Variable-face positive RS catalogue (9 rows)"
+      - option "Squeezed-vacuum area coefficients (964 rows)"
+      - option "Squeezed-vacuum resultant spin (196 rows)"
+      - option "Excited J_in=1 joint area and spin (5 rows)"
+      - option "Higher-J flat-boundary probes (13 rows)"
+      - option "Magnetization and signed-grasp correlations (10 rows)"
+      - option "Local-chirality pilot (13 rows)"
+      - option "Imaginary-perturbation response (26 rows)"
+      - option "Cocycle-phase pilot (10 rows)"
+      - option "Large-K recorded families and fits (13 rows)"
+      - option "Historical single-copy thermal pilot (14 rows)"
+      - option "Historical energy-basis TFD pilot (14 rows)"
+      - option "Historical complexified purification (10 rows)"
+      - option "Small-sector thermal geometry audit (4 rows)"
+      - option "RS/AL volume-prescription controls (2 rows)"
+      - option "Initial covariance reconstruction pilot (6 rows)"
+      - option "Quantum planar-rotor transfer at zero total momentum (NS37) (2 rows)"
+      - option "Closed and open four-to-five-to-six channel transitions (NS38) (30 rows)" [selected]
+      - option "Exact-singlet geometric area redistribution (NS39–NS40) (54 rows)"
+      - option "Prepared FL evolution sampling (50 rows)"
+      - option "Positive volumes on two real-plane states (2 rows)"
+      - option "FL covariance shape recovery (84 rows)"
+      - option "Weighted FL input geometry and volumes (14 rows)"
+      - option "Regular FL volume versus area (5 rows)"
+      - option "Equal-area FL shape scan at J=2 (440 rows)"
+      - option "Same-number detachment energies (8 rows)"
+      - option "Closed and open state evolution probes (6 rows)"
+      - option "Constructive edge sewing probes (5 rows)"
+  - heading "Closed and open four-to-five-to-six channel transitions (NS38)" [level=1] [ref=f3e6]
+  - paragraph [ref=f3e7]: The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.
+  - generic [ref=f3e8]:
+    - generic [ref=f3e9]:
+      - generic [ref=f3e10]: "30"
+      - generic [ref=f3e11]: Total Runs
+    - generic [ref=f3e12]:
+      - generic [ref=f3e13]: "0"
+      - generic [ref=f3e14]: Tasks
+    - generic [ref=f3e15]:
+      - generic [ref=f3e16]: "30"
+      - generic [ref=f3e17]: Complete
+    - generic [ref=f3e18]:
+      - generic [ref=f3e19]: "0"
+      - generic [ref=f3e20]: Figures
+  - tablist "Dashboard sections" [ref=f3e21]:
+    - tab "Runs & Studies" [ref=f3e22] [cursor=pointer]
+    - tab "Figure Archive" [ref=f3e23] [cursor=pointer]
+    - tab "Charts" [ref=f3e24] [cursor=pointer]
+    - tab "Tasks & Numerical Notes" [active] [selected] [ref=f3e25] [cursor=pointer]
+  - tabpanel "Tasks & Numerical Notes" [ref=f3e731]:
+    - heading "Tasks and Numerical Notes" [level=2] [ref=f3e732]
+    - region [ref=f3e734]:
+      - heading "Documentation" [level=3] [ref=f3e735]
+      - generic [ref=f3e736]:
+        - article [ref=f3e737]:
+          - group [ref=f3e738]:
+            - generic "Face activation connectivity Explanation and calculation record for this study. Open note" [ref=f3e739] [cursor=pointer]:
+              - generic [ref=f3e740]: Face activation connectivity
+              - generic [ref=f3e741]: Explanation and calculation record for this study.
+              - generic [ref=f3e742]: Open note
+          - link "Download Markdown" [ref=f3e743] [cursor=pointer]:
+            - /url: http://127.0.0.1:8767/study-assets/notes/face-activation-connectivity.txt
+        - article [ref=f3e744]:
+          - group [ref=f3e745]:
+            - generic "Quantum geometry research Explanation and calculation record for this study. Open note" [ref=f3e746] [cursor=pointer]:
+              - generic [ref=f3e747]: Quantum geometry research
+              - generic [ref=f3e748]: Explanation and calculation record for this study.
+              - generic [ref=f3e749]: Open note
+          - link "Download Markdown" [ref=f3e750] [cursor=pointer]:
+            - /url: http://127.0.0.1:8767/study-assets/notes/quantum-geometry-research.txt
+        - article [ref=f3e751]:
+          - generic [ref=f3e752]:
+            - link "Numerical studies overview" [ref=f3e754] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/index.html
+            - paragraph

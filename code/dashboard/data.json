@@ -192,9 +192,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/t11-candidate-hamiltonians/dynamics_schedule.csv",
@@ -219,9 +219,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/t1b_real_plane_volume_results.json",
@@ -246,9 +246,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/t5c_shape_recovery_results.json",
@@ -273,9 +273,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/t5c_input_geometry_results.json",
@@ -300,9 +300,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/fl_volume_area_results.json",
@@ -327,9 +327,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from code/dashboard/fl-volume-shape-j2.json",
@@ -354,9 +354,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/binding-energy/summary.json",
@@ -381,9 +381,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/state-space-probes/summary.json",
@@ -408,9 +408,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Saved numerical records from results/sewing-probes/summary.json",
@@ -443,9 +443,9 @@
         "fileCount": 9
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Representative K=3 late-window readouts from the finite-area quantum pilot. The regular input covers L=4,5,6 at U=0,1,5; a phase-shifted U=5 control shows preparation dependence. The study asks how readouts approach the exact dephased reference, not whether a canonical state is reached.",
@@ -501,9 +501,9 @@
         "fileCount": 18
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2\u201390.4%. At packet energy 100, the hot pair retains 98.7\u201399.0% of local energy through t=2000.",
@@ -548,9 +548,9 @@
         "fileCount": 13
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.",
@@ -595,9 +595,9 @@
         "fileCount": 23
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "The dashboard plots 56 grouped three-seed cases at the primary late window, plus eight direct-coupling checks. The ratio scan spans N=8,16,32,64 and 14 packet-energy-to-coupling ratios; separate direct controls vary \u03bb at fixed packet energy and physical observation time.",
@@ -642,9 +642,9 @@
         "fileCount": 11
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.",
@@ -700,9 +700,9 @@
         "fileCount": 12
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "86 temperatures over T*=0.05..5. Exact Schmidt eigenvalues and multiplicities yield entropy, area-sector decomposition, purity, Renyi-2 entropy and coherent joint singlet creation. Within-area entanglement exceeds area-distribution entropy at T*=1,2,5.",
@@ -747,9 +747,9 @@
         "fileCount": 6
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "125 temperatures quantify per-copy Gauss defect and declining singlet fraction for the selected area-one two-copy reference.",
@@ -805,9 +805,9 @@
         "fileCount": 11
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "85 temperatures over T*=0.05..2: retained probability, conditional area and positive RS-volume distributions. Exact high-temperature mean-area coefficient 57/14.",
@@ -852,9 +852,9 @@
         "fileCount": 8
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.",
@@ -909,9 +909,9 @@
         "fileCount": 24
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Matched mean occupation 2K/L=2: (L,K)=(4,4) and (5,5), singlet dimensions 105 and 1,176. Complete and ring graphs at t=1,U=20, plus free and no-hopping controls. Intermediate-temperature nonmonotonicity persists; the pronounced four-site complete-graph low-temperature collapse does not.",
@@ -956,9 +956,9 @@
         "fileCount": 23
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Five explicitly constructed K=4 FL references: equal input face areas, phi=90,60,30,10,0 degrees. Saved face-spin distributions, pair correlations, angular fluctuations, volume distributions and overlaps; comparisons with the first three energy groups of complete/ring Hamiltonians at t=1,U=20. The complete ground is kernel-dominated despite nearly unit four-face weight.",
@@ -1047,9 +1047,9 @@
         "fileCount": 20
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Exact K=4, total-spin-zero study (dimension 105). The baseline is complete-graph face-to-face area exchange plus on-site repulsion, with equal hopping strength on each bond. We added the positive RS-volume term and the signed triple-grasp term as separate candidate Hamiltonians, then evolved five explicitly prepared FL references under the baseline and both signed couplings. The 62 parameter settings cover U/t=0,1,5,20 and normalized coupling alpha=-2,-1,-0.5,0,0.5,1,2; the ring is included only as a sparse-hopping control. The study contains 6,510 saved energy levels and 50 prepared-state trajectories.",
@@ -1138,9 +1138,9 @@
         "fileCount": 20
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Exact diagonalization of the hopping-plus-on-site-repulsion operator H_G=-t \u03a3_(i,j)\u2208E_G(E_ij+E_ji)+(U/2)\u03a3_i n_i(n_i\u22121), where E_ij=a_i\u2020a_j+b_i\u2020b_j and n_i=a_i\u2020a_i+b_i\u2020b_i. Four sites, fixed boson number 2K and total spin zero; K=2,3,4 gives dimensions 20,50,105, with empty sites allowed. Compare the complete graph (6 hopping bonds) and periodic ring (4), with equal t per bond. The 30 cases use (t,U)=(0,1) or t=1 and U/t=0,1,5,20.",
@@ -1218,9 +1218,9 @@
         "fileCount": 38
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Four labelled faces, zero-spin faces allowed; K=2 through 12, 10,549 basis states. RS/AL means, variances, spectra and reconstructible operators.",
@@ -1287,9 +1287,9 @@
         "fileCount": 41
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Nine sectors at K=2,3,4 with 4<=N<=2K. Closed dimensions 2,36,347; positive-volume dimensions 2,32,329. Independent reconstruction covers 112 blocks and 385 eigenstates.",
@@ -1334,9 +1334,9 @@
         "fileCount": 3
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "J_in=0, four faces and eight modes per copy; coefficient and area distributions at four temperatures.",
@@ -1381,9 +1381,9 @@
         "fileCount": 3
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Ordinary per-copy spin distributions conditioned on boson number, at beta*hbar*omega=1.",
@@ -1439,9 +1439,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Five temperatures, q through 160; 32,805 independent-method comparisons with maximum difference 2.67e-16.",
@@ -1486,9 +1486,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Saved Python and Rust probes extend the earlier weighted-input boundary scans.",
@@ -1533,9 +1533,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Converged n=5 magnetization sweep; the tested magnetization hypothesis was not supported.",
@@ -1580,9 +1580,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Saved plane/channel agreement statistics; the local subset did not establish hidden handedness.",
@@ -1627,9 +1627,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.",
@@ -1674,9 +1674,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Ten recorded points compare phase defect with signed grasp; broader study remains open.",
@@ -1721,9 +1721,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Saved families through historical K=24. The proposed K^(3/2) scaling was not supported for these families.",
@@ -1768,9 +1768,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Archived T7A study, retained under current T9 ownership.",
@@ -1815,9 +1815,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Archived T7B study, retained under current T9 ownership.",
@@ -1862,9 +1862,9 @@
         "fileCount": 2
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Archived T7E study, retained under current T9 ownership.",
@@ -1909,9 +1909,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Four regular/unequal-shape seed cases; draft squeeze compared with explicit double-singlet postselection.",
@@ -1956,9 +1956,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Independent tensor controls: paired spin-half singlet has positive RS/AL volume despite zero signed mean; collinear product gives zero.",
@@ -2003,9 +2003,9 @@
         "fileCount": 1
       },
       "provenance": {
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00"
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
       },
       "assessment": {
         "summary": "Six saved pilot records; later shape recovery and weighted-input studies are shown in Volume Studies.",
@@ -2018,11 +2018,151 @@
           "path": "index.html?data=datasets/covariance-pilot.json"
         }
       ]
+    },
+    {
+      "runId": "t11-quantum-planar-rotors",
+      "task": "T11",
+      "status": "complete",
+      "description": "Quantum planar-rotor transfer at zero total momentum (NS37)",
+      "studyId": "t11-quantum-planar-rotors",
+      "params": {
+        "scope": "Two four-rotor ring preparations start in |m,-m,0,0| with exactly zero total momentum. Each row compares the saved late-window cold-pair kinetic fraction with an independent classical ensemble and reports the quantum single-rotor entropy for the initially energetic pair, initially cold pair, and all four sites.",
+        "limits": "First pilot at epsilon=I=lambda=hbar=1, four sites and times 0 to 20. The reported energy is a mean, not a sharp total-energy eigenvalue. The matched classical initial measure does not establish later quantum/classical agreement, equilibration, a classical limit, or three-dimensional singlet dynamics.",
+        "calculationStatus": "Two accepted cutoff-10 cases; 6,181 zero-momentum sector states; norm, energy, classical refinement and momentum checks recorded"
+      },
+      "figures": [
+        {
+          "name": "energy-transfer.png",
+          "path": "study-assets/figures/t11-quantum-planar-rotors/energy-transfer.png",
+          "source": "figures/t11-quantum-planar-rotors/energy-transfer.png",
+          "sourceSha256": "a14a11dcc474039412df166b1b69bdc39bbcdc5cdbd49634c90941d4c136fd35",
+          "title": "Quantum and matched classical planar-rotor energy transfer",
+          "width": 2130,
+          "height": 1530,
+          "wide": false,
+          "pdf": "study-assets/figures/t11-quantum-planar-rotors/energy-transfer.pdf"
+        }
+      ],
+      "catalogueDate": "2026-10-16",
+      "parameters": {},
+      "results": {
+        "caseCount": 2,
+        "fileCount": 26
+      },
+      "provenance": {
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
+      },
+      "assessment": {
+        "summary": "Two four-rotor ring preparations start in |m,-m,0,0| with exactly zero total momentum. Each row compares the saved late-window cold-pair kinetic fraction with an independent classical ensemble and reports the quantum single-rotor entropy for the initially energetic pair, initially cold pair, and all four sites.",
+        "limits": "First pilot at epsilon=I=lambda=hbar=1, four sites and times 0 to 20. The reported energy is a mean, not a sharp total-energy eigenvalue. The matched classical initial measure does not establish later quantum/classical agreement, equilibration, a classical limit, or three-dimensional singlet dynamics.",
+        "recordedStudyStatus": "Two accepted cutoff-10 cases; 6,181 zero-momentum sector states; norm, energy, classical refinement and momentum checks recorded"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/t11-quantum-planar-rotors.json"
+        }
+      ]
+    },
+    {
+      "runId": "t11-face-connectivity",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "studyId": "t11-face-connectivity",
+      "params": {
+        "scope": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "limits": "Operator connectivity at alpha=t=hbar=1, with fixed boson number. A connected singlet basis does not mean every state activates every sector; open zero-mean-spin states are not singlets. This is not time evolution or geometric reconstruction.",
+        "calculationStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      },
+      "figures": [],
+      "catalogueDate": "2026-10-16",
+      "parameters": {},
+      "results": {
+        "caseCount": 30,
+        "fileCount": 6
+      },
+      "provenance": {
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "limits": "Operator connectivity at alpha=t=hbar=1, with fixed boson number. A connected singlet basis does not mean every state activates every sector; open zero-mean-spin states are not singlets. This is not time evolution or geometric reconstruction.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/t11-face-connectivity.json"
+        }
+      ]
+    },
+    {
+      "runId": "t11-geometric-redistribution",
+      "task": "T11",
+      "status": "complete",
+      "description": "Exact-singlet geometric area redistribution (NS39\u2013NS40)",
+      "studyId": "t11-geometric-redistribution",
+      "params": {
+        "scope": "Fifty-four K=4 exact-singlet trajectories compare L=4,6,8 rings and complete graphs at alpha=0,1,5. The 54 case summaries are grouped in the chart by size, graph and preparation, with one point per coupling. The package also includes 270 selected geometry samples and the post-run permutation selection rule recorded as NS40.",
+        "limits": "Finite evolution through \u03c4=20 from regular-sharp, deformed-sharp and regular FL preparations. K is conserved linear area; the higher-valence RS volume stays in project units. Singlet mean fluxes vanish, so the pair and volume readouts do not identify distinct classical face normals or a unique polyhedron. The permutation rule explains a source-specific all-channel suppression and did not select or remove trajectories.",
+        "calculationStatus": "54 exact-singlet trajectories; 270 geometry samples; 91,476 independent observable checks with maximum residual 6.43e-12; NS40 post-run diagnostic included"
+      },
+      "figures": [
+        {
+          "name": "area-transfer.png",
+          "path": "study-assets/figures/t11-geometric-redistribution/area-transfer.png",
+          "source": "figures/t11-geometric-redistribution/area-transfer.png",
+          "sourceSha256": "cd9bfa972e51243d421dccd34bef6a0d0a876cecdb0c7d775de15d76a61e482c",
+          "title": "Area redistribution across exact singlet trajectories",
+          "width": 2160,
+          "height": 1440,
+          "wide": false,
+          "pdf": "study-assets/figures/t11-geometric-redistribution/area-transfer.pdf"
+        },
+        {
+          "name": "geometry-and-activation.png",
+          "path": "study-assets/figures/t11-geometric-redistribution/geometry-and-activation.png",
+          "source": "figures/t11-geometric-redistribution/geometry-and-activation.png",
+          "sourceSha256": "dcb1c687646f101a54f910352d4c7048b35780bbd8118cb115620095784abd48",
+          "title": "Geometry samples and active-channel redistribution",
+          "width": 2130,
+          "height": 1500,
+          "wide": false,
+          "pdf": "study-assets/figures/t11-geometric-redistribution/geometry-and-activation.pdf"
+        }
+      ],
+      "catalogueDate": "2026-10-16",
+      "parameters": {},
+      "results": {
+        "caseCount": 54,
+        "fileCount": 18
+      },
+      "provenance": {
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00"
+      },
+      "assessment": {
+        "summary": "Fifty-four K=4 exact-singlet trajectories compare L=4,6,8 rings and complete graphs at alpha=0,1,5. The 54 case summaries are grouped in the chart by size, graph and preparation, with one point per coupling. The package also includes 270 selected geometry samples and the post-run permutation selection rule recorded as NS40.",
+        "limits": "Finite evolution through \u03c4=20 from regular-sharp, deformed-sharp and regular FL preparations. K is conserved linear area; the higher-valence RS volume stays in project units. Singlet mean fluxes vanish, so the pair and volume readouts do not identify distinct classical face normals or a unique polyhedron. The permutation rule explains a source-specific all-channel suppression and did not select or remove trajectories.",
+        "recordedStudyStatus": "54 exact-singlet trajectories; 270 geometry samples; 91,476 independent observable checks with maximum residual 6.43e-12; NS40 post-run diagnostic included"
+      },
+      "artifacts": [
+        {
+          "label": "Open numerical cases and charts",
+          "path": "index.html?data=datasets/t11-geometric-redistribution.json"
+        }
+      ]
     }
   ],
   "summary": {
-    "totalRuns": 47,
-    "completeRuns": 47,
+    "totalRuns": 50,
+    "completeRuns": 50,
     "zeroSignedMeanOnRealPlanes": true,
     "nRangeRecorded": "4-8",
     "convergedBaselineVerified": true,
@@ -2032,7 +2172,7 @@
     "publishedPaper": "EPJC (2022)",
     "followUpManuscript": "In progress",
     "independentN6Pending": true,
-    "registeredStudies": 30
+    "registeredStudies": 33
   },
   "theory": {
     "description": "The catalogue records exact singlet Hamiltonian studies, kinematic RS/AL catalogues, selected squeezed thermal-sector distributions, finite-area face-channel readouts, and classical rotor energy-transfer studies. Model support, sampling choices, normalization and verification limits accompany each result. Broader parameter, finite-size and bulk-phase studies remain open.",
@@ -2880,6 +3020,54 @@
       "tags": [
         "T5c"
       ]
+    },
+    {
+      "name": "energy-transfer.png",
+      "path": "study-assets/figures/t11-quantum-planar-rotors/energy-transfer.png",
+      "source": "figures/t11-quantum-planar-rotors/energy-transfer.png",
+      "sourceSha256": "a14a11dcc474039412df166b1b69bdc39bbcdc5cdbd49634c90941d4c136fd35",
+      "title": "Quantum and matched classical planar-rotor energy transfer",
+      "width": 2130,
+      "height": 1530,
+      "wide": false,
+      "pdf": "study-assets/figures/t11-quantum-planar-rotors/energy-transfer.pdf",
+      "studyId": "t11-quantum-planar-rotors",
+      "description": "Quantum planar-rotor transfer at zero total momentum (NS37)",
+      "tags": [
+        "T11"
+      ]
+    },
+    {
+      "name": "area-transfer.png",
+      "path": "study-assets/figures/t11-geometric-redistribution/area-transfer.png",
+      "source": "figures/t11-geometric-redistribution/area-transfer.png",
+      "sourceSha256": "cd9bfa972e51243d421dccd34bef6a0d0a876cecdb0c7d775de15d76a61e482c",
+      "title": "Area redistribution across exact singlet trajectories",
+      "width": 2160,
+      "height": 1440,
+      "wide": false,
+      "pdf": "study-assets/figures/t11-geometric-redistribution/area-transfer.pdf",
+      "studyId": "t11-geometric-redistribution",
+      "description": "Exact-singlet geometric area redistribution (NS39\u2013NS40)",
+      "tags": [
+        "T11"
+      ]
+    },
+    {
+      "name": "geometry-and-activation.png",
+      "path": "study-assets/figures/t11-geometric-redistribution/geometry-and-activation.png",
+      "source": "figures/t11-geometric-redistribution/geometry-and-activation.png",
+      "sourceSha256": "dcb1c687646f101a54f910352d4c7048b35780bbd8118cb115620095784abd48",
+      "title": "Geometry samples and active-channel redistribution",
+      "width": 2130,
+      "height": 1500,
+      "wide": false,
+      "pdf": "study-assets/figures/t11-geometric-redistribution/geometry-and-activation.pdf",
+      "studyId": "t11-geometric-redistribution",
+      "description": "Exact-singlet geometric area redistribution (NS39\u2013NS40)",
+      "tags": [
+        "T11"
+      ]
     }
   ],
   "volumeShape": {
@@ -3146,7 +3334,7 @@
       {
         "id": "T11",
         "title": "Hamiltonian, face-channel and rotor studies",
-        "description": "Four/five-site Hamiltonians, large-area face activation, a finite-area equilibration pilot, grouped classical rotor spreading, few-rotor transfer and coupling scans are saved. Rotor records use selected summaries and representative cases; large-area quantum equilibration, permanent localization, universal thermalization and the crossover's infinite-time limit remain open."
+        "description": "Four/five-site Hamiltonians, large-area face activation, a finite-area equilibration pilot, grouped classical rotor studies and the NS37\u2013NS40 quantum/geometry records are saved. The geometric dataset has 54 exact-singlet trajectories and a post-run symmetry rule; broader finite-size, equilibration and geometric interpretation remain open."
       }
     ],
     "completed": [
@@ -3291,6 +3479,26 @@
       "title": "Coupling strength and the apparent transfer cutoff",
       "path": "study-assets/notes/rotor-coupling-crossover.txt",
       "description": "Finite-time coupling scan, direct controls and delayed transfer."
+    },
+    {
+      "title": "Quantum and geometric T11 results",
+      "path": "study-assets/notes/quantum-geometry-research.txt",
+      "description": "NS37\u2013NS40: planar-rotor transfer, occupation connectivity, exact-singlet area redistribution, and its post-run permutation rule."
+    },
+    {
+      "title": "Four quantum planar rotors at zero total momentum",
+      "path": "study-assets/notes/quantum-planar-rotor-energy-transfer.txt",
+      "description": "Two matched quantum/classical energy-transfer cases and quantum single-rotor entropies."
+    },
+    {
+      "title": "Four-to-five-to-six face-channel connectivity",
+      "path": "study-assets/notes/face-activation-connectivity.txt",
+      "description": "Exact closed and open occupation transitions, including direct and two-hop matrix elements."
+    },
+    {
+      "title": "Exact-singlet geometric area redistribution",
+      "path": "study-assets/notes/geometric-area-redistribution.txt",
+      "description": "Fifty-four exact-singlet trajectories, selected geometry samples and a post-run symmetry diagnostic."
     }
   ]
 }

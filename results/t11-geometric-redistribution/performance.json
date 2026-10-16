@@ -1,0 +1,323 @@
+[
+  {
+    "L": 4,
+    "stage": "basis_and_geometry",
+    "seconds": 0.1353952920762822,
+    "magnetic_dimension": 1225,
+    "singlet_dimension": 105
+  },
+  {
+    "L": 4,
+    "stage": "L4_ring_a0_regular_sharp",
+    "seconds": 0.03993529092986137
+  },
+  {
+    "L": 4,
+    "stage": "L4_ring_a0_deformed_sharp",
+    "seconds": 0.037719083949923515
+  },
+  {
+    "L": 4,
+    "stage": "L4_ring_a0_regular_FL",
+    "seconds": 0.03852108295541257
+  },
+  {
+    "L": 4,
+    "stage": "L4_ring_a1_regular_sharp",
+    "seconds": 0.024509915965609252
+  },
+  {
+    "L": 4,
+    "stage": "L4_ring_a1_deformed_sharp",
+    "seconds": 0.024040292017161846
+  },
+  {
+    "L": 4,
+    "stage": "L4_ring_a1_regular_FL",
+    "seconds": 0.024232332943938673
+  },
+  {
+    "L": 4,
+    "stage": "L4_ring_a5_regular_sharp",
+    "seconds": 0.028019499965012074
+  },
+  {
+    "L": 4,
+    "stage": "L4_ring_a5_deformed_sharp",
+    "seconds": 0.0279612090671435
+  },
+  {
+    "L": 4,
+    "stage": "L4_ring_a5_regular_FL",
+    "seconds": 0.029855209053494036
+  },
+  {
+    "L": 4,
+    "stage": "ring_all_runs",
+    "seconds": 0.2932088749948889
+  },
+  {
+    "L": 4,
+    "stage": "L4_complete_a0_regular_sharp",
+    "seconds": 0.022605458041653037
+  },
+  {
+    "L": 4,
+    "stage": "L4_complete_a0_deformed_sharp",
+    "seconds": 0.024139874964021146
+  },
+  {
+    "L": 4,
+    "stage": "L4_complete_a0_regular_FL",
+    "seconds": 0.024125290918163955
+  },
+  {
+    "L": 4,
+    "stage": "L4_complete_a1_regular_sharp",
+    "seconds": 0.023983624996617436
+  },
+  {
+    "L": 4,
+    "stage": "L4_complete_a1_deformed_sharp",
+    "seconds": 0.024281457997858524
+  },
+  {
+    "L": 4,
+    "stage": "L4_complete_a1_regular_FL",
+    "seconds": 0.024032582994550467
+  },
+  {
+    "L": 4,
+    "stage": "L4_complete_a5_regular_sharp",
+    "seconds": 0.027828332968056202
+  },
+  {
+    "L": 4,
+    "stage": "L4_complete_a5_deformed_sharp",
+    "seconds": 0.027966875000856817
+  },
+  {
+    "L": 4,
+    "stage": "L4_complete_a5_regular_FL",
+    "seconds": 0.030456333071924746
+  },
+  {
+    "L": 4,
+    "stage": "complete_all_runs",
+    "seconds": 0.2547010410344228
+  },
+  {
+    "L": 6,
+    "stage": "basis_and_geometry",
+    "seconds": 0.5485345829511061,
+    "magnetic_dimension": 15876,
+    "singlet_dimension": 1764
+  },
+  {
+    "L": 6,
+    "stage": "L6_ring_a0_regular_sharp",
+    "seconds": 0.10165837500244379
+  },
+  {
+    "L": 6,
+    "stage": "L6_ring_a0_deformed_sharp",
+    "seconds": 0.09815816697664559
+  },
+  {
+    "L": 6,
+    "stage": "L6_ring_a0_regular_FL",
+    "seconds": 0.09591008396819234
+  },
+  {
+    "L": 6,
+    "stage": "L6_ring_a1_regular_sharp",
+    "seconds": 0.6725402909796685
+  },
+  {
+    "L": 6,
+    "stage": "L6_ring_a1_deformed_sharp",
+    "seconds": 0.10140216595027596
+  },
+  {
+    "L": 6,
+    "stage": "L6_ring_a1_regular_FL",
+    "seconds": 0.0992019580444321
+  },
+  {
+    "L": 6,
+    "stage": "L6_ring_a5_regular_sharp",
+    "seconds": 0.14096741599496454
+  },
+  {
+    "L": 6,
+    "stage": "L6_ring_a5_deformed_sharp",
+    "seconds": 0.1436760409269482
+  },
+  {
+    "L": 6,
+    "stage": "L6_ring_a5_regular_FL",
+    "seconds": 0.14982183300890028
+  },
+  {
+    "L": 6,
+    "stage": "ring_all_runs",
+    "seconds": 1.880265083978884
+  },
+  {
+    "L": 6,
+    "stage": "L6_complete_a0_regular_sharp",
+    "seconds": 0.12842316599562764
+  },
+  {
+    "L": 6,
+    "stage": "L6_complete_a0_deformed_sharp",
+    "seconds": 0.12509283295366913
+  },
+  {
+    "L": 6,
+    "stage": "L6_complete_a0_regular_FL",
+    "seconds": 0.12545583408791572
+  },
+  {
+    "L": 6,
+    "stage": "L6_complete_a1_regular_sharp",
+    "seconds": 1.5103912090416998
+  },
+  {
+    "L": 6,
+    "stage": "L6_complete_a1_deformed_sharp",
+    "seconds": 0.13472129090223461
+  },
+  {
+    "L": 6,
+    "stage": "L6_complete_a1_regular_FL",
+    "seconds": 0.1345359580591321
+  },
+  {
+    "L": 6,
+    "stage": "L6_complete_a5_regular_sharp",
+    "seconds": 0.21809941600076854
+  },
+  {
+    "L": 6,
+    "stage": "L6_complete_a5_deformed_sharp",
+    "seconds": 0.21916579199023545
+  },
+  {
+    "L": 6,
+    "stage": "L6_complete_a5_regular_FL",
+    "seconds": 0.245252332999371
+  },
+  {
+    "L": 6,
+    "stage": "complete_all_runs",
+    "seconds": 3.5391646249918267
+  },
+  {
+    "L": 8,
+    "stage": "basis_and_geometry",
+    "seconds": 4.218862249981612,
+    "magnetic_dimension": 108900,
+    "singlet_dimension": 13860
+  },
+  {
+    "L": 8,
+    "stage": "L8_ring_a0_regular_sharp",
+    "seconds": 0.7913873330689967
+  },
+  {
+    "L": 8,
+    "stage": "L8_ring_a0_deformed_sharp",
+    "seconds": 0.7539193329866976
+  },
+  {
+    "L": 8,
+    "stage": "L8_ring_a0_regular_FL",
+    "seconds": 0.7580599589273334
+  },
+  {
+    "L": 8,
+    "stage": "L8_ring_a1_regular_sharp",
+    "seconds": 0.8118113750824705
+  },
+  {
+    "L": 8,
+    "stage": "L8_ring_a1_deformed_sharp",
+    "seconds": 0.814424084033817
+  },
+  {
+    "L": 8,
+    "stage": "L8_ring_a1_regular_FL",
+    "seconds": 1.4215405829017982
+  },
+  {
+    "L": 8,
+    "stage": "L8_ring_a5_regular_sharp",
+    "seconds": 1.1955000000307336
+  },
+  {
+    "L": 8,
+    "stage": "L8_ring_a5_deformed_sharp",
+    "seconds": 1.193908957997337
+  },
+  {
+    "L": 8,
+    "stage": "L8_ring_a5_regular_FL",
+    "seconds": 1.2690137079916894
+  },
+  {
+    "L": 8,
+    "stage": "ring_all_runs",
+    "seconds": 11.526987416902557
+  },
+  {
+    "L": 8,
+    "stage": "L8_complete_a0_regular_sharp",
+    "seconds": 1.6858888330170885
+  },
+  {
+    "L": 8,
+    "stage": "L8_complete_a0_deformed_sharp",
+    "seconds": 1.5739187920698896
+  },
+  {
+    "L": 8,
+    "stage": "L8_complete_a0_regular_FL",
+    "seconds": 1.5375609589973465
+  },
+  {
+    "L": 8,
+    "stage": "L8_complete_a1_regular_sharp",
+    "seconds": 1.6581116669112816
+  },
+  {
+    "L": 8,
+    "stage": "L8_complete_a1_deformed_sharp",
+    "seconds": 1.6967045420315117
+  },
+  {
+    "L": 8,
+    "stage": "L8_complete_a1_regular_FL",
+    "seconds": 1.6864606670569628
+  },
+  {
+    "L": 8,
+    "stage": "L8_complete_a5_regular_sharp",
+    "seconds": 3.0893756250152364
+  },
+  {
+    "L": 8,
+    "stage": "L8_complete_a5_deformed_sharp",
+    "seconds": 3.08353141695261
+  },
+  {
+    "L": 8,
+    "stage": "L8_complete_a5_regular_FL",
+    "seconds": 3.4888395000016317
+  },
+  {
+    "L": 8,
+    "stage": "complete_all_runs",
+    "seconds": 28.34665920806583
+  }
+]

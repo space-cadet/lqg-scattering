@@ -15,7 +15,7 @@
           "name": "README.md",
           "path": "study-assets/results/t11-equilibration/README.txt",
           "source": "results/t11-equilibration/README.md",
-          "sourceSha256": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773"
+          "sourceSha256": "be4dc3a2ec073e48e7429d85273266f84c7120406e0aef8671aae7e92340bee0"
         },
         {
           "name": "protocol.json",
@@ -51,7 +51,7 @@
           "name": "classical-rotor-equilibration.md",
           "path": "study-assets/notes/classical-rotor-equilibration.txt",
           "source": "notes/classical-rotor-equilibration.md",
-          "sourceSha256": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58"
+          "sourceSha256": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0"
         },
         {
           "name": "t11_equilibration.py",
@@ -278,7 +278,7 @@
           "name": "README.md",
           "path": "study-assets/results/t11-classical-rotors/README.txt",
           "source": "results/t11-classical-rotors/README.md",
-          "sourceSha256": "61cd0504082fcb7f0371d83d066e7328ee52c9547a0ce3328237793fe13db7db"
+          "sourceSha256": "2e644e172432f96dc08e819e87e976b72c452679c771dec22d94caeb55eb6c16"
         },
         {
           "name": "protocol.json",
@@ -320,25 +320,25 @@
           "name": "README.md",
           "path": "study-assets/results/t11-equilibration/README.txt",
           "source": "results/t11-equilibration/README.md",
-          "sourceSha256": "f40e44035c157d9a31739d9d462c855fb2a93abbf8e4a98d603fe711c741c773"
+          "sourceSha256": "be4dc3a2ec073e48e7429d85273266f84c7120406e0aef8671aae7e92340bee0"
         },
         {
           "name": "classical-rotor-equilibration.md",
           "path": "study-assets/notes/classical-rotor-equilibration.txt",
           "source": "notes/classical-rotor-equilibration.md",
-          "sourceSha256": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58"
+          "sourceSha256": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0"
         },
         {
           "name": "few-rotor-energy-transfer.md",
           "path": "study-assets/notes/few-rotor-energy-transfer.txt",
           "source": "notes/few-rotor-energy-transfer.md",
-          "sourceSha256": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976"
+          "sourceSha256": "4ef72bbf0a94c8371dbb3c21dd517a7587e6f7377568d4333eed8efbf6646544"
         },
         {
           "name": "rotor-coupling-crossover.md",
           "path": "study-assets/notes/rotor-coupling-crossover.txt",
           "source": "notes/rotor-coupling-crossover.md",
-          "sourceSha256": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578"
+          "sourceSha256": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0"
         },
         {
           "name": "t11_classical_rotors.py",
@@ -861,7 +861,7 @@
           "name": "README.md",
           "path": "study-assets/results/t11-few-rotors/README.txt",
           "source": "results/t11-few-rotors/README.md",
-          "sourceSha256": "7ecd8bf596076c6c036209907cc9498704f7f32a92ffbe325d5394b9fc2d9b5a"
+          "sourceSha256": "90b057e5e1f965cc91c6e34f9148b2453b9e18db0d89005c4c09db8458d6605b"
         },
         {
           "name": "protocol.json",
@@ -903,13 +903,13 @@
           "name": "few-rotor-energy-transfer.md",
           "path": "study-assets/notes/few-rotor-energy-transfer.txt",
           "source": "notes/few-rotor-energy-transfer.md",
-          "sourceSha256": "b2def3d4bd9e411865e92884e31ecea9e86abc1fd2efe8e9e5c19fc71f4b1976"
+          "sourceSha256": "4ef72bbf0a94c8371dbb3c21dd517a7587e6f7377568d4333eed8efbf6646544"
         },
         {
           "name": "classical-rotor-equilibration.md",
           "path": "study-assets/notes/classical-rotor-equilibration.txt",
           "source": "notes/classical-rotor-equilibration.md",
-          "sourceSha256": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58"
+          "sourceSha256": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0"
         },
         {
           "name": "t11_few_rotors.py",
@@ -1321,7 +1321,7 @@
           "name": "README.md",
           "path": "study-assets/results/t11-rotor-coupling/README.txt",
           "source": "results/t11-rotor-coupling/README.md",
-          "sourceSha256": "d8e3ee31e3cd1063d08f020c0d2e7e776046c728fbf28b703246ca2fe9abccf8"
+          "sourceSha256": "d48a8fb4814d38754b99540a896fd1ca0924dc59c89072153834c4c61a7bd506"
         },
         {
           "name": "protocol.json",
@@ -1405,13 +1405,13 @@
           "name": "rotor-coupling-crossover.md",
           "path": "study-assets/notes/rotor-coupling-crossover.txt",
           "source": "notes/rotor-coupling-crossover.md",
-          "sourceSha256": "bcd99dd809c1eade4f9412709e59997fcf55d61f640f1b003819b65eb557f578"
+          "sourceSha256": "bca39bb074cbc39d519b9b11865199c555b4282e2e6897b5c57ff67798730df0"
         },
         {
           "name": "classical-rotor-equilibration.md",
           "path": "study-assets/notes/classical-rotor-equilibration.txt",
           "source": "notes/classical-rotor-equilibration.md",
-          "sourceSha256": "7ac1e13a61fd2403f45c77e2f25afa7070ccd456084fd2d2748398f1df857b58"
+          "sourceSha256": "8188d5aee0cdabd54a872cbe74ea5953a627a62497a2e711c6e1ec5badb605f0"
         },
         {
           "name": "t11_rotor_coupling_scan.py",
@@ -2316,7 +2316,7 @@
           "name": "face-energy-equipartition.md",
           "path": "study-assets/notes/face-energy-equipartition.txt",
           "source": "notes/face-energy-equipartition.md",
-          "sourceSha256": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7"
+          "sourceSha256": "600378c635ced7d43dec03d486a91c3082318b34caa50ae7c835bfe7678fd1f4"
         },
         {
           "name": "fl_face_activation.py",
@@ -2407,13 +2407,13 @@
           "name": "thermal-entanglement.md",
           "path": "study-assets/notes/thermal-entanglement.txt",
           "source": "notes/thermal-entanglement.md",
-          "sourceSha256": "29ab6f76afeffcc19419719167359e24c1f1a63c22594d670c2f4aba18fa5f1e"
+          "sourceSha256": "37ccc85f2341967818c32ec6686efa5ac5809e098fdfb0beef42fa9f11e6abc4"
         },
         {
           "name": "thermal-geometry-and-singlet-exchange.md",
           "path": "study-assets/notes/thermal-geometry-and-singlet-exchange.txt",
           "source": "notes/thermal-geometry-and-singlet-exchange.md",
-          "sourceSha256": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "sourceSha256": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         },
         {
           "name": "thermal_projection.py",
@@ -2509,7 +2509,7 @@
           "name": "thermal-geometry-and-singlet-exchange.md",
           "path": "study-assets/notes/thermal-geometry-and-singlet-exchange.txt",
           "source": "notes/thermal-geometry-and-singlet-exchange.md",
-          "sourceSha256": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "sourceSha256": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         },
         {
           "name": "closure_temperature_sweep.py",
@@ -2582,7 +2582,7 @@
           "name": "thermal-geometry-and-singlet-exchange.md",
           "path": "study-assets/notes/thermal-geometry-and-singlet-exchange.txt",
           "source": "notes/thermal-geometry-and-singlet-exchange.md",
-          "sourceSha256": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "sourceSha256": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         },
         {
           "name": "closed_projection_study.py",
@@ -2684,13 +2684,13 @@
           "name": "t9a-singlet-exchange.md",
           "path": "study-assets/notes/t9a-singlet-exchange.txt",
           "source": "notes/t9a-singlet-exchange.md",
-          "sourceSha256": "2a4ba5af5d5fb21640c81f2e4b2be25dfc4a7f3a9a8492dd41826e1a06698a6f"
+          "sourceSha256": "590035e2555eac39e394c8715de0ad4feef971cf811fb792856324ee96d59ecd"
         },
         {
           "name": "thermal-geometry-and-singlet-exchange.md",
           "path": "study-assets/notes/thermal-geometry-and-singlet-exchange.txt",
           "source": "notes/thermal-geometry-and-singlet-exchange.md",
-          "sourceSha256": "dc0cbccf52f5d110193fa88dbafd09b79fea00050121278b69ff406e65e49fd9"
+          "sourceSha256": "72652146ef10ac4c4e1c58cb4f4fde0d17b3d36d3d32e8a5efb8c519ab3311c5"
         }
       ],
       "figures": [
@@ -3221,7 +3221,7 @@
           "name": "t11-geometric-interpretation.md",
           "path": "study-assets/notes/t11-geometric-interpretation.txt",
           "source": "notes/t11-geometric-interpretation.md",
-          "sourceSha256": "04419f99a3aaae5324f2fc2c0a6e0b38be7a2dabbd0a00c3a65ff10c79a7c754"
+          "sourceSha256": "ca1e0af81c8b3362b78c88de176fd4f04c55c7664e8bed973ed94228f98e6229"
         },
         {
           "name": "geometric_diagnostics.py",
@@ -3537,7 +3537,7 @@
           "name": "hamiltonian-studies.md",
           "path": "study-assets/notes/hamiltonian-studies.txt",
           "source": "notes/hamiltonian-studies.md",
-          "sourceSha256": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "sourceSha256": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         {
           "name": "state_area_assignments.csv.gz",
@@ -3851,7 +3851,7 @@
           "name": "hamiltonian-studies.md",
           "path": "study-assets/notes/hamiltonian-studies.txt",
           "source": "notes/hamiltonian-studies.md",
-          "sourceSha256": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "sourceSha256": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         }
       ],
       "figures": [
@@ -5061,7 +5061,7 @@
           "name": "thermal-area-sectors.md",
           "path": "study-assets/notes/thermal-area-sectors.txt",
           "source": "notes/thermal-area-sectors.md",
-          "sourceSha256": "9849e7134d8cd81ff07c2665dd9a63f94fdf98ce41092bc6ea6e87c3c8384db8"
+          "sourceSha256": "784dbf185c53fbc07c1dc5b40a4c4b72e28706b103033ec2f244d0bb217a7bb0"
         }
       ],
       "figures": [
@@ -5660,7 +5660,7 @@
           "name": "volume-studies.md",
           "path": "study-assets/notes/volume-studies.txt",
           "source": "notes/volume-studies.md",
-          "sourceSha256": "ddcc922e8e255d6b421e2f26aebdf0e2c8f90a789ba79ef3092e08b6a18c107f"
+          "sourceSha256": "684d9f2e58ee9951f7aae993fa47590dd2a0f9d6d4aed5f232eb9adc6b1206ed"
         }
       ],
       "figures": [
@@ -6210,7 +6210,7 @@
           "name": "thermal-area-sectors.md",
           "path": "study-assets/notes/thermal-area-sectors.txt",
           "source": "notes/thermal-area-sectors.md",
-          "sourceSha256": "9849e7134d8cd81ff07c2665dd9a63f94fdf98ce41092bc6ea6e87c3c8384db8"
+          "sourceSha256": "784dbf185c53fbc07c1dc5b40a4c4b72e28706b103033ec2f244d0bb217a7bb0"
         }
       ],
       "figures": [
@@ -6738,6 +6738,1301 @@
         }
       ],
       "table": null
+    },
+    {
+      "id": "t11-quantum-planar-rotors",
+      "task": "T11",
+      "title": "Quantum planar-rotor transfer at zero total momentum (NS37)",
+      "description": "Two four-rotor ring preparations start in |m,-m,0,0| with exactly zero total momentum. Each row compares the saved late-window cold-pair kinetic fraction with an independent classical ensemble and reports the quantum single-rotor entropy for the initially energetic pair, initially cold pair, and all four sites.",
+      "limits": "First pilot at epsilon=I=lambda=hbar=1, four sites and times 0 to 20. The reported energy is a mean, not a sharp total-energy eigenvalue. The matched classical initial measure does not establish later quantum/classical agreement, equilibration, a classical limit, or three-dimensional singlet dynamics.",
+      "status": "Two accepted cutoff-10 cases; 6,181 zero-momentum sector states; norm, energy, classical refinement and momentum checks recorded",
+      "catalogueDate": "2026-10-16",
+      "files": [
+        {
+          "name": "README.md",
+          "path": "study-assets/results/t11-quantum-planar-rotors/README.txt",
+          "source": "results/t11-quantum-planar-rotors/README.md",
+          "sourceSha256": "4210d1084e9b5b61b294f3c8ad239549195ff0624a544369a62b6c49d2d27ec3"
+        },
+        {
+          "name": "protocol.md",
+          "path": "study-assets/results/t11-quantum-planar-rotors/protocol.txt",
+          "source": "results/t11-quantum-planar-rotors/protocol.md",
+          "sourceSha256": "771f4003d611dd410a07a9b9e7f87efd9e7670f1f7d7dfc7ad8fd31d95e74193"
+        },
+        {
+          "name": "summary.json",
+          "path": "study-assets/results/t11-quantum-planar-rotors/summary.json",
+          "source": "results/t11-quantum-planar-rotors/summary.json",
+          "sourceSha256": "93b74e7405a1da19cb1956963af4c02bf53958a45dc472a3f51c79af7de2b193"
+        },
+        {
+          "name": "quantum-planar-rotor-energy-transfer.md",
+          "path": "study-assets/notes/quantum-planar-rotor-energy-transfer.txt",
+          "source": "notes/quantum-planar-rotor-energy-transfer.md",
+          "sourceSha256": "430176ca6a65dcdb6ad8f48fd2ad18028f7ccca704b753a3f67ef878386cacf6"
+        },
+        {
+          "name": "quantum-geometry-research.md",
+          "path": "study-assets/notes/quantum-geometry-research.txt",
+          "source": "notes/quantum-geometry-research.md",
+          "sourceSha256": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        {
+          "name": "t11_quantum_planar_rotors.py",
+          "path": "study-assets/code/python/t11_quantum_planar_rotors.py",
+          "source": "code/python/t11_quantum_planar_rotors.py",
+          "sourceSha256": "fdd8c640bbacfa4cf82c993e4dd506b0b247b97cca3b653ea81bab5559e04f7d"
+        },
+        {
+          "name": "planar_rotors.py",
+          "path": "study-assets/code/python/lqg_scattering/planar_rotors.py",
+          "source": "code/python/lqg_scattering/planar_rotors.py",
+          "sourceSha256": "503dcc7874bd0eb91e56c1faed6e88f43c6019bcf59b3907f3a7c5f8f677c385"
+        },
+        {
+          "name": "published-paper-overview.md",
+          "path": "study-assets/notes/published-paper-overview.txt",
+          "source": "notes/published-paper-overview.md",
+          "sourceSha256": "1d595f67aa43e1508d2021acccbd3e19bcaf31c1e1f1bc598ba1be297a02e6bf"
+        },
+        {
+          "name": "state-space-probes.md",
+          "path": "study-assets/notes/state-space-probes.txt",
+          "source": "notes/state-space-probes.md",
+          "sourceSha256": "5e5380f7661c998bc1cd13ef33dc688962e16af8642a07dda7d7ec8e5c33d566"
+        },
+        {
+          "name": "fl_volume_shape_scan_log.md",
+          "path": "study-assets/notes/experiments/fl_volume_shape_scan_log.txt",
+          "source": "notes/experiments/fl_volume_shape_scan_log.md",
+          "sourceSha256": "ce53ec6ca4251f8a5047640959e872250195657c2725cbfbdd66740d8257d286"
+        },
+        {
+          "name": "README.md",
+          "path": "study-assets/figures/physical-illustrations/README.txt",
+          "source": "figures/physical-illustrations/README.md",
+          "sourceSha256": "424c190b5e1590604bbcc995633ddf7a5cddc9aa13caa2779d361f8a9157f08f"
+        },
+        {
+          "name": "constructive-sewing-probe.md",
+          "path": "study-assets/notes/constructive-sewing-probe.txt",
+          "source": "notes/constructive-sewing-probe.md",
+          "sourceSha256": "c8cf7c1df882b3eae0881edede3d0ae1bda2b0f8c113a24b3e5dde355fbff249"
+        },
+        {
+          "name": "binding-energy.md",
+          "path": "study-assets/notes/binding-energy.txt",
+          "source": "notes/binding-energy.md",
+          "sourceSha256": "ef1674af3e81fe3e3b09b545a057314958795a79a47c001acf242c32d11019f6"
+        },
+        {
+          "name": "README.md",
+          "path": "study-assets/results/README.txt",
+          "source": "results/README.md",
+          "sourceSha256": "71203ddb00fcd79a632324d8e48fc596feb5b7443d756ea2dea315c73cdbda55"
+        },
+        {
+          "name": "2026-10-16-quantum-rotors-and-geometric-redistribution-summary.md",
+          "path": "study-assets/study-records/sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-summary.txt",
+          "source": "memory-bank/sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-summary.md",
+          "sourceSha256": "3ab1e791c9390306776dbf31e9b0acac600121b433b19b42b5cf68901552da3a"
+        },
+        {
+          "name": "2026-10-16-quantum-rotors-and-geometric-redistribution-transcript.md",
+          "path": "study-assets/study-records/sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-transcript.txt",
+          "source": "memory-bank/sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-transcript.md",
+          "sourceSha256": "27859095fd8027a575dddff9afc9b4f6a251c43d12eee6f995b826e38498a9d7"
+        },
+        {
+          "name": "TASK.md",
+          "path": "study-assets/notes/task-specifications/TASK.txt",
+          "source": "notes/task-specifications/TASK.md",
+          "sourceSha256": "0a5b5fbf508bdbad196f16cb3ee596e729971a152b4571c7bfe867c30e5f66b3"
+        },
+        {
+          "name": "TASK_TWO_POLYHEDRA.md",
+          "path": "study-assets/notes/task-specifications/TASK_TWO_POLYHEDRA.txt",
+          "source": "notes/task-specifications/TASK_TWO_POLYHEDRA.md",
+          "sourceSha256": "2d9f66ea7cb342dd72f490b4346468d510f1e6528bf77cfc8a0112084b3759f0"
+        },
+        {
+          "name": "thermal-area-sectors-reorganization.md",
+          "path": "study-assets/notes/thermal-area-sectors-reorganization.txt",
+          "source": "notes/thermal-area-sectors-reorganization.md",
+          "sourceSha256": "c63b7299dd80027de9f26e173c26f1276e54caf51cd7f7037bd13488ef0cb6db"
+        },
+        {
+          "name": "equilibration-session-note-map.md",
+          "path": "study-assets/notes/equilibration-session-note-map.txt",
+          "source": "notes/equilibration-session-note-map.md",
+          "sourceSha256": "be27139ca393d2eebc4884430fbdded31134018576e4c2837c5bac62d35cb631"
+        },
+        {
+          "name": "01-closed-polyhedron.svg",
+          "path": "study-assets/figures/physical-illustrations/01-closed-polyhedron.svg",
+          "source": "figures/physical-illustrations/01-closed-polyhedron.svg",
+          "sourceSha256": "e989527c960f6a9e5d0245a7d1b78d24a452b9964afc1ca61bc5a15a5048fd80"
+        },
+        {
+          "name": "02-fl-states-and-face-channels.svg",
+          "path": "study-assets/figures/physical-illustrations/02-fl-states-and-face-channels.svg",
+          "source": "figures/physical-illustrations/02-fl-states-and-face-channels.svg",
+          "sourceSha256": "d64b266234be06008d8fffe3589b90870c445dad9f241394100656ae0f6727e8"
+        },
+        {
+          "name": "03-volume-and-hamiltonian.svg",
+          "path": "study-assets/figures/physical-illustrations/03-volume-and-hamiltonian.svg",
+          "source": "figures/physical-illustrations/03-volume-and-hamiltonian.svg",
+          "sourceSha256": "6c47d29831750e65cd10ef3ae91180dd389b909755d2856c6e7f249d238af309"
+        },
+        {
+          "name": "04-sewing-and-singlet-exchange.svg",
+          "path": "study-assets/figures/physical-illustrations/04-sewing-and-singlet-exchange.svg",
+          "source": "figures/physical-illustrations/04-sewing-and-singlet-exchange.svg",
+          "sourceSha256": "8287f7b8a700b6d7772beaf2663ac42e96a3bf69c9f9f73002d5c4c4007ac75b"
+        },
+        {
+          "name": "05-thermal-two-copy-closure.svg",
+          "path": "study-assets/figures/physical-illustrations/05-thermal-two-copy-closure.svg",
+          "source": "figures/physical-illustrations/05-thermal-two-copy-closure.svg",
+          "sourceSha256": "ba47682d9a9dc4f2388bbd6c05cd61796bc04e8f1d21d17f4bfa2947af2896e8"
+        },
+        {
+          "name": "06-classical-rotors-and-quantum-proposal.svg",
+          "path": "study-assets/figures/physical-illustrations/06-classical-rotors-and-quantum-proposal.svg",
+          "source": "figures/physical-illustrations/06-classical-rotors-and-quantum-proposal.svg",
+          "sourceSha256": "c2bcc72a0143bf845c56993e28a927d2d33128b5133903428179f6a715e5aa1b"
+        }
+      ],
+      "figures": [
+        {
+          "name": "energy-transfer.png",
+          "path": "study-assets/figures/t11-quantum-planar-rotors/energy-transfer.png",
+          "source": "figures/t11-quantum-planar-rotors/energy-transfer.png",
+          "sourceSha256": "a14a11dcc474039412df166b1b69bdc39bbcdc5cdbd49634c90941d4c136fd35",
+          "title": "Quantum and matched classical planar-rotor energy transfer",
+          "width": 2130,
+          "height": 1530,
+          "wide": false,
+          "pdf": "study-assets/figures/t11-quantum-planar-rotors/energy-transfer.pdf"
+        }
+      ],
+      "table": {
+        "columns": [
+          "display_id",
+          "m",
+          "packet_energy",
+          "mean_total_energy",
+          "accepted_cutoff",
+          "sector_dimension",
+          "late_quantum_cold_pair_fraction",
+          "late_classical_cold_pair_fraction",
+          "late_quantum_entropy_hot_pair_nats",
+          "late_quantum_entropy_cold_pair_nats",
+          "late_quantum_entropy_per_rotor_nats",
+          "max_quantum_norm_error",
+          "max_quantum_energy_error",
+          "max_classical_energy_error",
+          "max_classical_momentum_error",
+          "series"
+        ],
+        "rows": [
+          {
+            "display_id": "m=2",
+            "m": 2,
+            "packet_energy": 4,
+            "mean_total_energy": 8,
+            "accepted_cutoff": 10,
+            "sector_dimension": 6181,
+            "late_quantum_cold_pair_fraction": 0.5920372158209664,
+            "late_classical_cold_pair_fraction": 0.4852172548633113,
+            "late_quantum_entropy_hot_pair_nats": 1.6838957744380563,
+            "late_quantum_entropy_cold_pair_nats": 1.651917837256852,
+            "late_quantum_entropy_per_rotor_nats": 1.667906805847454,
+            "max_quantum_norm_error": 4.629630012686903e-14,
+            "max_quantum_energy_error": 3.5704772471945034e-13,
+            "max_classical_energy_error": 2.2367055052541218e-07,
+            "max_classical_momentum_error": 4.04121180963557e-13,
+            "series": "initial momentum m=2"
+          },
+          {
+            "display_id": "m=4",
+            "m": 4,
+            "packet_energy": 16,
+            "mean_total_energy": 20,
+            "accepted_cutoff": 10,
+            "sector_dimension": 6181,
+            "late_quantum_cold_pair_fraction": 0.06714280980900074,
+            "late_classical_cold_pair_fraction": 0.05319489994363441,
+            "late_quantum_entropy_hot_pair_nats": 0.6287620090589283,
+            "late_quantum_entropy_cold_pair_nats": 1.1783050840065166,
+            "late_quantum_entropy_per_rotor_nats": 0.9035335465327224,
+            "max_quantum_norm_error": 1.7763568394002505e-14,
+            "max_quantum_energy_error": 3.481659405224491e-13,
+            "max_classical_energy_error": 8.348288954351801e-06,
+            "max_classical_momentum_error": 3.6720626539477053e-13,
+            "series": "initial momentum m=4"
+          }
+        ]
+      },
+      "sourceHashes": {
+        "results/t11-quantum-planar-rotors/quantum-m2-c10.json": "d0e5e5e17f3c9f2ce0cf61a0b733a738dd96557ab24893cf78944e3d1f0efeef",
+        "results/t11-quantum-planar-rotors/quantum-m4-c10.json": "dee4788f471856b5b2d3f4726bbbeb955863173652636c9eff205dcad6671801",
+        "results/t11-quantum-planar-rotors/classical-m2.json": "5a36a2d21f7935f4a71da2d530c3b85612a82726fcdfda7a611c054e108e439e",
+        "results/t11-quantum-planar-rotors/classical-m4.json": "d64080db32e8fe20d38496def455e14c8548215cbedecb78dc8d63974015bd6a"
+      },
+      "documentNotes": [
+        "notes/quantum-planar-rotor-energy-transfer.md",
+        "notes/quantum-geometry-research.md"
+      ],
+      "chart": {
+        "type": "scatter",
+        "x": "parameters.packet_energy",
+        "y": "results.late_quantum_cold_pair_fraction",
+        "labels": {
+          "parameters.packet_energy": "Initial packet kinetic energy",
+          "results.late_quantum_cold_pair_fraction": "Late cold-pair kinetic fraction (10 \u2264 \u03c4 \u2264 20)"
+        }
+      }
+    },
+    {
+      "id": "t11-face-connectivity",
+      "task": "T11",
+      "title": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "description": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+      "limits": "Operator connectivity at alpha=t=hbar=1, with fixed boson number. A connected singlet basis does not mean every state activates every sector; open zero-mean-spin states are not singlets. This is not time evolution or geometric reconstruction.",
+      "status": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session",
+      "catalogueDate": "2026-10-16",
+      "files": [
+        {
+          "name": "README.md",
+          "path": "study-assets/results/t11-face-connectivity/README.txt",
+          "source": "results/t11-face-connectivity/README.md",
+          "sourceSha256": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9"
+        },
+        {
+          "name": "protocol.md",
+          "path": "study-assets/results/t11-face-connectivity/protocol.txt",
+          "source": "results/t11-face-connectivity/protocol.md",
+          "sourceSha256": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571"
+        },
+        {
+          "name": "summary.json",
+          "path": "study-assets/results/t11-face-connectivity/summary.json",
+          "source": "results/t11-face-connectivity/summary.json",
+          "sourceSha256": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538"
+        },
+        {
+          "name": "independent-validation.json",
+          "path": "study-assets/results/t11-face-connectivity/independent-validation.json",
+          "source": "results/t11-face-connectivity/independent-validation.json",
+          "sourceSha256": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d"
+        },
+        {
+          "name": "face-activation-connectivity.md",
+          "path": "study-assets/notes/face-activation-connectivity.txt",
+          "source": "notes/face-activation-connectivity.md",
+          "sourceSha256": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe"
+        },
+        {
+          "name": "quantum-geometry-research.md",
+          "path": "study-assets/notes/quantum-geometry-research.txt",
+          "source": "notes/quantum-geometry-research.md",
+          "sourceSha256": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        }
+      ],
+      "figures": [],
+      "table": {
+        "columns": [
+          "L",
+          "K",
+          "graph",
+          "source_class",
+          "source_spin",
+          "source_counts_label",
+          "target5_counts_label",
+          "target6_counts_label",
+          "singlet_dimension",
+          "full_dimension",
+          "singlet_4_to_5_rank",
+          "singlet_4_to_5_source_nullity",
+          "direct_4_to_6_block_norm",
+          "series",
+          "display_id",
+          "transition",
+          "from_active_channels",
+          "to_active_channels",
+          "operator",
+          "operator_order",
+          "matrix_element",
+          "chart_matrix_magnitude",
+          "first_hop_norm",
+          "second_hop_norm",
+          "H2_target6_source"
+        ],
+        "rows": [
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "ring",
+            "source_class": "closed singlet",
+            "source_spin": 0,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "ring; closed singlet",
+            "display_id": "ring \u00b7 closed singlet \u00b7 4 to 5 (H)",
+            "transition": "4 to 5 (H)",
+            "from_active_channels": 4,
+            "to_active_channels": 5,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": -1.4142135623730954,
+            "chart_matrix_magnitude": 1.4142135623730954,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.4142135623730951,
+            "H2_target6_source": 4.0
+          },
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "ring",
+            "source_class": "closed singlet",
+            "source_spin": 0,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "ring; closed singlet",
+            "display_id": "ring \u00b7 closed singlet \u00b7 5 to 6 (H)",
+            "transition": "5 to 6 (H)",
+            "from_active_channels": 5,
+            "to_active_channels": 6,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": -1.4142135623730951,
+            "chart_matrix_magnitude": 1.4142135623730951,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.4142135623730951,
+            "H2_target6_source": 4.0
+          },
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "ring",
+            "source_class": "closed singlet",
+            "source_spin": 0,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "ring; closed singlet",
+            "display_id": "ring \u00b7 closed singlet \u00b7 4 to 6 direct (H)",
+            "transition": "4 to 6 direct (H)",
+            "from_active_channels": 4,
+            "to_active_channels": 6,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": 0.0,
+            "chart_matrix_magnitude": 0.0,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.4142135623730951,
+            "H2_target6_source": 4.0
+          },
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "ring",
+            "source_class": "closed singlet",
+            "source_spin": 0,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "ring; closed singlet",
+            "display_id": "ring \u00b7 closed singlet \u00b7 4 to 6 through two hops (H squared)",
+            "transition": "4 to 6 through two hops (H squared)",
+            "from_active_channels": 4,
+            "to_active_channels": 6,
+            "operator": "H^2",
+            "operator_order": 2,
+            "matrix_element": 4.0,
+            "chart_matrix_magnitude": null,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.4142135623730951,
+            "H2_target6_source": 4.0
+          },
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "ring",
+            "source_class": "open J=3 highest weight",
+            "source_spin": 3,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "ring; open J=3 highest weight",
+            "display_id": "ring \u00b7 open J=3 highest weight \u00b7 4 to 5 (H)",
+            "transition": "4 to 5 (H)",
+            "from_active_channels": 4,
+            "to_active_channels": 5,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": -1.4142135623730951,
+            "chart_matrix_magnitude": 1.4142135623730951,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.4142135623730951,
+            "H2_target6_source": 4.000000000000001
+          },
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "ring",
+            "source_class": "open J=3 highest weight",
+            "source_spin": 3,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "ring; open J=3 highest weight",
+            "display_id": "ring \u00b7 open J=3 highest weight \u00b7 5 to 6 (H)",
+            "transition": "5 to 6 (H)",
+            "from_active_channels": 5,
+            "to_active_channels": 6,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": -1.4142135623730951,
+            "chart_matrix_magnitude": 1.4142135623730951,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.4142135623730951,
+            "H2_target6_source": 4.000000000000001
+          },
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "ring",
+            "source_class": "open J=3 highest weight",
+            "source_spin": 3,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "ring; open J=3 highest weight",
+            "display_id": "ring \u00b7 open J=3 highest weight \u00b7 4 to 6 direct (H)",
+            "transition": "4 to 6 direct (H)",
+            "from_active_channels": 4,
+            "to_active_channels": 6,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": 0.0,
+            "chart_matrix_magnitude": 0.0,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.4142135623730951,
+            "H2_target6_source": 4.000000000000001
+          },
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "ring",
+            "source_class": "open J=3 highest weight",
+            "source_spin": 3,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "ring; open J=3 highest weight",
+            "display_id": "ring \u00b7 open J=3 highest weight \u00b7 4 to 6 through two hops (H squared)",
+            "transition": "4 to 6 through two hops (H squared)",
+            "from_active_channels": 4,
+            "to_active_channels": 6,
+            "operator": "H^2",
+            "operator_order": 2,
+            "matrix_element": 4.000000000000001,
+            "chart_matrix_magnitude": null,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.4142135623730951,
+            "H2_target6_source": 4.000000000000001
+          },
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "ring",
+            "source_class": "open J=3, M=0",
+            "source_spin": 3,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "ring; open J=3, M=0",
+            "display_id": "ring \u00b7 open J=3, M=0 \u00b7 4 to 5 (H)",
+            "transition": "4 to 5 (H)",
+            "from_active_channels": 4,
+            "to_active_channels": 5,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": -1.414213562373095,
+            "chart_matrix_magnitude": 1.414213562373095,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.414213562373095,
+            "H2_target6_source": 4.0
+          },
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "ring",
+            "source_class": "open J=3, M=0",
+            "source_spin": 3,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "ring; open J=3, M=0",
+            "display_id": "ring \u00b7 open J=3, M=0 \u00b7 5 to 6 (H)",
+            "transition": "5 to 6 (H)",
+            "from_active_channels": 5,
+            "to_active_channels": 6,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": -1.414213562373095,
+            "chart_matrix_magnitude": 1.414213562373095,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.414213562373095,
+            "H2_target6_source": 4.0
+          },
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "ring",
+            "source_class": "open J=3, M=0",
+            "source_spin": 3,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "ring; open J=3, M=0",
+            "display_id": "ring \u00b7 open J=3, M=0 \u00b7 4 to 6 direct (H)",
+            "transition": "4 to 6 direct (H)",
+            "from_active_channels": 4,
+            "to_active_channels": 6,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": 0.0,
+            "chart_matrix_magnitude": 0.0,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.414213562373095,
+            "H2_target6_source": 4.0
+          },
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "ring",
+            "source_class": "open J=3, M=0",
+            "source_spin": 3,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "ring; open J=3, M=0",
+            "display_id": "ring \u00b7 open J=3, M=0 \u00b7 4 to 6 through two hops (H squared)",
+            "transition": "4 to 6 through two hops (H squared)",
+            "from_active_channels": 4,
+            "to_active_channels": 6,
+            "operator": "H^2",
+            "operator_order": 2,
+            "matrix_element": 4.0,
+            "chart_matrix_magnitude": null,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.414213562373095,
+            "H2_target6_source": 4.0
+          },
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "complete",
+            "source_class": "closed singlet",
+            "source_spin": 0,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "complete; closed singlet",
+            "display_id": "complete \u00b7 closed singlet \u00b7 4 to 5 (H)",
+            "transition": "4 to 5 (H)",
+            "from_active_channels": 4,
+            "to_active_channels": 5,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": -1.4142135623730954,
+            "chart_matrix_magnitude": 1.4142135623730954,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.4142135623730951,
+            "H2_target6_source": 2.0
+          },
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "complete",
+            "source_class": "closed singlet",
+            "source_spin": 0,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "complete; closed singlet",
+            "display_id": "complete \u00b7 closed singlet \u00b7 5 to 6 (H)",
+            "transition": "5 to 6 (H)",
+            "from_active_channels": 5,
+            "to_active_channels": 6,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": -1.4142135623730951,
+            "chart_matrix_magnitude": 1.4142135623730951,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.4142135623730951,
+            "H2_target6_source": 2.0
+          },
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "complete",
+            "source_class": "closed singlet",
+            "source_spin": 0,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "complete; closed singlet",
+            "display_id": "complete \u00b7 closed singlet \u00b7 4 to 6 direct (H)",
+            "transition": "4 to 6 direct (H)",
+            "from_active_channels": 4,
+            "to_active_channels": 6,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": 0.0,
+            "chart_matrix_magnitude": 0.0,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.4142135623730951,
+            "H2_target6_source": 2.0
+          },
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "complete",
+            "source_class": "closed singlet",
+            "source_spin": 0,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "complete; closed singlet",
+            "display_id": "complete \u00b7 closed singlet \u00b7 4 to 6 through two hops (H squared)",
+            "transition": "4 to 6 through two hops (H squared)",
+            "from_active_channels": 4,
+            "to_active_channels": 6,
+            "operator": "H^2",
+            "operator_order": 2,
+            "matrix_element": 2.0,
+            "chart_matrix_magnitude": null,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.4142135623730951,
+            "H2_target6_source": 2.0
+          },
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "complete",
+            "source_class": "open J=3 highest weight",
+            "source_spin": 3,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "complete; open J=3 highest weight",
+            "display_id": "complete \u00b7 open J=3 highest weight \u00b7 4 to 5 (H)",
+            "transition": "4 to 5 (H)",
+            "from_active_channels": 4,
+            "to_active_channels": 5,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": -1.4142135623730951,
+            "chart_matrix_magnitude": 1.4142135623730951,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.4142135623730951,
+            "H2_target6_source": 8.000000000000002
+          },
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "complete",
+            "source_class": "open J=3 highest weight",
+            "source_spin": 3,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "complete; open J=3 highest weight",
+            "display_id": "complete \u00b7 open J=3 highest weight \u00b7 5 to 6 (H)",
+            "transition": "5 to 6 (H)",
+            "from_active_channels": 5,
+            "to_active_channels": 6,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": -1.4142135623730951,
+            "chart_matrix_magnitude": 1.4142135623730951,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.4142135623730951,
+            "H2_target6_source": 8.000000000000002
+          },
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "complete",
+            "source_class": "open J=3 highest weight",
+            "source_spin": 3,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "complete; open J=3 highest weight",
+            "display_id": "complete \u00b7 open J=3 highest weight \u00b7 4 to 6 direct (H)",
+            "transition": "4 to 6 direct (H)",
+            "from_active_channels": 4,
+            "to_active_channels": 6,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": 0.0,
+            "chart_matrix_magnitude": 0.0,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.4142135623730951,
+            "H2_target6_source": 8.000000000000002
+          },
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "complete",
+            "source_class": "open J=3 highest weight",
+            "source_spin": 3,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "complete; open J=3 highest weight",
+            "display_id": "complete \u00b7 open J=3 highest weight \u00b7 4 to 6 through two hops (H squared)",
+            "transition": "4 to 6 through two hops (H squared)",
+            "from_active_channels": 4,
+            "to_active_channels": 6,
+            "operator": "H^2",
+            "operator_order": 2,
+            "matrix_element": 8.000000000000002,
+            "chart_matrix_magnitude": null,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.4142135623730951,
+            "H2_target6_source": 8.000000000000002
+          },
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "complete",
+            "source_class": "open J=3, M=0",
+            "source_spin": 3,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "complete; open J=3, M=0",
+            "display_id": "complete \u00b7 open J=3, M=0 \u00b7 4 to 5 (H)",
+            "transition": "4 to 5 (H)",
+            "from_active_channels": 4,
+            "to_active_channels": 5,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": -1.414213562373095,
+            "chart_matrix_magnitude": 1.414213562373095,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.414213562373095,
+            "H2_target6_source": 8.000000000000002
+          },
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "complete",
+            "source_class": "open J=3, M=0",
+            "source_spin": 3,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "complete; open J=3, M=0",
+            "display_id": "complete \u00b7 open J=3, M=0 \u00b7 5 to 6 (H)",
+            "transition": "5 to 6 (H)",
+            "from_active_channels": 5,
+            "to_active_channels": 6,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": -1.414213562373095,
+            "chart_matrix_magnitude": 1.414213562373095,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.414213562373095,
+            "H2_target6_source": 8.000000000000002
+          },
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "complete",
+            "source_class": "open J=3, M=0",
+            "source_spin": 3,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "complete; open J=3, M=0",
+            "display_id": "complete \u00b7 open J=3, M=0 \u00b7 4 to 6 direct (H)",
+            "transition": "4 to 6 direct (H)",
+            "from_active_channels": 4,
+            "to_active_channels": 6,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": 0.0,
+            "chart_matrix_magnitude": 0.0,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.414213562373095,
+            "H2_target6_source": 8.000000000000002
+          },
+          {
+            "L": 6,
+            "K": 3,
+            "graph": "complete",
+            "source_class": "open J=3, M=0",
+            "source_spin": 3,
+            "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+            "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+            "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+            "singlet_dimension": 490,
+            "full_dimension": 12376,
+            "singlet_4_to_5_rank": 90,
+            "singlet_4_to_5_source_nullity": 150,
+            "direct_4_to_6_block_norm": 0.0,
+            "series": "complete; open J=3, M=0",
+            "display_id": "complete \u00b7 open J=3, M=0 \u00b7 4 to 6 through two hops (H squared)",
+            "transition": "4 to 6 through two hops (H squared)",
+            "from_active_channels": 4,
+            "to_active_channels": 6,
+            "operator": "H^2",
+            "operator_order": 2,
+            "matrix_element": 8.000000000000002,
+            "chart_matrix_magnitude": null,
+            "first_hop_norm": 1.4142135623730951,
+            "second_hop_norm": 1.414213562373095,
+            "H2_target6_source": 8.000000000000002
+          },
+          {
+            "display_id": "L=5, K=3 \u00b7 ring \u00b7 size control",
+            "L": 5,
+            "K": 3,
+            "graph": "ring",
+            "source_class": "closed-sector block control",
+            "source_spin": 0,
+            "transition": "4 to 5 singlet block control",
+            "from_active_channels": 4,
+            "to_active_channels": 5,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": null,
+            "chart_matrix_magnitude": null,
+            "singlet_dimension": 175,
+            "full_dimension": 5005,
+            "singlet_4_to_5_rank": 15,
+            "singlet_4_to_5_source_nullity": 65,
+            "direct_4_to_6_block_norm": 0.0,
+            "singlet_4_to_5_block_frobenius_norm": 12.247448713915892,
+            "series": "ring; L=5, K=3 control"
+          },
+          {
+            "display_id": "L=5, K=3 \u00b7 complete \u00b7 size control",
+            "L": 5,
+            "K": 3,
+            "graph": "complete",
+            "source_class": "closed-sector block control",
+            "source_spin": 0,
+            "transition": "4 to 5 singlet block control",
+            "from_active_channels": 4,
+            "to_active_channels": 5,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": null,
+            "chart_matrix_magnitude": null,
+            "singlet_dimension": 175,
+            "full_dimension": 5005,
+            "singlet_4_to_5_rank": 15,
+            "singlet_4_to_5_source_nullity": 65,
+            "direct_4_to_6_block_norm": 0.0,
+            "singlet_4_to_5_block_frobenius_norm": 17.320508075688775,
+            "series": "complete; L=5, K=3 control"
+          },
+          {
+            "display_id": "L=5, K=3 \u00b7 disconnected_receivers \u00b7 size control",
+            "L": 5,
+            "K": 3,
+            "graph": "disconnected_receivers",
+            "source_class": "closed-sector block control",
+            "source_spin": 0,
+            "transition": "4 to 5 singlet block control",
+            "from_active_channels": 4,
+            "to_active_channels": 5,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": null,
+            "chart_matrix_magnitude": null,
+            "singlet_dimension": 175,
+            "full_dimension": 5005,
+            "singlet_4_to_5_rank": 15,
+            "singlet_4_to_5_source_nullity": 65,
+            "direct_4_to_6_block_norm": 0.0,
+            "singlet_4_to_5_block_frobenius_norm": 13.416407864998739,
+            "series": "disconnected_receivers; L=5, K=3 control"
+          },
+          {
+            "display_id": "L=6, K=2 \u00b7 ring \u00b7 size control",
+            "L": 6,
+            "K": 2,
+            "graph": "ring",
+            "source_class": "closed-sector block control",
+            "source_spin": 0,
+            "transition": "4 to 5 singlet block control",
+            "from_active_channels": 4,
+            "to_active_channels": 5,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": null,
+            "chart_matrix_magnitude": null,
+            "singlet_dimension": 105,
+            "full_dimension": 1365,
+            "singlet_4_to_5_rank": 0,
+            "singlet_4_to_5_source_nullity": 30,
+            "direct_4_to_6_block_norm": 0.0,
+            "singlet_4_to_5_block_frobenius_norm": 0.0,
+            "series": "ring; L=6, K=2 control"
+          },
+          {
+            "display_id": "L=6, K=2 \u00b7 complete \u00b7 size control",
+            "L": 6,
+            "K": 2,
+            "graph": "complete",
+            "source_class": "closed-sector block control",
+            "source_spin": 0,
+            "transition": "4 to 5 singlet block control",
+            "from_active_channels": 4,
+            "to_active_channels": 5,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": null,
+            "chart_matrix_magnitude": null,
+            "singlet_dimension": 105,
+            "full_dimension": 1365,
+            "singlet_4_to_5_rank": 0,
+            "singlet_4_to_5_source_nullity": 30,
+            "direct_4_to_6_block_norm": 0.0,
+            "singlet_4_to_5_block_frobenius_norm": 0.0,
+            "series": "complete; L=6, K=2 control"
+          },
+          {
+            "display_id": "L=6, K=2 \u00b7 disconnected_receivers \u00b7 size control",
+            "L": 6,
+            "K": 2,
+            "graph": "disconnected_receivers",
+            "source_class": "closed-sector block control",
+            "source_spin": 0,
+            "transition": "4 to 5 singlet block control",
+            "from_active_channels": 4,
+            "to_active_channels": 5,
+            "operator": "H",
+            "operator_order": 1,
+            "matrix_element": null,
+            "chart_matrix_magnitude": null,
+            "singlet_dimension": 105,
+            "full_dimension": 1365,
+            "singlet_4_to_5_rank": 0,
+            "singlet_4_to_5_source_nullity": 30,
+            "direct_4_to_6_block_norm": 0.0,
+            "singlet_4_to_5_block_frobenius_norm": 0.0,
+            "series": "disconnected_receivers; L=6, K=2 control"
+          }
+        ]
+      },
+      "sourceHashes": {
+        "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+        "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+        "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611"
+      },
+      "documentNotes": [
+        "notes/face-activation-connectivity.md",
+        "notes/quantum-geometry-research.md"
+      ],
+      "chart": {
+        "type": "scatter",
+        "x": "parameters.to_active_channels",
+        "y": "results.chart_matrix_magnitude",
+        "groupBy": "results.series",
+        "labels": {
+          "parameters.to_active_channels": "Destination active channels",
+          "results.chart_matrix_magnitude": "Absolute direct-H matrix element",
+          "results.series": "Graph and source sector"
+        }
+      }
+    },
+    {
+      "id": "t11-geometric-redistribution",
+      "task": "T11",
+      "title": "Exact-singlet geometric area redistribution (NS39\u2013NS40)",
+      "description": "Fifty-four K=4 exact-singlet trajectories compare L=4,6,8 rings and complete graphs at alpha=0,1,5. The 54 case summaries are grouped in the chart by size, graph and preparation, with one point per coupling. The package also includes 270 selected geometry samples and the post-run permutation selection rule recorded as NS40.",
+      "limits": "Finite evolution through \u03c4=20 from regular-sharp, deformed-sharp and regular FL preparations. K is conserved linear area; the higher-valence RS volume stays in project units. Singlet mean fluxes vanish, so the pair and volume readouts do not identify distinct classical face normals or a unique polyhedron. The permutation rule explains a source-specific all-channel suppression and did not select or remove trajectories.",
+      "status": "54 exact-singlet trajectories; 270 geometry samples; 91,476 independent observable checks with maximum residual 6.43e-12; NS40 post-run diagnostic included",
+      "catalogueDate": "2026-10-16",
+      "files": [
+        {
+          "name": "README.md",
+          "path": "study-assets/results/t11-geometric-redistribution/README.txt",
+          "source": "results/t11-geometric-redistribution/README.md",
+          "sourceSha256": "d099b1d9087eb4c5bd5285478e07df9c2a9def58e1a7235fffcb0875ec56ea21"
+        },
+        {
+          "name": "protocol.md",
+          "path": "study-assets/results/t11-geometric-redistribution/protocol.txt",
+          "source": "results/t11-geometric-redistribution/protocol.md",
+          "sourceSha256": "b27245dacb66dfe0f146a723b040c3127b915db92cc16cfa511dbecebf2ffd53"
+        },
+        {
+          "name": "summary.csv",
+          "path": "study-assets/results/t11-geometric-redistribution/summary.csv",
+          "source": "results/t11-geometric-redistribution/summary.csv",
+          "sourceSha256": "ec6c6d36af97d90a5d0e661aa5fb0ef395dfe37f3a8355e16ef0d6a493c6ddde"
+        },
+        {
+          "name": "geometry.json",
+          "path": "study-assets/results/t11-geometric-redistribution/geometry.json",
+          "source": "results/t11-geometric-redistribution/geometry.json",
+          "sourceSha256": "a32d754ab35213ca61608282fe13f89b56f8c308dde9f16c3d1ec63981dc611e"
+        },
+        {
+          "name": "validation.json",
+          "path": "study-assets/results/t11-geometric-redistribution/validation.json",
+          "source": "results/t11-geometric-redistribution/validation.json",
+          "sourceSha256": "0bd395a99e2ec68deb2a968e847379e8f3134cb4fed61605eab5e46f759c0855"
+        },
+        {
+          "name": "independent-validation.json",
+          "path": "study-assets/results/t11-geometric-redistribution/independent-validation.json",
+          "source": "results/t11-geometric-redistribution/independent-validation.json",
+          "sourceSha256": "9dd6aa07ae4bfa0fd0d4427c907f9b233a3705c7eaaa224fc636e2d0ee17deec"
+        },
+        {
+          "name": "symmetry-control.json",
+          "path": "study-assets/results/t11-geometric-redistribution/symmetry-control.json",
+          "source": "results/t11-geometric-redistribution/symmetry-control.json",
+          "sourceSha256": "b71b39d78acedb2da933af86fc0bd8b7b96c9edd75434ceecc96d0d09b282ef1"
+        },
+        {
+          "name": "provenance.json",
+          "path": "study-assets/results/t11-geometric-redistribution/provenance.json",
+          "source": "results/t11-geometric-redistribution/provenance.json",
+          "sourceSha256": "ff62ca05e6ab1e5b525260aa36cb0bf3ceaa830b1cc1edd50143afe8dea10605"
+        },
+        {
+          "name": "postprocessing-provenance.json",
+          "path": "study-assets/results/t11-geometric-redistribution/postprocessing-provenance.json",
+          "source": "results/t11-geometric-redistribution/postprocessing-provenance.json",
+          "sourceSha256": "c27f1c0469bc1f907d061524b01cae382b24f8b60955f40ebd81784c9fa243e3"
+        },
+        {
+          "name": "performance.json",
+          "path": "study-assets/results/t11-geometric-redistribution/performance.json",
+          "source": "results/t11-geometric-redistribution/performance.json",
+          "sourceSha256": "7be5a75ff3ffedb7c7e480934f0ec2a9a6d9af95e431a919a449dbaad52e324c"
+        },
+        {
+          "name": "regression.json",
+          "path": "study-assets/results/t11-geometric-redistribution/regression.json",
+          "source": "results/t11-geometric-redistribution/regression.json",
+          "sourceSha256": "8b4f7557c98dbaabbbfc0097aadfe4ca9f3baa3fba107e0d45d503808d9ce331"
+        },
+        {
+          "name": "geometric-area-redistribution.md",
+          "path": "study-assets/notes/geometric-area-redistribution.txt",
+          "source": "notes/geometric-area-redistribution.md",
+          "sourceSha256": "1304266cd8cdd6ffd840a9a0040460c63c63dc9b5685e64de50ebdb9773d8392"
+        },
+        {
+          "name": "quantum-geometry-research.md",
+          "path": "study-assets/notes/quantum-geometry-research.txt",
+          "source": "notes/quantum-geometry-research.md",
+          "sourceSha256": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        {
+          "name": "t11_geometric_redistribution.py",
+          "path": "study-assets/code/python/t11_geometric_redistribution.py",
+          "source": "code/python/t11_geometric_redistribution.py",
+          "sourceSha256": "b7081642b547ada19b3f292b53d8a6633375e1b51a76c5aa574d236dcb8a9f03"
+        },
+        {
+          "name": "channel_dynamics.py",
+          "path": "study-assets/code/python/lqg_scattering/channel_dynamics.py",
+          "source": "code/python/lqg_scattering/channel_dynamics.py",
+          "sourceSha256": "aa3cd1b52edb0ec89553f1316598884c21d58ca273b2ee0f75d780d9ab6a91e7"
+        },
+        {
+          "name": "verify_t11_geometric_redistribution.py",
+          "path": "study-assets/code/python/verify_t11_geometric_redistribution.py",
+          "source": "code/python/verify_t11_geometric_redistribution.py",
+          "sourceSha256": "b483873b37483267ae2d44d0f6eaef4347548dbc76037949bfb00f3ae8f98523"
+        },
+        {
+          "name": "check_t11_channel_symmetry.py",
+          "path": "study-assets/code/python/check_t11_channel_symmetry.py",
+          "source": "code/python/check_t11_channel_symmetry.py",
+          "sourceSha256": "a7f110f251b0a4f43a900c387f03edf337ff8c5bfeeebc2fe918ce9c2b836f93"
+        },
+        {
+          "name": "plot_t11_geometric_redistribution.py",
+          "path": "study-assets/code/python/plot_t11_geometric_redistribution.py",
+          "source": "code/python/plot_t11_geometric_redistribution.py",
+          "sourceSha256": "d4b92ab770316ef3f4ba9fe224be4126aa960b21d4c378521a1f3edbc8d6ce7b"
+        }
+      ],
+      "figures": [
+        {
+          "name": "area-transfer.png",
+          "path": "study-assets/figures/t11-geometric-redistribution/area-transfer.png",
+          "source": "figures/t11-geometric-redistribution/area-transfer.png",
+          "sourceSha256": "cd9bfa972e51243d421dccd34bef6a0d0a876cecdb0c7d775de15d76a61e482c",
+          "title": "Area redistribution across exact singlet trajectories",
+          "width": 2160,
+          "height": 1440,
+          "wide": false,
+          "pdf": "study-assets/figures/t11-geometric-redistribution/area-transfer.pdf"
+        },
+        {
+          "name": "geometry-and-activation.png",
+          "path": "study-assets/figures/t11-geometric-redistribution/geometry-and-activation.png",
+          "source": "figures/t11-geometric-redistribution/geometry-and-activation.png",
+          "sourceSha256": "dcb1c687646f101a54f910352d4c7048b35780bbd8118cb115620095784abd48",
+          "title": "Geometry samples and active-channel redistribution",
+          "width": 2130,
+          "height": 1500,
+          "wide": false,
+          "pdf": "study-assets/figures/t11-geometric-redistribution/geometry-and-activation.pdf"
+        }
+      ],
+      "table": null,
+      "documentNotes": [
+        "notes/geometric-area-redistribution.md",
+        "notes/quantum-geometry-research.md"
+      ],
+      "chart": {
+        "type": "line",
+        "x": "parameters.alpha",
+        "y": "results.late_receiver_area_fraction",
+        "groupBy": "results.series",
+        "labels": {
+          "parameters.alpha": "Casimir coupling \u03b1",
+          "results.late_receiver_area_fraction": "Late mean area in initially empty receivers / K",
+          "results.series": "Size, graph and preparation"
+        }
+      }
     }
   ]
 }

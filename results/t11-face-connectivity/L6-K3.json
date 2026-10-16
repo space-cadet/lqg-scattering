@@ -1,0 +1,8092 @@
+{
+  "L": 6,
+  "K": 3,
+  "full_dimension": 12376,
+  "singlet_dimension": 490,
+  "full_active_counts": {
+    "0": 0,
+    "1": 42,
+    "2": 1050,
+    "3": 4620,
+    "4": 5160,
+    "5": 1440,
+    "6": 64
+  },
+  "singlet_active_counts": {
+    "0": 0,
+    "1": 0,
+    "2": 15,
+    "3": 140,
+    "4": 240,
+    "5": 90,
+    "6": 5
+  },
+  "graphs": {
+    "ring": {
+      "full": {
+        "4_to_5": {
+          "shape": [
+            1440,
+            5160
+          ],
+          "nonzero_entries": 9216,
+          "frobenius_norm": 122.37646832622684
+        },
+        "4_to_6": {
+          "shape": [
+            64,
+            5160
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "5_to_6": {
+          "shape": [
+            64,
+            1440
+          ],
+          "nonzero_entries": 768,
+          "frobenius_norm": 33.94112549695428
+        },
+        "basis_graph_components": {
+          "1e-10": {
+            "count": 7,
+            "size_histogram": {
+              "462": 2,
+              "1512": 2,
+              "2646": 2,
+              "3136": 1
+            }
+          },
+          "1e-12": {
+            "count": 7,
+            "size_histogram": {
+              "462": 2,
+              "1512": 2,
+              "2646": 2,
+              "3136": 1
+            }
+          }
+        }
+      },
+      "closed": {
+        "4_to_5": {
+          "shape": [
+            90,
+            240
+          ],
+          "nonzero_entries": 504,
+          "frobenius_norm": 26.832815729997478,
+          "rank": 90,
+          "source_nullity": 150,
+          "rank_at_1e12": 90
+        },
+        "4_to_6": {
+          "shape": [
+            5,
+            240
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "5_to_6": {
+          "shape": [
+            5,
+            90
+          ],
+          "nonzero_entries": 64,
+          "frobenius_norm": 8.485281374238571
+        },
+        "basis_graph_components": {
+          "1e-10": {
+            "count": 1,
+            "size_histogram": {
+              "490": 1
+            }
+          },
+          "1e-12": {
+            "count": 1,
+            "size_histogram": {
+              "490": 1
+            }
+          }
+        },
+        "4_to_6_second_power": {
+          "shape": [
+            5,
+            240
+          ],
+          "frobenius_norm": 36.00000000000001,
+          "rank": 5,
+          "rank_at_1e12": 5
+        }
+      },
+      "onsite_4_to_5": 0.0,
+      "directed_chain": {
+        "closed": {
+          "source_counts": [
+            2,
+            1,
+            1,
+            2,
+            0,
+            0
+          ],
+          "target5_counts": [
+            1,
+            1,
+            1,
+            2,
+            0,
+            1
+          ],
+          "target6_counts": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_hop_norm": 1.4142135623730951,
+          "second_hop_norm": 1.4142135623730951,
+          "H_target5_source": -1.4142135623730954,
+          "H_target6_target5": -1.4142135623730951,
+          "H2_target6_source": 4.0,
+          "target5": [
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.2886751345948129,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": -0.408248290463863,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": -0.2886751345948129,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                2,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.408248290463863,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                2,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": -0.408248290463863,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.2886751345948129,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                2,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.408248290463863,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": -0.2886751345948129,
+              "amplitude_imag": 0.0
+            }
+          ],
+          "target6": [
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.2041241452319315,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0
+              ],
+              "amplitude_real": 0.2041241452319315,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": -0.408248290463863,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": -0.2041241452319315,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0
+              ],
+              "amplitude_real": -0.2041241452319315,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.408248290463863,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              "amplitude_real": -0.408248290463863,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.2041241452319315,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              "amplitude_real": 0.2041241452319315,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              "amplitude_real": 0.408248290463863,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": -0.2041241452319315,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              "amplitude_real": -0.2041241452319315,
+              "amplitude_imag": 0.0
+            }
+          ]
+        },
+        "open_highest_weight": {
+          "source_counts": [
+            2,
+            1,
+            1,
+            2,
+            0,
+            0
+          ],
+          "target5_counts": [
+            1,
+            1,
+            1,
+            2,
+            0,
+            1
+          ],
+          "target6_counts": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_hop_norm": 1.4142135623730951,
+          "second_hop_norm": 1.4142135623730951,
+          "H_target5_source": -1.4142135623730951,
+          "H_target6_target5": -1.4142135623730951,
+          "H2_target6_source": 4.000000000000001,
+          "target5": [
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                2,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 1.0,
+              "amplitude_imag": 0.0
+            }
+          ],
+          "target6": [
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 1.0,
+              "amplitude_imag": 0.0
+            }
+          ]
+        },
+        "open_M0": {
+          "source_counts": [
+            2,
+            1,
+            1,
+            2,
+            0,
+            0
+          ],
+          "target5_counts": [
+            1,
+            1,
+            1,
+            2,
+            0,
+            1
+          ],
+          "target6_counts": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_hop_norm": 1.4142135623730951,
+          "second_hop_norm": 1.414213562373095,
+          "H_target5_source": -1.414213562373095,
+          "H_target6_target5": -1.414213562373095,
+          "H2_target6_source": 4.0,
+          "target5": [
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                2,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.3162277660168379,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.3162277660168379,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                2,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                2,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.31622776601683794,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.31622776601683794,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                2,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                2,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.3162277660168379,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                2,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.3162277660168379,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            }
+          ],
+          "target6": [
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            }
+          ]
+        }
+      },
+      "witnesses": {
+        "closed": {
+          "norm_P5_H_source": 2.0,
+          "norm_P6_H2_source": 4.0,
+          "direct_P6_H_source": 0.0,
+          "matrix_element_target6_H_target5": 2.0000000000000004,
+          "checks": {
+            "source": {
+              "norm_error": 2.220446049250313e-16,
+              "spin_squared": -2.0396099332657776e-16,
+              "spin_eigen_residual": 2.2887833992611187e-16,
+              "mean_spin": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "closure_generator_norms": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "target5": {
+              "norm_error": 2.220446049250313e-16,
+              "spin_squared": 1.4519426186945243e-16,
+              "spin_eigen_residual": 1.9821445675202305e-16,
+              "mean_spin": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "closure_generator_norms": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "target6": {
+              "norm_error": 2.220446049250313e-16,
+              "spin_squared": -7.931816407144691e-17,
+              "spin_eigen_residual": 1.1775693440128312e-16,
+              "mean_spin": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "closure_generator_norms": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            }
+          },
+          "states": {
+            "source": [
+              {
+                "occupation": [
+                  0,
+                  2,
+                  0,
+                  1,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.4082482904638631,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  1,
+                  0,
+                  0,
+                  1,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.4082482904638631,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.4082482904638631,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.4082482904638631,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.4082482904638631,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.4082482904638631,
+                "amplitude_imag": 0.0
+              }
+            ],
+            "target5": [
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.20412414523193154,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.2886751345948129,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.20412414523193154,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.2886751345948129,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.2886751345948129,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.2886751345948129,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.2886751345948129,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.20412414523193154,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.2886751345948129,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.20412414523193154,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.20412414523193154,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.20412414523193154,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.20412414523193154,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.20412414523193154,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.2886751345948129,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.2886751345948129,
+                "amplitude_imag": 0.0
+              }
+            ],
+            "target6": [
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.20412414523193154,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.20412414523193154,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.4082482904638631,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.20412414523193154,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.20412414523193154,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.4082482904638631,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.4082482904638631,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.20412414523193154,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.20412414523193154,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.4082482904638631,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.20412414523193154,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.20412414523193154,
+                "amplitude_imag": 0.0
+              }
+            ]
+          }
+        },
+        "open_highest_weight": {
+          "norm_P5_H_source": 2.0,
+          "norm_P6_H2_source": 4.000000000000001,
+          "direct_P6_H_source": 0.0,
+          "matrix_element_target6_H_target5": 2.0000000000000004,
+          "checks": {
+            "source": {
+              "norm_error": 0.0,
+              "spin_squared": 12.0,
+              "spin_eigen_residual": 0.0,
+              "mean_spin": [
+                0.0,
+                0.0,
+                3.0
+              ],
+              "closure_generator_norms": {
+                "x": 1.224744871391589,
+                "y": 1.224744871391589,
+                "z": 3.0
+              }
+            },
+            "target5": {
+              "norm_error": 2.220446049250313e-16,
+              "spin_squared": 12.000000000000002,
+              "spin_eigen_residual": 0.0,
+              "mean_spin": [
+                0.0,
+                0.0,
+                3.0000000000000004
+              ],
+              "closure_generator_norms": {
+                "x": 1.2247448713915892,
+                "y": 1.2247448713915892,
+                "z": 3.0000000000000004
+              }
+            },
+            "target6": {
+              "norm_error": 0.0,
+              "spin_squared": 12.0,
+              "spin_eigen_residual": 0.0,
+              "mean_spin": [
+                0.0,
+                0.0,
+                3.0
+              ],
+              "closure_generator_norms": {
+                "x": 1.224744871391589,
+                "y": 1.224744871391589,
+                "z": 3.0
+              }
+            }
+          },
+          "states": {
+            "source": [
+              {
+                "occupation": [
+                  2,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 1.0,
+                "amplitude_imag": 0.0
+              }
+            ],
+            "target5": [
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.7071067811865476,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.7071067811865476,
+                "amplitude_imag": 0.0
+              }
+            ],
+            "target6": [
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": 1.0,
+                "amplitude_imag": 0.0
+              }
+            ]
+          }
+        },
+        "open_M0": {
+          "norm_P5_H_source": 1.9999999999999998,
+          "norm_P6_H2_source": 4.0,
+          "direct_P6_H_source": 0.0,
+          "matrix_element_target6_H_target5": 2.0000000000000004,
+          "checks": {
+            "source": {
+              "norm_error": 4.440892098500626e-16,
+              "spin_squared": 12.000000000000007,
+              "spin_eigen_residual": 2.7733362266239673e-15,
+              "mean_spin": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "closure_generator_norms": {
+                "x": 2.4494897427831788,
+                "y": 2.4494897427831788,
+                "z": 0.0
+              }
+            },
+            "target5": {
+              "norm_error": 4.440892098500626e-16,
+              "spin_squared": 12.000000000000007,
+              "spin_eigen_residual": 1.3866681133119837e-15,
+              "mean_spin": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "closure_generator_norms": {
+                "x": 2.4494897427831788,
+                "y": 2.4494897427831788,
+                "z": 0.0
+              }
+            },
+            "target6": {
+              "norm_error": 0.0,
+              "spin_squared": 12.000000000000004,
+              "spin_eigen_residual": 1.1749496091904413e-15,
+              "mean_spin": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "closure_generator_norms": {
+                "x": 2.449489742783178,
+                "y": 2.449489742783178,
+                "z": 0.0
+              }
+            }
+          },
+          "states": {
+            "source": [
+              {
+                "occupation": [
+                  0,
+                  2,
+                  0,
+                  1,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.22360679774997902,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  1,
+                  0,
+                  0,
+                  1,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.22360679774997902,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.316227766016838,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.316227766016838,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.44721359549995804,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.44721359549995804,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.316227766016838,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.316227766016838,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.22360679774997902,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.22360679774997902,
+                "amplitude_imag": 0.0
+              }
+            ],
+            "target5": [
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  2,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.158113883008419,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.22360679774997902,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.158113883008419,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.22360679774997902,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.158113883008419,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.158113883008419,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.22360679774997905,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.158113883008419,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.158113883008419,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.158113883008419,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.158113883008419,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.22360679774997905,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.158113883008419,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.158113883008419,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.22360679774997902,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.158113883008419,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.22360679774997902,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.158113883008419,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.22360679774997905,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.22360679774997902,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.22360679774997902,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.22360679774997902,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.22360679774997902,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.22360679774997905,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.158113883008419,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.158113883008419,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.158113883008419,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.158113883008419,
+                "amplitude_imag": 0.0
+              }
+            ],
+            "target6": [
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.22360679774997896,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.22360679774997896,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.22360679774997896,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.22360679774997896,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.22360679774997896,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.22360679774997896,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.22360679774997896,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.22360679774997896,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              }
+            ]
+          }
+        }
+      }
+    },
+    "complete": {
+      "full": {
+        "4_to_5": {
+          "shape": [
+            1440,
+            5160
+          ],
+          "nonzero_entries": 23040,
+          "frobenius_norm": 193.49418595916518
+        },
+        "4_to_6": {
+          "shape": [
+            64,
+            5160
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "5_to_6": {
+          "shape": [
+            64,
+            1440
+          ],
+          "nonzero_entries": 1920,
+          "frobenius_norm": 53.665631459994955
+        },
+        "basis_graph_components": {
+          "1e-10": {
+            "count": 7,
+            "size_histogram": {
+              "462": 2,
+              "1512": 2,
+              "2646": 2,
+              "3136": 1
+            }
+          },
+          "1e-12": {
+            "count": 7,
+            "size_histogram": {
+              "462": 2,
+              "1512": 2,
+              "2646": 2,
+              "3136": 1
+            }
+          }
+        }
+      },
+      "closed": {
+        "4_to_5": {
+          "shape": [
+            90,
+            240
+          ],
+          "nonzero_entries": 1560,
+          "frobenius_norm": 42.42640687119285,
+          "rank": 90,
+          "source_nullity": 150,
+          "rank_at_1e12": 90
+        },
+        "4_to_6": {
+          "shape": [
+            5,
+            240
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "5_to_6": {
+          "shape": [
+            5,
+            90
+          ],
+          "nonzero_entries": 212,
+          "frobenius_norm": 13.416407864998746
+        },
+        "basis_graph_components": {
+          "1e-10": {
+            "count": 1,
+            "size_histogram": {
+              "490": 1
+            }
+          },
+          "1e-12": {
+            "count": 1,
+            "size_histogram": {
+              "490": 1
+            }
+          }
+        },
+        "4_to_6_second_power": {
+          "shape": [
+            5,
+            240
+          ],
+          "frobenius_norm": 75.89466384404132,
+          "rank": 5,
+          "rank_at_1e12": 5
+        }
+      },
+      "onsite_4_to_5": 0.0,
+      "directed_chain": {
+        "closed": {
+          "source_counts": [
+            2,
+            1,
+            1,
+            2,
+            0,
+            0
+          ],
+          "target5_counts": [
+            1,
+            1,
+            1,
+            2,
+            0,
+            1
+          ],
+          "target6_counts": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_hop_norm": 1.4142135623730951,
+          "second_hop_norm": 1.4142135623730951,
+          "H_target5_source": -1.4142135623730954,
+          "H_target6_target5": -1.4142135623730951,
+          "H2_target6_source": 2.0,
+          "target5": [
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.2886751345948129,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": -0.408248290463863,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": -0.2886751345948129,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                2,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.408248290463863,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                2,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": -0.408248290463863,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.2886751345948129,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                2,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.408248290463863,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": -0.2886751345948129,
+              "amplitude_imag": 0.0
+            }
+          ],
+          "target6": [
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.2041241452319315,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0
+              ],
+              "amplitude_real": 0.2041241452319315,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": -0.408248290463863,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": -0.2041241452319315,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0
+              ],
+              "amplitude_real": -0.2041241452319315,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.408248290463863,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              "amplitude_real": -0.408248290463863,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.2041241452319315,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              "amplitude_real": 0.2041241452319315,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              "amplitude_real": 0.408248290463863,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": -0.2041241452319315,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              "amplitude_real": -0.2041241452319315,
+              "amplitude_imag": 0.0
+            }
+          ]
+        },
+        "open_highest_weight": {
+          "source_counts": [
+            2,
+            1,
+            1,
+            2,
+            0,
+            0
+          ],
+          "target5_counts": [
+            1,
+            1,
+            1,
+            2,
+            0,
+            1
+          ],
+          "target6_counts": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_hop_norm": 1.4142135623730951,
+          "second_hop_norm": 1.4142135623730951,
+          "H_target5_source": -1.4142135623730951,
+          "H_target6_target5": -1.4142135623730951,
+          "H2_target6_source": 8.000000000000002,
+          "target5": [
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                2,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 1.0,
+              "amplitude_imag": 0.0
+            }
+          ],
+          "target6": [
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 1.0,
+              "amplitude_imag": 0.0
+            }
+          ]
+        },
+        "open_M0": {
+          "source_counts": [
+            2,
+            1,
+            1,
+            2,
+            0,
+            0
+          ],
+          "target5_counts": [
+            1,
+            1,
+            1,
+            2,
+            0,
+            1
+          ],
+          "target6_counts": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "first_hop_norm": 1.4142135623730951,
+          "second_hop_norm": 1.414213562373095,
+          "H_target5_source": -1.414213562373095,
+          "H_target6_target5": -1.414213562373095,
+          "H2_target6_source": 8.000000000000002,
+          "target5": [
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                2,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.3162277660168379,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.3162277660168379,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                2,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                2,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.31622776601683794,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.31622776601683794,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                2,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                2,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.3162277660168379,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                2,
+                0,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.3162277660168379,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            }
+          ],
+          "target6": [
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              "amplitude_real": 0.22360679774997896,
+              "amplitude_imag": 0.0
+            },
+            {
+              "occupation": [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1
+              ],
+              "amplitude_real": 0.223606797749979,
+              "amplitude_imag": 0.0
+            }
+          ]
+        }
+      },
+      "witnesses": {
+        "closed": {
+          "norm_P5_H_source": 2.8284271247461903,
+          "norm_P6_H2_source": 4.0,
+          "direct_P6_H_source": 0.0,
+          "matrix_element_target6_H_target5": 1.4142135623730954,
+          "checks": {
+            "source": {
+              "norm_error": 2.220446049250313e-16,
+              "spin_squared": -2.0396099332657776e-16,
+              "spin_eigen_residual": 2.2887833992611187e-16,
+              "mean_spin": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "closure_generator_norms": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "target5": {
+              "norm_error": 2.220446049250313e-16,
+              "spin_squared": -3.639720224574242e-16,
+              "spin_eigen_residual": 4.2457866502527573e-16,
+              "mean_spin": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "closure_generator_norms": {
+                "x": 7.850462293418876e-17,
+                "y": 7.850462293418876e-17,
+                "z": 0.0
+              }
+            },
+            "target6": {
+              "norm_error": 2.220446049250313e-16,
+              "spin_squared": -1.8129866073473578e-16,
+              "spin_eigen_residual": 4.1910000110727263e-16,
+              "mean_spin": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "closure_generator_norms": {
+                "x": 8.326672684688674e-17,
+                "y": 8.326672684688674e-17,
+                "z": 0.0
+              }
+            }
+          },
+          "states": {
+            "source": [
+              {
+                "occupation": [
+                  0,
+                  2,
+                  0,
+                  1,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.4082482904638631,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  1,
+                  0,
+                  0,
+                  1,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.4082482904638631,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.4082482904638631,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.4082482904638631,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.4082482904638631,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.4082482904638631,
+                "amplitude_imag": 0.0
+              }
+            ],
+            "target5": [
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.14433756729740646,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.14433756729740646,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.2041241452319315,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.2041241452319315,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.14433756729740646,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.14433756729740646,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.2041241452319315,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  2,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.2041241452319315,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.2041241452319315,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.2041241452319315,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.2041241452319315,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.2041241452319315,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.2041241452319315,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  2,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.2041241452319315,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.14433756729740646,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.14433756729740646,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.2041241452319315,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  2,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.2041241452319315,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.14433756729740646,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.14433756729740646,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.14433756729740646,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.14433756729740646,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.14433756729740646,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.14433756729740646,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.14433756729740646,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.14433756729740646,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.14433756729740646,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.14433756729740646,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.2041241452319315,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.2041241452319315,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.2041241452319315,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.2041241452319315,
+                "amplitude_imag": 0.0
+              }
+            ],
+            "target6": [
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.4082482904638631,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.2041241452319315,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.2041241452319315,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.4082482904638631,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.2041241452319315,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.2041241452319315,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.20412414523193154,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.20412414523193154,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.4082482904638631,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.20412414523193154,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.20412414523193154,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.4082482904638631,
+                "amplitude_imag": 0.0
+              }
+            ]
+          }
+        },
+        "open_highest_weight": {
+          "norm_P5_H_source": 2.8284271247461903,
+          "norm_P6_H2_source": 8.000000000000002,
+          "direct_P6_H_source": 0.0,
+          "matrix_element_target6_H_target5": 2.8284271247461903,
+          "checks": {
+            "source": {
+              "norm_error": 0.0,
+              "spin_squared": 12.0,
+              "spin_eigen_residual": 0.0,
+              "mean_spin": [
+                0.0,
+                0.0,
+                3.0
+              ],
+              "closure_generator_norms": {
+                "x": 1.224744871391589,
+                "y": 1.224744871391589,
+                "z": 3.0
+              }
+            },
+            "target5": {
+              "norm_error": 0.0,
+              "spin_squared": 12.0,
+              "spin_eigen_residual": 0.0,
+              "mean_spin": [
+                0.0,
+                0.0,
+                3.0
+              ],
+              "closure_generator_norms": {
+                "x": 1.224744871391589,
+                "y": 1.224744871391589,
+                "z": 3.0
+              }
+            },
+            "target6": {
+              "norm_error": 0.0,
+              "spin_squared": 12.0,
+              "spin_eigen_residual": 0.0,
+              "mean_spin": [
+                0.0,
+                0.0,
+                3.0
+              ],
+              "closure_generator_norms": {
+                "x": 1.224744871391589,
+                "y": 1.224744871391589,
+                "z": 3.0
+              }
+            }
+          },
+          "states": {
+            "source": [
+              {
+                "occupation": [
+                  2,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 1.0,
+                "amplitude_imag": 0.0
+              }
+            ],
+            "target5": [
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.5,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  2,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.5,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.5,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.5,
+                "amplitude_imag": 0.0
+              }
+            ],
+            "target6": [
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": 1.0,
+                "amplitude_imag": 0.0
+              }
+            ]
+          }
+        },
+        "open_M0": {
+          "norm_P5_H_source": 2.8284271247461903,
+          "norm_P6_H2_source": 8.0,
+          "direct_P6_H_source": 0.0,
+          "matrix_element_target6_H_target5": 2.82842712474619,
+          "checks": {
+            "source": {
+              "norm_error": 4.440892098500626e-16,
+              "spin_squared": 12.000000000000007,
+              "spin_eigen_residual": 2.7733362266239673e-15,
+              "mean_spin": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "closure_generator_norms": {
+                "x": 2.4494897427831788,
+                "y": 2.4494897427831788,
+                "z": 0.0
+              }
+            },
+            "target5": {
+              "norm_error": 1.1102230246251565e-16,
+              "spin_squared": 12.0,
+              "spin_eigen_residual": 1.1322097734007351e-15,
+              "mean_spin": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "closure_generator_norms": {
+                "x": 2.449489742783178,
+                "y": 2.449489742783178,
+                "z": 0.0
+              }
+            },
+            "target6": {
+              "norm_error": 2.220446049250313e-16,
+              "spin_squared": 12.000000000000004,
+              "spin_eigen_residual": 8.881784197001252e-16,
+              "mean_spin": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "closure_generator_norms": {
+                "x": 2.449489742783178,
+                "y": 2.449489742783178,
+                "z": 0.0
+              }
+            }
+          },
+          "states": {
+            "source": [
+              {
+                "occupation": [
+                  0,
+                  2,
+                  0,
+                  1,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.22360679774997902,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  1,
+                  0,
+                  0,
+                  1,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.22360679774997902,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.316227766016838,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.316227766016838,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.44721359549995804,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.44721359549995804,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.316227766016838,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.316227766016838,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.22360679774997902,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.22360679774997902,
+                "amplitude_imag": 0.0
+              }
+            ],
+            "target5": [
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  2,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  2,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.15811388300841894,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.15811388300841894,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.15811388300841894,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.15811388300841894,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  2,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  2,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.15811388300841897,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.15811388300841897,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.15811388300841897,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.15811388300841897,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  2,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  2,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.15811388300841894,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.15811388300841894,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  2,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.15811388300841894,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.15811388300841894,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.15811388300841897,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.15811388300841897,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.15811388300841894,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.15811388300841894,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.15811388300841894,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.15811388300841894,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.15811388300841894,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.15811388300841894,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.15811388300841894,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.15811388300841894,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.15811388300841897,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.15811388300841897,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.11180339887498948,
+                "amplitude_imag": 0.0
+              }
+            ],
+            "target6": [
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.22360679774997896,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.22360679774997896,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.22360679774997896,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.22360679774997896,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1
+                ],
+                "amplitude_real": 0.223606797749979,
+                "amplitude_imag": 0.0
+              }
+            ]
+          }
+        }
+      }
+    },
+    "disconnected_receivers": {
+      "full": {
+        "4_to_5": {
+          "shape": [
+            1440,
+            5160
+          ],
+          "nonzero_entries": 9216,
+          "frobenius_norm": 122.37646832622684
+        },
+        "4_to_6": {
+          "shape": [
+            64,
+            5160
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "5_to_6": {
+          "shape": [
+            64,
+            1440
+          ],
+          "nonzero_entries": 768,
+          "frobenius_norm": 33.94112549695428
+        },
+        "basis_graph_components": {
+          "1e-10": {
+            "count": 462,
+            "size_histogram": {
+              "1": 84,
+              "4": 112,
+              "10": 70,
+              "16": 35,
+              "20": 40,
+              "35": 20,
+              "40": 40,
+              "56": 8,
+              "80": 20,
+              "84": 2,
+              "100": 10,
+              "140": 8,
+              "200": 8,
+              "224": 2,
+              "350": 2,
+              "400": 1
+            }
+          },
+          "1e-12": {
+            "count": 462,
+            "size_histogram": {
+              "1": 84,
+              "4": 112,
+              "10": 70,
+              "16": 35,
+              "20": 40,
+              "35": 20,
+              "40": 40,
+              "56": 8,
+              "80": 20,
+              "84": 2,
+              "100": 10,
+              "140": 8,
+              "200": 8,
+              "224": 2,
+              "350": 2,
+              "400": 1
+            }
+          }
+        }
+      },
+      "closed": {
+        "4_to_5": {
+          "shape": [
+            90,
+            240
+          ],
+          "nonzero_entries": 536,
+          "frobenius_norm": 26.832815729997478,
+          "rank": 78,
+          "source_nullity": 162,
+          "rank_at_1e12": 78
+        },
+        "4_to_6": {
+          "shape": [
+            5,
+            240
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "5_to_6": {
+          "shape": [
+            5,
+            90
+          ],
+          "nonzero_entries": 62,
+          "frobenius_norm": 8.485281374238573
+        },
+        "basis_graph_components": {
+          "1e-10": {
+            "count": 20,
+            "size_histogram": {
+              "1": 1,
+              "4": 2,
+              "6": 1,
+              "10": 3,
+              "20": 7,
+              "45": 3,
+              "50": 1,
+              "60": 2
+            }
+          },
+          "1e-12": {
+            "count": 20,
+            "size_histogram": {
+              "1": 1,
+              "4": 2,
+              "6": 1,
+              "10": 3,
+              "20": 7,
+              "45": 3,
+              "50": 1,
+              "60": 2
+            }
+          }
+        },
+        "4_to_6_second_power": {
+          "shape": [
+            5,
+            240
+          ],
+          "frobenius_norm": 24.000000000000007,
+          "rank": 5,
+          "rank_at_1e12": 5
+        }
+      },
+      "onsite_4_to_5": 0.0,
+      "witnesses": {
+        "closed": {
+          "norm_P5_H_source": 0.0,
+          "norm_P6_H2_source": 0.0,
+          "direct_P6_H_source": 0.0,
+          "matrix_element_target6_H_target5": null,
+          "checks": {
+            "source": {
+              "norm_error": 2.220446049250313e-16,
+              "spin_squared": -2.0396099332657776e-16,
+              "spin_eigen_residual": 2.2887833992611187e-16,
+              "mean_spin": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "closure_generator_norms": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            }
+          },
+          "states": {
+            "source": [
+              {
+                "occupation": [
+                  0,
+                  2,
+                  0,
+                  1,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.4082482904638631,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  1,
+                  0,
+                  0,
+                  1,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.4082482904638631,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.4082482904638631,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.4082482904638631,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": -0.4082482904638631,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.4082482904638631,
+                "amplitude_imag": 0.0
+              }
+            ]
+          }
+        },
+        "open_highest_weight": {
+          "norm_P5_H_source": 0.0,
+          "norm_P6_H2_source": 0.0,
+          "direct_P6_H_source": 0.0,
+          "matrix_element_target6_H_target5": null,
+          "checks": {
+            "source": {
+              "norm_error": 0.0,
+              "spin_squared": 12.0,
+              "spin_eigen_residual": 0.0,
+              "mean_spin": [
+                0.0,
+                0.0,
+                3.0
+              ],
+              "closure_generator_norms": {
+                "x": 1.224744871391589,
+                "y": 1.224744871391589,
+                "z": 3.0
+              }
+            }
+          },
+          "states": {
+            "source": [
+              {
+                "occupation": [
+                  2,
+                  0,
+                  1,
+                  0,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 1.0,
+                "amplitude_imag": 0.0
+              }
+            ]
+          }
+        },
+        "open_M0": {
+          "norm_P5_H_source": 0.0,
+          "norm_P6_H2_source": 0.0,
+          "direct_P6_H_source": 0.0,
+          "matrix_element_target6_H_target5": null,
+          "checks": {
+            "source": {
+              "norm_error": 4.440892098500626e-16,
+              "spin_squared": 12.000000000000007,
+              "spin_eigen_residual": 2.7733362266239673e-15,
+              "mean_spin": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "closure_generator_norms": {
+                "x": 2.4494897427831788,
+                "y": 2.4494897427831788,
+                "z": 0.0
+              }
+            }
+          },
+          "states": {
+            "source": [
+              {
+                "occupation": [
+                  0,
+                  2,
+                  0,
+                  1,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.22360679774997902,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  1,
+                  0,
+                  0,
+                  1,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.22360679774997902,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  0,
+                  2,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.316227766016838,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  1,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.316227766016838,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.44721359549995804,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.44721359549995804,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  1,
+                  1,
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.316227766016838,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.316227766016838,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.22360679774997902,
+                "amplitude_imag": 0.0
+              },
+              {
+                "occupation": [
+                  2,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "amplitude_real": 0.22360679774997902,
+                "amplitude_imag": 0.0
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "validation": {
+    "gram": 4.440892098500626e-16,
+    "singlet_dimension_error": 0,
+    "closure_x": 1.1102230246251565e-16,
+    "closure_y": 1.1102230246251565e-16,
+    "closure_z": 0.0,
+    "ring_projection_leakage": 1.3322676295501878e-15,
+    "ring_hermiticity": 0.0,
+    "ring_commutator_x": 8.881784197001252e-16,
+    "ring_commutator_y": 8.881784197001252e-16,
+    "ring_commutator_z": 0.0,
+    "ring_commutator_squared": 3.552713678800501e-15,
+    "ring_onsite_identity": 0.0,
+    "ring_closed_direct_target5_spin": 4.041272810440265e-16,
+    "ring_closed_direct_target6_spin": 2.220446049250313e-16,
+    "ring_open_highest_weight_direct_target5_spin": 0.0,
+    "ring_open_highest_weight_direct_target6_spin": 0.0,
+    "ring_open_M0_direct_target5_spin": 1.1749496091904413e-15,
+    "ring_open_M0_direct_target6_spin": 1.1749496091904413e-15,
+    "ring_independent_directed_builder": 0.0,
+    "ring_closed_source_spin_residual": 2.2887833992611187e-16,
+    "ring_closed_target5_spin_residual": 1.9821445675202305e-16,
+    "ring_closed_target6_spin_residual": 1.1775693440128312e-16,
+    "ring_open_highest_weight_source_spin_residual": 0.0,
+    "ring_open_highest_weight_target5_spin_residual": 0.0,
+    "ring_open_highest_weight_target6_spin_residual": 0.0,
+    "ring_open_M0_source_spin_residual": 2.7733362266239673e-15,
+    "ring_open_M0_target5_spin_residual": 1.3866681133119837e-15,
+    "ring_open_M0_target6_spin_residual": 1.1749496091904413e-15,
+    "complete_projection_leakage": 1.3322676295501878e-15,
+    "complete_hermiticity": 0.0,
+    "complete_commutator_x": 8.881784197001252e-16,
+    "complete_commutator_y": 8.881784197001252e-16,
+    "complete_commutator_z": 0.0,
+    "complete_commutator_squared": 3.552713678800501e-15,
+    "complete_onsite_identity": 0.0,
+    "complete_closed_direct_target5_spin": 4.041272810440265e-16,
+    "complete_closed_direct_target6_spin": 2.220446049250313e-16,
+    "complete_open_highest_weight_direct_target5_spin": 0.0,
+    "complete_open_highest_weight_direct_target6_spin": 0.0,
+    "complete_open_M0_direct_target5_spin": 1.1749496091904413e-15,
+    "complete_open_M0_direct_target6_spin": 1.1749496091904413e-15,
+    "complete_independent_directed_builder": 0.0,
+    "complete_closed_source_spin_residual": 2.2887833992611187e-16,
+    "complete_closed_target5_spin_residual": 4.2457866502527573e-16,
+    "complete_closed_target6_spin_residual": 4.1910000110727263e-16,
+    "complete_open_highest_weight_source_spin_residual": 0.0,
+    "complete_open_highest_weight_target5_spin_residual": 0.0,
+    "complete_open_highest_weight_target6_spin_residual": 0.0,
+    "complete_open_M0_source_spin_residual": 2.7733362266239673e-15,
+    "complete_open_M0_target5_spin_residual": 1.1322097734007351e-15,
+    "complete_open_M0_target6_spin_residual": 8.881784197001252e-16,
+    "disconnected_receivers_projection_leakage": 1.3322676295501878e-15,
+    "disconnected_receivers_hermiticity": 0.0,
+    "disconnected_receivers_commutator_x": 8.881784197001252e-16,
+    "disconnected_receivers_commutator_y": 8.881784197001252e-16,
+    "disconnected_receivers_commutator_z": 0.0,
+    "disconnected_receivers_commutator_squared": 3.552713678800501e-15,
+    "disconnected_receivers_onsite_identity": 0.0,
+    "disconnected_receivers_closed_source_spin_residual": 2.2887833992611187e-16,
+    "disconnected_receivers_open_highest_weight_source_spin_residual": 0.0,
+    "disconnected_receivers_open_M0_source_spin_residual": 2.7733362266239673e-15
+  },
+  "no_hopping_witnesses": {
+    "closed": {
+      "norm_P5_H_source": 0.0,
+      "norm_P6_H2_source": 0.0,
+      "direct_P6_H_source": 0.0,
+      "matrix_element_target6_H_target5": null,
+      "checks": {
+        "source": {
+          "norm_error": 2.220446049250313e-16,
+          "spin_squared": -2.0396099332657776e-16,
+          "spin_eigen_residual": 2.2887833992611187e-16,
+          "mean_spin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "closure_generator_norms": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      },
+      "states": {
+        "source": [
+          {
+            "occupation": [
+              0,
+              2,
+              0,
+              1,
+              1,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "amplitude_real": -0.4082482904638631,
+            "amplitude_imag": 0.0
+          },
+          {
+            "occupation": [
+              0,
+              2,
+              1,
+              0,
+              0,
+              1,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "amplitude_real": 0.4082482904638631,
+            "amplitude_imag": 0.0
+          },
+          {
+            "occupation": [
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "amplitude_real": 0.4082482904638631,
+            "amplitude_imag": 0.0
+          },
+          {
+            "occupation": [
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "amplitude_real": -0.4082482904638631,
+            "amplitude_imag": 0.0
+          },
+          {
+            "occupation": [
+              2,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            "amplitude_real": -0.4082482904638631,
+            "amplitude_imag": 0.0
+          },
+          {
+            "occupation": [
+              2,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            "amplitude_real": 0.4082482904638631,
+            "amplitude_imag": 0.0
+          }
+        ]
+      }
+    },
+    "open_highest_weight": {
+      "norm_P5_H_source": 0.0,
+      "norm_P6_H2_source": 0.0,
+      "direct_P6_H_source": 0.0,
+      "matrix_element_target6_H_target5": null,
+      "checks": {
+        "source": {
+          "norm_error": 0.0,
+          "spin_squared": 12.0,
+          "spin_eigen_residual": 0.0,
+          "mean_spin": [
+            0.0,
+            0.0,
+            3.0
+          ],
+          "closure_generator_norms": {
+            "x": 1.224744871391589,
+            "y": 1.224744871391589,
+            "z": 3.0
+          }
+        }
+      },
+      "states": {
+        "source": [
+          {
+            "occupation": [
+              2,
+              0,
+              1,
+              0,
+              1,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "amplitude_real": 1.0,
+            "amplitude_imag": 0.0
+          }
+        ]
+      }
+    },
+    "open_M0": {
+      "norm_P5_H_source": 0.0,
+      "norm_P6_H2_source": 0.0,
+      "direct_P6_H_source": 0.0,
+      "matrix_element_target6_H_target5": null,
+      "checks": {
+        "source": {
+          "norm_error": 4.440892098500626e-16,
+          "spin_squared": 12.000000000000007,
+          "spin_eigen_residual": 2.7733362266239673e-15,
+          "mean_spin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "closure_generator_norms": {
+            "x": 2.4494897427831788,
+            "y": 2.4494897427831788,
+            "z": 0.0
+          }
+        }
+      },
+      "states": {
+        "source": [
+          {
+            "occupation": [
+              0,
+              2,
+              0,
+              1,
+              1,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "amplitude_real": 0.22360679774997902,
+            "amplitude_imag": 0.0
+          },
+          {
+            "occupation": [
+              0,
+              2,
+              1,
+              0,
+              0,
+              1,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "amplitude_real": 0.22360679774997902,
+            "amplitude_imag": 0.0
+          },
+          {
+            "occupation": [
+              0,
+              2,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "amplitude_real": 0.316227766016838,
+            "amplitude_imag": 0.0
+          },
+          {
+            "occupation": [
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "amplitude_real": 0.316227766016838,
+            "amplitude_imag": 0.0
+          },
+          {
+            "occupation": [
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "amplitude_real": 0.44721359549995804,
+            "amplitude_imag": 0.0
+          },
+          {
+            "occupation": [
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "amplitude_real": 0.44721359549995804,
+            "amplitude_imag": 0.0
+          },
+          {
+            "occupation": [
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            "amplitude_real": 0.316227766016838,
+            "amplitude_imag": 0.0
+          },
+          {
+            "occupation": [
+              2,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "amplitude_real": 0.316227766016838,
+            "amplitude_imag": 0.0
+          },
+          {
+            "occupation": [
+              2,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            "amplitude_real": 0.22360679774997902,
+            "amplitude_imag": 0.0
+          },
+          {
+            "occupation": [
+              2,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            "amplitude_real": 0.22360679774997902,
+            "amplitude_imag": 0.0
+          }
+        ]
+      }
+    }
+  }
+}

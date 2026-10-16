@@ -38,10 +38,10 @@ Run the mutation scripts sequentially because they append to the same summary ta
 
 ## Trajectory arrays
 
-Each local-only `.npz` contains scaled time `tau`, `readouts`, initial/final orientations and momenta, and the actual physical integration step. These large per-run archives are omitted from Git and the dashboard package. N is encoded in the name. The final `_L...` suffix is the physical coupling lambda, not system size. Prefixes distinguish primary, physical-coupling, half-step, long-time and common-physical-duration controls.
+Each local-only `.npz` contains scaled time `tau`, `readouts`, initial/final orientations and momenta, and the actual physical integration step. These large per-run archives are ignored by Git. N is encoded in the name. The final `_L...` suffix is the physical coupling lambda, not system size. Prefixes distinguish primary, physical-coupling, half-step, long-time and common-physical-duration controls.
 
 `readouts` columns are total energy; kinetic fraction; original-pair local-energy fraction; concentration; **kinetic energy outside the original pair in physical units**; total-angular-momentum norm; orientation norm error; tangency error; N local total energies; and N kinetic energies. Column4 therefore differs from the earlier ring study's spatial second moment. I=1 throughout. The reported transfer fraction divides column4 by the initial packet kinetic energy.
 
 Primary scaled windows end at 1,000 and 2,000 and begin at 200. Longer runs also save full-duration windows. Initial potential energy is additional to the packet and is included in total energy. A finite-time transfer bracket is not an equilibrium or infinite-time localization result.
 
-The main driver including its initial controls took approximately 57 seconds on this host; later targeted controls were separate. The full trajectory package is about 503 MiB and remains local, omitted from Git and the website. Compact summaries, protocols, validation reports and hashes are versioned; selected summaries and figures appear in the dashboard package. No remote compute was used.
+The main driver including its initial controls took approximately 57 seconds on this host; later targeted controls were separate. The full trajectory package is about 503 MiB and remains local, ignored by Git. Compact summaries, protocols, validation reports and hashes are versioned; selected summaries and figures appear in the dashboard package. No remote compute was used.

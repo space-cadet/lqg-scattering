@@ -1,10 +1,22 @@
 # Active Context
 
-*Last Updated: 2026-10-16 13:28:54 IST*
+*Last Updated: 2026-10-16 17:45:49 IST*
 
 ## Current Focus
-T11 now includes the October 16 channel pilot and classical rotor equilibration
-studies. The rotor results distinguish moderate-packet spreading from
+Latest continuation (2026-10-16 17:45:49 IST): T11 is divided into T11a–T11d.
+T11c records the completed finite-time rotor-transfer pilot; T11a, T11b and
+T11d remain active. Quantum rotor transfer, exact face-channel connectivity
+and 54 closed geometric redistribution trajectories are complete. The local
+dashboard passed source, hash and responsive-browser checks and was deployed
+after the user's explicit request. The proposed next geometric step is
+relational face-direction analysis. See the
+[session handoff](sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-summary.md) and
+[research map](../notes/quantum-geometry-research.md). The earlier checkpoint
+below records the state before the quantum/geometric continuation.
+
+Earlier checkpoint (before NS37–NS40 and dashboard integration): T11 included
+the October 16 channel pilot and classical rotor equilibration studies. The
+rotor results distinguish moderate-packet spreading from
 finite-time high-energy concentration and show delayed release at longer times;
 they do not establish permanent localization. The exact planar-pair threshold
 and coupling scan are recorded separately. No quantum rotor evolution has
@@ -33,14 +45,14 @@ entropy work is recorded in the [thermal note](../notes/thermal-entanglement.md)
 - T5: Volume–positivity numerical-studies program — IN PROGRESS; T5c/T5d/T5g open; the former T5f amplituhedron mapping is now T8b. Initial T5c pilots compare the input classical tetrahedron with weighted FL positive volume: regular/unequal-skew through $J=7$, a nine-shape unequal-area grid at $J=2,4$, selected $J=6$ points, and a flat path through $J=7$. Area means and weighted closure pass; finite-$J$ unequal correlations do not exactly reproduce input angles. Calibrated RS/AL agreement follows from closure and is not independent evidence. Broader shape and iterated-limit conclusions remain open. See `implementation-details/T5c-flux-covariance-volume-comparison.md` and shared `implementation-details/volume-numerical-preliminaries.md`.
 - T8: Amplituhedron Program — IN PROGRESS; T8a cluster algebra/chart relevance and T8b positive-cell/scattering-region mapping (transferred from T5f) are open. See `tasks/T8.md`.
 - T9: Thermal/TFD state construction and physical study — IN PROGRESS; owns all ongoing TFD construction and analysis, with exactly five completed child-study records T7a–T7e. The four-face $J_{\mathrm{in}}=1$ occupation/spin comparison is complete through $q=160$. October 13 results quantify ordinary per-copy closure and show that separate singlet projection retains closed states with increasing mean area and positive RS volume; the area asymptote is $(57/14)T_*$. The October 14 analytic eigenvalue-ratio test excludes a fixed single-copy Gibbs Hamiltonian for this separately closed reference family; the separately closed reference spectra and entropy are now calculated; unprojected and other-input characterization remain open.
-- T11: Hamiltonian, volume and face/rotor dynamics — IN PROGRESS. NS32–36 record large-area free-hopping activation, the small-area channel pilot, classical rotor spreading, the exact pair benchmark and the larger-ring coupling crossover. Moderate packets approach sampled microcanonical readouts; high packets can remain concentrated through $t=2000$ and some release later. The local dashboard now packages the four new channel/rotor records, and its data checks pass. Quantum rotor evolution and distinct-normal geometry remain open. See the [numerical chronology](../notes/numerical-studies.md) and [rotor handoff](sessions/2026-10-16-equilibration-and-rotors-summary.md).
+- T11: Hamiltonian, volume and face/rotor dynamics — IN PROGRESS. T11a owns the fixed-area Hamiltonian/volume and prepared-FL line; T11b owns face-channel activation/equilibration; completed T11c records the finite-time classical/quantum rotor-transfer pilot; T11d owns closed geometric connectivity and shape. NS32–40 are assigned across these child records, with NS25 remaining constructive sewing. The local dashboard packages 42 datasets; source-value/hash parity and desktop/mobile acceptance passed, and the update was deployed after the user's explicit request. Physical interaction calibration, interacting large-area equilibration and relational normal/coherent-intertwiner analysis remain open. See the [numerical chronology](../notes/numerical-studies.md), [T11](tasks/T11.md), and the [dashboard acceptance report](ui-tests/2026-10-16-quantum-geometry-dashboard.md).
 - The current numerics dashboard has 30 catalogue studies and 39 selectable datasets (2,559 packaged rows). Its public overview lists 47 runs, 12 tasks, and 49 figures. The October 16 content and cache-refresh commits deployed successfully; see the [hosted acceptance record](ui-tests/2026-10-16-numerics-dashboard-refresh.md).
 
 ## Project State
 - Published EPJC paper is the frozen baseline.
 - All source code, including LaTeX manuscript sources and build assets, is grouped under `code/`; compiled PDFs remain under `paper/`.
 - The project root retains the README and living manuscript. Calculation JSON files are organized under `results/`; experiment records, task specifications, and the published-paper overview are under `notes/`. Dashboard files now sit directly in `code/dashboard/`.
-- The task inventory has dedicated records for all 29 current registry IDs plus the transferred historical T5f and T7 records. Completed tasks are archived; active tasks remain under `tasks/`. Statuses and task relationships were reconciled against the current Memory Bank and full Git history.
+- The task inventory has dedicated records for all 33 current registry IDs plus the transferred historical T5f and T7 records. Completed tasks are archived; active tasks remain under `tasks/`. Statuses and task relationships were reconciled against the current Memory Bank and full Git history.
 - T1b's positive-volume follow-up is complete for two $N=4$, $K=6$ real-plane states inside and outside the positive cell; both RS and AL expectations are nonzero and independently cross-checked.
 - Python and Rust implementations exist. The old n=4 comparison shared a truncated Taylor state. Corrected Rust scans now cover n=4..8; SciPy independently checks n=4,5,7,8.
 - `manuscript.md` contains results through T7e but needs corrected conclusions, caveats, independent review, and circulation.

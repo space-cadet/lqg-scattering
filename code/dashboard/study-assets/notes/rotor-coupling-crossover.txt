@@ -1,5 +1,7 @@
 # Coupling strength and the apparent energy-transfer cutoff
 
+[Research map](quantum-geometry-research.md) · Related: [few rotor energy transfer](few-rotor-energy-transfer.md), [quantum planar rotor energy transfer](quantum-planar-rotor-energy-transfer.md).
+
 *Larger classical rotor rings, October 16, 2026.*
 
 The large-ring tests confirm strong coupling dependence, but they also show why the word cutoff needs a time qualifier. The main transfer drop occurs in a fairly narrow range of initial packet energy relative to coupling. Some states that look trapped through scaled time 2,000 release substantial energy by 10,000. The calculation measures a finite-time crossover, not a permanent localization threshold.

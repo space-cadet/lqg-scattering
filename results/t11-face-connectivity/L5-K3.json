@@ -1,0 +1,385 @@
+{
+  "L": 5,
+  "K": 3,
+  "full_dimension": 5005,
+  "singlet_dimension": 175,
+  "full_active_counts": {
+    "0": 0,
+    "1": 35,
+    "2": 700,
+    "3": 2310,
+    "4": 1720,
+    "5": 240
+  },
+  "singlet_active_counts": {
+    "0": 0,
+    "1": 0,
+    "2": 10,
+    "3": 70,
+    "4": 80,
+    "5": 15
+  },
+  "graphs": {
+    "ring": {
+      "full": {
+        "4_to_5": {
+          "shape": [
+            240,
+            1720
+          ],
+          "nonzero_entries": 1920,
+          "frobenius_norm": 55.85696017507576
+        },
+        "4_to_6": {
+          "shape": [
+            0,
+            1720
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "5_to_6": {
+          "shape": [
+            0,
+            240
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "basis_graph_components": {
+          "1e-10": {
+            "count": 7,
+            "size_histogram": {
+              "210": 2,
+              "630": 2,
+              "1050": 2,
+              "1225": 1
+            }
+          },
+          "1e-12": {
+            "count": 7,
+            "size_histogram": {
+              "210": 2,
+              "630": 2,
+              "1050": 2,
+              "1225": 1
+            }
+          }
+        }
+      },
+      "closed": {
+        "4_to_5": {
+          "shape": [
+            15,
+            80
+          ],
+          "nonzero_entries": 108,
+          "frobenius_norm": 12.247448713915892,
+          "rank": 15,
+          "source_nullity": 65,
+          "rank_at_1e12": 15
+        },
+        "4_to_6": {
+          "shape": [
+            0,
+            80
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "5_to_6": {
+          "shape": [
+            0,
+            15
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "basis_graph_components": {
+          "1e-10": {
+            "count": 1,
+            "size_histogram": {
+              "175": 1
+            }
+          },
+          "1e-12": {
+            "count": 1,
+            "size_histogram": {
+              "175": 1
+            }
+          }
+        },
+        "4_to_6_second_power": {
+          "shape": [
+            0,
+            80
+          ],
+          "frobenius_norm": 0.0,
+          "rank": 0,
+          "rank_at_1e12": 0
+        }
+      },
+      "onsite_4_to_5": 0.0
+    },
+    "complete": {
+      "full": {
+        "4_to_5": {
+          "shape": [
+            240,
+            1720
+          ],
+          "nonzero_entries": 3840,
+          "frobenius_norm": 78.99367063252599
+        },
+        "4_to_6": {
+          "shape": [
+            0,
+            1720
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "5_to_6": {
+          "shape": [
+            0,
+            240
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "basis_graph_components": {
+          "1e-10": {
+            "count": 7,
+            "size_histogram": {
+              "210": 2,
+              "630": 2,
+              "1050": 2,
+              "1225": 1
+            }
+          },
+          "1e-12": {
+            "count": 7,
+            "size_histogram": {
+              "210": 2,
+              "630": 2,
+              "1050": 2,
+              "1225": 1
+            }
+          }
+        }
+      },
+      "closed": {
+        "4_to_5": {
+          "shape": [
+            15,
+            80
+          ],
+          "nonzero_entries": 260,
+          "frobenius_norm": 17.320508075688775,
+          "rank": 15,
+          "source_nullity": 65,
+          "rank_at_1e12": 15
+        },
+        "4_to_6": {
+          "shape": [
+            0,
+            80
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "5_to_6": {
+          "shape": [
+            0,
+            15
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "basis_graph_components": {
+          "1e-10": {
+            "count": 1,
+            "size_histogram": {
+              "175": 1
+            }
+          },
+          "1e-12": {
+            "count": 1,
+            "size_histogram": {
+              "175": 1
+            }
+          }
+        },
+        "4_to_6_second_power": {
+          "shape": [
+            0,
+            80
+          ],
+          "frobenius_norm": 0.0,
+          "rank": 0,
+          "rank_at_1e12": 0
+        }
+      },
+      "onsite_4_to_5": 0.0
+    },
+    "disconnected_receivers": {
+      "full": {
+        "4_to_5": {
+          "shape": [
+            240,
+            1720
+          ],
+          "nonzero_entries": 2304,
+          "frobenius_norm": 61.18823416311342
+        },
+        "4_to_6": {
+          "shape": [
+            0,
+            1720
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "5_to_6": {
+          "shape": [
+            0,
+            240
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "basis_graph_components": {
+          "1e-10": {
+            "count": 84,
+            "size_histogram": {
+              "1": 7,
+              "4": 12,
+              "10": 10,
+              "16": 5,
+              "20": 8,
+              "35": 6,
+              "40": 8,
+              "56": 4,
+              "80": 6,
+              "84": 2,
+              "100": 3,
+              "140": 4,
+              "200": 4,
+              "224": 2,
+              "350": 2,
+              "400": 1
+            }
+          },
+          "1e-12": {
+            "count": 84,
+            "size_histogram": {
+              "1": 7,
+              "4": 12,
+              "10": 10,
+              "16": 5,
+              "20": 8,
+              "35": 6,
+              "40": 8,
+              "56": 4,
+              "80": 6,
+              "84": 2,
+              "100": 3,
+              "140": 4,
+              "200": 4,
+              "224": 2,
+              "350": 2,
+              "400": 1
+            }
+          }
+        }
+      },
+      "closed": {
+        "4_to_5": {
+          "shape": [
+            15,
+            80
+          ],
+          "nonzero_entries": 152,
+          "frobenius_norm": 13.416407864998739,
+          "rank": 15,
+          "source_nullity": 65,
+          "rank_at_1e12": 15
+        },
+        "4_to_6": {
+          "shape": [
+            0,
+            80
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "5_to_6": {
+          "shape": [
+            0,
+            15
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "basis_graph_components": {
+          "1e-10": {
+            "count": 4,
+            "size_histogram": {
+              "20": 1,
+              "45": 1,
+              "50": 1,
+              "60": 1
+            }
+          },
+          "1e-12": {
+            "count": 4,
+            "size_histogram": {
+              "20": 1,
+              "45": 1,
+              "50": 1,
+              "60": 1
+            }
+          }
+        },
+        "4_to_6_second_power": {
+          "shape": [
+            0,
+            80
+          ],
+          "frobenius_norm": 0.0,
+          "rank": 0,
+          "rank_at_1e12": 0
+        }
+      },
+      "onsite_4_to_5": 0.0
+    }
+  },
+  "validation": {
+    "gram": 4.440892098500626e-16,
+    "singlet_dimension_error": 0,
+    "closure_x": 1.1102230246251565e-16,
+    "closure_y": 1.1102230246251565e-16,
+    "closure_z": 0.0,
+    "ring_projection_leakage": 1.3322676295501878e-15,
+    "ring_hermiticity": 0.0,
+    "ring_commutator_x": 8.881784197001252e-16,
+    "ring_commutator_y": 8.881784197001252e-16,
+    "ring_commutator_z": 0.0,
+    "ring_commutator_squared": 3.552713678800501e-15,
+    "ring_onsite_identity": 0.0,
+    "complete_projection_leakage": 1.3322676295501878e-15,
+    "complete_hermiticity": 0.0,
+    "complete_commutator_x": 8.881784197001252e-16,
+    "complete_commutator_y": 8.881784197001252e-16,
+    "complete_commutator_z": 0.0,
+    "complete_commutator_squared": 3.552713678800501e-15,
+    "complete_onsite_identity": 0.0,
+    "disconnected_receivers_projection_leakage": 1.3322676295501878e-15,
+    "disconnected_receivers_hermiticity": 0.0,
+    "disconnected_receivers_commutator_x": 8.881784197001252e-16,
+    "disconnected_receivers_commutator_y": 8.881784197001252e-16,
+    "disconnected_receivers_commutator_z": 0.0,
+    "disconnected_receivers_commutator_squared": 3.552713678800501e-15,
+    "disconnected_receivers_onsite_identity": 0.0
+  }
+}

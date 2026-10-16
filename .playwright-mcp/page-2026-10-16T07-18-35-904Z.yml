@@ -1,0 +1,297 @@
+- generic [ref=f11e2]:
+  - navigation "Numerical datasets" [ref=f11e3]:
+    - generic [ref=f11e4]: Numerical study
+    - combobox "Numerical study" [ref=f11e5]:
+      - option "All studies — overview"
+      - option "Small-area face-channel equilibration pilot (12 rows)"
+      - option "Classical rotor spreading and equilibrium comparison (24 rows)"
+      - 'option "Few-rotor transfer: planar bound and 3D controls (27 rows)"'
+      - option "Rotor coupling crossover and delayed release (64 rows)"
+      - 'option "Large-area tetrahedron: face activation and recurrence (20 rows)"'
+      - option "Entanglement of separately closed thermal polyhedra (86 rows)"
+      - option "Ordinary closure versus temperature (125 rows)"
+      - option "Heating separately closed area and positive RS volume (85 rows)"
+      - option "Singlet exchange between closed FL polyhedra (20 rows)" [selected]
+      - 'option "Four versus five sites: thermal-volume persistence (12 rows)"'
+      - option "Prepared tetrahedral FL states and the volume crossover (11 rows)"
+      - option "Candidate geometric Hamiltonians and prepared-FL dynamics (62 rows)"
+      - option "Four-site Hamiltonian spectra and RS-volume observables (30 rows)"
+      - option "Complete four-face closed-basis volumes (11 rows)"
+      - option "Variable-face positive RS catalogue (9 rows)"
+      - option "Squeezed-vacuum area coefficients (964 rows)"
+      - option "Squeezed-vacuum resultant spin (196 rows)"
+      - option "Excited J_in=1 joint area and spin (5 rows)"
+      - option "Higher-J flat-boundary probes (13 rows)"
+      - option "Magnetization and signed-grasp correlations (10 rows)"
+      - option "Local-chirality pilot (13 rows)"
+      - option "Imaginary-perturbation response (26 rows)"
+      - option "Cocycle-phase pilot (10 rows)"
+      - option "Large-K recorded families and fits (13 rows)"
+      - option "Historical single-copy thermal pilot (14 rows)"
+      - option "Historical energy-basis TFD pilot (14 rows)"
+      - option "Historical complexified purification (10 rows)"
+      - option "Small-sector thermal geometry audit (4 rows)"
+      - option "RS/AL volume-prescription controls (2 rows)"
+      - option "Initial covariance reconstruction pilot (6 rows)"
+      - option "Prepared FL evolution sampling (50 rows)"
+      - option "Positive volumes on two real-plane states (2 rows)"
+      - option "FL covariance shape recovery (84 rows)"
+      - option "Weighted FL input geometry and volumes (14 rows)"
+      - option "Regular FL volume versus area (5 rows)"
+      - option "Equal-area FL shape scan at J=2 (440 rows)"
+      - option "Same-number detachment energies (8 rows)"
+      - option "Closed and open state evolution probes (6 rows)"
+      - option "Constructive edge sewing probes (5 rows)"
+  - heading "Singlet exchange between closed FL polyhedra" [level=1] [ref=f11e6]
+  - paragraph [ref=f11e7]: Fixed combined area K=4, dimension 1210; four Hamiltonians and three FL inputs. Twelve trajectories follow area current, entropy, coherence and positive RS volume; twenty canonical controls retain full joint Gibbs entropy.
+  - generic [ref=f11e8]:
+    - generic [ref=f11e9]:
+      - generic [ref=f11e10]: "20"
+      - generic [ref=f11e11]: Total Runs
+    - generic [ref=f11e12]:
+      - generic [ref=f11e13]: "0"
+      - generic [ref=f11e14]: Tasks
+    - generic [ref=f11e15]:
+      - generic [ref=f11e16]: "20"
+      - generic [ref=f11e17]: Complete
+    - generic [ref=f11e18]:
+      - generic [ref=f11e19]: "1"
+      - generic [ref=f11e20]: Figures
+  - tablist "Dashboard sections" [ref=f11e21]:
+    - tab "Runs & Studies" [selected] [ref=f11e22] [cursor=pointer]
+    - tab "Figure Archive" [ref=f11e23] [cursor=pointer]
+    - tab "Charts" [ref=f11e24] [cursor=pointer]
+    - tab "Tasks & Numerical Notes" [ref=f11e25] [cursor=pointer]
+  - tabpanel "Runs & Studies" [ref=f11e26]:
+    - heading "Run and Study Records" [level=2] [ref=f11e27]
+    - generic [ref=f11e28]:
+      - generic [ref=f11e29]:
+        - generic [ref=f11e30]: "Status:"
+        - combobox "Status:" [ref=f11e31]:
+          - option "All" [selected]
+          - option "complete"
+      - generic [ref=f11e32]:
+        - generic [ref=f11e33]: "Search:"
+        - textbox "Search:" [ref=f11e34]:
+          - /placeholder: Run ID, description...
+      - button "Reset" [ref=f11e36] [cursor=pointer]
+    - table [ref=f11e38]:
+      - rowgroup [ref=f11e39]:
+        - row [ref=f11e40]:
+          - columnheader [ref=f11e41] [cursor=pointer]:
+            - button "Case" [ref=f11e42]: Case ↕
+          - columnheader [ref=f11e43] [cursor=pointer]:
+            - button "case" [ref=f11e44]: case ↕
+          - columnheader [ref=f11e45] [cursor=pointer]:
+            - button "beta" [ref=f11e46]: beta ↕
+          - columnheader [ref=f11e47] [cursor=pointer]:
+            - button "energy" [ref=f11e48]: energy ↕
+          - columnheader [ref=f11e49] [cursor=pointer]:
+            - button "area left" [ref=f11e50]: area left ↕
+          - columnheader [ref=f11e51] [cursor=pointer]:
+            - button "volume L" [ref=f11e52]: volume L ↕
+          - columnheader [ref=f11e53] [cursor=pointer]:
+            - button "volume R" [ref=f11e54]: volume R ↕
+          - columnheader [ref=f11e55] [cursor=pointer]:
+            - button "entropy nats" [ref=f11e56]: entropy nats ↕
+      - rowgroup [ref=f11e57]:
+        - row [ref=f11e58]:
+          - cell [ref=f11e59]:
+            - button "Details for t9a-singlet-exchange:case-0001:1" [ref=f11e60] [cursor=pointer]: t9a-singlet-exchange:case-0001:1
+          - cell "no_exchange" [ref=f11e61]
+          - cell "0" [ref=f11e62]
+          - cell "0" [ref=f11e63]
+          - cell "2" [ref=f11e64]
+          - cell "0.048471722" [ref=f11e65]
+          - cell "0.048471722" [ref=f11e66]
+          - cell "7.0983756" [ref=f11e67]
+        - row [ref=f11e68]:
+          - cell [ref=f11e69]:
+            - button "Details for t9a-singlet-exchange:case-0002:2" [ref=f11e70] [cursor=pointer]: t9a-singlet-exchange:case-0002:2
+          - cell "no_exchange" [ref=f11e71]
+          - cell "0.5" [ref=f11e72]
+          - cell "0" [ref=f11e73]
+          - cell "2" [ref=f11e74]
+          - cell "0.048471722" [ref=f11e75]
+          - cell "0.048471722" [ref=f11e76]
+          - cell "7.0983756" [ref=f11e77]
+        - row [ref=f11e78]:
+          - cell [ref=f11e79]:
+            - button "Details for t9a-singlet-exchange:case-0003:3" [ref=f11e80] [cursor=pointer]: t9a-singlet-exchange:case-0003:3
+          - cell "no_exchange" [ref=f11e81]
+          - cell "2" [ref=f11e82]
+          - cell "0" [ref=f11e83]
+          - cell "2" [ref=f11e84]
+          - cell "0.048471722" [ref=f11e85]
+          - cell "0.048471722" [ref=f11e86]
+          - cell "7.0983756" [ref=f11e87]
+        - row [ref=f11e88]:
+          - cell [ref=f11e89]:
+            - button "Details for t9a-singlet-exchange:case-0004:4" [ref=f11e90] [cursor=pointer]: t9a-singlet-exchange:case-0004:4
+          - cell "no_exchange" [ref=f11e91]
+          - cell "10" [ref=f11e92]
+          - cell "0" [ref=f11e93]
+          - cell "2" [ref=f11e94]
+          - cell "0.048471722" [ref=f11e95]
+          - cell "0.048471722" [ref=f11e96]
+          - cell "7.0983756" [ref=f11e97]
+        - row [ref=f11e98]:
+          - cell [ref=f11e99]:
+            - button "Details for t9a-singlet-exchange:case-0005:5" [ref=f11e100] [cursor=pointer]: t9a-singlet-exchange:case-0005:5
+          - cell "no_exchange" [ref=f11e101]
+          - cell "100" [ref=f11e102]
+          - cell "0" [ref=f11e103]
+          - cell "2" [ref=f11e104]
+          - cell "0.048471722" [ref=f11e105]
+          - cell "0.048471722" [ref=f11e106]
+          - cell "7.0983756" [ref=f11e107]
+        - row [ref=f11e108]:
+          - cell [ref=f11e109]:
+            - button "Details for t9a-singlet-exchange:case-0006:6" [ref=f11e110] [cursor=pointer]: t9a-singlet-exchange:case-0006:6
+          - cell "resonant" [ref=f11e111]
+          - cell "0" [ref=f11e112]
+          - cell "1.1881308e-17" [ref=f11e113]
+          - cell "2" [ref=f11e114]
+          - cell "0.048471722" [ref=f11e115]
+          - cell "0.048471722" [ref=f11e116]
+          - cell "7.0983756" [ref=f11e117]
+        - row [ref=f11e118]:
+          - cell [ref=f11e119]:
+            - button "Details for t9a-singlet-exchange:case-0007:7" [ref=f11e120] [cursor=pointer]: t9a-singlet-exchange:case-0007:7
+          - cell "resonant" [ref=f11e121]
+          - cell "0.5" [ref=f11e122]
+          - cell "-0.26415266" [ref=f11e123]
+          - cell "2" [ref=f11e124]
+          - cell "0.048312548" [ref=f11e125]
+          - cell "0.048312548" [ref=f11e126]
+          - cell "7.0327869" [ref=f11e127]
+        - row [ref=f11e128]:
+          - cell [ref=f11e129]:
+            - button "Details for t9a-singlet-exchange:case-0008:8" [ref=f11e130] [cursor=pointer]: t9a-singlet-exchange:case-0008:8
+          - cell "resonant" [ref=f11e131]
+          - cell "2" [ref=f11e132]
+          - cell "-0.88586849" [ref=f11e133]
+          - cell "2" [ref=f11e134]
+          - cell "0.04674133" [ref=f11e135]
+          - cell "0.04674133" [ref=f11e136]
+          - cell "6.2977337" [ref=f11e137]
+        - row [ref=f11e138]:
+          - cell [ref=f11e139]:
+            - button "Details for t9a-singlet-exchange:case-0009:9" [ref=f11e140] [cursor=pointer]: t9a-singlet-exchange:case-0009:9
+          - cell "resonant" [ref=f11e141]
+          - cell "10" [ref=f11e142]
+          - cell "-1.3544667" [ref=f11e143]
+          - cell "2" [ref=f11e144]
+          - cell "0.044823723" [ref=f11e145]
+          - cell "0.044823723" [ref=f11e146]
+          - cell "4.6768903" [ref=f11e147]
+        - row [ref=f11e148]:
+          - cell [ref=f11e149]:
+            - button "Details for t9a-singlet-exchange:case-0010:10" [ref=f11e150] [cursor=pointer]: t9a-singlet-exchange:case-0010:10
+          - cell "resonant" [ref=f11e151]
+          - cell "100" [ref=f11e152]
+          - cell "-1.356466" [ref=f11e153]
+          - cell "2" [ref=f11e154]
+          - cell "0.044821441" [ref=f11e155]
+          - cell "0.044821441" [ref=f11e156]
+          - cell "4.6539604" [ref=f11e157]
+        - row [ref=f11e158]:
+          - cell [ref=f11e159]:
+            - button "Details for t9a-singlet-exchange:case-0011:11" [ref=f11e160] [cursor=pointer]: t9a-singlet-exchange:case-0011:11
+          - cell "repulsive" [ref=f11e161]
+          - cell "0" [ref=f11e162]
+          - cell "3.1900826" [ref=f11e163]
+          - cell "2" [ref=f11e164]
+          - cell "0.048471722" [ref=f11e165]
+          - cell "0.048471722" [ref=f11e166]
+          - cell "7.0983756" [ref=f11e167]
+        - row [ref=f11e168]:
+          - cell [ref=f11e169]:
+            - button "Details for t9a-singlet-exchange:case-0012:12" [ref=f11e170] [cursor=pointer]: t9a-singlet-exchange:case-0012:12
+          - cell "repulsive" [ref=f11e171]
+          - cell "0.5" [ref=f11e172]
+          - cell "2.3392164" [ref=f11e173]
+          - cell "2" [ref=f11e174]
+          - cell "0.040047235" [ref=f11e175]
+          - cell "0.040047235" [ref=f11e176]
+          - cell "6.9120121" [ref=f11e177]
+        - row [ref=f11e178]:
+          - cell [ref=f11e179]:
+            - button "Details for t9a-singlet-exchange:case-0013:13" [ref=f11e180] [cursor=pointer]: t9a-singlet-exchange:case-0013:13
+          - cell "repulsive" [ref=f11e181]
+          - cell "2" [ref=f11e182]
+          - cell "1.5271105" [ref=f11e183]
+          - cell "2" [ref=f11e184]
+          - cell "0.035277008" [ref=f11e185]
+          - cell "0.035277008" [ref=f11e186]
+          - cell "6.0528755" [ref=f11e187]
+        - row [ref=f11e188]:
+          - cell [ref=f11e189]:
+            - button "Details for t9a-singlet-exchange:case-0014:14" [ref=f11e190] [cursor=pointer]: t9a-singlet-exchange:case-0014:14
+          - cell "repulsive" [ref=f11e191]
+          - cell "10" [ref=f11e192]
+          - cell "1.1812764" [ref=f11e193]
+          - cell "2" [ref=f11e194]
+          - cell "0.03594288" [ref=f11e195]
+          - cell "0.03594288" [ref=f11e196]
+          - cell "4.7428449" [ref=f11e197]
+        - row [ref=f11e198]:
+          - cell [ref=f11e199]:
+            - button "Details for t9a-singlet-exchange:case-0015:15" [ref=f11e200] [cursor=pointer]: t9a-singlet-exchange:case-0015:15
+          - cell "repulsive" [ref=f11e201]
+          - cell "100" [ref=f11e202]
+          - cell "1.1739278" [ref=f11e203]
+          - cell "2" [ref=f11e204]
+          - cell "0.035976784" [ref=f11e205]
+          - cell "0.035976784" [ref=f11e206]
+          - cell "4.6539604" [ref=f11e207]
+        - row [ref=f11e208]:
+          - cell [ref=f11e209]:
+            - button "Details for t9a-singlet-exchange:case-0016:16" [ref=f11e210] [cursor=pointer]: t9a-singlet-exchange:case-0016:16
+          - cell "detuned" [ref=f11e211]
+          - cell "0" [ref=f11e212]
+          - cell "4" [ref=f11e213]
+          - cell "2" [ref=f11e214]
+          - cell "0.048471722" [ref=f11e215]
+          - cell "0.048471722" [ref=f11e216]
+          - cell "7.0983756" [ref=f11e217]
+        - row [ref=f11e218]:
+          - cell [ref=f11e219]:
+            - button "Details for t9a-singlet-exchange:case-0017:17" [ref=f11e220] [cursor=pointer]: t9a-singlet-exchange:case-0017:17
+          - cell "detuned" [ref=f11e221]
+          - cell "0.5" [ref=f11e222]
+          - cell "1.6952463" [ref=f11e223]
+          - cell "0.96184477" [ref=f11e224]
+          - cell "0.012094698" [ref=f11e225]
+          - cell "0.10511064" [ref=f11e226]
+          - cell "6.5622462" [ref=f11e227]
+        - row [ref=f11e228]:
+          - cell [ref=f11e229]:
+            - button "Details for t9a-singlet-exchange:case-0018:18" [ref=f11e230] [cursor=pointer]: t9a-singlet-exchange:case-0018:18
+          - cell "detuned" [ref=f11e231]
+          - cell "2" [ref=f11e232]
+          - cell "-0.10481389" [ref=f11e233]
+          - cell "0.13979522" [ref=f11e234]
+          - cell "0.00026805928" [ref=f11e235]
+          - cell "0.16425409" [ref=f11e236]
+          - cell "4.8851261" [ref=f11e237]
+        - row [ref=f11e238]:
+          - cell [ref=f11e239]:
+            - button "Details for t9a-singlet-exchange:case-0019:19" [ref=f11e240] [cursor=pointer]: t9a-singlet-exchange:case-0019:19
+          - cell "detuned" [ref=f11e241]
+          - cell "10" [ref=f11e242]
+          - cell "-0.19787854" [ref=f11e243]
+          - cell "0.096713741" [ref=f11e244]
+          - cell "0.00012389215" [ref=f11e245]
+          - cell "0.16769949" [ref=f11e246]
+          - cell "4.6539604" [ref=f11e247]
+        - row [ref=f11e248]:
+          - cell [ref=f11e249]:
+            - button "Details for t9a-singlet-exchange:case-0020:20" [ref=f11e250] [cursor=pointer]: t9a-singlet-exchange:case-0020:20
+          - cell "detuned" [ref=f11e251]
+          - cell "100" [ref=f11e252]
+          - cell "-0.19787854" [ref=f11e253]
+          - cell "0.096713738" [ref=f11e254]
+          - cell "0.00012389214" [ref=f11e255]
+          - cell "0.16769949" [ref=f11e256]
+          - cell "4.6539604" [ref=f11e257]

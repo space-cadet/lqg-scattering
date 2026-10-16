@@ -1,5 +1,7 @@
 # Energy transfer and equilibration in interacting rotors
 
+[Research map](quantum-geometry-research.md) · Related: [few rotor energy transfer](few-rotor-energy-transfer.md), [quantum planar rotor energy transfer](quantum-planar-rotor-energy-transfer.md).
+
 *Classical results and the quantum continuation, October 16, 2026.*
 
 Consider a collection of interacting rotors whose energy initially resides in one or a few of them. Does the energy remain concentrated, or does it spread until most rotors participate in the motion? If it spreads, does the system spend most of its time near the distribution predicted by statistical mechanics? These questions distinguish energy transfer from equilibration. A system can exchange energy without approaching an equilibrium distribution, and a system close to equilibrium can still fluctuate and eventually return near its initial state.
@@ -364,7 +366,7 @@ $$
 
 Unlike the classical equations, the quantum problem depends on $\epsilon$ as well as the initial energy relative to coupling. Increasing $\lambda$ at fixed $I$ and $\hbar$ changes both parameters. A classical comparison should vary $\epsilon$ while matching the preparation's orientation and momentum distributions. A sharp angular-momentum state has delocalized orientation and is not the quantum counterpart of a single localized classical configuration.
 
-The physical observables remain the local kinetic-energy distributions and their transfer between rotors. Quantum evolution also generates entanglement: a globally pure state can have mixed reduced states for individual rotors or groups of rotors. Their entropy and their agreement with equilibrium predictions can be studied alongside energy sharing. The first step is the planar-pair spectrum and exchange dynamics, followed by three or four three-dimensional rotors at total angular momentum zero. This section specifies the quantum continuation; the results and figures above are classical.
+The physical observables remain the local kinetic-energy distributions and their transfer between rotors. Quantum evolution also generates entanglement: a globally pure state can have mixed reduced states for individual rotors or groups of rotors. Their entropy and their agreement with equilibrium predictions can be studied alongside energy sharing. The zero-total-momentum energy-transfer continuation is now calculated in [four quantum planar rotors](quantum-planar-rotor-energy-transfer.md). The separate [geometric channel study](geometric-area-redistribution.md) imposes exact SU(2) closure on face states. The pair formulation here remains useful as a spectral benchmark; in its zero-total-momentum sector the two local kinetic energies are equal.
 
 ## Appendix A: the equilibrium measure
 
@@ -415,7 +417,7 @@ The larger coupling study has 168 primary runs and 29 controls, with 409 saved w
 
 Small conservation errors do not fix long-time release times precisely. Near the crossover, short-window half-step transfer means change by as much as 3.23 percentage points; one case crosses the arbitrary 10% threshold. Longer runs also show timing sensitivity. We therefore report grid brackets, seed ranges and observation windows. The three orientation seeds and the equal-and-opposite neighboring packet do not survey all possible preparations. No permanent localization boundary or universal equilibration claim follows from these data.
 
-The numerical records are [the initial ring study](../results/t11-classical-rotors/README.md), [the few-rotor benchmark](../results/t11-few-rotors/README.md) and [the coupling scan](../results/t11-rotor-coupling/README.md). They preserve protocols, arrays, source hashes and detailed validation. All four figures have vector PDF and 300-dpi PNG versions. No quantum rotor evolution has yet been run.
+The numerical records are [the initial ring study](../results/t11-classical-rotors/README.md), [the few-rotor benchmark](../results/t11-few-rotors/README.md) and [the coupling scan](../results/t11-rotor-coupling/README.md). They preserve protocols, arrays, source hashes and detailed validation. All four figures have vector PDF and 300-dpi PNG versions. The later [four-planar-rotor calculation](quantum-planar-rotor-energy-transfer.md) records the quantum continuation separately.
 
 ## Appendix C: why we turned from face channels to rotors
 

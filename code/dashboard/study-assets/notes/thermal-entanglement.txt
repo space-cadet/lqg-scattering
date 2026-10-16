@@ -1,5 +1,7 @@
 # Entanglement of two closed quantum polyhedra
 
+[Research map](quantum-geometry-research.md) · Related: [thermal area sectors](thermal-area-sectors.md), [thermal geometry and singlet exchange](thermal-geometry-and-singlet-exchange.md).
+
 *Calculated October 16, 2026; task T9.*
 
 Heating our separately closed reference increases its mean area and positive

@@ -1,0 +1,371 @@
+{
+  "L": 6,
+  "K": 2,
+  "full_dimension": 1365,
+  "singlet_dimension": 105,
+  "full_active_counts": {
+    "0": 0,
+    "1": 30,
+    "2": 375,
+    "3": 720,
+    "4": 240,
+    "5": 0,
+    "6": 0
+  },
+  "singlet_active_counts": {
+    "0": 0,
+    "1": 0,
+    "2": 15,
+    "3": 60,
+    "4": 30,
+    "5": 0,
+    "6": 0
+  },
+  "graphs": {
+    "ring": {
+      "full": {
+        "4_to_5": {
+          "shape": [
+            0,
+            240
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "4_to_6": {
+          "shape": [
+            0,
+            240
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "5_to_6": {
+          "shape": [
+            0,
+            0
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "basis_graph_components": {
+          "1e-10": {
+            "count": 5,
+            "size_histogram": {
+              "126": 2,
+              "336": 2,
+              "441": 1
+            }
+          },
+          "1e-12": {
+            "count": 5,
+            "size_histogram": {
+              "126": 2,
+              "336": 2,
+              "441": 1
+            }
+          }
+        }
+      },
+      "closed": {
+        "4_to_5": {
+          "shape": [
+            0,
+            30
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0,
+          "rank": 0,
+          "source_nullity": 30,
+          "rank_at_1e12": 0
+        },
+        "4_to_6": {
+          "shape": [
+            0,
+            30
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "5_to_6": {
+          "shape": [
+            0,
+            0
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "basis_graph_components": {
+          "1e-10": {
+            "count": 1,
+            "size_histogram": {
+              "105": 1
+            }
+          },
+          "1e-12": {
+            "count": 1,
+            "size_histogram": {
+              "105": 1
+            }
+          }
+        },
+        "4_to_6_second_power": {
+          "shape": [
+            0,
+            30
+          ],
+          "frobenius_norm": 0.0,
+          "rank": 0,
+          "rank_at_1e12": 0
+        }
+      },
+      "onsite_4_to_5": 0.0
+    },
+    "complete": {
+      "full": {
+        "4_to_5": {
+          "shape": [
+            0,
+            240
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "4_to_6": {
+          "shape": [
+            0,
+            240
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "5_to_6": {
+          "shape": [
+            0,
+            0
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "basis_graph_components": {
+          "1e-10": {
+            "count": 5,
+            "size_histogram": {
+              "126": 2,
+              "336": 2,
+              "441": 1
+            }
+          },
+          "1e-12": {
+            "count": 5,
+            "size_histogram": {
+              "126": 2,
+              "336": 2,
+              "441": 1
+            }
+          }
+        }
+      },
+      "closed": {
+        "4_to_5": {
+          "shape": [
+            0,
+            30
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0,
+          "rank": 0,
+          "source_nullity": 30,
+          "rank_at_1e12": 0
+        },
+        "4_to_6": {
+          "shape": [
+            0,
+            30
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "5_to_6": {
+          "shape": [
+            0,
+            0
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "basis_graph_components": {
+          "1e-10": {
+            "count": 1,
+            "size_histogram": {
+              "105": 1
+            }
+          },
+          "1e-12": {
+            "count": 1,
+            "size_histogram": {
+              "105": 1
+            }
+          }
+        },
+        "4_to_6_second_power": {
+          "shape": [
+            0,
+            30
+          ],
+          "frobenius_norm": 0.0,
+          "rank": 0,
+          "rank_at_1e12": 0
+        }
+      },
+      "onsite_4_to_5": 0.0
+    },
+    "disconnected_receivers": {
+      "full": {
+        "4_to_5": {
+          "shape": [
+            0,
+            240
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "4_to_6": {
+          "shape": [
+            0,
+            240
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "5_to_6": {
+          "shape": [
+            0,
+            0
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "basis_graph_components": {
+          "1e-10": {
+            "count": 126,
+            "size_histogram": {
+              "1": 35,
+              "4": 40,
+              "10": 20,
+              "16": 10,
+              "20": 8,
+              "35": 2,
+              "40": 8,
+              "80": 2,
+              "100": 1
+            }
+          },
+          "1e-12": {
+            "count": 126,
+            "size_histogram": {
+              "1": 35,
+              "4": 40,
+              "10": 20,
+              "16": 10,
+              "20": 8,
+              "35": 2,
+              "40": 8,
+              "80": 2,
+              "100": 1
+            }
+          }
+        }
+      },
+      "closed": {
+        "4_to_5": {
+          "shape": [
+            0,
+            30
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0,
+          "rank": 0,
+          "source_nullity": 30,
+          "rank_at_1e12": 0
+        },
+        "4_to_6": {
+          "shape": [
+            0,
+            30
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "5_to_6": {
+          "shape": [
+            0,
+            0
+          ],
+          "nonzero_entries": 0,
+          "frobenius_norm": 0.0
+        },
+        "basis_graph_components": {
+          "1e-10": {
+            "count": 10,
+            "size_histogram": {
+              "1": 1,
+              "4": 2,
+              "6": 1,
+              "10": 3,
+              "20": 3
+            }
+          },
+          "1e-12": {
+            "count": 10,
+            "size_histogram": {
+              "1": 1,
+              "4": 2,
+              "6": 1,
+              "10": 3,
+              "20": 3
+            }
+          }
+        },
+        "4_to_6_second_power": {
+          "shape": [
+            0,
+            30
+          ],
+          "frobenius_norm": 0.0,
+          "rank": 0,
+          "rank_at_1e12": 0
+        }
+      },
+      "onsite_4_to_5": 0.0
+    }
+  },
+  "validation": {
+    "gram": 4.440892098500626e-16,
+    "singlet_dimension_error": 0,
+    "closure_x": 5.551115123125783e-17,
+    "closure_y": 5.551115123125783e-17,
+    "closure_z": 0.0,
+    "ring_projection_leakage": 8.881784197001252e-16,
+    "ring_hermiticity": 0.0,
+    "ring_commutator_x": 6.661338147750939e-16,
+    "ring_commutator_y": 6.661338147750939e-16,
+    "ring_commutator_z": 0.0,
+    "ring_commutator_squared": 1.7763568394002505e-15,
+    "ring_onsite_identity": 0.0,
+    "complete_projection_leakage": 8.881784197001252e-16,
+    "complete_hermiticity": 0.0,
+    "complete_commutator_x": 6.661338147750939e-16,
+    "complete_commutator_y": 6.661338147750939e-16,
+    "complete_commutator_z": 0.0,
+    "complete_commutator_squared": 1.7763568394002505e-15,
+    "complete_onsite_identity": 0.0,
+    "disconnected_receivers_projection_leakage": 8.881784197001252e-16,
+    "disconnected_receivers_hermiticity": 0.0,
+    "disconnected_receivers_commutator_x": 6.661338147750939e-16,
+    "disconnected_receivers_commutator_y": 6.661338147750939e-16,
+    "disconnected_receivers_commutator_z": 0.0,
+    "disconnected_receivers_commutator_squared": 1.7763568394002505e-15,
+    "disconnected_receivers_onsite_identity": 0.0
+  }
+}

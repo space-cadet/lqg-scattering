@@ -1,0 +1,72 @@
+- generic [ref=f16e2]:
+  - navigation "Numerical datasets" [ref=f16e3]:
+    - generic [ref=f16e4]: Numerical study
+    - combobox "Numerical study" [ref=f16e5]:
+      - option "All studies — overview"
+      - 'option "Four versus five sites: thermal-volume persistence (12 rows)"'
+      - option "Prepared tetrahedral FL states and the volume crossover (11 rows)"
+      - option "Candidate geometric Hamiltonians and prepared-FL dynamics (62 rows)"
+      - option "Four-site Hamiltonian spectra and RS-volume observables (30 rows)"
+      - option "Complete four-face closed-basis volumes (11 rows)"
+      - option "Variable-face positive RS catalogue (9 rows)"
+      - option "Squeezed-vacuum area coefficients (964 rows)"
+      - option "Squeezed-vacuum resultant spin (196 rows)"
+      - option "Excited J_in=1 joint area and spin (5 rows)"
+      - option "Higher-J flat-boundary probes (13 rows)"
+      - option "Magnetization and signed-grasp correlations (10 rows)"
+      - option "Local-chirality pilot (13 rows)"
+      - option "Imaginary-perturbation response (26 rows)"
+      - option "Cocycle-phase pilot (10 rows)"
+      - option "Large-K recorded families and fits (13 rows)"
+      - option "Historical single-copy thermal pilot (14 rows)"
+      - option "Historical energy-basis TFD pilot (14 rows)"
+      - option "Historical complexified purification (10 rows)"
+      - option "Small-sector thermal geometry audit (4 rows)"
+      - option "RS/AL volume-prescription controls (2 rows)"
+      - option "Initial covariance reconstruction pilot (6 rows)"
+      - option "Prepared FL evolution sampling (50 rows)"
+      - option "Positive volumes on two real-plane states (2 rows)"
+      - option "FL covariance shape recovery (84 rows)"
+      - option "Weighted FL input geometry and volumes (14 rows)"
+      - option "Regular FL volume versus area (5 rows)"
+      - option "Equal-area FL shape scan at J=2 (440 rows)"
+      - option "Same-number detachment energies (8 rows)"
+      - option "Closed and open state evolution probes (6 rows)"
+      - option "Constructive edge sewing probes (5 rows)"
+  - heading "Loading..." [level=1] [ref=f16e6]
+  - paragraph [ref=f16e7]: Loading...
+  - generic [ref=f16e8]:
+    - generic [ref=f16e9]:
+      - generic [ref=f16e10]: —
+      - generic [ref=f16e11]: Total Runs
+    - generic [ref=f16e12]:
+      - generic [ref=f16e13]: —
+      - generic [ref=f16e14]: Tasks
+    - generic [ref=f16e15]:
+      - generic [ref=f16e16]: —
+      - generic [ref=f16e17]: Complete
+    - generic [ref=f16e18]:
+      - generic [ref=f16e19]: —
+      - generic [ref=f16e20]: Figures
+  - tablist "Dashboard sections" [ref=f16e21]
+  - tabpanel [ref=f16e22]:
+    - heading "Run and Study Records" [level=2] [ref=f16e23]
+    - generic [ref=f16e24]:
+      - generic [ref=f16e25]:
+        - generic [ref=f16e26]: "Status:"
+        - combobox "Status:" [ref=f16e27]:
+          - option "All" [selected]
+          - option "complete"
+          - option "in-progress"
+          - option "failed"
+      - generic [ref=f16e28]:
+        - generic [ref=f16e29]: "Search:"
+        - textbox "Search:" [ref=f16e30]:
+          - /placeholder: Run ID, description...
+      - button "Reset" [ref=f16e32] [cursor=pointer]
+    - table [ref=f16e34]:
+      - rowgroup:
+        - row
+      - rowgroup [ref=f16e35]:
+        - row [ref=f16e36]:
+          - cell "Loading data..." [ref=f16e37]

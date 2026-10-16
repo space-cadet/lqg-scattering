@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "L6-K3.json",
+    "L5-K3.json",
+    "L6-K2.json"
+  ],
+  "source_sha256": {
+    "code/python/t11_face_connectivity.py": "cb4fef5cfae7e68b40bad000be8ae9a5788b821a2c0aa54507389d03d7325903",
+    "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+    "code/python/lqg_scattering/hamiltonian.py": "16d82364d93cbb009448df99803cc21a314ce755a4b66125dd16fe4bede51d5e",
+    "code/python/lqg_scattering/singlets.py": "5d201831486601bfe7e409d650e1b7eb2ea507650c4e3def3d807e6f0a319f82",
+    "code/python/lqg_scattering/fixed_k.py": "b76ff19b95d2fd4113b5fc9e1c80c69b2613f314accc250b286115cf18ac0963",
+    "code/python/lqg_scattering/total_spin.py": "0903530b663bb672a6bec4bae93c6a562a8095451cef5acecdae6cb7aba342c8",
+    "code/python/lqg_scattering/labels.py": "113d1e455755a1e44b5d47c66f903dbb9c533706b03edd3b0c4478d4ef04410e"
+  }
+}

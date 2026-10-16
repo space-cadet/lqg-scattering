@@ -1,0 +1,735 @@
+- generic [ref=e2]:
+  - heading "Scattering in LQG" [level=1] [ref=e3]
+  - paragraph [ref=e4]: Hamiltonian, closed-basis volume and thermal-sector results, with data, plots and verification records
+  - paragraph [ref=e5]: The Study Catalogue records Hamiltonian, complete closed-basis, variable-face and thermal-sector results, alongside historical numerical pilots. Each study includes saved data, plots, provenance and calculation limits. Volume Studies retains the interactive T1b/T5c comparisons. Performance charts refer to the older T3 signed-mean proxy runs.
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: "29"
+      - generic [ref=e9]: Run / Study Records
+    - generic [ref=e10]:
+      - generic [ref=e11]: "11"
+      - generic [ref=e12]: Tasks
+    - generic [ref=e13]:
+      - generic [ref=e14]: "29"
+      - generic [ref=e15]: Saved Records
+    - generic [ref=e16]:
+      - generic [ref=e17]: "38"
+      - generic [ref=e18]: Figures
+  - paragraph [ref=e19]:
+    - link "Open InfoDash numerical tables" [ref=e20] [cursor=pointer]:
+      - /url: infodash/index.html
+  - generic [ref=e21]:
+    - button "Study Catalogue" [ref=e22] [cursor=pointer]
+    - button "Runs & Results" [ref=e23] [cursor=pointer]
+    - button "Figure Archive" [ref=e24] [cursor=pointer]
+    - button "Performance" [ref=e25] [cursor=pointer]
+    - button "Volume Studies" [ref=e26] [cursor=pointer]
+    - button "Theory" [ref=e27] [cursor=pointer]
+  - generic [ref=e28]:
+    - heading "Saved Numerical Studies" [level=2] [ref=e29]
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e32]: "Search studies:"
+        - searchbox "Search studies:" [ref=e33]
+      - generic [ref=e34]:
+        - generic [ref=e35]: "Task:"
+        - combobox "Task:" [ref=e36]:
+          - option "All" [selected]
+          - option "T10"
+          - option "T11"
+          - option "T1a"
+          - option "T5a"
+          - option "T5a′"
+          - option "T5b"
+          - option "T5c"
+          - option "T5d"
+          - option "T5e"
+          - option "T9"
+      - generic [ref=e37]: 21 of 21 studies
+    - paragraph [ref=e38]: K denotes total linear area in the recent catalogues; total boson number is 2K. Historical datasets retain their own notation. Singlet dimensions, unrestricted Fock dimensions, signed-mean proxies and positive-volume expectations are labelled separately.
+    - generic [ref=e39]:
+      - article [ref=e40]:
+        - 'heading "T11 — Four versus five sites: thermal-volume persistence" [level=3] [ref=e41]'
+        - paragraph [ref=e42]:
+          - link "Numerical table and charts" [ref=e43] [cursor=pointer]:
+            - /url: infodash/index.html?data=datasets/t11-size-comparison.json
+        - paragraph [ref=e44]: Calculated and independently checked; prior 38-test suite passed
+        - paragraph [ref=e45]:
+          - text: Added to catalogue
+          - time [ref=e46]: 11 Oct 2026
+        - paragraph [ref=e47]: "Matched mean occupation 2K/L=2: (L,K)=(4,4) and (5,5), singlet dimensions 105 and 1,176. Complete and ring graphs at t=1,U=20, plus free and no-hopping controls. Intermediate-temperature nonmonotonicity persists; the pronounced four-site complete-graph low-temperature collapse does not."
+        - paragraph [ref=e48]: "The plot reports volume per selected triple; CSV files also retain total volume. Triple counts: 4 for both four-site graphs, 10 for five-site complete, 5 for five-site ring. Unit hopping per bond, g=0. Coordination changes and the odd ring make this a persistence test, not clean finite-size scaling. Six sites were not calculated."
+        - group [ref=e49]:
+          - generic "Numerical summary (12 rows)" [ref=e50] [cursor=pointer]
+        - generic [ref=e51]:
+          - figure [ref=e52]:
+            - link [ref=e53] [cursor=pointer]:
+              - /url: study-assets/results/t11-size-comparison/volume_comparison.png
+              - 'img "Four versus five sites: thermal-volume persistence: Four versus five sites: volume per selected triple at U/t=20" [ref=e54]'
+            - generic [ref=e55]:
+              - text: "Four versus five sites: volume per selected triple at U/t=20 ·"
+              - link "PDF" [ref=e56] [cursor=pointer]:
+                - /url: study-assets/results/t11-size-comparison/volume_comparison.pdf
+              - text: ·
+              - link "PNG" [ref=e57] [cursor=pointer]:
+                - /url: study-assets/results/t11-size-comparison/volume_comparison.png
+          - figure [ref=e58]:
+            - link [ref=e59] [cursor=pointer]:
+              - /url: study-assets/figures/hamiltonian-systems/four-and-five-site-graphs.png
+              - 'img "Four versus five sites: thermal-volume persistence: Complete and ring interaction graphs, with one selected volume triple" [ref=e60]'
+            - generic [ref=e61]:
+              - text: Complete and ring interaction graphs, with one selected volume triple ·
+              - link "PNG" [ref=e62] [cursor=pointer]:
+                - /url: study-assets/figures/hamiltonian-systems/four-and-five-site-graphs.png
+        - group [ref=e63]:
+          - generic "Data, operators and write-ups (24 files)" [ref=e64] [cursor=pointer]
+      - article [ref=e65]:
+        - heading "T11 — Prepared tetrahedral FL states and the volume crossover" [level=3] [ref=e66]
+        - paragraph [ref=e67]:
+          - link "Numerical table and charts" [ref=e68] [cursor=pointer]:
+            - /url: infodash/index.html?data=datasets/t11-geometric-interpretation.json
+        - paragraph [ref=e69]: Calculated and independently checked; prior 42-test suite passed
+        - paragraph [ref=e70]:
+          - text: Added to catalogue
+          - time [ref=e71]: 11 Oct 2026
+        - paragraph [ref=e72]: "Five explicitly constructed K=4 FL references: equal input face areas, phi=90,60,30,10,0 degrees. Saved face-spin distributions, pair correlations, angular fluctuations, volume distributions and overlaps; comparisons with the first three energy groups of complete/ring Hamiltonians at t=1,U=20. The complete ground is kernel-dominated despite nearly unit four-face weight."
+        - paragraph [ref=e73]: FL references are prepared states; energy groups and Gibbs mixtures are separate comparisons. This record contains static readouts; the separate T11 candidate-Hamiltonian record includes geometric-coupling scans and time evolution. Angular normalization is assignment-specific and conditioning retains coherence and selection probabilities. Geometric volume uses the established sqrt(2)/12 four-valent conversion. The Hamiltonian in this record uses g=0. No new independent Rust run.
+        - group [ref=e74]:
+          - generic "Numerical summary (11 rows)" [ref=e75] [cursor=pointer]
+        - figure [ref=e77]:
+          - link [ref=e78] [cursor=pointer]:
+            - /url: study-assets/results/t11-geometric-interpretation/thermal_geometric_diagnostics.png
+            - 'img "Prepared tetrahedral FL states and the volume crossover: Four-face FL references and thermal geometric diagnostics" [ref=e79]'
+          - generic [ref=e80]:
+            - text: Four-face FL references and thermal geometric diagnostics ·
+            - link "PDF" [ref=e81] [cursor=pointer]:
+              - /url: study-assets/results/t11-geometric-interpretation/thermal_geometric_diagnostics.pdf
+            - text: ·
+            - link "PNG" [ref=e82] [cursor=pointer]:
+              - /url: study-assets/results/t11-geometric-interpretation/thermal_geometric_diagnostics.png
+        - group [ref=e83]:
+          - generic "Data, operators and write-ups (23 files)" [ref=e84] [cursor=pointer]
+      - article [ref=e85]:
+        - heading "T11 — Candidate geometric Hamiltonians and prepared-FL dynamics" [level=3] [ref=e86]
+        - paragraph [ref=e87]:
+          - link "Numerical table and charts" [ref=e88] [cursor=pointer]:
+            - /url: infodash/index.html?data=datasets/t11-candidate-hamiltonians.json
+        - paragraph [ref=e89]: 62 Hamiltonian parameter settings and 50 FL trajectories calculated; 1,510 independent checks passed (maximum residual 1.07e-12)
+        - paragraph [ref=e90]:
+          - text: Added to catalogue
+          - time [ref=e91]: 11 Oct 2026
+        - paragraph [ref=e92]: Exact K=4, total-spin-zero study (dimension 105). The baseline is complete-graph face-to-face area exchange plus on-site repulsion, with equal hopping strength on each bond. We added the positive RS-volume term and the signed triple-grasp term as separate candidate Hamiltonians, then evolved five explicitly prepared FL references under the baseline and both signed couplings. The 62 parameter settings cover U/t=0,1,5,20 and normalized coupling alpha=-2,-1,-0.5,0,0.5,1,2; the ring is included only as a sparse-hopping control. The study contains 6,510 saved energy levels and 50 prepared-state trajectories.
+        - paragraph [ref=e93]: The complete graph represents tetrahedral face adjacency; the ring is a hopping control, not a proposed tetrahedron. The positive-volume and signed-grasp additions are tested candidate models, not derived physical interactions. Results use one copy, fixed K=4, project-normalized volume, and t=1; no physical coupling calibration or phase-transition claim is implied. The long-time dynamics are exact energy-basis samples with adaptive logarithmic coverage, not a uniformly resolved trace of every fast oscillation. Large thermal and dynamics CSVs are gzip-compressed for download; their source and package checksums are both listed.
+        - group [ref=e94]:
+          - generic "Numerical summary (8 rows)" [ref=e95] [cursor=pointer]
+        - generic [ref=e96]:
+          - figure [ref=e97]:
+            - link [ref=e98] [cursor=pointer]:
+              - /url: study-assets/results/t11-candidate-hamiltonians/candidate_ground_energy_shifts.png
+              - 'img "Candidate geometric Hamiltonians and prepared-FL dynamics: Hamiltonian ground-energy shifts relative to the baseline" [ref=e99]'
+            - generic [ref=e100]:
+              - text: Hamiltonian ground-energy shifts relative to the baseline ·
+              - link "PDF" [ref=e101] [cursor=pointer]:
+                - /url: study-assets/results/t11-candidate-hamiltonians/candidate_ground_energy_shifts.pdf
+              - text: ·
+              - link "PNG" [ref=e102] [cursor=pointer]:
+                - /url: study-assets/results/t11-candidate-hamiltonians/candidate_ground_energy_shifts.png
+          - figure [ref=e103]:
+            - link [ref=e104] [cursor=pointer]:
+              - /url: study-assets/results/t11-candidate-hamiltonians/candidate_ground_state_response.png
+              - 'img "Candidate geometric Hamiltonians and prepared-FL dynamics: Ground-state volume and signed-grasp response" [ref=e105]'
+            - generic [ref=e106]:
+              - text: Ground-state volume and signed-grasp response ·
+              - link "PDF" [ref=e107] [cursor=pointer]:
+                - /url: study-assets/results/t11-candidate-hamiltonians/candidate_ground_state_response.pdf
+              - text: ·
+              - link "PNG" [ref=e108] [cursor=pointer]:
+                - /url: study-assets/results/t11-candidate-hamiltonians/candidate_ground_state_response.png
+          - figure [ref=e109]:
+            - link [ref=e110] [cursor=pointer]:
+              - /url: study-assets/results/t11-candidate-hamiltonians/candidate_thermal_response_u20.png
+              - 'img "Candidate geometric Hamiltonians and prepared-FL dynamics: Thermal volume and grasp response at U/t=20" [ref=e111]'
+            - generic [ref=e112]:
+              - text: Thermal volume and grasp response at U/t=20 ·
+              - link "PDF" [ref=e113] [cursor=pointer]:
+                - /url: study-assets/results/t11-candidate-hamiltonians/candidate_thermal_response_u20.pdf
+              - text: ·
+              - link "PNG" [ref=e114] [cursor=pointer]:
+                - /url: study-assets/results/t11-candidate-hamiltonians/candidate_thermal_response_u20.png
+          - figure [ref=e115]:
+            - link [ref=e116] [cursor=pointer]:
+              - /url: study-assets/results/t11-candidate-hamiltonians/ring_topology_control.png
+              - 'img "Candidate geometric Hamiltonians and prepared-FL dynamics: Ring hopping topology control" [ref=e117]'
+            - generic [ref=e118]:
+              - text: Ring hopping topology control ·
+              - link "PDF" [ref=e119] [cursor=pointer]:
+                - /url: study-assets/results/t11-candidate-hamiltonians/ring_topology_control.pdf
+              - text: ·
+              - link "PNG" [ref=e120] [cursor=pointer]:
+                - /url: study-assets/results/t11-candidate-hamiltonians/ring_topology_control.png
+          - figure [ref=e121]:
+            - link [ref=e122] [cursor=pointer]:
+              - /url: study-assets/results/t11-candidate-hamiltonians/prepared_FL_early_dynamics_u20.png
+              - 'img "Candidate geometric Hamiltonians and prepared-FL dynamics: Early evolution of prepared FL states at U/t=20" [ref=e123]'
+            - generic [ref=e124]:
+              - text: Early evolution of prepared FL states at U/t=20 ·
+              - link "PDF" [ref=e125] [cursor=pointer]:
+                - /url: study-assets/results/t11-candidate-hamiltonians/prepared_FL_early_dynamics_u20.pdf
+              - text: ·
+              - link "PNG" [ref=e126] [cursor=pointer]:
+                - /url: study-assets/results/t11-candidate-hamiltonians/prepared_FL_early_dynamics_u20.png
+        - group [ref=e127]:
+          - generic "Data, operators and write-ups (20 files)" [ref=e128] [cursor=pointer]
+      - article [ref=e129]:
+        - heading "T11 — Four-site Hamiltonian spectra and RS-volume observables" [level=3] [ref=e130]
+        - paragraph [ref=e131]:
+          - link "Numerical table and charts" [ref=e132] [cursor=pointer]:
+            - /url: infodash/index.html?data=datasets/hamiltonian.json
+        - paragraph [ref=e133]: Pilot complete; broader program open
+        - paragraph [ref=e134]:
+          - text: Added to catalogue
+          - time [ref=e135]: 9 Oct 2026
+        - paragraph [ref=e136]: Exact diagonalization of the hopping-plus-on-site-repulsion operator H_G=-t Σ_(i,j)∈E_G(E_ij+E_ji)+(U/2)Σ_i n_i(n_i−1), where E_ij=a_i†a_j+b_i†b_j and n_i=a_i†a_i+b_i†b_i. Four sites, fixed boson number 2K and total spin zero; K=2,3,4 gives dimensions 20,50,105, with empty sites allowed. Compare the complete graph (6 hopping bonds) and periodic ring (4), with equal t per bond. The 30 cases use (t,U)=(0,1) or t=1 and U/t=0,1,5,20.
+        - paragraph [ref=e137]: The positive Rovelli–Smolin (RS) volume V=(γℏ)^(3/2)Σ_(connected triples)√|q_ijk|, q_ijk=i[J_i·J_j,J_j·J_k], is a separate observable evaluated on energy eigenstates and Gibbs states; it is not a term in H_G, and no g_V V coupling was calculated. The optional spin-exchange setting is g=0. Both graphs select the same four connected triples, so V is the same operator and only the hopping graph changes. Project-normalized volume; physical calibration is open. The temperature response is a finite-sector crossover, not a phase transition. Ground-state entropy uses the Gibbs mixture when degenerate.
+        - group [ref=e138]:
+          - generic "Numerical summary (30 rows)" [ref=e139] [cursor=pointer]
+        - generic [ref=e140]:
+          - figure [ref=e141]:
+            - link [ref=e142] [cursor=pointer]:
+              - /url: study-assets/results/hamiltonian-studies/ground_energy_graph_difference.png
+              - 'img "Four-site Hamiltonian spectra and RS-volume observables: Ground-energy difference: complete graph minus ring" [ref=e143]'
+            - generic [ref=e144]:
+              - text: "Ground-energy difference: complete graph minus ring ·"
+              - link "PDF" [ref=e145] [cursor=pointer]:
+                - /url: study-assets/results/hamiltonian-studies/ground_energy_graph_difference.pdf
+              - text: ·
+              - link "PNG" [ref=e146] [cursor=pointer]:
+                - /url: study-assets/results/hamiltonian-studies/ground_energy_graph_difference.png
+          - figure [ref=e147]:
+            - link [ref=e148] [cursor=pointer]:
+              - /url: study-assets/results/hamiltonian-studies/ground_energy_vs_repulsion.png
+              - 'img "Four-site Hamiltonian spectra and RS-volume observables: Ground energy versus onsite repulsion" [ref=e149]'
+            - generic [ref=e150]:
+              - text: Ground energy versus onsite repulsion ·
+              - link "PDF" [ref=e151] [cursor=pointer]:
+                - /url: study-assets/results/hamiltonian-studies/ground_energy_vs_repulsion.pdf
+              - text: ·
+              - link "PNG" [ref=e152] [cursor=pointer]:
+                - /url: study-assets/results/hamiltonian-studies/ground_energy_vs_repulsion.png
+          - figure [ref=e153]:
+            - link [ref=e154] [cursor=pointer]:
+              - /url: study-assets/results/hamiltonian-studies/k4_low_energy_volume_spectrum.png
+              - 'img "Four-site Hamiltonian spectra and RS-volume observables: K=4 volume of low-energy eigenspaces" [ref=e155]'
+            - generic [ref=e156]:
+              - text: K=4 volume of low-energy eigenspaces ·
+              - link "PDF" [ref=e157] [cursor=pointer]:
+                - /url: study-assets/results/hamiltonian-studies/k4_low_energy_volume_spectrum.pdf
+              - text: ·
+              - link "PNG" [ref=e158] [cursor=pointer]:
+                - /url: study-assets/results/hamiltonian-studies/k4_low_energy_volume_spectrum.png
+          - figure [ref=e159]:
+            - link [ref=e160] [cursor=pointer]:
+              - /url: study-assets/results/hamiltonian-studies/k4_thermal_volume_scan.png
+              - 'img "Four-site Hamiltonian spectra and RS-volume observables: K=4 mean volume and zero-volume probability versus inverse temperature" [ref=e161]'
+            - generic [ref=e162]:
+              - text: K=4 mean volume and zero-volume probability versus inverse temperature ·
+              - link "PDF" [ref=e163] [cursor=pointer]:
+                - /url: study-assets/results/hamiltonian-studies/k4_thermal_volume_scan.pdf
+              - text: ·
+              - link "PNG" [ref=e164] [cursor=pointer]:
+                - /url: study-assets/results/hamiltonian-studies/k4_thermal_volume_scan.png
+          - figure [ref=e165]:
+            - link [ref=e166] [cursor=pointer]:
+              - /url: study-assets/results/hamiltonian-studies/thermal_volume_u5.png
+              - 'img "Four-site Hamiltonian spectra and RS-volume observables: Thermal volume at U/t=5" [ref=e167]'
+            - generic [ref=e168]:
+              - text: Thermal volume at U/t=5 ·
+              - link "PDF" [ref=e169] [cursor=pointer]:
+                - /url: study-assets/results/hamiltonian-studies/thermal_volume_u5.pdf
+              - text: ·
+              - link "PNG" [ref=e170] [cursor=pointer]:
+                - /url: study-assets/results/hamiltonian-studies/thermal_volume_u5.png
+        - group [ref=e171]:
+          - generic "Data, operators and write-ups (20 files)" [ref=e172] [cursor=pointer]
+      - article [ref=e173]:
+        - heading "T1a — Complete four-face closed-basis volumes" [level=3] [ref=e174]
+        - paragraph [ref=e175]:
+          - link "Numerical table and charts" [ref=e176] [cursor=pointer]:
+            - /url: infodash/index.html?data=datasets/closed-basis.json
+        - paragraph [ref=e177]: Saved calculation
+        - paragraph [ref=e178]:
+          - text: Added to catalogue
+          - time [ref=e179]: 9 Oct 2026
+        - paragraph [ref=e180]: Four labelled faces, zero-spin faces allowed; K=2 through 12, 10,549 basis states. RS/AL means, variances, spectra and reconstructible operators.
+        - paragraph [ref=e181]: One copy, zero temperature. K=13 was stopped and has no accepted result. Physical volume calibration remains open; full tensor/root checks cover K<=4, with the recorded block checks at higher K.
+        - group [ref=e182]:
+          - generic "Numerical summary (11 rows)" [ref=e183] [cursor=pointer]
+        - generic [ref=e184]:
+          - figure [ref=e185]:
+            - link [ref=e186] [cursor=pointer]:
+              - /url: study-assets/figures/closed-basis-volume/basis_state_volumes_k2_k4.png
+              - 'img "Complete four-face closed-basis volumes: Four-face recoupling-basis volume expectations, K=2,3,4" [ref=e187]'
+            - generic [ref=e188]:
+              - text: Four-face recoupling-basis volume expectations, K=2,3,4 ·
+              - link "PDF" [ref=e189] [cursor=pointer]:
+                - /url: study-assets/figures/closed-basis-volume/basis_state_volumes_k2_k4.pdf
+              - text: ·
+              - link "PNG" [ref=e190] [cursor=pointer]:
+                - /url: study-assets/figures/closed-basis-volume/basis_state_volumes_k2_k4.png
+          - figure [ref=e191]:
+            - link [ref=e192] [cursor=pointer]:
+              - /url: study-assets/figures/closed-basis-volume/fixed_area_ensemble_volume.png
+              - 'img "Complete four-face closed-basis volumes: Equal-weight complete closed-basis volume versus area" [ref=e193]'
+            - generic [ref=e194]:
+              - text: Equal-weight complete closed-basis volume versus area ·
+              - link "PDF" [ref=e195] [cursor=pointer]:
+                - /url: study-assets/figures/closed-basis-volume/fixed_area_ensemble_volume.pdf
+              - text: ·
+              - link "PNG" [ref=e196] [cursor=pointer]:
+                - /url: study-assets/figures/closed-basis-volume/fixed_area_ensemble_volume.png
+          - figure [ref=e197]:
+            - link [ref=e198] [cursor=pointer]:
+              - /url: study-assets/figures/single-copy-volume/regular_volume_area.png
+              - 'img "Complete four-face closed-basis volumes: Regular FL state volume versus area" [ref=e199]'
+            - generic [ref=e200]:
+              - text: Regular FL state volume versus area ·
+              - link "PDF" [ref=e201] [cursor=pointer]:
+                - /url: study-assets/figures/single-copy-volume/regular_volume_area.pdf
+              - text: ·
+              - link "PNG" [ref=e202] [cursor=pointer]:
+                - /url: study-assets/figures/single-copy-volume/regular_volume_area.png
+          - figure [ref=e203]:
+            - link [ref=e204] [cursor=pointer]:
+              - /url: study-assets/figures/single-copy-volume/weighted_volume_area.png
+              - 'img "Complete four-face closed-basis volumes: Weighted FL state volume versus area" [ref=e205]'
+            - generic [ref=e206]:
+              - text: Weighted FL state volume versus area ·
+              - link "PDF" [ref=e207] [cursor=pointer]:
+                - /url: study-assets/figures/single-copy-volume/weighted_volume_area.pdf
+              - text: ·
+              - link "PNG" [ref=e208] [cursor=pointer]:
+                - /url: study-assets/figures/single-copy-volume/weighted_volume_area.png
+        - group [ref=e209]:
+          - generic "Data, operators and write-ups (38 files)" [ref=e210] [cursor=pointer]
+      - article [ref=e211]:
+        - heading "T10 — Variable-face positive RS catalogue" [level=3] [ref=e212]
+        - paragraph [ref=e213]:
+          - link "Numerical table and charts" [ref=e214] [cursor=pointer]:
+            - /url: infodash/index.html?data=datasets/variable-faces.json
+        - paragraph [ref=e215]: Completed declared catalogue
+        - paragraph [ref=e216]:
+          - text: Added to catalogue
+          - time [ref=e217]: 9 Oct 2026
+        - paragraph [ref=e218]: Nine sectors at K=2,3,4 with 4<=N<=2K. Closed dimensions 2,36,347; positive-volume dimensions 2,32,329. Independent reconstruction covers 112 blocks and 385 eigenstates.
+        - paragraph [ref=e219]: Labelled positive-spin active faces, one copy, zero temperature. Closed states and positive-volume eigenstates are counted separately. Higher-valence AL orientation signs and physical calibration remain unspecified.
+        - group [ref=e220]:
+          - generic "Numerical summary (9 rows)" [ref=e221] [cursor=pointer]
+        - generic [ref=e222]:
+          - figure [ref=e223]:
+            - link [ref=e224] [cursor=pointer]:
+              - /url: study-assets/figures/variable-n-volume/closed_state_counts.png
+              - 'img "Variable-face positive RS catalogue: Closed, zero-volume and positive-volume state counts" [ref=e225]'
+            - generic [ref=e226]:
+              - text: Closed, zero-volume and positive-volume state counts ·
+              - link "PDF" [ref=e227] [cursor=pointer]:
+                - /url: study-assets/figures/variable-n-volume/closed_state_counts.pdf
+              - text: ·
+              - link "PNG" [ref=e228] [cursor=pointer]:
+                - /url: study-assets/figures/variable-n-volume/closed_state_counts.png
+          - figure [ref=e229]:
+            - link [ref=e230] [cursor=pointer]:
+              - /url: study-assets/figures/variable-n-volume/rs_volume_distributions.png
+              - 'img "Variable-face positive RS catalogue: Variable-face RS volume eigenvalue distributions" [ref=e231]'
+            - generic [ref=e232]:
+              - text: Variable-face RS volume eigenvalue distributions ·
+              - link "PDF" [ref=e233] [cursor=pointer]:
+                - /url: study-assets/figures/variable-n-volume/rs_volume_distributions.pdf
+              - text: ·
+              - link "PNG" [ref=e234] [cursor=pointer]:
+                - /url: study-assets/figures/variable-n-volume/rs_volume_distributions.png
+          - figure [ref=e235]:
+            - link [ref=e236] [cursor=pointer]:
+              - /url: study-assets/figures/variable-n-volume/rs_volume_means.png
+              - 'img "Variable-face positive RS catalogue: Variable-face mean RS volume" [ref=e237]'
+            - generic [ref=e238]:
+              - text: Variable-face mean RS volume ·
+              - link "PDF" [ref=e239] [cursor=pointer]:
+                - /url: study-assets/figures/variable-n-volume/rs_volume_means.pdf
+              - text: ·
+              - link "PNG" [ref=e240] [cursor=pointer]:
+                - /url: study-assets/figures/variable-n-volume/rs_volume_means.png
+        - group [ref=e241]:
+          - generic "Data, operators and write-ups (41 files)" [ref=e242] [cursor=pointer]
+      - article [ref=e243]:
+        - heading "T9 — Squeezed-vacuum area coefficients" [level=3] [ref=e244]
+        - paragraph [ref=e245]:
+          - link "Numerical table and charts" [ref=e246] [cursor=pointer]:
+            - /url: infodash/index.html?data=datasets/vacuum-area.json
+        - paragraph [ref=e247]: Saved calculation
+        - paragraph [ref=e248]:
+          - text: Added to catalogue
+          - time [ref=e249]: 9 Oct 2026
+        - paragraph [ref=e250]: J_in=0, four faces and eight modes per copy; coefficient and area distributions at four temperatures.
+        - paragraph [ref=e251]: Selected two-copy squeeze on full oscillator support; no separate per-copy singlet projection. Ordinary per-copy spin differs from combined/transformed closure. Plot ranges are truncated; full reduced-state spectra and geometric observables remain open.
+        - figure [ref=e253]:
+          - link [ref=e254] [cursor=pointer]:
+            - /url: study-assets/figures/thermal-area-sectors/thermal_coefficients_vacuum.png
+            - 'img "Squeezed-vacuum area coefficients: Squeezed-vacuum area-sector distributions" [ref=e255]'
+          - generic [ref=e256]:
+            - text: Squeezed-vacuum area-sector distributions ·
+            - link "PDF" [ref=e257] [cursor=pointer]:
+              - /url: study-assets/figures/thermal-area-sectors/thermal_coefficients_vacuum.pdf
+            - text: ·
+            - link "PNG" [ref=e258] [cursor=pointer]:
+              - /url: study-assets/figures/thermal-area-sectors/thermal_coefficients_vacuum.png
+        - group [ref=e259]:
+          - generic "Data, operators and write-ups (3 files)" [ref=e260] [cursor=pointer]
+      - article [ref=e261]:
+        - heading "T9 — Squeezed-vacuum resultant spin" [level=3] [ref=e262]
+        - paragraph [ref=e263]:
+          - link "Numerical table and charts" [ref=e264] [cursor=pointer]:
+            - /url: infodash/index.html?data=datasets/vacuum-spin.json
+        - paragraph [ref=e265]: Saved calculation
+        - paragraph [ref=e266]:
+          - text: Added to catalogue
+          - time [ref=e267]: 9 Oct 2026
+        - paragraph [ref=e268]: Ordinary per-copy spin distributions conditioned on boson number, at beta*hbar*omega=1.
+        - paragraph [ref=e269]: Selected two-copy squeeze on full oscillator support; no separate per-copy singlet projection. Ordinary per-copy spin differs from combined/transformed closure. Plot ranges are truncated; full reduced-state spectra and geometric observables remain open.
+        - figure [ref=e271]:
+          - link [ref=e272] [cursor=pointer]:
+            - /url: study-assets/figures/thermal-spin-sectors/thermal_vacuum_spin.png
+            - 'img "Squeezed-vacuum resultant spin: Vacuum-seed per-copy resultant-spin distributions" [ref=e273]'
+          - generic [ref=e274]:
+            - text: Vacuum-seed per-copy resultant-spin distributions ·
+            - link "PDF" [ref=e275] [cursor=pointer]:
+              - /url: study-assets/figures/thermal-spin-sectors/thermal_vacuum_spin.pdf
+            - text: ·
+            - link "PNG" [ref=e276] [cursor=pointer]:
+              - /url: study-assets/figures/thermal-spin-sectors/thermal_vacuum_spin.png
+        - group [ref=e277]:
+          - generic "Data, operators and write-ups (3 files)" [ref=e278] [cursor=pointer]
+      - article [ref=e279]:
+        - heading "T9 — Excited J_in=1 joint area and spin" [level=3] [ref=e280]
+        - paragraph [ref=e281]:
+          - link "Numerical table and charts" [ref=e282] [cursor=pointer]:
+            - /url: infodash/index.html?data=datasets/excited-spin.json
+        - paragraph [ref=e283]: Saved calculation
+        - paragraph [ref=e284]:
+          - text: Added to catalogue
+          - time [ref=e285]: 9 Oct 2026
+        - paragraph [ref=e286]: Five temperatures, q through 160; 32,805 independent-method comparisons with maximum difference 2.67e-16.
+        - paragraph [ref=e287]: Selected two-copy squeeze on full oscillator support; no separate per-copy singlet projection. Ordinary per-copy spin differs from combined/transformed closure. Plot ranges are truncated; full reduced-state spectra and geometric observables remain open.
+        - generic [ref=e288]:
+          - figure [ref=e289]:
+            - link [ref=e290] [cursor=pointer]:
+              - /url: study-assets/figures/thermal-j1-spin/j1_spin_joint_maps.png
+              - 'img "Excited J_in=1 joint area and spin: Excited-seed joint boson-number and resultant-spin distributions" [ref=e291]'
+            - generic [ref=e292]:
+              - text: Excited-seed joint boson-number and resultant-spin distributions ·
+              - link "PDF" [ref=e293] [cursor=pointer]:
+                - /url: study-assets/figures/thermal-j1-spin/j1_spin_joint_maps.pdf
+              - text: ·
+              - link "PNG" [ref=e294] [cursor=pointer]:
+                - /url: study-assets/figures/thermal-j1-spin/j1_spin_joint_maps.png
+          - figure [ref=e295]:
+            - link [ref=e296] [cursor=pointer]:
+              - /url: study-assets/figures/thermal-j1-spin/j1_spin_temperature.png
+              - 'img "Excited J_in=1 joint area and spin: Excited-seed area and spin distributions versus temperature" [ref=e297]'
+            - generic [ref=e298]:
+              - text: Excited-seed area and spin distributions versus temperature ·
+              - link "PDF" [ref=e299] [cursor=pointer]:
+                - /url: study-assets/figures/thermal-j1-spin/j1_spin_temperature.pdf
+              - text: ·
+              - link "PNG" [ref=e300] [cursor=pointer]:
+                - /url: study-assets/figures/thermal-j1-spin/j1_spin_temperature.png
+        - group [ref=e301]:
+          - generic "Data, operators and write-ups (3 files)" [ref=e302] [cursor=pointer]
+      - article [ref=e303]:
+        - heading "T5c — Higher-J flat-boundary probes" [level=3] [ref=e304]
+        - paragraph [ref=e305]:
+          - link "Numerical table and charts" [ref=e306] [cursor=pointer]:
+            - /url: infodash/index.html?data=datasets/high-j.json
+        - paragraph [ref=e307]: Saved calculation
+        - paragraph [ref=e308]:
+          - text: Added to catalogue
+          - time [ref=e309]: 9 Oct 2026
+        - paragraph [ref=e310]: Saved Python and Rust probes extend the earlier weighted-input boundary scans.
+        - paragraph [ref=e311]: Finite exploratory points. Rust/Python RS comparison at J=10 differs by about 4.4e-10 and remains unresolved; AL agrees within about 4e-17. Stopped attempts are recorded as attempts, not results.
+        - figure [ref=e313]:
+          - link [ref=e314] [cursor=pointer]:
+            - /url: study-assets/figures/dashboard-history/high_j_boundary.png
+            - 'img "Higher-J flat-boundary probes: High j boundary" [ref=e315]'
+          - generic [ref=e316]:
+            - text: High j boundary ·
+            - link "PDF" [ref=e317] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/high_j_boundary.pdf
+            - text: ·
+            - link "PNG" [ref=e318] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/high_j_boundary.png
+        - group [ref=e319]:
+          - generic "Data, operators and write-ups (1 files)" [ref=e320] [cursor=pointer]
+      - article [ref=e321]:
+        - heading "T5a — Magnetization and signed-grasp correlations" [level=3] [ref=e322]
+        - paragraph [ref=e323]:
+          - link "Numerical table and charts" [ref=e324] [cursor=pointer]:
+            - /url: infodash/index.html?data=datasets/magnetization.json
+        - paragraph [ref=e325]: Saved calculation
+        - paragraph [ref=e326]:
+          - text: Added to catalogue
+          - time [ref=e327]: 9 Oct 2026
+        - paragraph [ref=e328]: Converged n=5 magnetization sweep; the tested magnetization hypothesis was not supported.
+        - paragraph [ref=e329]: Historical notation is preserved in downloads. Signed grasp and sqrt(abs(mean grasp)) are proxies, distinct from positive-volume expectations. These finite sampled families do not establish universal behavior.
+        - figure [ref=e331]:
+          - link [ref=e332] [cursor=pointer]:
+            - /url: study-assets/figures/dashboard-history/magnetization.png
+            - 'img "Magnetization and signed-grasp correlations: Magnetization" [ref=e333]'
+          - generic [ref=e334]:
+            - text: Magnetization ·
+            - link "PDF" [ref=e335] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/magnetization.pdf
+            - text: ·
+            - link "PNG" [ref=e336] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/magnetization.png
+        - group [ref=e337]:
+          - generic "Data, operators and write-ups (2 files)" [ref=e338] [cursor=pointer]
+      - article [ref=e339]:
+        - heading "T5a′ — Local-chirality pilot" [level=3] [ref=e340]
+        - paragraph [ref=e341]:
+          - link "Numerical table and charts" [ref=e342] [cursor=pointer]:
+            - /url: infodash/index.html?data=datasets/chirality.json
+        - paragraph [ref=e343]: Saved calculation
+        - paragraph [ref=e344]:
+          - text: Added to catalogue
+          - time [ref=e345]: 9 Oct 2026
+        - paragraph [ref=e346]: Saved plane/channel agreement statistics; the local subset did not establish hidden handedness.
+        - paragraph [ref=e347]: Historical notation is preserved in downloads. Signed grasp and sqrt(abs(mean grasp)) are proxies, distinct from positive-volume expectations. These finite sampled families do not establish universal behavior.
+        - figure [ref=e349]:
+          - link [ref=e350] [cursor=pointer]:
+            - /url: study-assets/figures/dashboard-history/chirality.png
+            - 'img "Local-chirality pilot: Chirality" [ref=e351]'
+          - generic [ref=e352]:
+            - text: Chirality ·
+            - link "PDF" [ref=e353] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/chirality.pdf
+            - text: ·
+            - link "PNG" [ref=e354] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/chirality.png
+        - group [ref=e355]:
+          - generic "Data, operators and write-ups (2 files)" [ref=e356] [cursor=pointer]
+      - article [ref=e357]:
+        - heading "T5b — Imaginary-perturbation response" [level=3] [ref=e358]
+        - paragraph [ref=e359]:
+          - link "Numerical table and charts" [ref=e360] [cursor=pointer]:
+            - /url: infodash/index.html?data=datasets/perturbation.json
+        - paragraph [ref=e361]: Saved calculation
+        - paragraph [ref=e362]:
+          - text: Added to catalogue
+          - time [ref=e363]: 9 Oct 2026
+        - paragraph [ref=e364]: Recorded n=4,5 onset of the signed-mean proxy, approximately epsilon^0.5.
+        - paragraph [ref=e365]: Historical notation is preserved in downloads. Signed grasp and sqrt(abs(mean grasp)) are proxies, distinct from positive-volume expectations. These finite sampled families do not establish universal behavior.
+        - figure [ref=e367]:
+          - link [ref=e368] [cursor=pointer]:
+            - /url: study-assets/figures/dashboard-history/perturbation.png
+            - 'img "Imaginary-perturbation response: Perturbation" [ref=e369]'
+          - generic [ref=e370]:
+            - text: Perturbation ·
+            - link "PDF" [ref=e371] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/perturbation.pdf
+            - text: ·
+            - link "PNG" [ref=e372] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/perturbation.png
+        - group [ref=e373]:
+          - generic "Data, operators and write-ups (2 files)" [ref=e374] [cursor=pointer]
+      - article [ref=e375]:
+        - heading "T5d — Cocycle-phase pilot" [level=3] [ref=e376]
+        - paragraph [ref=e377]:
+          - link "Numerical table and charts" [ref=e378] [cursor=pointer]:
+            - /url: infodash/index.html?data=datasets/phase.json
+        - paragraph [ref=e379]: Saved calculation
+        - paragraph [ref=e380]:
+          - text: Added to catalogue
+          - time [ref=e381]: 9 Oct 2026
+        - paragraph [ref=e382]: Ten recorded points compare phase defect with signed grasp; broader study remains open.
+        - paragraph [ref=e383]: Historical notation is preserved in downloads. Signed grasp and sqrt(abs(mean grasp)) are proxies, distinct from positive-volume expectations. These finite sampled families do not establish universal behavior.
+        - figure [ref=e385]:
+          - link [ref=e386] [cursor=pointer]:
+            - /url: study-assets/figures/dashboard-history/phase.png
+            - 'img "Cocycle-phase pilot: Phase" [ref=e387]'
+          - generic [ref=e388]:
+            - text: Phase ·
+            - link "PDF" [ref=e389] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/phase.pdf
+            - text: ·
+            - link "PNG" [ref=e390] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/phase.png
+        - group [ref=e391]:
+          - generic "Data, operators and write-ups (2 files)" [ref=e392] [cursor=pointer]
+      - article [ref=e393]:
+        - heading "T5e — Large-K recorded families and fits" [level=3] [ref=e394]
+        - paragraph [ref=e395]:
+          - link "Numerical table and charts" [ref=e396] [cursor=pointer]:
+            - /url: infodash/index.html?data=datasets/large-k.json
+        - paragraph [ref=e397]: Saved calculation
+        - paragraph [ref=e398]:
+          - text: Added to catalogue
+          - time [ref=e399]: 9 Oct 2026
+        - paragraph [ref=e400]: Saved families through historical K=24. The proposed K^(3/2) scaling was not supported for these families.
+        - paragraph [ref=e401]: Historical notation is preserved in downloads. Signed grasp and sqrt(abs(mean grasp)) are proxies, distinct from positive-volume expectations. These finite sampled families do not establish universal behavior.
+        - figure [ref=e403]:
+          - link [ref=e404] [cursor=pointer]:
+            - /url: study-assets/figures/dashboard-history/large_k.png
+            - 'img "Large-K recorded families and fits: Large k" [ref=e405]'
+          - generic [ref=e406]:
+            - text: Large k ·
+            - link "PDF" [ref=e407] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/large_k.pdf
+            - text: ·
+            - link "PNG" [ref=e408] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/large_k.png
+        - group [ref=e409]:
+          - generic "Data, operators and write-ups (2 files)" [ref=e410] [cursor=pointer]
+      - article [ref=e411]:
+        - heading "T9 — Historical single-copy thermal pilot" [level=3] [ref=e412]
+        - paragraph [ref=e413]:
+          - link "Numerical table and charts" [ref=e414] [cursor=pointer]:
+            - /url: infodash/index.html?data=datasets/t7a.json
+        - paragraph [ref=e415]: Saved calculation
+        - paragraph [ref=e416]:
+          - text: Added to catalogue
+          - time [ref=e417]: 9 Oct 2026
+        - paragraph [ref=e418]: Archived T7A study, retained under current T9 ownership.
+        - paragraph [ref=e419]: Historical capped oscillator support and historical state construction; this is distinct from the currently selected two-copy squeezed FL family and exact singlet Hamiltonian Gibbs calculation. Undefined JSON numbers are null in dashboard exports.
+        - figure [ref=e421]:
+          - link [ref=e422] [cursor=pointer]:
+            - /url: study-assets/figures/dashboard-history/t7a.png
+            - 'img "Historical single-copy thermal pilot: T7a" [ref=e423]'
+          - generic [ref=e424]:
+            - text: T7a ·
+            - link "PDF" [ref=e425] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/t7a.pdf
+            - text: ·
+            - link "PNG" [ref=e426] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/t7a.png
+        - group [ref=e427]:
+          - generic "Data, operators and write-ups (2 files)" [ref=e428] [cursor=pointer]
+      - article [ref=e429]:
+        - heading "T9 — Historical energy-basis TFD pilot" [level=3] [ref=e430]
+        - paragraph [ref=e431]:
+          - link "Numerical table and charts" [ref=e432] [cursor=pointer]:
+            - /url: infodash/index.html?data=datasets/t7b.json
+        - paragraph [ref=e433]: Saved calculation
+        - paragraph [ref=e434]:
+          - text: Added to catalogue
+          - time [ref=e435]: 9 Oct 2026
+        - paragraph [ref=e436]: Archived T7B study, retained under current T9 ownership.
+        - paragraph [ref=e437]: Historical capped oscillator support and historical state construction; this is distinct from the currently selected two-copy squeezed FL family and exact singlet Hamiltonian Gibbs calculation. Undefined JSON numbers are null in dashboard exports.
+        - figure [ref=e439]:
+          - link [ref=e440] [cursor=pointer]:
+            - /url: study-assets/figures/dashboard-history/t7b.png
+            - 'img "Historical energy-basis TFD pilot: T7b" [ref=e441]'
+          - generic [ref=e442]:
+            - text: T7b ·
+            - link "PDF" [ref=e443] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/t7b.pdf
+            - text: ·
+            - link "PNG" [ref=e444] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/t7b.png
+        - group [ref=e445]:
+          - generic "Data, operators and write-ups (2 files)" [ref=e446] [cursor=pointer]
+      - article [ref=e447]:
+        - heading "T9 — Historical complexified purification" [level=3] [ref=e448]
+        - paragraph [ref=e449]:
+          - link "Numerical table and charts" [ref=e450] [cursor=pointer]:
+            - /url: infodash/index.html?data=datasets/t7e.json
+        - paragraph [ref=e451]: Saved calculation
+        - paragraph [ref=e452]:
+          - text: Added to catalogue
+          - time [ref=e453]: 9 Oct 2026
+        - paragraph [ref=e454]: Archived T7E study, retained under current T9 ownership.
+        - paragraph [ref=e455]: Historical capped oscillator support and historical state construction; this is distinct from the currently selected two-copy squeezed FL family and exact singlet Hamiltonian Gibbs calculation. Undefined JSON numbers are null in dashboard exports.
+        - figure [ref=e457]:
+          - link [ref=e458] [cursor=pointer]:
+            - /url: study-assets/figures/dashboard-history/t7e.png
+            - 'img "Historical complexified purification: T7e" [ref=e459]'
+          - generic [ref=e460]:
+            - text: T7e ·
+            - link "PDF" [ref=e461] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/t7e.pdf
+            - text: ·
+            - link "PNG" [ref=e462] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/t7e.png
+        - group [ref=e463]:
+          - generic "Data, operators and write-ups (2 files)" [ref=e464] [cursor=pointer]
+      - article [ref=e465]:
+        - heading "T9 — Small-sector thermal geometry audit" [level=3] [ref=e466]
+        - paragraph [ref=e467]:
+          - link "Numerical table and charts" [ref=e468] [cursor=pointer]:
+            - /url: infodash/index.html?data=datasets/geometry-audit.json
+        - paragraph [ref=e469]: Saved calculation
+        - paragraph [ref=e470]:
+          - text: Added to catalogue
+          - time [ref=e471]: 9 Oct 2026
+        - paragraph [ref=e472]: Four regular/unequal-shape seed cases; draft squeeze compared with explicit double-singlet postselection.
+        - paragraph [ref=e473]: Draft one-sided construction, cutoff and omitted probabilities are recorded. Postselection is not assumed Gibbs and differs from the selected two-copy input construction.
+        - figure [ref=e475]:
+          - link [ref=e476] [cursor=pointer]:
+            - /url: study-assets/figures/dashboard-history/geometry_audit.png
+            - 'img "Small-sector thermal geometry audit: Geometry audit" [ref=e477]'
+          - generic [ref=e478]:
+            - text: Geometry audit ·
+            - link "PDF" [ref=e479] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/geometry_audit.pdf
+            - text: ·
+            - link "PNG" [ref=e480] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/geometry_audit.png
+        - group [ref=e481]:
+          - generic "Data, operators and write-ups (1 files)" [ref=e482] [cursor=pointer]
+      - article [ref=e483]:
+        - heading "T1a — RS/AL volume-prescription controls" [level=3] [ref=e484]
+        - paragraph [ref=e485]:
+          - link "Numerical table and charts" [ref=e486] [cursor=pointer]:
+            - /url: infodash/index.html?data=datasets/volume-controls.json
+        - paragraph [ref=e487]: Saved calculation
+        - paragraph [ref=e488]:
+          - text: Added to catalogue
+          - time [ref=e489]: 9 Oct 2026
+        - paragraph [ref=e490]: "Independent tensor controls: paired spin-half singlet has positive RS/AL volume despite zero signed mean; collinear product gives zero."
+        - paragraph [ref=e491]: Simple-state implementation checks; project normalization and selected four-face AL embedding only.
+        - figure [ref=e493]:
+          - link [ref=e494] [cursor=pointer]:
+            - /url: study-assets/figures/dashboard-history/volume_controls.png
+            - 'img "RS/AL volume-prescription controls: Volume controls" [ref=e495]'
+          - generic [ref=e496]:
+            - text: Volume controls ·
+            - link "PDF" [ref=e497] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/volume_controls.pdf
+            - text: ·
+            - link "PNG" [ref=e498] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/volume_controls.png
+        - group [ref=e499]:
+          - generic "Data, operators and write-ups (1 files)" [ref=e500] [cursor=pointer]
+      - article [ref=e501]:
+        - heading "T5c — Initial covariance reconstruction pilot" [level=3] [ref=e502]
+        - paragraph [ref=e503]:
+          - link "Numerical table and charts" [ref=e504] [cursor=pointer]:
+            - /url: infodash/index.html?data=datasets/covariance-pilot.json
+        - paragraph [ref=e505]: Saved calculation
+        - paragraph [ref=e506]:
+          - text: Added to catalogue
+          - time [ref=e507]: 9 Oct 2026
+        - paragraph [ref=e508]: Six saved pilot records; later shape recovery and weighted-input studies are shown in Volume Studies.
+        - paragraph [ref=e509]: Exploratory covariance-derived geometry; preserve the distinction from the classical input tetrahedron and positive-volume operator.
+        - figure [ref=e511]:
+          - link [ref=e512] [cursor=pointer]:
+            - /url: study-assets/figures/dashboard-history/covariance_pilot.png
+            - 'img "Initial covariance reconstruction pilot: Covariance pilot" [ref=e513]'
+          - generic [ref=e514]:
+            - text: Covariance pilot ·
+            - link "PDF" [ref=e515] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/covariance_pilot.pdf
+            - text: ·
+            - link "PNG" [ref=e516] [cursor=pointer]:
+              - /url: study-assets/figures/dashboard-history/covariance_pilot.png
+        - group [ref=e517]:
+          - generic "Data, operators and write-ups (1 files)" [ref=e518] [cursor=pointer]
+  - text: "x = 1 / √ 3 , ϕ = 9 0 ∘ A F L / ℓ 2 p = J ( γ = 0 . 2 3 7 5 ) 2 . 8 × 1 0 − 1 5 1 . 6 7 × 1 0 − 1 6 5 . 5 5 × 1 0 − 1 7 J = 1 , … , 5 J = 2 x ϕ = 9 0 ∘ ϕ x = 1 / √ 3 x = | n 0 + n 1 | / 2 ϕ x = 1 / √ 3 , ϕ = 9 0 ∘ λ = ⟨ z 0 , z 2 ⟩ ⟨ z 1 , z 3 ⟩ ⟨ z 0 , z 3 ⟩ ⟨ z 1 , z 2 ⟩ 1 . 4 × 1 0 − 1 7 J N = 4 K = 6 ( γ = 0 . 2 3 7 5 , ℏ = 1 ) K q 0 1 2 G i j ( J ) = ⟨ J i ⋅ J j ⟩ ˆ G i j ( J ) = G i j ( J ) √ G i i ( J ) G j j ( J ) , C i n p u t i j = n i ⋅ n j , E J = m a x i , j ∣ ˆ G i j ( J ) − C i n p u t i j ∣ . E J N = 4 G i j ( J ) = ⟨ J i ⋅ J j ⟩ J = 1 , … , 6 J = 1 , … , 3 E J = m a x i , j ∣ G i j ( J ) √ G i i ( J ) G j j ( J ) − n i ⋅ n j ∣ J = 1 , … , 6 J x ϕ J x ϕ J V c l q 0 1 2 a i n i ξ i 3 ∑ i = 0 a i = 1 , 3 ∑ i = 0 a i n i = 0 , F i = a i n i . z i = √ 2 a i ξ i , 3 ∑ i = 0 | z i ⟩ ⟨ z i | = I 2 . F † z = ∑ i < j [ z j | z i ⟩ F † i j , | Ψ J , z ⟩ = ( F † z ) J | 0 ⟩ ∥ ( F † z ) J | 0 ⟩ ∥ , ⟨ ^ j i ⟩ Ψ J , z = J a i . [ z j | z i ⟩ = z 0 j z 1 i − z 1 j z 0 i J V ( 1 ) c l = ( γ ℏ ) 3 / 2 √ 2 9 | d e t ( F 1 , F 2 , F 3 ) | , V c l ( J ) = J 3 / 2 V ( 1 ) c l , ℏ = 1 . X ∈ { R S , A L } κ R S = √ 2 / 9 / 4 κ A L = √ 2 / 9 / 2 R X ( J ) = κ X ⟨ ^ V + X ⟩ Ψ J , z J 3 / 2 V ( 1 ) c l , S X ( J ) = κ X √ ⟨ ( ^ V + X ) 2 ⟩ Ψ J , z − ⟨ ^ V + X ⟩ 2 Ψ J , z J 3 / 2 V ( 1 ) c l . R X = 1 S X J 3 / 2 w i [ z i z j ] = z 0 i z 1 j − z 1 i z 0 j λ v e r t e x = ( w 0 − w 2 ) ( w 1 − w 3 ) ( w 0 − w 3 ) ( w 1 − w 2 ) , λ n o r m a l = [ z 0 z 2 ] [ z 1 z 3 ] [ z 0 z 3 ] [ z 1 z 2 ] . J 3 / 2 J = 7 κ ⟨ V ⟩ p r o j e c t / ( J 3 / 2 V c l a s s i c a l , p r o j e c t ) ( a i ) = ( 0 . 3 2 , 0 . 1 8 , 0 . 3 0 , 0 . 2 0 ) ϕ d J = 6 d ϕ ϕ = 0 J ϕ = 0 . 0 5 r a d J = 7 J γ = 0 . 2 3 7 5 , ℏ = 1"

@@ -1,0 +1,14 @@
+[   50077ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:8767/study-assets/notes/state-space-probes.txt:0
+[   50079ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:8767/study-assets/notes/published-paper-overview.txt:0
+[   50081ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:8767/study-assets/notes/experiments/fl_volume_shape_scan_log.txt:0
+[   50081ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:8767/study-assets/figures/physical-illustrations/README.txt:0
+[   50089ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:8767/study-assets/notes/constructive-sewing-probe.txt:0
+[   50090ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:8767/study-assets/notes/binding-energy.txt:0
+[   50092ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:8767/study-assets/results/README.txt:0
+[   50093ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:8767/study-assets/code/dashboard/index.html:0
+[   50094ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:8767/study-assets/study-records/sessions/:0
+[   50095ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:8767/study-assets/notes/task-specifications/:0
+[   50096ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:8767/study-assets/study-records/sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-transcript.txt:0
+[   50097ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:8767/study-assets/study-records/sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-summary.txt:0
+[   50097ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:8767/study-assets/notes/thermal-area-sectors-reorganization.txt:0
+[   50097ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:8767/study-assets/notes/equilibration-session-note-map.txt:0

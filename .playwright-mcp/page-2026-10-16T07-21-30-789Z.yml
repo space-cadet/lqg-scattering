@@ -1,0 +1,42 @@
+- generic [ref=f13e2]:
+  - navigation "Numerical datasets" [ref=f13e3]:
+    - generic [ref=f13e4]: Numerical study
+    - combobox "Numerical study" [ref=f13e5]:
+      - option "Loading studies…" [selected]
+  - heading "Loading..." [level=1] [ref=f13e6]
+  - paragraph [ref=f13e7]: Loading...
+  - generic [ref=f13e8]:
+    - generic [ref=f13e9]:
+      - generic [ref=f13e10]: —
+      - generic [ref=f13e11]: Total Runs
+    - generic [ref=f13e12]:
+      - generic [ref=f13e13]: —
+      - generic [ref=f13e14]: Tasks
+    - generic [ref=f13e15]:
+      - generic [ref=f13e16]: —
+      - generic [ref=f13e17]: Complete
+    - generic [ref=f13e18]:
+      - generic [ref=f13e19]: —
+      - generic [ref=f13e20]: Figures
+  - tablist "Dashboard sections" [ref=f13e21]
+  - tabpanel [ref=f13e22]:
+    - heading "Run and Study Records" [level=2] [ref=f13e23]
+    - generic [ref=f13e24]:
+      - generic [ref=f13e25]:
+        - generic [ref=f13e26]: "Status:"
+        - combobox "Status:" [ref=f13e27]:
+          - option "All" [selected]
+          - option "complete"
+          - option "in-progress"
+          - option "failed"
+      - generic [ref=f13e28]:
+        - generic [ref=f13e29]: "Search:"
+        - textbox "Search:" [ref=f13e30]:
+          - /placeholder: Run ID, description...
+      - button "Reset" [ref=f13e32] [cursor=pointer]
+    - table [ref=f13e34]:
+      - rowgroup:
+        - row
+      - rowgroup [ref=f13e35]:
+        - row [ref=f13e36]:
+          - cell "Loading data..." [ref=f13e37]

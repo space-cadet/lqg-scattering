@@ -1,0 +1,200 @@
+- generic [ref=f7e2]:
+  - navigation "Numerical datasets" [ref=f7e3]:
+    - generic [ref=f7e4]: Numerical study
+    - combobox "Numerical study" [ref=f7e5]:
+      - option "All studies — overview" [selected]
+      - option "Small-area face-channel equilibration pilot (12 rows)"
+      - option "Classical rotor spreading and equilibrium comparison (24 rows)"
+      - 'option "Few-rotor transfer: planar bound and 3D controls (27 rows)"'
+      - option "Rotor coupling crossover and delayed release (64 rows)"
+      - 'option "Large-area tetrahedron: face activation and recurrence (20 rows)"'
+      - option "Entanglement of separately closed thermal polyhedra (86 rows)"
+      - option "Ordinary closure versus temperature (125 rows)"
+      - option "Heating separately closed area and positive RS volume (85 rows)"
+      - option "Singlet exchange between closed FL polyhedra (20 rows)"
+      - 'option "Four versus five sites: thermal-volume persistence (12 rows)"'
+      - option "Prepared tetrahedral FL states and the volume crossover (11 rows)"
+      - option "Candidate geometric Hamiltonians and prepared-FL dynamics (62 rows)"
+      - option "Four-site Hamiltonian spectra and RS-volume observables (30 rows)"
+      - option "Complete four-face closed-basis volumes (11 rows)"
+      - option "Variable-face positive RS catalogue (9 rows)"
+      - option "Squeezed-vacuum area coefficients (964 rows)"
+      - option "Squeezed-vacuum resultant spin (196 rows)"
+      - option "Excited J_in=1 joint area and spin (5 rows)"
+      - option "Higher-J flat-boundary probes (13 rows)"
+      - option "Magnetization and signed-grasp correlations (10 rows)"
+      - option "Local-chirality pilot (13 rows)"
+      - option "Imaginary-perturbation response (26 rows)"
+      - option "Cocycle-phase pilot (10 rows)"
+      - option "Large-K recorded families and fits (13 rows)"
+      - option "Historical single-copy thermal pilot (14 rows)"
+      - option "Historical energy-basis TFD pilot (14 rows)"
+      - option "Historical complexified purification (10 rows)"
+      - option "Small-sector thermal geometry audit (4 rows)"
+      - option "RS/AL volume-prescription controls (2 rows)"
+      - option "Initial covariance reconstruction pilot (6 rows)"
+      - option "Prepared FL evolution sampling (50 rows)"
+      - option "Positive volumes on two real-plane states (2 rows)"
+      - option "FL covariance shape recovery (84 rows)"
+      - option "Weighted FL input geometry and volumes (14 rows)"
+      - option "Regular FL volume versus area (5 rows)"
+      - option "Equal-area FL shape scan at J=2 (440 rows)"
+      - option "Same-number detachment energies (8 rows)"
+      - option "Closed and open state evolution probes (6 rows)"
+      - option "Constructive edge sewing probes (5 rows)"
+  - heading "Scattering in LQG" [level=1] [ref=f7e6]
+  - paragraph [ref=f7e7]: Numerical study records, saved cases, figures, provenance and calculation limits.
+  - generic [ref=f7e8]:
+    - generic [ref=f7e9]:
+      - generic [ref=f7e10]: "47"
+      - generic [ref=f7e11]: Total Runs
+    - generic [ref=f7e12]:
+      - generic [ref=f7e13]: "12"
+      - generic [ref=f7e14]: Tasks
+    - generic [ref=f7e15]:
+      - generic [ref=f7e16]: "47"
+      - generic [ref=f7e17]: Complete
+    - generic [ref=f7e18]:
+      - generic [ref=f7e19]: "49"
+      - generic [ref=f7e20]: Figures
+  - tablist "Dashboard sections" [ref=f7e21]:
+    - tab "Runs & Studies" [ref=f7e22] [cursor=pointer]
+    - tab "Figure Archive" [ref=f7e23] [cursor=pointer]
+    - tab "Charts" [ref=f7e24] [cursor=pointer]
+    - tab "Tasks & Numerical Notes" [active] [selected] [ref=f7e25] [cursor=pointer]
+  - tabpanel "Tasks & Numerical Notes" [ref=f7e626]:
+    - heading "Tasks and Numerical Notes" [level=2] [ref=f7e627]
+    - generic [ref=f7e628]:
+      - region [ref=f7e629]:
+        - heading "Documentation" [level=3] [ref=f7e630]
+        - generic [ref=f7e631]:
+          - article [ref=f7e632]:
+            - group [ref=f7e633]:
+              - generic "Face growth and energy sharing Verified large-area free-hopping controls and proposed neighbouring-face F/J interactions. Open note" [ref=f7e634] [cursor=pointer]:
+                - generic [ref=f7e635]: Face growth and energy sharing
+                - generic [ref=f7e636]: Verified large-area free-hopping controls and proposed neighbouring-face F/J interactions.
+                - generic [ref=f7e637]: Open note
+            - link "Download Markdown" [ref=f7e638] [cursor=pointer]:
+              - /url: http://127.0.0.1:8765/study-assets/notes/face-energy-equipartition.txt
+          - article [ref=f7e639]:
+            - group [ref=f7e640]:
+              - generic "Entanglement of closed thermal polyhedra Schmidt spectra, area-sector entropy, joint singlet coherence and convergence. Open note" [ref=f7e641] [cursor=pointer]:
+                - generic [ref=f7e642]: Entanglement of closed thermal polyhedra
+                - generic [ref=f7e643]: Schmidt spectra, area-sector entropy, joint singlet coherence and convergence.
+                - generic [ref=f7e644]: Open note
+            - link "Download Markdown" [ref=f7e645] [cursor=pointer]:
+              - /url: http://127.0.0.1:8765/study-assets/notes/thermal-entanglement.txt
+          - article [ref=f7e646]:
+            - group [ref=f7e647]:
+              - generic "Heating, equilibrium and singlet exchange Temperature-dependent closure and geometry, Gibbs test and finite exchange model. Open note" [ref=f7e648] [cursor=pointer]:
+                - generic [ref=f7e649]: Heating, equilibrium and singlet exchange
+                - generic [ref=f7e650]: Temperature-dependent closure and geometry, Gibbs test and finite exchange model.
+                - generic [ref=f7e651]: Open note
+            - link "Download Markdown" [ref=f7e652] [cursor=pointer]:
+              - /url: http://127.0.0.1:8765/study-assets/notes/thermal-geometry-and-singlet-exchange.txt
+          - article [ref=f7e653]:
+            - group [ref=f7e654]:
+              - generic "Chronological numerical studies Indexed record of the numerical studies in chronological order. Open note" [ref=f7e655] [cursor=pointer]:
+                - generic [ref=f7e656]: Chronological numerical studies
+                - generic [ref=f7e657]: Indexed record of the numerical studies in chronological order.
+                - generic [ref=f7e658]: Open note
+            - link "Download Markdown" [ref=f7e659] [cursor=pointer]:
+              - /url: http://127.0.0.1:8765/study-assets/notes/numerical-studies.txt
+          - article [ref=f7e660]:
+            - group [ref=f7e661]:
+              - generic "Hamiltonian studies Saved Hamiltonian calculations, comparisons and interpretation limits. Open note" [ref=f7e662] [cursor=pointer]:
+                - generic [ref=f7e663]: Hamiltonian studies
+                - generic [ref=f7e664]: Saved Hamiltonian calculations, comparisons and interpretation limits.
+                - generic [ref=f7e665]: Open note
+            - link "Download Markdown" [ref=f7e666] [cursor=pointer]:
+              - /url: http://127.0.0.1:8765/study-assets/notes/hamiltonian-studies.txt
+          - article [ref=f7e667]:
+            - group [ref=f7e668]:
+              - generic "Volume studies Saved volume calculations, validation and open normalization questions. Open note" [ref=f7e669] [cursor=pointer]:
+                - generic [ref=f7e670]: Volume studies
+                - generic [ref=f7e671]: Saved volume calculations, validation and open normalization questions.
+                - generic [ref=f7e672]: Open note
+            - link "Download Markdown" [ref=f7e673] [cursor=pointer]:
+              - /url: http://127.0.0.1:8765/study-assets/notes/volume-studies.txt
+          - article [ref=f7e674]:
+            - group [ref=f7e675]:
+              - generic "Thermal area sectors Thermal area and spin-sector numerical records. Open note" [ref=f7e676] [cursor=pointer]:
+                - generic [ref=f7e677]: Thermal area sectors
+                - generic [ref=f7e678]: Thermal area and spin-sector numerical records.
+                - generic [ref=f7e679]: Open note
+            - link "Download Markdown" [ref=f7e680] [cursor=pointer]:
+              - /url: http://127.0.0.1:8765/study-assets/notes/thermal-area-sectors.txt
+          - article [ref=f7e681]:
+            - group [ref=f7e682]:
+              - generic "T11 geometric interpretation Prepared-state data and the limits of the geometric interpretation. Open note" [ref=f7e683] [cursor=pointer]:
+                - generic [ref=f7e684]: T11 geometric interpretation
+                - generic [ref=f7e685]: Prepared-state data and the limits of the geometric interpretation.
+                - generic [ref=f7e686]: Open note
+            - link "Download Markdown" [ref=f7e687] [cursor=pointer]:
+              - /url: http://127.0.0.1:8765/study-assets/notes/t11-geometric-interpretation.txt
+          - article [ref=f7e688]:
+            - group [ref=f7e689]:
+              - generic "Classical rotor energy transfer and equilibration Finite-area face-channel pilot, grouped rotor summaries and equilibrium comparisons. Open note" [ref=f7e690] [cursor=pointer]:
+                - generic [ref=f7e691]: Classical rotor energy transfer and equilibration
+                - generic [ref=f7e692]: Finite-area face-channel pilot, grouped rotor summaries and equilibrium comparisons.
+                - generic [ref=f7e693]: Open note
+            - link "Download Markdown" [ref=f7e694] [cursor=pointer]:
+              - /url: http://127.0.0.1:8765/study-assets/notes/classical-rotor-equilibration.txt
+          - article [ref=f7e695]:
+            - group [ref=f7e696]:
+              - generic "Why fast rotors exchange little energy Exact planar-pair transfer bound and separate three-dimensional controls. Open note" [ref=f7e697] [cursor=pointer]:
+                - generic [ref=f7e698]: Why fast rotors exchange little energy
+                - generic [ref=f7e699]: Exact planar-pair transfer bound and separate three-dimensional controls.
+                - generic [ref=f7e700]: Open note
+            - link "Download Markdown" [ref=f7e701] [cursor=pointer]:
+              - /url: http://127.0.0.1:8765/study-assets/notes/few-rotor-energy-transfer.txt
+          - article [ref=f7e702]:
+            - group [ref=f7e703]:
+              - generic "Coupling strength and the apparent transfer cutoff Finite-time coupling scan, direct controls and delayed transfer. Open note" [ref=f7e704] [cursor=pointer]:
+                - generic [ref=f7e705]: Coupling strength and the apparent transfer cutoff
+                - generic [ref=f7e706]: Finite-time coupling scan, direct controls and delayed transfer.
+                - generic [ref=f7e707]: Open note
+            - link "Download Markdown" [ref=f7e708] [cursor=pointer]:
+              - /url: http://127.0.0.1:8765/study-assets/notes/rotor-coupling-crossover.txt
+      - region [ref=f7e709]:
+        - heading "Tasks and Numerical Notes" [level=3] [ref=f7e710]
+        - heading "Active" [level=3] [ref=f7e711]
+        - generic [ref=f7e712]:
+          - article [ref=f7e713]:
+            - generic [ref=f7e714]: T1a — Positive-volume validation
+            - generic [ref=f7e715]: Complete four-face baseline through K=12 saved; broader physical calibration remains open.
+          - article [ref=f7e716]:
+            - generic [ref=f7e717]: T5c — Weighted FL volume and shape
+            - generic [ref=f7e718]: Initial and higher-J probes saved; broad convergence and unresolved RS comparison remain open.
+          - article [ref=f7e719]:
+            - generic [ref=f7e720]: T5d — Cocycle phase
+            - generic [ref=f7e721]: Recorded ten-point pilot; broader phase study open.
+          - article [ref=f7e722]:
+            - generic [ref=f7e723]: T9 — Thermal intertwiners and TFD
+            - generic [ref=f7e724]: Projected reference entropy, Schmidt spectra, coherent joint creation and thermal geometry saved. General FL inputs and full unprojected spectra remain open.
+          - article [ref=f7e725]:
+            - generic [ref=f7e726]: T9a — Singlet exchange
+            - generic [ref=f7e727]: Finite combined-area FL dynamics and canonical controls saved; reservoir and thermal-family comparison open.
+          - article [ref=f7e728]:
+            - generic [ref=f7e729]: T11 — Hamiltonian, face-channel and rotor studies
+            - generic [ref=f7e730]: Four/five-site Hamiltonians, large-area face activation, a finite-area equilibration pilot, grouped classical rotor spreading, few-rotor transfer and coupling scans are saved. Rotor records use selected summaries and representative cases; large-area quantum equilibration, permanent localization, universal thermalization and the crossover's infinite-time limit remain open.
+        - heading "Completed" [level=3] [ref=f7e731]
+        - generic [ref=f7e732]:
+          - article [ref=f7e733]:
+            - generic [ref=f7e734]: T10 — Variable-face RS catalogue
+            - generic [ref=f7e735]: Declared K=2,3,4 catalogue complete.
+          - article [ref=f7e736]:
+            - generic [ref=f7e737]: T1b — Real-plane volume check
+            - generic [ref=f7e738]: Independent positive-volume comparison saved.
+          - article [ref=f7e739]:
+            - generic [ref=f7e740]: T5a — Magnetization pilot
+            - generic [ref=f7e741]: Recorded scope complete; finite sampling and proxy interpretation retained.
+          - article [ref=f7e742]:
+            - generic [ref=f7e743]: T5a′ — Local chirality
+            - generic [ref=f7e744]: Recorded scope complete; finite sampling and proxy interpretation retained.
+          - article [ref=f7e745]:
+            - generic [ref=f7e746]: T5b — Perturbation response
+            - generic [ref=f7e747]: Recorded scope complete; finite sampling and proxy interpretation retained.
+          - article [ref=f7e748]:
+            - generic [ref=f7e749]: T5e — Recorded large-K families
+            - generic [ref=f7e750]: Recorded scope complete; finite sampling and proxy interpretation retained.

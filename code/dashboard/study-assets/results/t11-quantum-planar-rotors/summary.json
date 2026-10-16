@@ -1,0 +1,57 @@
+{
+  "cases": [
+    {
+      "m": 2,
+      "packet_energy": 4,
+      "mean_total_energy": 8,
+      "accepted_cutoff": 10,
+      "dimension": 6181,
+      "cutoff_checks": [
+        {
+          "cutoff": 10,
+          "previous_cutoff": 8,
+          "kinetic": 1.2168044349891716e-13,
+          "entropy": 1.0613732115416497e-13,
+          "return_probability": 1.4765966227514582e-14,
+          "boundary_probability": 1.6359651719394166e-20
+        }
+      ],
+      "max_norm_error": 4.629630012686903e-14,
+      "max_energy_error": 3.5704772471945034e-13,
+      "classical_max_energy_error": 2.2367055052541218e-07,
+      "classical_max_momentum_error": 4.04121180963557e-13,
+      "classical_refinement": 0.00022387230441656136,
+      "quantum_late_cold_fraction": 0.5920372158209664,
+      "classical_late_cold_fraction": 0.4852172548633113
+    },
+    {
+      "m": 4,
+      "packet_energy": 16,
+      "mean_total_energy": 20,
+      "accepted_cutoff": 10,
+      "dimension": 6181,
+      "cutoff_checks": [
+        {
+          "cutoff": 10,
+          "previous_cutoff": 8,
+          "kinetic": 4.359999472569598e-09,
+          "entropy": 3.923871783051425e-09,
+          "return_probability": 5.067197772490317e-10,
+          "boundary_probability": 1.905707308081186e-15
+        }
+      ],
+      "max_norm_error": 1.7763568394002505e-14,
+      "max_energy_error": 3.481659405224491e-13,
+      "classical_max_energy_error": 8.348288954351801e-06,
+      "classical_max_momentum_error": 3.6720626539477053e-13,
+      "classical_refinement": 0.000392338858064889,
+      "quantum_late_cold_fraction": 0.06714280980900074,
+      "classical_late_cold_fraction": 0.05319489994363441
+    }
+  ],
+  "source_sha256": {
+    "code/python/t11_quantum_planar_rotors.py": "fdd8c640bbacfa4cf82c993e4dd506b0b247b97cca3b653ea81bab5559e04f7d",
+    "code/python/lqg_scattering/planar_rotors.py": "503dcc7874bd0eb91e56c1faed6e88f43c6019bcf59b3907f3a7c5f8f677c385",
+    "results/t11-quantum-planar-rotors/protocol.md": "771f4003d611dd410a07a9b9e7f87efd9e7670f1f7d7dfc7ad8fd31d95e74193"
+  }
+}

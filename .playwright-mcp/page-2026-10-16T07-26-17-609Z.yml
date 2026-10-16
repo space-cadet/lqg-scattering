@@ -1,0 +1,191 @@
+- generic [ref=f18e2]:
+  - navigation "Numerical datasets" [ref=f18e3]:
+    - generic [ref=f18e4]: Numerical study
+    - combobox "Numerical study" [ref=f18e5]:
+      - option "All studies — overview"
+      - 'option "Four versus five sites: thermal-volume persistence (12 rows)"'
+      - option "Prepared tetrahedral FL states and the volume crossover (11 rows)"
+      - option "Candidate geometric Hamiltonians and prepared-FL dynamics (62 rows)"
+      - option "Four-site Hamiltonian spectra and RS-volume observables (30 rows)"
+      - option "Complete four-face closed-basis volumes (11 rows)"
+      - option "Variable-face positive RS catalogue (9 rows)"
+      - option "Squeezed-vacuum area coefficients (964 rows)"
+      - option "Squeezed-vacuum resultant spin (196 rows)"
+      - option "Excited J_in=1 joint area and spin (5 rows)"
+      - option "Higher-J flat-boundary probes (13 rows)"
+      - option "Magnetization and signed-grasp correlations (10 rows)"
+      - option "Local-chirality pilot (13 rows)"
+      - option "Imaginary-perturbation response (26 rows)"
+      - option "Cocycle-phase pilot (10 rows)"
+      - option "Large-K recorded families and fits (13 rows)"
+      - option "Historical single-copy thermal pilot (14 rows)"
+      - option "Historical energy-basis TFD pilot (14 rows)"
+      - option "Historical complexified purification (10 rows)"
+      - option "Small-sector thermal geometry audit (4 rows)"
+      - option "RS/AL volume-prescription controls (2 rows)"
+      - option "Initial covariance reconstruction pilot (6 rows)"
+      - option "Prepared FL evolution sampling (50 rows)"
+      - option "Positive volumes on two real-plane states (2 rows)"
+      - option "FL covariance shape recovery (84 rows)"
+      - option "Weighted FL input geometry and volumes (14 rows)"
+      - option "Regular FL volume versus area (5 rows)"
+      - option "Equal-area FL shape scan at J=2 (440 rows)"
+      - option "Same-number detachment energies (8 rows)"
+      - option "Closed and open state evolution probes (6 rows)"
+      - option "Constructive edge sewing probes (5 rows)"
+  - heading "Scattering in LQG" [level=1] [ref=f18e38]
+  - paragraph [ref=f18e7]: Numerical study records, saved cases, figures, provenance and calculation limits.
+  - generic [ref=f18e8]:
+    - generic [ref=f18e9]:
+      - generic [ref=f18e10]: "47"
+      - generic [ref=f18e11]: Total Runs
+    - generic [ref=f18e12]:
+      - generic [ref=f18e13]: "12"
+      - generic [ref=f18e14]: Tasks
+    - generic [ref=f18e15]:
+      - generic [ref=f18e16]: "47"
+      - generic [ref=f18e17]: Complete
+    - generic [ref=f18e18]:
+      - generic [ref=f18e19]: "49"
+      - generic [ref=f18e20]: Figures
+  - tablist "Dashboard sections" [ref=f18e21]:
+    - tab "Runs & Studies" [ref=f18e39] [cursor=pointer]
+    - tab "Figure Archive" [ref=f18e40] [cursor=pointer]
+    - tab "Charts" [ref=f18e41] [cursor=pointer]
+    - tab "Tasks & Numerical Notes" [active] [selected] [ref=f18e42] [cursor=pointer]
+  - tabpanel "Tasks & Numerical Notes" [ref=f18e630]:
+    - heading "Tasks and Numerical Notes" [level=2] [ref=f18e631]
+    - generic [ref=f18e632]:
+      - region [ref=f18e633]:
+        - heading "Documentation" [level=3] [ref=f18e634]
+        - generic [ref=f18e635]:
+          - article [ref=f18e636]:
+            - group [ref=f18e637]:
+              - generic "Face growth and energy sharing Verified large-area free-hopping controls and proposed neighbouring-face F/J interactions. Open note" [ref=f18e638] [cursor=pointer]:
+                - generic [ref=f18e639]: Face growth and energy sharing
+                - generic [ref=f18e640]: Verified large-area free-hopping controls and proposed neighbouring-face F/J interactions.
+                - generic [ref=f18e641]: Open note
+            - link "Download Markdown" [ref=f18e642] [cursor=pointer]:
+              - /url: https://quantumofgravity.com/projects/scattering-in-lqg/numerics/study-assets/notes/face-energy-equipartition.txt
+          - article [ref=f18e643]:
+            - group [ref=f18e644]:
+              - generic "Entanglement of closed thermal polyhedra Schmidt spectra, area-sector entropy, joint singlet coherence and convergence. Open note" [ref=f18e645] [cursor=pointer]:
+                - generic [ref=f18e646]: Entanglement of closed thermal polyhedra
+                - generic [ref=f18e647]: Schmidt spectra, area-sector entropy, joint singlet coherence and convergence.
+                - generic [ref=f18e648]: Open note
+            - link "Download Markdown" [ref=f18e649] [cursor=pointer]:
+              - /url: https://quantumofgravity.com/projects/scattering-in-lqg/numerics/study-assets/notes/thermal-entanglement.txt
+          - article [ref=f18e650]:
+            - group [ref=f18e651]:
+              - generic "Heating, equilibrium and singlet exchange Temperature-dependent closure and geometry, Gibbs test and finite exchange model. Open note" [ref=f18e652] [cursor=pointer]:
+                - generic [ref=f18e653]: Heating, equilibrium and singlet exchange
+                - generic [ref=f18e654]: Temperature-dependent closure and geometry, Gibbs test and finite exchange model.
+                - generic [ref=f18e655]: Open note
+            - link "Download Markdown" [ref=f18e656] [cursor=pointer]:
+              - /url: https://quantumofgravity.com/projects/scattering-in-lqg/numerics/study-assets/notes/thermal-geometry-and-singlet-exchange.txt
+          - article [ref=f18e657]:
+            - group [ref=f18e658]:
+              - generic "Chronological numerical studies Indexed record of the numerical studies in chronological order. Open note" [ref=f18e659] [cursor=pointer]:
+                - generic [ref=f18e660]: Chronological numerical studies
+                - generic [ref=f18e661]: Indexed record of the numerical studies in chronological order.
+                - generic [ref=f18e662]: Open note
+            - link "Download Markdown" [ref=f18e663] [cursor=pointer]:
+              - /url: https://quantumofgravity.com/projects/scattering-in-lqg/numerics/study-assets/notes/numerical-studies.txt
+          - article [ref=f18e664]:
+            - group [ref=f18e665]:
+              - generic "Hamiltonian studies Saved Hamiltonian calculations, comparisons and interpretation limits. Open note" [ref=f18e666] [cursor=pointer]:
+                - generic [ref=f18e667]: Hamiltonian studies
+                - generic [ref=f18e668]: Saved Hamiltonian calculations, comparisons and interpretation limits.
+                - generic [ref=f18e669]: Open note
+            - link "Download Markdown" [ref=f18e670] [cursor=pointer]:
+              - /url: https://quantumofgravity.com/projects/scattering-in-lqg/numerics/study-assets/notes/hamiltonian-studies.txt
+          - article [ref=f18e671]:
+            - group [ref=f18e672]:
+              - generic "Volume studies Saved volume calculations, validation and open normalization questions. Open note" [ref=f18e673] [cursor=pointer]:
+                - generic [ref=f18e674]: Volume studies
+                - generic [ref=f18e675]: Saved volume calculations, validation and open normalization questions.
+                - generic [ref=f18e676]: Open note
+            - link "Download Markdown" [ref=f18e677] [cursor=pointer]:
+              - /url: https://quantumofgravity.com/projects/scattering-in-lqg/numerics/study-assets/notes/volume-studies.txt
+          - article [ref=f18e678]:
+            - group [ref=f18e679]:
+              - generic "Thermal area sectors Thermal area and spin-sector numerical records. Open note" [ref=f18e680] [cursor=pointer]:
+                - generic [ref=f18e681]: Thermal area sectors
+                - generic [ref=f18e682]: Thermal area and spin-sector numerical records.
+                - generic [ref=f18e683]: Open note
+            - link "Download Markdown" [ref=f18e684] [cursor=pointer]:
+              - /url: https://quantumofgravity.com/projects/scattering-in-lqg/numerics/study-assets/notes/thermal-area-sectors.txt
+          - article [ref=f18e685]:
+            - group [ref=f18e686]:
+              - generic "T11 geometric interpretation Prepared-state data and the limits of the geometric interpretation. Open note" [ref=f18e687] [cursor=pointer]:
+                - generic [ref=f18e688]: T11 geometric interpretation
+                - generic [ref=f18e689]: Prepared-state data and the limits of the geometric interpretation.
+                - generic [ref=f18e690]: Open note
+            - link "Download Markdown" [ref=f18e691] [cursor=pointer]:
+              - /url: https://quantumofgravity.com/projects/scattering-in-lqg/numerics/study-assets/notes/t11-geometric-interpretation.txt
+          - article [ref=f18e692]:
+            - group [ref=f18e693]:
+              - generic "Classical rotor energy transfer and equilibration Finite-area face-channel pilot, grouped rotor summaries and equilibrium comparisons. Open note" [ref=f18e694] [cursor=pointer]:
+                - generic [ref=f18e695]: Classical rotor energy transfer and equilibration
+                - generic [ref=f18e696]: Finite-area face-channel pilot, grouped rotor summaries and equilibrium comparisons.
+                - generic [ref=f18e697]: Open note
+            - link "Download Markdown" [ref=f18e698] [cursor=pointer]:
+              - /url: https://quantumofgravity.com/projects/scattering-in-lqg/numerics/study-assets/notes/classical-rotor-equilibration.txt
+          - article [ref=f18e699]:
+            - group [ref=f18e700]:
+              - generic "Why fast rotors exchange little energy Exact planar-pair transfer bound and separate three-dimensional controls. Open note" [ref=f18e701] [cursor=pointer]:
+                - generic [ref=f18e702]: Why fast rotors exchange little energy
+                - generic [ref=f18e703]: Exact planar-pair transfer bound and separate three-dimensional controls.
+                - generic [ref=f18e704]: Open note
+            - link "Download Markdown" [ref=f18e705] [cursor=pointer]:
+              - /url: https://quantumofgravity.com/projects/scattering-in-lqg/numerics/study-assets/notes/few-rotor-energy-transfer.txt
+          - article [ref=f18e706]:
+            - group [ref=f18e707]:
+              - generic "Coupling strength and the apparent transfer cutoff Finite-time coupling scan, direct controls and delayed transfer. Open note" [ref=f18e708] [cursor=pointer]:
+                - generic [ref=f18e709]: Coupling strength and the apparent transfer cutoff
+                - generic [ref=f18e710]: Finite-time coupling scan, direct controls and delayed transfer.
+                - generic [ref=f18e711]: Open note
+            - link "Download Markdown" [ref=f18e712] [cursor=pointer]:
+              - /url: https://quantumofgravity.com/projects/scattering-in-lqg/numerics/study-assets/notes/rotor-coupling-crossover.txt
+      - region [ref=f18e713]:
+        - heading "Tasks and Numerical Notes" [level=3] [ref=f18e714]
+        - heading "Active" [level=3] [ref=f18e715]
+        - generic [ref=f18e716]:
+          - article [ref=f18e717]:
+            - generic [ref=f18e718]: T1a — Positive-volume validation
+            - generic [ref=f18e719]: Complete four-face baseline through K=12 saved; broader physical calibration remains open.
+          - article [ref=f18e720]:
+            - generic [ref=f18e721]: T5c — Weighted FL volume and shape
+            - generic [ref=f18e722]: Initial and higher-J probes saved; broad convergence and unresolved RS comparison remain open.
+          - article [ref=f18e723]:
+            - generic [ref=f18e724]: T5d — Cocycle phase
+            - generic [ref=f18e725]: Recorded ten-point pilot; broader phase study open.
+          - article [ref=f18e726]:
+            - generic [ref=f18e727]: T9 — Thermal intertwiners and TFD
+            - generic [ref=f18e728]: Projected reference entropy, Schmidt spectra, coherent joint creation and thermal geometry saved. General FL inputs and full unprojected spectra remain open.
+          - article [ref=f18e729]:
+            - generic [ref=f18e730]: T9a — Singlet exchange
+            - generic [ref=f18e731]: Finite combined-area FL dynamics and canonical controls saved; reservoir and thermal-family comparison open.
+          - article [ref=f18e732]:
+            - generic [ref=f18e733]: T11 — Hamiltonian, face-channel and rotor studies
+            - generic [ref=f18e734]: Four/five-site Hamiltonians, large-area face activation, a finite-area equilibration pilot, grouped classical rotor spreading, few-rotor transfer and coupling scans are saved. Rotor records use selected summaries and representative cases; large-area quantum equilibration, permanent localization, universal thermalization and the crossover's infinite-time limit remain open.
+        - heading "Completed" [level=3] [ref=f18e735]
+        - generic [ref=f18e736]:
+          - article [ref=f18e737]:
+            - generic [ref=f18e738]: T10 — Variable-face RS catalogue
+            - generic [ref=f18e739]: Declared K=2,3,4 catalogue complete.
+          - article [ref=f18e740]:
+            - generic [ref=f18e741]: T1b — Real-plane volume check
+            - generic [ref=f18e742]: Independent positive-volume comparison saved.
+          - article [ref=f18e743]:
+            - generic [ref=f18e744]: T5a — Magnetization pilot
+            - generic [ref=f18e745]: Recorded scope complete; finite sampling and proxy interpretation retained.
+          - article [ref=f18e746]:
+            - generic [ref=f18e747]: T5a′ — Local chirality
+            - generic [ref=f18e748]: Recorded scope complete; finite sampling and proxy interpretation retained.
+          - article [ref=f18e749]:
+            - generic [ref=f18e750]: T5b — Perturbation response
+            - generic [ref=f18e751]: Recorded scope complete; finite sampling and proxy interpretation retained.
+          - article [ref=f18e752]:
+            - generic [ref=f18e753]: T5e — Recorded large-K families
+            - generic [ref=f18e754]: Recorded scope complete; finite sampling and proxy interpretation retained.

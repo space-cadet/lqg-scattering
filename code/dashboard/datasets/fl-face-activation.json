@@ -146,7 +146,7 @@
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
           "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
-          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "notes/face-energy-equipartition.md": "600378c635ced7d43dec03d486a91c3082318b34caa50ae7c835bfe7678fd1f4",
           "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
           "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
           "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
@@ -154,11 +154,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-1"
       },
       "assessment": {
@@ -210,9 +210,9 @@
           "label": "face-energy-equipartition.md",
           "path": "../study-assets/notes/face-energy-equipartition.txt",
           "kind": "data",
-          "sha256": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "sha256": "600378c635ced7d43dec03d486a91c3082318b34caa50ae7c835bfe7678fd1f4",
           "sourcePath": "notes/face-energy-equipartition.md",
-          "sourceSha256": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7"
+          "sourceSha256": "600378c635ced7d43dec03d486a91c3082318b34caa50ae7c835bfe7678fd1f4"
         },
         {
           "label": "fl_face_activation.py",
@@ -298,7 +298,7 @@
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
           "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
-          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "notes/face-energy-equipartition.md": "600378c635ced7d43dec03d486a91c3082318b34caa50ae7c835bfe7678fd1f4",
           "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
           "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
           "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
@@ -306,11 +306,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-2"
       },
       "assessment": {
@@ -351,7 +351,7 @@
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
           "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
-          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "notes/face-energy-equipartition.md": "600378c635ced7d43dec03d486a91c3082318b34caa50ae7c835bfe7678fd1f4",
           "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
           "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
           "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
@@ -359,11 +359,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-3"
       },
       "assessment": {
@@ -404,7 +404,7 @@
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
           "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
-          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "notes/face-energy-equipartition.md": "600378c635ced7d43dec03d486a91c3082318b34caa50ae7c835bfe7678fd1f4",
           "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
           "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
           "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
@@ -412,11 +412,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-4"
       },
       "assessment": {
@@ -457,7 +457,7 @@
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
           "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
-          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "notes/face-energy-equipartition.md": "600378c635ced7d43dec03d486a91c3082318b34caa50ae7c835bfe7678fd1f4",
           "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
           "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
           "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
@@ -465,11 +465,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-5"
       },
       "assessment": {
@@ -510,7 +510,7 @@
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
           "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
-          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "notes/face-energy-equipartition.md": "600378c635ced7d43dec03d486a91c3082318b34caa50ae7c835bfe7678fd1f4",
           "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
           "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
           "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
@@ -518,11 +518,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-6"
       },
       "assessment": {
@@ -563,7 +563,7 @@
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
           "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
-          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "notes/face-energy-equipartition.md": "600378c635ced7d43dec03d486a91c3082318b34caa50ae7c835bfe7678fd1f4",
           "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
           "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
           "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
@@ -571,11 +571,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-7"
       },
       "assessment": {
@@ -616,7 +616,7 @@
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
           "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
-          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "notes/face-energy-equipartition.md": "600378c635ced7d43dec03d486a91c3082318b34caa50ae7c835bfe7678fd1f4",
           "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
           "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
           "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
@@ -624,11 +624,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-8"
       },
       "assessment": {
@@ -669,7 +669,7 @@
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
           "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
-          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "notes/face-energy-equipartition.md": "600378c635ced7d43dec03d486a91c3082318b34caa50ae7c835bfe7678fd1f4",
           "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
           "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
           "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
@@ -677,11 +677,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-9"
       },
       "assessment": {
@@ -722,7 +722,7 @@
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
           "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
-          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "notes/face-energy-equipartition.md": "600378c635ced7d43dec03d486a91c3082318b34caa50ae7c835bfe7678fd1f4",
           "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
           "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
           "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
@@ -730,11 +730,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-10"
       },
       "assessment": {
@@ -775,7 +775,7 @@
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
           "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
-          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "notes/face-energy-equipartition.md": "600378c635ced7d43dec03d486a91c3082318b34caa50ae7c835bfe7678fd1f4",
           "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
           "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
           "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
@@ -783,11 +783,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-11"
       },
       "assessment": {
@@ -828,7 +828,7 @@
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
           "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
-          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "notes/face-energy-equipartition.md": "600378c635ced7d43dec03d486a91c3082318b34caa50ae7c835bfe7678fd1f4",
           "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
           "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
           "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
@@ -836,11 +836,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-12"
       },
       "assessment": {
@@ -881,7 +881,7 @@
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
           "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
-          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "notes/face-energy-equipartition.md": "600378c635ced7d43dec03d486a91c3082318b34caa50ae7c835bfe7678fd1f4",
           "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
           "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
           "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
@@ -889,11 +889,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-13"
       },
       "assessment": {
@@ -934,7 +934,7 @@
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
           "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
-          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "notes/face-energy-equipartition.md": "600378c635ced7d43dec03d486a91c3082318b34caa50ae7c835bfe7678fd1f4",
           "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
           "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
           "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
@@ -942,11 +942,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-14"
       },
       "assessment": {
@@ -987,7 +987,7 @@
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
           "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
-          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "notes/face-energy-equipartition.md": "600378c635ced7d43dec03d486a91c3082318b34caa50ae7c835bfe7678fd1f4",
           "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
           "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
           "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
@@ -995,11 +995,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-15"
       },
       "assessment": {
@@ -1040,7 +1040,7 @@
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
           "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
-          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "notes/face-energy-equipartition.md": "600378c635ced7d43dec03d486a91c3082318b34caa50ae7c835bfe7678fd1f4",
           "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
           "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
           "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
@@ -1048,11 +1048,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-16"
       },
       "assessment": {
@@ -1093,7 +1093,7 @@
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
           "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
-          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "notes/face-energy-equipartition.md": "600378c635ced7d43dec03d486a91c3082318b34caa50ae7c835bfe7678fd1f4",
           "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
           "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
           "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
@@ -1101,11 +1101,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-17"
       },
       "assessment": {
@@ -1146,7 +1146,7 @@
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
           "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
-          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "notes/face-energy-equipartition.md": "600378c635ced7d43dec03d486a91c3082318b34caa50ae7c835bfe7678fd1f4",
           "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
           "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
           "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
@@ -1154,11 +1154,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-18"
       },
       "assessment": {
@@ -1199,7 +1199,7 @@
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
           "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
-          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "notes/face-energy-equipartition.md": "600378c635ced7d43dec03d486a91c3082318b34caa50ae7c835bfe7678fd1f4",
           "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
           "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
           "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
@@ -1207,11 +1207,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-19"
       },
       "assessment": {
@@ -1252,7 +1252,7 @@
           "results/fl-face-activation/provenance.json": "c193dba488812eb4f1e3f217819e578cafa89931e32b2c98169a70d825ee8246",
           "results/fl-face-activation/summary.csv": "0e4c609cafa5f687bee82f806a566cce651295c3c198e2ab167f887cee639455",
           "results/fl-face-activation/verification.json": "0861d3d2a5d1e6cd2effc9cfd9d267d1a2d9b903d656b78a7b5b43c2a741c030",
-          "notes/face-energy-equipartition.md": "7627c201bdc0181cb6be335729ca5fc412dbd1d14264bf0aae72831b2fc253f7",
+          "notes/face-energy-equipartition.md": "600378c635ced7d43dec03d486a91c3082318b34caa50ae7c835bfe7678fd1f4",
           "code/python/fl_face_activation.py": "f656e43f80ce0be65d45b2c9c8c6df917ac00dd457530f09bc6b7fdb222e86ad",
           "code/python/verify_fl_face_activation.py": "3a20a45d3b9d9a4dfae06f548ab9fc567a083c0e8b024e33dbeff9db19712e86",
           "code/python/plot_fl_face_activation.py": "7efbb1cd23f9f8a2cd41e93ef6290b04f522e7f60fd52a4430008343891e10e8",
@@ -1260,11 +1260,11 @@
           "code/python/lqg_scattering/spinors.py": "66d543230693ca36b5ae3976451656e4320d3aab821ea6ce757b0d8de388f3d5"
         },
         "presentationSource": "results/fl-face-activation/summary.csv",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "results/fl-face-activation/summary.csv:row-20"
       },
       "assessment": {

@@ -1,0 +1,18 @@
+{
+  "post_run_diagnostic": true,
+  "inputs": {
+    "regular": {
+      "original_channel_symmetric_weight": 1.0643154872824468e-32,
+      "receiver_symmetric_residual": 4.0106279891991624e-16
+    },
+    "deformed": {
+      "original_channel_symmetric_weight": 0.348993288590604,
+      "receiver_symmetric_residual": 2.915987089215185e-16
+    }
+  },
+  "checks": {
+    "all_eight_receiver_symmetric_implies_original_symmetric": 2.949029909160572e-17,
+    "receiver_symmetric_all_eight_rank": 1
+  },
+  "interpretation": "Complete-graph H commutes with independent permutations of original and receiver groups. Initial receivers are symmetric. Within the all-eight singlet target, receiver symmetry requires original-group symmetry. The regular sharp source has zero weight in the latter; the deformed source does not."
+}

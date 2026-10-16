@@ -1,0 +1,473 @@
+- generic [ref=f8e2]:
+  - navigation "Numerical datasets" [ref=f8e3]:
+    - generic [ref=f8e4]: Numerical study
+    - combobox "Numerical study" [ref=f8e5]:
+      - option "All studies — overview"
+      - option "Small-area face-channel equilibration pilot (12 rows)"
+      - option "Classical rotor spreading and equilibrium comparison (24 rows)"
+      - 'option "Few-rotor transfer: planar bound and 3D controls (27 rows)"'
+      - option "Rotor coupling crossover and delayed release (64 rows)"
+      - 'option "Large-area tetrahedron: face activation and recurrence (20 rows)" [selected]'
+      - option "Entanglement of separately closed thermal polyhedra (86 rows)"
+      - option "Ordinary closure versus temperature (125 rows)"
+      - option "Heating separately closed area and positive RS volume (85 rows)"
+      - option "Singlet exchange between closed FL polyhedra (20 rows)"
+      - 'option "Four versus five sites: thermal-volume persistence (12 rows)"'
+      - option "Prepared tetrahedral FL states and the volume crossover (11 rows)"
+      - option "Candidate geometric Hamiltonians and prepared-FL dynamics (62 rows)"
+      - option "Four-site Hamiltonian spectra and RS-volume observables (30 rows)"
+      - option "Complete four-face closed-basis volumes (11 rows)"
+      - option "Variable-face positive RS catalogue (9 rows)"
+      - option "Squeezed-vacuum area coefficients (964 rows)"
+      - option "Squeezed-vacuum resultant spin (196 rows)"
+      - option "Excited J_in=1 joint area and spin (5 rows)"
+      - option "Higher-J flat-boundary probes (13 rows)"
+      - option "Magnetization and signed-grasp correlations (10 rows)"
+      - option "Local-chirality pilot (13 rows)"
+      - option "Imaginary-perturbation response (26 rows)"
+      - option "Cocycle-phase pilot (10 rows)"
+      - option "Large-K recorded families and fits (13 rows)"
+      - option "Historical single-copy thermal pilot (14 rows)"
+      - option "Historical energy-basis TFD pilot (14 rows)"
+      - option "Historical complexified purification (10 rows)"
+      - option "Small-sector thermal geometry audit (4 rows)"
+      - option "RS/AL volume-prescription controls (2 rows)"
+      - option "Initial covariance reconstruction pilot (6 rows)"
+      - option "Prepared FL evolution sampling (50 rows)"
+      - option "Positive volumes on two real-plane states (2 rows)"
+      - option "FL covariance shape recovery (84 rows)"
+      - option "Weighted FL input geometry and volumes (14 rows)"
+      - option "Regular FL volume versus area (5 rows)"
+      - option "Equal-area FL shape scan at J=2 (440 rows)"
+      - option "Same-number detachment energies (8 rows)"
+      - option "Closed and open state evolution probes (6 rows)"
+      - option "Constructive edge sewing probes (5 rows)"
+  - 'heading "Large-area tetrahedron: face activation and recurrence" [level=1] [ref=f8e6]'
+  - paragraph [ref=f8e7]: Exact FL free-hopping control on five/six channels, with four initial tetrahedral spinors and vacuum extras. Twenty controls span K=2..10000 and two phase choices. A fifth channel can take 29.06% of area, while individual areas and local energies recur.
+  - generic [ref=f8e8]:
+    - generic [ref=f8e9]:
+      - generic [ref=f8e10]: "20"
+      - generic [ref=f8e11]: Total Runs
+    - generic [ref=f8e12]:
+      - generic [ref=f8e13]: "0"
+      - generic [ref=f8e14]: Tasks
+    - generic [ref=f8e15]:
+      - generic [ref=f8e16]: "20"
+      - generic [ref=f8e17]: Complete
+    - generic [ref=f8e18]:
+      - generic [ref=f8e19]: "1"
+      - generic [ref=f8e20]: Figures
+  - tablist "Dashboard sections" [ref=f8e21]:
+    - tab "Runs & Studies" [selected] [ref=f8e22] [cursor=pointer]
+    - tab "Figure Archive" [ref=f8e23] [cursor=pointer]
+    - tab "Charts" [ref=f8e24] [cursor=pointer]
+    - tab "Tasks & Numerical Notes" [ref=f8e25] [cursor=pointer]
+  - tabpanel "Runs & Studies" [ref=f8e26]:
+    - heading "Run and Study Records" [level=2] [ref=f8e27]
+    - generic [ref=f8e28]:
+      - generic [ref=f8e29]:
+        - generic [ref=f8e30]: "Status:"
+        - combobox "Status:" [ref=f8e31]:
+          - option "All" [selected]
+          - option "complete"
+      - generic [ref=f8e32]:
+        - generic [ref=f8e33]: "Search:"
+        - textbox "Search:" [ref=f8e34]:
+          - /placeholder: Run ID, description...
+      - button "Reset" [ref=f8e36] [cursor=pointer]
+    - table [ref=f8e38]:
+      - rowgroup [ref=f8e39]:
+        - row [ref=f8e40]:
+          - columnheader [ref=f8e41] [cursor=pointer]:
+            - button "Case" [ref=f8e42]: Case ↕
+          - columnheader [ref=f8e43] [cursor=pointer]:
+            - button "channels" [ref=f8e44]: channels ↕
+          - columnheader [ref=f8e45] [cursor=pointer]:
+            - button "K" [ref=f8e46]: K ↕
+          - columnheader [ref=f8e47] [cursor=pointer]:
+            - button "phase case" [ref=f8e48]: phase case ↕
+          - columnheader [ref=f8e49] [cursor=pointer]:
+            - button "singlet dimension" [ref=f8e50]: singlet dimension ↕
+          - columnheader [ref=f8e51] [cursor=pointer]:
+            - button "initial energy" [ref=f8e52]: initial energy ↕
+          - columnheader [ref=f8e53] [cursor=pointer]:
+            - button "initial active faces" [ref=f8e54]: initial active faces ↕
+          - columnheader [ref=f8e55] [cursor=pointer]:
+            - button "maximum sampled active faces" [ref=f8e56]: maximum sampled active faces ↕
+          - columnheader [ref=f8e57] [cursor=pointer]:
+            - button "maximum sampled new area" [ref=f8e58]: maximum sampled new area ↕
+          - columnheader [ref=f8e59] [cursor=pointer]:
+            - button "maximum sampled new area fraction" [ref=f8e60]: maximum sampled new area fraction ↕
+          - columnheader [ref=f8e61] [cursor=pointer]:
+            - button "recurrence new area fraction" [ref=f8e62]: recurrence new area fraction ↕
+          - columnheader [ref=f8e63] [cursor=pointer]:
+            - button "maximum distinct normal directions" [ref=f8e64]: maximum distinct normal directions ↕
+          - columnheader [ref=f8e65] [cursor=pointer]:
+            - button "minimum normal span rank" [ref=f8e66]: minimum normal span rank ↕
+          - columnheader [ref=f8e67] [cursor=pointer]:
+            - button "maximum classical closure residual" [ref=f8e68]: maximum classical closure residual ↕
+          - columnheader [ref=f8e69] [cursor=pointer]:
+            - button "maximum energy residual" [ref=f8e70]: maximum energy residual ↕
+          - columnheader [ref=f8e71] [cursor=pointer]:
+            - button "maximum area residual" [ref=f8e72]: maximum area residual ↕
+      - rowgroup [ref=f8e73]:
+        - row [ref=f8e74]:
+          - cell [ref=f8e75]:
+            - button "Details for fl-face-activation:case-0001:1" [ref=f8e76] [cursor=pointer]: fl-face-activation:case-0001:1
+          - cell "5" [ref=f8e77]
+          - cell "2" [ref=f8e78]
+          - cell "baseline" [ref=f8e79]
+          - cell "d=50" [ref=f8e80]
+          - cell "-3.2659863" [ref=f8e81]
+          - cell "3" [ref=f8e82]
+          - cell "3.1328732" [ref=f8e83]
+          - cell "0.58127891" [ref=f8e84]
+          - cell "0.29063945" [ref=f8e85]
+          - cell "7.0458122e-32" [ref=f8e86]
+          - cell "5" [ref=f8e87]
+          - cell "3" [ref=f8e88]
+          - cell "3.3540883e-16" [ref=f8e89]
+          - cell "2.6645353e-15" [ref=f8e90]
+          - cell "8.8817842e-16" [ref=f8e91]
+        - row [ref=f8e92]:
+          - cell [ref=f8e93]:
+            - button "Details for fl-face-activation:case-0002:2" [ref=f8e94] [cursor=pointer]: fl-face-activation:case-0002:2
+          - cell "5" [ref=f8e95]
+          - cell "20" [ref=f8e96]
+          - cell "baseline" [ref=f8e97]
+          - cell "d=896126" [ref=f8e98]
+          - cell "-32.659863" [ref=f8e99]
+          - cell "3.9999962" [ref=f8e100]
+          - cell "4.9978254" [ref=f8e101]
+          - cell "5.8127891" [ref=f8e102]
+          - cell "0.29063945" [ref=f8e103]
+          - cell "7.0458122e-32" [ref=f8e104]
+          - cell "5" [ref=f8e105]
+          - cell "3" [ref=f8e106]
+          - cell "3.3540883e-16" [ref=f8e107]
+          - cell "2.8421709e-14" [ref=f8e108]
+          - cell "7.1054274e-15" [ref=f8e109]
+        - row [ref=f8e110]:
+          - cell [ref=f8e111]:
+            - button "Details for fl-face-activation:case-0003:3" [ref=f8e112] [cursor=pointer]: fl-face-activation:case-0003:3
+          - cell "5" [ref=f8e113]
+          - cell "100" [ref=f8e114]
+          - cell "baseline" [ref=f8e115]
+          - cell "d=8051318626" [ref=f8e116]
+          - cell "-163.29932" [ref=f8e117]
+          - cell "4" [ref=f8e118]
+          - cell "5" [ref=f8e119]
+          - cell "29.063945" [ref=f8e120]
+          - cell "0.29063945" [ref=f8e121]
+          - cell "7.0458122e-32" [ref=f8e122]
+          - cell "5" [ref=f8e123]
+          - cell "3" [ref=f8e124]
+          - cell "3.3540883e-16" [ref=f8e125]
+          - cell "1.7053026e-13" [ref=f8e126]
+          - cell "4.2632564e-14" [ref=f8e127]
+        - row [ref=f8e128]:
+          - cell [ref=f8e129]:
+            - button "Details for fl-face-activation:case-0004:4" [ref=f8e130] [cursor=pointer]: fl-face-activation:case-0004:4
+          - cell "5" [ref=f8e131]
+          - cell "1000" [ref=f8e132]
+          - cell "baseline" [ref=f8e133]
+          - cell "d=7049245038086251" [ref=f8e134]
+          - cell "-1632.9932" [ref=f8e135]
+          - cell "4" [ref=f8e136]
+          - cell "5" [ref=f8e137]
+          - cell "290.63945" [ref=f8e138]
+          - cell "0.29063945" [ref=f8e139]
+          - cell "7.0458122e-32" [ref=f8e140]
+          - cell "5" [ref=f8e141]
+          - cell "3" [ref=f8e142]
+          - cell "3.3540883e-16" [ref=f8e143]
+          - cell "1.5916157e-12" [ref=f8e144]
+          - cell "4.5474735e-13" [ref=f8e145]
+        - row [ref=f8e146]:
+          - cell [ref=f8e147]:
+            - button "Details for fl-face-activation:case-0005:5" [ref=f8e148] [cursor=pointer]: fl-face-activation:case-0005:5
+          - cell "5" [ref=f8e149]
+          - cell "10000" [ref=f8e150]
+          - cell "baseline" [ref=f8e151]
+          - cell "d=6954867432535058362501" [ref=f8e152]
+          - cell "-16329.932" [ref=f8e153]
+          - cell "4" [ref=f8e154]
+          - cell "5" [ref=f8e155]
+          - cell "2906.3945" [ref=f8e156]
+          - cell "0.29063945" [ref=f8e157]
+          - cell "7.0458122e-32" [ref=f8e158]
+          - cell "5" [ref=f8e159]
+          - cell "3" [ref=f8e160]
+          - cell "3.3540883e-16" [ref=f8e161]
+          - cell "1.4551915e-11" [ref=f8e162]
+          - cell "5.4569682e-12" [ref=f8e163]
+        - row [ref=f8e164]:
+          - cell [ref=f8e165]:
+            - button "Details for fl-face-activation:case-0006:6" [ref=f8e166] [cursor=pointer]: fl-face-activation:case-0006:6
+          - cell "5" [ref=f8e167]
+          - cell "2" [ref=f8e168]
+          - cell "phase_shifted" [ref=f8e169]
+          - cell "d=50" [ref=f8e170]
+          - cell "1.6329932" [ref=f8e171]
+          - cell "3" [ref=f8e172]
+          - cell "3.0906878" [ref=f8e173]
+          - cell "0.18936055" [ref=f8e174]
+          - cell "0.094680274" [ref=f8e175]
+          - cell "1.3812445e-31" [ref=f8e176]
+          - cell "5" [ref=f8e177]
+          - cell "3" [ref=f8e178]
+          - cell "1.1207603e-15" [ref=f8e179]
+          - cell "1.5543122e-15" [ref=f8e180]
+          - cell "8.8817842e-16" [ref=f8e181]
+        - row [ref=f8e182]:
+          - cell [ref=f8e183]:
+            - button "Details for fl-face-activation:case-0007:7" [ref=f8e184] [cursor=pointer]: fl-face-activation:case-0007:7
+          - cell "5" [ref=f8e185]
+          - cell "20" [ref=f8e186]
+          - cell "phase_shifted" [ref=f8e187]
+          - cell "d=896126" [ref=f8e188]
+          - cell "16.329932" [ref=f8e189]
+          - cell "3.9999962" [ref=f8e190]
+          - cell "4.9833042" [ref=f8e191]
+          - cell "1.8936055" [ref=f8e192]
+          - cell "0.094680274" [ref=f8e193]
+          - cell "1.3812445e-31" [ref=f8e194]
+          - cell "5" [ref=f8e195]
+          - cell "3" [ref=f8e196]
+          - cell "1.1207603e-15" [ref=f8e197]
+          - cell "1.7763568e-14" [ref=f8e198]
+          - cell "1.0658141e-14" [ref=f8e199]
+        - row [ref=f8e200]:
+          - cell [ref=f8e201]:
+            - button "Details for fl-face-activation:case-0008:8" [ref=f8e202] [cursor=pointer]: fl-face-activation:case-0008:8
+          - cell "5" [ref=f8e203]
+          - cell "100" [ref=f8e204]
+          - cell "phase_shifted" [ref=f8e205]
+          - cell "d=8051318626" [ref=f8e206]
+          - cell "81.649658" [ref=f8e207]
+          - cell "4" [ref=f8e208]
+          - cell "5" [ref=f8e209]
+          - cell "9.4680274" [ref=f8e210]
+          - cell "0.094680274" [ref=f8e211]
+          - cell "1.3812445e-31" [ref=f8e212]
+          - cell "5" [ref=f8e213]
+          - cell "3" [ref=f8e214]
+          - cell "1.1207603e-15" [ref=f8e215]
+          - cell "8.5265128e-14" [ref=f8e216]
+          - cell "5.6843419e-14" [ref=f8e217]
+        - row [ref=f8e218]:
+          - cell [ref=f8e219]:
+            - button "Details for fl-face-activation:case-0009:9" [ref=f8e220] [cursor=pointer]: fl-face-activation:case-0009:9
+          - cell "5" [ref=f8e221]
+          - cell "1000" [ref=f8e222]
+          - cell "phase_shifted" [ref=f8e223]
+          - cell "d=7049245038086251" [ref=f8e224]
+          - cell "816.49658" [ref=f8e225]
+          - cell "4" [ref=f8e226]
+          - cell "5" [ref=f8e227]
+          - cell "94.680274" [ref=f8e228]
+          - cell "0.094680274" [ref=f8e229]
+          - cell "1.3812445e-31" [ref=f8e230]
+          - cell "5" [ref=f8e231]
+          - cell "3" [ref=f8e232]
+          - cell "1.1207603e-15" [ref=f8e233]
+          - cell "9.094947e-13" [ref=f8e234]
+          - cell "5.6843419e-13" [ref=f8e235]
+        - row [ref=f8e236]:
+          - cell [ref=f8e237]:
+            - button "Details for fl-face-activation:case-0010:10" [ref=f8e238] [cursor=pointer]: fl-face-activation:case-0010:10
+          - cell "5" [ref=f8e239]
+          - cell "10000" [ref=f8e240]
+          - cell "phase_shifted" [ref=f8e241]
+          - cell "d=6954867432535058362501" [ref=f8e242]
+          - cell "8164.9658" [ref=f8e243]
+          - cell "4" [ref=f8e244]
+          - cell "5" [ref=f8e245]
+          - cell "946.80274" [ref=f8e246]
+          - cell "0.094680274" [ref=f8e247]
+          - cell "1.3812445e-31" [ref=f8e248]
+          - cell "5" [ref=f8e249]
+          - cell "3" [ref=f8e250]
+          - cell "1.1207603e-15" [ref=f8e251]
+          - cell "7.2759576e-12" [ref=f8e252]
+          - cell "5.4569682e-12" [ref=f8e253]
+        - row [ref=f8e254]:
+          - cell [ref=f8e255]:
+            - button "Details for fl-face-activation:case-0011:11" [ref=f8e256] [cursor=pointer]: fl-face-activation:case-0011:11
+          - cell "6" [ref=f8e257]
+          - cell "2" [ref=f8e258]
+          - cell "baseline" [ref=f8e259]
+          - cell "d=105" [ref=f8e260]
+          - cell "-3.2659863" [ref=f8e261]
+          - cell "3" [ref=f8e262]
+          - cell "3.255624" [ref=f8e263]
+          - cell "0.80733181" [ref=f8e264]
+          - cell "0.40366591" [ref=f8e265]
+          - cell "1.1318394e-30" [ref=f8e266]
+          - cell "5" [ref=f8e267]
+          - cell "3" [ref=f8e268]
+          - cell "5.6119954e-16" [ref=f8e269]
+          - cell "3.1086245e-15" [ref=f8e270]
+          - cell "8.8817842e-16" [ref=f8e271]
+        - row [ref=f8e272]:
+          - cell [ref=f8e273]:
+            - button "Details for fl-face-activation:case-0012:12" [ref=f8e274] [cursor=pointer]: fl-face-activation:case-0012:12
+          - cell "6" [ref=f8e275]
+          - cell "20" [ref=f8e276]
+          - cell "baseline" [ref=f8e277]
+          - cell "d=26883780" [ref=f8e278]
+          - cell "-32.659863" [ref=f8e279]
+          - cell "3.9999962" [ref=f8e280]
+          - cell "5.9881942" [ref=f8e281]
+          - cell "8.0733181" [ref=f8e282]
+          - cell "0.40366591" [ref=f8e283]
+          - cell "1.1318394e-30" [ref=f8e284]
+          - cell "5" [ref=f8e285]
+          - cell "3" [ref=f8e286]
+          - cell "5.6119954e-16" [ref=f8e287]
+          - cell "2.8421709e-14" [ref=f8e288]
+          - cell "1.0658141e-14" [ref=f8e289]
+        - row [ref=f8e290]:
+          - cell [ref=f8e291]:
+            - button "Details for fl-face-activation:case-0013:13" [ref=f8e292] [cursor=pointer]: fl-face-activation:case-0013:13
+          - cell "6" [ref=f8e293]
+          - cell "100" [ref=f8e294]
+          - cell "baseline" [ref=f8e295]
+          - cell "d=4396019969796" [ref=f8e296]
+          - cell "-163.29932" [ref=f8e297]
+          - cell "4" [ref=f8e298]
+          - cell "6" [ref=f8e299]
+          - cell "40.366591" [ref=f8e300]
+          - cell "0.40366591" [ref=f8e301]
+          - cell "1.1318394e-30" [ref=f8e302]
+          - cell "5" [ref=f8e303]
+          - cell "3" [ref=f8e304]
+          - cell "5.6119954e-16" [ref=f8e305]
+          - cell "1.7053026e-13" [ref=f8e306]
+          - cell "5.6843419e-14" [ref=f8e307]
+        - row [ref=f8e308]:
+          - cell [ref=f8e309]:
+            - button "Details for fl-face-activation:case-0014:14" [ref=f8e310] [cursor=pointer]: fl-face-activation:case-0014:14
+          - cell "6" [ref=f8e311]
+          - cell "1000" [ref=f8e312]
+          - cell "baseline" [ref=f8e313]
+          - cell "d=355641461416489449201" [ref=f8e314]
+          - cell "-1632.9932" [ref=f8e315]
+          - cell "4" [ref=f8e316]
+          - cell "6" [ref=f8e317]
+          - cell "403.66591" [ref=f8e318]
+          - cell "0.40366591" [ref=f8e319]
+          - cell "1.1318394e-30" [ref=f8e320]
+          - cell "5" [ref=f8e321]
+          - cell "3" [ref=f8e322]
+          - cell "5.6119954e-16" [ref=f8e323]
+          - cell "1.5916157e-12" [ref=f8e324]
+          - cell "5.6843419e-13" [ref=f8e325]
+        - row [ref=f8e326]:
+          - cell [ref=f8e327]:
+            - button "Details for fl-face-activation:case-0015:15" [ref=f8e328] [cursor=pointer]: fl-face-activation:case-0015:15
+          - cell "6" [ref=f8e329]
+          - cell "10000" [ref=f8e330]
+          - cell "baseline" [ref=f8e331]
+          - cell "d=34805641020989132110194617001" [ref=f8e332]
+          - cell "-16329.932" [ref=f8e333]
+          - cell "4" [ref=f8e334]
+          - cell "6" [ref=f8e335]
+          - cell "4036.6591" [ref=f8e336]
+          - cell "0.40366591" [ref=f8e337]
+          - cell "1.1318394e-30" [ref=f8e338]
+          - cell "5" [ref=f8e339]
+          - cell "3" [ref=f8e340]
+          - cell "5.6119954e-16" [ref=f8e341]
+          - cell "1.8189894e-11" [ref=f8e342]
+          - cell "7.2759576e-12" [ref=f8e343]
+        - row [ref=f8e344]:
+          - cell [ref=f8e345]:
+            - button "Details for fl-face-activation:case-0016:16" [ref=f8e346] [cursor=pointer]: fl-face-activation:case-0016:16
+          - cell "6" [ref=f8e347]
+          - cell "2" [ref=f8e348]
+          - cell "phase_shifted" [ref=f8e349]
+          - cell "d=105" [ref=f8e350]
+          - cell "1.6329932" [ref=f8e351]
+          - cell "3" [ref=f8e352]
+          - cell "3.1660278" [ref=f8e353]
+          - cell "0.26300076" [ref=f8e354]
+          - cell "0.13150038" [ref=f8e355]
+          - cell "5.2741921e-31" [ref=f8e356]
+          - cell "5" [ref=f8e357]
+          - cell "3" [ref=f8e358]
+          - cell "6.7583375e-16" [ref=f8e359]
+          - cell "1.5543122e-15" [ref=f8e360]
+          - cell "1.3322676e-15" [ref=f8e361]
+        - row [ref=f8e362]:
+          - cell [ref=f8e363]:
+            - button "Details for fl-face-activation:case-0017:17" [ref=f8e364] [cursor=pointer]: fl-face-activation:case-0017:17
+          - cell "6" [ref=f8e365]
+          - cell "20" [ref=f8e366]
+          - cell "phase_shifted" [ref=f8e367]
+          - cell "d=26883780" [ref=f8e368]
+          - cell "16.329932" [ref=f8e369]
+          - cell "3.9999962" [ref=f8e370]
+          - cell "5.8790782" [ref=f8e371]
+          - cell "2.6300076" [ref=f8e372]
+          - cell "0.13150038" [ref=f8e373]
+          - cell "5.2741921e-31" [ref=f8e374]
+          - cell "5" [ref=f8e375]
+          - cell "3" [ref=f8e376]
+          - cell "6.7583375e-16" [ref=f8e377]
+          - cell "2.1316282e-14" [ref=f8e378]
+          - cell "1.0658141e-14" [ref=f8e379]
+        - row [ref=f8e380]:
+          - cell [ref=f8e381]:
+            - button "Details for fl-face-activation:case-0018:18" [ref=f8e382] [cursor=pointer]: fl-face-activation:case-0018:18
+          - cell "6" [ref=f8e383]
+          - cell "100" [ref=f8e384]
+          - cell "phase_shifted" [ref=f8e385]
+          - cell "d=4396019969796" [ref=f8e386]
+          - cell "81.649658" [ref=f8e387]
+          - cell "4" [ref=f8e388]
+          - cell "5.9999985" [ref=f8e389]
+          - cell "13.150038" [ref=f8e390]
+          - cell "0.13150038" [ref=f8e391]
+          - cell "5.2741921e-31" [ref=f8e392]
+          - cell "5" [ref=f8e393]
+          - cell "3" [ref=f8e394]
+          - cell "6.7583375e-16" [ref=f8e395]
+          - cell "1.1368684e-13" [ref=f8e396]
+          - cell "5.6843419e-14" [ref=f8e397]
+        - row [ref=f8e398]:
+          - cell [ref=f8e399]:
+            - button "Details for fl-face-activation:case-0019:19" [ref=f8e400] [cursor=pointer]: fl-face-activation:case-0019:19
+          - cell "6" [ref=f8e401]
+          - cell "1000" [ref=f8e402]
+          - cell "phase_shifted" [ref=f8e403]
+          - cell "d=355641461416489449201" [ref=f8e404]
+          - cell "816.49658" [ref=f8e405]
+          - cell "4" [ref=f8e406]
+          - cell "6" [ref=f8e407]
+          - cell "131.50038" [ref=f8e408]
+          - cell "0.13150038" [ref=f8e409]
+          - cell "5.2741921e-31" [ref=f8e410]
+          - cell "5" [ref=f8e411]
+          - cell "3" [ref=f8e412]
+          - cell "6.7583375e-16" [ref=f8e413]
+          - cell "9.094947e-13" [ref=f8e414]
+          - cell "6.8212103e-13" [ref=f8e415]
+        - row [ref=f8e416]:
+          - cell [ref=f8e417]:
+            - button "Details for fl-face-activation:case-0020:20" [ref=f8e418] [cursor=pointer]: fl-face-activation:case-0020:20
+          - cell "6" [ref=f8e419]
+          - cell "10000" [ref=f8e420]
+          - cell "phase_shifted" [ref=f8e421]
+          - cell "d=34805641020989132110194617001" [ref=f8e422]
+          - cell "8164.9658" [ref=f8e423]
+          - cell "4" [ref=f8e424]
+          - cell "6" [ref=f8e425]
+          - cell "1315.0038" [ref=f8e426]
+          - cell "0.13150038" [ref=f8e427]
+          - cell "5.2741921e-31" [ref=f8e428]
+          - cell "5" [ref=f8e429]
+          - cell "3" [ref=f8e430]
+          - cell "6.7583375e-16" [ref=f8e431]
+          - cell "8.1854523e-12" [ref=f8e432]
+          - cell "7.2759576e-12" [ref=f8e433]

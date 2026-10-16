@@ -181,6 +181,24 @@
       "cases": 6
     },
     {
+      "id": "t11-quantum-planar-rotors",
+      "title": "Quantum planar-rotor transfer at zero total momentum (NS37)",
+      "path": "datasets/t11-quantum-planar-rotors.json",
+      "cases": 2
+    },
+    {
+      "id": "t11-face-connectivity",
+      "title": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "path": "datasets/t11-face-connectivity.json",
+      "cases": 30
+    },
+    {
+      "id": "t11-geometric-redistribution",
+      "title": "Exact-singlet geometric area redistribution (NS39\u2013NS40)",
+      "path": "datasets/t11-geometric-redistribution.json",
+      "cases": 54
+    },
+    {
       "id": "t11-fl-sampling",
       "title": "Prepared FL evolution sampling",
       "path": "datasets/t11-fl-sampling.json",

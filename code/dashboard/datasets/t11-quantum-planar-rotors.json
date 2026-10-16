@@ -1,0 +1,524 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "Quantum planar-rotor transfer at zero total momentum (NS37)",
+    "subtitle": "Two four-rotor ring preparations start in |m,-m,0,0| with exactly zero total momentum. Each row compares the saved late-window cold-pair kinetic fraction with an independent classical ensemble and reports the quantum single-rotor entropy for the initially energetic pair, initially cold pair, and all four sites."
+  },
+  "columns": [
+    {
+      "key": "runId",
+      "label": "Case",
+      "type": "string",
+      "visible": true
+    },
+    {
+      "key": "parameters.m",
+      "label": "Initial momentum m",
+      "type": "number",
+      "precision": 8,
+      "visible": true
+    },
+    {
+      "key": "parameters.packet_energy",
+      "label": "Initial packet kinetic energy",
+      "type": "number",
+      "precision": 8,
+      "visible": true
+    },
+    {
+      "key": "parameters.mean_total_energy",
+      "label": "Mean total energy",
+      "type": "number",
+      "precision": 8,
+      "visible": true
+    },
+    {
+      "key": "parameters.accepted_cutoff",
+      "label": "accepted cutoff",
+      "type": "number",
+      "precision": 8,
+      "visible": false
+    },
+    {
+      "key": "parameters.sector_dimension",
+      "label": "sector dimension",
+      "type": "number",
+      "precision": 8,
+      "visible": false
+    },
+    {
+      "key": "results.display_id",
+      "label": "display id",
+      "type": "string",
+      "precision": 8,
+      "visible": false
+    },
+    {
+      "key": "results.late_quantum_cold_pair_fraction",
+      "label": "Late cold-pair kinetic fraction (10 \u2264 \u03c4 \u2264 20)",
+      "type": "number",
+      "precision": 8,
+      "visible": true
+    },
+    {
+      "key": "results.late_classical_cold_pair_fraction",
+      "label": "Classical cold-pair fraction",
+      "type": "number",
+      "precision": 8,
+      "visible": true
+    },
+    {
+      "key": "results.late_quantum_entropy_hot_pair_nats",
+      "label": "Entropy, initially energetic pair (nats)",
+      "type": "number",
+      "precision": 8,
+      "visible": true
+    },
+    {
+      "key": "results.late_quantum_entropy_cold_pair_nats",
+      "label": "Entropy, initially cold pair (nats)",
+      "type": "number",
+      "precision": 8,
+      "visible": true
+    },
+    {
+      "key": "results.late_quantum_entropy_per_rotor_nats",
+      "label": "Mean single-rotor entropy (nats)",
+      "type": "number",
+      "precision": 8,
+      "visible": true
+    },
+    {
+      "key": "results.max_quantum_norm_error",
+      "label": "max quantum norm error",
+      "type": "number",
+      "precision": 8,
+      "visible": false
+    },
+    {
+      "key": "results.max_quantum_energy_error",
+      "label": "max quantum energy error",
+      "type": "number",
+      "precision": 8,
+      "visible": false
+    },
+    {
+      "key": "results.max_classical_energy_error",
+      "label": "max classical energy error",
+      "type": "number",
+      "precision": 8,
+      "visible": false
+    },
+    {
+      "key": "results.max_classical_momentum_error",
+      "label": "max classical momentum error",
+      "type": "number",
+      "precision": 8,
+      "visible": false
+    },
+    {
+      "key": "results.series",
+      "label": "series",
+      "type": "string",
+      "precision": 8,
+      "visible": false
+    }
+  ],
+  "charts": {
+    "type": "scatter",
+    "x": "parameters.packet_energy",
+    "y": "results.late_quantum_cold_pair_fraction"
+  },
+  "runs": [
+    {
+      "runId": "t11-quantum-planar-rotors:m=2:1",
+      "task": "T11",
+      "status": "complete",
+      "description": "Quantum planar-rotor transfer at zero total momentum (NS37)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "m": 2,
+        "packet_energy": 4,
+        "mean_total_energy": 8,
+        "accepted_cutoff": 10,
+        "sector_dimension": 6181
+      },
+      "results": {
+        "display_id": "m=2",
+        "late_quantum_cold_pair_fraction": 0.5920372158209664,
+        "late_classical_cold_pair_fraction": 0.4852172548633113,
+        "late_quantum_entropy_hot_pair_nats": 1.6838957744380563,
+        "late_quantum_entropy_cold_pair_nats": 1.651917837256852,
+        "late_quantum_entropy_per_rotor_nats": 1.667906805847454,
+        "max_quantum_norm_error": 4.629630012686903e-14,
+        "max_quantum_energy_error": 3.5704772471945034e-13,
+        "max_classical_energy_error": 2.2367055052541218e-07,
+        "max_classical_momentum_error": 4.04121180963557e-13,
+        "series": "initial momentum m=2"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-quantum-planar-rotors/quantum-m2-c10.json": "d0e5e5e17f3c9f2ce0cf61a0b733a738dd96557ab24893cf78944e3d1f0efeef",
+          "results/t11-quantum-planar-rotors/quantum-m4-c10.json": "dee4788f471856b5b2d3f4726bbbeb955863173652636c9eff205dcad6671801",
+          "results/t11-quantum-planar-rotors/classical-m2.json": "5a36a2d21f7935f4a71da2d530c3b85612a82726fcdfda7a611c054e108e439e",
+          "results/t11-quantum-planar-rotors/classical-m4.json": "d64080db32e8fe20d38496def455e14c8548215cbedecb78dc8d63974015bd6a",
+          "results/t11-quantum-planar-rotors/README.md": "4210d1084e9b5b61b294f3c8ad239549195ff0624a544369a62b6c49d2d27ec3",
+          "results/t11-quantum-planar-rotors/protocol.md": "771f4003d611dd410a07a9b9e7f87efd9e7670f1f7d7dfc7ad8fd31d95e74193",
+          "results/t11-quantum-planar-rotors/summary.json": "93b74e7405a1da19cb1956963af4c02bf53958a45dc472a3f51c79af7de2b193",
+          "notes/quantum-planar-rotor-energy-transfer.md": "430176ca6a65dcdb6ad8f48fd2ad18028f7ccca704b753a3f67ef878386cacf6",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a",
+          "code/python/t11_quantum_planar_rotors.py": "fdd8c640bbacfa4cf82c993e4dd506b0b247b97cca3b653ea81bab5559e04f7d",
+          "code/python/lqg_scattering/planar_rotors.py": "503dcc7874bd0eb91e56c1faed6e88f43c6019bcf59b3907f3a7c5f8f677c385",
+          "notes/published-paper-overview.md": "1d595f67aa43e1508d2021acccbd3e19bcaf31c1e1f1bc598ba1be297a02e6bf",
+          "notes/state-space-probes.md": "5e5380f7661c998bc1cd13ef33dc688962e16af8642a07dda7d7ec8e5c33d566",
+          "notes/experiments/fl_volume_shape_scan_log.md": "ce53ec6ca4251f8a5047640959e872250195657c2725cbfbdd66740d8257d286",
+          "figures/physical-illustrations/README.md": "424c190b5e1590604bbcc995633ddf7a5cddc9aa13caa2779d361f8a9157f08f",
+          "notes/constructive-sewing-probe.md": "c8cf7c1df882b3eae0881edede3d0ae1bda2b0f8c113a24b3e5dde355fbff249",
+          "notes/binding-energy.md": "ef1674af3e81fe3e3b09b545a057314958795a79a47c001acf242c32d11019f6",
+          "results/README.md": "71203ddb00fcd79a632324d8e48fc596feb5b7443d756ea2dea315c73cdbda55",
+          "memory-bank/sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-summary.md": "3ab1e791c9390306776dbf31e9b0acac600121b433b19b42b5cf68901552da3a",
+          "memory-bank/sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-transcript.md": "27859095fd8027a575dddff9afc9b4f6a251c43d12eee6f995b826e38498a9d7",
+          "notes/task-specifications/TASK.md": "0a5b5fbf508bdbad196f16cb3ee596e729971a152b4571c7bfe867c30e5f66b3",
+          "notes/task-specifications/TASK_TWO_POLYHEDRA.md": "2d9f66ea7cb342dd72f490b4346468d510f1e6528bf77cfc8a0112084b3759f0",
+          "notes/thermal-area-sectors-reorganization.md": "c63b7299dd80027de9f26e173c26f1276e54caf51cd7f7037bd13488ef0cb6db",
+          "notes/equilibration-session-note-map.md": "be27139ca393d2eebc4884430fbdded31134018576e4c2837c5bac62d35cb631",
+          "figures/physical-illustrations/01-closed-polyhedron.svg": "e989527c960f6a9e5d0245a7d1b78d24a452b9964afc1ca61bc5a15a5048fd80",
+          "figures/physical-illustrations/02-fl-states-and-face-channels.svg": "d64b266234be06008d8fffe3589b90870c445dad9f241394100656ae0f6727e8",
+          "figures/physical-illustrations/03-volume-and-hamiltonian.svg": "6c47d29831750e65cd10ef3ae91180dd389b909755d2856c6e7f249d238af309",
+          "figures/physical-illustrations/04-sewing-and-singlet-exchange.svg": "8287f7b8a700b6d7772beaf2663ac42e96a3bf69c9f9f73002d5c4c4007ac75b",
+          "figures/physical-illustrations/05-thermal-two-copy-closure.svg": "ba47682d9a9dc4f2388bbd6c05cd61796bc04e8f1d21d17f4bfa2947af2896e8",
+          "figures/physical-illustrations/06-classical-rotors-and-quantum-proposal.svg": "c2bcc72a0143bf845c56993e28a927d2d33128b5133903428179f6a715e5aa1b"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-quantum-planar-rotors.table.rows[0]"
+      },
+      "assessment": {
+        "summary": "Two four-rotor ring preparations start in |m,-m,0,0| with exactly zero total momentum. Each row compares the saved late-window cold-pair kinetic fraction with an independent classical ensemble and reports the quantum single-rotor entropy for the initially energetic pair, initially cold pair, and all four sites.",
+        "recordedStudyStatus": "Two accepted cutoff-10 cases; 6,181 zero-momentum sector states; norm, energy, classical refinement and momentum checks recorded"
+      },
+      "artifacts": [
+        {
+          "label": "README.md",
+          "path": "../study-assets/results/t11-quantum-planar-rotors/README.txt",
+          "kind": "data",
+          "sha256": "4210d1084e9b5b61b294f3c8ad239549195ff0624a544369a62b6c49d2d27ec3",
+          "sourcePath": "results/t11-quantum-planar-rotors/README.md",
+          "sourceSha256": "4210d1084e9b5b61b294f3c8ad239549195ff0624a544369a62b6c49d2d27ec3"
+        },
+        {
+          "label": "protocol.md",
+          "path": "../study-assets/results/t11-quantum-planar-rotors/protocol.txt",
+          "kind": "data",
+          "sha256": "771f4003d611dd410a07a9b9e7f87efd9e7670f1f7d7dfc7ad8fd31d95e74193",
+          "sourcePath": "results/t11-quantum-planar-rotors/protocol.md",
+          "sourceSha256": "771f4003d611dd410a07a9b9e7f87efd9e7670f1f7d7dfc7ad8fd31d95e74193"
+        },
+        {
+          "label": "summary.json",
+          "path": "../study-assets/results/t11-quantum-planar-rotors/summary.json",
+          "kind": "data",
+          "sha256": "93b74e7405a1da19cb1956963af4c02bf53958a45dc472a3f51c79af7de2b193",
+          "sourcePath": "results/t11-quantum-planar-rotors/summary.json",
+          "sourceSha256": "93b74e7405a1da19cb1956963af4c02bf53958a45dc472a3f51c79af7de2b193"
+        },
+        {
+          "label": "quantum-planar-rotor-energy-transfer.md",
+          "path": "../study-assets/notes/quantum-planar-rotor-energy-transfer.txt",
+          "kind": "data",
+          "sha256": "430176ca6a65dcdb6ad8f48fd2ad18028f7ccca704b753a3f67ef878386cacf6",
+          "sourcePath": "notes/quantum-planar-rotor-energy-transfer.md",
+          "sourceSha256": "430176ca6a65dcdb6ad8f48fd2ad18028f7ccca704b753a3f67ef878386cacf6"
+        },
+        {
+          "label": "quantum-geometry-research.md",
+          "path": "../study-assets/notes/quantum-geometry-research.txt",
+          "kind": "data",
+          "sha256": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a",
+          "sourcePath": "notes/quantum-geometry-research.md",
+          "sourceSha256": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        {
+          "label": "t11_quantum_planar_rotors.py",
+          "path": "../study-assets/code/python/t11_quantum_planar_rotors.py",
+          "kind": "data",
+          "sha256": "fdd8c640bbacfa4cf82c993e4dd506b0b247b97cca3b653ea81bab5559e04f7d",
+          "sourcePath": "code/python/t11_quantum_planar_rotors.py",
+          "sourceSha256": "fdd8c640bbacfa4cf82c993e4dd506b0b247b97cca3b653ea81bab5559e04f7d"
+        },
+        {
+          "label": "planar_rotors.py",
+          "path": "../study-assets/code/python/lqg_scattering/planar_rotors.py",
+          "kind": "data",
+          "sha256": "503dcc7874bd0eb91e56c1faed6e88f43c6019bcf59b3907f3a7c5f8f677c385",
+          "sourcePath": "code/python/lqg_scattering/planar_rotors.py",
+          "sourceSha256": "503dcc7874bd0eb91e56c1faed6e88f43c6019bcf59b3907f3a7c5f8f677c385"
+        },
+        {
+          "label": "published-paper-overview.md",
+          "path": "../study-assets/notes/published-paper-overview.txt",
+          "kind": "data",
+          "sha256": "1d595f67aa43e1508d2021acccbd3e19bcaf31c1e1f1bc598ba1be297a02e6bf",
+          "sourcePath": "notes/published-paper-overview.md",
+          "sourceSha256": "1d595f67aa43e1508d2021acccbd3e19bcaf31c1e1f1bc598ba1be297a02e6bf"
+        },
+        {
+          "label": "state-space-probes.md",
+          "path": "../study-assets/notes/state-space-probes.txt",
+          "kind": "data",
+          "sha256": "5e5380f7661c998bc1cd13ef33dc688962e16af8642a07dda7d7ec8e5c33d566",
+          "sourcePath": "notes/state-space-probes.md",
+          "sourceSha256": "5e5380f7661c998bc1cd13ef33dc688962e16af8642a07dda7d7ec8e5c33d566"
+        },
+        {
+          "label": "fl_volume_shape_scan_log.md",
+          "path": "../study-assets/notes/experiments/fl_volume_shape_scan_log.txt",
+          "kind": "data",
+          "sha256": "ce53ec6ca4251f8a5047640959e872250195657c2725cbfbdd66740d8257d286",
+          "sourcePath": "notes/experiments/fl_volume_shape_scan_log.md",
+          "sourceSha256": "ce53ec6ca4251f8a5047640959e872250195657c2725cbfbdd66740d8257d286"
+        },
+        {
+          "label": "README.md",
+          "path": "../study-assets/figures/physical-illustrations/README.txt",
+          "kind": "data",
+          "sha256": "424c190b5e1590604bbcc995633ddf7a5cddc9aa13caa2779d361f8a9157f08f",
+          "sourcePath": "figures/physical-illustrations/README.md",
+          "sourceSha256": "424c190b5e1590604bbcc995633ddf7a5cddc9aa13caa2779d361f8a9157f08f"
+        },
+        {
+          "label": "constructive-sewing-probe.md",
+          "path": "../study-assets/notes/constructive-sewing-probe.txt",
+          "kind": "data",
+          "sha256": "c8cf7c1df882b3eae0881edede3d0ae1bda2b0f8c113a24b3e5dde355fbff249",
+          "sourcePath": "notes/constructive-sewing-probe.md",
+          "sourceSha256": "c8cf7c1df882b3eae0881edede3d0ae1bda2b0f8c113a24b3e5dde355fbff249"
+        },
+        {
+          "label": "binding-energy.md",
+          "path": "../study-assets/notes/binding-energy.txt",
+          "kind": "data",
+          "sha256": "ef1674af3e81fe3e3b09b545a057314958795a79a47c001acf242c32d11019f6",
+          "sourcePath": "notes/binding-energy.md",
+          "sourceSha256": "ef1674af3e81fe3e3b09b545a057314958795a79a47c001acf242c32d11019f6"
+        },
+        {
+          "label": "README.md",
+          "path": "../study-assets/results/README.txt",
+          "kind": "data",
+          "sha256": "71203ddb00fcd79a632324d8e48fc596feb5b7443d756ea2dea315c73cdbda55",
+          "sourcePath": "results/README.md",
+          "sourceSha256": "71203ddb00fcd79a632324d8e48fc596feb5b7443d756ea2dea315c73cdbda55"
+        },
+        {
+          "label": "2026-10-16-quantum-rotors-and-geometric-redistribution-summary.md",
+          "path": "../study-assets/study-records/sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-summary.txt",
+          "kind": "data",
+          "sha256": "3ab1e791c9390306776dbf31e9b0acac600121b433b19b42b5cf68901552da3a",
+          "sourcePath": "memory-bank/sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-summary.md",
+          "sourceSha256": "3ab1e791c9390306776dbf31e9b0acac600121b433b19b42b5cf68901552da3a"
+        },
+        {
+          "label": "2026-10-16-quantum-rotors-and-geometric-redistribution-transcript.md",
+          "path": "../study-assets/study-records/sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-transcript.txt",
+          "kind": "data",
+          "sha256": "27859095fd8027a575dddff9afc9b4f6a251c43d12eee6f995b826e38498a9d7",
+          "sourcePath": "memory-bank/sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-transcript.md",
+          "sourceSha256": "27859095fd8027a575dddff9afc9b4f6a251c43d12eee6f995b826e38498a9d7"
+        },
+        {
+          "label": "TASK.md",
+          "path": "../study-assets/notes/task-specifications/TASK.txt",
+          "kind": "data",
+          "sha256": "0a5b5fbf508bdbad196f16cb3ee596e729971a152b4571c7bfe867c30e5f66b3",
+          "sourcePath": "notes/task-specifications/TASK.md",
+          "sourceSha256": "0a5b5fbf508bdbad196f16cb3ee596e729971a152b4571c7bfe867c30e5f66b3"
+        },
+        {
+          "label": "TASK_TWO_POLYHEDRA.md",
+          "path": "../study-assets/notes/task-specifications/TASK_TWO_POLYHEDRA.txt",
+          "kind": "data",
+          "sha256": "2d9f66ea7cb342dd72f490b4346468d510f1e6528bf77cfc8a0112084b3759f0",
+          "sourcePath": "notes/task-specifications/TASK_TWO_POLYHEDRA.md",
+          "sourceSha256": "2d9f66ea7cb342dd72f490b4346468d510f1e6528bf77cfc8a0112084b3759f0"
+        },
+        {
+          "label": "thermal-area-sectors-reorganization.md",
+          "path": "../study-assets/notes/thermal-area-sectors-reorganization.txt",
+          "kind": "data",
+          "sha256": "c63b7299dd80027de9f26e173c26f1276e54caf51cd7f7037bd13488ef0cb6db",
+          "sourcePath": "notes/thermal-area-sectors-reorganization.md",
+          "sourceSha256": "c63b7299dd80027de9f26e173c26f1276e54caf51cd7f7037bd13488ef0cb6db"
+        },
+        {
+          "label": "equilibration-session-note-map.md",
+          "path": "../study-assets/notes/equilibration-session-note-map.txt",
+          "kind": "data",
+          "sha256": "be27139ca393d2eebc4884430fbdded31134018576e4c2837c5bac62d35cb631",
+          "sourcePath": "notes/equilibration-session-note-map.md",
+          "sourceSha256": "be27139ca393d2eebc4884430fbdded31134018576e4c2837c5bac62d35cb631"
+        },
+        {
+          "label": "01-closed-polyhedron.svg",
+          "path": "../study-assets/figures/physical-illustrations/01-closed-polyhedron.svg",
+          "kind": "data",
+          "sha256": "e989527c960f6a9e5d0245a7d1b78d24a452b9964afc1ca61bc5a15a5048fd80",
+          "sourcePath": "figures/physical-illustrations/01-closed-polyhedron.svg",
+          "sourceSha256": "e989527c960f6a9e5d0245a7d1b78d24a452b9964afc1ca61bc5a15a5048fd80"
+        },
+        {
+          "label": "02-fl-states-and-face-channels.svg",
+          "path": "../study-assets/figures/physical-illustrations/02-fl-states-and-face-channels.svg",
+          "kind": "data",
+          "sha256": "d64b266234be06008d8fffe3589b90870c445dad9f241394100656ae0f6727e8",
+          "sourcePath": "figures/physical-illustrations/02-fl-states-and-face-channels.svg",
+          "sourceSha256": "d64b266234be06008d8fffe3589b90870c445dad9f241394100656ae0f6727e8"
+        },
+        {
+          "label": "03-volume-and-hamiltonian.svg",
+          "path": "../study-assets/figures/physical-illustrations/03-volume-and-hamiltonian.svg",
+          "kind": "data",
+          "sha256": "6c47d29831750e65cd10ef3ae91180dd389b909755d2856c6e7f249d238af309",
+          "sourcePath": "figures/physical-illustrations/03-volume-and-hamiltonian.svg",
+          "sourceSha256": "6c47d29831750e65cd10ef3ae91180dd389b909755d2856c6e7f249d238af309"
+        },
+        {
+          "label": "04-sewing-and-singlet-exchange.svg",
+          "path": "../study-assets/figures/physical-illustrations/04-sewing-and-singlet-exchange.svg",
+          "kind": "data",
+          "sha256": "8287f7b8a700b6d7772beaf2663ac42e96a3bf69c9f9f73002d5c4c4007ac75b",
+          "sourcePath": "figures/physical-illustrations/04-sewing-and-singlet-exchange.svg",
+          "sourceSha256": "8287f7b8a700b6d7772beaf2663ac42e96a3bf69c9f9f73002d5c4c4007ac75b"
+        },
+        {
+          "label": "05-thermal-two-copy-closure.svg",
+          "path": "../study-assets/figures/physical-illustrations/05-thermal-two-copy-closure.svg",
+          "kind": "data",
+          "sha256": "ba47682d9a9dc4f2388bbd6c05cd61796bc04e8f1d21d17f4bfa2947af2896e8",
+          "sourcePath": "figures/physical-illustrations/05-thermal-two-copy-closure.svg",
+          "sourceSha256": "ba47682d9a9dc4f2388bbd6c05cd61796bc04e8f1d21d17f4bfa2947af2896e8"
+        },
+        {
+          "label": "06-classical-rotors-and-quantum-proposal.svg",
+          "path": "../study-assets/figures/physical-illustrations/06-classical-rotors-and-quantum-proposal.svg",
+          "kind": "data",
+          "sha256": "c2bcc72a0143bf845c56993e28a927d2d33128b5133903428179f6a715e5aa1b",
+          "sourcePath": "figures/physical-illustrations/06-classical-rotors-and-quantum-proposal.svg",
+          "sourceSha256": "c2bcc72a0143bf845c56993e28a927d2d33128b5133903428179f6a715e5aa1b"
+        }
+      ],
+      "figures": [
+        {
+          "title": "Quantum and matched classical planar-rotor energy transfer",
+          "path": "../study-assets/figures/t11-quantum-planar-rotors/energy-transfer.png",
+          "tags": [
+            "T11"
+          ]
+        }
+      ]
+    },
+    {
+      "runId": "t11-quantum-planar-rotors:m=4:2",
+      "task": "T11",
+      "status": "complete",
+      "description": "Quantum planar-rotor transfer at zero total momentum (NS37)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "m": 4,
+        "packet_energy": 16,
+        "mean_total_energy": 20,
+        "accepted_cutoff": 10,
+        "sector_dimension": 6181
+      },
+      "results": {
+        "display_id": "m=4",
+        "late_quantum_cold_pair_fraction": 0.06714280980900074,
+        "late_classical_cold_pair_fraction": 0.05319489994363441,
+        "late_quantum_entropy_hot_pair_nats": 0.6287620090589283,
+        "late_quantum_entropy_cold_pair_nats": 1.1783050840065166,
+        "late_quantum_entropy_per_rotor_nats": 0.9035335465327224,
+        "max_quantum_norm_error": 1.7763568394002505e-14,
+        "max_quantum_energy_error": 3.481659405224491e-13,
+        "max_classical_energy_error": 8.348288954351801e-06,
+        "max_classical_momentum_error": 3.6720626539477053e-13,
+        "series": "initial momentum m=4"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-quantum-planar-rotors/quantum-m2-c10.json": "d0e5e5e17f3c9f2ce0cf61a0b733a738dd96557ab24893cf78944e3d1f0efeef",
+          "results/t11-quantum-planar-rotors/quantum-m4-c10.json": "dee4788f471856b5b2d3f4726bbbeb955863173652636c9eff205dcad6671801",
+          "results/t11-quantum-planar-rotors/classical-m2.json": "5a36a2d21f7935f4a71da2d530c3b85612a82726fcdfda7a611c054e108e439e",
+          "results/t11-quantum-planar-rotors/classical-m4.json": "d64080db32e8fe20d38496def455e14c8548215cbedecb78dc8d63974015bd6a",
+          "results/t11-quantum-planar-rotors/README.md": "4210d1084e9b5b61b294f3c8ad239549195ff0624a544369a62b6c49d2d27ec3",
+          "results/t11-quantum-planar-rotors/protocol.md": "771f4003d611dd410a07a9b9e7f87efd9e7670f1f7d7dfc7ad8fd31d95e74193",
+          "results/t11-quantum-planar-rotors/summary.json": "93b74e7405a1da19cb1956963af4c02bf53958a45dc472a3f51c79af7de2b193",
+          "notes/quantum-planar-rotor-energy-transfer.md": "430176ca6a65dcdb6ad8f48fd2ad18028f7ccca704b753a3f67ef878386cacf6",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a",
+          "code/python/t11_quantum_planar_rotors.py": "fdd8c640bbacfa4cf82c993e4dd506b0b247b97cca3b653ea81bab5559e04f7d",
+          "code/python/lqg_scattering/planar_rotors.py": "503dcc7874bd0eb91e56c1faed6e88f43c6019bcf59b3907f3a7c5f8f677c385",
+          "notes/published-paper-overview.md": "1d595f67aa43e1508d2021acccbd3e19bcaf31c1e1f1bc598ba1be297a02e6bf",
+          "notes/state-space-probes.md": "5e5380f7661c998bc1cd13ef33dc688962e16af8642a07dda7d7ec8e5c33d566",
+          "notes/experiments/fl_volume_shape_scan_log.md": "ce53ec6ca4251f8a5047640959e872250195657c2725cbfbdd66740d8257d286",
+          "figures/physical-illustrations/README.md": "424c190b5e1590604bbcc995633ddf7a5cddc9aa13caa2779d361f8a9157f08f",
+          "notes/constructive-sewing-probe.md": "c8cf7c1df882b3eae0881edede3d0ae1bda2b0f8c113a24b3e5dde355fbff249",
+          "notes/binding-energy.md": "ef1674af3e81fe3e3b09b545a057314958795a79a47c001acf242c32d11019f6",
+          "results/README.md": "71203ddb00fcd79a632324d8e48fc596feb5b7443d756ea2dea315c73cdbda55",
+          "memory-bank/sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-summary.md": "3ab1e791c9390306776dbf31e9b0acac600121b433b19b42b5cf68901552da3a",
+          "memory-bank/sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-transcript.md": "27859095fd8027a575dddff9afc9b4f6a251c43d12eee6f995b826e38498a9d7",
+          "notes/task-specifications/TASK.md": "0a5b5fbf508bdbad196f16cb3ee596e729971a152b4571c7bfe867c30e5f66b3",
+          "notes/task-specifications/TASK_TWO_POLYHEDRA.md": "2d9f66ea7cb342dd72f490b4346468d510f1e6528bf77cfc8a0112084b3759f0",
+          "notes/thermal-area-sectors-reorganization.md": "c63b7299dd80027de9f26e173c26f1276e54caf51cd7f7037bd13488ef0cb6db",
+          "notes/equilibration-session-note-map.md": "be27139ca393d2eebc4884430fbdded31134018576e4c2837c5bac62d35cb631",
+          "figures/physical-illustrations/01-closed-polyhedron.svg": "e989527c960f6a9e5d0245a7d1b78d24a452b9964afc1ca61bc5a15a5048fd80",
+          "figures/physical-illustrations/02-fl-states-and-face-channels.svg": "d64b266234be06008d8fffe3589b90870c445dad9f241394100656ae0f6727e8",
+          "figures/physical-illustrations/03-volume-and-hamiltonian.svg": "6c47d29831750e65cd10ef3ae91180dd389b909755d2856c6e7f249d238af309",
+          "figures/physical-illustrations/04-sewing-and-singlet-exchange.svg": "8287f7b8a700b6d7772beaf2663ac42e96a3bf69c9f9f73002d5c4c4007ac75b",
+          "figures/physical-illustrations/05-thermal-two-copy-closure.svg": "ba47682d9a9dc4f2388bbd6c05cd61796bc04e8f1d21d17f4bfa2947af2896e8",
+          "figures/physical-illustrations/06-classical-rotors-and-quantum-proposal.svg": "c2bcc72a0143bf845c56993e28a927d2d33128b5133903428179f6a715e5aa1b"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-quantum-planar-rotors.table.rows[1]"
+      },
+      "assessment": {
+        "summary": "Two four-rotor ring preparations start in |m,-m,0,0| with exactly zero total momentum. Each row compares the saved late-window cold-pair kinetic fraction with an independent classical ensemble and reports the quantum single-rotor entropy for the initially energetic pair, initially cold pair, and all four sites.",
+        "recordedStudyStatus": "Two accepted cutoff-10 cases; 6,181 zero-momentum sector states; norm, energy, classical refinement and momentum checks recorded"
+      }
+    }
+  ],
+  "figures": [
+    {
+      "title": "Quantum and matched classical planar-rotor energy transfer",
+      "path": "../study-assets/figures/t11-quantum-planar-rotors/energy-transfer.png",
+      "tags": [
+        "T11"
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "title": "Quantum planar rotor energy transfer",
+      "path": "../study-assets/notes/quantum-planar-rotor-energy-transfer.txt",
+      "sourcePath": "notes/quantum-planar-rotor-energy-transfer.md",
+      "description": "Explanation and calculation record for this study."
+    },
+    {
+      "title": "Quantum geometry research",
+      "path": "../study-assets/notes/quantum-geometry-research.txt",
+      "sourcePath": "notes/quantum-geometry-research.md",
+      "description": "Explanation and calculation record for this study."
+    },
+    {
+      "title": "Numerical studies overview",
+      "path": "../index.html"
+    }
+  ]
+}

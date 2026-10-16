@@ -254,14 +254,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[0]"
       },
       "assessment": {
@@ -425,9 +425,9 @@
           "label": "hamiltonian-studies.md",
           "path": "../study-assets/notes/hamiltonian-studies.txt",
           "kind": "data",
-          "sha256": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad",
+          "sha256": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6",
           "sourcePath": "notes/hamiltonian-studies.md",
-          "sourceSha256": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "sourceSha256": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         }
       ],
       "figures": [
@@ -528,14 +528,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[1]"
       },
       "assessment": {
@@ -603,14 +603,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[2]"
       },
       "assessment": {
@@ -678,14 +678,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[3]"
       },
       "assessment": {
@@ -753,14 +753,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[4]"
       },
       "assessment": {
@@ -828,14 +828,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[5]"
       },
       "assessment": {
@@ -903,14 +903,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[6]"
       },
       "assessment": {
@@ -978,14 +978,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[7]"
       },
       "assessment": {
@@ -1053,14 +1053,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[8]"
       },
       "assessment": {
@@ -1128,14 +1128,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[9]"
       },
       "assessment": {
@@ -1203,14 +1203,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[10]"
       },
       "assessment": {
@@ -1278,14 +1278,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[11]"
       },
       "assessment": {
@@ -1353,14 +1353,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[12]"
       },
       "assessment": {
@@ -1428,14 +1428,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[13]"
       },
       "assessment": {
@@ -1503,14 +1503,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[14]"
       },
       "assessment": {
@@ -1578,14 +1578,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[15]"
       },
       "assessment": {
@@ -1653,14 +1653,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[16]"
       },
       "assessment": {
@@ -1728,14 +1728,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[17]"
       },
       "assessment": {
@@ -1803,14 +1803,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[18]"
       },
       "assessment": {
@@ -1878,14 +1878,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[19]"
       },
       "assessment": {
@@ -1953,14 +1953,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[20]"
       },
       "assessment": {
@@ -2028,14 +2028,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[21]"
       },
       "assessment": {
@@ -2103,14 +2103,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[22]"
       },
       "assessment": {
@@ -2178,14 +2178,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[23]"
       },
       "assessment": {
@@ -2253,14 +2253,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[24]"
       },
       "assessment": {
@@ -2328,14 +2328,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[25]"
       },
       "assessment": {
@@ -2403,14 +2403,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[26]"
       },
       "assessment": {
@@ -2478,14 +2478,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[27]"
       },
       "assessment": {
@@ -2553,14 +2553,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[28]"
       },
       "assessment": {
@@ -2628,14 +2628,14 @@
           "results/hamiltonian-studies/summary.json": "a1ffb17c5e1b92aff6f5c5b39e69a15571f3ae0c01765d65335504548e1076d4",
           "results/hamiltonian-studies/thermodynamics.csv": "8783decd6b1add308789c8ea8a15ab03349db02a40b63846b38deb305aae9e34",
           "results/hamiltonian-studies/volume_distributions.csv": "bf4fa5cf3b05cded4f492d5a3011ecb623af03e33762b5a11e5f96ffa0441317",
-          "notes/hamiltonian-studies.md": "2158ca7605c49984c5aecdd7f866869b59e4fc47086ec55bffd3128a48996cad"
+          "notes/hamiltonian-studies.md": "b13067087bca3475f36a3e0591792d918efc55d79616bc790394f4c9f27e97a6"
         },
         "presentationSource": "code/dashboard/studies.json",
-        "exportRevision": "2dcb47d02b345b199a5fc4456e90841626031b4c",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
         "exportDirtySource": true,
-        "importedAt": "2026-10-16T07:15:37.984068+00:00",
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
         "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
-        "exporterSHA256": "4b4035cd2a7d31d1c5656f76b1334ec416198522ae8c519e4c38339dfd836745",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
         "sourceSelector": "studies.hamiltonian.table.rows[29]"
       },
       "assessment": {

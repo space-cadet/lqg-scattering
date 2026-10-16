@@ -40,13 +40,17 @@ CSV_SOURCES = {
     'vacuum-area': 'figures/thermal-area-sectors/thermal_coefficients_vacuum.csv',
     'vacuum-spin': 'figures/thermal-spin-sectors/thermal_vacuum_spin.csv',
     't11-candidate-hamiltonians': 'results/t11-candidate-hamiltonians/model_summary.csv',
+    't11-geometric-redistribution': 'results/t11-geometric-redistribution/summary.csv',
 }
 PARAMETERS = {'n', 'N', 'K', 'J', 'L', 'graph', 'case', 'candidate', 'U_over_t', 'alpha',
               'beta', 'beta_hbar_omega', 'state', 'seed', 'eps', 'epsilon', 'phiRadians',
               'q_bosons_per_copy', 'bosons_per_copy', 'total_spin_S', 'family', 'channel', 'M',
               'temperature', 'temperature_kBT_over_hbar_omega', 'channels', 'phase_case',
               'rotor_count', 'energy_coupling_ratio', 'coupling', 'control_type',
-              'preparation', 'packet_scale_at_N8', 'seed_count', 'phase', 'window_end', 'U'}
+              'preparation', 'packet_scale_at_N8', 'seed_count', 'phase', 'window_end', 'U',
+              'm', 'packet_energy', 'mean_total_energy', 'accepted_cutoff', 'sector_dimension',
+              'source_class', 'source_spin', 'transition', 'from_active_channels',
+              'to_active_channels', 'operator', 'operator_order'}
 NUMBER = re.compile(r'^[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?$')
 
 
@@ -179,6 +183,10 @@ def export_numerical_data(catalogue=None):
         if identifier in CSV_SOURCES:
             source = CSV_SOURCES[identifier]
             rows = [(f'{source}:row-{i+1}', row) for i, row in enumerate(csv_rows(source))]
+            if identifier == 't11-geometric-redistribution':
+                rows = [(selector, {**row, 'display_id': row['run'], 'series':
+                    f"L={row['L']}; {row['graph']}; {row['preparation'].replace('_', ' ')}"})
+                    for selector, row in rows]
         elif study.get('table'):
             source = 'code/dashboard/studies.json'
             rows = [(f'studies.{identifier}.table.rows[{i}]', {k: scalar(v) for k, v in row.items()}) for i, row in enumerate(study['table']['rows'])]
@@ -192,7 +200,7 @@ def export_numerical_data(catalogue=None):
                 rows = list(records(selected, selector=selection or '$'))
         if not rows: raise ValueError(f'No numerical rows for {identifier}')
         artifacts = []
-        hashes = {}
+        hashes = dict(study.get('sourceHashes', {}))
         for file in study['files']:
             package = DASH / file['path']
             package_hash = hashlib.sha256(package.read_bytes()).hexdigest()
@@ -216,7 +224,7 @@ def export_numerical_data(catalogue=None):
         if software: provenance['software'] = software
         runs = []
         for i, (selector, row) in enumerate(rows):
-            case_id = row.get('model_id') or row.get('state') or f'case-{i+1:04d}'
+            case_id = row.get('display_id') or row.get('model_id') or row.get('state') or f'case-{i+1:04d}'
             run = {'runId': f'{identifier}:{case_id}:{i+1}', 'task': study['task'], 'status': 'complete',
                    'description': study['title'], **({'catalogueDate': study['catalogueDate']} if study.get('catalogueDate') else {}),
                    'parameters': {k: v for k, v in row.items() if k in PARAMETERS or k == 'shape'},
@@ -229,6 +237,65 @@ def export_numerical_data(catalogue=None):
                 if checks: run['verification'] = {'checks': checks}
             runs.append(clean(run))
         cols = columns(runs)
+        column_views = {
+            't11-quantum-planar-rotors': {
+                'visible': {'runId', 'parameters.m', 'parameters.packet_energy', 'parameters.mean_total_energy',
+                    'results.late_quantum_cold_pair_fraction', 'results.late_classical_cold_pair_fraction',
+                    'results.late_quantum_entropy_hot_pair_nats', 'results.late_quantum_entropy_cold_pair_nats',
+                    'results.late_quantum_entropy_per_rotor_nats'},
+                'labels': {'runId': 'Case', 'parameters.m': 'Initial momentum m',
+                    'parameters.packet_energy': 'Initial pair energy', 'parameters.mean_total_energy': 'Mean total energy',
+                    'results.late_quantum_cold_pair_fraction': 'Quantum cold-pair fraction',
+                    'results.late_classical_cold_pair_fraction': 'Classical cold-pair fraction',
+                    'results.late_quantum_entropy_hot_pair_nats': 'Entropy, initially energetic pair (nats)',
+                    'results.late_quantum_entropy_cold_pair_nats': 'Entropy, initially cold pair (nats)',
+                    'results.late_quantum_entropy_per_rotor_nats': 'Mean single-rotor entropy (nats)',
+                    'series': 'Initial momentum'},
+            },
+            't11-face-connectivity': {
+                'visible': {'runId', 'parameters.L', 'parameters.K', 'parameters.graph',
+                    'parameters.source_class', 'parameters.transition', 'parameters.from_active_channels',
+                    'parameters.to_active_channels', 'parameters.operator', 'results.matrix_element',
+                    'results.source_counts_label', 'results.target5_counts_label', 'results.target6_counts_label',
+                    'results.singlet_4_to_5_rank', 'results.singlet_4_to_5_source_nullity',
+                    'results.direct_4_to_6_block_norm', 'results.singlet_4_to_5_block_frobenius_norm'},
+                'labels': {'runId': 'Witness / transition', 'parameters.L': 'Available channels L',
+                    'parameters.K': 'Fixed area K', 'parameters.graph': 'Hopping graph',
+                    'parameters.source_class': 'Source sector', 'parameters.transition': 'Occupation transition',
+                    'parameters.from_active_channels': 'From active channels',
+                    'parameters.to_active_channels': 'To active channels', 'parameters.operator': 'Operator',
+                    'results.matrix_element': 'Signed matrix element (H or H²)',
+                    'results.source_counts_label': 'Source counts', 'results.target5_counts_label': 'Five-channel witness',
+                    'results.target6_counts_label': 'Six-channel witness',
+                    'results.singlet_4_to_5_rank': 'Singlet rank, 4→5',
+                    'results.singlet_4_to_5_source_nullity': 'Singlet source nullity, 4→5',
+                    'results.direct_4_to_6_block_norm': 'Direct 4→6 block norm',
+                    'results.singlet_4_to_5_block_frobenius_norm': 'Control singlet block norm',
+                    'series': 'Graph and source sector'},
+            },
+            't11-geometric-redistribution': {
+                'visible': {'runId', 'parameters.L', 'parameters.K', 'parameters.graph', 'parameters.alpha',
+                    'parameters.preparation', 'results.projection_probability', 'results.late_mean_active',
+                    'results.late_receiver_area_fraction', 'results.late_receiver_casimir_fraction',
+                    'results.late_probability_at_least5', 'results.late_probability_all_channels'},
+                'labels': {'runId': 'Trajectory summary', 'parameters.L': 'Available channels L',
+                    'parameters.K': 'Fixed area K', 'parameters.graph': 'Hopping graph',
+                    'parameters.alpha': 'Casimir coupling α', 'parameters.preparation': 'Input preparation',
+                    'results.projection_probability': 'Sharp-state preparation probability',
+                    'results.late_mean_active': 'Late mean active channels',
+                    'results.late_receiver_area_fraction': 'Late area in receivers / K',
+                    'results.late_receiver_casimir_fraction': 'Late receiver Casimir fraction',
+                    'results.late_probability_at_least5': 'Late probability of ≥5 active channels',
+                    'results.late_probability_all_channels': 'Late probability all channels are active',
+                    'results.series': 'Size, graph and preparation'},
+            },
+        }
+        if identifier in column_views:
+            view = column_views[identifier]
+            for col in cols:
+                col['visible'] = col['key'] in view['visible']
+                if col['key'] in view['labels']:
+                    col['label'] = view['labels'][col['key']]
         if identifier == 'thermal-closed-entanglement':
             visible = {'runId', 'parameters.temperature', 'results.projection_probability',
                 'results.entropy_nats', 'results.area_entropy_nats', 'results.within_area_entropy_nats',
@@ -263,10 +330,13 @@ def export_numerical_data(catalogue=None):
                         run['series'] = ', '.join(f'{k}={run["parameters"].get(k, run["results"].get(k))}' for k in grouping)
                     cols.append({'key': 'series', 'label': 'Series', 'type': 'string', 'visible': False})
                     chart['groupBy'] = 'series'
-        study_docs = [{'title': Path(f['source']).stem.replace('-', ' ').capitalize(),
-                       'path': '../'+f['path'], 'sourcePath': f['source'],
+        note_files = {f['source']: f for f in study['files']
+                      if f['source'].startswith('notes/') and f['source'].endswith('.md')}
+        selected_notes = study.get('documentNotes', list(note_files))
+        study_docs = [{'title': Path(source).stem.replace('-', ' ').capitalize(),
+                       'path': '../'+note_files[source]['path'], 'sourcePath': source,
                        'description': 'Explanation and calculation record for this study.'}
-                      for f in study['files'] if f['source'].startswith('notes/') and f['source'].endswith('.md')]
+                      for source in selected_notes if source in note_files]
         data = {'schemaVersion': '1.0.0', 'project': {'name': study['title'], 'subtitle': study['description']},
                 'columns': cols, 'charts': chart, 'runs': runs, 'figures': figures,
                 'docs': [*study_docs, {'title': 'Numerical studies overview', 'path': '../index.html'}]}
@@ -343,6 +413,14 @@ def export_numerical_data(catalogue=None):
          'description': 'Exact planar-pair transfer bound and separate three-dimensional controls.'},
         {'title': 'Coupling strength and the apparent transfer cutoff', 'path': 'study-assets/notes/rotor-coupling-crossover.txt',
          'description': 'Finite-time coupling scan, direct controls and delayed transfer.'},
+        {'title': 'Quantum and geometric T11 results', 'path': 'study-assets/notes/quantum-geometry-research.txt',
+         'description': 'NS37–NS40: planar-rotor transfer, occupation connectivity, exact-singlet area redistribution, and its post-run permutation rule.'},
+        {'title': 'Four quantum planar rotors at zero total momentum', 'path': 'study-assets/notes/quantum-planar-rotor-energy-transfer.txt',
+         'description': 'Two matched quantum/classical energy-transfer cases and quantum single-rotor entropies.'},
+        {'title': 'Four-to-five-to-six face-channel connectivity', 'path': 'study-assets/notes/face-activation-connectivity.txt',
+         'description': 'Exact closed and open occupation transitions, including direct and two-hop matrix elements.'},
+        {'title': 'Exact-singlet geometric area redistribution', 'path': 'study-assets/notes/geometric-area-redistribution.txt',
+         'description': 'Fifty-four exact-singlet trajectories, selected geometry samples and a post-run symmetry diagnostic.'},
     ]
     write(DASH / 'data.json', overview_data)
     return datasets

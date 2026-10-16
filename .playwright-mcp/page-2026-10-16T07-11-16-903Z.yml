@@ -1,0 +1,483 @@
+- generic [ref=f2e2]:
+  - navigation "Numerical datasets" [ref=f2e3]:
+    - generic [ref=f2e4]: Numerical study
+    - combobox "Numerical study" [ref=f2e5]:
+      - option "All studies — overview"
+      - option "Small-area face-channel equilibration pilot (12 rows)"
+      - option "Classical rotor spreading and equilibrium comparison (24 rows)"
+      - 'option "Few-rotor transfer: planar bound and 3D controls (27 rows)" [selected]'
+      - option "Rotor coupling crossover and delayed release (64 rows)"
+      - 'option "Large-area tetrahedron: face activation and recurrence (20 rows)"'
+      - option "Entanglement of separately closed thermal polyhedra (86 rows)"
+      - option "Ordinary closure versus temperature (125 rows)"
+      - option "Heating separately closed area and positive RS volume (85 rows)"
+      - option "Singlet exchange between closed FL polyhedra (20 rows)"
+      - 'option "Four versus five sites: thermal-volume persistence (12 rows)"'
+      - option "Prepared tetrahedral FL states and the volume crossover (11 rows)"
+      - option "Candidate geometric Hamiltonians and prepared-FL dynamics (62 rows)"
+      - option "Four-site Hamiltonian spectra and RS-volume observables (30 rows)"
+      - option "Complete four-face closed-basis volumes (11 rows)"
+      - option "Variable-face positive RS catalogue (9 rows)"
+      - option "Squeezed-vacuum area coefficients (964 rows)"
+      - option "Squeezed-vacuum resultant spin (196 rows)"
+      - option "Excited J_in=1 joint area and spin (5 rows)"
+      - option "Higher-J flat-boundary probes (13 rows)"
+      - option "Magnetization and signed-grasp correlations (10 rows)"
+      - option "Local-chirality pilot (13 rows)"
+      - option "Imaginary-perturbation response (26 rows)"
+      - option "Cocycle-phase pilot (10 rows)"
+      - option "Large-K recorded families and fits (13 rows)"
+      - option "Historical single-copy thermal pilot (14 rows)"
+      - option "Historical energy-basis TFD pilot (14 rows)"
+      - option "Historical complexified purification (10 rows)"
+      - option "Small-sector thermal geometry audit (4 rows)"
+      - option "RS/AL volume-prescription controls (2 rows)"
+      - option "Initial covariance reconstruction pilot (6 rows)"
+      - option "Prepared FL evolution sampling (50 rows)"
+      - option "Positive volumes on two real-plane states (2 rows)"
+      - option "FL covariance shape recovery (84 rows)"
+      - option "Weighted FL input geometry and volumes (14 rows)"
+      - option "Regular FL volume versus area (5 rows)"
+      - option "Equal-area FL shape scan at J=2 (440 rows)"
+      - option "Same-number detachment energies (8 rows)"
+      - option "Closed and open state evolution probes (6 rows)"
+      - option "Constructive edge sewing probes (5 rows)"
+  - 'heading "Few-rotor transfer: planar bound and 3D controls" [level=1] [ref=f2e6]'
+  - paragraph [ref=f2e7]: Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.
+  - generic [ref=f2e8]:
+    - generic [ref=f2e9]:
+      - generic [ref=f2e10]: "27"
+      - generic [ref=f2e11]: Total Runs
+    - generic [ref=f2e12]:
+      - generic [ref=f2e13]: "0"
+      - generic [ref=f2e14]: Tasks
+    - generic [ref=f2e15]:
+      - generic [ref=f2e16]: "27"
+      - generic [ref=f2e17]: Complete
+    - generic [ref=f2e18]:
+      - generic [ref=f2e19]: "1"
+      - generic [ref=f2e20]: Figures
+  - tablist "Dashboard sections" [ref=f2e21]:
+    - tab "Runs & Studies" [selected] [ref=f2e22] [cursor=pointer]
+    - tab "Figure Archive" [ref=f2e23] [cursor=pointer]
+    - tab "Charts" [ref=f2e24] [cursor=pointer]
+    - tab "Tasks & Numerical Notes" [ref=f2e25] [cursor=pointer]
+  - tabpanel "Runs & Studies" [ref=f2e26]:
+    - heading "Run and Study Records" [level=2] [ref=f2e27]
+    - generic [ref=f2e28]:
+      - generic [ref=f2e29]:
+        - generic [ref=f2e30]: "Status:"
+        - combobox "Status:" [ref=f2e31]:
+          - option "All" [selected]
+          - option "complete"
+      - generic [ref=f2e32]:
+        - generic [ref=f2e33]: "Search:"
+        - textbox "Search:" [ref=f2e34]:
+          - /placeholder: Run ID, description...
+      - button "Reset" [ref=f2e36] [cursor=pointer]
+    - table [ref=f2e38]:
+      - rowgroup [ref=f2e39]:
+        - row [ref=f2e40]:
+          - columnheader [ref=f2e41] [cursor=pointer]:
+            - button "Case" [ref=f2e42]: Case ↕
+          - columnheader [ref=f2e43] [cursor=pointer]:
+            - button "rotor count" [ref=f2e44]: rotor count ↕
+          - columnheader [ref=f2e45] [cursor=pointer]:
+            - button "graph" [ref=f2e46]: graph ↕
+          - columnheader [ref=f2e47] [cursor=pointer]:
+            - button "coupling" [ref=f2e48]: coupling ↕
+          - columnheader [ref=f2e49] [cursor=pointer]:
+            - button "Initial packet energy / coupling" [ref=f2e50]: Initial packet energy / coupling ↕
+          - columnheader [ref=f2e51] [cursor=pointer]:
+            - button "control type" [ref=f2e52]: control type ↕
+          - columnheader [ref=f2e53] [cursor=pointer]:
+            - button "initial packet energy" [ref=f2e54]: initial packet energy ↕
+          - columnheader [ref=f2e55] [cursor=pointer]:
+            - button "regime" [ref=f2e56]: regime ↕
+          - columnheader [ref=f2e57] [cursor=pointer]:
+            - button "Maximum receiver kinetic-energy fraction" [ref=f2e58]: Maximum receiver kinetic-energy fraction ↕
+          - columnheader [ref=f2e59] [cursor=pointer]:
+            - button "exact transfer bound fraction" [ref=f2e60]: exact transfer bound fraction ↕
+          - columnheader [ref=f2e61] [cursor=pointer]:
+            - button "mean transfer fraction" [ref=f2e62]: mean transfer fraction ↕
+          - columnheader [ref=f2e63] [cursor=pointer]:
+            - button "Rotor count and control type" [ref=f2e64]: Rotor count and control type ↕
+      - rowgroup [ref=f2e65]:
+        - row [ref=f2e66]:
+          - cell [ref=f2e67]:
+            - button "Details for few-rotor-energy-transfer:case-0001:1" [ref=f2e68] [cursor=pointer]: few-rotor-energy-transfer:case-0001:1
+          - cell "2" [ref=f2e69]
+          - cell "planar_pair" [ref=f2e70]
+          - cell "1" [ref=f2e71]
+          - cell "1" [ref=f2e72]
+          - cell "aligned planar pair; one initially resting rotor" [ref=f2e73]
+          - cell "1" [ref=f2e74]
+          - cell "libration" [ref=f2e75]
+          - cell "1" [ref=f2e76]
+          - cell "1" [ref=f2e77]
+          - cell "0.37277805" [ref=f2e78]
+          - cell "N=2 planar pair; sampled maxima" [ref=f2e79]
+        - row [ref=f2e80]:
+          - cell [ref=f2e81]:
+            - button "Details for few-rotor-energy-transfer:case-0002:2" [ref=f2e82] [cursor=pointer]: few-rotor-energy-transfer:case-0002:2
+          - cell "2" [ref=f2e83]
+          - cell "planar_pair" [ref=f2e84]
+          - cell "1" [ref=f2e85]
+          - cell "3.9" [ref=f2e86]
+          - cell "aligned planar pair; one initially resting rotor" [ref=f2e87]
+          - cell "3.9" [ref=f2e88]
+          - cell "libration" [ref=f2e89]
+          - cell "0.99999982" [ref=f2e90]
+          - cell "1" [ref=f2e91]
+          - cell "0.33032027" [ref=f2e92]
+          - cell "N=2 planar pair; sampled maxima" [ref=f2e93]
+        - row [ref=f2e94]:
+          - cell [ref=f2e95]:
+            - button "Details for few-rotor-energy-transfer:case-0003:3" [ref=f2e96] [cursor=pointer]: few-rotor-energy-transfer:case-0003:3
+          - cell "2" [ref=f2e97]
+          - cell "planar_pair" [ref=f2e98]
+          - cell "2.5" [ref=f2e99]
+          - cell "4" [ref=f2e100]
+          - cell "aligned planar pair; one initially resting rotor" [ref=f2e101]
+          - cell "10" [ref=f2e102]
+          - cell "separatrix" [ref=f2e103]
+          - cell "0.24969622" [ref=f2e104]
+          - cell "0.25" [ref=f2e105]
+          - cell "0.18767569" [ref=f2e106]
+          - cell "N=2 planar pair; sampled maxima" [ref=f2e107]
+        - row [ref=f2e108]:
+          - cell [ref=f2e109]:
+            - button "Details for few-rotor-energy-transfer:case-0004:4" [ref=f2e110] [cursor=pointer]: few-rotor-energy-transfer:case-0004:4
+          - cell "2" [ref=f2e111]
+          - cell "planar_pair" [ref=f2e112]
+          - cell "1" [ref=f2e113]
+          - cell "4.1" [ref=f2e114]
+          - cell "aligned planar pair; one initially resting rotor" [ref=f2e115]
+          - cell "4.1" [ref=f2e116]
+          - cell "rotation" [ref=f2e117]
+          - cell "0.17801022" [ref=f2e118]
+          - cell "0.17801068" [ref=f2e119]
+          - cell "0.088507738" [ref=f2e120]
+          - cell "N=2 planar pair; sampled maxima" [ref=f2e121]
+        - row [ref=f2e122]:
+          - cell [ref=f2e123]:
+            - button "Details for few-rotor-energy-transfer:case-0005:5" [ref=f2e124] [cursor=pointer]: few-rotor-energy-transfer:case-0005:5
+          - cell "2" [ref=f2e125]
+          - cell "planar_pair" [ref=f2e126]
+          - cell "1" [ref=f2e127]
+          - cell "10" [ref=f2e128]
+          - cell "aligned planar pair; one initially resting rotor" [ref=f2e129]
+          - cell "10" [ref=f2e130]
+          - cell "rotation" [ref=f2e131]
+          - cell "0.012701648" [ref=f2e132]
+          - cell "0.012701665" [ref=f2e133]
+          - cell "0.004970643" [ref=f2e134]
+          - cell "N=2 planar pair; sampled maxima" [ref=f2e135]
+        - row [ref=f2e136]:
+          - cell [ref=f2e137]:
+            - button "Details for few-rotor-energy-transfer:case-0006:6" [ref=f2e138] [cursor=pointer]: few-rotor-energy-transfer:case-0006:6
+          - cell "2" [ref=f2e139]
+          - cell "planar_pair" [ref=f2e140]
+          - cell "1" [ref=f2e141]
+          - cell "100" [ref=f2e142]
+          - cell "aligned planar pair; one initially resting rotor" [ref=f2e143]
+          - cell "100" [ref=f2e144]
+          - cell "rotation" [ref=f2e145]
+          - cell "0.00010205129" [ref=f2e146]
+          - cell "0.00010205144" [ref=f2e147]
+          - cell "0.000038410164" [ref=f2e148]
+          - cell "N=2 planar pair; sampled maxima" [ref=f2e149]
+        - row [ref=f2e150]:
+          - cell [ref=f2e151]:
+            - button "Details for few-rotor-energy-transfer:case-0007:7" [ref=f2e152] [cursor=pointer]: few-rotor-energy-transfer:case-0007:7
+          - cell "4" [ref=f2e153]
+          - cell "four_open" [ref=f2e154]
+          - cell "100" [ref=f2e155]
+          - cell "1" [ref=f2e156]
+          - cell "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701" [ref=f2e157]
+          - cell "100" [ref=f2e158]
+          - cell "three-dimensional control" [ref=f2e159]
+          - cell "1.0072526" [ref=f2e160]
+          - cell "—" [ref=f2e161]
+          - cell "0.24978484" [ref=f2e162]
+          - cell "N=4 open chain; 3D control; seed 1701" [ref=f2e163]
+        - row [ref=f2e164]:
+          - cell [ref=f2e165]:
+            - button "Details for few-rotor-energy-transfer:case-0008:8" [ref=f2e166] [cursor=pointer]: few-rotor-energy-transfer:case-0008:8
+          - cell "4" [ref=f2e167]
+          - cell "four_open" [ref=f2e168]
+          - cell "30" [ref=f2e169]
+          - cell "3.3333333" [ref=f2e170]
+          - cell "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701" [ref=f2e171]
+          - cell "100" [ref=f2e172]
+          - cell "three-dimensional control" [ref=f2e173]
+          - cell "0.83638856" [ref=f2e174]
+          - cell "—" [ref=f2e175]
+          - cell "0.23059286" [ref=f2e176]
+          - cell "N=4 open chain; 3D control; seed 1701" [ref=f2e177]
+        - row [ref=f2e178]:
+          - cell [ref=f2e179]:
+            - button "Details for few-rotor-energy-transfer:case-0009:9" [ref=f2e180] [cursor=pointer]: few-rotor-energy-transfer:case-0009:9
+          - cell "4" [ref=f2e181]
+          - cell "four_open" [ref=f2e182]
+          - cell "10" [ref=f2e183]
+          - cell "10" [ref=f2e184]
+          - cell "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701" [ref=f2e185]
+          - cell "100" [ref=f2e186]
+          - cell "three-dimensional control" [ref=f2e187]
+          - cell "0.84838841" [ref=f2e188]
+          - cell "—" [ref=f2e189]
+          - cell "0.34463898" [ref=f2e190]
+          - cell "N=4 open chain; 3D control; seed 1701" [ref=f2e191]
+        - row [ref=f2e192]:
+          - cell [ref=f2e193]:
+            - button "Details for few-rotor-energy-transfer:case-0010:10" [ref=f2e194] [cursor=pointer]: few-rotor-energy-transfer:case-0010:10
+          - cell "4" [ref=f2e195]
+          - cell "four_open" [ref=f2e196]
+          - cell "3" [ref=f2e197]
+          - cell "33.333333" [ref=f2e198]
+          - cell "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701" [ref=f2e199]
+          - cell "100" [ref=f2e200]
+          - cell "three-dimensional control" [ref=f2e201]
+          - cell "0.0029022127" [ref=f2e202]
+          - cell "—" [ref=f2e203]
+          - cell "0.00095835558" [ref=f2e204]
+          - cell "N=4 open chain; 3D control; seed 1701" [ref=f2e205]
+        - row [ref=f2e206]:
+          - cell [ref=f2e207]:
+            - button "Details for few-rotor-energy-transfer:case-0011:11" [ref=f2e208] [cursor=pointer]: few-rotor-energy-transfer:case-0011:11
+          - cell "4" [ref=f2e209]
+          - cell "four_open" [ref=f2e210]
+          - cell "1" [ref=f2e211]
+          - cell "100" [ref=f2e212]
+          - cell "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701" [ref=f2e213]
+          - cell "100" [ref=f2e214]
+          - cell "three-dimensional control" [ref=f2e215]
+          - cell "0.00039804623" [ref=f2e216]
+          - cell "—" [ref=f2e217]
+          - cell "0.00013102313" [ref=f2e218]
+          - cell "N=4 open chain; 3D control; seed 1701" [ref=f2e219]
+        - row [ref=f2e220]:
+          - cell [ref=f2e221]:
+            - button "Details for few-rotor-energy-transfer:case-0012:12" [ref=f2e222] [cursor=pointer]: few-rotor-energy-transfer:case-0012:12
+          - cell "4" [ref=f2e223]
+          - cell "four_open" [ref=f2e224]
+          - cell "0.3" [ref=f2e225]
+          - cell "333.33333" [ref=f2e226]
+          - cell "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701" [ref=f2e227]
+          - cell "100" [ref=f2e228]
+          - cell "three-dimensional control" [ref=f2e229]
+          - cell "0.000066495948" [ref=f2e230]
+          - cell "—" [ref=f2e231]
+          - cell "0.00002305718" [ref=f2e232]
+          - cell "N=4 open chain; 3D control; seed 1701" [ref=f2e233]
+        - row [ref=f2e234]:
+          - cell [ref=f2e235]:
+            - button "Details for few-rotor-energy-transfer:case-0013:13" [ref=f2e236] [cursor=pointer]: few-rotor-energy-transfer:case-0013:13
+          - cell "4" [ref=f2e237]
+          - cell "four_open" [ref=f2e238]
+          - cell "0.1" [ref=f2e239]
+          - cell "1000" [ref=f2e240]
+          - cell "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701" [ref=f2e241]
+          - cell "100" [ref=f2e242]
+          - cell "three-dimensional control" [ref=f2e243]
+          - cell "0.000016265367" [ref=f2e244]
+          - cell "—" [ref=f2e245]
+          - cell "0.0000063476674" [ref=f2e246]
+          - cell "N=4 open chain; 3D control; seed 1701" [ref=f2e247]
+        - row [ref=f2e248]:
+          - cell [ref=f2e249]:
+            - button "Details for few-rotor-energy-transfer:case-0014:14" [ref=f2e250] [cursor=pointer]: few-rotor-energy-transfer:case-0014:14
+          - cell "4" [ref=f2e251]
+          - cell "four_ring" [ref=f2e252]
+          - cell "100" [ref=f2e253]
+          - cell "1" [ref=f2e254]
+          - cell "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701" [ref=f2e255]
+          - cell "100" [ref=f2e256]
+          - cell "three-dimensional control" [ref=f2e257]
+          - cell "1.0245224" [ref=f2e258]
+          - cell "—" [ref=f2e259]
+          - cell "0.24484383" [ref=f2e260]
+          - cell "N=4 ring; 3D control; seed 1701" [ref=f2e261]
+        - row [ref=f2e262]:
+          - cell [ref=f2e263]:
+            - button "Details for few-rotor-energy-transfer:case-0015:15" [ref=f2e264] [cursor=pointer]: few-rotor-energy-transfer:case-0015:15
+          - cell "4" [ref=f2e265]
+          - cell "four_ring" [ref=f2e266]
+          - cell "30" [ref=f2e267]
+          - cell "3.3333333" [ref=f2e268]
+          - cell "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701" [ref=f2e269]
+          - cell "100" [ref=f2e270]
+          - cell "three-dimensional control" [ref=f2e271]
+          - cell "0.99885398" [ref=f2e272]
+          - cell "—" [ref=f2e273]
+          - cell "0.22194063" [ref=f2e274]
+          - cell "N=4 ring; 3D control; seed 1701" [ref=f2e275]
+        - row [ref=f2e276]:
+          - cell [ref=f2e277]:
+            - button "Details for few-rotor-energy-transfer:case-0016:16" [ref=f2e278] [cursor=pointer]: few-rotor-energy-transfer:case-0016:16
+          - cell "4" [ref=f2e279]
+          - cell "four_ring" [ref=f2e280]
+          - cell "10" [ref=f2e281]
+          - cell "10" [ref=f2e282]
+          - cell "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701" [ref=f2e283]
+          - cell "100" [ref=f2e284]
+          - cell "three-dimensional control" [ref=f2e285]
+          - cell "0.90151628" [ref=f2e286]
+          - cell "—" [ref=f2e287]
+          - cell "0.36187431" [ref=f2e288]
+          - cell "N=4 ring; 3D control; seed 1701" [ref=f2e289]
+        - row [ref=f2e290]:
+          - cell [ref=f2e291]:
+            - button "Details for few-rotor-energy-transfer:case-0017:17" [ref=f2e292] [cursor=pointer]: few-rotor-energy-transfer:case-0017:17
+          - cell "4" [ref=f2e293]
+          - cell "four_ring" [ref=f2e294]
+          - cell "3" [ref=f2e295]
+          - cell "33.333333" [ref=f2e296]
+          - cell "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701" [ref=f2e297]
+          - cell "100" [ref=f2e298]
+          - cell "three-dimensional control" [ref=f2e299]
+          - cell "0.0070065974" [ref=f2e300]
+          - cell "—" [ref=f2e301]
+          - cell "0.0017319273" [ref=f2e302]
+          - cell "N=4 ring; 3D control; seed 1701" [ref=f2e303]
+        - row [ref=f2e304]:
+          - cell [ref=f2e305]:
+            - button "Details for few-rotor-energy-transfer:case-0018:18" [ref=f2e306] [cursor=pointer]: few-rotor-energy-transfer:case-0018:18
+          - cell "4" [ref=f2e307]
+          - cell "four_ring" [ref=f2e308]
+          - cell "1" [ref=f2e309]
+          - cell "100" [ref=f2e310]
+          - cell "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701" [ref=f2e311]
+          - cell "100" [ref=f2e312]
+          - cell "three-dimensional control" [ref=f2e313]
+          - cell "0.00078841619" [ref=f2e314]
+          - cell "—" [ref=f2e315]
+          - cell "0.00019821032" [ref=f2e316]
+          - cell "N=4 ring; 3D control; seed 1701" [ref=f2e317]
+        - row [ref=f2e318]:
+          - cell [ref=f2e319]:
+            - button "Details for few-rotor-energy-transfer:case-0019:19" [ref=f2e320] [cursor=pointer]: few-rotor-energy-transfer:case-0019:19
+          - cell "4" [ref=f2e321]
+          - cell "four_ring" [ref=f2e322]
+          - cell "0.3" [ref=f2e323]
+          - cell "333.33333" [ref=f2e324]
+          - cell "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701" [ref=f2e325]
+          - cell "100" [ref=f2e326]
+          - cell "three-dimensional control" [ref=f2e327]
+          - cell "0.00010283161" [ref=f2e328]
+          - cell "—" [ref=f2e329]
+          - cell "0.000028990663" [ref=f2e330]
+          - cell "N=4 ring; 3D control; seed 1701" [ref=f2e331]
+        - row [ref=f2e332]:
+          - cell [ref=f2e333]:
+            - button "Details for few-rotor-energy-transfer:case-0020:20" [ref=f2e334] [cursor=pointer]: few-rotor-energy-transfer:case-0020:20
+          - cell "4" [ref=f2e335]
+          - cell "four_ring" [ref=f2e336]
+          - cell "0.1" [ref=f2e337]
+          - cell "1000" [ref=f2e338]
+          - cell "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701" [ref=f2e339]
+          - cell "100" [ref=f2e340]
+          - cell "three-dimensional control" [ref=f2e341]
+          - cell "0.000021449315" [ref=f2e342]
+          - cell "—" [ref=f2e343]
+          - cell "0.0000072182639" [ref=f2e344]
+          - cell "N=4 ring; 3D control; seed 1701" [ref=f2e345]
+        - row [ref=f2e346]:
+          - cell [ref=f2e347]:
+            - button "Details for few-rotor-energy-transfer:case-0021:21" [ref=f2e348] [cursor=pointer]: few-rotor-energy-transfer:case-0021:21
+          - cell "3" [ref=f2e349]
+          - cell "triangle" [ref=f2e350]
+          - cell "100" [ref=f2e351]
+          - cell "1" [ref=f2e352]
+          - cell "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701" [ref=f2e353]
+          - cell "100" [ref=f2e354]
+          - cell "three-dimensional control" [ref=f2e355]
+          - cell "0.66497705" [ref=f2e356]
+          - cell "—" [ref=f2e357]
+          - cell "0.20435288" [ref=f2e358]
+          - cell "N=3 triangle; 3D control; seed 1701" [ref=f2e359]
+        - row [ref=f2e360]:
+          - cell [ref=f2e361]:
+            - button "Details for few-rotor-energy-transfer:case-0022:22" [ref=f2e362] [cursor=pointer]: few-rotor-energy-transfer:case-0022:22
+          - cell "3" [ref=f2e363]
+          - cell "triangle" [ref=f2e364]
+          - cell "30" [ref=f2e365]
+          - cell "3.3333333" [ref=f2e366]
+          - cell "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701" [ref=f2e367]
+          - cell "100" [ref=f2e368]
+          - cell "three-dimensional control" [ref=f2e369]
+          - cell "0.64128015" [ref=f2e370]
+          - cell "—" [ref=f2e371]
+          - cell "0.13681026" [ref=f2e372]
+          - cell "N=3 triangle; 3D control; seed 1701" [ref=f2e373]
+        - row [ref=f2e374]:
+          - cell [ref=f2e375]:
+            - button "Details for few-rotor-energy-transfer:case-0023:23" [ref=f2e376] [cursor=pointer]: few-rotor-energy-transfer:case-0023:23
+          - cell "3" [ref=f2e377]
+          - cell "triangle" [ref=f2e378]
+          - cell "10" [ref=f2e379]
+          - cell "10" [ref=f2e380]
+          - cell "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701" [ref=f2e381]
+          - cell "100" [ref=f2e382]
+          - cell "three-dimensional control" [ref=f2e383]
+          - cell "0.071566847" [ref=f2e384]
+          - cell "—" [ref=f2e385]
+          - cell "0.0065620034" [ref=f2e386]
+          - cell "N=3 triangle; 3D control; seed 1701" [ref=f2e387]
+        - row [ref=f2e388]:
+          - cell [ref=f2e389]:
+            - button "Details for few-rotor-energy-transfer:case-0024:24" [ref=f2e390] [cursor=pointer]: few-rotor-energy-transfer:case-0024:24
+          - cell "3" [ref=f2e391]
+          - cell "triangle" [ref=f2e392]
+          - cell "3" [ref=f2e393]
+          - cell "33.333333" [ref=f2e394]
+          - cell "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701" [ref=f2e395]
+          - cell "100" [ref=f2e396]
+          - cell "three-dimensional control" [ref=f2e397]
+          - cell "0.0045295979" [ref=f2e398]
+          - cell "—" [ref=f2e399]
+          - cell "0.00035354146" [ref=f2e400]
+          - cell "N=3 triangle; 3D control; seed 1701" [ref=f2e401]
+        - row [ref=f2e402]:
+          - cell [ref=f2e403]:
+            - button "Details for few-rotor-energy-transfer:case-0025:25" [ref=f2e404] [cursor=pointer]: few-rotor-energy-transfer:case-0025:25
+          - cell "3" [ref=f2e405]
+          - cell "triangle" [ref=f2e406]
+          - cell "1" [ref=f2e407]
+          - cell "100" [ref=f2e408]
+          - cell "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701" [ref=f2e409]
+          - cell "100" [ref=f2e410]
+          - cell "three-dimensional control" [ref=f2e411]
+          - cell "0.00046471695" [ref=f2e412]
+          - cell "—" [ref=f2e413]
+          - cell "0.000034436943" [ref=f2e414]
+          - cell "N=3 triangle; 3D control; seed 1701" [ref=f2e415]
+        - row [ref=f2e416]:
+          - cell [ref=f2e417]:
+            - button "Details for few-rotor-energy-transfer:case-0026:26" [ref=f2e418] [cursor=pointer]: few-rotor-energy-transfer:case-0026:26
+          - cell "3" [ref=f2e419]
+          - cell "triangle" [ref=f2e420]
+          - cell "0.3" [ref=f2e421]
+          - cell "333.33333" [ref=f2e422]
+          - cell "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701" [ref=f2e423]
+          - cell "100" [ref=f2e424]
+          - cell "three-dimensional control" [ref=f2e425]
+          - cell "0.000040895123" [ref=f2e426]
+          - cell "—" [ref=f2e427]
+          - cell "0.0000028527525" [ref=f2e428]
+          - cell "N=3 triangle; 3D control; seed 1701" [ref=f2e429]
+        - row [ref=f2e430]:
+          - cell [ref=f2e431]:
+            - button "Details for few-rotor-energy-transfer:case-0027:27" [ref=f2e432] [cursor=pointer]: few-rotor-energy-transfer:case-0027:27
+          - cell "3" [ref=f2e433]
+          - cell "triangle" [ref=f2e434]
+          - cell "0.1" [ref=f2e435]
+          - cell "1000" [ref=f2e436]
+          - cell "3D zero-total-angular-momentum; equal-and-opposite hot pair; seed 1701" [ref=f2e437]
+          - cell "100" [ref=f2e438]
+          - cell "three-dimensional control" [ref=f2e439]
+          - cell "0.0000044969239" [ref=f2e440]
+          - cell "—" [ref=f2e441]
+          - cell "5.247427e-7" [ref=f2e442]
+          - cell "N=3 triangle; 3D control; seed 1701" [ref=f2e443]

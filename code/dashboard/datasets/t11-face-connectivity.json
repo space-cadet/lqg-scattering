@@ -1,0 +1,2045 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "name": "Closed and open four-to-five-to-six channel transitions (NS38)",
+    "subtitle": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist."
+  },
+  "columns": [
+    {
+      "key": "runId",
+      "label": "Witness / transition",
+      "type": "string",
+      "visible": true
+    },
+    {
+      "key": "parameters.L",
+      "label": "Available channels L",
+      "type": "number",
+      "precision": 8,
+      "visible": true
+    },
+    {
+      "key": "parameters.K",
+      "label": "Fixed area K",
+      "type": "number",
+      "precision": 8,
+      "visible": true
+    },
+    {
+      "key": "parameters.graph",
+      "label": "Hopping graph",
+      "type": "string",
+      "precision": 8,
+      "visible": true
+    },
+    {
+      "key": "parameters.source_class",
+      "label": "Source sector",
+      "type": "string",
+      "precision": 8,
+      "visible": true
+    },
+    {
+      "key": "parameters.source_spin",
+      "label": "source spin",
+      "type": "number",
+      "precision": 8,
+      "visible": false
+    },
+    {
+      "key": "parameters.transition",
+      "label": "Occupation transition",
+      "type": "string",
+      "precision": 8,
+      "visible": true
+    },
+    {
+      "key": "parameters.from_active_channels",
+      "label": "From active channels",
+      "type": "number",
+      "precision": 8,
+      "visible": true
+    },
+    {
+      "key": "parameters.to_active_channels",
+      "label": "Destination active channels",
+      "type": "number",
+      "precision": 8,
+      "visible": true
+    },
+    {
+      "key": "parameters.operator",
+      "label": "Operator",
+      "type": "string",
+      "precision": 8,
+      "visible": true
+    },
+    {
+      "key": "parameters.operator_order",
+      "label": "operator order",
+      "type": "number",
+      "precision": 8,
+      "visible": false
+    },
+    {
+      "key": "results.source_counts_label",
+      "label": "Source counts",
+      "type": "string",
+      "precision": 8,
+      "visible": true
+    },
+    {
+      "key": "results.target5_counts_label",
+      "label": "Five-channel witness",
+      "type": "string",
+      "precision": 8,
+      "visible": true
+    },
+    {
+      "key": "results.target6_counts_label",
+      "label": "Six-channel witness",
+      "type": "string",
+      "precision": 8,
+      "visible": true
+    },
+    {
+      "key": "results.singlet_dimension",
+      "label": "singlet dimension",
+      "type": "number",
+      "precision": 8,
+      "visible": false
+    },
+    {
+      "key": "results.full_dimension",
+      "label": "full dimension",
+      "type": "number",
+      "precision": 8,
+      "visible": false
+    },
+    {
+      "key": "results.singlet_4_to_5_rank",
+      "label": "Singlet rank, 4\u21925",
+      "type": "number",
+      "precision": 8,
+      "visible": true
+    },
+    {
+      "key": "results.singlet_4_to_5_source_nullity",
+      "label": "Singlet source nullity, 4\u21925",
+      "type": "number",
+      "precision": 8,
+      "visible": true
+    },
+    {
+      "key": "results.direct_4_to_6_block_norm",
+      "label": "Direct 4\u21926 block norm",
+      "type": "number",
+      "precision": 8,
+      "visible": true
+    },
+    {
+      "key": "results.series",
+      "label": "Graph and source sector",
+      "type": "string",
+      "precision": 8,
+      "visible": false
+    },
+    {
+      "key": "results.display_id",
+      "label": "display id",
+      "type": "string",
+      "precision": 8,
+      "visible": false
+    },
+    {
+      "key": "results.matrix_element",
+      "label": "Signed matrix element (H or H\u00b2)",
+      "type": "number",
+      "precision": 8,
+      "visible": true
+    },
+    {
+      "key": "results.chart_matrix_magnitude",
+      "label": "Absolute direct-H matrix element",
+      "type": "number",
+      "precision": 8,
+      "visible": false
+    },
+    {
+      "key": "results.first_hop_norm",
+      "label": "first hop norm",
+      "type": "number",
+      "precision": 8,
+      "visible": false
+    },
+    {
+      "key": "results.second_hop_norm",
+      "label": "second hop norm",
+      "type": "number",
+      "precision": 8,
+      "visible": false
+    },
+    {
+      "key": "results.H2_target6_source",
+      "label": "H2 target6 source",
+      "type": "number",
+      "precision": 8,
+      "visible": false
+    },
+    {
+      "key": "results.singlet_4_to_5_block_frobenius_norm",
+      "label": "Control singlet block norm",
+      "type": "number",
+      "precision": 8,
+      "visible": true
+    }
+  ],
+  "charts": {
+    "type": "scatter",
+    "x": "parameters.to_active_channels",
+    "y": "results.chart_matrix_magnitude",
+    "groupBy": "results.series"
+  },
+  "runs": [
+    {
+      "runId": "t11-face-connectivity:ring \u00b7 closed singlet \u00b7 4 to 5 (H):1",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "ring",
+        "source_class": "closed singlet",
+        "source_spin": 0,
+        "transition": "4 to 5 (H)",
+        "from_active_channels": 4,
+        "to_active_channels": 5,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "ring; closed singlet",
+        "display_id": "ring \u00b7 closed singlet \u00b7 4 to 5 (H)",
+        "matrix_element": -1.4142135623730954,
+        "chart_matrix_magnitude": 1.4142135623730954,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.4142135623730951,
+        "H2_target6_source": 4.0
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[0]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      },
+      "artifacts": [
+        {
+          "label": "README.md",
+          "path": "../study-assets/results/t11-face-connectivity/README.txt",
+          "kind": "data",
+          "sha256": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "sourcePath": "results/t11-face-connectivity/README.md",
+          "sourceSha256": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9"
+        },
+        {
+          "label": "protocol.md",
+          "path": "../study-assets/results/t11-face-connectivity/protocol.txt",
+          "kind": "data",
+          "sha256": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "sourcePath": "results/t11-face-connectivity/protocol.md",
+          "sourceSha256": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571"
+        },
+        {
+          "label": "summary.json",
+          "path": "../study-assets/results/t11-face-connectivity/summary.json",
+          "kind": "data",
+          "sha256": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "sourcePath": "results/t11-face-connectivity/summary.json",
+          "sourceSha256": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538"
+        },
+        {
+          "label": "independent-validation.json",
+          "path": "../study-assets/results/t11-face-connectivity/independent-validation.json",
+          "kind": "data",
+          "sha256": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "sourcePath": "results/t11-face-connectivity/independent-validation.json",
+          "sourceSha256": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d"
+        },
+        {
+          "label": "face-activation-connectivity.md",
+          "path": "../study-assets/notes/face-activation-connectivity.txt",
+          "kind": "data",
+          "sha256": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "sourcePath": "notes/face-activation-connectivity.md",
+          "sourceSha256": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe"
+        },
+        {
+          "label": "quantum-geometry-research.md",
+          "path": "../study-assets/notes/quantum-geometry-research.txt",
+          "kind": "data",
+          "sha256": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a",
+          "sourcePath": "notes/quantum-geometry-research.md",
+          "sourceSha256": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        }
+      ],
+      "figures": []
+    },
+    {
+      "runId": "t11-face-connectivity:ring \u00b7 closed singlet \u00b7 5 to 6 (H):2",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "ring",
+        "source_class": "closed singlet",
+        "source_spin": 0,
+        "transition": "5 to 6 (H)",
+        "from_active_channels": 5,
+        "to_active_channels": 6,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "ring; closed singlet",
+        "display_id": "ring \u00b7 closed singlet \u00b7 5 to 6 (H)",
+        "matrix_element": -1.4142135623730951,
+        "chart_matrix_magnitude": 1.4142135623730951,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.4142135623730951,
+        "H2_target6_source": 4.0
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[1]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:ring \u00b7 closed singlet \u00b7 4 to 6 direct (H):3",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "ring",
+        "source_class": "closed singlet",
+        "source_spin": 0,
+        "transition": "4 to 6 direct (H)",
+        "from_active_channels": 4,
+        "to_active_channels": 6,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "ring; closed singlet",
+        "display_id": "ring \u00b7 closed singlet \u00b7 4 to 6 direct (H)",
+        "matrix_element": 0.0,
+        "chart_matrix_magnitude": 0.0,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.4142135623730951,
+        "H2_target6_source": 4.0
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[2]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:ring \u00b7 closed singlet \u00b7 4 to 6 through two hops (H squared):4",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "ring",
+        "source_class": "closed singlet",
+        "source_spin": 0,
+        "transition": "4 to 6 through two hops (H squared)",
+        "from_active_channels": 4,
+        "to_active_channels": 6,
+        "operator": "H^2",
+        "operator_order": 2
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "ring; closed singlet",
+        "display_id": "ring \u00b7 closed singlet \u00b7 4 to 6 through two hops (H squared)",
+        "matrix_element": 4.0,
+        "chart_matrix_magnitude": null,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.4142135623730951,
+        "H2_target6_source": 4.0
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[3]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:ring \u00b7 open J=3 highest weight \u00b7 4 to 5 (H):5",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "ring",
+        "source_class": "open J=3 highest weight",
+        "source_spin": 3,
+        "transition": "4 to 5 (H)",
+        "from_active_channels": 4,
+        "to_active_channels": 5,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "ring; open J=3 highest weight",
+        "display_id": "ring \u00b7 open J=3 highest weight \u00b7 4 to 5 (H)",
+        "matrix_element": -1.4142135623730951,
+        "chart_matrix_magnitude": 1.4142135623730951,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.4142135623730951,
+        "H2_target6_source": 4.000000000000001
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[4]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:ring \u00b7 open J=3 highest weight \u00b7 5 to 6 (H):6",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "ring",
+        "source_class": "open J=3 highest weight",
+        "source_spin": 3,
+        "transition": "5 to 6 (H)",
+        "from_active_channels": 5,
+        "to_active_channels": 6,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "ring; open J=3 highest weight",
+        "display_id": "ring \u00b7 open J=3 highest weight \u00b7 5 to 6 (H)",
+        "matrix_element": -1.4142135623730951,
+        "chart_matrix_magnitude": 1.4142135623730951,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.4142135623730951,
+        "H2_target6_source": 4.000000000000001
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[5]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:ring \u00b7 open J=3 highest weight \u00b7 4 to 6 direct (H):7",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "ring",
+        "source_class": "open J=3 highest weight",
+        "source_spin": 3,
+        "transition": "4 to 6 direct (H)",
+        "from_active_channels": 4,
+        "to_active_channels": 6,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "ring; open J=3 highest weight",
+        "display_id": "ring \u00b7 open J=3 highest weight \u00b7 4 to 6 direct (H)",
+        "matrix_element": 0.0,
+        "chart_matrix_magnitude": 0.0,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.4142135623730951,
+        "H2_target6_source": 4.000000000000001
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[6]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:ring \u00b7 open J=3 highest weight \u00b7 4 to 6 through two hops (H squared):8",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "ring",
+        "source_class": "open J=3 highest weight",
+        "source_spin": 3,
+        "transition": "4 to 6 through two hops (H squared)",
+        "from_active_channels": 4,
+        "to_active_channels": 6,
+        "operator": "H^2",
+        "operator_order": 2
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "ring; open J=3 highest weight",
+        "display_id": "ring \u00b7 open J=3 highest weight \u00b7 4 to 6 through two hops (H squared)",
+        "matrix_element": 4.000000000000001,
+        "chart_matrix_magnitude": null,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.4142135623730951,
+        "H2_target6_source": 4.000000000000001
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[7]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:ring \u00b7 open J=3, M=0 \u00b7 4 to 5 (H):9",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "ring",
+        "source_class": "open J=3, M=0",
+        "source_spin": 3,
+        "transition": "4 to 5 (H)",
+        "from_active_channels": 4,
+        "to_active_channels": 5,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "ring; open J=3, M=0",
+        "display_id": "ring \u00b7 open J=3, M=0 \u00b7 4 to 5 (H)",
+        "matrix_element": -1.414213562373095,
+        "chart_matrix_magnitude": 1.414213562373095,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.414213562373095,
+        "H2_target6_source": 4.0
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[8]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:ring \u00b7 open J=3, M=0 \u00b7 5 to 6 (H):10",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "ring",
+        "source_class": "open J=3, M=0",
+        "source_spin": 3,
+        "transition": "5 to 6 (H)",
+        "from_active_channels": 5,
+        "to_active_channels": 6,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "ring; open J=3, M=0",
+        "display_id": "ring \u00b7 open J=3, M=0 \u00b7 5 to 6 (H)",
+        "matrix_element": -1.414213562373095,
+        "chart_matrix_magnitude": 1.414213562373095,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.414213562373095,
+        "H2_target6_source": 4.0
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[9]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:ring \u00b7 open J=3, M=0 \u00b7 4 to 6 direct (H):11",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "ring",
+        "source_class": "open J=3, M=0",
+        "source_spin": 3,
+        "transition": "4 to 6 direct (H)",
+        "from_active_channels": 4,
+        "to_active_channels": 6,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "ring; open J=3, M=0",
+        "display_id": "ring \u00b7 open J=3, M=0 \u00b7 4 to 6 direct (H)",
+        "matrix_element": 0.0,
+        "chart_matrix_magnitude": 0.0,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.414213562373095,
+        "H2_target6_source": 4.0
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[10]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:ring \u00b7 open J=3, M=0 \u00b7 4 to 6 through two hops (H squared):12",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "ring",
+        "source_class": "open J=3, M=0",
+        "source_spin": 3,
+        "transition": "4 to 6 through two hops (H squared)",
+        "from_active_channels": 4,
+        "to_active_channels": 6,
+        "operator": "H^2",
+        "operator_order": 2
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "ring; open J=3, M=0",
+        "display_id": "ring \u00b7 open J=3, M=0 \u00b7 4 to 6 through two hops (H squared)",
+        "matrix_element": 4.0,
+        "chart_matrix_magnitude": null,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.414213562373095,
+        "H2_target6_source": 4.0
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[11]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:complete \u00b7 closed singlet \u00b7 4 to 5 (H):13",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "complete",
+        "source_class": "closed singlet",
+        "source_spin": 0,
+        "transition": "4 to 5 (H)",
+        "from_active_channels": 4,
+        "to_active_channels": 5,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "complete; closed singlet",
+        "display_id": "complete \u00b7 closed singlet \u00b7 4 to 5 (H)",
+        "matrix_element": -1.4142135623730954,
+        "chart_matrix_magnitude": 1.4142135623730954,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.4142135623730951,
+        "H2_target6_source": 2.0
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[12]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:complete \u00b7 closed singlet \u00b7 5 to 6 (H):14",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "complete",
+        "source_class": "closed singlet",
+        "source_spin": 0,
+        "transition": "5 to 6 (H)",
+        "from_active_channels": 5,
+        "to_active_channels": 6,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "complete; closed singlet",
+        "display_id": "complete \u00b7 closed singlet \u00b7 5 to 6 (H)",
+        "matrix_element": -1.4142135623730951,
+        "chart_matrix_magnitude": 1.4142135623730951,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.4142135623730951,
+        "H2_target6_source": 2.0
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[13]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:complete \u00b7 closed singlet \u00b7 4 to 6 direct (H):15",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "complete",
+        "source_class": "closed singlet",
+        "source_spin": 0,
+        "transition": "4 to 6 direct (H)",
+        "from_active_channels": 4,
+        "to_active_channels": 6,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "complete; closed singlet",
+        "display_id": "complete \u00b7 closed singlet \u00b7 4 to 6 direct (H)",
+        "matrix_element": 0.0,
+        "chart_matrix_magnitude": 0.0,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.4142135623730951,
+        "H2_target6_source": 2.0
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[14]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:complete \u00b7 closed singlet \u00b7 4 to 6 through two hops (H squared):16",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "complete",
+        "source_class": "closed singlet",
+        "source_spin": 0,
+        "transition": "4 to 6 through two hops (H squared)",
+        "from_active_channels": 4,
+        "to_active_channels": 6,
+        "operator": "H^2",
+        "operator_order": 2
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "complete; closed singlet",
+        "display_id": "complete \u00b7 closed singlet \u00b7 4 to 6 through two hops (H squared)",
+        "matrix_element": 2.0,
+        "chart_matrix_magnitude": null,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.4142135623730951,
+        "H2_target6_source": 2.0
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[15]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:complete \u00b7 open J=3 highest weight \u00b7 4 to 5 (H):17",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "complete",
+        "source_class": "open J=3 highest weight",
+        "source_spin": 3,
+        "transition": "4 to 5 (H)",
+        "from_active_channels": 4,
+        "to_active_channels": 5,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "complete; open J=3 highest weight",
+        "display_id": "complete \u00b7 open J=3 highest weight \u00b7 4 to 5 (H)",
+        "matrix_element": -1.4142135623730951,
+        "chart_matrix_magnitude": 1.4142135623730951,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.4142135623730951,
+        "H2_target6_source": 8.000000000000002
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[16]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:complete \u00b7 open J=3 highest weight \u00b7 5 to 6 (H):18",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "complete",
+        "source_class": "open J=3 highest weight",
+        "source_spin": 3,
+        "transition": "5 to 6 (H)",
+        "from_active_channels": 5,
+        "to_active_channels": 6,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "complete; open J=3 highest weight",
+        "display_id": "complete \u00b7 open J=3 highest weight \u00b7 5 to 6 (H)",
+        "matrix_element": -1.4142135623730951,
+        "chart_matrix_magnitude": 1.4142135623730951,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.4142135623730951,
+        "H2_target6_source": 8.000000000000002
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[17]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:complete \u00b7 open J=3 highest weight \u00b7 4 to 6 direct (H):19",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "complete",
+        "source_class": "open J=3 highest weight",
+        "source_spin": 3,
+        "transition": "4 to 6 direct (H)",
+        "from_active_channels": 4,
+        "to_active_channels": 6,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "complete; open J=3 highest weight",
+        "display_id": "complete \u00b7 open J=3 highest weight \u00b7 4 to 6 direct (H)",
+        "matrix_element": 0.0,
+        "chart_matrix_magnitude": 0.0,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.4142135623730951,
+        "H2_target6_source": 8.000000000000002
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[18]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:complete \u00b7 open J=3 highest weight \u00b7 4 to 6 through two hops (H squared):20",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "complete",
+        "source_class": "open J=3 highest weight",
+        "source_spin": 3,
+        "transition": "4 to 6 through two hops (H squared)",
+        "from_active_channels": 4,
+        "to_active_channels": 6,
+        "operator": "H^2",
+        "operator_order": 2
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "complete; open J=3 highest weight",
+        "display_id": "complete \u00b7 open J=3 highest weight \u00b7 4 to 6 through two hops (H squared)",
+        "matrix_element": 8.000000000000002,
+        "chart_matrix_magnitude": null,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.4142135623730951,
+        "H2_target6_source": 8.000000000000002
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[19]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:complete \u00b7 open J=3, M=0 \u00b7 4 to 5 (H):21",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "complete",
+        "source_class": "open J=3, M=0",
+        "source_spin": 3,
+        "transition": "4 to 5 (H)",
+        "from_active_channels": 4,
+        "to_active_channels": 5,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "complete; open J=3, M=0",
+        "display_id": "complete \u00b7 open J=3, M=0 \u00b7 4 to 5 (H)",
+        "matrix_element": -1.414213562373095,
+        "chart_matrix_magnitude": 1.414213562373095,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.414213562373095,
+        "H2_target6_source": 8.000000000000002
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[20]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:complete \u00b7 open J=3, M=0 \u00b7 5 to 6 (H):22",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "complete",
+        "source_class": "open J=3, M=0",
+        "source_spin": 3,
+        "transition": "5 to 6 (H)",
+        "from_active_channels": 5,
+        "to_active_channels": 6,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "complete; open J=3, M=0",
+        "display_id": "complete \u00b7 open J=3, M=0 \u00b7 5 to 6 (H)",
+        "matrix_element": -1.414213562373095,
+        "chart_matrix_magnitude": 1.414213562373095,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.414213562373095,
+        "H2_target6_source": 8.000000000000002
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[21]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:complete \u00b7 open J=3, M=0 \u00b7 4 to 6 direct (H):23",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "complete",
+        "source_class": "open J=3, M=0",
+        "source_spin": 3,
+        "transition": "4 to 6 direct (H)",
+        "from_active_channels": 4,
+        "to_active_channels": 6,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "complete; open J=3, M=0",
+        "display_id": "complete \u00b7 open J=3, M=0 \u00b7 4 to 6 direct (H)",
+        "matrix_element": 0.0,
+        "chart_matrix_magnitude": 0.0,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.414213562373095,
+        "H2_target6_source": 8.000000000000002
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[22]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:complete \u00b7 open J=3, M=0 \u00b7 4 to 6 through two hops (H squared):24",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 3,
+        "graph": "complete",
+        "source_class": "open J=3, M=0",
+        "source_spin": 3,
+        "transition": "4 to 6 through two hops (H squared)",
+        "from_active_channels": 4,
+        "to_active_channels": 6,
+        "operator": "H^2",
+        "operator_order": 2
+      },
+      "results": {
+        "source_counts_label": "(2, 1, 1, 2, 0, 0)",
+        "target5_counts_label": "(1, 1, 1, 2, 0, 1)",
+        "target6_counts_label": "(1, 1, 1, 1, 1, 1)",
+        "singlet_dimension": 490,
+        "full_dimension": 12376,
+        "singlet_4_to_5_rank": 90,
+        "singlet_4_to_5_source_nullity": 150,
+        "direct_4_to_6_block_norm": 0.0,
+        "series": "complete; open J=3, M=0",
+        "display_id": "complete \u00b7 open J=3, M=0 \u00b7 4 to 6 through two hops (H squared)",
+        "matrix_element": 8.000000000000002,
+        "chart_matrix_magnitude": null,
+        "first_hop_norm": 1.4142135623730951,
+        "second_hop_norm": 1.414213562373095,
+        "H2_target6_source": 8.000000000000002
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[23]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:L=5, K=3 \u00b7 ring \u00b7 size control:25",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 5,
+        "K": 3,
+        "graph": "ring",
+        "source_class": "closed-sector block control",
+        "source_spin": 0,
+        "transition": "4 to 5 singlet block control",
+        "from_active_channels": 4,
+        "to_active_channels": 5,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "display_id": "L=5, K=3 \u00b7 ring \u00b7 size control",
+        "matrix_element": null,
+        "chart_matrix_magnitude": null,
+        "singlet_dimension": 175,
+        "full_dimension": 5005,
+        "singlet_4_to_5_rank": 15,
+        "singlet_4_to_5_source_nullity": 65,
+        "direct_4_to_6_block_norm": 0.0,
+        "singlet_4_to_5_block_frobenius_norm": 12.247448713915892,
+        "series": "ring; L=5, K=3 control"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[24]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:L=5, K=3 \u00b7 complete \u00b7 size control:26",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 5,
+        "K": 3,
+        "graph": "complete",
+        "source_class": "closed-sector block control",
+        "source_spin": 0,
+        "transition": "4 to 5 singlet block control",
+        "from_active_channels": 4,
+        "to_active_channels": 5,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "display_id": "L=5, K=3 \u00b7 complete \u00b7 size control",
+        "matrix_element": null,
+        "chart_matrix_magnitude": null,
+        "singlet_dimension": 175,
+        "full_dimension": 5005,
+        "singlet_4_to_5_rank": 15,
+        "singlet_4_to_5_source_nullity": 65,
+        "direct_4_to_6_block_norm": 0.0,
+        "singlet_4_to_5_block_frobenius_norm": 17.320508075688775,
+        "series": "complete; L=5, K=3 control"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[25]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:L=5, K=3 \u00b7 disconnected_receivers \u00b7 size control:27",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 5,
+        "K": 3,
+        "graph": "disconnected_receivers",
+        "source_class": "closed-sector block control",
+        "source_spin": 0,
+        "transition": "4 to 5 singlet block control",
+        "from_active_channels": 4,
+        "to_active_channels": 5,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "display_id": "L=5, K=3 \u00b7 disconnected_receivers \u00b7 size control",
+        "matrix_element": null,
+        "chart_matrix_magnitude": null,
+        "singlet_dimension": 175,
+        "full_dimension": 5005,
+        "singlet_4_to_5_rank": 15,
+        "singlet_4_to_5_source_nullity": 65,
+        "direct_4_to_6_block_norm": 0.0,
+        "singlet_4_to_5_block_frobenius_norm": 13.416407864998739,
+        "series": "disconnected_receivers; L=5, K=3 control"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[26]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:L=6, K=2 \u00b7 ring \u00b7 size control:28",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 2,
+        "graph": "ring",
+        "source_class": "closed-sector block control",
+        "source_spin": 0,
+        "transition": "4 to 5 singlet block control",
+        "from_active_channels": 4,
+        "to_active_channels": 5,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "display_id": "L=6, K=2 \u00b7 ring \u00b7 size control",
+        "matrix_element": null,
+        "chart_matrix_magnitude": null,
+        "singlet_dimension": 105,
+        "full_dimension": 1365,
+        "singlet_4_to_5_rank": 0,
+        "singlet_4_to_5_source_nullity": 30,
+        "direct_4_to_6_block_norm": 0.0,
+        "singlet_4_to_5_block_frobenius_norm": 0.0,
+        "series": "ring; L=6, K=2 control"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[27]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:L=6, K=2 \u00b7 complete \u00b7 size control:29",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 2,
+        "graph": "complete",
+        "source_class": "closed-sector block control",
+        "source_spin": 0,
+        "transition": "4 to 5 singlet block control",
+        "from_active_channels": 4,
+        "to_active_channels": 5,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "display_id": "L=6, K=2 \u00b7 complete \u00b7 size control",
+        "matrix_element": null,
+        "chart_matrix_magnitude": null,
+        "singlet_dimension": 105,
+        "full_dimension": 1365,
+        "singlet_4_to_5_rank": 0,
+        "singlet_4_to_5_source_nullity": 30,
+        "direct_4_to_6_block_norm": 0.0,
+        "singlet_4_to_5_block_frobenius_norm": 0.0,
+        "series": "complete; L=6, K=2 control"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[28]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    },
+    {
+      "runId": "t11-face-connectivity:L=6, K=2 \u00b7 disconnected_receivers \u00b7 size control:30",
+      "task": "T11",
+      "status": "complete",
+      "description": "Closed and open four-to-five-to-six channel transitions (NS38)",
+      "catalogueDate": "2026-10-16",
+      "parameters": {
+        "L": 6,
+        "K": 2,
+        "graph": "disconnected_receivers",
+        "source_class": "closed-sector block control",
+        "source_spin": 0,
+        "transition": "4 to 5 singlet block control",
+        "from_active_channels": 4,
+        "to_active_channels": 5,
+        "operator": "H",
+        "operator_order": 1
+      },
+      "results": {
+        "display_id": "L=6, K=2 \u00b7 disconnected_receivers \u00b7 size control",
+        "matrix_element": null,
+        "chart_matrix_magnitude": null,
+        "singlet_dimension": 105,
+        "full_dimension": 1365,
+        "singlet_4_to_5_rank": 0,
+        "singlet_4_to_5_source_nullity": 30,
+        "direct_4_to_6_block_norm": 0.0,
+        "singlet_4_to_5_block_frobenius_norm": 0.0,
+        "series": "disconnected_receivers; L=6, K=2 control"
+      },
+      "provenance": {
+        "sourceHashes": {
+          "results/t11-face-connectivity/L6-K3.json": "c46f07dff803fc7ae2dca0d689405e521d816b6c22f4cd283b1d5dc7a12365bf",
+          "results/t11-face-connectivity/L5-K3.json": "791e35bf055472d321fc9381613a4b3d27eb67a42017459a84e3725a0d83b079",
+          "results/t11-face-connectivity/L6-K2.json": "fce32a9ac46e55f38ec030712bc7f7fcaa2e0658da3e5b24a7ce3816e4a39611",
+          "results/t11-face-connectivity/README.md": "1712c625f3a33dc826ab8e06cd753b5e508b00b475cf33c9b56a6bbf4d88dcf9",
+          "results/t11-face-connectivity/protocol.md": "306682dc35ccde505372f65617f57998c675571469c46800d64cec6b6ba32571",
+          "results/t11-face-connectivity/summary.json": "16652800d13fc873aea699e7247a6c8428b18f2942e575e99e241a1fc9499538",
+          "results/t11-face-connectivity/independent-validation.json": "ad7d3df90ce0f1fd1343236f4dbd1929cf2d0a0ef094632c4e06c86bdf95916d",
+          "notes/face-activation-connectivity.md": "024d50116969d9a35509f606f7246ade82750df04d0d960274d739ec335165fe",
+          "notes/quantum-geometry-research.md": "7bc514f39281e33438f758e21b75ce9c399174f3631a57463ae95f650e0b5a4a"
+        },
+        "presentationSource": "code/dashboard/studies.json",
+        "exportRevision": "74bd71df65db30a6702819eefa7defece277209e",
+        "exportDirtySource": true,
+        "importedAt": "2026-10-16T12:35:12.560629+00:00",
+        "exportCommand": "python code/python/dashboard_assets/export_numerical_data.py",
+        "exporterSHA256": "c485b9dc942e4cabde185c2853961f0317827d5e56becdea21d40326eabd74cd",
+        "sourceSelector": "studies.t11-face-connectivity.table.rows[29]"
+      },
+      "assessment": {
+        "summary": "The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.",
+        "recordedStudyStatus": "99 independent witness comparisons; maximum residual 1.99e-15; 67 regression tests passed in the research session"
+      }
+    }
+  ],
+  "figures": [],
+  "docs": [
+    {
+      "title": "Face activation connectivity",
+      "path": "../study-assets/notes/face-activation-connectivity.txt",
+      "sourcePath": "notes/face-activation-connectivity.md",
+      "description": "Explanation and calculation record for this study."
+    },
+    {
+      "title": "Quantum geometry research",
+      "path": "../study-assets/notes/quantum-geometry-research.txt",
+      "sourcePath": "notes/quantum-geometry-research.md",
+      "description": "Explanation and calculation record for this study."
+    },
+    {
+      "title": "Numerical studies overview",
+      "path": "../index.html"
+    }
+  ]
+}

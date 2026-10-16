@@ -1,5 +1,7 @@
 # Coherent States and Particle Scattering in Loop Quantum Gravity
 
+[Research map](quantum-geometry-research.md) · Related: [state space probes](state-space-probes.md), [volume studies](volume-studies.md).
+
 **Paper:** arXiv:2208.10632 [hep-th]
 **Authors:** Deepak Vaid, Devadharshini Suresh
 **Published:** EPJC (2022)

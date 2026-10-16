@@ -1,0 +1,163 @@
+- generic [ref=f2e2]:
+  - navigation "Numerical datasets" [ref=f2e3]:
+    - generic [ref=f2e4]: Numerical study
+    - combobox "Numerical study" [ref=f2e5]:
+      - option "All studies — overview"
+      - option "Small-area face-channel equilibration pilot (12 rows)"
+      - option "Classical rotor spreading and equilibrium comparison (24 rows)"
+      - 'option "Few-rotor transfer: planar bound and 3D controls (27 rows)" [selected]'
+      - option "Rotor coupling crossover and delayed release (64 rows)"
+      - 'option "Large-area tetrahedron: face activation and recurrence (20 rows)"'
+      - option "Entanglement of separately closed thermal polyhedra (86 rows)"
+      - option "Ordinary closure versus temperature (125 rows)"
+      - option "Heating separately closed area and positive RS volume (85 rows)"
+      - option "Singlet exchange between closed FL polyhedra (20 rows)"
+      - 'option "Four versus five sites: thermal-volume persistence (12 rows)"'
+      - option "Prepared tetrahedral FL states and the volume crossover (11 rows)"
+      - option "Candidate geometric Hamiltonians and prepared-FL dynamics (62 rows)"
+      - option "Four-site Hamiltonian spectra and RS-volume observables (30 rows)"
+      - option "Complete four-face closed-basis volumes (11 rows)"
+      - option "Variable-face positive RS catalogue (9 rows)"
+      - option "Squeezed-vacuum area coefficients (964 rows)"
+      - option "Squeezed-vacuum resultant spin (196 rows)"
+      - option "Excited J_in=1 joint area and spin (5 rows)"
+      - option "Higher-J flat-boundary probes (13 rows)"
+      - option "Magnetization and signed-grasp correlations (10 rows)"
+      - option "Local-chirality pilot (13 rows)"
+      - option "Imaginary-perturbation response (26 rows)"
+      - option "Cocycle-phase pilot (10 rows)"
+      - option "Large-K recorded families and fits (13 rows)"
+      - option "Historical single-copy thermal pilot (14 rows)"
+      - option "Historical energy-basis TFD pilot (14 rows)"
+      - option "Historical complexified purification (10 rows)"
+      - option "Small-sector thermal geometry audit (4 rows)"
+      - option "RS/AL volume-prescription controls (2 rows)"
+      - option "Initial covariance reconstruction pilot (6 rows)"
+      - option "Prepared FL evolution sampling (50 rows)"
+      - option "Positive volumes on two real-plane states (2 rows)"
+      - option "FL covariance shape recovery (84 rows)"
+      - option "Weighted FL input geometry and volumes (14 rows)"
+      - option "Regular FL volume versus area (5 rows)"
+      - option "Equal-area FL shape scan at J=2 (440 rows)"
+      - option "Same-number detachment energies (8 rows)"
+      - option "Closed and open state evolution probes (6 rows)"
+      - option "Constructive edge sewing probes (5 rows)"
+  - 'heading "Few-rotor transfer: planar bound and 3D controls" [level=1] [ref=f2e6]'
+  - paragraph [ref=f2e7]: Six representative planar-pair ratios sample the exact pendulum bound and its numerical check. Three-dimensional zero-angular-momentum controls use seed 1701 across a triangle, open four-rotor chain and four-rotor ring at seven couplings. The common chart parameter is initial packet energy divided by coupling; series keep rotor count, topology and preparation separate.
+  - generic [ref=f2e8]:
+    - generic [ref=f2e9]:
+      - generic [ref=f2e10]: "27"
+      - generic [ref=f2e11]: Total Runs
+    - generic [ref=f2e12]:
+      - generic [ref=f2e13]: "0"
+      - generic [ref=f2e14]: Tasks
+    - generic [ref=f2e15]:
+      - generic [ref=f2e16]: "27"
+      - generic [ref=f2e17]: Complete
+    - generic [ref=f2e18]:
+      - generic [ref=f2e19]: "1"
+      - generic [ref=f2e20]: Figures
+  - tablist "Dashboard sections" [ref=f2e21]:
+    - tab "Runs & Studies" [ref=f2e22] [cursor=pointer]
+    - tab "Figure Archive" [ref=f2e23] [cursor=pointer]
+    - tab "Charts" [active] [selected] [ref=f2e24] [cursor=pointer]
+    - tab "Tasks & Numerical Notes" [ref=f2e25] [cursor=pointer]
+  - tabpanel "Charts" [ref=f2e444]:
+    - heading "Performance" [level=2] [ref=f2e445]
+    - generic [ref=f2e446]:
+      - generic [ref=f2e447]:
+        - generic [ref=f2e448]: "X-Axis:"
+        - combobox "X-Axis:" [ref=f2e449]:
+          - option "rotor count"
+          - option "coupling"
+          - option "Initial packet energy / coupling" [selected]
+          - option "initial packet energy"
+          - option "Maximum receiver kinetic-energy fraction"
+          - option "exact transfer bound fraction"
+          - option "mean transfer fraction"
+      - generic [ref=f2e450]:
+        - generic [ref=f2e451]: "Y-Axis:"
+        - combobox "Y-Axis:" [ref=f2e452]:
+          - option "rotor count"
+          - option "coupling"
+          - option "Initial packet energy / coupling"
+          - option "initial packet energy"
+          - option "Maximum receiver kinetic-energy fraction" [selected]
+          - option "exact transfer bound fraction"
+          - option "mean transfer fraction"
+      - generic [ref=f2e453]:
+        - generic [ref=f2e454]: "Chart Type:"
+        - combobox "Chart Type:" [ref=f2e455]:
+          - option "Scatter"
+          - option "Line" [selected]
+      - generic [ref=f2e456]:
+        - generic [ref=f2e457]: "Series:"
+        - combobox "Series:" [ref=f2e458]:
+          - option "All runs"
+          - option "Case"
+          - option "graph"
+          - option "control type"
+          - option "regime"
+          - option "Rotor count and control type" [selected]
+    - generic [ref=f2e459]:
+      - figure "Maximum receiver kinetic-energy fraction versus Initial packet energy / coupling" [ref=f2e461]:
+        - generic [ref=f2e462]:
+          - generic [ref=f2e463]: N=2 planar pair; sampled maxima
+          - generic [ref=f2e466]: N=3 triangle; 3D control; seed 1701
+          - generic [ref=f2e469]: N=4 open chain; 3D control; seed 1701
+          - generic [ref=f2e472]: N=4 ring; 3D control; seed 1701
+        - img [ref=f2e475]:
+          - generic "y-axis tick label" [ref=f2e477]:
+            - generic [ref=f2e478]: "0.1"
+            - generic [ref=f2e479]: "0.2"
+            - generic [ref=f2e480]: "0.3"
+            - generic [ref=f2e481]: "0.4"
+            - generic [ref=f2e482]: "0.5"
+            - generic [ref=f2e483]: "0.6"
+            - generic [ref=f2e484]: "0.7"
+            - generic [ref=f2e485]: "0.8"
+            - generic [ref=f2e486]: "0.9"
+            - generic [ref=f2e487]: "1.0"
+          - generic "y-axis label" [ref=f2e488]: ↑ Maximum receiver kinetic-energy fraction
+          - generic "x-axis tick label" [ref=f2e491]:
+            - generic [ref=f2e492]: "100"
+            - generic [ref=f2e493]: "200"
+            - generic [ref=f2e494]: "300"
+            - generic [ref=f2e495]: "400"
+            - generic [ref=f2e496]: "500"
+            - generic [ref=f2e497]: "600"
+            - generic [ref=f2e498]: "700"
+            - generic [ref=f2e499]: "800"
+            - generic [ref=f2e500]: "900"
+            - generic [ref=f2e501]: 1,000
+          - generic "x-axis label" [ref=f2e502]: Initial packet energy / coupling →
+          - generic "line" [ref=f2e504]
+          - generic "dot" [ref=f2e509]:
+            - 'generic "few-rotor-energy-transfer:case-0001:1 Initial packet energy / coupling: 1 Maximum receiver kinetic-energy fraction: 0.9999999971479023" [ref=f2e510]'
+            - 'generic "few-rotor-energy-transfer:case-0002:2 Initial packet energy / coupling: 3.9 Maximum receiver kinetic-energy fraction: 0.9999998193491644" [ref=f2e511]'
+            - 'generic "few-rotor-energy-transfer:case-0003:3 Initial packet energy / coupling: 4 Maximum receiver kinetic-energy fraction: 0.24969622362473834" [ref=f2e512]'
+            - 'generic "few-rotor-energy-transfer:case-0004:4 Initial packet energy / coupling: 4.1 Maximum receiver kinetic-energy fraction: 0.1780102187902756" [ref=f2e513]'
+            - 'generic "few-rotor-energy-transfer:case-0005:5 Initial packet energy / coupling: 10 Maximum receiver kinetic-energy fraction: 0.012701648074189897" [ref=f2e514]'
+            - 'generic "few-rotor-energy-transfer:case-0006:6 Initial packet energy / coupling: 100 Maximum receiver kinetic-energy fraction: 0.0001020512937398786" [ref=f2e515]'
+            - 'generic "few-rotor-energy-transfer:case-0021:21 Initial packet energy / coupling: 1 Maximum receiver kinetic-energy fraction: 0.6649770522780437" [ref=f2e516]'
+            - 'generic "few-rotor-energy-transfer:case-0022:22 Initial packet energy / coupling: 3.3333333333333335 Maximum receiver kinetic-energy fraction: 0.6412801516891057" [ref=f2e517]'
+            - 'generic "few-rotor-energy-transfer:case-0023:23 Initial packet energy / coupling: 10 Maximum receiver kinetic-energy fraction: 0.07156684679494077" [ref=f2e518]'
+            - 'generic "few-rotor-energy-transfer:case-0024:24 Initial packet energy / coupling: 33.333333333333336 Maximum receiver kinetic-energy fraction: 0.004529597925066624" [ref=f2e519]'
+            - 'generic "few-rotor-energy-transfer:case-0025:25 Initial packet energy / coupling: 100 Maximum receiver kinetic-energy fraction: 0.00046471695097148277" [ref=f2e520]'
+            - 'generic "few-rotor-energy-transfer:case-0026:26 Initial packet energy / coupling: 333.33333333333337 Maximum receiver kinetic-energy fraction: 0.00004089512252259485" [ref=f2e521]'
+            - 'generic "few-rotor-energy-transfer:case-0027:27 Initial packet energy / coupling: 1000 Maximum receiver kinetic-energy fraction: 0.000004496923879868666" [ref=f2e522]'
+            - 'generic "few-rotor-energy-transfer:case-0007:7 Initial packet energy / coupling: 1 Maximum receiver kinetic-energy fraction: 1.0072525625693578" [ref=f2e523]'
+            - 'generic "few-rotor-energy-transfer:case-0008:8 Initial packet energy / coupling: 3.3333333333333335 Maximum receiver kinetic-energy fraction: 0.8363885604638606" [ref=f2e524]'
+            - 'generic "few-rotor-energy-transfer:case-0009:9 Initial packet energy / coupling: 10 Maximum receiver kinetic-energy fraction: 0.8483884129349231" [ref=f2e525]'
+            - 'generic "few-rotor-energy-transfer:case-0010:10 Initial packet energy / coupling: 33.333333333333336 Maximum receiver kinetic-energy fraction: 0.0029022127197150527" [ref=f2e526]'
+            - 'generic "few-rotor-energy-transfer:case-0011:11 Initial packet energy / coupling: 100 Maximum receiver kinetic-energy fraction: 0.00039804622572568526" [ref=f2e527]'
+            - 'generic "few-rotor-energy-transfer:case-0012:12 Initial packet energy / coupling: 333.33333333333337 Maximum receiver kinetic-energy fraction: 0.00006649594796284104" [ref=f2e528]'
+            - 'generic "few-rotor-energy-transfer:case-0013:13 Initial packet energy / coupling: 1000 Maximum receiver kinetic-energy fraction: 0.00001626536695438179" [ref=f2e529]'
+            - 'generic "few-rotor-energy-transfer:case-0014:14 Initial packet energy / coupling: 1 Maximum receiver kinetic-energy fraction: 1.0245224008174836" [ref=f2e530]'
+            - 'generic "few-rotor-energy-transfer:case-0015:15 Initial packet energy / coupling: 3.3333333333333335 Maximum receiver kinetic-energy fraction: 0.9988539757916963" [ref=f2e531]'
+            - 'generic "few-rotor-energy-transfer:case-0016:16 Initial packet energy / coupling: 10 Maximum receiver kinetic-energy fraction: 0.9015162759887536" [ref=f2e532]'
+            - 'generic "few-rotor-energy-transfer:case-0017:17 Initial packet energy / coupling: 33.333333333333336 Maximum receiver kinetic-energy fraction: 0.007006597414965048" [ref=f2e533]'
+            - 'generic "few-rotor-energy-transfer:case-0018:18 Initial packet energy / coupling: 100 Maximum receiver kinetic-energy fraction: 0.0007884161946122559" [ref=f2e534]'
+            - 'generic "few-rotor-energy-transfer:case-0019:19 Initial packet energy / coupling: 333.33333333333337 Maximum receiver kinetic-energy fraction: 0.00010283160600246071" [ref=f2e535]'
+            - 'generic "few-rotor-energy-transfer:case-0020:20 Initial packet energy / coupling: 1000 Maximum receiver kinetic-energy fraction: 0.000021449315488388927" [ref=f2e536]'
+      - paragraph [ref=f2e537]: 27 recorded points; series by Rotor count and control type.

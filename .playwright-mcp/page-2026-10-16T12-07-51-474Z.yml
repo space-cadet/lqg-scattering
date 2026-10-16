@@ -1,0 +1,864 @@
+- generic [ref=f11e2]:
+  - navigation "Numerical datasets" [ref=f11e3]:
+    - generic [ref=f11e4]: Numerical study
+    - combobox "Numerical study" [ref=f11e5]:
+      - option "All studies — overview"
+      - option "Small-area face-channel equilibration pilot (12 rows)"
+      - option "Classical rotor spreading and equilibrium comparison (24 rows)"
+      - 'option "Few-rotor transfer: planar bound and 3D controls (27 rows)"'
+      - option "Rotor coupling crossover and delayed release (64 rows)"
+      - 'option "Large-area tetrahedron: face activation and recurrence (20 rows)"'
+      - option "Entanglement of separately closed thermal polyhedra (86 rows)"
+      - option "Ordinary closure versus temperature (125 rows)"
+      - option "Heating separately closed area and positive RS volume (85 rows)"
+      - option "Singlet exchange between closed FL polyhedra (20 rows)"
+      - 'option "Four versus five sites: thermal-volume persistence (12 rows)"'
+      - option "Prepared tetrahedral FL states and the volume crossover (11 rows)"
+      - option "Candidate geometric Hamiltonians and prepared-FL dynamics (62 rows)"
+      - option "Four-site Hamiltonian spectra and RS-volume observables (30 rows)"
+      - option "Complete four-face closed-basis volumes (11 rows)"
+      - option "Variable-face positive RS catalogue (9 rows)"
+      - option "Squeezed-vacuum area coefficients (964 rows)"
+      - option "Squeezed-vacuum resultant spin (196 rows)"
+      - option "Excited J_in=1 joint area and spin (5 rows)"
+      - option "Higher-J flat-boundary probes (13 rows)"
+      - option "Magnetization and signed-grasp correlations (10 rows)"
+      - option "Local-chirality pilot (13 rows)"
+      - option "Imaginary-perturbation response (26 rows)"
+      - option "Cocycle-phase pilot (10 rows)"
+      - option "Large-K recorded families and fits (13 rows)"
+      - option "Historical single-copy thermal pilot (14 rows)"
+      - option "Historical energy-basis TFD pilot (14 rows)"
+      - option "Historical complexified purification (10 rows)"
+      - option "Small-sector thermal geometry audit (4 rows)"
+      - option "RS/AL volume-prescription controls (2 rows)"
+      - option "Initial covariance reconstruction pilot (6 rows)"
+      - option "Quantum planar-rotor transfer at zero total momentum (NS37) (2 rows)"
+      - option "Closed and open four-to-five-to-six channel transitions (NS38) (30 rows)"
+      - option "Exact-singlet geometric area redistribution (NS39–NS40) (54 rows)" [selected]
+      - option "Prepared FL evolution sampling (50 rows)"
+      - option "Positive volumes on two real-plane states (2 rows)"
+      - option "FL covariance shape recovery (84 rows)"
+      - option "Weighted FL input geometry and volumes (14 rows)"
+      - option "Regular FL volume versus area (5 rows)"
+      - option "Equal-area FL shape scan at J=2 (440 rows)"
+      - option "Same-number detachment energies (8 rows)"
+      - option "Closed and open state evolution probes (6 rows)"
+      - option "Constructive edge sewing probes (5 rows)"
+  - heading "Exact-singlet geometric area redistribution (NS39–NS40)" [level=1] [ref=f11e6]
+  - paragraph [ref=f11e7]: Fifty-four K=4 exact-singlet trajectories compare L=4,6,8 rings and complete graphs at alpha=0,1,5. The 54 case summaries are grouped in the chart by size, graph and preparation, with one point per coupling. The package also includes 270 selected geometry samples and the post-run permutation selection rule recorded as NS40.
+  - generic [ref=f11e8]:
+    - generic [ref=f11e9]:
+      - generic [ref=f11e10]: "54"
+      - generic [ref=f11e11]: Total Runs
+    - generic [ref=f11e12]:
+      - generic [ref=f11e13]: "0"
+      - generic [ref=f11e14]: Tasks
+    - generic [ref=f11e15]:
+      - generic [ref=f11e16]: "54"
+      - generic [ref=f11e17]: Complete
+    - generic [ref=f11e18]:
+      - generic [ref=f11e19]: "2"
+      - generic [ref=f11e20]: Figures
+  - tablist "Dashboard sections" [ref=f11e21]:
+    - tab "Runs & Studies" [selected] [ref=f11e22] [cursor=pointer]
+    - tab "Figure Archive" [ref=f11e23] [cursor=pointer]
+    - tab "Charts" [ref=f11e24] [cursor=pointer]
+    - tab "Tasks & Numerical Notes" [ref=f11e25] [cursor=pointer]
+  - tabpanel "Runs & Studies" [ref=f11e26]:
+    - heading "Run and Study Records" [level=2] [ref=f11e27]
+    - generic [ref=f11e28]:
+      - generic [ref=f11e29]:
+        - generic [ref=f11e30]: "Status:"
+        - combobox "Status:" [ref=f11e31]:
+          - option "All" [selected]
+          - option "complete"
+      - generic [ref=f11e32]:
+        - generic [ref=f11e33]: "Search:"
+        - textbox "Search:" [ref=f11e34]:
+          - /placeholder: Run ID, description...
+      - button "Reset" [ref=f11e36] [cursor=pointer]
+    - table [ref=f11e38]:
+      - rowgroup [ref=f11e39]:
+        - row [ref=f11e40]:
+          - columnheader [ref=f11e41] [cursor=pointer]:
+            - button "Trajectory summary" [ref=f11e42]: Trajectory summary ↕
+          - columnheader [ref=f11e43] [cursor=pointer]:
+            - button "Available channels L" [ref=f11e44]: Available channels L ↕
+          - columnheader [ref=f11e45] [cursor=pointer]:
+            - button "Fixed area K" [ref=f11e46]: Fixed area K ↕
+          - columnheader [ref=f11e47] [cursor=pointer]:
+            - button "Hopping graph" [ref=f11e48]: Hopping graph ↕
+          - columnheader [ref=f11e49] [cursor=pointer]:
+            - button "Casimir coupling α" [ref=f11e50]: Casimir coupling α ↕
+          - columnheader [ref=f11e51] [cursor=pointer]:
+            - button "Input preparation" [ref=f11e52]: Input preparation ↕
+          - columnheader [ref=f11e53] [cursor=pointer]:
+            - button "Sharp-state preparation probability" [ref=f11e54]: Sharp-state preparation probability ↕
+          - columnheader [ref=f11e55] [cursor=pointer]:
+            - button "Late mean active channels" [ref=f11e56]: Late mean active channels ↕
+          - columnheader [ref=f11e57] [cursor=pointer]:
+            - button "Late mean area in initially empty receivers / K" [ref=f11e58]: Late mean area in initially empty receivers / K ↕
+          - columnheader [ref=f11e59] [cursor=pointer]:
+            - button "Late receiver Casimir fraction" [ref=f11e60]: Late receiver Casimir fraction ↕
+          - columnheader [ref=f11e61] [cursor=pointer]:
+            - button "Late probability of ≥5 active channels" [ref=f11e62]: Late probability of ≥5 active channels ↕
+          - columnheader [ref=f11e63] [cursor=pointer]:
+            - button "Late probability all channels are active" [ref=f11e64]: Late probability all channels are active ↕
+      - rowgroup [ref=f11e65]:
+        - row [ref=f11e66]:
+          - cell [ref=f11e67]:
+            - button "Details for t11-geometric-redistribution:L4_ring_a0_regular_sharp:1" [ref=f11e68] [cursor=pointer]: t11-geometric-redistribution:L4_ring_a0_regular_sharp:1
+          - cell "4" [ref=f11e69]
+          - cell "4" [ref=f11e70]
+          - cell "ring" [ref=f11e71]
+          - cell "0" [ref=f11e72]
+          - cell "regular_sharp" [ref=f11e73]
+          - cell "0.069444444" [ref=f11e74]
+          - cell "3.6468032" [ref=f11e75]
+          - cell "0" [ref=f11e76]
+          - cell "0" [ref=f11e77]
+          - cell "0" [ref=f11e78]
+          - cell "0.70936019" [ref=f11e79]
+        - row [ref=f11e80]:
+          - cell [ref=f11e81]:
+            - button "Details for t11-geometric-redistribution:L4_ring_a0_deformed_sharp:2" [ref=f11e82] [cursor=pointer]: t11-geometric-redistribution:L4_ring_a0_deformed_sharp:2
+          - cell "4" [ref=f11e83]
+          - cell "4" [ref=f11e84]
+          - cell "ring" [ref=f11e85]
+          - cell "0" [ref=f11e86]
+          - cell "deformed_sharp" [ref=f11e87]
+          - cell "0.080837674" [ref=f11e88]
+          - cell "3.7018885" [ref=f11e89]
+          - cell "0" [ref=f11e90]
+          - cell "0" [ref=f11e91]
+          - cell "0" [ref=f11e92]
+          - cell "0.77754461" [ref=f11e93]
+        - row [ref=f11e94]:
+          - cell [ref=f11e95]:
+            - button "Details for t11-geometric-redistribution:L4_ring_a0_regular_FL:3" [ref=f11e96] [cursor=pointer]: t11-geometric-redistribution:L4_ring_a0_regular_FL:3
+          - cell "4" [ref=f11e97]
+          - cell "4" [ref=f11e98]
+          - cell "ring" [ref=f11e99]
+          - cell "0" [ref=f11e100]
+          - cell "regular_FL" [ref=f11e101]
+          - cell "1" [ref=f11e102]
+          - cell "3.6210686" [ref=f11e103]
+          - cell "0" [ref=f11e104]
+          - cell "0" [ref=f11e105]
+          - cell "0" [ref=f11e106]
+          - cell "0.64461229" [ref=f11e107]
+        - row [ref=f11e108]:
+          - cell [ref=f11e109]:
+            - button "Details for t11-geometric-redistribution:L4_ring_a1_regular_sharp:4" [ref=f11e110] [cursor=pointer]: t11-geometric-redistribution:L4_ring_a1_regular_sharp:4
+          - cell "4" [ref=f11e111]
+          - cell "4" [ref=f11e112]
+          - cell "ring" [ref=f11e113]
+          - cell "1" [ref=f11e114]
+          - cell "regular_sharp" [ref=f11e115]
+          - cell "0.069444444" [ref=f11e116]
+          - cell "3.6541407" [ref=f11e117]
+          - cell "0" [ref=f11e118]
+          - cell "0" [ref=f11e119]
+          - cell "0" [ref=f11e120]
+          - cell "0.70372178" [ref=f11e121]
+        - row [ref=f11e122]:
+          - cell [ref=f11e123]:
+            - button "Details for t11-geometric-redistribution:L4_ring_a1_deformed_sharp:5" [ref=f11e124] [cursor=pointer]: t11-geometric-redistribution:L4_ring_a1_deformed_sharp:5
+          - cell "4" [ref=f11e125]
+          - cell "4" [ref=f11e126]
+          - cell "ring" [ref=f11e127]
+          - cell "1" [ref=f11e128]
+          - cell "deformed_sharp" [ref=f11e129]
+          - cell "0.080837674" [ref=f11e130]
+          - cell "3.6712874" [ref=f11e131]
+          - cell "0" [ref=f11e132]
+          - cell "0" [ref=f11e133]
+          - cell "0" [ref=f11e134]
+          - cell "0.71194934" [ref=f11e135]
+        - row [ref=f11e136]:
+          - cell [ref=f11e137]:
+            - button "Details for t11-geometric-redistribution:L4_ring_a1_regular_FL:6" [ref=f11e138] [cursor=pointer]: t11-geometric-redistribution:L4_ring_a1_regular_FL:6
+          - cell "4" [ref=f11e139]
+          - cell "4" [ref=f11e140]
+          - cell "ring" [ref=f11e141]
+          - cell "1" [ref=f11e142]
+          - cell "regular_FL" [ref=f11e143]
+          - cell "1" [ref=f11e144]
+          - cell "3.6919728" [ref=f11e145]
+          - cell "0" [ref=f11e146]
+          - cell "0" [ref=f11e147]
+          - cell "0" [ref=f11e148]
+          - cell "0.69906756" [ref=f11e149]
+        - row [ref=f11e150]:
+          - cell [ref=f11e151]:
+            - button "Details for t11-geometric-redistribution:L4_ring_a5_regular_sharp:7" [ref=f11e152] [cursor=pointer]: t11-geometric-redistribution:L4_ring_a5_regular_sharp:7
+          - cell "4" [ref=f11e153]
+          - cell "4" [ref=f11e154]
+          - cell "ring" [ref=f11e155]
+          - cell "5" [ref=f11e156]
+          - cell "regular_sharp" [ref=f11e157]
+          - cell "0.069444444" [ref=f11e158]
+          - cell "3.9814283" [ref=f11e159]
+          - cell "0" [ref=f11e160]
+          - cell "0" [ref=f11e161]
+          - cell "0" [ref=f11e162]
+          - cell "0.98146083" [ref=f11e163]
+        - row [ref=f11e164]:
+          - cell [ref=f11e165]:
+            - button "Details for t11-geometric-redistribution:L4_ring_a5_deformed_sharp:8" [ref=f11e166] [cursor=pointer]: t11-geometric-redistribution:L4_ring_a5_deformed_sharp:8
+          - cell "4" [ref=f11e167]
+          - cell "4" [ref=f11e168]
+          - cell "ring" [ref=f11e169]
+          - cell "5" [ref=f11e170]
+          - cell "deformed_sharp" [ref=f11e171]
+          - cell "0.080837674" [ref=f11e172]
+          - cell "3.9873397" [ref=f11e173]
+          - cell "0" [ref=f11e174]
+          - cell "0" [ref=f11e175]
+          - cell "0" [ref=f11e176]
+          - cell "0.98737346" [ref=f11e177]
+        - row [ref=f11e178]:
+          - cell [ref=f11e179]:
+            - button "Details for t11-geometric-redistribution:L4_ring_a5_regular_FL:9" [ref=f11e180] [cursor=pointer]: t11-geometric-redistribution:L4_ring_a5_regular_FL:9
+          - cell "4" [ref=f11e181]
+          - cell "4" [ref=f11e182]
+          - cell "ring" [ref=f11e183]
+          - cell "5" [ref=f11e184]
+          - cell "regular_FL" [ref=f11e185]
+          - cell "1" [ref=f11e186]
+          - cell "3.8075696" [ref=f11e187]
+          - cell "0" [ref=f11e188]
+          - cell "0" [ref=f11e189]
+          - cell "0" [ref=f11e190]
+          - cell "0.81095079" [ref=f11e191]
+        - row [ref=f11e192]:
+          - cell [ref=f11e193]:
+            - button "Details for t11-geometric-redistribution:L4_complete_a0_regular_sharp:10" [ref=f11e194] [cursor=pointer]: t11-geometric-redistribution:L4_complete_a0_regular_sharp:10
+          - cell "4" [ref=f11e195]
+          - cell "4" [ref=f11e196]
+          - cell "complete" [ref=f11e197]
+          - cell "0" [ref=f11e198]
+          - cell "regular_sharp" [ref=f11e199]
+          - cell "0.069444444" [ref=f11e200]
+          - cell "3.5899943" [ref=f11e201]
+          - cell "0" [ref=f11e202]
+          - cell "0" [ref=f11e203]
+          - cell "0" [ref=f11e204]
+          - cell "0.6495411" [ref=f11e205]
+        - row [ref=f11e206]:
+          - cell [ref=f11e207]:
+            - button "Details for t11-geometric-redistribution:L4_complete_a0_deformed_sharp:11" [ref=f11e208] [cursor=pointer]: t11-geometric-redistribution:L4_complete_a0_deformed_sharp:11
+          - cell "4" [ref=f11e209]
+          - cell "4" [ref=f11e210]
+          - cell "complete" [ref=f11e211]
+          - cell "0" [ref=f11e212]
+          - cell "deformed_sharp" [ref=f11e213]
+          - cell "0.080837674" [ref=f11e214]
+          - cell "3.5831847" [ref=f11e215]
+          - cell "0" [ref=f11e216]
+          - cell "0" [ref=f11e217]
+          - cell "0" [ref=f11e218]
+          - cell "0.65520044" [ref=f11e219]
+        - row [ref=f11e220]:
+          - cell [ref=f11e221]:
+            - button "Details for t11-geometric-redistribution:L4_complete_a0_regular_FL:12" [ref=f11e222] [cursor=pointer]: t11-geometric-redistribution:L4_complete_a0_regular_FL:12
+          - cell "4" [ref=f11e223]
+          - cell "4" [ref=f11e224]
+          - cell "complete" [ref=f11e225]
+          - cell "0" [ref=f11e226]
+          - cell "regular_FL" [ref=f11e227]
+          - cell "1" [ref=f11e228]
+          - cell "3.5655426" [ref=f11e229]
+          - cell "0" [ref=f11e230]
+          - cell "0" [ref=f11e231]
+          - cell "0" [ref=f11e232]
+          - cell "0.6142935" [ref=f11e233]
+        - row [ref=f11e234]:
+          - cell [ref=f11e235]:
+            - button "Details for t11-geometric-redistribution:L4_complete_a1_regular_sharp:13" [ref=f11e236] [cursor=pointer]: t11-geometric-redistribution:L4_complete_a1_regular_sharp:13
+          - cell "4" [ref=f11e237]
+          - cell "4" [ref=f11e238]
+          - cell "complete" [ref=f11e239]
+          - cell "1" [ref=f11e240]
+          - cell "regular_sharp" [ref=f11e241]
+          - cell "0.069444444" [ref=f11e242]
+          - cell "3.7031899" [ref=f11e243]
+          - cell "0" [ref=f11e244]
+          - cell "0" [ref=f11e245]
+          - cell "0" [ref=f11e246]
+          - cell "0.71593942" [ref=f11e247]
+        - row [ref=f11e248]:
+          - cell [ref=f11e249]:
+            - button "Details for t11-geometric-redistribution:L4_complete_a1_deformed_sharp:14" [ref=f11e250] [cursor=pointer]: t11-geometric-redistribution:L4_complete_a1_deformed_sharp:14
+          - cell "4" [ref=f11e251]
+          - cell "4" [ref=f11e252]
+          - cell "complete" [ref=f11e253]
+          - cell "1" [ref=f11e254]
+          - cell "deformed_sharp" [ref=f11e255]
+          - cell "0.080837674" [ref=f11e256]
+          - cell "3.6955346" [ref=f11e257]
+          - cell "0" [ref=f11e258]
+          - cell "0" [ref=f11e259]
+          - cell "0" [ref=f11e260]
+          - cell "0.71364031" [ref=f11e261]
+        - row [ref=f11e262]:
+          - cell [ref=f11e263]:
+            - button "Details for t11-geometric-redistribution:L4_complete_a1_regular_FL:15" [ref=f11e264] [cursor=pointer]: t11-geometric-redistribution:L4_complete_a1_regular_FL:15
+          - cell "4" [ref=f11e265]
+          - cell "4" [ref=f11e266]
+          - cell "complete" [ref=f11e267]
+          - cell "1" [ref=f11e268]
+          - cell "regular_FL" [ref=f11e269]
+          - cell "1" [ref=f11e270]
+          - cell "3.7962809" [ref=f11e271]
+          - cell "0" [ref=f11e272]
+          - cell "0" [ref=f11e273]
+          - cell "0" [ref=f11e274]
+          - cell "0.80015232" [ref=f11e275]
+        - row [ref=f11e276]:
+          - cell [ref=f11e277]:
+            - button "Details for t11-geometric-redistribution:L4_complete_a5_regular_sharp:16" [ref=f11e278] [cursor=pointer]: t11-geometric-redistribution:L4_complete_a5_regular_sharp:16
+          - cell "4" [ref=f11e279]
+          - cell "4" [ref=f11e280]
+          - cell "complete" [ref=f11e281]
+          - cell "5" [ref=f11e282]
+          - cell "regular_sharp" [ref=f11e283]
+          - cell "0.069444444" [ref=f11e284]
+          - cell "3.9824456" [ref=f11e285]
+          - cell "0" [ref=f11e286]
+          - cell "0" [ref=f11e287]
+          - cell "0" [ref=f11e288]
+          - cell "0.98244905" [ref=f11e289]
+        - row [ref=f11e290]:
+          - cell [ref=f11e291]:
+            - button "Details for t11-geometric-redistribution:L4_complete_a5_deformed_sharp:17" [ref=f11e292] [cursor=pointer]: t11-geometric-redistribution:L4_complete_a5_deformed_sharp:17
+          - cell "4" [ref=f11e293]
+          - cell "4" [ref=f11e294]
+          - cell "complete" [ref=f11e295]
+          - cell "5" [ref=f11e296]
+          - cell "deformed_sharp" [ref=f11e297]
+          - cell "0.080837674" [ref=f11e298]
+          - cell "3.9864362" [ref=f11e299]
+          - cell "0" [ref=f11e300]
+          - cell "0" [ref=f11e301]
+          - cell "0" [ref=f11e302]
+          - cell "0.98643944" [ref=f11e303]
+        - row [ref=f11e304]:
+          - cell [ref=f11e305]:
+            - button "Details for t11-geometric-redistribution:L4_complete_a5_regular_FL:18" [ref=f11e306] [cursor=pointer]: t11-geometric-redistribution:L4_complete_a5_regular_FL:18
+          - cell "4" [ref=f11e307]
+          - cell "4" [ref=f11e308]
+          - cell "complete" [ref=f11e309]
+          - cell "5" [ref=f11e310]
+          - cell "regular_FL" [ref=f11e311]
+          - cell "1" [ref=f11e312]
+          - cell "3.8429829" [ref=f11e313]
+          - cell "0" [ref=f11e314]
+          - cell "0" [ref=f11e315]
+          - cell "0" [ref=f11e316]
+          - cell "0.84583875" [ref=f11e317]
+        - row [ref=f11e318]:
+          - cell [ref=f11e319]:
+            - button "Details for t11-geometric-redistribution:L6_ring_a0_regular_sharp:19" [ref=f11e320] [cursor=pointer]: t11-geometric-redistribution:L6_ring_a0_regular_sharp:19
+          - cell "6" [ref=f11e321]
+          - cell "4" [ref=f11e322]
+          - cell "ring" [ref=f11e323]
+          - cell "0" [ref=f11e324]
+          - cell "regular_sharp" [ref=f11e325]
+          - cell "0.069444444" [ref=f11e326]
+          - cell "4.3419557" [ref=f11e327]
+          - cell "0.28763791" [ref=f11e328]
+          - cell "0.30388949" [ref=f11e329]
+          - cell "0.39466382" [ref=f11e330]
+          - cell "0.072464213" [ref=f11e331]
+        - row [ref=f11e332]:
+          - cell [ref=f11e333]:
+            - button "Details for t11-geometric-redistribution:L6_ring_a0_deformed_sharp:20" [ref=f11e334] [cursor=pointer]: t11-geometric-redistribution:L6_ring_a0_deformed_sharp:20
+          - cell "6" [ref=f11e335]
+          - cell "4" [ref=f11e336]
+          - cell "ring" [ref=f11e337]
+          - cell "0" [ref=f11e338]
+          - cell "deformed_sharp" [ref=f11e339]
+          - cell "0.080837674" [ref=f11e340]
+          - cell "4.2996976" [ref=f11e341]
+          - cell "0.28763791" [ref=f11e342]
+          - cell "0.30749818" [ref=f11e343]
+          - cell "0.37466691" [ref=f11e344]
+          - cell "0.071113516" [ref=f11e345]
+        - row [ref=f11e346]:
+          - cell [ref=f11e347]:
+            - button "Details for t11-geometric-redistribution:L6_ring_a0_regular_FL:21" [ref=f11e348] [cursor=pointer]: t11-geometric-redistribution:L6_ring_a0_regular_FL:21
+          - cell "6" [ref=f11e349]
+          - cell "4" [ref=f11e350]
+          - cell "ring" [ref=f11e351]
+          - cell "0" [ref=f11e352]
+          - cell "regular_FL" [ref=f11e353]
+          - cell "1" [ref=f11e354]
+          - cell "4.2719534" [ref=f11e355]
+          - cell "0.31710217" [ref=f11e356]
+          - cell "0.30728731" [ref=f11e357]
+          - cell "0.37194847" [ref=f11e358]
+          - cell "0.054447301" [ref=f11e359]
+        - row [ref=f11e360]:
+          - cell [ref=f11e361]:
+            - button "Details for t11-geometric-redistribution:L6_ring_a1_regular_sharp:22" [ref=f11e362] [cursor=pointer]: t11-geometric-redistribution:L6_ring_a1_regular_sharp:22
+          - cell "6" [ref=f11e363]
+          - cell "4" [ref=f11e364]
+          - cell "ring" [ref=f11e365]
+          - cell "1" [ref=f11e366]
+          - cell "regular_sharp" [ref=f11e367]
+          - cell "0.069444444" [ref=f11e368]
+          - cell "4.4070124" [ref=f11e369]
+          - cell "0.32977419" [ref=f11e370]
+          - cell "0.34960244" [ref=f11e371]
+          - cell "0.44627913" [ref=f11e372]
+          - cell "0.082138034" [ref=f11e373]
+        - row [ref=f11e374]:
+          - cell [ref=f11e375]:
+            - button "Details for t11-geometric-redistribution:L6_ring_a1_deformed_sharp:23" [ref=f11e376] [cursor=pointer]: t11-geometric-redistribution:L6_ring_a1_deformed_sharp:23
+          - cell "6" [ref=f11e377]
+          - cell "4" [ref=f11e378]
+          - cell "ring" [ref=f11e379]
+          - cell "1" [ref=f11e380]
+          - cell "deformed_sharp" [ref=f11e381]
+          - cell "0.080837674" [ref=f11e382]
+          - cell "4.4268543" [ref=f11e383]
+          - cell "0.33271446" [ref=f11e384]
+          - cell "0.35147022" [ref=f11e385]
+          - cell "0.45472055" [ref=f11e386]
+          - cell "0.081785822" [ref=f11e387]
+        - row [ref=f11e388]:
+          - cell [ref=f11e389]:
+            - button "Details for t11-geometric-redistribution:L6_ring_a1_regular_FL:24" [ref=f11e390] [cursor=pointer]: t11-geometric-redistribution:L6_ring_a1_regular_FL:24
+          - cell "6" [ref=f11e391]
+          - cell "4" [ref=f11e392]
+          - cell "ring" [ref=f11e393]
+          - cell "1" [ref=f11e394]
+          - cell "regular_FL" [ref=f11e395]
+          - cell "1" [ref=f11e396]
+          - cell "4.3720405" [ref=f11e397]
+          - cell "0.32733417" [ref=f11e398]
+          - cell "0.30911773" [ref=f11e399]
+          - cell "0.42877272" [ref=f11e400]
+          - cell "0.059442525" [ref=f11e401]
+        - row [ref=f11e402]:
+          - cell [ref=f11e403]:
+            - button "Details for t11-geometric-redistribution:L6_ring_a5_regular_sharp:25" [ref=f11e404] [cursor=pointer]: t11-geometric-redistribution:L6_ring_a5_regular_sharp:25
+          - cell "6" [ref=f11e405]
+          - cell "4" [ref=f11e406]
+          - cell "ring" [ref=f11e407]
+          - cell "5" [ref=f11e408]
+          - cell "regular_sharp" [ref=f11e409]
+          - cell "0.069444444" [ref=f11e410]
+          - cell "4.3484537" [ref=f11e411]
+          - cell "0.24524558" [ref=f11e412]
+          - cell "0.24504647" [ref=f11e413]
+          - cell "0.33172916" [ref=f11e414]
+          - cell "0.025877884" [ref=f11e415]
+        - row [ref=f11e416]:
+          - cell [ref=f11e417]:
+            - button "Details for t11-geometric-redistribution:L6_ring_a5_deformed_sharp:26" [ref=f11e418] [cursor=pointer]: t11-geometric-redistribution:L6_ring_a5_deformed_sharp:26
+          - cell "6" [ref=f11e419]
+          - cell "4" [ref=f11e420]
+          - cell "ring" [ref=f11e421]
+          - cell "5" [ref=f11e422]
+          - cell "deformed_sharp" [ref=f11e423]
+          - cell "0.080837674" [ref=f11e424]
+          - cell "4.3384954" [ref=f11e425]
+          - cell "0.24529429" [ref=f11e426]
+          - cell "0.24430243" [ref=f11e427]
+          - cell "0.31834686" [ref=f11e428]
+          - cell "0.027094739" [ref=f11e429]
+        - row [ref=f11e430]:
+          - cell [ref=f11e431]:
+            - button "Details for t11-geometric-redistribution:L6_ring_a5_regular_FL:27" [ref=f11e432] [cursor=pointer]: t11-geometric-redistribution:L6_ring_a5_regular_FL:27
+          - cell "6" [ref=f11e433]
+          - cell "4" [ref=f11e434]
+          - cell "ring" [ref=f11e435]
+          - cell "5" [ref=f11e436]
+          - cell "regular_FL" [ref=f11e437]
+          - cell "1" [ref=f11e438]
+          - cell "3.9699084" [ref=f11e439]
+          - cell "0.22744591" [ref=f11e440]
+          - cell "0.20583536" [ref=f11e441]
+          - cell "0.15146799" [ref=f11e442]
+          - cell "0.0066292877" [ref=f11e443]
+        - row [ref=f11e444]:
+          - cell [ref=f11e445]:
+            - button "Details for t11-geometric-redistribution:L6_complete_a0_regular_sharp:28" [ref=f11e446] [cursor=pointer]: t11-geometric-redistribution:L6_complete_a0_regular_sharp:28
+          - cell "6" [ref=f11e447]
+          - cell "4" [ref=f11e448]
+          - cell "complete" [ref=f11e449]
+          - cell "0" [ref=f11e450]
+          - cell "regular_sharp" [ref=f11e451]
+          - cell "0.069444444" [ref=f11e452]
+          - cell "4.2806404" [ref=f11e453]
+          - cell "0.11306344" [ref=f11e454]
+          - cell "0.10377084" [ref=f11e455]
+          - cell "0.31652046" [ref=f11e456]
+          - cell "0.040918531" [ref=f11e457]
+        - row [ref=f11e458]:
+          - cell [ref=f11e459]:
+            - button "Details for t11-geometric-redistribution:L6_complete_a0_deformed_sharp:29" [ref=f11e460] [cursor=pointer]: t11-geometric-redistribution:L6_complete_a0_deformed_sharp:29
+          - cell "6" [ref=f11e461]
+          - cell "4" [ref=f11e462]
+          - cell "complete" [ref=f11e463]
+          - cell "0" [ref=f11e464]
+          - cell "deformed_sharp" [ref=f11e465]
+          - cell "0.080837674" [ref=f11e466]
+          - cell "4.2827757" [ref=f11e467]
+          - cell "0.11306344" [ref=f11e468]
+          - cell "0.10377084" [ref=f11e469]
+          - cell "0.31318527" [ref=f11e470]
+          - cell "0.05115451" [ref=f11e471]
+        - row [ref=f11e472]:
+          - cell [ref=f11e473]:
+            - button "Details for t11-geometric-redistribution:L6_complete_a0_regular_FL:30" [ref=f11e474] [cursor=pointer]: t11-geometric-redistribution:L6_complete_a0_regular_FL:30
+          - cell "6" [ref=f11e475]
+          - cell "4" [ref=f11e476]
+          - cell "complete" [ref=f11e477]
+          - cell "0" [ref=f11e478]
+          - cell "regular_FL" [ref=f11e479]
+          - cell "1" [ref=f11e480]
+          - cell "4.3187524" [ref=f11e481]
+          - cell "0.20537935" [ref=f11e482]
+          - cell "0.17865644" [ref=f11e483]
+          - cell "0.3853742" [ref=f11e484]
+          - cell "0.060246569" [ref=f11e485]
+        - row [ref=f11e486]:
+          - cell [ref=f11e487]:
+            - button "Details for t11-geometric-redistribution:L6_complete_a1_regular_sharp:31" [ref=f11e488] [cursor=pointer]: t11-geometric-redistribution:L6_complete_a1_regular_sharp:31
+          - cell "6" [ref=f11e489]
+          - cell "4" [ref=f11e490]
+          - cell "complete" [ref=f11e491]
+          - cell "1" [ref=f11e492]
+          - cell "regular_sharp" [ref=f11e493]
+          - cell "0.069444444" [ref=f11e494]
+          - cell "4.5187912" [ref=f11e495]
+          - cell "0.30054844" [ref=f11e496]
+          - cell "0.30387337" [ref=f11e497]
+          - cell "0.48417006" [ref=f11e498]
+          - cell "0.074966063" [ref=f11e499]
+        - row [ref=f11e500]:
+          - cell [ref=f11e501]:
+            - button "Details for t11-geometric-redistribution:L6_complete_a1_deformed_sharp:32" [ref=f11e502] [cursor=pointer]: t11-geometric-redistribution:L6_complete_a1_deformed_sharp:32
+          - cell "6" [ref=f11e503]
+          - cell "4" [ref=f11e504]
+          - cell "complete" [ref=f11e505]
+          - cell "1" [ref=f11e506]
+          - cell "deformed_sharp" [ref=f11e507]
+          - cell "0.080837674" [ref=f11e508]
+          - cell "4.5286997" [ref=f11e509]
+          - cell "0.30247099" [ref=f11e510]
+          - cell "0.30418522" [ref=f11e511]
+          - cell "0.48201335" [ref=f11e512]
+          - cell "0.10115989" [ref=f11e513]
+        - row [ref=f11e514]:
+          - cell [ref=f11e515]:
+            - button "Details for t11-geometric-redistribution:L6_complete_a1_regular_FL:33" [ref=f11e516] [cursor=pointer]: t11-geometric-redistribution:L6_complete_a1_regular_FL:33
+          - cell "6" [ref=f11e517]
+          - cell "4" [ref=f11e518]
+          - cell "complete" [ref=f11e519]
+          - cell "1" [ref=f11e520]
+          - cell "regular_FL" [ref=f11e521]
+          - cell "1" [ref=f11e522]
+          - cell "4.4658358" [ref=f11e523]
+          - cell "0.26229868" [ref=f11e524]
+          - cell "0.22889897" [ref=f11e525]
+          - cell "0.46966683" [ref=f11e526]
+          - cell "0.074669219" [ref=f11e527]
+        - row [ref=f11e528]:
+          - cell [ref=f11e529]:
+            - button "Details for t11-geometric-redistribution:L6_complete_a5_regular_sharp:34" [ref=f11e530] [cursor=pointer]: t11-geometric-redistribution:L6_complete_a5_regular_sharp:34
+          - cell "6" [ref=f11e531]
+          - cell "4" [ref=f11e532]
+          - cell "complete" [ref=f11e533]
+          - cell "5" [ref=f11e534]
+          - cell "regular_sharp" [ref=f11e535]
+          - cell "0.069444444" [ref=f11e536]
+          - cell "4.3265328" [ref=f11e537]
+          - cell "0.21540105" [ref=f11e538]
+          - cell "0.2122165" [ref=f11e539]
+          - cell "0.3109333" [ref=f11e540]
+          - cell "0.016984599" [ref=f11e541]
+        - row [ref=f11e542]:
+          - cell [ref=f11e543]:
+            - button "Details for t11-geometric-redistribution:L6_complete_a5_deformed_sharp:35" [ref=f11e544] [cursor=pointer]: t11-geometric-redistribution:L6_complete_a5_deformed_sharp:35
+          - cell "6" [ref=f11e545]
+          - cell "4" [ref=f11e546]
+          - cell "complete" [ref=f11e547]
+          - cell "5" [ref=f11e548]
+          - cell "deformed_sharp" [ref=f11e549]
+          - cell "0.080837674" [ref=f11e550]
+          - cell "4.3755296" [ref=f11e551]
+          - cell "0.24485672" [ref=f11e552]
+          - cell "0.24734975" [ref=f11e553]
+          - cell "0.35655017" [ref=f11e554]
+          - cell "0.020513528" [ref=f11e555]
+        - row [ref=f11e556]:
+          - cell [ref=f11e557]:
+            - button "Details for t11-geometric-redistribution:L6_complete_a5_regular_FL:36" [ref=f11e558] [cursor=pointer]: t11-geometric-redistribution:L6_complete_a5_regular_FL:36
+          - cell "6" [ref=f11e559]
+          - cell "4" [ref=f11e560]
+          - cell "complete" [ref=f11e561]
+          - cell "5" [ref=f11e562]
+          - cell "regular_FL" [ref=f11e563]
+          - cell "1" [ref=f11e564]
+          - cell "4.0104203" [ref=f11e565]
+          - cell "0.19765786" [ref=f11e566]
+          - cell "0.17170459" [ref=f11e567]
+          - cell "0.18015162" [ref=f11e568]
+          - cell "0.0092589684" [ref=f11e569]
+        - row [ref=f11e570]:
+          - cell [ref=f11e571]:
+            - button "Details for t11-geometric-redistribution:L8_ring_a0_regular_sharp:37" [ref=f11e572] [cursor=pointer]: t11-geometric-redistribution:L8_ring_a0_regular_sharp:37
+          - cell "8" [ref=f11e573]
+          - cell "4" [ref=f11e574]
+          - cell "ring" [ref=f11e575]
+          - cell "0" [ref=f11e576]
+          - cell "regular_sharp" [ref=f11e577]
+          - cell "0.069444444" [ref=f11e578]
+          - cell "4.7023336" [ref=f11e579]
+          - cell "0.53040754" [ref=f11e580]
+          - cell "0.54426439" [ref=f11e581]
+          - cell "0.56846977" [ref=f11e582]
+          - cell "0.0008984121" [ref=f11e583]
+        - row [ref=f11e584]:
+          - cell [ref=f11e585]:
+            - button "Details for t11-geometric-redistribution:L8_ring_a0_deformed_sharp:38" [ref=f11e586] [cursor=pointer]: t11-geometric-redistribution:L8_ring_a0_deformed_sharp:38
+          - cell "8" [ref=f11e587]
+          - cell "4" [ref=f11e588]
+          - cell "ring" [ref=f11e589]
+          - cell "0" [ref=f11e590]
+          - cell "deformed_sharp" [ref=f11e591]
+          - cell "0.080837674" [ref=f11e592]
+          - cell "4.7360687" [ref=f11e593]
+          - cell "0.53040754" [ref=f11e594]
+          - cell "0.54110591" [ref=f11e595]
+          - cell "0.58138474" [ref=f11e596]
+          - cell "0.0012764698" [ref=f11e597]
+        - row [ref=f11e598]:
+          - cell [ref=f11e599]:
+            - button "Details for t11-geometric-redistribution:L8_ring_a0_regular_FL:39" [ref=f11e600] [cursor=pointer]: t11-geometric-redistribution:L8_ring_a0_regular_FL:39
+          - cell "8" [ref=f11e601]
+          - cell "4" [ref=f11e602]
+          - cell "ring" [ref=f11e603]
+          - cell "0" [ref=f11e604]
+          - cell "regular_FL" [ref=f11e605]
+          - cell "1" [ref=f11e606]
+          - cell "4.7260202" [ref=f11e607]
+          - cell "0.55244855" [ref=f11e608]
+          - cell "0.51129489" [ref=f11e609]
+          - cell "0.58550408" [ref=f11e610]
+          - cell "0.00065874773" [ref=f11e611]
+        - row [ref=f11e612]:
+          - cell [ref=f11e613]:
+            - button "Details for t11-geometric-redistribution:L8_ring_a1_regular_sharp:40" [ref=f11e614] [cursor=pointer]: t11-geometric-redistribution:L8_ring_a1_regular_sharp:40
+          - cell "8" [ref=f11e615]
+          - cell "4" [ref=f11e616]
+          - cell "ring" [ref=f11e617]
+          - cell "1" [ref=f11e618]
+          - cell "regular_sharp" [ref=f11e619]
+          - cell "0.069444444" [ref=f11e620]
+          - cell "4.9264752" [ref=f11e621]
+          - cell "0.50599103" [ref=f11e622]
+          - cell "0.50767413" [ref=f11e623]
+          - cell "0.68108769" [ref=f11e624]
+          - cell "0.0013734476" [ref=f11e625]
+        - row [ref=f11e626]:
+          - cell [ref=f11e627]:
+            - button "Details for t11-geometric-redistribution:L8_ring_a1_deformed_sharp:41" [ref=f11e628] [cursor=pointer]: t11-geometric-redistribution:L8_ring_a1_deformed_sharp:41
+          - cell "8" [ref=f11e629]
+          - cell "4" [ref=f11e630]
+          - cell "ring" [ref=f11e631]
+          - cell "1" [ref=f11e632]
+          - cell "deformed_sharp" [ref=f11e633]
+          - cell "0.080837674" [ref=f11e634]
+          - cell "4.9308015" [ref=f11e635]
+          - cell "0.50619551" [ref=f11e636]
+          - cell "0.50731207" [ref=f11e637]
+          - cell "0.6838863" [ref=f11e638]
+          - cell "0.0013088595" [ref=f11e639]
+        - row [ref=f11e640]:
+          - cell [ref=f11e641]:
+            - button "Details for t11-geometric-redistribution:L8_ring_a1_regular_FL:42" [ref=f11e642] [cursor=pointer]: t11-geometric-redistribution:L8_ring_a1_regular_FL:42
+          - cell "8" [ref=f11e643]
+          - cell "4" [ref=f11e644]
+          - cell "ring" [ref=f11e645]
+          - cell "1" [ref=f11e646]
+          - cell "regular_FL" [ref=f11e647]
+          - cell "1" [ref=f11e648]
+          - cell "4.9094829" [ref=f11e649]
+          - cell "0.50393394" [ref=f11e650]
+          - cell "0.44982441" [ref=f11e651]
+          - cell "0.68210111" [ref=f11e652]
+          - cell "0.000832065" [ref=f11e653]
+        - row [ref=f11e654]:
+          - cell [ref=f11e655]:
+            - button "Details for t11-geometric-redistribution:L8_ring_a5_regular_sharp:43" [ref=f11e656] [cursor=pointer]: t11-geometric-redistribution:L8_ring_a5_regular_sharp:43
+          - cell "8" [ref=f11e657]
+          - cell "4" [ref=f11e658]
+          - cell "ring" [ref=f11e659]
+          - cell "5" [ref=f11e660]
+          - cell "regular_sharp" [ref=f11e661]
+          - cell "0.069444444" [ref=f11e662]
+          - cell "4.3386979" [ref=f11e663]
+          - cell "0.25277129" [ref=f11e664]
+          - cell "0.24397583" [ref=f11e665]
+          - cell "0.30863672" [ref=f11e666]
+          - cell "0.000014934905" [ref=f11e667]
+        - row [ref=f11e668]:
+          - cell [ref=f11e669]:
+            - button "Details for t11-geometric-redistribution:L8_ring_a5_deformed_sharp:44" [ref=f11e670] [cursor=pointer]: t11-geometric-redistribution:L8_ring_a5_deformed_sharp:44
+          - cell "8" [ref=f11e671]
+          - cell "4" [ref=f11e672]
+          - cell "ring" [ref=f11e673]
+          - cell "5" [ref=f11e674]
+          - cell "deformed_sharp" [ref=f11e675]
+          - cell "0.080837674" [ref=f11e676]
+          - cell "4.3433042" [ref=f11e677]
+          - cell "0.27695466" [ref=f11e678]
+          - cell "0.26804786" [ref=f11e679]
+          - cell "0.31136294" [ref=f11e680]
+          - cell "0.000013350218" [ref=f11e681]
+        - row [ref=f11e682]:
+          - cell [ref=f11e683]:
+            - button "Details for t11-geometric-redistribution:L8_ring_a5_regular_FL:45" [ref=f11e684] [cursor=pointer]: t11-geometric-redistribution:L8_ring_a5_regular_FL:45
+          - cell "8" [ref=f11e685]
+          - cell "4" [ref=f11e686]
+          - cell "ring" [ref=f11e687]
+          - cell "5" [ref=f11e688]
+          - cell "regular_FL" [ref=f11e689]
+          - cell "1" [ref=f11e690]
+          - cell "4.0216009" [ref=f11e691]
+          - cell "0.25792574" [ref=f11e692]
+          - cell "0.21943563" [ref=f11e693]
+          - cell "0.17960139" [ref=f11e694]
+          - cell "0.0000021399831" [ref=f11e695]
+        - row [ref=f11e696]:
+          - cell [ref=f11e697]:
+            - button "Details for t11-geometric-redistribution:L8_complete_a0_regular_sharp:46" [ref=f11e698] [cursor=pointer]: t11-geometric-redistribution:L8_complete_a0_regular_sharp:46
+          - cell "8" [ref=f11e699]
+          - cell "4" [ref=f11e700]
+          - cell "complete" [ref=f11e701]
+          - cell "0" [ref=f11e702]
+          - cell "regular_sharp" [ref=f11e703]
+          - cell "0.069444444" [ref=f11e704]
+          - cell "4.5567579" [ref=f11e705]
+          - cell "0.12372132" [ref=f11e706]
+          - cell "0.10460683" [ref=f11e707]
+          - cell "0.42036258" [ref=f11e708]
+          - cell "1.0159601e-30" [ref=f11e709]
+        - row [ref=f11e710]:
+          - cell [ref=f11e711]:
+            - button "Details for t11-geometric-redistribution:L8_complete_a0_deformed_sharp:47" [ref=f11e712] [cursor=pointer]: t11-geometric-redistribution:L8_complete_a0_deformed_sharp:47
+          - cell "8" [ref=f11e713]
+          - cell "4" [ref=f11e714]
+          - cell "complete" [ref=f11e715]
+          - cell "0" [ref=f11e716]
+          - cell "deformed_sharp" [ref=f11e717]
+          - cell "0.080837674" [ref=f11e718]
+          - cell "4.558422" [ref=f11e719]
+          - cell "0.12372132" [ref=f11e720]
+          - cell "0.10460683" [ref=f11e721]
+          - cell "0.41687805" [ref=f11e722]
+          - cell "0.00087258149" [ref=f11e723]
+        - row [ref=f11e724]:
+          - cell [ref=f11e725]:
+            - button "Details for t11-geometric-redistribution:L8_complete_a0_regular_FL:48" [ref=f11e726] [cursor=pointer]: t11-geometric-redistribution:L8_complete_a0_regular_FL:48
+          - cell "8" [ref=f11e727]
+          - cell "4" [ref=f11e728]
+          - cell "complete" [ref=f11e729]
+          - cell "0" [ref=f11e730]
+          - cell "regular_FL" [ref=f11e731]
+          - cell "1" [ref=f11e732]
+          - cell "4.670836" [ref=f11e733]
+          - cell "0.22473935" [ref=f11e734]
+          - cell "0.1758184" [ref=f11e735]
+          - cell "0.53379948" [ref=f11e736]
+          - cell "0.00075617926" [ref=f11e737]
+        - row [ref=f11e738]:
+          - cell [ref=f11e739]:
+            - button "Details for t11-geometric-redistribution:L8_complete_a1_regular_sharp:49" [ref=f11e740] [cursor=pointer]: t11-geometric-redistribution:L8_complete_a1_regular_sharp:49
+          - cell "8" [ref=f11e741]
+          - cell "4" [ref=f11e742]
+          - cell "complete" [ref=f11e743]
+          - cell "1" [ref=f11e744]
+          - cell "regular_sharp" [ref=f11e745]
+          - cell "0.069444444" [ref=f11e746]
+          - cell "4.948577" [ref=f11e747]
+          - cell "0.34588274" [ref=f11e748]
+          - cell "0.32272238" [ref=f11e749]
+          - cell "0.67566829" [ref=f11e750]
+          - cell "6.1230608e-32" [ref=f11e751]
+        - row [ref=f11e752]:
+          - cell [ref=f11e753]:
+            - button "Details for t11-geometric-redistribution:L8_complete_a1_deformed_sharp:50" [ref=f11e754] [cursor=pointer]: t11-geometric-redistribution:L8_complete_a1_deformed_sharp:50
+          - cell "8" [ref=f11e755]
+          - cell "4" [ref=f11e756]
+          - cell "complete" [ref=f11e757]
+          - cell "1" [ref=f11e758]
+          - cell "deformed_sharp" [ref=f11e759]
+          - cell "0.080837674" [ref=f11e760]
+          - cell "4.9403487" [ref=f11e761]
+          - cell "0.36390127" [ref=f11e762]
+          - cell "0.33948548" [ref=f11e763]
+          - cell "0.66312278" [ref=f11e764]
+          - cell "0.0012467394" [ref=f11e765]
+        - row [ref=f11e766]:
+          - cell [ref=f11e767]:
+            - button "Details for t11-geometric-redistribution:L8_complete_a1_regular_FL:51" [ref=f11e768] [cursor=pointer]: t11-geometric-redistribution:L8_complete_a1_regular_FL:51
+          - cell "8" [ref=f11e769]
+          - cell "4" [ref=f11e770]
+          - cell "complete" [ref=f11e771]
+          - cell "1" [ref=f11e772]
+          - cell "regular_FL" [ref=f11e773]
+          - cell "1" [ref=f11e774]
+          - cell "4.692821" [ref=f11e775]
+          - cell "0.278355" [ref=f11e776]
+          - cell "0.22328725" [ref=f11e777]
+          - cell "0.57176157" [ref=f11e778]
+          - cell "0.00036130938" [ref=f11e779]
+        - row [ref=f11e780]:
+          - cell [ref=f11e781]:
+            - button "Details for t11-geometric-redistribution:L8_complete_a5_regular_sharp:52" [ref=f11e782] [cursor=pointer]: t11-geometric-redistribution:L8_complete_a5_regular_sharp:52
+          - cell "8" [ref=f11e783]
+          - cell "4" [ref=f11e784]
+          - cell "complete" [ref=f11e785]
+          - cell "5" [ref=f11e786]
+          - cell "regular_sharp" [ref=f11e787]
+          - cell "0.069444444" [ref=f11e788]
+          - cell "4.2229298" [ref=f11e789]
+          - cell "0.12732183" [ref=f11e790]
+          - cell "0.12283922" [ref=f11e791]
+          - cell "0.20613218" [ref=f11e792]
+          - cell "4.2012817e-34" [ref=f11e793]
+        - row [ref=f11e794]:
+          - cell [ref=f11e795]:
+            - button "Details for t11-geometric-redistribution:L8_complete_a5_deformed_sharp:53" [ref=f11e796] [cursor=pointer]: t11-geometric-redistribution:L8_complete_a5_deformed_sharp:53
+          - cell "8" [ref=f11e797]
+          - cell "4" [ref=f11e798]
+          - cell "complete" [ref=f11e799]
+          - cell "5" [ref=f11e800]
+          - cell "deformed_sharp" [ref=f11e801]
+          - cell "0.080837674" [ref=f11e802]
+          - cell "4.2231398" [ref=f11e803]
+          - cell "0.13316282" [ref=f11e804]
+          - cell "0.12857144" [ref=f11e805]
+          - cell "0.20637469" [ref=f11e806]
+          - cell "0.0000018733211" [ref=f11e807]
+        - row [ref=f11e808]:
+          - cell [ref=f11e809]:
+            - button "Details for t11-geometric-redistribution:L8_complete_a5_regular_FL:54" [ref=f11e810] [cursor=pointer]: t11-geometric-redistribution:L8_complete_a5_regular_FL:54
+          - cell "8" [ref=f11e811]
+          - cell "4" [ref=f11e812]
+          - cell "complete" [ref=f11e813]
+          - cell "5" [ref=f11e814]
+          - cell "regular_FL" [ref=f11e815]
+          - cell "1" [ref=f11e816]
+          - cell "3.9394259" [ref=f11e817]
+          - cell "0.19100175" [ref=f11e818]
+          - cell "0.16871857" [ref=f11e819]
+          - cell "0.12591344" [ref=f11e820]
+          - cell "2.1685248e-7" [ref=f11e821]

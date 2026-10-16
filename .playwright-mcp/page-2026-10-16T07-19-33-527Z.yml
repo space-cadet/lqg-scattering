@@ -1,0 +1,207 @@
+- generic [ref=f12e2]:
+  - navigation "Numerical datasets" [ref=f12e3]:
+    - generic [ref=f12e4]: Numerical study
+    - combobox "Numerical study" [ref=f12e5]:
+      - option "All studies — overview"
+      - option "Small-area face-channel equilibration pilot (12 rows)"
+      - option "Classical rotor spreading and equilibrium comparison (24 rows)"
+      - 'option "Few-rotor transfer: planar bound and 3D controls (27 rows)"'
+      - option "Rotor coupling crossover and delayed release (64 rows)" [selected]
+      - 'option "Large-area tetrahedron: face activation and recurrence (20 rows)"'
+      - option "Entanglement of separately closed thermal polyhedra (86 rows)"
+      - option "Ordinary closure versus temperature (125 rows)"
+      - option "Heating separately closed area and positive RS volume (85 rows)"
+      - option "Singlet exchange between closed FL polyhedra (20 rows)"
+      - 'option "Four versus five sites: thermal-volume persistence (12 rows)"'
+      - option "Prepared tetrahedral FL states and the volume crossover (11 rows)"
+      - option "Candidate geometric Hamiltonians and prepared-FL dynamics (62 rows)"
+      - option "Four-site Hamiltonian spectra and RS-volume observables (30 rows)"
+      - option "Complete four-face closed-basis volumes (11 rows)"
+      - option "Variable-face positive RS catalogue (9 rows)"
+      - option "Squeezed-vacuum area coefficients (964 rows)"
+      - option "Squeezed-vacuum resultant spin (196 rows)"
+      - option "Excited J_in=1 joint area and spin (5 rows)"
+      - option "Higher-J flat-boundary probes (13 rows)"
+      - option "Magnetization and signed-grasp correlations (10 rows)"
+      - option "Local-chirality pilot (13 rows)"
+      - option "Imaginary-perturbation response (26 rows)"
+      - option "Cocycle-phase pilot (10 rows)"
+      - option "Large-K recorded families and fits (13 rows)"
+      - option "Historical single-copy thermal pilot (14 rows)"
+      - option "Historical energy-basis TFD pilot (14 rows)"
+      - option "Historical complexified purification (10 rows)"
+      - option "Small-sector thermal geometry audit (4 rows)"
+      - option "RS/AL volume-prescription controls (2 rows)"
+      - option "Initial covariance reconstruction pilot (6 rows)"
+      - option "Prepared FL evolution sampling (50 rows)"
+      - option "Positive volumes on two real-plane states (2 rows)"
+      - option "FL covariance shape recovery (84 rows)"
+      - option "Weighted FL input geometry and volumes (14 rows)"
+      - option "Regular FL volume versus area (5 rows)"
+      - option "Equal-area FL shape scan at J=2 (440 rows)"
+      - option "Same-number detachment energies (8 rows)"
+      - option "Closed and open state evolution probes (6 rows)"
+      - option "Constructive edge sewing probes (5 rows)"
+  - heading "Rotor coupling crossover and delayed release" [level=1] [ref=f12e6]
+  - paragraph [ref=f12e7]: The dashboard plots 56 grouped three-seed cases at the primary late window, plus eight direct-coupling checks. The ratio scan spans N=8,16,32,64 and 14 packet-energy-to-coupling ratios; separate direct controls vary λ at fixed packet energy and physical observation time.
+  - generic [ref=f12e8]:
+    - generic [ref=f12e9]:
+      - generic [ref=f12e10]: "64"
+      - generic [ref=f12e11]: Total Runs
+    - generic [ref=f12e12]:
+      - generic [ref=f12e13]: "0"
+      - generic [ref=f12e14]: Tasks
+    - generic [ref=f12e15]:
+      - generic [ref=f12e16]: "64"
+      - generic [ref=f12e17]: Complete
+    - generic [ref=f12e18]:
+      - generic [ref=f12e19]: "1"
+      - generic [ref=f12e20]: Figures
+  - tablist "Dashboard sections" [ref=f12e21]:
+    - tab "Runs & Studies" [ref=f12e22] [cursor=pointer]
+    - tab "Figure Archive" [ref=f12e23] [cursor=pointer]
+    - tab "Charts" [active] [selected] [ref=f12e24] [cursor=pointer]
+    - tab "Tasks & Numerical Notes" [ref=f12e25] [cursor=pointer]
+  - tabpanel "Charts" [ref=f12e1160]:
+    - heading "Performance" [level=2] [ref=f12e1161]
+    - generic [ref=f12e1162]:
+      - generic [ref=f12e1163]:
+        - generic [ref=f12e1164]: "X-Axis:"
+        - combobox "X-Axis:" [ref=f12e1165]:
+          - option "N"
+          - option "Initial packet energy / coupling" [selected]
+          - option "coupling"
+          - option "seed count"
+          - option "initial packet energy"
+          - option "Mean transferred kinetic-energy fraction"
+          - option "transfer fraction min"
+          - option "transfer fraction max"
+          - option "seed"
+          - option "equivalent scaled mean"
+          - option "early scaled history max error"
+          - option "late mean difference"
+      - generic [ref=f12e1166]:
+        - generic [ref=f12e1167]: "Y-Axis:"
+        - combobox "Y-Axis:" [ref=f12e1168]:
+          - option "N"
+          - option "Initial packet energy / coupling"
+          - option "coupling"
+          - option "seed count"
+          - option "initial packet energy"
+          - option "Mean transferred kinetic-energy fraction" [selected]
+          - option "transfer fraction min"
+          - option "transfer fraction max"
+          - option "seed"
+          - option "equivalent scaled mean"
+          - option "early scaled history max error"
+          - option "late mean difference"
+      - generic [ref=f12e1169]:
+        - generic [ref=f12e1170]: "Chart Type:"
+        - combobox "Chart Type:" [ref=f12e1171]:
+          - option "Scatter"
+          - option "Line" [selected]
+      - generic [ref=f12e1172]:
+        - generic [ref=f12e1173]: "Series:"
+        - combobox "Series:" [ref=f12e1174]:
+          - option "All runs"
+          - option "Case"
+          - option "control type"
+          - option "Rotor count and observation/control protocol" [selected]
+    - generic [ref=f12e1175]:
+      - figure "Mean transferred kinetic-energy fraction versus Initial packet energy / coupling" [ref=f12e1177]:
+        - generic [ref=f12e1178]:
+          - generic [ref=f12e1179]: N=16; direct coupling control
+          - generic [ref=f12e1182]: N=16; primary scaled-time scan
+          - generic [ref=f12e1185]: N=32; direct coupling control
+          - generic [ref=f12e1188]: N=32; primary scaled-time scan
+          - generic [ref=f12e1191]: N=64; direct coupling control
+          - generic [ref=f12e1194]: N=64; primary scaled-time scan
+          - generic [ref=f12e1197]: N=8; direct coupling control
+          - generic [ref=f12e1200]: N=8; primary scaled-time scan
+        - img [ref=f12e1203]:
+          - generic "y-axis tick label" [ref=f12e1205]:
+            - generic [ref=f12e1206]: "0.1"
+            - generic [ref=f12e1207]: "0.2"
+            - generic [ref=f12e1208]: "0.3"
+            - generic [ref=f12e1209]: "0.4"
+            - generic [ref=f12e1210]: "0.5"
+          - generic "y-axis label" [ref=f12e1211]: ↑ Mean transferred kinetic-energy fraction
+          - generic "x-axis tick label" [ref=f12e1214]:
+            - generic [ref=f12e1215]: "10"
+            - generic [ref=f12e1216]: "20"
+            - generic [ref=f12e1217]: "30"
+            - generic [ref=f12e1218]: "40"
+            - generic [ref=f12e1219]: "50"
+            - generic [ref=f12e1220]: "60"
+            - generic [ref=f12e1221]: "70"
+            - generic [ref=f12e1222]: "80"
+            - generic [ref=f12e1223]: "90"
+            - generic [ref=f12e1224]: "100"
+          - generic "x-axis label" [ref=f12e1225]: Initial packet energy / coupling →
+          - generic "line" [ref=f12e1227]
+          - generic "dot" [ref=f12e1236]:
+            - 'generic "rotor-coupling-crossover:case-0031:31 Initial packet energy / coupling: 10 Mean transferred kinetic-energy fraction: 0.4175663498140133" [ref=f12e1237]'
+            - 'generic "rotor-coupling-crossover:case-0032:32 Initial packet energy / coupling: 20 Mean transferred kinetic-energy fraction: 0.007310456007228986" [ref=f12e1238]'
+            - 'generic "rotor-coupling-crossover:case-0017:17 Initial packet energy / coupling: 2 Mean transferred kinetic-energy fraction: 0.435681381456972" [ref=f12e1239]'
+            - 'generic "rotor-coupling-crossover:case-0018:18 Initial packet energy / coupling: 4 Mean transferred kinetic-energy fraction: 0.4346611832361011" [ref=f12e1240]'
+            - 'generic "rotor-coupling-crossover:case-0019:19 Initial packet energy / coupling: 6 Mean transferred kinetic-energy fraction: 0.4302632494428396" [ref=f12e1241]'
+            - 'generic "rotor-coupling-crossover:case-0020:20 Initial packet energy / coupling: 8 Mean transferred kinetic-energy fraction: 0.4227240200456634" [ref=f12e1242]'
+            - 'generic "rotor-coupling-crossover:case-0021:21 Initial packet energy / coupling: 10 Mean transferred kinetic-energy fraction: 0.4224504406142186" [ref=f12e1243]'
+            - 'generic "rotor-coupling-crossover:case-0022:22 Initial packet energy / coupling: 12 Mean transferred kinetic-energy fraction: 0.4188716678344646" [ref=f12e1244]'
+            - 'generic "rotor-coupling-crossover:case-0023:23 Initial packet energy / coupling: 14 Mean transferred kinetic-energy fraction: 0.2827011493667129" [ref=f12e1245]'
+            - 'generic "rotor-coupling-crossover:case-0024:24 Initial packet energy / coupling: 16 Mean transferred kinetic-energy fraction: 0.0578176450805483" [ref=f12e1246]'
+            - 'generic "rotor-coupling-crossover:case-0025:25 Initial packet energy / coupling: 18 Mean transferred kinetic-energy fraction: 0.010066365372060968" [ref=f12e1247]'
+            - 'generic "rotor-coupling-crossover:case-0026:26 Initial packet energy / coupling: 20 Mean transferred kinetic-energy fraction: 0.007197910930471451" [ref=f12e1248]'
+            - 'generic "rotor-coupling-crossover:case-0027:27 Initial packet energy / coupling: 25 Mean transferred kinetic-energy fraction: 0.004363149608760189" [ref=f12e1249]'
+            - 'generic "rotor-coupling-crossover:case-0028:28 Initial packet energy / coupling: 30 Mean transferred kinetic-energy fraction: 0.002903852596105125" [ref=f12e1250]'
+            - 'generic "rotor-coupling-crossover:case-0029:29 Initial packet energy / coupling: 50 Mean transferred kinetic-energy fraction: 0.001154614227778054" [ref=f12e1251]'
+            - 'generic "rotor-coupling-crossover:case-0030:30 Initial packet energy / coupling: 100 Mean transferred kinetic-energy fraction: 0.00040644138509724777" [ref=f12e1252]'
+            - 'generic "rotor-coupling-crossover:case-0047:47 Initial packet energy / coupling: 10 Mean transferred kinetic-energy fraction: 0.46324488229219757" [ref=f12e1253]'
+            - 'generic "rotor-coupling-crossover:case-0048:48 Initial packet energy / coupling: 20 Mean transferred kinetic-energy fraction: 0.012147784886321851" [ref=f12e1254]'
+            - 'generic "rotor-coupling-crossover:case-0033:33 Initial packet energy / coupling: 2 Mean transferred kinetic-energy fraction: 0.49291210412387293" [ref=f12e1255]'
+            - 'generic "rotor-coupling-crossover:case-0034:34 Initial packet energy / coupling: 4 Mean transferred kinetic-energy fraction: 0.4821133131624708" [ref=f12e1256]'
+            - 'generic "rotor-coupling-crossover:case-0035:35 Initial packet energy / coupling: 6 Mean transferred kinetic-energy fraction: 0.473835818077284" [ref=f12e1257]'
+            - 'generic "rotor-coupling-crossover:case-0036:36 Initial packet energy / coupling: 8 Mean transferred kinetic-energy fraction: 0.4683419607420852" [ref=f12e1258]'
+            - 'generic "rotor-coupling-crossover:case-0037:37 Initial packet energy / coupling: 10 Mean transferred kinetic-energy fraction: 0.4660204378703616" [ref=f12e1259]'
+            - 'generic "rotor-coupling-crossover:case-0038:38 Initial packet energy / coupling: 12 Mean transferred kinetic-energy fraction: 0.4427122237076964" [ref=f12e1260]'
+            - 'generic "rotor-coupling-crossover:case-0039:39 Initial packet energy / coupling: 14 Mean transferred kinetic-energy fraction: 0.31026348345503957" [ref=f12e1261]'
+            - 'generic "rotor-coupling-crossover:case-0040:40 Initial packet energy / coupling: 16 Mean transferred kinetic-energy fraction: 0.041493673865771706" [ref=f12e1262]'
+            - 'generic "rotor-coupling-crossover:case-0041:41 Initial packet energy / coupling: 18 Mean transferred kinetic-energy fraction: 0.020038136338224277" [ref=f12e1263]'
+            - 'generic "rotor-coupling-crossover:case-0042:42 Initial packet energy / coupling: 20 Mean transferred kinetic-energy fraction: 0.013355732493057257" [ref=f12e1264]'
+            - 'generic "rotor-coupling-crossover:case-0043:43 Initial packet energy / coupling: 25 Mean transferred kinetic-energy fraction: 0.006731304689481704" [ref=f12e1265]'
+            - 'generic "rotor-coupling-crossover:case-0044:44 Initial packet energy / coupling: 30 Mean transferred kinetic-energy fraction: 0.0045983383013145475" [ref=f12e1266]'
+            - 'generic "rotor-coupling-crossover:case-0045:45 Initial packet energy / coupling: 50 Mean transferred kinetic-energy fraction: 0.0020293774748468846" [ref=f12e1267]'
+            - 'generic "rotor-coupling-crossover:case-0046:46 Initial packet energy / coupling: 100 Mean transferred kinetic-energy fraction: 0.0008410345968484365" [ref=f12e1268]'
+            - 'generic "rotor-coupling-crossover:case-0063:63 Initial packet energy / coupling: 10 Mean transferred kinetic-energy fraction: 0.4961623568627624" [ref=f12e1269]'
+            - 'generic "rotor-coupling-crossover:case-0064:64 Initial packet energy / coupling: 20 Mean transferred kinetic-energy fraction: 0.022183989556687142" [ref=f12e1270]'
+            - 'generic "rotor-coupling-crossover:case-0049:49 Initial packet energy / coupling: 2 Mean transferred kinetic-energy fraction: 0.5596708682567179" [ref=f12e1271]'
+            - 'generic "rotor-coupling-crossover:case-0050:50 Initial packet energy / coupling: 4 Mean transferred kinetic-energy fraction: 0.5222907482805287" [ref=f12e1272]'
+            - 'generic "rotor-coupling-crossover:case-0051:51 Initial packet energy / coupling: 6 Mean transferred kinetic-energy fraction: 0.5074382673570554" [ref=f12e1273]'
+            - 'generic "rotor-coupling-crossover:case-0052:52 Initial packet energy / coupling: 8 Mean transferred kinetic-energy fraction: 0.49962252050186456" [ref=f12e1274]'
+            - 'generic "rotor-coupling-crossover:case-0053:53 Initial packet energy / coupling: 10 Mean transferred kinetic-energy fraction: 0.49399452666832727" [ref=f12e1275]'
+            - 'generic "rotor-coupling-crossover:case-0054:54 Initial packet energy / coupling: 12 Mean transferred kinetic-energy fraction: 0.44540096785863653" [ref=f12e1276]'
+            - 'generic "rotor-coupling-crossover:case-0055:55 Initial packet energy / coupling: 14 Mean transferred kinetic-energy fraction: 0.22054474672652927" [ref=f12e1277]'
+            - 'generic "rotor-coupling-crossover:case-0056:56 Initial packet energy / coupling: 16 Mean transferred kinetic-energy fraction: 0.10097283472512104" [ref=f12e1278]'
+            - 'generic "rotor-coupling-crossover:case-0057:57 Initial packet energy / coupling: 18 Mean transferred kinetic-energy fraction: 0.03346508445937426" [ref=f12e1279]'
+            - 'generic "rotor-coupling-crossover:case-0058:58 Initial packet energy / coupling: 20 Mean transferred kinetic-energy fraction: 0.02352730217348759" [ref=f12e1280]'
+            - 'generic "rotor-coupling-crossover:case-0059:59 Initial packet energy / coupling: 25 Mean transferred kinetic-energy fraction: 0.011537720971010919" [ref=f12e1281]'
+            - 'generic "rotor-coupling-crossover:case-0060:60 Initial packet energy / coupling: 30 Mean transferred kinetic-energy fraction: 0.011015751606961952" [ref=f12e1282]'
+            - 'generic "rotor-coupling-crossover:case-0061:61 Initial packet energy / coupling: 50 Mean transferred kinetic-energy fraction: 0.004105181832738566" [ref=f12e1283]'
+            - 'generic "rotor-coupling-crossover:case-0062:62 Initial packet energy / coupling: 100 Mean transferred kinetic-energy fraction: 0.0017810631671118984" [ref=f12e1284]'
+            - 'generic "rotor-coupling-crossover:case-0015:15 Initial packet energy / coupling: 10 Mean transferred kinetic-energy fraction: 0.37438783539821013" [ref=f12e1285]'
+            - 'generic "rotor-coupling-crossover:case-0016:16 Initial packet energy / coupling: 20 Mean transferred kinetic-energy fraction: 0.005952764613325336" [ref=f12e1286]'
+            - 'generic "rotor-coupling-crossover:case-0001:1 Initial packet energy / coupling: 2 Mean transferred kinetic-energy fraction: 0.3447420725761658" [ref=f12e1287]'
+            - 'generic "rotor-coupling-crossover:case-0002:2 Initial packet energy / coupling: 4 Mean transferred kinetic-energy fraction: 0.3579450291836051" [ref=f12e1288]'
+            - 'generic "rotor-coupling-crossover:case-0003:3 Initial packet energy / coupling: 6 Mean transferred kinetic-energy fraction: 0.3506836814937783" [ref=f12e1289]'
+            - 'generic "rotor-coupling-crossover:case-0004:4 Initial packet energy / coupling: 8 Mean transferred kinetic-energy fraction: 0.3586568699115927" [ref=f12e1290]'
+            - 'generic "rotor-coupling-crossover:case-0005:5 Initial packet energy / coupling: 10 Mean transferred kinetic-energy fraction: 0.37775620911044455" [ref=f12e1291]'
+            - 'generic "rotor-coupling-crossover:case-0006:6 Initial packet energy / coupling: 12 Mean transferred kinetic-energy fraction: 0.4036585350909408" [ref=f12e1292]'
+            - 'generic "rotor-coupling-crossover:case-0007:7 Initial packet energy / coupling: 14 Mean transferred kinetic-energy fraction: 0.36117468050934365" [ref=f12e1293]'
+            - 'generic "rotor-coupling-crossover:case-0008:8 Initial packet energy / coupling: 16 Mean transferred kinetic-energy fraction: 0.262161263334339" [ref=f12e1294]'
+            - 'generic "rotor-coupling-crossover:case-0009:9 Initial packet energy / coupling: 18 Mean transferred kinetic-energy fraction: 0.008182535952957091" [ref=f12e1295]'
+            - 'generic "rotor-coupling-crossover:case-0010:10 Initial packet energy / coupling: 20 Mean transferred kinetic-energy fraction: 0.005974634055890983" [ref=f12e1296]'
+            - 'generic "rotor-coupling-crossover:case-0011:11 Initial packet energy / coupling: 25 Mean transferred kinetic-energy fraction: 0.0035007568719466115" [ref=f12e1297]'
+            - 'generic "rotor-coupling-crossover:case-0012:12 Initial packet energy / coupling: 30 Mean transferred kinetic-energy fraction: 0.0023309459278468177" [ref=f12e1298]'
+            - 'generic "rotor-coupling-crossover:case-0013:13 Initial packet energy / coupling: 50 Mean transferred kinetic-energy fraction: 0.0008256273704792719" [ref=f12e1299]'
+            - 'generic "rotor-coupling-crossover:case-0014:14 Initial packet energy / coupling: 100 Mean transferred kinetic-energy fraction: 0.00022092353367078195" [ref=f12e1300]'
+      - paragraph [ref=f12e1301]: 64 recorded points; series by Rotor count and observation/control protocol.

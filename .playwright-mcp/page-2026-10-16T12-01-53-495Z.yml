@@ -1,0 +1,235 @@
+- generic [ref=f3e2]:
+  - navigation "Numerical datasets" [ref=f3e3]:
+    - generic [ref=f3e4]: Numerical study
+    - combobox "Numerical study" [ref=f3e5]:
+      - option "All studies — overview"
+      - option "Small-area face-channel equilibration pilot (12 rows)"
+      - option "Classical rotor spreading and equilibrium comparison (24 rows)"
+      - 'option "Few-rotor transfer: planar bound and 3D controls (27 rows)"'
+      - option "Rotor coupling crossover and delayed release (64 rows)"
+      - 'option "Large-area tetrahedron: face activation and recurrence (20 rows)"'
+      - option "Entanglement of separately closed thermal polyhedra (86 rows)"
+      - option "Ordinary closure versus temperature (125 rows)"
+      - option "Heating separately closed area and positive RS volume (85 rows)"
+      - option "Singlet exchange between closed FL polyhedra (20 rows)"
+      - 'option "Four versus five sites: thermal-volume persistence (12 rows)"'
+      - option "Prepared tetrahedral FL states and the volume crossover (11 rows)"
+      - option "Candidate geometric Hamiltonians and prepared-FL dynamics (62 rows)"
+      - option "Four-site Hamiltonian spectra and RS-volume observables (30 rows)"
+      - option "Complete four-face closed-basis volumes (11 rows)"
+      - option "Variable-face positive RS catalogue (9 rows)"
+      - option "Squeezed-vacuum area coefficients (964 rows)"
+      - option "Squeezed-vacuum resultant spin (196 rows)"
+      - option "Excited J_in=1 joint area and spin (5 rows)"
+      - option "Higher-J flat-boundary probes (13 rows)"
+      - option "Magnetization and signed-grasp correlations (10 rows)"
+      - option "Local-chirality pilot (13 rows)"
+      - option "Imaginary-perturbation response (26 rows)"
+      - option "Cocycle-phase pilot (10 rows)"
+      - option "Large-K recorded families and fits (13 rows)"
+      - option "Historical single-copy thermal pilot (14 rows)"
+      - option "Historical energy-basis TFD pilot (14 rows)"
+      - option "Historical complexified purification (10 rows)"
+      - option "Small-sector thermal geometry audit (4 rows)"
+      - option "RS/AL volume-prescription controls (2 rows)"
+      - option "Initial covariance reconstruction pilot (6 rows)"
+      - option "Quantum planar-rotor transfer at zero total momentum (NS37) (2 rows)"
+      - option "Closed and open four-to-five-to-six channel transitions (NS38) (30 rows)" [selected]
+      - option "Exact-singlet geometric area redistribution (NS39–NS40) (54 rows)"
+      - option "Prepared FL evolution sampling (50 rows)"
+      - option "Positive volumes on two real-plane states (2 rows)"
+      - option "FL covariance shape recovery (84 rows)"
+      - option "Weighted FL input geometry and volumes (14 rows)"
+      - option "Regular FL volume versus area (5 rows)"
+      - option "Equal-area FL shape scan at J=2 (440 rows)"
+      - option "Same-number detachment energies (8 rows)"
+      - option "Closed and open state evolution probes (6 rows)"
+      - option "Constructive edge sewing probes (5 rows)"
+  - heading "Closed and open four-to-five-to-six channel transitions (NS38)" [level=1] [ref=f3e6]
+  - paragraph [ref=f3e7]: The static L=6, K=3 table follows one closed singlet and two open J=3 sources on ring and complete graphs. A direct four-to-six hop vanishes, while the selected witnesses have explicit four-to-five-to-six matrix elements. Size controls show when five- and six-active sectors exist.
+  - generic [ref=f3e8]:
+    - generic [ref=f3e9]:
+      - generic [ref=f3e10]: "30"
+      - generic [ref=f3e11]: Total Runs
+    - generic [ref=f3e12]:
+      - generic [ref=f3e13]: "0"
+      - generic [ref=f3e14]: Tasks
+    - generic [ref=f3e15]:
+      - generic [ref=f3e16]: "30"
+      - generic [ref=f3e17]: Complete
+    - generic [ref=f3e18]:
+      - generic [ref=f3e19]: "0"
+      - generic [ref=f3e20]: Figures
+  - tablist "Dashboard sections" [ref=f3e21]:
+    - tab "Runs & Studies" [ref=f3e22] [cursor=pointer]
+    - tab "Figure Archive" [ref=f3e23] [cursor=pointer]
+    - tab "Charts" [ref=f3e24] [cursor=pointer]
+    - tab "Tasks & Numerical Notes" [selected] [ref=f3e25] [cursor=pointer]
+  - tabpanel "Tasks & Numerical Notes" [ref=f3e731]:
+    - heading "Tasks and Numerical Notes" [level=2] [ref=f3e732]
+    - region [ref=f3e734]:
+      - heading "Documentation" [level=3] [ref=f3e735]
+      - generic [ref=f3e736]:
+        - article [ref=f3e737]:
+          - group [ref=f3e738]:
+            - generic "Face activation connectivity Explanation and calculation record for this study. Open note" [ref=f3e739] [cursor=pointer]:
+              - generic [ref=f3e740]: Face activation connectivity
+              - generic [ref=f3e741]: Explanation and calculation record for this study.
+              - generic [ref=f3e742]: Open note
+          - link "Download Markdown" [ref=f3e743] [cursor=pointer]:
+            - /url: http://127.0.0.1:8767/study-assets/notes/face-activation-connectivity.txt
+        - article [ref=f3e744]:
+          - group [ref=f3e745]:
+            - generic "Quantum geometry research Explanation and calculation record for this study. Open note" [active] [ref=f3e746] [cursor=pointer]:
+              - generic [ref=f3e747]: Quantum geometry research
+              - generic [ref=f3e748]: Explanation and calculation record for this study.
+              - generic [ref=f3e749]: Open note
+          - link "Download Markdown" [ref=f3e750] [cursor=pointer]:
+            - /url: http://127.0.0.1:8767/study-assets/notes/quantum-geometry-research.txt
+        - article [ref=f3e751]:
+          - generic [ref=f3e752]:
+            - link "Numerical studies overview" [ref=f3e754] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/index.html
+            - paragraph
+      - region "Selected numerical note" [ref=f3e755]:
+        - generic [ref=f3e756]:
+          - button "All documents" [ref=f3e757] [cursor=pointer]
+          - heading "Quantum geometry research" [level=4] [ref=f3e2707]
+          - link "Download Markdown" [ref=f3e759] [cursor=pointer]:
+            - /url: http://127.0.0.1:8767/study-assets/notes/quantum-geometry-research.txt
+        - generic [ref=f3e760]:
+          - 'heading "Quantum geometry: a guide to the research notes" [level=1] [ref=f3e2708]'
+          - paragraph [ref=f3e2709]:
+            - text: The central physical question is how quantum face degrees of freedom form a closed geometry, how that geometry changes under interactions, and how area, energy and entanglement are shared. The notes approach this question from several directions. This page gives a reading route; the
+            - link "numerical chronology" [ref=f3e2710] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/notes/numerical-studies.txt
+            - text: gives the dated calculation record.
+          - heading "Begin with states and geometry" [level=2] [ref=f3e2711]
+          - paragraph [ref=f3e2712]:
+            - text: The
+            - link "published-paper overview" [ref=f3e2713] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/notes/published-paper-overview.txt
+            - text: introduces the oscillator construction and its relation to scattering data. The
+            - link "state-space probes" [ref=f3e2714] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/notes/state-space-probes.txt
+            - text: explain the different bases and prepared states used in subsequent calculations.
+          - paragraph [ref=f3e2715]:
+            - text: For a geometric picture, begin with
+            - link "volume studies" [ref=f3e2716] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/notes/volume-studies.txt
+            - text: and
+            - link "the geometric interpretation of Hamiltonian states" [ref=f3e2717] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/notes/t11-geometric-interpretation.txt
+            - text: . They connect closure, local areas, flux correlations and positive volume. The
+            - link "regular/unequal-shape calculation log" [ref=f3e2718] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/notes/experiments/fl_volume_shape_scan_log.txt
+            - text: records the associated coherent-state scans. The
+            - link "illustration collection" [ref=f3e2719] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/figures/physical-illustrations/README.txt
+            - text: supplies visual explanations of the principal models.
+          - heading "Follow energy and area as they spread" [level=2] [ref=f3e2720]
+          - paragraph [ref=f3e2721]: "The natural reading sequence is:"
+          - list [ref=f3e2722]:
+            - listitem [ref=f3e2723]:
+              - link "Face activation and energy sharing" [ref=f3e2724] [cursor=pointer]:
+                - /url: http://127.0.0.1:8767/study-assets/notes/face-energy-equipartition.txt
+              - text: ": a tetrahedral FL input, additional empty channels, free hopping and recurrence."
+            - listitem [ref=f3e2725]:
+              - link "Classical rotor equilibration" [ref=f3e2726] [cursor=pointer]:
+                - /url: http://127.0.0.1:8767/study-assets/notes/classical-rotor-equilibration.txt
+              - text: ": concentrated kinetic energy spreading through interacting rotors, with an equilibrium comparison."
+            - listitem [ref=f3e2727]:
+              - link "Few-rotor transfer" [ref=f3e2728] [cursor=pointer]:
+                - /url: http://127.0.0.1:8767/study-assets/notes/few-rotor-energy-transfer.txt
+              - text: ": the exact planar-pair mechanism and the role of zero total angular momentum."
+            - listitem [ref=f3e2729]:
+              - link "Coupling crossover and delayed release" [ref=f3e2730] [cursor=pointer]:
+                - /url: http://127.0.0.1:8767/study-assets/notes/rotor-coupling-crossover.txt
+              - text: ": how coupling and observation time affect transfer in larger classical rings."
+            - listitem [ref=f3e2731]:
+              - link "Four quantum planar rotors" [ref=f3e2732] [cursor=pointer]:
+                - /url: http://127.0.0.1:8767/study-assets/notes/quantum-planar-rotor-energy-transfer.txt
+              - text: ": a zero-total-momentum energetic pair and two initially cold receivers."
+            - listitem [ref=f3e2733]:
+              - link "Hamiltonian connectivity" [ref=f3e2734] [cursor=pointer]:
+                - /url: "#note-face-activation-connectivity"
+              - text: ": explicit four-to-five-to-six channel transitions with and without geometric closure."
+            - listitem [ref=f3e2735]:
+              - link "Geometric area redistribution" [ref=f3e2736] [cursor=pointer]:
+                - /url: http://127.0.0.1:8767/study-assets/notes/geometric-area-redistribution.txt
+              - text: ": actual closed-state dynamics with four, six and eight available channels, followed by volume, angular and entanglement readouts."
+          - paragraph [ref=f3e2737]:
+            - text: The
+            - link "Hamiltonian study" [ref=f3e2738] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/notes/hamiltonian-studies.txt
+            - text: supplies the underlying spectral and operator calculations. The last section of the
+            - link "redistribution note" [ref=f3e2739] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/notes/geometric-area-redistribution.txt#recovering-face-directions
+            - text: "sets out the next geometric question: when do the occupied channels support additional distinct face normals, and how sharply is a classical shape defined?"
+          - heading "Temperature, closure and entanglement" [level=2] [ref=f3e2740]
+          - paragraph [ref=f3e2741]:
+            - link "Heating closed quantum geometry" [ref=f3e2742] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/notes/thermal-geometry-and-singlet-exchange.txt
+            - text: "is the physical entry point: increasing occupation, the role of closure, projected geometry and exchange between two closed subsystems."
+          - paragraph [ref=f3e2743]:
+            - text: The construction is developed in
+            - link "thermal area sectors" [ref=f3e2744] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/notes/thermal-area-sectors.txt
+            - text: ", including the squeezed-state coefficients and appendices. Its reduced-state spectrum and entropy are explained in"
+            - link "thermal entanglement" [ref=f3e2745] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/notes/thermal-entanglement.txt
+            - text: . The
+            - link "two-polyhedron exchange specification" [ref=f3e2746] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/notes/t9a-singlet-exchange.txt
+            - text: records the implemented Hamiltonian, preparations, currents and reservoir extension.
+          - heading "Joining and separating geometric systems" [level=2] [ref=f3e2747]
+          - paragraph [ref=f3e2748]:
+            - link "Constructive sewing" [ref=f3e2749] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/notes/constructive-sewing-probe.txt
+            - text: builds invariant triangle, tetrahedral and joined exterior-boundary tensors.
+            - link "Binding energy" [ref=f3e2750] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/notes/binding-energy.txt
+            - text: examines the Hamiltonian comparison between an intact system and a separated configuration. Sewing a boundary and transferring quanta between independently closed polyhedra are different constructions; the
+            - link "exchange note" [ref=f3e2751] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/notes/t9a-singlet-exchange.txt
+            - text: makes the latter precise.
+          - heading "Finding calculations and source records" [level=2] [ref=f3e2752]
+          - list [ref=f3e2753]:
+            - listitem [ref=f3e2754]:
+              - link "Numerical studies" [ref=f3e2755] [cursor=pointer]:
+                - /url: http://127.0.0.1:8767/study-assets/notes/numerical-studies.txt
+              - text: ": stable NS identifiers, dates, findings, programs, result reports and figures."
+            - listitem [ref=f3e2756]:
+              - link "Results directory" [ref=f3e2757] [cursor=pointer]:
+                - /url: http://127.0.0.1:8767/study-assets/results/README.txt
+              - text: ": saved data and reproduction records."
+            - listitem [ref=f3e2758]:
+              - link "Numerics dashboard" [ref=f3e2759] [cursor=pointer]:
+                - /url: http://127.0.0.1:8767/study-assets/code/dashboard/index.html
+              - text: ": interactive datasets and plots."
+            - listitem [ref=f3e2760]:
+              - link "Session records" [ref=f3e2761] [cursor=pointer]:
+                - /url: http://127.0.0.1:8767/study-assets/study-records/sessions/
+              - text: ": transcripts and detailed handoffs."
+            - listitem [ref=f3e2762]:
+              - link "Experiment records" [ref=f3e2763] [cursor=pointer]:
+                - /url: http://127.0.0.1:8767/study-assets/notes/experiments/
+              - text: ": protocols and historical run notes."
+            - listitem [ref=f3e2764]:
+              - link "Original task specifications" [ref=f3e2765] [cursor=pointer]:
+                - /url: http://127.0.0.1:8767/study-assets/notes/task-specifications/
+              - text: ": research prompts and scope."
+          - paragraph [ref=f3e2766]:
+            - text: For the October 16 quantum continuation, see the
+            - link "session summary" [ref=f3e2767] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/study-records/sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-summary.txt
+            - text: and
+            - link "transcript" [ref=f3e2768] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/study-records/sessions/2026-10-16-quantum-rotors-and-geometric-redistribution-transcript.txt
+            - text: . Editorial records such as the
+            - link "thermal-note reorganization" [ref=f3e2769] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/notes/thermal-area-sectors-reorganization.txt
+            - text: and
+            - link "earlier session note map" [ref=f3e2770] [cursor=pointer]:
+              - /url: http://127.0.0.1:8767/study-assets/notes/equilibration-session-note-map.txt
+            - text: explain how longer discussions were distributed across the notes.

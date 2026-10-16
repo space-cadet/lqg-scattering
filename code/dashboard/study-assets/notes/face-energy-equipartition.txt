@@ -1,5 +1,7 @@
 # Can a large tetrahedron spread its area over more faces?
 
+[Research map](quantum-geometry-research.md) · Related: [face activation connectivity](face-activation-connectivity.md), [geometric area redistribution](geometric-area-redistribution.md).
+
 *Free-hopping control, interaction assessment and next investigation, October 16, 2026.*
 
 The user's question is whether a tetrahedron with large face areas evolves

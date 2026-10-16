@@ -1,0 +1,548 @@
+- generic [ref=f15e2]:
+  - navigation "Numerical datasets" [ref=f15e3]:
+    - generic [ref=f15e4]: Numerical study
+    - combobox "Numerical study" [ref=f15e5]:
+      - option "All studies — overview" [selected]
+      - 'option "Four versus five sites: thermal-volume persistence (12 rows)"'
+      - option "Prepared tetrahedral FL states and the volume crossover (11 rows)"
+      - option "Candidate geometric Hamiltonians and prepared-FL dynamics (62 rows)"
+      - option "Four-site Hamiltonian spectra and RS-volume observables (30 rows)"
+      - option "Complete four-face closed-basis volumes (11 rows)"
+      - option "Variable-face positive RS catalogue (9 rows)"
+      - option "Squeezed-vacuum area coefficients (964 rows)"
+      - option "Squeezed-vacuum resultant spin (196 rows)"
+      - option "Excited J_in=1 joint area and spin (5 rows)"
+      - option "Higher-J flat-boundary probes (13 rows)"
+      - option "Magnetization and signed-grasp correlations (10 rows)"
+      - option "Local-chirality pilot (13 rows)"
+      - option "Imaginary-perturbation response (26 rows)"
+      - option "Cocycle-phase pilot (10 rows)"
+      - option "Large-K recorded families and fits (13 rows)"
+      - option "Historical single-copy thermal pilot (14 rows)"
+      - option "Historical energy-basis TFD pilot (14 rows)"
+      - option "Historical complexified purification (10 rows)"
+      - option "Small-sector thermal geometry audit (4 rows)"
+      - option "RS/AL volume-prescription controls (2 rows)"
+      - option "Initial covariance reconstruction pilot (6 rows)"
+      - option "Prepared FL evolution sampling (50 rows)"
+      - option "Positive volumes on two real-plane states (2 rows)"
+      - option "FL covariance shape recovery (84 rows)"
+      - option "Weighted FL input geometry and volumes (14 rows)"
+      - option "Regular FL volume versus area (5 rows)"
+      - option "Equal-area FL shape scan at J=2 (440 rows)"
+      - option "Same-number detachment energies (8 rows)"
+      - option "Closed and open state evolution probes (6 rows)"
+      - option "Constructive edge sewing probes (5 rows)"
+  - heading "Scattering in LQG" [level=1] [ref=f15e6]
+  - paragraph [ref=f15e7]: Numerical study records, saved cases, figures, provenance and calculation limits.
+  - generic [ref=f15e8]:
+    - generic [ref=f15e9]:
+      - generic [ref=f15e10]: "38"
+      - generic [ref=f15e11]: Total Runs
+    - generic [ref=f15e12]:
+      - generic [ref=f15e13]: "11"
+      - generic [ref=f15e14]: Tasks
+    - generic [ref=f15e15]:
+      - generic [ref=f15e16]: "38"
+      - generic [ref=f15e17]: Complete
+    - generic [ref=f15e18]:
+      - generic [ref=f15e19]: "38"
+      - generic [ref=f15e20]: Figures
+  - tablist "Dashboard sections" [ref=f15e21]:
+    - tab "Runs & Studies" [selected] [ref=f15e22] [cursor=pointer]
+    - tab "Figure Archive" [ref=f15e23] [cursor=pointer]
+    - tab "Charts" [ref=f15e24] [cursor=pointer]
+    - tab "Tasks & Numerical Notes" [ref=f15e25] [cursor=pointer]
+  - tabpanel "Runs & Studies" [ref=f15e26]:
+    - heading "Run and Study Records" [level=2] [ref=f15e27]
+    - generic [ref=f15e28]:
+      - generic [ref=f15e29]:
+        - generic [ref=f15e30]: "Status:"
+        - combobox "Status:" [ref=f15e31]:
+          - option "All" [selected]
+          - option "complete"
+      - generic [ref=f15e32]:
+        - generic [ref=f15e33]: "Search:"
+        - textbox "Search:" [ref=f15e34]:
+          - /placeholder: Run ID, description...
+      - button "Reset" [ref=f15e36] [cursor=pointer]
+    - table [ref=f15e38]:
+      - rowgroup [ref=f15e39]:
+        - row [ref=f15e40]:
+          - columnheader [ref=f15e41] [cursor=pointer]:
+            - button "Study / Run" [ref=f15e42]: Study / Run ↕
+          - columnheader [ref=f15e43] [cursor=pointer]:
+            - button "Task" [ref=f15e44]: Task ↕
+          - columnheader [ref=f15e45] [cursor=pointer]:
+            - button "Calculation" [ref=f15e46]: Calculation ↕
+          - columnheader [ref=f15e47] [cursor=pointer]:
+            - button "Status" [ref=f15e48]: Status ↕
+          - columnheader [ref=f15e49] [cursor=pointer]:
+            - button "Run date" [ref=f15e50]: Run date ↕
+          - columnheader [ref=f15e51] [cursor=pointer]:
+            - button "Catalogue date" [ref=f15e52]: Catalogue date ↕
+          - columnheader [ref=f15e53] [cursor=pointer]:
+            - button "n" [ref=f15e54]: n ↕
+          - columnheader [ref=f15e55] [cursor=pointer]:
+            - button "Dimension" [ref=f15e56]: Dimension ↕
+          - columnheader [ref=f15e57] [cursor=pointer]:
+            - button "Saved numerical rows" [ref=f15e58]: Saved numerical rows ↕
+          - columnheader [ref=f15e59] [cursor=pointer]:
+            - button "Downloads" [ref=f15e60]: Downloads ↕
+      - rowgroup [ref=f15e61]:
+        - row [ref=f15e62]:
+          - cell [ref=f15e63]:
+            - button "Details for t3a-fock-rust" [ref=f15e64] [cursor=pointer]: t3a-fock-rust
+          - cell "T3a" [ref=f15e65]
+          - cell "Rust Fock space basis + sparse u(N) operators" [ref=f15e66]
+          - cell "complete" [ref=f15e67]
+          - cell "2026-09-19" [ref=f15e68]
+          - cell "—" [ref=f15e69]
+          - cell "4" [ref=f15e70]
+          - cell "10" [ref=f15e71]
+          - cell "—" [ref=f15e72]
+          - cell "—" [ref=f15e73]
+        - row [ref=f15e74]:
+          - cell [ref=f15e75]:
+            - button "Details for t3b-coherent-rust" [ref=f15e76] [cursor=pointer]: t3b-coherent-rust
+          - cell "T3b" [ref=f15e77]
+          - cell "U(N) Perelomov coherent states + Grassmannian embedding" [ref=f15e78]
+          - cell "complete" [ref=f15e79]
+          - cell "2026-09-19" [ref=f15e80]
+          - cell "—" [ref=f15e81]
+          - cell "4" [ref=f15e82]
+          - cell "10" [ref=f15e83]
+          - cell "—" [ref=f15e84]
+          - cell "—" [ref=f15e85]
+        - row [ref=f15e86]:
+          - cell [ref=f15e87]:
+            - button "Details for t3c-volume-rust" [ref=f15e88] [cursor=pointer]: t3c-volume-rust
+          - cell "T3c" [ref=f15e89]
+          - cell "Sparse triple-grasp commutator and signed-mean proxy" [ref=f15e90]
+          - cell "complete" [ref=f15e91]
+          - cell "2026-09-19" [ref=f15e92]
+          - cell "—" [ref=f15e93]
+          - cell "4" [ref=f15e94]
+          - cell "10" [ref=f15e95]
+          - cell "—" [ref=f15e96]
+          - cell "—" [ref=f15e97]
+        - row [ref=f15e98]:
+          - cell [ref=f15e99]:
+            - button "Details for t3d-verify4" [ref=f15e100] [cursor=pointer]: t3d-verify4
+          - cell "T3d" [ref=f15e101]
+          - cell "Converged Rust signed-mean proxy; independent SciPy check passed" [ref=f15e102]
+          - cell "complete" [ref=f15e103]
+          - cell "2026-10-01" [ref=f15e104]
+          - cell "—" [ref=f15e105]
+          - cell "4" [ref=f15e106]
+          - cell "3003" [ref=f15e107]
+          - cell "—" [ref=f15e108]
+          - cell "—" [ref=f15e109]
+        - row [ref=f15e110]:
+          - cell [ref=f15e111]:
+            - button "Details for t3e-scan-n5" [ref=f15e112] [cursor=pointer]: t3e-scan-n5
+          - cell "T3e" [ref=f15e113]
+          - cell "Converged Rust signed-mean proxy; independent SciPy check passed" [ref=f15e114]
+          - cell "complete" [ref=f15e115]
+          - cell "2026-10-01" [ref=f15e116]
+          - cell "—" [ref=f15e117]
+          - cell "5" [ref=f15e118]
+          - cell "43758" [ref=f15e119]
+          - cell "—" [ref=f15e120]
+          - cell "—" [ref=f15e121]
+        - row [ref=f15e122]:
+          - cell [ref=f15e123]:
+            - button "Details for t3e-scan-n6" [ref=f15e124] [cursor=pointer]: t3e-scan-n6
+          - cell "T3e" [ref=f15e125]
+          - cell "Converged Rust signed-mean proxy; independent SciPy check pending" [ref=f15e126]
+          - cell "complete" [ref=f15e127]
+          - cell "2026-10-01" [ref=f15e128]
+          - cell "—" [ref=f15e129]
+          - cell "6" [ref=f15e130]
+          - cell "293930" [ref=f15e131]
+          - cell "—" [ref=f15e132]
+          - cell "—" [ref=f15e133]
+        - row [ref=f15e134]:
+          - cell [ref=f15e135]:
+            - button "Details for t3e-scan-n7" [ref=f15e136] [cursor=pointer]: t3e-scan-n7
+          - cell "T3e" [ref=f15e137]
+          - cell "Converged Rust signed-mean proxy; independent SciPy check passed" [ref=f15e138]
+          - cell "complete" [ref=f15e139]
+          - cell "2026-10-01" [ref=f15e140]
+          - cell "—" [ref=f15e141]
+          - cell "7" [ref=f15e142]
+          - cell "38760" [ref=f15e143]
+          - cell "—" [ref=f15e144]
+          - cell "—" [ref=f15e145]
+        - row [ref=f15e146]:
+          - cell [ref=f15e147]:
+            - button "Details for t3e-scan-n8" [ref=f15e148] [cursor=pointer]: t3e-scan-n8
+          - cell "T3e" [ref=f15e149]
+          - cell "Converged Rust signed-mean proxy; independent SciPy check passed" [ref=f15e150]
+          - cell "complete" [ref=f15e151]
+          - cell "2026-10-01" [ref=f15e152]
+          - cell "—" [ref=f15e153]
+          - cell "8" [ref=f15e154]
+          - cell "74613" [ref=f15e155]
+          - cell "—" [ref=f15e156]
+          - cell "—" [ref=f15e157]
+        - row [ref=f15e158]:
+          - cell [ref=f15e159]:
+            - button "Details for t11-fl-sampling" [ref=f15e160] [cursor=pointer]: t11-fl-sampling
+          - cell "T11" [ref=f15e161]
+          - cell "Prepared FL evolution sampling" [ref=f15e162]
+          - cell "complete" [ref=f15e163]
+          - cell "—" [ref=f15e164]
+          - cell "—" [ref=f15e165]
+          - cell "—" [ref=f15e166]
+          - cell "—" [ref=f15e167]
+          - cell "50" [ref=f15e168]
+          - cell "1" [ref=f15e169]
+        - row [ref=f15e170]:
+          - cell [ref=f15e171]:
+            - button "Details for t1b-real-plane" [ref=f15e172] [cursor=pointer]: t1b-real-plane
+          - cell "T1b" [ref=f15e173]
+          - cell "Positive volumes on two real-plane states" [ref=f15e174]
+          - cell "complete" [ref=f15e175]
+          - cell "—" [ref=f15e176]
+          - cell "—" [ref=f15e177]
+          - cell "—" [ref=f15e178]
+          - cell "—" [ref=f15e179]
+          - cell "2" [ref=f15e180]
+          - cell "1" [ref=f15e181]
+        - row [ref=f15e182]:
+          - cell [ref=f15e183]:
+            - button "Details for t5c-shape-recovery" [ref=f15e184] [cursor=pointer]: t5c-shape-recovery
+          - cell "T5c" [ref=f15e185]
+          - cell "FL covariance shape recovery" [ref=f15e186]
+          - cell "complete" [ref=f15e187]
+          - cell "—" [ref=f15e188]
+          - cell "—" [ref=f15e189]
+          - cell "—" [ref=f15e190]
+          - cell "—" [ref=f15e191]
+          - cell "84" [ref=f15e192]
+          - cell "1" [ref=f15e193]
+        - row [ref=f15e194]:
+          - cell [ref=f15e195]:
+            - button "Details for t5c-weighted-input" [ref=f15e196] [cursor=pointer]: t5c-weighted-input
+          - cell "T5c" [ref=f15e197]
+          - cell "Weighted FL input geometry and volumes" [ref=f15e198]
+          - cell "complete" [ref=f15e199]
+          - cell "—" [ref=f15e200]
+          - cell "—" [ref=f15e201]
+          - cell "—" [ref=f15e202]
+          - cell "—" [ref=f15e203]
+          - cell "14" [ref=f15e204]
+          - cell "1" [ref=f15e205]
+        - row [ref=f15e206]:
+          - cell [ref=f15e207]:
+            - button "Details for fl-regular-area" [ref=f15e208] [cursor=pointer]: fl-regular-area
+          - cell "T1a" [ref=f15e209]
+          - cell "Regular FL volume versus area" [ref=f15e210]
+          - cell "complete" [ref=f15e211]
+          - cell "—" [ref=f15e212]
+          - cell "—" [ref=f15e213]
+          - cell "—" [ref=f15e214]
+          - cell "—" [ref=f15e215]
+          - cell "5" [ref=f15e216]
+          - cell "1" [ref=f15e217]
+        - row [ref=f15e218]:
+          - cell [ref=f15e219]:
+            - button "Details for fl-shape-scan" [ref=f15e220] [cursor=pointer]: fl-shape-scan
+          - cell "T1a" [ref=f15e221]
+          - cell "Equal-area FL shape scan at J=2" [ref=f15e222]
+          - cell "complete" [ref=f15e223]
+          - cell "—" [ref=f15e224]
+          - cell "—" [ref=f15e225]
+          - cell "—" [ref=f15e226]
+          - cell "—" [ref=f15e227]
+          - cell "440" [ref=f15e228]
+          - cell "1" [ref=f15e229]
+        - row [ref=f15e230]:
+          - cell [ref=f15e231]:
+            - button "Details for binding-energy" [ref=f15e232] [cursor=pointer]: binding-energy
+          - cell "T11" [ref=f15e233]
+          - cell "Same-number detachment energies" [ref=f15e234]
+          - cell "complete" [ref=f15e235]
+          - cell "—" [ref=f15e236]
+          - cell "—" [ref=f15e237]
+          - cell "—" [ref=f15e238]
+          - cell "—" [ref=f15e239]
+          - cell "8" [ref=f15e240]
+          - cell "1" [ref=f15e241]
+        - row [ref=f15e242]:
+          - cell [ref=f15e243]:
+            - button "Details for state-space-probes" [ref=f15e244] [cursor=pointer]: state-space-probes
+          - cell "T11" [ref=f15e245]
+          - cell "Closed and open state evolution probes" [ref=f15e246]
+          - cell "complete" [ref=f15e247]
+          - cell "—" [ref=f15e248]
+          - cell "—" [ref=f15e249]
+          - cell "—" [ref=f15e250]
+          - cell "—" [ref=f15e251]
+          - cell "6" [ref=f15e252]
+          - cell "1" [ref=f15e253]
+        - row [ref=f15e254]:
+          - cell [ref=f15e255]:
+            - button "Details for sewing-probes" [ref=f15e256] [cursor=pointer]: sewing-probes
+          - cell "Unassigned" [ref=f15e257]
+          - cell "Constructive edge sewing probes" [ref=f15e258]
+          - cell "complete" [ref=f15e259]
+          - cell "—" [ref=f15e260]
+          - cell "—" [ref=f15e261]
+          - cell "—" [ref=f15e262]
+          - cell "—" [ref=f15e263]
+          - cell "5" [ref=f15e264]
+          - cell "1" [ref=f15e265]
+        - row [ref=f15e266]:
+          - cell [ref=f15e267]:
+            - button "Details for t11-size-comparison" [ref=f15e268] [cursor=pointer]: t11-size-comparison
+          - cell "T11" [ref=f15e269]
+          - 'cell "Four versus five sites: thermal-volume persistence" [ref=f15e270]'
+          - cell "complete" [ref=f15e271]
+          - cell "—" [ref=f15e272]
+          - cell "2026-10-11" [ref=f15e273]
+          - cell "—" [ref=f15e274]
+          - cell "—" [ref=f15e275]
+          - cell "12" [ref=f15e276]
+          - cell "24" [ref=f15e277]
+        - row [ref=f15e278]:
+          - cell [ref=f15e279]:
+            - button "Details for t11-geometric-interpretation" [ref=f15e280] [cursor=pointer]: t11-geometric-interpretation
+          - cell "T11" [ref=f15e281]
+          - cell "Prepared tetrahedral FL states and the volume crossover" [ref=f15e282]
+          - cell "complete" [ref=f15e283]
+          - cell "—" [ref=f15e284]
+          - cell "2026-10-11" [ref=f15e285]
+          - cell "—" [ref=f15e286]
+          - cell "—" [ref=f15e287]
+          - cell "11" [ref=f15e288]
+          - cell "23" [ref=f15e289]
+        - row [ref=f15e290]:
+          - cell [ref=f15e291]:
+            - button "Details for t11-candidate-hamiltonians" [ref=f15e292] [cursor=pointer]: t11-candidate-hamiltonians
+          - cell "T11" [ref=f15e293]
+          - cell "Candidate geometric Hamiltonians and prepared-FL dynamics" [ref=f15e294]
+          - cell "complete" [ref=f15e295]
+          - cell "—" [ref=f15e296]
+          - cell "2026-10-11" [ref=f15e297]
+          - cell "—" [ref=f15e298]
+          - cell "—" [ref=f15e299]
+          - cell "62" [ref=f15e300]
+          - cell "20" [ref=f15e301]
+        - row [ref=f15e302]:
+          - cell [ref=f15e303]:
+            - button "Details for hamiltonian" [ref=f15e304] [cursor=pointer]: hamiltonian
+          - cell "T11" [ref=f15e305]
+          - cell "Four-site Hamiltonian spectra and RS-volume observables" [ref=f15e306]
+          - cell "complete" [ref=f15e307]
+          - cell "—" [ref=f15e308]
+          - cell "2026-10-09" [ref=f15e309]
+          - cell "—" [ref=f15e310]
+          - cell "—" [ref=f15e311]
+          - cell "30" [ref=f15e312]
+          - cell "20" [ref=f15e313]
+        - row [ref=f15e314]:
+          - cell [ref=f15e315]:
+            - button "Details for closed-basis" [ref=f15e316] [cursor=pointer]: closed-basis
+          - cell "T1a" [ref=f15e317]
+          - cell "Complete four-face closed-basis volumes" [ref=f15e318]
+          - cell "complete" [ref=f15e319]
+          - cell "—" [ref=f15e320]
+          - cell "2026-10-09" [ref=f15e321]
+          - cell "—" [ref=f15e322]
+          - cell "—" [ref=f15e323]
+          - cell "11" [ref=f15e324]
+          - cell "38" [ref=f15e325]
+        - row [ref=f15e326]:
+          - cell [ref=f15e327]:
+            - button "Details for variable-faces" [ref=f15e328] [cursor=pointer]: variable-faces
+          - cell "T10" [ref=f15e329]
+          - cell "Variable-face positive RS catalogue" [ref=f15e330]
+          - cell "complete" [ref=f15e331]
+          - cell "—" [ref=f15e332]
+          - cell "2026-10-09" [ref=f15e333]
+          - cell "—" [ref=f15e334]
+          - cell "—" [ref=f15e335]
+          - cell "9" [ref=f15e336]
+          - cell "41" [ref=f15e337]
+        - row [ref=f15e338]:
+          - cell [ref=f15e339]:
+            - button "Details for vacuum-area" [ref=f15e340] [cursor=pointer]: vacuum-area
+          - cell "T9" [ref=f15e341]
+          - cell "Squeezed-vacuum area coefficients" [ref=f15e342]
+          - cell "complete" [ref=f15e343]
+          - cell "—" [ref=f15e344]
+          - cell "2026-10-09" [ref=f15e345]
+          - cell "—" [ref=f15e346]
+          - cell "—" [ref=f15e347]
+          - cell "964" [ref=f15e348]
+          - cell "3" [ref=f15e349]
+        - row [ref=f15e350]:
+          - cell [ref=f15e351]:
+            - button "Details for vacuum-spin" [ref=f15e352] [cursor=pointer]: vacuum-spin
+          - cell "T9" [ref=f15e353]
+          - cell "Squeezed-vacuum resultant spin" [ref=f15e354]
+          - cell "complete" [ref=f15e355]
+          - cell "—" [ref=f15e356]
+          - cell "2026-10-09" [ref=f15e357]
+          - cell "—" [ref=f15e358]
+          - cell "—" [ref=f15e359]
+          - cell "196" [ref=f15e360]
+          - cell "3" [ref=f15e361]
+        - row [ref=f15e362]:
+          - cell [ref=f15e363]:
+            - button "Details for excited-spin" [ref=f15e364] [cursor=pointer]: excited-spin
+          - cell "T9" [ref=f15e365]
+          - cell "Excited J_in=1 joint area and spin" [ref=f15e366]
+          - cell "complete" [ref=f15e367]
+          - cell "—" [ref=f15e368]
+          - cell "2026-10-09" [ref=f15e369]
+          - cell "—" [ref=f15e370]
+          - cell "—" [ref=f15e371]
+          - cell "5" [ref=f15e372]
+          - cell "3" [ref=f15e373]
+        - row [ref=f15e374]:
+          - cell [ref=f15e375]:
+            - button "Details for high-j" [ref=f15e376] [cursor=pointer]: high-j
+          - cell "T5c" [ref=f15e377]
+          - cell "Higher-J flat-boundary probes" [ref=f15e378]
+          - cell "complete" [ref=f15e379]
+          - cell "—" [ref=f15e380]
+          - cell "2026-10-09" [ref=f15e381]
+          - cell "—" [ref=f15e382]
+          - cell "—" [ref=f15e383]
+          - cell "13" [ref=f15e384]
+          - cell "1" [ref=f15e385]
+        - row [ref=f15e386]:
+          - cell [ref=f15e387]:
+            - button "Details for magnetization" [ref=f15e388] [cursor=pointer]: magnetization
+          - cell "T5a" [ref=f15e389]
+          - cell "Magnetization and signed-grasp correlations" [ref=f15e390]
+          - cell "complete" [ref=f15e391]
+          - cell "—" [ref=f15e392]
+          - cell "2026-10-09" [ref=f15e393]
+          - cell "—" [ref=f15e394]
+          - cell "—" [ref=f15e395]
+          - cell "10" [ref=f15e396]
+          - cell "2" [ref=f15e397]
+        - row [ref=f15e398]:
+          - cell [ref=f15e399]:
+            - button "Details for chirality" [ref=f15e400] [cursor=pointer]: chirality
+          - cell "T5a′" [ref=f15e401]
+          - cell "Local-chirality pilot" [ref=f15e402]
+          - cell "complete" [ref=f15e403]
+          - cell "—" [ref=f15e404]
+          - cell "2026-10-09" [ref=f15e405]
+          - cell "—" [ref=f15e406]
+          - cell "—" [ref=f15e407]
+          - cell "13" [ref=f15e408]
+          - cell "2" [ref=f15e409]
+        - row [ref=f15e410]:
+          - cell [ref=f15e411]:
+            - button "Details for perturbation" [ref=f15e412] [cursor=pointer]: perturbation
+          - cell "T5b" [ref=f15e413]
+          - cell "Imaginary-perturbation response" [ref=f15e414]
+          - cell "complete" [ref=f15e415]
+          - cell "—" [ref=f15e416]
+          - cell "2026-10-09" [ref=f15e417]
+          - cell "—" [ref=f15e418]
+          - cell "—" [ref=f15e419]
+          - cell "26" [ref=f15e420]
+          - cell "2" [ref=f15e421]
+        - row [ref=f15e422]:
+          - cell [ref=f15e423]:
+            - button "Details for phase" [ref=f15e424] [cursor=pointer]: phase
+          - cell "T5d" [ref=f15e425]
+          - cell "Cocycle-phase pilot" [ref=f15e426]
+          - cell "complete" [ref=f15e427]
+          - cell "—" [ref=f15e428]
+          - cell "2026-10-09" [ref=f15e429]
+          - cell "—" [ref=f15e430]
+          - cell "—" [ref=f15e431]
+          - cell "10" [ref=f15e432]
+          - cell "2" [ref=f15e433]
+        - row [ref=f15e434]:
+          - cell [ref=f15e435]:
+            - button "Details for large-k" [ref=f15e436] [cursor=pointer]: large-k
+          - cell "T5e" [ref=f15e437]
+          - cell "Large-K recorded families and fits" [ref=f15e438]
+          - cell "complete" [ref=f15e439]
+          - cell "—" [ref=f15e440]
+          - cell "2026-10-09" [ref=f15e441]
+          - cell "—" [ref=f15e442]
+          - cell "—" [ref=f15e443]
+          - cell "13" [ref=f15e444]
+          - cell "2" [ref=f15e445]
+        - row [ref=f15e446]:
+          - cell [ref=f15e447]:
+            - button "Details for t7a" [ref=f15e448] [cursor=pointer]: t7a
+          - cell "T9" [ref=f15e449]
+          - cell "Historical single-copy thermal pilot" [ref=f15e450]
+          - cell "complete" [ref=f15e451]
+          - cell "—" [ref=f15e452]
+          - cell "2026-10-09" [ref=f15e453]
+          - cell "—" [ref=f15e454]
+          - cell "—" [ref=f15e455]
+          - cell "14" [ref=f15e456]
+          - cell "2" [ref=f15e457]
+        - row [ref=f15e458]:
+          - cell [ref=f15e459]:
+            - button "Details for t7b" [ref=f15e460] [cursor=pointer]: t7b
+          - cell "T9" [ref=f15e461]
+          - cell "Historical energy-basis TFD pilot" [ref=f15e462]
+          - cell "complete" [ref=f15e463]
+          - cell "—" [ref=f15e464]
+          - cell "2026-10-09" [ref=f15e465]
+          - cell "—" [ref=f15e466]
+          - cell "—" [ref=f15e467]
+          - cell "14" [ref=f15e468]
+          - cell "2" [ref=f15e469]
+        - row [ref=f15e470]:
+          - cell [ref=f15e471]:
+            - button "Details for t7e" [ref=f15e472] [cursor=pointer]: t7e
+          - cell "T9" [ref=f15e473]
+          - cell "Historical complexified purification" [ref=f15e474]
+          - cell "complete" [ref=f15e475]
+          - cell "—" [ref=f15e476]
+          - cell "2026-10-09" [ref=f15e477]
+          - cell "—" [ref=f15e478]
+          - cell "—" [ref=f15e479]
+          - cell "10" [ref=f15e480]
+          - cell "2" [ref=f15e481]
+        - row [ref=f15e482]:
+          - cell [ref=f15e483]:
+            - button "Details for geometry-audit" [ref=f15e484] [cursor=pointer]: geometry-audit
+          - cell "T9" [ref=f15e485]
+          - cell "Small-sector thermal geometry audit" [ref=f15e486]
+          - cell "complete" [ref=f15e487]
+          - cell "—" [ref=f15e488]
+          - cell "2026-10-09" [ref=f15e489]
+          - cell "—" [ref=f15e490]
+          - cell "—" [ref=f15e491]
+          - cell "4" [ref=f15e492]
+          - cell "1" [ref=f15e493]
+        - row [ref=f15e494]:
+          - cell [ref=f15e495]:
+            - button "Details for volume-controls" [ref=f15e496] [cursor=pointer]: volume-controls
+          - cell "T1a" [ref=f15e497]
+          - cell "RS/AL volume-prescription controls" [ref=f15e498]
+          - cell "complete" [ref=f15e499]
+          - cell "—" [ref=f15e500]
+          - cell "2026-10-09" [ref=f15e501]
+          - cell "—" [ref=f15e502]
+          - cell "—" [ref=f15e503]
+          - cell "2" [ref=f15e504]
+          - cell "1" [ref=f15e505]
+        - row [ref=f15e506]:
+          - cell [ref=f15e507]:
+            - button "Details for covariance-pilot" [ref=f15e508] [cursor=pointer]: covariance-pilot
+          - cell "T5c" [ref=f15e509]
+          - cell "Initial covariance reconstruction pilot" [ref=f15e510]
+          - cell "complete" [ref=f15e511]
+          - cell "—" [ref=f15e512]
+          - cell "2026-10-09" [ref=f15e513]
+          - cell "—" [ref=f15e514]
+          - cell "—" [ref=f15e515]
+          - cell "6" [ref=f15e516]
+          - cell "1" [ref=f15e517]

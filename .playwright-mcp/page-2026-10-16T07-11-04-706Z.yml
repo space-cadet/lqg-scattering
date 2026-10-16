@@ -1,0 +1,172 @@
+- generic [ref=f1e2]:
+  - navigation "Numerical datasets" [ref=f1e3]:
+    - generic [ref=f1e4]: Numerical study
+    - combobox "Numerical study" [ref=f1e5]:
+      - option "All studies — overview"
+      - option "Small-area face-channel equilibration pilot (12 rows)"
+      - option "Classical rotor spreading and equilibrium comparison (24 rows)" [selected]
+      - 'option "Few-rotor transfer: planar bound and 3D controls (27 rows)"'
+      - option "Rotor coupling crossover and delayed release (64 rows)"
+      - 'option "Large-area tetrahedron: face activation and recurrence (20 rows)"'
+      - option "Entanglement of separately closed thermal polyhedra (86 rows)"
+      - option "Ordinary closure versus temperature (125 rows)"
+      - option "Heating separately closed area and positive RS volume (85 rows)"
+      - option "Singlet exchange between closed FL polyhedra (20 rows)"
+      - 'option "Four versus five sites: thermal-volume persistence (12 rows)"'
+      - option "Prepared tetrahedral FL states and the volume crossover (11 rows)"
+      - option "Candidate geometric Hamiltonians and prepared-FL dynamics (62 rows)"
+      - option "Four-site Hamiltonian spectra and RS-volume observables (30 rows)"
+      - option "Complete four-face closed-basis volumes (11 rows)"
+      - option "Variable-face positive RS catalogue (9 rows)"
+      - option "Squeezed-vacuum area coefficients (964 rows)"
+      - option "Squeezed-vacuum resultant spin (196 rows)"
+      - option "Excited J_in=1 joint area and spin (5 rows)"
+      - option "Higher-J flat-boundary probes (13 rows)"
+      - option "Magnetization and signed-grasp correlations (10 rows)"
+      - option "Local-chirality pilot (13 rows)"
+      - option "Imaginary-perturbation response (26 rows)"
+      - option "Cocycle-phase pilot (10 rows)"
+      - option "Large-K recorded families and fits (13 rows)"
+      - option "Historical single-copy thermal pilot (14 rows)"
+      - option "Historical energy-basis TFD pilot (14 rows)"
+      - option "Historical complexified purification (10 rows)"
+      - option "Small-sector thermal geometry audit (4 rows)"
+      - option "RS/AL volume-prescription controls (2 rows)"
+      - option "Initial covariance reconstruction pilot (6 rows)"
+      - option "Prepared FL evolution sampling (50 rows)"
+      - option "Positive volumes on two real-plane states (2 rows)"
+      - option "FL covariance shape recovery (84 rows)"
+      - option "Weighted FL input geometry and volumes (14 rows)"
+      - option "Regular FL volume versus area (5 rows)"
+      - option "Equal-area FL shape scan at J=2 (440 rows)"
+      - option "Same-number detachment energies (8 rows)"
+      - option "Closed and open state evolution probes (6 rows)"
+      - option "Constructive edge sewing probes (5 rows)"
+  - heading "Classical rotor spreading and equilibrium comparison" [level=1] [ref=f1e6]
+  - paragraph [ref=f1e7]: Grouped late-time summaries compare four ring sizes, three packet-energy scales and fixed-packet versus fixed-density preparation. At packet energy 10, the hot-pair fraction follows the microcanonical value 2/N and equilibrium-region residence is 87.2–90.4%. At packet energy 100, the hot pair retains 98.7–99.0% of local energy through t=2000.
+  - generic [ref=f1e8]:
+    - generic [ref=f1e9]:
+      - generic [ref=f1e10]: "24"
+      - generic [ref=f1e11]: Total Runs
+    - generic [ref=f1e12]:
+      - generic [ref=f1e13]: "0"
+      - generic [ref=f1e14]: Tasks
+    - generic [ref=f1e15]:
+      - generic [ref=f1e16]: "24"
+      - generic [ref=f1e17]: Complete
+    - generic [ref=f1e18]:
+      - generic [ref=f1e19]: "2"
+      - generic [ref=f1e20]: Figures
+  - tablist "Dashboard sections" [ref=f1e21]:
+    - tab "Runs & Studies" [ref=f1e22] [cursor=pointer]
+    - tab "Figure Archive" [ref=f1e23] [cursor=pointer]
+    - tab "Charts" [active] [selected] [ref=f1e24] [cursor=pointer]
+    - tab "Tasks & Numerical Notes" [ref=f1e25] [cursor=pointer]
+  - tabpanel "Charts" [ref=f1e506]:
+    - heading "Performance" [level=2] [ref=f1e507]
+    - generic [ref=f1e508]:
+      - generic [ref=f1e509]:
+        - generic [ref=f1e510]: "X-Axis:"
+        - combobox "X-Axis:" [ref=f1e511]:
+          - option "Rotors N" [selected]
+          - option "packet scale at N8"
+          - option "seed count"
+          - option "equilibrium hot fraction"
+          - option "Late-time hot-pair local-energy fraction"
+          - option "hot pair fraction min"
+          - option "hot pair fraction max"
+          - option "participation fraction mean"
+          - option "equilibrium participation fraction mean"
+          - option "equilibrium region90 residence mean"
+          - option "equilibrium region90 residence min"
+          - option "equilibrium region90 residence max"
+          - option "hot fraction KS mean"
+      - generic [ref=f1e512]:
+        - generic [ref=f1e513]: "Y-Axis:"
+        - combobox "Y-Axis:" [ref=f1e514]:
+          - option "Rotors N"
+          - option "packet scale at N8"
+          - option "seed count"
+          - option "equilibrium hot fraction"
+          - option "Late-time hot-pair local-energy fraction" [selected]
+          - option "hot pair fraction min"
+          - option "hot pair fraction max"
+          - option "participation fraction mean"
+          - option "equilibrium participation fraction mean"
+          - option "equilibrium region90 residence mean"
+          - option "equilibrium region90 residence min"
+          - option "equilibrium region90 residence max"
+          - option "hot fraction KS mean"
+      - generic [ref=f1e515]:
+        - generic [ref=f1e516]: "Chart Type:"
+        - combobox "Chart Type:" [ref=f1e517]:
+          - option "Scatter"
+          - option "Line" [selected]
+      - generic [ref=f1e518]:
+        - generic [ref=f1e519]: "Series:"
+        - combobox "Series:" [ref=f1e520]:
+          - option "All runs"
+          - option "Case"
+          - option "preparation"
+          - option "Packet preparation and energy scale" [selected]
+    - generic [ref=f1e521]:
+      - figure "Late-time hot-pair local-energy fraction versus Rotors N" [ref=f1e523]:
+        - generic [ref=f1e524]:
+          - generic [ref=f1e525]: "fixed energy density; packet scale at N=8: 1"
+          - generic [ref=f1e528]: "fixed energy density; packet scale at N=8: 10"
+          - generic [ref=f1e531]: "fixed energy density; packet scale at N=8: 100"
+          - generic [ref=f1e534]: "fixed packet; packet scale at N=8: 1"
+          - generic [ref=f1e537]: "fixed packet; packet scale at N=8: 10"
+          - generic [ref=f1e540]: "fixed packet; packet scale at N=8: 100"
+        - img [ref=f1e543]:
+          - generic "y-axis tick label" [ref=f1e545]:
+            - generic [ref=f1e546]: "0.1"
+            - generic [ref=f1e547]: "0.2"
+            - generic [ref=f1e548]: "0.3"
+            - generic [ref=f1e549]: "0.4"
+            - generic [ref=f1e550]: "0.5"
+            - generic [ref=f1e551]: "0.6"
+            - generic [ref=f1e552]: "0.7"
+            - generic [ref=f1e553]: "0.8"
+            - generic [ref=f1e554]: "0.9"
+          - generic "y-axis label" [ref=f1e555]: ↑ Late-time hot-pair local-energy fraction
+          - generic "x-axis tick label" [ref=f1e558]:
+            - generic [ref=f1e559]: "10"
+            - generic [ref=f1e560]: "15"
+            - generic [ref=f1e561]: "20"
+            - generic [ref=f1e562]: "25"
+            - generic [ref=f1e563]: "30"
+            - generic [ref=f1e564]: "35"
+            - generic [ref=f1e565]: "40"
+            - generic [ref=f1e566]: "45"
+            - generic [ref=f1e567]: "50"
+            - generic [ref=f1e568]: "55"
+            - generic [ref=f1e569]: "60"
+          - generic "x-axis label" [ref=f1e570]: Rotors N →
+          - generic "line" [ref=f1e572]
+          - generic "dot" [ref=f1e579]:
+            - 'generic "classical-rotor-equilibration:case-0001:1 Rotors N: 8 Late-time hot-pair local-energy fraction: 0.30370744954369017" [ref=f1e580]'
+            - 'generic "classical-rotor-equilibration:case-0002:2 Rotors N: 16 Late-time hot-pair local-energy fraction: 0.14420294193415084" [ref=f1e581]'
+            - 'generic "classical-rotor-equilibration:case-0003:3 Rotors N: 32 Late-time hot-pair local-energy fraction: 0.06170880704147729" [ref=f1e582]'
+            - 'generic "classical-rotor-equilibration:case-0004:4 Rotors N: 64 Late-time hot-pair local-energy fraction: 0.031077597164869703" [ref=f1e583]'
+            - 'generic "classical-rotor-equilibration:case-0005:5 Rotors N: 8 Late-time hot-pair local-energy fraction: 0.2445772154817948" [ref=f1e584]'
+            - 'generic "classical-rotor-equilibration:case-0006:6 Rotors N: 16 Late-time hot-pair local-energy fraction: 0.9374246936191106" [ref=f1e585]'
+            - 'generic "classical-rotor-equilibration:case-0007:7 Rotors N: 32 Late-time hot-pair local-energy fraction: 0.969621182293699" [ref=f1e586]'
+            - 'generic "classical-rotor-equilibration:case-0008:8 Rotors N: 64 Late-time hot-pair local-energy fraction: 0.9830303125527341" [ref=f1e587]'
+            - 'generic "classical-rotor-equilibration:case-0009:9 Rotors N: 8 Late-time hot-pair local-energy fraction: 0.9895620030590329" [ref=f1e588]'
+            - 'generic "classical-rotor-equilibration:case-0010:10 Rotors N: 16 Late-time hot-pair local-energy fraction: 0.994677082694817" [ref=f1e589]'
+            - 'generic "classical-rotor-equilibration:case-0011:11 Rotors N: 32 Late-time hot-pair local-energy fraction: 0.9971359729377052" [ref=f1e590]'
+            - 'generic "classical-rotor-equilibration:case-0012:12 Rotors N: 64 Late-time hot-pair local-energy fraction: 0.9983391968214302" [ref=f1e591]'
+            - 'generic "classical-rotor-equilibration:case-0013:13 Rotors N: 8 Late-time hot-pair local-energy fraction: 0.30370744954369017" [ref=f1e592]'
+            - 'generic "classical-rotor-equilibration:case-0014:14 Rotors N: 16 Late-time hot-pair local-energy fraction: 0.15377757016852614" [ref=f1e593]'
+            - 'generic "classical-rotor-equilibration:case-0015:15 Rotors N: 32 Late-time hot-pair local-energy fraction: 0.08404942375034004" [ref=f1e594]'
+            - 'generic "classical-rotor-equilibration:case-0016:16 Rotors N: 64 Late-time hot-pair local-energy fraction: 0.040627165934993825" [ref=f1e595]'
+            - 'generic "classical-rotor-equilibration:case-0017:17 Rotors N: 8 Late-time hot-pair local-energy fraction: 0.2445772154817948" [ref=f1e596]'
+            - 'generic "classical-rotor-equilibration:case-0018:18 Rotors N: 16 Late-time hot-pair local-energy fraction: 0.12404112088131529" [ref=f1e597]'
+            - 'generic "classical-rotor-equilibration:case-0019:19 Rotors N: 32 Late-time hot-pair local-energy fraction: 0.06255618784749228" [ref=f1e598]'
+            - 'generic "classical-rotor-equilibration:case-0020:20 Rotors N: 64 Late-time hot-pair local-energy fraction: 0.031927481169275906" [ref=f1e599]'
+            - 'generic "classical-rotor-equilibration:case-0021:21 Rotors N: 8 Late-time hot-pair local-energy fraction: 0.9895620030590329" [ref=f1e600]'
+            - 'generic "classical-rotor-equilibration:case-0022:22 Rotors N: 16 Late-time hot-pair local-energy fraction: 0.9892174980240007" [ref=f1e601]'
+            - 'generic "classical-rotor-equilibration:case-0023:23 Rotors N: 32 Late-time hot-pair local-energy fraction: 0.9883449016712973" [ref=f1e602]'
+            - 'generic "classical-rotor-equilibration:case-0024:24 Rotors N: 64 Late-time hot-pair local-energy fraction: 0.9865006352512853" [ref=f1e603]'
+      - paragraph [ref=f1e604]: 24 recorded points; series by Packet preparation and energy scale.

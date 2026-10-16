@@ -1,0 +1,79 @@
+- generic [ref=f10e2]:
+  - navigation "Numerical datasets" [ref=f10e3]:
+    - generic [ref=f10e4]: Numerical study
+    - combobox "Numerical study" [ref=f10e5]:
+      - option "All studies — overview"
+      - option "Small-area face-channel equilibration pilot (12 rows)"
+      - option "Classical rotor spreading and equilibrium comparison (24 rows)"
+      - 'option "Few-rotor transfer: planar bound and 3D controls (27 rows)"'
+      - option "Rotor coupling crossover and delayed release (64 rows)"
+      - 'option "Large-area tetrahedron: face activation and recurrence (20 rows)"'
+      - option "Entanglement of separately closed thermal polyhedra (86 rows)"
+      - option "Ordinary closure versus temperature (125 rows)"
+      - option "Heating separately closed area and positive RS volume (85 rows)" [selected]
+      - option "Singlet exchange between closed FL polyhedra (20 rows)"
+      - 'option "Four versus five sites: thermal-volume persistence (12 rows)"'
+      - option "Prepared tetrahedral FL states and the volume crossover (11 rows)"
+      - option "Candidate geometric Hamiltonians and prepared-FL dynamics (62 rows)"
+      - option "Four-site Hamiltonian spectra and RS-volume observables (30 rows)"
+      - option "Complete four-face closed-basis volumes (11 rows)"
+      - option "Variable-face positive RS catalogue (9 rows)"
+      - option "Squeezed-vacuum area coefficients (964 rows)"
+      - option "Squeezed-vacuum resultant spin (196 rows)"
+      - option "Excited J_in=1 joint area and spin (5 rows)"
+      - option "Higher-J flat-boundary probes (13 rows)"
+      - option "Magnetization and signed-grasp correlations (10 rows)"
+      - option "Local-chirality pilot (13 rows)"
+      - option "Imaginary-perturbation response (26 rows)"
+      - option "Cocycle-phase pilot (10 rows)"
+      - option "Large-K recorded families and fits (13 rows)"
+      - option "Historical single-copy thermal pilot (14 rows)"
+      - option "Historical energy-basis TFD pilot (14 rows)"
+      - option "Historical complexified purification (10 rows)"
+      - option "Small-sector thermal geometry audit (4 rows)"
+      - option "RS/AL volume-prescription controls (2 rows)"
+      - option "Initial covariance reconstruction pilot (6 rows)"
+      - option "Prepared FL evolution sampling (50 rows)"
+      - option "Positive volumes on two real-plane states (2 rows)"
+      - option "FL covariance shape recovery (84 rows)"
+      - option "Weighted FL input geometry and volumes (14 rows)"
+      - option "Regular FL volume versus area (5 rows)"
+      - option "Equal-area FL shape scan at J=2 (440 rows)"
+      - option "Same-number detachment energies (8 rows)"
+      - option "Closed and open state evolution probes (6 rows)"
+      - option "Constructive edge sewing probes (5 rows)"
+  - heading "Heating separately closed area and positive RS volume" [level=1] [ref=f10e6]
+  - paragraph [ref=f10e7]: "85 temperatures over T*=0.05..2: retained probability, conditional area and positive RS-volume distributions. Exact high-temperature mean-area coefficient 57/14."
+  - generic [ref=f10e8]:
+    - generic [ref=f10e9]:
+      - generic [ref=f10e10]: "85"
+      - generic [ref=f10e11]: Total Runs
+    - generic [ref=f10e12]:
+      - generic [ref=f10e13]: "0"
+      - generic [ref=f10e14]: Tasks
+    - generic [ref=f10e15]:
+      - generic [ref=f10e16]: "85"
+      - generic [ref=f10e17]: Complete
+    - generic [ref=f10e18]:
+      - generic [ref=f10e19]: "2"
+      - generic [ref=f10e20]: Figures
+  - tablist "Dashboard sections" [ref=f10e21]:
+    - tab "Runs & Studies" [ref=f10e22] [cursor=pointer]
+    - tab "Figure Archive" [active] [selected] [ref=f10e23] [cursor=pointer]
+    - tab "Charts" [ref=f10e24] [cursor=pointer]
+    - tab "Tasks & Numerical Notes" [ref=f10e25] [cursor=pointer]
+  - tabpanel "Figure Archive" [ref=f10e1865]:
+    - heading "Figure Archive" [level=2] [ref=f10e1866]
+    - generic [ref=f10e1868]:
+      - article [ref=f10e1869]:
+        - button "Enlarge Closed projection distributions" [ref=f10e1871] [cursor=pointer]:
+          - img "Closed projection distributions" [ref=f10e1872]
+        - generic [ref=f10e1873]:
+          - generic [ref=f10e1874]: Closed projection distributions
+          - generic [ref=f10e1875]: T9
+      - article [ref=f10e1876]:
+        - button "Enlarge Closed projection temperature" [ref=f10e1878] [cursor=pointer]:
+          - img "Closed projection temperature" [ref=f10e1879]
+        - generic [ref=f10e1880]:
+          - generic [ref=f10e1881]: Closed projection temperature
+          - generic [ref=f10e1882]: T9

@@ -1,0 +1,9 @@
+{
+  "numpy": "2.4.1",
+  "scipy": "1.17.0",
+  "source_sha256": {
+    "code/python/t11_geometric_redistribution.py": "b7081642b547ada19b3f292b53d8a6633375e1b51a76c5aa574d236dcb8a9f03",
+    "results/t11-geometric-redistribution/protocol.md": "b27245dacb66dfe0f146a723b040c3127b915db92cc16cfa511dbecebf2ffd53",
+    "code/python/lqg_scattering/channel_dynamics.py": "aa3cd1b52edb0ec89553f1316598884c21d58ca273b2ee0f75d780d9ab6a91e7"
+  }
+}

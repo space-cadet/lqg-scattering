@@ -1,0 +1,7 @@
+{
+  "comparisons": 91476,
+  "free_FL_frames": 606,
+  "maximum_residual": 6.430411758628907e-12,
+  "minimum_sampled_conditional_volume_at_least5": 0.6947198774412777,
+  "tolerance": 2e-08
+}
